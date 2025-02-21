@@ -168,7 +168,11 @@ Level | Group | Operator | Description | Grouping|
 |"|"|`[]`| subscript | "
 |"|"|`.` `->` | member access | "
 3|Prefix (unary)|`++` `--` | prefix inc/decrement | Right-to-left
-|"|"|
+|"|"|`~` `!` | Bitwise and logical not | "
+|"|"|`+` `-`| unary prefix|"
+|"|"|`&` `*` | reference / dereference
+|"|"|`new` `delete` | allocation / deallocation|"
+|"|"|`
 | " | " | `+` `-` | 
 
 #### Basic Input/output
@@ -198,7 +202,7 @@ Level | Group | Operator | Description | Grouping|
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTE0MzU5MTgsNTI3MjA3NzQxLC03NT
-A4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1
-NF19
+eyJoaXN0b3J5IjpbMzk5NzYzNzI1LDUyNzIwNzc0MSwtNzUwOD
+U2NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNzgyMzQ4NTRd
+fQ==
 -->
