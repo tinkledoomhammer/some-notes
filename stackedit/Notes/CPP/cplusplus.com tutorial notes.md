@@ -157,7 +157,12 @@ two lines"
 	* new style : ` i = int(f)`
 * sizeof
 	* `x = sizeof (type)`
-	* can be
+	* can be used on a variable or a type
+
+Precidence
+Level | Group | Operator | Description | Grouping|
+--| --| --| --| --|
+1
 #### Basic Input/output
 
 
@@ -185,7 +190,7 @@ two lines"
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDYwMzE0ODIsNTI3MjA3NzQxLC03NT
-A4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1
-NF19
+eyJoaXN0b3J5IjpbMjE3ODA2NDUwLDUyNzIwNzc0MSwtNzUwOD
+U2NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNzgyMzQ4NTRd
+fQ==
 -->
