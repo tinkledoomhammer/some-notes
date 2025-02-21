@@ -148,7 +148,11 @@ two lines"
 * Conditional ternary operator `? :`
 	* `condition ? result_true : result_false`
 * Comma operator `,`
-	* 
+	* Is used to separate two expressions that are included where only one is expected
+	* returns the value of the right-most (last) expression
+* Bitwise operators
+	* `&` , `|` , `^`(xor) , `~`(not) , `<<` , `>>` 
+* Explicit type casting operator
 #### Basic Input/output
 
 
@@ -176,7 +180,7 @@ two lines"
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ2NzExOTIzLDUyNzIwNzc0MSwtNzUwOD
-U2NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNzgyMzQ4NTRd
-fQ==
+eyJoaXN0b3J5IjpbMTIyMTM2MTIzNiw1MjcyMDc3NDEsLTc1MD
+g1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4MCwtMjc4MjM0ODU0
+XX0=
 -->
