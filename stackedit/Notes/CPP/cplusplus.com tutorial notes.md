@@ -19,8 +19,11 @@ alignas, alignof, and, and_eq, asm, auto, bitand, bitor, bool, break, case, catc
 
 Group | type names* | Notes on size/precision
 ---|---|---
-Character Types | char | exactly one byte, 
+Character Types | char | exactly one byte, at least 8 bits
+  | char16_t | not smaller than char, at least 16 bits
+  | char32_t | not smaller than `char16_t`. At least 32 bits
+   | wchar_t | can represent the largest supp 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NDgyNjkyNF19
+eyJoaXN0b3J5IjpbLTEyNDc2ODM0M119
 -->
