@@ -40,11 +40,14 @@ Group | type names* | Notes on size/precision
 | | `void` | no storage
 Null Pointer | `decltype(nullptr)` | or assign `0` to a pointer0
 
-* The actual size of these types depends on the data model.  The `numeric_limits`[https://cplusplus.com/numeric_limits] classes in the standard header <
+* The actual size of these types depends on the data model.  
+	* The `numeric_limits`[https://cplusplus.com/numeric_limits] classes in the standard header `<limits>` provides info.
+	* The `<cstdint>` header has fixed size type aliases
+* 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMzI3OTQ1MCwtMjc4MjM0ODU0XX0=
+eyJoaXN0b3J5IjpbMTE4MTk1MjA4MiwtMjc4MjM0ODU0XX0=
 -->
