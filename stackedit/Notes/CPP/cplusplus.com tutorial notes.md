@@ -71,6 +71,7 @@ Suffix | Type modifier
 `u` or `U`| `unsigned`
 `l` or `L` | `long`
 `ll` or `LL` | `long long`
+
 	*	They can be combined for unsigned longs, etc
 *	Floating point
 	*	default `double`
@@ -88,11 +89,17 @@ Escape Code | Description
 `\t` | Tab
 `\v` | Vertical tab
 `\b` | Backspace
-`\f`
+`\f` | form/page feed
+`\a` | alarm (beep)
+`\'` | single quote
+`\"` | double quote
+`\?` | ?
+`\\` | \
+
 
 	
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxODI2MTgxNiwtMjQ5NjM0MDk3LC01MD
-Q4ODA4MCwtMjc4MjM0ODU0XX0=
+eyJoaXN0b3J5IjpbLTEwNTMwMDU4NzksLTI0OTYzNDA5NywtNT
+A0ODgwODAsLTI3ODIzNDg1NF19
 -->
