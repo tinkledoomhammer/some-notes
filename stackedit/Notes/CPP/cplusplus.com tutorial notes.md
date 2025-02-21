@@ -76,10 +76,16 @@ Suffix | Type modifier
 	*	default `double`
 	*	suffix with `f` or `F` for `single`
 	*	suffix with `l` or `L` for `long double`
-*	
+*	character and string literals
+*	single quotes for char : `'a', 'b'`, etc
+*	double quotes for strings `"a", "ab"`
+*	Escape Codes
+Escape Code | Descrription
+|--|--|
+
 	
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMDU4MDMwMywtMjQ5NjM0MDk3LC01MD
+eyJoaXN0b3J5IjpbLTE5MzMxNDc4MSwtMjQ5NjM0MDk3LC01MD
 Q4ODA4MCwtMjc4MjM0ODU0XX0=
 -->
