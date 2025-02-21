@@ -136,7 +136,10 @@ two lines"
 * Arithmetic Operators
 	* `+` , `-` , `*` . `/` , `%`(modulo)
 * Compound assignment
-	* `+=` , `-=` , `*=` , `/=` , `%=` , `>>=` , `
+	* `+=` , `-=` , `*=` , `/=` , `%=` , `>>=` , `&=` , `^=` , `|=` 
+* Increment and decrement `++` and `--`
+	* `++x` (pre-increment) increases x then returns the value
+	* `x++` (post-increment) returns 
 #### Basic Input/output
 
 
@@ -164,7 +167,7 @@ two lines"
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc3Mzg5OTk1LDUyNzIwNzc0MSwtNzUwOD
-U2NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNzgyMzQ4NTRd
-fQ==
+eyJoaXN0b3J5IjpbLTE2NDQzODQyNDUsNTI3MjA3NzQxLC03NT
+A4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1
+NF19
 -->
