@@ -176,7 +176,11 @@ Level | Group | Operator | Description | Grouping|
 |"|"|`(type`) | C-style type-casting|"
 4|Pointer-to-member|`.*` `->*` | access pointer | left-to-right
 5| Arithmetic : scaling | `*` `/` `%` |multiply, divide, modulo | left-to-right
-6| Arithmetic: addition | `+` `-` |
+6| Arithmetic: addition | `+` `-` | addition, subtraction | left-to-right
+7| Bitwise shift|||left-to=right
+8|relational||comparison operators | left-to-right
+9|Equality| `==` `!=` | equality/inequality | left
+10|And
 |"|"|
 | " | " | `+` `-` | 
 
@@ -207,7 +211,7 @@ Level | Group | Operator | Description | Grouping|
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNTA3MDE3OCw1MjcyMDc3NDEsLTc1MD
-g1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4MCwtMjc4MjM0ODU0
-XX0=
+eyJoaXN0b3J5IjpbLTE0Mjc0MjU2ODMsNTI3MjA3NzQxLC03NT
+A4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1
+NF19
 -->
