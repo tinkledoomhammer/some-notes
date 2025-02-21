@@ -25,8 +25,10 @@ Character Types | char | exactly one byte, at least 8 bits
   | | `wchar_t` | can represent the largest supported char set 
 Integer types (signed) | `signed char`| same size as char
  `signed` is optional| | `signed short int` | Not smaller than `char`, at least 16 bits
- `int` is optional whe| | `signed int` | Not smaller than `short`
+ `int` is optional except in `signed int`| | `signed int` | Not smaller than `short`
+  | | `signed long int` | Not smaller than `int`, at least 32 bits
+  | | `signed long long int` |
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMDU1MDgxMF19
+eyJoaXN0b3J5IjpbMTgyODQ4Nzk0N119
 -->
