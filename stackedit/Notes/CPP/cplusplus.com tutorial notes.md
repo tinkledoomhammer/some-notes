@@ -164,7 +164,9 @@ Level | Group | Operator | Description | Grouping|
 --| --| --| --| --|
 1 | Scope | `::`| scope qualifier | left-to-right
 2 | Postifx(unary)|`++` `--` | postfix inc/decrement | Left-to-right|
-| | | `()` | functional forms | Left-to-right
+| | | `()` | functional forms | "
+|"|"|`[]`| sub
+| " | " | `+` `-` | 
 
 #### Basic Input/output
 
@@ -193,7 +195,7 @@ Level | Group | Operator | Description | Grouping|
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2Nzg3MzAzNyw1MjcyMDc3NDEsLTc1MD
+eyJoaXN0b3J5IjpbMTU0MDc2ODc0MSw1MjcyMDc3NDEsLTc1MD
 g1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4MCwtMjc4MjM0ODU0
 XX0=
 -->
