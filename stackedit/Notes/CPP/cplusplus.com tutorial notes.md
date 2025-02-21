@@ -70,10 +70,12 @@ Suffix | Type modifier
 --|--|
 `u` or `U`| `unsigned`
 `l` or `L` | `long`
-`ll` or `LL` | 
+`ll` or `LL` | `long long`
+	*	They can be combined for unsigned longs, etc
+*	Floating point
 	
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODkwMTc0NzMsLTI0OTYzNDA5NywtNT
-A0ODgwODAsLTI3ODIzNDg1NF19
+eyJoaXN0b3J5IjpbLTU5MzIwNzEwMiwtMjQ5NjM0MDk3LC01MD
+Q4ODA4MCwtMjc4MjM0ODU0XX0=
 -->
