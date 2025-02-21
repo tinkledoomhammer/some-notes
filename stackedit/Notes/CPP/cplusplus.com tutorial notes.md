@@ -19,7 +19,7 @@ alignas, alignof, and, and_eq, asm, auto, bitand, bitor, bool, break, case, catc
 
 Group | type names* | Notes on size/precision
 ---|---|---
-Character Types | char | exactly one byte, at least 8 bits
+**Character Types** | char | exactly one byte, at least 8 bits
   || `char16_t` | not smaller than char, at least 16 bits
   || `char32_t` | not smaller than `char16_t`. At least 32 bits
   | | `wchar_t` | can represent the largest supported char set 
@@ -29,12 +29,19 @@ Character Types | char | exactly one byte, at least 8 bits
   | | `signed long int` | Not smaller than `int`, at least 32 bits
   | | `signed long long int` | Not smaller than long. At least 64 bits
   **Integer Types** | `unsigned char` | same as their signed counterpart
-  (unsigned) | `unsigned short int` |..
+  **(unsigned)** | `unsigned short int` |..
   `int` is optional except for `unsigned int` | `unsigned long int`|
   | | `unsigned long int` |
   | | `unsigned long long int` | ..
-  
+  **Floating-point types** | `float` |
+  | | `double` | precision not less than float
+  | | `long double` | precision not less than double
+
+
+
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzQ0NTk2MTFdfQ==
+eyJoaXN0b3J5IjpbNDg3NjE3OTYwXX0=
 -->
