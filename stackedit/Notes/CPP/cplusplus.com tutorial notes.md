@@ -114,11 +114,13 @@ two lines"
 	* `u8` stored in the executable using UTF-8
 	* `R` the string literal is raw, ignoring escape sequences
 		* raw strings are prefixed snd suffixed with a custom sequence
-		* `R"(string with \backslash)
+		* `R"(string with \backslash)"` 
+		* `R"sdg2&&^%dw(string with \backslash)sdg2&&^%"`
+		* `"string with \\backslash"`
 	
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYyMjExODg0LC03NTA4NTY2OTMsLTI0OT
-YzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1NF19
+eyJoaXN0b3J5IjpbLTE5MTYxMjAwNzIsLTc1MDg1NjY5MywtMj
+Q5NjM0MDk3LC01MDQ4ODA4MCwtMjc4MjM0ODU0XX0=
 -->
