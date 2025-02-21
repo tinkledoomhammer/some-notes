@@ -27,8 +27,11 @@ Integer types (signed) | `signed char`| same size as char
  `signed` is optional| | `signed short int` | Not smaller than `char`, at least 16 bits
  `int` is optional except in `signed int`| | `signed int` | Not smaller than `short`
   | | `signed long int` | Not smaller than `int`, at least 32 bits
-  | | `signed long long int` |
+  | | `signed long long int` | Not smaller than long. At least 64 bits
+  Integer Types | `unsigned char` | same as their signed counterpart
+  (unsigned) | `unsigned short int` |..
+  `int` is optional except for `u
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyODQ4Nzk0N119
+eyJoaXN0b3J5IjpbLTYxMTUwNDQ3Nl19
 -->
