@@ -104,9 +104,12 @@ Escape Code | Description
 x = "string expressed in\
 two lines"
 ```
-	
+
+
+		* Does not include the newline in the string
+	* 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTA3MTU0NjksLTI0OTYzNDA5NywtNT
-A0ODgwODAsLTI3ODIzNDg1NF19
+eyJoaXN0b3J5IjpbMTEyNDY2NjM0OSwtMjQ5NjM0MDk3LC01MD
+Q4ODA4MCwtMjc4MjM0ODU0XX0=
 -->
