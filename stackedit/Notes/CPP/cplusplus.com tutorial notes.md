@@ -60,9 +60,10 @@ int main(){
 	std::string myString = "This is a string"
 }
 ```
-
+### Constants
+#### Literals
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0MTkzNTU2NywtNTA0ODgwODAsLTI3OD
+eyJoaXN0b3J5IjpbLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3OD
 IzNDg1NF19
 -->
