@@ -97,11 +97,16 @@ Escape Code | Description
 `\\` | \
 
 * Strings are null terminated
-* They are automatically concatenated, ignoring white space between quotes:
-	* `"a str"  "ing"` is the same a
+* They are automatically concatenated, ignoring white space outside quotes:
+	* `"a str"  "ing"` is the same as `"a string"`
+* lines can be concatenated with `\`:
+```c++
+x = "string expressed in\
+two lines"
+```
 	
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzYxMDQ3MjY4LC0yNDk2MzQwOTcsLTUwND
-g4MDgwLC0yNzgyMzQ4NTRdfQ==
+eyJoaXN0b3J5IjpbLTEzOTA3MTU0NjksLTI0OTYzNDA5NywtNT
+A0ODgwODAsLTI3ODIzNDg1NF19
 -->
