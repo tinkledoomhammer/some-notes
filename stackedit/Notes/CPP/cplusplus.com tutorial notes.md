@@ -23,15 +23,18 @@ Character Types | char | exactly one byte, at least 8 bits
   || `char16_t` | not smaller than char, at least 16 bits
   || `char32_t` | not smaller than `char16_t`. At least 32 bits
   | | `wchar_t` | can represent the largest supported char set 
-Integer types (signed) | `signed char`| same size as char
+**Integer types (signed)** | `signed char`| same size as char
  `signed` is optional| | `signed short int` | Not smaller than `char`, at least 16 bits
  `int` is optional except in `signed int`| | `signed int` | Not smaller than `short`
   | | `signed long int` | Not smaller than `int`, at least 32 bits
   | | `signed long long int` | Not smaller than long. At least 64 bits
-  Integer Types | `unsigned char` | same as their signed counterpart
+  **Integer Types** | `unsigned char` | same as their signed counterpart
   (unsigned) | `unsigned short int` |..
-  `int` is optional except for `u
+  `int` is optional except for `unsigned int` | `unsigned long int`|
+  | | `unsigned long int` |
+  | | `unsigned long long int` | ..
+  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMTUwNDQ3Nl19
+eyJoaXN0b3J5IjpbLTE2NzQ0NTk2MTFdfQ==
 -->
