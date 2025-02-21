@@ -62,8 +62,15 @@ int main(){
 ```
 ### Constants
 #### Literals
+* Integers
+	* Default to `int`
+	* can be changed with suffexes:
+	suffix|Type modifier
+	|--|--|
+	|`u` or `U`
+	
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3OD
-IzNDg1NF19
+eyJoaXN0b3J5IjpbMjEyMDU2NjQwNiwtMjQ5NjM0MDk3LC01MD
+Q4ODA4MCwtMjc4MjM0ODU0XX0=
 -->
