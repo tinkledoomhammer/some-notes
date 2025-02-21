@@ -48,10 +48,12 @@ Null Pointer | `decltype(nullptr)` | or assign `0` to a pointer0
 	* "c-like" : ` int x = 0;`
 	* "constructor initialization" ` int x (0);`
 	* "uniform initialization" `int x {0};`
-
+* Types can be inferred at compile time :
+	* `auto foo = 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNDg4MDgwLC0yNzgyMzQ4NTRdfQ==
+eyJoaXN0b3J5IjpbLTE2MTUyMTQwNjIsLTUwNDg4MDgwLC0yNz
+gyMzQ4NTRdfQ==
 -->
