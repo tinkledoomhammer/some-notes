@@ -139,7 +139,11 @@ two lines"
 	* `+=` , `-=` , `*=` , `/=` , `%=` , `>>=` , `&=` , `^=` , `|=` 
 * Increment and decrement `++` and `--`
 	* `++x` (pre-increment) increases x then returns the value
-	* `x++` (post-increment) returns 
+	* `x++` (post-increment) evaluates to the value of x before it was increased
+* Relational and comparison operators
+	* `==` , `!=` , `>` , `<` , `<=` , `>=`
+* Logical Operators
+	* `!` , `
 #### Basic Input/output
 
 
@@ -167,7 +171,7 @@ two lines"
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDQzODQyNDUsNTI3MjA3NzQxLC03NT
+eyJoaXN0b3J5IjpbLTE3NDc3NjA5MjAsNTI3MjA3NzQxLC03NT
 A4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1
 NF19
 -->
