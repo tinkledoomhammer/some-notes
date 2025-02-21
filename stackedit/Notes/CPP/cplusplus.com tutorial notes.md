@@ -172,7 +172,10 @@ Level | Group | Operator | Description | Grouping|
 |"|"|`+` `-`| unary prefix|"
 |"|"|`&` `*` | reference / dereference
 |"|"|`new` `delete` | allocation / deallocation|"
-|"|"|`
+|"|"|`sizeof` | "parameter pack" | "
+|"|"|`(type`) | C-style type-casting|"
+4|Pointer-to-member|`.*` `->*` | access pointer | left-
+|"|"|
 | " | " | `+` `-` | 
 
 #### Basic Input/output
@@ -202,7 +205,7 @@ Level | Group | Operator | Description | Grouping|
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk5NzYzNzI1LDUyNzIwNzc0MSwtNzUwOD
-U2NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNzgyMzQ4NTRd
-fQ==
+eyJoaXN0b3J5IjpbMjExNjE4NzQwNSw1MjcyMDc3NDEsLTc1MD
+g1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4MCwtMjc4MjM0ODU0
+XX0=
 -->
