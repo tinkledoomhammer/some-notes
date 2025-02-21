@@ -153,6 +153,11 @@ two lines"
 * Bitwise operators
 	* `&` , `|` , `^`(xor) , `~`(not) , `<<` , `>>` 
 * Explicit type casting operator
+	* c style: `i = (int) f`
+	* new style : ` i = int(f)`
+* sizeof
+	* `x = sizeof (type)`
+	* can be
 #### Basic Input/output
 
 
@@ -180,7 +185,7 @@ two lines"
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMTM2MTIzNiw1MjcyMDc3NDEsLTc1MD
-g1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4MCwtMjc4MjM0ODU0
-XX0=
+eyJoaXN0b3J5IjpbLTIxMDYwMzE0ODIsNTI3MjA3NzQxLC03NT
+A4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1
+NF19
 -->
