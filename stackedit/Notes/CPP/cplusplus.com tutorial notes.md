@@ -117,10 +117,14 @@ two lines"
 		* `R"(string with \backslash)"` 
 		* `R"sdg2&&^%dw(string with \backslash)sdg2&&^%"`
 		* `"string with \\backslash"`
+* Other LIterals
+	* `true` `false` `nullptr`
+#### Typed Constant expressions
+
 	
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTYxMjAwNzIsLTc1MDg1NjY5MywtMj
-Q5NjM0MDk3LC01MDQ4ODA4MCwtMjc4MjM0ODU0XX0=
+eyJoaXN0b3J5IjpbNTI3MjA3NzQxLC03NTA4NTY2OTMsLTI0OT
+YzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1NF19
 -->
