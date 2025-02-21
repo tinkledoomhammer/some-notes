@@ -131,7 +131,8 @@ two lines"
 * `replacement` ends at the end of the line
 
 ### Operators
-
+* Assignment `=` 
+	* 
 #### Basic Input/output
 
 
@@ -159,7 +160,7 @@ two lines"
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2ODE4NTE4OCw1MjcyMDc3NDEsLTc1MD
-g1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4MCwtMjc4MjM0ODU0
-XX0=
+eyJoaXN0b3J5IjpbLTEwODI3MTQyNjQsNTI3MjA3NzQxLC03NT
+A4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1
+NF19
 -->
