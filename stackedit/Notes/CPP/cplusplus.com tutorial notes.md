@@ -193,7 +193,7 @@ Level | Group | Operator | Description | Grouping|
 
 
 
-#### Basic Input/output
+### Basic Input/output
 
 
 ## Program Structure
@@ -220,7 +220,7 @@ Level | Group | Operator | Description | Grouping|
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjYwNjI5MTUsNTI3MjA3NzQxLC03NT
-A4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1
-NF19
+eyJoaXN0b3J5IjpbMzkzNTI5MjY4LC0xNDI2MDYyOTE1LDUyNz
+IwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgw
+LC0yNzgyMzQ4NTRdfQ==
 -->
