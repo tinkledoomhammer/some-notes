@@ -36,6 +36,9 @@ Group | type names* | Notes on size/precision
   **Floating-point types** | `float` |
   | | `double` | precision not less than float
   | | `long double` | precision not less than double
+** Others ** | `bool` |
+| | `void` | no storage
+Null Pointer | `decltype(nullptr)` | or assign `0` to a pointer0
 
 
 
@@ -43,5 +46,5 @@ Group | type names* | Notes on size/precision
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg3NjE3OTYwXX0=
+eyJoaXN0b3J5IjpbLTI3ODIzNDg1NF19
 -->
