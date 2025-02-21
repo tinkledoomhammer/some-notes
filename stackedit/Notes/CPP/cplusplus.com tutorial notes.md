@@ -52,10 +52,17 @@ Null Pointer | `decltype(nullptr)` | or assign `0` to a pointer0
 	* `auto foo = 0;` Will use the type of the initializer value as the type of the variable
 	* `decltype(foo) bar` Uses the type of foo as the type of bar
 
+* String: A compound type
+```c++
+#include <string>
 
+int main(){
+	std::string myString = "This is a string"
+}
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3NTYzMjAwOCwtNTA0ODgwODAsLTI3OD
+eyJoaXN0b3J5IjpbMTU0MTkzNTU2NywtNTA0ODgwODAsLTI3OD
 IzNDg1NF19
 -->
