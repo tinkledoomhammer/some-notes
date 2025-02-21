@@ -65,12 +65,15 @@ int main(){
 * Integers
 	* Default to `int`
 	* can be changed with suffexes:
-	suffix|Type modifier
-	|--|--|
-	|`u` or `U`
+
+Suffix | Type modifier
+--|--|
+`u` or `U`| `unsigned`
+`l` or `L` | `long`
+`ll` or `LL` | 
 	
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMDU2NjQwNiwtMjQ5NjM0MDk3LC01MD
-Q4ODA4MCwtMjc4MjM0ODU0XX0=
+eyJoaXN0b3J5IjpbLTE5ODkwMTc0NzMsLTI0OTYzNDA5NywtNT
+A0ODgwODAsLTI3ODIzNDg1NF19
 -->
