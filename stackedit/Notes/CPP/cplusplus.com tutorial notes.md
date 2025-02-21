@@ -184,7 +184,9 @@ Level | Group | Operator | Description | Grouping|
 11|Exclusive or|`^`|bitwise|left
 12|Inclusive OR|`|`|bitwise|left
 13|conjunction|`&&`|logical and | left-to-right
-14|
+14|Disjunction|`||`|logical or | left
+15|Assignment-level-expressions||assignment/ compound assignment| Right-to-left
+16|Sequencing|`?`|com
 |"|"|
 | " | " | `+` `-` | 
 
@@ -215,7 +217,7 @@ Level | Group | Operator | Description | Grouping|
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA2NTY5NTIwLDUyNzIwNzc0MSwtNzUwOD
-U2NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNzgyMzQ4NTRd
-fQ==
+eyJoaXN0b3J5IjpbMTI0NDIxMjE0MCw1MjcyMDc3NDEsLTc1MD
+g1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4MCwtMjc4MjM0ODU0
+XX0=
 -->
