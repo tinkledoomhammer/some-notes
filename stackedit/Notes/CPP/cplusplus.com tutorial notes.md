@@ -80,12 +80,19 @@ Suffix | Type modifier
 *	single quotes for char : `'a', 'b'`, etc
 *	double quotes for strings `"a", "ab"`
 *	Escape Codes
-Escape Code | Descrription
-|--|--|
+	
+Escape Code | Description
+--|--|
+`\n` | newline
+`\r` | Carriage return
+`\t` | Tab
+`\v` | Vertical tab
+`\b` | Backspace
+`\f`
 
 	
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzMxNDc4MSwtMjQ5NjM0MDk3LC01MD
+eyJoaXN0b3J5IjpbMTkxODI2MTgxNiwtMjQ5NjM0MDk3LC01MD
 Q4ODA4MCwtMjc4MjM0ODU0XX0=
 -->
