@@ -119,12 +119,20 @@ two lines"
 		* `"string with \\backslash"`
 * Other LIterals
 	* `true` `false` `nullptr`
+
 #### Typed Constant expressions
+
+* the `const` keyword in the variable decoration
+* local constants can be initialized using variables
+
+#### Preprocessor definitions
+`#define identifier replacement`
 
 	
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI3MjA3NzQxLC03NTA4NTY2OTMsLTI0OT
-YzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1NF19
+eyJoaXN0b3J5IjpbLTE5NTc1MDk0NzIsNTI3MjA3NzQxLC03NT
+A4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1
+NF19
 -->
