@@ -134,7 +134,9 @@ two lines"
 * Assignment `=` 
 	* `x = y = z = 5;` is allowed (i.e. it is an expression)
 * Arithmetic Operators
-	* 
+	* `+` , `-` , `*` . `/` , `%`(modulo)
+* Compound assignment
+	* `+=` , `-=` , `*=` , `/=` , `%=` , `>>=` , `
 #### Basic Input/output
 
 
@@ -162,7 +164,7 @@ two lines"
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTA4ODIxODAsNTI3MjA3NzQxLC03NT
-A4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1
-NF19
+eyJoaXN0b3J5IjpbMzc3Mzg5OTk1LDUyNzIwNzc0MSwtNzUwOD
+U2NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNzgyMzQ4NTRd
+fQ==
 -->
