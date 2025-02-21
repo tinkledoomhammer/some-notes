@@ -137,12 +137,23 @@ two lines"
 
 ## Program Structure
 
+### Control Structures
+### Functions
+### Overloads and templates
+### Name Visibility
 
+## Compound data types
+### Arrays
+### Character sequences
+### Pointers
+### Dynamic Memory
+### Data structures
+### Other d
 	
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjU1MjkzNDYsNTI3MjA3NzQxLC03NT
+eyJoaXN0b3J5IjpbLTEyNTAwNTE2MDEsNTI3MjA3NzQxLC03NT
 A4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1
 NF19
 -->
