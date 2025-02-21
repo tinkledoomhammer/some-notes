@@ -107,10 +107,15 @@ two lines"
 
 
 * Does not include the newline in the string
+* Prefixes can specify character types
+	* `u` `char16_t`
+	* `U` `char32_t`
+	* `L` `wchar_t`
+	* `u8` sto
 	
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MDg1NjY5MywtMjQ5NjM0MDk3LC01MD
-Q4ODA4MCwtMjc4MjM0ODU0XX0=
+eyJoaXN0b3J5IjpbLTE0OTMxODAzMDksLTc1MDg1NjY5MywtMj
+Q5NjM0MDk3LC01MDQ4ODA4MCwtMjc4MjM0ODU0XX0=
 -->
