@@ -49,11 +49,13 @@ Null Pointer | `decltype(nullptr)` | or assign `0` to a pointer0
 	* "constructor initialization" ` int x (0);`
 	* "uniform initialization" `int x {0};`
 * Types can be inferred at compile time :
-	* `auto foo = 
+	* `auto foo = 0;` Will use the type of the initializer value as the type of the variable
+	* `decltype(foo) bar` Uses the type of foo as the type of bar
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTUyMTQwNjIsLTUwNDg4MDgwLC0yNz
-gyMzQ4NTRdfQ==
+eyJoaXN0b3J5IjpbMTc3NTYzMjAwOCwtNTA0ODgwODAsLTI3OD
+IzNDg1NF19
 -->
