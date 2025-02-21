@@ -148,12 +148,18 @@ two lines"
 ### Pointers
 ### Dynamic Memory
 ### Data structures
-### Other d
+### Other data types
+
+## Classes
+## Other Language Features
+## C++ Standard Library
+### Input/Output with files
+
 	
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTAwNTE2MDEsNTI3MjA3NzQxLC03NT
-A4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1
-NF19
+eyJoaXN0b3J5IjpbMTg2ODE4NTE4OCw1MjcyMDc3NDEsLTc1MD
+g1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4MCwtMjc4MjM0ODU0
+XX0=
 -->
