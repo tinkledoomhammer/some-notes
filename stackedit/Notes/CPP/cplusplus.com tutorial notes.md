@@ -186,9 +186,12 @@ Level | Group | Operator | Description | Grouping|
 13|conjunction|`&&`|logical and | left-to-right
 14|Disjunction|`||`|logical or | left
 15|Assignment-level-expressions||assignment/ compound assignment| Right-to-left
-16|Sequencing|`?`|com
-|"|"|
-| " | " | `+` `-` | 
+|"|"|`?:` | conditional operator | "
+16|Sequencing|`?`|coma separator | left-to-right
+
+
+
+
 
 #### Basic Input/output
 
@@ -217,7 +220,7 @@ Level | Group | Operator | Description | Grouping|
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0NDIxMjE0MCw1MjcyMDc3NDEsLTc1MD
-g1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4MCwtMjc4MjM0ODU0
-XX0=
+eyJoaXN0b3J5IjpbLTE0MjYwNjI5MTUsNTI3MjA3NzQxLC03NT
+A4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1
+NF19
 -->
