@@ -180,7 +180,11 @@ Level | Group | Operator | Description | Grouping|
 7| Bitwise shift|||left-to=right
 8|relational||comparison operators | left-to-right
 9|Equality| `==` `!=` | equality/inequality | left
-10|And
+10|And|`&`| bitwise AND |left
+11|Exclusive or|`^`|bitwise|left
+12|Inclusive OR|`|`|bitwise|left
+13|conjunction|`&&`|logical and | left-to-right
+14|
 |"|"|
 | " | " | `+` `-` | 
 
@@ -211,7 +215,7 @@ Level | Group | Operator | Description | Grouping|
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mjc0MjU2ODMsNTI3MjA3NzQxLC03NT
-A4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1
-NF19
+eyJoaXN0b3J5IjpbNjA2NTY5NTIwLDUyNzIwNzc0MSwtNzUwOD
+U2NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNzgyMzQ4NTRd
+fQ==
 -->
