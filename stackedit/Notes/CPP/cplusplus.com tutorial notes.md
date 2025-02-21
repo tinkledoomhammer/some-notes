@@ -132,6 +132,8 @@ two lines"
 
 ### Operators
 * Assignment `=` 
+	* `x = y = z = 5;` is allowed (i.e. it is an expression)
+* Arithmetic Operators
 	* 
 #### Basic Input/output
 
@@ -160,7 +162,7 @@ two lines"
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODI3MTQyNjQsNTI3MjA3NzQxLC03NT
+eyJoaXN0b3J5IjpbLTEwOTA4ODIxODAsNTI3MjA3NzQxLC03NT
 A4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1
 NF19
 -->
