@@ -143,7 +143,12 @@ two lines"
 * Relational and comparison operators
 	* `==` , `!=` , `>` , `<` , `<=` , `>=`
 * Logical Operators
-	* `!` , `
+	* `!` , `||` , `&&`
+	* short circuit evaluation
+* Conditional ternary operator `? :`
+	* `condition ? result_true : result_false`
+* Comma operator `,`
+	* 
 #### Basic Input/output
 
 
@@ -171,7 +176,7 @@ two lines"
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDc3NjA5MjAsNTI3MjA3NzQxLC03NT
-A4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1
-NF19
+eyJoaXN0b3J5IjpbNTQ2NzExOTIzLDUyNzIwNzc0MSwtNzUwOD
+U2NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNzgyMzQ4NTRd
+fQ==
 -->
