@@ -127,12 +127,22 @@ two lines"
 
 #### Preprocessor definitions
 `#define identifier replacement`
+* Is not a statement and does not need a semicolon
+* `replacement` ends at the end of the line
+
+### Operators
+
+#### Basic Input/output
+
+
+## Program Structure
+
 
 	
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTc1MDk0NzIsNTI3MjA3NzQxLC03NT
+eyJoaXN0b3J5IjpbLTE1MjU1MjkzNDYsNTI3MjA3NzQxLC03NT
 A4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1
 NF19
 -->
