@@ -174,7 +174,9 @@ Level | Group | Operator | Description | Grouping|
 |"|"|`new` `delete` | allocation / deallocation|"
 |"|"|`sizeof` | "parameter pack" | "
 |"|"|`(type`) | C-style type-casting|"
-4|Pointer-to-member|`.*` `->*` | access pointer | left-
+4|Pointer-to-member|`.*` `->*` | access pointer | left-to-right
+5| Arithmetic : scaling | `*` `/` `%` |multiply, divide, modulo | left-to-right
+6| Arithmetic: addition | `+` `-` |
 |"|"|
 | " | " | `+` `-` | 
 
@@ -205,7 +207,7 @@ Level | Group | Operator | Description | Grouping|
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNjE4NzQwNSw1MjcyMDc3NDEsLTc1MD
+eyJoaXN0b3J5IjpbMTQzNTA3MDE3OCw1MjcyMDc3NDEsLTc1MD
 g1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4MCwtMjc4MjM0ODU0
 XX0=
 -->
