@@ -73,9 +73,13 @@ Suffix | Type modifier
 `ll` or `LL` | `long long`
 	*	They can be combined for unsigned longs, etc
 *	Floating point
+	*	default `double`
+	*	suffix with `f` or `F` for `single`
+	*	suffix with `l` or `L` for `long double`
+*	
 	
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MzIwNzEwMiwtMjQ5NjM0MDk3LC01MD
+eyJoaXN0b3J5IjpbLTYxMDU4MDMwMywtMjQ5NjM0MDk3LC01MD
 Q4ODA4MCwtMjc4MjM0ODU0XX0=
 -->
