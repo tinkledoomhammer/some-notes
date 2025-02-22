@@ -290,7 +290,12 @@ switch (expression ) {
   
 
 ### Overloads and templates
-
+* Multiple functions with the same name can exist
+	* They must have different parameter types
+	* They can also have different return types
+	* Functions that differ only by return type are not valid overloads
+* Function Templates:
+	* `template <class ClassN
 ### Name Visibility
 
 ## Compound data types
@@ -310,8 +315,8 @@ switch (expression ) {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc1NTIxNzY1LC02MTk0NzgwNTgsLTIwNj
-U4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYyOTE1LDUyNzIwNzc0
-MSwtNzUwODU2NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNz
-gyMzQ4NTRdfQ==
+eyJoaXN0b3J5IjpbLTEzMjgxNzA0MzIsLTYxOTQ3ODA1OCwtMj
+A2NTg1MzU5MywzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNTI3MjA3
+NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLT
+I3ODIzNDg1NF19
 -->
