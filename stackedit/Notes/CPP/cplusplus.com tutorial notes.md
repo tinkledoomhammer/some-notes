@@ -220,6 +220,10 @@ Level | Group | Operator | Description | Grouping|
 ## Program Structure
 
 ### Control Structures
+#### blocks `{}`
+* when the syntax calls for a **statement** 
+#### `if` `else` 
+
 ### Functions
 ### Overloads and templates
 ### Name Visibility
@@ -241,7 +245,7 @@ Level | Group | Operator | Description | Grouping|
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MDYwODEzMSwzOTM1MjkyNjgsLTE0Mj
+eyJoaXN0b3J5IjpbMTE0ODg5MzM4OSwzOTM1MjkyNjgsLTE0Mj
 YwNjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5
 NywtNTA0ODgwODAsLTI3ODIzNDg1NF19
 -->
