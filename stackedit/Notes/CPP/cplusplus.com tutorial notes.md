@@ -279,6 +279,7 @@ switch (expression ) {
 *`inline` before the return type is a hint to the compiler that it should inline the function
 * functions can be declared before they are defined
 	* replace the `{ statements }` with `;`
+	* parameter names are optional in this case, but should be included for clarity
 
 #### Arguments passed by value vs by reference
 * by default all arguments are passed by value (ie. copied)
@@ -286,13 +287,10 @@ switch (expression ) {
 * reference arguments are identified with `&` after the type:
 	* `int& a`
 * `const` before the type indicates that reference params will not be altered by the function
-
-
-* 
-
   
 
 ### Overloads and templates
+
 ### Name Visibility
 
 ## Compound data types
@@ -312,7 +310,7 @@ switch (expression ) {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk1MjU5NTMzLC02MTk0NzgwNTgsLTIwNj
+eyJoaXN0b3J5IjpbNjc1NTIxNzY1LC02MTk0NzgwNTgsLTIwNj
 U4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYyOTE1LDUyNzIwNzc0
 MSwtNzUwODU2NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNz
 gyMzQ4NTRdfQ==
