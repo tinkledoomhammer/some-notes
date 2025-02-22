@@ -276,7 +276,8 @@ switch (expression ) {
 			* `EXIT_SUCCESS`
 			* `EXIT_FAILURE`
 #### Arguments passed by value vs by reference
-
+* by default all arguments are passed by value (ie. copied)
+* arguments passed by reference are an alias to the variable th
 
 ### Overloads and templates
 ### Name Visibility
@@ -298,8 +299,8 @@ switch (expression ) {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NTA0NzkyOSwtNjE5NDc4MDU4LC0yMD
-Y1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2MjkxNSw1MjcyMDc3
-NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4MCwtMj
-c4MjM0ODU0XX0=
+eyJoaXN0b3J5IjpbLTIwMzg5MzgyMzYsLTYxOTQ3ODA1OCwtMj
+A2NTg1MzU5MywzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNTI3MjA3
+NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLT
+I3ODIzNDg1NF19
 -->
