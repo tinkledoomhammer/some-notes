@@ -280,6 +280,7 @@ switch (expression ) {
 * arguments passed by reference are an alias to the variable that was passed
 * reference arguments are identified with `&` after the type:
 	* `int& a`
+* `const` before the type indicates that reference params will not be altered by the function
 * 
 
 ### Overloads and templates
@@ -302,8 +303,8 @@ switch (expression ) {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDQ1NzAwMTcsLTYxOTQ3ODA1OCwtMj
-A2NTg1MzU5MywzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNTI3MjA3
-NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLT
-I3ODIzNDg1NF19
+eyJoaXN0b3J5IjpbLTM0OTU1NTM3OSwtNjE5NDc4MDU4LC0yMD
+Y1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2MjkxNSw1MjcyMDc3
+NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4MCwtMj
+c4MjM0ODU0XX0=
 -->
