@@ -275,6 +275,8 @@ switch (expression ) {
 		* `<cstdlib>` defines some constants:
 			* `EXIT_SUCCESS`
 			* `EXIT_FAILURE`
+`inline` before the return type is a hint to the compiler that it should inline the function
+
 #### Arguments passed by value vs by reference
 * by default all arguments are passed by value (ie. copied)
 * arguments passed by reference are an alias to the variable that was passed
@@ -282,9 +284,11 @@ switch (expression ) {
 	* `int& a`
 * `const` before the type indicates that reference params will not be altered by the function
 
-`inline` before the return type is a hint to the compiler that it should inline the function
+#### Default values in parameters
+* specified by `= val` at the end of the parameter declaration
+* 
 
- 
+  
 
 ### Overloads and templates
 ### Name Visibility
@@ -306,8 +310,8 @@ switch (expression ) {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc4MDE2ODY4LC02MTk0NzgwNTgsLTIwNj
-U4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYyOTE1LDUyNzIwNzc0
-MSwtNzUwODU2NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNz
-gyMzQ4NTRdfQ==
+eyJoaXN0b3J5IjpbLTQxOTA3OTgyMywtNjE5NDc4MDU4LC0yMD
+Y1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2MjkxNSw1MjcyMDc3
+NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4MCwtMj
+c4MjM0ODU0XX0=
 -->
