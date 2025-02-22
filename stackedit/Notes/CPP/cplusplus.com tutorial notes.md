@@ -307,7 +307,8 @@ T fixed_multiply(T val){
 	return val*n
 }
 int main(){
-	std::cout << fixed_multiply<int,2>(10)
+	std::cout << fixed_multiply<int,2>(10) << endl;
+	...
 ```
 ### Name Visibility
 
@@ -328,8 +329,8 @@ int main(){
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5NzEzMTIzLC02MTk0NzgwNTgsLTIwNj
-U4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYyOTE1LDUyNzIwNzc0
-MSwtNzUwODU2NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNz
-gyMzQ4NTRdfQ==
+eyJoaXN0b3J5IjpbMTg4OTg3NTMxOSwtNjE5NDc4MDU4LC0yMD
+Y1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2MjkxNSw1MjcyMDc3
+NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4MCwtMj
+c4MjM0ODU0XX0=
 -->
