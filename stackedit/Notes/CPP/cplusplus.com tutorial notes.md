@@ -268,6 +268,7 @@ switch (expression ) {
 ### Functions
 `return_type func_name (param1, param2, ...) { statements }`
 * `param` 1, 2, etc, are `param_type param_name` 
+	* adding `=val` to the end of the param declaration allows it to be omitted when calling the function
 * `return val` is required if `return_type` is not `void`
 * `void` can also be supplied as the parameter list for functions that take no parameters
 * `main()` returns an `int`
@@ -275,7 +276,9 @@ switch (expression ) {
 		* `<cstdlib>` defines some constants:
 			* `EXIT_SUCCESS`
 			* `EXIT_FAILURE`
-`inline` before the return type is a hint to the compiler that it should inline the function
+*`inline` before the return type is a hint to the compiler that it should inline the function
+* functions can be declared before they are defined
+	* replace the `{ statements }` with `;`
 
 #### Arguments passed by value vs by reference
 * by default all arguments are passed by value (ie. copied)
@@ -284,8 +287,7 @@ switch (expression ) {
 	* `int& a`
 * `const` before the type indicates that reference params will not be altered by the function
 
-#### Default values in parameters
-* specified by `= val` at the end of the parameter declaration
+
 * 
 
   
@@ -310,8 +312,8 @@ switch (expression ) {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxOTA3OTgyMywtNjE5NDc4MDU4LC0yMD
-Y1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2MjkxNSw1MjcyMDc3
-NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4MCwtMj
-c4MjM0ODU0XX0=
+eyJoaXN0b3J5IjpbNTk1MjU5NTMzLC02MTk0NzgwNTgsLTIwNj
+U4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYyOTE1LDUyNzIwNzc0
+MSwtNzUwODU2NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNz
+gyMzQ4NTRdfQ==
 -->
