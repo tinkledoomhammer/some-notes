@@ -300,7 +300,7 @@ switch (expression ) {
 	* `typename` can be used instead of class
 	* invoke the function : `funcName<type>(args);`
 	* `<type>` is optional when the type can be  inferred from the args
-	* 
+* Non-type arguments
 ### Name Visibility
 
 ## Compound data types
@@ -320,8 +320,8 @@ switch (expression ) {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyNTMxNzc1NSwtNjE5NDc4MDU4LC0yMD
-Y1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2MjkxNSw1MjcyMDc3
-NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4MCwtMj
-c4MjM0ODU0XX0=
+eyJoaXN0b3J5IjpbNzA2NTcxMzk1LC02MTk0NzgwNTgsLTIwNj
+U4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYyOTE1LDUyNzIwNzc0
+MSwtNzUwODU2NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNz
+gyMzQ4NTRdfQ==
 -->
