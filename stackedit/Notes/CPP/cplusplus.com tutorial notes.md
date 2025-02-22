@@ -251,8 +251,12 @@ switch (expression ) {
 		final group of statements;
 }
 ```
-* if `break` is om
+* if `break` is omitted, then execution will fall through to the next case
+*  each case must be defined by a *constant* expression
+
 ### Functions
+
+
 ### Overloads and templates
 ### Name Visibility
 
@@ -273,7 +277,7 @@ switch (expression ) {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgxMjM5MDM1LDM5MzUyOTI2OCwtMTQyNj
-A2MjkxNSw1MjcyMDc3NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3
-LC01MDQ4ODA4MCwtMjc4MjM0ODU0XX0=
+eyJoaXN0b3J5IjpbLTIwNjU4NTM1OTMsMzkzNTI5MjY4LC0xND
+I2MDYyOTE1LDUyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQw
+OTcsLTUwNDg4MDgwLC0yNzgyMzQ4NTRdfQ==
 -->
