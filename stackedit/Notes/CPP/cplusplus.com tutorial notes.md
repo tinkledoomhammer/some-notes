@@ -231,8 +231,9 @@ Level | Group | Operator | Description | Grouping|
 * `do statement while (expression)`
 * `for (initialization ; condition ; increase) statement`
 	* init, increase, and condition are all **expressions**
+		* any/all of them can be compound (`,` separated lists) expressions
 	*  The order is Init -> condition -> statement -> increase  -> condition
-	* compound express
+* `for ( declaration : range ) statement;`
 ### Functions
 ### Overloads and templates
 ### Name Visibility
@@ -254,7 +255,7 @@ Level | Group | Operator | Description | Grouping|
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxNDEwMzU1MiwzOTM1MjkyNjgsLTE0Mj
-YwNjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5
-NywtNTA0ODgwODAsLTI3ODIzNDg1NF19
+eyJoaXN0b3J5IjpbMTI0MzUyMjA1LDM5MzUyOTI2OCwtMTQyNj
+A2MjkxNSw1MjcyMDc3NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3
+LC01MDQ4ODA4MCwtMjc4MjM0ODU0XX0=
 -->
