@@ -197,11 +197,13 @@ Level | Group | Operator | Description | Grouping|
 #### Streams
 * A program can insert or extract characters sequentially
 * standard streams : `cin` `cout` `clog` `cerr`
-* `cout`
-	* i.e. `cout << "string"` 
+* `std::cout` (`<iostream>`)
+	* i.e. `std::cout << "string"` 
 	* `<<` is called the insertion operator
 	* `<<`  can be chained
-	* 
+	* It accepts a variety of types
+	* `std::endl` sends `\n` and flushes the output buffer
+* `std::c
 
 ## Program Structure
 
@@ -227,7 +229,7 @@ Level | Group | Operator | Description | Grouping|
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyNDc1NDg4LDM5MzUyOTI2OCwtMTQyNj
-A2MjkxNSw1MjcyMDc3NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3
-LC01MDQ4ODA4MCwtMjc4MjM0ODU0XX0=
+eyJoaXN0b3J5IjpbMTg4ODAyNzgxMiwzOTM1MjkyNjgsLTE0Mj
+YwNjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5
+NywtNTA0ODgwODAsLTI3ODIzNDg1NF19
 -->
