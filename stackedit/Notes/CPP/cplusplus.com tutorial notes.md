@@ -236,7 +236,10 @@ Level | Group | Operator | Description | Grouping|
 * `for ( declaration : range ) statement;`
 	* `range` can be any type supporting the functions `begin()` and `end()`
 		* this includes arrays and strings
-	* 
+* Jump statements
+	* `break` leaves a loop
+	* `continue` moves to the start of the next iteration (the condition?)
+	* `goto` 
 ### Functions
 ### Overloads and templates
 ### Name Visibility
@@ -258,7 +261,7 @@ Level | Group | Operator | Description | Grouping|
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzYxMTUyOTksMzkzNTI5MjY4LC0xND
-I2MDYyOTE1LDUyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQw
-OTcsLTUwNDg4MDgwLC0yNzgyMzQ4NTRdfQ==
+eyJoaXN0b3J5IjpbNTE0MDYxNjQ1LDM5MzUyOTI2OCwtMTQyNj
+A2MjkxNSw1MjcyMDc3NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3
+LC01MDQ4ODA4MCwtMjc4MjM0ODU0XX0=
 -->
