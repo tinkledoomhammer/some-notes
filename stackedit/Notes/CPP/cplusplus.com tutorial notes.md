@@ -225,6 +225,9 @@ Level | Group | Operator | Description | Grouping|
 #### `if` `else` 
 * `if (condition) statement`
 * `if (condition) statement1 else statement2`
+* `if else` statements are chainable (i.e. `statement2` can be an `if` statement
+#### Loops
+* `while (expression) statement`
 * 
 ### Functions
 ### Overloads and templates
@@ -247,7 +250,7 @@ Level | Group | Operator | Description | Grouping|
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2NjE3MzkzNSwzOTM1MjkyNjgsLTE0Mj
-YwNjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5
-NywtNTA0ODgwODAsLTI3ODIzNDg1NF19
+eyJoaXN0b3J5IjpbLTE1MTgzNjAxODcsMzkzNTI5MjY4LC0xND
+I2MDYyOTE1LDUyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQw
+OTcsLTUwNDg4MDgwLC0yNzgyMzQ4NTRdfQ==
 -->
