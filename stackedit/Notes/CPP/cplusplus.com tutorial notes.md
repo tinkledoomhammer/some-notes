@@ -211,8 +211,8 @@ Level | Group | Operator | Description | Grouping|
 	* will hang until enter is pressed
 	* can be chained i.e. `cin >> x >> y`
 * `cin` with strings
-	* to obtain strings with whitespace, use `cin.getline()`
-
+	* to obtain strings with whitespace, use `getline(cin, mystr)`
+* `std::stringstream(s
 ## Program Structure
 
 ### Control Structures
@@ -237,7 +237,7 @@ Level | Group | Operator | Description | Grouping|
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMzk3MTEzNSwzOTM1MjkyNjgsLTE0Mj
+eyJoaXN0b3J5IjpbMjAzOTU1NTY1NSwzOTM1MjkyNjgsLTE0Mj
 YwNjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5
 NywtNTA0ODgwODAsLTI3ODIzNDg1NF19
 -->
