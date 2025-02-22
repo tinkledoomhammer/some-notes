@@ -215,6 +215,14 @@ Level | Group | Operator | Description | Grouping|
 * `std::stringstream(str)` from `<sstream>`
 	* returns a stream from a string
 	* using this with `getline()` is a good way to accept console input
+```c++
+#import <sstream>
+#import <iostream>
+
+int main(){
+	std::stream = getline(
+}
+```
 
 
 ## Program Structure
@@ -277,7 +285,7 @@ switch (expression ) {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjU4NTM1OTMsMzkzNTI5MjY4LC0xND
-I2MDYyOTE1LDUyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQw
-OTcsLTUwNDg4MDgwLC0yNzgyMzQ4NTRdfQ==
+eyJoaXN0b3J5IjpbLTEwMjM4OTA0MCwtMjA2NTg1MzU5MywzOT
+M1MjkyNjgsLTE0MjYwNjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2
+OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1NF19
 -->
