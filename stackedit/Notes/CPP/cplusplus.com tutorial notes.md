@@ -194,7 +194,10 @@ Level | Group | Operator | Description | Grouping|
 
 
 ### Basic Input/output
-
+#### Streams
+* A program can insert or extract characters sequentially
+stream | description
+--|
 
 ## Program Structure
 
@@ -220,7 +223,7 @@ Level | Group | Operator | Description | Grouping|
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzkzNTI5MjY4LC0xNDI2MDYyOTE1LDUyNz
-IwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgw
-LC0yNzgyMzQ4NTRdfQ==
+eyJoaXN0b3J5IjpbLTE2NjU1MDA5MzMsMzkzNTI5MjY4LC0xND
+I2MDYyOTE1LDUyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQw
+OTcsLTUwNDg4MDgwLC0yNzgyMzQ4NTRdfQ==
 -->
