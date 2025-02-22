@@ -295,7 +295,9 @@ switch (expression ) {
 	* They can also have different return types
 	* Functions that differ only by return type are not valid overloads
 * Function Templates:
-	* `template <class ClassN
+	* `template <class ClassName>` before the normal function body
+	* then `ClassName` can be used as a type in the function declaration and definition
+	* `typename` can be used instead of class
 ### Name Visibility
 
 ## Compound data types
@@ -315,8 +317,8 @@ switch (expression ) {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjgxNzA0MzIsLTYxOTQ3ODA1OCwtMj
-A2NTg1MzU5MywzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNTI3MjA3
-NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLT
-I3ODIzNDg1NF19
+eyJoaXN0b3J5IjpbMTc3MjgwMDk0MSwtNjE5NDc4MDU4LC0yMD
+Y1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2MjkxNSw1MjcyMDc3
+NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4MCwtMj
+c4MjM0ODU0XX0=
 -->
