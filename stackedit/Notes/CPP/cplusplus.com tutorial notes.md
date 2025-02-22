@@ -269,7 +269,8 @@ switch (expression ) {
 `return_type func_name (param1, param2, ...) { statements }`
 * `param` 1, 2, etc, are `param_type param_name` 
 * `return val` is required if `return_type` is not `void`
-* 
+* `void` can also be supplied as the parameter list for functions that take no parameters
+* `main()` returns an 
 
 ### Overloads and templates
 ### Name Visibility
@@ -291,7 +292,7 @@ switch (expression ) {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3NzQxMDk1MCwtNjE5NDc4MDU4LC0yMD
+eyJoaXN0b3J5IjpbMTM2MjMyMjcwMywtNjE5NDc4MDU4LC0yMD
 Y1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2MjkxNSw1MjcyMDc3
 NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4MCwtMj
 c4MjM0ODU0XX0=
