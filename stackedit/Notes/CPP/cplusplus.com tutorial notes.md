@@ -266,7 +266,8 @@ switch (expression ) {
 *  each case must be defined by a *constant* expression
 
 ### Functions
-
+`return_type func_name (param1, param2, ...) { statements }`
+* `param` 1, 2, etc, are `param_type
 
 ### Overloads and templates
 ### Name Visibility
@@ -288,7 +289,7 @@ switch (expression ) {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMDQ4ODA3LC02MTk0NzgwNTgsLTIwNj
+eyJoaXN0b3J5IjpbODE1NjIzMzMyLC02MTk0NzgwNTgsLTIwNj
 U4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYyOTE1LDUyNzIwNzc0
 MSwtNzUwODU2NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNz
 gyMzQ4NTRdfQ==
