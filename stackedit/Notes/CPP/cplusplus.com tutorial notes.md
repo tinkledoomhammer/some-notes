@@ -277,7 +277,10 @@ switch (expression ) {
 			* `EXIT_FAILURE`
 #### Arguments passed by value vs by reference
 * by default all arguments are passed by value (ie. copied)
-* arguments passed by reference are an alias to the variable th
+* arguments passed by reference are an alias to the variable that was passed
+* reference arguments are identified with `&` after the type:
+	* `int& a`
+* 
 
 ### Overloads and templates
 ### Name Visibility
@@ -299,7 +302,7 @@ switch (expression ) {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzg5MzgyMzYsLTYxOTQ3ODA1OCwtMj
+eyJoaXN0b3J5IjpbLTE3MDQ1NzAwMTcsLTYxOTQ3ODA1OCwtMj
 A2NTg1MzU5MywzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNTI3MjA3
 NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLT
 I3ODIzNDg1NF19
