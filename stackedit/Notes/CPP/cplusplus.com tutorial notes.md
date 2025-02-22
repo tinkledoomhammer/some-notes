@@ -221,9 +221,11 @@ Level | Group | Operator | Description | Grouping|
 
 ### Control Structures
 #### blocks `{}`
-* when the syntax calls for a **statement** 
+* when the syntax calls for **a** *statement*, multiple statements can be combined in curly braces to form a single statement
 #### `if` `else` 
-
+* `if (condition) statement`
+* `if (condition) statement1 else statement2`
+* 
 ### Functions
 ### Overloads and templates
 ### Name Visibility
@@ -245,7 +247,7 @@ Level | Group | Operator | Description | Grouping|
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0ODg5MzM4OSwzOTM1MjkyNjgsLTE0Mj
+eyJoaXN0b3J5IjpbMTk2NjE3MzkzNSwzOTM1MjkyNjgsLTE0Mj
 YwNjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5
 NywtNTA0ODgwODAsLTI3ODIzNDg1NF19
 -->
