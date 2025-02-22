@@ -214,7 +214,9 @@ Level | Group | Operator | Description | Grouping|
 	* to obtain strings with whitespace, use `getline(cin, mystr)`
 * `std::stringstream(str)` from `<sstream>`
 	* returns a stream from a string
-	* using this with `getline()` is a good 
+	* using this with `getline()` is a good way to accept console input
+
+
 ## Program Structure
 
 ### Control Structures
@@ -239,7 +241,7 @@ Level | Group | Operator | Description | Grouping|
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2OTA5NDc4NiwzOTM1MjkyNjgsLTE0Mj
+eyJoaXN0b3J5IjpbMTc0MDYwODEzMSwzOTM1MjkyNjgsLTE0Mj
 YwNjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5
 NywtNTA0ODgwODAsLTI3ODIzNDg1NF19
 -->
