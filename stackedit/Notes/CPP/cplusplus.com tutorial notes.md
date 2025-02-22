@@ -208,7 +208,10 @@ Level | Group | Operator | Description | Grouping|
 	* interprets characters based on the type of the right argument
 		* i.e. `cin >> x` will parse numbers if `x` is a float or int
 	* separated by white space
-	* will hang until en
+	* will hang until enter is pressed
+	* can be chained i.e. `cin >> x >> y`
+* `cin` with strings
+	* to obtain strings with whitespace, use `cin.getline()`
 
 ## Program Structure
 
@@ -234,7 +237,7 @@ Level | Group | Operator | Description | Grouping|
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDg4NzYxMzUsMzkzNTI5MjY4LC0xND
-I2MDYyOTE1LDUyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQw
-OTcsLTUwNDg4MDgwLC0yNzgyMzQ4NTRdfQ==
+eyJoaXN0b3J5IjpbMTEzMzk3MTEzNSwzOTM1MjkyNjgsLTE0Mj
+YwNjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5
+NywtNTA0ODgwODAsLTI3ODIzNDg1NF19
 -->
