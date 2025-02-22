@@ -220,8 +220,10 @@ Level | Group | Operator | Description | Grouping|
 #import <iostream>
 
 int main(){
-
-	std::stringstream myStream( std::cin.getline());
+	std::string myString;
+	std::getline(cin , myString);
+	std::stringstream myStream( myString);
+	myStream >> someVar;
 }
 ```
 
@@ -286,7 +288,7 @@ switch (expression ) {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUwMzIzNDMyLC02MTk0NzgwNTgsLTIwNj
+eyJoaXN0b3J5IjpbLTYwMDQ4ODA3LC02MTk0NzgwNTgsLTIwNj
 U4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYyOTE1LDUyNzIwNzc0
 MSwtNzUwODU2NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNz
 gyMzQ4NTRdfQ==
