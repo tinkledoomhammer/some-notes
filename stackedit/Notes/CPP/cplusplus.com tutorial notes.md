@@ -206,7 +206,9 @@ Level | Group | Operator | Description | Grouping|
 * `std::cin`
 	* used with the extraction operator `>>`
 	* interprets characters based on the type of the right argument
-		* i.e. `cin >> x`
+		* i.e. `cin >> x` will parse numbers if `x` is a float or int
+	* separated by white space
+	* will hang until en
 
 ## Program Structure
 
@@ -232,7 +234,7 @@ Level | Group | Operator | Description | Grouping|
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNTc0NDg2LDM5MzUyOTI2OCwtMTQyNj
-A2MjkxNSw1MjcyMDc3NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3
-LC01MDQ4ODA4MCwtMjc4MjM0ODU0XX0=
+eyJoaXN0b3J5IjpbLTE4NDg4NzYxMzUsMzkzNTI5MjY4LC0xND
+I2MDYyOTE1LDUyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQw
+OTcsLTUwNDg4MDgwLC0yNzgyMzQ4NTRdfQ==
 -->
