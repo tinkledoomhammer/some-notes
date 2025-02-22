@@ -198,7 +198,10 @@ Level | Group | Operator | Description | Grouping|
 * A program can insert or extract characters sequentially
 * standard streams : `cin` `cout` `clog` `cerr`
 * `cout`
-	* `std
+	* i.e. `cout << "string"` 
+	* `<<` is called the insertion operator
+	* `<<`  can be chained
+	* 
 
 ## Program Structure
 
@@ -224,7 +227,7 @@ Level | Group | Operator | Description | Grouping|
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3MDQ1ODUxMSwzOTM1MjkyNjgsLTE0Mj
-YwNjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5
-NywtNTA0ODgwODAsLTI3ODIzNDg1NF19
+eyJoaXN0b3J5IjpbMTUyNDc1NDg4LDM5MzUyOTI2OCwtMTQyNj
+A2MjkxNSw1MjcyMDc3NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3
+LC01MDQ4ODA4MCwtMjc4MjM0ODU0XX0=
 -->
