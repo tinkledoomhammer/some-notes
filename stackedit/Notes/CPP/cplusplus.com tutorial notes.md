@@ -300,7 +300,15 @@ switch (expression ) {
 	* `typename` can be used instead of class
 	* invoke the function : `funcName<type>(args);`
 	* `<type>` is optional when the type can be  inferred from the args
-* Non-type arguments
+* Non-type arguments:
+```c++
+template <class T, int n> 
+T fixed_multiply(T val){
+	return val*n
+}
+int main(){
+	std::cout << fixed_multiply<int,2>(10)
+```
 ### Name Visibility
 
 ## Compound data types
@@ -320,7 +328,7 @@ switch (expression ) {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA2NTcxMzk1LC02MTk0NzgwNTgsLTIwNj
+eyJoaXN0b3J5IjpbLTQ5NzEzMTIzLC02MTk0NzgwNTgsLTIwNj
 U4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYyOTE1LDUyNzIwNzc0
 MSwtNzUwODU2NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNz
 gyMzQ4NTRdfQ==
