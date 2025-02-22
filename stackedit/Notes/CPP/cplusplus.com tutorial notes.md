@@ -234,8 +234,8 @@ Level | Group | Operator | Description | Grouping|
 		* any/all of them can be compound (`,` separated lists) expressions
 	*  The order is Init -> condition -> statement -> increase  -> condition
 * `for ( declaration : range ) statement;`
-		* `range` can be any type supporting the functions `begin()` and `end()`
-			* this includes arrays
+	* `range` can be any type supporting the functions `begin()` and `end()`
+		* this includes arrays and strings
 	* 
 ### Functions
 ### Overloads and templates
@@ -258,7 +258,7 @@ Level | Group | Operator | Description | Grouping|
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNzA2NDAzOCwzOTM1MjkyNjgsLTE0Mj
-YwNjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5
-NywtNTA0ODgwODAsLTI3ODIzNDg1NF19
+eyJoaXN0b3J5IjpbLTE2MzYxMTUyOTksMzkzNTI5MjY4LC0xND
+I2MDYyOTE1LDUyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQw
+OTcsLTUwNDg4MDgwLC0yNzgyMzQ4NTRdfQ==
 -->
