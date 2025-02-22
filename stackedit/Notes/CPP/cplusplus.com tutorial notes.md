@@ -196,8 +196,9 @@ Level | Group | Operator | Description | Grouping|
 ### Basic Input/output
 #### Streams
 * A program can insert or extract characters sequentially
-stream | description
---|
+* standard streams : `cin` `cout` `clog` `cerr`
+* `cout`
+	* `std
 
 ## Program Structure
 
@@ -223,7 +224,7 @@ stream | description
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjU1MDA5MzMsMzkzNTI5MjY4LC0xND
-I2MDYyOTE1LDUyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQw
-OTcsLTUwNDg4MDgwLC0yNzgyMzQ4NTRdfQ==
+eyJoaXN0b3J5IjpbLTc3MDQ1ODUxMSwzOTM1MjkyNjgsLTE0Mj
+YwNjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5
+NywtNTA0ODgwODAsLTI3ODIzNDg1NF19
 -->
