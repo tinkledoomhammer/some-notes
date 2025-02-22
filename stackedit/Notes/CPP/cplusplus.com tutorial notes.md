@@ -298,6 +298,9 @@ switch (expression ) {
 	* `template <class ClassName>` before the normal function body
 	* then `ClassName` can be used as a type in the function declaration and definition
 	* `typename` can be used instead of class
+	* invoke the function : `funcName<type>(args);`
+	* `<type>` is optional when the type can be  inferred from the args
+	* 
 ### Name Visibility
 
 ## Compound data types
@@ -317,7 +320,7 @@ switch (expression ) {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3MjgwMDk0MSwtNjE5NDc4MDU4LC0yMD
+eyJoaXN0b3J5IjpbMjAyNTMxNzc1NSwtNjE5NDc4MDU4LC0yMD
 Y1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2MjkxNSw1MjcyMDc3
 NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4MCwtMj
 c4MjM0ODU0XX0=
