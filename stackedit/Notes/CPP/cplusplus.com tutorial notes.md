@@ -241,6 +241,17 @@ Level | Group | Operator | Description | Grouping|
 	* `continue` moves to the start of the next iteration (the condition?)
 	* `goto` jumps to a label, ignoring nesting levels
 	* labels `myLabel:` on its own line
+```c++
+switch (expression ) {
+	case const1:
+		group-of-statements-1;
+		break;
+	case ...
+	default:
+		final group of statements;
+}
+```
+* if `break` is om
 ### Functions
 ### Overloads and templates
 ### Name Visibility
@@ -262,7 +273,7 @@ Level | Group | Operator | Description | Grouping|
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk1MTc5MTUwLDM5MzUyOTI2OCwtMTQyNj
+eyJoaXN0b3J5IjpbOTgxMjM5MDM1LDM5MzUyOTI2OCwtMTQyNj
 A2MjkxNSw1MjcyMDc3NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3
 LC01MDQ4ODA4MCwtMjc4MjM0ODU0XX0=
 -->
