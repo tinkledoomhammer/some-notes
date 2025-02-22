@@ -228,7 +228,9 @@ Level | Group | Operator | Description | Grouping|
 * `if else` statements are chainable (i.e. `statement2` can be an `if` statement
 #### Loops
 * `while (expression) statement`
-* 
+* `do statement while (expression)`
+* `for (initialization ; condition ; increase) statement`
+	* init, increase, and condition are all **
 ### Functions
 ### Overloads and templates
 ### Name Visibility
@@ -250,7 +252,7 @@ Level | Group | Operator | Description | Grouping|
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTgzNjAxODcsMzkzNTI5MjY4LC0xND
-I2MDYyOTE1LDUyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQw
-OTcsLTUwNDg4MDgwLC0yNzgyMzQ4NTRdfQ==
+eyJoaXN0b3J5IjpbMTQzODU4NzkyNCwzOTM1MjkyNjgsLTE0Mj
+YwNjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5
+NywtNTA0ODgwODAsLTI3ODIzNDg1NF19
 -->
