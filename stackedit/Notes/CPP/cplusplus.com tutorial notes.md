@@ -338,7 +338,11 @@ named_entity
 //using for the entire namespace
 using ns_id;
 named_entity
+
+//namespace aliasing
+namespace ns2 = ns_id;
 ```
+* `using` is scoped like a declaration
 
 ## Compound data types
 ### Arrays
@@ -357,8 +361,8 @@ named_entity
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk1Mzk4NjI1LDE4ODk4NzUzMTksLTYxOT
-Q3ODA1OCwtMjA2NTg1MzU5MywzOTM1MjkyNjgsLTE0MjYwNjI5
-MTUsNTI3MjA3NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5NywtNT
-A0ODgwODAsLTI3ODIzNDg1NF19
+eyJoaXN0b3J5IjpbMTgxNDI0NDg0MywxODg5ODc1MzE5LC02MT
+k0NzgwNTgsLTIwNjU4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYy
+OTE1LDUyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQwOTcsLT
+UwNDg4MDgwLC0yNzgyMzQ4NTRdfQ==
 -->
