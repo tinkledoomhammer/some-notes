@@ -345,6 +345,13 @@ namespace ns2 = ns_id;
 * `using` is scoped like a declaration
 * the standard library puts its symbols in `namespace std`
 
+#### Storage classes
+* Static storage:
+	* Used for variables with global or namespace scope
+	* Will always be initialized. zeros will be used if no initializer is provided
+* Automatic storage:
+	* used for 
+
 ## Compound data types
 ### Arrays
 ### Character sequences
@@ -362,7 +369,7 @@ namespace ns2 = ns_id;
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1NDk1MDA5MCwxODg5ODc1MzE5LC02MT
+eyJoaXN0b3J5IjpbLTM2OTEyOTA4OCwxODg5ODc1MzE5LC02MT
 k0NzgwNTgsLTIwNjU4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYy
 OTE1LDUyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQwOTcsLT
 UwNDg4MDgwLC0yNzgyMzQ4NTRdfQ==
