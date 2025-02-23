@@ -365,7 +365,10 @@ namespace ns2 = ns_id;
 	* the `=` is optional
 	* if `no_of_elements` is omitted then the number of elements in the initializer will be used
 * Accessing element `n` : `array_identifier[n] = x;`
-	* 
+	* It is syntactically valid to access elements beyond the end of the array
+* Multidimensional arrays
+	* `int two_by_10 [2][10]`	
+		* Creates a 20 element array and 
 ### Character sequences
 ### Pointers
 ### Dynamic Memory
@@ -381,8 +384,8 @@ namespace ns2 = ns_id;
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODg3NzI1MjMsOTkwMTY4MzgxLDE4OD
-k4NzUzMTksLTYxOTQ3ODA1OCwtMjA2NTg1MzU5MywzOTM1Mjky
-NjgsLTE0MjYwNjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2OTMsLT
-I0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1NF19
+eyJoaXN0b3J5IjpbNzU0MDQ0OTYsOTkwMTY4MzgxLDE4ODk4Nz
+UzMTksLTYxOTQ3ODA1OCwtMjA2NTg1MzU5MywzOTM1MjkyNjgs
+LTE0MjYwNjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2OTMsLTI0OT
+YzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1NF19
 -->
