@@ -358,9 +358,12 @@ namespace ns2 = ns_id;
 ### Arrays
 * A series of elements of the same type placed in contiguous memory locations,
 * individually referenced by adding an index
-* Declared: `type array_identifier [no_of_elements]`
-* Initialization `int array[5] = {1,2,3,4}`
-	* 
+* Declared: `type array_identifier [no_of_elements];`
+* Initialization `int array[5] = {1,2,3,4};`
+	* the initializer can have no more elements than the array
+	* If it has fewer, then new elements will be set to default values
+	* the `=` is optional
+	* `no_of_elements` is 
 ### Character sequences
 ### Pointers
 ### Dynamic Memory
@@ -376,7 +379,7 @@ namespace ns2 = ns_id;
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NDM1MDE3OCwxODg5ODc1MzE5LC02MT
+eyJoaXN0b3J5IjpbMjE0NTE3MTEyMiwxODg5ODc1MzE5LC02MT
 k0NzgwNTgsLTIwNjU4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYy
 OTE1LDUyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQwOTcsLT
 UwNDg4MDgwLC0yNzgyMzQ4NTRdfQ==
