@@ -374,10 +374,13 @@ namespace ns2 = ns_id;
 	* for multidimensional arrays, all but the first dimension must be specified
 	* `void procedure(int arg[][5][6]);`
 * Library arrays `#include <array>`
-	* `std::array<T,size> {vals};`
+	* `std::array<T,size> = {vals};`
 	* will be coppied when passed as an argument
-	* provides a `.data
+	* provides a `.data` member to get a pointer
+	* has a `.size()` method which returns the allocated size
+	
 ### Character sequences
+
 ### Pointers
 ### Dynamic Memory
 ### Data structures
@@ -392,7 +395,7 @@ namespace ns2 = ns_id;
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNzE4ODY0OSw5OTAxNjgzODEsMTg4OT
+eyJoaXN0b3J5IjpbLTM5MzgwODUxNiw5OTAxNjgzODEsMTg4OT
 g3NTMxOSwtNjE5NDc4MDU4LC0yMDY1ODUzNTkzLDM5MzUyOTI2
 OCwtMTQyNjA2MjkxNSw1MjcyMDc3NDEsLTc1MDg1NjY5MywtMj
 Q5NjM0MDk3LC01MDQ4ODA4MCwtMjc4MjM0ODU0XX0=
