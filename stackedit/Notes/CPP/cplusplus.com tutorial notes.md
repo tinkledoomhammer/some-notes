@@ -323,7 +323,14 @@ int main(){
 #### Namespaces
 
 * Used to break down the global scope into groups
-* `namespace identifier {named
+
+```c++
+namespace identifier {
+	named_entities
+}
+
+identifier::named
+```
 
 ## Compound data types
 ### Arrays
@@ -342,8 +349,8 @@ int main(){
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2NDE0NDU3NCwxODg5ODc1MzE5LC02MT
-k0NzgwNTgsLTIwNjU4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYy
-OTE1LDUyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQwOTcsLT
-UwNDg4MDgwLC0yNzgyMzQ4NTRdfQ==
+eyJoaXN0b3J5IjpbLTE0OTg1NTI0MTYsMTg4OTg3NTMxOSwtNj
+E5NDc4MDU4LC0yMDY1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2
+MjkxNSw1MjcyMDc3NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3LC
+01MDQ4ODA4MCwtMjc4MjM0ODU0XX0=
 -->
