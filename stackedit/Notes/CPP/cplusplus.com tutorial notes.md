@@ -363,7 +363,9 @@ namespace ns2 = ns_id;
 	* the initializer can have no more elements than the array
 	* If it has fewer, then new elements will be set to default values
 	* the `=` is optional
-	* `no_of_elements` is 
+	* if `no_of_elements` is omitted then the number of elements in the initializer will be used
+* Accessing element `n` : `array_identifier[n] = x;`
+* 
 ### Character sequences
 ### Pointers
 ### Dynamic Memory
@@ -379,8 +381,8 @@ namespace ns2 = ns_id;
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0NTE3MTEyMiwxODg5ODc1MzE5LC02MT
-k0NzgwNTgsLTIwNjU4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYy
-OTE1LDUyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQwOTcsLT
-UwNDg4MDgwLC0yNzgyMzQ4NTRdfQ==
+eyJoaXN0b3J5IjpbOTkwMTY4MzgxLDE4ODk4NzUzMTksLTYxOT
+Q3ODA1OCwtMjA2NTg1MzU5MywzOTM1MjkyNjgsLTE0MjYwNjI5
+MTUsNTI3MjA3NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5NywtNT
+A0ODgwODAsLTI3ODIzNDg1NF19
 -->
