@@ -331,11 +331,11 @@ namespace ns_id {
 }
 //refer to an entity in the namespace
 ns_id::named_entity
-//using for a single entity
+//`using` for a single entity
 using ns_id::named_entity
 named_entity
 
-//using for the entire namespace
+//`using` for the entire namespace
 using ns_id;
 named_entity
 
@@ -343,6 +343,7 @@ named_entity
 namespace ns2 = ns_id;
 ```
 * `using` is scoped like a declaration
+* the standard library puts its symbols in `namespace std`
 
 ## Compound data types
 ### Arrays
@@ -361,7 +362,7 @@ namespace ns2 = ns_id;
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNDI0NDg0MywxODg5ODc1MzE5LC02MT
+eyJoaXN0b3J5IjpbMTM1NDk1MDA5MCwxODg5ODc1MzE5LC02MT
 k0NzgwNTgsLTIwNjU4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYy
 OTE1LDUyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQwOTcsLT
 UwNDg4MDgwLC0yNzgyMzQ4NTRdfQ==
