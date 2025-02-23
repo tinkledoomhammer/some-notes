@@ -310,15 +310,20 @@ int main(){
 	std::cout << fixed_multiply<int,2>(10) << endl;
 	...
 ```
+
 ### Name Visibility
 
 #### Scope
+
 * Global - declared outside of functions, visible anywhere
 * Block scope - local variables, only visible to the end of that block (including children blocks)
 	* A block's scope includes variables from declarations that introduce a block
-	* a
+	* a local variable can shadow variables from parent scopes
 
 #### Namespaces
+
+* Used to break down the global scope into groups
+* `namespace identifier {named
 
 ## Compound data types
 ### Arrays
@@ -337,7 +342,7 @@ int main(){
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzNzEzMTMzOCwxODg5ODc1MzE5LC02MT
+eyJoaXN0b3J5IjpbMTA2NDE0NDU3NCwxODg5ODc1MzE5LC02MT
 k0NzgwNTgsLTIwNjU4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYy
 OTE1LDUyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQwOTcsLT
 UwNDg4MDgwLC0yNzgyMzQ4NTRdfQ==
