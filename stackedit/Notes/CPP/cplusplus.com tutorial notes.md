@@ -373,7 +373,10 @@ namespace ns2 = ns_id;
 	* They are internally passed as pointers
 	* for multidimensional arrays, all but the first dimension must be specified
 	* `void procedure(int arg[][5][6]);`
-* Library arrays `
+* Library arrays `#include <array>`
+	* `std::array<T,size> {vals};`
+	* will be coppied when passed as an argument
+	* provides a `.data
 ### Character sequences
 ### Pointers
 ### Dynamic Memory
@@ -389,8 +392,8 @@ namespace ns2 = ns_id;
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkxODE3MTUsOTkwMTY4MzgxLDE4ODk4Nz
-UzMTksLTYxOTQ3ODA1OCwtMjA2NTg1MzU5MywzOTM1MjkyNjgs
-LTE0MjYwNjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2OTMsLTI0OT
-YzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1NF19
+eyJoaXN0b3J5IjpbMTgxNzE4ODY0OSw5OTAxNjgzODEsMTg4OT
+g3NTMxOSwtNjE5NDc4MDU4LC0yMDY1ODUzNTkzLDM5MzUyOTI2
+OCwtMTQyNjA2MjkxNSw1MjcyMDc3NDEsLTc1MDg1NjY5MywtMj
+Q5NjM0MDk3LC01MDQ4ODA4MCwtMjc4MjM0ODU0XX0=
 -->
