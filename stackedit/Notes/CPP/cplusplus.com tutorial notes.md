@@ -311,7 +311,10 @@ int main(){
 	...
 ```
 ### Name Visibility
-
+#### Scope
+* Global - declared outside of functions, visible anywhere
+* Block scope - local variables, only visible in that block (including children blocks)
+	* A block's scope includes variables declared
 ## Compound data types
 ### Arrays
 ### Character sequences
@@ -329,8 +332,8 @@ int main(){
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4OTg3NTMxOSwtNjE5NDc4MDU4LC0yMD
-Y1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2MjkxNSw1MjcyMDc3
-NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4MCwtMj
-c4MjM0ODU0XX0=
+eyJoaXN0b3J5IjpbLTE5NTMwNTczMzMsMTg4OTg3NTMxOSwtNj
+E5NDc4MDU4LC0yMDY1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2
+MjkxNSw1MjcyMDc3NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3LC
+01MDQ4ODA4MCwtMjc4MjM0ODU0XX0=
 -->
