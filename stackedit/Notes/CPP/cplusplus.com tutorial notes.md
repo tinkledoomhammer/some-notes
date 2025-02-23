@@ -325,14 +325,18 @@ int main(){
 * Used to break down the global scope into groups
 
 ```c++
+// create a namespace
 namespace ns_id {
 	named_entities
 }
-
+//refer to an entity in the namespace
 ns_id::named_entity
-using 
+//using for a single entity
+using ns_id::named_entity
+named_entity
 
-using namespace identifier;
+//using for the entire namespace
+using ns_id;
 named_entity
 ```
 
@@ -353,8 +357,8 @@ named_entity
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MDU1MTA5MiwxODg5ODc1MzE5LC02MT
-k0NzgwNTgsLTIwNjU4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYy
-OTE1LDUyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQwOTcsLT
-UwNDg4MDgwLC0yNzgyMzQ4NTRdfQ==
+eyJoaXN0b3J5IjpbOTk1Mzk4NjI1LDE4ODk4NzUzMTksLTYxOT
+Q3ODA1OCwtMjA2NTg1MzU5MywzOTM1MjkyNjgsLTE0MjYwNjI5
+MTUsNTI3MjA3NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5NywtNT
+A0ODgwODAsLTI3ODIzNDg1NF19
 -->
