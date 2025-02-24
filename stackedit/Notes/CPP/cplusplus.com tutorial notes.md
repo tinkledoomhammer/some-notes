@@ -380,7 +380,9 @@ namespace ns2 = ns_id;
 	* has a `.size()` method which returns the allocated size
 	
 ### Character sequences
-
+* character arrays can be used to store strings
+* typically they are terminated with a null character (`\n`)
+* They can be initialized like other arrays
 ### Pointers
 ### Dynamic Memory
 ### Data structures
@@ -395,8 +397,9 @@ namespace ns2 = ns_id;
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5MzgwODUxNiw5OTAxNjgzODEsMTg4OT
-g3NTMxOSwtNjE5NDc4MDU4LC0yMDY1ODUzNTkzLDM5MzUyOTI2
-OCwtMTQyNjA2MjkxNSw1MjcyMDc3NDEsLTc1MDg1NjY5MywtMj
-Q5NjM0MDk3LC01MDQ4ODA4MCwtMjc4MjM0ODU0XX0=
+eyJoaXN0b3J5IjpbLTg2Mzc3Njg1LC0zOTM4MDg1MTYsOTkwMT
+Y4MzgxLDE4ODk4NzUzMTksLTYxOTQ3ODA1OCwtMjA2NTg1MzU5
+MywzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNTI3MjA3NzQxLC03NT
+A4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1
+NF19
 -->
