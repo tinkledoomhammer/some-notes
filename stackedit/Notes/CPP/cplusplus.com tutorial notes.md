@@ -395,7 +395,8 @@ char myword[] = "hello";
 ```c++
 char myntcs[] = "some text"
 string mystring = myntcs; // convert a c-string to string
-
+cout << mystring.c_str(); // printed as a c-string
+// both c_str and data memberrs of string are equivalent
 ```
 
 ### Pointers
@@ -412,7 +413,7 @@ string mystring = myntcs; // convert a c-string to string
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwODk1OTE2NCwtMzkzODA4NTE2LDk5MD
+eyJoaXN0b3J5IjpbLTM2MjE3MzYwMywtMzkzODA4NTE2LDk5MD
 E2ODM4MSwxODg5ODc1MzE5LC02MTk0NzgwNTgsLTIwNjU4NTM1
 OTMsMzkzNTI5MjY4LC0xNDI2MDYyOTE1LDUyNzIwNzc0MSwtNz
 UwODU2NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNzgyMzQ4
