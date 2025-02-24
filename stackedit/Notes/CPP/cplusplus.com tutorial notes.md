@@ -448,7 +448,8 @@ const int * const p4 = &x;  // const pointer to const int
 * `void * ptr;` must be cast before they can be dereferenced
 * null pointers can be `0` , `nullptr` , and in older code `NULL`
 * Accessing uninitialized pointers our out of bounds pointers (like with arrays) causes undefined behavior
-
+* function pointers enclose the name (with a preceeding *) in parens, and include a parameter list:
+	* `int (*funcName)(int,int));`
 ### Dynamic Memory
 ### Data structures
 ### Other data types
@@ -462,7 +463,7 @@ const int * const p4 = &x;  // const pointer to const int
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIwNjg3MDQxLDc3MjM4MTA5MywtMzYyMT
+eyJoaXN0b3J5IjpbNTcxNzE4MjkxLDc3MjM4MTA5MywtMzYyMT
 czNjAzLC0zOTM4MDg1MTYsOTkwMTY4MzgxLDE4ODk4NzUzMTks
 LTYxOTQ3ODA1OCwtMjA2NTg1MzU5MywzOTM1MjkyNjgsLTE0Mj
 YwNjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5
