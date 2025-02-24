@@ -419,7 +419,10 @@ myPointer=myArray; // points to the beginning of the array
 //pointers support all array operations and additionally
 myPointer[5] = *(myPointer+5) // + is the same as the offset operator ([])
 ```
-
+#### pointer arithmetic
+* only addition and subtraction are supported
+* The results depend on the `sizeof(T)` the type pointed to
+* Precidenc
 ### Dynamic Memory
 ### Data structures
 ### Other data types
@@ -433,9 +436,9 @@ myPointer[5] = *(myPointer+5) // + is the same as the offset operator ([])
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDEyMzAsLTM2MjE3MzYwMywtMzkzOD
-A4NTE2LDk5MDE2ODM4MSwxODg5ODc1MzE5LC02MTk0NzgwNTgs
-LTIwNjU4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYyOTE1LDUyNz
-IwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgw
-LC0yNzgyMzQ4NTRdfQ==
+eyJoaXN0b3J5IjpbMTU3MDk0NTgwLC0zNjIxNzM2MDMsLTM5Mz
+gwODUxNiw5OTAxNjgzODEsMTg4OTg3NTMxOSwtNjE5NDc4MDU4
+LC0yMDY1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2MjkxNSw1Mj
+cyMDc3NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4
+MCwtMjc4MjM0ODU0XX0=
 -->
