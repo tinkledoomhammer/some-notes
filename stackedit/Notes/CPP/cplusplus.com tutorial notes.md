@@ -400,7 +400,7 @@ cout << mystring.c_str(); // printed as a c-string
 ```
 
 ### Pointers
-#### `*`, `&`, and 
+#### `*`, `&`, and `->`
 * `*` is the dereference operator in most expressions. meaning 'value pointed to by'
 	* `int foo = *bar;` 
 		* requires `int * bar;` 
@@ -410,6 +410,9 @@ cout << mystring.c_str(); // printed as a c-string
 * `&` in most expressions means 'address of '
 	* in declarations it means that the variable is a reference
 	* `int * bar = &foo` points `bar` to `foo`, so `foo == *bar`
+* `->` is a dereference and member access operator
+	* `a -> b` is the same as `(*a).b`
+	* as opposed to `
 #### Pointers and arrays
 ```c++
 int myArray[20];
@@ -501,7 +504,7 @@ instance_3->member1;
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NDYyMDc2MywtNTM0MzA1NTE5LDc3Mj
+eyJoaXN0b3J5IjpbLTkwNjIzNjA3OSwtNTM0MzA1NTE5LDc3Mj
 M4MTA5MywtMzYyMTczNjAzLC0zOTM4MDg1MTYsOTkwMTY4Mzgx
 LDE4ODk4NzUzMTksLTYxOTQ3ODA1OCwtMjA2NTg1MzU5MywzOT
 M1MjkyNjgsLTE0MjYwNjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2
