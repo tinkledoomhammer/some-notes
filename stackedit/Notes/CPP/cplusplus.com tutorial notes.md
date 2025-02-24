@@ -521,6 +521,9 @@ sizeof(mix_t) // == 4
 ```
 * "The exact alignment and order of the members of a union in memory depends on the system, with the possibility of creating portability issues."
 * Anonymous unions
+	* A union declared within a struct does not need to have a variable name
+	* Its members are accessed as though they were members of the struct directly
+* 
 ## Classes
 ## Other Language Features
 ## C++ Standard Library
@@ -530,9 +533,10 @@ sizeof(mix_t) // == 4
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNTM1NjE3MCwtNTM0MzA1NTE5LDc3Mj
-M4MTA5MywtMzYyMTczNjAzLC0zOTM4MDg1MTYsOTkwMTY4Mzgx
-LDE4ODk4NzUzMTksLTYxOTQ3ODA1OCwtMjA2NTg1MzU5MywzOT
-M1MjkyNjgsLTE0MjYwNjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2
-OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1NF19
+eyJoaXN0b3J5IjpbLTE5NTM4NDAyODAsLTUzNDMwNTUxOSw3Nz
+IzODEwOTMsLTM2MjE3MzYwMywtMzkzODA4NTE2LDk5MDE2ODM4
+MSwxODg5ODc1MzE5LC02MTk0NzgwNTgsLTIwNjU4NTM1OTMsMz
+kzNTI5MjY4LC0xNDI2MDYyOTE1LDUyNzIwNzc0MSwtNzUwODU2
+NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNzgyMzQ4NTRdfQ
+==
 -->
