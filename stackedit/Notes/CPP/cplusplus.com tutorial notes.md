@@ -416,7 +416,8 @@ int myArray[20];
 int * myPointer;
 
 myPointer=myArray; // points to the beginning of the array
-
+//pointers support all array operations and additionally
+myPointer[5] = *(myPointer+5) // adding creates
 ```
 ### Dynamic Memory
 ### Data structures
@@ -431,9 +432,9 @@ myPointer=myArray; // points to the beginning of the array
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwMTM0NzU1NCwtMzYyMTczNjAzLC0zOT
-M4MDg1MTYsOTkwMTY4MzgxLDE4ODk4NzUzMTksLTYxOTQ3ODA1
-OCwtMjA2NTg1MzU5MywzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNT
-I3MjA3NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgw
-ODAsLTI3ODIzNDg1NF19
+eyJoaXN0b3J5IjpbNDQ2ODIyMDEzLC0zNjIxNzM2MDMsLTM5Mz
+gwODUxNiw5OTAxNjgzODEsMTg4OTg3NTMxOSwtNjE5NDc4MDU4
+LC0yMDY1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2MjkxNSw1Mj
+cyMDc3NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4
+MCwtMjc4MjM0ODU0XX0=
 -->
