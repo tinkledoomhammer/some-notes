@@ -444,6 +444,8 @@ const int * const p4 = &x;  // const pointer to const int
 * the first  `const` can come before or after the pointer type
 	* `const int *` and `int const *` mean the same thing
 * `const char *` variables can be initialized with string literals
+#### Void, invalid, and null pointers
+* `void * ptr;` must be cast before they can be dereferenced
 * 
 ### Dynamic Memory
 ### Data structures
@@ -458,7 +460,7 @@ const int * const p4 = &x;  // const pointer to const int
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2OTUxOTc1MCw3NzIzODEwOTMsLTM2Mj
+eyJoaXN0b3J5IjpbLTQxOTYzMzQxMSw3NzIzODEwOTMsLTM2Mj
 E3MzYwMywtMzkzODA4NTE2LDk5MDE2ODM4MSwxODg5ODc1MzE5
 LC02MTk0NzgwNTgsLTIwNjU4NTM1OTMsMzkzNTI5MjY4LC0xND
 I2MDYyOTE1LDUyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQw
