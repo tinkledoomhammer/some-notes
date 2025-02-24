@@ -493,7 +493,7 @@ instance_1.member1;
 instance_3->member1;
 ```
 * structs can be nested
-* 
+
 ### Other data types
 
 ## Classes
@@ -505,9 +505,9 @@ instance_3->member1;
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUzMDMyMjI5LC01MzQzMDU1MTksNzcyMz
-gxMDkzLC0zNjIxNzM2MDMsLTM5MzgwODUxNiw5OTAxNjgzODEs
-MTg4OTg3NTMxOSwtNjE5NDc4MDU4LC0yMDY1ODUzNTkzLDM5Mz
-UyOTI2OCwtMTQyNjA2MjkxNSw1MjcyMDc3NDEsLTc1MDg1NjY5
-MywtMjQ5NjM0MDk3LC01MDQ4ODA4MCwtMjc4MjM0ODU0XX0=
+eyJoaXN0b3J5IjpbLTc0MzUzMDU3NywtNTM0MzA1NTE5LDc3Mj
+M4MTA5MywtMzYyMTczNjAzLC0zOTM4MDg1MTYsOTkwMTY4Mzgx
+LDE4ODk4NzUzMTksLTYxOTQ3ODA1OCwtMjA2NTg1MzU5MywzOT
+M1MjkyNjgsLTE0MjYwNjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2
+OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1NF19
 -->
