@@ -382,7 +382,12 @@ namespace ns2 = ns_id;
 ### Character sequences
 * character arrays can be used to store strings
 * typically they are terminated with a null character (`\n`)
-* They can be initialized like other arrays
+* They can be initialized like other arrays or with a string literal
+```c++
+char myword[] = {'h','e','l','l','o','\0'};
+char myword[] = "hello";
+```
+
 ### Pointers
 ### Dynamic Memory
 ### Data structures
@@ -397,9 +402,9 @@ namespace ns2 = ns_id;
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2Mzc3Njg1LC0zOTM4MDg1MTYsOTkwMT
-Y4MzgxLDE4ODk4NzUzMTksLTYxOTQ3ODA1OCwtMjA2NTg1MzU5
-MywzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNTI3MjA3NzQxLC03NT
-A4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1
-NF19
+eyJoaXN0b3J5IjpbMTg5NzIwODE5NCwtMzkzODA4NTE2LDk5MD
+E2ODM4MSwxODg5ODc1MzE5LC02MTk0NzgwNTgsLTIwNjU4NTM1
+OTMsMzkzNTI5MjY4LC0xNDI2MDYyOTE1LDUyNzIwNzc0MSwtNz
+UwODU2NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNzgyMzQ4
+NTRdfQ==
 -->
