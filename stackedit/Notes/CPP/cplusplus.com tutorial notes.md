@@ -499,7 +499,8 @@ instance_3->member1;
 * `typedef existing_type new_type;` i.e. `typedef char C`
 	* older c-style
 	* has some limitations when used with templates
-* `using new_type = existing_type;`
+* `using new_type = existing_type;` i.e. `using C = char;`
+* i.e. `using field = char[50]
 ## Classes
 ## Other Language Features
 ## C++ Standard Library
@@ -509,7 +510,7 @@ instance_3->member1;
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE0ODkwNjU3LC01MzQzMDU1MTksNzcyMz
+eyJoaXN0b3J5IjpbMzMyMjY4MDc2LC01MzQzMDU1MTksNzcyMz
 gxMDkzLC0zNjIxNzM2MDMsLTM5MzgwODUxNiw5OTAxNjgzODEs
 MTg4OTg3NTMxOSwtNjE5NDc4MDU4LC0yMDY1ODUzNTkzLDM5Mz
 UyOTI2OCwtMTQyNjA2MjkxNSw1MjcyMDc3NDEsLTc1MDg1NjY5
