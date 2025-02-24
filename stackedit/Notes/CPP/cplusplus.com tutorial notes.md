@@ -401,11 +401,13 @@ cout << mystring.c_str(); // printed as a c-string
 
 ### Pointers
 #### `*`
-* dereference operator in most expressions. meaning 'value pointed to by'
-* `int foo = *bar;` 
-	* requires `int * bar;` 
-	* returns the `int` pointed to by `bar`
-* 
+* `*` is the dereference operator in most expressions. meaning 'value pointed to by'
+	* `int foo = *bar;` 
+		* requires `int * bar;` 
+		* returns the `int` pointed to by `bar`
+* `*`in type declarations it means that the variable is a pointer :
+	* `int * bar;` means that 'bar' is a pointer to an int
+
 ### Dynamic Memory
 ### Data structures
 ### Other data types
@@ -419,7 +421,7 @@ cout << mystring.c_str(); // printed as a c-string
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTE3MjMyMDUsLTM2MjE3MzYwMywtMz
+eyJoaXN0b3J5IjpbLTE0NjQyMTI3NzMsLTM2MjE3MzYwMywtMz
 kzODA4NTE2LDk5MDE2ODM4MSwxODg5ODc1MzE5LC02MTk0Nzgw
 NTgsLTIwNjU4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYyOTE1LD
 UyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQwOTcsLTUwNDg4
