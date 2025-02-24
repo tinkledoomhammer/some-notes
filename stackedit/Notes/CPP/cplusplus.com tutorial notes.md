@@ -405,8 +405,11 @@ cout << mystring.c_str(); // printed as a c-string
 	* `int foo = *bar;` 
 		* requires `int * bar;` 
 		* returns the `int` pointed to by `bar`
-* `*`in type declarations it means that the variable is a pointer :
+* `*` in type declarations it means that the variable is a pointer :
 	* `int * bar;` means that 'bar' is a pointer to an int
+* `&` in most expressions means 'address of '
+	* in declarations it means that the variable is a reference
+	* `int * bar = &foo` points `bar` to `foo`, so `foo == *bar`
 
 ### Dynamic Memory
 ### Data structures
@@ -421,9 +424,9 @@ cout << mystring.c_str(); // printed as a c-string
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjQyMTI3NzMsLTM2MjE3MzYwMywtMz
-kzODA4NTE2LDk5MDE2ODM4MSwxODg5ODc1MzE5LC02MTk0Nzgw
-NTgsLTIwNjU4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYyOTE1LD
-UyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQwOTcsLTUwNDg4
-MDgwLC0yNzgyMzQ4NTRdfQ==
+eyJoaXN0b3J5IjpbMTM1Mzc0ODk0OSwtMzYyMTczNjAzLC0zOT
+M4MDg1MTYsOTkwMTY4MzgxLDE4ODk4NzUzMTksLTYxOTQ3ODA1
+OCwtMjA2NTg1MzU5MywzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNT
+I3MjA3NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgw
+ODAsLTI3ODIzNDg1NF19
 -->
