@@ -417,8 +417,9 @@ int * myPointer;
 
 myPointer=myArray; // points to the beginning of the array
 //pointers support all array operations and additionally
-myPointer[5] = *(myPointer+5) // adding creates
+myPointer[5] = *(myPointer+5) // + is the same as the offset operator ([])
 ```
+* 
 ### Dynamic Memory
 ### Data structures
 ### Other data types
@@ -432,9 +433,9 @@ myPointer[5] = *(myPointer+5) // adding creates
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ2ODIyMDEzLC0zNjIxNzM2MDMsLTM5Mz
-gwODUxNiw5OTAxNjgzODEsMTg4OTg3NTMxOSwtNjE5NDc4MDU4
-LC0yMDY1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2MjkxNSw1Mj
-cyMDc3NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4
-MCwtMjc4MjM0ODU0XX0=
+eyJoaXN0b3J5IjpbLTEwNjMxMzEyMzYsLTM2MjE3MzYwMywtMz
+kzODA4NTE2LDk5MDE2ODM4MSwxODg5ODc1MzE5LC02MTk0Nzgw
+NTgsLTIwNjU4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYyOTE1LD
+UyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQwOTcsLTUwNDg4
+MDgwLC0yNzgyMzQ4NTRdfQ==
 -->
