@@ -424,7 +424,7 @@ myPointer[5] = *(myPointer+5) // + is the same as the offset operator ([])
 * The results depend on the `sizeof(T)` the type pointed to
 * Precidence:
 	*  `*p++` is the same as `*(p++)`
-	* but `*++p` is the same as 
+	* `++*p` increments the value pointed to `++(*
 ### Dynamic Memory
 ### Data structures
 ### Other data types
@@ -438,7 +438,7 @@ myPointer[5] = *(myPointer+5) // + is the same as the offset operator ([])
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMzg3ODUxOSwtMzYyMTczNjAzLC0zOT
+eyJoaXN0b3J5IjpbMTQwMTM2OTc2NywtMzYyMTczNjAzLC0zOT
 M4MDg1MTYsOTkwMTY4MzgxLDE4ODk4NzUzMTksLTYxOTQ3ODA1
 OCwtMjA2NTg1MzU5MywzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNT
 I3MjA3NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgw
