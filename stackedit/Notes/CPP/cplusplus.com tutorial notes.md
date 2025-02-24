@@ -460,14 +460,18 @@ funcName(a,b);//equivalent call
 ### Dynamic Memory
 
 ```c++
-
+//Can be allocated as an array
 int * foo;
 foo = new int [5]
+//use delete[]
 delete[] foo;
 
+//Or a single item can be allocated
 int *bar = new int;
 delete bar;
 ```
+* C-style dynamic memory `<cstdlib>` (in c it is called `<stdlib.h>`)
+	* functions include `
 ### Data structures
 ### Other data types
 
@@ -480,10 +484,9 @@ delete bar;
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODYyNzE0MjksLTUzNDMwNTUxOSw3Nz
-IzODEwOTMsLTM2MjE3MzYwMywtMzkzODA4NTE2LDk5MDE2ODM4
-MSwxODg5ODc1MzE5LC02MTk0NzgwNTgsLTIwNjU4NTM1OTMsMz
-kzNTI5MjY4LC0xNDI2MDYyOTE1LDUyNzIwNzc0MSwtNzUwODU2
-NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNzgyMzQ4NTRdfQ
-==
+eyJoaXN0b3J5IjpbMTAyNjg0MzAsLTUzNDMwNTUxOSw3NzIzOD
+EwOTMsLTM2MjE3MzYwMywtMzkzODA4NTE2LDk5MDE2ODM4MSwx
+ODg5ODc1MzE5LC02MTk0NzgwNTgsLTIwNjU4NTM1OTMsMzkzNT
+I5MjY4LC0xNDI2MDYyOTE1LDUyNzIwNzc0MSwtNzUwODU2Njkz
+LC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNzgyMzQ4NTRdfQ==
 -->
