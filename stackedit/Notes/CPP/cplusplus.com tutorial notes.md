@@ -412,7 +412,7 @@ cout << mystring.c_str(); // printed as a c-string
 	* `int * bar = &foo` points `bar` to `foo`, so `foo == *bar`
 * `->` is a dereference and member access operator
 	* `a -> b` is the same as `(*a).b`
-	* as opposed to `
+	* as opposed to `*a.b` which is `*(a.b)`
 #### Pointers and arrays
 ```c++
 int myArray[20];
@@ -492,7 +492,8 @@ structname_t *instance 3;
 instance_1.member1; 
 instance_3->member1;
 ```
-
+* structs can be nested
+* 
 ### Other data types
 
 ## Classes
@@ -504,9 +505,9 @@ instance_3->member1;
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwNjIzNjA3OSwtNTM0MzA1NTE5LDc3Mj
-M4MTA5MywtMzYyMTczNjAzLC0zOTM4MDg1MTYsOTkwMTY4Mzgx
-LDE4ODk4NzUzMTksLTYxOTQ3ODA1OCwtMjA2NTg1MzU5MywzOT
-M1MjkyNjgsLTE0MjYwNjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2
-OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1NF19
+eyJoaXN0b3J5IjpbNTUzMDMyMjI5LC01MzQzMDU1MTksNzcyMz
+gxMDkzLC0zNjIxNzM2MDMsLTM5MzgwODUxNiw5OTAxNjgzODEs
+MTg4OTg3NTMxOSwtNjE5NDc4MDU4LC0yMDY1ODUzNTkzLDM5Mz
+UyOTI2OCwtMTQyNjA2MjkxNSw1MjcyMDc3NDEsLTc1MDg1NjY5
+MywtMjQ5NjM0MDk3LC01MDQ4ODA4MCwtMjc4MjM0ODU0XX0=
 -->
