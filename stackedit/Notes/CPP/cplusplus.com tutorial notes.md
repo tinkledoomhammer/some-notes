@@ -410,7 +410,14 @@ cout << mystring.c_str(); // printed as a c-string
 * `&` in most expressions means 'address of '
 	* in declarations it means that the variable is a reference
 	* `int * bar = &foo` points `bar` to `foo`, so `foo == *bar`
+#### Pointers and arrays
+```c++
+int myArray[20];
+int * myPointer;
 
+myPointer=myArray; // points to the beginning of the array
+
+```
 ### Dynamic Memory
 ### Data structures
 ### Other data types
@@ -424,7 +431,7 @@ cout << mystring.c_str(); // printed as a c-string
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1Mzc0ODk0OSwtMzYyMTczNjAzLC0zOT
+eyJoaXN0b3J5IjpbLTQwMTM0NzU1NCwtMzYyMTczNjAzLC0zOT
 M4MDg1MTYsOTkwMTY4MzgxLDE4ODk4NzUzMTksLTYxOTQ3ODA1
 OCwtMjA2NTg1MzU5MywzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNT
 I3MjA3NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgw
