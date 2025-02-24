@@ -424,7 +424,14 @@ myPointer[5] = *(myPointer+5) // + is the same as the offset operator ([])
 * The results depend on the `sizeof(T)` the type pointed to
 * Precidence:
 	*  `*p++` is the same as `*(p++)`
-	* `++*p` increments the value pointed to `++(*
+	* `++*p` increments the value pointed to `++(*p)`
+
+```c++
+	*p++   // same as *(p++): increment pointer, and dereference unincremented address
+	*++p   // same as *(++p): increment pointer, and dereference incremented address
+	++*p   // same as ++(*p): dereference pointer, and increment the value it points to
+	(*p)++ // dereference pointer, and post-increment the value it points to 
+```
 ### Dynamic Memory
 ### Data structures
 ### Other data types
@@ -438,9 +445,9 @@ myPointer[5] = *(myPointer+5) // + is the same as the offset operator ([])
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMTM2OTc2NywtMzYyMTczNjAzLC0zOT
-M4MDg1MTYsOTkwMTY4MzgxLDE4ODk4NzUzMTksLTYxOTQ3ODA1
-OCwtMjA2NTg1MzU5MywzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNT
-I3MjA3NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgw
-ODAsLTI3ODIzNDg1NF19
+eyJoaXN0b3J5IjpbNzcyMzgxMDkzLC0zNjIxNzM2MDMsLTM5Mz
+gwODUxNiw5OTAxNjgzODEsMTg4OTg3NTMxOSwtNjE5NDc4MDU4
+LC0yMDY1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2MjkxNSw1Mj
+cyMDc3NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4
+MCwtMjc4MjM0ODU0XX0=
 -->
