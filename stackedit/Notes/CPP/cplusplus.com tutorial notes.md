@@ -389,6 +389,8 @@ char myword[] = {'h','e','l','l','o','\0'};
 char myword[] = "hello";
 ```
 * after initialization, they cannot be assigned but their contents can be
+* These are called 'C-strings'
+* Most library functions are overloaded to support both c-strings and 'library strings' (`std::string` from `<string>`)
 * 
 
 ### Pointers
@@ -405,9 +407,9 @@ char myword[] = "hello";
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4MjQ2MDM4LC0zOTM4MDg1MTYsOTkwMT
-Y4MzgxLDE4ODk4NzUzMTksLTYxOTQ3ODA1OCwtMjA2NTg1MzU5
-MywzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNTI3MjA3NzQxLC03NT
-A4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1
-NF19
+eyJoaXN0b3J5IjpbLTEzMzg1NjQ2MDMsLTM5MzgwODUxNiw5OT
+AxNjgzODEsMTg4OTg3NTMxOSwtNjE5NDc4MDU4LC0yMDY1ODUz
+NTkzLDM5MzUyOTI2OCwtMTQyNjA2MjkxNSw1MjcyMDc3NDEsLT
+c1MDg1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4MCwtMjc4MjM0
+ODU0XX0=
 -->
