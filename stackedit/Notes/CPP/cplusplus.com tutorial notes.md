@@ -422,9 +422,10 @@ myPointer[5] = *(myPointer+5) // + is the same as the offset operator ([])
 #### pointer arithmetic
 * only addition and subtraction are supported
 * The results depend on the `sizeof(T)` the type pointed to
-* Precidence:
+* Precedence:
 	*  `*p++` is the same as `*(p++)`
 	* `++*p` increments the value pointed to `++(*p)`
+	* Postfix unary operators have a higher precedence than prefix operators
 
 ```c++
 	*p++   // same as *(p++): increment pointer, and dereference unincremented address
@@ -432,6 +433,15 @@ myPointer[5] = *(myPointer+5) // + is the same as the offset operator ([])
 	++*p   // same as ++(*p): dereference pointer, and increment the value it points to
 	(*p)++ // dereference pointer, and post-increment the value it points to 
 ```
+#### Pointers and `const`
+```c++
+int x;
+      int *       p1 = &x;  // non-const pointer to non-const int
+const int *       p2 = &x;  // non-const pointer to const int
+      int * const p3 = &x;  // const pointer to non-const int
+const int * const p4 = &x;  // const pointer to const int 
+```
+
 ### Dynamic Memory
 ### Data structures
 ### Other data types
@@ -445,9 +455,9 @@ myPointer[5] = *(myPointer+5) // + is the same as the offset operator ([])
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzcyMzgxMDkzLC0zNjIxNzM2MDMsLTM5Mz
-gwODUxNiw5OTAxNjgzODEsMTg4OTg3NTMxOSwtNjE5NDc4MDU4
-LC0yMDY1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2MjkxNSw1Mj
-cyMDc3NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4
-MCwtMjc4MjM0ODU0XX0=
+eyJoaXN0b3J5IjpbLTEwNzE4OTA1MzMsNzcyMzgxMDkzLC0zNj
+IxNzM2MDMsLTM5MzgwODUxNiw5OTAxNjgzODEsMTg4OTg3NTMx
+OSwtNjE5NDc4MDU4LC0yMDY1ODUzNTkzLDM5MzUyOTI2OCwtMT
+QyNjA2MjkxNSw1MjcyMDc3NDEsLTc1MDg1NjY5MywtMjQ5NjM0
+MDk3LC01MDQ4ODA4MCwtMjc4MjM0ODU0XX0=
 -->
