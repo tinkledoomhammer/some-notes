@@ -471,8 +471,12 @@ int *bar = new int;
 delete bar;
 ```
 * C-style dynamic memory `<cstdlib>` (in c it is called `<stdlib.h>`)
-	* functions include `
+	* functions include `malloc` `calloc` `realloc` and `free`
+	* These should not be mixed... either use `new` and `delete` or the c versions
+
+
 ### Data structures
+
 ### Other data types
 
 ## Classes
@@ -484,9 +488,9 @@ delete bar;
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNjg0MzAsLTUzNDMwNTUxOSw3NzIzOD
-EwOTMsLTM2MjE3MzYwMywtMzkzODA4NTE2LDk5MDE2ODM4MSwx
-ODg5ODc1MzE5LC02MTk0NzgwNTgsLTIwNjU4NTM1OTMsMzkzNT
-I5MjY4LC0xNDI2MDYyOTE1LDUyNzIwNzc0MSwtNzUwODU2Njkz
-LC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNzgyMzQ4NTRdfQ==
+eyJoaXN0b3J5IjpbMTk2MDIzMzMzMiwtNTM0MzA1NTE5LDc3Mj
+M4MTA5MywtMzYyMTczNjAzLC0zOTM4MDg1MTYsOTkwMTY4Mzgx
+LDE4ODk4NzUzMTksLTYxOTQ3ODA1OCwtMjA2NTg1MzU5MywzOT
+M1MjkyNjgsLTE0MjYwNjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2
+OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1NF19
 -->
