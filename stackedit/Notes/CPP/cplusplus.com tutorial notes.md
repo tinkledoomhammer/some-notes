@@ -444,9 +444,11 @@ const int * const p4 = &x;  // const pointer to const int
 * the first  `const` can come before or after the pointer type
 	* `const int *` and `int const *` mean the same thing
 * `const char *` variables can be initialized with string literals
-#### Void, invalid, and null pointers
+#### Void, null, invalid, and function pointers
 * `void * ptr;` must be cast before they can be dereferenced
-* null pointers can be `0` , `nullptr`
+* null pointers can be `0` , `nullptr` , and in older code `NULL`
+* Accessing uninitialized pointers our out of bounds pointers (like with arrays) causes undefined behavior
+
 ### Dynamic Memory
 ### Data structures
 ### Other data types
@@ -460,7 +462,7 @@ const int * const p4 = &x;  // const pointer to const int
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk0MzAxOTg4LDc3MjM4MTA5MywtMzYyMT
+eyJoaXN0b3J5IjpbMjIwNjg3MDQxLDc3MjM4MTA5MywtMzYyMT
 czNjAzLC0zOTM4MDg1MTYsOTkwMTY4MzgxLDE4ODk4NzUzMTks
 LTYxOTQ3ODA1OCwtMjA2NTg1MzU5MywzOTM1MjkyNjgsLTE0Mj
 YwNjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5
