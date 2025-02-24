@@ -476,7 +476,14 @@ delete bar;
 
 
 ### Data structures
-
+```c++
+struct structname_t {
+	int member1;
+	int member2;
+	...
+} instance_1, instance_2;
+structname_t instance 3;
+```
 ### Other data types
 
 ## Classes
@@ -488,7 +495,7 @@ delete bar;
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MDIzMzMzMiwtNTM0MzA1NTE5LDc3Mj
+eyJoaXN0b3J5IjpbLTQ3OTg3ODM2MiwtNTM0MzA1NTE5LDc3Mj
 M4MTA5MywtMzYyMTczNjAzLC0zOTM4MDg1MTYsOTkwMTY4Mzgx
 LDE4ODk4NzUzMTksLTYxOTQ3ODA1OCwtMjA2NTg1MzU5MywzOT
 M1MjkyNjgsLTE0MjYwNjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2
