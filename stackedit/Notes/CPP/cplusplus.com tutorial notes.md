@@ -449,7 +449,12 @@ const int * const p4 = &x;  // const pointer to const int
 * null pointers can be `0` , `nullptr` , and in older code `NULL`
 * Accessing uninitialized pointers our out of bounds pointers (like with arrays) causes undefined behavior
 * function pointers enclose the name (with a preceeding *) in parens, and include a parameter list:
-	* `int (*funcName)(int,int));`
+	* `int (*func_ptr)(int,int));`
+```c++
+int funcName (int,int); // the declared func
+int (*funcPtr)(int,int) = &funcName;
+
+```
 ### Dynamic Memory
 ### Data structures
 ### Other data types
@@ -463,9 +468,9 @@ const int * const p4 = &x;  // const pointer to const int
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcxNzE4MjkxLDc3MjM4MTA5MywtMzYyMT
-czNjAzLC0zOTM4MDg1MTYsOTkwMTY4MzgxLDE4ODk4NzUzMTks
-LTYxOTQ3ODA1OCwtMjA2NTg1MzU5MywzOTM1MjkyNjgsLTE0Mj
-YwNjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5
-NywtNTA0ODgwODAsLTI3ODIzNDg1NF19
+eyJoaXN0b3J5IjpbLTIwODM5NjE5NzksNzcyMzgxMDkzLC0zNj
+IxNzM2MDMsLTM5MzgwODUxNiw5OTAxNjgzODEsMTg4OTg3NTMx
+OSwtNjE5NDc4MDU4LC0yMDY1ODUzNTkzLDM5MzUyOTI2OCwtMT
+QyNjA2MjkxNSw1MjcyMDc3NDEsLTc1MDg1NjY5MywtMjQ5NjM0
+MDk3LC01MDQ4ODA4MCwtMjc4MjM0ODU0XX0=
 -->
