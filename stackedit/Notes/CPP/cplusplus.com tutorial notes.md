@@ -451,9 +451,11 @@ const int * const p4 = &x;  // const pointer to const int
 * function pointers enclose the name (with a preceeding *) in parens, and include a parameter list:
 	* `int (*func_ptr)(int,int));`
 ```c++
-int funcName (int,int); // the declared func
-int (*funcPtr)(int,int) = &funcName;
+int funcName (int,int); // the function declaration
+int (*funcPtr)(int,int) = &funcName; // the pointer declared/initialized
 
+(*funcPtr)(a,b);// call with pointer
+funcName(a,b);//equivalent call
 ```
 ### Dynamic Memory
 ### Data structures
@@ -468,9 +470,9 @@ int (*funcPtr)(int,int) = &funcName;
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODM5NjE5NzksNzcyMzgxMDkzLC0zNj
-IxNzM2MDMsLTM5MzgwODUxNiw5OTAxNjgzODEsMTg4OTg3NTMx
-OSwtNjE5NDc4MDU4LC0yMDY1ODUzNTkzLDM5MzUyOTI2OCwtMT
-QyNjA2MjkxNSw1MjcyMDc3NDEsLTc1MDg1NjY5MywtMjQ5NjM0
-MDk3LC01MDQ4ODA4MCwtMjc4MjM0ODU0XX0=
+eyJoaXN0b3J5IjpbLTUzNDMwNTUxOSw3NzIzODEwOTMsLTM2Mj
+E3MzYwMywtMzkzODA4NTE2LDk5MDE2ODM4MSwxODg5ODc1MzE5
+LC02MTk0NzgwNTgsLTIwNjU4NTM1OTMsMzkzNTI5MjY4LC0xND
+I2MDYyOTE1LDUyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQw
+OTcsLTUwNDg4MDgwLC0yNzgyMzQ4NTRdfQ==
 -->
