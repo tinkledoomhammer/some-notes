@@ -364,6 +364,7 @@ namespace ns2 = ns_id;
 	* If it has fewer, then new elements will be set to default values
 	* the `=` is optional
 	* if `no_of_elements` is omitted then the number of elements in the initializer will be used
+* The array cannot be assigned after initialization. Instead its contents can be assigned one member at a time
 * Accessing element `n` : `array_identifier[n] = x;`
 	* It is syntactically valid to access elements beyond the end of the array
 * Multidimensional arrays
@@ -387,6 +388,8 @@ namespace ns2 = ns_id;
 char myword[] = {'h','e','l','l','o','\0'};
 char myword[] = "hello";
 ```
+* after initialization, they cannot be assigned but their contents can be
+* 
 
 ### Pointers
 ### Dynamic Memory
@@ -402,9 +405,9 @@ char myword[] = "hello";
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NzIwODE5NCwtMzkzODA4NTE2LDk5MD
-E2ODM4MSwxODg5ODc1MzE5LC02MTk0NzgwNTgsLTIwNjU4NTM1
-OTMsMzkzNTI5MjY4LC0xNDI2MDYyOTE1LDUyNzIwNzc0MSwtNz
-UwODU2NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNzgyMzQ4
-NTRdfQ==
+eyJoaXN0b3J5IjpbLTI4MjQ2MDM4LC0zOTM4MDg1MTYsOTkwMT
+Y4MzgxLDE4ODk4NzUzMTksLTYxOTQ3ODA1OCwtMjA2NTg1MzU5
+MywzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNTI3MjA3NzQxLC03NT
+A4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1
+NF19
 -->
