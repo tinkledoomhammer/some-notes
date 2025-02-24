@@ -508,14 +508,18 @@ instance_3->member1;
 * The format is the same as for structs, but with the `union` keyword
 * can be nested with structs
 ```c++
+// a 32-bit value that is also 2 16-bit values and 4 chars
 union mix_t {
-	int a;
+	int ax;
 	struct {
-		short high;
 		short low;
-	} s
-	char[4]
-}
+		short high;
+	} a
+	char c[4]
+} mix;
+
+sizeof(mix_t) // == 4
+
 ```
 ## Classes
 ## Other Language Features
@@ -526,7 +530,7 @@ union mix_t {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMjkwODQ2LC01MzQzMDU1MTksNzcyMz
+eyJoaXN0b3J5IjpbMjg5OTA4NDk0LC01MzQzMDU1MTksNzcyMz
 gxMDkzLC0zNjIxNzM2MDMsLTM5MzgwODUxNiw5OTAxNjgzODEs
 MTg4OTg3NTMxOSwtNjE5NDc4MDU4LC0yMDY1ODUzNTkzLDM5Mz
 UyOTI2OCwtMTQyNjA2MjkxNSw1MjcyMDc3NDEsLTc1MDg1NjY5
