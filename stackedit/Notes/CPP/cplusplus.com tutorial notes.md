@@ -460,12 +460,13 @@ funcName(a,b);//equivalent call
 ### Dynamic Memory
 
 ```c++
+
 int * foo;
 foo = new int [5]
-delete foo;
+delete[] foo;
 
-int bar[5];
-
+int *bar = new int;
+delete bar;
 ```
 ### Data structures
 ### Other data types
@@ -479,7 +480,7 @@ int bar[5];
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjA5ODU4NTUsLTUzNDMwNTUxOSw3Nz
+eyJoaXN0b3J5IjpbLTE3ODYyNzE0MjksLTUzNDMwNTUxOSw3Nz
 IzODEwOTMsLTM2MjE3MzYwMywtMzkzODA4NTE2LDk5MDE2ODM4
 MSwxODg5ODc1MzE5LC02MTk0NzgwNTgsLTIwNjU4NTM1OTMsMz
 kzNTI5MjY4LC0xNDI2MDYyOTE1LDUyNzIwNzc0MSwtNzUwODU2
