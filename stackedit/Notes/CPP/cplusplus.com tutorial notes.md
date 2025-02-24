@@ -400,6 +400,12 @@ cout << mystring.c_str(); // printed as a c-string
 ```
 
 ### Pointers
+#### `*`
+* dereference operator in most expressions. meaning 'value pointed to by'
+* `int foo = *bar;` 
+	* requires `int * bar;` 
+	* returns the `int` pointed to by `bar`
+* 
 ### Dynamic Memory
 ### Data structures
 ### Other data types
@@ -413,9 +419,9 @@ cout << mystring.c_str(); // printed as a c-string
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MjE3MzYwMywtMzkzODA4NTE2LDk5MD
-E2ODM4MSwxODg5ODc1MzE5LC02MTk0NzgwNTgsLTIwNjU4NTM1
-OTMsMzkzNTI5MjY4LC0xNDI2MDYyOTE1LDUyNzIwNzc0MSwtNz
-UwODU2NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNzgyMzQ4
-NTRdfQ==
+eyJoaXN0b3J5IjpbLTEwNTE3MjMyMDUsLTM2MjE3MzYwMywtMz
+kzODA4NTE2LDk5MDE2ODM4MSwxODg5ODc1MzE5LC02MTk0Nzgw
+NTgsLTIwNjU4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYyOTE1LD
+UyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQwOTcsLTUwNDg4
+MDgwLC0yNzgyMzQ4NTRdfQ==
 -->
