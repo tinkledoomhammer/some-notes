@@ -391,7 +391,12 @@ char myword[] = "hello";
 * after initialization, they cannot be assigned but their contents can be
 * These are called 'C-strings'
 * Most library functions are overloaded to support both c-strings and 'library strings' (`std::string` from `<string>`)
-* 
+* Library strings are dynamically sized
+```c++
+char myntcs[] = "some text"
+string mystring = myntcs; // convert a c-string to string
+
+```
 
 ### Pointers
 ### Dynamic Memory
@@ -407,9 +412,9 @@ char myword[] = "hello";
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzg1NjQ2MDMsLTM5MzgwODUxNiw5OT
-AxNjgzODEsMTg4OTg3NTMxOSwtNjE5NDc4MDU4LC0yMDY1ODUz
-NTkzLDM5MzUyOTI2OCwtMTQyNjA2MjkxNSw1MjcyMDc3NDEsLT
-c1MDg1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4MCwtMjc4MjM0
-ODU0XX0=
+eyJoaXN0b3J5IjpbLTQwODk1OTE2NCwtMzkzODA4NTE2LDk5MD
+E2ODM4MSwxODg5ODc1MzE5LC02MTk0NzgwNTgsLTIwNjU4NTM1
+OTMsMzkzNTI5MjY4LC0xNDI2MDYyOTE1LDUyNzIwNzc0MSwtNz
+UwODU2NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNzgyMzQ4
+NTRdfQ==
 -->
