@@ -441,7 +441,8 @@ const int *       p2 = &x;  // non-const pointer to const int
       int * const p3 = &x;  // const pointer to non-const int
 const int * const p4 = &x;  // const pointer to const int 
 ```
-
+* the first  `const` can come before or after the pointer type
+	* `const int *` and `int const *` mean the same thing
 ### Dynamic Memory
 ### Data structures
 ### Other data types
@@ -455,9 +456,9 @@ const int * const p4 = &x;  // const pointer to const int
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzE4OTA1MzMsNzcyMzgxMDkzLC0zNj
-IxNzM2MDMsLTM5MzgwODUxNiw5OTAxNjgzODEsMTg4OTg3NTMx
-OSwtNjE5NDc4MDU4LC0yMDY1ODUzNTkzLDM5MzUyOTI2OCwtMT
-QyNjA2MjkxNSw1MjcyMDc3NDEsLTc1MDg1NjY5MywtMjQ5NjM0
-MDk3LC01MDQ4ODA4MCwtMjc4MjM0ODU0XX0=
+eyJoaXN0b3J5IjpbNDc5OTM1MTI2LDc3MjM4MTA5MywtMzYyMT
+czNjAzLC0zOTM4MDg1MTYsOTkwMTY4MzgxLDE4ODk4NzUzMTks
+LTYxOTQ3ODA1OCwtMjA2NTg1MzU5MywzOTM1MjkyNjgsLTE0Mj
+YwNjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5
+NywtNTA0ODgwODAsLTI3ODIzNDg1NF19
 -->
