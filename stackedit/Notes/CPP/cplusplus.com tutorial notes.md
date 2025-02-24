@@ -422,7 +422,9 @@ myPointer[5] = *(myPointer+5) // + is the same as the offset operator ([])
 #### pointer arithmetic
 * only addition and subtraction are supported
 * The results depend on the `sizeof(T)` the type pointed to
-* Precidenc
+* Precidence:
+	*  `*p++` is the same as `*(p++)`
+	* but `*++p` is the same as 
 ### Dynamic Memory
 ### Data structures
 ### Other data types
@@ -436,9 +438,9 @@ myPointer[5] = *(myPointer+5) // + is the same as the offset operator ([])
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3MDk0NTgwLC0zNjIxNzM2MDMsLTM5Mz
-gwODUxNiw5OTAxNjgzODEsMTg4OTg3NTMxOSwtNjE5NDc4MDU4
-LC0yMDY1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2MjkxNSw1Mj
-cyMDc3NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4
-MCwtMjc4MjM0ODU0XX0=
+eyJoaXN0b3J5IjpbMTUyMzg3ODUxOSwtMzYyMTczNjAzLC0zOT
+M4MDg1MTYsOTkwMTY4MzgxLDE4ODk4NzUzMTksLTYxOTQ3ODA1
+OCwtMjA2NTg1MzU5MywzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNT
+I3MjA3NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgw
+ODAsLTI3ODIzNDg1NF19
 -->
