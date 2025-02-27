@@ -618,7 +618,8 @@ int main () {
 ```
 * Member initialization in constructors
 ```c++
-Rectangle::Rectangle (int x, int y) {width = x; height = y); //f
+Rectangle::Rectangle(int x, int y) {width = x; height = y); //normal
+Rectangle::rectangle(int x, int y) : width(x), height(y) {//empty block}
 ```
 
 ## Other Language Features
@@ -629,11 +630,11 @@ Rectangle::Rectangle (int x, int y) {width = x; height = y); //f
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDgyNDk1NTksLTk5MTQwNzI0LDExNT
-Y1Mjc3MzksMTUyOTIxNTkzOCwtMTk1Mzg0MDI4MCwtNTM0MzA1
-NTE5LDc3MjM4MTA5MywtMzYyMTczNjAzLC0zOTM4MDg1MTYsOT
-kwMTY4MzgxLDE4ODk4NzUzMTksLTYxOTQ3ODA1OCwtMjA2NTg1
-MzU5MywzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNTI3MjA3NzQxLC
-03NTA4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIz
-NDg1NF19
+eyJoaXN0b3J5IjpbLTk2MjQ4NTQ0LC05OTE0MDcyNCwxMTU2NT
+I3NzM5LDE1MjkyMTU5MzgsLTE5NTM4NDAyODAsLTUzNDMwNTUx
+OSw3NzIzODEwOTMsLTM2MjE3MzYwMywtMzkzODA4NTE2LDk5MD
+E2ODM4MSwxODg5ODc1MzE5LC02MTk0NzgwNTgsLTIwNjU4NTM1
+OTMsMzkzNTI5MjY4LC0xNDI2MDYyOTE1LDUyNzIwNzc0MSwtNz
+UwODU2NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNzgyMzQ4
+NTRdfQ==
 -->
