@@ -557,7 +557,15 @@ class type_name {
 * Classes work like regular structures, but can define methods
 * Defining methods:
 ```c++
-void ClassName::methodNamme(
+class ClassName{
+	//private by default
+	int m_x
+public:
+	int methodName(
+int ClassName::methodNamme(int par1...){
+	//this is a ClassName* that points to this object
+	return this.x+par1;
+}
 ```
 ## Other Language Features
 ## C++ Standard Library
@@ -567,10 +575,10 @@ void ClassName::methodNamme(
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzMxNDczNjgsMTUyOTIxNTkzOCwtMT
-k1Mzg0MDI4MCwtNTM0MzA1NTE5LDc3MjM4MTA5MywtMzYyMTcz
-NjAzLC0zOTM4MDg1MTYsOTkwMTY4MzgxLDE4ODk4NzUzMTksLT
-YxOTQ3ODA1OCwtMjA2NTg1MzU5MywzOTM1MjkyNjgsLTE0MjYw
-NjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5Ny
-wtNTA0ODgwODAsLTI3ODIzNDg1NF19
+eyJoaXN0b3J5IjpbNTU3OTMyNDgzLDE1MjkyMTU5MzgsLTE5NT
+M4NDAyODAsLTUzNDMwNTUxOSw3NzIzODEwOTMsLTM2MjE3MzYw
+MywtMzkzODA4NTE2LDk5MDE2ODM4MSwxODg5ODc1MzE5LC02MT
+k0NzgwNTgsLTIwNjU4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYy
+OTE1LDUyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQwOTcsLT
+UwNDg4MDgwLC0yNzgyMzQ4NTRdfQ==
 -->
