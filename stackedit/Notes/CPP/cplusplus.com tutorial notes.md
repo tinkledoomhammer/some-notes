@@ -524,8 +524,10 @@ sizeof(mix_t) // == 4
 	* A union declared within a struct does not need to have a variable name
 	* Its members are accessed as though they were members of the struct directly
 #### Enums
-`enum type_name { val1, val2, ...} object_names`
+`enum type_name { val1, val2, ...} var1, var2...;`
+` var1 = val1;`
 
+* values of enum types can be implicitely converted to integer types
 ## Classes
 ## Other Language Features
 ## C++ Standard Library
@@ -535,7 +537,7 @@ sizeof(mix_t) // == 4
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MTk2NTUxNiwtMTk1Mzg0MDI4MCwtNT
+eyJoaXN0b3J5IjpbLTU0MTQxMzg1NywtMTk1Mzg0MDI4MCwtNT
 M0MzA1NTE5LDc3MjM4MTA5MywtMzYyMTczNjAzLC0zOTM4MDg1
 MTYsOTkwMTY4MzgxLDE4ODk4NzUzMTksLTYxOTQ3ODA1OCwtMj
 A2NTg1MzU5MywzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNTI3MjA3
