@@ -669,7 +669,8 @@ delete    new[]     delete[]
 	* i.e. `CVector Cvector::operator+ (const CVector& param){...`
 * They can be called implicitly `a+b` using the operator
 * they can be called explicitly `a.operator+(b)`
-* 
+* Overload parameters (the @ in the table should be replaced with the operator
+Generic expression
 ## Other Language Features
 ## C++ Standard Library
 ### Input/Output with files
@@ -678,7 +679,7 @@ delete    new[]     delete[]
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NjIzNzk0MCwtMTg4NDcxNDU1NSwtOT
+eyJoaXN0b3J5IjpbMTA3OTYwOTk5MywtMTg4NDcxNDU1NSwtOT
 kxNDA3MjQsMTE1NjUyNzczOSwxNTI5MjE1OTM4LC0xOTUzODQw
 MjgwLC01MzQzMDU1MTksNzcyMzgxMDkzLC0zNjIxNzM2MDMsLT
 M5MzgwODUxNiw5OTAxNjgzODEsMTg4OTg3NTMxOSwtNjE5NDc4
