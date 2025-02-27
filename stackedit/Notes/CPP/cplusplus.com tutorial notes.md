@@ -536,6 +536,8 @@ sizeof(mix_t) // == 4
 	* do not convert to ints
 	* must be scoped in : `typename::val1`
 * they can alternatively specify an integer type : 
+	* `enum class typename : char {val1, ...};`
+* 
 ## Classes
 ## Other Language Features
 ## C++ Standard Library
@@ -545,10 +547,10 @@ sizeof(mix_t) // == 4
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg1MTI5OTQ1LC0xOTUzODQwMjgwLC01Mz
-QzMDU1MTksNzcyMzgxMDkzLC0zNjIxNzM2MDMsLTM5MzgwODUx
-Niw5OTAxNjgzODEsMTg4OTg3NTMxOSwtNjE5NDc4MDU4LC0yMD
-Y1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2MjkxNSw1MjcyMDc3
-NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4MCwtMj
-c4MjM0ODU0XX0=
+eyJoaXN0b3J5IjpbMTUyOTIxNTkzOCwtMTk1Mzg0MDI4MCwtNT
+M0MzA1NTE5LDc3MjM4MTA5MywtMzYyMTczNjAzLC0zOTM4MDg1
+MTYsOTkwMTY4MzgxLDE4ODk4NzUzMTksLTYxOTQ3ODA1OCwtMj
+A2NTg1MzU5MywzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNTI3MjA3
+NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLT
+I3ODIzNDg1NF19
 -->
