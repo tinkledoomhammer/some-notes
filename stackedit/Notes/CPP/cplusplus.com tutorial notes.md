@@ -620,6 +620,7 @@ int main () {
 ```c++
 Rectangle::Rectangle(int x, int y) {width = x; height = y); //normal
 Rectangle::rectangle(int x, int y) : width(x), height(y) {//empty block}
+Rectangle::rectangle(int x, int y) : width{x}, height{y} {} //curley braces
 ```
 
 ## Other Language Features
@@ -630,11 +631,11 @@ Rectangle::rectangle(int x, int y) : width(x), height(y) {//empty block}
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MjQ4NTQ0LC05OTE0MDcyNCwxMTU2NT
-I3NzM5LDE1MjkyMTU5MzgsLTE5NTM4NDAyODAsLTUzNDMwNTUx
-OSw3NzIzODEwOTMsLTM2MjE3MzYwMywtMzkzODA4NTE2LDk5MD
-E2ODM4MSwxODg5ODc1MzE5LC02MTk0NzgwNTgsLTIwNjU4NTM1
-OTMsMzkzNTI5MjY4LC0xNDI2MDYyOTE1LDUyNzIwNzc0MSwtNz
-UwODU2NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNzgyMzQ4
-NTRdfQ==
+eyJoaXN0b3J5IjpbLTg5MTk3MzUyOCwtOTkxNDA3MjQsMTE1Nj
+UyNzczOSwxNTI5MjE1OTM4LC0xOTUzODQwMjgwLC01MzQzMDU1
+MTksNzcyMzgxMDkzLC0zNjIxNzM2MDMsLTM5MzgwODUxNiw5OT
+AxNjgzODEsMTg4OTg3NTMxOSwtNjE5NDc4MDU4LC0yMDY1ODUz
+NTkzLDM5MzUyOTI2OCwtMTQyNjA2MjkxNSw1MjcyMDc3NDEsLT
+c1MDg1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4MCwtMjc4MjM0
+ODU0XX0=
 -->
