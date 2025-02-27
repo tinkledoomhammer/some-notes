@@ -577,7 +577,8 @@ int ClassName::methodName(int par1...){
 * cannot be called explicitly i.e. `classInstance.ClassName(args);//Not valid`
 * They can be overloaded with a different argument list
 * The default constructor takes no arguments, and cannot be called
-	* it is only used for uninitialized instances i.e. `ClassName instance;` not `ClassName instance()`
+	* it is only used for uninitialized instances i.e. `ClassName instance;` not `ClassName instance();`
+	* the second case looks like a function declaration
 * 
 ```c++
 class ClassName {
@@ -607,6 +608,7 @@ class Circle {
 int main () {
   Circle foo (10.0);   // functional form
   Circle bar = 20.0;   // assignment init.
+  //the following can be used 
   Circle baz {30.0};   // uniform init.
   Circle qux = {40.0}; // POD-like
 
@@ -614,6 +616,8 @@ int main () {
   return 0;
 }
 ```
+
+
 ## Other Language Features
 ## C++ Standard Library
 ### Input/Output with files
@@ -622,10 +626,10 @@ int main () {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxOTgwNjg1LDExNTY1Mjc3MzksMTUyOT
-IxNTkzOCwtMTk1Mzg0MDI4MCwtNTM0MzA1NTE5LDc3MjM4MTA5
-MywtMzYyMTczNjAzLC0zOTM4MDg1MTYsOTkwMTY4MzgxLDE4OD
-k4NzUzMTksLTYxOTQ3ODA1OCwtMjA2NTg1MzU5MywzOTM1Mjky
-NjgsLTE0MjYwNjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2OTMsLT
-I0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1NF19
+eyJoaXN0b3J5IjpbLTE1MTAxNzU0OTMsMTE1NjUyNzczOSwxNT
+I5MjE1OTM4LC0xOTUzODQwMjgwLC01MzQzMDU1MTksNzcyMzgx
+MDkzLC0zNjIxNzM2MDMsLTM5MzgwODUxNiw5OTAxNjgzODEsMT
+g4OTg3NTMxOSwtNjE5NDc4MDU4LC0yMDY1ODUzNTkzLDM5MzUy
+OTI2OCwtMTQyNjA2MjkxNSw1MjcyMDc3NDEsLTc1MDg1NjY5My
+wtMjQ5NjM0MDk3LC01MDQ4ODA4MCwtMjc4MjM0ODU0XX0=
 -->
