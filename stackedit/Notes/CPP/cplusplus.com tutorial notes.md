@@ -527,7 +527,9 @@ sizeof(mix_t) // == 4
 `enum type_name { val1, val2, ...} var1, var2...;`
 ` var1 = val1;`
 
-* values of enum types can be implicitely converted to integer types
+* values of enum types can be implicitly converted to integer types
+* the default value is 1 + the previous element, 0 for the first
+* values can be assigned manually : `enum color_t {black = 0, white = 10, red =1
 ## Classes
 ## Other Language Features
 ## C++ Standard Library
@@ -537,7 +539,7 @@ sizeof(mix_t) // == 4
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0MTQxMzg1NywtMTk1Mzg0MDI4MCwtNT
+eyJoaXN0b3J5IjpbMjA1Nzk1ODEwMSwtMTk1Mzg0MDI4MCwtNT
 M0MzA1NTE5LDc3MjM4MTA5MywtMzYyMTczNjAzLC0zOTM4MDg1
 MTYsOTkwMTY4MzgxLDE4ODk4NzUzMTksLTYxOTQ3ODA1OCwtMj
 A2NTg1MzU5MywzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNTI3MjA3
