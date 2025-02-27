@@ -638,6 +638,9 @@ public:
 };
 ```
 
+* member access operator for use with pointers
+* `x->y` is the same as `(*x).y`
+
 ## Other Language Features
 ## C++ Standard Library
 ### Input/Output with files
@@ -646,11 +649,11 @@ public:
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MzQzMzIxOCwtOTkxNDA3MjQsMTE1Nj
-UyNzczOSwxNTI5MjE1OTM4LC0xOTUzODQwMjgwLC01MzQzMDU1
-MTksNzcyMzgxMDkzLC0zNjIxNzM2MDMsLTM5MzgwODUxNiw5OT
-AxNjgzODEsMTg4OTg3NTMxOSwtNjE5NDc4MDU4LC0yMDY1ODUz
-NTkzLDM5MzUyOTI2OCwtMTQyNjA2MjkxNSw1MjcyMDc3NDEsLT
-c1MDg1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4MCwtMjc4MjM0
-ODU0XX0=
+eyJoaXN0b3J5IjpbLTE4ODQ3MTQ1NTUsLTk5MTQwNzI0LDExNT
+Y1Mjc3MzksMTUyOTIxNTkzOCwtMTk1Mzg0MDI4MCwtNTM0MzA1
+NTE5LDc3MjM4MTA5MywtMzYyMTczNjAzLC0zOTM4MDg1MTYsOT
+kwMTY4MzgxLDE4ODk4NzUzMTksLTYxOTQ3ODA1OCwtMjA2NTg1
+MzU5MywzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNTI3MjA3NzQxLC
+03NTA4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIz
+NDg1NF19
 -->
