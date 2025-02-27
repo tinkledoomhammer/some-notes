@@ -13,6 +13,7 @@ int main(){
 
 ```
 ### Variables and types
+#### Reserved Words
 ```c++
 alignas, alignof, and, and_eq, asm, auto, bitand, bitor, bool, break, case, 
 catch, char, char16_t,char32_t, class, compl, const, constexpr, const_cast,
@@ -20,9 +21,12 @@ continue, decltype, default, delete, do, double, dynamic_cast, else, enum,
 explicit, export, extern, false, float, for, friend, goto, if, inline, int,
 long, mutable, namespace, new, noexcept, not, not_eq, nullptr, operator, or,
 or_eq, private, protected, public, register, reinterpret_cast, return, short,
-signed, sizeof, static, static_assert, static_cast, struct, switch, template, this, thread_local, throw, true, try, typedef, typeid, typename, union, unsigned, using, virtual, void, volatile, wchar_t, while, xor, xor_eq
+signed, sizeof, static, static_assert, static_cast, struct, switch, template,
+this, thread_local, throw, true, try, typedef, typeid, typename, union,
+unsigned, using, virtual, void, volatile, wchar_t, while, xor, xor_eq
 ```
 
+#### Simple types
 Group | type names* | Notes on size/precision
 ---|---|---
 **Character Types** | char | exactly one byte, at least 8 bits
@@ -655,7 +659,7 @@ public:
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM5NzE0MDYxLC0xODg0NzE0NTU1LC05OT
+eyJoaXN0b3J5IjpbOTAwMzMzNDM1LC0xODg0NzE0NTU1LC05OT
 E0MDcyNCwxMTU2NTI3NzM5LDE1MjkyMTU5MzgsLTE5NTM4NDAy
 ODAsLTUzNDMwNTUxOSw3NzIzODEwOTMsLTM2MjE3MzYwMywtMz
 kzODA4NTE2LDk5MDE2ODM4MSwxODg5ODc1MzE5LC02MTk0Nzgw
