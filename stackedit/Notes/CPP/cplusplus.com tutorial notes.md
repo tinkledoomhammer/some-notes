@@ -674,7 +674,9 @@ delete    new[]     delete[]
 
 Generic expression | Operators | Member function | non-member function
 -|-|-|-
-`@a
+`@a` | `+ - * & ! ~ ++ --` | `A::operator@()` | operator@(A)
+`a@` | `++ --` | `A::operator@(int)` | `operator@(A,int)`
+
 ## Other Language Features
 ## C++ Standard Library
 ### Input/Output with files
@@ -683,7 +685,7 @@ Generic expression | Operators | Member function | non-member function
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDA2ODY2OTAsLTE4ODQ3MTQ1NTUsLT
+eyJoaXN0b3J5IjpbLTE0NzcwNzk1OTAsLTE4ODQ3MTQ1NTUsLT
 k5MTQwNzI0LDExNTY1Mjc3MzksMTUyOTIxNTkzOCwtMTk1Mzg0
 MDI4MCwtNTM0MzA1NTE5LDc3MjM4MTA5MywtMzYyMTczNjAzLC
 0zOTM4MDg1MTYsOTkwMTY4MzgxLDE4ODk4NzUzMTksLTYxOTQ3
