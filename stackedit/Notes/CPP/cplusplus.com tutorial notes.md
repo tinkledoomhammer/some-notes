@@ -618,7 +618,7 @@ int main () {
 ```
 * Member initialization in constructors
 ```c++
-Rectangle::Rectangle(int x, int y) {width = x; height = y); //normal
+Rectangle::Rectangle(int x, int y) {width = x; height = y) //normal
 Rectangle::rectangle(int x, int y) : width(x), height(y) {//empty block}
 Rectangle::rectangle(int x, int y) : width{x}, height{y} {} //curley braces
 ```
@@ -630,7 +630,11 @@ public:
 	Circle(double r) : radius{r} {}
 };
 class Cylinder{
-	
+	Circle base;
+	double height;
+public:
+	Cylinder(double r, double h) : base(r), height(h){}
+};
 ```
 
 ## Other Language Features
@@ -641,11 +645,11 @@ class Cylinder{
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzODA4MTE3NSwtOTkxNDA3MjQsMTE1Nj
-UyNzczOSwxNTI5MjE1OTM4LC0xOTUzODQwMjgwLC01MzQzMDU1
-MTksNzcyMzgxMDkzLC0zNjIxNzM2MDMsLTM5MzgwODUxNiw5OT
-AxNjgzODEsMTg4OTg3NTMxOSwtNjE5NDc4MDU4LC0yMDY1ODUz
-NTkzLDM5MzUyOTI2OCwtMTQyNjA2MjkxNSw1MjcyMDc3NDEsLT
-c1MDg1NjY5MywtMjQ5NjM0MDk3LC01MDQ4ODA4MCwtMjc4MjM0
-ODU0XX0=
+eyJoaXN0b3J5IjpbLTEzNjc4MzI1NDEsLTk5MTQwNzI0LDExNT
+Y1Mjc3MzksMTUyOTIxNTkzOCwtMTk1Mzg0MDI4MCwtNTM0MzA1
+NTE5LDc3MjM4MTA5MywtMzYyMTczNjAzLC0zOTM4MDg1MTYsOT
+kwMTY4MzgxLDE4ODk4NzUzMTksLTYxOTQ3ODA1OCwtMjA2NTg1
+MzU5MywzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNTI3MjA3NzQxLC
+03NTA4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIz
+NDg1NF19
 -->
