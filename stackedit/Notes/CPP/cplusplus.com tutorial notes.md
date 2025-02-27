@@ -676,7 +676,7 @@ Generic expression | Operators | Member function | non-member function
 -|-|-|-
 `@a` | `+ - * & ! ~ ++ --` | `A::operator@()` | operator@(A)
 `a@` | `++ --` | `A::operator@(int)` | `operator@(A,int)`
-`a@b` | <code>+ - * / % ^ & < > == != <= >= << >> && , \| \|\|</code> | `A::operator@(B)`| `operator@(A,B)`
+`a@b` | <code>`+ - * / % ^ & < > == != <= >= << >> && , \| \|\|</code> | `A::operator@(B)`| `operator@(A,B)`
 
 ## Other Language Features
 ## C++ Standard Library
@@ -686,11 +686,11 @@ Generic expression | Operators | Member function | non-member function
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc2NzU1MjE0LC0xNjQ5MjgxNzk2LC0xOD
-g0NzE0NTU1LC05OTE0MDcyNCwxMTU2NTI3NzM5LDE1MjkyMTU5
-MzgsLTE5NTM4NDAyODAsLTUzNDMwNTUxOSw3NzIzODEwOTMsLT
-M2MjE3MzYwMywtMzkzODA4NTE2LDk5MDE2ODM4MSwxODg5ODc1
-MzE5LC02MTk0NzgwNTgsLTIwNjU4NTM1OTMsMzkzNTI5MjY4LC
-0xNDI2MDYyOTE1LDUyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2
-MzQwOTddfQ==
+eyJoaXN0b3J5IjpbMTM0ODU0NjgxOCwtMTY0OTI4MTc5NiwtMT
+g4NDcxNDU1NSwtOTkxNDA3MjQsMTE1NjUyNzczOSwxNTI5MjE1
+OTM4LC0xOTUzODQwMjgwLC01MzQzMDU1MTksNzcyMzgxMDkzLC
+0zNjIxNzM2MDMsLTM5MzgwODUxNiw5OTAxNjgzODEsMTg4OTg3
+NTMxOSwtNjE5NDc4MDU4LC0yMDY1ODUzNTkzLDM5MzUyOTI2OC
+wtMTQyNjA2MjkxNSw1MjcyMDc3NDEsLTc1MDg1NjY5MywtMjQ5
+NjM0MDk3XX0=
 -->
