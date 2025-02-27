@@ -551,7 +551,9 @@ class type_name {
 	* the default access specifier is `public:` for `struct`s and `union`s
 	* the default access specifier is `private:` for `class`es
 * Allowed access specifiers:
-	* `public:` 
+	* `private:`  only accessible from the same class or "friends"
+	* `protected:` also allows access from derived classes
+	* `public:` available everywhere
 ## Other Language Features
 ## C++ Standard Library
 ### Input/Output with files
@@ -560,10 +562,10 @@ class type_name {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjcwOTAzMDA4LDE1MjkyMTU5MzgsLTE5NT
-M4NDAyODAsLTUzNDMwNTUxOSw3NzIzODEwOTMsLTM2MjE3MzYw
-MywtMzkzODA4NTE2LDk5MDE2ODM4MSwxODg5ODc1MzE5LC02MT
-k0NzgwNTgsLTIwNjU4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYy
-OTE1LDUyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQwOTcsLT
-UwNDg4MDgwLC0yNzgyMzQ4NTRdfQ==
+eyJoaXN0b3J5IjpbLTg3NTA3MzE2MSwxNTI5MjE1OTM4LC0xOT
+UzODQwMjgwLC01MzQzMDU1MTksNzcyMzgxMDkzLC0zNjIxNzM2
+MDMsLTM5MzgwODUxNiw5OTAxNjgzODEsMTg4OTg3NTMxOSwtNj
+E5NDc4MDU4LC0yMDY1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2
+MjkxNSw1MjcyMDc3NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3LC
+01MDQ4ODA4MCwtMjc4MjM0ODU0XX0=
 -->
