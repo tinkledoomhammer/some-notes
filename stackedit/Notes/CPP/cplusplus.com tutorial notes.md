@@ -664,7 +664,10 @@ public:
 ~    &=   ^=   |=   &&   ||   %=   []   ()   ,    ->*  ->   new   
 delete    new[]     delete[]
 ```
-* operators are regular functions with s
+* operators are regular functions with special names
+	* `type operator sign (params) {/*body*?}`
+	* i.e. `CVector Cvector::operator+ (const CVector& param){...`
+* 
 ## Other Language Features
 ## C++ Standard Library
 ### Input/Output with files
@@ -673,7 +676,7 @@ delete    new[]     delete[]
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MDc3MTYzNiwtMTg4NDcxNDU1NSwtOT
+eyJoaXN0b3J5IjpbMjA5Mjg4MzEwNSwtMTg4NDcxNDU1NSwtOT
 kxNDA3MjQsMTE1NjUyNzczOSwxNTI5MjE1OTM4LC0xOTUzODQw
 MjgwLC01MzQzMDU1MTksNzcyMzgxMDkzLC0zNjIxNzM2MDMsLT
 M5MzgwODUxNiw5OTAxNjgzODEsMTg4OTg3NTMxOSwtNjE5NDc4
