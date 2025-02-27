@@ -541,13 +541,15 @@ sizeof(mix_t) // == 4
 ## Classes
 ### Basics
 #### Declaring classes
+
 ```c++
 class type_name {
 	access_specifier1:
-		member_1;
+		type member_1;
 } var_names;	
 type_name var_name;
 ```
+
 * class can be a struct or union
 	* the default access specifier is `public:` for `struct`s and `union`s
 	* the default access specifier is `private:` for `class`es
@@ -569,6 +571,7 @@ int ClassName::methodName(int par1...){
 	return this.x+par1;
 }
 ```
+#### Constructors
 
 ## Other Language Features
 ## C++ Standard Library
@@ -578,7 +581,7 @@ int ClassName::methodName(int par1...){
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0ODc4NDg4OSwxNTI5MjE1OTM4LC0xOT
+eyJoaXN0b3J5IjpbLTMzOTE0NjQzOCwxNTI5MjE1OTM4LC0xOT
 UzODQwMjgwLC01MzQzMDU1MTksNzcyMzgxMDkzLC0zNjIxNzM2
 MDMsLTM5MzgwODUxNiw5OTAxNjgzODEsMTg4OTg3NTMxOSwtNj
 E5NDc4MDU4LC0yMDY1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2
