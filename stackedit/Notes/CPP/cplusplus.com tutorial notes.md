@@ -523,7 +523,9 @@ sizeof(mix_t) // == 4
 * Anonymous unions
 	* A union declared within a struct does not need to have a variable name
 	* Its members are accessed as though they were members of the struct directly
-* 
+#### Enums
+`enum type_name { val1, val2, ...} object_names`
+
 ## Classes
 ## Other Language Features
 ## C++ Standard Library
@@ -533,10 +535,10 @@ sizeof(mix_t) // == 4
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTM4NDAyODAsLTUzNDMwNTUxOSw3Nz
-IzODEwOTMsLTM2MjE3MzYwMywtMzkzODA4NTE2LDk5MDE2ODM4
-MSwxODg5ODc1MzE5LC02MTk0NzgwNTgsLTIwNjU4NTM1OTMsMz
-kzNTI5MjY4LC0xNDI2MDYyOTE1LDUyNzIwNzc0MSwtNzUwODU2
-NjkzLC0yNDk2MzQwOTcsLTUwNDg4MDgwLC0yNzgyMzQ4NTRdfQ
-==
+eyJoaXN0b3J5IjpbMTA1MTk2NTUxNiwtMTk1Mzg0MDI4MCwtNT
+M0MzA1NTE5LDc3MjM4MTA5MywtMzYyMTczNjAzLC0zOTM4MDg1
+MTYsOTkwMTY4MzgxLDE4ODk4NzUzMTksLTYxOTQ3ODA1OCwtMj
+A2NTg1MzU5MywzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNTI3MjA3
+NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLT
+I3ODIzNDg1NF19
 -->
