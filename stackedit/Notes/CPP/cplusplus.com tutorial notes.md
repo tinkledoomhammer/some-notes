@@ -676,7 +676,8 @@ Generic expression | Operators | Member function | non-member function
 -|-|-|-
 `@a` | `+ - * & ! ~ ++ --` | `A::operator@()` | operator@(A)
 `a@` | `++ --` | `A::operator@(int)` | `operator@(A,int)`
-`a@b` | <code>`+ - * / % ^ & < > == != <= >= << >> && , \| \|\|</code> | `A::operator@(B)`| `operator@(A,B)`
+`a@b` | <code>+ - * / % ^ & < > == != <= >= << >> && , \| \|\| </code> | `A::operator@(B)`| `operator@(A,B)`
+
 
 ## Other Language Features
 ## C++ Standard Library
@@ -686,7 +687,7 @@ Generic expression | Operators | Member function | non-member function
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0ODU0NjgxOCwtMTY0OTI4MTc5NiwtMT
+eyJoaXN0b3J5IjpbMTI0NjY3NDg0OCwtMTY0OTI4MTc5NiwtMT
 g4NDcxNDU1NSwtOTkxNDA3MjQsMTE1NjUyNzczOSwxNTI5MjE1
 OTM4LC0xOTUzODQwMjgwLC01MzQzMDU1MTksNzcyMzgxMDkzLC
 0zNjIxNzM2MDMsLTM5MzgwODUxNiw5OTAxNjgzODEsMTg4OTg3
