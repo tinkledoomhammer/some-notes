@@ -616,7 +616,10 @@ int main () {
   return 0;
 }
 ```
-
+* Member initialization in constructors
+```c++
+Rectangle::Rectangle (int x, int y) {width = x; height = y); //f
+```
 
 ## Other Language Features
 ## C++ Standard Library
@@ -626,10 +629,11 @@ int main () {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5MTQwNzI0LDExNTY1Mjc3MzksMTUyOT
-IxNTkzOCwtMTk1Mzg0MDI4MCwtNTM0MzA1NTE5LDc3MjM4MTA5
-MywtMzYyMTczNjAzLC0zOTM4MDg1MTYsOTkwMTY4MzgxLDE4OD
-k4NzUzMTksLTYxOTQ3ODA1OCwtMjA2NTg1MzU5MywzOTM1Mjky
-NjgsLTE0MjYwNjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2OTMsLT
-I0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIzNDg1NF19
+eyJoaXN0b3J5IjpbLTIwMDgyNDk1NTksLTk5MTQwNzI0LDExNT
+Y1Mjc3MzksMTUyOTIxNTkzOCwtMTk1Mzg0MDI4MCwtNTM0MzA1
+NTE5LDc3MjM4MTA5MywtMzYyMTczNjAzLC0zOTM4MDg1MTYsOT
+kwMTY4MzgxLDE4ODk4NzUzMTksLTYxOTQ3ODA1OCwtMjA2NTg1
+MzU5MywzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNTI3MjA3NzQxLC
+03NTA4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLTI3ODIz
+NDg1NF19
 -->
