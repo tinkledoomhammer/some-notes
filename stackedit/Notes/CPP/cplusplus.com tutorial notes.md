@@ -531,8 +531,11 @@ sizeof(mix_t) // == 4
 * the default value is 1 + the previous element, 0 for the first
 * values can be assigned manually : `enum color_t {black = 0, white = 10, red =1, blue, green};`
 	* `green == 3`
+* values can be scoped : `color_t::white`
 * enum classes ` enum class typename {val1, val2...};`
-	* do no
+	* do not convert to ints
+	* must be scoped in : `typename::val1`
+* they can alternatively specify an integer type : 
 ## Classes
 ## Other Language Features
 ## C++ Standard Library
@@ -542,7 +545,7 @@ sizeof(mix_t) // == 4
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0Mjc0NTI3LC0xOTUzODQwMjgwLC01Mz
+eyJoaXN0b3J5IjpbOTg1MTI5OTQ1LC0xOTUzODQwMjgwLC01Mz
 QzMDU1MTksNzcyMzgxMDkzLC0zNjIxNzM2MDMsLTM5MzgwODUx
 Niw5OTAxNjgzODEsMTg4OTg3NTMxOSwtNjE5NDc4MDU4LC0yMD
 Y1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2MjkxNSw1MjcyMDc3
