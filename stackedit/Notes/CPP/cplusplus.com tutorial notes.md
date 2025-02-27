@@ -554,6 +554,11 @@ class type_name {
 	* `private:`  only accessible from the same class or "friends"
 	* `protected:` also allows access from derived classes
 	* `public:` available everywhere
+* Classes work like regular structures, but can define methods
+* Defining methods:
+```c++
+void ClassName::methodNamme(
+```
 ## Other Language Features
 ## C++ Standard Library
 ### Input/Output with files
@@ -562,10 +567,10 @@ class type_name {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3NTA3MzE2MSwxNTI5MjE1OTM4LC0xOT
-UzODQwMjgwLC01MzQzMDU1MTksNzcyMzgxMDkzLC0zNjIxNzM2
-MDMsLTM5MzgwODUxNiw5OTAxNjgzODEsMTg4OTg3NTMxOSwtNj
-E5NDc4MDU4LC0yMDY1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2
-MjkxNSw1MjcyMDc3NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3LC
-01MDQ4ODA4MCwtMjc4MjM0ODU0XX0=
+eyJoaXN0b3J5IjpbLTEyNzMxNDczNjgsMTUyOTIxNTkzOCwtMT
+k1Mzg0MDI4MCwtNTM0MzA1NTE5LDc3MjM4MTA5MywtMzYyMTcz
+NjAzLC0zOTM4MDg1MTYsOTkwMTY4MzgxLDE4ODk4NzUzMTksLT
+YxOTQ3ODA1OCwtMjA2NTg1MzU5MywzOTM1MjkyNjgsLTE0MjYw
+NjI5MTUsNTI3MjA3NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5Ny
+wtNTA0ODgwODAsLTI3ODIzNDg1NF19
 -->
