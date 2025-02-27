@@ -572,7 +572,13 @@ int ClassName::methodName(int par1...){
 }
 ```
 #### Constructors
-
+* methods with the return type of the class, and no name
+```c++
+class ClassName {
+	int member;
+public:
+	in
+```
 ## Other Language Features
 ## C++ Standard Library
 ### Input/Output with files
@@ -581,7 +587,7 @@ int ClassName::methodName(int par1...){
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzOTE0NjQzOCwxNTI5MjE1OTM4LC0xOT
+eyJoaXN0b3J5IjpbMTIzODg1NDg4MywxNTI5MjE1OTM4LC0xOT
 UzODQwMjgwLC01MzQzMDU1MTksNzcyMzgxMDkzLC0zNjIxNzM2
 MDMsLTM5MzgwODUxNiw5OTAxNjgzODEsMTg4OTg3NTMxOSwtNj
 E5NDc4MDU4LC0yMDY1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2
