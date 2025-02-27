@@ -574,7 +574,7 @@ int ClassName::methodName(int par1...){
 #### Constructors
 * methods with the return type of the class, and no name
 * never return values, not even void
-* cannot be called explicitly i.e. `classInstance.
+* cannot be called explicitly i.e. `classInstance.ClassName(args);//Not valid`
 ```c++
 class ClassName {
 	int member;
@@ -596,10 +596,10 @@ ClassName::ClassName(int val){
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1ODA1MTQ4NSwxNTI5MjE1OTM4LC0xOT
-UzODQwMjgwLC01MzQzMDU1MTksNzcyMzgxMDkzLC0zNjIxNzM2
-MDMsLTM5MzgwODUxNiw5OTAxNjgzODEsMTg4OTg3NTMxOSwtNj
-E5NDc4MDU4LC0yMDY1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2
-MjkxNSw1MjcyMDc3NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3LC
-01MDQ4ODA4MCwtMjc4MjM0ODU0XX0=
+eyJoaXN0b3J5IjpbNTY2NDgyODQ2LDE1MjkyMTU5MzgsLTE5NT
+M4NDAyODAsLTUzNDMwNTUxOSw3NzIzODEwOTMsLTM2MjE3MzYw
+MywtMzkzODA4NTE2LDk5MDE2ODM4MSwxODg5ODc1MzE5LC02MT
+k0NzgwNTgsLTIwNjU4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYy
+OTE1LDUyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQwOTcsLT
+UwNDg4MDgwLC0yNzgyMzQ4NTRdfQ==
 -->
