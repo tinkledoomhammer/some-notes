@@ -539,6 +539,15 @@ sizeof(mix_t) // == 4
 	* `enum class typename : char {val1, ...};`
 * 
 ## Classes
+### Basics
+#### Declaring classes
+```c++
+class type_name {
+	access_specifier1:
+		member_1;
+} var_names;	
+```
+
 ## Other Language Features
 ## C++ Standard Library
 ### Input/Output with files
@@ -547,10 +556,10 @@ sizeof(mix_t) // == 4
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyOTIxNTkzOCwtMTk1Mzg0MDI4MCwtNT
-M0MzA1NTE5LDc3MjM4MTA5MywtMzYyMTczNjAzLC0zOTM4MDg1
-MTYsOTkwMTY4MzgxLDE4ODk4NzUzMTksLTYxOTQ3ODA1OCwtMj
-A2NTg1MzU5MywzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNTI3MjA3
-NzQxLC03NTA4NTY2OTMsLTI0OTYzNDA5NywtNTA0ODgwODAsLT
-I3ODIzNDg1NF19
+eyJoaXN0b3J5IjpbMjAzMjkyMzU3NiwxNTI5MjE1OTM4LC0xOT
+UzODQwMjgwLC01MzQzMDU1MTksNzcyMzgxMDkzLC0zNjIxNzM2
+MDMsLTM5MzgwODUxNiw5OTAxNjgzODEsMTg4OTg3NTMxOSwtNj
+E5NDc4MDU4LC0yMDY1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2
+MjkxNSw1MjcyMDc3NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3LC
+01MDQ4ODA4MCwtMjc4MjM0ODU0XX0=
 -->
