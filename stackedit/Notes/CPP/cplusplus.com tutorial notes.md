@@ -546,6 +546,7 @@ class type_name {
 	access_specifier1:
 		member_1;
 } var_names;	
+type_name var_name;
 ```
 * class can be a struct or union
 	* the default access specifier is `public:` for `struct`s and `union`s
@@ -561,12 +562,14 @@ class ClassName{
 	//private by default
 	int m_x
 public:
-	int methodName(
-int ClassName::methodNamme(int par1...){
+	int methodName(int);
+};
+int ClassName::methodName(int par1...){
 	//this is a ClassName* that points to this object
 	return this.x+par1;
 }
 ```
+
 ## Other Language Features
 ## C++ Standard Library
 ### Input/Output with files
@@ -575,10 +578,10 @@ int ClassName::methodNamme(int par1...){
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU3OTMyNDgzLDE1MjkyMTU5MzgsLTE5NT
-M4NDAyODAsLTUzNDMwNTUxOSw3NzIzODEwOTMsLTM2MjE3MzYw
-MywtMzkzODA4NTE2LDk5MDE2ODM4MSwxODg5ODc1MzE5LC02MT
-k0NzgwNTgsLTIwNjU4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYy
-OTE1LDUyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQwOTcsLT
-UwNDg4MDgwLC0yNzgyMzQ4NTRdfQ==
+eyJoaXN0b3J5IjpbMTg0ODc4NDg4OSwxNTI5MjE1OTM4LC0xOT
+UzODQwMjgwLC01MzQzMDU1MTksNzcyMzgxMDkzLC0zNjIxNzM2
+MDMsLTM5MzgwODUxNiw5OTAxNjgzODEsMTg4OTg3NTMxOSwtNj
+E5NDc4MDU4LC0yMDY1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2
+MjkxNSw1MjcyMDc3NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3LC
+01MDQ4ODA4MCwtMjc4MjM0ODU0XX0=
 -->
