@@ -650,7 +650,21 @@ public:
 
 * member access operator for use with pointers
 * `x->y` is the same as `(*x).y`
+### Classes II
+#### Operator overloading
+* Overloadable operators:
+```c++
++    -    *    /    =    
+    >    +=   -=   *=   /=   
 
+   >>  
+
+=  >>=  ==   !=   
+=   >=   ++   --   %    &    ^    !    |  
+~    &=   ^=   |=   &&   ||   %=   []   ()   ,    ->*  ->   new   
+delete    new[]     delete[]
+```
+* operators are regular functions with s
 ## Other Language Features
 ## C++ Standard Library
 ### Input/Output with files
@@ -659,11 +673,11 @@ public:
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAwMzMzNDM1LC0xODg0NzE0NTU1LC05OT
-E0MDcyNCwxMTU2NTI3NzM5LDE1MjkyMTU5MzgsLTE5NTM4NDAy
-ODAsLTUzNDMwNTUxOSw3NzIzODEwOTMsLTM2MjE3MzYwMywtMz
-kzODA4NTE2LDk5MDE2ODM4MSwxODg5ODc1MzE5LC02MTk0Nzgw
-NTgsLTIwNjU4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYyOTE1LD
-UyNzIwNzc0MSwtNzUwODU2NjkzLC0yNDk2MzQwOTcsLTUwNDg4
-MDgwXX0=
+eyJoaXN0b3J5IjpbMTY0MDc3MTYzNiwtMTg4NDcxNDU1NSwtOT
+kxNDA3MjQsMTE1NjUyNzczOSwxNTI5MjE1OTM4LC0xOTUzODQw
+MjgwLC01MzQzMDU1MTksNzcyMzgxMDkzLC0zNjIxNzM2MDMsLT
+M5MzgwODUxNiw5OTAxNjgzODEsMTg4OTg3NTMxOSwtNjE5NDc4
+MDU4LC0yMDY1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2MjkxNS
+w1MjcyMDc3NDEsLTc1MDg1NjY5MywtMjQ5NjM0MDk3LC01MDQ4
+ODA4MF19
 -->
