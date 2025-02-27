@@ -622,6 +622,16 @@ Rectangle::Rectangle(int x, int y) {width = x; height = y); //normal
 Rectangle::rectangle(int x, int y) : width(x), height(y) {//empty block}
 Rectangle::rectangle(int x, int y) : width{x}, height{y} {} //curley braces
 ```
+* Initializer example with no default constructor
+```c++
+Class Circle{
+	double radius
+public:
+	Circle(double r) : radius{r} {}
+};
+class Cylinder{
+	
+```
 
 ## Other Language Features
 ## C++ Standard Library
@@ -631,7 +641,7 @@ Rectangle::rectangle(int x, int y) : width{x}, height{y} {} //curley braces
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MTk3MzUyOCwtOTkxNDA3MjQsMTE1Nj
+eyJoaXN0b3J5IjpbMTEzODA4MTE3NSwtOTkxNDA3MjQsMTE1Nj
 UyNzczOSwxNTI5MjE1OTM4LC0xOTUzODQwMjgwLC01MzQzMDU1
 MTksNzcyMzgxMDkzLC0zNjIxNzM2MDMsLTM5MzgwODUxNiw5OT
 AxNjgzODEsMTg4OTg3NTMxOSwtNjE5NDc4MDU4LC0yMDY1ODUz
