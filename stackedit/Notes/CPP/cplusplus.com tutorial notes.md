@@ -680,6 +680,8 @@ Generic expression | Operators | Member function | non-member function
 `a@b` | <code>= += -= *= /= %= ^= &= \|= <<= >>= []</code> | `A::operator@(B)` | n/a
 `a(b,c...)` | `()` | `A::operator()(B,C...)` | n/a
 `a->b` | `->` | A::operattor->() | n/a
+`(TYPE) a` | `TYPE` | `A::operator TYPE()` n/a
+
 
 
 ## Other Language Features
@@ -690,7 +692,7 @@ Generic expression | Operators | Member function | non-member function
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3NjI1NzY3MSwtMTY0OTI4MTc5NiwtMT
+eyJoaXN0b3J5IjpbMTk5NjIyNTQ5NywtMTY0OTI4MTc5NiwtMT
 g4NDcxNDU1NSwtOTkxNDA3MjQsMTE1NjUyNzczOSwxNTI5MjE1
 OTM4LC0xOTUzODQwMjgwLC01MzQzMDU1MTksNzcyMzgxMDkzLC
 0zNjIxNzM2MDMsLTM5MzgwODUxNiw5OTAxNjgzODEsMTg4OTg3
