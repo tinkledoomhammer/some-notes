@@ -577,7 +577,13 @@ int ClassName::methodName(int par1...){
 class ClassName {
 	int member;
 public:
-	in
+	ClassName(int);
+}
+
+ClassName::ClassName(int val){
+	member = val;
+	//same as this.member = val
+}
 ```
 ## Other Language Features
 ## C++ Standard Library
@@ -587,7 +593,7 @@ public:
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzODg1NDg4MywxNTI5MjE1OTM4LC0xOT
+eyJoaXN0b3J5IjpbLTkyMjUyNzM4NSwxNTI5MjE1OTM4LC0xOT
 UzODQwMjgwLC01MzQzMDU1MTksNzcyMzgxMDkzLC0zNjIxNzM2
 MDMsLTM5MzgwODUxNiw5OTAxNjgzODEsMTg4OTg3NTMxOSwtNj
 E5NDc4MDU4LC0yMDY1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2
