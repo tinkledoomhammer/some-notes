@@ -718,7 +718,44 @@ int main(){
 * `mutable` 
 
 #### Class Templates
+```c++
+// template specialization
+#include <iostream>
+using namespace std;
 
+// class template:
+template <class T>
+class mycontainer {
+    T element;
+  public:
+    mycontainer (T arg) {element=arg;}
+    T increase () {return ++element;}
+};
+
+// class template specialization:
+template <>
+class mycontainer <char> {
+    char element;
+  public:
+    mycontainer (char arg) {element=arg;}
+    char uppercase ()
+    {
+      if ((element>='a')&&(element<='z'))
+      element+='A'-'a';
+      return element;
+    }
+};
+
+int main () {
+  mycontainer<int> myint (7);
+  mycontainer<char> mychar ('j');
+  cout << myint.increase() << endl;
+  cout << mychar.uppercase() << endl;
+  return 0;
+}
+```
+* mostly work like function templates
+* Specialization 
 ```c++
 int get() const {return x;}        // const member function
 const int& get() {return x;}       // member function returning a const&
@@ -733,11 +770,11 @@ const int& get() const {return x;} // const member function returning a const&
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MDA5NjUwLDE5OTYyMjU0OTcsLTE2ND
-kyODE3OTYsLTE4ODQ3MTQ1NTUsLTk5MTQwNzI0LDExNTY1Mjc3
-MzksMTUyOTIxNTkzOCwtMTk1Mzg0MDI4MCwtNTM0MzA1NTE5LD
-c3MjM4MTA5MywtMzYyMTczNjAzLC0zOTM4MDg1MTYsOTkwMTY4
-MzgxLDE4ODk4NzUzMTksLTYxOTQ3ODA1OCwtMjA2NTg1MzU5My
-wzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNTI3MjA3NzQxLC03NTA4
-NTY2OTNdfQ==
+eyJoaXN0b3J5IjpbLTE1MjY2NzAzMDAsMTk5NjIyNTQ5NywtMT
+Y0OTI4MTc5NiwtMTg4NDcxNDU1NSwtOTkxNDA3MjQsMTE1NjUy
+NzczOSwxNTI5MjE1OTM4LC0xOTUzODQwMjgwLC01MzQzMDU1MT
+ksNzcyMzgxMDkzLC0zNjIxNzM2MDMsLTM5MzgwODUxNiw5OTAx
+NjgzODEsMTg4OTg3NTMxOSwtNjE5NDc4MDU4LC0yMDY1ODUzNT
+kzLDM5MzUyOTI2OCwtMTQyNjA2MjkxNSw1MjcyMDc3NDEsLTc1
+MDg1NjY5M119
 -->
