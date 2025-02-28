@@ -681,6 +681,8 @@ Generic expression | Operators | Member function | non-member function
 `a(b,c...)` | `()` | `A::operator()(B,C...)` | n/a
 `a->b` | `->` | A::operattor->() | n/a
 `(TYPE) a` | `TYPE` | `A::operator TYPE()` n/a
+#### `this` is a pointer available in method bodies that points to the instance onwhich the method is invoked
+#### `static` members
 
 
 
@@ -692,11 +694,11 @@ Generic expression | Operators | Member function | non-member function
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5NjIyNTQ5NywtMTY0OTI4MTc5NiwtMT
-g4NDcxNDU1NSwtOTkxNDA3MjQsMTE1NjUyNzczOSwxNTI5MjE1
-OTM4LC0xOTUzODQwMjgwLC01MzQzMDU1MTksNzcyMzgxMDkzLC
-0zNjIxNzM2MDMsLTM5MzgwODUxNiw5OTAxNjgzODEsMTg4OTg3
-NTMxOSwtNjE5NDc4MDU4LC0yMDY1ODUzNTkzLDM5MzUyOTI2OC
-wtMTQyNjA2MjkxNSw1MjcyMDc3NDEsLTc1MDg1NjY5MywtMjQ5
-NjM0MDk3XX0=
+eyJoaXN0b3J5IjpbLTkwMjI5NDMzMCwxOTk2MjI1NDk3LC0xNj
+Q5MjgxNzk2LC0xODg0NzE0NTU1LC05OTE0MDcyNCwxMTU2NTI3
+NzM5LDE1MjkyMTU5MzgsLTE5NTM4NDAyODAsLTUzNDMwNTUxOS
+w3NzIzODEwOTMsLTM2MjE3MzYwMywtMzkzODA4NTE2LDk5MDE2
+ODM4MSwxODg5ODc1MzE5LC02MTk0NzgwNTgsLTIwNjU4NTM1OT
+MsMzkzNTI5MjY4LC0xNDI2MDYyOTE1LDUyNzIwNzc0MSwtNzUw
+ODU2NjkzXX0=
 -->
