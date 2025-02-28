@@ -789,7 +789,9 @@ int main () {
 	* performs a shallow copy
 
 #### Move Constructor `C::C(C&&);`
-* `
+* `&&` is called an 'r-value reference'
+	* it can be used to refer to temporary r-values, like the return from a method or cast operation
+* 
 #### Move Constructor `C& operator=(C&&);`
 
 ## Other Language Features
@@ -800,7 +802,7 @@ int main () {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2OTg2ODg2OSwyMDk2OTg4MjI0LDE5OT
+eyJoaXN0b3J5IjpbMTk1MDQxODI0MCwyMDk2OTg4MjI0LDE5OT
 YyMjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUsLTk5MTQw
 NzI0LDExNTY1Mjc3MzksMTUyOTIxNTkzOCwtMTk1Mzg0MDI4MC
 wtNTM0MzA1NTE5LDc3MjM4MTA5MywtMzYyMTczNjAzLC0zOTM4
