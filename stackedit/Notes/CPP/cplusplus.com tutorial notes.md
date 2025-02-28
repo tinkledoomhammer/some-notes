@@ -767,14 +767,19 @@ int main () {
 * called when the object is initialized without any arguments
 * takes no arguments, has no return type (not even `void`)
 * if the class defines no constructors, then an automatic default constructor will be created
-	* 
+	* It does nothing
 * If a class defines one or more constructors, but not a default constructor, then it cannot be declared without initialization
 * 
 #### Destructor `C::~C();`
 * called automatically at the end of the object's lifetime
 * takes no arguments, has no return type (not even `void`)
 * should de-allocate resources (i.e. `delete` if the class uses `new`)
+* If no destructor is defined, a default will be created implicitly but it does nothing
+
 #### Copy Constructor `C::C(const C&);`
+* called when initializing new objects
+* If no move or move assignment constructor is defined, a default will be usedd
+* 
 
 #### Copy Assignment `C & operator= (const C&);`
 #### Move Constructor `C::C(C&&);`
@@ -788,7 +793,7 @@ int main () {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0Mzk3NzExMiwyMDk2OTg4MjI0LDE5OT
+eyJoaXN0b3J5IjpbMTg5NDI4NTM4OSwyMDk2OTg4MjI0LDE5OT
 YyMjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUsLTk5MTQw
 NzI0LDExNTY1Mjc3MzksMTUyOTIxNTkzOCwtMTk1Mzg0MDI4MC
 wtNTM0MzA1NTE5LDc3MjM4MTA5MywtMzYyMTczNjAzLC0zOTM4
