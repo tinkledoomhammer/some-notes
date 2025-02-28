@@ -808,6 +808,11 @@ int main () {
 	* `function_declaration = default;` 
 	* or `function_declaration = delete;` to prevent the creation of the implicit default
 
+>Note that, the keyword `default` does not define a member function equal to the _default constructor_ (i.e., where _default constructor_ means constructor with no parameters), but equal to the constructor that would be implicitly defined if not deleted.  
+  
+>In general, and for future compatibility, classes that explicitly define one copy/move constructor or one copy/move assignment but not both, are encouraged to specify either `delete` or `default` on the other special member functions they don't explicitly define.
+
+### Friendship and inheritance
 ## Other Language Features
 ## C++ Standard Library
 ### Input/Output with files
@@ -816,11 +821,11 @@ int main () {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzg5OTM3NzIsMjA5Njk4ODIyNCwxOT
-k2MjI1NDk3LC0xNjQ5MjgxNzk2LC0xODg0NzE0NTU1LC05OTE0
-MDcyNCwxMTU2NTI3NzM5LDE1MjkyMTU5MzgsLTE5NTM4NDAyOD
-AsLTUzNDMwNTUxOSw3NzIzODEwOTMsLTM2MjE3MzYwMywtMzkz
-ODA4NTE2LDk5MDE2ODM4MSwxODg5ODc1MzE5LC02MTk0NzgwNT
-gsLTIwNjU4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYyOTE1LDUy
-NzIwNzc0MV19
+eyJoaXN0b3J5IjpbLTc0OTEzMjYzNiwyMDk2OTg4MjI0LDE5OT
+YyMjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUsLTk5MTQw
+NzI0LDExNTY1Mjc3MzksMTUyOTIxNTkzOCwtMTk1Mzg0MDI4MC
+wtNTM0MzA1NTE5LDc3MjM4MTA5MywtMzYyMTczNjAzLC0zOTM4
+MDg1MTYsOTkwMTY4MzgxLDE4ODk4NzUzMTksLTYxOTQ3ODA1OC
+wtMjA2NTg1MzU5MywzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNTI3
+MjA3NzQxXX0=
 -->
