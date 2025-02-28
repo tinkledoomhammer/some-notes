@@ -709,7 +709,9 @@ int main(){
 #### `const` member functions
 * when an instance of the class is declared const (`const A a;`)
 	* all members of the class are considered `const`
-	* only metho
+	* only methods declared as `const` are permitted
+		* `public: void constFunc() const {...}`
+	```c
 
 ## Other Language Features
 ## C++ Standard Library
@@ -719,11 +721,11 @@ int main(){
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjU0MTY2MDMsMTk5NjIyNTQ5NywtMT
-Y0OTI4MTc5NiwtMTg4NDcxNDU1NSwtOTkxNDA3MjQsMTE1NjUy
-NzczOSwxNTI5MjE1OTM4LC0xOTUzODQwMjgwLC01MzQzMDU1MT
-ksNzcyMzgxMDkzLC0zNjIxNzM2MDMsLTM5MzgwODUxNiw5OTAx
-NjgzODEsMTg4OTg3NTMxOSwtNjE5NDc4MDU4LC0yMDY1ODUzNT
-kzLDM5MzUyOTI2OCwtMTQyNjA2MjkxNSw1MjcyMDc3NDEsLTc1
-MDg1NjY5M119
+eyJoaXN0b3J5IjpbNDc3NzUyNzM4LDE5OTYyMjU0OTcsLTE2ND
+kyODE3OTYsLTE4ODQ3MTQ1NTUsLTk5MTQwNzI0LDExNTY1Mjc3
+MzksMTUyOTIxNTkzOCwtMTk1Mzg0MDI4MCwtNTM0MzA1NTE5LD
+c3MjM4MTA5MywtMzYyMTczNjAzLC0zOTM4MDg1MTYsOTkwMTY4
+MzgxLDE4ODk4NzUzMTksLTYxOTQ3ODA1OCwtMjA2NTg1MzU5My
+wzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNTI3MjA3NzQxLC03NTA4
+NTY2OTNdfQ==
 -->
