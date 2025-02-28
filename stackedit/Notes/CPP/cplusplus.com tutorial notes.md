@@ -716,7 +716,11 @@ int main(){
 		* such methods can change static member variables but not instance members
 		* they can overload non-const methods. In that case the const version will only be called on `const` instances
 * `mutable` 
-
+```c++
+int get() const {return x;}        // const member function
+const int& get() {return x;}       // member function returning a const&
+const int& get() const {return x;} // const member function returning a const& 
+```
 #### Class Templates
 ```c++
 // template specialization
@@ -755,12 +759,8 @@ int main () {
 }
 ```
 * mostly work like function templates
-* Specialization 
-```c++
-int get() const {return x;}        // const member function
-const int& get() {return x;}       // member function returning a const&
-const int& get() const {return x;} // const member function returning a const& 
-```
+* Specialization allows for a custom template for specific types
+
 
 ## Other Language Features
 ## C++ Standard Library
@@ -770,11 +770,11 @@ const int& get() const {return x;} // const member function returning a const&
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjY2NzAzMDAsMTk5NjIyNTQ5NywtMT
-Y0OTI4MTc5NiwtMTg4NDcxNDU1NSwtOTkxNDA3MjQsMTE1NjUy
-NzczOSwxNTI5MjE1OTM4LC0xOTUzODQwMjgwLC01MzQzMDU1MT
-ksNzcyMzgxMDkzLC0zNjIxNzM2MDMsLTM5MzgwODUxNiw5OTAx
-NjgzODEsMTg4OTg3NTMxOSwtNjE5NDc4MDU4LC0yMDY1ODUzNT
-kzLDM5MzUyOTI2OCwtMTQyNjA2MjkxNSw1MjcyMDc3NDEsLTc1
-MDg1NjY5M119
+eyJoaXN0b3J5IjpbMTEwMzEwNTY1MSwxOTk2MjI1NDk3LC0xNj
+Q5MjgxNzk2LC0xODg0NzE0NTU1LC05OTE0MDcyNCwxMTU2NTI3
+NzM5LDE1MjkyMTU5MzgsLTE5NTM4NDAyODAsLTUzNDMwNTUxOS
+w3NzIzODEwOTMsLTM2MjE3MzYwMywtMzkzODA4NTE2LDk5MDE2
+ODM4MSwxODg5ODc1MzE5LC02MTk0NzgwNTgsLTIwNjU4NTM1OT
+MsMzkzNTI5MjY4LC0xNDI2MDYyOTE1LDUyNzIwNzc0MSwtNzUw
+ODU2NjkzXX0=
 -->
