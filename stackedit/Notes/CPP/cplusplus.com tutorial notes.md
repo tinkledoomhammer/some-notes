@@ -788,11 +788,11 @@ int main () {
 	* when no move constructor or assignment is defined
 	* performs a shallow copy
 
-#### Move Constructor `C::C(C&&);`
+#### Move Constructor `C::C(C&&);` and move assignment `C& operator=(C&&);`
 * `&&` is called an 'r-value reference'
 	* it can be used to refer to temporary r-values, like the return from a method or cast operation
-* 
-#### Move Constructor `C& operator=(C&&);`
+* Moves occur when the rvalue is discarded ( i.e. initializing or assigning from an unnamed 
+#### Move Constructor 
 
 ## Other Language Features
 ## C++ Standard Library
@@ -802,11 +802,11 @@ int main () {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MDQxODI0MCwyMDk2OTg4MjI0LDE5OT
-YyMjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUsLTk5MTQw
-NzI0LDExNTY1Mjc3MzksMTUyOTIxNTkzOCwtMTk1Mzg0MDI4MC
-wtNTM0MzA1NTE5LDc3MjM4MTA5MywtMzYyMTczNjAzLC0zOTM4
-MDg1MTYsOTkwMTY4MzgxLDE4ODk4NzUzMTksLTYxOTQ3ODA1OC
-wtMjA2NTg1MzU5MywzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNTI3
-MjA3NzQxXX0=
+eyJoaXN0b3J5IjpbLTE2Mzk2MDU0NTQsMjA5Njk4ODIyNCwxOT
+k2MjI1NDk3LC0xNjQ5MjgxNzk2LC0xODg0NzE0NTU1LC05OTE0
+MDcyNCwxMTU2NTI3NzM5LDE1MjkyMTU5MzgsLTE5NTM4NDAyOD
+AsLTUzNDMwNTUxOSw3NzIzODEwOTMsLTM2MjE3MzYwMywtMzkz
+ODA4NTE2LDk5MDE2ODM4MSwxODg5ODc1MzE5LC02MTk0NzgwNT
+gsLTIwNjU4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYyOTE1LDUy
+NzIwNzc0MV19
 -->
