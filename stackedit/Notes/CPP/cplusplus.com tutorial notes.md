@@ -706,6 +706,11 @@ int main(){
 * static members should be initialized outside of the class
 * static methods do not have a `this`
 
+#### `const` member functions
+* when an instance of the class is declared const (`const A a;`)
+	* all members of the class are considered `const`
+	* only metho
+
 ## Other Language Features
 ## C++ Standard Library
 ### Input/Output with files
@@ -714,7 +719,7 @@ int main(){
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjM3MTYyNTksMTk5NjIyNTQ5NywtMT
+eyJoaXN0b3J5IjpbLTE5NjU0MTY2MDMsMTk5NjIyNTQ5NywtMT
 Y0OTI4MTc5NiwtMTg4NDcxNDU1NSwtOTkxNDA3MjQsMTE1NjUy
 NzczOSwxNTI5MjE1OTM4LC0xOTUzODQwMjgwLC01MzQzMDU1MT
 ksNzcyMzgxMDkzLC0zNjIxNzM2MDMsLTM5MzgwODUxNiw5OTAx
