@@ -836,7 +836,8 @@ int main () {
 #### Multiple Inheritance
 * multiple base classes can be declared in a `,` separated list, each with its own access modifier
 * `class Rectangle: public Polygon, protected Output{...};`
-
+* TODO: what if it inherits the same member from two classes
+* Constructors: `Rectangle(int a, int b) : Polygon
 
 	 
 ## Other Language Features
@@ -847,7 +848,7 @@ int main () {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODc0MzEyNjEsLTc0OTEzMjYzNiwyMD
+eyJoaXN0b3J5IjpbLTE3NDE4OTQ3OTgsLTc0OTEzMjYzNiwyMD
 k2OTg4MjI0LDE5OTYyMjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3
 MTQ1NTUsLTk5MTQwNzI0LDExNTY1Mjc3MzksMTUyOTIxNTkzOC
 wtMTk1Mzg0MDI4MCwtNTM0MzA1NTE5LDc3MjM4MTA5MywtMzYy
