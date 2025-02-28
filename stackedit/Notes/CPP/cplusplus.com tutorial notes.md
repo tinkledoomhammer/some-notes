@@ -760,8 +760,10 @@ int main () {
 ```
 * mostly work like function templates
 * Specialization allows for a custom template for specific types
+	* specializations must define all members, even those that are identical to the generic template
 
-
+### Special member functions
+$
 ## Other Language Features
 ## C++ Standard Library
 ### Input/Output with files
@@ -770,7 +772,7 @@ int main () {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMzEwNTY1MSwxOTk2MjI1NDk3LC0xNj
+eyJoaXN0b3J5IjpbMTQwMjQ0ODAxNCwxOTk2MjI1NDk3LC0xNj
 Q5MjgxNzk2LC0xODg0NzE0NTU1LC05OTE0MDcyNCwxMTU2NTI3
 NzM5LDE1MjkyMTU5MzgsLTE5NTM4NDAyODAsLTUzNDMwNTUxOS
 w3NzIzODEwOTMsLTM2MjE3MzYwMywtMzkzODA4NTE2LDk5MDE2
