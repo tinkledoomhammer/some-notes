@@ -813,7 +813,7 @@ int main () {
 >In general, and for future compatibility, classes that explicitly define one copy/move constructor or one copy/move assignment but not both, are encouraged to specify either `delete` or `default` on the other special member functions they don't explicitly define.
 
 ### Friendship and inheritance
-#### Friends
+#### Friendship
 * functions declared with the `friend` keyword have access to protected and private members
 	* `friend returnType funcName(args);`
 	* the function is not a member of the class
@@ -821,6 +821,7 @@ int main () {
 *friend classes are listed in the class definition like:  `class A{friend class B};`
 	* methods of class `B` will have access to private and protected members of `A`;
 * Friendships are not transitive or reciprocal. If that behavior is desired, then both classes will need a friendship
+#### Inheritance
 * Inheritance is declared like : `class derived : public base {...};`
 	* If the access modifier applied to the base class is more restrictive than `public` then more accessible members of the base class will be made more restrictive in the derived class. i.e.  `public` can become `private` or `protected` but not the other way around
 * `protected` access means that the class and derived class have access
@@ -832,7 +833,10 @@ int main () {
 * Constructors and destructors of the base class are called automatically by the constructors and destructors of the derived class
 	* The default constructor is used unless specified otherwise in the derived constructor's definition
 		* `DerivedClass(arg1,arg2,...) : BaseClass(arg2...){...}`
-####
+#### Multiple Inheritance
+* multiple base classes can be declared in a `,` separated list, each with its own access modifier
+class Rectangle: public Polygon, protected Output;
+```
 
 	 
 ## Other Language Features
@@ -843,11 +847,11 @@ int main () {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2NzMxNTAxLC03NDkxMzI2MzYsMjA5Nj
-k4ODIyNCwxOTk2MjI1NDk3LC0xNjQ5MjgxNzk2LC0xODg0NzE0
-NTU1LC05OTE0MDcyNCwxMTU2NTI3NzM5LDE1MjkyMTU5MzgsLT
-E5NTM4NDAyODAsLTUzNDMwNTUxOSw3NzIzODEwOTMsLTM2MjE3
-MzYwMywtMzkzODA4NTE2LDk5MDE2ODM4MSwxODg5ODc1MzE5LC
-02MTk0NzgwNTgsLTIwNjU4NTM1OTMsMzkzNTI5MjY4LC0xNDI2
-MDYyOTE1XX0=
+eyJoaXN0b3J5IjpbLTcwNTIyOTAxMSwtNzQ5MTMyNjM2LDIwOT
+Y5ODgyMjQsMTk5NjIyNTQ5NywtMTY0OTI4MTc5NiwtMTg4NDcx
+NDU1NSwtOTkxNDA3MjQsMTE1NjUyNzczOSwxNTI5MjE1OTM4LC
+0xOTUzODQwMjgwLC01MzQzMDU1MTksNzcyMzgxMDkzLC0zNjIx
+NzM2MDMsLTM5MzgwODUxNiw5OTAxNjgzODEsMTg4OTg3NTMxOS
+wtNjE5NDc4MDU4LC0yMDY1ODUzNTkzLDM5MzUyOTI2OCwtMTQy
+NjA2MjkxNV19
 -->
