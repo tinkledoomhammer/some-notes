@@ -779,10 +779,17 @@ int main () {
 #### Copy Constructor `C::C(const C&);`
 * called when initializing new objects
 * If no move or move assignment constructor is defined, a default will be usedd
-* 
+	* it just shallow copies members
+
 
 #### Copy Assignment `C & operator= (const C&);`
+* like the copy constructor but it is used to assign new values in circumstances other than initialization
+* has a default
+	* when no move constructor or assignment is defined
+	* performs a shallow copy
+
 #### Move Constructor `C::C(C&&);`
+* `
 #### Move Constructor `C& operator=(C&&);`
 
 ## Other Language Features
@@ -793,7 +800,7 @@ int main () {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NDI4NTM4OSwyMDk2OTg4MjI0LDE5OT
+eyJoaXN0b3J5IjpbLTY2OTg2ODg2OSwyMDk2OTg4MjI0LDE5OT
 YyMjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUsLTk5MTQw
 NzI0LDExNTY1Mjc3MzksMTUyOTIxNTkzOCwtMTk1Mzg0MDI4MC
 wtNTM0MzA1NTE5LDc3MjM4MTA5MywtMzYyMTczNjAzLC0zOTM4
