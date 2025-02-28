@@ -771,7 +771,9 @@ int main () {
 #### Destructor `C::~C();`
 * called automatically at the end of the object's lifetime
 * takes no arguments, has no return type (not even `void`)
-* should de-allocate
+* should de-allocate resources (i.e. `delete` if the class uses `new`)
+#### Copy Constructor `C::C(const C&);`
+
 ## Other Language Features
 ## C++ Standard Library
 ### Input/Output with files
@@ -780,7 +782,7 @@ int main () {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNTIyNDUxNiwxOTk2MjI1NDk3LC0xNj
+eyJoaXN0b3J5IjpbLTM0Njk3OTEyOCwxOTk2MjI1NDk3LC0xNj
 Q5MjgxNzk2LC0xODg0NzE0NTU1LC05OTE0MDcyNCwxMTU2NTI3
 NzM5LDE1MjkyMTU5MzgsLTE5NTM4NDAyODAsLTUzNDMwNTUxOS
 w3NzIzODEwOTMsLTM2MjE3MzYwMywtMzkzODA4NTE2LDk5MDE2
