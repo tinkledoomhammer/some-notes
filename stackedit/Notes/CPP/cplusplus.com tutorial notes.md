@@ -835,8 +835,8 @@ int main () {
 		* `DerivedClass(arg1,arg2,...) : BaseClass(arg2...){...}`
 #### Multiple Inheritance
 * multiple base classes can be declared in a `,` separated list, each with its own access modifier
-class Rectangle: public Polygon, protected Output;
-```
+* `class Rectangle: public Polygon, protected Output{...};`
+
 
 	 
 ## Other Language Features
@@ -847,11 +847,11 @@ class Rectangle: public Polygon, protected Output;
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNTIyOTAxMSwtNzQ5MTMyNjM2LDIwOT
-Y5ODgyMjQsMTk5NjIyNTQ5NywtMTY0OTI4MTc5NiwtMTg4NDcx
-NDU1NSwtOTkxNDA3MjQsMTE1NjUyNzczOSwxNTI5MjE1OTM4LC
-0xOTUzODQwMjgwLC01MzQzMDU1MTksNzcyMzgxMDkzLC0zNjIx
-NzM2MDMsLTM5MzgwODUxNiw5OTAxNjgzODEsMTg4OTg3NTMxOS
-wtNjE5NDc4MDU4LC0yMDY1ODUzNTkzLDM5MzUyOTI2OCwtMTQy
-NjA2MjkxNV19
+eyJoaXN0b3J5IjpbLTE5ODc0MzEyNjEsLTc0OTEzMjYzNiwyMD
+k2OTg4MjI0LDE5OTYyMjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3
+MTQ1NTUsLTk5MTQwNzI0LDExNTY1Mjc3MzksMTUyOTIxNTkzOC
+wtMTk1Mzg0MDI4MCwtNTM0MzA1NTE5LDc3MjM4MTA5MywtMzYy
+MTczNjAzLC0zOTM4MDg1MTYsOTkwMTY4MzgxLDE4ODk4NzUzMT
+ksLTYxOTQ3ODA1OCwtMjA2NTg1MzU5MywzOTM1MjkyNjgsLTE0
+MjYwNjI5MTVdfQ==
 -->
