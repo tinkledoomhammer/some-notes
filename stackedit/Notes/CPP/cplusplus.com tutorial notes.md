@@ -689,7 +689,13 @@ Generic expression | Operators | Member function | non-member function
 class A{
 	public:
 		static int x;
-		
+		A(){x++;};
+		static 
+}
+int main(){
+	A.x ;// uninitialized
+	A.x = 0; // must be in
+}
 ```
 
 
@@ -701,7 +707,7 @@ class A{
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyMTc2MDUwNSwxOTk2MjI1NDk3LC0xNj
+eyJoaXN0b3J5IjpbMTA2MDEyNTU5MiwxOTk2MjI1NDk3LC0xNj
 Q5MjgxNzk2LC0xODg0NzE0NTU1LC05OTE0MDcyNCwxMTU2NTI3
 NzM5LDE1MjkyMTU5MzgsLTE5NTM4NDAyODAsLTUzNDMwNTUxOS
 w3NzIzODEwOTMsLTM2MjE3MzYwMywtMzkzODA4NTE2LDk5MDE2
