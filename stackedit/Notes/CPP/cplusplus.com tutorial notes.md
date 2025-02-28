@@ -794,9 +794,12 @@ int main () {
 * Moves occur when the rvalue is discarded ( i.e. initializing or assigning from an unnamed value )
 * Is used when the object has pointers and such
 
-		Compilers already optimize many cases that formally require a move-construction call in what is known as _Return Value Optimization_. Most notably, when the value returned by a function is used to initialize an object. In these cases, the _move constructor_ may actually never get called.  
+>>	Compilers already optimize many cases that formally require a move-construction call in what is known as _Return Value Optimization_. Most notably, when the value returned by a function is used to initialize an object. In these cases, the _move constructor_ may actually never get called.  
   
-Note that even though _rvalue references_ can be used for the type of any function parameter, it is seldom useful for uses other than the _move constructor_. Rvalue references are tricky, and unnecessary uses may be the source of errors quite difficult to track.
+>>Note that even though _rvalue references_ can be used for the type of any function parameter, it is seldom useful for uses other than the _move constructor_. Rvalue references are tricky, and unnecessary uses may be the source of errors quite difficult to track.
+
+*An implicit default  can be used
+	*	when no destructor, nor copy or move constructor or i
 #### Move Constructor 
 
 ## Other Language Features
@@ -807,11 +810,11 @@ Note that even though _rvalue references_ can be used for the type of any functi
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1OTQ4MDY1LDIwOTY5ODgyMjQsMTk5Nj
-IyNTQ5NywtMTY0OTI4MTc5NiwtMTg4NDcxNDU1NSwtOTkxNDA3
-MjQsMTE1NjUyNzczOSwxNTI5MjE1OTM4LC0xOTUzODQwMjgwLC
-01MzQzMDU1MTksNzcyMzgxMDkzLC0zNjIxNzM2MDMsLTM5Mzgw
-ODUxNiw5OTAxNjgzODEsMTg4OTg3NTMxOSwtNjE5NDc4MDU4LC
-0yMDY1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2MjkxNSw1Mjcy
-MDc3NDFdfQ==
+eyJoaXN0b3J5IjpbMTEyMDkwOTkyNCwyMDk2OTg4MjI0LDE5OT
+YyMjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUsLTk5MTQw
+NzI0LDExNTY1Mjc3MzksMTUyOTIxNTkzOCwtMTk1Mzg0MDI4MC
+wtNTM0MzA1NTE5LDc3MjM4MTA5MywtMzYyMTczNjAzLC0zOTM4
+MDg1MTYsOTkwMTY4MzgxLDE4ODk4NzUzMTksLTYxOTQ3ODA1OC
+wtMjA2NTg1MzU5MywzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNTI3
+MjA3NzQxXX0=
 -->
