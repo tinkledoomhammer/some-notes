@@ -706,14 +706,15 @@ int main(){
 * static members should be initialized outside of the class
 * static methods do not have a `this`
 
-#### `const` member functions
+#### `const` instances and member functions
 * when an instance of the class is declared const (`const A a;`)
 	* all members of the class are considered `const`
 	* only methods declared as `const` are permitted
-	* 
+	* constructors can initialize members as normal
+* `const` methods
 		* `public: void constFunc() const {...}`
 		* such methods can change static member variables but not instance members
-		* 
+		* they can overload no
 ```c++
 int get() const {return x;}        // const member function
 const int& get() {return x;}       // member function returning a const&
@@ -728,7 +729,7 @@ const int& get() const {return x;} // const member function returning a const&
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjMzNjAwMTksMTk5NjIyNTQ5NywtMT
+eyJoaXN0b3J5IjpbLTE4NDM0MjA3NjEsMTk5NjIyNTQ5NywtMT
 Y0OTI4MTc5NiwtMTg4NDcxNDU1NSwtOTkxNDA3MjQsMTE1NjUy
 NzczOSwxNTI5MjE1OTM4LC0xOTUzODQwMjgwLC01MzQzMDU1MT
 ksNzcyMzgxMDkzLC0zNjIxNzM2MDMsLTM5MzgwODUxNiw5OTAx
