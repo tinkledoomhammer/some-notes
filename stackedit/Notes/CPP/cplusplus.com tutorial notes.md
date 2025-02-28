@@ -767,7 +767,9 @@ int main () {
 * called when the object is initialized without any arguments
 * takes no arguments, has no return type (not even `void`)
 * if the class defines no constructors, then an automatic default constructor will be created
+	* 
 * If a class defines one or more constructors, but not a default constructor, then it cannot be declared without initialization
+* 
 #### Destructor `C::~C();`
 * called automatically at the end of the object's lifetime
 * takes no arguments, has no return type (not even `void`)
@@ -786,11 +788,11 @@ int main () {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5Njk4ODIyNCwxOTk2MjI1NDk3LC0xNj
-Q5MjgxNzk2LC0xODg0NzE0NTU1LC05OTE0MDcyNCwxMTU2NTI3
-NzM5LDE1MjkyMTU5MzgsLTE5NTM4NDAyODAsLTUzNDMwNTUxOS
-w3NzIzODEwOTMsLTM2MjE3MzYwMywtMzkzODA4NTE2LDk5MDE2
-ODM4MSwxODg5ODc1MzE5LC02MTk0NzgwNTgsLTIwNjU4NTM1OT
-MsMzkzNTI5MjY4LC0xNDI2MDYyOTE1LDUyNzIwNzc0MSwtNzUw
-ODU2NjkzXX0=
+eyJoaXN0b3J5IjpbMjE0Mzk3NzExMiwyMDk2OTg4MjI0LDE5OT
+YyMjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUsLTk5MTQw
+NzI0LDExNTY1Mjc3MzksMTUyOTIxNTkzOCwtMTk1Mzg0MDI4MC
+wtNTM0MzA1NTE5LDc3MjM4MTA5MywtMzYyMTczNjAzLC0zOTM4
+MDg1MTYsOTkwMTY4MzgxLDE4ODk4NzUzMTksLTYxOTQ3ODA1OC
+wtMjA2NTg1MzU5MywzOTM1MjkyNjgsLTE0MjYwNjI5MTUsNTI3
+MjA3NzQxXX0=
 -->
