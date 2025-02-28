@@ -791,7 +791,12 @@ int main () {
 #### Move Constructor `C::C(C&&);` and move assignment `C& operator=(C&&);`
 * `&&` is called an 'r-value reference'
 	* it can be used to refer to temporary r-values, like the return from a method or cast operation
-* Moves occur when the rvalue is discarded ( i.e. initializing or assigning from an unnamed 
+* Moves occur when the rvalue is discarded ( i.e. initializing or assigning from an unnamed value )
+* Is used when the object has pointers and such
+
+		Compilers already optimize many cases that formally require a move-construction call in what is known as _Return Value Optimization_. Most notably, when the value returned by a function is used to initialize an object. In these cases, the _move constructor_ may actually never get called.  
+  
+Note that even though _rvalue references_ can be used for the type of any function parameter, it is seldom useful for uses other than the _move constructor_. Rvalue references are tricky, and unnecessary uses may be the source of errors quite difficult to track.
 #### Move Constructor 
 
 ## Other Language Features
@@ -802,11 +807,11 @@ int main () {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mzk2MDU0NTQsMjA5Njk4ODIyNCwxOT
-k2MjI1NDk3LC0xNjQ5MjgxNzk2LC0xODg0NzE0NTU1LC05OTE0
-MDcyNCwxMTU2NTI3NzM5LDE1MjkyMTU5MzgsLTE5NTM4NDAyOD
-AsLTUzNDMwNTUxOSw3NzIzODEwOTMsLTM2MjE3MzYwMywtMzkz
-ODA4NTE2LDk5MDE2ODM4MSwxODg5ODc1MzE5LC02MTk0NzgwNT
-gsLTIwNjU4NTM1OTMsMzkzNTI5MjY4LC0xNDI2MDYyOTE1LDUy
-NzIwNzc0MV19
+eyJoaXN0b3J5IjpbLTc1OTQ4MDY1LDIwOTY5ODgyMjQsMTk5Nj
+IyNTQ5NywtMTY0OTI4MTc5NiwtMTg4NDcxNDU1NSwtOTkxNDA3
+MjQsMTE1NjUyNzczOSwxNTI5MjE1OTM4LC0xOTUzODQwMjgwLC
+01MzQzMDU1MTksNzcyMzgxMDkzLC0zNjIxNzM2MDMsLTM5Mzgw
+ODUxNiw5OTAxNjgzODEsMTg4OTg3NTMxOSwtNjE5NDc4MDU4LC
+0yMDY1ODUzNTkzLDM5MzUyOTI2OCwtMTQyNjA2MjkxNSw1Mjcy
+MDc3NDFdfQ==
 -->
