@@ -683,7 +683,14 @@ Generic expression | Operators | Member function | non-member function
 `(TYPE) a` | `TYPE` | `A::operator TYPE()` n/a
 #### `this` is a pointer available in method bodies that points to the instance onwhich the method is invoked
 #### `static` members
-
+* class variables
+* can be accessed as members of an instance or as members of a class
+```c++
+class A{
+	public:
+		static int x;
+		
+```
 
 
 ## Other Language Features
@@ -694,7 +701,7 @@ Generic expression | Operators | Member function | non-member function
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwMjI5NDMzMCwxOTk2MjI1NDk3LC0xNj
+eyJoaXN0b3J5IjpbLTkyMTc2MDUwNSwxOTk2MjI1NDk3LC0xNj
 Q5MjgxNzk2LC0xODg0NzE0NTU1LC05OTE0MDcyNCwxMTU2NTI3
 NzM5LDE1MjkyMTU5MzgsLTE5NTM4NDAyODAsLTUzNDMwNTUxOS
 w3NzIzODEwOTMsLTM2MjE3MzYwMywtMzkzODA4NTE2LDk5MDE2
