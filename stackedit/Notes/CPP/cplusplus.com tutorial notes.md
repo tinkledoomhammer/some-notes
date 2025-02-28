@@ -799,8 +799,13 @@ int main () {
 >>Note that even though _rvalue references_ can be used for the type of any function parameter, it is seldom useful for uses other than the _move constructor_. Rvalue references are tricky, and unnecessary uses may be the source of errors quite difficult to track.
 
 *An implicit default  can be used
-	*	when no destructor, nor copy or move constructor or i
-#### Move Constructor 
+	*	when no destructor, nor copy or move constructor or assignment is defined
+	*	it moves all members
+
+#### Default/ implicitely defined
+* only under certain circumstances
+* Can be changed or made explicite by
+* `function_declaration = default;` or `function_declaration = delete;`
 
 ## Other Language Features
 ## C++ Standard Library
@@ -810,7 +815,7 @@ int main () {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyMDkwOTkyNCwyMDk2OTg4MjI0LDE5OT
+eyJoaXN0b3J5IjpbMTgzNzM4Nzg3NSwyMDk2OTg4MjI0LDE5OT
 YyMjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUsLTk5MTQw
 NzI0LDExNTY1Mjc3MzksMTUyOTIxNTkzOCwtMTk1Mzg0MDI4MC
 wtNTM0MzA1NTE5LDc3MjM4MTA5MywtMzYyMTczNjAzLC0zOTM4
