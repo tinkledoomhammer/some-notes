@@ -835,7 +835,7 @@ int main () {
 		* `DerivedClass(arg1,arg2,...) : BaseClass(arg2...){...}`
 #### Multiple Inheritance
 * multiple base classes can be declared in a `,` separated list, each with its own access modifier
-* `class Rectangle: public Polygon, protected Output{...};`
+*  `class Rectangle: public Polygon, protected Output{...};`
 * TODO: what if it inherits the same member from two classes
 * Constructors: `Rectangle(int a, int b) : Polygon(a,b) {/*constructor for rectangle calls the polygon constructor*/}
 * TODO: figure out the syntax for when class or method declarations are separate from their definitions
@@ -852,11 +852,11 @@ int main () {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTE2ODg1MTEsLTc0OTEzMjYzNiwyMD
-k2OTg4MjI0LDE5OTYyMjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3
-MTQ1NTUsLTk5MTQwNzI0LDExNTY1Mjc3MzksMTUyOTIxNTkzOC
-wtMTk1Mzg0MDI4MCwtNTM0MzA1NTE5LDc3MjM4MTA5MywtMzYy
-MTczNjAzLC0zOTM4MDg1MTYsOTkwMTY4MzgxLDE4ODk4NzUzMT
-ksLTYxOTQ3ODA1OCwtMjA2NTg1MzU5MywzOTM1MjkyNjgsLTE0
-MjYwNjI5MTVdfQ==
+eyJoaXN0b3J5IjpbLTE2NDg1MzEyODEsLTEzMTE2ODg1MTEsLT
+c0OTEzMjYzNiwyMDk2OTg4MjI0LDE5OTYyMjU0OTcsLTE2NDky
+ODE3OTYsLTE4ODQ3MTQ1NTUsLTk5MTQwNzI0LDExNTY1Mjc3Mz
+ksMTUyOTIxNTkzOCwtMTk1Mzg0MDI4MCwtNTM0MzA1NTE5LDc3
+MjM4MTA5MywtMzYyMTczNjAzLC0zOTM4MDg1MTYsOTkwMTY4Mz
+gxLDE4ODk4NzUzMTksLTYxOTQ3ODA1OCwtMjA2NTg1MzU5Mywz
+OTM1MjkyNjhdfQ==
 -->
