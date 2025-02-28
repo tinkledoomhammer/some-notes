@@ -819,6 +819,7 @@ int main () {
 	* mostly used for operator overloads
 *friend classes are listed in the class definition like:  `class A{friend class B};`
 	* methods of class `B` will have access to private and protected members of `A`;
+* Friendships are not transitive or reciprocal. If that behavior is desired, then both classes will need a friendship
 * 
 ## Other Language Features
 ## C++ Standard Library
@@ -828,11 +829,11 @@ int main () {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1MzI1Mzk5NiwtNzQ5MTMyNjM2LDIwOT
-Y5ODgyMjQsMTk5NjIyNTQ5NywtMTY0OTI4MTc5NiwtMTg4NDcx
-NDU1NSwtOTkxNDA3MjQsMTE1NjUyNzczOSwxNTI5MjE1OTM4LC
-0xOTUzODQwMjgwLC01MzQzMDU1MTksNzcyMzgxMDkzLC0zNjIx
-NzM2MDMsLTM5MzgwODUxNiw5OTAxNjgzODEsMTg4OTg3NTMxOS
-wtNjE5NDc4MDU4LC0yMDY1ODUzNTkzLDM5MzUyOTI2OCwtMTQy
-NjA2MjkxNV19
+eyJoaXN0b3J5IjpbMTg1ODg1NzA1LC03NDkxMzI2MzYsMjA5Nj
+k4ODIyNCwxOTk2MjI1NDk3LC0xNjQ5MjgxNzk2LC0xODg0NzE0
+NTU1LC05OTE0MDcyNCwxMTU2NTI3NzM5LDE1MjkyMTU5MzgsLT
+E5NTM4NDAyODAsLTUzNDMwNTUxOSw3NzIzODEwOTMsLTM2MjE3
+MzYwMywtMzkzODA4NTE2LDk5MDE2ODM4MSwxODg5ODc1MzE5LC
+02MTk0NzgwNTgsLTIwNjU4NTM1OTMsMzkzNTI5MjY4LC0xNDI2
+MDYyOTE1XX0=
 -->
