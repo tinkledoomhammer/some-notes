@@ -821,9 +821,15 @@ int main () {
 	* methods of class `B` will have access to private and protected members of `A`;
 * Friendships are not transitive or reciprocal. If that behavior is desired, then both classes will need a friendship
 * Inheritance is declared like : `class derived : public base {...};`
-	* If the access modifier is more restrictive than `public` then more accessible members of the base class will be made more restrictive in the derived class. i.e.  `public` can become `private` or `protected` but not the other way around
+	* If the access modifier applied to the base class is more restrictive than `public` then more accessible members of the base class will be made more restrictive in the derived class. i.e.  `public` can become `private` or `protected` but not the other way around
 * `protected` access means that the class and derived class have access
-* 
+* Some things are not inherited:
+	* constructors and destructors
+	* assignment operator members
+	* friendships
+	* private members
+*
+
 	 
 ## Other Language Features
 ## C++ Standard Library
@@ -833,11 +839,11 @@ int main () {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcxODUwMjksLTc0OTEzMjYzNiwyMDk2OT
-g4MjI0LDE5OTYyMjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3MTQ1
-NTUsLTk5MTQwNzI0LDExNTY1Mjc3MzksMTUyOTIxNTkzOCwtMT
-k1Mzg0MDI4MCwtNTM0MzA1NTE5LDc3MjM4MTA5MywtMzYyMTcz
-NjAzLC0zOTM4MDg1MTYsOTkwMTY4MzgxLDE4ODk4NzUzMTksLT
-YxOTQ3ODA1OCwtMjA2NTg1MzU5MywzOTM1MjkyNjgsLTE0MjYw
-NjI5MTVdfQ==
+eyJoaXN0b3J5IjpbLTExNjg5MzkwNzAsLTc0OTEzMjYzNiwyMD
+k2OTg4MjI0LDE5OTYyMjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3
+MTQ1NTUsLTk5MTQwNzI0LDExNTY1Mjc3MzksMTUyOTIxNTkzOC
+wtMTk1Mzg0MDI4MCwtNTM0MzA1NTE5LDc3MjM4MTA5MywtMzYy
+MTczNjAzLC0zOTM4MDg1MTYsOTkwMTY4MzgxLDE4ODk4NzUzMT
+ksLTYxOTQ3ODA1OCwtMjA2NTg1MzU5MywzOTM1MjkyNjgsLTE0
+MjYwNjI5MTVdfQ==
 -->
