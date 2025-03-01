@@ -868,10 +868,36 @@ int main(){
 * **Polymorphic classes** declare or inherit a virtual function
 * **Abstract classes**
 	* have **pure virtual** functions `virtual void func()=0`
-	* cannot be used to instantiate objects instead use `Base * obj1 = new Deri
+	* cannot be used to instantiate objects instead use `Base * obj1 = new Derived()`
 * 
 	 
 ## Other Language Features
+### Type Conversions
+```c++
+// implicit conversion of classes:
+#include <iostream>
+using namespace std;
+class A {};
+
+class B {
+public:
+  // conversion from A (constructor):
+  B (const A& x) {}
+  // conversion from A (assignment):
+  B& operator= (const A& x) {return *this;}
+  // conversion to A (type-cast operator)
+  operator A() {return A();}
+};
+
+int main ()
+{
+  A foo;
+  B bar = foo;    // calls constructor
+  bar = foo;      // calls assignment
+  foo = bar;      // calls type-cast operator
+  return 0;
+}
+```
 ## C++ Standard Library
 ### Input/Output with files
 
@@ -879,11 +905,11 @@ int main(){
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzE1MTQ4MTIsLTE2NDg1MzEyODEsLT
-EzMTE2ODg1MTEsLTc0OTEzMjYzNiwyMDk2OTg4MjI0LDE5OTYy
-MjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUsLTk5MTQwNz
-I0LDExNTY1Mjc3MzksMTUyOTIxNTkzOCwtMTk1Mzg0MDI4MCwt
-NTM0MzA1NTE5LDc3MjM4MTA5MywtMzYyMTczNjAzLC0zOTM4MD
-g1MTYsOTkwMTY4MzgxLDE4ODk4NzUzMTksLTYxOTQ3ODA1OCwt
-MjA2NTg1MzU5M119
+eyJoaXN0b3J5IjpbMTExMDI5MjkwNSwtMTY0ODUzMTI4MSwtMT
+MxMTY4ODUxMSwtNzQ5MTMyNjM2LDIwOTY5ODgyMjQsMTk5NjIy
+NTQ5NywtMTY0OTI4MTc5NiwtMTg4NDcxNDU1NSwtOTkxNDA3Mj
+QsMTE1NjUyNzczOSwxNTI5MjE1OTM4LC0xOTUzODQwMjgwLC01
+MzQzMDU1MTksNzcyMzgxMDkzLC0zNjIxNzM2MDMsLTM5MzgwOD
+UxNiw5OTAxNjgzODEsMTg4OTg3NTMxOSwtNjE5NDc4MDU4LC0y
+MDY1ODUzNTkzXX0=
 -->
