@@ -942,7 +942,10 @@ y = (int) x;//c-like cast notation
 	* Can perform pointer type casts without type safety
 	* Can perform any allowed implicit conversions **and** their reverse
 	* when used to convert from `void *` the resulting pointer will be the identical
-		* (unsure, but ie) `
+		* (unsure, but ie) `static_cast<int *>(static_cast<void*>(&x)) == &x`
+	* it can convert to **rvalue references**
+	* convert `enum class` values to integers and floatis
+	* can convert any type to 
 * `const_cast <new_type> (expression) `
   
 The traditional type-casting equivalents to these expressions would be:  
@@ -958,11 +961,11 @@ but each one with its own special characteristics:
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4Mjk3OTkxLC05NTEwNTM1OTksMTExMD
-I5MjkwNSwtMTY0ODUzMTI4MSwtMTMxMTY4ODUxMSwtNzQ5MTMy
-NjM2LDIwOTY5ODgyMjQsMTk5NjIyNTQ5NywtMTY0OTI4MTc5Ni
-wtMTg4NDcxNDU1NSwtOTkxNDA3MjQsMTE1NjUyNzczOSwxNTI5
-MjE1OTM4LC0xOTUzODQwMjgwLC01MzQzMDU1MTksNzcyMzgxMD
-kzLC0zNjIxNzM2MDMsLTM5MzgwODUxNiw5OTAxNjgzODEsMTg4
-OTg3NTMxOV19
+eyJoaXN0b3J5IjpbLTExMTM2NzQ2NjUsLTk1MTA1MzU5OSwxMT
+EwMjkyOTA1LC0xNjQ4NTMxMjgxLC0xMzExNjg4NTExLC03NDkx
+MzI2MzYsMjA5Njk4ODIyNCwxOTk2MjI1NDk3LC0xNjQ5MjgxNz
+k2LC0xODg0NzE0NTU1LC05OTE0MDcyNCwxMTU2NTI3NzM5LDE1
+MjkyMTU5MzgsLTE5NTM4NDAyODAsLTUzNDMwNTUxOSw3NzIzOD
+EwOTMsLTM2MjE3MzYwMywtMzkzODA4NTE2LDk5MDE2ODM4MSwx
+ODg5ODc1MzE5XX0=
 -->
