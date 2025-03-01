@@ -931,7 +931,8 @@ y = (int) x;//c-like cast notation
 * `dynamic_cast <new_type> (expression)`
 	* Only works with pointer types
 	* requires an optional feature called **Run-Time Type Information (RTTI)**
-		* It is dissabled by default on many comp
+		* It is disabled by default on many compilers
+	* Allows **downcast** ing pointers (from base to derived class
 *`reinterpret_cast <new_type> (expression)`  
 *`static_cast <new_type> (expression)`
 *`const_cast <new_type> (expression) `
@@ -949,11 +950,11 @@ but each one with its own special characteristics:
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjU0Nzc3MDcsLTk1MTA1MzU5OSwxMT
-EwMjkyOTA1LC0xNjQ4NTMxMjgxLC0xMzExNjg4NTExLC03NDkx
-MzI2MzYsMjA5Njk4ODIyNCwxOTk2MjI1NDk3LC0xNjQ5MjgxNz
-k2LC0xODg0NzE0NTU1LC05OTE0MDcyNCwxMTU2NTI3NzM5LDE1
-MjkyMTU5MzgsLTE5NTM4NDAyODAsLTUzNDMwNTUxOSw3NzIzOD
-EwOTMsLTM2MjE3MzYwMywtMzkzODA4NTE2LDk5MDE2ODM4MSwx
-ODg5ODc1MzE5XX0=
+eyJoaXN0b3J5IjpbNzYwMTgyNDUxLC05NTEwNTM1OTksMTExMD
+I5MjkwNSwtMTY0ODUzMTI4MSwtMTMxMTY4ODUxMSwtNzQ5MTMy
+NjM2LDIwOTY5ODgyMjQsMTk5NjIyNTQ5NywtMTY0OTI4MTc5Ni
+wtMTg4NDcxNDU1NSwtOTkxNDA3MjQsMTE1NjUyNzczOSwxNTI5
+MjE1OTM4LC0xOTUzODQwMjgwLC01MzQzMDU1MTksNzcyMzgxMD
+kzLC0zNjIxNzM2MDMsLTM5MzgwODUxNiw5OTAxNjgzODEsMTg4
+OTg3NTMxOV19
 -->
