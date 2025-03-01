@@ -917,6 +917,8 @@ int main ()
   return 0;
 }
 ```
+* C++ allows one implicit conversion per argument in function calls
+* Constructors with the `explicit` keyword
 * `dynamic_cast <new_type> (expression)`
 	* 
 *`reinterpret_cast <new_type> (expression)`  
@@ -936,7 +938,7 @@ but each one with its own special characteristics:
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDkwMzc3NTAsLTk1MTA1MzU5OSwxMT
+eyJoaXN0b3J5IjpbLTE4OTQ4NDU1NDUsLTk1MTA1MzU5OSwxMT
 EwMjkyOTA1LC0xNjQ4NTMxMjgxLC0xMzExNjg4NTExLC03NDkx
 MzI2MzYsMjA5Njk4ODIyNCwxOTk2MjI1NDk3LC0xNjQ5MjgxNz
 k2LC0xODg0NzE0NTU1LC05OTE0MDcyNCwxMTU2NTI3NzM5LDE1
