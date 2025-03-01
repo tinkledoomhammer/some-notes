@@ -857,7 +857,7 @@ class Derived : public Base{
 
 int main(){
 	Derived derived;
-	Base base = derived;
+	Base *base = &derived;
 	
 	base.func1();//Base::func1
 	base.func2();//Derived::func2
@@ -866,8 +866,9 @@ int main(){
 ```
 * non - virtual members can be redefined but only the definition from the base class can be used with objects declared as the base type
 * Abstract classes
-	* use pure virtual functions `virtual void func()=0`
-	* 
+	* have *pure virtual* functions `virtual void func()=0`
+	* cannot be used to instantiate objects
+* 
 	 
 ## Other Language Features
 ## C++ Standard Library
@@ -877,11 +878,11 @@ int main(){
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQzOTM2ODcwLC0xNjQ4NTMxMjgxLC0xMz
-ExNjg4NTExLC03NDkxMzI2MzYsMjA5Njk4ODIyNCwxOTk2MjI1
-NDk3LC0xNjQ5MjgxNzk2LC0xODg0NzE0NTU1LC05OTE0MDcyNC
-wxMTU2NTI3NzM5LDE1MjkyMTU5MzgsLTE5NTM4NDAyODAsLTUz
-NDMwNTUxOSw3NzIzODEwOTMsLTM2MjE3MzYwMywtMzkzODA4NT
-E2LDk5MDE2ODM4MSwxODg5ODc1MzE5LC02MTk0NzgwNTgsLTIw
-NjU4NTM1OTNdfQ==
+eyJoaXN0b3J5IjpbLTE3MTQ0MTE1MjEsLTE2NDg1MzEyODEsLT
+EzMTE2ODg1MTEsLTc0OTEzMjYzNiwyMDk2OTg4MjI0LDE5OTYy
+MjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUsLTk5MTQwNz
+I0LDExNTY1Mjc3MzksMTUyOTIxNTkzOCwtMTk1Mzg0MDI4MCwt
+NTM0MzA1NTE5LDc3MjM4MTA5MywtMzYyMTczNjAzLC0zOTM4MD
+g1MTYsOTkwMTY4MzgxLDE4ODk4NzUzMTksLTYxOTQ3ODA1OCwt
+MjA2NTg1MzU5M119
 -->
