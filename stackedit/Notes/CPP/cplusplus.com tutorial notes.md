@@ -940,7 +940,9 @@ y = (int) x;//c-like cast notation
 	* 
 * `static_cast <new_type> (expression)`
 	* Can perform pointer type casts without type safety
-	* Can perform any allowed implicit cast
+	* Can perform any allowed implicit conversions **and** their reverse
+	* when used to convert from `void *` the resulting pointer will be the identical
+		* (unsure, but ie) `
 * `const_cast <new_type> (expression) `
   
 The traditional type-casting equivalents to these expressions would be:  
@@ -956,7 +958,7 @@ but each one with its own special characteristics:
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgyNDk5NTgxLC05NTEwNTM1OTksMTExMD
+eyJoaXN0b3J5IjpbMTc4Mjk3OTkxLC05NTEwNTM1OTksMTExMD
 I5MjkwNSwtMTY0ODUzMTI4MSwtMTMxMTY4ODUxMSwtNzQ5MTMy
 NjM2LDIwOTY5ODgyMjQsMTk5NjIyNTQ5NywtMTY0OTI4MTc5Ni
 wtMTg4NDcxNDU1NSwtOTkxNDA3MjQsMTE1NjUyNzczOSwxNTI5
