@@ -865,10 +865,10 @@ int main(){
 }
 ```
 * non - virtual members can be redefined but only the definition from the base class can be used with objects declared as the base type
-* **Polymorphic classes* declare or inherit a virtual function
-* Abstract classes
-	* have *pure virtual* functions `virtual void func()=0`
-	* cannot be used to instantiate objects
+* **Polymorphic classes** declare or inherit a virtual function
+* **Abstract classes**
+	* have **pure virtual** functions `virtual void func()=0`
+	* cannot be used to instantiate objects instead use `Base * obj1 = new Deri
 * 
 	 
 ## Other Language Features
@@ -879,7 +879,7 @@ int main(){
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjczMDAzMTEsLTE2NDg1MzEyODEsLT
+eyJoaXN0b3J5IjpbLTE0MzE1MTQ4MTIsLTE2NDg1MzEyODEsLT
 EzMTE2ODg1MTEsLTc0OTEzMjYzNiwyMDk2OTg4MjI0LDE5OTYy
 MjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUsLTk5MTQwNz
 I0LDExNTY1Mjc3MzksMTUyOTIxNTkzOCwtMTk1Mzg0MDI4MCwt
