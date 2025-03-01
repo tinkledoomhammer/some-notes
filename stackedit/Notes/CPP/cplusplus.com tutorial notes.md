@@ -918,7 +918,9 @@ int main ()
 }
 ```
 * C++ allows one implicit conversion per argument in function calls
-* Constructors with the `explicit` keyword
+* Constructors with the `explicit` keyword will not be used for implicit casts
+	* They also cannot be used with assignment-like syntax.
+* 
 * `dynamic_cast <new_type> (expression)`
 	* 
 *`reinterpret_cast <new_type> (expression)`  
@@ -938,11 +940,11 @@ but each one with its own special characteristics:
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTQ4NDU1NDUsLTk1MTA1MzU5OSwxMT
-EwMjkyOTA1LC0xNjQ4NTMxMjgxLC0xMzExNjg4NTExLC03NDkx
-MzI2MzYsMjA5Njk4ODIyNCwxOTk2MjI1NDk3LC0xNjQ5MjgxNz
-k2LC0xODg0NzE0NTU1LC05OTE0MDcyNCwxMTU2NTI3NzM5LDE1
-MjkyMTU5MzgsLTE5NTM4NDAyODAsLTUzNDMwNTUxOSw3NzIzOD
-EwOTMsLTM2MjE3MzYwMywtMzkzODA4NTE2LDk5MDE2ODM4MSwx
-ODg5ODc1MzE5XX0=
+eyJoaXN0b3J5IjpbMTU5MDU0MTA2NiwtOTUxMDUzNTk5LDExMT
+AyOTI5MDUsLTE2NDg1MzEyODEsLTEzMTE2ODg1MTEsLTc0OTEz
+MjYzNiwyMDk2OTg4MjI0LDE5OTYyMjU0OTcsLTE2NDkyODE3OT
+YsLTE4ODQ3MTQ1NTUsLTk5MTQwNzI0LDExNTY1Mjc3MzksMTUy
+OTIxNTkzOCwtMTk1Mzg0MDI4MCwtNTM0MzA1NTE5LDc3MjM4MT
+A5MywtMzYyMTczNjAzLC0zOTM4MDg1MTYsOTkwMTY4MzgxLDE4
+ODk4NzUzMTldfQ==
 -->
