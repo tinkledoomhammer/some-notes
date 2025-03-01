@@ -864,7 +864,10 @@ int main(){
 	derived.func1();//Derived::func1
 }
 ```
-
+* non - virtual members can be redefined but only the definition from the base class can be used with objects declared as the base type
+* Abstract classes
+	* use pure virtual functions `virtual void func()=0`
+	* 
 	 
 ## Other Language Features
 ## C++ Standard Library
@@ -874,11 +877,11 @@ int main(){
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMzQzNjk0MiwtMTY0ODUzMTI4MSwtMT
-MxMTY4ODUxMSwtNzQ5MTMyNjM2LDIwOTY5ODgyMjQsMTk5NjIy
-NTQ5NywtMTY0OTI4MTc5NiwtMTg4NDcxNDU1NSwtOTkxNDA3Mj
-QsMTE1NjUyNzczOSwxNTI5MjE1OTM4LC0xOTUzODQwMjgwLC01
-MzQzMDU1MTksNzcyMzgxMDkzLC0zNjIxNzM2MDMsLTM5MzgwOD
-UxNiw5OTAxNjgzODEsMTg4OTg3NTMxOSwtNjE5NDc4MDU4LC0y
-MDY1ODUzNTkzXX0=
+eyJoaXN0b3J5IjpbNjQzOTM2ODcwLC0xNjQ4NTMxMjgxLC0xMz
+ExNjg4NTExLC03NDkxMzI2MzYsMjA5Njk4ODIyNCwxOTk2MjI1
+NDk3LC0xNjQ5MjgxNzk2LC0xODg0NzE0NTU1LC05OTE0MDcyNC
+wxMTU2NTI3NzM5LDE1MjkyMTU5MzgsLTE5NTM4NDAyODAsLTUz
+NDMwNTUxOSw3NzIzODEwOTMsLTM2MjE3MzYwMywtMzkzODA4NT
+E2LDk5MDE2ODM4MSwxODg5ODc1MzE5LC02MTk0NzgwNTgsLTIw
+NjU4NTM1OTNdfQ==
 -->
