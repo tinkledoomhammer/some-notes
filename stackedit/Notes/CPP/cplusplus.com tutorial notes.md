@@ -891,7 +891,7 @@ int main(){
 	* pointers to any type can be converted to `void *`
 	* **Pointer upcast** pointers to a derived class can be converted to an accessible and unambiguous base class
 		* without modifying its `const` or `volatile` qualification
-#### Implicit conversion of classes
+#### Conversion of classes
 ```c++
 // implicit conversion of classes:
 #include <iostream>
@@ -940,7 +940,7 @@ but each one with its own special characteristics:
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MDU0MTA2NiwtOTUxMDUzNTk5LDExMT
+eyJoaXN0b3J5IjpbMTQ1ODU5ODIwNSwtOTUxMDUzNTk5LDExMT
 AyOTI5MDUsLTE2NDg1MzEyODEsLTEzMTE2ODg1MTEsLTc0OTEz
 MjYzNiwyMDk2OTg4MjI0LDE5OTYyMjU0OTcsLTE2NDkyODE3OT
 YsLTE4ODQ3MTQ1NTUsLTk5MTQwNzI0LDExNTY1Mjc3MzksMTUy
