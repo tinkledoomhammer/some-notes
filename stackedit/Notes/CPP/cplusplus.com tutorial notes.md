@@ -881,13 +881,17 @@ int main(){
 	* i.e. small integers to bigger ints
 	* Conversion from signed to unsigned values gives a 2's compliment
 		* i.e. -1 => maximum allowed value, etc
-	* GUa
+	* Guaranteed to produce an exact result
 * Conversion from /to bool considers `false` to be equivalent to `0` and `nullptr`
 * Conversions from float truncate. If the value is outside of  the range for the int, then the result is undefined behavior
 * Other numerical conversions are valid but the value is implementation-specific
 * Lossy conversions may trigger a warning, but that can be avoided with an explicit cast
 * For non-fundamental types:
-	* 
+	* null pointers can be converted to any other pointer type
+	* pointers to any type can be converted to `void *`
+	* **Pointer upcast** pointers to a derived class can be converted to an accessible and unambiguous base class
+		* without modifying its `const` or `volatile` qualification
+#### Implicit conversion of classes
 ```c++
 // implicit conversion of classes:
 #include <iostream>
@@ -932,11 +936,11 @@ but each one with its own special characteristics:
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc5Mzk4OTA1LC05NTEwNTM1OTksMTExMD
-I5MjkwNSwtMTY0ODUzMTI4MSwtMTMxMTY4ODUxMSwtNzQ5MTMy
-NjM2LDIwOTY5ODgyMjQsMTk5NjIyNTQ5NywtMTY0OTI4MTc5Ni
-wtMTg4NDcxNDU1NSwtOTkxNDA3MjQsMTE1NjUyNzczOSwxNTI5
-MjE1OTM4LC0xOTUzODQwMjgwLC01MzQzMDU1MTksNzcyMzgxMD
-kzLC0zNjIxNzM2MDMsLTM5MzgwODUxNiw5OTAxNjgzODEsMTg4
-OTg3NTMxOV19
+eyJoaXN0b3J5IjpbLTE2MDkwMzc3NTAsLTk1MTA1MzU5OSwxMT
+EwMjkyOTA1LC0xNjQ4NTMxMjgxLC0xMzExNjg4NTExLC03NDkx
+MzI2MzYsMjA5Njk4ODIyNCwxOTk2MjI1NDk3LC0xNjQ5MjgxNz
+k2LC0xODg0NzE0NTU1LC05OTE0MDcyNCwxMTU2NTI3NzM5LDE1
+MjkyMTU5MzgsLTE5NTM4NDAyODAsLTUzNDMwNTUxOSw3NzIzOD
+EwOTMsLTM2MjE3MzYwMywtMzkzODA4NTE2LDk5MDE2ODM4MSwx
+ODg5ODc1MzE5XX0=
 -->
