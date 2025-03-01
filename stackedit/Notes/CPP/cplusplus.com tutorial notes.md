@@ -936,10 +936,12 @@ y = (int) x;//c-like cast notation
 	* If the cast cannot be completed (i.e. the actual object pointed to is not a complete member of the derived class)
 		* the `nullptr` is returned
 	* It can also perform allowed implicit casts on pointers
-*`reinterpret_cast <new_type> (expression)`  
-	*
-*`static_cast <new_type> (expression)`
-*`const_cast <new_type> (expression) `
+* `reinterpret_cast <new_type> (expression)`  
+	* 
+* `static_cast <new_type> (expression)`
+	* Can perform pointer type casts without type safety
+	* Can perform any allowed implicit cast
+* `const_cast <new_type> (expression) `
   
 The traditional type-casting equivalents to these expressions would be:  
   
@@ -954,11 +956,11 @@ but each one with its own special characteristics:
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MTY2NjU4NCwtOTUxMDUzNTk5LDExMT
-AyOTI5MDUsLTE2NDg1MzEyODEsLTEzMTE2ODg1MTEsLTc0OTEz
-MjYzNiwyMDk2OTg4MjI0LDE5OTYyMjU0OTcsLTE2NDkyODE3OT
-YsLTE4ODQ3MTQ1NTUsLTk5MTQwNzI0LDExNTY1Mjc3MzksMTUy
-OTIxNTkzOCwtMTk1Mzg0MDI4MCwtNTM0MzA1NTE5LDc3MjM4MT
-A5MywtMzYyMTczNjAzLC0zOTM4MDg1MTYsOTkwMTY4MzgxLDE4
-ODk4NzUzMTldfQ==
+eyJoaXN0b3J5IjpbNzgyNDk5NTgxLC05NTEwNTM1OTksMTExMD
+I5MjkwNSwtMTY0ODUzMTI4MSwtMTMxMTY4ODUxMSwtNzQ5MTMy
+NjM2LDIwOTY5ODgyMjQsMTk5NjIyNTQ5NywtMTY0OTI4MTc5Ni
+wtMTg4NDcxNDU1NSwtOTkxNDA3MjQsMTE1NjUyNzczOSwxNTI5
+MjE1OTM4LC0xOTUzODQwMjgwLC01MzQzMDU1MTksNzcyMzgxMD
+kzLC0zNjIxNzM2MDMsLTM5MzgwODUxNiw5OTAxNjgzODEsMTg4
+OTg3NTMxOV19
 -->
