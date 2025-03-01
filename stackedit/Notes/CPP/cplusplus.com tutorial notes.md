@@ -845,23 +845,22 @@ int main () {
 * virtual members - functions with the `virtual` keyword can re-define functions of the parent class
 ```c++
 class Base {
-public:
-	void func1();
-	virtual void func2();
+	public:
+		void func1();
+		virtual void func2();
 };
 class Derived : public Base{
-public:
-	void func1();
-	void func2():
-}
+	public:
+		void func1();
+		void func2():
+};
 
 int main(){
-	Base base;
 	Derived derived;
-	Base base2 = derived;
+	Base base = derived;
 	
-	base2.func1();//Base::func1
-	base2.func2();//Derived::func2
+	base.func1();//Base::func1
+	base.func2();//Derived::func2
 	derived.func1();//Derived::func1
 }
 ```
@@ -875,7 +874,7 @@ int main(){
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5NDY5NjQyMCwtMTY0ODUzMTI4MSwtMT
+eyJoaXN0b3J5IjpbLTUwMzQzNjk0MiwtMTY0ODUzMTI4MSwtMT
 MxMTY4ODUxMSwtNzQ5MTMyNjM2LDIwOTY5ODgyMjQsMTk5NjIy
 NTQ5NywtMTY0OTI4MTc5NiwtMTg4NDcxNDU1NSwtOTkxNDA3Mj
 QsMTE1NjUyNzczOSwxNTI5MjE1OTM4LC0xOTUzODQwMjgwLC01
