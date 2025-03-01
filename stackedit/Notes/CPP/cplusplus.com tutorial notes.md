@@ -934,8 +934,10 @@ y = (int) x;//c-like cast notation
 		* It is disabled by default on many compilers
 	* Allows **downcast** ing pointers (from base to derived class
 	* If the cast cannot be completed (i.e. the actual object pointed to is not a complete member of the derived class)
-		* the 
+		* the `nullptr` is returned
+	* It can also perform allowed implicit casts on pointers
 *`reinterpret_cast <new_type> (expression)`  
+	*
 *`static_cast <new_type> (expression)`
 *`const_cast <new_type> (expression) `
   
@@ -952,7 +954,7 @@ but each one with its own special characteristics:
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3MzIxOTMzNSwtOTUxMDUzNTk5LDExMT
+eyJoaXN0b3J5IjpbMTk1MTY2NjU4NCwtOTUxMDUzNTk5LDExMT
 AyOTI5MDUsLTE2NDg1MzEyODEsLTEzMTE2ODg1MTEsLTc0OTEz
 MjYzNiwyMDk2OTg4MjI0LDE5OTYyMjU0OTcsLTE2NDkyODE3OT
 YsLTE4ODQ3MTQ1NTUsLTk5MTQwNzI0LDExNTY1Mjc3MzksMTUy
