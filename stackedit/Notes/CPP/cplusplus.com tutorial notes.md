@@ -841,7 +841,8 @@ int main () {
 * TODO: figure out the syntax for when class or method declarations are separate from their definitions
 
 ### Polymorphism
-
+* pointers to a derived object are also valid pointers to the base class
+* virtual members - functions with the `virtual` keyword 
 
 	 
 ## Other Language Features
@@ -852,11 +853,11 @@ int main () {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDg1MzEyODEsLTEzMTE2ODg1MTEsLT
-c0OTEzMjYzNiwyMDk2OTg4MjI0LDE5OTYyMjU0OTcsLTE2NDky
-ODE3OTYsLTE4ODQ3MTQ1NTUsLTk5MTQwNzI0LDExNTY1Mjc3Mz
-ksMTUyOTIxNTkzOCwtMTk1Mzg0MDI4MCwtNTM0MzA1NTE5LDc3
-MjM4MTA5MywtMzYyMTczNjAzLC0zOTM4MDg1MTYsOTkwMTY4Mz
-gxLDE4ODk4NzUzMTksLTYxOTQ3ODA1OCwtMjA2NTg1MzU5Mywz
-OTM1MjkyNjhdfQ==
+eyJoaXN0b3J5IjpbLTIxNzk5NjQ0OCwtMTY0ODUzMTI4MSwtMT
+MxMTY4ODUxMSwtNzQ5MTMyNjM2LDIwOTY5ODgyMjQsMTk5NjIy
+NTQ5NywtMTY0OTI4MTc5NiwtMTg4NDcxNDU1NSwtOTkxNDA3Mj
+QsMTE1NjUyNzczOSwxNTI5MjE1OTM4LC0xOTUzODQwMjgwLC01
+MzQzMDU1MTksNzcyMzgxMDkzLC0zNjIxNzM2MDMsLTM5MzgwOD
+UxNiw5OTAxNjgzODEsMTg4OTg3NTMxOSwtNjE5NDc4MDU4LC0y
+MDY1ODUzNTkzXX0=
 -->
