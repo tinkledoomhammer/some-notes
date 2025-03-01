@@ -933,6 +933,8 @@ y = (int) x;//c-like cast notation
 	* requires an optional feature called **Run-Time Type Information (RTTI)**
 		* It is disabled by default on many compilers
 	* Allows **downcast** ing pointers (from base to derived class
+	* If the cast cannot be completed (i.e. the actual object pointed to is not a complete member of the derived class)
+		* the 
 *`reinterpret_cast <new_type> (expression)`  
 *`static_cast <new_type> (expression)`
 *`const_cast <new_type> (expression) `
@@ -950,11 +952,11 @@ but each one with its own special characteristics:
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzYwMTgyNDUxLC05NTEwNTM1OTksMTExMD
-I5MjkwNSwtMTY0ODUzMTI4MSwtMTMxMTY4ODUxMSwtNzQ5MTMy
-NjM2LDIwOTY5ODgyMjQsMTk5NjIyNTQ5NywtMTY0OTI4MTc5Ni
-wtMTg4NDcxNDU1NSwtOTkxNDA3MjQsMTE1NjUyNzczOSwxNTI5
-MjE1OTM4LC0xOTUzODQwMjgwLC01MzQzMDU1MTksNzcyMzgxMD
-kzLC0zNjIxNzM2MDMsLTM5MzgwODUxNiw5OTAxNjgzODEsMTg4
-OTg3NTMxOV19
+eyJoaXN0b3J5IjpbMTc3MzIxOTMzNSwtOTUxMDUzNTk5LDExMT
+AyOTI5MDUsLTE2NDg1MzEyODEsLTEzMTE2ODg1MTEsLTc0OTEz
+MjYzNiwyMDk2OTg4MjI0LDE5OTYyMjU0OTcsLTE2NDkyODE3OT
+YsLTE4ODQ3MTQ1NTUsLTk5MTQwNzI0LDExNTY1Mjc3MzksMTUy
+OTIxNTkzOCwtMTk1Mzg0MDI4MCwtNTM0MzA1NTE5LDc3MjM4MT
+A5MywtMzYyMTczNjAzLC0zOTM4MDg1MTYsOTkwMTY4MzgxLDE4
+ODk4NzUzMTldfQ==
 -->
