@@ -842,7 +842,15 @@ int main () {
 
 ### Polymorphism
 * pointers to a derived object are also valid pointers to the base class
-* virtual members - functions with the `virtual` keyword 
+* virtual members - functions with the `virtual` keyword can re-define functions of the parent class
+```c++
+class Base {
+public:
+	void func1();
+	virtual 
+}
+class Derived : public Base
+```
 
 	 
 ## Other Language Features
@@ -853,11 +861,11 @@ int main () {
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNzk5NjQ0OCwtMTY0ODUzMTI4MSwtMT
-MxMTY4ODUxMSwtNzQ5MTMyNjM2LDIwOTY5ODgyMjQsMTk5NjIy
-NTQ5NywtMTY0OTI4MTc5NiwtMTg4NDcxNDU1NSwtOTkxNDA3Mj
-QsMTE1NjUyNzczOSwxNTI5MjE1OTM4LC0xOTUzODQwMjgwLC01
-MzQzMDU1MTksNzcyMzgxMDkzLC0zNjIxNzM2MDMsLTM5MzgwOD
-UxNiw5OTAxNjgzODEsMTg4OTg3NTMxOSwtNjE5NDc4MDU4LC0y
-MDY1ODUzNTkzXX0=
+eyJoaXN0b3J5IjpbLTY5OTY2MzUyLC0xNjQ4NTMxMjgxLC0xMz
+ExNjg4NTExLC03NDkxMzI2MzYsMjA5Njk4ODIyNCwxOTk2MjI1
+NDk3LC0xNjQ5MjgxNzk2LC0xODg0NzE0NTU1LC05OTE0MDcyNC
+wxMTU2NTI3NzM5LDE1MjkyMTU5MzgsLTE5NTM4NDAyODAsLTUz
+NDMwNTUxOSw3NzIzODEwOTMsLTM2MjE3MzYwMywtMzkzODA4NT
+E2LDk5MDE2ODM4MSwxODg5ODc1MzE5LC02MTk0NzgwNTgsLTIw
+NjU4NTM1OTNdfQ==
 -->
