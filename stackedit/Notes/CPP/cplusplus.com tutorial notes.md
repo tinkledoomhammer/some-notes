@@ -946,7 +946,7 @@ y = (int) x;//c-like cast notation
 	* it can convert to **rvalue references**
 	* convert `enum class` values to integers and floatis
 	* can convert any type to `void` which discards the value
-* `const_cast <new_type> (expression) `
+* `const_cast <new_type> (expression)`
   
 The traditional type-casting equivalents to these expressions would be:  
   
@@ -961,11 +961,11 @@ but each one with its own special characteristics:
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjU1NTQ0MzgsLTk1MTA1MzU5OSwxMT
-EwMjkyOTA1LC0xNjQ4NTMxMjgxLC0xMzExNjg4NTExLC03NDkx
-MzI2MzYsMjA5Njk4ODIyNCwxOTk2MjI1NDk3LC0xNjQ5MjgxNz
-k2LC0xODg0NzE0NTU1LC05OTE0MDcyNCwxMTU2NTI3NzM5LDE1
-MjkyMTU5MzgsLTE5NTM4NDAyODAsLTUzNDMwNTUxOSw3NzIzOD
-EwOTMsLTM2MjE3MzYwMywtMzkzODA4NTE2LDk5MDE2ODM4MSwx
-ODg5ODc1MzE5XX0=
+eyJoaXN0b3J5IjpbLTIwNjY5NzYyOTIsLTEwMjU1NTQ0MzgsLT
+k1MTA1MzU5OSwxMTEwMjkyOTA1LC0xNjQ4NTMxMjgxLC0xMzEx
+Njg4NTExLC03NDkxMzI2MzYsMjA5Njk4ODIyNCwxOTk2MjI1ND
+k3LC0xNjQ5MjgxNzk2LC0xODg0NzE0NTU1LC05OTE0MDcyNCwx
+MTU2NTI3NzM5LDE1MjkyMTU5MzgsLTE5NTM4NDAyODAsLTUzND
+MwNTUxOSw3NzIzODEwOTMsLTM2MjE3MzYwMywtMzkzODA4NTE2
+LDk5MDE2ODM4MV19
 -->
