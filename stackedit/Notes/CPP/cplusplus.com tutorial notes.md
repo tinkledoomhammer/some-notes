@@ -929,7 +929,9 @@ y = (int) x;//c-like cast notation
 * These casts are are unsafe, and can be applied indiscriminately
 
 * `dynamic_cast <new_type> (expression)`
-	* 
+	* Only works with pointer types
+	* requires an optional feature called **Run-Time Type Information (RTTI)**
+		* It is dissabled by default on many comp
 *`reinterpret_cast <new_type> (expression)`  
 *`static_cast <new_type> (expression)`
 *`const_cast <new_type> (expression) `
@@ -947,11 +949,11 @@ but each one with its own special characteristics:
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2MzQ1NzQ0MywtOTUxMDUzNTk5LDExMT
-AyOTI5MDUsLTE2NDg1MzEyODEsLTEzMTE2ODg1MTEsLTc0OTEz
-MjYzNiwyMDk2OTg4MjI0LDE5OTYyMjU0OTcsLTE2NDkyODE3OT
-YsLTE4ODQ3MTQ1NTUsLTk5MTQwNzI0LDExNTY1Mjc3MzksMTUy
-OTIxNTkzOCwtMTk1Mzg0MDI4MCwtNTM0MzA1NTE5LDc3MjM4MT
-A5MywtMzYyMTczNjAzLC0zOTM4MDg1MTYsOTkwMTY4MzgxLDE4
-ODk4NzUzMTldfQ==
+eyJoaXN0b3J5IjpbLTE1NjU0Nzc3MDcsLTk1MTA1MzU5OSwxMT
+EwMjkyOTA1LC0xNjQ4NTMxMjgxLC0xMzExNjg4NTExLC03NDkx
+MzI2MzYsMjA5Njk4ODIyNCwxOTk2MjI1NDk3LC0xNjQ5MjgxNz
+k2LC0xODg0NzE0NTU1LC05OTE0MDcyNCwxMTU2NTI3NzM5LDE1
+MjkyMTU5MzgsLTE5NTM4NDAyODAsLTUzNDMwNTUxOSw3NzIzOD
+EwOTMsLTM2MjE3MzYwMywtMzkzODA4NTE2LDk5MDE2ODM4MSwx
+ODg5ODc1MzE5XX0=
 -->
