@@ -873,7 +873,9 @@ int main(){
 	 
 ## Other Language Features
 ### Type Conversions
-
+* **Standard conversions** can be made implicitly
+	* These conversions affect fundamental data types
+	* allow conerr
 ```c++
 // implicit conversion of classes:
 #include <iostream>
@@ -918,7 +920,7 @@ but each one with its own special characteristics:
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjU1MzYwNzcsLTk1MTA1MzU5OSwxMT
+eyJoaXN0b3J5IjpbLTE5NDQyMjE2NzQsLTk1MTA1MzU5OSwxMT
 EwMjkyOTA1LC0xNjQ4NTMxMjgxLC0xMzExNjg4NTExLC03NDkx
 MzI2MzYsMjA5Njk4ODIyNCwxOTk2MjI1NDk3LC0xNjQ5MjgxNz
 k2LC0xODg0NzE0NTU1LC05OTE0MDcyNCwxMTU2NTI3NzM5LDE1
