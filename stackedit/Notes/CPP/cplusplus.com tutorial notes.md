@@ -937,7 +937,7 @@ y = (int) x;//c-like cast notation
 		* the `nullptr` is returned
 	* It can also perform allowed implicit casts on pointers
 * `reinterpret_cast <new_type> (expression)`  
-	* 
+	* converts any pointer type to any other pointer type
 * `static_cast <new_type> (expression)`
 	* Can perform pointer type casts without type safety
 	* Can perform any allowed implicit conversions **and** their reverse
@@ -945,7 +945,7 @@ y = (int) x;//c-like cast notation
 		* (unsure, but ie) `static_cast<int *>(static_cast<void*>(&x)) == &x`
 	* it can convert to **rvalue references**
 	* convert `enum class` values to integers and floatis
-	* can convert any type to 
+	* can convert any type to `void` which discards the value
 * `const_cast <new_type> (expression) `
   
 The traditional type-casting equivalents to these expressions would be:  
@@ -961,7 +961,7 @@ but each one with its own special characteristics:
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTM2NzQ2NjUsLTk1MTA1MzU5OSwxMT
+eyJoaXN0b3J5IjpbLTEwMjU1NTQ0MzgsLTk1MTA1MzU5OSwxMT
 EwMjkyOTA1LC0xNjQ4NTMxMjgxLC0xMzExNjg4NTExLC03NDkx
 MzI2MzYsMjA5Njk4ODIyNCwxOTk2MjI1NDk3LC0xNjQ5MjgxNz
 k2LC0xODg0NzE0NTU1LC05OTE0MDcyNCwxMTU2NTI3NzM5LDE1
