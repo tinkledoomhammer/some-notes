@@ -920,7 +920,13 @@ int main ()
 * C++ allows one implicit conversion per argument in function calls
 * Constructors with the `explicit` keyword will not be used for implicit casts
 	* They also cannot be used with assignment-like syntax.
-* 
+#### Explicit casts
+```c++
+double x = 10.3;
+int y = int (x); //functional notation
+y = (int) x;//c-like cast notation
+```
+* These casts are are unsafe-- many 
 * `dynamic_cast <new_type> (expression)`
 	* 
 *`reinterpret_cast <new_type> (expression)`  
@@ -940,7 +946,7 @@ but each one with its own special characteristics:
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1ODU5ODIwNSwtOTUxMDUzNTk5LDExMT
+eyJoaXN0b3J5IjpbMTIwNDY1MzY5NywtOTUxMDUzNTk5LDExMT
 AyOTI5MDUsLTE2NDg1MzEyODEsLTEzMTE2ODg1MTEsLTc0OTEz
 MjYzNiwyMDk2OTg4MjI0LDE5OTYyMjU0OTcsLTE2NDkyODE3OT
 YsLTE4ODQ3MTQ1NTUsLTk5MTQwNzI0LDExNTY1Mjc3MzksMTUy
