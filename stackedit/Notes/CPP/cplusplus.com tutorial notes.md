@@ -898,6 +898,18 @@ int main ()
   return 0;
 }
 ```
+* `dynamic_cast <new_type> (expression)`
+	* 
+*`reinterpret_cast <new_type> (expression)`  
+*`static_cast <new_type> (expression)`
+*`const_cast <new_type> (expression) `
+  
+The traditional type-casting equivalents to these expressions would be:  
+  
+*`(new_type) expression` or  `new_type (expression)`
+
+`  
+but each one with its own special characteristics:
 ## C++ Standard Library
 ### Input/Output with files
 
@@ -905,11 +917,11 @@ int main ()
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMDI5MjkwNSwtMTY0ODUzMTI4MSwtMT
-MxMTY4ODUxMSwtNzQ5MTMyNjM2LDIwOTY5ODgyMjQsMTk5NjIy
-NTQ5NywtMTY0OTI4MTc5NiwtMTg4NDcxNDU1NSwtOTkxNDA3Mj
-QsMTE1NjUyNzczOSwxNTI5MjE1OTM4LC0xOTUzODQwMjgwLC01
-MzQzMDU1MTksNzcyMzgxMDkzLC0zNjIxNzM2MDMsLTM5MzgwOD
-UxNiw5OTAxNjgzODEsMTg4OTg3NTMxOSwtNjE5NDc4MDU4LC0y
-MDY1ODUzNTkzXX0=
+eyJoaXN0b3J5IjpbLTk1MTA1MzU5OSwxMTEwMjkyOTA1LC0xNj
+Q4NTMxMjgxLC0xMzExNjg4NTExLC03NDkxMzI2MzYsMjA5Njk4
+ODIyNCwxOTk2MjI1NDk3LC0xNjQ5MjgxNzk2LC0xODg0NzE0NT
+U1LC05OTE0MDcyNCwxMTU2NTI3NzM5LDE1MjkyMTU5MzgsLTE5
+NTM4NDAyODAsLTUzNDMwNTUxOSw3NzIzODEwOTMsLTM2MjE3Mz
+YwMywtMzkzODA4NTE2LDk5MDE2ODM4MSwxODg5ODc1MzE5LC02
+MTk0NzgwNThdfQ==
 -->
