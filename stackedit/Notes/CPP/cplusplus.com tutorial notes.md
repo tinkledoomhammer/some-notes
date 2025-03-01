@@ -857,9 +857,13 @@ public:
 
 int main(){
 	Base base;
-Derived derived;
-Base base2 = derived;
-
+	Derived derived;
+	Base base2 = derived;
+	
+	base2.func1();//Base::func1
+	base2.func2();//Derived::func2
+	derived.func1();//Derived::func1
+}
 ```
 
 	 
@@ -871,7 +875,7 @@ Base base2 = derived;
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzQ2OTY1MSwtMTY0ODUzMTI4MSwtMT
+eyJoaXN0b3J5IjpbLTM5NDY5NjQyMCwtMTY0ODUzMTI4MSwtMT
 MxMTY4ODUxMSwtNzQ5MTMyNjM2LDIwOTY5ODgyMjQsMTk5NjIy
 NTQ5NywtMTY0OTI4MTc5NiwtMTg4NDcxNDU1NSwtOTkxNDA3Mj
 QsMTE1NjUyNzczOSwxNTI5MjE1OTM4LC0xOTUzODQwMjgwLC01
