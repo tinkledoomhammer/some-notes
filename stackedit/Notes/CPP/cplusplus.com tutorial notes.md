@@ -881,6 +881,9 @@ int main(){
 	* Conversion from signed to unsigned values gives a 2's compliment
 		* i.e. -1 => maximum allowed value, etc
 * Conversion from /to bool considers `false` to be equivalent to `0` and `nullptr`
+* Conversions from float truncate. If the value is outside of  the range for the int, then the result is undefined behavior
+* Other numerical conversions are valid but the value is implementation-specific
+* 
 ```c++
 // implicit conversion of classes:
 #include <iostream>
@@ -925,7 +928,7 @@ but each one with its own special characteristics:
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjA1OTUwOTUsLTk1MTA1MzU5OSwxMT
+eyJoaXN0b3J5IjpbLTIwNjQ4MTMwMjAsLTk1MTA1MzU5OSwxMT
 EwMjkyOTA1LC0xNjQ4NTMxMjgxLC0xMzExNjg4NTExLC03NDkx
 MzI2MzYsMjA5Njk4ODIyNCwxOTk2MjI1NDk3LC0xNjQ5MjgxNz
 k2LC0xODg0NzE0NTU1LC05OTE0MDcyNCwxMTU2NTI3NzM5LDE1
