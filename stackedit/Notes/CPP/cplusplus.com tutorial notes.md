@@ -873,6 +873,7 @@ int main(){
 	 
 ## Other Language Features
 ### Type Conversions
+
 ```c++
 // implicit conversion of classes:
 #include <iostream>
@@ -917,11 +918,11 @@ but each one with its own special characteristics:
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MTA1MzU5OSwxMTEwMjkyOTA1LC0xNj
-Q4NTMxMjgxLC0xMzExNjg4NTExLC03NDkxMzI2MzYsMjA5Njk4
-ODIyNCwxOTk2MjI1NDk3LC0xNjQ5MjgxNzk2LC0xODg0NzE0NT
-U1LC05OTE0MDcyNCwxMTU2NTI3NzM5LDE1MjkyMTU5MzgsLTE5
-NTM4NDAyODAsLTUzNDMwNTUxOSw3NzIzODEwOTMsLTM2MjE3Mz
-YwMywtMzkzODA4NTE2LDk5MDE2ODM4MSwxODg5ODc1MzE5LC02
-MTk0NzgwNThdfQ==
+eyJoaXN0b3J5IjpbLTE1NjU1MzYwNzcsLTk1MTA1MzU5OSwxMT
+EwMjkyOTA1LC0xNjQ4NTMxMjgxLC0xMzExNjg4NTExLC03NDkx
+MzI2MzYsMjA5Njk4ODIyNCwxOTk2MjI1NDk3LC0xNjQ5MjgxNz
+k2LC0xODg0NzE0NTU1LC05OTE0MDcyNCwxMTU2NTI3NzM5LDE1
+MjkyMTU5MzgsLTE5NTM4NDAyODAsLTUzNDMwNTUxOSw3NzIzOD
+EwOTMsLTM2MjE3MzYwMywtMzkzODA4NTE2LDk5MDE2ODM4MSwx
+ODg5ODc1MzE5XX0=
 -->
