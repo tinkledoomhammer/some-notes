@@ -878,7 +878,9 @@ int main(){
 	* allow conversion between numerical types, to/from bool, and some pointer conversions
 * **Promotion** is converting when the exact value can be guaranteed to be produced
 	* i.e. small integers to bigger ints
-	* Conv
+	* Conversion from signed to unsigned values gives a 2's compliment
+		* i.e. -1 => maximum allowed value, etc
+* Conversion from /to bool considers `false` to be equivalent to `0` and `nullptr`
 ```c++
 // implicit conversion of classes:
 #include <iostream>
@@ -923,11 +925,11 @@ but each one with its own special characteristics:
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3NzgzNzcyNiwtOTUxMDUzNTk5LDExMT
-AyOTI5MDUsLTE2NDg1MzEyODEsLTEzMTE2ODg1MTEsLTc0OTEz
-MjYzNiwyMDk2OTg4MjI0LDE5OTYyMjU0OTcsLTE2NDkyODE3OT
-YsLTE4ODQ3MTQ1NTUsLTk5MTQwNzI0LDExNTY1Mjc3MzksMTUy
-OTIxNTkzOCwtMTk1Mzg0MDI4MCwtNTM0MzA1NTE5LDc3MjM4MT
-A5MywtMzYyMTczNjAzLC0zOTM4MDg1MTYsOTkwMTY4MzgxLDE4
-ODk4NzUzMTldfQ==
+eyJoaXN0b3J5IjpbLTEwNjA1OTUwOTUsLTk1MTA1MzU5OSwxMT
+EwMjkyOTA1LC0xNjQ4NTMxMjgxLC0xMzExNjg4NTExLC03NDkx
+MzI2MzYsMjA5Njk4ODIyNCwxOTk2MjI1NDk3LC0xNjQ5MjgxNz
+k2LC0xODg0NzE0NTU1LC05OTE0MDcyNCwxMTU2NTI3NzM5LDE1
+MjkyMTU5MzgsLTE5NTM4NDAyODAsLTUzNDMwNTUxOSw3NzIzOD
+EwOTMsLTM2MjE3MzYwMywtMzkzODA4NTE2LDk5MDE2ODM4MSwx
+ODg5ODc1MzE5XX0=
 -->
