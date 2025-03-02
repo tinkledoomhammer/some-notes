@@ -956,7 +956,7 @@ y = (int) x;//c-like cast notation
 * `const_cast <new_type> (expression)`
 	* Changes the const-ness of an object
 	* if  the object is modified, the result is undefined behavior
-
+##### `typeid(
 
 
 ## C++ Standard Library
@@ -966,7 +966,7 @@ y = (int) x;//c-like cast notation
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4ODM5NDA4LC0yMDY2OTc2MjkyLC0xMD
+eyJoaXN0b3J5IjpbNzQzMjAxMjgwLC0yMDY2OTc2MjkyLC0xMD
 I1NTU0NDM4LC05NTEwNTM1OTksMTExMDI5MjkwNSwtMTY0ODUz
 MTI4MSwtMTMxMTY4ODUxMSwtNzQ5MTMyNjM2LDIwOTY5ODgyMj
 QsMTk5NjIyNTQ5NywtMTY0OTI4MTc5NiwtMTg4NDcxNDU1NSwt
