@@ -473,7 +473,7 @@ funcName(a,b);//equivalent call
 ...
 //some other syntax
 typedef int (funcType)(int,int);
-std::function<int(int,int)> funcPtr = funcName;
+std::function<int(int,int)> // #include <functional>
 
 ```
 ### Dynamic Memory
@@ -1055,11 +1055,11 @@ Macro | Value
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0Mzk2NTgyNiw5MTU1NjQ0NjIsNDIwNz
-Q2MjMwLC04NTUzMjU3MzksLTE3ODQwOTk4NjQsMjEzMzIxOTI2
-NywtMjA2Njk3NjI5MiwtMTAyNTU1NDQzOCwtOTUxMDUzNTk5LD
-ExMTAyOTI5MDUsLTE2NDg1MzEyODEsLTEzMTE2ODg1MTEsLTc0
-OTEzMjYzNiwyMDk2OTg4MjI0LDE5OTYyMjU0OTcsLTE2NDkyOD
-E3OTYsLTE4ODQ3MTQ1NTUsLTk5MTQwNzI0LDExNTY1Mjc3Mzks
-MTUyOTIxNTkzOF19
+eyJoaXN0b3J5IjpbODYxNDkxMDI5LDkxNTU2NDQ2Miw0MjA3ND
+YyMzAsLTg1NTMyNTczOSwtMTc4NDA5OTg2NCwyMTMzMjE5MjY3
+LC0yMDY2OTc2MjkyLC0xMDI1NTU0NDM4LC05NTEwNTM1OTksMT
+ExMDI5MjkwNSwtMTY0ODUzMTI4MSwtMTMxMTY4ODUxMSwtNzQ5
+MTMyNjM2LDIwOTY5ODgyMjQsMTk5NjIyNTQ5NywtMTY0OTI4MT
+c5NiwtMTg4NDcxNDU1NSwtOTkxNDA3MjQsMTE1NjUyNzczOSwx
+NTI5MjE1OTM4XX0=
 -->
