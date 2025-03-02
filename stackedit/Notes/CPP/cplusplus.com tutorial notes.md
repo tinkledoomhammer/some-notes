@@ -464,15 +464,17 @@ const int * const p4 = &x;  // const pointer to const int
 * function pointers enclose the name (with a preceeding *) in parens, and include a parameter list:
 	* `int (*func_ptr)(int,int));`
 ```c++
-typedef int (funcType)(int,int);
-std::func
-...
 int funcName (int,int); // the function declaration
 int (*funcPtr)(int,int) = &funcName; // the pointer declared/initialized
 funcPtr = funcName;//also works
 
 (*funcPtr)(a,b);// call with pointer
 funcName(a,b);//equivalent call
+...
+//some other syntax
+typedef int (funcType)(int,int);
+std::function<int(int,int)> funcPtr = funcName;
+
 ```
 ### Dynamic Memory
 
@@ -1053,7 +1055,7 @@ Macro | Value
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTY1NTQ3Niw5MTU1NjQ0NjIsNDIwNz
+eyJoaXN0b3J5IjpbMTM0Mzk2NTgyNiw5MTU1NjQ0NjIsNDIwNz
 Q2MjMwLC04NTUzMjU3MzksLTE3ODQwOTk4NjQsMjEzMzIxOTI2
 NywtMjA2Njk3NjI5MiwtMTAyNTU1NDQzOCwtOTUxMDUzNTk5LD
 ExMTAyOTI5MDUsLTE2NDg1MzEyODEsLTEzMTE2ODg1MTEsLTc0
