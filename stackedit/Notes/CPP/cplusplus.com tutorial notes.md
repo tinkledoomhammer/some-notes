@@ -1025,7 +1025,9 @@ catch (...) { cout << "default exception"; }
 Macro | value
 --|--
 `__LINE__` | an integer value equal to the current source does line
-`__FILE__` |  
+`__FILE__` | a string literal containing the name of source file being compiled
+`__DATE__` | a string literal in "Mmm dd yyyy" format representing the date compilation started
+`__cplusplus` | an integer value 
 
 ## C++ Standard Library
 ### Input/Output with files
@@ -1034,11 +1036,11 @@ Macro | value
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY3MzUyNTg5LC04NTUzMjU3MzksLTE3OD
-QwOTk4NjQsMjEzMzIxOTI2NywtMjA2Njk3NjI5MiwtMTAyNTU1
-NDQzOCwtOTUxMDUzNTk5LDExMTAyOTI5MDUsLTE2NDg1MzEyOD
-EsLTEzMTE2ODg1MTEsLTc0OTEzMjYzNiwyMDk2OTg4MjI0LDE5
-OTYyMjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUsLTk5MT
-QwNzI0LDExNTY1Mjc3MzksMTUyOTIxNTkzOCwtMTk1Mzg0MDI4
-MCwtNTM0MzA1NTE5XX0=
+eyJoaXN0b3J5IjpbLTIwNDc1NDMwNDYsLTg1NTMyNTczOSwtMT
+c4NDA5OTg2NCwyMTMzMjE5MjY3LC0yMDY2OTc2MjkyLC0xMDI1
+NTU0NDM4LC05NTEwNTM1OTksMTExMDI5MjkwNSwtMTY0ODUzMT
+I4MSwtMTMxMTY4ODUxMSwtNzQ5MTMyNjM2LDIwOTY5ODgyMjQs
+MTk5NjIyNTQ5NywtMTY0OTI4MTc5NiwtMTg4NDcxNDU1NSwtOT
+kxNDA3MjQsMTE1NjUyNzczOSwxNTI5MjE1OTM4LC0xOTUzODQw
+MjgwLC01MzQzMDU1MTldfQ==
 -->
