@@ -1038,15 +1038,18 @@ Macro | Value
 `__STDC_VERSION__` | like `__cplusplus` but for c instead of c++. In c++ it is implementation dependent
 `__STDC_MB_MIGHT_NEQ_WC__` | 1 if multibyte encoding might give a character a different value in character literals
 `__STDC_ISO_1064__` | A value in the form yyymmL specifying the date of the unicode standard used for `wchar_t` characters
-`__STDCPP_STRICT_POINTER_SAFETY__` 1 if the implementation has 
-## C++ Standard Library
-### Input/Output with files
+`__STDCPP_STRICT_POINTER_SAFETY__` 1 if the implementation has strict pointer safety (https://cplusplus.com/get_pointer_safety)
+`__STDCPP_THREADS__` | 1 if the program can have more than one thread
+
+
+## C++ Standard Library (File I/O)
+
 
 	
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE2NjM4ODc5LC04NTUzMjU3MzksLTE3OD
+eyJoaXN0b3J5IjpbNDIwNzQ2MjMwLC04NTUzMjU3MzksLTE3OD
 QwOTk4NjQsMjEzMzIxOTI2NywtMjA2Njk3NjI5MiwtMTAyNTU1
 NDQzOCwtOTUxMDUzNTk5LDExMTAyOTI5MDUsLTE2NDg1MzEyOD
 EsLTEzMTE2ODg1MTEsLTc0OTEzMjYzNiwyMDk2OTg4MjI0LDE5
