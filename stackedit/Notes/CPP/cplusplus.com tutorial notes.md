@@ -1019,7 +1019,13 @@ catch (...) { cout << "default exception"; }
 `#include "file"` -- includes a file. interpretation depends on implementation
 	* if the file is not found, then it will be tried as a header include (i.e. `#include <file>`)
 `#pragma` - compiler specific stuff.it will be ignored by compilers that don't support it 
-	`#pragma once` 
+	`#pragma once` is supported by the major compilers.
+
+#### Predefined macros
+Macro | value
+--|--
+`__LINE__` | an integer value equal to the current source does line
+`__FILE__` |  
 
 ## C++ Standard Library
 ### Input/Output with files
@@ -1028,7 +1034,7 @@ catch (...) { cout << "default exception"; }
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg3MDM1MTEzLC04NTUzMjU3MzksLTE3OD
+eyJoaXN0b3J5IjpbNTY3MzUyNTg5LC04NTUzMjU3MzksLTE3OD
 QwOTk4NjQsMjEzMzIxOTI2NywtMjA2Njk3NjI5MiwtMTAyNTU1
 NDQzOCwtOTUxMDUzNTk5LDExMTAyOTI5MDUsLTE2NDg1MzEyOD
 EsLTEzMTE2ODg1MTEsLTc0OTEzMjYzNiwyMDk2OTg4MjI0LDE5
