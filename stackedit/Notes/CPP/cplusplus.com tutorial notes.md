@@ -956,7 +956,10 @@ y = (int) x;//c-like cast notation
 * `const_cast <new_type> (expression)`
 	* Changes the const-ness of an object
 	* if  the object is modified, the result is undefined behavior
-##### `typeid(
+#### `typeid(obj)` and `typeid(type)`
+* uses **RTTI** when used on a polymorphic object
+* the returntype is `type_info` in `<typeinfo>`
+* can be compared to other typids using `==` and `~
 
 
 ## C++ Standard Library
@@ -966,11 +969,11 @@ y = (int) x;//c-like cast notation
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQzMjAxMjgwLC0yMDY2OTc2MjkyLC0xMD
-I1NTU0NDM4LC05NTEwNTM1OTksMTExMDI5MjkwNSwtMTY0ODUz
-MTI4MSwtMTMxMTY4ODUxMSwtNzQ5MTMyNjM2LDIwOTY5ODgyMj
-QsMTk5NjIyNTQ5NywtMTY0OTI4MTc5NiwtMTg4NDcxNDU1NSwt
-OTkxNDA3MjQsMTE1NjUyNzczOSwxNTI5MjE1OTM4LC0xOTUzOD
-QwMjgwLC01MzQzMDU1MTksNzcyMzgxMDkzLC0zNjIxNzM2MDMs
-LTM5MzgwODUxNl19
+eyJoaXN0b3J5IjpbMjA5MDYzNDAyMywtMjA2Njk3NjI5MiwtMT
+AyNTU1NDQzOCwtOTUxMDUzNTk5LDExMTAyOTI5MDUsLTE2NDg1
+MzEyODEsLTEzMTE2ODg1MTEsLTc0OTEzMjYzNiwyMDk2OTg4Mj
+I0LDE5OTYyMjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUs
+LTk5MTQwNzI0LDExNTY1Mjc3MzksMTUyOTIxNTkzOCwtMTk1Mz
+g0MDI4MCwtNTM0MzA1NTE5LDc3MjM4MTA5MywtMzYyMTczNjAz
+LC0zOTM4MDg1MTZdfQ==
 -->
