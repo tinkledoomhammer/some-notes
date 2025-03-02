@@ -990,7 +990,7 @@ catch (...) { cout << "default exception"; }
 	* `bad_alloc` , `bad_cast` (thrown by `dynamic_cast`) `bad_typeid`, `bad_function_call` (when the function object is empty), `bad_weak_ptr` (thrown by `shared_ptr`)
 * `<exception>` also defines two classes for generic custom exceptions
 	* `logic_error` and `runtime_error`
-* 
+
 ### Preprocessor Directives
 
 
@@ -1001,7 +1001,7 @@ catch (...) { cout << "default exception"; }
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjQ5NzMyNjIsMjEzMzIxOTI2NywtMj
+eyJoaXN0b3J5IjpbLTE3ODQwOTk4NjQsMjEzMzIxOTI2NywtMj
 A2Njk3NjI5MiwtMTAyNTU1NDQzOCwtOTUxMDUzNTk5LDExMTAy
 OTI5MDUsLTE2NDg1MzEyODEsLTEzMTE2ODg1MTEsLTc0OTEzMj
 YzNiwyMDk2OTg4MjI0LDE5OTYyMjU0OTcsLTE2NDkyODE3OTYs
