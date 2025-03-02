@@ -1004,10 +1004,12 @@ catch (...) { cout << "default exception"; }
 	* and `getmax(somefunc(),otherfunc())` will call both functions, and return the value of the second invocation of the one of them.
 	* `#` and `##` are special operators that change how replacement works with parameters
 	* `#arg` will be replaced with a string literal containing the macro argument
-	* 
+	* `arg1 ## arg2` will concatenate the arguments, with no space in between
+
 * Defined macros are not affected by block structure
 * they remain defined until removed with `#undef`
-* 
+#### Conditional inclusions `#ifdef` `#ifndef` `#if` `#endif` `#else` `#elif`
+ 
 
 ## C++ Standard Library
 ### Input/Output with files
@@ -1016,7 +1018,7 @@ catch (...) { cout << "default exception"; }
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NDE2ODI5MywtMTc4NDA5OTg2NCwyMT
+eyJoaXN0b3J5IjpbLTg1NTMyNTczOSwtMTc4NDA5OTg2NCwyMT
 MzMjE5MjY3LC0yMDY2OTc2MjkyLC0xMDI1NTU0NDM4LC05NTEw
 NTM1OTksMTExMDI5MjkwNSwtMTY0ODUzMTI4MSwtMTMxMTY4OD
 UxMSwtNzQ5MTMyNjM2LDIwOTY5ODgyMjQsMTk5NjIyNTQ5Nywt
