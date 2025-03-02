@@ -1036,7 +1036,9 @@ Macro | Value
 --|--
 `__STDC__` | In C it will be 1 when the implementation is standards compliant. Implementation defined in c++
 `__STDC_VERSION__` | like `__cplusplus` but for c instead of c++. In c++ it is implementation dependent
-`__STDC_MB_MIGHT_NEQ_WC__` | 1 if multibyte 
+`__STDC_MB_MIGHT_NEQ_WC__` | 1 if multibyte encoding might give a character a different value in character literals
+`__STDC_ISO_1064__` | A value in the form yyymmL specifying the date of the unicode standard used for `wchar_t` characters
+`__STDCPP_STRICT_POINTER_SAFETY__` 1 if the implementation has 
 ## C++ Standard Library
 ### Input/Output with files
 
@@ -1044,11 +1046,11 @@ Macro | Value
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMjU3NTI5NiwtODU1MzI1NzM5LC0xNz
-g0MDk5ODY0LDIxMzMyMTkyNjcsLTIwNjY5NzYyOTIsLTEwMjU1
-NTQ0MzgsLTk1MTA1MzU5OSwxMTEwMjkyOTA1LC0xNjQ4NTMxMj
-gxLC0xMzExNjg4NTExLC03NDkxMzI2MzYsMjA5Njk4ODIyNCwx
-OTk2MjI1NDk3LC0xNjQ5MjgxNzk2LC0xODg0NzE0NTU1LC05OT
-E0MDcyNCwxMTU2NTI3NzM5LDE1MjkyMTU5MzgsLTE5NTM4NDAy
-ODAsLTUzNDMwNTUxOV19
+eyJoaXN0b3J5IjpbNjE2NjM4ODc5LC04NTUzMjU3MzksLTE3OD
+QwOTk4NjQsMjEzMzIxOTI2NywtMjA2Njk3NjI5MiwtMTAyNTU1
+NDQzOCwtOTUxMDUzNTk5LDExMTAyOTI5MDUsLTE2NDg1MzEyOD
+EsLTEzMTE2ODg1MTEsLTc0OTEzMjYzNiwyMDk2OTg4MjI0LDE5
+OTYyMjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUsLTk5MT
+QwNzI0LDExNTY1Mjc3MzksMTUyOTIxNTkzOCwtMTk1Mzg0MDI4
+MCwtNTM0MzA1NTE5XX0=
 -->
