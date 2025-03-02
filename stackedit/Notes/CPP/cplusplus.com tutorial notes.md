@@ -1022,7 +1022,7 @@ catch (...) { cout << "default exception"; }
 	`#pragma once` is supported by the major compilers.
 
 #### Predefined macros
-Mand
+Macros that are defined by every compiler
 Macro | value
 --|--
 `__LINE__` | an integer value equal to the current source does line
@@ -1031,7 +1031,10 @@ Macro | value
 `__cplusplus` | an integer value indicating the version of c++
 `__STDC_HOSTED__`| 1 if all standard headers are available (called a **hosted implementation**)
  
-
+Optional macros that are defined on some compilers
+Macro | Value
+--|--
+`__STDC__` | In C it will be 1 when the implementation is standards compliant. 
 ## C++ Standard Library
 ### Input/Output with files
 
@@ -1039,7 +1042,7 @@ Macro | value
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg3ODMxODMyLC04NTUzMjU3MzksLTE3OD
+eyJoaXN0b3J5IjpbNzcwODAzMzUyLC04NTUzMjU3MzksLTE3OD
 QwOTk4NjQsMjEzMzIxOTI2NywtMjA2Njk3NjI5MiwtMTAyNTU1
 NDQzOCwtOTUxMDUzNTk5LDExMTAyOTI5MDUsLTE2NDg1MzEyOD
 EsLTEzMTE2ODg1MTEsLTc0OTEzMjYzNiwyMDk2OTg4MjI0LDE5
