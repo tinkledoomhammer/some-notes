@@ -987,7 +987,10 @@ catch (...) { cout << "default exception"; }
 * Standard exceptions use a class called `std::exception` found in `<exception> header
 	* defines a property `std::exception::what()` that returns a null-terminated string with a short description
 * Exceptions thrown by standard library classes (all inherit from `std::exception`
-	* `bad_alloc` , `bad_cast` (thrownn by `dyn
+	* `bad_alloc` , `bad_cast` (thrown by `dynamic_cast`) `bad_typeid`, `bad_function_call` (when the function object is empty), `bad_weak_ptr` (thrown by `shared_ptr`)
+* `<exception>` also defines two classes for generic custom exceptions
+	* `logic_error` and `runtime_error`
+* 
 ### Preprocessor Directives
 
 
@@ -998,11 +1001,11 @@ catch (...) { cout << "default exception"; }
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIxNTk1NjkyLDIxMzMyMTkyNjcsLTIwNj
-Y5NzYyOTIsLTEwMjU1NTQ0MzgsLTk1MTA1MzU5OSwxMTEwMjky
-OTA1LC0xNjQ4NTMxMjgxLC0xMzExNjg4NTExLC03NDkxMzI2Mz
-YsMjA5Njk4ODIyNCwxOTk2MjI1NDk3LC0xNjQ5MjgxNzk2LC0x
-ODg0NzE0NTU1LC05OTE0MDcyNCwxMTU2NTI3NzM5LDE1MjkyMT
-U5MzgsLTE5NTM4NDAyODAsLTUzNDMwNTUxOSw3NzIzODEwOTMs
-LTM2MjE3MzYwM119
+eyJoaXN0b3J5IjpbLTEwMjQ5NzMyNjIsMjEzMzIxOTI2NywtMj
+A2Njk3NjI5MiwtMTAyNTU1NDQzOCwtOTUxMDUzNTk5LDExMTAy
+OTI5MDUsLTE2NDg1MzEyODEsLTEzMTE2ODg1MTEsLTc0OTEzMj
+YzNiwyMDk2OTg4MjI0LDE5OTYyMjU0OTcsLTE2NDkyODE3OTYs
+LTE4ODQ3MTQ1NTUsLTk5MTQwNzI0LDExNTY1Mjc3MzksMTUyOT
+IxNTkzOCwtMTk1Mzg0MDI4MCwtNTM0MzA1NTE5LDc3MjM4MTA5
+MywtMzYyMTczNjAzXX0=
 -->
