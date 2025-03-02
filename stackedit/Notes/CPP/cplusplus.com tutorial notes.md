@@ -1013,7 +1013,9 @@ catch (...) { cout << "default exception"; }
 * `#if` blocks all end with `#endif` regardless of `#elif` and `#else` 
 * `defined` and `!defined` can be used in the condition of `#if` and `#elif`
 #### Other directives
-`#line nummber "filename"` - used by compilers to generate error messages 
+`#line nummber "filename"` - used by compilers to generate error messages
+`#error an error message` - will abort compilation with the specified error message
+`#include <header>` -- inclu 
 
 ## C++ Standard Library
 ### Input/Output with files
@@ -1022,11 +1024,11 @@ catch (...) { cout << "default exception"; }
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2ODQxNzM0MiwtODU1MzI1NzM5LC0xNz
-g0MDk5ODY0LDIxMzMyMTkyNjcsLTIwNjY5NzYyOTIsLTEwMjU1
-NTQ0MzgsLTk1MTA1MzU5OSwxMTEwMjkyOTA1LC0xNjQ4NTMxMj
-gxLC0xMzExNjg4NTExLC03NDkxMzI2MzYsMjA5Njk4ODIyNCwx
-OTk2MjI1NDk3LC0xNjQ5MjgxNzk2LC0xODg0NzE0NTU1LC05OT
-E0MDcyNCwxMTU2NTI3NzM5LDE1MjkyMTU5MzgsLTE5NTM4NDAy
-ODAsLTUzNDMwNTUxOV19
+eyJoaXN0b3J5IjpbLTEzNTE1NjQ4MDYsLTg1NTMyNTczOSwtMT
+c4NDA5OTg2NCwyMTMzMjE5MjY3LC0yMDY2OTc2MjkyLC0xMDI1
+NTU0NDM4LC05NTEwNTM1OTksMTExMDI5MjkwNSwtMTY0ODUzMT
+I4MSwtMTMxMTY4ODUxMSwtNzQ5MTMyNjM2LDIwOTY5ODgyMjQs
+MTk5NjIyNTQ5NywtMTY0OTI4MTc5NiwtMTg4NDcxNDU1NSwtOT
+kxNDA3MjQsMTE1NjUyNzczOSwxNTI5MjE1OTM4LC0xOTUzODQw
+MjgwLC01MzQzMDU1MTldfQ==
 -->
