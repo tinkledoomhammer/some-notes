@@ -985,7 +985,9 @@ catch (...) { cout << "default exception"; }
 	* exceptions other than that type will call `std::unexpected` instead of throwing an exception
 	* if no type is specified, all exceptions will call `std::unexpected`
 * Standard exceptions use a class called `std::exception` found in `<exception> header
-	* 
+	* defines a property `std::exception::what()` that returns a null-terminated string with a short description
+* Exceptions thrown by standard library classes (all inherit from `std::exception`
+	* `bad_alloc` , `bad_cast` (thrownn by `dyn
 ### Preprocessor Directives
 
 
@@ -996,11 +998,11 @@ catch (...) { cout << "default exception"; }
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1OTAwMjIzNCwyMTMzMjE5MjY3LC0yMD
-Y2OTc2MjkyLC0xMDI1NTU0NDM4LC05NTEwNTM1OTksMTExMDI5
-MjkwNSwtMTY0ODUzMTI4MSwtMTMxMTY4ODUxMSwtNzQ5MTMyNj
-M2LDIwOTY5ODgyMjQsMTk5NjIyNTQ5NywtMTY0OTI4MTc5Niwt
-MTg4NDcxNDU1NSwtOTkxNDA3MjQsMTE1NjUyNzczOSwxNTI5Mj
-E1OTM4LC0xOTUzODQwMjgwLC01MzQzMDU1MTksNzcyMzgxMDkz
-LC0zNjIxNzM2MDNdfQ==
+eyJoaXN0b3J5IjpbNTIxNTk1NjkyLDIxMzMyMTkyNjcsLTIwNj
+Y5NzYyOTIsLTEwMjU1NTQ0MzgsLTk1MTA1MzU5OSwxMTEwMjky
+OTA1LC0xNjQ4NTMxMjgxLC0xMzExNjg4NTExLC03NDkxMzI2Mz
+YsMjA5Njk4ODIyNCwxOTk2MjI1NDk3LC0xNjQ5MjgxNzk2LC0x
+ODg0NzE0NTU1LC05OTE0MDcyNCwxMTU2NTI3NzM5LDE1MjkyMT
+U5MzgsLTE5NTM4NDAyODAsLTUzNDMwNTUxOSw3NzIzODEwOTMs
+LTM2MjE3MzYwM119
 -->
