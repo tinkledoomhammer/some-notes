@@ -992,7 +992,8 @@ catch (...) { cout << "default exception"; }
 	* `logic_error` and `runtime_error`
 
 ### Preprocessor Directives
-
+* they all begin with `#` and end at the eol
+	* Ending a line with `\` will 
 
 ## C++ Standard Library
 ### Input/Output with files
@@ -1001,11 +1002,11 @@ catch (...) { cout << "default exception"; }
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODQwOTk4NjQsMjEzMzIxOTI2NywtMj
-A2Njk3NjI5MiwtMTAyNTU1NDQzOCwtOTUxMDUzNTk5LDExMTAy
-OTI5MDUsLTE2NDg1MzEyODEsLTEzMTE2ODg1MTEsLTc0OTEzMj
-YzNiwyMDk2OTg4MjI0LDE5OTYyMjU0OTcsLTE2NDkyODE3OTYs
-LTE4ODQ3MTQ1NTUsLTk5MTQwNzI0LDExNTY1Mjc3MzksMTUyOT
-IxNTkzOCwtMTk1Mzg0MDI4MCwtNTM0MzA1NTE5LDc3MjM4MTA5
-MywtMzYyMTczNjAzXX0=
+eyJoaXN0b3J5IjpbLTk1NzAwMDIxNSwtMTc4NDA5OTg2NCwyMT
+MzMjE5MjY3LC0yMDY2OTc2MjkyLC0xMDI1NTU0NDM4LC05NTEw
+NTM1OTksMTExMDI5MjkwNSwtMTY0ODUzMTI4MSwtMTMxMTY4OD
+UxMSwtNzQ5MTMyNjM2LDIwOTY5ODgyMjQsMTk5NjIyNTQ5Nywt
+MTY0OTI4MTc5NiwtMTg4NDcxNDU1NSwtOTkxNDA3MjQsMTE1Nj
+UyNzczOSwxNTI5MjE1OTM4LC0xOTUzODQwMjgwLC01MzQzMDU1
+MTksNzcyMzgxMDkzXX0=
 -->
