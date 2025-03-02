@@ -938,6 +938,9 @@ y = (int) x;//c-like cast notation
 	* It can also perform allowed implicit casts on pointers
 * `reinterpret_cast <new_type> (expression)`  
 	* converts any pointer type to any other pointer type
+	* very not safe
+	* can cast pointers to int types large enough to contain it 
+		* i.e. `<intptr_t>`
 * `static_cast <new_type> (expression)`
 	* Can perform pointer type casts without type safety
 	* Can perform any allowed implicit conversions **and** their reverse
@@ -961,11 +964,11 @@ but each one with its own special characteristics:
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjY5NzYyOTIsLTEwMjU1NTQ0MzgsLT
-k1MTA1MzU5OSwxMTEwMjkyOTA1LC0xNjQ4NTMxMjgxLC0xMzEx
-Njg4NTExLC03NDkxMzI2MzYsMjA5Njk4ODIyNCwxOTk2MjI1ND
-k3LC0xNjQ5MjgxNzk2LC0xODg0NzE0NTU1LC05OTE0MDcyNCwx
-MTU2NTI3NzM5LDE1MjkyMTU5MzgsLTE5NTM4NDAyODAsLTUzND
-MwNTUxOSw3NzIzODEwOTMsLTM2MjE3MzYwMywtMzkzODA4NTE2
-LDk5MDE2ODM4MV19
+eyJoaXN0b3J5IjpbLTY3MzU2NzM2MSwtMjA2Njk3NjI5MiwtMT
+AyNTU1NDQzOCwtOTUxMDUzNTk5LDExMTAyOTI5MDUsLTE2NDg1
+MzEyODEsLTEzMTE2ODg1MTEsLTc0OTEzMjYzNiwyMDk2OTg4Mj
+I0LDE5OTYyMjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUs
+LTk5MTQwNzI0LDExNTY1Mjc3MzksMTUyOTIxNTkzOCwtMTk1Mz
+g0MDI4MCwtNTM0MzA1NTE5LDc3MjM4MTA5MywtMzYyMTczNjAz
+LC0zOTM4MDg1MTZdfQ==
 -->
