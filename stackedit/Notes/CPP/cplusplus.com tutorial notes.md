@@ -941,6 +941,7 @@ y = (int) x;//c-like cast notation
 	* very not safe
 	* can cast pointers to int types large enough to contain it 
 		* i.e. `<intptr_t>`
+	* behavior is system specific and not portable
 * `static_cast <new_type> (expression)`
 	* Can perform pointer type casts without type safety
 	* Can perform any allowed implicit conversions **and** their reverse
@@ -950,7 +951,7 @@ y = (int) x;//c-like cast notation
 	* convert `enum class` values to integers and floatis
 	* can convert any type to `void` which discards the value
 * `const_cast <new_type> (expression)`
-  
+	Changes the const-ness of an obje
 The traditional type-casting equivalents to these expressions would be:  
   
 *`(new_type) expression` or  `new_type (expression)`
@@ -964,11 +965,11 @@ but each one with its own special characteristics:
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MzU2NzM2MSwtMjA2Njk3NjI5MiwtMT
-AyNTU1NDQzOCwtOTUxMDUzNTk5LDExMTAyOTI5MDUsLTE2NDg1
-MzEyODEsLTEzMTE2ODg1MTEsLTc0OTEzMjYzNiwyMDk2OTg4Mj
-I0LDE5OTYyMjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUs
-LTk5MTQwNzI0LDExNTY1Mjc3MzksMTUyOTIxNTkzOCwtMTk1Mz
-g0MDI4MCwtNTM0MzA1NTE5LDc3MjM4MTA5MywtMzYyMTczNjAz
-LC0zOTM4MDg1MTZdfQ==
+eyJoaXN0b3J5IjpbLTEwMDE2NTI4NjgsLTIwNjY5NzYyOTIsLT
+EwMjU1NTQ0MzgsLTk1MTA1MzU5OSwxMTEwMjkyOTA1LC0xNjQ4
+NTMxMjgxLC0xMzExNjg4NTExLC03NDkxMzI2MzYsMjA5Njk4OD
+IyNCwxOTk2MjI1NDk3LC0xNjQ5MjgxNzk2LC0xODg0NzE0NTU1
+LC05OTE0MDcyNCwxMTU2NTI3NzM5LDE1MjkyMTU5MzgsLTE5NT
+M4NDAyODAsLTUzNDMwNTUxOSw3NzIzODEwOTMsLTM2MjE3MzYw
+MywtMzkzODA4NTE2XX0=
 -->
