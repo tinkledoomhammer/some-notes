@@ -963,8 +963,12 @@ y = (int) x;//c-like cast notation
 * `type_info::name()` - returns a string naming the type
 	* depends on the compiler and library
 * For pointers it returns the type of the pointer
-* when it evaluates a dereferenced operator
-	* returns the typeid of 
+* For objects it returns the typeid of their dynamic type (their most derived complete object)
+* for dereferenced null pointers it throws a `bad_typeid` error
+
+### Exceptions
+
+### Preprocessor Directives
 
 
 ## C++ Standard Library
@@ -974,7 +978,7 @@ y = (int) x;//c-like cast notation
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMTAwNDI0MCwtMjA2Njk3NjI5MiwtMT
+eyJoaXN0b3J5IjpbMjEzMzIxOTI2NywtMjA2Njk3NjI5MiwtMT
 AyNTU1NDQzOCwtOTUxMDUzNTk5LDExMTAyOTI5MDUsLTE2NDg1
 MzEyODEsLTEzMTE2ODg1MTEsLTc0OTEzMjYzNiwyMDk2OTg4Mj
 I0LDE5OTYyMjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUs
