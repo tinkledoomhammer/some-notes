@@ -1015,7 +1015,11 @@ catch (...) { cout << "default exception"; }
 #### Other directives
 `#line nummber "filename"` - used by compilers to generate error messages
 `#error an error message` - will abort compilation with the specified error message
-`#include <header>` -- inclu 
+`#include <header>` -- includes a standard header file
+`#include "file"` -- includes a file. interpretation depends on implementation
+	* if the file is not found, then it will be tried as a header include (i.e. `#include <file>`)
+`#pragma` - compiler specific stuff.it will be ignored by compilers that don't support it 
+	`#pragma once` 
 
 ## C++ Standard Library
 ### Input/Output with files
@@ -1024,11 +1028,11 @@ catch (...) { cout << "default exception"; }
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTE1NjQ4MDYsLTg1NTMyNTczOSwtMT
-c4NDA5OTg2NCwyMTMzMjE5MjY3LC0yMDY2OTc2MjkyLC0xMDI1
-NTU0NDM4LC05NTEwNTM1OTksMTExMDI5MjkwNSwtMTY0ODUzMT
-I4MSwtMTMxMTY4ODUxMSwtNzQ5MTMyNjM2LDIwOTY5ODgyMjQs
-MTk5NjIyNTQ5NywtMTY0OTI4MTc5NiwtMTg4NDcxNDU1NSwtOT
-kxNDA3MjQsMTE1NjUyNzczOSwxNTI5MjE1OTM4LC0xOTUzODQw
-MjgwLC01MzQzMDU1MTldfQ==
+eyJoaXN0b3J5IjpbMjg3MDM1MTEzLC04NTUzMjU3MzksLTE3OD
+QwOTk4NjQsMjEzMzIxOTI2NywtMjA2Njk3NjI5MiwtMTAyNTU1
+NDQzOCwtOTUxMDUzNTk5LDExMTAyOTI5MDUsLTE2NDg1MzEyOD
+EsLTEzMTE2ODg1MTEsLTc0OTEzMjYzNiwyMDk2OTg4MjI0LDE5
+OTYyMjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUsLTk5MT
+QwNzI0LDExNTY1Mjc3MzksMTUyOTIxNTkzOCwtMTk1Mzg0MDI4
+MCwtNTM0MzA1NTE5XX0=
 -->
