@@ -1001,7 +1001,10 @@ catch (...) { cout << "default exception"; }
 * It can take function parameters
 	* i.e. `#define getmax(a,b) a>b?a:b`
 	* note that `getmax(n++,k++)` will translate to `n++>k++?n++:k++` meaning that `n` or `k` will be incremented twice
-	* and `getmax(somefunc(),otherfunc())` will call the return
+	* and `getmax(somefunc(),otherfunc())` will call both functions, and return the value of the second invocation of the one of them.
+* Defined macros are not affected by block structure
+* they remain defined until removed with `#undef`
+* 
 
 ## C++ Standard Library
 ### Input/Output with files
@@ -1010,11 +1013,11 @@ catch (...) { cout << "default exception"; }
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5NTYyNDYyMCwtMTc4NDA5OTg2NCwyMT
-MzMjE5MjY3LC0yMDY2OTc2MjkyLC0xMDI1NTU0NDM4LC05NTEw
-NTM1OTksMTExMDI5MjkwNSwtMTY0ODUzMTI4MSwtMTMxMTY4OD
-UxMSwtNzQ5MTMyNjM2LDIwOTY5ODgyMjQsMTk5NjIyNTQ5Nywt
-MTY0OTI4MTc5NiwtMTg4NDcxNDU1NSwtOTkxNDA3MjQsMTE1Nj
-UyNzczOSwxNTI5MjE1OTM4LC0xOTUzODQwMjgwLC01MzQzMDU1
-MTksNzcyMzgxMDkzXX0=
+eyJoaXN0b3J5IjpbLTIxMzU4Mjk0OTksLTE3ODQwOTk4NjQsMj
+EzMzIxOTI2NywtMjA2Njk3NjI5MiwtMTAyNTU1NDQzOCwtOTUx
+MDUzNTk5LDExMTAyOTI5MDUsLTE2NDg1MzEyODEsLTEzMTE2OD
+g1MTEsLTc0OTEzMjYzNiwyMDk2OTg4MjI0LDE5OTYyMjU0OTcs
+LTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUsLTk5MTQwNzI0LDExNT
+Y1Mjc3MzksMTUyOTIxNTkzOCwtMTk1Mzg0MDI4MCwtNTM0MzA1
+NTE5LDc3MjM4MTA5M119
 -->
