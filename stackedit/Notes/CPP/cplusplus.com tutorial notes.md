@@ -993,7 +993,11 @@ catch (...) { cout << "default exception"; }
 
 ### Preprocessor Directives
 * they all begin with `#` and end at the eol
-	* Ending a line with `\` will 
+	* Ending a line with `\` will include the next line in the directive
+* no `;`
+#### maro definitions (`#define` , `#undef`)
+`#define identifier replacement` will replace all instances of `identifier` with `replacement`
+* Will use
 
 ## C++ Standard Library
 ### Input/Output with files
@@ -1002,7 +1006,7 @@ catch (...) { cout << "default exception"; }
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1NzAwMDIxNSwtMTc4NDA5OTg2NCwyMT
+eyJoaXN0b3J5IjpbLTUyODE1OTcxMiwtMTc4NDA5OTg2NCwyMT
 MzMjE5MjY3LC0yMDY2OTc2MjkyLC0xMDI1NTU0NDM4LC05NTEw
 NTM1OTksMTExMDI5MjkwNSwtMTY0ODUzMTI4MSwtMTMxMTY4OD
 UxMSwtNzQ5MTMyNjM2LDIwOTY5ODgyMjQsMTk5NjIyNTQ5Nywt
