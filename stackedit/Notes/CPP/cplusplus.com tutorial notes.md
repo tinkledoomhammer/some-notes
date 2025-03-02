@@ -467,6 +467,7 @@ const int * const p4 = &x;  // const pointer to const int
 int funcName (int,int); // the function declaration
 int (*funcPtr)(int,int) = &funcName; // the pointer declared/initialized
 funcPtr = funcName;//also works
+
 (*funcPtr)(a,b);// call with pointer
 funcName(a,b);//equivalent call
 ```
@@ -1049,7 +1050,7 @@ Macro | Value
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk2MDExNDg0LDQyMDc0NjIzMCwtODU1Mz
+eyJoaXN0b3J5IjpbOTE1NTY0NDYyLDQyMDc0NjIzMCwtODU1Mz
 I1NzM5LC0xNzg0MDk5ODY0LDIxMzMyMTkyNjcsLTIwNjY5NzYy
 OTIsLTEwMjU1NTQ0MzgsLTk1MTA1MzU5OSwxMTEwMjkyOTA1LC
 0xNjQ4NTMxMjgxLC0xMzExNjg4NTExLC03NDkxMzI2MzYsMjA5
