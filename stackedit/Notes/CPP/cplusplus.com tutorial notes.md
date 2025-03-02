@@ -466,7 +466,7 @@ const int * const p4 = &x;  // const pointer to const int
 ```c++
 int funcName (int,int); // the function declaration
 int (*funcPtr)(int,int) = &funcName; // the pointer declared/initialized
-
+funcPtr = funcName;//also works
 (*funcPtr)(a,b);// call with pointer
 funcName(a,b);//equivalent call
 ```
@@ -1049,11 +1049,11 @@ Macro | Value
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIwNzQ2MjMwLC04NTUzMjU3MzksLTE3OD
-QwOTk4NjQsMjEzMzIxOTI2NywtMjA2Njk3NjI5MiwtMTAyNTU1
-NDQzOCwtOTUxMDUzNTk5LDExMTAyOTI5MDUsLTE2NDg1MzEyOD
-EsLTEzMTE2ODg1MTEsLTc0OTEzMjYzNiwyMDk2OTg4MjI0LDE5
-OTYyMjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUsLTk5MT
-QwNzI0LDExNTY1Mjc3MzksMTUyOTIxNTkzOCwtMTk1Mzg0MDI4
-MCwtNTM0MzA1NTE5XX0=
+eyJoaXN0b3J5IjpbNDk2MDExNDg0LDQyMDc0NjIzMCwtODU1Mz
+I1NzM5LC0xNzg0MDk5ODY0LDIxMzMyMTkyNjcsLTIwNjY5NzYy
+OTIsLTEwMjU1NTQ0MzgsLTk1MTA1MzU5OSwxMTEwMjkyOTA1LC
+0xNjQ4NTMxMjgxLC0xMzExNjg4NTExLC03NDkxMzI2MzYsMjA5
+Njk4ODIyNCwxOTk2MjI1NDk3LC0xNjQ5MjgxNzk2LC0xODg0Nz
+E0NTU1LC05OTE0MDcyNCwxMTU2NTI3NzM5LDE1MjkyMTU5Mzgs
+LTE5NTM4NDAyODBdfQ==
 -->
