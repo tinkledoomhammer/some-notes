@@ -464,6 +464,9 @@ const int * const p4 = &x;  // const pointer to const int
 * function pointers enclose the name (with a preceeding *) in parens, and include a parameter list:
 	* `int (*func_ptr)(int,int));`
 ```c++
+typedef int (funcType)(int,int);
+std::func
+...
 int funcName (int,int); // the function declaration
 int (*funcPtr)(int,int) = &funcName; // the pointer declared/initialized
 funcPtr = funcName;//also works
@@ -1050,11 +1053,11 @@ Macro | Value
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE1NTY0NDYyLDQyMDc0NjIzMCwtODU1Mz
-I1NzM5LC0xNzg0MDk5ODY0LDIxMzMyMTkyNjcsLTIwNjY5NzYy
-OTIsLTEwMjU1NTQ0MzgsLTk1MTA1MzU5OSwxMTEwMjkyOTA1LC
-0xNjQ4NTMxMjgxLC0xMzExNjg4NTExLC03NDkxMzI2MzYsMjA5
-Njk4ODIyNCwxOTk2MjI1NDk3LC0xNjQ5MjgxNzk2LC0xODg0Nz
-E0NTU1LC05OTE0MDcyNCwxMTU2NTI3NzM5LDE1MjkyMTU5Mzgs
-LTE5NTM4NDAyODBdfQ==
+eyJoaXN0b3J5IjpbLTE3MTY1NTQ3Niw5MTU1NjQ0NjIsNDIwNz
+Q2MjMwLC04NTUzMjU3MzksLTE3ODQwOTk4NjQsMjEzMzIxOTI2
+NywtMjA2Njk3NjI5MiwtMTAyNTU1NDQzOCwtOTUxMDUzNTk5LD
+ExMTAyOTI5MDUsLTE2NDg1MzEyODEsLTEzMTE2ODg1MTEsLTc0
+OTEzMjYzNiwyMDk2OTg4MjI0LDE5OTYyMjU0OTcsLTE2NDkyOD
+E3OTYsLTE4ODQ3MTQ1NTUsLTk5MTQwNzI0LDExNTY1Mjc3Mzks
+MTUyOTIxNTkzOF19
 -->
