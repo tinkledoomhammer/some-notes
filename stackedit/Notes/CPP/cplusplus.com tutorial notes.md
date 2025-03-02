@@ -967,7 +967,16 @@ y = (int) x;//c-like cast notation
 * for dereferenced null pointers it throws a `bad_typeid` error
 
 ### Exceptions
-
+```c++
+try {
+  // code here
+}
+catch (int param) { cout << "int exception"; }
+catch (char param) { cout << "char exception"; }
+catch (...) { cout << "default exception"; }
+```
+* try-catch blocks can be nested
+* 
 ### Preprocessor Directives
 
 
@@ -978,11 +987,11 @@ y = (int) x;//c-like cast notation
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMzIxOTI2NywtMjA2Njk3NjI5MiwtMT
-AyNTU1NDQzOCwtOTUxMDUzNTk5LDExMTAyOTI5MDUsLTE2NDg1
-MzEyODEsLTEzMTE2ODg1MTEsLTc0OTEzMjYzNiwyMDk2OTg4Mj
-I0LDE5OTYyMjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUs
-LTk5MTQwNzI0LDExNTY1Mjc3MzksMTUyOTIxNTkzOCwtMTk1Mz
-g0MDI4MCwtNTM0MzA1NTE5LDc3MjM4MTA5MywtMzYyMTczNjAz
-LC0zOTM4MDg1MTZdfQ==
+eyJoaXN0b3J5IjpbMjg0MzQ4NDEzLDIxMzMyMTkyNjcsLTIwNj
+Y5NzYyOTIsLTEwMjU1NTQ0MzgsLTk1MTA1MzU5OSwxMTEwMjky
+OTA1LC0xNjQ4NTMxMjgxLC0xMzExNjg4NTExLC03NDkxMzI2Mz
+YsMjA5Njk4ODIyNCwxOTk2MjI1NDk3LC0xNjQ5MjgxNzk2LC0x
+ODg0NzE0NTU1LC05OTE0MDcyNCwxMTU2NTI3NzM5LDE1MjkyMT
+U5MzgsLTE5NTM4NDAyODAsLTUzNDMwNTUxOSw3NzIzODEwOTMs
+LTM2MjE3MzYwM119
 -->
