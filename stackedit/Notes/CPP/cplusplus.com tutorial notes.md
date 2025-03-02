@@ -959,7 +959,12 @@ y = (int) x;//c-like cast notation
 #### `typeid(obj)` and `typeid(type)`
 * uses **RTTI** when used on a polymorphic object
 * the returntype is `type_info` in `<typeinfo>`
-* can be compared to other typids using `==` and `~
+* can be compared to other typids using `==` and `!=`
+* `type_info::name()` - returns a string naming the type
+	* depends on the compiler and library
+* For pointers it returns the type of the pointer
+* when it evaluates a dereferenced operator
+	* returns the typeid of 
 
 
 ## C++ Standard Library
@@ -969,7 +974,7 @@ y = (int) x;//c-like cast notation
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MDYzNDAyMywtMjA2Njk3NjI5MiwtMT
+eyJoaXN0b3J5IjpbMTEzMTAwNDI0MCwtMjA2Njk3NjI5MiwtMT
 AyNTU1NDQzOCwtOTUxMDUzNTk5LDExMTAyOTI5MDUsLTE2NDg1
 MzEyODEsLTEzMTE2ODg1MTEsLTc0OTEzMjYzNiwyMDk2OTg4Mj
 I0LDE5OTYyMjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUs
