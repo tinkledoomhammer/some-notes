@@ -1000,7 +1000,8 @@ catch (...) { cout << "default exception"; }
 * Macros don't understand c++ ; it they perform simple text replacements
 * It can take function parameters
 	* i.e. `#define getmax(a,b) a>b?a:b`
-	* note that `getma
+	* note that `getmax(n++,k++)` will translate to `n++>k++?n++:k++` meaning that `n` or `k` will be incremented twice
+	* and `getmax(somefunc(),otherfunc())` will call the return
 
 ## C++ Standard Library
 ### Input/Output with files
@@ -1009,7 +1010,7 @@ catch (...) { cout << "default exception"; }
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMTg0MjQ1MiwtMTc4NDA5OTg2NCwyMT
+eyJoaXN0b3J5IjpbMTQ5NTYyNDYyMCwtMTc4NDA5OTg2NCwyMT
 MzMjE5MjY3LC0yMDY2OTc2MjkyLC0xMDI1NTU0NDM4LC05NTEw
 NTM1OTksMTExMDI5MjkwNSwtMTY0ODUzMTI4MSwtMTMxMTY4OD
 UxMSwtNzQ5MTMyNjM2LDIwOTY5ODgyMjQsMTk5NjIyNTQ5Nywt
