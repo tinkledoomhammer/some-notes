@@ -1009,7 +1009,9 @@ catch (...) { cout << "default exception"; }
 * Defined macros are not affected by block structure
 * they remain defined until removed with `#undef`
 #### Conditional inclusions `#ifdef` `#ifndef` `#if` `#endif` `#else` `#elif`
- 
+* the work as expected
+* `#if` blocks all end with `#endif` regardless of `#elif` and `#else` 
+* `defined` and `!defined` can be used in the condition of #if
 
 ## C++ Standard Library
 ### Input/Output with files
@@ -1018,11 +1020,11 @@ catch (...) { cout << "default exception"; }
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1NTMyNTczOSwtMTc4NDA5OTg2NCwyMT
-MzMjE5MjY3LC0yMDY2OTc2MjkyLC0xMDI1NTU0NDM4LC05NTEw
-NTM1OTksMTExMDI5MjkwNSwtMTY0ODUzMTI4MSwtMTMxMTY4OD
-UxMSwtNzQ5MTMyNjM2LDIwOTY5ODgyMjQsMTk5NjIyNTQ5Nywt
-MTY0OTI4MTc5NiwtMTg4NDcxNDU1NSwtOTkxNDA3MjQsMTE1Nj
-UyNzczOSwxNTI5MjE1OTM4LC0xOTUzODQwMjgwLC01MzQzMDU1
-MTksNzcyMzgxMDkzXX0=
+eyJoaXN0b3J5IjpbLTE4MjU5NjcxMSwtODU1MzI1NzM5LC0xNz
+g0MDk5ODY0LDIxMzMyMTkyNjcsLTIwNjY5NzYyOTIsLTEwMjU1
+NTQ0MzgsLTk1MTA1MzU5OSwxMTEwMjkyOTA1LC0xNjQ4NTMxMj
+gxLC0xMzExNjg4NTExLC03NDkxMzI2MzYsMjA5Njk4ODIyNCwx
+OTk2MjI1NDk3LC0xNjQ5MjgxNzk2LC0xODg0NzE0NTU1LC05OT
+E0MDcyNCwxMTU2NTI3NzM5LDE1MjkyMTU5MzgsLTE5NTM4NDAy
+ODAsLTUzNDMwNTUxOV19
 -->
