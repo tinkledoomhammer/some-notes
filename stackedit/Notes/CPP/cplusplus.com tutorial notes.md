@@ -920,13 +920,16 @@ int main ()
 * C++ allows one implicit conversion per argument in function calls
 * Constructors with the `explicit` keyword will not be used for implicit casts
 	* They also cannot be used with assignment-like syntax.
+
 #### Explicit casts
 ```c++
 double x = 10.3;
 int y = int (x); //functional notation
 y = (int) x;//c-like cast notation
 ```
-* These casts are are unsafe, and can be applied indiscriminately
+
+*`(new_type) expression` or  `new_type (expression)`
+	* These casts are are unsafe, and can be applied indiscriminately
 
 * `dynamic_cast <new_type> (expression)`
 	* Only works with pointer types
@@ -954,7 +957,7 @@ y = (int) x;//c-like cast notation
 	* Changes the const-ness of an object
 	* if  the object is modified, the result is undefined behavior
 
-*`(new_type) expression` or  `new_type (expression)`
+
 
 ## C++ Standard Library
 ### Input/Output with files
@@ -963,11 +966,11 @@ y = (int) x;//c-like cast notation
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzY4Mzc3NCwtMjA2Njk3NjI5MiwtMT
-AyNTU1NDQzOCwtOTUxMDUzNTk5LDExMTAyOTI5MDUsLTE2NDg1
-MzEyODEsLTEzMTE2ODg1MTEsLTc0OTEzMjYzNiwyMDk2OTg4Mj
-I0LDE5OTYyMjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUs
-LTk5MTQwNzI0LDExNTY1Mjc3MzksMTUyOTIxNTkzOCwtMTk1Mz
-g0MDI4MCwtNTM0MzA1NTE5LDc3MjM4MTA5MywtMzYyMTczNjAz
-LC0zOTM4MDg1MTZdfQ==
+eyJoaXN0b3J5IjpbLTU4ODM5NDA4LC0yMDY2OTc2MjkyLC0xMD
+I1NTU0NDM4LC05NTEwNTM1OTksMTExMDI5MjkwNSwtMTY0ODUz
+MTI4MSwtMTMxMTY4ODUxMSwtNzQ5MTMyNjM2LDIwOTY5ODgyMj
+QsMTk5NjIyNTQ5NywtMTY0OTI4MTc5NiwtMTg4NDcxNDU1NSwt
+OTkxNDA3MjQsMTE1NjUyNzczOSwxNTI5MjE1OTM4LC0xOTUzOD
+QwMjgwLC01MzQzMDU1MTksNzcyMzgxMDkzLC0zNjIxNzM2MDMs
+LTM5MzgwODUxNl19
 -->
