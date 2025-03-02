@@ -979,7 +979,9 @@ catch (...) { cout << "default exception"; }
 * `throw` with an argument will throw that variable
 * `throw` with no arguments can be used inside of a `catch`-block to re-throw the same error
 
-#### 
+#### Dynamic and standard exceptions
+* Dynamic exception specifications (aka exception specifications) are a deprecated but still supported feature
+	* they are declared with `throw(type)
 ### Preprocessor Directives
 
 
@@ -990,11 +992,11 @@ catch (...) { cout << "default exception"; }
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjM3NDAxMTIsMjEzMzIxOTI2NywtMj
-A2Njk3NjI5MiwtMTAyNTU1NDQzOCwtOTUxMDUzNTk5LDExMTAy
-OTI5MDUsLTE2NDg1MzEyODEsLTEzMTE2ODg1MTEsLTc0OTEzMj
-YzNiwyMDk2OTg4MjI0LDE5OTYyMjU0OTcsLTE2NDkyODE3OTYs
-LTE4ODQ3MTQ1NTUsLTk5MTQwNzI0LDExNTY1Mjc3MzksMTUyOT
-IxNTkzOCwtMTk1Mzg0MDI4MCwtNTM0MzA1NTE5LDc3MjM4MTA5
-MywtMzYyMTczNjAzXX0=
+eyJoaXN0b3J5IjpbODQ1MzU4NzU4LDIxMzMyMTkyNjcsLTIwNj
+Y5NzYyOTIsLTEwMjU1NTQ0MzgsLTk1MTA1MzU5OSwxMTEwMjky
+OTA1LC0xNjQ4NTMxMjgxLC0xMzExNjg4NTExLC03NDkxMzI2Mz
+YsMjA5Njk4ODIyNCwxOTk2MjI1NDk3LC0xNjQ5MjgxNzk2LC0x
+ODg0NzE0NTU1LC05OTE0MDcyNCwxMTU2NTI3NzM5LDE1MjkyMT
+U5MzgsLTE5NTM4NDAyODAsLTUzNDMwNTUxOSw3NzIzODEwOTMs
+LTM2MjE3MzYwM119
 -->
