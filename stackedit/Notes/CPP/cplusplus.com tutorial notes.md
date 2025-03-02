@@ -1011,7 +1011,9 @@ catch (...) { cout << "default exception"; }
 #### Conditional inclusions `#ifdef` `#ifndef` `#if` `#endif` `#else` `#elif`
 * the work as expected
 * `#if` blocks all end with `#endif` regardless of `#elif` and `#else` 
-* `defined` and `!defined` can be used in the condition of #if
+* `defined` and `!defined` can be used in the condition of `#if` and `#elif`
+#### Other directives
+`#line nummber "filename"` - used by compilers to generate error messages 
 
 ## C++ Standard Library
 ### Input/Output with files
@@ -1020,7 +1022,7 @@ catch (...) { cout << "default exception"; }
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjU5NjcxMSwtODU1MzI1NzM5LC0xNz
+eyJoaXN0b3J5IjpbMTk2ODQxNzM0MiwtODU1MzI1NzM5LC0xNz
 g0MDk5ODY0LDIxMzMyMTkyNjcsLTIwNjY5NzYyOTIsLTEwMjU1
 NTQ0MzgsLTk1MTA1MzU5OSwxMTEwMjkyOTA1LC0xNjQ4NTMxMj
 gxLC0xMzExNjg4NTExLC03NDkxMzI2MzYsMjA5Njk4ODIyNCwx
