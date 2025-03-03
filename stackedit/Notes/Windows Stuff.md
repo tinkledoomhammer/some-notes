@@ -20,7 +20,10 @@ Uses [docker desktop](https://docs.docker.com/desktop/install/windows-install/)
 
 https://learn.microsoft.com/en-us/windows/wsl/basic-commands
 
+https://www.sitepoint.com/wsl2/
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5MjI0MTAyLC0xMzczNzgyNjAyXX0=
+eyJoaXN0b3J5IjpbLTc2NjIyNzczMiwtMTM3Mzc4MjYwMl19
 -->
