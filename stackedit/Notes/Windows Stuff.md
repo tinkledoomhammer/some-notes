@@ -17,7 +17,10 @@ Uses [docker desktop](https://docs.docker.com/desktop/install/windows-install/)
 * WSL works well with [windows terminal](https://learn.microsoft.com/en-us/windows/terminal/install) installation
 * https://learn.microsoft.com/en-us/virtualization/windowscontainers/quick-start/set-up-environment?tabs=dockerce
 
+
+https://learn.microsoft.com/en-us/windows/wsl/basic-commands
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzM3ODI2MDJdfQ==
+eyJoaXN0b3J5IjpbLTQ5MjI0MTAyLC0xMzczNzgyNjAyXX0=
 -->
