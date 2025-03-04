@@ -321,7 +321,9 @@ Dealing with Conflicts
 	* `git clone --recurse-submodules [url]` will also clone submodules
 * `git submodule init` followed by `git submodule update --init`
 	* will fetch all of the submodules
-	* `git submodule
+	* `git submodule update --init --recursive` will get and fetch all submodules
+* To update your local copy of a submodule:
+	* `git fetch` and then `get merge origin/master` in the submodule folder
 
 
 
@@ -346,6 +348,6 @@ Dealing with Conflicts
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEwNzU0OTk0LC0xNzc1ODMxOTE5LC0yMj
-c1NTE1OF19
+eyJoaXN0b3J5IjpbLTE0MjQ3Mjk0MjYsLTE3NzU4MzE5MTksLT
+IyNzU1MTU4XX0=
 -->
