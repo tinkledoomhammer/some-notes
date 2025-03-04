@@ -317,7 +317,11 @@ Dealing with Conflicts
 * git will not track changes to submodules while in the parent module
 	* It will view it as a folder and a commit
 * cloning a project with submodules
-	* by default will have an empty folder for 
+	* by default will have an empty folder for each submodule
+	* `git clone --recurse-submodules [url]` will also clone submodules
+* `git submodule init` followed by `git submodule update --init`
+	* will fetch all of the submodules
+	* `git submodule
 
 
 
@@ -342,6 +346,6 @@ Dealing with Conflicts
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4MTMxMTc5OSwtMTc3NTgzMTkxOSwtMj
-I3NTUxNThdfQ==
+eyJoaXN0b3J5IjpbOTEwNzU0OTk0LC0xNzc1ODMxOTE5LC0yMj
+c1NTE1OF19
 -->
