@@ -316,7 +316,8 @@ Dealing with Conflicts
 * .gitmodules - a file that lists submodules with their path and url
 * git will not track changes to submodules while in the parent module
 	* It will view it as a folder and a commit
-	* 
+* cloning a project with submodules
+	* by default will have an empty folder for 
 
 
 
@@ -341,5 +342,6 @@ Dealing with Conflicts
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzU4MzE5MTksLTIyNzU1MTU4XX0=
+eyJoaXN0b3J5IjpbLTY4MTMxMTc5OSwtMTc3NTgzMTkxOSwtMj
+I3NTUxNThdfQ==
 -->
