@@ -310,6 +310,8 @@ Dealing with Conflicts
 
 
 ### Submodules
+https://git-scm.com/book/en/v2/Git-Tools-Submodules
+
 * Adding a submodule to an existing project
 	`git submodule add https://gitbub.com/asdf/repo`
 	* It will by default clone into a new folder with the name of the repo
@@ -353,6 +355,6 @@ Dealing with Conflicts
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2OTcxMzI4MCw0NzY3Mjk5MzQsLTE3Nz
-U4MzE5MTksLTIyNzU1MTU4XX0=
+eyJoaXN0b3J5IjpbLTM3MDMzNzg0NiwxOTY5NzEzMjgwLDQ3Nj
+cyOTkzNCwtMTc3NTgzMTkxOSwtMjI3NTUxNThdfQ==
 -->
