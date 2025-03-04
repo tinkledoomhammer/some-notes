@@ -314,7 +314,9 @@ Dealing with Conflicts
 	`git submodule add https://gitbub.com/asdf/repo`
 	* It will by default clone into a new folder with the name of the repo
 * .gitmodules - a file that lists submodules with their path and url
-* 
+* git will not track changes to submodules while in the parent module
+	* It will view it as a folder and a commit
+	* 
 
 
 
@@ -339,5 +341,5 @@ Dealing with Conflicts
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NTU0OTc3NCwtMjI3NTUxNThdfQ==
+eyJoaXN0b3J5IjpbLTE3NzU4MzE5MTksLTIyNzU1MTU4XX0=
 -->
