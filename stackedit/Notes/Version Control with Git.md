@@ -311,7 +311,10 @@ Dealing with Conflicts
 
 ### Submodules
 * Adding a submodule to an existing project
-
+	`git submodule add https://gitbub.com/asdf/repo`
+	* It will by default clone into a new folder with the name of the repo
+* .gitmodules - a file that lists submodules with their path and url
+* 
 
 
 
@@ -336,5 +339,5 @@ Dealing with Conflicts
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTk1OTc0ODIsLTIyNzU1MTU4XX0=
+eyJoaXN0b3J5IjpbLTM1NTU0OTc3NCwtMjI3NTUxNThdfQ==
 -->
