@@ -324,7 +324,7 @@ Dealing with Conflicts
 	* `git submodule update --init --recursive` will get and fetch all submodules
 * To update your local copy of a submodule:
 	* `git fetch` and then `get merge origin/master` in the submodule folder
-	* 
+	* or `git submodule update --remote DbConnector
 
 
 
@@ -349,6 +349,6 @@ Dealing with Conflicts
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc2NzI5OTM0LC0xNzc1ODMxOTE5LC0yMj
-c1NTE1OF19
+eyJoaXN0b3J5IjpbMjU0MzE2ODYzLDQ3NjcyOTkzNCwtMTc3NT
+gzMTkxOSwtMjI3NTUxNThdfQ==
 -->
