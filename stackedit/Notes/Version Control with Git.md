@@ -309,6 +309,11 @@ Dealing with Conflicts
 * `~3^2` is the second parent of the first great-grand-parent.
 
 
+### Submodules
+* Adding a submodule to an existing project
+
+
+
 
 
 
@@ -331,5 +336,5 @@ Dealing with Conflicts
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNzU1MTU4XX0=
+eyJoaXN0b3J5IjpbLTEzOTk1OTc0ODIsLTIyNzU1MTU4XX0=
 -->
