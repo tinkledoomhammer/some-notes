@@ -22,8 +22,10 @@ https://learn.microsoft.com/en-us/windows/wsl/basic-commands
 
 https://www.sitepoint.com/wsl2/
 
+https://learn.microsoft.com/en-us/windows/wsl/faq
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2NjIyNzczMiwtMTM3Mzc4MjYwMl19
+eyJoaXN0b3J5IjpbLTc4MzI5MTkzLC03NjYyMjc3MzIsLTEzNz
+M3ODI2MDJdfQ==
 -->
