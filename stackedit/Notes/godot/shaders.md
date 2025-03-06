@@ -7,10 +7,13 @@
 ```hlsl
 uniform sampler2D SCREEN_TEXTURE : hint_screen_texture, filter_linear_mipmap;
 
+void fragment(){
+	COLOR=texture(SCREEN_TEXTURE, SCREEN_UV);
+}
 ```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNTQxMTk5N119
+eyJoaXN0b3J5IjpbLTE0OTU4NjE5NzldfQ==
 -->
