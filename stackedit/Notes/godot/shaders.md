@@ -20,7 +20,11 @@ https://docs.godotengine.org/en/stable/tutorials/shaders/introduction_to_shaders
 	* runs for every vertex in a mesh
 * `fragment()` - used in `canvas_item` and `spatial` shaders
 	* runs for every pixel in a mesh
-* `light()` - runs for every pixel for every light
+	* uses  values interpolated from the output of `vertex()`
+* `light()` - used in `canvas_item` and `spatial` 
+	* runs for every pixel for every light
+	* uses data from `fragment()`
+* `start()` - used in particle shaders
 ### Language Reference
 https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shading_language.html
 
@@ -31,6 +35,6 @@ https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shadin
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA5MjYxNjM1LC0xMzEyNjgwMDYsLTE0OT
-U4NjE5NzldfQ==
+eyJoaXN0b3J5IjpbMTExOTI1MDM5MCwtMTMxMjY4MDA2LC0xND
+k1ODYxOTc5XX0=
 -->
