@@ -13,15 +13,22 @@ void fragment(){
 ```
 
 ## References
+### Intro
+https://docs.godotengine.org/en/stable/tutorials/shaders/introduction_to_shaders.html
+#### Shader Functions
+* `vertex()` - used in `canvas_item` and `spatial` shaders
+
+
+### Language Reference
 https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shading_language.html
 
-https://docs.godotengine.org/en/stable/tutorials/shaders/introduction_to_shaders.html
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NDUwNTg0OCwtMTMxMjY4MDA2LC0xND
+eyJoaXN0b3J5IjpbMTI0NTMzNzc2NCwtMTMxMjY4MDA2LC0xND
 k1ODYxOTc5XX0=
 -->
