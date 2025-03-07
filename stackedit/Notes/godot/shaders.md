@@ -26,7 +26,10 @@ https://docs.godotengine.org/en/stable/tutorials/shaders/introduction_to_shaders
 	* uses data from `fragment()`
 * `start()` - used in particle shaders, once per particle when it spawns
 * `process()` used in particle shaders, per particle per frame
-* `sky()` - sky shaders, per pixel in t
+* `sky()` - sky shaders
+	* per pixel in the radiance cubemep when it needss to be updated
+	* also per pixel in the current screen
+* `fog()` - fog shaders - per froxel in the volumetric fog froxel buffer that intersects with the `FogVolume`
 ### Language Reference
 https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shading_language.html
 
@@ -37,6 +40,6 @@ https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shadin
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTcwMTkzOTAsLTEzMTI2ODAwNiwtMT
-Q5NTg2MTk3OV19
+eyJoaXN0b3J5IjpbLTIyODA4MzgxNCwtMTMxMjY4MDA2LC0xND
+k1ODYxOTc5XX0=
 -->
