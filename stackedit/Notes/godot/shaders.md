@@ -34,9 +34,15 @@ Functions:
 	* per froxel in the volumetric fog froxel buffer that intersects with the [`FogVolume`](https://docs.godotengine.org/en/stable/classes/class_fogvolume.html#class-fogvolume)
 
 Types:
-*`spatial` for 3d rendering
-*`canvas_item` for 
+`shader_type spatial;` at the beginning of the shader file
+* `spatial` for 3d rendering
+* `canvas_item` for 2D rendering
+* `particles` for particle systems
+* `sky`
+* `fog`
 
+Render Modes:
+Can be applied
 ### Language Reference
 https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shading_language.html
 
@@ -47,6 +53,6 @@ https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shadin
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTA5OTQzNCwtMTMxMjY4MDA2LC0xND
+eyJoaXN0b3J5IjpbMTA0MDQ3NTQ5MiwtMTMxMjY4MDA2LC0xND
 k1ODYxOTc5XX0=
 -->
