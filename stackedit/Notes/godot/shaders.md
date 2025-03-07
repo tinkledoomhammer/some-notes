@@ -26,10 +26,11 @@ https://docs.godotengine.org/en/stable/tutorials/shaders/introduction_to_shaders
 	* uses data from `fragment()`
 * `start()` - used in [particle shaders](https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/particle_shader.html#doc-particle-shader), once per particle when it spawns
 * `process()` used in particle shaders, per particle per frame
-* `sky()` - sky shaders
-	* per pixel in the radiance cubemep when it needss to be updated
+* `sky()` - [sky shaders](https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/sky_shader.html#doc-sky-shader)
+	* per pixel in the radiance cubemep when it needs to be updated
 	* also per pixel in the current screen
-* `fog()` - fog shaders - per froxel in the volumetric fog froxel buffer that intersects with the [`FogVolume`](https://docs.godotengine.org/en/stable/classes/class_fogvolume.html#class-fogvolume)
+* `fog()` - [fog shaders](https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/fog_shader.html#doc-fog-shader)
+	* per froxel in the volumetric fog froxel buffer that intersects with the [`FogVolume`](https://docs.godotengine.org/en/stable/classes/class_fogvolume.html#class-fogvolume)
 ### Language Reference
 https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shading_language.html
 
@@ -40,6 +41,6 @@ https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shadin
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQzOTk5NDE1LC0xMzEyNjgwMDYsLTE0OT
+eyJoaXN0b3J5IjpbOTkyMTc4MTcxLC0xMzEyNjgwMDYsLTE0OT
 U4NjE5NzldfQ==
 -->
