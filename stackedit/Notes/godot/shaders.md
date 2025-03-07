@@ -12,8 +12,16 @@ void fragment(){
 }
 ```
 
+## References
+https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shading_language.html
+
+https://docs.godotengine.org/en/stable/tutorials/shaders/introduction_to_shaders.html
+
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTI2ODAwNiwtMTQ5NTg2MTk3OV19
+eyJoaXN0b3J5IjpbMTE2NDUwNTg0OCwtMTMxMjY4MDA2LC0xND
+k1ODYxOTc5XX0=
 -->
