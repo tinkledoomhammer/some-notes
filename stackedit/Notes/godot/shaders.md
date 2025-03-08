@@ -382,9 +382,11 @@ uniform int anotherEnum : hint_enum("A:10", "b:110"...)=30;
 * used for sRGB color data, because godot renders in linear color space
 	* not using it will result in washed out colors
 * albedo color textures should use `source_color` others should not
-* source color is optional 
+* source color is required when
 	* in Forward+ and Mobile renderers
 	* In canvas items when [HDR 2D](https://docs.godotengine.org/en/stable/classes/class_projectsettings.html#class-projectsettings-property-rendering-viewport-hdr-2d) is enabled
+* It is optional when 
+* It is optional for compatibility renderer
 ### Built-in variables
 #### Built-in functions
 
@@ -406,7 +408,7 @@ uniform int anotherEnum : hint_enum("A:10", "b:110"...)=30;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1NDk0MDYzMywyMTAyNDE1NDc2LC0xOT
+eyJoaXN0b3J5IjpbMTUzMzYwMDQwMiwyMTAyNDE1NDc2LC0xOT
 g0NDcwODA4LC0xNDYxNzQ1MTAzLC0xNDM0NTM3NzQ3LC0xMzEy
 NjgwMDYsLTE0OTU4NjE5NzldfQ==
 -->
