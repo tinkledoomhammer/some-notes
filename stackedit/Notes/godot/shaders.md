@@ -52,7 +52,7 @@ Specified on the second line:
 `render_mode unshaded, cull_dissabled;`
 * unshaded will prevent the built in light processor function on this object
 
-Can be applied
+
 ## Language Reference
 https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shading_language.html
 
@@ -64,7 +64,9 @@ Comments
 	line
 */
 ```
+
 ### Data Types
+
 * `void`
 * `bool`
 * `bvec2` - two component of booleans
@@ -85,17 +87,23 @@ Comments
 * `samplerCube` -- samples cubemaps as floats
 	* `SamplerCubeArray`
 * `samplerExternalOES` - only supported in compatibility/android
+
 #### precision
+
 * precision specifiers are 
 	* `lowp` - usually 8 bits per component, maps 0-1 for floats
 	*  `mediump`- usually 16 bits or half floats
 	*  `highp` - full float or int range
 	* i.e. `lowp vec4 a = vec4(0.0,1.0,2.0,3.0);`
+
 #### casting
+
 * Implicit casts are not allowed between different types, even if the size is the same
 * default `int`s are signed, converting to unsigned requires an explicit cast
 * i.e. `uint x = uint(5);`
+
 #### Members
+
 * Vector members can be :
 	* `x` `y` `z` `w` or
 	* `r` `g` `b` `a`
@@ -209,6 +217,6 @@ Global arrays
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1NTY2MTE0NywtMTQ2MTc0NTEwMywtMT
+eyJoaXN0b3J5IjpbLTIyMTY2MTgxMywtMTQ2MTc0NTEwMywtMT
 QzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1ODYxOTc5XX0=
 -->
