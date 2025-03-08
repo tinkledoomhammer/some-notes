@@ -57,7 +57,16 @@ https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shadin
 * `bool`
 * `bvec2` - two component of booleans
 	* `bvec3` `bvec4`
-* `int` - 32-bit signed scalar
+* `int` - 32-bit signed scalar integer
+* `ivec2` - two component, signed int
+	* `ivec3` `ivec4`
+* `uint` - 32bit unsigned
+	* `uvec2`, `uvec3`, `uvec4`
+* `float` 32-bit floating point scalar
+	* `vec2` `vec3` `vec4`
+* `mat2` 2x2 matrix, column major
+	* `mat3`
+	* `
 
 ### Built-in functions
 ### Shader preprocessor
@@ -77,6 +86,6 @@ https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shadin
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTE4ODY1MjIsLTE0MzQ1Mzc3NDcsLT
-EzMTI2ODAwNiwtMTQ5NTg2MTk3OV19
+eyJoaXN0b3J5IjpbNzg3NzQ0MTQ4LC0xNDM0NTM3NzQ3LC0xMz
+EyNjgwMDYsLTE0OTU4NjE5NzldfQ==
 -->
