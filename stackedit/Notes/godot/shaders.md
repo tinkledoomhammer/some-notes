@@ -92,11 +92,17 @@ Comments
 * Implicit casts are not allowed between different types, even if the size is the same
 * default `int`s are signed, converting to unsigned requires an explicit cast
 * i.e. `uint x = uint(5);`
-#### Vector members
+#### Members
 * Vector members can be :
 	* `x` `y` `z` `w` or
 	* `r` `g` `b` `a`
+* Matrices are column-row order
+	* `mat2 m2 = mat2(vec2(1.0,0.0), vec2(0.0, 1.0));`
+#### Construction
+Vectors:
+```c++
 
+```
 Swizzling
 ```hlsl
 vec4  a  =  vec4(0.0,  1.0,  2.0,  3.0);
@@ -131,6 +137,6 @@ b.bgr  =  a.rgb;  // Valid assignment.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4ODUxMzA5MywtMTQ2MTc0NTEwMywtMT
+eyJoaXN0b3J5IjpbLTg0OTQ0MzQyMSwtMTQ2MTc0NTEwMywtMT
 QzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1ODYxOTc5XX0=
 -->
