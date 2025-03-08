@@ -357,7 +357,11 @@ Type | Hint | Description
 --| -- | --
 `vec3` `vec4` | `source_color` | used as a color
 `int` | `hint_enum("string1","string2"...)` | displays a dropdown
-`int` `float` | `hint_range(min, max 
+`int` `float` | `hint_range(min, max [,step])` | for a slider
+`sampler2D` | `source_color` | Used as albedo color
+.. | `hint_normal` | normal map
+.. | `hint_default_white` | like `source_color` but defaults to white
+..
 
 ### Built-in variables
 #### Built-in functions
@@ -380,7 +384,7 @@ Type | Hint | Description
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjU3MTQ1NzksLTE5ODQ0NzA4MDgsLT
-E0NjE3NDUxMDMsLTE0MzQ1Mzc3NDcsLTEzMTI2ODAwNiwtMTQ5
-NTg2MTk3OV19
+eyJoaXN0b3J5IjpbLTc3MjE1MjMyOSwtMTk4NDQ3MDgwOCwtMT
+Q2MTc0NTEwMywtMTQzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1
+ODYxOTc5XX0=
 -->
