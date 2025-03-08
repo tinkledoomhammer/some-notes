@@ -404,6 +404,8 @@ group_uniforms;
 	// the above is only required if there are more 
 	// 	ungrouped uniforms below
 ```
+
+Example
 ```c++
 uniform int u1;
 group_uniforms MyGroup;
@@ -414,10 +416,20 @@ group_uniforms Mygroup.sub2;
 	uniform int u4;
 group_uniforms MyGroup;
 	uniform int u5;
+group_uniforms;
+uniform int u2;
 ```
 * My Group
 	* u2
 	* u5
+	* sub1
+		* u3;
+	* sub2
+		* u4
+* u1
+* u2
+
+
 ### Built-in variables
 #### Built-in functions
 
@@ -439,7 +451,7 @@ group_uniforms MyGroup;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzU2ODEyNTYsMjAyODU3ODM0NCwyMT
+eyJoaXN0b3J5IjpbLTE5NzkzMDkwMzEsMjAyODU3ODM0NCwyMT
 AyNDE1NDc2LC0xOTg0NDcwODA4LC0xNDYxNzQ1MTAzLC0xNDM0
 NTM3NzQ3LC0xMzEyNjgwMDYsLTE0OTU4NjE5NzldfQ==
 -->
