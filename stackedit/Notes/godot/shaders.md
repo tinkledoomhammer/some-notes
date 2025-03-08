@@ -399,8 +399,12 @@ group_uniform MyGroup.MySubgroup
 group_uniforms;
 	//closes both MyGroup and MySubgroup
 group_uniforms MyGroup;
-	uniform int
+	uniform int b = 0; //anInt and b are together in the inspector
+group_uniforms;
+	// The last `group_uniforms` is 
 ```
+
+
 ### Built-in variables
 #### Built-in functions
 
@@ -422,7 +426,7 @@ group_uniforms MyGroup;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3ODI5Njc3NywyMDI4NTc4MzQ0LDIxMD
-I0MTU0NzYsLTE5ODQ0NzA4MDgsLTE0NjE3NDUxMDMsLTE0MzQ1
-Mzc3NDcsLTEzMTI2ODAwNiwtMTQ5NTg2MTk3OV19
+eyJoaXN0b3J5IjpbLTEyODQzMjI1OTUsMjAyODU3ODM0NCwyMT
+AyNDE1NDc2LC0xOTg0NDcwODA4LC0xNDYxNzQ1MTAzLC0xNDM0
+NTM3NzQ3LC0xMzEyNjgwMDYsLTE0OTU4NjE5NzldfQ==
 -->
