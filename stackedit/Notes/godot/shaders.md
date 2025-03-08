@@ -241,11 +241,16 @@ Precedence | name | operators
 12 (lowest) | logical OR | <code>||</code>
 
 * Most vector and matrix operations are component-wise **except**:
-	* Matrix * Vector
-	* Vecto
+	* mat * vec
+	* vec * mat, and 
+	* mat * mat
+
 
 
 ### Flow control
+* It seems to have c- style `if ... else`, `while`, `do ... while`, `switch ... case`
+
+
 ### Discarding
 ### Varyings
 ### Interpolation qualifiers
@@ -271,7 +276,7 @@ Precedence | name | operators
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTI0MDYxMiwtMTk4NDQ3MDgwOCwtMT
+eyJoaXN0b3J5IjpbLTQ5NDc0NDk5NSwtMTk4NDQ3MDgwOCwtMT
 Q2MTc0NTEwMywtMTQzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1
 ODYxOTc5XX0=
 -->
