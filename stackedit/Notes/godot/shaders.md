@@ -401,9 +401,17 @@ group_uniforms;
 group_uniforms MyGroup;
 	uniform int b = 0; //anInt and b are together in the inspector
 group_uniforms;
-	// The last `group_uniforms` is 
+	// the above is only required if there are more 
+	// 	ungrouped uniforms below
 ```
-
+```c++
+uniform int a;
+group_uniforms MyGroup.sub1;
+	uniform int b;
+group_uniforms Mygroup.sub2;
+	uniform int c;
+group
+```
 
 ### Built-in variables
 #### Built-in functions
@@ -426,7 +434,7 @@ group_uniforms;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODQzMjI1OTUsMjAyODU3ODM0NCwyMT
-AyNDE1NDc2LC0xOTg0NDcwODA4LC0xNDYxNzQ1MTAzLC0xNDM0
-NTM3NzQ3LC0xMzEyNjgwMDYsLTE0OTU4NjE5NzldfQ==
+eyJoaXN0b3J5IjpbLTEyNjYzODE0NiwyMDI4NTc4MzQ0LDIxMD
+I0MTU0NzYsLTE5ODQ0NzA4MDgsLTE0NjE3NDUxMDMsLTE0MzQ1
+Mzc3NDcsLTEzMTI2ODAwNiwtMTQ5NTg2MTk3OV19
 -->
