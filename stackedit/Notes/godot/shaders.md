@@ -353,7 +353,11 @@ uniform  sampler2D  image  :  source_color;
 ```
 
 Hint Table
-Type | Hint | Descro
+Type | Hint | Description
+--| -- | --
+`vec3` `vec4` | `source_color` | used as a color
+`int` | `hint_enum("string1","string2"...)` | displays a dropdown
+`int` `float` | `hint_range(min, max 
 
 ### Built-in variables
 #### Built-in functions
@@ -376,7 +380,7 @@ Type | Hint | Descro
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4ODgxNDc0NSwtMTk4NDQ3MDgwOCwtMT
-Q2MTc0NTEwMywtMTQzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1
-ODYxOTc5XX0=
+eyJoaXN0b3J5IjpbLTIwNjU3MTQ1NzksLTE5ODQ0NzA4MDgsLT
+E0NjE3NDUxMDMsLTE0MzQ1Mzc3NDcsLTEzMTI2ODAwNiwtMTQ5
+NTg2MTk3OV19
 -->
