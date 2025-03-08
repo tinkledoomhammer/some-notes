@@ -371,7 +371,11 @@ Type | Hint | Description
 .. | hint_normal_roughness_texture | Texture is the normal roughness texture
 
 #### `hint_enum` and `source_color`
+```
+uniform int anEnum : hint_enum("a","b"...)=0;
+//a=>0, b=>1, etc
 
+```
 ### Built-in variables
 #### Built-in functions
 
@@ -393,7 +397,7 @@ Type | Hint | Description
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwMjQxNTQ3NiwtMTk4NDQ3MDgwOCwtMT
-Q2MTc0NTEwMywtMTQzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1
-ODYxOTc5XX0=
+eyJoaXN0b3J5IjpbNzA1OTAxMzIwLDIxMDI0MTU0NzYsLTE5OD
+Q0NzA4MDgsLTE0NjE3NDUxMDMsLTE0MzQ1Mzc3NDcsLTEzMTI2
+ODAwNiwtMTQ5NTg2MTk3OV19
 -->
