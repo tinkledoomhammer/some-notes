@@ -15,9 +15,9 @@ void fragment(){
 # References
 https://docs.godotengine.org/en/stable/tutorials/shaders/index.html
 
-### Intro
+## Intro
 https://docs.godotengine.org/en/stable/tutorials/shaders/introduction_to_shaders.html
-#### Shader Functions and Types
+### Shader Functions and Types
 Functions: 
 * `vertex()` - used in [`canvas_item`](https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/canvas_item_shader.html#doc-canvas-item-shader) and [`spatial`](https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/spatial_shader.html#doc-spatial-shader) shaders
 	* runs for every vertex in a mesh
@@ -35,7 +35,7 @@ Functions:
 * `fog()` - [fog shaders](https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/fog_shader.html#doc-fog-shader)
 	* per froxel in the volumetric fog froxel buffer that intersects with the [`FogVolume`](https://docs.godotengine.org/en/stable/classes/class_fogvolume.html#class-fogvolume)
 
-Types:
+#### Types:
 `shader_type spatial;` at the beginning of the shader file
 
 * `spatial` for 3d rendering
@@ -44,15 +44,15 @@ Types:
 * `sky`
 * `fog`
 
-Render Modes: 
+#### Render Modes: 
 Specified on the second line:
 `render_mode unshaded, cull_dissabled;`
 * unshaded will prevent the built in light processor function on this object
 
 Can be applied
-### Language Reference
+## Language Reference
 https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shading_language.html
-#### Data Types
+### Data Types
 * `void`
 * `bool`
 * `bvec2` - two component of booleans
@@ -73,7 +73,9 @@ https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shadin
 * `samplerCube` -- samples cubemaps as floats
 	* `SamplerCubeArray`
 * `samplerExternalOES` - only supported in compatibility/android
-
+### precision
+* specifiers are 
+	* `lowp` - usually 8  `mediump`, `highp`
 ### Built-in functions
 ### Shader preprocessor
 ### Shader Types
@@ -92,6 +94,6 @@ https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shadin
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczNzIwMDQxNiwtMTQzNDUzNzc0NywtMT
-MxMjY4MDA2LC0xNDk1ODYxOTc5XX0=
+eyJoaXN0b3J5IjpbNTYwODUxODMzLC0xNDM0NTM3NzQ3LC0xMz
+EyNjgwMDYsLTE0OTU4NjE5NzldfQ==
 -->
