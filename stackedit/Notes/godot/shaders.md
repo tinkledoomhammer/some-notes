@@ -73,15 +73,16 @@ https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shadin
 * `samplerCube` -- samples cubemaps as floats
 	* `SamplerCubeArray`
 * `samplerExternalOES` - only supported in compatibility/android
-### precision
+### precision, casts, members, construction
 * precision specifiers are 
 	* `lowp` - usually 8 bits per component, maps 0-1 for floats
 	*  `mediump`- usually 16 bits or half floats
 	*  `highp` - full float or int range
+	* i.e. `lowp vec4 a = vec4(0.0,1.0,2.0,3.0);`
 #### casting
 * Implicit casts are not allowed between different types, even if the size is the same
 * default `int`s are signed, converting to unsigned requires an explicit cast
-
+* i.e. `uint x = uint(5)
 ### Built-in functions
 ### Shader preprocessor
 ### Shader Types
@@ -100,6 +101,6 @@ https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shadin
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODc3MzgyMzIsLTE0MzQ1Mzc3NDcsLT
-EzMTI2ODAwNiwtMTQ5NTg2MTk3OV19
+eyJoaXN0b3J5IjpbNzY5MDU4OTcxLC0xNDM0NTM3NzQ3LC0xMz
+EyNjgwMDYsLTE0OTU4NjE5NzldfQ==
 -->
