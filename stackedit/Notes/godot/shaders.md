@@ -339,7 +339,22 @@ void  fragment()  {
 
 * `uniform` are variables that are pased to the shader once 
 * they are editable as material properties after a shader has been assigned
-* they can be any data type 
+* they can be any data type except for `void`
+* They can also have default values and hints
+
+#### Uniform hints
+Examples:
+```c
+uniform  vec4  color  :  source_color;
+uniform  float  amount  :  hint_range(0,  1);
+uniform  vec4  other_color  :  source_color  =  vec4(1.0);
+	// Default values go after the hint.
+uniform  sampler2D  image  :  source_color;
+```
+
+Hint Table
+Type | Hint | Descro
+
 ### Built-in variables
 #### Built-in functions
 
@@ -361,7 +376,7 @@ void  fragment()  {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0MTYzNDI5NiwtMTk4NDQ3MDgwOCwtMT
+eyJoaXN0b3J5IjpbLTM4ODgxNDc0NSwtMTk4NDQ3MDgwOCwtMT
 Q2MTc0NTEwMywtMTQzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1
 ODYxOTc5XX0=
 -->
