@@ -308,9 +308,11 @@ Functions are c-style
 	* There are no implicit conversions of arguments
 
 ### Varyings
-* Data sent from the fragment shader to the vertex shader
+* Data sent from `vertex()` to `fragment()`
+	* or from the `light()` to `fragment()`
 * Computed for every primitive vertex in the vertex processor
 * interpolated for every fragment
+* 
 
 ### Interpolation qualifiers
 ### Uniforms
@@ -335,7 +337,7 @@ Functions are c-style
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NzcxMzk5MSwtMTk4NDQ3MDgwOCwtMT
-Q2MTc0NTEwMywtMTQzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1
-ODYxOTc5XX0=
+eyJoaXN0b3J5IjpbNDgwNDc1NTM4LC0xOTg0NDcwODA4LC0xND
+YxNzQ1MTAzLC0xNDM0NTM3NzQ3LC0xMzEyNjgwMDYsLTE0OTU4
+NjE5NzldfQ==
 -->
