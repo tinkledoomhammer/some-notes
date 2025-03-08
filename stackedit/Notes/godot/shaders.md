@@ -52,6 +52,15 @@ Specified on the second line:
 Can be applied
 ## Language Reference
 https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shading_language.html
+
+Comments
+```c++
+// comment to end of line
+/* part of a line */
+/* 	multi
+	line
+*/
+```
 ### Data Types
 * `void`
 * `bool`
@@ -73,7 +82,7 @@ https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shadin
 * `samplerCube` -- samples cubemaps as floats
 	* `SamplerCubeArray`
 * `samplerExternalOES` - only supported in compatibility/android
-### precision, casts, members, construction
+#### precision
 * precision specifiers are 
 	* `lowp` - usually 8 bits per component, maps 0-1 for floats
 	*  `mediump`- usually 16 bits or half floats
@@ -87,6 +96,7 @@ https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shadin
 * Vector members can be :
 	* `x` `y` `z` `w` or
 	* `r` `g` `b` `a`
+
 Swizzling
 ```hlsl
 vec4  a  =  vec4(0.0,  1.0,  2.0,  3.0);
@@ -121,6 +131,6 @@ b.bgr  =  a.rgb;  // Valid assignment.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjE3NDUxMDMsLTE0MzQ1Mzc3NDcsLT
-EzMTI2ODAwNiwtMTQ5NTg2MTk3OV19
+eyJoaXN0b3J5IjpbLTg4ODUxMzA5MywtMTQ2MTc0NTEwMywtMT
+QzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1ODYxOTc5XX0=
 -->
