@@ -83,7 +83,7 @@ https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shadin
 * Implicit casts are not allowed between different types, even if the size is the same
 * default `int`s are signed, converting to unsigned requires an explicit cast
 * i.e. `uint x = uint(5);`
-#### Vectpr memb
+#### Vector members
 * Vector members can be :
 	* `x` `y` `z` `w` or
 	* `r` `g` `b` `a`
@@ -121,6 +121,6 @@ b.bgr  =  a.rgb;  // Valid assignment.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNjM1NTIwLC0xNDM0NTM3NzQ3LC0xMz
-EyNjgwMDYsLTE0OTU4NjE5NzldfQ==
+eyJoaXN0b3J5IjpbLTE0NjE3NDUxMDMsLTE0MzQ1Mzc3NDcsLT
+EzMTI2ODAwNiwtMTQ5NTg2MTk3OV19
 -->
