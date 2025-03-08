@@ -297,8 +297,15 @@ if(value == 0.3) {} // rounding errors
 ### Discarding and functions and such
 the `discard` keyword when used in a light or fragment shader, or custom function, will prevent the fragment from being written
 * It has a performance cost
-*functions are c-style
-* there are special 
+
+Functions are c-style
+* there are special qualifiers though
+	* `in` - only for reading
+	* `out` - only for writing
+	* `inout` - passed via reference
+	* `const` - can be combined with `in`
+* Functions can be overloaded
+	* There are no implicit conversions of 
 
 
 ### Varyings
@@ -325,7 +332,7 @@ the `discard` keyword when used in a light or fragment shader, or custom functio
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1NDQ2OTYzOSwtMTk4NDQ3MDgwOCwtMT
-Q2MTc0NTEwMywtMTQzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1
-ODYxOTc5XX0=
+eyJoaXN0b3J5IjpbLTE4MzAyMDY5MzUsLTE5ODQ0NzA4MDgsLT
+E0NjE3NDUxMDMsLTE0MzQ1Mzc3NDcsLTEzMTI2ODAwNiwtMTQ5
+NTg2MTk3OV19
 -->
