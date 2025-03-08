@@ -168,7 +168,12 @@ vec2  vec2_arr[3]  =  {  vec2(1.0,  1.0),
 bool  bool_arr[]  =  {  true,  true,  false  };  // fourth constructor
 	//Size is determined by the element count of the initializer
 ```
-* built in function
+* built-in methods
+*  `.length()` returns the # of elements
+* `clamp()` ??
+* `if` ?? -- is this even a function
+
+G
 
 ### Built-in functions
 ### Shader preprocessor
@@ -188,6 +193,6 @@ bool  bool_arr[]  =  {  true,  true,  false  };  // fourth constructor
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzU2NzEwNjgsLTE0NjE3NDUxMDMsLT
+eyJoaXN0b3J5IjpbLTEyMjE2MTIyMjIsLTE0NjE3NDUxMDMsLT
 E0MzQ1Mzc3NDcsLTEzMTI2ODAwNiwtMTQ5NTg2MTk3OV19
 -->
