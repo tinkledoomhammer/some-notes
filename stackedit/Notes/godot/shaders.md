@@ -393,8 +393,11 @@ uniform int anotherEnum : hint_enum("A:10", "b:110"...)=30;
 #### uniform groups
 ```
 group_uniforms MyGroup;
-uniform ...
+uniform int anInt = 0;
+group_uniform MyGroup.MySubgroup
+	
 group_uniforms;
+//TODO: find out if you need to close out subgroups
 ```
 ### Built-in variables
 #### Built-in functions
@@ -417,7 +420,7 @@ group_uniforms;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDA2ODcyMzMsMjEwMjQxNTQ3NiwtMT
-k4NDQ3MDgwOCwtMTQ2MTc0NTEwMywtMTQzNDUzNzc0NywtMTMx
-MjY4MDA2LC0xNDk1ODYxOTc5XX0=
+eyJoaXN0b3J5IjpbMTUyMjIzNDcxNCwyMTAyNDE1NDc2LC0xOT
+g0NDcwODA4LC0xNDYxNzQ1MTAzLC0xNDM0NTM3NzQ3LC0xMzEy
+NjgwMDYsLTE0OTU4NjE5NzldfQ==
 -->
