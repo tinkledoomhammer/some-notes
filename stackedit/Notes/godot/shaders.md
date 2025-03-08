@@ -16,8 +16,11 @@ void fragment(){
 https://docs.godotengine.org/en/stable/tutorials/shaders/index.html
 
 ## Intro
+
 https://docs.godotengine.org/en/stable/tutorials/shaders/introduction_to_shaders.html
+
 ### Shader Functions and Types
+
 Functions: 
 * `vertex()` - used in [`canvas_item`](https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/canvas_item_shader.html#doc-canvas-item-shader) and [`spatial`](https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/spatial_shader.html#doc-spatial-shader) shaders
 	* runs for every vertex in a mesh
@@ -102,7 +105,6 @@ Comments
 Swizzling
 ```c++
 vec4  a  =  vec4(0.0,  1.0,  2.0,  3.0);
-
 vec3  b  =  a.rgb;  // Creates a vec3 with vec4 components.
 vec3  b  =  a.ggg;  // Also valid; creates a vec3 
 		// and fills it with a single vec4 component.
@@ -160,10 +162,10 @@ Initialization:
 ```c
 float  float_arr[3]  =  float[3]  (1.0,  0.5,  0.0); //type 1
 int  int_arr[3]  =  int[]  (2,  1,  0);	//type 2
-vec2  vec2_arr[3]  =  {  vec2(1.0,  1.0),
+vec2  vec2_arr[3]  =  {  vec2(1.0,  1.0), //type 3
 		vec2(0.5,  0.5),
 		vec2(0.0,  0.0)
-		};  		// third constructor
+		};
 
 //Specifying the size is optional
 bool  bool_arr[]  =  {  true,  true,  false  };  // fourth constructor
@@ -207,6 +209,6 @@ Global arrays
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxMzg2MjM1MSwtMTQ2MTc0NTEwMywtMT
+eyJoaXN0b3J5IjpbMTQ1NTY2MTE0NywtMTQ2MTc0NTEwMywtMT
 QzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1ODYxOTc5XX0=
 -->
