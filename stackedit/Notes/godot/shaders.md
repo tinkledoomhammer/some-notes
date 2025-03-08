@@ -312,9 +312,24 @@ Functions are c-style
 	* or from `fragment()` to `light()`
 * Computed for every primitive vertex in the vertex processor
 * interpolated for every fragment
-* They cannot be used in assigned** in custom functions or `light()`
+* They can**not** be used in **assigned** in custom functions or `light()`
 
-### Interpolation qualifiers
+#### Interpolation qualifiers
+```c
+shader_type  spatial;
+
+varying  flat  vec3  our_color;
+varying smooth vec3 other_color;
+void  vertex()  {
+  our_color  =  COLOR.rgb;
+  other_color = COLOR
+}
+
+void  fragment()  {
+  ALBEDO  =  our_color;
+}
+```
+
 ### Uniforms
 ### Built-in variables
 #### Built-in functions
@@ -337,7 +352,7 @@ Functions are c-style
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzEwODc2NDQsLTE5ODQ0NzA4MDgsLT
-E0NjE3NDUxMDMsLTE0MzQ1Mzc3NDcsLTEzMTI2ODAwNiwtMTQ5
-NTg2MTk3OV19
+eyJoaXN0b3J5IjpbLTczNDAwNTc5NSwtMTk4NDQ3MDgwOCwtMT
+Q2MTc0NTEwMywtMTQzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1
+ODYxOTc5XX0=
 -->
