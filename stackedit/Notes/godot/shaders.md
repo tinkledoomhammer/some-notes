@@ -232,7 +232,12 @@ Precedence | name | operators
 3 | multiplicative | `/` `*` `%`
 4 | additive | `+` `-`
 5 | bit-wise shift | `<<` `>>`
-6 | relational | '<'
+6 | relational | `<` `>` `<=` `>=`
+7 | equality | `==` `!=`
+8 | bit-wise AND | `&`
+9 | bit-wise XOR | `^`
+10 | bit-wise OR | <code>|</code>
+11 | 
 
 ### Flow control
 ### Discarding
@@ -260,7 +265,7 @@ Precedence | name | operators
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0NjM4MzcyLC0xOTg0NDcwODA4LC0xND
-YxNzQ1MTAzLC0xNDM0NTM3NzQ3LC0xMzEyNjgwMDYsLTE0OTU4
-NjE5NzldfQ==
+eyJoaXN0b3J5IjpbLTE3OTg2NTMyMDcsLTE5ODQ0NzA4MDgsLT
+E0NjE3NDUxMDMsLTE0MzQ1Mzc3NDcsLTEzMTI2ODAwNiwtMTQ5
+NTg2MTk3OV19
 -->
