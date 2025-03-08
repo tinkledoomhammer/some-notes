@@ -100,8 +100,9 @@ Comments
 	* `mat2 m2 ... m2[0].x`
 
 Swizzling
-```hlsl
+```c++
 vec4  a  =  vec4(0.0,  1.0,  2.0,  3.0);
+
 vec3  b  =  a.rgb;  // Creates a vec3 with vec4 components.
 vec3  b  =  a.ggg;  // Also valid; creates a vec3 
 		// and fills it with a single vec4 component.
@@ -206,6 +207,6 @@ Global arrays
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MTg2MzkwNSwtMTQ2MTc0NTEwMywtMT
+eyJoaXN0b3J5IjpbMTgxMzg2MjM1MSwtMTQ2MTc0NTEwMywtMT
 QzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1ODYxOTc5XX0=
 -->
