@@ -216,8 +216,9 @@ void fragment(){
 	PointLight light1;
 	PointLight light2= PointLight(
 		vec3(0.0), vec3(1.0,0.0,0.0), 0.5 );
-	TwoLight
-	someFunc(
+	TwoLights lights;
+	someFunc(TwoLights.lights[0]);
+}
 ```
 
 
@@ -229,7 +230,9 @@ Precedence | name | operators
 1(highest) | parenthetical grouping | `( )`
 2 | unary | `+` `-` `!` `~`
 3 | multiplicative | `/` `*` `%`
-4 | 
+4 | additive | `+` `-`
+5 | bit-wise shift | `<<` `>>`
+6 | relational | '<'
 
 ### Flow control
 ### Discarding
@@ -257,7 +260,7 @@ Precedence | name | operators
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTAwNzcxMjAsLTE5ODQ0NzA4MDgsLT
-E0NjE3NDUxMDMsLTE0MzQ1Mzc3NDcsLTEzMTI2ODAwNiwtMTQ5
-NTg2MTk3OV19
+eyJoaXN0b3J5IjpbMTM0NjM4MzcyLC0xOTg0NDcwODA4LC0xND
+YxNzQ1MTAzLC0xNDM0NTM3NzQ3LC0xMzEyNjgwMDYsLTE0OTU4
+NjE5NzldfQ==
 -->
