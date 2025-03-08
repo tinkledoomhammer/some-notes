@@ -120,10 +120,13 @@ mat3  m3  =  mat3(vec3(1.0,  0.0,  0.0),
 mat4  identity  =  mat4(1.0);
 
 //Different sizes
-mat3  basis  =  mat3(MODEL_MATRIX);
+mat3  basis  =  mat3(MODEL_MATRIX); 
+//Expanding fills with 1.0 on diagonals
+//and 0 elsewhere
 mat4  m4  =  mat4(basis);
+//Shrinking crops the bottom, right 
+//returns a top,left submatrix
 mat2  m2  =  mat2(m4);
-
 ```
 
 
@@ -161,6 +164,6 @@ b.bgr  =  a.rgb;  // Valid assignment.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzc1MDQ1MTYsLTE0NjE3NDUxMDMsLT
-E0MzQ1Mzc3NDcsLTEzMTI2ODAwNiwtMTQ5NTg2MTk3OV19
+eyJoaXN0b3J5IjpbNDY4ODI3ODE4LC0xNDYxNzQ1MTAzLC0xND
+M0NTM3NzQ3LC0xMzEyNjgwMDYsLTE0OTU4NjE5NzldfQ==
 -->
