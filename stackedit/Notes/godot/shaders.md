@@ -395,7 +395,7 @@ uniform int anotherEnum : hint_enum("A:10", "b:110"...)=30;
 group_uniforms MyGroup;
 uniform int anInt = 0;
 group_uniform MyGroup.MySubgroup
-	
+	//The parent group is optional
 group_uniforms;
 //TODO: find out if you need to close out subgroups
 ```
@@ -420,7 +420,7 @@ group_uniforms;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMjIzNDcxNCwyMTAyNDE1NDc2LC0xOT
+eyJoaXN0b3J5IjpbMjAyODU3ODM0NCwyMTAyNDE1NDc2LC0xOT
 g0NDcwODA4LC0xNDYxNzQ1MTAzLC0xNDM0NTM3NzQ3LC0xMzEy
 NjgwMDYsLTE0OTU4NjE5NzldfQ==
 -->
