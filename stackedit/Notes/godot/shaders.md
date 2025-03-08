@@ -198,7 +198,20 @@ Global arrays
 * unsigned `const` must be suffiexed with `u` or constructed with `uint(val)`
 
 #### Structs
-* mo
+* mostly like c
+
+```c++
+struct PointLight{
+	vec3 position;
+	vec3 color;
+	float intensity;
+};
+
+void fragment(){
+	PointLight light1;
+	PointLight light2= PointLight(
+		vec3(0.0), vec3(1.0,0.0,0.0), 
+```
 
 
 ### Operators
@@ -237,7 +250,7 @@ Precedence | name | operators
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjE3MDA0MTYsLTE5ODQ0NzA4MDgsLT
-E0NjE3NDUxMDMsLTE0MzQ1Mzc3NDcsLTEzMTI2ODAwNiwtMTQ5
-NTg2MTk3OV19
+eyJoaXN0b3J5IjpbMzQwODQ1NDQ3LC0xOTg0NDcwODA4LC0xND
+YxNzQ1MTAzLC0xNDM0NTM3NzQ3LC0xMzEyNjgwMDYsLTE0OTU4
+NjE5NzldfQ==
 -->
