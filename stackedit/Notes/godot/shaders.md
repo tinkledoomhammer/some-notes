@@ -379,6 +379,9 @@ uniform int anotherEnum : hint_enum("A:10", "b:110"...)=30;
 ```
 
 `vec3 aColor : source_color`
+* used for sRGB color data, because godot renders in linear color space
+	* not using it will result in washed out colors
+* albedo color textures should typ
 ### Built-in variables
 #### Built-in functions
 
@@ -400,7 +403,7 @@ uniform int anotherEnum : hint_enum("A:10", "b:110"...)=30;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxOTQ5OTQzMywyMTAyNDE1NDc2LC0xOT
-g0NDcwODA4LC0xNDYxNzQ1MTAzLC0xNDM0NTM3NzQ3LC0xMzEy
-NjgwMDYsLTE0OTU4NjE5NzldfQ==
+eyJoaXN0b3J5IjpbLTE0NDY3MzcyNjEsMjEwMjQxNTQ3NiwtMT
+k4NDQ3MDgwOCwtMTQ2MTc0NTEwMywtMTQzNDUzNzc0NywtMTMx
+MjY4MDA2LC0xNDk1ODYxOTc5XX0=
 -->
