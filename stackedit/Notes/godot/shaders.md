@@ -52,7 +52,12 @@ Specified on the second line:
 Can be applied
 ### Language Reference
 https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shading_language.html
-
+#### Data Types
+* `void`
+* `bool`
+* `bvec2` - two component of booleans
+	* `bvec3` `bvec4`
+* `int` - 32-bit signed scalar
 
 ### Built-in functions
 ### Shader preprocessor
@@ -72,6 +77,6 @@ https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shadin
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Njc4NTE2MywtMTQzNDUzNzc0NywtMT
-MxMjY4MDA2LC0xNDk1ODYxOTc5XX0=
+eyJoaXN0b3J5IjpbLTE2OTE4ODY1MjIsLTE0MzQ1Mzc3NDcsLT
+EzMTI2ODAwNiwtMTQ5NTg2MTk3OV19
 -->
