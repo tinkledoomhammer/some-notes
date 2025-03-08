@@ -198,18 +198,25 @@ Global arrays
 * unsigned `const` must be suffiexed with `u` or constructed with `uint(val)`
 
 #### Structs
-
+### Operators
+### Flow control
+### Discarding
+### Varyings
+### Interpolation qualifiers
+### Uniforms
+### Built-in variables
+#### Built-in functions
 
 ## Built-in functions
 ## Shader preprocessor
 ## Shader Types
-#### Spatial
-#### CanvasItem
-#### Particle
-#### Sky
-#### Fog
+### Spatial
+### CanvasItem
+### Particle
+### Sky
+### Fog
 
-### Compute Shaders
+## Compute Shaders
 
 
 
@@ -218,6 +225,6 @@ Global arrays
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwOTYwNDA4OCwtMTQ2MTc0NTEwMywtMT
+eyJoaXN0b3J5IjpbLTM0OTE5MTA1OCwtMTQ2MTc0NTEwMywtMT
 QzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1ODYxOTc5XX0=
 -->
