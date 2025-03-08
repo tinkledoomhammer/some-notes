@@ -405,14 +405,19 @@ group_uniforms;
 	// 	ungrouped uniforms below
 ```
 ```c++
-uniform int a;
+uniform int u1;
+group_uniforms MyGroup;
+	uniform u2;
 group_uniforms MyGroup.sub1;
-	uniform int b;
+	uniform int u3;
 group_uniforms Mygroup.sub2;
-	uniform int c;
-group
+	uniform int u4;
+group_uniforms MyGroup;
+	uniform int u5;
 ```
-
+* My Group
+	* u2
+	* u5
 ### Built-in variables
 #### Built-in functions
 
@@ -434,7 +439,7 @@ group
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjYzODE0NiwyMDI4NTc4MzQ0LDIxMD
-I0MTU0NzYsLTE5ODQ0NzA4MDgsLTE0NjE3NDUxMDMsLTE0MzQ1
-Mzc3NDcsLTEzMTI2ODAwNiwtMTQ5NTg2MTk3OV19
+eyJoaXN0b3J5IjpbLTE1MzU2ODEyNTYsMjAyODU3ODM0NCwyMT
+AyNDE1NDc2LC0xOTg0NDcwODA4LC0xNDYxNzQ1MTAzLC0xNDM0
+NTM3NzQ3LC0xMzEyNjgwMDYsLTE0OTU4NjE5NzldfQ==
 -->
