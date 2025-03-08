@@ -237,7 +237,13 @@ Precedence | name | operators
 8 | bit-wise AND | `&`
 9 | bit-wise XOR | `^`
 10 | bit-wise OR | <code>|</code>
-11 | 
+11 | logical AND | `&&`
+12 (lowest) | logical OR | <code>||</code>
+
+* Most vector and matrix operations are component-wise **except**:
+	* Matrix * Vector
+	* Vecto
+
 
 ### Flow control
 ### Discarding
@@ -265,7 +271,7 @@ Precedence | name | operators
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTg2NTMyMDcsLTE5ODQ0NzA4MDgsLT
-E0NjE3NDUxMDMsLTE0MzQ1Mzc3NDcsLTEzMTI2ODAwNiwtMTQ5
-NTg2MTk3OV19
+eyJoaXN0b3J5IjpbLTEzNTI0MDYxMiwtMTk4NDQ3MDgwOCwtMT
+Q2MTc0NTEwMywtMTQzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1
+ODYxOTc5XX0=
 -->
