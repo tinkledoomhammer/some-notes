@@ -98,8 +98,27 @@ Comments
 	* `r` `g` `b` `a`
 * Matrices are column-row order
 	* `mat2 m2 ... m2[0].x`
+
+Swizzling
+```hlsl
+vec4  a  =  vec4(0.0,  1.0,  2.0,  3.0);
+vec3  b  =  a.rgb;  // Creates a vec3 with vec4 components.
+vec3  b  =  a.ggg;  // Also valid; creates a vec3 
+		// and fills it with a single vec4 component.
+vec3  b  =  a.bgr;  // "b" will be vec3(2.0, 1.0, 0.0).
+vec3  b  =  a.xyz;  // Also rgba, xyzw are equivalent.
+vec3  b  =  a.stp;  // And stpq (for texture coordinates).
+float  c  =  b.w;  // Invalid, because "w" is not present in vec3 b.
+vec3  c  =  b.xrt;  // Invalid, mixing different styles is forbidden.
+b.rrr  =  a.rgb;  // Invalid, assignment with duplication.
+b.bgr  =  a.rgb;  // Valid assignment. 
+		// "b"'s "blue" component will be "a"'s "red" and vice versa.
+```
+
 #### Construction
+
 Vectors:
+
 ```c++
 // The required amount of scalars
 vec4  a  =  vec4(0.0,  1.0,  2.0,  3.0);
@@ -109,7 +128,9 @@ vec4  a  =  vec4(vec3(0.0,  1.0,  2.0),  3.0);
 // A single scalar for the whole vector
 vec4  a  =  vec4(0.0);
 ```
+
 Matrices:
+
 ```c++
 // with the correct size
 mat2  m2  =  mat2(vec2(1.0,  0.0),  vec2(0.0,  1.0));
@@ -129,22 +150,9 @@ mat4  m4  =  mat4(basis);
 mat2  m2  =  mat2(m4);
 ```
 
+#### Arrays
+* 
 
-Swizzling
-```hlsl
-vec4  a  =  vec4(0.0,  1.0,  2.0,  3.0);
-vec3  b  =  a.rgb;  // Creates a vec3 with vec4 components.
-vec3  b  =  a.ggg;  // Also valid; creates a vec3 
-		// and fills it with a single vec4 component.
-vec3  b  =  a.bgr;  // "b" will be vec3(2.0, 1.0, 0.0).
-vec3  b  =  a.xyz;  // Also rgba, xyzw are equivalent.
-vec3  b  =  a.stp;  // And stpq (for texture coordinates).
-float  c  =  b.w;  // Invalid, because "w" is not present in vec3 b.
-vec3  c  =  b.xrt;  // Invalid, mixing different styles is forbidden.
-b.rrr  =  a.rgb;  // Invalid, assignment with duplication.
-b.bgr  =  a.rgb;  // Valid assignment. 
-		// "b"'s "blue" component will be "a"'s "red" and vice versa.
-```
 
 ### Built-in functions
 ### Shader preprocessor
@@ -164,6 +172,6 @@ b.bgr  =  a.rgb;  // Valid assignment.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY4ODI3ODE4LC0xNDYxNzQ1MTAzLC0xND
+eyJoaXN0b3J5IjpbNTYxNjE0NTE4LC0xNDYxNzQ1MTAzLC0xND
 M0NTM3NzQ3LC0xMzEyNjgwMDYsLTE0OTU4NjE5NzldfQ==
 -->
