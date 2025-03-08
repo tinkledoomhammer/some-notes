@@ -374,8 +374,11 @@ Type | Hint | Description
 ```
 uniform int anEnum : hint_enum("a","b"...)=0;
 //a=>0, b=>1, etc
-
+uniform int anotherEnum : hint_enum("A:10", "b:110"...)=30;
+//similar to other exports
 ```
+
+`vec3 aColor : source_color`
 ### Built-in variables
 #### Built-in functions
 
@@ -397,7 +400,7 @@ uniform int anEnum : hint_enum("a","b"...)=0;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA1OTAxMzIwLDIxMDI0MTU0NzYsLTE5OD
-Q0NzA4MDgsLTE0NjE3NDUxMDMsLTE0MzQ1Mzc3NDcsLTEzMTI2
-ODAwNiwtMTQ5NTg2MTk3OV19
+eyJoaXN0b3J5IjpbMjAxOTQ5OTQzMywyMTAyNDE1NDc2LC0xOT
+g0NDcwODA4LC0xNDYxNzQ1MTAzLC0xNDM0NTM3NzQ3LC0xMzEy
+NjgwMDYsLTE0OTU4NjE5NzldfQ==
 -->
