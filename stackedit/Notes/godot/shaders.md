@@ -113,8 +113,17 @@ Matrices:
 ```c++
 // with the correct size
 mat2  m2  =  mat2(vec2(1.0,  0.0),  vec2(0.0,  1.0));
-mat3  m3  =  mat3(vec3(1.0,  0.0,  0.0),  vec3(0.0,  1.0,  0.0),  vec3(0.0,  0.0,  1.0));
+mat3  m3  =  mat3(vec3(1.0,  0.0,  0.0),
+	vec3(0.0,  1.0,  0.0),
+	vec3(0.0,  0.0,  1.0));
+//With a single value, a diagonal matrix is constructed	
 mat4  identity  =  mat4(1.0);
+
+//Different sizes
+mat3  basis  =  mat3(MODEL_MATRIX);
+mat4  m4  =  mat4(basis);
+mat2  m2  =  mat2(m4);
+
 ```
 
 
@@ -152,6 +161,6 @@ b.bgr  =  a.rgb;  // Valid assignment.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzgwOTkxOSwtMTQ2MTc0NTEwMywtMT
-QzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1ODYxOTc5XX0=
+eyJoaXN0b3J5IjpbLTIwNzc1MDQ1MTYsLTE0NjE3NDUxMDMsLT
+E0MzQ1Mzc3NDcsLTEzMTI2ODAwNiwtMTQ5NTg2MTk3OV19
 -->
