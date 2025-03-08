@@ -12,7 +12,7 @@ void fragment(){
 }
 ```
 
-## References
+# References
 https://docs.godotengine.org/en/stable/tutorials/shaders/index.html
 
 ### Intro
@@ -70,7 +70,9 @@ https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shadin
 	* `isampler2D`  `usampler2D` `sampler2DArray` `usampler2DArray` `isampler2dArray`
 * `sampler3D` - floats
 	* `isampler3D` `usampler3D`
-* `samplerCube` -- cubemaps which
+* `samplerCube` -- samples cubemaps as floats
+	* `SamplerCubeArray`
+* `samplerExternalOES` - only supported in compatibility/android
 
 ### Built-in functions
 ### Shader preprocessor
@@ -90,6 +92,6 @@ https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shadin
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzM5MTE2MTgsLTE0MzQ1Mzc3NDcsLT
-EzMTI2ODAwNiwtMTQ5NTg2MTk3OV19
+eyJoaXN0b3J5IjpbLTczNzIwMDQxNiwtMTQzNDUzNzc0NywtMT
+MxMjY4MDA2LC0xNDk1ODYxOTc5XX0=
 -->
