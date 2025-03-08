@@ -154,7 +154,16 @@ mat2  m2  =  mat2(m4);
 * declared with c-style syntax
 	* `[const] + [precision] + typename + identifyer + [arraySize]`
 * Not valid for samplers
-* 
+Initialization:
+
+```c
+float  float_arr[3]  =  float[3]  (1.0,  0.5,  0.0); //type 1
+int  int_arr[3]  =  int[]  (2,  1,  0);
+
+vec2  vec2_arr[3]  =  {  vec2(1.0,  1.0),  vec2(0.5,  0.5),  vec2(0.0,  0.0)  };  // third constructor
+
+bool  bool_arr[]  =  {  true,  true,  false  };  // fourth constructor - size is defined automatically from the element count
+```
 
 
 ### Built-in functions
@@ -175,6 +184,6 @@ mat2  m2  =  mat2(m4);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3MjUxNTcyNiwtMTQ2MTc0NTEwMywtMT
+eyJoaXN0b3J5IjpbLTE3MTI5NTU5MywtMTQ2MTc0NTEwMywtMT
 QzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1ODYxOTc5XX0=
 -->
