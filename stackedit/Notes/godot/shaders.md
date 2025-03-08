@@ -199,6 +199,13 @@ Global arrays
 
 #### Structs
 ### Operators
+* The same operators as GLSL ES 3.0
+
+Precidence | name | operators
+--|--|--
+1(highest) | parenthetical grouping | `( )`
+2| unary | `+` `-` `!` `
+
 ### Flow control
 ### Discarding
 ### Varyings
@@ -225,6 +232,6 @@ Global arrays
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0OTE5MTA1OCwtMTQ2MTc0NTEwMywtMT
-QzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1ODYxOTc5XX0=
+eyJoaXN0b3J5IjpbLTE3Njk3MDMxMzEsLTE0NjE3NDUxMDMsLT
+E0MzQ1Mzc3NDcsLTEzMTI2ODAwNiwtMTQ5NTg2MTk3OV19
 -->
