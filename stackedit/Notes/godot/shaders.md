@@ -397,7 +397,9 @@ uniform int anInt = 0;
 group_uniform MyGroup.MySubgroup
 	//The parent group is optional
 group_uniforms;
-//TODO: find out if you need to close out subgroups
+	//closes both MyGroup and MySubgroup
+group_uniforms MyGroup;
+	uniform int
 ```
 ### Built-in variables
 #### Built-in functions
@@ -420,7 +422,7 @@ group_uniforms;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyODU3ODM0NCwyMTAyNDE1NDc2LC0xOT
-g0NDcwODA4LC0xNDYxNzQ1MTAzLC0xNDM0NTM3NzQ3LC0xMzEy
-NjgwMDYsLTE0OTU4NjE5NzldfQ==
+eyJoaXN0b3J5IjpbMTM3ODI5Njc3NywyMDI4NTc4MzQ0LDIxMD
+I0MTU0NzYsLTE5ODQ0NzA4MDgsLTE0NjE3NDUxMDMsLTE0MzQ1
+Mzc3NDcsLTEzMTI2ODAwNiwtMTQ5NTg2MTk3OV19
 -->
