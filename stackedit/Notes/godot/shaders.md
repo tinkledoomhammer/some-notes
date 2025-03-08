@@ -305,10 +305,13 @@ Functions are c-style
 	* `inout` - passed via reference
 	* `const` - can be combined with `in`
 * Functions can be overloaded
-	* There are no implicit conversions of 
-
+	* There are no implicit conversions of arguments
 
 ### Varyings
+* Data sent from the fragment shader to the vertex shader
+* Computed for every primitive vertex in the vertex processor
+* interpolated for every fragment
+
 ### Interpolation qualifiers
 ### Uniforms
 ### Built-in variables
@@ -332,7 +335,7 @@ Functions are c-style
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzAyMDY5MzUsLTE5ODQ0NzA4MDgsLT
-E0NjE3NDUxMDMsLTE0MzQ1Mzc3NDcsLTEzMTI2ODAwNiwtMTQ5
-NTg2MTk3OV19
+eyJoaXN0b3J5IjpbMTQ0NzcxMzk5MSwtMTk4NDQ3MDgwOCwtMT
+Q2MTc0NTEwMywtMTQzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1
+ODYxOTc5XX0=
 -->
