@@ -198,7 +198,7 @@ Global arrays
 * unsigned `const` must be suffiexed with `u` or constructed with `uint(val)`
 
 #### Structs
-
+* mo
 
 
 ### Operators
@@ -237,6 +237,7 @@ Precedence | name | operators
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODQ0NzA4MDgsLTE0NjE3NDUxMDMsLT
-E0MzQ1Mzc3NDcsLTEzMTI2ODAwNiwtMTQ5NTg2MTk3OV19
+eyJoaXN0b3J5IjpbLTE1NjE3MDA0MTYsLTE5ODQ0NzA4MDgsLT
+E0NjE3NDUxMDMsLTE0MzQ1Mzc3NDcsLTEzMTI2ODAwNiwtMTQ5
+NTg2MTk3OV19
 -->
