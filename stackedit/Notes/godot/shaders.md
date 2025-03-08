@@ -158,13 +158,17 @@ Initialization:
 
 ```c
 float  float_arr[3]  =  float[3]  (1.0,  0.5,  0.0); //type 1
-int  int_arr[3]  =  int[]  (2,  1,  0);
+int  int_arr[3]  =  int[]  (2,  1,  0);	//type 2
+vec2  vec2_arr[3]  =  {  vec2(1.0,  1.0),
+		vec2(0.5,  0.5),
+		vec2(0.0,  0.0)
+		};  		// third constructor
 
-vec2  vec2_arr[3]  =  {  vec2(1.0,  1.0),  vec2(0.5,  0.5),  vec2(0.0,  0.0)  };  // third constructor
-
-bool  bool_arr[]  =  {  true,  true,  false  };  // fourth constructor - size is defined automatically from the element count
+//Specifying the size is optional
+bool  bool_arr[]  =  {  true,  true,  false  };  // fourth constructor
+	//Size is determined by the element count of the initializer
 ```
-
+* built in function
 
 ### Built-in functions
 ### Shader preprocessor
@@ -184,6 +188,6 @@ bool  bool_arr[]  =  {  true,  true,  false  };  // fourth constructor - size is
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTI5NTU5MywtMTQ2MTc0NTEwMywtMT
-QzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1ODYxOTc5XX0=
+eyJoaXN0b3J5IjpbLTIxMzU2NzEwNjgsLTE0NjE3NDUxMDMsLT
+E0MzQ1Mzc3NDcsLTEzMTI2ODAwNiwtMTQ5NTg2MTk3OV19
 -->
