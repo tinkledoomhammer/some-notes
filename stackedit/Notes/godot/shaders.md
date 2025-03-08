@@ -285,7 +285,18 @@ while  (cond)  {}
 do  {}  while  (cond);
 ```
 
+#### Testing floats for equality
+```
+const  float  EPSILON  =  0.0001;
+if  (value  >=  0.3  -  EPSILON  &&  value  <=  0.3  +  EPSILON){}
+
+//below is wrong
+if(value == 0.3) {} // rounding errors
+```
+
 ### Discarding
+
+
 ### Varyings
 ### Interpolation qualifiers
 ### Uniforms
@@ -310,7 +321,7 @@ do  {}  while  (cond);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI3NTQwMTAyLC0xOTg0NDcwODA4LC0xND
-YxNzQ1MTAzLC0xNDM0NTM3NzQ3LC0xMzEyNjgwMDYsLTE0OTU4
-NjE5NzldfQ==
+eyJoaXN0b3J5IjpbLTI0OTc4MjYyNywtMTk4NDQ3MDgwOCwtMT
+Q2MTc0NTEwMywtMTQzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1
+ODYxOTc5XX0=
 -->
