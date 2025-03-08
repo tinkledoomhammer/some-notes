@@ -294,7 +294,11 @@ if  (value  >=  0.3  -  EPSILON  &&  value  <=  0.3  +  EPSILON){}
 if(value == 0.3) {} // rounding errors
 ```
 
-### Discarding
+### Discarding and functions and such
+the `discard` keyword when used in a light or fragment shader, or custom function, will prevent the fragment from being written
+* It has a performance cost
+*functions are c-style
+* there are special 
 
 
 ### Varyings
@@ -321,7 +325,7 @@ if(value == 0.3) {} // rounding errors
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0OTc4MjYyNywtMTk4NDQ3MDgwOCwtMT
+eyJoaXN0b3J5IjpbMTU1NDQ2OTYzOSwtMTk4NDQ3MDgwOCwtMT
 Q2MTc0NTEwMywtMTQzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1
 ODYxOTc5XX0=
 -->
