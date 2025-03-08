@@ -198,13 +198,18 @@ Global arrays
 * unsigned `const` must be suffiexed with `u` or constructed with `uint(val)`
 
 #### Structs
+
+
+
 ### Operators
 * The same operators as GLSL ES 3.0
 
-Precidence | name | operators
+Precedence | name | operators
 --|--|--
 1(highest) | parenthetical grouping | `( )`
-2| unary | `+` `-` `!` `
+2 | unary | `+` `-` `!` `~`
+3 | multiplicative | `/` `*` `%`
+4 | 
 
 ### Flow control
 ### Discarding
@@ -232,6 +237,6 @@ Precidence | name | operators
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Njk3MDMxMzEsLTE0NjE3NDUxMDMsLT
+eyJoaXN0b3J5IjpbLTE5ODQ0NzA4MDgsLTE0NjE3NDUxMDMsLT
 E0MzQ1Mzc3NDcsLTEzMTI2ODAwNiwtMTQ5NTg2MTk3OV19
 -->
