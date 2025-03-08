@@ -173,7 +173,14 @@ bool  bool_arr[]  =  {  true,  true,  false  };  // fourth constructor
 * `clamp()` ??
 * `if` ?? -- is this even a function
 
-G
+Global arrays
+* can be declared as either `const` or `uniform`
+* `const` must have in initializer, `uniform` is not allowed to have an initializer
+
+#### Constants
+* must be initialized
+* cannot have hints
+* cannot be
 
 ### Built-in functions
 ### Shader preprocessor
@@ -193,6 +200,6 @@ G
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjE2MTIyMjIsLTE0NjE3NDUxMDMsLT
-E0MzQ1Mzc3NDcsLTEzMTI2ODAwNiwtMTQ5NTg2MTk3OV19
+eyJoaXN0b3J5IjpbMTIyOTQ0ODE0NiwtMTQ2MTc0NTEwMywtMT
+QzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1ODYxOTc5XX0=
 -->
