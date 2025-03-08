@@ -365,6 +365,11 @@ Type | Hint | Description
 .. | `hint_default_transparent` | 
 .. | `hint_anisotropy` | as flowmap, default to right
 .. | `hint_roughness[_r, _g, _b, _a, _normal, _gray] | Used for roughness limiter
+.. |`repeat[_enable, _dissable]` | enable texture repeating
+.. | `hint_screen_texture` | Samples the screen
+.. | `hint_depth_texture` | Texture is the depth texture
+.. | hint_normal_roughness_texture | Texture is the normal roughness texture
+
 
 ### Built-in variables
 #### Built-in functions
@@ -387,7 +392,7 @@ Type | Hint | Description
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Njg5NTI5NzYsLTE5ODQ0NzA4MDgsLT
-E0NjE3NDUxMDMsLTE0MzQ1Mzc3NDcsLTEzMTI2ODAwNiwtMTQ5
-NTg2MTk3OV19
+eyJoaXN0b3J5IjpbMTgxOTU2OTEyNywtMTk4NDQ3MDgwOCwtMT
+Q2MTc0NTEwMywtMTQzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1
+ODYxOTc5XX0=
 -->
