@@ -97,12 +97,27 @@ Comments
 	* `x` `y` `z` `w` or
 	* `r` `g` `b` `a`
 * Matrices are column-row order
-	* `mat2 m2 = mat2(vec2(1.0,0.0), vec2(0.0, 1.0));`
+	* `mat2 m2 ... m2[0].x`
 #### Construction
 Vectors:
 ```c++
-
+// The required amount of scalars
+vec4  a  =  vec4(0.0,  1.0,  2.0,  3.0);
+// Complementary vectors and/or scalars
+vec4  a  =  vec4(vec2(0.0,  1.0),  vec2(2.0,  3.0));
+vec4  a  =  vec4(vec3(0.0,  1.0,  2.0),  3.0);
+// A single scalar for the whole vector
+vec4  a  =  vec4(0.0);
 ```
+Matrices:
+```c++
+// with the correct size
+mat2  m2  =  mat2(vec2(1.0,  0.0),  vec2(0.0,  1.0));
+mat3  m3  =  mat3(vec3(1.0,  0.0,  0.0),  vec3(0.0,  1.0,  0.0),  vec3(0.0,  0.0,  1.0));
+mat4  identity  =  mat4(1.0);
+```
+
+
 Swizzling
 ```hlsl
 vec4  a  =  vec4(0.0,  1.0,  2.0,  3.0);
@@ -137,6 +152,6 @@ b.bgr  =  a.rgb;  // Valid assignment.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0OTQ0MzQyMSwtMTQ2MTc0NTEwMywtMT
+eyJoaXN0b3J5IjpbLTE4MzgwOTkxOSwtMTQ2MTc0NTEwMywtMT
 QzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1ODYxOTc5XX0=
 -->
