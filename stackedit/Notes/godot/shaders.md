@@ -50,7 +50,11 @@ Specified on the second line:
 Can be applied
 ### Language Reference
 https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shading_language.html
-
+### Built-in functions
+### Shader preprocessor
+### Shader Types
+#### Spatial
+#### 
 
 
 
@@ -58,6 +62,6 @@ https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shadin
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzQ1Mzc3NDcsLTEzMTI2ODAwNiwtMT
-Q5NTg2MTk3OV19
+eyJoaXN0b3J5IjpbMTI0NDEwMTg3MywtMTQzNDUzNzc0NywtMT
+MxMjY4MDA2LC0xNDk1ODYxOTc5XX0=
 -->
