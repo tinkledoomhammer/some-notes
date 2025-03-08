@@ -318,15 +318,20 @@ Functions are c-style
 ```c
 shader_type  spatial;
 
-varying  flat  vec3  our_color;
-varying smooth vec3 other_color;
+varying  flat  vec3  flat_color;
+//`flat` means no interpolation
+varying smooth vec3 smooth_color;
+//smooth means perspective-correct interpolation
+//smooth is the default
+
 void  vertex()  {
   our_color  =  COLOR.rgb;
-  other_color = COLOR
+  other_color = COLOR.bgr;
 }
 
 void  fragment()  {
-  ALBEDO  =  our_color;
+  //`flat` means no interpolation
+  ALBEDO  =  flat_color;
 }
 ```
 
@@ -352,7 +357,7 @@ void  fragment()  {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczNDAwNTc5NSwtMTk4NDQ3MDgwOCwtMT
+eyJoaXN0b3J5IjpbMTk5NzU0ODkzNiwtMTk4NDQ3MDgwOCwtMT
 Q2MTc0NTEwMywtMTQzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1
 ODYxOTc5XX0=
 -->
