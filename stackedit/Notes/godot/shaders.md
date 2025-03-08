@@ -252,13 +252,8 @@ Precedence | name | operators
 
 ```c++
 // `if`, `else if` and `else`.
-if  (cond)  {
-
-}  else  if  (other_cond)  {
-
-}  else  {
-
-}
+if  (cond)  {}  else  if  (other_cond)  {
+}  else  {}
 
 // Ternary operator.
 // This is an expression that behaves like `if`/`else` and returns the value.
@@ -268,16 +263,13 @@ int  result  =  cond  ?  9  :  5;
 
 // `switch`.
 switch  (i)  {  // `i` should be a signed integer expression.
-  case  -1:
-  break;
+  case  -1:	  break;
   case  0:
-  return;  // `break` or `return` to avoid running the next `case`.
+	  return;  // `break` or `return` to avoid running the next `case`.
   case  1:  // Fallthrough (no `break` or `return`): will run the next `case`.
-  case  2:
-  break;
-  //...
+  case  2:	break;
   default:  // Only run if no `case` above matches. Optional.
-  break;
+	  break;
 }
 
 // `for` loop. Best used when the number of elements to iterate on
@@ -290,9 +282,7 @@ while  (cond)  {}
 
 // `do while`. Like `while`, but always runs at least once even if `cond`
 // never evaluates to `true`.
-do  {
-
-}  while  (cond);
+do  {}  while  (cond);
 ```
 
 ### Discarding
@@ -320,7 +310,7 @@ do  {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4MTMxNjY5MiwtMTk4NDQ3MDgwOCwtMT
-Q2MTc0NTEwMywtMTQzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1
-ODYxOTc5XX0=
+eyJoaXN0b3J5IjpbNTI3NTQwMTAyLC0xOTg0NDcwODA4LC0xND
+YxNzQ1MTAzLC0xNDM0NTM3NzQ3LC0xMzEyNjgwMDYsLTE0OTU4
+NjE5NzldfQ==
 -->
