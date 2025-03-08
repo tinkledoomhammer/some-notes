@@ -13,6 +13,8 @@ void fragment(){
 ```
 
 ## References
+https://docs.godotengine.org/en/stable/tutorials/shaders/index.html
+
 ### Intro
 https://docs.godotengine.org/en/stable/tutorials/shaders/introduction_to_shaders.html
 #### Shader Functions and Types
@@ -50,11 +52,19 @@ Specified on the second line:
 Can be applied
 ### Language Reference
 https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shading_language.html
+
+
 ### Built-in functions
 ### Shader preprocessor
 ### Shader Types
 #### Spatial
-#### 
+#### CanvasItem
+#### Particle
+#### Sky
+#### Fog
+
+### Compute Shaders
+
 
 
 
@@ -62,6 +72,6 @@ https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shadin
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0NDEwMTg3MywtMTQzNDUzNzc0NywtMT
+eyJoaXN0b3J5IjpbLTE0Njc4NTE2MywtMTQzNDUzNzc0NywtMT
 MxMjY4MDA2LC0xNDk1ODYxOTc5XX0=
 -->
