@@ -180,7 +180,11 @@ Global arrays
 #### Constants
 * must be initialized
 * cannot have hints
-* cannot be
+* cannot be changed
+* can be global or local
+	* globals can be shared between shader stages
+	* they are not accessible from outside the shader
+* unsigned `const` must be suffiexed with `u` or constructed with `uint(val)`
 
 ### Built-in functions
 ### Shader preprocessor
@@ -200,6 +204,6 @@ Global arrays
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyOTQ0ODE0NiwtMTQ2MTc0NTEwMywtMT
-QzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1ODYxOTc5XX0=
+eyJoaXN0b3J5IjpbMTI2NTI2MDgzLC0xNDYxNzQ1MTAzLC0xND
+M0NTM3NzQ3LC0xMzEyNjgwMDYsLTE0OTU4NjE5NzldfQ==
 -->
