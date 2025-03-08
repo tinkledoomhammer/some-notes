@@ -82,7 +82,11 @@ https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shadin
 #### casting
 * Implicit casts are not allowed between different types, even if the size is the same
 * default `int`s are signed, converting to unsigned requires an explicit cast
-* i.e. `uint x = uint(5)
+* i.e. `uint x = uint(5);`
+#### Members
+* Vector members can be :
+	* `x` `y` `z` `w` or
+	* `r` `g` `b` `a`
 ### Built-in functions
 ### Shader preprocessor
 ### Shader Types
@@ -101,6 +105,6 @@ https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shadin
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY5MDU4OTcxLC0xNDM0NTM3NzQ3LC0xMz
-EyNjgwMDYsLTE0OTU4NjE5NzldfQ==
+eyJoaXN0b3J5IjpbMTQ2NTUwNTMwMSwtMTQzNDUzNzc0NywtMT
+MxMjY4MDA2LC0xNDk1ODYxOTc5XX0=
 -->
