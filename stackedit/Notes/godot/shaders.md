@@ -151,6 +151,9 @@ mat2  m2  =  mat2(m4);
 ```
 
 #### Arrays
+* declared with c-style syntax
+	* `[const] + [precision] + typename + identifyer + [arraySize]`
+* Not valid for samplers
 * 
 
 
@@ -172,6 +175,6 @@ mat2  m2  =  mat2(m4);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYxNjE0NTE4LC0xNDYxNzQ1MTAzLC0xND
-M0NTM3NzQ3LC0xMzEyNjgwMDYsLTE0OTU4NjE5NzldfQ==
+eyJoaXN0b3J5IjpbMTU3MjUxNTcyNiwtMTQ2MTc0NTEwMywtMT
+QzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1ODYxOTc5XX0=
 -->
