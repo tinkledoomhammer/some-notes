@@ -370,6 +370,7 @@ Type | Hint | Description
 .. | `hint_depth_texture` | Texture is the depth texture
 .. | hint_normal_roughness_texture | Texture is the normal roughness texture
 
+#### `hint_enum` and `source_color`
 
 ### Built-in variables
 #### Built-in functions
@@ -392,7 +393,7 @@ Type | Hint | Description
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxOTU2OTEyNywtMTk4NDQ3MDgwOCwtMT
+eyJoaXN0b3J5IjpbMjEwMjQxNTQ3NiwtMTk4NDQ3MDgwOCwtMT
 Q2MTc0NTEwMywtMTQzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1
 ODYxOTc5XX0=
 -->
