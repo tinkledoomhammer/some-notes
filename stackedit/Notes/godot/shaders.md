@@ -185,6 +185,8 @@ Global arrays
 	* globals can be shared between shader stages
 	* they are not accessible from outside the shader
 * unsigned `const` must be suffiexed with `u` or constructed with `uint(val)`
+#### Structs
+
 
 ### Built-in functions
 ### Shader preprocessor
@@ -204,6 +206,6 @@ Global arrays
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2NTI2MDgzLC0xNDYxNzQ1MTAzLC0xND
-M0NTM3NzQ3LC0xMzEyNjgwMDYsLTE0OTU4NjE5NzldfQ==
+eyJoaXN0b3J5IjpbMTg5MTg2MzkwNSwtMTQ2MTc0NTEwMywtMT
+QzNDUzNzc0NywtMTMxMjY4MDA2LC0xNDk1ODYxOTc5XX0=
 -->
