@@ -207,10 +207,17 @@ struct PointLight{
 	float intensity;
 };
 
+struct TwoLights{
+	PointLight lights[2];
+};
+
+void someFunc(PointLight light){/**/}
 void fragment(){
 	PointLight light1;
 	PointLight light2= PointLight(
-		vec3(0.0), vec3(1.0,0.0,0.0), 
+		vec3(0.0), vec3(1.0,0.0,0.0), 0.5 );
+	TwoLight
+	someFunc(
 ```
 
 
@@ -250,7 +257,7 @@ Precedence | name | operators
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQwODQ1NDQ3LC0xOTg0NDcwODA4LC0xND
-YxNzQ1MTAzLC0xNDM0NTM3NzQ3LC0xMzEyNjgwMDYsLTE0OTU4
-NjE5NzldfQ==
+eyJoaXN0b3J5IjpbLTEyOTAwNzcxMjAsLTE5ODQ0NzA4MDgsLT
+E0NjE3NDUxMDMsLTE0MzQ1Mzc3NDcsLTEzMTI2ODAwNiwtMTQ5
+NTg2MTk3OV19
 -->
