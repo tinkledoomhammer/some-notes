@@ -55,7 +55,7 @@ int main() {
 ```
 
 * instead calling `t.join();` will cause the main thread wait for `t` to terminate
-* 
+* `t.detach();`
 
 
 ## Move Semantics in Modern C++
@@ -156,5 +156,5 @@ https://learnmoderncpp.com/2023/09/03/concepts-101/
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwNzk2NDI3MCwtMTEyMDEwNTI4N119
+eyJoaXN0b3J5IjpbMTk2ODA4NjQ0NSwtMTEyMDEwNTI4N119
 -->
