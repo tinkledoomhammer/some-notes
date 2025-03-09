@@ -1080,13 +1080,15 @@ Classes:
 
 ### Get and put positions
 * the positions at which the next get or put operation is performed
-`.tellg()` and `.tellp()` 
+`.tellg()` and `.tellp()` return type `streampos`
+`seekg(streampos)` and `seekp(streampos)` - set the positions,
+
 
 	
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1Mzk5NTIwLDE4MzY2MTcxOTgsODYxND
+eyJoaXN0b3J5IjpbNTQ1MTc4ODk4LDE4MzY2MTcxOTgsODYxND
 kxMDI5LDkxNTU2NDQ2Miw0MjA3NDYyMzAsLTg1NTMyNTczOSwt
 MTc4NDA5OTg2NCwyMTMzMjE5MjY3LC0yMDY2OTc2MjkyLC0xMD
 I1NTU0NDM4LC05NTEwNTM1OTksMTExMDI5MjkwNSwtMTY0ODUz
