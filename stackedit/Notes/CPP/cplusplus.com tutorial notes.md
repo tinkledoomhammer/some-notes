@@ -1091,17 +1091,48 @@ Classes:
 * `ios::off_type` is `std::streamoff` which is an alias of an integer
 
 #### Binary files
+`.read(char * memory, size);`
+`.write(char * memory, size);`
+example
+
+```c++
+// reading an entire binary file
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main () {
+  streampos size;
+  char * memblock;
+
+  ifstream file ("example.bin", ios::in|ios::binary|ios::ate);
+  if (file.is_open())
+  {
+    size = file.tellg();
+    memblock = new char [size];
+    file.seekg (0, ios::beg);
+    file.read (memblock, size);
+    file.close();
+
+    cout << "the entire file content is in memory";
+
+    delete[] memblock;
+  }
+  else cout << "Unable to open file";
+  return 0;
+}
+```
 
 
 	
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ4MDkzMzIwLDE4MzY2MTcxOTgsODYxND
-kxMDI5LDkxNTU2NDQ2Miw0MjA3NDYyMzAsLTg1NTMyNTczOSwt
-MTc4NDA5OTg2NCwyMTMzMjE5MjY3LC0yMDY2OTc2MjkyLC0xMD
-I1NTU0NDM4LC05NTEwNTM1OTksMTExMDI5MjkwNSwtMTY0ODUz
-MTI4MSwtMTMxMTY4ODUxMSwtNzQ5MTMyNjM2LDIwOTY5ODgyMj
-QsMTk5NjIyNTQ5NywtMTY0OTI4MTc5NiwtMTg4NDcxNDU1NSwt
-OTkxNDA3MjRdfQ==
+eyJoaXN0b3J5IjpbLTE3MDQzMTk4MzYsODQ4MDkzMzIwLDE4Mz
+Y2MTcxOTgsODYxNDkxMDI5LDkxNTU2NDQ2Miw0MjA3NDYyMzAs
+LTg1NTMyNTczOSwtMTc4NDA5OTg2NCwyMTMzMjE5MjY3LC0yMD
+Y2OTc2MjkyLC0xMDI1NTU0NDM4LC05NTEwNTM1OTksMTExMDI5
+MjkwNSwtMTY0ODUzMTI4MSwtMTMxMTY4ODUxMSwtNzQ5MTMyNj
+M2LDIwOTY5ODgyMjQsMTk5NjIyNTQ5NywtMTY0OTI4MTc5Niwt
+MTg4NDcxNDU1NV19
 -->
