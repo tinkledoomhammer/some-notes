@@ -1076,17 +1076,21 @@ Classes:
 `.fail()` - returns `true` when `.bad()` returns true and also in the case of format errors
 `.eof()` - `true` when a file open for reading has reached the end of the file
 `.good()` - `false` when any of the previous functions are false
+`.clear()` - reset state flags
 
+### Get and put positions
+* the positions at which the next get or put operation is performed
+`.tellg()` and `.tellp()` 
 
 	
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyMjIyNjQ4MywxODM2NjE3MTk4LDg2MT
-Q5MTAyOSw5MTU1NjQ0NjIsNDIwNzQ2MjMwLC04NTUzMjU3Mzks
-LTE3ODQwOTk4NjQsMjEzMzIxOTI2NywtMjA2Njk3NjI5MiwtMT
-AyNTU1NDQzOCwtOTUxMDUzNTk5LDExMTAyOTI5MDUsLTE2NDg1
-MzEyODEsLTEzMTE2ODg1MTEsLTc0OTEzMjYzNiwyMDk2OTg4Mj
-I0LDE5OTYyMjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUs
-LTk5MTQwNzI0XX0=
+eyJoaXN0b3J5IjpbMTE1Mzk5NTIwLDE4MzY2MTcxOTgsODYxND
+kxMDI5LDkxNTU2NDQ2Miw0MjA3NDYyMzAsLTg1NTMyNTczOSwt
+MTc4NDA5OTg2NCwyMTMzMjE5MjY3LC0yMDY2OTc2MjkyLC0xMD
+I1NTU0NDM4LC05NTEwNTM1OTksMTExMDI5MjkwNSwtMTY0ODUz
+MTI4MSwtMTMxMTY4ODUxMSwtNzQ5MTMyNjM2LDIwOTY5ODgyMj
+QsMTk5NjIyNTQ5NywtMTY0OTI4MTc5NiwtMTg4NDcxNDU1NSwt
+OTkxNDA3MjRdfQ==
 -->
