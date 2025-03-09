@@ -340,7 +340,7 @@ https://github.blog/open-source/git/how-to-undo-almost-anything-with-git/
 * after pushing a bad change or whatnot
 `git revert` 
 * creates a new commit, but keeps the old one
-* Undo with `git revert <sha>`
+
 
 ### Fix the last commit message
 `git commit --amend`
@@ -349,7 +349,10 @@ https://github.blog/open-source/git/how-to-undo-almost-anything-with-git/
 
 ### Undo local changes
 `git checkout -- <bad filename>`
-
+* alters the files in the working directory to a previous state
+* can be used with a specific commit, or HEAD is assumed
+* **Cannot be undone**
+* perhaps use `gi
 
 
 
@@ -371,7 +374,7 @@ https://github.blog/open-source/git/how-to-undo-almost-anything-with-git/
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzI3MDA1ODIsLTM3MDMzNzg0NiwxOT
-Y5NzEzMjgwLDQ3NjcyOTkzNCwtMTc3NTgzMTkxOSwtMjI3NTUx
-NThdfQ==
+eyJoaXN0b3J5IjpbLTY3ODQ1MjI4OSwtMzcwMzM3ODQ2LDE5Nj
+k3MTMyODAsNDc2NzI5OTM0LC0xNzc1ODMxOTE5LC0yMjc1NTE1
+OF19
 -->
