@@ -113,7 +113,7 @@ No arguments:
 
 Shows the most recent commit, and the info is the same as git log -p.
 
-```git show <checksum```
+```git show <checksum>```
 : Shows only the specified commit
 
 Other switches
@@ -421,7 +421,7 @@ What `git rebase main` does:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MjkyNjU2MiwtMTk4NTI2Njk2MiwxND
-k1MDQwNTIwLC0zNzAzMzc4NDYsMTk2OTcxMzI4MCw0NzY3Mjk5
-MzQsLTE3NzU4MzE5MTksLTIyNzU1MTU4XX0=
+eyJoaXN0b3J5IjpbLTM4MjA1NjA2LDE0NjI5MjY1NjIsLTE5OD
+UyNjY5NjIsMTQ5NTA0MDUyMCwtMzcwMzM3ODQ2LDE5Njk3MTMy
+ODAsNDc2NzI5OTM0LC0xNzc1ODMxOTE5LC0yMjc1NTE1OF19
 -->
