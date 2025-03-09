@@ -352,7 +352,15 @@ https://github.blog/open-source/git/how-to-undo-almost-anything-with-git/
 * alters the files in the working directory to a previous state
 * can be used with a specific commit, or HEAD is assumed
 * **Cannot be undone**
-* perhaps use `gi
+* perhaps use `git diff` first
+
+### Reset local changes -- remove local commits
+`git reset <last good sha>`
+or
+`git reset --hard <last good sha>`
+* preserves the working directory
+* removes commits from HEAD back to the specified commit
+* 
 
 
 
@@ -374,7 +382,7 @@ https://github.blog/open-source/git/how-to-undo-almost-anything-with-git/
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3ODQ1MjI4OSwtMzcwMzM3ODQ2LDE5Nj
-k3MTMyODAsNDc2NzI5OTM0LC0xNzc1ODMxOTE5LC0yMjc1NTE1
-OF19
+eyJoaXN0b3J5IjpbLTE0MjgzMjc5MTYsLTM3MDMzNzg0NiwxOT
+Y5NzEzMjgwLDQ3NjcyOTkzNCwtMTc3NTgzMTkxOSwtMjI3NTUx
+NThdfQ==
 -->
