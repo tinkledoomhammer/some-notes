@@ -79,10 +79,32 @@ https://learnmoderncpp.com/2024/09/11/range-for-enhancements-in-c23/
 
 https://learnmoderncpp.com/2024/09/04/understanding-iterator-invalidation/
 
-##Uses of Parser Generators
+## Uses of Parser Generators
+
+https://learnmoderncpp.com/2024/08/14/uses-of-parser-generators/
+
+##  Memory Allocation Techniques
+
+https://learnmoderncpp.com/2024/08/05/memory-allocation-techniques-in-modern-c/
+
+## Using Lambda Functions for Delayed Evaluation
+
+https://learnmoderncpp.com/2024/02/24/using-lambda-functions-for-delayed-evaluation/
+
+## Exploring C++23’s flat_map
+
+https://learnmoderncpp.com/2024/01/30/exploring-c23s-flat_map/
+
+## Linear Algebra support in C++26
+
+https://learnmoderncpp.com/2024/01/11/linear-algebra-support-in-c26/
+
+## Replacing the Preprocessor in Modern C++
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEyMDEyMDI4LC0xMTIwMTA1Mjg3XX0=
+eyJoaXN0b3J5IjpbLTE1OTMwNjY4NDEsLTExMjAxMDUyODddfQ
+==
 -->
