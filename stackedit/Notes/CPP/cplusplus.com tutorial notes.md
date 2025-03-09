@@ -1056,17 +1056,19 @@ Modes:
 	* `ios::out`
 	* `ios::binary`
 	* `ios::ate` - sets the initial position to the end of the file
-	* `ios::app` - all output 
+	* `ios::app` - append - all output operations are at the end of the file
+	* `ios::trunc` - (output) deletes the file if it already exists
+
 
 	
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI4ODIzODgwLDg2MTQ5MTAyOSw5MTU1Nj
-Q0NjIsNDIwNzQ2MjMwLC04NTUzMjU3MzksLTE3ODQwOTk4NjQs
-MjEzMzIxOTI2NywtMjA2Njk3NjI5MiwtMTAyNTU1NDQzOCwtOT
-UxMDUzNTk5LDExMTAyOTI5MDUsLTE2NDg1MzEyODEsLTEzMTE2
-ODg1MTEsLTc0OTEzMjYzNiwyMDk2OTg4MjI0LDE5OTYyMjU0OT
-csLTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUsLTk5MTQwNzI0LDEx
-NTY1Mjc3MzldfQ==
+eyJoaXN0b3J5IjpbLTYxMDMyMjY3Nyw4NjE0OTEwMjksOTE1NT
+Y0NDYyLDQyMDc0NjIzMCwtODU1MzI1NzM5LC0xNzg0MDk5ODY0
+LDIxMzMyMTkyNjcsLTIwNjY5NzYyOTIsLTEwMjU1NTQ0MzgsLT
+k1MTA1MzU5OSwxMTEwMjkyOTA1LC0xNjQ4NTMxMjgxLC0xMzEx
+Njg4NTExLC03NDkxMzI2MzYsMjA5Njk4ODIyNCwxOTk2MjI1ND
+k3LC0xNjQ5MjgxNzk2LC0xODg0NzE0NTU1LC05OTE0MDcyNCwx
+MTU2NTI3NzM5XX0=
 -->
