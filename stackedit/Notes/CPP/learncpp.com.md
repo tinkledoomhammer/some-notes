@@ -45,9 +45,27 @@ https://www.learncpp.com/
 
 ## 19 - Dynamic Alocation (under construction)
 
-## 20 - 
+## 20 - Functions
+
+## 21 - Operator Overloading
+
+## 22 - Move Semantics and Smart Pointers
+
+## 23 - Object Relationships
+
+## 24 - Inheritance
+
+## 25 - Virtual functions
+
+## 26 - Templates and Classes
+
+## 27 - Exceptions
+
+## 29 - Input and Output
+
+## 30 - Miscellaneious
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMzg1NzgwMl19
+eyJoaXN0b3J5IjpbNDQ3NTkwMjM1XX0=
 -->
