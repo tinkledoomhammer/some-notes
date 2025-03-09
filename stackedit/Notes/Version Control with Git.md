@@ -385,7 +385,9 @@ Three steps:
 *switches to the new branch
 
 ### Rebase some commits to a more recent master/head
-
+i.e. you make a bunch of commits on a branch but when it comes time to push, your branch is based on an outdated master
+You would prefer for your branch to be based on the current master
+`git checkout <featureBranch>` then `g
 
 
 
@@ -409,7 +411,7 @@ Three steps:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5NTA0MDUyMCwtMzcwMzM3ODQ2LDE5Nj
-k3MTMyODAsNDc2NzI5OTM0LC0xNzc1ODMxOTE5LC0yMjc1NTE1
-OF19
+eyJoaXN0b3J5IjpbLTEzNTc4MTUwOTAsMTQ5NTA0MDUyMCwtMz
+cwMzM3ODQ2LDE5Njk3MTMyODAsNDc2NzI5OTM0LC0xNzc1ODMx
+OTE5LC0yMjc1NTE1OF19
 -->
