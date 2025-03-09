@@ -1062,14 +1062,17 @@ Classes:
 	* `ios::app` - append - all output operations are at the end of the file
 	* `ios::trunc` - (output) deletes the file if it already exists
 
-`.close();` method will close the file. The `fstream` will be
+`.close();` method will close the file. The `fstream` can be used to open a different file
+
+### 
+
 
 
 	
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkxMDA5NjA0LDg2MTQ5MTAyOSw5MTU1Nj
+eyJoaXN0b3J5IjpbMzQ0MjM4OTY1LDg2MTQ5MTAyOSw5MTU1Nj
 Q0NjIsNDIwNzQ2MjMwLC04NTUzMjU3MzksLTE3ODQwOTk4NjQs
 MjEzMzIxOTI2NywtMjA2Njk3NjI5MiwtMTAyNTU1NDQzOCwtOT
 UxMDUzNTk5LDExMTAyOTI5MDUsLTE2NDg1MzEyODEsLTEzMTE2
