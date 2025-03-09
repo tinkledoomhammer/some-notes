@@ -63,11 +63,26 @@ https://learnmoderncpp.com/2024/10/29/when-to-use-stdstring_view/
 
 https://learnmoderncpp.com/2024/10/12/making-algorithms-faster/
 
+## How could reflection be applied
 
+https://learnmoderncpp.com/2024/09/30/how-could-reflection-be-applied-to-modern-c/
 
+## Pattern Matching
+
+https://learnmoderncpp.com/2024/09/19/pattern-matching-is-coming-to-modern-c/
+
+## Rang-for enhancements in C++23
+
+https://learnmoderncpp.com/2024/09/11/range-for-enhancements-in-c23/
+
+## Understanding Iterator Invalidation
+
+https://learnmoderncpp.com/2024/09/04/understanding-iterator-invalidation/
+
+##Uses of Parser Generators
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQwMzAxNDk1LC0xMTIwMTA1Mjg3XX0=
+eyJoaXN0b3J5IjpbOTEyMDEyMDI4LC0xMTIwMTA1Mjg3XX0=
 -->
