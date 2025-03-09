@@ -368,7 +368,12 @@ or
 * when you switch branches, make commits, and `git reset`
 * does not track `git checkout`
 * "unreachable" commits may be removed eventually
-* `git reflog` is entirely local -- it is not shared with any remot
+* `git reflog` is entirely local -- it is not shared with any remotes
+
+Options
+* `git reset --hard <SHA>` restores the repo's history
+* `git checkout <SHA> -- <filename>` restores one file from 
+
 
 
 
@@ -390,7 +395,7 @@ or
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1ODUxMDIzOCwtMzcwMzM3ODQ2LDE5Nj
+eyJoaXN0b3J5IjpbMjEzNTM3MDY1OCwtMzcwMzM3ODQ2LDE5Nj
 k3MTMyODAsNDc2NzI5OTM0LC0xNzc1ODMxOTE5LC0yMjc1NTE1
 OF19
 -->
