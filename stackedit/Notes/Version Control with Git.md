@@ -382,7 +382,7 @@ Three steps:
 `git reset --hard`
 * rewinds `master` back to `origin/master`
 `git checkout`
-*switches to the new branch
+* switches to the new branch
 
 ### Rebase some commits to a more recent master/head
 i.e. you make a bunch of commits on a branch but when it comes time to push, your branch is based on an outdated master
@@ -421,7 +421,7 @@ What `git rebase main` does:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODUyNjY5NjIsMTQ5NTA0MDUyMCwtMz
-cwMzM3ODQ2LDE5Njk3MTMyODAsNDc2NzI5OTM0LC0xNzc1ODMx
-OTE5LC0yMjc1NTE1OF19
+eyJoaXN0b3J5IjpbMTQ2MjkyNjU2MiwtMTk4NTI2Njk2MiwxND
+k1MDQwNTIwLC0zNzAzMzc4NDYsMTk2OTcxMzI4MCw0NzY3Mjk5
+MzQsLTE3NzU4MzE5MTksLTIyNzU1MTU4XX0=
 -->
