@@ -358,9 +358,13 @@ https://github.blog/open-source/git/how-to-undo-almost-anything-with-git/
 `git reset <last good sha>`
 or
 `git reset --hard <last good sha>`
-* preserves the working directory
+* preserves the working directory unless `--hard` is specified
 * removes commits from HEAD back to the specified commit
-* 
+
+### undo `get reset --hard`
+`git reflog` and `git reset` or `git checkout`
+
+`git reflog` shows a history of 
 
 
 
@@ -382,7 +386,7 @@ or
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjgzMjc5MTYsLTM3MDMzNzg0NiwxOT
-Y5NzEzMjgwLDQ3NjcyOTkzNCwtMTc3NTgzMTkxOSwtMjI3NTUx
-NThdfQ==
+eyJoaXN0b3J5IjpbLTkxMDY4MDk4NywtMzcwMzM3ODQ2LDE5Nj
+k3MTMyODAsNDc2NzI5OTM0LC0xNzc1ODMxOTE5LC0yMjc1NTE1
+OF19
 -->
