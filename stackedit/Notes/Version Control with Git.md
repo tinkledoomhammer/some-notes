@@ -372,7 +372,13 @@ or
 
 Options
 * `git reset --hard <SHA>` restores the repo's history
-* `git checkout <SHA> -- <filename>` restores one file from 
+* `git checkout <SHA> -- <filename>` restores one file from a single commit
+* `git cherry-pick <SHA>` will restore exactly one of those commits
+
+### Move changes committed to the wrong branch
+```
+git branch <newbranch>
+
 
 
 
@@ -395,7 +401,7 @@ Options
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzNTM3MDY1OCwtMzcwMzM3ODQ2LDE5Nj
-k3MTMyODAsNDc2NzI5OTM0LC0xNzc1ODMxOTE5LC0yMjc1NTE1
-OF19
+eyJoaXN0b3J5IjpbNDgzMjY3MDM1LC0zNzAzMzc4NDYsMTk2OT
+cxMzI4MCw0NzY3Mjk5MzQsLTE3NzU4MzE5MTksLTIyNzU1MTU4
+XX0=
 -->
