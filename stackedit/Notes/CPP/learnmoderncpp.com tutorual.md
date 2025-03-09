@@ -101,10 +101,27 @@ https://learnmoderncpp.com/2024/01/11/linear-algebra-support-in-c26/
 
 ## Replacing the Preprocessor in Modern C++
 
+https://learnmoderncpp.com/2023/12/29/replacing-the-preprocessor-in-modern-c/
 
+## Modern C++ 101: Refactoring Legacy Code
+
+https://learnmoderncpp.com/2023/12/05/modern-c-101-refactoring-legacy-code/
+
+## Selecting Functions at Runtime
+
+https://learnmoderncpp.com/2023/11/22/selecting-functions-at-runtime/
+
+## Signaling error conditions without exceptions
+
+https://learnmoderncpp.com/2023/10/28/signaling-error-conditions-without-exceptions/
+
+## Selecting Functions at Compile Time
+
+https://learnmoderncpp.com/2023/09/26/selecting-functions-at-compile-time/
+
+## 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTMwNjY4NDEsLTExMjAxMDUyODddfQ
-==
+eyJoaXN0b3J5IjpbMTc0NjA3NTE1NiwtMTEyMDEwNTI4N119
 -->
