@@ -364,7 +364,11 @@ or
 ### undo `get reset --hard`
 `git reflog` and `git reset` or `git checkout`
 
-`git reflog` shows a history of 
+`git reflog` shows a history of when HEAD changed
+* when you switch branches, make commits, and `git reset`
+* does not track `git checkout`
+* "unreachable" commits may be removed eventually
+* `git reflog` is entirely local -- it is not shared with any remot
 
 
 
@@ -386,7 +390,7 @@ or
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMDY4MDk4NywtMzcwMzM3ODQ2LDE5Nj
+eyJoaXN0b3J5IjpbLTY1ODUxMDIzOCwtMzcwMzM3ODQ2LDE5Nj
 k3MTMyODAsNDc2NzI5OTM0LC0xNzc1ODMxOTE5LC0yMjc1NTE1
 OF19
 -->
