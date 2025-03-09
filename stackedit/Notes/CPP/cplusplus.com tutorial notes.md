@@ -1075,17 +1075,18 @@ Classes:
 `.bad()` - returns true if an operation fails
 `.fail()` - returns `true` when `.bad()` returns true and also in the case of format errors
 `.eof()` - `true` when a file open for reading has reached the end of the file
-`.good()` - `false`
+`.good()` - `false` when any of the previous functions are false
+
 
 	
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzNjYxNzE5OCw4NjE0OTEwMjksOTE1NT
-Y0NDYyLDQyMDc0NjIzMCwtODU1MzI1NzM5LC0xNzg0MDk5ODY0
-LDIxMzMyMTkyNjcsLTIwNjY5NzYyOTIsLTEwMjU1NTQ0MzgsLT
-k1MTA1MzU5OSwxMTEwMjkyOTA1LC0xNjQ4NTMxMjgxLC0xMzEx
-Njg4NTExLC03NDkxMzI2MzYsMjA5Njk4ODIyNCwxOTk2MjI1ND
-k3LC0xNjQ5MjgxNzk2LC0xODg0NzE0NTU1LC05OTE0MDcyNCwx
-MTU2NTI3NzM5XX0=
+eyJoaXN0b3J5IjpbMTMyMjIyNjQ4MywxODM2NjE3MTk4LDg2MT
+Q5MTAyOSw5MTU1NjQ0NjIsNDIwNzQ2MjMwLC04NTUzMjU3Mzks
+LTE3ODQwOTk4NjQsMjEzMzIxOTI2NywtMjA2Njk3NjI5MiwtMT
+AyNTU1NDQzOCwtOTUxMDUzNTk5LDExMTAyOTI5MDUsLTE2NDg1
+MzEyODEsLTEzMTE2ODg1MTEsLTc0OTEzMjYzNiwyMDk2OTg4Mj
+I0LDE5OTYyMjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUs
+LTk5MTQwNzI0XX0=
 -->
