@@ -21,9 +21,21 @@ https://www.learncpp.com/
 
 ## 08 - Control Flow
 
-## 09 - Error Detection and Handl
+## 09 - Error Detection and Handling
+
+## 10 - Type Conversion, Type aliases, and Type Detection
+
+## 11 - Function Overloading and Function Templates
+
+## ( F ) constexpr functions
+
+## 12 - Compound Types: References and Pointers
+
+## 13 - Compound Types: Enums and Structs
+
+## 15
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NDM4OTU2MF19
+eyJoaXN0b3J5IjpbLTE5MDk0NTk4NDBdfQ==
 -->
