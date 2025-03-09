@@ -1065,18 +1065,22 @@ Classes:
 	* `ios::trunc` - (output) deletes the file if it already exists
 
 `.close();` method will close the file. The `fstream` can be used to open a different file
+`.is_open()` true if the file is successfully opened
 
 ### Text files
+
 * work like `std::cin`  and `std::cout`
 * `.getline(ifstream, char *)` returns the stream
 * the stream is truthy when the stream is ready for more operations
 
 ### State flag member functions
+
 `.bad()` - returns true if an operation fails
 `.fail()` - returns `true` when `.bad()` returns true and also in the case of format errors
 `.eof()` - `true` when a file open for reading has reached the end of the file
 `.good()` - `false` when any of the previous functions are false
 `.clear()` - reset state flags
+`.is_open()` - true while the file is opened
 
 ### Get and put positions
 * the positions at which the next get or put operation is performed
@@ -1123,12 +1127,12 @@ int main () {
 }
 ```
 
-
+#### Buffers and synchronization
 	
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDQzMTk4MzYsODQ4MDkzMzIwLDE4Mz
+eyJoaXN0b3J5IjpbLTExMDI2MDg3MTAsODQ4MDkzMzIwLDE4Mz
 Y2MTcxOTgsODYxNDkxMDI5LDkxNTU2NDQ2Miw0MjA3NDYyMzAs
 LTg1NTMyNTczOSwtMTc4NDA5OTg2NCwyMTMzMjE5MjY3LC0yMD
 Y2OTc2MjkyLC0xMDI1NTU0NDM4LC05NTEwNTM1OTksMTExMDI5
