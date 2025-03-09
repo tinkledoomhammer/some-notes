@@ -1082,17 +1082,21 @@ Classes:
 * the positions at which the next get or put operation is performed
 `.tellg()` and `.tellp()` return type `streampos`
 `seekg(streampos)` and `seekp(streampos)` - set the positions,
-
+`seekg(streampos, seekdir)` and `seekp...` 
+	* `seekdir` can be one of
+		* `ios::beg` - offset is from the beginning of the stream
+		* `ios::cur` - offset counted from the current position
+		* `ios::end` - offset from the end of the stream
 
 	
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ1MTc4ODk4LDE4MzY2MTcxOTgsODYxND
-kxMDI5LDkxNTU2NDQ2Miw0MjA3NDYyMzAsLTg1NTMyNTczOSwt
-MTc4NDA5OTg2NCwyMTMzMjE5MjY3LC0yMDY2OTc2MjkyLC0xMD
-I1NTU0NDM4LC05NTEwNTM1OTksMTExMDI5MjkwNSwtMTY0ODUz
-MTI4MSwtMTMxMTY4ODUxMSwtNzQ5MTMyNjM2LDIwOTY5ODgyMj
-QsMTk5NjIyNTQ5NywtMTY0OTI4MTc5NiwtMTg4NDcxNDU1NSwt
-OTkxNDA3MjRdfQ==
+eyJoaXN0b3J5IjpbLTE2MDQ0MDg5OTYsMTgzNjYxNzE5OCw4Nj
+E0OTEwMjksOTE1NTY0NDYyLDQyMDc0NjIzMCwtODU1MzI1NzM5
+LC0xNzg0MDk5ODY0LDIxMzMyMTkyNjcsLTIwNjY5NzYyOTIsLT
+EwMjU1NTQ0MzgsLTk1MTA1MzU5OSwxMTEwMjkyOTA1LC0xNjQ4
+NTMxMjgxLC0xMzExNjg4NTExLC03NDkxMzI2MzYsMjA5Njk4OD
+IyNCwxOTk2MjI1NDk3LC0xNjQ5MjgxNzk2LC0xODg0NzE0NTU1
+LC05OTE0MDcyNF19
 -->
