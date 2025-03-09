@@ -33,9 +33,21 @@ https://www.learncpp.com/
 
 ## 13 - Compound Types: Enums and Structs
 
-## 15
+## 14 - Introduction to Classes
+
+## 15 - More on Classes
+
+## 16 - Dynamic arrays : `std::vector`
+
+## 17 - Mixed-size arrays: `std::array` and C-style arrays
+
+## 18 - Iterators and Algorithms (under construction)
+
+## 19 - Dynamic Alocation (under construction)
+
+## 20 - 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDk0NTk4NDBdfQ==
+eyJoaXN0b3J5IjpbLTYxMzg1NzgwMl19
 -->
