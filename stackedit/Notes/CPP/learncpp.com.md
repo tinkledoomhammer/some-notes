@@ -11,9 +11,19 @@ https://www.learncpp.com/
 
 ## 04 - Fundamental Data Types
 
-## 
+## 05 - Constants and Strings
+
+## 06 - Operators
+
+## Optional ( O ) - Bit Manipulation
+
+## 07 - Scope, Duration, and Linkage
+
+## 08 - Control Flow
+
+## 09 - Error Detection and Handl
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMzUyMjEyXX0=
+eyJoaXN0b3J5IjpbLTY3NDM4OTU2MF19
 -->
