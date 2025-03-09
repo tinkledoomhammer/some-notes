@@ -38,6 +38,8 @@ https://learnmoderncpp.com/coding-assignments/
 ## C++ Concurrency 101
 https://learnmoderncpp.com/2024/11/09/c-concurrency-101/
 
+
+
 ## Move Semantics in Modern C++
 
 ### Part 1
@@ -136,6 +138,6 @@ https://learnmoderncpp.com/2023/09/03/concepts-101/
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjQwMzg4MTksLTExMjAxMDUyODddfQ
+eyJoaXN0b3J5IjpbLTE4NjA0MzMwMjMsLTExMjAxMDUyODddfQ
 ==
 -->
