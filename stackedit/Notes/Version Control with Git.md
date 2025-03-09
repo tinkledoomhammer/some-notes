@@ -400,6 +400,9 @@ What `git rebase main` does:
 ### Mass undo/redo
 
 
+### Fix an earlier commmit
+
+### Stop tracking a tracked file
 
 
 
@@ -421,7 +424,7 @@ What `git rebase main` does:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMDQ2MTM3MCwxNDYyOTI2NTYyLC0xOT
+eyJoaXN0b3J5IjpbMTYyMzc5OTg1MCwxNDYyOTI2NTYyLC0xOT
 g1MjY2OTYyLDE0OTUwNDA1MjAsLTM3MDMzNzg0NiwxOTY5NzEz
 MjgwLDQ3NjcyOTkzNCwtMTc3NTgzMTkxOSwtMjI3NTUxNThdfQ
 ==
