@@ -333,7 +333,15 @@ https://git-scm.com/book/en/v2/Git-Tools-Submodules
 		* 
 
 
+# How to undo almost anything
+https://github.blog/open-source/git/how-to-undo-almost-anything-with-git/
 
+### Undo a public change
+* after pushing a bad change or whatnot
+`git revert` 
+* creates a new commit, but keeps the old one
+* Undo with `git revert <sha>`
+* 
 
 
 
@@ -355,6 +363,7 @@ https://git-scm.com/book/en/v2/Git-Tools-Submodules
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MDMzNzg0NiwxOTY5NzEzMjgwLDQ3Nj
-cyOTkzNCwtMTc3NTgzMTkxOSwtMjI3NTUxNThdfQ==
+eyJoaXN0b3J5IjpbODE3NDk4Mjc0LC0zNzAzMzc4NDYsMTk2OT
+cxMzI4MCw0NzY3Mjk5MzQsLTE3NzU4MzE5MTksLTIyNzU1MTU4
+XX0=
 -->
