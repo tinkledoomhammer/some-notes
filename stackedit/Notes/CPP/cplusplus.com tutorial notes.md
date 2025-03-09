@@ -1087,17 +1087,17 @@ Classes:
 		* `ios::beg` - offset is from the beginning of the stream
 		* `ios::cur` - offset counted from the current position
 		* `ios::end` - offset from the end of the stream
-* 
+* `ios::pos_type` is `std
 
 	
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzMTE0ODYyNSwxODM2NjE3MTk4LDg2MT
-Q5MTAyOSw5MTU1NjQ0NjIsNDIwNzQ2MjMwLC04NTUzMjU3Mzks
-LTE3ODQwOTk4NjQsMjEzMzIxOTI2NywtMjA2Njk3NjI5MiwtMT
-AyNTU1NDQzOCwtOTUxMDUzNTk5LDExMTAyOTI5MDUsLTE2NDg1
-MzEyODEsLTEzMTE2ODg1MTEsLTc0OTEzMjYzNiwyMDk2OTg4Mj
-I0LDE5OTYyMjU0OTcsLTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUs
-LTk5MTQwNzI0XX0=
+eyJoaXN0b3J5IjpbLTE5ODY1MDQ3NzAsMTgzNjYxNzE5OCw4Nj
+E0OTEwMjksOTE1NTY0NDYyLDQyMDc0NjIzMCwtODU1MzI1NzM5
+LC0xNzg0MDk5ODY0LDIxMzMyMTkyNjcsLTIwNjY5NzYyOTIsLT
+EwMjU1NTQ0MzgsLTk1MTA1MzU5OSwxMTEwMjkyOTA1LC0xNjQ4
+NTMxMjgxLC0xMzExNjg4NTExLC03NDkxMzI2MzYsMjA5Njk4OD
+IyNCwxOTk2MjI1NDk3LC0xNjQ5MjgxNzk2LC0xODg0NzE0NTU1
+LC05OTE0MDcyNF19
 -->
