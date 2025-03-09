@@ -63,9 +63,17 @@ https://www.learncpp.com/
 
 ## 29 - Input and Output
 
-## 30 - Miscellaneious
+## ( A ) - Miscellaneous
+
+## ( B ) - C++ Updates
+
+## (C) The end?
+
+## (D)  - 21 - STL chapter that is being removed
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ3NTkwMjM1XX0=
+eyJoaXN0b3J5IjpbMTk2NzI5MDA1MV19
 -->
