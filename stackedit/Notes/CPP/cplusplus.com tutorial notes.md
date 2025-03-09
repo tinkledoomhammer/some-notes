@@ -1074,17 +1074,18 @@ Classes:
 ### State flag member functions
 `.bad()` - returns true if an operation fails
 `.fail()` - returns `true` when `.bad()` returns true and also in the case of format errors
-`.eof()` - 
+`.eof()` - `true` when a file open for reading has reached the end of the file
+`.good()` - `false`
 
 	
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NDA0MDA2LDg2MTQ5MTAyOSw5MTU1Nj
-Q0NjIsNDIwNzQ2MjMwLC04NTUzMjU3MzksLTE3ODQwOTk4NjQs
-MjEzMzIxOTI2NywtMjA2Njk3NjI5MiwtMTAyNTU1NDQzOCwtOT
-UxMDUzNTk5LDExMTAyOTI5MDUsLTE2NDg1MzEyODEsLTEzMTE2
-ODg1MTEsLTc0OTEzMjYzNiwyMDk2OTg4MjI0LDE5OTYyMjU0OT
-csLTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUsLTk5MTQwNzI0LDEx
-NTY1Mjc3MzldfQ==
+eyJoaXN0b3J5IjpbMTgzNjYxNzE5OCw4NjE0OTEwMjksOTE1NT
+Y0NDYyLDQyMDc0NjIzMCwtODU1MzI1NzM5LC0xNzg0MDk5ODY0
+LDIxMzMyMTkyNjcsLTIwNjY5NzYyOTIsLTEwMjU1NTQ0MzgsLT
+k1MTA1MzU5OSwxMTEwMjkyOTA1LC0xNjQ4NTMxMjgxLC0xMzEx
+Njg4NTExLC03NDkxMzI2MzYsMjA5Njk4ODIyNCwxOTk2MjI1ND
+k3LC0xNjQ5MjgxNzk2LC0xODg0NzE0NTU1LC05OTE0MDcyNCwx
+MTU2NTI3NzM5XX0=
 -->
