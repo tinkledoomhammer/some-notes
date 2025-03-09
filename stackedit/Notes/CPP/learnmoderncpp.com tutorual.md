@@ -47,9 +47,12 @@ See Also: https://learnmoderncpp.com/2022/06/30/c-coroutines-primer-1/
 void f(){ /* */}
 int main() {
 	std::thread t(f);
-	//The program term
+	//The program terminates immediately with an error message
+		//The error is because there is still a running thread
+		//
 }
 ```
+
 
 
 ## Move Semantics in Modern C++
@@ -150,5 +153,5 @@ https://learnmoderncpp.com/2023/09/03/concepts-101/
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NDE1MTEzNSwtMTEyMDEwNTI4N119
+eyJoaXN0b3J5IjpbLTU2NDg0ODI4NiwtMTEyMDEwNTI4N119
 -->
