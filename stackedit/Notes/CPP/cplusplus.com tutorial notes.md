@@ -1128,15 +1128,21 @@ int main () {
 ```
 
 #### Buffers and synchronization
+Synchronization occurs when:
+* the file is closed
+* When the buffer is full
+* explicitly with the manipulators:`flush` end `endl`
+* Explicitly with member function `sync()`
+	* 
 	
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDI2MDg3MTAsODQ4MDkzMzIwLDE4Mz
-Y2MTcxOTgsODYxNDkxMDI5LDkxNTU2NDQ2Miw0MjA3NDYyMzAs
-LTg1NTMyNTczOSwtMTc4NDA5OTg2NCwyMTMzMjE5MjY3LC0yMD
-Y2OTc2MjkyLC0xMDI1NTU0NDM4LC05NTEwNTM1OTksMTExMDI5
-MjkwNSwtMTY0ODUzMTI4MSwtMTMxMTY4ODUxMSwtNzQ5MTMyNj
-M2LDIwOTY5ODgyMjQsMTk5NjIyNTQ5NywtMTY0OTI4MTc5Niwt
-MTg4NDcxNDU1NV19
+eyJoaXN0b3J5IjpbNDI5MDAyMDEwLDg0ODA5MzMyMCwxODM2Nj
+E3MTk4LDg2MTQ5MTAyOSw5MTU1NjQ0NjIsNDIwNzQ2MjMwLC04
+NTUzMjU3MzksLTE3ODQwOTk4NjQsMjEzMzIxOTI2NywtMjA2Nj
+k3NjI5MiwtMTAyNTU1NDQzOCwtOTUxMDUzNTk5LDExMTAyOTI5
+MDUsLTE2NDg1MzEyODEsLTEzMTE2ODg1MTEsLTc0OTEzMjYzNi
+wyMDk2OTg4MjI0LDE5OTYyMjU0OTcsLTE2NDkyODE3OTYsLTE4
+ODQ3MTQ1NTVdfQ==
 -->
