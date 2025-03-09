@@ -7,6 +7,9 @@ The C++20 version is at https://github.com/cpp-tutor/learnmoderncpp-tutorial/tre
 There are also articles on the site such as 
 [C++ Concurrency 101](https://learnmoderncpp.com/2024/11/09/c-concurrency-101/#more-2785)
 
+## Code Assignments for each chapter
+https://learnmoderncpp.com/coding-assignments/
+
 
 ## 00 - About the tutorial
 
@@ -133,5 +136,6 @@ https://learnmoderncpp.com/2023/09/03/concepts-101/
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2MjEzMDU5NiwtMTEyMDEwNTI4N119
+eyJoaXN0b3J5IjpbLTE2NjQwMzg4MTksLTExMjAxMDUyODddfQ
+==
 -->
