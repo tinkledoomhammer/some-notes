@@ -1049,17 +1049,24 @@ Macro | Value
 
 
 ## C++ Standard Library (File I/O)
-
+### Opening a file
+`open (filename, mode)`
+Modes:
+	* `ios::in`
+	* `ios::out`
+	* `ios::binary`
+	* `ios::ate` - sets the initial position to the end of the file
+	* `ios::app` - all output 
 
 	
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYxNDkxMDI5LDkxNTU2NDQ2Miw0MjA3ND
-YyMzAsLTg1NTMyNTczOSwtMTc4NDA5OTg2NCwyMTMzMjE5MjY3
-LC0yMDY2OTc2MjkyLC0xMDI1NTU0NDM4LC05NTEwNTM1OTksMT
-ExMDI5MjkwNSwtMTY0ODUzMTI4MSwtMTMxMTY4ODUxMSwtNzQ5
-MTMyNjM2LDIwOTY5ODgyMjQsMTk5NjIyNTQ5NywtMTY0OTI4MT
-c5NiwtMTg4NDcxNDU1NSwtOTkxNDA3MjQsMTE1NjUyNzczOSwx
-NTI5MjE1OTM4XX0=
+eyJoaXN0b3J5IjpbNzI4ODIzODgwLDg2MTQ5MTAyOSw5MTU1Nj
+Q0NjIsNDIwNzQ2MjMwLC04NTUzMjU3MzksLTE3ODQwOTk4NjQs
+MjEzMzIxOTI2NywtMjA2Njk3NjI5MiwtMTAyNTU1NDQzOCwtOT
+UxMDUzNTk5LDExMTAyOTI5MDUsLTE2NDg1MzEyODEsLTEzMTE2
+ODg1MTEsLTc0OTEzMjYzNiwyMDk2OTg4MjI0LDE5OTYyMjU0OT
+csLTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUsLTk5MTQwNzI0LDEx
+NTY1Mjc3MzldfQ==
 -->
