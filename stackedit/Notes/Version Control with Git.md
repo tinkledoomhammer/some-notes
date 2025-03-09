@@ -341,7 +341,15 @@ https://github.blog/open-source/git/how-to-undo-almost-anything-with-git/
 `git revert` 
 * creates a new commit, but keeps the old one
 * Undo with `git revert <sha>`
-* 
+
+### Fix the last commit message
+`git commit --amend`
+* If there are staged changes then they will be added
+* If there are no staged changes, then only the message is changed
+
+### Undo local changes
+`git checkout -- <bad filename>`
+
 
 
 
@@ -363,7 +371,7 @@ https://github.blog/open-source/git/how-to-undo-almost-anything-with-git/
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE3NDk4Mjc0LC0zNzAzMzc4NDYsMTk2OT
-cxMzI4MCw0NzY3Mjk5MzQsLTE3NzU4MzE5MTksLTIyNzU1MTU4
-XX0=
+eyJoaXN0b3J5IjpbLTE4NzI3MDA1ODIsLTM3MDMzNzg0NiwxOT
+Y5NzEzMjgwLDQ3NjcyOTkzNCwtMTc3NTgzMTkxOSwtMjI3NTUx
+NThdfQ==
 -->
