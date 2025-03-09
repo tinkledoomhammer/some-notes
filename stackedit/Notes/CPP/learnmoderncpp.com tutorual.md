@@ -49,10 +49,13 @@ int main() {
 	std::thread t(f);
 	//The program terminates immediately with an error message
 		//The error is because there is still a running thread
-		//
+		//Exiting the program with an active thread calls 
+		//`std::terminate` which should usually be avoided
 }
 ```
 
+* instead calling `t.join();` will cause the main thread wait for `t` to terminate
+* 
 
 
 ## Move Semantics in Modern C++
@@ -153,5 +156,5 @@ https://learnmoderncpp.com/2023/09/03/concepts-101/
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2NDg0ODI4NiwtMTEyMDEwNTI4N119
+eyJoaXN0b3J5IjpbMTQwNzk2NDI3MCwtMTEyMDEwNTI4N119
 -->
