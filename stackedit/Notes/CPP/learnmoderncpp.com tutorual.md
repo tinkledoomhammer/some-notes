@@ -36,10 +36,20 @@ https://learnmoderncpp.com/coding-assignments/
 # Other Articles on the site
 
 ## C++ Concurrency 101
+
 https://learnmoderncpp.com/2024/11/09/c-concurrency-101/
 See Also: https://learnmoderncpp.com/2022/06/30/c-coroutines-primer-1/
 
+`std::thread` from `<thread>`
 
+```c++
+#include <thread>
+void f(){ /* */}
+int main() {
+	std::thread t(f);
+	//The program term
+}
+```
 
 
 ## Move Semantics in Modern C++
@@ -140,5 +150,5 @@ https://learnmoderncpp.com/2023/09/03/concepts-101/
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MDM5NDM5NiwtMTEyMDEwNTI4N119
+eyJoaXN0b3J5IjpbMTU4NDE1MTEzNSwtMTEyMDEwNTI4N119
 -->
