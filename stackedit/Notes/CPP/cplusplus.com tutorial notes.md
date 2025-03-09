@@ -222,6 +222,8 @@ Level | Group | Operator | Description | Grouping|
 	* can be chained i.e. `cin >> x >> y`
 * `cin` with strings
 	* to obtain strings with whitespace, use `getline(cin, mystr)`
+		* It returns the stream (`cin`)
+		* it is truthy when the stream is ready for more operations
 * `std::stringstream(str)` from `<sstream>`
 	* returns a stream from a string
 	* using this with `getline()` is a good way to accept console input
@@ -1066,7 +1068,7 @@ Classes:
 
 ### Text files
 * work like `std::cin`  and `std::cout`
-* `.getline(char *)` returns the stream
+* `.getline(ifstchar *)` returns the stream
 * the stream is truthy when the stream is ready for more operations
 
 
@@ -1075,7 +1077,7 @@ Classes:
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDc5NDk0ODQsODYxNDkxMDI5LDkxNT
+eyJoaXN0b3J5IjpbLTEzOTM5NzEwNzEsODYxNDkxMDI5LDkxNT
 U2NDQ2Miw0MjA3NDYyMzAsLTg1NTMyNTczOSwtMTc4NDA5OTg2
 NCwyMTMzMjE5MjY3LC0yMDY2OTc2MjkyLC0xMDI1NTU0NDM4LC
 05NTEwNTM1OTksMTExMDI5MjkwNSwtMTY0ODUzMTI4MSwtMTMx
