@@ -1133,16 +1133,17 @@ Synchronization occurs when:
 * When the buffer is full
 * explicitly with the manipulators:`flush` end `endl`
 * Explicitly with member function `sync()`
-	* 
+	* `.sync()` returns `0` on success, and `-1` in case of failure
+* 
 	
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI5MDAyMDEwLDg0ODA5MzMyMCwxODM2Nj
-E3MTk4LDg2MTQ5MTAyOSw5MTU1NjQ0NjIsNDIwNzQ2MjMwLC04
-NTUzMjU3MzksLTE3ODQwOTk4NjQsMjEzMzIxOTI2NywtMjA2Nj
-k3NjI5MiwtMTAyNTU1NDQzOCwtOTUxMDUzNTk5LDExMTAyOTI5
-MDUsLTE2NDg1MzEyODEsLTEzMTE2ODg1MTEsLTc0OTEzMjYzNi
-wyMDk2OTg4MjI0LDE5OTYyMjU0OTcsLTE2NDkyODE3OTYsLTE4
-ODQ3MTQ1NTVdfQ==
+eyJoaXN0b3J5IjpbLTY3ODM2ODg3NCw4NDgwOTMzMjAsMTgzNj
+YxNzE5OCw4NjE0OTEwMjksOTE1NTY0NDYyLDQyMDc0NjIzMCwt
+ODU1MzI1NzM5LC0xNzg0MDk5ODY0LDIxMzMyMTkyNjcsLTIwNj
+Y5NzYyOTIsLTEwMjU1NTQ0MzgsLTk1MTA1MzU5OSwxMTEwMjky
+OTA1LC0xNjQ4NTMxMjgxLC0xMzExNjg4NTExLC03NDkxMzI2Mz
+YsMjA5Njk4ODIyNCwxOTk2MjI1NDk3LC0xNjQ5MjgxNzk2LC0x
+ODg0NzE0NTU1XX0=
 -->
