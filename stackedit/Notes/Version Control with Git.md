@@ -387,7 +387,13 @@ Three steps:
 ### Rebase some commits to a more recent master/head
 i.e. you make a bunch of commits on a branch but when it comes time to push, your branch is based on an outdated master
 You would prefer for your branch to be based on the current master
-`git checkout <featureBranch>` then `g
+`git checkout <featureBranch>` then `git rebase master`
+
+Alternatively, to lose the commit history and collapse the branch into a single commit
+	`git checkout -b <featureBranch>` and then commit the new changes
+What `git rebase main` does:
+* locates the common ancestor between the current check out and `main`
+* resets resets the current branch to that
 
 
 
@@ -411,7 +417,7 @@ You would prefer for your branch to be based on the current master
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTc4MTUwOTAsMTQ5NTA0MDUyMCwtMz
-cwMzM3ODQ2LDE5Njk3MTMyODAsNDc2NzI5OTM0LC0xNzc1ODMx
-OTE5LC0yMjc1NTE1OF19
+eyJoaXN0b3J5IjpbMTAyMDE4MzM5OCwxNDk1MDQwNTIwLC0zNz
+AzMzc4NDYsMTk2OTcxMzI4MCw0NzY3Mjk5MzQsLTE3NzU4MzE5
+MTksLTIyNzU1MTU4XX0=
 -->
