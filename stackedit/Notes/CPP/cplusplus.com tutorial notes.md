@@ -1051,7 +1051,7 @@ Macro | Value
 ## C++ Standard Library (File I/O)
 ### Opening a file
 Classes:
-`ofstream`, `ifstream` , `fstream` from `<fstream>`
+`std::ofstream`, `ifstream` , `fstream` from `<fstream>`
 
 `.open (filename, mode);` method will open a file
 * Modes:
@@ -1064,7 +1064,10 @@ Classes:
 
 `.close();` method will close the file. The `fstream` can be used to open a different file
 
-### 
+### Text files
+* work like `std::cin`  and `std::cout`
+* `.getline(char *)` returns the stream
+* the stream is truthy when the stream is ready for more operations
 
 
 
@@ -1072,11 +1075,11 @@ Classes:
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ0MjM4OTY1LDg2MTQ5MTAyOSw5MTU1Nj
-Q0NjIsNDIwNzQ2MjMwLC04NTUzMjU3MzksLTE3ODQwOTk4NjQs
-MjEzMzIxOTI2NywtMjA2Njk3NjI5MiwtMTAyNTU1NDQzOCwtOT
-UxMDUzNTk5LDExMTAyOTI5MDUsLTE2NDg1MzEyODEsLTEzMTE2
-ODg1MTEsLTc0OTEzMjYzNiwyMDk2OTg4MjI0LDE5OTYyMjU0OT
-csLTE2NDkyODE3OTYsLTE4ODQ3MTQ1NTUsLTk5MTQwNzI0LDEx
-NTY1Mjc3MzldfQ==
+eyJoaXN0b3J5IjpbLTExNDc5NDk0ODQsODYxNDkxMDI5LDkxNT
+U2NDQ2Miw0MjA3NDYyMzAsLTg1NTMyNTczOSwtMTc4NDA5OTg2
+NCwyMTMzMjE5MjY3LC0yMDY2OTc2MjkyLC0xMDI1NTU0NDM4LC
+05NTEwNTM1OTksMTExMDI5MjkwNSwtMTY0ODUzMTI4MSwtMTMx
+MTY4ODUxMSwtNzQ5MTMyNjM2LDIwOTY5ODgyMjQsMTk5NjIyNT
+Q5NywtMTY0OTI4MTc5NiwtMTg4NDcxNDU1NSwtOTkxNDA3MjQs
+MTE1NjUyNzczOV19
 -->
