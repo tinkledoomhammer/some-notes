@@ -1050,9 +1050,12 @@ Macro | Value
 
 ## C++ Standard Library (File I/O)
 ### Opening a file
-`open (filename, mode)`
+Classes:
+`ofstream`, `ifstream` , `fstream` from `<fstream>`
+
+`.open (filename, mode)` method will open a file
 Modes:
-	* `ios::in`
+	* `ios::in` - default for 
 	* `ios::out`
 	* `ios::binary`
 	* `ios::ate` - sets the initial position to the end of the file
@@ -1064,7 +1067,7 @@ Modes:
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMDMyMjY3Nyw4NjE0OTEwMjksOTE1NT
+eyJoaXN0b3J5IjpbLTY2ODMyMjE3Niw4NjE0OTEwMjksOTE1NT
 Y0NDYyLDQyMDc0NjIzMCwtODU1MzI1NzM5LC0xNzg0MDk5ODY0
 LDIxMzMyMTkyNjcsLTIwNjY5NzYyOTIsLTEwMjU1NTQ0MzgsLT
 k1MTA1MzU5OSwxMTEwMjkyOTA1LC0xNjQ4NTMxMjgxLC0xMzEx
