@@ -1,5 +1,10 @@
 
 #  https://learnmoderncpp.com/ tutorial
+https://learnmoderncpp.com/
+
+The C++20 version is at https://github.com/cpp-tutor/learnmoderncpp-tutorial/tree/v1.0-C%2B%2B20
+
+There are also articles on the site 
 
 ## 00 - About the tutorial
 
@@ -28,5 +33,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NDc0MDU4XX0=
+eyJoaXN0b3J5IjpbMzQzOTYwNjcwXX0=
 -->
