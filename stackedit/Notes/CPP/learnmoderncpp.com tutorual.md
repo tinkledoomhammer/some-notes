@@ -33,13 +33,13 @@ There are also articles on the site such as
 # Misc Interesting / important
 
 ## C++ Concurrency 101
-https://learnmoderncpp.com/2024/11/09/c-concurrency-101/#more-2785
+https://learnmoderncpp.com/2024/11/09/c-concurrency-101/
 
 ## Move Semantics in Modern C++
 
 ### Part 1
 
-https://learnmoderncpp.com/2025/01/07/move-semantics-in-modern-c-1/#more-2885
+https://learnmoderncpp.com/2025/01/07/move-semantics-in-modern-c-1/
 
 ### Part 2
 
@@ -49,12 +49,25 @@ https://learnmoderncpp.com/2025/02/01/move-semantics-in-modern-c-2/
 
 https://learnmoderncpp.com/2025/03/01/move-semantics-in-modern-c-3/
 
-##
+## Operator Overloading
+
+### Part 1
+
+https://learnmoderncpp.com/2024/11/28/operator-overloading-in-modern-c-1/
+
+## When to use `std::string_view`
+
+https://learnmoderncpp.com/2024/10/29/when-to-use-stdstring_view/
+
+## Making Algorithms faster
+
+https://learnmoderncpp.com/2024/10/12/making-algorithms-faster/
+
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjgzMjc2NTAsLTExMjAxMDUyODddfQ
-==
+eyJoaXN0b3J5IjpbMjQwMzAxNDk1LC0xMTIwMTA1Mjg3XX0=
 -->
