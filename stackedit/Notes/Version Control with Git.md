@@ -376,12 +376,16 @@ Options
 * `git cherry-pick <SHA>` will restore exactly one of those commits
 
 ### Move changes committed to the wrong branch
+Three steps:
 `git branch <newbranch>`
 * creates the new branch, but keeps head pointed to master
 `git reset --hard`
 * rewinds `master` back to `origin/master`
 `git checkout`
 *switches to the new branch
+
+### Rebase some commits to a more recent master/head
+
 
 
 
@@ -405,7 +409,7 @@ Options
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjk5OTk2ODksLTM3MDMzNzg0NiwxOT
-Y5NzEzMjgwLDQ3NjcyOTkzNCwtMTc3NTgzMTkxOSwtMjI3NTUx
-NThdfQ==
+eyJoaXN0b3J5IjpbMTQ5NTA0MDUyMCwtMzcwMzM3ODQ2LDE5Nj
+k3MTMyODAsNDc2NzI5OTM0LC0xNzc1ODMxOTE5LC0yMjc1NTE1
+OF19
 -->
