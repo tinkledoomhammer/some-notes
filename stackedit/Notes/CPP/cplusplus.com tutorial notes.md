@@ -1068,20 +1068,21 @@ Classes:
 
 ### Text files
 * work like `std::cin`  and `std::cout`
-* `.getline(ifstchar *)` returns the stream
+* `.getline(ifstream, char *)` returns the stream
 * the stream is truthy when the stream is ready for more operations
 
-
+### State flag member functions
+`bad()` 
 
 	
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTM5NzEwNzEsODYxNDkxMDI5LDkxNT
-U2NDQ2Miw0MjA3NDYyMzAsLTg1NTMyNTczOSwtMTc4NDA5OTg2
-NCwyMTMzMjE5MjY3LC0yMDY2OTc2MjkyLC0xMDI1NTU0NDM4LC
-05NTEwNTM1OTksMTExMDI5MjkwNSwtMTY0ODUzMTI4MSwtMTMx
-MTY4ODUxMSwtNzQ5MTMyNjM2LDIwOTY5ODgyMjQsMTk5NjIyNT
-Q5NywtMTY0OTI4MTc5NiwtMTg4NDcxNDU1NSwtOTkxNDA3MjQs
-MTE1NjUyNzczOV19
+eyJoaXN0b3J5IjpbMTgyMzcyMDI2NSw4NjE0OTEwMjksOTE1NT
+Y0NDYyLDQyMDc0NjIzMCwtODU1MzI1NzM5LC0xNzg0MDk5ODY0
+LDIxMzMyMTkyNjcsLTIwNjY5NzYyOTIsLTEwMjU1NTQ0MzgsLT
+k1MTA1MzU5OSwxMTEwMjkyOTA1LC0xNjQ4NTMxMjgxLC0xMzEx
+Njg4NTExLC03NDkxMzI2MzYsMjA5Njk4ODIyNCwxOTk2MjI1ND
+k3LC0xNjQ5MjgxNzk2LC0xODg0NzE0NTU1LC05OTE0MDcyNCwx
+MTU2NTI3NzM5XX0=
 -->
