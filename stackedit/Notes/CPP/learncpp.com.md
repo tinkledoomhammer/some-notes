@@ -1,6 +1,7 @@
 # Tutorial series from https://www.learncpp.com/
 https://www.learncpp.com/
 
+... the site has nasty adds ...
 
 
 ## 00 - Introduction / Getting Started
@@ -77,5 +78,5 @@ https://www.learncpp.com/
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ2ODYyMTgzLDE5NjcyOTAwNTFdfQ==
+eyJoaXN0b3J5IjpbLTIwMzM3NjQzNzgsMTk2NzI5MDA1MV19
 -->
