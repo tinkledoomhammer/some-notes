@@ -309,7 +309,7 @@ Dealing with Conflicts
 * `~3^2` is the second parent of the first great-grand-parent.
 
 
-### Submodules
+# Submodules
 https://git-scm.com/book/en/v2/Git-Tools-Submodules
 
 * Adding a submodule to an existing project
@@ -421,7 +421,8 @@ What `git rebase main` does:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MjA1NjA2LDE0NjI5MjY1NjIsLTE5OD
-UyNjY5NjIsMTQ5NTA0MDUyMCwtMzcwMzM3ODQ2LDE5Njk3MTMy
-ODAsNDc2NzI5OTM0LC0xNzc1ODMxOTE5LC0yMjc1NTE1OF19
+eyJoaXN0b3J5IjpbMTgwMDQ2MTM3MCwxNDYyOTI2NTYyLC0xOT
+g1MjY2OTYyLDE0OTUwNDA1MjAsLTM3MDMzNzg0NiwxOTY5NzEz
+MjgwLDQ3NjcyOTkzNCwtMTc3NTgzMTkxOSwtMjI3NTUxNThdfQ
+==
 -->
