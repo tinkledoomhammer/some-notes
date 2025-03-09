@@ -393,7 +393,11 @@ Alternatively, to lose the commit history and collapse the branch into a single 
 	`git checkout -b <featureBranch>` and then commit the new changes
 What `git rebase main` does:
 * locates the common ancestor between the current check out and `main`
-* resets resets the current branch to that
+* resets resets the current branch to that common ancestor
+	* saves the disconnected commits in a temporary holding area
+* then advances the currently-checked out branch of master, and replays the commits from the holding area after `main`'s last commit
+
+### Mass undo/redo
 
 
 
@@ -417,7 +421,7 @@ What `git rebase main` does:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyMDE4MzM5OCwxNDk1MDQwNTIwLC0zNz
-AzMzc4NDYsMTk2OTcxMzI4MCw0NzY3Mjk5MzQsLTE3NzU4MzE5
-MTksLTIyNzU1MTU4XX0=
+eyJoaXN0b3J5IjpbLTE5ODUyNjY5NjIsMTQ5NTA0MDUyMCwtMz
+cwMzM3ODQ2LDE5Njk3MTMyODAsNDc2NzI5OTM0LC0xNzc1ODMx
+OTE5LC0yMjc1NTE1OF19
 -->
