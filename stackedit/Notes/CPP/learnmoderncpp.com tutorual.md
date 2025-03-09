@@ -30,16 +30,31 @@ There are also articles on the site such as
 
 ## 10 - Templates, Exceptions, Lambdas, Smart Pointers
 
-## Misc Interresting/important
+# Misc Interesting / important
 
-### C++ Concurrency 101
+## C++ Concurrency 101
 https://learnmoderncpp.com/2024/11/09/c-concurrency-101/#more-2785
 
-### Move Semantics in Modern C__
+## Move Semantics in Modern C++
+
+### Part 1
+
+https://learnmoderncpp.com/2025/01/07/move-semantics-in-modern-c-1/#more-2885
+
+### Part 2
+
+https://learnmoderncpp.com/2025/02/01/move-semantics-in-modern-c-2/
+
+### Part 3
+
+https://learnmoderncpp.com/2025/03/01/move-semantics-in-modern-c-3/
+
+##
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzczMjAyMDI4LC0xMTIwMTA1Mjg3XX0=
+eyJoaXN0b3J5IjpbLTE0MjgzMjc2NTAsLTExMjAxMDUyODddfQ
+==
 -->
