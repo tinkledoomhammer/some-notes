@@ -506,7 +506,11 @@ Godot's built-in functions conform roughly with GLSL ES 3.0
 * Only uused in documentation to reduce repetitive declarations
 * If they are specified for multiple parameters, then in most cases each instance of the alias must refer to the same type
 
-Godot Alias | Actual types 
+Godot Alias | Actual types | glsl documentation alias
+--|--|--
+`vec_type` | `float` `vec2`, vec3, vec4 | `genType`
+`vec_int_type` | int, ivec2, ivec3, ivec3 | `genlType`
+`vec_uint_type` | uint, uvec2, uvec3, uv3c4
 
 ## Shader preprocessor
 
@@ -531,7 +535,7 @@ Godot Alias | Actual types
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTMzMDM2MjUsLTE5Mzk0MjczMDksLT
-g1NDIxODg1NCwtMTAyNzQ4NTg5MCw0OTIyNjM5NTIsLTMxMzU1
-MTczNywtMTk3OTMwOTAzMV19
+eyJoaXN0b3J5IjpbNjI1MDcwNjI0LC0xOTM5NDI3MzA5LC04NT
+QyMTg4NTQsLTEwMjc0ODU4OTAsNDkyMjYzOTUyLC0zMTM1NTE3
+MzcsLTE5NzkzMDkwMzFdfQ==
 -->
