@@ -436,11 +436,14 @@ uniform int u2;
 * They can be changed at run time:
 	* `RenderingServer.global_shader_parameter_set("my_color", Color(0.3, 0.6, 1.0))`
 
-```
-RenderingServer.global_shader_parameter_add("my_color",  				RenderingServer.GLOBAL_VAR_TYPE_COLOR,  Color(0.3,  0.6,  1.0))
+```python
+RenderingServer.global_shader_parameter_add("my_color",
+		RenderingServer.GLOBAL_VAR_TYPE_COLOR,
+		Color(0.3,  0.6,  1.0)
+	)
 RenderingServer.global_shader_parameter_remove("my_color")
 ```
-
+* Setting uniforms is low cost. Querying, adding and removing them is expensive
 ### Built-in variables
 
 
@@ -471,5 +474,5 @@ RenderingServer.global_shader_parameter_remove("my_color")
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNDY1ODA2NiwtMTk3OTMwOTAzMV19
+eyJoaXN0b3J5IjpbMTY2MTQ4NzYzMCwtMTk3OTMwOTAzMV19
 -->
