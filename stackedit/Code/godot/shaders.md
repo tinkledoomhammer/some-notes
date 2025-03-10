@@ -483,6 +483,9 @@ RenderingServer.global_shader_parameter_remove("my_color")
 `material.set_shader_parameter("some_Value", <value>);`
 * the first argument must match the shader script exactly
 * If there is a type mismatch, then no error will be thrown
+* Shaders are limited to 64KoB in size, or 16KiB on mobile
+	* bool is padded
+	* the contents do not count -- only use the size of the sampler
 
 ### Built-in variables
 
@@ -515,7 +518,7 @@ RenderingServer.global_shader_parameter_remove("my_color")
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAyMTA5MTYxLC04NTQyMTg4NTQsLTEwMj
-c0ODU4OTAsNDkyMjYzOTUyLC0zMTM1NTE3MzcsLTE5NzkzMDkw
-MzFdfQ==
+eyJoaXN0b3J5IjpbMjA4NzI4MzEzNiwtODU0MjE4ODU0LC0xMD
+I3NDg1ODkwLDQ5MjI2Mzk1MiwtMzEzNTUxNzM3LC0xOTc5MzA5
+MDMxXX0=
 -->
