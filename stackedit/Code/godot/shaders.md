@@ -480,7 +480,9 @@ RenderingServer.global_shader_parameter_remove("my_color")
 		* `instance uniform vec4 my_color : source_color, instance_index(5);`
 
 # Setting uniforms in GDScript
-`material.set_shader_parameter("some_Valu
+`material.set_shader_parameter("some_Value", <value>);`
+* the first argument must match the shader script exactly
+* If there is a type mismatch, then no error will be thrown
 
 ### Built-in variables
 
@@ -513,7 +515,7 @@ RenderingServer.global_shader_parameter_remove("my_color")
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg3OTMyMTI3LC04NTQyMTg4NTQsLTEwMj
+eyJoaXN0b3J5IjpbNDAyMTA5MTYxLC04NTQyMTg4NTQsLTEwMj
 c0ODU4OTAsNDkyMjYzOTUyLC0zMTM1NTE3MzcsLTE5NzkzMDkw
 MzFdfQ==
 -->
