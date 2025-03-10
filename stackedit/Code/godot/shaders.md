@@ -504,8 +504,11 @@ https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shader
 https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shader_functions.html
 
 Godot's built-in functions conform roughly with GLSL ES 3.0
+* Unless otherwise specified, vector and matrix operations are component-wise
+	* i.e. `sqrt(vec2(4,64))` is the same as `vec2(sqt(4), sqrt(64))`
+
 ### Type aliases
-* Only uused in documentation to reduce repetitive declarations
+* Only used in documentation to reduce repetitive declarations
 * If they are specified for multiple parameters, then in most cases each instance of the alias must refer to the same type
 
 Godot Alias | Actual types | glsl documentation alias
@@ -521,6 +524,8 @@ Godot Alias | Actual types | glsl documentation alias
 `gsampler3D` | sampler3D, isampler3D, uSampler3D | `gsampler3D`
 
 * It looks like `uSampler3D` etc are typos?
+
+### 
 
 ## Shader preprocessor
 
@@ -545,7 +550,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0NDk5MjM4NSwtMTkzOTQyNzMwOSwtOD
-U0MjE4ODU0LC0xMDI3NDg1ODkwLDQ5MjI2Mzk1MiwtMzEzNTUx
-NzM3LC0xOTc5MzA5MDMxXX0=
+eyJoaXN0b3J5IjpbLTE0ODM2NDU5MzgsLTE5Mzk0MjczMDksLT
+g1NDIxODg1NCwtMTAyNzQ4NTg5MCw0OTIyNjM5NTIsLTMxMzU1
+MTczNywtMTk3OTMwOTAzMV19
 -->
