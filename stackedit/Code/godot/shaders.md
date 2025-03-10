@@ -450,6 +450,9 @@ RenderingServer.global_shader_parameter_remove("my_color")
 * Only available in `spatial` shaders
 * Used to share materials between non-identical instances
 * They are set on a `GeometryInstance3D` rather than the material
+* `instance uniform vec4 my_color : source_color = vec4(...);`
+* They can be set in the inspector for each instance
+
 ### Built-in variables
 
 
@@ -480,5 +483,5 @@ RenderingServer.global_shader_parameter_remove("my_color")
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MjQyMjU3LC0xOTc5MzA5MDMxXX0=
+eyJoaXN0b3J5IjpbMTU2ODgyMDQ0NywtMTk3OTMwOTAzMV19
 -->
