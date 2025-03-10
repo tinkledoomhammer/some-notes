@@ -515,8 +515,8 @@ Godot Alias | Actual types | glsl documentation alias
 `mat_type` | mat2, mat3, mat4 | `genBType` 
 `gvec4_type` | vec4, ivec4, or uvec4 | `gvec4`
 `gsampler2D` | sampler2D, isampler2D, uSampler2D | `gsampler2D`
-`gasmpler2DArray` | sampler2DArray, isampler2DArray, or uSampler2DArray | `gaampler2DArray`
-`gasmpler
+`gasmpler2DArray` | sampler2DArray, isampler2DArray, or uSampler2DArray | `gsampler2DArray`
+`gsampler3D` | sampler3D, isampler3D, uSampler3D | `gsampler3D`
 
 ## Shader preprocessor
 
@@ -541,7 +541,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk3ODQ3Njc4LC0xOTM5NDI3MzA5LC04NT
-QyMTg4NTQsLTEwMjc0ODU4OTAsNDkyMjYzOTUyLC0zMTM1NTE3
-MzcsLTE5NzkzMDkwMzFdfQ==
+eyJoaXN0b3J5IjpbLTEwMDE2MDczNjYsLTE5Mzk0MjczMDksLT
+g1NDIxODg1NCwtMTAyNzQ4NTg5MCw0OTIyNjM5NTIsLTMxMzU1
+MTczNywtMTk3OTMwOTAzMV19
 -->
