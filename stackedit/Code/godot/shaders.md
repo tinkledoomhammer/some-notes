@@ -542,7 +542,8 @@ Godot Alias | Actual types | glsl documentation alias
 * `vec_type asinh(vec_type x)`
 * `vec_type acosh(vec_type x)`
 * `vec_type atanh(vec_type x)`
-
+* These functions take and return radians for angle
+* 
 
 ## Shader preprocessor
 
@@ -567,7 +568,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTgxNDUzMzgsLTE5Mzk0MjczMDksLT
-g1NDIxODg1NCwtMTAyNzQ4NTg5MCw0OTIyNjM5NTIsLTMxMzU1
-MTczNywtMTk3OTMwOTAzMV19
+eyJoaXN0b3J5IjpbMjY4ODc0Njg2LC0xOTM5NDI3MzA5LC04NT
+QyMTg4NTQsLTEwMjc0ODU4OTAsNDkyMjYzOTUyLC0zMTM1NTE3
+MzcsLTE5NzkzMDkwMzFdfQ==
 -->
