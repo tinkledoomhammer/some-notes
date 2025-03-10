@@ -4,7 +4,7 @@
 `SCREEN_UV` = vec2 with screen coordinates in [0,1]
 `TIME` = time in seconds since the engine started
 ### Sampling the screen
-```hlsl
+```glsl
 uniform sampler2D SCREEN_TEXTURE : hint_screen_texture, filter_linear_mipmap;
 
 void fragment(){
@@ -57,7 +57,7 @@ Specified on the second line:
 https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shading_language.html
 
 Comments
-```c++
+```glsl
 // comment to end of line
 /* part of a line */
 /* 	multi
@@ -527,7 +527,7 @@ Godot's built-in functions conform roughly with GLSL ES 3.0
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3Mjk2OTU1MSwtODU0MjE4ODU0LC0xMD
-I3NDg1ODkwLDQ5MjI2Mzk1MiwtMzEzNTUxNzM3LC0xOTc5MzA5
-MDMxXX0=
+eyJoaXN0b3J5IjpbLTE5Mzk0MjczMDksLTg1NDIxODg1NCwtMT
+AyNzQ4NTg5MCw0OTIyNjM5NTIsLTMxMzU1MTczNywtMTk3OTMw
+OTAzMV19
 -->
