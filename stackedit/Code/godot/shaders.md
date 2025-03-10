@@ -72,13 +72,16 @@ Comments
 * `bvec2` - two component of booleans
 	* `bvec3` `bvec4`
 	* In GDscript: bitwise packed `int`
-* `int` - 32-bit signed scalar integer -- a
+* `int` - 32-bit signed scalar integer -- also `int` in gdscript
 * `ivec2` - two component, signed int
 	* `ivec3` `ivec4`
+	* in GDScript `Vector2i`, `Vector3i`, etc
 * `uint` - 32bit unsigned
 	* `uvec2`, `uvec3`, `uvec4`
+	* in GDScript: `int`, `Vector2i`, etc
 * `float` 32-bit floating point scalar
 	* `vec2` `vec3` `vec4`
+	* 
 * `mat2` 2x2 matrix, column major
 	* `mat3`, `mat4`
 * `sampler2D` - binds 2d textures, reads as **float**
@@ -496,7 +499,7 @@ RenderingServer.global_shader_parameter_remove("my_color")
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjkyMDk4MTIsLTg1NDIxODg1NCwtMT
-AyNzQ4NTg5MCw0OTIyNjM5NTIsLTMxMzU1MTczNywtMTk3OTMw
-OTAzMV19
+eyJoaXN0b3J5IjpbODIxODI3NzcyLC04NTQyMTg4NTQsLTEwMj
+c0ODU4OTAsNDkyMjYzOTUyLC0zMTM1NTE3MzcsLTE5NzkzMDkw
+MzFdfQ==
 -->
