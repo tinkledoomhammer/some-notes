@@ -489,17 +489,20 @@ RenderingServer.global_shader_parameter_remove("my_color")
 
 ### Built-in variables
 Depend on the type of shader and which function they are used in
--   [Spatial shaders](https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/spatial_shader.html#doc-spatial-shader)
-
--   [Canvas item shaders](https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/canvas_item_shader.html#doc-canvas-item-shader)
-
--   [Particle shaders](https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/particle_shader.html#doc-particle-shader)
+*   [Spatial shaders](https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/spatial_shader.html#doc-spatial-shader)
+*   [Canvas item shaders](https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/canvas_item_shader.html#doc-canvas-item-shader)
+*   [Particle shaders](https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/particle_shader.html#doc-particle-shader)
+*   [Sky shaders](https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/sky_shader.html#doc-sky-shader)
+*   [Fog shaders](https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/fog_shader.html#doc-fog-shader)
 
 #### Built-in functions
 
+[Built-in functions](https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shader_functions.html#doc-shader-functions)
 https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shader_functions.html#doc-shader-functions
 
 ## Built-in functions
+Godot's built-in
+
 
 ## Shader preprocessor
 
@@ -524,7 +527,7 @@ https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shader
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNTAzOTEyMywtODU0MjE4ODU0LC0xMD
+eyJoaXN0b3J5IjpbLTIxMzM5MjE5MiwtODU0MjE4ODU0LC0xMD
 I3NDg1ODkwLDQ5MjI2Mzk1MiwtMzEzNTUxNzM3LC0xOTc5MzA5
 MDMxXX0=
 -->
