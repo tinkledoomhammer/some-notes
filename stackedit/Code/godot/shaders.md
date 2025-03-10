@@ -81,9 +81,12 @@ Comments
 	* in GDScript: `int`, `Vector2i`, etc
 * `float` 32-bit floating point scalar
 	* `vec2` `vec3` `vec4`
-	* 
+	* in GDScript: `float`, `Vector2`, etc
+		* `vec3` can also be `Color`
+		* `vec4` can also be `Color`, 
 * `mat2` 2x2 matrix, column major
 	* `mat3`, `mat4`
+	* 
 * `sampler2D` - binds 2d textures, reads as **float**
 	* `isampler2D`  `usampler2D` `sampler2DArray` `usampler2DArray` `isampler2dArray`
 * `sampler3D` - floats
@@ -499,7 +502,7 @@ RenderingServer.global_shader_parameter_remove("my_color")
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIxODI3NzcyLC04NTQyMTg4NTQsLTEwMj
-c0ODU4OTAsNDkyMjYzOTUyLC0zMTM1NTE3MzcsLTE5NzkzMDkw
-MzFdfQ==
+eyJoaXN0b3J5IjpbLTY1NTQwODkxMSwtODU0MjE4ODU0LC0xMD
+I3NDg1ODkwLDQ5MjI2Mzk1MiwtMzEzNTUxNzM3LC0xOTc5MzA5
+MDMxXX0=
 -->
