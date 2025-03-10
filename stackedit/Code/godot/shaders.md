@@ -71,7 +71,8 @@ Comments
 * `bool`
 * `bvec2` - two component of booleans
 	* `bvec3` `bvec4`
-* `int` - 32-bit signed scalar integer
+	* In GDscript: bitwise packed `int`
+* `int` - 32-bit signed scalar integer -- a
 * `ivec2` - two component, signed int
 	* `ivec3` `ivec4`
 * `uint` - 32bit unsigned
@@ -495,6 +496,7 @@ RenderingServer.global_shader_parameter_remove("my_color")
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1NDIxODg1NCwtMTAyNzQ4NTg5MCw0OT
-IyNjM5NTIsLTMxMzU1MTczNywtMTk3OTMwOTAzMV19
+eyJoaXN0b3J5IjpbLTE3MjkyMDk4MTIsLTg1NDIxODg1NCwtMT
+AyNzQ4NTg5MCw0OTIyNjM5NTIsLTMxMzU1MTczNywtMTk3OTMw
+OTAzMV19
 -->
