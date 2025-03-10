@@ -89,6 +89,9 @@ int main(){
 	std::vector<std::thread> threads;
 	unsigned threadCount = (std::thread::hardware_concurrency() <2)
 		? 1 : std::thread::hardware_concurrency();
+	for (int t = 0; t!= threadCount; ++t) threads.emplace_back(f);
+	for (auto& t : threads) t.join();
+}
 ```
 
 ## Move Semantics in Modern C++
@@ -189,5 +192,5 @@ https://learnmoderncpp.com/2023/09/03/concepts-101/
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM0NTEyODcxXX0=
+eyJoaXN0b3J5IjpbNDA2NTM3MzA1XX0=
 -->
