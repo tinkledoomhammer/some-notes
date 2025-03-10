@@ -509,8 +509,12 @@ Godot's built-in functions conform roughly with GLSL ES 3.0
 Godot Alias | Actual types | glsl documentation alias
 --|--|--
 `vec_type` | `float` `vec2`, vec3, vec4 | `genType`
-`vec_int_type` | int, ivec2, ivec3, ivec3 | `genlType`
-`vec_uint_type` | uint, uvec2, uvec3, uv3c4
+`vec_int_type` | int, ivec2, ivec3, ivec3 | `genIType`
+`vec_uint_type` | uint, uvec2, uvec3, uv3c4 | `genUType`
+`vec_bool_type` | bool, bvec2, bvec3, bvec4 | `genBType`
+`mat_type` | mat2, mat3, mat4 | `genBType` 
+`gvec4_type` | vec4, ivec4, or uvec4 | `gvec4`
+`gsampler2D` | sampler
 
 ## Shader preprocessor
 
@@ -535,7 +539,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI1MDcwNjI0LC0xOTM5NDI3MzA5LC04NT
-QyMTg4NTQsLTEwMjc0ODU4OTAsNDkyMjYzOTUyLC0zMTM1NTE3
-MzcsLTE5NzkzMDkwMzFdfQ==
+eyJoaXN0b3J5IjpbLTgwNzM1NDUxNCwtMTkzOTQyNzMwOSwtOD
+U0MjE4ODU0LC0xMDI3NDg1ODkwLDQ5MjI2Mzk1MiwtMzEzNTUx
+NzM3LC0xOTc5MzA5MDMxXX0=
 -->
