@@ -370,6 +370,9 @@ Type | Hint | Description
 .. | `hint_depth_texture` | Texture is the depth texture
 .. | hint_normal_roughness_texture | Texture is the normal roughness texture
 
+* There is also `instance_index(n)` for instance uniforms
+
+
 #### `hint_enum` and `source_color`
 ```
 uniform int anEnum : hint_enum("a","b"...)=0;
@@ -490,5 +493,6 @@ RenderingServer.global_shader_parameter_remove("my_color")
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxMzU1MTczNywtMTk3OTMwOTAzMV19
+eyJoaXN0b3J5IjpbNDkyMjYzOTUyLC0zMTM1NTE3MzcsLTE5Nz
+kzMDkwMzFdfQ==
 -->
