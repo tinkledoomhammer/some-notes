@@ -70,7 +70,18 @@ class ThreadID{
 	std::thread::id id;
 	inline static std::mutex mut;
 public:
-	ThreadID(const std::thread::id id) :
+	ThreadID(const std::thread::id id) : id{id}{
+		std::lock_guard<std::mutex> lock(mut);
+		std::cerr << "Launched thread:" << id << '\n';
+	}
+	~ThreadID(){
+		std::lock_guard<std::mutex> lock(mut);
+		std::cerr << "Finished Thread: " << id << '\n';
+	}
+};
+
+foid f(){
+	ThreadID log(std::
 ```
 
 ## Move Semantics in Modern C++
@@ -171,5 +182,5 @@ https://learnmoderncpp.com/2023/09/03/concepts-101/
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3MTU4MjUwOF19
+eyJoaXN0b3J5IjpbLTE1MjE4MTIwMjBdfQ==
 -->
