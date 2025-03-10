@@ -429,17 +429,28 @@ uniform int u2;
 * u1
 * u2
 
-
+#### gllobal uniforms
+* In project settings, you can set up uniforms that are shared between all shaders
+* 
 ### Built-in variables
+
+
 #### Built-in functions
 
 ## Built-in functions
+
 ## Shader preprocessor
+
 ## Shader Types
+
 ### Spatial
+
 ### CanvasItem
+
 ### Particle
+
 ### Sky
+
 ### Fog
 
 ## Compute Shaders
@@ -451,5 +462,5 @@ uniform int u2;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzkzMDkwMzFdfQ==
+eyJoaXN0b3J5IjpbMTQyMjcxMDEwMiwtMTk3OTMwOTAzMV19
 -->
