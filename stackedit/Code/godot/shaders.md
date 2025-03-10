@@ -83,7 +83,11 @@ Comments
 	* `vec2` `vec3` `vec4`
 	* in GDScript: `float`, `Vector2`, etc
 		* `vec3` can also be `Color`
-		* `vec4` can also be `Color`, 
+		* `vec4` can also be
+			* `Color` - rgba
+			* `Rect2` - `(position.x, position.y, size.x, size.y)` 
+			* `Plane` - `(normal.x, normal.y, normal.z, d)`
+			* `Quaternion`
 * `mat2` 2x2 matrix, column major
 	* `mat3`, `mat4`
 	* 
@@ -502,7 +506,7 @@ RenderingServer.global_shader_parameter_remove("my_color")
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1NTQwODkxMSwtODU0MjE4ODU0LC0xMD
-I3NDg1ODkwLDQ5MjI2Mzk1MiwtMzEzNTUxNzM3LC0xOTc5MzA5
-MDMxXX0=
+eyJoaXN0b3J5IjpbLTEwNjgxOTUyNzIsLTg1NDIxODg1NCwtMT
+AyNzQ4NTg5MCw0OTIyNjM5NTIsLTMxMzU1MTczNywtMTk3OTMw
+OTAzMV19
 -->
