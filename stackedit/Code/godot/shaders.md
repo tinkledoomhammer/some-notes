@@ -457,7 +457,9 @@ RenderingServer.global_shader_parameter_remove("my_color")
 	* No textures, only scalar and vector types
 	* As a workaround, a texture array can be passed as a regular uniform, and the index as an instance uniform
 	* Each shader can have at most 16 instance uniforms
-	* If the shader has multiple materials, the earlier uniforms can shadow the later uniforms
+	* If the shader has multiple materials, the earlier uniforms can shadow the later uniforms unless they have the same name, index, and type
+		* This can be guaranteed by specifying an instancce_index hint:
+		* `instance uniform vec4 my_color : source_color, instance_index(5);`
 ### Built-in variables
 
 
@@ -488,5 +490,5 @@ RenderingServer.global_shader_parameter_remove("my_color")
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4ODQzMzg0OSwtMTk3OTMwOTAzMV19
+eyJoaXN0b3J5IjpbLTMxMzU1MTczNywtMTk3OTMwOTAzMV19
 -->
