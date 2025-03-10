@@ -126,7 +126,7 @@ Comments
 	* `mat2 m2 ... m2[0].x`
 
 Swizzling
-```c++
+```glsl
 vec4  a  =  vec4(0.0,  1.0,  2.0,  3.0);
 vec3  b  =  a.rgb;  // Creates a vec3 with vec4 components.
 vec3  b  =  a.ggg;  // Also valid; creates a vec3 
@@ -145,7 +145,7 @@ b.bgr  =  a.rgb;  // Valid assignment.
 
 Vectors:
 
-```c++
+```glsl
 // The required amount of scalars
 vec4  a  =  vec4(0.0,  1.0,  2.0,  3.0);
 // Complementary vectors and/or scalars
@@ -157,7 +157,7 @@ vec4  a  =  vec4(0.0);
 
 Matrices:
 
-```c++
+```glsl
 // with the correct size
 mat2  m2  =  mat2(vec2(1.0,  0.0),  vec2(0.0,  1.0));
 mat3  m3  =  mat3(vec3(1.0,  0.0,  0.0),
@@ -182,7 +182,7 @@ mat2  m2  =  mat2(m4);
 * Not valid for samplers
 Initialization:
 
-```c
+```glsl
 float  float_arr[3]  =  float[3]  (1.0,  0.5,  0.0); //type 1
 int  int_arr[3]  =  int[]  (2,  1,  0);	//type 2
 vec2  vec2_arr[3]  =  {  vec2(1.0,  1.0), //type 3
@@ -215,7 +215,7 @@ Global arrays
 #### Structs
 * mostly like c
 
-```c++
+```glsl
 struct PointLight{
 	vec3 position;
 	vec3 color;
@@ -265,7 +265,7 @@ Precedence | name | operators
 ### Flow control
 * It seems to have c- style `if else`, `while`, `do while`, `switch case` and `? : `
 
-```c++
+```glsl
 // `if`, `else if` and `else`.
 if  (cond)  {}  else  if  (other_cond)  {
 }  else  {}
@@ -301,7 +301,7 @@ do  {}  while  (cond);
 ```
 
 #### Testing floats for equality
-```
+```glsl
 const  float  EPSILON  =  0.0001;
 if  (value  >=  0.3  -  EPSILON  &&  value  <=  0.3  +  EPSILON){}
 
@@ -330,7 +330,7 @@ Functions are c-style
 * They can**not** be used in **assigned** in custom functions or `light()`
 
 #### Interpolation qualifiers
-```c
+```glsl
 shader_type  spatial;
 
 varying  flat  vec3  flat_color;
@@ -359,7 +359,7 @@ void  fragment()  {
 
 #### Uniform hints
 Examples:
-```c
+```glsl
 uniform  vec4  color  :  source_color;
 uniform  float  amount  :  hint_range(0,  1);
 uniform  vec4  other_color  :  source_color  =  vec4(1.0);
@@ -389,7 +389,7 @@ Type | Hint | Description
 
 
 #### `hint_enum` and `source_color`
-```
+```glsl
 uniform int anEnum : hint_enum("a","b"...)=0;
 //a=>0, b=>1, etc
 uniform int anotherEnum : hint_enum("A:10", "b:110"...)=30;
@@ -409,7 +409,7 @@ uniform int anotherEnum : hint_enum("A:10", "b:110"...)=30;
 * It should always be used for colors
 
 #### uniform groups
-```
+```glsl
 group_uniforms MyGroup;
 uniform int anInt = 0;
 group_uniform MyGroup.MySubgroup
@@ -424,7 +424,7 @@ group_uniforms;
 ```
 
 Example
-```c++
+```glsl
 uniform int u1;
 group_uniforms MyGroup;
 	uniform u2;
@@ -501,7 +501,7 @@ Depend on the type of shader and which function they are used in
 https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shader_functions.html#doc-shader-functions
 
 ## Built-in functions
-Godot's built-in
+Godot's built-in functions conform roughly with GLSL ES 3.0
 
 
 ## Shader preprocessor
@@ -527,7 +527,7 @@ Godot's built-in
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzM5MjE5MiwtODU0MjE4ODU0LC0xMD
+eyJoaXN0b3J5IjpbLTk3Mjk2OTU1MSwtODU0MjE4ODU0LC0xMD
 I3NDg1ODkwLDQ5MjI2Mzk1MiwtMzEzNTUxNzM3LC0xOTc5MzA5
 MDMxXX0=
 -->
