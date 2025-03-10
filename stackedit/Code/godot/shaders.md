@@ -91,13 +91,16 @@ Comments
 * `mat2` 2x2 matrix, column major in GDScript: `Transform2D`
 	* `mat3` in GDScript: `Basis`
 	* `mat4` in GDScript: `Projection`
-		* or 
+		* or `Transform3D`, with w Vector set to identity
 * `sampler2D` - binds 2d textures, reads as **float**
 	* `isampler2D`  `usampler2D` `sampler2DArray` `usampler2DArray` `isampler2dArray`
+	* in GDScript `Texture2D` and `Texture2DArray`
 * `sampler3D` - floats
 	* `isampler3D` `usampler3D`
+	* in GDScript `Texture3D`
 * `samplerCube` -- samples cubemaps as floats
 	* `SamplerCubeArray`
+	* in GDScri
 * `samplerExternalOES` - only supported in compatibility/android
 
 #### precision
@@ -507,7 +510,7 @@ RenderingServer.global_shader_parameter_remove("my_color")
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTc5MjU2NDEsLTg1NDIxODg1NCwtMT
-AyNzQ4NTg5MCw0OTIyNjM5NTIsLTMxMzU1MTczNywtMTk3OTMw
-OTAzMV19
+eyJoaXN0b3J5IjpbNDQ5NjAyODM2LC04NTQyMTg4NTQsLTEwMj
+c0ODU4OTAsNDkyMjYzOTUyLC0zMTM1NTE3MzcsLTE5NzkzMDkw
+MzFdfQ==
 -->
