@@ -99,8 +99,8 @@ Comments
 	* `isampler3D` `usampler3D`
 	* in GDScript `Texture3D`
 * `samplerCube` -- samples cubemaps as floats
-	* `SamplerCubeArray`
-	* in GDScri
+	* `SamplerCubeArray` - not supported in Compatibility
+	* in GDScript `Cubemap`, `CubemapArray`
 * `samplerExternalOES` - only supported in compatibility/android
 
 #### precision
@@ -479,6 +479,9 @@ RenderingServer.global_shader_parameter_remove("my_color")
 		* This can be guaranteed by specifying an instancce_index hint:
 		* `instance uniform vec4 my_color : source_color, instance_index(5);`
 
+# Setting uniforms in GDScript
+`material.set_shader_parameter("some_Valu
+
 ### Built-in variables
 
 
@@ -510,7 +513,7 @@ RenderingServer.global_shader_parameter_remove("my_color")
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ5NjAyODM2LC04NTQyMTg4NTQsLTEwMj
+eyJoaXN0b3J5IjpbNDg3OTMyMTI3LC04NTQyMTg4NTQsLTEwMj
 c0ODU4OTAsNDkyMjYzOTUyLC0zMTM1NTE3MzcsLTE5NzkzMDkw
 MzFdfQ==
 -->
