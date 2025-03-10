@@ -501,6 +501,8 @@ Depend on the type of shader and which function they are used in
 https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shader_functions.html#doc-shader-functions
 
 ## Built-in functions
+https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shader_functions.html
+
 Godot's built-in functions conform roughly with GLSL ES 3.0
 ### Type aliases
 * Only uused in documentation to reduce repetitive declarations
@@ -517,6 +519,8 @@ Godot Alias | Actual types | glsl documentation alias
 `gsampler2D` | sampler2D, isampler2D, uSampler2D | `gsampler2D`
 `gasmpler2DArray` | sampler2DArray, isampler2DArray, or uSampler2DArray | `gsampler2DArray`
 `gsampler3D` | sampler3D, isampler3D, uSampler3D | `gsampler3D`
+
+* It looks like `uSampler3D` etc are typos?
 
 ## Shader preprocessor
 
@@ -541,7 +545,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDE2MDczNjYsLTE5Mzk0MjczMDksLT
-g1NDIxODg1NCwtMTAyNzQ4NTg5MCw0OTIyNjM5NTIsLTMxMzU1
-MTczNywtMTk3OTMwOTAzMV19
+eyJoaXN0b3J5IjpbMTM0NDk5MjM4NSwtMTkzOTQyNzMwOSwtOD
+U0MjE4ODU0LC0xMDI3NDg1ODkwLDQ5MjI2Mzk1MiwtMzEzNTUx
+NzM3LC0xOTc5MzA5MDMxXX0=
 -->
