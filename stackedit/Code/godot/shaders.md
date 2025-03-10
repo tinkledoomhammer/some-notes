@@ -432,7 +432,7 @@ uniform int u2;
 * u1
 * u2
 
-#### gllobal uniforms
+#### global uniforms
 * In project settings, you can set up uniforms that are shared between all shaders
 * In individual shaders they must be declared as `global`
 * `global uniform vec4 my_color;` after adding a color named `my_color` in project setting >> shader globals
@@ -467,6 +467,7 @@ RenderingServer.global_shader_parameter_remove("my_color")
 ### Built-in variables
 
 
+
 #### Built-in functions
 
 ## Built-in functions
@@ -494,6 +495,6 @@ RenderingServer.global_shader_parameter_remove("my_color")
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjc0ODU4OTAsNDkyMjYzOTUyLC0zMT
-M1NTE3MzcsLTE5NzkzMDkwMzFdfQ==
+eyJoaXN0b3J5IjpbLTg1NDIxODg1NCwtMTAyNzQ4NTg5MCw0OT
+IyNjM5NTIsLTMxMzU1MTczNywtMTk3OTMwOTAzMV19
 -->
