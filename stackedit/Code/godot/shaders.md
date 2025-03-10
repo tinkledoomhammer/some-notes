@@ -502,7 +502,11 @@ https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shader
 
 ## Built-in functions
 Godot's built-in functions conform roughly with GLSL ES 3.0
+### Type aliases
+* Only uused in documentation to reduce repetitive declarations
+* If they are specified for multiple parameters, then in most cases each instance of the alias must refer to the same type
 
+Godot Alias | Actual types 
 
 ## Shader preprocessor
 
@@ -527,7 +531,7 @@ Godot's built-in functions conform roughly with GLSL ES 3.0
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mzk0MjczMDksLTg1NDIxODg1NCwtMT
-AyNzQ4NTg5MCw0OTIyNjM5NTIsLTMxMzU1MTczNywtMTk3OTMw
-OTAzMV19
+eyJoaXN0b3J5IjpbLTEyMTMzMDM2MjUsLTE5Mzk0MjczMDksLT
+g1NDIxODg1NCwtMTAyNzQ4NTg5MCw0OTIyNjM5NTIsLTMxMzU1
+MTczNywtMTk3OTMwOTAzMV19
 -->
