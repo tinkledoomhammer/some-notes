@@ -81,7 +81,14 @@ public:
 };
 
 foid f(){
-	ThreadID log(std::
+	ThreadID log(std::this_thread::get_id());
+	std::this_thread::sleep_for(3000ms);
+}
+
+int main(){
+	std::vector<std::thread> threads;
+	unsigned threadCount = (std::thread::hardware_concurrency() <2)
+		? 1 : std::thread::hardware_concurrency();
 ```
 
 ## Move Semantics in Modern C++
@@ -182,5 +189,5 @@ https://learnmoderncpp.com/2023/09/03/concepts-101/
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjE4MTIwMjBdfQ==
+eyJoaXN0b3J5IjpbNDM0NTEyODcxXX0=
 -->
