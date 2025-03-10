@@ -80,7 +80,7 @@ public:
 	}
 };
 
-foid f(){
+void f(){
 	ThreadID log(std::this_thread::get_id());
 	std::this_thread::sleep_for(3000ms);
 }
@@ -192,5 +192,5 @@ https://learnmoderncpp.com/2023/09/03/concepts-101/
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA2NTM3MzA1XX0=
+eyJoaXN0b3J5IjpbLTU2OTczMzAxNSw0MDY1MzczMDVdfQ==
 -->
