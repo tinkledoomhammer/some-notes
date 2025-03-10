@@ -526,6 +526,7 @@ Godot Alias | Actual types | glsl documentation alias
 * It looks like `uSampler3D` etc are typos?
 
 ### Trig functions
+
 * `vec_type radians(vec_type degrees)`
 * `vec_type degrees(vec_type radians)`
 * `vec_type sin(vec_type x)` // in radians
@@ -535,7 +536,13 @@ Godot Alias | Actual types | glsl documentation alias
 * `vec_type acos(vec_type x)`
 * `vec_type atan(vec_type y_over_x)`
 * `vec_type atan(vec_type y, vec_type x)`
-* `vec_type sinh
+* `vec_type sinh(vec_type x)`
+* `vec_type cosh(vec_type x)`
+* `vec_type tanh(vec_type x)`
+* `vec_type asinh(vec_type x)`
+* `vec_type acosh(vec_type x)`
+* `vec_type atanh(vec_type x)`
+
 
 ## Shader preprocessor
 
@@ -560,7 +567,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzUxNzQzNTAsLTE5Mzk0MjczMDksLT
+eyJoaXN0b3J5IjpbLTE3NTgxNDUzMzgsLTE5Mzk0MjczMDksLT
 g1NDIxODg1NCwtMTAyNzQ4NTg5MCw0OTIyNjM5NTIsLTMxMzU1
 MTczNywtMTk3OTMwOTAzMV19
 -->
