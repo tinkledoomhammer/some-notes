@@ -452,7 +452,8 @@ RenderingServer.global_shader_parameter_remove("my_color")
 * They are set on a `GeometryInstance3D` rather than the material
 * `instance uniform vec4 my_color : source_color = vec4(...);`
 * They can be set in the inspector for each instance
-
+* They can be set in gdscript with the `set_instance_shader_paramtter(..)` method of [`GeometryInstance3D`](https://docs.godotengine.org/en/stable/classes/class_geometryinstance3d.html#class-geometryinstance3d)
+* Limitations:
 ### Built-in variables
 
 
@@ -483,5 +484,5 @@ RenderingServer.global_shader_parameter_remove("my_color")
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2ODgyMDQ0NywtMTk3OTMwOTAzMV19
+eyJoaXN0b3J5IjpbMzc1NjUxNTMsLTE5NzkzMDkwMzFdfQ==
 -->
