@@ -598,7 +598,9 @@ Godot Alias | Actual types | glsl documentation alias
 * vec3 `refelct`(vec3 I, vec3 N) ???
 * vec3 `refract`(vec3 I, vec3 N, float eta) ???
 * vec_type `faceforward`(vec_type N, vec_type I, vec_type Nref) ??
-* mat_type `matricCompMult`(mat_type x, mat_type y)
+* mat_type `matrixCompMult(mat_type x, mat_type y)` Matrix component multiplication ??
+* mat_type`outerProduct(vec_type column, vec_type row)` matrix outer product
+* mat_type `transpose(mat
 
 ## Shader preprocessor
 
@@ -623,8 +625,8 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTc0MzY0LDEyOTY2MjQwNCwzODY0Nj
-g4NjUsLTM0NTI4MjExLC0xOTM5NDI3MzA5LC04NTQyMTg4NTQs
-LTEwMjc0ODU4OTAsNDkyMjYzOTUyLC0zMTM1NTE3MzcsLTE5Nz
-kzMDkwMzFdfQ==
+eyJoaXN0b3J5IjpbMTc5NzA4NDU3MCwxMjk2NjI0MDQsMzg2ND
+Y4ODY1LC0zNDUyODIxMSwtMTkzOTQyNzMwOSwtODU0MjE4ODU0
+LC0xMDI3NDg1ODkwLDQ5MjI2Mzk1MiwtMzEzNTUxNzM3LC0xOT
+c5MzA5MDMxXX0=
 -->
