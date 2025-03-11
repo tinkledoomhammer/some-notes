@@ -579,7 +579,9 @@ Godot Alias | Actual types | glsl documentation alias
 	*	"Hermite interpolation between `a` and `b` by `c`
 	*	????
 *	`vec_bool_type isnan(vec_type x)` `return x==NaN`
-*	
+*	`vec_bool_type isinf(vec_type x)` `return x==INF`
+*	`vec_int_type floatBitsToInt(vec_type x)` copies bits to an int, no conversion
+	*	also
 
 
 
@@ -606,7 +608,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2NjY2MDUyOCwtMzQ1MjgyMTEsLTE5Mz
+eyJoaXN0b3J5IjpbLTgxNDUxNTQzNywtMzQ1MjgyMTEsLTE5Mz
 k0MjczMDksLTg1NDIxODg1NCwtMTAyNzQ4NTg5MCw0OTIyNjM5
 NTIsLTMxMzU1MTczNywtMTk3OTMwOTAzMV19
 -->
