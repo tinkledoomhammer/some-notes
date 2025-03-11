@@ -600,7 +600,9 @@ Godot Alias | Actual types | glsl documentation alias
 * vec_type `faceforward`(vec_type N, vec_type I, vec_type Nref) ??
 * mat_type `matrixCompMult(mat_type x, mat_type y)` Matrix component multiplication ??
 * mat_type`outerProduct(vec_type column, vec_type row)` matrix outer product
-* mat_type `transpose(mat
+* mat_type `transpose(mat_type m)` $m^T$
+* float `determinant(mat_type m)`??? Matrix determinant
+* mat_type `inverse(mat_type m)` Inverse matrix
 
 ## Shader preprocessor
 
@@ -625,7 +627,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NzA4NDU3MCwxMjk2NjI0MDQsMzg2ND
+eyJoaXN0b3J5IjpbLTc1NDQ4MjYzMiwxMjk2NjI0MDQsMzg2ND
 Y4ODY1LC0zNDUyODIxMSwtMTkzOTQyNzMwOSwtODU0MjE4ODU0
 LC0xMDI3NDg1ODkwLDQ5MjI2Mzk1MiwtMzEzNTUxNzM3LC0xOT
 c5MzA5MDMxXX0=
