@@ -551,7 +551,11 @@ Godot Alias | Actual types | glsl documentation alias
 `vec_type exp2(vec_typex)` 2^x
 `vec_type log(vec_type x)` $log_e x$
 `vec_type log2(vec_type x)` $log_2 x$
-`vec_type sqrt(vec_type x)` $\sqrt
+`vec_type sqrt(vec_type x)` $\sqrt x$
+`vec_type inversesqrt(vec_type x)` ????
+`vec_type abs(vec_type x)` or `abs($|x|$
+
+
 
 ## Shader preprocessor
 
@@ -576,7 +580,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyMDEzNDcwNSwtMzQ1MjgyMTEsLTE5Mz
-k0MjczMDksLTg1NDIxODg1NCwtMTAyNzQ4NTg5MCw0OTIyNjM5
-NTIsLTMxMzU1MTczNywtMTk3OTMwOTAzMV19
+eyJoaXN0b3J5IjpbLTEyOTczMTUzMTgsLTM0NTI4MjExLC0xOT
+M5NDI3MzA5LC04NTQyMTg4NTQsLTEwMjc0ODU4OTAsNDkyMjYz
+OTUyLC0zMTM1NTE3MzcsLTE5NzkzMDkwMzFdfQ==
 -->
