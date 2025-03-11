@@ -569,7 +569,9 @@ Godot Alias | Actual types | glsl documentation alias
 	*	works with float, uint, and int types, and vectors thereof
 	*	When the first argument is a vector, the second argument can be a single number
 	*	otherwise, the return type and both argument must both be the same type
-*	
+*	`clamp(x, min, max)`
+	*	Like above, and the last two arguments must be the same type
+*	`vec_type fma(vec_type a, vec_type b, vec_type c)` `return (a* 
 
 
 
@@ -596,7 +598,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3ODI2NTc2MiwtMzQ1MjgyMTEsLTE5Mz
+eyJoaXN0b3J5IjpbMTU3NTQ1OTQ1MywtMzQ1MjgyMTEsLTE5Mz
 k0MjczMDksLTg1NDIxODg1NCwtMTAyNzQ4NTg5MCw0OTIyNjM5
 NTIsLTMxMzU1MTczNywtMTk3OTMwOTAzMV19
 -->
