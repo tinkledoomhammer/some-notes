@@ -555,7 +555,7 @@ Godot Alias | Actual types | glsl documentation alias
 * `vec_type inversesqrt(vec_type x)` $\frac{1}{\sqrt x}$
 * `vec_type abs(vec_type x)` or `vec_int_type abs(vec_int_type)` $|x|$
 * `vec_type sign(vec_type x)` or `vec_int_type sign(vec_int_type)`
-	*	returns `1.0` or `1` if `>0`, `0` or `0.0` of `x==0`, or `-1.0`, etc
+	*	returns `1.0` or `1` if `>0`, `0` or `0.0` if `x==0`, or `-1.0`, etc
 *	`vec_type floor(vec_type x)` rounds down to the nearest integer
 *	`vec_type round(vec_type x)` rounds to the nearest integer
 *	`vec_type roundEven(vec_type x)` rounds down to the nearest even integer
@@ -573,7 +573,7 @@ Godot Alias | Actual types | glsl documentation alias
 	*	Like above, and the last two arguments must be the same type
 *	`vec_type mix(vec_type a, vec_type b, vec_type c)` 
 	*	 `c` may be a float
-	*	linear interpolation of c from a to b : `a * (1-c) + 
+	*	linear interpolation of c from a to b : `a * (1-c) + b*c` 
 *	`vec_type fma(vec_type a, vec_type b, vec_type c)` `return (a* b + c)`
 *	`vec_type step(vec_type a, vec_type b)` or `vec_type step(float a, vec_type b)`
 	*	`return b<a ? 0.0 : 1.0`
@@ -613,8 +613,8 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3OTQ0MjQ3MSwzODY0Njg4NjUsLTM0NT
-I4MjExLC0xOTM5NDI3MzA5LC04NTQyMTg4NTQsLTEwMjc0ODU4
-OTAsNDkyMjYzOTUyLC0zMTM1NTE3MzcsLTE5NzkzMDkwMzFdfQ
-==
+eyJoaXN0b3J5IjpbLTEyNzM5NjI5NTIsMzg2NDY4ODY1LC0zND
+UyODIxMSwtMTkzOTQyNzMwOSwtODU0MjE4ODU0LC0xMDI3NDg1
+ODkwLDQ5MjI2Mzk1MiwtMzEzNTUxNzM3LC0xOTc5MzA5MDMxXX
+0=
 -->
