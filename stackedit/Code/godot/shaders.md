@@ -572,7 +572,8 @@ Godot Alias | Actual types | glsl documentation alias
 *	`clamp(x, min, max)`
 	*	Like above, and the last two arguments must be the same type
 *	`vec_type mix(vec_type a, vec_type b, vec_type c)` 
-	*	`b` and `c` may be a component of th
+	*	 `c` may be a float
+	*	linear interpolation of c from a to b : `a * (1-c) + 
 *	`vec_type fma(vec_type a, vec_type b, vec_type c)` `return (a* b + c)`
 *	`vec_type step(vec_type a, vec_type b)` or `vec_type step(float a, vec_type b)`
 	*	`return b<a ? 0.0 : 1.0`
@@ -612,7 +613,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0NTQzNDQwMywzODY0Njg4NjUsLTM0NT
+eyJoaXN0b3J5IjpbMTk3OTQ0MjQ3MSwzODY0Njg4NjUsLTM0NT
 I4MjExLC0xOTM5NDI3MzA5LC04NTQyMTg4NTQsLTEwMjc0ODU4
 OTAsNDkyMjYzOTUyLC0zMTM1NTE3MzcsLTE5NzkzMDkwMzFdfQ
 ==
