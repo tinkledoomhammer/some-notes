@@ -556,9 +556,11 @@ Godot Alias | Actual types | glsl documentation alias
 * `vec_type abs(vec_type x)` or `vec_int_type abs(vec_int_type)` $|x|$
 * `vec_type sign(vec_type x)` or `vec_int_type sign(vec_int_type)`
 	*	returns `1.0` or `1` if `>0`, `0` or `0.0` of `x==0`, or `-1.0`, etc
-*	`vec_type floor(vec_type x)` rounds down to the nearest int
-*	
+*	`vec_type floor(vec_type x)` rounds down to the nearest integer
+*	`vec_type round(vec_type x)` rounds to the nearest integer
 *	`vec_type roundEven(vec_type x)` rounds down to the nearest even integer
+*	`vec_type trunc(vec_type x)` truncation
+*	`vec_type ceil(vec_type x)` rounds up to the nearest inte
 
 
 
@@ -585,7 +587,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTc3NjU1OTMsLTM0NTI4MjExLC0xOT
-M5NDI3MzA5LC04NTQyMTg4NTQsLTEwMjc0ODU4OTAsNDkyMjYz
-OTUyLC0zMTM1NTE3MzcsLTE5NzkzMDkwMzFdfQ==
+eyJoaXN0b3J5IjpbNjA2MjQ2ODU2LC0zNDUyODIxMSwtMTkzOT
+QyNzMwOSwtODU0MjE4ODU0LC0xMDI3NDg1ODkwLDQ5MjI2Mzk1
+MiwtMzEzNTUxNzM3LC0xOTc5MzA5MDMxXX0=
 -->
