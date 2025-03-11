@@ -564,7 +564,9 @@ Godot Alias | Actual types | glsl documentation alias
 *	`vec_type fract(vec_type x)` returns `x-floor(x)`
 *	`vec_type mod(vec_type x, vec_type y)` or `vec_type mod(vec_type x, float y`
 	*	returns `x%y`
-*	`vec_type modf(vec_type x, out vec_type i)` 
+*	`vec_type modf(vec_type x, out vec_type i)` ???? "Fractional of `x` with `i` as integer part
+*	`min(a,b)` and `max(...)`
+	*	
 
 
 
@@ -591,7 +593,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjg0MjUwMTcsLTM0NTI4MjExLC0xOT
-M5NDI3MzA5LC04NTQyMTg4NTQsLTEwMjc0ODU4OTAsNDkyMjYz
-OTUyLC0zMTM1NTE3MzcsLTE5NzkzMDkwMzFdfQ==
+eyJoaXN0b3J5IjpbMTc5OTkwOTE4OSwtMzQ1MjgyMTEsLTE5Mz
+k0MjczMDksLTg1NDIxODg1NCwtMTAyNzQ4NTg5MCw0OTIyNjM5
+NTIsLTMxMzU1MTczNywtMTk3OTMwOTAzMV19
 -->
