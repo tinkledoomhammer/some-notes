@@ -546,14 +546,16 @@ Godot Alias | Actual types | glsl documentation alias
 * Returned angles are in [$-\pi , \pi$]
 
 #### Exponential and Math functions
-`vec_type pow(vec_type x, vec_type y)` x^y
-`vec_type exp(vec_type x)` e^x
-`vec_type exp2(vec_typex)` 2^x
-`vec_type log(vec_type x)` $log_e x$
-`vec_type log2(vec_type x)` $log_2 x$
-`vec_type sqrt(vec_type x)` $\sqrt x$
-`vec_type inversesqrt(vec_type x)` ????
-`vec_type abs(vec_type x)` or `abs($|x|$
+* `vec_type pow(vec_type x, vec_type y)` x^y
+* `vec_type exp(vec_type x)` e^x
+* `vec_type exp2(vec_typex)` 2^x
+* `vec_type log(vec_type x)` $log_e x$
+* `vec_type log2(vec_type x)` $log_2 x$
+* `vec_type sqrt(vec_type x)` $\sqrt x$
+* `vec_type inversesqrt(vec_type x)` ????
+* `vec_type abs(vec_type x)` or `vec_int_type abs(vec_int_type)` $|x|$
+* `vec_type sign(vec_type x)` or `vec_int_type sign(vec_int_type)`
+*	re
 
 
 
@@ -580,7 +582,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTczMTUzMTgsLTM0NTI4MjExLC0xOT
-M5NDI3MzA5LC04NTQyMTg4NTQsLTEwMjc0ODU4OTAsNDkyMjYz
-OTUyLC0zMTM1NTE3MzcsLTE5NzkzMDkwMzFdfQ==
+eyJoaXN0b3J5IjpbLTU2Mjc4MDk5LC0zNDUyODIxMSwtMTkzOT
+QyNzMwOSwtODU0MjE4ODU0LC0xMDI3NDg1ODkwLDQ5MjI2Mzk1
+MiwtMzEzNTUxNzM3LC0xOTc5MzA5MDMxXX0=
 -->
