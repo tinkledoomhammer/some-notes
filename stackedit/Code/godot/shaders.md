@@ -545,7 +545,11 @@ Godot Alias | Actual types | glsl documentation alias
 * These functions take and return radians for angle
 * Returned angles are in [$-\pi , \pi$]
 
-
+#### Exponential and Math functions
+`vec_type pow(vec_type x, vec_type y)` x^y
+`vec_type exp(vec_type x)` e^x
+`vec_type exp2(vec_typex)` 2^x
+`vec_type
 ## Shader preprocessor
 
 ## Shader Types
@@ -569,7 +573,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE2OTc5MDk5LC0zNDUyODIxMSwtMTkzOT
-QyNzMwOSwtODU0MjE4ODU0LC0xMDI3NDg1ODkwLDQ5MjI2Mzk1
-MiwtMzEzNTUxNzM3LC0xOTc5MzA5MDMxXX0=
+eyJoaXN0b3J5IjpbLTE4NjI2NjQ5OTIsLTM0NTI4MjExLC0xOT
+M5NDI3MzA5LC04NTQyMTg4NTQsLTEwMjc0ODU4OTAsNDkyMjYz
+OTUyLC0zMTM1NTE3MzcsLTE5NzkzMDkwMzFdfQ==
 -->
