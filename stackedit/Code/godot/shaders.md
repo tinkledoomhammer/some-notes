@@ -565,8 +565,11 @@ Godot Alias | Actual types | glsl documentation alias
 *	`vec_type mod(vec_type x, vec_type y)` or `vec_type mod(vec_type x, float y`
 	*	returns `x%y`
 *	`vec_type modf(vec_type x, out vec_type i)` ???? "Fractional of `x` with `i` as integer part
-*	`min(a,b)` and `max(...)`
-	*	
+*	`min(a,b)` and `max(a,b)`
+	*	works with float, uint, and int types, and vectors thereof
+	*	When the first argument is a vector, the second argument can be a single number
+	*	otherwise, the return type and both argument must both be the same type
+*	
 
 
 
@@ -593,7 +596,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5OTkwOTE4OSwtMzQ1MjgyMTEsLTE5Mz
+eyJoaXN0b3J5IjpbMTc3ODI2NTc2MiwtMzQ1MjgyMTEsLTE5Mz
 k0MjczMDksLTg1NDIxODg1NCwtMTAyNzQ4NTg5MCw0OTIyNjM5
 NTIsLTMxMzU1MTczNywtMTk3OTMwOTAzMV19
 -->
