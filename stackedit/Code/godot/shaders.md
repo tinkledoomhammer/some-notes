@@ -592,7 +592,7 @@ Godot Alias | Actual types | glsl documentation alias
 ### Geometric functions
 * float `length`(vec_type x) = $\sqrt{\sum x_n^2}$
 * float `distance`(vec_type a, vec_type b) = `return length(a-b)`
-* float `dot`(vec_type a, vec_type b) = $\sum{a_n b_n}$ = $
+* float `dot`(vec_type a, vec_type b) = $\sum{a_n b_n}$ = $|a| |b| \cos \theta$
 * 
 
 ## Shader preprocessor
@@ -618,8 +618,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzIwMDMzNDQsMzg2NDY4ODY1LC0zND
-UyODIxMSwtMTkzOTQyNzMwOSwtODU0MjE4ODU0LC0xMDI3NDg1
-ODkwLDQ5MjI2Mzk1MiwtMzEzNTUxNzM3LC0xOTc5MzA5MDMxXX
-0=
+eyJoaXN0b3J5IjpbNDA5MzMzNzI2LDM4NjQ2ODg2NSwtMzQ1Mj
+gyMTEsLTE5Mzk0MjczMDksLTg1NDIxODg1NCwtMTAyNzQ4NTg5
+MCw0OTIyNjM5NTIsLTMxMzU1MTczNywtMTk3OTMwOTAzMV19
 -->
