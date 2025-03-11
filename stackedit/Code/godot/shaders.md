@@ -575,7 +575,7 @@ Godot Alias | Actual types | glsl documentation alias
 	*	 `c` may be a float
 	*	linear interpolation of c from a to b : `a * (1-c) + b*c` 
 	*	also `vec_type mix(vec_type a, vec_type b, vec_bool_type c)`
-		*	`return b ? c :
+		*	`return b ? c : a`
 *	`vec_type fma(vec_type a, vec_type b, vec_type c)` `return (a* b + c)`
 *	`vec_type step(vec_type a, vec_type b)` or `vec_type step(float a, vec_type b)`
 	*	`return b<a ? 0.0 : 1.0`
@@ -588,8 +588,9 @@ Godot Alias | Actual types | glsl documentation alias
 *	`vec_bool_type isinf(vec_type x)` `return x==INF`
 *	`vec_int_type floatBitsToInt(vec_type x)` copies bits to an int, no conversion
 	*	also `floatBitsToUint` , `intBitsToFloat` , `uintBitsToFloat`
-*	 
-
+	 
+### Geometric functions
+* float `length`(vec_type x)
 
 
 ## Shader preprocessor
@@ -615,8 +616,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MzM5NzIzNSwzODY0Njg4NjUsLTM0NT
-I4MjExLC0xOTM5NDI3MzA5LC04NTQyMTg4NTQsLTEwMjc0ODU4
-OTAsNDkyMjYzOTUyLC0zMTM1NTE3MzcsLTE5NzkzMDkwMzFdfQ
-==
+eyJoaXN0b3J5IjpbMzQzMTQyNjMzLDM4NjQ2ODg2NSwtMzQ1Mj
+gyMTEsLTE5Mzk0MjczMDksLTg1NDIxODg1NCwtMTAyNzQ4NTg5
+MCw0OTIyNjM5NTIsLTMxMzU1MTczNywtMTk3OTMwOTAzMV19
 -->
