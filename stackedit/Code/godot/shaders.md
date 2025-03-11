@@ -595,8 +595,10 @@ Godot Alias | Actual types | glsl documentation alias
 * float `dot`(vec_type a, vec_type b) = $\sum{a_n b_n}$ = $|a| |b| \cos \theta$
 * float `cross`(vec3a, vec3 b) = $a \times b$
 * vec_type `normalize`(vec_type x) $x / |x|$
-* vec3 `refelct`(vec3 I, vec3 N
-* vec3 refre
+* vec3 `refelct`(vec3 I, vec3 N) ???
+* vec3 `refract`(vec3 I, vec3 N, float eta) ???
+* vec_type `faceforward`(vec_type N, vec_type I, vec_type Nref) ??
+* mat_type `matricCompMult`(mat_type x, mat_type y)
 
 ## Shader preprocessor
 
@@ -621,8 +623,8 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNDQ4OTM1NywxMjk2NjI0MDQsMzg2ND
-Y4ODY1LC0zNDUyODIxMSwtMTkzOTQyNzMwOSwtODU0MjE4ODU0
-LC0xMDI3NDg1ODkwLDQ5MjI2Mzk1MiwtMzEzNTUxNzM3LC0xOT
-c5MzA5MDMxXX0=
+eyJoaXN0b3J5IjpbLTExMTc0MzY0LDEyOTY2MjQwNCwzODY0Nj
+g4NjUsLTM0NTI4MjExLC0xOTM5NDI3MzA5LC04NTQyMTg4NTQs
+LTEwMjc0ODU4OTAsNDkyMjYzOTUyLC0zMTM1NTE3MzcsLTE5Nz
+kzMDkwMzFdfQ==
 -->
