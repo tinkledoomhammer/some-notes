@@ -560,7 +560,11 @@ Godot Alias | Actual types | glsl documentation alias
 *	`vec_type round(vec_type x)` rounds to the nearest integer
 *	`vec_type roundEven(vec_type x)` rounds down to the nearest even integer
 *	`vec_type trunc(vec_type x)` truncation
-*	`vec_type ceil(vec_type x)` rounds up to the nearest inte
+*	`vec_type ceil(vec_type x)` rounds up to the nearest integer
+*	`vec_type fract(vec_type x)` returns `x-floor(x)`
+*	`vec_type mod(vec_type x, vec_type y)` or `vec_type mod(vec_type x, float y`
+	*	returns `x%y`
+*	`vec_type modf(vec_type x, out vec_type i)` 
 
 
 
@@ -587,7 +591,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA2MjQ2ODU2LC0zNDUyODIxMSwtMTkzOT
-QyNzMwOSwtODU0MjE4ODU0LC0xMDI3NDg1ODkwLDQ5MjI2Mzk1
-MiwtMzEzNTUxNzM3LC0xOTc5MzA5MDMxXX0=
+eyJoaXN0b3J5IjpbLTExNjg0MjUwMTcsLTM0NTI4MjExLC0xOT
+M5NDI3MzA5LC04NTQyMTg4NTQsLTEwMjc0ODU4OTAsNDkyMjYz
+OTUyLC0zMTM1NTE3MzcsLTE5NzkzMDkwMzFdfQ==
 -->
