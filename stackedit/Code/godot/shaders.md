@@ -552,7 +552,7 @@ Godot Alias | Actual types | glsl documentation alias
 * `vec_type log(vec_type x)` $log_e x$
 * `vec_type log2(vec_type x)` $log_2 x$
 * `vec_type sqrt(vec_type x)` $\sqrt x$
-* `vec_type inversesqrt(vec_type x)` $\frac{1}{\sqrt x }$
+* `vec_type inversesqrt(vec_type x)` $\frac{1}{\sqrt x}$
 * `vec_type abs(vec_type x)` or `vec_int_type abs(vec_int_type)` $|x|$
 * `vec_type sign(vec_type x)` or `vec_int_type sign(vec_int_type)`
 	*	returns `1.0` or `1` if `>0`, `0` or `0.0` of `x==0`, or `-1.0`, etc
@@ -564,7 +564,7 @@ Godot Alias | Actual types | glsl documentation alias
 *	`vec_type fract(vec_type x)` returns `x-floor(x)`
 *	`vec_type mod(vec_type x, vec_type y)` or `vec_type mod(vec_type x, float y`
 	*	returns `x%y`
-*	`vec_type modf(vec_type x, out vec_type i)` ???? "Fractional of `x` with `i` as integer part
+*	`vec_type modf(vec_type x, out vec_type i)` returns `frac(x)` and `i :=` the integer part
 *	`min(a,b)` and `max(a,b)`
 	*	works with float, uint, and int types, and vectors thereof
 	*	When the first argument is a vector, the second argument can be a single number
@@ -609,7 +609,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MzI4MjAyNiwtMzQ1MjgyMTEsLTE5Mz
-k0MjczMDksLTg1NDIxODg1NCwtMTAyNzQ4NTg5MCw0OTIyNjM5
-NTIsLTMxMzU1MTczNywtMTk3OTMwOTAzMV19
+eyJoaXN0b3J5IjpbNzM4OTA0NjExLC0zNDUyODIxMSwtMTkzOT
+QyNzMwOSwtODU0MjE4ODU0LC0xMDI3NDg1ODkwLDQ5MjI2Mzk1
+MiwtMzEzNTUxNzM3LC0xOTc5MzA5MDMxXX0=
 -->
