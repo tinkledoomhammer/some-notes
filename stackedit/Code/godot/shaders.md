@@ -552,7 +552,7 @@ Godot Alias | Actual types | glsl documentation alias
 * `vec_type log(vec_type x)` $log_e x$
 * `vec_type log2(vec_type x)` $log_2 x$
 * `vec_type sqrt(vec_type x)` $\sqrt x$
-* `vec_type inversesqrt(vec_type x)` ????
+* `vec_type inversesqrt(vec_type x)` $\frac{1,
 * `vec_type abs(vec_type x)` or `vec_int_type abs(vec_int_type)` $|x|$
 * `vec_type sign(vec_type x)` or `vec_int_type sign(vec_int_type)`
 	*	returns `1.0` or `1` if `>0`, `0` or `0.0` of `x==0`, or `-1.0`, etc
@@ -581,7 +581,8 @@ Godot Alias | Actual types | glsl documentation alias
 *	`vec_bool_type isnan(vec_type x)` `return x==NaN`
 *	`vec_bool_type isinf(vec_type x)` `return x==INF`
 *	`vec_int_type floatBitsToInt(vec_type x)` copies bits to an int, no conversion
-	*	also
+	*	also `floatBitsToUint` , `intBitsToFloat` , `uintBitsToFloat`
+*	 
 
 
 
@@ -608,7 +609,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNDUxNTQzNywtMzQ1MjgyMTEsLTE5Mz
-k0MjczMDksLTg1NDIxODg1NCwtMTAyNzQ4NTg5MCw0OTIyNjM5
-NTIsLTMxMzU1MTczNywtMTk3OTMwOTAzMV19
+eyJoaXN0b3J5IjpbLTE1Njg2MTAyMTMsLTM0NTI4MjExLC0xOT
+M5NDI3MzA5LC04NTQyMTg4NTQsLTEwMjc0ODU4OTAsNDkyMjYz
+OTUyLC0zMTM1NTE3MzcsLTE5NzkzMDkwMzFdfQ==
 -->
