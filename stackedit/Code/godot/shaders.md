@@ -545,6 +545,7 @@ Godot Alias | Actual types | glsl documentation alias
 * These functions take and return radians for angle
 * Returned angles are in [$-\pi , \pi$]
 
+
 ## Shader preprocessor
 
 ## Shader Types
@@ -568,7 +569,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NTI4MjExLC0xOTM5NDI3MzA5LC04NT
-QyMTg4NTQsLTEwMjc0ODU4OTAsNDkyMjYzOTUyLC0zMTM1NTE3
-MzcsLTE5NzkzMDkwMzFdfQ==
+eyJoaXN0b3J5IjpbNTE2OTc5MDk5LC0zNDUyODIxMSwtMTkzOT
+QyNzMwOSwtODU0MjE4ODU0LC0xMDI3NDg1ODkwLDQ5MjI2Mzk1
+MiwtMzEzNTUxNzM3LC0xOTc5MzA5MDMxXX0=
 -->
