@@ -575,6 +575,11 @@ Godot Alias | Actual types | glsl documentation alias
 *	`vec_type step(vec_type a, vec_type b)` or `vec_type step(float a, vec_type b)`
 	*	`return b<a ? 0.0 : 1.0`
 *	`vec_type smoothstep(vec_type a vec_type b, vec_type c)` 
+	*	or `vec_type smoothstep(float a, float b, vec_type c)`
+	*	"Hermite interpolation between `a` and `b` by `c`
+	*	????
+*	`vec_bool_type isnan(vec_type x)` `return x==NaN`
+*	
 
 
 
@@ -601,7 +606,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3MTk1NzYzOCwtMzQ1MjgyMTEsLTE5Mz
+eyJoaXN0b3J5IjpbMTg2NjY2MDUyOCwtMzQ1MjgyMTEsLTE5Mz
 k0MjczMDksLTg1NDIxODg1NCwtMTAyNzQ4NTg5MCw0OTIyNjM5
 NTIsLTMxMzU1MTczNywtMTk3OTMwOTAzMV19
 -->
