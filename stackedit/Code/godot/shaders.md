@@ -590,8 +590,9 @@ Godot Alias | Actual types | glsl documentation alias
 	*	also `floatBitsToUint` , `intBitsToFloat` , `uintBitsToFloat`
 	 
 ### Geometric functions
-* float `length`(vec_type x)
-
+* float `length`(vec_type x) = $\sqrt{\sum x_n^2}$
+* float `distance`(vec_type a, vec_type b) = `return length(a-b)`
+* 
 
 ## Shader preprocessor
 
@@ -616,7 +617,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQzMTQyNjMzLDM4NjQ2ODg2NSwtMzQ1Mj
+eyJoaXN0b3J5IjpbNzgyNDc3Mjc3LDM4NjQ2ODg2NSwtMzQ1Mj
 gyMTEsLTE5Mzk0MjczMDksLTg1NDIxODg1NCwtMTAyNzQ4NTg5
 MCw0OTIyNjM5NTIsLTMxMzU1MTczNywtMTk3OTMwOTAzMV19
 -->
