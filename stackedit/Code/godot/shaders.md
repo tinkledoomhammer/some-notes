@@ -571,7 +571,10 @@ Godot Alias | Actual types | glsl documentation alias
 	*	otherwise, the return type and both argument must both be the same type
 *	`clamp(x, min, max)`
 	*	Like above, and the last two arguments must be the same type
-*	`vec_type fma(vec_type a, vec_type b, vec_type c)` `return (a* 
+*	`vec_type fma(vec_type a, vec_type b, vec_type c)` `return (a* b + c)`
+*	`vec_type step(vec_type a, vec_type b)` or `vec_type step(float a, vec_type b)`
+	*	`return b<a ? 0.0 : 1.0`
+*	`vec_type smoothstep(vec_type a vec_type b, vec_type c)` 
 
 
 
@@ -598,7 +601,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3NTQ1OTQ1MywtMzQ1MjgyMTEsLTE5Mz
+eyJoaXN0b3J5IjpbMTE3MTk1NzYzOCwtMzQ1MjgyMTEsLTE5Mz
 k0MjczMDksLTg1NDIxODg1NCwtMTAyNzQ4NTg5MCw0OTIyNjM5
 NTIsLTMxMzU1MTczNywtMTk3OTMwOTAzMV19
 -->
