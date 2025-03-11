@@ -574,6 +574,8 @@ Godot Alias | Actual types | glsl documentation alias
 *	`vec_type mix(vec_type a, vec_type b, vec_type c)` 
 	*	 `c` may be a float
 	*	linear interpolation of c from a to b : `a * (1-c) + b*c` 
+	*	also `vec_type mix(vec_type a, vec_type b, vec_bool_type c)`
+		*	`return b ? c :
 *	`vec_type fma(vec_type a, vec_type b, vec_type c)` `return (a* b + c)`
 *	`vec_type step(vec_type a, vec_type b)` or `vec_type step(float a, vec_type b)`
 	*	`return b<a ? 0.0 : 1.0`
@@ -613,8 +615,8 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzM5NjI5NTIsMzg2NDY4ODY1LC0zND
-UyODIxMSwtMTkzOTQyNzMwOSwtODU0MjE4ODU0LC0xMDI3NDg1
-ODkwLDQ5MjI2Mzk1MiwtMzEzNTUxNzM3LC0xOTc5MzA5MDMxXX
-0=
+eyJoaXN0b3J5IjpbLTg3MzM5NzIzNSwzODY0Njg4NjUsLTM0NT
+I4MjExLC0xOTM5NDI3MzA5LC04NTQyMTg4NTQsLTEwMjc0ODU4
+OTAsNDkyMjYzOTUyLC0zMTM1NTE3MzcsLTE5NzkzMDkwMzFdfQ
+==
 -->
