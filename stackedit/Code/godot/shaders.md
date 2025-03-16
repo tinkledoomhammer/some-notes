@@ -635,7 +635,8 @@ Godot Alias | Actual types | glsl documentation alias
 * vec_bool_type `notEqual`(...)
 * bool `any`(vec_bool_type x)
 * bool `all`(vec_bool_type x)
-* vec_bool_type `not`(vec_b
+* vec_bool_type `not`(vec_bool_type)
+* 
 
 ## Shader preprocessor
 
@@ -660,7 +661,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NTU0MDg2NiwtNzU0NDgyNjMyLDEyOT
+eyJoaXN0b3J5IjpbLTY4MTc1NDIyMiwtNzU0NDgyNjMyLDEyOT
 Y2MjQwNCwzODY0Njg4NjUsLTM0NTI4MjExLC0xOTM5NDI3MzA5
 LC04NTQyMTg4NTQsLTEwMjc0ODU4OTAsNDkyMjYzOTUyLC0zMT
 M1NTE3MzcsLTE5NzkzMDkwMzFdfQ==
