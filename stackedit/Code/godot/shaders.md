@@ -684,6 +684,7 @@ Godot Alias | Actual types | glsl documentation alias
 	* Returns the partial dirivative of `p` with respect to the window x coordinate using local differencing
 	* There are also `dFdy`...
 	* Expressions with higher order derivatives and mixed-order derivatives produce undefined result
+	* and slow `fwidth(`vectype p available in coarse and fine that return `abs(dFdx(p)+abs(ddy(p))
 
 ## Shader preprocessor
 
@@ -708,9 +709,9 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NzQ0NjQwLC0yMDQ1OTM5NDQ3LC0xMT
-MxNzI3MDksLTc1NDQ4MjYzMiwxMjk2NjI0MDQsMzg2NDY4ODY1
-LC0zNDUyODIxMSwtMTkzOTQyNzMwOSwtODU0MjE4ODU0LC0xMD
-I3NDg1ODkwLDQ5MjI2Mzk1MiwtMzEzNTUxNzM3LC0xOTc5MzA5
-MDMxXX0=
+eyJoaXN0b3J5IjpbLTE4NTMzODgxMzIsLTIwNDU5Mzk0NDcsLT
+ExMzE3MjcwOSwtNzU0NDgyNjMyLDEyOTY2MjQwNCwzODY0Njg4
+NjUsLTM0NTI4MjExLC0xOTM5NDI3MzA5LC04NTQyMTg4NTQsLT
+EwMjc0ODU4OTAsNDkyMjYzOTUyLC0zMTM1NTE3MzcsLTE5Nzkz
+MDkwMzFdfQ==
 -->
