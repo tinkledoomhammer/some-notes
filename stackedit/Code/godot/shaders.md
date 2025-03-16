@@ -656,7 +656,9 @@ Godot Alias | Actual types | glsl documentation alias
 	* the optional `bias` parameter is influences the lod calculation
 	* https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/texture.xhtml
 	* There is some weirdness around shadows that idk
-* gvec4_type `texture_Proj` (gsampler2D s , vec3 p[
+* gvec4_type `texture_Proj` (gsampler2D s , vec3 p[, float bias])
+	* `p` can be a `vec4`
+	* `s` can be a `gsampler3D` but only if `p` is `vec4`
 ## Shader preprocessor
 
 ## Shader Types
@@ -680,7 +682,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjY1Mjk5NywtNzU0NDgyNjMyLDEyOT
+eyJoaXN0b3J5IjpbLTExMzE3MjcwOSwtNzU0NDgyNjMyLDEyOT
 Y2MjQwNCwzODY0Njg4NjUsLTM0NTI4MjExLC0xOTM5NDI3MzA5
 LC04NTQyMTg4NTQsLTEwMjc0ODU4OTAsNDkyMjYzOTUyLC0zMT
 M1NTE3MzcsLTE5NzkzMDkwMzFdfQ==
