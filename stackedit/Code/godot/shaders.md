@@ -642,8 +642,8 @@ Godot Alias | Actual types | glsl documentation alias
 	* can return `ivec2` or `ivec3`
 	* the `s` parameter can be `gsampler2D` `samplerCube` `gsampler3D`, or arrays of the first 2
 	* the return order is [width, height, depth]
-	* 
-
+	* The `lod` parameter is optional and specifies which lod/mipmap to use
+* vec2 `textureQueryLod`(gsampler2D s, vec2 p)
 ## Shader preprocessor
 
 ## Shader Types
@@ -667,8 +667,8 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2MTI5NTY2NSwtNzU0NDgyNjMyLDEyOT
-Y2MjQwNCwzODY0Njg4NjUsLTM0NTI4MjExLC0xOTM5NDI3MzA5
-LC04NTQyMTg4NTQsLTEwMjc0ODU4OTAsNDkyMjYzOTUyLC0zMT
-M1NTE3MzcsLTE5NzkzMDkwMzFdfQ==
+eyJoaXN0b3J5IjpbLTExOTA1ODg2NDQsLTc1NDQ4MjYzMiwxMj
+k2NjI0MDQsMzg2NDY4ODY1LC0zNDUyODIxMSwtMTkzOTQyNzMw
+OSwtODU0MjE4ODU0LC0xMDI3NDg1ODkwLDQ5MjI2Mzk1MiwtMz
+EzNTUxNzM3LC0xOTc5MzA5MDMxXX0=
 -->
