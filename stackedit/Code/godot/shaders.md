@@ -676,7 +676,10 @@ Godot Alias | Actual types | glsl documentation alias
 * gvec4_type `texelFetch(`gsampler2D s, ivec2 p, int lod)
 	* if the sampler is an array or 3D, then `ivec3 p`
 * vec4 `textureGather(` gsampler2D s, vec2 p [, int comps])
-	* Can also use g
+	* Can also use an array or cube sampler (both require `vec3 p`
+	* The optional parameter `comps` is 0 for x (default), ... 3 for w
+* vec_type `dFdx(`vec_type p)
+	* Fragment shaders only
 
 ## Shader preprocessor
 
@@ -701,9 +704,9 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3ODQ0NzYwLC0yMDQ1OTM5NDQ3LC0xMT
-MxNzI3MDksLTc1NDQ4MjYzMiwxMjk2NjI0MDQsMzg2NDY4ODY1
-LC0zNDUyODIxMSwtMTkzOTQyNzMwOSwtODU0MjE4ODU0LC0xMD
-I3NDg1ODkwLDQ5MjI2Mzk1MiwtMzEzNTUxNzM3LC0xOTc5MzA5
-MDMxXX0=
+eyJoaXN0b3J5IjpbLTE5MDAzNzQ1MTEsLTIwNDU5Mzk0NDcsLT
+ExMzE3MjcwOSwtNzU0NDgyNjMyLDEyOTY2MjQwNCwzODY0Njg4
+NjUsLTM0NTI4MjExLC0xOTM5NDI3MzA5LC04NTQyMTg4NTQsLT
+EwMjc0ODU4OTAsNDkyMjYzOTUyLC0zMTM1NTE3MzcsLTE5Nzkz
+MDkwMzFdfQ==
 -->
