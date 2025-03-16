@@ -649,6 +649,8 @@ Godot Alias | Actual types | glsl documentation alias
 	* https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureQueryLod.xhtml
 * int `textureQueryLevels`(gsampler2D s) or `gasmpler2DArray` or `gsampler3D` or `samplerCube`
 	* just returns the number of lod/mipmap levels
+* vec4 `texture`(texture, vec p [, float bias])
+	* can return `vec4` or `gvec4_type`
 	* 
 ## Shader preprocessor
 
@@ -673,8 +675,8 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNDk5ODQyMSwtNzU0NDgyNjMyLDEyOT
-Y2MjQwNCwzODY0Njg4NjUsLTM0NTI4MjExLC0xOTM5NDI3MzA5
-LC04NTQyMTg4NTQsLTEwMjc0ODU4OTAsNDkyMjYzOTUyLC0zMT
-M1NTE3MzcsLTE5NzkzMDkwMzFdfQ==
+eyJoaXN0b3J5IjpbLTEwNzM0MDQ5MTAsLTc1NDQ4MjYzMiwxMj
+k2NjI0MDQsMzg2NDY4ODY1LC0zNDUyODIxMSwtMTkzOTQyNzMw
+OSwtODU0MjE4ODU0LC0xMDI3NDg1ODkwLDQ5MjI2Mzk1MiwtMz
+EzNTUxNzM3LC0xOTc5MzA5MDMxXX0=
 -->
