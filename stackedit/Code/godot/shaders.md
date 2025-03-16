@@ -622,9 +622,15 @@ Godot Alias | Actual types | glsl documentation alias
 	* The output has one row per member of `column`
 	* and as many columns as `row` has members
 * mat_type `transpose(mat_type m)` $m^T$
-* float `determinant(mat_typehttps://www.khronos.org/registry/OpenGL-Refpages/gl4/html/inverse.xhtml m)`??? Matrix determinant
-	* 
+* float `determinant(mat_type m)`??? Matrix determinant
+	* https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/inverse.xhtml
 * mat_type `inverse(mat_type m)` Inverse matrix
+	* https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/inverse.xhtml
+
+### Comparison Functions
+* vec_bool_type `lessThan`(vec_type x, vec_type y)
+* vec_bool_type `greaterThan`(vec_type x, vec_type y)
+* vec_bool_type` `
 
 ## Shader preprocessor
 
@@ -649,8 +655,8 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYxMDg5MjQ2LC03NTQ0ODI2MzIsMTI5Nj
-YyNDA0LDM4NjQ2ODg2NSwtMzQ1MjgyMTEsLTE5Mzk0MjczMDks
-LTg1NDIxODg1NCwtMTAyNzQ4NTg5MCw0OTIyNjM5NTIsLTMxMz
-U1MTczNywtMTk3OTMwOTAzMV19
+eyJoaXN0b3J5IjpbLTkxOTkwOTUwNiwtNzU0NDgyNjMyLDEyOT
+Y2MjQwNCwzODY0Njg4NjUsLTM0NTI4MjExLC0xOTM5NDI3MzA5
+LC04NTQyMTg4NTQsLTEwMjc0ODU4OTAsNDkyMjYzOTUyLC0zMT
+M1NTE3MzcsLTE5NzkzMDkwMzFdfQ==
 -->
