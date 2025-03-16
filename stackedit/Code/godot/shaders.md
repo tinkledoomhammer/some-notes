@@ -671,7 +671,10 @@ Godot Alias | Actual types | glsl documentation alias
 	* other types similar to `textureProjLod`
 	* looks up a texture with specified explicit texture gradients
 	* https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureGrad.xhtml
-* gvec4_type `
+* gvec4_type `textureProjGrad(` ...
+	* https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureProjGrad.xhtml
+* gvec4_type `texelFetch(`gsampler2D s, ivec2 p, int lod)
+	* if the sampler is an array or 3D, then `
 
 ## Shader preprocessor
 
@@ -696,9 +699,9 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDg2MzQ0MDQsLTIwNDU5Mzk0NDcsLT
-ExMzE3MjcwOSwtNzU0NDgyNjMyLDEyOTY2MjQwNCwzODY0Njg4
-NjUsLTM0NTI4MjExLC0xOTM5NDI3MzA5LC04NTQyMTg4NTQsLT
-EwMjc0ODU4OTAsNDkyMjYzOTUyLC0zMTM1NTE3MzcsLTE5Nzkz
-MDkwMzFdfQ==
+eyJoaXN0b3J5IjpbOTAwODg2NzY5LC0yMDQ1OTM5NDQ3LC0xMT
+MxNzI3MDksLTc1NDQ4MjYzMiwxMjk2NjI0MDQsMzg2NDY4ODY1
+LC0zNDUyODIxMSwtMTkzOTQyNzMwOSwtODU0MjE4ODU0LC0xMD
+I3NDg1ODkwLDQ5MjI2Mzk1MiwtMzEzNTUxNzM3LC0xOTc5MzA5
+MDMxXX0=
 -->
