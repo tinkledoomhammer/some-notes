@@ -636,7 +636,11 @@ Godot Alias | Actual types | glsl documentation alias
 * bool `any`(vec_bool_type x)
 * bool `all`(vec_bool_type x)
 * vec_bool_type `not`(vec_bool_type)
-* 
+
+### Texture Functions
+* `textureSize` i.e. `ivec2 textureSize(gsampler2D s, int lod)`
+	* can return `ivec2` or `ivec3`
+	* `
 
 ## Shader preprocessor
 
@@ -661,8 +665,8 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4MTc1NDIyMiwtNzU0NDgyNjMyLDEyOT
-Y2MjQwNCwzODY0Njg4NjUsLTM0NTI4MjExLC0xOTM5NDI3MzA5
-LC04NTQyMTg4NTQsLTEwMjc0ODU4OTAsNDkyMjYzOTUyLC0zMT
-M1NTE3MzcsLTE5NzkzMDkwMzFdfQ==
+eyJoaXN0b3J5IjpbODA5ODA3ODY3LC03NTQ0ODI2MzIsMTI5Nj
+YyNDA0LDM4NjQ2ODg2NSwtMzQ1MjgyMTEsLTE5Mzk0MjczMDks
+LTg1NDIxODg1NCwtMTAyNzQ4NTg5MCw0OTIyNjM5NTIsLTMxMz
+U1MTczNywtMTk3OTMwOTAzMV19
 -->
