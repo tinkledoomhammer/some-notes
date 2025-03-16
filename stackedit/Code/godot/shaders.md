@@ -614,8 +614,10 @@ Godot Alias | Actual types | glsl documentation alias
 	```
 	* https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/refract.xhtml
 
-* vec_type `faceforward`(vec_type N, vec_type I, vec_type Nref) ??
-* mat_type `matrixCompMult(mat_type x, mat_type y)` Matrix component multiplication ??
+* vec_type `faceforward`(vec_type N, vec_type I, vec_type Nref)
+	* https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/faceforward.xhtml
+* mat_type `matrixCompMult(mat_type x, mat_type y)` Matrix component multiplication
+	* Just multiplies each component
 * mat_type`outerProduct(vec_type column, vec_type row)` matrix outer product
 * mat_type `transpose(mat_type m)` $m^T$
 * float `determinant(mat_type m)`??? Matrix determinant
@@ -644,8 +646,8 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODYyODI2MjAsLTc1NDQ4MjYzMiwxMj
-k2NjI0MDQsMzg2NDY4ODY1LC0zNDUyODIxMSwtMTkzOTQyNzMw
-OSwtODU0MjE4ODU0LC0xMDI3NDg1ODkwLDQ5MjI2Mzk1MiwtMz
-EzNTUxNzM3LC0xOTc5MzA5MDMxXX0=
+eyJoaXN0b3J5IjpbLTMyOTIxNzQ0MiwtNzU0NDgyNjMyLDEyOT
+Y2MjQwNCwzODY0Njg4NjUsLTM0NTI4MjExLC0xOTM5NDI3MzA5
+LC04NTQyMTg4NTQsLTEwMjc0ODU4OTAsNDkyMjYzOTUyLC0zMT
+M1NTE3MzcsLTE5NzkzMDkwMzFdfQ==
 -->
