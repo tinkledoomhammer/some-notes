@@ -651,7 +651,9 @@ Godot Alias | Actual types | glsl documentation alias
 	* just returns the number of lod/mipmap levels
 * vec4 `texture`(texture, vec p [, float bias])
 	* can return `vec4` or `gvec4_type`
-	* 
+	* the first arg `s` can be any sampler type
+	* the second arg `p` is a vector with the appropriate dimension
+	* the optional `bias` parameter is influences the lod
 ## Shader preprocessor
 
 ## Shader Types
@@ -675,7 +677,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzM0MDQ5MTAsLTc1NDQ4MjYzMiwxMj
+eyJoaXN0b3J5IjpbLTIxMzc0NTE3MzEsLTc1NDQ4MjYzMiwxMj
 k2NjI0MDQsMzg2NDY4ODY1LC0zNDUyODIxMSwtMTkzOTQyNzMw
 OSwtODU0MjE4ODU0LC0xMDI3NDg1ODkwLDQ5MjI2Mzk1MiwtMz
 EzNTUxNzM3LC0xOTc5MzA5MDMxXX0=
