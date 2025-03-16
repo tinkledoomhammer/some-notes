@@ -681,7 +681,9 @@ Godot Alias | Actual types | glsl documentation alias
 * vec_type `dFdx(`vec_type p)
 	* Fragment shaders only
 	* also `dFdxCoarse(` and `dFdxFine(`
-	* 
+	* Returns the partial dirivative of `p` with respect to the window x coordinate using local differencing
+	* There are also `dFdy`...
+	* Expressions with higher order derivatives and mixed-order derivatives produce undefined result
 
 ## Shader preprocessor
 
@@ -706,7 +708,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI1MDE3NDU0LC0yMDQ1OTM5NDQ3LC0xMT
+eyJoaXN0b3J5IjpbMTU2NzQ0NjQwLC0yMDQ1OTM5NDQ3LC0xMT
 MxNzI3MDksLTc1NDQ4MjYzMiwxMjk2NjI0MDQsMzg2NDY4ODY1
 LC0zNDUyODIxMSwtMTkzOTQyNzMwOSwtODU0MjE4ODU0LC0xMD
 I3NDg1ODkwLDQ5MjI2Mzk1MiwtMzEzNTUxNzM3LC0xOTc5MzA5
