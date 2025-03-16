@@ -660,7 +660,8 @@ Godot Alias | Actual types | glsl documentation alias
 	* `p` can be a `vec4`
 	* `s` can be a `gsampler3D` but only if `p` is `vec4`
 	* https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureProj.xhtml
-* 
+* gvec4_type `textureLod(`gsampler2D s, vec2 p, float lod)
+	* Performs a texture lookup at coordinate `p` with an explicit level o
 ## Shader preprocessor
 
 ## Shader Types
@@ -684,9 +685,9 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mzc3NzU3NTgsLTIwNDU5Mzk0NDcsLT
-ExMzE3MjcwOSwtNzU0NDgyNjMyLDEyOTY2MjQwNCwzODY0Njg4
-NjUsLTM0NTI4MjExLC0xOTM5NDI3MzA5LC04NTQyMTg4NTQsLT
-EwMjc0ODU4OTAsNDkyMjYzOTUyLC0zMTM1NTE3MzcsLTE5Nzkz
-MDkwMzFdfQ==
+eyJoaXN0b3J5IjpbMzg0MzU0Nzc5LC0yMDQ1OTM5NDQ3LC0xMT
+MxNzI3MDksLTc1NDQ4MjYzMiwxMjk2NjI0MDQsMzg2NDY4ODY1
+LC0zNDUyODIxMSwtMTkzOTQyNzMwOSwtODU0MjE4ODU0LC0xMD
+I3NDg1ODkwLDQ5MjI2Mzk1MiwtMzEzNTUxNzM3LC0xOTc5MzA5
+MDMxXX0=
 -->
