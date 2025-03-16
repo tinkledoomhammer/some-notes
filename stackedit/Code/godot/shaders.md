@@ -688,9 +688,11 @@ Godot Alias | Actual types | glsl documentation alias
 	* that return`abs(dFdx(p)+abs(dFdy(p))`
 
 ### Packing and unpacking functions
-The convert multiple int's to a uint32 (packing) or the other way around
+The convert multiple floats to a uint32 (packing) or the other way around
 * uint `packHalf2x16(` vec2 v)
 	*	vec2 `unpackHalf2x16(`uint v)
+*	uint `packUnorm2x16(`vec2 v)
+	*	vec2 `unpackUnorm2x16(
 
 ## Shader preprocessor
 
@@ -715,9 +717,9 @@ The convert multiple int's to a uint32 (packing) or the other way around
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU2NTUxOTcxLC0yMDQ1OTM5NDQ3LC0xMT
-MxNzI3MDksLTc1NDQ4MjYzMiwxMjk2NjI0MDQsMzg2NDY4ODY1
-LC0zNDUyODIxMSwtMTkzOTQyNzMwOSwtODU0MjE4ODU0LC0xMD
-I3NDg1ODkwLDQ5MjI2Mzk1MiwtMzEzNTUxNzM3LC0xOTc5MzA5
-MDMxXX0=
+eyJoaXN0b3J5IjpbLTEyMjk2ODc1MywtMjA0NTkzOTQ0NywtMT
+EzMTcyNzA5LC03NTQ0ODI2MzIsMTI5NjYyNDA0LDM4NjQ2ODg2
+NSwtMzQ1MjgyMTEsLTE5Mzk0MjczMDksLTg1NDIxODg1NCwtMT
+AyNzQ4NTg5MCw0OTIyNjM5NTIsLTMxMzU1MTczNywtMTk3OTMw
+OTAzMV19
 -->
