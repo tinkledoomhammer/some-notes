@@ -695,6 +695,7 @@ The convert multiple floats to a uint32 (packing) or the other way around
 	*	vec2 `unpackUnorm2x16(` uint v)
 	*	two normalized (range 0-1) 32 bit floats ->16-bit floats
 *	uint `packSnorm2x16` ... as above but normalized to -1 .. 1
+*	also `Unorm4x8(` and `Snorm4x8` 
 
 ## Shader preprocessor
 
@@ -719,9 +720,9 @@ The convert multiple floats to a uint32 (packing) or the other way around
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjUxNTA4MzMsLTIwNDU5Mzk0NDcsLT
-ExMzE3MjcwOSwtNzU0NDgyNjMyLDEyOTY2MjQwNCwzODY0Njg4
-NjUsLTM0NTI4MjExLC0xOTM5NDI3MzA5LC04NTQyMTg4NTQsLT
-EwMjc0ODU4OTAsNDkyMjYzOTUyLC0zMTM1NTE3MzcsLTE5Nzkz
-MDkwMzFdfQ==
+eyJoaXN0b3J5IjpbMjA5NzE4OTU1OSwtMjA0NTkzOTQ0NywtMT
+EzMTcyNzA5LC03NTQ0ODI2MzIsMTI5NjYyNDA0LDM4NjQ2ODg2
+NSwtMzQ1MjgyMTEsLTE5Mzk0MjczMDksLTg1NDIxODg1NCwtMT
+AyNzQ4NTg5MCw0OTIyNjM5NTIsLTMxMzU1MTczNywtMTk3OTMw
+OTAzMV19
 -->
