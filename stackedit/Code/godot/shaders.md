@@ -630,7 +630,12 @@ Godot Alias | Actual types | glsl documentation alias
 ### Comparison Functions
 * vec_bool_type `lessThan`(vec_type x, vec_type y)
 * vec_bool_type `greaterThan`(vec_type x, vec_type y)
-* vec_bool_type` `
+* vec_bool_type `lessThanEqual`(vec_type x, vec_type y)
+* vec_bool_type `greaterThanEqual`(vec_type x, vec_type y)
+* vec_bool_type `notEqual`(...)
+* bool `any`(vec_bool_type x)
+* bool `all`(vec_bool_type x)
+* vec_bool_type `not`(vec_b
 
 ## Shader preprocessor
 
@@ -655,7 +660,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxOTkwOTUwNiwtNzU0NDgyNjMyLDEyOT
+eyJoaXN0b3J5IjpbLTU5NTU0MDg2NiwtNzU0NDgyNjMyLDEyOT
 Y2MjQwNCwzODY0Njg4NjUsLTM0NTI4MjExLC0xOTM5NDI3MzA5
 LC04NTQyMTg4NTQsLTEwMjc0ODU4OTAsNDkyMjYzOTUyLC0zMT
 M1NTE3MzcsLTE5NzkzMDkwMzFdfQ==
