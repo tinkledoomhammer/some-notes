@@ -594,10 +594,14 @@ Godot Alias | Actual types | glsl documentation alias
 * float `distance`(vec_type a, vec_type b) = `return length(a-b)`
 * float `dot`(vec_type a, vec_type b) = $\sum{a_n b_n}$ = $|a| |b| \cos \theta$
 * float `cross`(vec3a, vec3 b) = $a \times b$
-	vec2( a.y * b.z - b.y * a.z,
-	  a.z * b.x - b.z * a.x,
-	  a.x * b.z - b.x * a.y)
-* vec_type `normalize`(vec_type x) $x / |x|$
+	```glsl 
+		vec3( a.y * b.z - b.y * a.z,
+		  a.z * b.x - b.z * a.x,
+		  a.x * b.z - b.x * a.y)
+	```
+	https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/cross.xhtml
+* vec_type `normalize`(vec_type x) $x / |x|$ `I - 2.0 * dot(N, I) *N`
+	* `
 * vec3 `refelct`(vec3 I, vec3 N) ???
 * vec3 `refract`(vec3 I, vec3 N, float eta) ???
 * vec_type `faceforward`(vec_type N, vec_type I, vec_type Nref) ??
@@ -630,8 +634,8 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTY2MDU3MDksLTc1NDQ4MjYzMiwxMj
-k2NjI0MDQsMzg2NDY4ODY1LC0zNDUyODIxMSwtMTkzOTQyNzMw
-OSwtODU0MjE4ODU0LC0xMDI3NDg1ODkwLDQ5MjI2Mzk1MiwtMz
-EzNTUxNzM3LC0xOTc5MzA5MDMxXX0=
+eyJoaXN0b3J5IjpbNTAyNzQ1NzcsLTc1NDQ4MjYzMiwxMjk2Nj
+I0MDQsMzg2NDY4ODY1LC0zNDUyODIxMSwtMTkzOTQyNzMwOSwt
+ODU0MjE4ODU0LC0xMDI3NDg1ODkwLDQ5MjI2Mzk1MiwtMzEzNT
+UxNzM3LC0xOTc5MzA5MDMxXX0=
 -->
