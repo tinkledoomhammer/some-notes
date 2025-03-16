@@ -653,7 +653,9 @@ Godot Alias | Actual types | glsl documentation alias
 	* can return `vec4` or `gvec4_type`
 	* the first arg `s` can be any sampler type
 	* the second arg `p` is a vector with the appropriate dimension
-	* the optional `bias` parameter is influences the lod
+	* the optional `bias` parameter is influences the lod calculation
+	* https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/texture.xhtml
+	* 
 ## Shader preprocessor
 
 ## Shader Types
@@ -677,8 +679,8 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzc0NTE3MzEsLTc1NDQ4MjYzMiwxMj
-k2NjI0MDQsMzg2NDY4ODY1LC0zNDUyODIxMSwtMTkzOTQyNzMw
-OSwtODU0MjE4ODU0LC0xMDI3NDg1ODkwLDQ5MjI2Mzk1MiwtMz
-EzNTUxNzM3LC0xOTc5MzA5MDMxXX0=
+eyJoaXN0b3J5IjpbMTkxOTAyMDA2MSwtNzU0NDgyNjMyLDEyOT
+Y2MjQwNCwzODY0Njg4NjUsLTM0NTI4MjExLC0xOTM5NDI3MzA5
+LC04NTQyMTg4NTQsLTEwMjc0ODU4OTAsNDkyMjYzOTUyLC0zMT
+M1NTE3MzcsLTE5NzkzMDkwMzFdfQ==
 -->
