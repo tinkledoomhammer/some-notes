@@ -600,10 +600,18 @@ Godot Alias | Actual types | glsl documentation alias
 		  a.x * b.z - b.x * a.y)
 	```
 	https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/cross.xhtml
-* vec_type `normalize`(vec_type x) $x / |x|$ `I - 2.0 * dot(N, I) *N`
-	* `
-* vec3 `refelct`(vec3 I, vec3 N) ???
-* vec3 `refract`(vec3 I, vec3 N, float eta) ???
+* vec_type `normalize`(vec_type x) $x / |x|$ 
+* vec3 `refelct`(vec3 I, vec3 N) `I - 2.0 * dot(N, I) *N`
+	* `N` should be normalized and is the surface normal
+	* `I` is the incident vector
+* vec3 `refract`(vec3 I, vec3 N, float eta) 
+		```glsl
+		k  =  1.0  -  eta  *  eta  *  (1.0  -  dot(N,  I)  *  dot(N,  I));
+if  (k  <  0.0)
+	R  =  genType(0.0);  //  or  genDType(0.0)
+else
+	R  =  eta  *  I  -  (eta  *  dot(N,  I)  +  sqrt(k))  *  N;
+	```
 * vec_type `faceforward`(vec_type N, vec_type I, vec_type Nref) ??
 * mat_type `matrixCompMult(mat_type x, mat_type y)` Matrix component multiplication ??
 * mat_type`outerProduct(vec_type column, vec_type row)` matrix outer product
@@ -634,8 +642,8 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTAyNzQ1NzcsLTc1NDQ4MjYzMiwxMjk2Nj
-I0MDQsMzg2NDY4ODY1LC0zNDUyODIxMSwtMTkzOTQyNzMwOSwt
-ODU0MjE4ODU0LC0xMDI3NDg1ODkwLDQ5MjI2Mzk1MiwtMzEzNT
-UxNzM3LC0xOTc5MzA5MDMxXX0=
+eyJoaXN0b3J5IjpbMTkxNjY3Mzc2NSwtNzU0NDgyNjMyLDEyOT
+Y2MjQwNCwzODY0Njg4NjUsLTM0NTI4MjExLC0xOTM5NDI3MzA5
+LC04NTQyMTg4NTQsLTEwMjc0ODU4OTAsNDkyMjYzOTUyLC0zMT
+M1NTE3MzcsLTE5NzkzMDkwMzFdfQ==
 -->
