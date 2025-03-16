@@ -674,7 +674,9 @@ Godot Alias | Actual types | glsl documentation alias
 * gvec4_type `textureProjGrad(` ...
 	* https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureProjGrad.xhtml
 * gvec4_type `texelFetch(`gsampler2D s, ivec2 p, int lod)
-	* if the sampler is an array or 3D, then `
+	* if the sampler is an array or 3D, then `ivec3 p`
+* vec4 `textureGather(` gsampler2D s, vec2 p [, int comps])
+	* Can also use g
 
 ## Shader preprocessor
 
@@ -699,7 +701,7 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAwODg2NzY5LC0yMDQ1OTM5NDQ3LC0xMT
+eyJoaXN0b3J5IjpbMTc3ODQ0NzYwLC0yMDQ1OTM5NDQ3LC0xMT
 MxNzI3MDksLTc1NDQ4MjYzMiwxMjk2NjI0MDQsMzg2NDY4ODY1
 LC0zNDUyODIxMSwtMTkzOTQyNzMwOSwtODU0MjE4ODU0LC0xMD
 I3NDg1ODkwLDQ5MjI2Mzk1MiwtMzEzNTUxNzM3LC0xOTc5MzA5
