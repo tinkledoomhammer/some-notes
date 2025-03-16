@@ -667,7 +667,12 @@ Godot Alias | Actual types | glsl documentation alias
 	* `p` can be a `vec4`
 	* `s` can be `sampler3D` and requires `vec4 p`
 	* https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureProjLod.xhtml
-* gvec4_type `textureGrad(
+* gvec4_type `textureGrad(` gsampler2D s, vec2 p, vec2 dPdx, vec2 dPdy)
+	* other types similar to `textureProjLod`
+	* looks up a texture with specified explicit texture gradients
+	* https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureGrad.xhtml
+* gvec4_type `
+
 ## Shader preprocessor
 
 ## Shader Types
@@ -691,9 +696,9 @@ Godot Alias | Actual types | glsl documentation alias
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzIyMzIzOCwtMjA0NTkzOTQ0NywtMT
-EzMTcyNzA5LC03NTQ0ODI2MzIsMTI5NjYyNDA0LDM4NjQ2ODg2
-NSwtMzQ1MjgyMTEsLTE5Mzk0MjczMDksLTg1NDIxODg1NCwtMT
-AyNzQ4NTg5MCw0OTIyNjM5NTIsLTMxMzU1MTczNywtMTk3OTMw
-OTAzMV19
+eyJoaXN0b3J5IjpbLTEyMDg2MzQ0MDQsLTIwNDU5Mzk0NDcsLT
+ExMzE3MjcwOSwtNzU0NDgyNjMyLDEyOTY2MjQwNCwzODY0Njg4
+NjUsLTM0NTI4MjExLC0xOTM5NDI3MzA5LC04NTQyMTg4NTQsLT
+EwMjc0ODU4OTAsNDkyMjYzOTUyLC0zMTM1NTE3MzcsLTE5Nzkz
+MDkwMzFdfQ==
 -->
