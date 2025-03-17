@@ -707,7 +707,11 @@ The convert multiple floats to a uint32 (packing) or the other way around
 	* returns a vector of bit-reversed integers (not a reversed vector...)
 * vec_[u]int_type `bitCount(`vec_[u]int_type value)
 	* returns the number of 1 bits
-* vec_]
+* vec_[u]int_type `findLSB(`vec_[u]int_type value)
+	* vec_[u]int_type `findMSB(`vec_[u]int_type value)
+	* return index of the most/least significant bit
+	* will return -1 if value is 0
+	* MSB will be -1 if value is -1
 ## Shader preprocessor
 
 ## Shader Types
@@ -731,9 +735,9 @@ The convert multiple floats to a uint32 (packing) or the other way around
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzM4NTQ2NDUsMjA5NzE4OTU1OSwtMj
-A0NTkzOTQ0NywtMTEzMTcyNzA5LC03NTQ0ODI2MzIsMTI5NjYy
-NDA0LDM4NjQ2ODg2NSwtMzQ1MjgyMTEsLTE5Mzk0MjczMDksLT
-g1NDIxODg1NCwtMTAyNzQ4NTg5MCw0OTIyNjM5NTIsLTMxMzU1
-MTczNywtMTk3OTMwOTAzMV19
+eyJoaXN0b3J5IjpbMTcxMjY4ODgyLDIwOTcxODk1NTksLTIwND
+U5Mzk0NDcsLTExMzE3MjcwOSwtNzU0NDgyNjMyLDEyOTY2MjQw
+NCwzODY0Njg4NjUsLTM0NTI4MjExLC0xOTM5NDI3MzA5LC04NT
+QyMTg4NTQsLTEwMjc0ODU4OTAsNDkyMjYzOTUyLC0zMTM1NTE3
+MzcsLTE5NzkzMDkwMzFdfQ==
 -->
