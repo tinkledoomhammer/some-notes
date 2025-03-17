@@ -705,7 +705,9 @@ The convert multiple floats to a uint32 (packing) or the other way around
 	* returns the combined value
 * vec_[u]int_type `bitfieldReverse(`vec_[u]int_type value)
 	* returns a vector of bit-reversed integers (not a reversed vector...)
-* 
+* vec_[u]int_type `bitCount(`vec_[u]int_type value)
+	* returns the number of 1 bits
+* vec_]
 ## Shader preprocessor
 
 ## Shader Types
@@ -729,7 +731,7 @@ The convert multiple floats to a uint32 (packing) or the other way around
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjM4MTg1MTIsMjA5NzE4OTU1OSwtMj
+eyJoaXN0b3J5IjpbLTE2MzM4NTQ2NDUsMjA5NzE4OTU1OSwtMj
 A0NTkzOTQ0NywtMTEzMTcyNzA5LC03NTQ0ODI2MzIsMTI5NjYy
 NDA0LDM4NjQ2ODg2NSwtMzQ1MjgyMTEsLTE5Mzk0MjczMDksLT
 g1NDIxODg1NCwtMTAyNzQ4NTg5MCw0OTIyNjM5NTIsLTMxMzU1
