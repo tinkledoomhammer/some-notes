@@ -725,6 +725,11 @@ The convert multiple floats to a uint32 (packing) or the other way around
 
 
 ## Shader preprocessor
+https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/shader_preprocessor.html
+
+Directives start with `#` spans to the end of line, multiple lines if they end with `\`
+* The first line break that is not featuring a backslash terminates the directive
+
 
 
 ## Shader Types
@@ -748,7 +753,7 @@ The convert multiple floats to a uint32 (packing) or the other way around
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0MjY0NTA2MiwyMDk3MTg5NTU5LC0yMD
+eyJoaXN0b3J5IjpbLTI3MDY5MDIxMCwyMDk3MTg5NTU5LC0yMD
 Q1OTM5NDQ3LC0xMTMxNzI3MDksLTc1NDQ4MjYzMiwxMjk2NjI0
 MDQsMzg2NDY4ODY1LC0zNDUyODIxMSwtMTkzOTQyNzMwOSwtOD
 U0MjE4ODU0LC0xMDI3NDg1ODkwLDQ5MjI2Mzk1MiwtMzEzNTUx
