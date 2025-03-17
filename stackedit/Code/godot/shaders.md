@@ -697,6 +697,9 @@ The convert multiple floats to a uint32 (packing) or the other way around
 *	uint `packSnorm2x16` ... as above but normalized to -1 .. 1
 *	also `Unorm4x8(` and `Snorm4x8` 
 
+#### Bitwise functions
+* vec_[u]int_type `bitFieldExtract(` vec_[u]int_type value, int offset, it bits)
+* vec_[u]int_type `bitFieldInsert(`vec_[u
 ## Shader preprocessor
 
 ## Shader Types
@@ -720,9 +723,9 @@ The convert multiple floats to a uint32 (packing) or the other way around
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NzE4OTU1OSwtMjA0NTkzOTQ0NywtMT
-EzMTcyNzA5LC03NTQ0ODI2MzIsMTI5NjYyNDA0LDM4NjQ2ODg2
-NSwtMzQ1MjgyMTEsLTE5Mzk0MjczMDksLTg1NDIxODg1NCwtMT
-AyNzQ4NTg5MCw0OTIyNjM5NTIsLTMxMzU1MTczNywtMTk3OTMw
-OTAzMV19
+eyJoaXN0b3J5IjpbLTc4MDI2Mjc4MywyMDk3MTg5NTU5LC0yMD
+Q1OTM5NDQ3LC0xMTMxNzI3MDksLTc1NDQ4MjYzMiwxMjk2NjI0
+MDQsMzg2NDY4ODY1LC0zNDUyODIxMSwtMTkzOTQyNzMwOSwtOD
+U0MjE4ODU0LC0xMDI3NDg1ODkwLDQ5MjI2Mzk1MiwtMzEzNTUx
+NzM3LC0xOTc5MzA5MDMxXX0=
 -->
