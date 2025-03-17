@@ -731,7 +731,10 @@ Directives start with `#` spans to the end of line, multiple lines if they end w
 * The first line break that is not featuring a backslash terminates the directive
 
 ### #Define
-`3define <identifier> [replacem
+`#define <identifier> [replacement_code]`
+* replaces `identifier` with `replacement_code` on a while-word basis
+* `replacement_code` is optional but the macro can only be used with `#ifdef` and `#ifndef`
+* 
 
 ## Shader Types
 
@@ -754,7 +757,7 @@ Directives start with `#` spans to the end of line, multiple lines if they end w
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMDg0NTEwNiwyMDk3MTg5NTU5LC0yMD
+eyJoaXN0b3J5IjpbLTg1MTE1Njk1OSwyMDk3MTg5NTU5LC0yMD
 Q1OTM5NDQ3LC0xMTMxNzI3MDksLTc1NDQ4MjYzMiwxMjk2NjI0
 MDQsMzg2NDY4ODY1LC0zNDUyODIxMSwtMTkzOTQyNzMwOSwtOD
 U0MjE4ODU0LC0xMDI3NDg1ODkwLDQ5MjI2Mzk1MiwtMzEzNTUx
