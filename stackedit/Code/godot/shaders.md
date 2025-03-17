@@ -718,6 +718,8 @@ The convert multiple floats to a uint32 (packing) or the other way around
 	* also `usubBorrow(`
 	* the out param `carry` will be 1 if carry/borrow occurred, otherwise 0
 * vec_type `ldexp(`vec_type x, out vec_int_type exp)
+	* returns $x * 2^{exp}$
+* vec_type `frexp(`vec_type x, out vec_int_type exp)
 	* 
 ## Shader preprocessor
 
@@ -742,9 +744,9 @@ The convert multiple floats to a uint32 (packing) or the other way around
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODg4MjU3OTQsMjA5NzE4OTU1OSwtMj
-A0NTkzOTQ0NywtMTEzMTcyNzA5LC03NTQ0ODI2MzIsMTI5NjYy
-NDA0LDM4NjQ2ODg2NSwtMzQ1MjgyMTEsLTE5Mzk0MjczMDksLT
-g1NDIxODg1NCwtMTAyNzQ4NTg5MCw0OTIyNjM5NTIsLTMxMzU1
-MTczNywtMTk3OTMwOTAzMV19
+eyJoaXN0b3J5IjpbNTYxMDc2MCwyMDk3MTg5NTU5LC0yMDQ1OT
+M5NDQ3LC0xMTMxNzI3MDksLTc1NDQ4MjYzMiwxMjk2NjI0MDQs
+Mzg2NDY4ODY1LC0zNDUyODIxMSwtMTkzOTQyNzMwOSwtODU0Mj
+E4ODU0LC0xMDI3NDg1ODkwLDQ5MjI2Mzk1MiwtMzEzNTUxNzM3
+LC0xOTc5MzA5MDMxXX0=
 -->
