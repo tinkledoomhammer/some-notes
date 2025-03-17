@@ -732,8 +732,10 @@ Directives start with `#` spans to the end of line, multiple lines if they end w
 
 ### #Define
 `#define <identifier> [replacement_code]`
-* replaces `identifier` with `replacement_code` on a while-word basis
+* replaces `identifier` with `replacement_code` on a whole-word basis
 * `replacement_code` is optional but the macro can only be used with `#ifdef` and `#ifndef`
+* `#define <identifier>([args]) [replacement_code]`
+	* arguments are substituted on a whole-word basis
 * `##` concatenates
 	* It is removed along with any space surrounding it, allowing the creation of new symbols
 	 ```glsl
@@ -742,7 +744,8 @@ Directives start with `#` spans to the end of line, multiple lines if they end w
 	 SAMPLE(0) // Declares and initializes tex0
 	 ALBEDO = TEX0.rgb // 
 	 ```
-	 
+### `undef <identifier>`
+
 
 ## Shader Types
 
@@ -765,9 +768,9 @@ Directives start with `#` spans to the end of line, multiple lines if they end w
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3ODE0NjkwOSwyMDk3MTg5NTU5LC0yMD
-Q1OTM5NDQ3LC0xMTMxNzI3MDksLTc1NDQ4MjYzMiwxMjk2NjI0
-MDQsMzg2NDY4ODY1LC0zNDUyODIxMSwtMTkzOTQyNzMwOSwtOD
-U0MjE4ODU0LC0xMDI3NDg1ODkwLDQ5MjI2Mzk1MiwtMzEzNTUx
-NzM3LC0xOTc5MzA5MDMxXX0=
+eyJoaXN0b3J5IjpbNDcxOTAzNDE2LDIwOTcxODk1NTksLTIwND
+U5Mzk0NDcsLTExMzE3MjcwOSwtNzU0NDgyNjMyLDEyOTY2MjQw
+NCwzODY0Njg4NjUsLTM0NTI4MjExLC0xOTM5NDI3MzA5LC04NT
+QyMTg4NTQsLTEwMjc0ODU4OTAsNDkyMjYzOTUyLC0zMTM1NTE3
+MzcsLTE5NzkzMDkwMzFdfQ==
 -->
