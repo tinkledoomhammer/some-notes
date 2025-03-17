@@ -739,7 +739,10 @@ Directives start with `#` spans to the end of line, multiple lines if they end w
 	 ```glsl
 	 #define SAMPLE(N) vec4 tex##N = texture(material##N, UV)
 	 ...
+	 SAMPLE(0) // Declares and initializes tex0
+	 ALBEDO = TEX0.rgb // 
 	 ```
+	 
 
 ## Shader Types
 
@@ -762,7 +765,7 @@ Directives start with `#` spans to the end of line, multiple lines if they end w
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTQyNjc4NiwyMDk3MTg5NTU5LC0yMD
+eyJoaXN0b3J5IjpbMTc3ODE0NjkwOSwyMDk3MTg5NTU5LC0yMD
 Q1OTM5NDQ3LC0xMTMxNzI3MDksLTc1NDQ4MjYzMiwxMjk2NjI0
 MDQsMzg2NDY4ODY1LC0zNDUyODIxMSwtMTkzOTQyNzMwOSwtOD
 U0MjE4ODU0LC0xMDI3NDg1ODkwLDQ5MjI2Mzk1MiwtMzEzNTUx
