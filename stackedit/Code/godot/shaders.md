@@ -702,7 +702,7 @@ The convert multiple floats to a uint32 (packing) or the other way around
 	* in the unsigned version, the most significant bits will be 0
 	* the signed version sign-extends the msb of the extracted bits 
 * vec_[u]int_type `bitfieldInsert(`vec_[u]int_type base, vec_[u]int_type insert, int offset, int bits)
-	* 
+	*
 * vec_[u]int_type `bitfieldReverse(`
 ## Shader preprocessor
 
@@ -727,7 +727,7 @@ The convert multiple floats to a uint32 (packing) or the other way around
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDY0Nzc3NDcsMjA5NzE4OTU1OSwtMj
+eyJoaXN0b3J5IjpbLTE2MjMyODExNzksMjA5NzE4OTU1OSwtMj
 A0NTkzOTQ0NywtMTEzMTcyNzA5LC03NTQ0ODI2MzIsMTI5NjYy
 NDA0LDM4NjQ2ODg2NSwtMzQ1MjgyMTEsLTE5Mzk0MjczMDksLT
 g1NDIxODg1NCwtMTAyNzQ4NTg5MCw0OTIyNjM5NTIsLTMxMzU1
