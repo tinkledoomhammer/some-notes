@@ -722,7 +722,10 @@ The convert multiple floats to a uint32 (packing) or the other way around
 * vec_type `frexp(`vec_type x, out vec_int_type exp)
 	* returns floats in $[0.5, 1.0)$ 
 	* the out param `exp` takes the corresponding exponents
+
+
 ## Shader preprocessor
+
 
 ## Shader Types
 
@@ -745,9 +748,9 @@ The convert multiple floats to a uint32 (packing) or the other way around
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzcxMjA1ODAsMjA5NzE4OTU1OSwtMj
-A0NTkzOTQ0NywtMTEzMTcyNzA5LC03NTQ0ODI2MzIsMTI5NjYy
-NDA0LDM4NjQ2ODg2NSwtMzQ1MjgyMTEsLTE5Mzk0MjczMDksLT
-g1NDIxODg1NCwtMTAyNzQ4NTg5MCw0OTIyNjM5NTIsLTMxMzU1
-MTczNywtMTk3OTMwOTAzMV19
+eyJoaXN0b3J5IjpbMTI0MjY0NTA2MiwyMDk3MTg5NTU5LC0yMD
+Q1OTM5NDQ3LC0xMTMxNzI3MDksLTc1NDQ4MjYzMiwxMjk2NjI0
+MDQsMzg2NDY4ODY1LC0zNDUyODIxMSwtMTkzOTQyNzMwOSwtOD
+U0MjE4ODU0LC0xMDI3NDg1ODkwLDQ5MjI2Mzk1MiwtMzEzNTUx
+NzM3LC0xOTc5MzA5MDMxXX0=
 -->
