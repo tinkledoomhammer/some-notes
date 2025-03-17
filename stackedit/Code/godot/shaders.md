@@ -712,7 +712,9 @@ The convert multiple floats to a uint32 (packing) or the other way around
 	* return index of the most/least significant bit
 	* will return -1 if value is 0
 	* MSB will be -1 if value is -1
-* void `imulExtended(`vec_int_type x, vec_int_type y, out vec_int_type msb,
+* void `imulExtended(`vec_int_type x, vec_int_type y, out vec_int_type msb, out vec_int_type lsb)
+	* the unsigned version is `umulExtended(`
+* 
 ## Shader preprocessor
 
 ## Shader Types
@@ -736,9 +738,9 @@ The convert multiple floats to a uint32 (packing) or the other way around
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc2Nzg0MjMyLDIwOTcxODk1NTksLTIwND
-U5Mzk0NDcsLTExMzE3MjcwOSwtNzU0NDgyNjMyLDEyOTY2MjQw
-NCwzODY0Njg4NjUsLTM0NTI4MjExLC0xOTM5NDI3MzA5LC04NT
-QyMTg4NTQsLTEwMjc0ODU4OTAsNDkyMjYzOTUyLC0zMTM1NTE3
-MzcsLTE5NzkzMDkwMzFdfQ==
+eyJoaXN0b3J5IjpbLTE0ODM5MTM3NTksMjA5NzE4OTU1OSwtMj
+A0NTkzOTQ0NywtMTEzMTcyNzA5LC03NTQ0ODI2MzIsMTI5NjYy
+NDA0LDM4NjQ2ODg2NSwtMzQ1MjgyMTEsLTE5Mzk0MjczMDksLT
+g1NDIxODg1NCwtMTAyNzQ4NTg5MCw0OTIyNjM5NTIsLTMxMzU1
+MTczNywtMTk3OTMwOTAzMV19
 -->
