@@ -8,6 +8,7 @@ Rust is installed and it's versions are managed with `rustup` which is a small d
 Also see
 https://users.rust-lang.org/t/setting-up-rust-with-vs-code/76907
 for vs code setup
+* using the 'Code Runner' extension, the executor settings need to be updated: `"rust" : "cargo run # $fileName",`
 
 ### Hello World
 ```bash
@@ -70,6 +71,6 @@ https://rust-book.cs.brown.edu/ch02-00-guessing-game-tutorial.html
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzNDU4MjM0LC0yMTIzOTI2MTAxLC0xMT
-E0MDA5ODE1LDk4OTc0MjY1OV19
+eyJoaXN0b3J5IjpbLTYwMzY5MjE4OCwxNTM0NTgyMzQsLTIxMj
+M5MjYxMDEsLTExMTQwMDk4MTUsOTg5NzQyNjU5XX0=
 -->
