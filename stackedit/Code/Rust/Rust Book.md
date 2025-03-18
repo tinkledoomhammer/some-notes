@@ -92,10 +92,15 @@ fn main(){
 * 
 
 #### Receiving User Input
-
+```rust
+io::stdin()
+	.read_line(&mut guess)
+```
+* If we had not `use std::io` then the first line could be `std::io::stdin()`
+* 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzODgwODM3MCwtMzcxMzI5Mzg1LDY2MT
+eyJoaXN0b3J5IjpbMTg4NjExMzY2MywtMzcxMzI5Mzg1LDY2MT
 E4NzQ2NCwtNjAzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMzkyNjEw
 MSwtMTExNDAwOTgxNSw5ODk3NDI2NTldfQ==
 -->
