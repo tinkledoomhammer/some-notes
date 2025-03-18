@@ -39,13 +39,18 @@ $ ./main
 	* `.gitignore`
 	* `Cargo.toml`
 
+`Cargo
+
 `cargo build`
 	* creates a `targets/debug` folder with the executable and debug info and whatnot
 `cargo run` will build and run the project
 `cargo check` will check for errors without building the project
+`cargo build --release` will optimize the build
+
+[Cargo Docs](https://doc.rust-lang.org/cargo/)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MTg3NjA4MSwtMjEyMzkyNjEwMSwtMT
-ExNDAwOTgxNSw5ODk3NDI2NTldfQ==
+eyJoaXN0b3J5IjpbLTE1MjU5MjU1OTYsLTIxMjM5MjYxMDEsLT
+ExMTQwMDk4MTUsOTg5NzQyNjU5XX0=
 -->
