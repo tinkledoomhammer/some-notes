@@ -25,11 +25,13 @@ fn main() {
 
 Then to compile without cargo:
 ```bash
-$ rustc mai.rs
+$ rustc main.rs
+$ ./main
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMDA0NTcxOSwtMjEyMzkyNjEwMSwtMT
-ExNDAwOTgxNSw5ODk3NDI2NTldfQ==
+eyJoaXN0b3J5IjpbNDU3NDk4NjU3LC0yMTIzOTI2MTAxLC0xMT
+E0MDA5ODE1LDk4OTc0MjY1OV19
 -->
