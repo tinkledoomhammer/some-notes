@@ -41,9 +41,11 @@ $ ./main
 
 `cargo build`
 	* creates a `targets/debug` folder with the executable and debug info and whatnot
-`cargo run` will build and run the 
+`cargo run` will build and run the project
+`cargo check` will check for errors without building the project
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTMyNjgwOTQyLC0yMTIzOTI2MTAxLC0xMT
-E0MDA5ODE1LDk4OTc0MjY1OV19
+eyJoaXN0b3J5IjpbLTk2MTg3NjA4MSwtMjEyMzkyNjEwMSwtMT
+ExNDAwOTgxNSw5ODk3NDI2NTldfQ==
 -->
