@@ -118,12 +118,18 @@ io::stdin()
 * the result of an expression has to be in a separate argument:
 	* `println!("x={x} and y+2 = {}",y+2);`
 
-#### Testing the first part
-
+#### Random numbers
+* Uses a crate name d `rand`
+* in `Cargo.toml`:
+```toml
+[dependencies]
+rand = "0.8.5"
+```
+* 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Njg0MzE3MDgsLTM3MTMyOTM4NSw2Nj
-ExODc0NjQsLTYwMzY5MjE4OCwxNTM0NTgyMzQsLTIxMjM5MjYx
-MDEsLTExMTQwMDk4MTUsOTg5NzQyNjU5XX0=
+eyJoaXN0b3J5IjpbMTA0OTI3NzczNCwtMzcxMzI5Mzg1LDY2MT
+E4NzQ2NCwtNjAzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMzkyNjEw
+MSwtMTExNDAwOTgxNSw5ODk3NDI2NTldfQ==
 -->
