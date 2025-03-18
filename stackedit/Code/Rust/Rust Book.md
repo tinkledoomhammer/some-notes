@@ -38,9 +38,12 @@ $ ./main
 	* `src` folder
 	* `.gitignore`
 	* `Cargo.toml`
-* 
+
+`cargo build`
+	* creates a `targets/debug` folder with the executable and debug info and whatnot
+`cargo run` will build and run the 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMDA3MzQ1MSwtMjEyMzkyNjEwMSwtMT
-ExNDAwOTgxNSw5ODk3NDI2NTldfQ==
+eyJoaXN0b3J5IjpbNTMyNjgwOTQyLC0yMTIzOTI2MTAxLC0xMT
+E0MDA5ODE1LDk4OTc0MjY1OV19
 -->
