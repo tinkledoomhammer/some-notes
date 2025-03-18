@@ -109,10 +109,15 @@ io::stdin()
 	* `.expect` is a method on the `Result` type
 		* It causes the program to crash and print the argument passed to `.expect` when an  `Err` is returned
 		* if the call is omitted then the compiler will generate warning
-	 
+* Error handling is covered in chapter 9  https://rust-book.cs.brown.edu/ch09-02-recoverable-errors-with-result.html
+
+#### `println!` placeholders
+`println!("You guessed: {}", guess);`
+* `{}` is the inser
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjQ2NTcwMTIsLTM3MTMyOTM4NSw2Nj
+eyJoaXN0b3J5IjpbLTEyNDMxNTc1OTAsLTM3MTMyOTM4NSw2Nj
 ExODc0NjQsLTYwMzY5MjE4OCwxNTM0NTgyMzQsLTIxMjM5MjYx
 MDEsLTExMTQwMDk4MTUsOTg5NzQyNjU5XX0=
 -->
