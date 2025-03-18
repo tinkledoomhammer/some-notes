@@ -161,13 +161,17 @@ fn main() {
 
 *`rand::thread_rng()` function gives a random number generator that is local to the current thread and seeded by the os
 * the `.gen_range()` method is defined by the `Rng` trait
-	* takes an expression as an argument and returns a random num
+	* takes an expression as an argument and returns a random number in the range
+	* the expression `1..=100` expresses a range that is inclusive at both bounds
+
+#### Comparing the Guess to the Secret Number
 
 
+ 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MDE5ODE3MSwtMTk4NTE2OTAyMyw0MD
-Y5MzI1OTEsLTM3MTMyOTM4NSw2NjExODc0NjQsLTYwMzY5MjE4
-OCwxNTM0NTgyMzQsLTIxMjM5MjYxMDEsLTExMTQwMDk4MTUsOT
-g5NzQyNjU5XX0=
+eyJoaXN0b3J5IjpbLTE5MzU0ODkyNTQsLTE5ODUxNjkwMjMsND
+A2OTMyNTkxLC0zNzEzMjkzODUsNjYxMTg3NDY0LC02MDM2OTIx
+ODgsMTUzNDU4MjM0LC0yMTIzOTI2MTAxLC0xMTE0MDA5ODE1LD
+k4OTc0MjY1OV19
 -->
