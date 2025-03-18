@@ -435,7 +435,7 @@ group_uniforms Mygroup.sub2;
 group_uniforms MyGroup;
 	uniform int u5;
 group_uniforms;
-uniform int u2;
+uniform int u6;
 ```
 * My Group
 	* u2
@@ -445,7 +445,7 @@ uniform int u2;
 	* sub2
 		* u4
 * u1
-* u2
+* u6
 
 #### global uniforms
 * In project settings, you can set up uniforms that are shared between all shaders
@@ -769,9 +769,9 @@ Directives start with `#` spans to the end of line, multiple lines if they end w
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNTcwOTY3NCwyMDk3MTg5NTU5LC0yMD
-Q1OTM5NDQ3LC0xMTMxNzI3MDksLTc1NDQ4MjYzMiwxMjk2NjI0
-MDQsMzg2NDY4ODY1LC0zNDUyODIxMSwtMTkzOTQyNzMwOSwtOD
-U0MjE4ODU0LC0xMDI3NDg1ODkwLDQ5MjI2Mzk1MiwtMzEzNTUx
-NzM3LC0xOTc5MzA5MDMxXX0=
+eyJoaXN0b3J5IjpbNDg3Nzg5NTQ2LDEyMjU3MDk2NzQsMjA5Nz
+E4OTU1OSwtMjA0NTkzOTQ0NywtMTEzMTcyNzA5LC03NTQ0ODI2
+MzIsMTI5NjYyNDA0LDM4NjQ2ODg2NSwtMzQ1MjgyMTEsLTE5Mz
+k0MjczMDksLTg1NDIxODg1NCwtMTAyNzQ4NTg5MCw0OTIyNjM5
+NTIsLTMxMzU1MTczNywtMTk3OTMwOTAzMV19
 -->
