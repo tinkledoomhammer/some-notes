@@ -605,14 +605,14 @@ Godot Alias | Actual types | glsl documentation alias
 	* `N` should be normalized and is the surface normal
 	* `I` is the incident vector
 * vec3 `refract`(vec3 I, vec3 N, float eta) 
-		```glsl
+	```glsl
 		k  =  1.0  -  eta  *  eta  *  (1.0  -  dot(N,  I)  *  dot(N,  I));
 		if  (k  <  0.0)
 			R  =  genType(0.0);  //  or  genDType(0.0)
 		else
 			R  =  eta  *  I  -  (eta  *  dot(N,  I)  +  sqrt(k))  *  N;
 	```
-	*  https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/refract.xhtml
+* https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/refract.xhtml
 
 * vec_type `faceforward`(vec_type N, vec_type I, vec_type Nref)
 	* https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/faceforward.xhtml
@@ -769,10 +769,10 @@ Directives start with `#` spans to the end of line, multiple lines if they end w
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MTE0NDQwMCwxNTEwOTU3MzYwLDEyMj
-U3MDk2NzQsMjA5NzE4OTU1OSwtMjA0NTkzOTQ0NywtMTEzMTcy
-NzA5LC03NTQ0ODI2MzIsMTI5NjYyNDA0LDM4NjQ2ODg2NSwtMz
-Q1MjgyMTEsLTE5Mzk0MjczMDksLTg1NDIxODg1NCwtMTAyNzQ4
-NTg5MCw0OTIyNjM5NTIsLTMxMzU1MTczNywtMTk3OTMwOTAzMV
-19
+eyJoaXN0b3J5IjpbNjEzOTcwNzQwLDE1MTA5NTczNjAsMTIyNT
+cwOTY3NCwyMDk3MTg5NTU5LC0yMDQ1OTM5NDQ3LC0xMTMxNzI3
+MDksLTc1NDQ4MjYzMiwxMjk2NjI0MDQsMzg2NDY4ODY1LC0zND
+UyODIxMSwtMTkzOTQyNzMwOSwtODU0MjE4ODU0LC0xMDI3NDg1
+ODkwLDQ5MjI2Mzk1MiwtMzEzNTUxNzM3LC0xOTc5MzA5MDMxXX
+0=
 -->
