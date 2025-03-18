@@ -68,6 +68,7 @@ https://rust-book.cs.brown.edu/ch02-00-guessing-game-tutorial.html
 * `cargo new guessing_game`
 * It also created `src/main.rs`
 
+### Processing a guess
 * edit `src/main.rs`
 ```rust
 use std::io;
@@ -87,13 +88,14 @@ fn main(){
 	* https://doc.rust-lang.org/std/prelude/index.html
 * `let mut guess = String::new()`
 	* `let` declares variables. Variables are immutable by default. the `mut` keyword allows them to be modified
-	* 
+	* `String::new()` just what it looks like
+* 
 
-
+#### Receiving User Input
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDM3MTU1NzEsLTM3MTMyOTM4NSw2Nj
-ExODc0NjQsLTYwMzY5MjE4OCwxNTM0NTgyMzQsLTIxMjM5MjYx
-MDEsLTExMTQwMDk4MTUsOTg5NzQyNjU5XX0=
+eyJoaXN0b3J5IjpbLTgzODgwODM3MCwtMzcxMzI5Mzg1LDY2MT
+E4NzQ2NCwtNjAzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMzkyNjEw
+MSwtMTExNDAwOTgxNSw5ODk3NDI2NTldfQ==
 -->
