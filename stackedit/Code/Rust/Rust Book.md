@@ -155,12 +155,17 @@ fn main() {
     println!("You guessed: {guess}");
 }
 ```
-`cargo doc --open` will autogenerate documentation, including all the dependencies
+* `cargo doc --open` will autogenerate documentation, including all the dependencies, and open it in a browser
+
+* `use rand::Rng;` The `Rng` trait defines methods that number random generators implement. Traits are covered in chapter 10
+
+*`rand::thread_rng` function
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODUxNjkwMjMsNDA2OTMyNTkxLC0zNz
-EzMjkzODUsNjYxMTg3NDY0LC02MDM2OTIxODgsMTUzNDU4MjM0
-LC0yMTIzOTI2MTAxLC0xMTE0MDA5ODE1LDk4OTc0MjY1OV19
+eyJoaXN0b3J5IjpbLTE1Mzk3MTY2NzgsLTE5ODUxNjkwMjMsND
+A2OTMyNTkxLC0zNzEzMjkzODUsNjYxMTg3NDY0LC02MDM2OTIx
+ODgsMTUzNDU4MjM0LC0yMTIzOTI2MTAxLC0xMTE0MDA5ODE1LD
+k4OTc0MjY1OV19
 -->
