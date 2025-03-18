@@ -29,9 +29,11 @@ $ rustc main.rs
 $ ./main
 ```
 
-
+### Hello Cargo
+`cargo --version`
+`cargo new hello_cargo
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU3NDk4NjU3LC0yMTIzOTI2MTAxLC0xMT
-E0MDA5ODE1LDk4OTc0MjY1OV19
+eyJoaXN0b3J5IjpbMTE1Mjk3MTkzMSwtMjEyMzkyNjEwMSwtMT
+ExNDAwOTgxNSw5ODk3NDI2NTldfQ==
 -->
