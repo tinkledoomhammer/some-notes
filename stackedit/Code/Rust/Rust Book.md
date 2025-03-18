@@ -101,10 +101,12 @@ io::stdin()
 * `&` means to pass by reference
 * references are also immutable by default, hince `&mut guess`
 #### Handling Potential failure with Result
-
+* `.expect("Failed to read line");`
+* The `read_line` method puts the data into the argument and returns a `Result`
+* `Result`s are enumerations that will be covered in chapter 6 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzAwODYyNzk2LC0zNzEzMjkzODUsNjYxMT
+eyJoaXN0b3J5IjpbNjkzMDA0Mjg3LC0zNzEzMjkzODUsNjYxMT
 g3NDY0LC02MDM2OTIxODgsMTUzNDU4MjM0LC0yMTIzOTI2MTAx
 LC0xMTE0MDA5ODE1LDk4OTc0MjY1OV19
 -->
