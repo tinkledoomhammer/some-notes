@@ -2,7 +2,7 @@
 "The Rust Programming Language"
 https://rust-book.cs.brown.edu/
 
-## Installation and such
+## Getting Started
 Rust is installed and it's versions are managed with `rustup` which is a small download. https://www.rust-lang.org/tools/install Running it in windows uses a cli installer (press 1 for default setup). It will update the command path so that `rust c` `cargo` and `rustup` are all available
 
 Also see
@@ -60,8 +60,14 @@ edition = "2021"
 
 [Cargo Docs](https://doc.rust-lang.org/cargo/)
 
+
+## 02 - Programming a Guessing Game
+https://rust-book.cs.brown.edu/ch02-00-guessing-game-tutorial.html
+
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4MzcyNzk3NSwtMjEyMzkyNjEwMSwtMT
-ExNDAwOTgxNSw5ODk3NDI2NTldfQ==
+eyJoaXN0b3J5IjpbLTEzNzIyMzA0NTMsLTIxMjM5MjYxMDEsLT
+ExMTQwMDk4MTUsOTg5NzQyNjU5XX0=
 -->
