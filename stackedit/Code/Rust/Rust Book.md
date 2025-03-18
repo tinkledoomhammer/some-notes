@@ -118,7 +118,7 @@ io::stdin()
 * the result of an expression has to be in a separate argument:
 	* `println!("x={x} and y+2 = {}",y+2);`
 
-#### Random numbers
+#### Dependencies
 * Uses a crate name d `rand`
 	* in `Cargo.toml`:
 ```toml
@@ -131,15 +131,20 @@ rand = "0.8.5"
 		* It uses the registry at `Crates.io`
 * Subsequent builds will only recompile changes
 
-#### Cargo.lock
+`Cargo.lock`
 * It tracks the exact versions of all dependencies to make sure that builds are reproducable
 * It is usually tracked in version control
 * running `cargo update` will download newer versions as long as they satisfy the requirements in `Cargo.toml`
 * If the version specification in `Cargo.toml` change, then the next `cargo build` will update the registry of crates and re-evaluate which versions to use
-* 
+* The cargo ecosystem is covered more in chapter 14 and also https://doc.rust-lang.org/cargo/
+
+#### Generating a random number
+
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4MzYwNDY0OCwtMzcxMzI5Mzg1LDY2MT
+eyJoaXN0b3J5IjpbLTY3ODU4MDczMiwtMzcxMzI5Mzg1LDY2MT
 E4NzQ2NCwtNjAzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMzkyNjEw
 MSwtMTExNDAwOTgxNSw5ODk3NDI2NTldfQ==
 -->
