@@ -170,6 +170,8 @@ use std::cmp::Ordering;
 //snip
 fn main(){
 	// --snip--
+	let guess: u32 = guess.trim().parse().expect("Please Type a number");
+	println!("You guessed: {guess}");
 	match guess.cmp(&secret_number) { //Type mismatch
 		Ordering::Less => println!("Too small!"),
 		Ordering::Greater => println!("Too big!"),
@@ -181,8 +183,8 @@ fn main(){
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTMwMDI5ODIsLTE5ODUxNjkwMjMsND
-A2OTMyNTkxLC0zNzEzMjkzODUsNjYxMTg3NDY0LC02MDM2OTIx
-ODgsMTUzNDU4MjM0LC0yMTIzOTI2MTAxLC0xMTE0MDA5ODE1LD
-k4OTc0MjY1OV19
+eyJoaXN0b3J5IjpbNDE2NTc1OTAyLC0xOTg1MTY5MDIzLDQwNj
+kzMjU5MSwtMzcxMzI5Mzg1LDY2MTE4NzQ2NCwtNjAzNjkyMTg4
+LDE1MzQ1ODIzNCwtMjEyMzkyNjEwMSwtMTExNDAwOTgxNSw5OD
+k3NDI2NTldfQ==
 -->
