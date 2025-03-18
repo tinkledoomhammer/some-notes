@@ -139,12 +139,27 @@ rand = "0.8.5"
 * The cargo ecosystem is covered more in chapter 14 and also https://doc.rust-lang.org/cargo/
 
 #### Generating a random number
+```rust
+use std::io;
+use rand::Rng;
 
+fn main() {
+    println!("Guess the number!");
+    let secret_number = rand::thread_rng().gen_range(1..=100);
+    println!("The secret number is: {secret_number}");
+    println!("Please input your guess.");
+    let mut guess = String::new();
+    io::stdin()
+        .read_line(&mut guess)
+        .expect("Failed to read line");
+    println!("You guessed: {guess}");
+}
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3ODU4MDczMiwtMzcxMzI5Mzg1LDY2MT
-E4NzQ2NCwtNjAzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMzkyNjEw
-MSwtMTExNDAwOTgxNSw5ODk3NDI2NTldfQ==
+eyJoaXN0b3J5IjpbNDA2OTMyNTkxLC0zNzEzMjkzODUsNjYxMT
+g3NDY0LC02MDM2OTIxODgsMTUzNDU4MjM0LC0yMTIzOTI2MTAx
+LC0xMTE0MDA5ODE1LDk4OTc0MjY1OV19
 -->
