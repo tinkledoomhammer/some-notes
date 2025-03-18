@@ -39,7 +39,18 @@ $ ./main
 	* `.gitignore`
 	* `Cargo.toml`
 
-`Cargo
+`Cargo.toml`
+```toml
+[package]
+name = "hello_cargo"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+```
 
 `cargo build`
 	* creates a `targets/debug` folder with the executable and debug info and whatnot
@@ -51,6 +62,6 @@ $ ./main
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjU5MjU1OTYsLTIxMjM5MjYxMDEsLT
-ExMTQwMDk4MTUsOTg5NzQyNjU5XX0=
+eyJoaXN0b3J5IjpbMjA4MzcyNzk3NSwtMjEyMzkyNjEwMSwtMT
+ExNDAwOTgxNSw5ODk3NDI2NTldfQ==
 -->
