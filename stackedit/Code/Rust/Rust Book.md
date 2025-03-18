@@ -97,10 +97,14 @@ io::stdin()
 	.read_line(&mut guess)
 ```
 * If we had not `use std::io` then the first line could be `std::io::stdin()`
-* 
+* the `read_line` method appends user input ot the end of the argument, so it has t obe mutable
+* `&` means to pass by reference
+* references are also immutable by default, hince `&mut guess`
+#### Handling Potential failure with Result
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4NjExMzY2MywtMzcxMzI5Mzg1LDY2MT
-E4NzQ2NCwtNjAzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMzkyNjEw
-MSwtMTExNDAwOTgxNSw5ODk3NDI2NTldfQ==
+eyJoaXN0b3J5IjpbNzAwODYyNzk2LC0zNzEzMjkzODUsNjYxMT
+g3NDY0LC02MDM2OTIxODgsMTUzNDU4MjM0LC0yMTIzOTI2MTAx
+LC0xMTE0MDA5ODE1LDk4OTc0MjY1OV19
 -->
