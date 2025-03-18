@@ -37,9 +37,10 @@ $ ./main
 * `cargo new` creates a folder with
 	* `src` folder
 	* `.gitignore`
-	* 
+	* `Cargo.toml`
+* 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczNjkyNjI2NSwtMjEyMzkyNjEwMSwtMT
+eyJoaXN0b3J5IjpbMTYyMDA3MzQ1MSwtMjEyMzkyNjEwMSwtMT
 ExNDAwOTgxNSw5ODk3NDI2NTldfQ==
 -->
