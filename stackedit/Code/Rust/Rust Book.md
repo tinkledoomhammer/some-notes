@@ -108,10 +108,11 @@ io::stdin()
 	* `Err` idicates an error and it contains information about how/why the failiure occured
 	* `.expect` is a method on the `Result` type
 		* It causes the program to crash and print the argument passed to `.expect` when an  `Err` is returned
-		* 
+		* if the call is omitted then the compiler will generate warning
+	 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTY5NjI5MCwtMzcxMzI5Mzg1LDY2MT
-E4NzQ2NCwtNjAzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMzkyNjEw
-MSwtMTExNDAwOTgxNSw5ODk3NDI2NTldfQ==
+eyJoaXN0b3J5IjpbLTEzNjQ2NTcwMTIsLTM3MTMyOTM4NSw2Nj
+ExODc0NjQsLTYwMzY5MjE4OCwxNTM0NTgyMzQsLTIxMjM5MjYx
+MDEsLTExMTQwMDk4MTUsOTg5NzQyNjU5XX0=
 -->
