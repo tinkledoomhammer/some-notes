@@ -134,10 +134,12 @@ rand = "0.8.5"
 #### Cargo.lock
 * It tracks the exact versions of all dependencies to make sure that builds are reproducable
 * It is usually tracked in version control
+* running `cargo update` will download newer versions as long as they satisfy the requirements in `Cargo.toml`
+* If the version specification in `Cargo.toml` change, then the next `cargo build` will update the registry of crates and re-evaluate which versions to use
 * 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0NDYyMDQ5OCwtMzcxMzI5Mzg1LDY2MT
+eyJoaXN0b3J5IjpbLTg4MzYwNDY0OCwtMzcxMzI5Mzg1LDY2MT
 E4NzQ2NCwtNjAzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMzkyNjEw
 MSwtMTExNDAwOTgxNSw5ODk3NDI2NTldfQ==
 -->
