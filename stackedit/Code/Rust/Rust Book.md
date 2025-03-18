@@ -106,9 +106,12 @@ io::stdin()
 * `Result`s are enumerations that can be `Ok` or `Err`
 	* If `Ok` was returned, then it will contain the generated value
 	* `Err` idicates an error and it contains information about how/why the failiure occured
+	* `.expect` is a method on the `Result` type
+		* It causes the program to crash and print the argument passed to `.expect` when an  `Err` is returned
+		* 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgyMzk2MDUzLC0zNzEzMjkzODUsNjYxMT
-g3NDY0LC02MDM2OTIxODgsMTUzNDU4MjM0LC0yMTIzOTI2MTAx
-LC0xMTE0MDA5ODE1LDk4OTc0MjY1OV19
+eyJoaXN0b3J5IjpbLTE4NTY5NjI5MCwtMzcxMzI5Mzg1LDY2MT
+E4NzQ2NCwtNjAzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMzkyNjEw
+MSwtMTExNDAwOTgxNSw5ODk3NDI2NTldfQ==
 -->
