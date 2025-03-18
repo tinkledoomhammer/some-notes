@@ -159,13 +159,15 @@ fn main() {
 
 * `use rand::Rng;` The `Rng` trait defines methods that number random generators implement. Traits are covered in chapter 10
 
-*`rand::thread_rng` function
+*`rand::thread_rng()` function gives a random number generator that is local to the current thread and seeded by the os
+* the `.gen_range()` method is defined by the `Rng` trait
+	* takes an expression as an argument and returns a random num
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Mzk3MTY2NzgsLTE5ODUxNjkwMjMsND
-A2OTMyNTkxLC0zNzEzMjkzODUsNjYxMTg3NDY0LC02MDM2OTIx
-ODgsMTUzNDU4MjM0LC0yMTIzOTI2MTAxLC0xMTE0MDA5ODE1LD
-k4OTc0MjY1OV19
+eyJoaXN0b3J5IjpbLTM3MDE5ODE3MSwtMTk4NTE2OTAyMyw0MD
+Y5MzI1OTEsLTM3MTMyOTM4NSw2NjExODc0NjQsLTYwMzY5MjE4
+OCwxNTM0NTgyMzQsLTIxMjM5MjYxMDEsLTExMTQwMDk4MTUsOT
+g5NzQyNjU5XX0=
 -->
