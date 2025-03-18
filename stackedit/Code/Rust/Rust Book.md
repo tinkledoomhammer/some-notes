@@ -9,9 +9,13 @@ Also see
 https://users.rust-lang.org/t/setting-up-rust-with-vs-code/76907
 for vs code setup
 
+### Hello World
+```bash
+$mkdir ~/projects
 
+```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0MjQ4MTIwLC0xMTE0MDA5ODE1LDk4OT
-c0MjY1OV19
+eyJoaXN0b3J5IjpbLTE5MjcxNjE1MDUsLTExMTQwMDk4MTUsOT
+g5NzQyNjU5XX0=
 -->
