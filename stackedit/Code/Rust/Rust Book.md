@@ -77,7 +77,7 @@ fn main(){
 	println!("Please input your ugess.");
 	let mut guess = String::new();
 	io::stdin()
-		.read_line($mut guess)
+		.read_line(&mut guess)
 		.expect("Failed to read line");
 	println!("You guessed: {}", guess);
 }
@@ -86,7 +86,7 @@ fn main(){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NzEwNDE2Nyw2NjExODc0NjQsLTYwMz
+eyJoaXN0b3J5IjpbLTM3MTMyOTM4NSw2NjExODc0NjQsLTYwMz
 Y5MjE4OCwxNTM0NTgyMzQsLTIxMjM5MjYxMDEsLTExMTQwMDk4
 MTUsOTg5NzQyNjU5XX0=
 -->
