@@ -517,10 +517,10 @@ Godot Alias | Actual types | glsl documentation alias
 `vec_int_type` | int, ivec2, ivec3, ivec3 | `genIType`
 `vec_uint_type` | uint, uvec2, uvec3, uv3c4 | `genUType`
 `vec_bool_type` | bool, bvec2, bvec3, bvec4 | `genBType`
-`mat_type` | mat2, mat3, mat4 | `genBType` 
+`mat_type` | mat2, mat3, mat4 | `mat` 
 `gvec4_type` | vec4, ivec4, or uvec4 | `gvec4`
 `gsampler2D` | sampler2D, isampler2D, uSampler2D | `gsampler2D`
-`gasmpler2DArray` | sampler2DArray, isampler2DArray, or uSampler2DArray | `gsampler2DArray`
+`gsampler2DArray` | sampler2DArray, isampler2DArray, or uSampler2DArray | `gsampler2DArray`
 `gsampler3D` | sampler3D, isampler3D, uSampler3D | `gsampler3D`
 
 * It looks like `uSampler3D` etc are typos?
@@ -769,9 +769,10 @@ Directives start with `#` spans to the end of line, multiple lines if they end w
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMDk1NzM2MCwxMjI1NzA5Njc0LDIwOT
-cxODk1NTksLTIwNDU5Mzk0NDcsLTExMzE3MjcwOSwtNzU0NDgy
-NjMyLDEyOTY2MjQwNCwzODY0Njg4NjUsLTM0NTI4MjExLC0xOT
-M5NDI3MzA5LC04NTQyMTg4NTQsLTEwMjc0ODU4OTAsNDkyMjYz
-OTUyLC0zMTM1NTE3MzcsLTE5NzkzMDkwMzFdfQ==
+eyJoaXN0b3J5IjpbMzQ5MDg2NjkyLDE1MTA5NTczNjAsMTIyNT
+cwOTY3NCwyMDk3MTg5NTU5LC0yMDQ1OTM5NDQ3LC0xMTMxNzI3
+MDksLTc1NDQ4MjYzMiwxMjk2NjI0MDQsMzg2NDY4ODY1LC0zND
+UyODIxMSwtMTkzOTQyNzMwOSwtODU0MjE4ODU0LC0xMDI3NDg1
+ODkwLDQ5MjI2Mzk1MiwtMzEzNTUxNzM3LC0xOTc5MzA5MDMxXX
+0=
 -->
