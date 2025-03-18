@@ -125,13 +125,14 @@ io::stdin()
 [dependencies]
 rand = "0.8.5"
 ```
-
+* 
 	* cargo understands SemVer (http://semver.org/) and "0.8.5" is shorthand for "^0.8.5" which means any version >=0.8.5 and <0.9.0 $[0.8.5, 0.9.0)$
-	* `cargo build` will now
+	* `cargo build` will now download and build a bunch of dependencies
+		* It uses the registry at `Crates.io`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDEwMDI2NDYxLC0zNzEzMjkzODUsNjYxMT
-g3NDY0LC02MDM2OTIxODgsMTUzNDU4MjM0LC0yMTIzOTI2MTAx
-LC0xMTE0MDA5ODE1LDk4OTc0MjY1OV19
+eyJoaXN0b3J5IjpbMTcwMDgwNjM0MywtMzcxMzI5Mzg1LDY2MT
+E4NzQ2NCwtNjAzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMzkyNjEw
+MSwtMTExNDAwOTgxNSw5ODk3NDI2NTldfQ==
 -->
