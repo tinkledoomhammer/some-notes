@@ -113,11 +113,17 @@ io::stdin()
 
 #### `println!` placeholders
 `println!("You guessed: {}", guess);`
-* `{}` is the inser
+* `{}` is the insertion point
+* when printing the value of a variable, then the name of the var can go inside the brackets
+* the result of an expression has to be in a separate argument:
+	* `println!("x={x} and y+2 = {}",y+2);`
+
+#### Testing the first part
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDMxNTc1OTAsLTM3MTMyOTM4NSw2Nj
+eyJoaXN0b3J5IjpbLTE2Njg0MzE3MDgsLTM3MTMyOTM4NSw2Nj
 ExODc0NjQsLTYwMzY5MjE4OCwxNTM0NTgyMzQsLTIxMjM5MjYx
 MDEsLTExMTQwMDk4MTUsOTg5NzQyNjU5XX0=
 -->
