@@ -155,11 +155,12 @@ fn main() {
     println!("You guessed: {guess}");
 }
 ```
+`cargo doc --open` will autogenerate documentation, including all the dependencies
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA2OTMyNTkxLC0zNzEzMjkzODUsNjYxMT
-g3NDY0LC02MDM2OTIxODgsMTUzNDU4MjM0LC0yMTIzOTI2MTAx
-LC0xMTE0MDA5ODE1LDk4OTc0MjY1OV19
+eyJoaXN0b3J5IjpbLTE5ODUxNjkwMjMsNDA2OTMyNTkxLC0zNz
+EzMjkzODUsNjYxMTg3NDY0LC02MDM2OTIxODgsMTUzNDU4MjM0
+LC0yMTIzOTI2MTAxLC0xMTE0MDA5ODE1LDk4OTc0MjY1OV19
 -->
