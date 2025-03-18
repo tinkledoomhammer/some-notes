@@ -175,14 +175,14 @@ fn main(){
 		Ordering::Greater => println!("Too big!"),
 		Ordering::Equal => println!("You win1"),
 	}
-
+}
 ```
 
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTcyNDY4NjcsLTE5ODUxNjkwMjMsND
-A2OTMyNTkxLC0zNzEzMjkzODUsNjYxMTg3NDY0LC02MDM2OTIx
-ODgsMTUzNDU4MjM0LC0yMTIzOTI2MTAxLC0xMTE0MDA5ODE1LD
-k4OTc0MjY1OV19
+eyJoaXN0b3J5IjpbLTU0NzY2Nzg5OCwtMTk4NTE2OTAyMyw0MD
+Y5MzI1OTEsLTM3MTMyOTM4NSw2NjExODc0NjQsLTYwMzY5MjE4
+OCwxNTM0NTgyMzQsLTIxMjM5MjYxMDEsLTExMTQwMDk4MTUsOT
+g5NzQyNjU5XX0=
 -->
