@@ -132,9 +132,12 @@ rand = "0.8.5"
 * Subsequent builds will only recompile changes
 
 #### Cargo.lock
+* It tracks the exact versions of all dependencies to make sure that builds are reproducable
+* It is usually tracked in version control
+* 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc0MzE0MSwtMzcxMzI5Mzg1LDY2MTE4Nz
-Q2NCwtNjAzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMzkyNjEwMSwt
-MTExNDAwOTgxNSw5ODk3NDI2NTldfQ==
+eyJoaXN0b3J5IjpbLTk0NDYyMDQ5OCwtMzcxMzI5Mzg1LDY2MT
+E4NzQ2NCwtNjAzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMzkyNjEw
+MSwtMTExNDAwOTgxNSw5ODk3NDI2NTldfQ==
 -->
