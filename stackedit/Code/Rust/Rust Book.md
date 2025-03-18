@@ -31,9 +31,15 @@ $ ./main
 
 ### Hello Cargo
 `cargo --version`
-`cargo new hello_cargo
+`cargo new hello_cargo`
+`cd hello_cargo`
+
+* `cargo new` creates a folder with
+	* `src` folder
+	* `.gitignore`
+	* 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1Mjk3MTkzMSwtMjEyMzkyNjEwMSwtMT
+eyJoaXN0b3J5IjpbLTczNjkyNjI2NSwtMjEyMzkyNjEwMSwtMT
 ExNDAwOTgxNSw5ODk3NDI2NTldfQ==
 -->
