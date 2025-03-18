@@ -125,11 +125,11 @@ io::stdin()
 [dependencies]
 rand = "0.8.5"
 ```
-* 
+* cargo understands SemVer (http://semver.org/) and "0.8.5" is shorthand for "^0.8.5" which means any version >=0.85 and <0.9.0 $[0.8.5,0.9.0
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0OTI3NzczNCwtMzcxMzI5Mzg1LDY2MT
+eyJoaXN0b3J5IjpbMTgyODMzNTM4MCwtMzcxMzI5Mzg1LDY2MT
 E4NzQ2NCwtNjAzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMzkyNjEw
 MSwtMTExNDAwOTgxNSw5ODk3NDI2NTldfQ==
 -->
