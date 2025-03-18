@@ -70,17 +70,23 @@ https://rust-book.cs.brown.edu/ch02-00-guessing-game-tutorial.html
 
 * edit `src/main.rs`
 ```rust
-use std:io;
+use std::io;
 
 fn main(){
 	println!("Guess the number!");
 	println!("Please input your ugess.");
-	let mut guess = S
+	let mut guess = String::new();
+	io::stdin()
+		.read_line($mut guess)
+		.expect("Failed to read line");
+	println!("You guessed: {}", guess);
+}
 ```
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4ODk3ODgyMyw2NjExODc0NjQsLTYwMz
+eyJoaXN0b3J5IjpbLTk3NzEwNDE2Nyw2NjExODc0NjQsLTYwMz
 Y5MjE4OCwxNTM0NTgyMzQsLTIxMjM5MjYxMDEsLTExMTQwMDk4
 MTUsOTg5NzQyNjU5XX0=
 -->
