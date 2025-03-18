@@ -165,12 +165,23 @@ fn main() {
 	* the expression `1..=100` expresses a range that is inclusive at both bounds
 
 #### Comparing the Guess to the Secret Number
+```rust
+use std::cmp::Ordering;
+//snip
+fn main(){
+	// --snip--
+	match guess.cmp(&secret_number) {
+		Ordering::Less => println!("Too small!"),
+		Ordering::Greater => println!("Too big!"),
+		Ordering::Equal => println!("You win1"),
+	}
 
+```
 
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzU0ODkyNTQsLTE5ODUxNjkwMjMsND
+eyJoaXN0b3J5IjpbLTE4OTcyNDY4NjcsLTE5ODUxNjkwMjMsND
 A2OTMyNTkxLC0zNzEzMjkzODUsNjYxMTg3NDY0LC02MDM2OTIx
 ODgsMTUzNDU4MjM0LC0yMTIzOTI2MTAxLC0xMTE0MDA5ODE1LD
 k4OTc0MjY1OV19
