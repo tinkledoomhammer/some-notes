@@ -85,13 +85,15 @@ fn main(){
 * `use std::io;`
 	* see the [standard library documentation](https://doc.rust-lang.org/std/prelude/index.html)
 	* https://doc.rust-lang.org/std/prelude/index.html
-* 
+* `let mut guess = String::new()`
+	* `let` declares variables. Variables are immutable by default. the `mut` keyword allows them to be modified
+	* 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTMzNzQ0MTE1LC0zNzEzMjkzODUsNjYxMT
-g3NDY0LC02MDM2OTIxODgsMTUzNDU4MjM0LC0yMTIzOTI2MTAx
-LC0xMTE0MDA5ODE1LDk4OTc0MjY1OV19
+eyJoaXN0b3J5IjpbLTExMDM3MTU1NzEsLTM3MTMyOTM4NSw2Nj
+ExODc0NjQsLTYwMzY5MjE4OCwxNTM0NTgyMzQsLTIxMjM5MjYx
+MDEsLTExMTQwMDk4MTUsOTg5NzQyNjU5XX0=
 -->
