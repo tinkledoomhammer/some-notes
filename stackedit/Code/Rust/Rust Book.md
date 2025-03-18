@@ -11,11 +11,21 @@ for vs code setup
 
 ### Hello World
 ```bash
-$mkdir ~/projects
-
+$ mkdir ~/projects
+$ cd ~/projects
+$ mkdir hello_world
+$ cd hello_world
 ```
+then in `main.rs`
+```rust
+fn main() {
+	println!("Hello, World~");
+}
+```
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjcxNjE1MDUsLTExMTQwMDk4MTUsOT
+eyJoaXN0b3J5IjpbLTIxMjM5MjYxMDEsLTExMTQwMDk4MTUsOT
 g5NzQyNjU5XX0=
 -->
