@@ -483,7 +483,7 @@ RenderingServer.global_shader_parameter_remove("my_color")
 `material.set_shader_parameter("some_Value", <value>);`
 * the first argument must match the shader script exactly
 * If there is a type mismatch, then no error will be thrown
-* Shaders are limited to 64KoB in size, or 16KiB on mobile
+* Shaders are limited to 64KiB in size, or 16KiB on mobile
 	* bool is padded
 	* the contents do not count -- only use the size of the sampler
 
@@ -769,9 +769,9 @@ Directives start with `#` spans to the end of line, multiple lines if they end w
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg3Nzg5NTQ2LDEyMjU3MDk2NzQsMjA5Nz
-E4OTU1OSwtMjA0NTkzOTQ0NywtMTEzMTcyNzA5LC03NTQ0ODI2
-MzIsMTI5NjYyNDA0LDM4NjQ2ODg2NSwtMzQ1MjgyMTEsLTE5Mz
-k0MjczMDksLTg1NDIxODg1NCwtMTAyNzQ4NTg5MCw0OTIyNjM5
-NTIsLTMxMzU1MTczNywtMTk3OTMwOTAzMV19
+eyJoaXN0b3J5IjpbMTUxMDk1NzM2MCwxMjI1NzA5Njc0LDIwOT
+cxODk1NTksLTIwNDU5Mzk0NDcsLTExMzE3MjcwOSwtNzU0NDgy
+NjMyLDEyOTY2MjQwNCwzODY0Njg4NjUsLTM0NTI4MjExLC0xOT
+M5NDI3MzA5LC04NTQyMTg4NTQsLTEwMjc0ODU4OTAsNDkyMjYz
+OTUyLC0zMTM1NTE3MzcsLTE5NzkzMDkwMzFdfQ==
 -->
