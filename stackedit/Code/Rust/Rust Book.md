@@ -3,10 +3,11 @@
 https://rust-book.cs.brown.edu/
 
 ## Installation and such
-Rust is installed and it's versions are managed with `rustup` which
+Rust is installed and it's versions are managed with `rustup` which is a small download. Running it in windows uses a cli installer (press 1 for default setup). It will update the command path so that `rust c` `cargo` and `rustup` are all available
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0NzExNjY0NV19
+eyJoaXN0b3J5IjpbOTg5NzQyNjU5XX0=
 -->
