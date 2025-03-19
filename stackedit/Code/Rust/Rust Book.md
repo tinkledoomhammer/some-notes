@@ -212,7 +212,7 @@ let guess:u32 = match guess.trim().parse(){
  
 The final version of the code:
 ```rust
-use rand:Rng;
+use rand::Rng;
 use std::cmp::Ordering;
 use std::io;
 
@@ -228,7 +228,7 @@ fn main(){
 		let guess: u32 = match guess.trim().parse(){
 			Ok(num) => num,
 			Err(_) => continue,
-		}
+		};
 		println!("You guessed: {guess}");
 		match guess.cmp(&secret_number){
 			Ordering::Less => println!("Too small!"),
@@ -244,8 +244,8 @@ fn main(){
 ```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNzA3NjMyMiw0MTY1NzU5MDIsLTE5OD
-UxNjkwMjMsNDA2OTMyNTkxLC0zNzEzMjkzODUsNjYxMTg3NDY0
-LC02MDM2OTIxODgsMTUzNDU4MjM0LC0yMTIzOTI2MTAxLC0xMT
-E0MDA5ODE1LDk4OTc0MjY1OV19
+eyJoaXN0b3J5IjpbLTExNzQyNDQ2MTksNDE2NTc1OTAyLC0xOT
+g1MTY5MDIzLDQwNjkzMjU5MSwtMzcxMzI5Mzg1LDY2MTE4NzQ2
+NCwtNjAzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMzkyNjEwMSwtMT
+ExNDAwOTgxNSw5ODk3NDI2NTldfQ==
 -->
