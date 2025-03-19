@@ -217,12 +217,20 @@ use std::cmp::Ordering;
 use std::io;
 
 fn main(){
-	println!("Guess the
+	println!("Guess the number!");
+	let secret_number = rand::thread_rng().gen_range(1..=100);
+	loop {
+		println!("Please input your guess.");
+		let mut guess = String::new();
+		io::stdin()
+			.read_line(&mut guess)
+			.expect("Failed to read line");
+		println!("You guessed: {guess}");
 ```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDY4MTY0NTYsNDE2NTc1OTAyLC0xOT
-g1MTY5MDIzLDQwNjkzMjU5MSwtMzcxMzI5Mzg1LDY2MTE4NzQ2
-NCwtNjAzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMzkyNjEwMSwtMT
-ExNDAwOTgxNSw5ODk3NDI2NTldfQ==
+eyJoaXN0b3J5IjpbLTc0MDUzMDU3OSw0MTY1NzU5MDIsLTE5OD
+UxNjkwMjMsNDA2OTMyNTkxLC0zNzEzMjkzODUsNjYxMTg3NDY0
+LC02MDM2OTIxODgsMTUzNDU4MjM0LC0yMTIzOTI2MTAxLC0xMT
+E0MDA5ODE1LDk4OTc0MjY1OV19
 -->
