@@ -262,13 +262,23 @@ https://rust-book.cs.brown.edu/ch03-00-common-programming-concepts.html
 * It can be initialized from the parent scope
 * The variable in the child scope will only be accessible in that scope
 * The variable in the containing scope will not be modified by changes in the inner scope
-*
+```rust
+fn main(){
+	let x = 5;
+	let x = x+1;
+	{
+		let x = x*2; // different x
+		println!("x = {x}"); // x = 12
+	}
+	println!("x = {x}"); // x = 6
+}
+```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MTIwMDY5Myw2MDY1NjIyMzAsNDE2NT
+eyJoaXN0b3J5IjpbMTQyNzY5NTU5Nyw2MDY1NjIyMzAsNDE2NT
 c1OTAyLC0xOTg1MTY5MDIzLDQwNjkzMjU5MSwtMzcxMzI5Mzg1
 LDY2MTE4NzQ2NCwtNjAzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMz
 kyNjEwMSwtMTExNDAwOTgxNSw5ODk3NDI2NTldfQ==
