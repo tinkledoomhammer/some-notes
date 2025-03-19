@@ -258,14 +258,18 @@ https://rust-book.cs.brown.edu/ch03-00-common-programming-concepts.html
 * They are usually named in all caps `const THREE_HOURS_IN_SECONDS: u32 = 60*60*3`
 * [Rust Reference’s section on constant evaluation] (https://doc.rust-lang.org/reference/const_eval.html)
 #### Shadowing
-* a variable 
+* a variable can shadow a variable of the same name in a containing scope
+* It can be initialized from the parent scope
+* The variable in the child scope will only be accessible in that scope
+* The variable in the containing scope will not be modified by changes in the inner scope
+*
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzg3NDg5NDYsNjA2NTYyMjMwLDQxNj
-U3NTkwMiwtMTk4NTE2OTAyMyw0MDY5MzI1OTEsLTM3MTMyOTM4
-NSw2NjExODc0NjQsLTYwMzY5MjE4OCwxNTM0NTgyMzQsLTIxMj
-M5MjYxMDEsLTExMTQwMDk4MTUsOTg5NzQyNjU5XX0=
+eyJoaXN0b3J5IjpbLTk2MTIwMDY5Myw2MDY1NjIyMzAsNDE2NT
+c1OTAyLC0xOTg1MTY5MDIzLDQwNjkzMjU5MSwtMzcxMzI5Mzg1
+LDY2MTE4NzQ2NCwtNjAzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMz
+kyNjEwMSwtMTExNDAwOTgxNSw5ODk3NDI2NTldfQ==
 -->
