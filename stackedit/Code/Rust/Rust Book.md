@@ -265,6 +265,7 @@ https://rust-book.cs.brown.edu/ch03-00-common-programming-concepts.html
 ```rust
 fn main(){
 	let x = 5;
+	println!("x = {x}"); // 5
 	let x = x+1;
 	{
 		let x = x*2; // different x
@@ -278,7 +279,7 @@ fn main(){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNzY5NTU5Nyw2MDY1NjIyMzAsNDE2NT
+eyJoaXN0b3J5IjpbMTMwODczNjM1OSw2MDY1NjIyMzAsNDE2NT
 c1OTAyLC0xOTg1MTY5MDIzLDQwNjkzMjU5MSwtMzcxMzI5Mzg1
 LDY2MTE4NzQ2NCwtNjAzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMz
 kyNjEwMSwtMTExNDAwOTgxNSw5ODk3NDI2NTldfQ==
