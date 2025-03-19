@@ -226,11 +226,22 @@ fn main(){
 			.read_line(&mut guess)
 			.expect("Failed to read line");
 		println!("You guessed: {guess}");
+		match guess.cmp(&secret_number){
+			Ordering::Less => println!("Too small!"),
+			Ordering::Greater => println!("Too big!"),
+			Ordering::Equal =>{
+				println!("You win!");
+				break;
+			}
+		}
+	}
+}
+
 ```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MDUzMDU3OSw0MTY1NzU5MDIsLTE5OD
-UxNjkwMjMsNDA2OTMyNTkxLC0zNzEzMjkzODUsNjYxMTg3NDY0
-LC02MDM2OTIxODgsMTUzNDU4MjM0LC0yMTIzOTI2MTAxLC0xMT
-E0MDA5ODE1LDk4OTc0MjY1OV19
+eyJoaXN0b3J5IjpbLTgxOTg0MjExLDQxNjU3NTkwMiwtMTk4NT
+E2OTAyMyw0MDY5MzI1OTEsLTM3MTMyOTM4NSw2NjExODc0NjQs
+LTYwMzY5MjE4OCwxNTM0NTgyMzQsLTIxMjM5MjYxMDEsLTExMT
+QwMDk4MTUsOTg5NzQyNjU5XX0=
 -->
