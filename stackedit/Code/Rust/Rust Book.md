@@ -250,6 +250,7 @@ https://rust-book.cs.brown.edu/ch03-00-common-programming-concepts.html
 * They can be redefined with another `let` but they cannot be simply assigned
 	* assigning to an immutable variable generates a compiler error
 * `let` must be used in a local scope(??)
+* `let` can also change the type of the variable
 #### Constant
 * Like immutable variables, but they must:
 	* be known at compile time
@@ -279,8 +280,8 @@ fn main(){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwODczNjM1OSw2MDY1NjIyMzAsNDE2NT
-c1OTAyLC0xOTg1MTY5MDIzLDQwNjkzMjU5MSwtMzcxMzI5Mzg1
-LDY2MTE4NzQ2NCwtNjAzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMz
-kyNjEwMSwtMTExNDAwOTgxNSw5ODk3NDI2NTldfQ==
+eyJoaXN0b3J5IjpbLTExNDIxNDQ3NjgsNjA2NTYyMjMwLDQxNj
+U3NTkwMiwtMTk4NTE2OTAyMyw0MDY5MzI1OTEsLTM3MTMyOTM4
+NSw2NjExODc0NjQsLTYwMzY5MjE4OCwxNTM0NTgyMzQsLTIxMj
+M5MjYxMDEsLTExMTQwMDk4MTUsOTg5NzQyNjU5XX0=
 -->
