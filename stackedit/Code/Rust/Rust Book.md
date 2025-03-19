@@ -253,14 +253,16 @@ https://rust-book.cs.brown.edu/ch03-00-common-programming-concepts.html
 * Like immutable variables, but they must:
 	* be known at compile time
 	* explicitly specify a type
+	* `const` can be used in the global scope
 * They are usually named in all caps `const THREE_HOURS_IN_SECONDS: u32 = 60*60*3`
+* [Rust Reference’s section on constant evaluation] (https://doc.rust-lang.org/reference/const_eval.html)
 * 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MDY5ODA5OSw2MDY1NjIyMzAsNDE2NT
+eyJoaXN0b3J5IjpbLTU0NDA2MDUwMSw2MDY1NjIyMzAsNDE2NT
 c1OTAyLC0xOTg1MTY5MDIzLDQwNjkzMjU5MSwtMzcxMzI5Mzg1
 LDY2MTE4NzQ2NCwtNjAzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMz
 kyNjEwMSwtMTExNDAwOTgxNSw5ODk3NDI2NTldfQ==
