@@ -180,12 +180,15 @@ fn main(){
 }
 ```
 `std::cmp::Ordering` gives us the `Ordering` type whish is an enum of `Less` `Greater` and `Equal`
-* the `cmp` method (in thi
+* the `cmp` method (in this case of a `u32` returns an ordering
+* `match <expr> { <case> => <statement>, <case> => <statement> }`
+	* like switch-case
+	* multiline statements can be enclose
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyMjM2MjQ3NCw0MTY1NzU5MDIsLTE5OD
-UxNjkwMjMsNDA2OTMyNTkxLC0zNzEzMjkzODUsNjYxMTg3NDY0
-LC02MDM2OTIxODgsMTUzNDU4MjM0LC0yMTIzOTI2MTAxLC0xMT
-E0MDA5ODE1LDk4OTc0MjY1OV19
+eyJoaXN0b3J5IjpbLTE1MDM4Mjk0NjgsNDE2NTc1OTAyLC0xOT
+g1MTY5MDIzLDQwNjkzMjU5MSwtMzcxMzI5Mzg1LDY2MTE4NzQ2
+NCwtNjAzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMzkyNjEwMSwtMT
+ExNDAwOTgxNSw5ODk3NDI2NTldfQ==
 -->
