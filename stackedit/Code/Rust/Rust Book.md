@@ -189,16 +189,23 @@ fn main(){
 	* assignment without `let` would fail here because `guess` was previously a string
 * string's `.parse()` converts a string to some other type. In this case it is the type specified in the `let` statement
 
-#### Looping
+#### Looping, handling invalid input, and quitting the loop
 ```rust
 loop {
 	//-- the guess and check code goes here
-}
+	//...
+		Orderring::Equal => {
+			println!("You win!");
+			break; // exit the loop
+		}
+	}//ends the match block
+} // ends the loop
 ```
+ 
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMTE5NTQyNiw0MTY1NzU5MDIsLTE5OD
+eyJoaXN0b3J5IjpbMTQ1NjE3OTc0MCw0MTY1NzU5MDIsLTE5OD
 UxNjkwMjMsNDA2OTMyNTkxLC0zNzEzMjkzODUsNjYxMTg3NDY0
 LC02MDM2OTIxODgsMTUzNDU4MjM0LC0yMTIzOTI2MTAxLC0xMT
 E0MDA5ODE1LDk4OTc0MjY1OV19
