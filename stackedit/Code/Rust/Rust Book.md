@@ -186,11 +186,12 @@ fn main(){
 	* multiline statements can be enclosed in `{}`
 * `let guess :u32 =...` re-declares guess, as an integer 
 	* `:<type` is how types are statically declared
-	* assignment without `let` would fail here because 
+	* assignment without `let` would fail here because `guess` was previously a string
+* string's `.parse()
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2OTg0NzUwMSw0MTY1NzU5MDIsLTE5OD
+eyJoaXN0b3J5IjpbMjAwMTg4ODM5Niw0MTY1NzU5MDIsLTE5OD
 UxNjkwMjMsNDA2OTMyNTkxLC0zNzEzMjkzODUsNjYxMTg3NDY0
 LC02MDM2OTIxODgsMTUzNDU4MjM0LC0yMTIzOTI2MTAxLC0xMT
 E0MDA5ODE1LDk4OTc0MjY1OV19
