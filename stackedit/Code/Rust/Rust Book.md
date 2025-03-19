@@ -275,12 +275,13 @@ fn main(){
 	println!("x = {x}"); // x = 6
 }
 ```
+### Data Types
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDIxNDQ3NjgsNjA2NTYyMjMwLDQxNj
+eyJoaXN0b3J5IjpbLTE0MTA4NDMyMTgsNjA2NTYyMjMwLDQxNj
 U3NTkwMiwtMTk4NTE2OTAyMyw0MDY5MzI1OTEsLTM3MTMyOTM4
 NSw2NjExODc0NjQsLTYwMzY5MjE4OCwxNTM0NTgyMzQsLTIxMj
 M5MjYxMDEsLTExMTQwMDk4MTUsOTg5NzQyNjU5XX0=
