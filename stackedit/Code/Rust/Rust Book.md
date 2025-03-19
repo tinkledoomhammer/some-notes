@@ -208,11 +208,21 @@ let guess:u32 = match guess.trim().parse(){
 	Err(_) => continue,
 };
 ```
+* `(_)` matches any pattern
  
+The final version of the code:
+```rust
+use rand:Rng;
+use std::cmp::Ordering;
+use std::io;
+
+fn main(){
+	println!("Guess the
+```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU1MzAxNjQwLDQxNjU3NTkwMiwtMTk4NT
-E2OTAyMyw0MDY5MzI1OTEsLTM3MTMyOTM4NSw2NjExODc0NjQs
-LTYwMzY5MjE4OCwxNTM0NTgyMzQsLTIxMjM5MjYxMDEsLTExMT
-QwMDk4MTUsOTg5NzQyNjU5XX0=
+eyJoaXN0b3J5IjpbLTE4MDY4MTY0NTYsNDE2NTc1OTAyLC0xOT
+g1MTY5MDIzLDQwNjkzMjU5MSwtMzcxMzI5Mzg1LDY2MTE4NzQ2
+NCwtNjAzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMzkyNjEwMSwtMT
+ExNDAwOTgxNSw5ODk3NDI2NTldfQ==
 -->
