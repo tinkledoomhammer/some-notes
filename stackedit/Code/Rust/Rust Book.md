@@ -179,12 +179,13 @@ fn main(){
 	}
 }
 ```
-
+`std::cmp::Ordering` gives us the `Ordering` type whish is an enum of `Less` `Greater` and `Equal`
+* the `cmp` method (in thi
  
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE2NTc1OTAyLC0xOTg1MTY5MDIzLDQwNj
-kzMjU5MSwtMzcxMzI5Mzg1LDY2MTE4NzQ2NCwtNjAzNjkyMTg4
-LDE1MzQ1ODIzNCwtMjEyMzkyNjEwMSwtMTExNDAwOTgxNSw5OD
-k3NDI2NTldfQ==
+eyJoaXN0b3J5IjpbLTcyMjM2MjQ3NCw0MTY1NzU5MDIsLTE5OD
+UxNjkwMjMsNDA2OTMyNTkxLC0zNzEzMjkzODUsNjYxMTg3NDY0
+LC02MDM2OTIxODgsMTUzNDU4MjM0LC0yMTIzOTI2MTAxLC0xMT
+E0MDA5ODE1LDk4OTc0MjY1OV19
 -->
