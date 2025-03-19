@@ -249,13 +249,18 @@ https://rust-book.cs.brown.edu/ch03-00-common-programming-concepts.html
 * Variables are immutable by default
 * They can be redefined with another `let` but they cannot be simply assigned
 	* assigning to an immutable variable generates a compiler error
+#### Constant
+* Like immutable variables, but they must:
+	* be known at compile time
+	* explicitly specify a type
+* They are usually named in all caps `const THREE_HOURS_IN_SECONDS: u32 = 60*60*3`
 * 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyOTc5NDQyOSw2MDY1NjIyMzAsNDE2NT
+eyJoaXN0b3J5IjpbLTI1MDY5ODA5OSw2MDY1NjIyMzAsNDE2NT
 c1OTAyLC0xOTg1MTY5MDIzLDQwNjkzMjU5MSwtMzcxMzI5Mzg1
 LDY2MTE4NzQ2NCwtNjAzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMz
 kyNjEwMSwtMTExNDAwOTgxNSw5ODk3NDI2NTldfQ==
