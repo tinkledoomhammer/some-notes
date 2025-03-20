@@ -457,7 +457,8 @@ let result = loop{
 `for num in (start..end)` // [start , end)
 `for num in (start..=end)` [start , end]
 
-
+## Ownership
+###
 
 
 
@@ -467,7 +468,7 @@ let result = loop{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDYzMjIzOTcxLC0xOTE4MzI5MjY2LDE1Nz
+eyJoaXN0b3J5IjpbNDI3MTA2MjUxLC0xOTE4MzI5MjY2LDE1Nz
 k4MDIxMTUsMjQ0NjY2MDMzLC0xMzU4NjM4NDY2LDEwNDgxMjUy
 MzQsLTE0MTA4NDMyMTgsNjA2NTYyMjMwLDQxNjU3NTkwMiwtMT
 k4NTE2OTAyMyw0MDY5MzI1OTEsLTM3MTMyOTM4NSw2NjExODc0
