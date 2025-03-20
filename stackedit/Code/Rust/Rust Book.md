@@ -468,8 +468,11 @@ Ownership
  The Rust Reference maintains a large list of [“Behavior considered undefined”](https://doc.rust-lang.org/reference/behavior-considered-undefined.html).
 
 #### Variables live in the Stack
-Variables exist in frames
-This doc describes changes as new frames. I.e. Main before a function call and main after a function call which is used to define a value are different frames
+* Variables exist in stack frames
+* This doc describes changes as new frames. I.e. Main before a function call and main after a function call which is used to define a value are different frames
+* Variables are copied into new frames, so changes will not affect the parent frame
+
+#### Boxes live in the heap
 
 
 
@@ -479,11 +482,11 @@ This doc describes changes as new frames. I.e. Main before a function call and m
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgyOTU5NzEyLDE5MDc0NzEwMzUsNjcxOD
-g0MjMwLC0xOTE4MzI5MjY2LDE1Nzk4MDIxMTUsMjQ0NjY2MDMz
-LC0xMzU4NjM4NDY2LDEwNDgxMjUyMzQsLTE0MTA4NDMyMTgsNj
-A2NTYyMjMwLDQxNjU3NTkwMiwtMTk4NTE2OTAyMyw0MDY5MzI1
-OTEsLTM3MTMyOTM4NSw2NjExODc0NjQsLTYwMzY5MjE4OCwxNT
-M0NTgyMzQsLTIxMjM5MjYxMDEsLTExMTQwMDk4MTUsOTg5NzQy
-NjU5XX0=
+eyJoaXN0b3J5IjpbLTUxODE5MDQxLDM4Mjk1OTcxMiwxOTA3ND
+cxMDM1LDY3MTg4NDIzMCwtMTkxODMyOTI2NiwxNTc5ODAyMTE1
+LDI0NDY2NjAzMywtMTM1ODYzODQ2NiwxMDQ4MTI1MjM0LC0xND
+EwODQzMjE4LDYwNjU2MjIzMCw0MTY1NzU5MDIsLTE5ODUxNjkw
+MjMsNDA2OTMyNTkxLC0zNzEzMjkzODUsNjYxMTg3NDY0LC02MD
+M2OTIxODgsMTUzNDU4MjM0LC0yMTIzOTI2MTAxLC0xMTE0MDA5
+ODE1XX0=
 -->
