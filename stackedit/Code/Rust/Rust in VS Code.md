@@ -66,10 +66,13 @@ In the command Palette (`Ctrl+Shift+P`) `Go to Symbol` commands
 
 ## Formatting
 
-## De
+## Debugging
+
+## Next steps
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMwNzQ4MzUxLC0xMjEwNDQ4OTAxLC0xMD
-k3Njk3MDIyXX0=
+eyJoaXN0b3J5IjpbLTY5MzE3MDc0NiwtMTIxMDQ0ODkwMSwtMT
+A5NzY5NzAyMl19
 -->
