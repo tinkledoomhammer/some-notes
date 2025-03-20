@@ -281,6 +281,7 @@ Type annotation
 #### Scalar Types
 #### Integers
 * `i8`, `u8`, powers of 2 up to `i128` and `u128`
+	* `i32` is the default
 * `isize` and `usize` are architecture dependent 
 * Signed ints use **two's complement** representation
 * The range for signed ints of size n is $[-(2^{n-1}) , 2^{n-1}]$
@@ -292,14 +293,20 @@ Base | Example
 Decimal | 12_345
 Hex | 0xff
 Octal | 0o77
+Binary | 0b1111_1010
+Byte `u8` only | b'A'
+
+#### Integer Overflow
+* integer overflow will cause a panic for code built in debug
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTUyNzkxOTgsLTE0MTA4NDMyMTgsNj
-A2NTYyMjMwLDQxNjU3NTkwMiwtMTk4NTE2OTAyMyw0MDY5MzI1
-OTEsLTM3MTMyOTM4NSw2NjExODc0NjQsLTYwMzY5MjE4OCwxNT
-M0NTgyMzQsLTIxMjM5MjYxMDEsLTExMTQwMDk4MTUsOTg5NzQy
-NjU5XX0=
+eyJoaXN0b3J5IjpbLTk2NjM4NjExMywtMTQxMDg0MzIxOCw2MD
+Y1NjIyMzAsNDE2NTc1OTAyLC0xOTg1MTY5MDIzLDQwNjkzMjU5
+MSwtMzcxMzI5Mzg1LDY2MTE4NzQ2NCwtNjAzNjkyMTg4LDE1Mz
+Q1ODIzNCwtMjEyMzkyNjEwMSwtMTExNDAwOTgxNSw5ODk3NDI2
+NTldfQ==
 -->
