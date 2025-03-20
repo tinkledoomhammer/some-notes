@@ -394,7 +394,7 @@ Also note that it is `->` and not `=>`
 */
 ```
 ### Control flow
-#### I
+#### `if` (an expression!)
 ```rust
 fn main() {
     let number = 6;
@@ -410,12 +410,15 @@ fn main() {
     }
 }
 ```
+* the `else` and `else if` clauses are optional
+* `if` is an expression so it can be used in a `let` statement
+* 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MzczMTQ3OCwxMDQ4MTI1MjM0LC0xND
-EwODQzMjE4LDYwNjU2MjIzMCw0MTY1NzU5MDIsLTE5ODUxNjkw
-MjMsNDA2OTMyNTkxLC0zNzEzMjkzODUsNjYxMTg3NDY0LC02MD
-M2OTIxODgsMTUzNDU4MjM0LC0yMTIzOTI2MTAxLC0xMTE0MDA5
-ODE1LDk4OTc0MjY1OV19
+eyJoaXN0b3J5IjpbMzc5NDk4MjM3LDEwNDgxMjUyMzQsLTE0MT
+A4NDMyMTgsNjA2NTYyMjMwLDQxNjU3NTkwMiwtMTk4NTE2OTAy
+Myw0MDY5MzI1OTEsLTM3MTMyOTM4NSw2NjExODc0NjQsLTYwMz
+Y5MjE4OCwxNTM0NTgyMzQsLTIxMjM5MjYxMDEsLTExMTQwMDk4
+MTUsOTg5NzQyNjU5XX0=
 -->
