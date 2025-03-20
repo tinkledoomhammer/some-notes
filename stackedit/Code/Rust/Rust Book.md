@@ -434,7 +434,15 @@ let result = loop{
 * `break` can be used to exit the loop and optionally return a value
 * the `;` after the `break` is optional
 * `break` will exit the current loop only
-* **Loop Lables** can be used to dis
+* **Loop Lables** can be used to disambiguate loops
+	* Loop labels begin with a single quote, and are ended with a colon 
+	```rust
+	let mut count =0;
+	`counting_up: loop{
+		println!("count = {count}")
+		let mut remaining = 10;
+		loop{
+	```
 
 
 
@@ -445,7 +453,7 @@ let result = loop{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTgxODQwNjMsMjQ0NjY2MDMzLC0xMz
+eyJoaXN0b3J5IjpbLTE5MTgwOTU0NjQsMjQ0NjY2MDMzLC0xMz
 U4NjM4NDY2LDEwNDgxMjUyMzQsLTE0MTA4NDMyMTgsNjA2NTYy
 MjMwLDQxNjU3NTkwMiwtMTk4NTE2OTAyMyw0MDY5MzI1OTEsLT
 M3MTMyOTM4NSw2NjExODc0NjQsLTYwMzY5MjE4OCwxNTM0NTgy
