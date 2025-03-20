@@ -46,10 +46,14 @@ https://code.visualstudio.com/docs/languages/rust
 * `Shift+F12` - go to references - show all references for a type
 * `Shift+Alt+h` - show call hierarchy - shows all calls from or to a function
 
-In the command Palette (`Ctrl+Shi
+In the command Palette (`Ctrl+Shift+P`) `Go to Symbol` commands
+* Go to symbol in file `ctrl+shift+O`
+* go to symbol in workspace `Ctrl+T`
+
+## Linting
+>The rustc linter, enabled by default, detects basic Rust errors, but you can use [clippy](https://github.com/rust-lang/rust-clippy) to get more lints. To enable clippy integration in rust-analyzer, change the **Rust-analyzer > Check: Command** (`rust-analyzer.check.command`) setting to `clippy` instead of the default `check`. The rust-analyzer extension will now run `cargo clippy` when you save a file and display clippy warnings and errors directly in the editor and Problems view.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzEzMjA0NjUsLTEwOTc2OTcwMjJdfQ
-==
+eyJoaXN0b3J5IjpbLTEzNjMxNTU0NSwtMTA5NzY5NzAyMl19
 -->
