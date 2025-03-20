@@ -473,7 +473,17 @@ Ownership
 * Variables are copied into new frames, so changes will not affect the parent frame
 
 #### Boxes live in the heap
+Pointer
+: a value that describes a memory location (internal in rust?)
 
+Pointee
+: The value that a pointer points to
+
+Heap
+: A separate region of memory where data can live indefinitely, not tied to a specific stack frame
+
+Box
+: A rust mechan
 
 
 
@@ -482,11 +492,11 @@ Ownership
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxODE5MDQxLDM4Mjk1OTcxMiwxOTA3ND
-cxMDM1LDY3MTg4NDIzMCwtMTkxODMyOTI2NiwxNTc5ODAyMTE1
-LDI0NDY2NjAzMywtMTM1ODYzODQ2NiwxMDQ4MTI1MjM0LC0xND
-EwODQzMjE4LDYwNjU2MjIzMCw0MTY1NzU5MDIsLTE5ODUxNjkw
-MjMsNDA2OTMyNTkxLC0zNzEzMjkzODUsNjYxMTg3NDY0LC02MD
-M2OTIxODgsMTUzNDU4MjM0LC0yMTIzOTI2MTAxLC0xMTE0MDA5
-ODE1XX0=
+eyJoaXN0b3J5IjpbMTc4NTA1NTMyMCwzODI5NTk3MTIsMTkwNz
+Q3MTAzNSw2NzE4ODQyMzAsLTE5MTgzMjkyNjYsMTU3OTgwMjEx
+NSwyNDQ2NjYwMzMsLTEzNTg2Mzg0NjYsMTA0ODEyNTIzNCwtMT
+QxMDg0MzIxOCw2MDY1NjIyMzAsNDE2NTc1OTAyLC0xOTg1MTY5
+MDIzLDQwNjkzMjU5MSwtMzcxMzI5Mzg1LDY2MTE4NzQ2NCwtNj
+AzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMzkyNjEwMSwtMTExNDAw
+OTgxNV19
 -->
