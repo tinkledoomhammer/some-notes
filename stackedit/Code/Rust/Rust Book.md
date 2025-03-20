@@ -499,7 +499,8 @@ Memory Management
 
 The nearly correct deallocation principle
 * If a variable is bound to a box then when rust deallocates the variable's frame, it also deallocates the box's heap memory
-
+* the correct principle
+	* If a variable owns a box, then rust deallocates the heap memory when the frame is de
 
 
 
@@ -507,11 +508,11 @@ The nearly correct deallocation principle
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDk0NDAzMCwzODI5NTk3MTIsMTkwNz
-Q3MTAzNSw2NzE4ODQyMzAsLTE5MTgzMjkyNjYsMTU3OTgwMjEx
-NSwyNDQ2NjYwMzMsLTEzNTg2Mzg0NjYsMTA0ODEyNTIzNCwtMT
-QxMDg0MzIxOCw2MDY1NjIyMzAsNDE2NTc1OTAyLC0xOTg1MTY5
-MDIzLDQwNjkzMjU5MSwtMzcxMzI5Mzg1LDY2MTE4NzQ2NCwtNj
-AzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMzkyNjEwMSwtMTExNDAw
-OTgxNV19
+eyJoaXN0b3J5IjpbODQwNjE0MzI5LDM4Mjk1OTcxMiwxOTA3ND
+cxMDM1LDY3MTg4NDIzMCwtMTkxODMyOTI2NiwxNTc5ODAyMTE1
+LDI0NDY2NjAzMywtMTM1ODYzODQ2NiwxMDQ4MTI1MjM0LC0xND
+EwODQzMjE4LDYwNjU2MjIzMCw0MTY1NzU5MDIsLTE5ODUxNjkw
+MjMsNDA2OTMyNTkxLC0zNzEzMjkzODUsNjYxMTg3NDY0LC02MD
+M2OTIxODgsMTUzNDU4MjM0LC0yMTIzOTI2MTAxLC0xMTE0MDA5
+ODE1XX0=
 -->
