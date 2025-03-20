@@ -355,13 +355,15 @@ let (x,y) = tup;
 * Bounds are checked automatically 
 	* Out-of bounds access will cause a panic
 
+### Functions
+* declared with `fn`
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDE1NDkxMDIsLTE0MTA4NDMyMTgsNj
-A2NTYyMjMwLDQxNjU3NTkwMiwtMTk4NTE2OTAyMyw0MDY5MzI1
-OTEsLTM3MTMyOTM4NSw2NjExODc0NjQsLTYwMzY5MjE4OCwxNT
-M0NTgyMzQsLTIxMjM5MjYxMDEsLTExMTQwMDk4MTUsOTg5NzQy
-NjU5XX0=
+eyJoaXN0b3J5IjpbMTA0ODEyNTIzNCwtMTQxMDg0MzIxOCw2MD
+Y1NjIyMzAsNDE2NTc1OTAyLC0xOTg1MTY5MDIzLDQwNjkzMjU5
+MSwtMzcxMzI5Mzg1LDY2MTE4NzQ2NCwtNjAzNjkyMTg4LDE1Mz
+Q1ODIzNCwtMjEyMzkyNjEwMSwtMTExNDAwOTgxNSw5ODk3NDI2
+NTldfQ==
 -->
