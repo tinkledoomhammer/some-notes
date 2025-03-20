@@ -276,13 +276,19 @@ fn main(){
 }
 ```
 ### Data Types
-
+Type annotation
+`let guess: u32 = ...`
+#### Scalar Types
+#### Integers
+`i8`, `u8`, powers of 2 up to `i128` and `u128`
+`isize` and `usize` are architecur
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTA4NDMyMTgsNjA2NTYyMjMwLDQxNj
-U3NTkwMiwtMTk4NTE2OTAyMyw0MDY5MzI1OTEsLTM3MTMyOTM4
-NSw2NjExODc0NjQsLTYwMzY5MjE4OCwxNTM0NTgyMzQsLTIxMj
-M5MjYxMDEsLTExMTQwMDk4MTUsOTg5NzQyNjU5XX0=
+eyJoaXN0b3J5IjpbMzcwNTk2MDE5LC0xNDEwODQzMjE4LDYwNj
+U2MjIzMCw0MTY1NzU5MDIsLTE5ODUxNjkwMjMsNDA2OTMyNTkx
+LC0zNzEzMjkzODUsNjYxMTg3NDY0LC02MDM2OTIxODgsMTUzND
+U4MjM0LC0yMTIzOTI2MTAxLC0xMTE0MDA5ODE1LDk4OTc0MjY1
+OV19
 -->
