@@ -286,7 +286,8 @@ Type annotation
 * Signed ints use **two's complement** representation
 * The range for signed ints of size n is $[-(2^{n-1}) , 2^{n-1}]$
 * The range for unsigned ints is $[0 , 2^n -1]$
-* integer literal formats:
+
+Integer literal formats:
 
 Base | Example
 --|--
@@ -309,16 +310,18 @@ Byte `u8` only | b'A'
 `f32` and `f64`
 * `f64` is the default
 * IEEEE-754
-* 
+
+#### Numerical operations
+* `+` `-` `*
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTM4NDI1ODAsLTE0MTA4NDMyMTgsNj
-A2NTYyMjMwLDQxNjU3NTkwMiwtMTk4NTE2OTAyMyw0MDY5MzI1
-OTEsLTM3MTMyOTM4NSw2NjExODc0NjQsLTYwMzY5MjE4OCwxNT
-M0NTgyMzQsLTIxMjM5MjYxMDEsLTExMTQwMDk4MTUsOTg5NzQy
-NjU5XX0=
+eyJoaXN0b3J5IjpbMTA1MDQ2NzM3MCwtMTQxMDg0MzIxOCw2MD
+Y1NjIyMzAsNDE2NTc1OTAyLC0xOTg1MTY5MDIzLDQwNjkzMjU5
+MSwtMzcxMzI5Mzg1LDY2MTE4NzQ2NCwtNjAzNjkyMTg4LDE1Mz
+Q1ODIzNCwtMjEyMzkyNjEwMSwtMTExNDAwOTgxNSw5ODk3NDI2
+NTldfQ==
 -->
