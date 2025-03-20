@@ -23,10 +23,14 @@ https://code.visualstudio.com/docs/languages/rust
 * can be configured in `Editor > Inlay Hints:Enabled` setting
 
 ### Hover information
-
+### Auto completions
+* use `Ctrl+Space` to manually trigger
+### Semantic syntax highlighting
+* i.e. underlining
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5ODc3NDIwMiwtMTA5NzY5NzAyMl19
+eyJoaXN0b3J5IjpbLTE3NDgyMDM2OTksLTEwOTc2OTcwMjJdfQ
+==
 -->
