@@ -10,9 +10,14 @@ https://code.visualstudio.com/docs/languages/rust
 3. Check rust installation
 	1. `rust --version`
 	2. `rustup update`
+4. `rustup doc` to view the documentation
+
+## Hello world 
+`cargo new hello_world`
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDcwNzg1NDMsLTEwOTc2OTcwMjJdfQ
-==
+eyJoaXN0b3J5IjpbLTM3MTMwODE0OCwtMTA5NzY5NzAyMl19
 -->
