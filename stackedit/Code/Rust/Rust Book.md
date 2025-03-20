@@ -497,6 +497,9 @@ i.e.
 Memory Management
 : The process of allocating and deallocating memory
 
+The nearly correct deallocation principle
+* If a variable is bound to a box then when rust deallocates the variable's frame, it also deallocates the box's heap memory
+
 
 
 
@@ -504,7 +507,7 @@ Memory Management
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2OTQzMjE4MiwzODI5NTk3MTIsMTkwNz
+eyJoaXN0b3J5IjpbLTE1MDk0NDAzMCwzODI5NTk3MTIsMTkwNz
 Q3MTAzNSw2NzE4ODQyMzAsLTE5MTgzMjkyNjYsMTU3OTgwMjEx
 NSwyNDQ2NjYwMzMsLTEzNTg2Mzg0NjYsMTA0ODEyNTIzNCwtMT
 QxMDg0MzIxOCw2MDY1NjIyMzAsNDE2NTc1OTAyLC0xOTg1MTY5
