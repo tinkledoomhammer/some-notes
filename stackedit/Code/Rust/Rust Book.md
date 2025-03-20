@@ -431,13 +431,24 @@ let result = loop{
 ```
 * `loop`s are expressions
 * they are exited with break
-* the return value can be specified in the break statement
-* the `;` after the break statement is optional
+* `break` can be used to exit the loop and optionally return a value
+* the `;` after the `break` is optional
+* `break` will exit the current loop only
+* **Loop Lables** can be used to dis
+
+
+
+
+
+
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE3Mzc3MDQ5LDI0NDY2NjAzMywtMTM1OD
-YzODQ2NiwxMDQ4MTI1MjM0LC0xNDEwODQzMjE4LDYwNjU2MjIz
-MCw0MTY1NzU5MDIsLTE5ODUxNjkwMjMsNDA2OTMyNTkxLC0zNz
-EzMjkzODUsNjYxMTg3NDY0LC02MDM2OTIxODgsMTUzNDU4MjM0
-LC0yMTIzOTI2MTAxLC0xMTE0MDA5ODE1LDk4OTc0MjY1OV19
+eyJoaXN0b3J5IjpbLTE5MTgxODQwNjMsMjQ0NjY2MDMzLC0xMz
+U4NjM4NDY2LDEwNDgxMjUyMzQsLTE0MTA4NDMyMTgsNjA2NTYy
+MjMwLDQxNjU3NTkwMiwtMTk4NTE2OTAyMyw0MDY5MzI1OTEsLT
+M3MTMyOTM4NSw2NjExODc0NjQsLTYwMzY5MjE4OCwxNTM0NTgy
+MzQsLTIxMjM5MjYxMDEsLTExMTQwMDk4MTUsOTg5NzQyNjU5XX
+0=
 -->
