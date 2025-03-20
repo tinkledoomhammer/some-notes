@@ -412,13 +412,14 @@ fn main() {
 ```
 * the `else` and `else if` clauses are optional
 * `if` is an expression so it can be used in a `let` statement
-* 
+* `let number = if condition {5} else {6}`
+	* The if and else sections have to have the same type
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc5NDk4MjM3LDEwNDgxMjUyMzQsLTE0MT
-A4NDMyMTgsNjA2NTYyMjMwLDQxNjU3NTkwMiwtMTk4NTE2OTAy
-Myw0MDY5MzI1OTEsLTM3MTMyOTM4NSw2NjExODc0NjQsLTYwMz
-Y5MjE4OCwxNTM0NTgyMzQsLTIxMjM5MjYxMDEsLTExMTQwMDk4
-MTUsOTg5NzQyNjU5XX0=
+eyJoaXN0b3J5IjpbLTEzNTg2Mzg0NjYsMTA0ODEyNTIzNCwtMT
+QxMDg0MzIxOCw2MDY1NjIyMzAsNDE2NTc1OTAyLC0xOTg1MTY5
+MDIzLDQwNjkzMjU5MSwtMzcxMzI5Mzg1LDY2MTE4NzQ2NCwtNj
+AzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMzkyNjEwMSwtMTExNDAw
+OTgxNSw5ODk3NDI2NTldfQ==
 -->
