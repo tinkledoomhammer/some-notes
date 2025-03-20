@@ -465,6 +465,8 @@ Safety
 Ownership
 : A discipline for memory safety
 
+ The Rust Reference maintains a large list of [“Behavior considered undefined”](https://doc.rust-lang.org/reference/behavior-considered-undefined.html).
+
 
 
 
@@ -473,7 +475,7 @@ Ownership
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNDc4MDcyNywxOTA3NDcxMDM1LDY3MT
+eyJoaXN0b3J5IjpbMTg2Nzc0NjA0MiwxOTA3NDcxMDM1LDY3MT
 g4NDIzMCwtMTkxODMyOTI2NiwxNTc5ODAyMTE1LDI0NDY2NjAz
 MywtMTM1ODYzODQ2NiwxMDQ4MTI1MjM0LC0xNDEwODQzMjE4LD
 YwNjU2MjIzMCw0MTY1NzU5MDIsLTE5ODUxNjkwMjMsNDA2OTMy
