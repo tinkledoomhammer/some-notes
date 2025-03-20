@@ -333,13 +333,19 @@ Byte `u8` only | b'A'
 * Members are accessed with dot notation and a numerical index
 	* `tup.0 //500`
 * A tuple with no values is called a **unit** 
+	* its value and type are both written `()`
+	* Expressions implicitly return `()` when they don't explicitly return a value
+#### Array type (compound)
+* every element must have the same type
+* The size is fixed
+* Values are specified in a coma separated list ins
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4NjEyNDcsLTE0MTA4NDMyMTgsNjA2NT
-YyMjMwLDQxNjU3NTkwMiwtMTk4NTE2OTAyMyw0MDY5MzI1OTEs
-LTM3MTMyOTM4NSw2NjExODc0NjQsLTYwMzY5MjE4OCwxNTM0NT
-gyMzQsLTIxMjM5MjYxMDEsLTExMTQwMDk4MTUsOTg5NzQyNjU5
-XX0=
+eyJoaXN0b3J5IjpbLTExMjIxOTA4MTAsLTE0MTA4NDMyMTgsNj
+A2NTYyMjMwLDQxNjU3NTkwMiwtMTk4NTE2OTAyMyw0MDY5MzI1
+OTEsLTM3MTMyOTM4NSw2NjExODc0NjQsLTYwMzY5MjE4OCwxNT
+M0NTgyMzQsLTIxMjM5MjYxMDEsLTExMTQwMDk4MTUsOTg5NzQy
+NjU5XX0=
 -->
