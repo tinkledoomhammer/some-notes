@@ -325,14 +325,18 @@ Byte `u8` only | b'A'
 * They are *Unicode Scalar Value*s
 * Valid values are in [U+0000 , U+D7FF]$ and U+E0000 , U+10FFFF]
 * See also [“Storing UTF-8 Encoded Text with Strings”](https://rust-book.cs.brown.edu/ch08-02-strings.html#storing-utf-8-encoded-text-with-strings)
-* 
+
+
+#### Tuples (A Compound Type)
+* a coma separated list of values inside parens
+* `let tup: (i32, f64, u8)
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5MDIxMzYyNywtMTQxMDg0MzIxOCw2MD
-Y1NjIyMzAsNDE2NTc1OTAyLC0xOTg1MTY5MDIzLDQwNjkzMjU5
-MSwtMzcxMzI5Mzg1LDY2MTE4NzQ2NCwtNjAzNjkyMTg4LDE1Mz
-Q1ODIzNCwtMjEyMzkyNjEwMSwtMTExNDAwOTgxNSw5ODk3NDI2
-NTldfQ==
+eyJoaXN0b3J5IjpbLTE5MTEwNjcxODMsLTE0MTA4NDMyMTgsNj
+A2NTYyMjMwLDQxNjU3NTkwMiwtMTk4NTE2OTAyMyw0MDY5MzI1
+OTEsLTM3MTMyOTM4NSw2NjExODc0NjQsLTYwMzY5MjE4OCwxNT
+M0NTgyMzQsLTIxMjM5MjYxMDEsLTExMTQwMDk4MTUsOTg5NzQy
+NjU5XX0=
 -->
