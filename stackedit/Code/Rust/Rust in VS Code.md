@@ -62,10 +62,14 @@ In the command Palette (`Ctrl+Shift+P`) `Go to Symbol` commands
 
 >The command highlights the source code that will be refactored or fixed with Quick Fixes. Normal Code Actions and non-fix refactorings can still be activated at the cursor location.
 
+## Refactoring
 
+## Formatting
+
+## De
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTA0NDg5MDEsLTEwOTc2OTcwMjJdfQ
-==
+eyJoaXN0b3J5IjpbMzMwNzQ4MzUxLC0xMjEwNDQ4OTAxLC0xMD
+k3Njk3MDIyXX0=
 -->
