@@ -312,14 +312,17 @@ Byte `u8` only | b'A'
 * IEEEE-754
 
 #### Numerical operations
-* `+` `-` `*
+* `+` `-` `*` `/` and `%` work as expected
+* For a full list of operators, see https://rust-book.cs.brown.edu/appendix-02-operators.html
+
+#### Bools
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MDQ2NzM3MCwtMTQxMDg0MzIxOCw2MD
+eyJoaXN0b3J5IjpbMTY1NDk5NjQ3NCwtMTQxMDg0MzIxOCw2MD
 Y1NjIyMzAsNDE2NTc1OTAyLC0xOTg1MTY5MDIzLDQwNjkzMjU5
 MSwtMzcxMzI5Mzg1LDY2MTE4NzQ2NCwtNjAzNjkyMTg4LDE1Mz
 Q1ODIzNCwtMjEyMzkyNjEwMSwtMTExNDAwOTgxNSw5ODk3NDI2
