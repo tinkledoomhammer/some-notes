@@ -500,7 +500,9 @@ Memory Management
 The nearly correct deallocation principle
 * If a variable is bound to a box then when rust deallocates the variable's frame, it also deallocates the box's heap memory
 * the correct principle
-	* If a variable owns a box, then rust deallocates the heap memory when the frame is de
+	* If a variable owns a box, then rust deallocates the heap memory with the frame
+* Ownership is transferred on assignment to avoid double deallocation 
+* 
 
 
 
@@ -508,7 +510,7 @@ The nearly correct deallocation principle
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQwNjE0MzI5LDM4Mjk1OTcxMiwxOTA3ND
+eyJoaXN0b3J5IjpbODY1ODUxODc3LDM4Mjk1OTcxMiwxOTA3ND
 cxMDM1LDY3MTg4NDIzMCwtMTkxODMyOTI2NiwxNTc5ODAyMTE1
 LDI0NDY2NjAzMywtMTM1ODYzODQ2NiwxMDQ4MTI1MjM0LC0xND
 EwODQzMjE4LDYwNjU2MjIzMCw0MTY1NzU5MDIsLTE5ODUxNjkw
