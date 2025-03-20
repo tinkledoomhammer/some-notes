@@ -347,13 +347,15 @@ Byte `u8` only | b'A'
 * Elements are accessed with square brackets
 	* `a[0]` 
 * Bounds are checked automatically 
+	* Out-of bounds access will cause a panic
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwMTUxMjQyMywtMTQxMDg0MzIxOCw2MD
-Y1NjIyMzAsNDE2NTc1OTAyLC0xOTg1MTY5MDIzLDQwNjkzMjU5
-MSwtMzcxMzI5Mzg1LDY2MTE4NzQ2NCwtNjAzNjkyMTg4LDE1Mz
-Q1ODIzNCwtMjEyMzkyNjEwMSwtMTExNDAwOTgxNSw5ODk3NDI2
-NTldfQ==
+eyJoaXN0b3J5IjpbMjAwMjk4ODkxLC0xNDEwODQzMjE4LDYwNj
+U2MjIzMCw0MTY1NzU5MDIsLTE5ODUxNjkwMjMsNDA2OTMyNTkx
+LC0zNzEzMjkzODUsNjYxMTg3NDY0LC02MDM2OTIxODgsMTUzND
+U4MjM0LC0yMTIzOTI2MTAxLC0xMTE0MDA5ODE1LDk4OTc0MjY1
+OV19
 -->
