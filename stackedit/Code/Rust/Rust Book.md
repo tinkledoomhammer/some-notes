@@ -300,16 +300,19 @@ Byte `u8` only | b'A'
 * integer overflow will cause a panic for code built in debug mode
 * In `--release` builds, the checking code is removed and rust will perform *two's complement wrapping*
 * Rust has a family of methods to customize overflow handling
-	* Wr
+	* `wrapping_*` such as `wrapping_add` will cause wrapping
+	* `checked_*` will return none in the event of verflow
+	* `overflowing_*` returns a bool indicating whether an overflow occurred 
+	* `saturating_*` 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI3NTQ2MzgzLC0xNDEwODQzMjE4LDYwNj
-U2MjIzMCw0MTY1NzU5MDIsLTE5ODUxNjkwMjMsNDA2OTMyNTkx
-LC0zNzEzMjkzODUsNjYxMTg3NDY0LC02MDM2OTIxODgsMTUzND
-U4MjM0LC0yMTIzOTI2MTAxLC0xMTE0MDA5ODE1LDk4OTc0MjY1
-OV19
+eyJoaXN0b3J5IjpbLTIwMTU4NzUxOTgsLTE0MTA4NDMyMTgsNj
+A2NTYyMjMwLDQxNjU3NTkwMiwtMTk4NTE2OTAyMyw0MDY5MzI1
+OTEsLTM3MTMyOTM4NSw2NjExODc0NjQsLTYwMzY5MjE4OCwxNT
+M0NTgyMzQsLTIxMjM5MjYxMDEsLTExMTQwMDk4MTUsOTg5NzQy
+NjU5XX0=
 -->
