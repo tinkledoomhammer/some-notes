@@ -57,7 +57,15 @@ In the command Palette (`Ctrl+Shift+P`) `Go to Symbol` commands
 ## Quick fixes
 * when the linter finds errors and provides suggested fixes
 * `Ctrl+.` to open available quick fixes
+
+>Additionally,  **Code Action Widget: Include Nearby Quick Fixes**  (editor.codeActionWidget.includeNearbyQuickFixes) is a setting that is enabled on default, which will activate the nearest Quick Fix in a line from  Ctrl+.  (command ID  `editor.action.quickFix`), no matter where your cursor is in that line.
+
+>The command highlights the source code that will be refactored or fixed with Quick Fixes. Normal Code Actions and non-fix refactorings can still be activated at the cursor location.
+
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjQxODA2NiwtMTA5NzY5NzAyMl19
+eyJoaXN0b3J5IjpbLTEyMTA0NDg5MDEsLTEwOTc2OTcwMjJdfQ
+==
 -->
