@@ -8,10 +8,11 @@ https://code.visualstudio.com/docs/languages/rust
 2. Install rust analyzer  extension https://rust-analyzer.github.io
 	1. Crl-shift-x and type in rust
 3. Check rust installation
-	3. `rust --version`
+	1. `rust --version`
+	2. `rustup update`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzkyOTgzODksLTEwOTc2OTcwMjJdfQ
+eyJoaXN0b3J5IjpbLTE3NDcwNzg1NDMsLTEwOTc2OTcwMjJdfQ
 ==
 -->
