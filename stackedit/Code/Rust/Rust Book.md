@@ -316,15 +316,21 @@ Byte `u8` only | b'A'
 * For a full list of operators, see https://rust-book.cs.brown.edu/appendix-02-operators.html
 
 #### Bools
+* one byte in size
+* allowed values are `true` and `false`
 
+#### Char Type
+* 4-byte character codes
+* literals use single quotes `let c: char = 'z';`
+* THey are *Unicode Scalar Value
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1NDk5NjQ3NCwtMTQxMDg0MzIxOCw2MD
-Y1NjIyMzAsNDE2NTc1OTAyLC0xOTg1MTY5MDIzLDQwNjkzMjU5
-MSwtMzcxMzI5Mzg1LDY2MTE4NzQ2NCwtNjAzNjkyMTg4LDE1Mz
-Q1ODIzNCwtMjEyMzkyNjEwMSwtMTExNDAwOTgxNSw5ODk3NDI2
-NTldfQ==
+eyJoaXN0b3J5IjpbLTE3MjE0MjU3NjYsLTE0MTA4NDMyMTgsNj
+A2NTYyMjMwLDQxNjU3NTkwMiwtMTk4NTE2OTAyMyw0MDY5MzI1
+OTEsLTM3MTMyOTM4NSw2NjExODc0NjQsLTYwMzY5MjE4OCwxNT
+M0NTgyMzQsLTIxMjM5MjYxMDEsLTExMTQwMDk4MTUsOTg5NzQy
+NjU5XX0=
 -->
