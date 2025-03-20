@@ -297,16 +297,19 @@ Binary | 0b1111_1010
 Byte `u8` only | b'A'
 
 #### Integer Overflow
-* integer overflow will cause a panic for code built in debug
+* integer overflow will cause a panic for code built in debug mode
+* In `--release` builds, the checking code is removed and rust will perform *two's complement wrapping*
+* Rust has a family of methods to customize overflow handling
+	* Wr
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NjM4NjExMywtMTQxMDg0MzIxOCw2MD
-Y1NjIyMzAsNDE2NTc1OTAyLC0xOTg1MTY5MDIzLDQwNjkzMjU5
-MSwtMzcxMzI5Mzg1LDY2MTE4NzQ2NCwtNjAzNjkyMTg4LDE1Mz
-Q1ODIzNCwtMjEyMzkyNjEwMSwtMTExNDAwOTgxNSw5ODk3NDI2
-NTldfQ==
+eyJoaXN0b3J5IjpbNzI3NTQ2MzgzLC0xNDEwODQzMjE4LDYwNj
+U2MjIzMCw0MTY1NzU5MDIsLTE5ODUxNjkwMjMsNDA2OTMyNTkx
+LC0zNzEzMjkzODUsNjYxMTg3NDY0LC02MDM2OTIxODgsMTUzND
+U4MjM0LC0yMTIzOTI2MTAxLC0xMTE0MDA5ODE1LDk4OTc0MjY1
+OV19
 -->
