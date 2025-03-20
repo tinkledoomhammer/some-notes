@@ -335,6 +335,10 @@ Byte `u8` only | b'A'
 * A tuple with no values is called a **unit** 
 	* its value and type are both written `()`
 	* Expressions implicitly return `()` when they don't explicitly return a value
+* Tuples can be used for multiple assignment:
+```rust
+let tup = 
+```
 #### Array type (compound)
 * every element must have the same type
 * The size is fixed
@@ -353,7 +357,7 @@ Byte `u8` only | b'A'
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwMjk4ODkxLC0xNDEwODQzMjE4LDYwNj
+eyJoaXN0b3J5IjpbMTcxMTcxNDg1LC0xNDEwODQzMjE4LDYwNj
 U2MjIzMCw0MTY1NzU5MDIsLTE5ODUxNjkwMjMsNDA2OTMyNTkx
 LC0zNzEzMjkzODUsNjYxMTg3NDY0LC02MDM2OTIxODgsMTUzND
 U4MjM0LC0yMTIzOTI2MTAxLC0xMTE0MDA5ODE1LDk4OTc0MjY1
