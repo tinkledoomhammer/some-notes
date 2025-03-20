@@ -493,6 +493,9 @@ i.e.
 	//Copying a gives coppies the pointer
 		//so we avoid the 4MB copy
 	```
+#### Rust does not permit manual memory management
+Memory Management
+: The process of allocating and deallocating memory
 
 
 
@@ -501,7 +504,7 @@ i.e.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNDIzODg4OSwzODI5NTk3MTIsMTkwNz
+eyJoaXN0b3J5IjpbLTQ2OTQzMjE4MiwzODI5NTk3MTIsMTkwNz
 Q3MTAzNSw2NzE4ODQyMzAsLTE5MTgzMjkyNjYsMTU3OTgwMjEx
 NSwyNDQ2NjYwMzMsLTEzNTg2Mzg0NjYsMTA0ODEyNTIzNCwtMT
 QxMDg0MzIxOCw2MDY1NjIyMzAsNDE2NTc1OTAyLC0xOTg1MTY5
