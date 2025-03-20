@@ -303,14 +303,20 @@ Byte `u8` only | b'A'
 	* `wrapping_*` such as `wrapping_add` will cause wrapping
 	* `checked_*` will return none in the event of verflow
 	* `overflowing_*` returns a bool indicating whether an overflow occurred 
-	* `saturating_*` 
+	* `saturating_*` will clamp the return value
+
+#### Floating point types
+`f32` and `f64`
+* `f64` is the default
+* IEEEE-754
+* 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTU4NzUxOTgsLTE0MTA4NDMyMTgsNj
+eyJoaXN0b3J5IjpbLTIwOTM4NDI1ODAsLTE0MTA4NDMyMTgsNj
 A2NTYyMjMwLDQxNjU3NTkwMiwtMTk4NTE2OTAyMyw0MDY5MzI1
 OTEsLTM3MTMyOTM4NSw2NjExODc0NjQsLTYwMzY5MjE4OCwxNT
 M0NTgyMzQsLTIxMjM5MjYxMDEsLTExMTQwMDk4MTUsOTg5NzQy
