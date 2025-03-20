@@ -343,14 +343,17 @@ Byte `u8` only | b'A'
 * The type can be specified to include the size
 	* `let a: [i32;3] = [1,2,3];`
 * They can be initialized by repeating a value:
-	* `let a = [3;5]` will produce `[
+	* `let a = [3;5]` will produce `[3,3,3,3,3]`
+* Elements are accessed with square brackets
+	* `a[0]` 
+* Bounds are checked automatically 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzU4NjM4NDksLTE0MTA4NDMyMTgsNj
-A2NTYyMjMwLDQxNjU3NTkwMiwtMTk4NTE2OTAyMyw0MDY5MzI1
-OTEsLTM3MTMyOTM4NSw2NjExODc0NjQsLTYwMzY5MjE4OCwxNT
-M0NTgyMzQsLTIxMjM5MjYxMDEsLTExMTQwMDk4MTUsOTg5NzQy
-NjU5XX0=
+eyJoaXN0b3J5IjpbLTQwMTUxMjQyMywtMTQxMDg0MzIxOCw2MD
+Y1NjIyMzAsNDE2NTc1OTAyLC0xOTg1MTY5MDIzLDQwNjkzMjU5
+MSwtMzcxMzI5Mzg1LDY2MTE4NzQ2NCwtNjAzNjkyMTg4LDE1Mz
+Q1ODIzNCwtMjEyMzkyNjEwMSwtMTExNDAwOTgxNSw5ODk3NDI2
+NTldfQ==
 -->
