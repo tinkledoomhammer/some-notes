@@ -14,10 +14,15 @@ https://code.visualstudio.com/docs/languages/rust
 
 ## Hello world 
 `cargo new hello_world`
-
+`cargo build`
+`cargo run`
+## InetlliSense
+* provided by rust-analyzer
+### Inlay hints
+	* show inferred types, 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MTMwODE0OCwtMTA5NzY5NzAyMl19
+eyJoaXN0b3J5IjpbLTQ1NzcxNTUzNiwtMTA5NzY5NzAyMl19
 -->
