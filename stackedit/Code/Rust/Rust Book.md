@@ -322,13 +322,14 @@ Byte `u8` only | b'A'
 #### Char Type
 * 4-byte character codes
 * literals use single quotes `let c: char = 'z';`
-* THey are *Unicode Scalar Value
+* They are *Unicode Scalar Value*s
+* Valid values are in [U+0000 , U+D7FF]$ and U+E00 , U+10FFFF]
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjE0MjU3NjYsLTE0MTA4NDMyMTgsNj
+eyJoaXN0b3J5IjpbLTE0NTkyNTE0NDksLTE0MTA4NDMyMTgsNj
 A2NTYyMjMwLDQxNjU3NTkwMiwtMTk4NTE2OTAyMyw0MDY5MzI1
 OTEsLTM3MTMyOTM4NSw2NjExODc0NjQsLTYwMzY5MjE4OCwxNT
 M0NTgyMzQsLTIxMjM5MjYxMDEsLTExMTQwMDk4MTUsOTg5NzQy
