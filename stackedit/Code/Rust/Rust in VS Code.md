@@ -33,7 +33,8 @@ https://code.visualstudio.com/docs/languages/rust
   "editor.semanticTokenColorCustomizations": {
     "rules": {
       "*.mutable": {
-        "fontStyle": "", // set to empty string to disable underline, which is the default
+        "fontStyle": "", // set to empty string to 
+	        //disable underline, which is the default
       },
     }
   },
@@ -53,7 +54,10 @@ In the command Palette (`Ctrl+Shift+P`) `Go to Symbol` commands
 ## Linting
 >The rustc linter, enabled by default, detects basic Rust errors, but you can use [clippy](https://github.com/rust-lang/rust-clippy) to get more lints. To enable clippy integration in rust-analyzer, change the **Rust-analyzer > Check: Command** (`rust-analyzer.check.command`) setting to `clippy` instead of the default `check`. The rust-analyzer extension will now run `cargo clippy` when you save a file and display clippy warnings and errors directly in the editor and Problems view.
 
+## Quick fixes
+* when the linter finds errors and provides suggested fixes
+* `Ctrl+.` to open available quick fixes
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjMxNTU0NSwtMTA5NzY5NzAyMl19
+eyJoaXN0b3J5IjpbLTExMjQxODA2NiwtMTA5NzY5NzAyMl19
 -->
