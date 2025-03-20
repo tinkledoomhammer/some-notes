@@ -337,7 +337,9 @@ Byte `u8` only | b'A'
 	* Expressions implicitly return `()` when they don't explicitly return a value
 * Tuples can be used for multiple assignment:
 ```rust
-let tup = 
+let tup = (50,6.4);
+let (x,y) = tup;
+// x == 50, y == 6.4
 ```
 #### Array type (compound)
 * every element must have the same type
@@ -357,9 +359,9 @@ let tup =
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMTcxNDg1LC0xNDEwODQzMjE4LDYwNj
-U2MjIzMCw0MTY1NzU5MDIsLTE5ODUxNjkwMjMsNDA2OTMyNTkx
-LC0zNzEzMjkzODUsNjYxMTg3NDY0LC02MDM2OTIxODgsMTUzND
-U4MjM0LC0yMTIzOTI2MTAxLC0xMTE0MDA5ODE1LDk4OTc0MjY1
-OV19
+eyJoaXN0b3J5IjpbLTE0NDE1NDkxMDIsLTE0MTA4NDMyMTgsNj
+A2NTYyMjMwLDQxNjU3NTkwMiwtMTk4NTE2OTAyMyw0MDY5MzI1
+OTEsLTM3MTMyOTM4NSw2NjExODc0NjQsLTYwMzY5MjE4OCwxNT
+M0NTgyMzQsLTIxMjM5MjYxMDEsLTExMTQwMDk4MTUsOTg5NzQy
+NjU5XX0=
 -->
