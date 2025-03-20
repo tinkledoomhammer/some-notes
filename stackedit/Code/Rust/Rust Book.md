@@ -454,6 +454,7 @@ let result = loop{
 `while <condition> {stufff}`
 	* avoids having to use if..break 
 `for element in collection {stuff}`
+`for num
 
 
 
@@ -464,10 +465,10 @@ let result = loop{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTgzMjkyNjYsMTU3OTgwMjExNSwyND
-Q2NjYwMzMsLTEzNTg2Mzg0NjYsMTA0ODEyNTIzNCwtMTQxMDg0
-MzIxOCw2MDY1NjIyMzAsNDE2NTc1OTAyLC0xOTg1MTY5MDIzLD
-QwNjkzMjU5MSwtMzcxMzI5Mzg1LDY2MTE4NzQ2NCwtNjAzNjky
-MTg4LDE1MzQ1ODIzNCwtMjEyMzkyNjEwMSwtMTExNDAwOTgxNS
-w5ODk3NDI2NTldfQ==
+eyJoaXN0b3J5IjpbLTE3OTU2NjUyNjcsLTE5MTgzMjkyNjYsMT
+U3OTgwMjExNSwyNDQ2NjYwMzMsLTEzNTg2Mzg0NjYsMTA0ODEy
+NTIzNCwtMTQxMDg0MzIxOCw2MDY1NjIyMzAsNDE2NTc1OTAyLC
+0xOTg1MTY5MDIzLDQwNjkzMjU5MSwtMzcxMzI5Mzg1LDY2MTE4
+NzQ2NCwtNjAzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMzkyNjEwMS
+wtMTExNDAwOTgxNSw5ODk3NDI2NTldfQ==
 -->
