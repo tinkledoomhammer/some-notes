@@ -42,10 +42,14 @@ https://code.visualstudio.com/docs/languages/rust
 ```
 ## Code Navigation
 * `F12`  Go to definition (of a type)
-* `Alt+F12` 
+* `Alt+F12` Peek definition 
+* `Shift+F12` - go to references - show all references for a type
+* `Shift+Alt+h` - show call hierarchy - shows all calls from or to a function
+
+In the command Palette (`Ctrl+Shi
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzQ2MzM0MTgsLTEwOTc2OTcwMjJdfQ
+eyJoaXN0b3J5IjpbLTEyMzEzMjA0NjUsLTEwOTc2OTcwMjJdfQ
 ==
 -->
