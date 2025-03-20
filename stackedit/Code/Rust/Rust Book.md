@@ -504,17 +504,17 @@ The nearly correct deallocation principle
 * Ownership is transferred on assignment to avoid double deallocation 
 * 
 
-
+#### Variables cannot be used after being moved
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY1ODUxODc3LDM4Mjk1OTcxMiwxOTA3ND
-cxMDM1LDY3MTg4NDIzMCwtMTkxODMyOTI2NiwxNTc5ODAyMTE1
-LDI0NDY2NjAzMywtMTM1ODYzODQ2NiwxMDQ4MTI1MjM0LC0xND
-EwODQzMjE4LDYwNjU2MjIzMCw0MTY1NzU5MDIsLTE5ODUxNjkw
-MjMsNDA2OTMyNTkxLC0zNzEzMjkzODUsNjYxMTg3NDY0LC02MD
-M2OTIxODgsMTUzNDU4MjM0LC0yMTIzOTI2MTAxLC0xMTE0MDA5
-ODE1XX0=
+eyJoaXN0b3J5IjpbLTE4MDg1NzY4MjUsMzgyOTU5NzEyLDE5MD
+c0NzEwMzUsNjcxODg0MjMwLC0xOTE4MzI5MjY2LDE1Nzk4MDIx
+MTUsMjQ0NjY2MDMzLC0xMzU4NjM4NDY2LDEwNDgxMjUyMzQsLT
+E0MTA4NDMyMTgsNjA2NTYyMjMwLDQxNjU3NTkwMiwtMTk4NTE2
+OTAyMyw0MDY5MzI1OTEsLTM3MTMyOTM4NSw2NjExODc0NjQsLT
+YwMzY5MjE4OCwxNTM0NTgyMzQsLTIxMjM5MjYxMDEsLTExMTQw
+MDk4MTVdfQ==
 -->
