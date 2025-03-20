@@ -387,14 +387,35 @@ Also note that it is `->` and not `=>`
 
 ### Comments
 ```rust
-// com
+// comment to the end of the line
+/* this
+	is a multiline
+	comment
+*/
+```
+### Control flow
+#### I
+```rust
+fn main() {
+    let number = 6;
+
+    if number % 4 == 0 {
+        println!("number is divisible by 4");
+    } else if number % 3 == 0 {
+        println!("number is divisible by 3");
+    } else if number % 2 == 0 {
+        println!("number is divisible by 2");
+    } else {
+        println!("number is not divisible by 4, 3, or 2");
+    }
+}
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYyMDk3MTI4LDEwNDgxMjUyMzQsLTE0MT
-A4NDMyMTgsNjA2NTYyMjMwLDQxNjU3NTkwMiwtMTk4NTE2OTAy
-Myw0MDY5MzI1OTEsLTM3MTMyOTM4NSw2NjExODc0NjQsLTYwMz
-Y5MjE4OCwxNTM0NTgyMzQsLTIxMjM5MjYxMDEsLTExMTQwMDk4
-MTUsOTg5NzQyNjU5XX0=
+eyJoaXN0b3J5IjpbMTg5MzczMTQ3OCwxMDQ4MTI1MjM0LC0xND
+EwODQzMjE4LDYwNjU2MjIzMCw0MTY1NzU5MDIsLTE5ODUxNjkw
+MjMsNDA2OTMyNTkxLC0zNzEzMjkzODUsNjYxMTg3NDY0LC02MD
+M2OTIxODgsMTUzNDU4MjM0LC0yMTIzOTI2MTAxLC0xMTE0MDA5
+ODE1LDk4OTc0MjY1OV19
 -->
