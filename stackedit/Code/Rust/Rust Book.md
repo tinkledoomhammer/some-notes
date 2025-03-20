@@ -483,7 +483,15 @@ Heap
 : A separate region of memory where data can live indefinitely, not tied to a specific stack frame
 
 Box
-: A rust mechan
+: A rust mechanism for allocating data on the heap
+i.e.
+	```rust
+	let a= Box::new([0;1_000_000]);
+	//A now points to the array. The pointer is 
+		//all that lives on the stack
+	let b = a;
+		//Copying a gives co
+	```
 
 
 
@@ -492,7 +500,7 @@ Box
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4NTA1NTMyMCwzODI5NTk3MTIsMTkwNz
+eyJoaXN0b3J5IjpbMTExMTcwNDM3MCwzODI5NTk3MTIsMTkwNz
 Q3MTAzNSw2NzE4ODQyMzAsLTE5MTgzMjkyNjYsMTU3OTgwMjEx
 NSwyNDQ2NjYwMzMsLTEzNTg2Mzg0NjYsMTA0ODEyNTIzNCwtMT
 QxMDg0MzIxOCw2MDY1NjIyMzAsNDE2NTc1OTAyLC0xOTg1MTY5
