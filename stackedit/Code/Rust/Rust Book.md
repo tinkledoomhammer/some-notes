@@ -441,7 +441,14 @@ let result = loop{
 	`counting_up: loop{
 		println!("count = {count}")
 		let mut remaining = 10;
-		loop{
+		loop{ 
+			print("some stuff";
+			remaining -=1;
+			if remaining <=0 {
+				break `counting_up;
+			}
+		count +=1;
+	}
 	```
 
 
@@ -453,10 +460,10 @@ let result = loop{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTgwOTU0NjQsMjQ0NjY2MDMzLC0xMz
-U4NjM4NDY2LDEwNDgxMjUyMzQsLTE0MTA4NDMyMTgsNjA2NTYy
-MjMwLDQxNjU3NTkwMiwtMTk4NTE2OTAyMyw0MDY5MzI1OTEsLT
-M3MTMyOTM4NSw2NjExODc0NjQsLTYwMzY5MjE4OCwxNTM0NTgy
-MzQsLTIxMjM5MjYxMDEsLTExMTQwMDk4MTUsOTg5NzQyNjU5XX
-0=
+eyJoaXN0b3J5IjpbMTU3OTgwMjExNSwyNDQ2NjYwMzMsLTEzNT
+g2Mzg0NjYsMTA0ODEyNTIzNCwtMTQxMDg0MzIxOCw2MDY1NjIy
+MzAsNDE2NTc1OTAyLC0xOTg1MTY5MDIzLDQwNjkzMjU5MSwtMz
+cxMzI5Mzg1LDY2MTE4NzQ2NCwtNjAzNjkyMTg4LDE1MzQ1ODIz
+NCwtMjEyMzkyNjEwMSwtMTExNDAwOTgxNSw5ODk3NDI2NTldfQ
+==
 -->
