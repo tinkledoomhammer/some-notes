@@ -385,11 +385,14 @@ caution: `fn five() ->i32 {5;}` will cause a mismatched type error
 
 Also note that it is `->` and not `=>`
 
-
+### Comments
+```rust
+// com
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk2MjIwODM0LDEwNDgxMjUyMzQsLTE0MT
+eyJoaXN0b3J5IjpbOTYyMDk3MTI4LDEwNDgxMjUyMzQsLTE0MT
 A4NDMyMTgsNjA2NTYyMjMwLDQxNjU3NTkwMiwtMTk4NTE2OTAy
 Myw0MDY5MzI1OTEsLTM3MTMyOTM4NSw2NjExODc0NjQsLTYwMz
 Y5MjE4OCwxNTM0NTgyMzQsLTIxMjM5MjYxMDEsLTExMTQwMDk4
