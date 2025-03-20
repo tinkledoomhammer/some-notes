@@ -453,7 +453,8 @@ let result = loop{
 #### `while` and `for`loops
 `while <condition> {stufff}`
 	* avoids having to use if..break 
-`for element in a{stuff}`
+`for element in collection {stuff}`
+
 
 
 
@@ -463,7 +464,7 @@ let result = loop{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTMyMDIyNzEsMTU3OTgwMjExNSwyND
+eyJoaXN0b3J5IjpbLTE5MTgzMjkyNjYsMTU3OTgwMjExNSwyND
 Q2NjYwMzMsLTEzNTg2Mzg0NjYsMTA0ODEyNTIzNCwtMTQxMDg0
 MzIxOCw2MDY1NjIyMzAsNDE2NTc1OTAyLC0xOTg1MTY5MDIzLD
 QwNjkzMjU5MSwtMzcxMzI5Mzg1LDY2MTE4NzQ2NCwtNjAzNjky
