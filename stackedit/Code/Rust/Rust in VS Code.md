@@ -28,10 +28,24 @@ https://code.visualstudio.com/docs/languages/rust
 ### Semantic syntax highlighting
 * i.e. underlining mutable variables
 * style can be changed with `editor.esmanticTokenColorCustomizations` in settings
-* 
+```json
+{
+  "editor.semanticTokenColorCustomizations": {
+    "rules": {
+      "*.mutable": {
+        "fontStyle": "", // set to empty string to disable underline, which is the default
+      },
+    }
+  },
+}
 
+```
+## Code Navigation
+* `F12`  Go to definition (of a type)
+* `Alt+F12` 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1NTUzOTU3MSwtMTA5NzY5NzAyMl19
+eyJoaXN0b3J5IjpbLTE1NzQ2MzM0MTgsLTEwOTc2OTcwMjJdfQ
+==
 -->
