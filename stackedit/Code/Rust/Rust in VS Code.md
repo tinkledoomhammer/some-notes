@@ -26,11 +26,12 @@ https://code.visualstudio.com/docs/languages/rust
 ### Auto completions
 * use `Ctrl+Space` to manually trigger
 ### Semantic syntax highlighting
-* i.e. underlining
+* i.e. underlining mutable variables
+* style can be changed with `editor.esmanticTokenColorCustomizations` in settings
+* 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDgyMDM2OTksLTEwOTc2OTcwMjJdfQ
-==
+eyJoaXN0b3J5IjpbMTg1NTUzOTU3MSwtMTA5NzY5NzAyMl19
 -->
