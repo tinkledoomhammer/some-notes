@@ -382,13 +382,16 @@ let y = {
 caution: `fn five() ->i32 {5;}` will cause a mismatched type error
 * because `5;` is a statement and not an expression
 * therefore the returned value is actually `()`
-* 
+
+Also note that it is `->` and not `=>`
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzUyMjkyNDUsMTA0ODEyNTIzNCwtMT
-QxMDg0MzIxOCw2MDY1NjIyMzAsNDE2NTc1OTAyLC0xOTg1MTY5
-MDIzLDQwNjkzMjU5MSwtMzcxMzI5Mzg1LDY2MTE4NzQ2NCwtNj
-AzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMzkyNjEwMSwtMTExNDAw
-OTgxNSw5ODk3NDI2NTldfQ==
+eyJoaXN0b3J5IjpbMzk2MjIwODM0LDEwNDgxMjUyMzQsLTE0MT
+A4NDMyMTgsNjA2NTYyMjMwLDQxNjU3NTkwMiwtMTk4NTE2OTAy
+Myw0MDY5MzI1OTEsLTM3MTMyOTM4NSw2NjExODc0NjQsLTYwMz
+Y5MjE4OCwxNTM0NTgyMzQsLTIxMjM5MjYxMDEsLTExMTQwMDk4
+MTUsOTg5NzQyNjU5XX0=
 -->
