@@ -19,10 +19,14 @@ https://code.visualstudio.com/docs/languages/rust
 ## InetlliSense
 * provided by rust-analyzer
 ### Inlay hints
-	* show inferred types, 
+* show inferred types, returned types, and named parameters
+* can be configured in `Editor > Inlay Hints:Enabled` setting
+
+### Hover information
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NzcxNTUzNiwtMTA5NzY5NzAyMl19
+eyJoaXN0b3J5IjpbMTI5ODc3NDIwMiwtMTA5NzY5NzAyMl19
 -->
