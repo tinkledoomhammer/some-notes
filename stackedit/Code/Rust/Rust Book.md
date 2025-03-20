@@ -285,14 +285,21 @@ Type annotation
 * Signed ints use **two's complement** representation
 * The range for signed ints of size n is $[-(2^{n-1}) , 2^{n-1}]$
 * The range for unsigned ints is $[0 , 2^n -1]$
-* 
+* integer literal formats:
+
+Base | Example
+--|--
+Decimal | 12_345
+Hex | 0xff
+Octal | 0o77
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ5MDkxMjEwLC0xNDEwODQzMjE4LDYwNj
-U2MjIzMCw0MTY1NzU5MDIsLTE5ODUxNjkwMjMsNDA2OTMyNTkx
-LC0zNzEzMjkzODUsNjYxMTg3NDY0LC02MDM2OTIxODgsMTUzND
-U4MjM0LC0yMTIzOTI2MTAxLC0xMTE0MDA5ODE1LDk4OTc0MjY1
-OV19
+eyJoaXN0b3J5IjpbLTE4OTUyNzkxOTgsLTE0MTA4NDMyMTgsNj
+A2NTYyMjMwLDQxNjU3NTkwMiwtMTk4NTE2OTAyMyw0MDY5MzI1
+OTEsLTM3MTMyOTM4NSw2NjExODc0NjQsLTYwMzY5MjE4OCwxNT
+M0NTgyMzQsLTIxMjM5MjYxMDEsLTExMTQwMDk4MTUsOTg5NzQy
+NjU5XX0=
 -->
