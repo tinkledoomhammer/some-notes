@@ -551,15 +551,21 @@ let x_abs1 = i32::abs(*x); // explicit dereference
 let x_abs2 = x.abs(); // implicit dereference  
 assert_eq!(x_abs1, x_abs2); 
 let r: &Box<i32> = &x; 
-let r_abs1 = i32::abs(**r); // explicit dereference (twice)  let r_abs2 = r.abs(); // implicit dereference (twice)  assert_eq!(r_abs1, r_abs2); let s = String::from("Hello"); let s_len1 = str::len(&s); // explicit reference  let s_len2 = s.len(); // implicit reference  assert_eq!(s_len1, s_len2);
+let r_abs1 = i32::abs(**r); // explicit dereference (twice)  
+let r_abs2 = r.abs(); // implicit dereference (twice)  
+assert_eq!(r_abs1, r_abs2); 
+let s = String::from("Hello"); 
+let s_len1 = str::len(&s); // explicit reference  
+let s_len2 = s.len(); // implicit reference  
+assert_eq!(s_len1, s_len2);
 ```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzkwMDM4MzksLTI1MDIzMDE4NCwyMj
-Q3OTY0MDEsMzgyOTU5NzEyLDE5MDc0NzEwMzUsNjcxODg0MjMw
-LC0xOTE4MzI5MjY2LDE1Nzk4MDIxMTUsMjQ0NjY2MDMzLC0xMz
-U4NjM4NDY2LDEwNDgxMjUyMzQsLTE0MTA4NDMyMTgsNjA2NTYy
-MjMwLDQxNjU3NTkwMiwtMTk4NTE2OTAyMyw0MDY5MzI1OTEsLT
-M3MTMyOTM4NSw2NjExODc0NjQsLTYwMzY5MjE4OCwxNTM0NTgy
-MzRdfQ==
+eyJoaXN0b3J5IjpbMTUzMzUzMjE2MSwtMjUwMjMwMTg0LDIyND
+c5NjQwMSwzODI5NTk3MTIsMTkwNzQ3MTAzNSw2NzE4ODQyMzAs
+LTE5MTgzMjkyNjYsMTU3OTgwMjExNSwyNDQ2NjYwMzMsLTEzNT
+g2Mzg0NjYsMTA0ODEyNTIzNCwtMTQxMDg0MzIxOCw2MDY1NjIy
+MzAsNDE2NTc1OTAyLC0xOTg1MTY5MDIzLDQwNjkzMjU5MSwtMz
+cxMzI5Mzg1LDY2MTE4NzQ2NCwtNjAzNjkyMTg4LDE1MzQ1ODIz
+NF19
 -->
