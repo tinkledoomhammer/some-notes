@@ -559,16 +559,19 @@ let s_len1 = str::len(&s); // explicit reference
 let s_len2 = s.len(); // implicit reference  
 assert_eq!(s_len1, s_len2);
 ```
-
+#### Rust avoids Simultaneous Aliasing and mutation
+Three things that can go wrong 
+1. Deallocating aliased data, leavinng the original variable pointing to deallocated memory
+2. Mu
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM1NDUzMjU5LDE1MzM1MzIxNjEsLTI1MD
-IzMDE4NCwyMjQ3OTY0MDEsMzgyOTU5NzEyLDE5MDc0NzEwMzUs
-NjcxODg0MjMwLC0xOTE4MzI5MjY2LDE1Nzk4MDIxMTUsMjQ0Nj
-Y2MDMzLC0xMzU4NjM4NDY2LDEwNDgxMjUyMzQsLTE0MTA4NDMy
-MTgsNjA2NTYyMjMwLDQxNjU3NTkwMiwtMTk4NTE2OTAyMyw0MD
-Y5MzI1OTEsLTM3MTMyOTM4NSw2NjExODc0NjQsLTYwMzY5MjE4
-OF19
+eyJoaXN0b3J5IjpbLTE5Mjc2Mjk1MjAsNjM1NDUzMjU5LDE1Mz
+M1MzIxNjEsLTI1MDIzMDE4NCwyMjQ3OTY0MDEsMzgyOTU5NzEy
+LDE5MDc0NzEwMzUsNjcxODg0MjMwLC0xOTE4MzI5MjY2LDE1Nz
+k4MDIxMTUsMjQ0NjY2MDMzLC0xMzU4NjM4NDY2LDEwNDgxMjUy
+MzQsLTE0MTA4NDMyMTgsNjA2NTYyMjMwLDQxNjU3NTkwMiwtMT
+k4NTE2OTAyMyw0MDY5MzI1OTEsLTM3MTMyOTM4NSw2NjExODc0
+NjRdfQ==
 -->
