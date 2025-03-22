@@ -502,22 +502,23 @@ The nearly correct deallocation principle
 * the correct principle
 	* If a variable owns a box, then rust deallocates the heap memory with the frame
 * Ownership is transferred on assignment to avoid double deallocation 
-* Assignment 
+* Assignment seems to include passing it as a argument
 
 #### Variables cannot be used after being moved
 Moved heap data principle
 : If a variable `x` moves ownership of heap data to another variable `y`, then `x` cannot be used after the move
 
-
+### References and Borrowing
+Having to pass/return 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODUyMDE0MjgsMjI0Nzk2NDAxLDM4Mj
-k1OTcxMiwxOTA3NDcxMDM1LDY3MTg4NDIzMCwtMTkxODMyOTI2
-NiwxNTc5ODAyMTE1LDI0NDY2NjAzMywtMTM1ODYzODQ2NiwxMD
-Q4MTI1MjM0LC0xNDEwODQzMjE4LDYwNjU2MjIzMCw0MTY1NzU5
-MDIsLTE5ODUxNjkwMjMsNDA2OTMyNTkxLC0zNzEzMjkzODUsNj
-YxMTg3NDY0LC02MDM2OTIxODgsMTUzNDU4MjM0LC0yMTIzOTI2
-MTAxXX0=
+eyJoaXN0b3J5IjpbMjQzNDUzNzc5LDIyNDc5NjQwMSwzODI5NT
+k3MTIsMTkwNzQ3MTAzNSw2NzE4ODQyMzAsLTE5MTgzMjkyNjYs
+MTU3OTgwMjExNSwyNDQ2NjYwMzMsLTEzNTg2Mzg0NjYsMTA0OD
+EyNTIzNCwtMTQxMDg0MzIxOCw2MDY1NjIyMzAsNDE2NTc1OTAy
+LC0xOTg1MTY5MDIzLDQwNjkzMjU5MSwtMzcxMzI5Mzg1LDY2MT
+E4NzQ2NCwtNjAzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMzkyNjEw
+MV19
 -->
