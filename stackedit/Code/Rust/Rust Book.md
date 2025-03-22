@@ -568,14 +568,17 @@ Three things that can go wrong
 Pointer Safety Principle
 : Data should never be aliased and mutated at the same time
 * Boxes cannot be aliased -- assignment moves ownership
-* References 
+* References, which are mostly temporary references, have their safety ensured through the **borrow checker**
+
 i.e. If you have a ref to a member of a vector, then resizing the vector will invalidate the ref
 
-
+#### References change the permissions on places
+Permissions
+1. Read (R) : D
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NDEyODIwLC0xNDQzNzg5NzA4LDYzNT
+eyJoaXN0b3J5IjpbNjM2ODE3MTM2LC0xNDQzNzg5NzA4LDYzNT
 Q1MzI1OSwxNTMzNTMyMTYxLC0yNTAyMzAxODQsMjI0Nzk2NDAx
 LDM4Mjk1OTcxMiwxOTA3NDcxMDM1LDY3MTg4NDIzMCwtMTkxOD
 MyOTI2NiwxNTc5ODAyMTE1LDI0NDY2NjAzMywtMTM1ODYzODQ2
