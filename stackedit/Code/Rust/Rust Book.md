@@ -532,14 +532,25 @@ greet(&m1, &m2);
 ```
 
 #### Dereferencing a pointer Accesses its data
+```rust
+let mut x: Box<i32> = Box::new(1);
+let a: i32 = *x;         // *x reads the heap value, so a = 1
+*x += 1;                 // *x on the left-side modifies the heap value,
+                         //     so x points to the value 2
 
+let r1: &Box<i32> = &x;  // r1 points to x on the stack
+let b: i32 = **r1;       // two dereferences get us to the heap value
+
+let r2: &i32 = &*x;      // r2 points to the heap value directly
+let c: i32 = *r2;    // so only one dereference is needed to read it
+```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjkwNjU1NDU1LC0yNTAyMzAxODQsMjI0Nz
-k2NDAxLDM4Mjk1OTcxMiwxOTA3NDcxMDM1LDY3MTg4NDIzMCwt
-MTkxODMyOTI2NiwxNTc5ODAyMTE1LDI0NDY2NjAzMywtMTM1OD
-YzODQ2NiwxMDQ4MTI1MjM0LC0xNDEwODQzMjE4LDYwNjU2MjIz
-MCw0MTY1NzU5MDIsLTE5ODUxNjkwMjMsNDA2OTMyNTkxLC0zNz
-EzMjkzODUsNjYxMTg3NDY0LC02MDM2OTIxODgsMTUzNDU4MjM0
-XX0=
+eyJoaXN0b3J5IjpbMTY4ODg0ODM2OSwtMjUwMjMwMTg0LDIyND
+c5NjQwMSwzODI5NTk3MTIsMTkwNzQ3MTAzNSw2NzE4ODQyMzAs
+LTE5MTgzMjkyNjYsMTU3OTgwMjExNSwyNDQ2NjYwMzMsLTEzNT
+g2Mzg0NjYsMTA0ODEyNTIzNCwtMTQxMDg0MzIxOCw2MDY1NjIy
+MzAsNDE2NTc1OTAyLC0xOTg1MTY5MDIzLDQwNjkzMjU5MSwtMz
+cxMzI5Mzg1LDY2MTE4NzQ2NCwtNjAzNjkyMTg4LDE1MzQ1ODIz
+NF19
 -->
