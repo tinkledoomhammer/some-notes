@@ -565,16 +565,17 @@ Three things that can go wrong
 2. Mutating aliased data, invalidating expected runtime properties of that data
 3. Concurrently mutating aliased data, resulting in a race
 
-
+Pointer Safety Principle
+: Data should never be aliased and mutated at 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDM3ODk3MDgsNjM1NDUzMjU5LDE1Mz
-M1MzIxNjEsLTI1MDIzMDE4NCwyMjQ3OTY0MDEsMzgyOTU5NzEy
-LDE5MDc0NzEwMzUsNjcxODg0MjMwLC0xOTE4MzI5MjY2LDE1Nz
-k4MDIxMTUsMjQ0NjY2MDMzLC0xMzU4NjM4NDY2LDEwNDgxMjUy
-MzQsLTE0MTA4NDMyMTgsNjA2NTYyMjMwLDQxNjU3NTkwMiwtMT
-k4NTE2OTAyMyw0MDY5MzI1OTEsLTM3MTMyOTM4NSw2NjExODc0
-NjRdfQ==
+eyJoaXN0b3J5IjpbLTQ0MTg2Mzg5MiwtMTQ0Mzc4OTcwOCw2Mz
+U0NTMyNTksMTUzMzUzMjE2MSwtMjUwMjMwMTg0LDIyNDc5NjQw
+MSwzODI5NTk3MTIsMTkwNzQ3MTAzNSw2NzE4ODQyMzAsLTE5MT
+gzMjkyNjYsMTU3OTgwMjExNSwyNDQ2NjYwMzMsLTEzNTg2Mzg0
+NjYsMTA0ODEyNTIzNCwtMTQxMDg0MzIxOCw2MDY1NjIyMzAsND
+E2NTc1OTAyLC0xOTg1MTY5MDIzLDQwNjkzMjU5MSwtMzcxMzI5
+Mzg1XX0=
 -->
