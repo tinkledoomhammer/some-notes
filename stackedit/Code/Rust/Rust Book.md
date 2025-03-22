@@ -525,16 +525,17 @@ References are
 : Non-owning pointers
 ```rust
 fn greet(g1: &String, g2: &String){
-	println!("{} {}!", g1, 
+	println!("{} {}!", g1, g2);
+}
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzIxNzY1MjYsMjI0Nzk2NDAxLDM4Mj
-k1OTcxMiwxOTA3NDcxMDM1LDY3MTg4NDIzMCwtMTkxODMyOTI2
-NiwxNTc5ODAyMTE1LDI0NDY2NjAzMywtMTM1ODYzODQ2NiwxMD
-Q4MTI1MjM0LC0xNDEwODQzMjE4LDYwNjU2MjIzMCw0MTY1NzU5
-MDIsLTE5ODUxNjkwMjMsNDA2OTMyNTkxLC0zNzEzMjkzODUsNj
-YxMTg3NDY0LC02MDM2OTIxODgsMTUzNDU4MjM0LC0yMTIzOTI2
-MTAxXX0=
+eyJoaXN0b3J5IjpbMzU2ODIyMzQ0LDIyNDc5NjQwMSwzODI5NT
+k3MTIsMTkwNzQ3MTAzNSw2NzE4ODQyMzAsLTE5MTgzMjkyNjYs
+MTU3OTgwMjExNSwyNDQ2NjYwMzMsLTEzNTg2Mzg0NjYsMTA0OD
+EyNTIzNCwtMTQxMDg0MzIxOCw2MDY1NjIyMzAsNDE2NTc1OTAy
+LC0xOTg1MTY5MDIzLDQwNjkzMjU5MSwtMzcxMzI5Mzg1LDY2MT
+E4NzQ2NCwtNjAzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMzkyNjEw
+MV19
 -->
