@@ -515,12 +515,18 @@ fn greet(g1: String, g2: String) -> (String,String){
 	println!("{} {}!",g1 ,g2);
 	(g1,g2)
 }
+fn main(){
+	let (m1,m2) = (String::from("Hello"), String::from("Hello"));
+	let (m1,m2) = greet(m1,m2);
+	let s = format!("{m1} {m2}!");
+	println!(s);
+}
 ```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5OTEyNzc5OSwyMjQ3OTY0MDEsMzgyOT
+eyJoaXN0b3J5IjpbLTM4OTQwMjk0NSwyMjQ3OTY0MDEsMzgyOT
 U5NzEyLDE5MDc0NzEwMzUsNjcxODg0MjMwLC0xOTE4MzI5MjY2
 LDE1Nzk4MDIxMTUsMjQ0NjY2MDMzLC0xMzU4NjM4NDY2LDEwND
 gxMjUyMzQsLTE0MTA4NDMyMTgsNjA2NTYyMjMwLDQxNjU3NTkw
