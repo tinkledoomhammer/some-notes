@@ -562,12 +562,15 @@ assert_eq!(s_len1, s_len2);
 #### Rust avoids Simultaneous Aliasing and mutation
 Three things that can go wrong 
 1. Deallocating aliased data, leavinng the original variable pointing to deallocated memory
-2. Mu
+2. Mutating aliased data, invalidating expected runtime properties of that data
+3. Concurrently mutating aliased data, resulting in a race
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mjc2Mjk1MjAsNjM1NDUzMjU5LDE1Mz
+eyJoaXN0b3J5IjpbLTE0NDM3ODk3MDgsNjM1NDUzMjU5LDE1Mz
 M1MzIxNjEsLTI1MDIzMDE4NCwyMjQ3OTY0MDEsMzgyOTU5NzEy
 LDE5MDc0NzEwMzUsNjcxODg0MjMwLC0xOTE4MzI5MjY2LDE1Nz
 k4MDIxMTUsMjQ0NjY2MDMzLC0xMzU4NjM4NDY2LDEwNDgxMjUy
