@@ -509,16 +509,22 @@ Moved heap data principle
 : If a variable `x` moves ownership of heap data to another variable `y`, then `x` cannot be used after the move
 
 ### References and Borrowing
-Having to pass/return 
+Having to pass/return all objects that are used more than once would suck...
+```rust
+fn greet(g1: String, g2: String) -> (String,String){
+	println!("{} {}!",g1 ,g2);
+	(g1,g2)
+}
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQzNDUzNzc5LDIyNDc5NjQwMSwzODI5NT
-k3MTIsMTkwNzQ3MTAzNSw2NzE4ODQyMzAsLTE5MTgzMjkyNjYs
-MTU3OTgwMjExNSwyNDQ2NjYwMzMsLTEzNTg2Mzg0NjYsMTA0OD
-EyNTIzNCwtMTQxMDg0MzIxOCw2MDY1NjIyMzAsNDE2NTc1OTAy
-LC0xOTg1MTY5MDIzLDQwNjkzMjU5MSwtMzcxMzI5Mzg1LDY2MT
-E4NzQ2NCwtNjAzNjkyMTg4LDE1MzQ1ODIzNCwtMjEyMzkyNjEw
-MV19
+eyJoaXN0b3J5IjpbLTg5OTEyNzc5OSwyMjQ3OTY0MDEsMzgyOT
+U5NzEyLDE5MDc0NzEwMzUsNjcxODg0MjMwLC0xOTE4MzI5MjY2
+LDE1Nzk4MDIxMTUsMjQ0NjY2MDMzLC0xMzU4NjM4NDY2LDEwND
+gxMjUyMzQsLTE0MTA4NDMyMTgsNjA2NTYyMjMwLDQxNjU3NTkw
+MiwtMTk4NTE2OTAyMyw0MDY5MzI1OTEsLTM3MTMyOTM4NSw2Nj
+ExODc0NjQsLTYwMzY5MjE4OCwxNTM0NTgyMzQsLTIxMjM5MjYx
+MDFdfQ==
 -->
