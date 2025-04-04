@@ -613,16 +613,22 @@ Places
 Once a reference is no longer needed, the borrow ends and the permissions are restored
 
 #### Mutable references provide unique and non-owning access to data
+Mutable reference
+: aka Unique reference
+: allows mutation but not aliasing
 
+Immutable references
+: aka shared references
+: Allow aliasing but not mutation
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxNDg5NDQsLTM5NDE3Mzg5MywtMTQ0Mz
-c4OTcwOCw2MzU0NTMyNTksMTUzMzUzMjE2MSwtMjUwMjMwMTg0
-LDIyNDc5NjQwMSwzODI5NTk3MTIsMTkwNzQ3MTAzNSw2NzE4OD
-QyMzAsLTE5MTgzMjkyNjYsMTU3OTgwMjExNSwyNDQ2NjYwMzMs
-LTEzNTg2Mzg0NjYsMTA0ODEyNTIzNCwtMTQxMDg0MzIxOCw2MD
-Y1NjIyMzAsNDE2NTc1OTAyLC0xOTg1MTY5MDIzLDQwNjkzMjU5
-MV19
+eyJoaXN0b3J5IjpbMTcwOTA5MTA3LC0zOTQxNzM4OTMsLTE0ND
+M3ODk3MDgsNjM1NDUzMjU5LDE1MzM1MzIxNjEsLTI1MDIzMDE4
+NCwyMjQ3OTY0MDEsMzgyOTU5NzEyLDE5MDc0NzEwMzUsNjcxOD
+g0MjMwLC0xOTE4MzI5MjY2LDE1Nzk4MDIxMTUsMjQ0NjY2MDMz
+LC0xMzU4NjM4NDY2LDEwNDgxMjUyMzQsLTE0MTA4NDMyMTgsNj
+A2NTYyMjMwLDQxNjU3NTkwMiwtMTk4NTE2OTAyMyw0MDY5MzI1
+OTFdfQ==
 -->
