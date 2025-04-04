@@ -636,10 +636,12 @@ let num2: &i32 = &*num; // this borrow removes the W perm from num
 *	when references are input to a function or output from a function
 
 Flow Permission (F)
-: 
+: Indicates that a reference is allowed to flow (be used) within a particular expression
+: Does not change through out a function body
+: ON
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MDE4MTc3Niw4MzY1NTU0OTcsLTM5ND
+eyJoaXN0b3J5IjpbLTY4ODUyNDUzNyw4MzY1NTU0OTcsLTM5ND
 E3Mzg5MywtMTQ0Mzc4OTcwOCw2MzU0NTMyNTksMTUzMzUzMjE2
 MSwtMjUwMjMwMTg0LDIyNDc5NjQwMSwzODI5NTk3MTIsMTkwNz
 Q3MTAzNSw2NzE4ODQyMzAsLTE5MTgzMjkyNjYsMTU3OTgwMjEx
