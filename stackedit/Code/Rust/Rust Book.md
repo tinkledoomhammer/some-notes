@@ -621,10 +621,11 @@ Immutable references
 : aka shared references
 : Allow aliasing but not mutation
 
+While a mutable reference exists, it has exclusive read access, and cannot exist concurrently with other references
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwOTA5MTA3LC0zOTQxNzM4OTMsLTE0ND
+eyJoaXN0b3J5IjpbMzQzMjY1NzAyLC0zOTQxNzM4OTMsLTE0ND
 M3ODk3MDgsNjM1NDUzMjU5LDE1MzM1MzIxNjEsLTI1MDIzMDE4
 NCwyMjQ3OTY0MDEsMzgyOTU5NzEyLDE5MDc0NzEwMzUsNjcxOD
 g0MjMwLC0xOTE4MzI5MjY2LDE1Nzk4MDIxMTUsMjQ0NjY2MDMz
