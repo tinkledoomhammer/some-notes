@@ -608,17 +608,21 @@ Places
 * combinations of the above
 
 #### The borrow checker finds permission violations
-* creating ref
-#### Mutable references probide unique and non-owning access to data
+* creating references requires permissions
+* i.e. the `Vec<i32>::push()`  requires read and write permissions
+Once a reference is no longer needed, the borrow ends and the permissions are restored
+
+#### Mutable references provide unique and non-owning access to data
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTg1ODgyNjMsLTM5NDE3Mzg5MywtMT
-Q0Mzc4OTcwOCw2MzU0NTMyNTksMTUzMzUzMjE2MSwtMjUwMjMw
-MTg0LDIyNDc5NjQwMSwzODI5NTk3MTIsMTkwNzQ3MTAzNSw2Nz
-E4ODQyMzAsLTE5MTgzMjkyNjYsMTU3OTgwMjExNSwyNDQ2NjYw
-MzMsLTEzNTg2Mzg0NjYsMTA0ODEyNTIzNCwtMTQxMDg0MzIxOC
-w2MDY1NjIyMzAsNDE2NTc1OTAyLC0xOTg1MTY5MDIzLDQwNjkz
-MjU5MV19
+eyJoaXN0b3J5IjpbMTAxNDg5NDQsLTM5NDE3Mzg5MywtMTQ0Mz
+c4OTcwOCw2MzU0NTMyNTksMTUzMzUzMjE2MSwtMjUwMjMwMTg0
+LDIyNDc5NjQwMSwzODI5NTk3MTIsMTkwNzQ3MTAzNSw2NzE4OD
+QyMzAsLTE5MTgzMjkyNjYsMTU3OTgwMjExNSwyNDQ2NjYwMzMs
+LTEzNTg2Mzg0NjYsMTA0ODEyNTIzNCwtMTQxMDg0MzIxOCw2MD
+Y1NjIyMzAsNDE2NTc1OTAyLC0xOTg1MTY5MDIzLDQwNjkzMjU5
+MV19
 -->
