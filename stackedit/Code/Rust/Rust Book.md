@@ -640,11 +640,20 @@ Flow Permission (F)
 : Does not change through out a function body
 : Only applies to function parameters and return values
 : Can be set with *lifetime specifier*s
+```rust
+fn return_a_string() -> &String{
+	let s = String::from("Hello world");
+		//lifetime of s??
+	let s_ref = &s
+		// lifetime of s_ref??
+	s_ref
+		// returning a reference to a locally owned value is bad
+}
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3NDA0ODc5NSw4MzY1NTU0OTcsLTM5ND
+eyJoaXN0b3J5IjpbLTM3OTkwOTYyMCw4MzY1NTU0OTcsLTM5ND
 E3Mzg5MywtMTQ0Mzc4OTcwOCw2MzU0NTMyNTksMTUzMzUzMjE2
 MSwtMjUwMjMwMTg0LDIyNDc5NjQwMSwzODI5NTk3MTIsMTkwNz
 Q3MTAzNSw2NzE4ODQyMzAsLTE5MTgzMjkyNjYsMTU3OTgwMjEx
