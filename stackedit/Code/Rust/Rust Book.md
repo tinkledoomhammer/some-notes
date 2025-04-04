@@ -578,14 +578,16 @@ Permissions
 2. Write (W) : Data can be mutated
 3. Own (O): Data can be moved or dropped
 * The permissions only exist at compile time
+* By default, a variale has R and O on its data.
+	* If it was crated with `let mut` then it also has W
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5NDE3Mzg5MywtMTQ0Mzc4OTcwOCw2Mz
-U0NTMyNTksMTUzMzUzMjE2MSwtMjUwMjMwMTg0LDIyNDc5NjQw
-MSwzODI5NTk3MTIsMTkwNzQ3MTAzNSw2NzE4ODQyMzAsLTE5MT
-gzMjkyNjYsMTU3OTgwMjExNSwyNDQ2NjYwMzMsLTEzNTg2Mzg0
-NjYsMTA0ODEyNTIzNCwtMTQxMDg0MzIxOCw2MDY1NjIyMzAsND
-E2NTc1OTAyLC0xOTg1MTY5MDIzLDQwNjkzMjU5MSwtMzcxMzI5
-Mzg1XX0=
+eyJoaXN0b3J5IjpbLTYwODUzMDcwMiwtMzk0MTczODkzLC0xND
+QzNzg5NzA4LDYzNTQ1MzI1OSwxNTMzNTMyMTYxLC0yNTAyMzAx
+ODQsMjI0Nzk2NDAxLDM4Mjk1OTcxMiwxOTA3NDcxMDM1LDY3MT
+g4NDIzMCwtMTkxODMyOTI2NiwxNTc5ODAyMTE1LDI0NDY2NjAz
+MywtMTM1ODYzODQ2NiwxMDQ4MTI1MjM0LC0xNDEwODQzMjE4LD
+YwNjU2MjIzMCw0MTY1NzU5MDIsLTE5ODUxNjkwMjMsNDA2OTMy
+NTkxXX0=
 -->
