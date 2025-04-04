@@ -635,15 +635,15 @@ let num2: &i32 = &*num; // this borrow removes the W perm from num
 	*	because the lifetime is known to the compiler from that function's code alone
 *	when references are input to a function or output from a function
 
-Follow Permission (F)
+Flow Permission (F)
 : 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzE2ODY0MTMsODM2NTU1NDk3LC0zOT
-QxNzM4OTMsLTE0NDM3ODk3MDgsNjM1NDUzMjU5LDE1MzM1MzIx
-NjEsLTI1MDIzMDE4NCwyMjQ3OTY0MDEsMzgyOTU5NzEyLDE5MD
-c0NzEwMzUsNjcxODg0MjMwLC0xOTE4MzI5MjY2LDE1Nzk4MDIx
-MTUsMjQ0NjY2MDMzLC0xMzU4NjM4NDY2LDEwNDgxMjUyMzQsLT
-E0MTA4NDMyMTgsNjA2NTYyMjMwLDQxNjU3NTkwMiwtMTk4NTE2
-OTAyM119
+eyJoaXN0b3J5IjpbLTM3MDE4MTc3Niw4MzY1NTU0OTcsLTM5ND
+E3Mzg5MywtMTQ0Mzc4OTcwOCw2MzU0NTMyNTksMTUzMzUzMjE2
+MSwtMjUwMjMwMTg0LDIyNDc5NjQwMSwzODI5NTk3MTIsMTkwNz
+Q3MTAzNSw2NzE4ODQyMzAsLTE5MTgzMjkyNjYsMTU3OTgwMjEx
+NSwyNDQ2NjYwMzMsLTEzNTg2Mzg0NjYsMTA0ODEyNTIzNCwtMT
+QxMDg0MzIxOCw2MDY1NjIyMzAsNDE2NTc1OTAyLC0xOTg1MTY5
+MDIzXX0=
 -->
