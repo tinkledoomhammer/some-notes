@@ -630,14 +630,16 @@ let num: &mut i32 = &mut v[2];
 let num2: &i32 = &*num; // this borrow removes the W perm from num
 // the perm will be returned at the end of num2's lifetime
 ```
-
+#### Data must outlive all of its references
+* within a single lexical scope, the permission system above is adequate
+	*	because the lifetime is known to the compiler from 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM2NTU1NDk3LC0zOTQxNzM4OTMsLTE0ND
-M3ODk3MDgsNjM1NDUzMjU5LDE1MzM1MzIxNjEsLTI1MDIzMDE4
-NCwyMjQ3OTY0MDEsMzgyOTU5NzEyLDE5MDc0NzEwMzUsNjcxOD
-g0MjMwLC0xOTE4MzI5MjY2LDE1Nzk4MDIxMTUsMjQ0NjY2MDMz
-LC0xMzU4NjM4NDY2LDEwNDgxMjUyMzQsLTE0MTA4NDMyMTgsNj
-A2NTYyMjMwLDQxNjU3NTkwMiwtMTk4NTE2OTAyMyw0MDY5MzI1
-OTFdfQ==
+eyJoaXN0b3J5IjpbMTM0OTEzNDE4Niw4MzY1NTU0OTcsLTM5ND
+E3Mzg5MywtMTQ0Mzc4OTcwOCw2MzU0NTMyNTksMTUzMzUzMjE2
+MSwtMjUwMjMwMTg0LDIyNDc5NjQwMSwzODI5NTk3MTIsMTkwNz
+Q3MTAzNSw2NzE4ODQyMzAsLTE5MTgzMjkyNjYsMTU3OTgwMjEx
+NSwyNDQ2NjYwMzMsLTEzNTg2Mzg0NjYsMTA0ODEyNTIzNCwtMT
+QxMDg0MzIxOCw2MDY1NjIyMzAsNDE2NTc1OTAyLC0xOTg1MTY5
+MDIzXX0=
 -->
