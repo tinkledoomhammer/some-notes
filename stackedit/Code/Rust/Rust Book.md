@@ -589,6 +589,7 @@ let num: &i32 = &v[2];
 	// num is initialized +R +O
 	// *num is initialized +R
 println!("asdf{},*num); // This is the last time that num is used
+	// after this line, num no longer borrows from v
 	// v is restored to +R+W+O
 	// num is discarded (loses R and O)
 	// *num is discarded (loses +R)
@@ -598,13 +599,16 @@ v.push(4); // valid because we are no longer using num
 	//The vec is deallocated
 ```
 
+Places
+: 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MDk3Mjc0OCwtMzk0MTczODkzLC0xND
-QzNzg5NzA4LDYzNTQ1MzI1OSwxNTMzNTMyMTYxLC0yNTAyMzAx
-ODQsMjI0Nzk2NDAxLDM4Mjk1OTcxMiwxOTA3NDcxMDM1LDY3MT
-g4NDIzMCwtMTkxODMyOTI2NiwxNTc5ODAyMTE1LDI0NDY2NjAz
-MywtMTM1ODYzODQ2NiwxMDQ4MTI1MjM0LC0xNDEwODQzMjE4LD
-YwNjU2MjIzMCw0MTY1NzU5MDIsLTE5ODUxNjkwMjMsNDA2OTMy
-NTkxXX0=
+eyJoaXN0b3J5IjpbLTE1OTI2ODYzNjgsLTM5NDE3Mzg5MywtMT
+Q0Mzc4OTcwOCw2MzU0NTMyNTksMTUzMzUzMjE2MSwtMjUwMjMw
+MTg0LDIyNDc5NjQwMSwzODI5NTk3MTIsMTkwNzQ3MTAzNSw2Nz
+E4ODQyMzAsLTE5MTgzMjkyNjYsMTU3OTgwMjExNSwyNDQ2NjYw
+MzMsLTEzNTg2Mzg0NjYsMTA0ODEyNTIzNCwtMTQxMDg0MzIxOC
+w2MDY1NjIyMzAsNDE2NTc1OTAyLC0xOTg1MTY5MDIzLDQwNjkz
+MjU5MV19
 -->
