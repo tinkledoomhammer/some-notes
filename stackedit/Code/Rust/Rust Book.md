@@ -651,9 +651,16 @@ fn return_a_string() -> &String{
 }
 ```
 
+
+#### Summary
+* All variables can read, own, and optionally write their data
+* creating a reference will transfer permissions from the borrowed place to the ref
+* perms are returned at the end of the ref's lifetime
+* data must outlie all references that point to it
+*
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3OTkwOTYyMCw4MzY1NTU0OTcsLTM5ND
+eyJoaXN0b3J5IjpbLTUzODAxOTcwMCw4MzY1NTU0OTcsLTM5ND
 E3Mzg5MywtMTQ0Mzc4OTcwOCw2MzU0NTMyNTksMTUzMzUzMjE2
 MSwtMjUwMjMwMTg0LDIyNDc5NjQwMSwzODI5NTk3MTIsMTkwNz
 Q3MTAzNSw2NzE4ODQyMzAsLTE5MTgzMjkyNjYsMTU3OTgwMjEx
