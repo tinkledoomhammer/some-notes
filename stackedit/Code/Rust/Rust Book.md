@@ -584,11 +584,16 @@ Permissions
 ```rust
 let mut v: Vec<i32> = vec![1,2,3];
 	// v is initialized with +R+W+O
+let num: &i32 = &v[2];
+	// v is now +R only
+	// num is initialized +R +O
+	// *num is initialized +R
+println!("asdf{
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyMDU5MTM4OCwtMzk0MTczODkzLC0xND
+eyJoaXN0b3J5IjpbMTIwNjUzOTE4NSwtMzk0MTczODkzLC0xND
 QzNzg5NzA4LDYzNTQ1MzI1OSwxNTMzNTMyMTYxLC0yNTAyMzAx
 ODQsMjI0Nzk2NDAxLDM4Mjk1OTcxMiwxOTA3NDcxMDM1LDY3MT
 g4NDIzMCwtMTkxODMyOTI2NiwxNTc5ODAyMTE1LDI0NDY2NjAz
