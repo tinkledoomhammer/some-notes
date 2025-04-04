@@ -657,14 +657,18 @@ fn return_a_string() -> &String{
 * creating a reference will transfer permissions from the borrowed place to the ref
 * perms are returned at the end of the ref's lifetime
 * data must outlie all references that point to it
-*
+
+
+### Fixing Ownership Errors
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzODAxOTcwMCw4MzY1NTU0OTcsLTM5ND
-E3Mzg5MywtMTQ0Mzc4OTcwOCw2MzU0NTMyNTksMTUzMzUzMjE2
-MSwtMjUwMjMwMTg0LDIyNDc5NjQwMSwzODI5NTk3MTIsMTkwNz
-Q3MTAzNSw2NzE4ODQyMzAsLTE5MTgzMjkyNjYsMTU3OTgwMjEx
-NSwyNDQ2NjYwMzMsLTEzNTg2Mzg0NjYsMTA0ODEyNTIzNCwtMT
-QxMDg0MzIxOCw2MDY1NjIyMzAsNDE2NTc1OTAyLC0xOTg1MTY5
-MDIzXX0=
+eyJoaXN0b3J5IjpbMTE3MzI2MzE0MCwtNTM4MDE5NzAwLDgzNj
+U1NTQ5NywtMzk0MTczODkzLC0xNDQzNzg5NzA4LDYzNTQ1MzI1
+OSwxNTMzNTMyMTYxLC0yNTAyMzAxODQsMjI0Nzk2NDAxLDM4Mj
+k1OTcxMiwxOTA3NDcxMDM1LDY3MTg4NDIzMCwtMTkxODMyOTI2
+NiwxNTc5ODAyMTE1LDI0NDY2NjAzMywtMTM1ODYzODQ2NiwxMD
+Q4MTI1MjM0LC0xNDEwODQzMjE4LDYwNjU2MjIzMCw0MTY1NzU5
+MDJdfQ==
 -->
