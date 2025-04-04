@@ -592,12 +592,15 @@ println!("asdf{},*num); // This is the last time that num is used
 	// v is restored to +R+W+O
 	// num is discarded (loses R and O)
 	// *num is discarded (loses +R)
-v.push(4); 
+v.push(4); // valid because we are no longer using num
+// Since this is the last time that v is used
+	// All perms are dropped
+	//The vec is deallocated
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NjY2NjY0NywtMzk0MTczODkzLC0xND
+eyJoaXN0b3J5IjpbMTY2MDk3Mjc0OCwtMzk0MTczODkzLC0xND
 QzNzg5NzA4LDYzNTQ1MzI1OSwxNTMzNTMyMTYxLC0yNTAyMzAx
 ODQsMjI0Nzk2NDAxLDM4Mjk1OTcxMiwxOTA3NDcxMDM1LDY3MT
 g4NDIzMCwtMTkxODMyOTI2NiwxNTc5ODAyMTE1LDI0NDY2NjAz
