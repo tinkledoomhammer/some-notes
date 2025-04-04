@@ -623,14 +623,20 @@ Immutable references
 
 While a mutable reference exists, it has exclusive read access, and cannot exist concurrently with other references
 
+Unique references can be temporarily downgraded by borrowing from them with `&*`
+```rust
+let mut v: Vec<i32> = vec![1,2,3];
+let num: &mut i32 = &mut v[2];
+let num2: &i32 = &*num;
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0MDUwODA3NiwtMzk0MTczODkzLC0xND
-QzNzg5NzA4LDYzNTQ1MzI1OSwxNTMzNTMyMTYxLC0yNTAyMzAx
-ODQsMjI0Nzk2NDAxLDM4Mjk1OTcxMiwxOTA3NDcxMDM1LDY3MT
-g4NDIzMCwtMTkxODMyOTI2NiwxNTc5ODAyMTE1LDI0NDY2NjAz
-MywtMTM1ODYzODQ2NiwxMDQ4MTI1MjM0LC0xNDEwODQzMjE4LD
-YwNjU2MjIzMCw0MTY1NzU5MDIsLTE5ODUxNjkwMjMsNDA2OTMy
-NTkxXX0=
+eyJoaXN0b3J5IjpbLTE4NzY5NTI1NjUsLTM5NDE3Mzg5MywtMT
+Q0Mzc4OTcwOCw2MzU0NTMyNTksMTUzMzUzMjE2MSwtMjUwMjMw
+MTg0LDIyNDc5NjQwMSwzODI5NTk3MTIsMTkwNzQ3MTAzNSw2Nz
+E4ODQyMzAsLTE5MTgzMjkyNjYsMTU3OTgwMjExNSwyNDQ2NjYw
+MzMsLTEzNTg2Mzg0NjYsMTA0ODEyNTIzNCwtMTQxMDg0MzIxOC
+w2MDY1NjIyMzAsNDE2NTc1OTAyLC0xOTg1MTY5MDIzLDQwNjkz
+MjU5MV19
 -->
