@@ -580,10 +580,15 @@ Permissions
 * The permissions only exist at compile time
 * By default, a variale has R and O on its data.
 	* If it was crated with `let mut` then it also has W
+* References can temporarily remove these permissions
+```rust
+let mut v: Vec<i32> = vec![1,2,3];
+	// v is initialized with +R+W+O
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwODUzMDcwMiwtMzk0MTczODkzLC0xND
+eyJoaXN0b3J5IjpbMTAyMDU5MTM4OCwtMzk0MTczODkzLC0xND
 QzNzg5NzA4LDYzNTQ1MzI1OSwxNTMzNTMyMTYxLC0yNTAyMzAx
 ODQsMjI0Nzk2NDAxLDM4Mjk1OTcxMiwxOTA3NDcxMDM1LDY3MT
 g4NDIzMCwtMTkxODMyOTI2NiwxNTc5ODAyMTE1LDI0NDY2NjAz
