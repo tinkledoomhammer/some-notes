@@ -627,16 +627,17 @@ Unique references can be temporarily downgraded by borrowing from them with `&*`
 ```rust
 let mut v: Vec<i32> = vec![1,2,3];
 let num: &mut i32 = &mut v[2];
-let num2: &i32 = &*num;
+let num2: &i32 = &*num; // this borrow removes the W perm from num
+// the perm will be returned at the end of num2's lifetime
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzY5NTI1NjUsLTM5NDE3Mzg5MywtMT
-Q0Mzc4OTcwOCw2MzU0NTMyNTksMTUzMzUzMjE2MSwtMjUwMjMw
-MTg0LDIyNDc5NjQwMSwzODI5NTk3MTIsMTkwNzQ3MTAzNSw2Nz
-E4ODQyMzAsLTE5MTgzMjkyNjYsMTU3OTgwMjExNSwyNDQ2NjYw
-MzMsLTEzNTg2Mzg0NjYsMTA0ODEyNTIzNCwtMTQxMDg0MzIxOC
-w2MDY1NjIyMzAsNDE2NTc1OTAyLC0xOTg1MTY5MDIzLDQwNjkz
-MjU5MV19
+eyJoaXN0b3J5IjpbODM2NTU1NDk3LC0zOTQxNzM4OTMsLTE0ND
+M3ODk3MDgsNjM1NDUzMjU5LDE1MzM1MzIxNjEsLTI1MDIzMDE4
+NCwyMjQ3OTY0MDEsMzgyOTU5NzEyLDE5MDc0NzEwMzUsNjcxOD
+g0MjMwLC0xOTE4MzI5MjY2LDE1Nzk4MDIxMTUsMjQ0NjY2MDMz
+LC0xMzU4NjM4NDY2LDEwNDgxMjUyMzQsLTE0MTA4NDMyMTgsNj
+A2NTYyMjMwLDQxNjU3NTkwMiwtMTk4NTE2OTAyMyw0MDY5MzI1
+OTFdfQ==
 -->
