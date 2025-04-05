@@ -142,14 +142,16 @@ Methods with `&mut self`
 * doesn't take ownership
 * cannot chain calls
 
+### 3.8 Memory Layout
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwMzE3OTIyOCwtMTI5MDY5OTczMywtMT
-A1MDE2MzE1MywyMDExOTc0OTAyLDIwMDM5MjA3NzgsLTM3NjQ1
-NjE4MiwtMTg1OTU0MzY0OCwxOTkwMTc2OTkyLC02NTUwMjU3OT
-IsLTExNDI0NzM4MDgsLTQ1NzkzODUyOV19
+eyJoaXN0b3J5IjpbMTEzODEwNDEwNSwxMDAzMTc5MjI4LC0xMj
+kwNjk5NzMzLC0xMDUwMTYzMTUzLDIwMTE5NzQ5MDIsMjAwMzky
+MDc3OCwtMzc2NDU2MTgyLC0xODU5NTQzNjQ4LDE5OTAxNzY5OT
+IsLTY1NTAyNTc5MiwtMTE0MjQ3MzgwOCwtNDU3OTM4NTI5XX0=
+
 -->
