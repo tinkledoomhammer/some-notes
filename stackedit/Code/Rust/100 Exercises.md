@@ -188,17 +188,22 @@ Destructors
 
 ## 04 Traits
 
-Some types of  of traits:
+Some types of traits in the standard library:
 1. Operator Traits (`Add`, `Sub`, `PartialEq`, etc)
 2. `From` and `Into` for infallible conversions
-3. 
+3. `Clone` and `Copy` for copying values
+4. `Deref` and `deref` coercion
+5. `Sized` to mark types with a known size
+6. `Drop` for custom cleanup logic
+
+## 04.01 Traits
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1Mjg5NjQ1MiwtMTUyNDY1OTUwOCw0Nz
+eyJoaXN0b3J5IjpbLTE5OTEwOTgxMiwtMTUyNDY1OTUwOCw0Nz
 g1Njk4NDgsLTEwMjE1NzY4ODIsMTYxNTg5NjU5LC0yMTQzMTQ1
 NDQxLC0xNTkxMzQ1Mjk0LDE5ODAzNzY2MjgsMTEzODEwNDEwNS
 wxMDAzMTc5MjI4LC0xMjkwNjk5NzMzLC0xMDUwMTYzMTUzLDIw
