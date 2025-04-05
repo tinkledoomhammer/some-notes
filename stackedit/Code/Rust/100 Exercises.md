@@ -245,13 +245,18 @@ Orphan Rule
 : 1. The trait is defined in the current trait or
 : 2. The implementor type is defined in the current crate
 
+### 4.3 Operator overloading
+
+Operator Overloading
+: The ability to define custom behavior for operatos like `+`, `-`, `*`, `/`, `==`, `!=`, etc
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxOTQ2OTgwNywxOTE4NDY0NjUwLC0xNT
-I0NjU5NTA4LDQ3ODU2OTg0OCwtMTAyMTU3Njg4MiwxNjE1ODk2
-NTksLTIxNDMxNDU0NDEsLTE1OTEzNDUyOTQsMTk4MDM3NjYyOC
-wxMTM4MTA0MTA1LDEwMDMxNzkyMjgsLTEyOTA2OTk3MzMsLTEw
-NTAxNjMxNTMsMjAxMTk3NDkwMiwyMDAzOTIwNzc4LC0zNzY0NT
-YxODIsLTE4NTk1NDM2NDgsMTk5MDE3Njk5MiwtNjU1MDI1Nzky
-LC0xMTQyNDczODA4XX0=
+eyJoaXN0b3J5IjpbLTk0MDM4ODk3LDE3MTk0Njk4MDcsMTkxOD
+Q2NDY1MCwtMTUyNDY1OTUwOCw0Nzg1Njk4NDgsLTEwMjE1NzY4
+ODIsMTYxNTg5NjU5LC0yMTQzMTQ1NDQxLC0xNTkxMzQ1Mjk0LD
+E5ODAzNzY2MjgsMTEzODEwNDEwNSwxMDAzMTc5MjI4LC0xMjkw
+Njk5NzMzLC0xMDUwMTYzMTUzLDIwMTE5NzQ5MDIsMjAwMzkyMD
+c3OCwtMzc2NDU2MTgyLC0xODU5NTQzNjQ4LDE5OTAxNzY5OTIs
+LTY1NTAyNTc5Ml19
 -->
