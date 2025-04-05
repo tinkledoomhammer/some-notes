@@ -84,6 +84,13 @@ impl Ticket{
 Accessor methods
 : public methods that allow reading values of private fields
 
+### 3.6 Ownership
+The ownership system ensures that :
+1. Data is never mutated while it is being read
+2. Data is never read while it's being mutated
+3. Data is never accessed after it has been destroyed
+
+
 
 
 
@@ -91,7 +98,7 @@ Accessor methods
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NjQ1NjE4MiwtMTg1OTU0MzY0OCwxOT
-kwMTc2OTkyLC02NTUwMjU3OTIsLTExNDI0NzM4MDgsLTQ1Nzkz
-ODUyOV19
+eyJoaXN0b3J5IjpbMzQ1ODE2MjYxLC0zNzY0NTYxODIsLTE4NT
+k1NDM2NDgsMTk5MDE3Njk5MiwtNjU1MDI1NzkyLC0xMTQyNDcz
+ODA4LC00NTc5Mzg1MjldfQ==
 -->
