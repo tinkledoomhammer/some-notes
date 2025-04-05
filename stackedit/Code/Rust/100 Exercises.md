@@ -158,11 +158,15 @@ String's Memory Layout (24 bytes on 64-bit)
 * allocation and deallocation are much slower
 
 `usize`
+: a 32- or 64- bit unsigned int
+: the type used for pointers, capacities, and lengths
 
+* `std::mem::size_of::<T>()` doesn't count memory on the heap
+* There is no standard mechanism for tracking th
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzY3MTgyNzQsMTYxNTg5NjU5LC0yMT
+eyJoaXN0b3J5IjpbLTEzMTcxMTY1NjAsMTYxNTg5NjU5LC0yMT
 QzMTQ1NDQxLC0xNTkxMzQ1Mjk0LDE5ODAzNzY2MjgsMTEzODEw
 NDEwNSwxMDAzMTc5MjI4LC0xMjkwNjk5NzMzLC0xMDUwMTYzMT
 UzLDIwMTE5NzQ5MDIsMjAwMzkyMDc3OCwtMzc2NDU2MTgyLC0x
