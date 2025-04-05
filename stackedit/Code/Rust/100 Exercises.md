@@ -139,14 +139,17 @@ let ticket = ticket
 * Takes ownership
 
 Methods with `&mut self`
+* doesn't take ownership
+* cannot chain calls
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTA2OTk3MzMsLTEwNTAxNjMxNTMsMj
-AxMTk3NDkwMiwyMDAzOTIwNzc4LC0zNzY0NTYxODIsLTE4NTk1
-NDM2NDgsMTk5MDE3Njk5MiwtNjU1MDI1NzkyLC0xMTQyNDczOD
-A4LC00NTc5Mzg1MjldfQ==
+eyJoaXN0b3J5IjpbMTAwMzE3OTIyOCwtMTI5MDY5OTczMywtMT
+A1MDE2MzE1MywyMDExOTc0OTAyLDIwMDM5MjA3NzgsLTM3NjQ1
+NjE4MiwtMTg1OTU0MzY0OCwxOTkwMTc2OTkyLC02NTUwMjU3OT
+IsLTExNDI0NzM4MDgsLTQ1NzkzODUyOV19
 -->
