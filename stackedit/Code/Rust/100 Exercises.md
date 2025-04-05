@@ -112,14 +112,19 @@ Borrowing
 : Allow reading and mutating the value
 
 Restrictions that prevent simultaneous reading and mutating data
-1. Can't have 
+1. Can't have a mutable and an immutable reference at the same time
+2. can't have more than one mutable reference at the same time
+3. The owner can't mutate a value while it is borrowed
+4. Can have many mutable references at the same time, as long as there are no mutable reference
+
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzODQxNDA4OCwyMDAzOTIwNzc4LC0zNz
+eyJoaXN0b3J5IjpbMjAxMTk3NDkwMiwyMDAzOTIwNzc4LC0zNz
 Y0NTYxODIsLTE4NTk1NDM2NDgsMTk5MDE3Njk5MiwtNjU1MDI1
 NzkyLC0xMTQyNDczODA4LC00NTc5Mzg1MjldfQ==
 -->
