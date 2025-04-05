@@ -154,11 +154,15 @@ String's Memory Layout (24 bytes on 64-bit)
 ### 3.9 References
 * references put a 	`usize` on the stack (8 bytes)
 
+#### 3.10 Heap
+* allocation and deallocation are much slower
+
+`usize`
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjgyMDA3NTEsMTYxNTg5NjU5LC0yMT
+eyJoaXN0b3J5IjpbLTIxMzY3MTgyNzQsMTYxNTg5NjU5LC0yMT
 QzMTQ1NDQxLC0xNTkxMzQ1Mjk0LDE5ODAzNzY2MjgsMTEzODEw
 NDEwNSwxMDAzMTc5MjI4LC0xMjkwNjk5NzMzLC0xMDUwMTYzMT
 UzLDIwMTE5NzQ5MDIsMjAwMzkyMDc3OCwtMzc2NDU2MTgyLC0x
