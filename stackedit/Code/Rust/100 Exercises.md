@@ -94,8 +94,10 @@ Owner
 : Each value has a single owner at any given time
 : statically determined at compile-time
 
+**Each function has to declare in its signature how it wants to interact with arguments**
 
-
+Move Semantics
+: Ownership can be transfered
 
 
 
@@ -103,7 +105,7 @@ Owner
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwMzkyMDc3OCwtMzc2NDU2MTgyLC0xOD
-U5NTQzNjQ4LDE5OTAxNzY5OTIsLTY1NTAyNTc5MiwtMTE0MjQ3
-MzgwOCwtNDU3OTM4NTI5XX0=
+eyJoaXN0b3J5IjpbMTg2NzUyODcwOCwyMDAzOTIwNzc4LC0zNz
+Y0NTYxODIsLTE4NTk1NDM2NDgsMTk5MDE3Njk5MiwtNjU1MDI1
+NzkyLC0xMTQyNDczODA4LC00NTc5Mzg1MjldfQ==
 -->
