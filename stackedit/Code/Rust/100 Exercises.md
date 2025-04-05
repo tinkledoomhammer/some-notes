@@ -119,15 +119,24 @@ Restrictions that prevent simultaneous reading and mutating data
 
 
 ### 3.7 Mutable references
-
+Methods with `mut self`
+* should return `self`
+```rust
+impl Ticket {
+	pub fn set_title(mut self, new_title: String) -> Self{
+		self.title = new_title;
+		self
+	}
+}
+```
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTAxNjMxNTMsMjAxMTk3NDkwMiwyMD
-AzOTIwNzc4LC0zNzY0NTYxODIsLTE4NTk1NDM2NDgsMTk5MDE3
-Njk5MiwtNjU1MDI1NzkyLC0xMTQyNDczODA4LC00NTc5Mzg1Mj
-ldfQ==
+eyJoaXN0b3J5IjpbNjk5ODM3MjU3LC0xMDUwMTYzMTUzLDIwMT
+E5NzQ5MDIsMjAwMzkyMDc3OCwtMzc2NDU2MTgyLC0xODU5NTQz
+NjQ4LDE5OTAxNzY5OTIsLTY1NTAyNTc5MiwtMTE0MjQ3MzgwOC
+wtNDU3OTM4NTI5XX0=
 -->
