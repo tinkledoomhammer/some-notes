@@ -135,14 +135,18 @@ let ticket = ticket
 	.set_description(...)
 	.set_status(...);
 ```
+* allows chaining like above
+* Takes ownership
+
+Methods with `&mut self`
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyMTQyMDYzLC0xMDUwMTYzMTUzLDIwMT
-E5NzQ5MDIsMjAwMzkyMDc3OCwtMzc2NDU2MTgyLC0xODU5NTQz
-NjQ4LDE5OTAxNzY5OTIsLTY1NTAyNTc5MiwtMTE0MjQ3MzgwOC
-wtNDU3OTM4NTI5XX0=
+eyJoaXN0b3J5IjpbLTEyOTA2OTk3MzMsLTEwNTAxNjMxNTMsMj
+AxMTk3NDkwMiwyMDAzOTIwNzc4LC0zNzY0NTYxODIsLTE4NTk1
+NDM2NDgsMTk5MDE3Njk5MiwtNjU1MDI1NzkyLC0xMTQyNDczOD
+A4LC00NTc5Mzg1MjldfQ==
 -->
