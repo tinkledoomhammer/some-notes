@@ -152,12 +152,13 @@ String's Memory Layout (24 bytes on 64-bit)
 * The *capacity* of the string (reservation)
 
 ### 3.9 References
-
+* references put a 	`usize` on the stack (8 bytes)
+* 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA2MTQ1NTk1LC0yMTQzMTQ1NDQxLC0xNT
+eyJoaXN0b3J5IjpbMTYxNTg5NjU5LC0yMTQzMTQ1NDQxLC0xNT
 kxMzQ1Mjk0LDE5ODAzNzY2MjgsMTEzODEwNDEwNSwxMDAzMTc5
 MjI4LC0xMjkwNjk5NzMzLC0xMDUwMTYzMTUzLDIwMTE5NzQ5MD
 IsMjAwMzkyMDc3OCwtMzc2NDU2MTgyLC0xODU5NTQzNjQ4LDE5
