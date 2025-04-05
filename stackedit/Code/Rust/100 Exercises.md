@@ -97,15 +97,19 @@ Owner
 **Each function has to declare in its signature how it wants to interact with arguments**
 
 Move Semantics
-: Ownership can be transfered
+: Ownership can be transferred
+: Non-ref parameters **consume** their arguments
+: ownership is *moved* to the function and the caller can't use it any more
 
+Borrowing
+: 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2NzUyODcwOCwyMDAzOTIwNzc4LC0zNz
+eyJoaXN0b3J5IjpbMTcxMTMwOTA4NywyMDAzOTIwNzc4LC0zNz
 Y0NTYxODIsLTE4NTk1NDM2NDgsMTk5MDE3Njk5MiwtNjU1MDI1
 NzkyLC0xMTQyNDczODA4LC00NTc5Mzg1MjldfQ==
 -->
