@@ -143,15 +143,16 @@ Methods with `&mut self`
 * cannot chain calls
 
 ### 3.8 Memory Layout
-
+`std::mem::size_of<T>()`
+: Returns the size in bytes 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzODEwNDEwNSwxMDAzMTc5MjI4LC0xMj
-kwNjk5NzMzLC0xMDUwMTYzMTUzLDIwMTE5NzQ5MDIsMjAwMzky
-MDc3OCwtMzc2NDU2MTgyLC0xODU5NTQzNjQ4LDE5OTAxNzY5OT
-IsLTY1NTAyNTc5MiwtMTE0MjQ3MzgwOCwtNDU3OTM4NTI5XX0=
-
+eyJoaXN0b3J5IjpbMTExMTA4OTQ5NiwxMTM4MTA0MTA1LDEwMD
+MxNzkyMjgsLTEyOTA2OTk3MzMsLTEwNTAxNjMxNTMsMjAxMTk3
+NDkwMiwyMDAzOTIwNzc4LC0zNzY0NTYxODIsLTE4NTk1NDM2ND
+gsMTk5MDE3Njk5MiwtNjU1MDI1NzkyLC0xMTQyNDczODA4LC00
+NTc5Mzg1MjldfQ==
 -->
