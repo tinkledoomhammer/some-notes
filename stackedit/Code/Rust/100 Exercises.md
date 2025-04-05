@@ -143,7 +143,7 @@ Methods with `&mut self`
 * cannot chain calls
 
 ### 3.8 Memory Layout
-`std::mem::size_of<T>()`
+`std::mem::size_of::<T>()`
 : Returns the size in bytes the type takes on the stack
 
 String's Memory Layout (24 bytes on 64-bit)
@@ -180,16 +180,17 @@ Scope
 
 Destructors
 : invoked automatically when a value goes out of scope
-: can be called manyally by passing it to `std::mem::drop`
+: can be called manually by passing it to `std::mem::drop`
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyODYyNDM5MCwtMTAyMTU3Njg4MiwxNj
-E1ODk2NTksLTIxNDMxNDU0NDEsLTE1OTEzNDUyOTQsMTk4MDM3
-NjYyOCwxMTM4MTA0MTA1LDEwMDMxNzkyMjgsLTEyOTA2OTk3Mz
-MsLTEwNTAxNjMxNTMsMjAxMTk3NDkwMiwyMDAzOTIwNzc4LC0z
-NzY0NTYxODIsLTE4NTk1NDM2NDgsMTk5MDE3Njk5MiwtNjU1MD
-I1NzkyLC0xMTQyNDczODA4LC00NTc5Mzg1MjldfQ==
+eyJoaXN0b3J5IjpbNDc4NTY5ODQ4LC0xMDIxNTc2ODgyLDE2MT
+U4OTY1OSwtMjE0MzE0NTQ0MSwtMTU5MTM0NTI5NCwxOTgwMzc2
+NjI4LDExMzgxMDQxMDUsMTAwMzE3OTIyOCwtMTI5MDY5OTczMy
+wtMTA1MDE2MzE1MywyMDExOTc0OTAyLDIwMDM5MjA3NzgsLTM3
+NjQ1NjE4MiwtMTg1OTU0MzY0OCwxOTkwMTc2OTkyLC02NTUwMj
+U3OTIsLTExNDI0NzM4MDgsLTQ1NzkzODUyOV19
 -->
