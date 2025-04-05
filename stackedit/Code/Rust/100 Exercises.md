@@ -242,10 +242,12 @@ Limitations on traits
 
 Orphan Rule
 : Traits when multiple crates are involved must meet one of 2 rules
+: 1. The trait is defined in the current trait or
+: 2. The implementor type is defined in the current crate
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNTY0ODYwMCwxOTE4NDY0NjUwLC0xNT
+eyJoaXN0b3J5IjpbMTcxOTQ2OTgwNywxOTE4NDY0NjUwLC0xNT
 I0NjU5NTA4LDQ3ODU2OTg0OCwtMTAyMTU3Njg4MiwxNjE1ODk2
 NTksLTIxNDMxNDU0NDEsLTE1OTEzNDUyOTQsMTk4MDM3NjYyOC
 wxMTM4MTA0MTA1LDEwMDMxNzkyMjgsLTEyOTA2OTk3MzMsLTEw
