@@ -232,17 +232,22 @@ Inherent method
 : A method defined directly on a type, without using a trait
 
 ### 4.2 Implementing Traits
+* When a type is defined in a different crate, then trying to define new methods for it will generate a compiler error
 
+Extension Trait
+: a trait whose primary purpose is to attach new methods to foreign types (such as `u32`
+
+Limitations on traits
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDkwOTQyMTksMTkxODQ2NDY1MCwtMT
-UyNDY1OTUwOCw0Nzg1Njk4NDgsLTEwMjE1NzY4ODIsMTYxNTg5
-NjU5LC0yMTQzMTQ1NDQxLC0xNTkxMzQ1Mjk0LDE5ODAzNzY2Mj
-gsMTEzODEwNDEwNSwxMDAzMTc5MjI4LC0xMjkwNjk5NzMzLC0x
-MDUwMTYzMTUzLDIwMTE5NzQ5MDIsMjAwMzkyMDc3OCwtMzc2ND
-U2MTgyLC0xODU5NTQzNjQ4LDE5OTAxNzY5OTIsLTY1NTAyNTc5
-MiwtMTE0MjQ3MzgwOF19
+eyJoaXN0b3J5IjpbLTk1ODYxODA1NiwxOTE4NDY0NjUwLC0xNT
+I0NjU5NTA4LDQ3ODU2OTg0OCwtMTAyMTU3Njg4MiwxNjE1ODk2
+NTksLTIxNDMxNDU0NDEsLTE1OTEzNDUyOTQsMTk4MDM3NjYyOC
+wxMTM4MTA0MTA1LDEwMDMxNzkyMjgsLTEyOTA2OTk3MzMsLTEw
+NTAxNjMxNTMsMjAxMTk3NDkwMiwyMDAzOTIwNzc4LC0zNzY0NT
+YxODIsLTE4NTk1NDM2NDgsMTk5MDE3Njk5MiwtNjU1MDI1Nzky
+LC0xMTQyNDczODA4XX0=
 -->
