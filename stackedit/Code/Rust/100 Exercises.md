@@ -43,11 +43,13 @@ Modules form a tree structure
 ### 3.4 Visibility
 
 Private by default
-: can only be accessed  where
+: can only be accessed  in the module where its defined or
+: in one of its submodules
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMTcwNjE1LC00NTc5Mzg1MjldfQ==
+eyJoaXN0b3J5IjpbLTExNDI0NzM4MDgsLTQ1NzkzODUyOV19
 -->
