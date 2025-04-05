@@ -225,7 +225,8 @@ A `use` statement may be required to get the trait in scope
 	* or it is defined in the standard library's **prelude**
 
 Prelude
-: A set of traits and types that are automtically imported into every Rust p
+: A set of traits and types that are automtically imported into every Rust program
+: `use std::prelude::*;` duplicates the effect of the auto-import
 
 Inherent method
 : A method defined directly on a type, without using a trait
@@ -235,7 +236,7 @@ Inherent method
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwMjU5MzExMywtMTUyNDY1OTUwOCw0Nz
+eyJoaXN0b3J5IjpbMTkxODQ2NDY1MCwtMTUyNDY1OTUwOCw0Nz
 g1Njk4NDgsLTEwMjE1NzY4ODIsMTYxNTg5NjU5LC0yMTQzMTQ1
 NDQxLC0xNTkxMzQ1Mjk0LDE5ODAzNzY2MjgsMTEzODEwNDEwNS
 wxMDAzMTc5MjI4LC0xMjkwNjk5NzMzLC0xMDUwMTYzMTUzLDIw
