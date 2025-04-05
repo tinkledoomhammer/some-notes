@@ -30,9 +30,14 @@ Modules form a tree structure
 	* from the parent module `super::my_function`
 	* from the current module `sub_module::MyStruct`
 * both `crate` and `super` are **keywords**
+
 `use` statements
-: bring 
+: bring the entity into scope
+: `use crate::module_1::module_2::MyStruct;`
+: `//MyStruct is now accessible in the current module`
+
+`use crate::module_1:
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MjUwMzc3OF19
+eyJoaXN0b3J5IjpbMTY4NjY0NTU0NV19
 -->
