@@ -146,15 +146,16 @@ Methods with `&mut self`
 `std::mem::size_of<T>()`
 : Returns the size in bytes 
 
+String
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4MDM3NjYyOCwxMTM4MTA0MTA1LDEwMD
-MxNzkyMjgsLTEyOTA2OTk3MzMsLTEwNTAxNjMxNTMsMjAxMTk3
-NDkwMiwyMDAzOTIwNzc4LC0zNzY0NTYxODIsLTE4NTk1NDM2ND
-gsMTk5MDE3Njk5MiwtNjU1MDI1NzkyLC0xMTQyNDczODA4LC00
-NTc5Mzg1MjldfQ==
+eyJoaXN0b3J5IjpbLTEzODM1ODI2MzksMTk4MDM3NjYyOCwxMT
+M4MTA0MTA1LDEwMDMxNzkyMjgsLTEyOTA2OTk3MzMsLTEwNTAx
+NjMxNTMsMjAxMTk3NDkwMiwyMDAzOTIwNzc4LC0zNzY0NTYxOD
+IsLTE4NTk1NDM2NDgsMTk5MDE3Njk5MiwtNjU1MDI1NzkyLC0x
+MTQyNDczODA4LC00NTc5Mzg1MjldfQ==
 -->
