@@ -4,10 +4,15 @@ Module
 : A way to group related code together under a common namespace
 
 Inline Modules
-: The module declaration and the module contents (inside `{ ...}` 
+: The module declaration and the module contents (inside `{ ... }` are next to eachother
+
+Crate Root
+: Aka Root module
+: usually `src/lib.rs`
+: the namespace name is `crate`
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNzY5NzY5MV19
+eyJoaXN0b3J5IjpbMTczMTUyODQ2OF19
 -->
