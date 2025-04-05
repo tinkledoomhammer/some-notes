@@ -60,7 +60,8 @@ Visibility Modifiers
 `pub(in path::to::module)`
 : makes the entity public to the specified module
 
-###
+#### 3.5 Encapsulation
+
 
 
 
@@ -68,6 +69,6 @@ Visibility Modifiers
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0MjMyNzIyMSwtNjU1MDI1NzkyLC0xMT
+eyJoaXN0b3J5IjpbMTk5MDE3Njk5MiwtNjU1MDI1NzkyLC0xMT
 QyNDczODA4LC00NTc5Mzg1MjldfQ==
 -->
