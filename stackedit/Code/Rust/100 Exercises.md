@@ -90,6 +90,11 @@ The ownership system ensures that :
 2. Data is never read while it's being mutated
 3. Data is never accessed after it has been destroyed
 
+Owner
+: Each value has a single owner at any given time
+: statically determined at compile-time
+
+
 
 
 
@@ -98,7 +103,7 @@ The ownership system ensures that :
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ1ODE2MjYxLC0zNzY0NTYxODIsLTE4NT
-k1NDM2NDgsMTk5MDE3Njk5MiwtNjU1MDI1NzkyLC0xMTQyNDcz
-ODA4LC00NTc5Mzg1MjldfQ==
+eyJoaXN0b3J5IjpbMjAwMzkyMDc3OCwtMzc2NDU2MTgyLC0xOD
+U5NTQzNjQ4LDE5OTAxNzY5OTIsLTY1NTAyNTc5MiwtMTE0MjQ3
+MzgwOCwtNDU3OTM4NTI5XX0=
 -->
