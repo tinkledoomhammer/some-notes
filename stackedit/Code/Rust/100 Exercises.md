@@ -39,7 +39,15 @@ Modules form a tree structure
 `use crate::module_1::module_2::*;`
 : imports all the items in the entire namespace
 : This is discouraged in most cases because it clutters the namespace
+
+### 3.4 Visibility
+
+Private by default
+: can only be accessed  where
+
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NzkzODUyOV19
+eyJoaXN0b3J5IjpbMTQwMTcwNjE1LC00NTc5Mzg1MjldfQ==
 -->
