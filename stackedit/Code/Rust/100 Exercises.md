@@ -144,7 +144,7 @@ Methods with `&mut self`
 
 ### 3.8 Memory Layout
 `std::mem::size_of<T>()`
-: Returns the size in bytes 
+: Returns the size in bytes the type takes on the stack
 
 String's Memory Layout
 * The *pointer* to the reserved memory
@@ -156,9 +156,9 @@ String's Memory Layout
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTEzNDUyOTQsMTk4MDM3NjYyOCwxMT
-M4MTA0MTA1LDEwMDMxNzkyMjgsLTEyOTA2OTk3MzMsLTEwNTAx
-NjMxNTMsMjAxMTk3NDkwMiwyMDAzOTIwNzc4LC0zNzY0NTYxOD
-IsLTE4NTk1NDM2NDgsMTk5MDE3Njk5MiwtNjU1MDI1NzkyLC0x
-MTQyNDczODA4LC00NTc5Mzg1MjldfQ==
+eyJoaXN0b3J5IjpbLTIxNDMxNDU0NDEsLTE1OTEzNDUyOTQsMT
+k4MDM3NjYyOCwxMTM4MTA0MTA1LDEwMDMxNzkyMjgsLTEyOTA2
+OTk3MzMsLTEwNTAxNjMxNTMsMjAxMTk3NDkwMiwyMDAzOTIwNz
+c4LC0zNzY0NTYxODIsLTE4NTk1NDM2NDgsMTk5MDE3Njk5Miwt
+NjU1MDI1NzkyLC0xMTQyNDczODA4LC00NTc5Mzg1MjldfQ==
 -->
