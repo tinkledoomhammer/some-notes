@@ -81,6 +81,8 @@ impl Ticket{
 	pub fn new(title: String, ...) ->Self ...
 }
 ```
+Accessor methods
+: public methods that allow reading values of private fields
 
 
 
@@ -89,7 +91,7 @@ impl Ticket{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTEwNjM2NjcsLTE4NTk1NDM2NDgsMT
-k5MDE3Njk5MiwtNjU1MDI1NzkyLC0xMTQyNDczODA4LC00NTc5
-Mzg1MjldfQ==
+eyJoaXN0b3J5IjpbLTM3NjQ1NjE4MiwtMTg1OTU0MzY0OCwxOT
+kwMTc2OTkyLC02NTUwMjU3OTIsLTExNDI0NzM4MDgsLTQ1Nzkz
+ODUyOV19
 -->
