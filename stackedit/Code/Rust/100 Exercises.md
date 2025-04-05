@@ -164,15 +164,20 @@ String's Memory Layout (24 bytes on 64-bit)
 * `std::mem::size_of::<T>()` doesn't count memory on the heap
 * There is no standard mechanism for tracking the heap usage of particular objects
 
-### 3.10 References
-**Most references are stored internally as a pointer (`usize`)**
+#### 3.10 References
+**Most references are stored internally as a pointer ** `<usize>`
+* Pointers don't always point to the heap
+
+### Destructors
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODA4MTc3MjAsLTEwMjE1NzY4ODIsMT
-YxNTg5NjU5LC0yMTQzMTQ1NDQxLC0xNTkxMzQ1Mjk0LDE5ODAz
-NzY2MjgsMTEzODEwNDEwNSwxMDAzMTc5MjI4LC0xMjkwNjk5Nz
-MzLC0xMDUwMTYzMTUzLDIwMTE5NzQ5MDIsMjAwMzkyMDc3OCwt
-Mzc2NDU2MTgyLC0xODU5NTQzNjQ4LDE5OTAxNzY5OTIsLTY1NT
-AyNTc5MiwtMTE0MjQ3MzgwOCwtNDU3OTM4NTI5XX0=
+eyJoaXN0b3J5IjpbLTQyNTI0MjM1OCwtMTAyMTU3Njg4MiwxNj
+E1ODk2NTksLTIxNDMxNDU0NDEsLTE1OTEzNDUyOTQsMTk4MDM3
+NjYyOCwxMTM4MTA0MTA1LDEwMDMxNzkyMjgsLTEyOTA2OTk3Mz
+MsLTEwNTAxNjMxNTMsMjAxMTk3NDkwMiwyMDAzOTIwNzc4LC0z
+NzY0NTYxODIsLTE4NTk1NDM2NDgsMTk5MDE3Njk5MiwtNjU1MD
+I1NzkyLC0xMTQyNDczODA4LC00NTc5Mzg1MjldfQ==
 -->
