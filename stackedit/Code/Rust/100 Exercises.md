@@ -198,16 +198,24 @@ Some types of traits in the standard library:
 
 ## 04.01 Traits
 
+Traits
+: Rust's way of defining **interfaces**
+
+```rust
+trait <TraitName>{
+	fn <method_name>(<params>) -> <return_type>;
+}
+```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTEwOTgxMiwtMTUyNDY1OTUwOCw0Nz
-g1Njk4NDgsLTEwMjE1NzY4ODIsMTYxNTg5NjU5LC0yMTQzMTQ1
-NDQxLC0xNTkxMzQ1Mjk0LDE5ODAzNzY2MjgsMTEzODEwNDEwNS
-wxMDAzMTc5MjI4LC0xMjkwNjk5NzMzLC0xMDUwMTYzMTUzLDIw
-MTE5NzQ5MDIsMjAwMzkyMDc3OCwtMzc2NDU2MTgyLC0xODU5NT
-QzNjQ4LDE5OTAxNzY5OTIsLTY1NTAyNTc5MiwtMTE0MjQ3Mzgw
-OCwtNDU3OTM4NTI5XX0=
+eyJoaXN0b3J5IjpbLTExMjEyNjQ2ODMsLTE1MjQ2NTk1MDgsND
+c4NTY5ODQ4LC0xMDIxNTc2ODgyLDE2MTU4OTY1OSwtMjE0MzE0
+NTQ0MSwtMTU5MTM0NTI5NCwxOTgwMzc2NjI4LDExMzgxMDQxMD
+UsMTAwMzE3OTIyOCwtMTI5MDY5OTczMywtMTA1MDE2MzE1Mywy
+MDExOTc0OTAyLDIwMDM5MjA3NzgsLTM3NjQ1NjE4MiwtMTg1OT
+U0MzY0OCwxOTkwMTc2OTkyLC02NTUwMjU3OTIsLTExNDI0NzM4
+MDgsLTQ1NzkzODUyOV19
 -->
