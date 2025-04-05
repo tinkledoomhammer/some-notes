@@ -1,3 +1,5 @@
+# 100-exercises-to-learn-rust.pdf
+
 ## 3 Modeling a Ticket
 ### 3.3 Modules
 Module
@@ -69,6 +71,6 @@ Visibility Modifiers
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MDE3Njk5MiwtNjU1MDI1NzkyLC0xMT
-QyNDczODA4LC00NTc5Mzg1MjldfQ==
+eyJoaXN0b3J5IjpbLTE4NTk1NDM2NDgsMTk5MDE3Njk5MiwtNj
+U1MDI1NzkyLC0xMTQyNDczODA4LC00NTc5Mzg1MjldfQ==
 -->
