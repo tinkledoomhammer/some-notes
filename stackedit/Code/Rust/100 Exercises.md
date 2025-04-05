@@ -36,8 +36,10 @@ Modules form a tree structure
 : `use crate::module_1::module_2::MyStruct;`
 : `//MyStruct is now accessible in the current module`
 
-`use crate::module_1:
+`use crate::module_1::module_2::*;`
+: imports all the items in the entire namespace
+: This is discouraged in most cases because it clutters the namespace
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4NjY0NTU0NV19
+eyJoaXN0b3J5IjpbLTQ1NzkzODUyOV19
 -->
