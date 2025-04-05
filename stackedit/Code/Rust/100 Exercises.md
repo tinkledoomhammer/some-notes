@@ -118,13 +118,16 @@ Restrictions that prevent simultaneous reading and mutating data
 4. Can have many mutable references at the same time, as long as there are no mutable reference
 
 
+### 3.7 Mutable references
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMTk3NDkwMiwyMDAzOTIwNzc4LC0zNz
-Y0NTYxODIsLTE4NTk1NDM2NDgsMTk5MDE3Njk5MiwtNjU1MDI1
-NzkyLC0xMTQyNDczODA4LC00NTc5Mzg1MjldfQ==
+eyJoaXN0b3J5IjpbLTEwNTAxNjMxNTMsMjAxMTk3NDkwMiwyMD
+AzOTIwNzc4LC0zNzY0NTYxODIsLTE4NTk1NDM2NDgsMTk5MDE3
+Njk5MiwtNjU1MDI1NzkyLC0xMTQyNDczODA4LC00NTc5Mzg1Mj
+ldfQ==
 -->
