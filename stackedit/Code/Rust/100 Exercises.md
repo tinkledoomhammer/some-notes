@@ -154,7 +154,7 @@ String's Memory Layout (24 bytes on 64-bit)
 ### 3.9 References
 * references put a 	`usize` on the stack (8 bytes)
 
-#### 3.10 Heap
+#### Heap
 * allocation and deallocation are much slower
 
 `usize`
@@ -163,14 +163,16 @@ String's Memory Layout (24 bytes on 64-bit)
 
 * `std::mem::size_of::<T>()` doesn't count memory on the heap
 * There is no standard mechanism for tracking the heap usage of particular objects
-* 
+
+### 3.10 References
+**Most references are stored internally as a pointer (`usize`)**
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjE1NzY4ODIsMTYxNTg5NjU5LC0yMT
-QzMTQ1NDQxLC0xNTkxMzQ1Mjk0LDE5ODAzNzY2MjgsMTEzODEw
-NDEwNSwxMDAzMTc5MjI4LC0xMjkwNjk5NzMzLC0xMDUwMTYzMT
-UzLDIwMTE5NzQ5MDIsMjAwMzkyMDc3OCwtMzc2NDU2MTgyLC0x
-ODU5NTQzNjQ4LDE5OTAxNzY5OTIsLTY1NTAyNTc5MiwtMTE0Mj
-Q3MzgwOCwtNDU3OTM4NTI5XX0=
+eyJoaXN0b3J5IjpbLTE5ODA4MTc3MjAsLTEwMjE1NzY4ODIsMT
+YxNTg5NjU5LC0yMTQzMTQ1NDQxLC0xNTkxMzQ1Mjk0LDE5ODAz
+NzY2MjgsMTEzODEwNDEwNSwxMDAzMTc5MjI4LC0xMjkwNjk5Nz
+MzLC0xMDUwMTYzMTUzLDIwMTE5NzQ5MDIsMjAwMzkyMDc3OCwt
+Mzc2NDU2MTgyLC0xODU5NTQzNjQ4LDE5OTAxNzY5OTIsLTY1NT
+AyNTc5MiwtMTE0MjQ3MzgwOCwtNDU3OTM4NTI5XX0=
 -->
