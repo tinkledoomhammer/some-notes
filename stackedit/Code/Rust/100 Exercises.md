@@ -146,17 +146,18 @@ Methods with `&mut self`
 `std::mem::size_of<T>()`
 : Returns the size in bytes the type takes on the stack
 
-String's Memory Layout 
+String's Memory Layout (24 bytes on 64-bit)
 * The *pointer* to the reserved memory
 * the *length* of the string
 * The *capacity* of the string (reservation)
 
+### 3.9 References
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM2ODY2MTg1LC0yMTQzMTQ1NDQxLC0xNT
+eyJoaXN0b3J5IjpbNjA2MTQ1NTk1LC0yMTQzMTQ1NDQxLC0xNT
 kxMzQ1Mjk0LDE5ODAzNzY2MjgsMTEzODEwNDEwNSwxMDAzMTc5
 MjI4LC0xMjkwNjk5NzMzLC0xMDUwMTYzMTUzLDIwMTE5NzQ5MD
 IsMjAwMzkyMDc3OCwtMzc2NDU2MTgyLC0xODU5NTQzNjQ4LDE5
