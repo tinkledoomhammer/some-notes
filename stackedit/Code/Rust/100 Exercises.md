@@ -102,14 +102,24 @@ Move Semantics
 : ownership is *moved* to the function and the caller can't use it any more
 
 Borrowing
-: 
+: allows reading a value without taking ownership
+: done by obtaining a reference
+
+`&`
+: Immutable references
+
+`&mut`
+: Allow reading and mutating the value
+
+Restrictions that prevent simultaneous reading and mutating data
+1. Can't have 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMTMwOTA4NywyMDAzOTIwNzc4LC0zNz
+eyJoaXN0b3J5IjpbMjAzODQxNDA4OCwyMDAzOTIwNzc4LC0zNz
 Y0NTYxODIsLTE4NTk1NDM2NDgsMTk5MDE3Njk5MiwtNjU1MDI1
 NzkyLC0xMTQyNDczODA4LC00NTc5Mzg1MjldfQ==
 -->
