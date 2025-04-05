@@ -188,7 +188,7 @@ Destructors
 
 ## 04 Traits
 
-Some  of traits:
+Some types of  of traits:
 1. Operator Traits (`Add`, `Sub`, `PartialEq`, etc)
 2. `From` and `Into` for infallible conversions
 3. 
@@ -198,7 +198,7 @@ Some  of traits:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzNzE5NTg5MiwtMTUyNDY1OTUwOCw0Nz
+eyJoaXN0b3J5IjpbMTM1Mjg5NjQ1MiwtMTUyNDY1OTUwOCw0Nz
 g1Njk4NDgsLTEwMjE1NzY4ODIsMTYxNTg5NjU5LC0yMTQzMTQ1
 NDQxLC0xNTkxMzQ1Mjk0LDE5ODAzNzY2MjgsMTEzODEwNDEwNS
 wxMDAzMTc5MjI4LC0xMjkwNjk5NzMzLC0xMDUwMTYzMTUzLDIw
