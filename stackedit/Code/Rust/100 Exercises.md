@@ -77,6 +77,9 @@ impl Ticket{
 		//...
 		Ticket{title, ...}
 	}
+	//or ... ?
+	pub fn new(title: String, ...) ->Self ...
+}
 ```
 
 
@@ -86,7 +89,7 @@ impl Ticket{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2OTcyMDk2OCwtMTg1OTU0MzY0OCwxOT
-kwMTc2OTkyLC02NTUwMjU3OTIsLTExNDI0NzM4MDgsLTQ1Nzkz
-ODUyOV19
+eyJoaXN0b3J5IjpbLTExOTEwNjM2NjcsLTE4NTk1NDM2NDgsMT
+k5MDE3Njk5MiwtNjU1MDI1NzkyLC0xMTQyNDczODA4LC00NTc5
+Mzg1MjldfQ==
 -->
