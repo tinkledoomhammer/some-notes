@@ -71,7 +71,13 @@ let ticket = Ticket {
 };
 ```
 * this means that a constructor must be provided
-* 
+```rust
+impl Ticket{
+	pub fn new(title: String, ...) ->Ticket{
+		//...
+		Ticket{title, ...}
+	}
+```
 
 
 
@@ -80,7 +86,7 @@ let ticket = Ticket {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMTA4Mzg3OSwtMTg1OTU0MzY0OCwxOT
+eyJoaXN0b3J5IjpbMTM2OTcyMDk2OCwtMTg1OTU0MzY0OCwxOT
 kwMTc2OTkyLC02NTUwMjU3OTIsLTExNDI0NzM4MDgsLTQ1Nzkz
 ODUyOV19
 -->
