@@ -168,13 +168,14 @@ String's Memory Layout (24 bytes on 64-bit)
 **Most references are stored internally as a pointer ** `<usize>`
 * Pointers don't always point to the heap
 
-### Destructors
+### 3.11 Destructors
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNTI0MjM1OCwtMTAyMTU3Njg4MiwxNj
+eyJoaXN0b3J5IjpbMTg2OTk1MjY2MSwtMTAyMTU3Njg4MiwxNj
 E1ODk2NTksLTIxNDMxNDU0NDEsLTE1OTEzNDUyOTQsMTk4MDM3
 NjYyOCwxMTM4MTA0MTA1LDEwMDMxNzkyMjgsLTEyOTA2OTk3Mz
 MsLTEwNTAxNjMxNTMsMjAxMTk3NDkwMiwyMDAzOTIwNzc4LC0z
