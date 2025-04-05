@@ -26,8 +26,13 @@ Modules form a tree structure
 
 * Items defined in the smae module don't require any special syntax
 * For items in other modules the path can be composed in 3 ways
-	* from the root of the current 
+	* from the root of the current crate `crate::module_1::MyStruct`
+	* from the parent module `super::my_function`
+	* from the current module `sub_module::MyStruct`
+* both `crate` and `super` are **keywords**
+`use` statements
+: bring 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ4NTkwNzI1XX0=
+eyJoaXN0b3J5IjpbLTk3MjUwMzc3OF19
 -->
