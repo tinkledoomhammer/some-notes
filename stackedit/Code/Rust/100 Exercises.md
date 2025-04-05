@@ -20,9 +20,14 @@ Modules form a tree structure
 	* `src/<module_name>/mod.rs`
 * If it is a submodule of another (non-root) module then it should be named:
 	* `[..]/<parent_module>/<module_name>.rs`
-	* `[..]/<parent_module>/<
+	* `[..]/<parent_module>/<module_name>/mod.rs`
 
+#### Item Paths and `use` statements
+
+* Items defined in the smae module don't require any special syntax
+* For items in other modules the path can be composed in 3 ways
+	* from the root of the current 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1MDA1MjQ3NF19
+eyJoaXN0b3J5IjpbODQ4NTkwNzI1XX0=
 -->
