@@ -63,7 +63,16 @@ Visibility Modifiers
 : makes the entity public to the specified module
 
 ### 3.5 Encapsulation
-* Private fields prevent 
+* Private fields prevent the use of the constructor syntax
+```rust
+let ticket = Ticket {
+	title: "Build a ticket system".into(),
+	//...
+};
+```
+* this means that a constructor must be provided
+* 
+
 
 
 
@@ -71,7 +80,7 @@ Visibility Modifiers
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTIxOTkwOTcsLTE4NTk1NDM2NDgsMT
-k5MDE3Njk5MiwtNjU1MDI1NzkyLC0xMTQyNDczODA4LC00NTc5
-Mzg1MjldfQ==
+eyJoaXN0b3J5IjpbLTUyMTA4Mzg3OSwtMTg1OTU0MzY0OCwxOT
+kwMTc2OTkyLC02NTUwMjU3OTIsLTExNDI0NzM4MDgsLTQ1Nzkz
+ODUyOV19
 -->
