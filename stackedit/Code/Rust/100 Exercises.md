@@ -183,13 +183,13 @@ Destructors
 : can be called manually by passing it to `std::mem::drop`
 
 * Transferring ownership also transfers responsibility  to destruct
-* 
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzEyMDEwNjYsNDc4NTY5ODQ4LC0xMD
+eyJoaXN0b3J5IjpbLTE1MjQ2NTk1MDgsNDc4NTY5ODQ4LC0xMD
 IxNTc2ODgyLDE2MTU4OTY1OSwtMjE0MzE0NTQ0MSwtMTU5MTM0
 NTI5NCwxOTgwMzc2NjI4LDExMzgxMDQxMDUsMTAwMzE3OTIyOC
 wtMTI5MDY5OTczMywtMTA1MDE2MzE1MywyMDExOTc0OTAyLDIw
