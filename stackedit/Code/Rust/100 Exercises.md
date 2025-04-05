@@ -182,15 +182,18 @@ Destructors
 : invoked automatically when a value goes out of scope
 : can be called manually by passing it to `std::mem::drop`
 
+* Transferring ownership also transfers responsibility  to destruct
+* 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc4NTY5ODQ4LC0xMDIxNTc2ODgyLDE2MT
-U4OTY1OSwtMjE0MzE0NTQ0MSwtMTU5MTM0NTI5NCwxOTgwMzc2
-NjI4LDExMzgxMDQxMDUsMTAwMzE3OTIyOCwtMTI5MDY5OTczMy
-wtMTA1MDE2MzE1MywyMDExOTc0OTAyLDIwMDM5MjA3NzgsLTM3
-NjQ1NjE4MiwtMTg1OTU0MzY0OCwxOTkwMTc2OTkyLC02NTUwMj
-U3OTIsLTExNDI0NzM4MDgsLTQ1NzkzODUyOV19
+eyJoaXN0b3J5IjpbLTIxMzEyMDEwNjYsNDc4NTY5ODQ4LC0xMD
+IxNTc2ODgyLDE2MTU4OTY1OSwtMjE0MzE0NTQ0MSwtMTU5MTM0
+NTI5NCwxOTgwMzc2NjI4LDExMzgxMDQxMDUsMTAwMzE3OTIyOC
+wtMTI5MDY5OTczMywtMTA1MDE2MzE1MywyMDExOTc0OTAyLDIw
+MDM5MjA3NzgsLTM3NjQ1NjE4MiwtMTg1OTU0MzY0OCwxOTkwMT
+c2OTkyLC02NTUwMjU3OTIsLTExNDI0NzM4MDgsLTQ1NzkzODUy
+OV19
 -->
