@@ -238,12 +238,14 @@ Extension Trait
 : a trait whose primary purpose is to attach new methods to foreign types (such as `u32`
 
 Limitations on traits
+1. You can't implement the same trait for the same type in the same crate twice
 
-
+Orphan Rule
+: Traits when multiple crates are involved must meet one of 2 rules
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1ODYxODA1NiwxOTE4NDY0NjUwLC0xNT
+eyJoaXN0b3J5IjpbMTcyNTY0ODYwMCwxOTE4NDY0NjUwLC0xNT
 I0NjU5NTA4LDQ3ODU2OTg0OCwtMTAyMTU3Njg4MiwxNjE1ODk2
 NTksLTIxNDMxNDU0NDEsLTE1OTEzNDUyOTQsMTk4MDM3NjYyOC
 wxMTM4MTA0MTA1LDEwMDMxNzkyMjgsLTEyOTA2OTk3MzMsLTEw
