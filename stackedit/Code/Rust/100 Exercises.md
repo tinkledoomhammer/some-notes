@@ -215,15 +215,24 @@ impl <TraitName> for <TypeName> {
 }
 ```
 
+Traits are used with the `.` operator, just like methods
+To invoke a trait, 2 things must be true:
+1. The type must implement the trait
+2. The trait must be in scope
+
+Inherent method
+: A method defined directly on a type, without using a trait
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4MDQ4MTM0MCwtMTUyNDY1OTUwOCw0Nz
-g1Njk4NDgsLTEwMjE1NzY4ODIsMTYxNTg5NjU5LC0yMTQzMTQ1
-NDQxLC0xNTkxMzQ1Mjk0LDE5ODAzNzY2MjgsMTEzODEwNDEwNS
-wxMDAzMTc5MjI4LC0xMjkwNjk5NzMzLC0xMDUwMTYzMTUzLDIw
-MTE5NzQ5MDIsMjAwMzkyMDc3OCwtMzc2NDU2MTgyLC0xODU5NT
-QzNjQ4LDE5OTAxNzY5OTIsLTY1NTAyNTc5MiwtMTE0MjQ3Mzgw
-OCwtNDU3OTM4NTI5XX0=
+eyJoaXN0b3J5IjpbNzczMzU3MDE2LC0xNTI0NjU5NTA4LDQ3OD
+U2OTg0OCwtMTAyMTU3Njg4MiwxNjE1ODk2NTksLTIxNDMxNDU0
+NDEsLTE1OTEzNDUyOTQsMTk4MDM3NjYyOCwxMTM4MTA0MTA1LD
+EwMDMxNzkyMjgsLTEyOTA2OTk3MzMsLTEwNTAxNjMxNTMsMjAx
+MTk3NDkwMiwyMDAzOTIwNzc4LC0zNzY0NTYxODIsLTE4NTk1ND
+M2NDgsMTk5MDE3Njk5MiwtNjU1MDI1NzkyLC0xMTQyNDczODA4
+LC00NTc5Mzg1MjldfQ==
 -->
