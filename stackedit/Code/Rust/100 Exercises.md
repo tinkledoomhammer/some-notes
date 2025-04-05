@@ -11,8 +11,13 @@ Crate Root
 : usually `src/lib.rs`
 : the namespace name is `crate`
 
+Modules form a tree structure
+
+#### External modules and the filesystem
+`mod dog;` declares the existence of a submodule
+* If it is declared in the root of the crate (`src/lib.rs` or `src/main
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMTUyODQ2OF19
+eyJoaXN0b3J5IjpbODg1NzQyNjIwXX0=
 -->
