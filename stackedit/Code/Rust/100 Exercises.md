@@ -15,9 +15,14 @@ Modules form a tree structure
 
 #### External modules and the filesystem
 `mod dog;` declares the existence of a submodule
-* If it is declared in the root of the crate (`src/lib.rs` or `src/main
+* If it is declared in the root of the crate (`src/lib.rs` or `src/main.rs`) then cargo expects to find the file containing the submodule to boe in either:
+	* `src/<module_name>.rs` or
+	* `src/<module_name>/mod.rs`
+* If it is a submodule of another (non-root) module then it should be named:
+	* `[..]/<parent_module>/<module_name>.rs`
+	* `[..]/<parent_module>/<
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg1NzQyNjIwXX0=
+eyJoaXN0b3J5IjpbMTg1MDA1MjQ3NF19
 -->
