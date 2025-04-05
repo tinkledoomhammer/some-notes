@@ -46,10 +46,16 @@ Private by default
 : can only be accessed  in the module where its defined or
 : in one of its submodules
 
+Visibility Modifiers
 
+`pub`
+: Makes the entity accessible from outside the module, potentially outside the crate
+
+`
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDI0NzM4MDgsLTQ1NzkzODUyOV19
+eyJoaXN0b3J5IjpbODc1NTIwNTA0LC0xMTQyNDczODA4LC00NT
+c5Mzg1MjldfQ==
 -->
