@@ -128,6 +128,12 @@ impl Ticket {
 		self
 	}
 }
+...
+let ticket = Ticket::new(...);
+let ticket = ticket
+	.set_title("New title".into())
+	.set_description(...)
+	.set_status(...);
 ```
 
 
@@ -135,7 +141,7 @@ impl Ticket {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk5ODM3MjU3LC0xMDUwMTYzMTUzLDIwMT
+eyJoaXN0b3J5IjpbLTcyMTQyMDYzLC0xMDUwMTYzMTUzLDIwMT
 E5NzQ5MDIsMjAwMzkyMDc3OCwtMzc2NDU2MTgyLC0xODU5NTQz
 NjQ4LDE5OTAxNzY5OTIsLTY1NTAyNTc5MiwtMTE0MjQ3MzgwOC
 wtNDU3OTM4NTI5XX0=
