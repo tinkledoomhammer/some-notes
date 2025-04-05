@@ -174,13 +174,19 @@ String's Memory Layout (24 bytes on 64-bit)
 
 Scope
 : The region of Rust code where a variable is valid or **alive**
-: Starts with the declaration and ends when
+: Starts with the declaration and ends when either
+: 1. The block where it was declared ends or
+: 2. Ownership is transferred
+
+Destructors
+: invoked automatically when a value goes out of scope
+: can be called manyally by passing it to `std::mem::drop`
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NzkwMzA2NSwtMTAyMTU3Njg4MiwxNj
+eyJoaXN0b3J5IjpbMTUyODYyNDM5MCwtMTAyMTU3Njg4MiwxNj
 E1ODk2NTksLTIxNDMxNDU0NDEsLTE1OTEzNDUyOTQsMTk4MDM3
 NjYyOCwxMTM4MTA0MTA1LDEwMDMxNzkyMjgsLTEyOTA2OTk3Mz
 MsLTEwNTAxNjMxNTMsMjAxMTk3NDkwMiwyMDAzOTIwNzc4LC0z
