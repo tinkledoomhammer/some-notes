@@ -51,11 +51,23 @@ Visibility Modifiers
 `pub`
 : Makes the entity accessible from outside the module, potentially outside the crate
 
-`
+`pub(crate)`
+: Makes the entity public within the crate
+
+`pub(super)`
+: makes the entity public to the parent module
+
+`pub(in path::to::module)`
+: makes the entity public to the specified module
+
+
+
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc1NTIwNTA0LC0xMTQyNDczODA4LC00NT
-c5Mzg1MjldfQ==
+eyJoaXN0b3J5IjpbLTY1NTAyNTc5MiwtMTE0MjQ3MzgwOCwtND
+U3OTM4NTI5XX0=
 -->
