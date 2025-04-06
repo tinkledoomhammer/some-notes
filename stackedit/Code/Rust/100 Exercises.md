@@ -286,12 +286,24 @@ struct Ticket{...}
 ### 4.5 Trait Bounds
 Traits can also be used for generic programming
 
+Generics
+: Code that works with a **Type parameter** instead of a concrete type
 
+```rust
+fn print_if_even<T>
+where
+	T: IsEven + Debug
+{
+	fi n.is_even(){
+	println!("{n:?} is even");
+
+}
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzY1OTc4MzUsMTY0NDAxMTMwOSwyMT
+eyJoaXN0b3J5IjpbLTE5MzQ1MTc4NzgsMTY0NDAxMTMwOSwyMT
 QyMzk4NzcxLDQwMzM2MTMwNCwxMTM4NDA0NDAzLDE3MTk0Njk4
 MDcsMTkxODQ2NDY1MCwtMTUyNDY1OTUwOCw0Nzg1Njk4NDgsLT
 EwMjE1NzY4ODIsMTYxNTg5NjU5LC0yMTQzMTQ1NDQxLC0xNTkx
