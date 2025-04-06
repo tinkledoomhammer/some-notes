@@ -228,6 +228,9 @@ macro_rules! add{
 : binds `$ident` for repetition but expands to nothing
 
 `$$`
+: escapes / expands to `$`
+
+
 
 
 
@@ -239,7 +242,7 @@ macro_rules! add{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk3NjIzNTcyLC0xODEzODg1MTIsNDk1Mj
-Q3NDgzLDczNTM5Mjc5Myw4OTM3MjUyMDcsLTE4NzU0Mjg0MDcs
-MTIyMTIwNjI3Nl19
+eyJoaXN0b3J5IjpbLTEyMjg3MDE0NzcsLTE4MTM4ODUxMiw0OT
+UyNDc0ODMsNzM1MzkyNzkzLDg5MzcyNTIwNywtMTg3NTQyODQw
+NywxMjIxMjA2Mjc2XX0=
 -->
