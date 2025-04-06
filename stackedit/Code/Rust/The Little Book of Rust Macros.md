@@ -121,6 +121,12 @@ Expansion is an operation on the AST, not a textual operation
 	* `#![recursion_limit="..."]` attribute applied to a crate can change the limit
 
 ### 1.4 Hygiene
+Hygiene
+: The ability for a macro to work in its own syntax context, not afecting nor being affected by its surroundings
+: The macro can be invoked anywhere without interfering with its surrounding context
+
+Not all syntax extensions are fully hugenic
+Hygeine mainly affects identifiers and paths emitted by syntax extensions
 
 
 
@@ -128,5 +134,5 @@ Expansion is an operation on the AST, not a textual operation
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMTIwNjI3Nl19
+eyJoaXN0b3J5IjpbMjAzNTEwNDIyOCwxMjIxMjA2Mjc2XX0=
 -->
