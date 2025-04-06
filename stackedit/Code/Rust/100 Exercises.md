@@ -252,19 +252,21 @@ Operator Overloading
 
 * Operatos are traits
 
-`+ - * / %` are  `Add Sub Mul Div Rem`
-`==` and `!=` are `PartialEq`
-`<` `>` `<=` `>=`
+`+ - * / %` are  `Add Sub Mul Div Rem` all from `std::ops`
+`==` and `!=` are `PartialEq` from `std::cmp`
+`<` `>` `<=` `>=` are `PartialOrd` from `std::cmp`
+
+Default Implementations
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MjczNDk3LDE3MTk0Njk4MDcsMTkxOD
-Q2NDY1MCwtMTUyNDY1OTUwOCw0Nzg1Njk4NDgsLTEwMjE1NzY4
-ODIsMTYxNTg5NjU5LC0yMTQzMTQ1NDQxLC0xNTkxMzQ1Mjk0LD
-E5ODAzNzY2MjgsMTEzODEwNDEwNSwxMDAzMTc5MjI4LC0xMjkw
-Njk5NzMzLC0xMDUwMTYzMTUzLDIwMTE5NzQ5MDIsMjAwMzkyMD
-c3OCwtMzc2NDU2MTgyLC0xODU5NTQzNjQ4LDE5OTAxNzY5OTIs
-LTY1NTAyNTc5Ml19
+eyJoaXN0b3J5IjpbMTEzODQwNDQwMywxNzE5NDY5ODA3LDE5MT
+g0NjQ2NTAsLTE1MjQ2NTk1MDgsNDc4NTY5ODQ4LC0xMDIxNTc2
+ODgyLDE2MTU4OTY1OSwtMjE0MzE0NTQ0MSwtMTU5MTM0NTI5NC
+wxOTgwMzc2NjI4LDExMzgxMDQxMDUsMTAwMzE3OTIyOCwtMTI5
+MDY5OTczMywtMTA1MDE2MzE1MywyMDExOTc0OTAyLDIwMDM5Mj
+A3NzgsLTM3NjQ1NjE4MiwtMTg1OTU0MzY0OCwxOTkwMTc2OTky
+LC02NTUwMjU3OTJdfQ==
 -->
