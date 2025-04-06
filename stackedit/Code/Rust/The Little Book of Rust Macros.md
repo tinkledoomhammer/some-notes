@@ -171,7 +171,7 @@ macro_rules! $name {
 * captures
 * `$identifier:type`
 	* i.e. `($someCode:block)` will match a block of code in braces and alias it with `someCode`
-	* `($e:expr) =>{...};` will match an expression and call it `e`
+	* `($e:expr) =>{ 5 * $e};` will match an expression and call it `e`
 
 Capture type | Description
 --|--
@@ -189,6 +189,8 @@ Capture type | Description
 `ty` | a type
 `vis` | a possible empty visibility qualifier i.e. `pub` `pub(in crate` etc
 
+* There is also a special metavariable called `$crate`
+
 ### 2.2 A practical introduction
 
 
@@ -197,6 +199,6 @@ Capture type | Description
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQzNDQ3ODMxLDg5MzcyNTIwNywtMTg3NT
-QyODQwNywxMjIxMjA2Mjc2XX0=
+eyJoaXN0b3J5IjpbLTk5NTg2NDI0OSw4OTM3MjUyMDcsLTE4Nz
+U0Mjg0MDcsMTIyMTIwNjI3Nl19
 -->
