@@ -165,6 +165,12 @@ macro_rules! $name {
 * If the input matches a matcher, the `expansion` is substituted
 * If no rule matches, an error occurs
 * The specific grouping tokens are not passed to the matcher
+* literal token trees can be used in the matcher
+
+#### Metavariables
+* captures
+* `$identifier:type`
+	* i.e. `(
 
 ### 2.2 A practical introduction
 
@@ -174,6 +180,6 @@ macro_rules! $name {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjYzNzE2NjM0LDg5MzcyNTIwNywtMTg3NT
-QyODQwNywxMjIxMjA2Mjc2XX0=
+eyJoaXN0b3J5IjpbMjEyMTc1OTEzMSw4OTM3MjUyMDcsLTE4Nz
+U0Mjg0MDcsMTIyMTIwNjI3Nl19
 -->
