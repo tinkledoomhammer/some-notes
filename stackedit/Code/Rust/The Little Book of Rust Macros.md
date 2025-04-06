@@ -141,6 +141,16 @@ use
 the `cargo-expand` plugin is a wrapper around that cli option
 
 ## 2 Declarative macros
+### 2.1 A methodical introduction
+```
+macro_rules! $name {
+	$rule0 ;
+	$rule1 ;
+	...
+	$ruleN ;
+```
+* There must be at least one rule
+* Rules
 ### 2.2 A practical introduction
 
 
@@ -149,6 +159,6 @@ the `cargo-expand` plugin is a wrapper around that cli option
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkzNzI1MjA3LC0xODc1NDI4NDA3LDEyMj
-EyMDYyNzZdfQ==
+eyJoaXN0b3J5IjpbLTEzNjE5NTkxOTAsODkzNzI1MjA3LC0xOD
+c1NDI4NDA3LDEyMjEyMDYyNzZdfQ==
 -->
