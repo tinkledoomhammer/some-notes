@@ -180,7 +180,11 @@ Capture type | Description
 `ident` | an identifier (including keywords)
 `item` | an item i.e. a function, struct, module, impl, etc
 `lifetime` | a lifetime (e.g. `'foo` `'static` etc)
-`literal` | any literal i.
+`literal` | any literal i.e `"Hello"`, `3.14` , etc
+`meta` | a meta item, the things that go in side `#[...]` and `#![...]` attributes
+`pat` | a pattern
+`path` | a path eg `::std::mem::replace` , `transmute::<_,int>`, etc
+`st
 
 ### 2.2 A practical introduction
 
@@ -190,6 +194,6 @@ Capture type | Description
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1NDU5MTE3LDg5MzcyNTIwNywtMTg3NT
+eyJoaXN0b3J5IjpbMTQ1MjU4NDA5LDg5MzcyNTIwNywtMTg3NT
 QyODQwNywxMjIxMjA2Mjc2XX0=
 -->
