@@ -2,10 +2,22 @@
 https://veykril.github.io/tlborm/
 
 ## 1 Syntax Extensions
+### 1.1 Source Analysis
 
+Tokenization
+: The first stage of rust compilation
+: source text is transformed into a sequence of tokens
+
+Tokens
+: Indivisible lexical units i.e. words
+
+Some types of tokens
+1. Identifiers
+2. Literals
+3. Keywords `
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzEzNTYzNDddfQ==
+eyJoaXN0b3J5IjpbMTQ4MDkwNDY1N119
 -->
