@@ -80,8 +80,11 @@ fn main() {
 }
 ```
 
-
+`$arg` is different in form 1 and 2
+* They are a 'simple path' that is either followed by 
+	* an `=` token and a literal expression or
+	* a token tree
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMDIxNjMwN119
+eyJoaXN0b3J5IjpbLTEzNTMxMzk1ODldfQ==
 -->
