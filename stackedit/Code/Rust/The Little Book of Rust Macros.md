@@ -141,6 +141,7 @@ use
 the `cargo-expand` plugin is a wrapper around that cli option
 
 ## 2 Declarative macros
+### 2.2 A practical introduction
 
 
 
@@ -148,5 +149,5 @@ the `cargo-expand` plugin is a wrapper around that cli option
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTAxOTE5NjIsMTIyMTIwNjI3Nl19
+eyJoaXN0b3J5IjpbLTE4NzU0Mjg0MDcsMTIyMTIwNjI3Nl19
 -->
