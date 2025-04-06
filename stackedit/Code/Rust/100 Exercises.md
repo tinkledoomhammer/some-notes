@@ -261,15 +261,21 @@ Default Implementations
 * for example `std::cmp::PartialEq` defines `.ne(...)`
 
 ### 4.4 Derive Macros
-
+Destructuring
+```rust
+let Ticket {
+	title, description, status
+	} = self;
+	//
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0MjM5ODc3MSw0MDMzNjEzMDQsMTEzOD
-QwNDQwMywxNzE5NDY5ODA3LDE5MTg0NjQ2NTAsLTE1MjQ2NTk1
-MDgsNDc4NTY5ODQ4LC0xMDIxNTc2ODgyLDE2MTU4OTY1OSwtMj
-E0MzE0NTQ0MSwtMTU5MTM0NTI5NCwxOTgwMzc2NjI4LDExMzgx
-MDQxMDUsMTAwMzE3OTIyOCwtMTI5MDY5OTczMywtMTA1MDE2Mz
-E1MywyMDExOTc0OTAyLDIwMDM5MjA3NzgsLTM3NjQ1NjE4Miwt
-MTg1OTU0MzY0OF19
+eyJoaXN0b3J5IjpbMTY0NDAxMTMwOSwyMTQyMzk4NzcxLDQwMz
+M2MTMwNCwxMTM4NDA0NDAzLDE3MTk0Njk4MDcsMTkxODQ2NDY1
+MCwtMTUyNDY1OTUwOCw0Nzg1Njk4NDgsLTEwMjE1NzY4ODIsMT
+YxNTg5NjU5LC0yMTQzMTQ1NDQxLC0xNTkxMzQ1Mjk0LDE5ODAz
+NzY2MjgsMTEzODEwNDEwNSwxMDAzMTc5MjI4LC0xMjkwNjk5Nz
+MzLC0xMDUwMTYzMTUzLDIwMTE5NzQ5MDIsMjAwMzkyMDc3OCwt
+Mzc2NDU2MTgyXX0=
 -->
