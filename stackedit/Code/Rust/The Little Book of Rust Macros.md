@@ -194,6 +194,8 @@ Capture type | Description
 
 #### Repetitions
 `$ ( ... ) sep rep`
+* `sep` is optional, and should be something like `,` or `;`
+* `rep` is **required* and can be `?` `*` or `+` meaning 0-1, 
 
 ### 2.2 A practical introduction
 
@@ -203,6 +205,6 @@ Capture type | Description
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM1MzkyNzkzLDg5MzcyNTIwNywtMTg3NT
-QyODQwNywxMjIxMjA2Mjc2XX0=
+eyJoaXN0b3J5IjpbLTgwODkyMDI5Myw3MzUzOTI3OTMsODkzNz
+I1MjA3LC0xODc1NDI4NDA3LDEyMjEyMDYyNzZdfQ==
 -->
