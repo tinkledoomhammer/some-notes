@@ -216,7 +216,14 @@ macro_rules! add{
 : the inside-out count of nested repeats. 0 is the default and corresponds to the inner-most repetition block
 
 `${count(ident)}` and `$count(ident,depth)` 
-: 
+: the number of times `$ident` repeats at that depth
+
+`${index()}` and `$index(depth)`
+: the current repetition index at the specified depth (or depth 0)
+
+`$
+
+
 ### 2.2 A practical introduction
 
 
@@ -225,7 +232,7 @@ macro_rules! add{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2MjQ5NDAxLC0xODEzODg1MTIsNDk1Mj
+eyJoaXN0b3J5IjpbNjUyMTQ5MjAwLC0xODEzODg1MTIsNDk1Mj
 Q3NDgzLDczNTM5Mjc5Myw4OTM3MjUyMDcsLTE4NzU0Mjg0MDcs
 MTIyMTIwNjI3Nl19
 -->
