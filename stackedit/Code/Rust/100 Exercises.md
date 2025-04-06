@@ -272,7 +272,7 @@ let title=self.title; let description=self.desc....
 
 Macros
 : code generators
-: look like functions but their name ends with `!`
+: often look like functions but their name ends with `!`
 
 Derive macro
 : A particular flavour of rust macro specified as an **attribute** on top of a struct
@@ -280,16 +280,18 @@ Derive macro
 ```rust
 #[defive(PartialEq)]
 struct Ticket{...}
+//not PartialEq is implemented for Ticket
 ```
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYzMjI2Mjg0LDE2NDQwMTEzMDksMjE0Mj
-M5ODc3MSw0MDMzNjEzMDQsMTEzODQwNDQwMywxNzE5NDY5ODA3
-LDE5MTg0NjQ2NTAsLTE1MjQ2NTk1MDgsNDc4NTY5ODQ4LC0xMD
-IxNTc2ODgyLDE2MTU4OTY1OSwtMjE0MzE0NTQ0MSwtMTU5MTM0
-NTI5NCwxOTgwMzc2NjI4LDExMzgxMDQxMDUsMTAwMzE3OTIyOC
-wtMTI5MDY5OTczMywtMTA1MDE2MzE1MywyMDExOTc0OTAyLDIw
-MDM5MjA3NzhdfQ==
+eyJoaXN0b3J5IjpbMTE3MDg2MDAyMSwxNjQ0MDExMzA5LDIxND
+IzOTg3NzEsNDAzMzYxMzA0LDExMzg0MDQ0MDMsMTcxOTQ2OTgw
+NywxOTE4NDY0NjUwLC0xNTI0NjU5NTA4LDQ3ODU2OTg0OCwtMT
+AyMTU3Njg4MiwxNjE1ODk2NTksLTIxNDMxNDU0NDEsLTE1OTEz
+NDUyOTQsMTk4MDM3NjYyOCwxMTM4MTA0MTA1LDEwMDMxNzkyMj
+gsLTEyOTA2OTk3MzMsLTEwNTAxNjMxNTMsMjAxMTk3NDkwMiwy
+MDAzOTIwNzc4XX0=
 -->
