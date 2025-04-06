@@ -137,7 +137,8 @@ use
 : when an identifier refers to something existing
 
 ### 1.5 Debugging
-`rustc -Zunpertty=expanded`
+`rustc -Zunpertty=expanded` expands macros
+the `cargo-expand` plugin is a wrapper around that cli option
 
 
 
@@ -146,5 +147,5 @@ use
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODY1NjM1NzksMTIyMTIwNjI3Nl19
+eyJoaXN0b3J5IjpbLTY0Mjg3Mjc3NSwxMjIxMjA2Mjc2XX0=
 -->
