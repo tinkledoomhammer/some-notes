@@ -321,11 +321,21 @@ Type parameter names should be in *upper camel case*
 ### 4.7  `Deref` trait
 aka **deref coercion**
 * defined in `std::ops`
+```rust
+pub trait Deref{
+	type Target;
+	fn deref(&self)-> &Self::Target;
+```
+`Target` is called an associated type. It is a placeholder for a concrete type
+```rust
+impl Deref for String{
+	type Target = str;
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NzEwODc3NywtNzQxNjYzODI2LDk5ND
+eyJoaXN0b3J5IjpbMTUzOTU1MzM1NywtNzQxNjYzODI2LDk5ND
 E4MDczMywxNjQ0MDExMzA5LDIxNDIzOTg3NzEsNDAzMzYxMzA0
 LDExMzg0MDQ0MDMsMTcxOTQ2OTgwNywxOTE4NDY0NjUwLC0xNT
 I0NjU5NTA4LDQ3ODU2OTg0OCwtMTAyMTU3Njg4MiwxNjE1ODk2
