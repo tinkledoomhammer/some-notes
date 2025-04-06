@@ -339,7 +339,17 @@ impl Deref for String{
 * the `Sized` trait is implemented for fixed-size types
 * it is an **auto** trait and a **marker** trait
 
-Dynamically sized type (DST
+Dynamically sized type (DST)
+: a type whose size is not known at compile time
+: references are **fat pointers**
+
+Fat pointer
+: a pointer with metadata
+
+Marker Traits
+: doesn't require any methods to be implemented
+: doesn't define any be
+
 Dynamically sized types like `str`
 
 This allows for implicit conversion
@@ -349,11 +359,11 @@ This allows for implicit conversion
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU1MjM4NDk1LC0xNDIzNDYxMDEwLC04Nj
-kyMzAxOCwtNzQxNjYzODI2LDk5NDE4MDczMywxNjQ0MDExMzA5
-LDIxNDIzOTg3NzEsNDAzMzYxMzA0LDExMzg0MDQ0MDMsMTcxOT
-Q2OTgwNywxOTE4NDY0NjUwLC0xNTI0NjU5NTA4LDQ3ODU2OTg0
-OCwtMTAyMTU3Njg4MiwxNjE1ODk2NTksLTIxNDMxNDU0NDEsLT
-E1OTEzNDUyOTQsMTk4MDM3NjYyOCwxMTM4MTA0MTA1LDEwMDMx
-NzkyMjhdfQ==
+eyJoaXN0b3J5IjpbLTE1MDM3MDcwNTEsLTE0MjM0NjEwMTAsLT
+g2OTIzMDE4LC03NDE2NjM4MjYsOTk0MTgwNzMzLDE2NDQwMTEz
+MDksMjE0MjM5ODc3MSw0MDMzNjEzMDQsMTEzODQwNDQwMywxNz
+E5NDY5ODA3LDE5MTg0NjQ2NTAsLTE1MjQ2NTk1MDgsNDc4NTY5
+ODQ4LC0xMDIxNTc2ODgyLDE2MTU4OTY1OSwtMjE0MzE0NTQ0MS
+wtMTU5MTM0NTI5NCwxOTgwMzc2NjI4LDExMzgxMDQxMDUsMTAw
+MzE3OTIyOF19
 -->
