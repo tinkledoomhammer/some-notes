@@ -196,7 +196,10 @@ Capture type | Description
 `$ ( ... ) sep rep`
 * `sep` is optional, and should be something like `,` or `;` and must not be a delimiter or repetition operator
 * `rep` is a**required* operator and can be `?` `*` or `+` meaning 0-1, >=0, and >=1 repetitions
-* Rep
+* Repetitions can contain nay valid matcher (including nested repetitions)
+* Repetitions in the expansion use the same syntax as in the matcher
+* Repeated metavariables can only be used within repetition expansions
+* multiple metavariables can be repeated, but only if there are the same number of ret
 
 ### 2.2 A practical introduction
 
@@ -206,6 +209,6 @@ Capture type | Description
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDEwOTgwOTMsNzM1MzkyNzkzLDg5Mz
-cyNTIwNywtMTg3NTQyODQwNywxMjIxMjA2Mjc2XX0=
+eyJoaXN0b3J5IjpbMTE3NDkzMDE1MCw3MzUzOTI3OTMsODkzNz
+I1MjA3LC0xODc1NDI4NDA3LDEyMjEyMDYyNzZdfQ==
 -->
