@@ -43,10 +43,14 @@ Token Trees
 1. `# [ $arg ]` i.e. `#[derive(Clone)]`
 2. `# ! [ $arg ]` i.e. `#![allow(dead_code)]`
 3. `$name ! $arg` i.e. `println!("Hi!")`
-4. `$name ! $arg0 $arg1` i.e. `
+4. `$name ! $arg0 $arg1` i.e. `macro_rules! dummy { () => {};}`
+
+The 4th form is not available to macros, and is only used in the `macro_rules!` construct
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MzY4ODExMl19
+eyJoaXN0b3J5IjpbNzQzNjY3MDUzXX0=
 -->
