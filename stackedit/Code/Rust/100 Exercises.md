@@ -354,19 +354,20 @@ Marker Traits
 Auto Traits
 : does not be need to be implemented explicitly; the compiler does so automatically
 
-`Sized` is an auto/m
-
+`Sized` is an auto/marker trait that applies to all previously discussed types except `str`
 
 Dynamically sized types like `str`
 
 This allows for implicit conversion
+
+### 4.9 `From` and `Into`
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMTQ0ODkzMCwtMTQyMzQ2MTAxMCwtOD
+eyJoaXN0b3J5IjpbLTUwNDYyMDIxNywtMTQyMzQ2MTAxMCwtOD
 Y5MjMwMTgsLTc0MTY2MzgyNiw5OTQxODA3MzMsMTY0NDAxMTMw
 OSwyMTQyMzk4NzcxLDQwMzM2MTMwNCwxMTM4NDA0NDAzLDE3MT
 k0Njk4MDcsMTkxODQ2NDY1MCwtMTUyNDY1OTUwOCw0Nzg1Njk4
