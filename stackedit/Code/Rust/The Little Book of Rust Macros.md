@@ -102,10 +102,13 @@ They cannot be used in:
 3. Struct fields
 There is no way to use syntax extensions in any position not on the first list
 
-
+### 1.3 Expansion
+* After Parsing
+* Traverses the AST, locating syntax extension invocations and replacing them with their expansion
+* The result of a syny
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI5Njg4MTkxXX0=
+eyJoaXN0b3J5IjpbLTEwMTY5NzQ0OTFdfQ==
 -->
