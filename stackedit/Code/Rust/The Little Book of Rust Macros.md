@@ -24,10 +24,17 @@ Keywords and Symbols include tokens that ren't actually used in the language (at
 
 `::` is a different than two `:` tokens
 
+Parsing
+: The stage after tokenization
+: generates an AST
 
+Token Trees
+: somewhere between tokens and the AST
 
+* Most tokens are also trees
+	* SPecifically they are leaes
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMjEzNzA0OV19
+eyJoaXN0b3J5IjpbLTQ5OTIwMzU1OF19
 -->
