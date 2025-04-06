@@ -136,6 +136,8 @@ create
 use
 : when an identifier refers to something existing
 
+### 1.5 Debugging
+`rustc -Zunpertty=expanded`
 
 
 
@@ -144,5 +146,5 @@ use
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2OTI1NDUzNywxMjIxMjA2Mjc2XX0=
+eyJoaXN0b3J5IjpbLTEzODY1NjM1NzksMTIyMTIwNjI3Nl19
 -->
