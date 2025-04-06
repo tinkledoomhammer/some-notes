@@ -301,15 +301,21 @@ where
 ```
 Now `print_if_even` will work for types that implement both `IsEven` and `Debug`
 
+Trait bounds can be inlined:
+```rust
+fn print_if_even<T: IsEven + Debug> (n: T{...}
+```
+
+Type parameter names should be in *upper camel case*
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjY5MjU2OCwxNjQ0MDExMzA5LDIxND
-IzOTg3NzEsNDAzMzYxMzA0LDExMzg0MDQ0MDMsMTcxOTQ2OTgw
-NywxOTE4NDY0NjUwLC0xNTI0NjU5NTA4LDQ3ODU2OTg0OCwtMT
-AyMTU3Njg4MiwxNjE1ODk2NTksLTIxNDMxNDU0NDEsLTE1OTEz
-NDUyOTQsMTk4MDM3NjYyOCwxMTM4MTA0MTA1LDEwMDMxNzkyMj
-gsLTEyOTA2OTk3MzMsLTEwNTAxNjMxNTMsMjAxMTk3NDkwMiwy
-MDAzOTIwNzc4XX0=
+eyJoaXN0b3J5IjpbOTk0MTgwNzMzLDE2NDQwMTEzMDksMjE0Mj
+M5ODc3MSw0MDMzNjEzMDQsMTEzODQwNDQwMywxNzE5NDY5ODA3
+LDE5MTg0NjQ2NTAsLTE1MjQ2NTk1MDgsNDc4NTY5ODQ4LC0xMD
+IxNTc2ODgyLDE2MTU4OTY1OSwtMjE0MzE0NTQ0MSwtMTU5MTM0
+NTI5NCwxOTgwMzc2NjI4LDExMzgxMDQxMDUsMTAwMzE3OTIyOC
+wtMTI5MDY5OTczMywtMTA1MDE2MzE1MywyMDExOTc0OTAyLDIw
+MDM5MjA3NzhdfQ==
 -->
