@@ -325,21 +325,24 @@ aka **deref coercion**
 pub trait Deref{
 	type Target;
 	fn deref(&self)-> &Self::Target;
+}
 ```
 `Target` is called an associated type. It is a placeholder for a concrete type
 ```rust
 impl Deref for String{
 	type Target = str;
+	fn deref(&self) -> &str{...}
+}
 ```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzOTU1MzM1NywtNzQxNjYzODI2LDk5ND
-E4MDczMywxNjQ0MDExMzA5LDIxNDIzOTg3NzEsNDAzMzYxMzA0
-LDExMzg0MDQ0MDMsMTcxOTQ2OTgwNywxOTE4NDY0NjUwLC0xNT
-I0NjU5NTA4LDQ3ODU2OTg0OCwtMTAyMTU3Njg4MiwxNjE1ODk2
-NTksLTIxNDMxNDU0NDEsLTE1OTEzNDUyOTQsMTk4MDM3NjYyOC
-wxMTM4MTA0MTA1LDEwMDMxNzkyMjgsLTEyOTA2OTk3MzMsLTEw
-NTAxNjMxNTNdfQ==
+eyJoaXN0b3J5IjpbNjIyOTk1ODgwLC03NDE2NjM4MjYsOTk0MT
+gwNzMzLDE2NDQwMTEzMDksMjE0MjM5ODc3MSw0MDMzNjEzMDQs
+MTEzODQwNDQwMywxNzE5NDY5ODA3LDE5MTg0NjQ2NTAsLTE1Mj
+Q2NTk1MDgsNDc4NTY5ODQ4LC0xMDIxNTc2ODgyLDE2MTU4OTY1
+OSwtMjE0MzE0NTQ0MSwtMTU5MTM0NTI5NCwxOTgwMzc2NjI4LD
+ExMzgxMDQxMDUsMTAwMzE3OTIyOCwtMTI5MDY5OTczMywtMTA1
+MDE2MzE1M119
 -->
