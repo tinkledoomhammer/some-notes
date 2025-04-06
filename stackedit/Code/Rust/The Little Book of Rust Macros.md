@@ -212,7 +212,11 @@ macro_rules! add{
 
 #### Metavariable Expressions
 
+`depth`
+: the inside-out count of nested repeats. 0 is the default and corresponds to the inner-most repetition block
 
+`${count(ident)}` and `$count(ident,depth)` 
+: 
 ### 2.2 A practical introduction
 
 
@@ -221,7 +225,7 @@ macro_rules! add{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTM4ODUxMiw0OTUyNDc0ODMsNzM1Mz
-kyNzkzLDg5MzcyNTIwNywtMTg3NTQyODQwNywxMjIxMjA2Mjc2
-XX0=
+eyJoaXN0b3J5IjpbMTg2MjQ5NDAxLC0xODEzODg1MTIsNDk1Mj
+Q3NDgzLDczNTM5Mjc5Myw4OTM3MjUyMDcsLTE4NzU0Mjg0MDcs
+MTIyMTIwNjI3Nl19
 -->
