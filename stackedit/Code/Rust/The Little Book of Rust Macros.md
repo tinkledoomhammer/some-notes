@@ -112,11 +112,14 @@ There is no way to use syntax extensions in any position not on the first list
 4. zero or more items (at the module scope)
 5. zero or more statements
 
+Expansion is an operation on the AST, not a textual operation
+
+The results of an expansion are AST nodes i.e. adding `(..)` around it doesn't do anything
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MzI1NzczXX0=
+eyJoaXN0b3J5IjpbMTQ4MzQwNTMyNF19
 -->
