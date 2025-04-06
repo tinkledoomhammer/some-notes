@@ -278,7 +278,7 @@ Derive macro
 : A particular flavour of rust macro specified as an **attribute** on top of a struct
 
 ```rust
-#[defive(PartialEq)]
+#[defive(PartialEq, Debug)]
 struct Ticket{...}
 //not PartialEq is implemented for Ticket
 ```
@@ -287,11 +287,11 @@ struct Ticket{...}
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3MDg2MDAyMSwxNjQ0MDExMzA5LDIxND
-IzOTg3NzEsNDAzMzYxMzA0LDExMzg0MDQ0MDMsMTcxOTQ2OTgw
-NywxOTE4NDY0NjUwLC0xNTI0NjU5NTA4LDQ3ODU2OTg0OCwtMT
-AyMTU3Njg4MiwxNjE1ODk2NTksLTIxNDMxNDU0NDEsLTE1OTEz
-NDUyOTQsMTk4MDM3NjYyOCwxMTM4MTA0MTA1LDEwMDMxNzkyMj
-gsLTEyOTA2OTk3MzMsLTEwNTAxNjMxNTMsMjAxMTk3NDkwMiwy
-MDAzOTIwNzc4XX0=
+eyJoaXN0b3J5IjpbLTE3MzA5NDk0NjQsMTY0NDAxMTMwOSwyMT
+QyMzk4NzcxLDQwMzM2MTMwNCwxMTM4NDA0NDAzLDE3MTk0Njk4
+MDcsMTkxODQ2NDY1MCwtMTUyNDY1OTUwOCw0Nzg1Njk4NDgsLT
+EwMjE1NzY4ODIsMTYxNTg5NjU5LC0yMTQzMTQ1NDQxLC0xNTkx
+MzQ1Mjk0LDE5ODAzNzY2MjgsMTEzODEwNDEwNSwxMDAzMTc5Mj
+I4LC0xMjkwNjk5NzMzLC0xMDUwMTYzMTUzLDIwMTE5NzQ5MDIs
+MjAwMzkyMDc3OF19
 -->
