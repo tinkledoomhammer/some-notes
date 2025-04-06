@@ -32,9 +32,12 @@ Token Trees
 : somewhere between tokens and the AST
 
 * Most tokens are also trees
-	* SPecifically they are leaes
+	* Specifically they are leaves
+* Most leaves are tokens
+* The only basic tokens that are not tokens are **grrouping** tokens `(...)` `[...]` and `{...}`
+* 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5OTIwMzU1OF19
+eyJoaXN0b3J5IjpbNjUyMDE0NjY5XX0=
 -->
