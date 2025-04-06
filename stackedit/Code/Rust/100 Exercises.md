@@ -310,13 +310,16 @@ Type parameter names should be in *upper camel case*
 
 ### 4.6 String Slices
 
+`&str`
+: A view of string data
+: stores a pointer and length on the stack
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MTY2MzgyNiw5OTQxODA3MzMsMTY0ND
-AxMTMwOSwyMTQyMzk4NzcxLDQwMzM2MTMwNCwxMTM4NDA0NDAz
-LDE3MTk0Njk4MDcsMTkxODQ2NDY1MCwtMTUyNDY1OTUwOCw0Nz
-g1Njk4NDgsLTEwMjE1NzY4ODIsMTYxNTg5NjU5LC0yMTQzMTQ1
-NDQxLC0xNTkxMzQ1Mjk0LDE5ODAzNzY2MjgsMTEzODEwNDEwNS
-wxMDAzMTc5MjI4LC0xMjkwNjk5NzMzLC0xMDUwMTYzMTUzLDIw
-MTE5NzQ5MDJdfQ==
+eyJoaXN0b3J5IjpbLTEzMjI1Nzg4OCwtNzQxNjYzODI2LDk5ND
+E4MDczMywxNjQ0MDExMzA5LDIxNDIzOTg3NzEsNDAzMzYxMzA0
+LDExMzg0MDQ0MDMsMTcxOTQ2OTgwNywxOTE4NDY0NjUwLC0xNT
+I0NjU5NTA4LDQ3ODU2OTg0OCwtMTAyMTU3Njg4MiwxNjE1ODk2
+NTksLTIxNDMxNDU0NDEsLTE1OTEzNDUyOTQsMTk4MDM3NjYyOC
+wxMTM4MTA0MTA1LDEwMDMxNzkyMjgsLTEyOTA2OTk3MzMsLTEw
+NTAxNjMxNTNdfQ==
 -->
