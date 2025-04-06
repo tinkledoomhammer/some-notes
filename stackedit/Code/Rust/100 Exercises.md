@@ -257,16 +257,17 @@ Operator Overloading
 `<` `>` `<=` `>=` are `PartialOrd` from `std::cmp`
 
 Default Implementations
-
+* specified in the trait definition by providing a body for the method
+* for example `std::cmp::PartialEq` defines `.ne(...)`
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzODQwNDQwMywxNzE5NDY5ODA3LDE5MT
-g0NjQ2NTAsLTE1MjQ2NTk1MDgsNDc4NTY5ODQ4LC0xMDIxNTc2
-ODgyLDE2MTU4OTY1OSwtMjE0MzE0NTQ0MSwtMTU5MTM0NTI5NC
-wxOTgwMzc2NjI4LDExMzgxMDQxMDUsMTAwMzE3OTIyOCwtMTI5
-MDY5OTczMywtMTA1MDE2MzE1MywyMDExOTc0OTAyLDIwMDM5Mj
-A3NzgsLTM3NjQ1NjE4MiwtMTg1OTU0MzY0OCwxOTkwMTc2OTky
-LC02NTUwMjU3OTJdfQ==
+eyJoaXN0b3J5IjpbNDAzMzYxMzA0LDExMzg0MDQ0MDMsMTcxOT
+Q2OTgwNywxOTE4NDY0NjUwLC0xNTI0NjU5NTA4LDQ3ODU2OTg0
+OCwtMTAyMTU3Njg4MiwxNjE1ODk2NTksLTIxNDMxNDU0NDEsLT
+E1OTEzNDUyOTQsMTk4MDM3NjYyOCwxMTM4MTA0MTA1LDEwMDMx
+NzkyMjgsLTEyOTA2OTk3MzMsLTEwNTAxNjMxNTMsMjAxMTk3ND
+kwMiwyMDAzOTIwNzc4LC0zNzY0NTYxODIsLTE4NTk1NDM2NDgs
+MTk5MDE3Njk5Ml19
 -->
