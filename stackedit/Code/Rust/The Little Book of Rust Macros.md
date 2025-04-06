@@ -47,10 +47,12 @@ Token Trees
 
 The 4th form is not available to macros, and is only used in the `macro_rules!` construct
 
+`$arg`, the argument of a syntax extension invocation is a single token tree
+* i.e. a single non-leaf token tree
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQzNjY3MDUzXX0=
+eyJoaXN0b3J5IjpbMTA0Mjk2MjU4OV19
 -->
