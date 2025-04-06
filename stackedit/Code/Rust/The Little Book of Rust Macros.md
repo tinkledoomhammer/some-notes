@@ -40,10 +40,13 @@ Token Trees
 ### 1.2 Macros in the AST
 * Macros are processed **after** construction of the AST
 * There are several "syntax extension" forms that are part of rust's syntax:
-1. `# [ $arg ]` i.e. `#[derive(cl
+1. `# [ $arg ]` i.e. `#[derive(Clone)]`
+2. `# ! [ $arg ]` i.e. `#![allow(dead_code)]`
+3. `$name ! $arg` i.e. `println!("Hi!")`
+4. `$name ! $arg0 $arg1` i.e. `
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyNzgyNzk4N119
+eyJoaXN0b3J5IjpbMTI1MzY4ODExMl19
 -->
