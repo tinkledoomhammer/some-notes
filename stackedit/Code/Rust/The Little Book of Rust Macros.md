@@ -140,6 +140,7 @@ use
 `rustc -Zunpertty=expanded` expands macros
 the `cargo-expand` plugin is a wrapper around that cli option
 
+## 2 Declarative macros
 
 
 
@@ -147,5 +148,5 @@ the `cargo-expand` plugin is a wrapper around that cli option
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0Mjg3Mjc3NSwxMjIxMjA2Mjc2XX0=
+eyJoaXN0b3J5IjpbLTE5NTAxOTE5NjIsMTIyMTIwNjI3Nl19
 -->
