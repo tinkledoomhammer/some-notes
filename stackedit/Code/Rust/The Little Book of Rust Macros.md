@@ -137,7 +137,7 @@ use
 : when an identifier refers to something existing
 
 ### 1.5 Debugging
-`rustc +nightly -Zunpertty=expanded` expands macros
+`rustc +nightly -Zunpretty=expanded` expands macros
 the `cargo-expand` plugin is a wrapper around that cli option
 
 ## 2 Declarative macros
@@ -149,6 +149,6 @@ the `cargo-expand` plugin is a wrapper around that cli option
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MjU3NTEzOSwtMTg3NTQyODQwNywxMj
-IxMjA2Mjc2XX0=
+eyJoaXN0b3J5IjpbODkzNzI1MjA3LC0xODc1NDI4NDA3LDEyMj
+EyMDYyNzZdfQ==
 -->
