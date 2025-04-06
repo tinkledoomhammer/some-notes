@@ -128,7 +128,15 @@ Hygiene
 * Not all syntax extensions are fully hugenic
 * Hygiene mainly affects identifiers and paths emitted by syntax extensions
 * For identifiers created by syntax extensions hygiene means that the symbol cannot be accessed by the environment
-* For identifiers used in the extens
+* For identifiers used in the extension it means they canno reference something defined outside of the extension
+
+create
+: when an identifier introduces something new under a name
+
+use
+: when an identifier refers to something existing
+
+
 
 
 
@@ -136,5 +144,5 @@ Hygiene
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ2MDEyMjkxLDEyMjEyMDYyNzZdfQ==
+eyJoaXN0b3J5IjpbMTc2OTI1NDUzNywxMjIxMjA2Mjc2XX0=
 -->
