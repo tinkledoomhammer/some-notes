@@ -184,7 +184,10 @@ Capture type | Description
 `meta` | a meta item, the things that go in side `#[...]` and `#![...]` attributes
 `pat` | a pattern
 `path` | a path eg `::std::mem::replace` , `transmute::<_,int>`, etc
-`st
+`stmt` | a statement
+`tt` | a single token tree
+`ty` | a type
+`vis` | a possible empty visibility qualifier i.e. `pub` `pub(in crate` etc
 
 ### 2.2 A practical introduction
 
@@ -194,6 +197,6 @@ Capture type | Description
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MjU4NDA5LDg5MzcyNTIwNywtMTg3NT
+eyJoaXN0b3J5IjpbNzQzNDQ3ODMxLDg5MzcyNTIwNywtMTg3NT
 QyODQwNywxMjIxMjA2Mjc2XX0=
 -->
