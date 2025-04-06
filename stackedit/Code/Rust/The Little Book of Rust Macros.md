@@ -155,7 +155,9 @@ macro_rules! $name {
 * The braces `{}` could instead be parens `()` or brackets `[]`
 * the format for rules is `($matcher) => {$expansion}`
 	* the parens could also be brackets `[]` or braces `{}`
-	* by convention, 
+	* by convention, parens are used for the matcher and braces for the expansion
+	* the expansion is also called the *transcriber*
+####
 ### 2.2 A practical introduction
 
 
@@ -164,6 +166,6 @@ macro_rules! $name {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0MzQ3MTAzNCw4OTM3MjUyMDcsLTE4Nz
+eyJoaXN0b3J5IjpbMTQ0NzA0NjEwNiw4OTM3MjUyMDcsLTE4Nz
 U0Mjg0MDcsMTIyMTIwNjI3Nl19
 -->
