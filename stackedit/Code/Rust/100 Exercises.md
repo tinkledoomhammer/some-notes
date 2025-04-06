@@ -382,8 +382,9 @@ Negative trait bounds
 ```rust
 pub struct Foo<T: ?Sized> {...}
 // T doesn't have to be 'Sized'
-
 ```
+`Sized` is the only trait that can be used with negative bound
+
 Dual traits
 : Pairs of traits where implementing one implements the other
 ```rust
@@ -399,11 +400,11 @@ where
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTM4ODc3MjcsLTE0MjM0NjEwMTAsLT
-g2OTIzMDE4LC03NDE2NjM4MjYsOTk0MTgwNzMzLDE2NDQwMTEz
-MDksMjE0MjM5ODc3MSw0MDMzNjEzMDQsMTEzODQwNDQwMywxNz
-E5NDY5ODA3LDE5MTg0NjQ2NTAsLTE1MjQ2NTk1MDgsNDc4NTY5
-ODQ4LC0xMDIxNTc2ODgyLDE2MTU4OTY1OSwtMjE0MzE0NTQ0MS
-wtMTU5MTM0NTI5NCwxOTgwMzc2NjI4LDExMzgxMDQxMDUsMTAw
-MzE3OTIyOF19
+eyJoaXN0b3J5IjpbLTE4MDcxMjA4NywtMTQyMzQ2MTAxMCwtOD
+Y5MjMwMTgsLTc0MTY2MzgyNiw5OTQxODA3MzMsMTY0NDAxMTMw
+OSwyMTQyMzk4NzcxLDQwMzM2MTMwNCwxMTM4NDA0NDAzLDE3MT
+k0Njk4MDcsMTkxODQ2NDY1MCwtMTUyNDY1OTUwOCw0Nzg1Njk4
+NDgsLTEwMjE1NzY4ODIsMTYxNTg5NjU5LC0yMTQzMTQ1NDQxLC
+0xNTkxMzQ1Mjk0LDE5ODAzNzY2MjgsMTEzODEwNDEwNSwxMDAz
+MTc5MjI4XX0=
 -->
