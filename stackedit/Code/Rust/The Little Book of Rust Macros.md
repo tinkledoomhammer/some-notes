@@ -222,7 +222,13 @@ macro_rules! add{
 : the current repetition index at the specified depth (or depth 0)
 
 `${length()}` and `${length(depth)}`
-* 
+: the number of times the repetition at `depth` will repeat for
+
+`${ignore(ident)}`
+: binds `$ident` for repetition but expands to nothing
+
+`$$`
+
 
 
 ### 2.2 A practical introduction
@@ -233,7 +239,7 @@ macro_rules! add{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE0NTkyMDU4LC0xODEzODg1MTIsNDk1Mj
+eyJoaXN0b3J5IjpbMjk3NjIzNTcyLC0xODEzODg1MTIsNDk1Mj
 Q3NDgzLDczNTM5Mjc5Myw4OTM3MjUyMDcsLTE4NzU0Mjg0MDcs
 MTIyMTIwNjI3Nl19
 -->
