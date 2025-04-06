@@ -35,9 +35,10 @@ Token Trees
 	* Specifically they are leaves
 * Most leaves are tokens
 * The only basic tokens that are not tokens are **grrouping** tokens `(...)` `[...]` and `{...}`
+* The AST is not actually composed of token trees. Each token gets its own tree (ish)
 * 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjUyMDE0NjY5XX0=
+eyJoaXN0b3J5IjpbNDY4NTY2MzAxXX0=
 -->
