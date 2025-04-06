@@ -90,10 +90,22 @@ Important Takeaways
 3. THe input ot every `!` macro invocation (form 3) is a single non-leaf token tree
 4. Syntax extensions are parsed as part of the AST
 
-4 above means that macro invocations can only appear 
+4 above means that macro invocations can only appear in places where they are specifcally supported such as:
+1. Patterns
+2. Statements
+3. Expressions
+4. Items (this includes `impl` items)
+5. Types
+They cannot be used in:
+1. Identifiers
+2. Match arms
+3. Struct fields
+There is no way to use syntax extensions in any position not on the first list
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDUwNDc5NzddfQ==
+eyJoaXN0b3J5IjpbNTI5Njg4MTkxXX0=
 -->
