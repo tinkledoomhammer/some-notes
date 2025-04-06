@@ -170,7 +170,10 @@ macro_rules! $name {
 #### Metavariables
 * captures
 * `$identifier:type`
-	* i.e. `(
+	* i.e. `($someCode:block)` will match a block of code in braces and alias it with `someCode`
+	* `($e:expr) =>{...};` will match an expression and call it `e`
+
+ca
 
 ### 2.2 A practical introduction
 
@@ -180,6 +183,6 @@ macro_rules! $name {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMTc1OTEzMSw4OTM3MjUyMDcsLTE4Nz
+eyJoaXN0b3J5IjpbLTYyNDYzOTE2OSw4OTM3MjUyMDcsLTE4Nz
 U0Mjg0MDcsMTIyMTIwNjI3Nl19
 -->
