@@ -252,16 +252,15 @@ Operator Overloading
 
 * Operatos are traits
 
-Operator | Trait
---|--
- + | Add
- - | Sub
- *
+`+ - * / %` are  `Add Sub Mul Div Rem`
+`==` and `!=` are `PartialEq`
+`<` `>` `<=` `>=`
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUxNDIwMTg0LDE3MTk0Njk4MDcsMTkxOD
+eyJoaXN0b3J5IjpbLTY3MjczNDk3LDE3MTk0Njk4MDcsMTkxOD
 Q2NDY1MCwtMTUyNDY1OTUwOCw0Nzg1Njk4NDgsLTEwMjE1NzY4
 ODIsMTYxNTg5NjU5LC0yMTQzMTQ1NDQxLC0xNTkxMzQ1Mjk0LD
 E5ODAzNzY2MjgsMTEzODEwNDEwNSwxMDAzMTc5MjI4LC0xMjkw
