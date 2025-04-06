@@ -199,7 +199,8 @@ Capture type | Description
 * Repetitions can contain nay valid matcher (including nested repetitions)
 * Repetitions in the expansion use the same syntax as in the matcher
 * Repeated metavariables can only be used within repetition expansions
-* multiple metavariables can be repeated, but only if there are the same number of repetitions of each
+* multiple metavariables can be repeated within a single repetition, but only if there are the same number of repetitions of each
+* when repetitions are nested, all captures at a given m
 
 ```rust
 macro_rules! add{
@@ -217,7 +218,7 @@ macro_rules! add{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNjA3MTk3OCw0OTUyNDc0ODMsNzM1Mz
-kyNzkzLDg5MzcyNTIwNywtMTg3NTQyODQwNywxMjIxMjA2Mjc2
-XX0=
+eyJoaXN0b3J5IjpbLTE0MDQyNTYzNjAsNDk1MjQ3NDgzLDczNT
+M5Mjc5Myw4OTM3MjUyMDcsLTE4NzU0Mjg0MDcsMTIyMTIwNjI3
+Nl19
 -->
