@@ -201,6 +201,14 @@ Capture type | Description
 * Repeated metavariables can only be used within repetition expansions
 * multiple metavariables can be repeated, but only if there are the same number of repetitions of each
 
+```rust
+macro_rules! add{
+	($($e:expr)+) => {
+		{ 0 $( + $e)*}
+	}
+}
+```
+
 ### 2.2 A practical introduction
 
 
@@ -209,6 +217,7 @@ Capture type | Description
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk1MjQ3NDgzLDczNTM5Mjc5Myw4OTM3Mj
-UyMDcsLTE4NzU0Mjg0MDcsMTIyMTIwNjI3Nl19
+eyJoaXN0b3J5IjpbLTMyNjA3MTk3OCw0OTUyNDc0ODMsNzM1Mz
+kyNzkzLDg5MzcyNTIwNywtMTg3NTQyODQwNywxMjIxMjA2Mjc2
+XX0=
 -->
