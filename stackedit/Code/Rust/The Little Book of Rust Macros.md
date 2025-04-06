@@ -189,7 +189,11 @@ Capture type | Description
 `ty` | a type
 `vis` | a possible empty visibility qualifier i.e. `pub` `pub(in crate` etc
 
-* There is also a special metavariable called `$crate`
+`$crate`
+: a special metavariable that refers to the current crate
+
+#### Repetitions
+`$ ( ... ) sep rep`
 
 ### 2.2 A practical introduction
 
@@ -199,6 +203,6 @@ Capture type | Description
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NTg2NDI0OSw4OTM3MjUyMDcsLTE4Nz
-U0Mjg0MDcsMTIyMTIwNjI3Nl19
+eyJoaXN0b3J5IjpbNzM1MzkyNzkzLDg5MzcyNTIwNywtMTg3NT
+QyODQwNywxMjIxMjA2Mjc2XX0=
 -->
