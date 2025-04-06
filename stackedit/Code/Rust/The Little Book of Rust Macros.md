@@ -160,6 +160,8 @@ macro_rules! $name {
 * Invocations can also use any type of parens but invocations with `{}` and `();` are always parsed as an item (note the `;`
 
 #### Matching
+* the interpreter goes through each rule one at a time
+* A match must match the entire token tree
 
 ### 2.2 A practical introduction
 
@@ -169,6 +171,6 @@ macro_rules! $name {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MDYzMzY2MSw4OTM3MjUyMDcsLTE4Nz
-U0Mjg0MDcsMTIyMTIwNjI3Nl19
+eyJoaXN0b3J5IjpbLTE5NjQ3Njk2MDQsODkzNzI1MjA3LC0xOD
+c1NDI4NDA3LDEyMjEyMDYyNzZdfQ==
 -->
