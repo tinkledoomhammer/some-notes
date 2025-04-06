@@ -162,6 +162,9 @@ macro_rules! $name {
 #### Matching
 * the interpreter goes through each rule one at a time
 * A match must match the entire token tree
+* If the input matches a matcher, the `expansion` is substituted
+* If no rule matches, an error occurs
+* The specific grouping tokens are not passed to the matcher
 
 ### 2.2 A practical introduction
 
@@ -171,6 +174,6 @@ macro_rules! $name {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjQ3Njk2MDQsODkzNzI1MjA3LC0xOD
-c1NDI4NDA3LDEyMjEyMDYyNzZdfQ==
+eyJoaXN0b3J5IjpbMjYzNzE2NjM0LDg5MzcyNTIwNywtMTg3NT
+QyODQwNywxMjIxMjA2Mjc2XX0=
 -->
