@@ -248,11 +248,20 @@ Orphan Rule
 ### 4.3 Operator overloading
 
 Operator Overloading
-: The ability to define custom behavior for operatos like `+`, `-`, `*`, `/`, `==`, `!=`, etc
+: The ability to define custom behavior for operators like `+`, `-`, `*`, `/`, `==`, `!=`, etc
+
+* Operatos are traits
+
+Operator | Trait
+--|--
+ + | Add
+ - | Sub
+ *
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0MDM4ODk3LDE3MTk0Njk4MDcsMTkxOD
+eyJoaXN0b3J5IjpbNTUxNDIwMTg0LDE3MTk0Njk4MDcsMTkxOD
 Q2NDY1MCwtMTUyNDY1OTUwOCw0Nzg1Njk4NDgsLTEwMjE1NzY4
 ODIsMTYxNTg5NjU5LC0yMTQzMTQ1NDQxLC0xNTkxMzQ1Mjk0LD
 E5ODAzNzY2MjgsMTEzODEwNDEwNSwxMDAzMTc5MjI4LC0xMjkw
