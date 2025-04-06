@@ -86,10 +86,14 @@ fn main() {
 	* a token tree
 Important Takeaways
 1. There are multiple kinds of syntax extensions in Rust
-2. Just seeing something inthe form `
+2. Just seeing something inthe form `$name! $arg` doesn't tell what kind of syntax extension it is
+3. THe input ot every `!` macro invocation (form 3) is a single non-leaf token tree
+4. Syntax extensions are parsed as part of the AST
+
+4 above means that macro invocations can only appear 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjA3MzQwNl19
+eyJoaXN0b3J5IjpbLTEyNDUwNDc5NzddfQ==
 -->
