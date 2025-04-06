@@ -173,7 +173,14 @@ macro_rules! $name {
 	* i.e. `($someCode:block)` will match a block of code in braces and alias it with `someCode`
 	* `($e:expr) =>{...};` will match an expression and call it `e`
 
-ca
+Capture type | Description
+--|--
+`block` | a block of statements and/or an expression, surrounded by braces
+`expr` | an expression
+`ident` | an identifier (including keywords)
+`item` | an item i.e. a function, struct, module, impl, etc
+`lifetime` | a lifetime (e.g. `'foo` `'static` etc)
+`literal` | any literal i.
 
 ### 2.2 A practical introduction
 
@@ -183,6 +190,6 @@ ca
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNDYzOTE2OSw4OTM3MjUyMDcsLTE4Nz
-U0Mjg0MDcsMTIyMTIwNjI3Nl19
+eyJoaXN0b3J5IjpbLTg1NDU5MTE3LDg5MzcyNTIwNywtMTg3NT
+QyODQwNywxMjIxMjA2Mjc2XX0=
 -->
