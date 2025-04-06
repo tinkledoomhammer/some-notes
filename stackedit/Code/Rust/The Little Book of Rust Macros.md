@@ -117,10 +117,16 @@ Expansion is an operation on the AST, not a textual operation
 * The results of an expansion are AST nodes i.e. adding `(..)` around it doesn't do anything
 * Syntax extensions cannot expand into incomplete of syntactically invalid constructs
 * The expansion happens in passes
+* The passes are limited to 128 recursions.
+	* `#![recursion_limit="..."]` attribute applied to a crate can change the limit
+
+### 1.4 Hygiene
+
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkzNDQ5MTI5XX0=
+eyJoaXN0b3J5IjpbMTIyMTIwNjI3Nl19
 -->
