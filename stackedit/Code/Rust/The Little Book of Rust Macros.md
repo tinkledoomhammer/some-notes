@@ -125,8 +125,8 @@ Hygiene
 : The ability for a macro to work in its own syntax context, not afecting nor being affected by its surroundings
 : The macro can be invoked anywhere without interfering with its surrounding context
 
-Not all syntax extensions are fully hugenic
-Hygeine mainly affects identifiers and paths emitted by syntax extensions
+* Not all syntax extensions are fully hugenic
+* Hygeine mainly affects identifiers and paths emitted by syntax extensions
 
 
 
@@ -134,5 +134,5 @@ Hygeine mainly affects identifiers and paths emitted by syntax extensions
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNTEwNDIyOCwxMjIxMjA2Mjc2XX0=
+eyJoaXN0b3J5IjpbLTEzNzc5ODEyNzYsMTIyMTIwNjI3Nl19
 -->
