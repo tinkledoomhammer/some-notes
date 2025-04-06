@@ -126,7 +126,9 @@ Hygiene
 : The macro can be invoked anywhere without interfering with its surrounding context
 
 * Not all syntax extensions are fully hugenic
-* Hygeine mainly affects identifiers and paths emitted by syntax extensions
+* Hygiene mainly affects identifiers and paths emitted by syntax extensions
+* For identifiers created by syntax extensions hygiene means that the symbol cannot be accessed by the environment
+* For identifiers used in the extens
 
 
 
@@ -134,5 +136,5 @@ Hygiene
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzc5ODEyNzYsMTIyMTIwNjI3Nl19
+eyJoaXN0b3J5IjpbNTQ2MDEyMjkxLDEyMjEyMDYyNzZdfQ==
 -->
