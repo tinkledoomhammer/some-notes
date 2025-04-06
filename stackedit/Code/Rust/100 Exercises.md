@@ -335,10 +335,14 @@ impl Deref for String{
 }
 ```
 
+This allows for implicit conversion
+
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIyOTk1ODgwLC03NDE2NjM4MjYsOTk0MT
+eyJoaXN0b3J5IjpbLTg2OTIzMDE4LC03NDE2NjM4MjYsOTk0MT
 gwNzMzLDE2NDQwMTEzMDksMjE0MjM5ODc3MSw0MDMzNjEzMDQs
 MTEzODQwNDQwMywxNzE5NDY5ODA3LDE5MTg0NjQ2NTAsLTE1Mj
 Q2NTk1MDgsNDc4NTY5ODQ4LC0xMDIxNTc2ODgyLDE2MTU4OTY1
