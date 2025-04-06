@@ -266,16 +266,21 @@ Destructuring
 let Ticket {
 	title, description, status
 	} = self;
-	//
+// equivalent to
+let title=self.title; let description=self.desc....
 ```
+
+Macros
+:
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0NDAxMTMwOSwyMTQyMzk4NzcxLDQwMz
-M2MTMwNCwxMTM4NDA0NDAzLDE3MTk0Njk4MDcsMTkxODQ2NDY1
-MCwtMTUyNDY1OTUwOCw0Nzg1Njk4NDgsLTEwMjE1NzY4ODIsMT
-YxNTg5NjU5LC0yMTQzMTQ1NDQxLC0xNTkxMzQ1Mjk0LDE5ODAz
-NzY2MjgsMTEzODEwNDEwNSwxMDAzMTc5MjI4LC0xMjkwNjk5Nz
-MzLC0xMDUwMTYzMTUzLDIwMTE5NzQ5MDIsMjAwMzkyMDc3OCwt
-Mzc2NDU2MTgyXX0=
+eyJoaXN0b3J5IjpbMTMzNjkxMzYyOSwxNjQ0MDExMzA5LDIxND
+IzOTg3NzEsNDAzMzYxMzA0LDExMzg0MDQ0MDMsMTcxOTQ2OTgw
+NywxOTE4NDY0NjUwLC0xNTI0NjU5NTA4LDQ3ODU2OTg0OCwtMT
+AyMTU3Njg4MiwxNjE1ODk2NTksLTIxNDMxNDU0NDEsLTE1OTEz
+NDUyOTQsMTk4MDM3NjYyOCwxMTM4MTA0MTA1LDEwMDMxNzkyMj
+gsLTEyOTA2OTk3MzMsLTEwNTAxNjMxNTMsMjAxMTk3NDkwMiwy
+MDAzOTIwNzc4XX0=
 -->
