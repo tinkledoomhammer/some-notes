@@ -315,15 +315,16 @@ Type parameter names should be in *upper camel case*
 * stores a pointer and length on the stack
 * does not own the data it points to
 * preferred over `&String`
-* `String` has a heap allocated datum 
+* `String` has and owns exactly one heap allocated section of memory
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjkyNTg1NzM0LC03NDE2NjM4MjYsOTk0MT
-gwNzMzLDE2NDQwMTEzMDksMjE0MjM5ODc3MSw0MDMzNjEzMDQs
-MTEzODQwNDQwMywxNzE5NDY5ODA3LDE5MTg0NjQ2NTAsLTE1Mj
-Q2NTk1MDgsNDc4NTY5ODQ4LC0xMDIxNTc2ODgyLDE2MTU4OTY1
-OSwtMjE0MzE0NTQ0MSwtMTU5MTM0NTI5NCwxOTgwMzc2NjI4LD
-ExMzgxMDQxMDUsMTAwMzE3OTIyOCwtMTI5MDY5OTczMywtMTA1
-MDE2MzE1M119
+eyJoaXN0b3J5IjpbLTIwNzE5ODI0MzksLTc0MTY2MzgyNiw5OT
+QxODA3MzMsMTY0NDAxMTMwOSwyMTQyMzk4NzcxLDQwMzM2MTMw
+NCwxMTM4NDA0NDAzLDE3MTk0Njk4MDcsMTkxODQ2NDY1MCwtMT
+UyNDY1OTUwOCw0Nzg1Njk4NDgsLTEwMjE1NzY4ODIsMTYxNTg5
+NjU5LC0yMTQzMTQ1NDQxLC0xNTkxMzQ1Mjk0LDE5ODAzNzY2Mj
+gsMTEzODEwNDEwNSwxMDAzMTc5MjI4LC0xMjkwNjk5NzMzLC0x
+MDUwMTYzMTUzXX0=
 -->
