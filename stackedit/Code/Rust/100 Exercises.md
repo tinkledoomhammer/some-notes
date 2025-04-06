@@ -363,16 +363,26 @@ This allows for implicit conversion
 ### 4.9 `From` and `Into`
 `std::convert` defines 2 traits for **infallible conversions** : `From` and `Into`
 
+```rust
+pub trait From<T>: Sized{
+	fn from(value: T) -> Self;
+}
+
+pub trait Into<T>: Sized{
+	fn into(self) -> T;
+}
+```
+The syntax above 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3MzY2NzM5LC0xNDIzNDYxMDEwLC04Nj
-kyMzAxOCwtNzQxNjYzODI2LDk5NDE4MDczMywxNjQ0MDExMzA5
-LDIxNDIzOTg3NzEsNDAzMzYxMzA0LDExMzg0MDQ0MDMsMTcxOT
-Q2OTgwNywxOTE4NDY0NjUwLC0xNTI0NjU5NTA4LDQ3ODU2OTg0
-OCwtMTAyMTU3Njg4MiwxNjE1ODk2NTksLTIxNDMxNDU0NDEsLT
-E1OTEzNDUyOTQsMTk4MDM3NjYyOCwxMTM4MTA0MTA1LDEwMDMx
-NzkyMjhdfQ==
+eyJoaXN0b3J5IjpbMTQyNjg0MDEwMSwtMTQyMzQ2MTAxMCwtOD
+Y5MjMwMTgsLTc0MTY2MzgyNiw5OTQxODA3MzMsMTY0NDAxMTMw
+OSwyMTQyMzk4NzcxLDQwMzM2MTMwNCwxMTM4NDA0NDAzLDE3MT
+k0Njk4MDcsMTkxODQ2NDY1MCwtMTUyNDY1OTUwOCw0Nzg1Njk4
+NDgsLTEwMjE1NzY4ODIsMTYxNTg5NjU5LC0yMTQzMTQ1NDQxLC
+0xNTkxMzQ1Mjk0LDE5ODAzNzY2MjgsMTEzODEwNDEwNSwxMDAz
+MTc5MjI4XX0=
 -->
