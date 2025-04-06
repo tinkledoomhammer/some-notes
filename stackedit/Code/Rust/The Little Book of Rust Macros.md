@@ -47,7 +47,7 @@ Token Trees
 
 The 4th form is not available to macros, and is only used in the `macro_rules!` construct
 
-`$arg` in form 3 and 4, the argument of a syntax extension invocation is a single token tree
+`$arg` in form 3, the argument of a syntax extension invocation is a single token tree
 * i.e. a single non-leaf token tree
 ```rust
 bitflags! {
@@ -84,7 +84,12 @@ fn main() {
 * They are a 'simple path' that is either followed by 
 	* an `=` token and a literal expression or
 	* a token tree
+Important Takeaways
+1. There are multiple kinds of syntax extensions in Rust
+2. Just seeing something inthe form `
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTMxMzk1ODldfQ==
+eyJoaXN0b3J5IjpbLTEyNjA3MzQwNl19
 -->
