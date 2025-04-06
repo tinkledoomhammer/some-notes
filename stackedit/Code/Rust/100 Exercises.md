@@ -313,13 +313,16 @@ Type parameter names should be in *upper camel case*
 `&str`
 : A view of string data
 : stores a pointer and length on the stack
+: does not own the data it points to
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjI1Nzg4OCwtNzQxNjYzODI2LDk5ND
-E4MDczMywxNjQ0MDExMzA5LDIxNDIzOTg3NzEsNDAzMzYxMzA0
-LDExMzg0MDQ0MDMsMTcxOTQ2OTgwNywxOTE4NDY0NjUwLC0xNT
-I0NjU5NTA4LDQ3ODU2OTg0OCwtMTAyMTU3Njg4MiwxNjE1ODk2
-NTksLTIxNDMxNDU0NDEsLTE1OTEzNDUyOTQsMTk4MDM3NjYyOC
-wxMTM4MTA0MTA1LDEwMDMxNzkyMjgsLTEyOTA2OTk3MzMsLTEw
-NTAxNjMxNTNdfQ==
+eyJoaXN0b3J5IjpbLTIwMDM0OTkwMzIsLTc0MTY2MzgyNiw5OT
+QxODA3MzMsMTY0NDAxMTMwOSwyMTQyMzk4NzcxLDQwMzM2MTMw
+NCwxMTM4NDA0NDAzLDE3MTk0Njk4MDcsMTkxODQ2NDY1MCwtMT
+UyNDY1OTUwOCw0Nzg1Njk4NDgsLTEwMjE1NzY4ODIsMTYxNTg5
+NjU5LC0yMTQzMTQ1NDQxLC0xNTkxMzQ1Mjk0LDE5ODAzNzY2Mj
+gsMTEzODEwNDEwNSwxMDAzMTc5MjI4LC0xMjkwNjk5NzMzLC0x
+MDUwMTYzMTUzXX0=
 -->
