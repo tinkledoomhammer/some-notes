@@ -231,9 +231,6 @@ macro_rules! add{
 : escapes / expands to `$`
 
 
-
-
-
 ### 2.2 A practical introduction
 
 
@@ -242,7 +239,7 @@ macro_rules! add{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjg3MDE0NzcsLTE4MTM4ODUxMiw0OT
+eyJoaXN0b3J5IjpbLTE0ODE4NzA4OTUsLTE4MTM4ODUxMiw0OT
 UyNDc0ODMsNzM1MzkyNzkzLDg5MzcyNTIwNywtMTg3NTQyODQw
 NywxMjIxMjA2Mjc2XX0=
 -->
