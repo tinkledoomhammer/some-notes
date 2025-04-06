@@ -105,10 +105,18 @@ There is no way to use syntax extensions in any position not on the first list
 ### 1.3 Expansion
 * After Parsing
 * Traverses the AST, locating syntax extension invocations and replacing them with their expansion
-* The result of a syny
+* A syntax expansion can result in any of the following depending on where it is expanded 
+1. an expression
+2. a pattern
+3. a type
+4. zero or more items (at the module scope)
+5. zero or more statements
+
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTY5NzQ0OTFdfQ==
+eyJoaXN0b3J5IjpbMTk1MzI1NzczXX0=
 -->
