@@ -36,9 +36,14 @@ Token Trees
 * Most leaves are tokens
 * The only basic tokens that are not tokens are **grrouping** tokens `(...)` `[...]` and `{...}`
 * The AST is not actually composed of token trees. Each token gets its own tree (ish)
-* 
+
+### 1.2 Macros in the AST
+* Macros are processed **after** construction of the AST
+* There are several "syntax extension" forms that are part of rust's syntax:
+1. `# [ $arg ]` i.e. `#[derive(cl
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY4NTY2MzAxXX0=
+eyJoaXN0b3J5IjpbMjAyNzgyNzk4N119
 -->
