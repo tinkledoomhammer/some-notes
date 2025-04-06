@@ -152,7 +152,7 @@ macro_rules! $name {
 * There must be at least one rule
 * The `;` after the last rule is optional
 * the format for rules is `($matcher) => {$expansion}`
-	* the parens could also be brackets (`[]`)
+	* the parens could also be brackets `[]` or braces `{}`
 ### 2.2 A practical introduction
 
 
@@ -161,6 +161,6 @@ macro_rules! $name {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ4NTkwNjAyLDg5MzcyNTIwNywtMTg3NT
-QyODQwNywxMjIxMjA2Mjc2XX0=
+eyJoaXN0b3J5IjpbLTE1NzUwNDIwMzQsODkzNzI1MjA3LC0xOD
+c1NDI4NDA3LDEyMjEyMDYyNzZdfQ==
 -->
