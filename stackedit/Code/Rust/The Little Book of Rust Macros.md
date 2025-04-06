@@ -199,7 +199,7 @@ Capture type | Description
 * Repetitions can contain nay valid matcher (including nested repetitions)
 * Repetitions in the expansion use the same syntax as in the matcher
 * Repeated metavariables can only be used within repetition expansions
-* multiple metavariables can be repeated, but only if there are the same number of ret
+* multiple metavariables can be repeated, but only if there are the same number of repetitions of each
 
 ### 2.2 A practical introduction
 
@@ -209,6 +209,6 @@ Capture type | Description
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3NDkzMDE1MCw3MzUzOTI3OTMsODkzNz
-I1MjA3LC0xODc1NDI4NDA3LDEyMjEyMDYyNzZdfQ==
+eyJoaXN0b3J5IjpbNDk1MjQ3NDgzLDczNTM5Mjc5Myw4OTM3Mj
+UyMDcsLTE4NzU0Mjg0MDcsMTIyMTIwNjI3Nl19
 -->
