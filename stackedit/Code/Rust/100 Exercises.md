@@ -290,24 +290,26 @@ Generics
 : Code that works with a **Type parameter** instead of a concrete type
 
 ```rust
-fn print_if_even<T>
+fn print_if_even<T>(n: T)
 where
 	T: IsEven + Debug
 {
 	fi n.is_even(){
-	println!("{n:?} is even");
-
+		println!("{n:?} is even");
+	}
 }
 ```
+Now `print_if_even` will work for types that implement both `IsEven` and `Debug`
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzQ1MTc4NzgsMTY0NDAxMTMwOSwyMT
-QyMzk4NzcxLDQwMzM2MTMwNCwxMTM4NDA0NDAzLDE3MTk0Njk4
-MDcsMTkxODQ2NDY1MCwtMTUyNDY1OTUwOCw0Nzg1Njk4NDgsLT
-EwMjE1NzY4ODIsMTYxNTg5NjU5LC0yMTQzMTQ1NDQxLC0xNTkx
-MzQ1Mjk0LDE5ODAzNzY2MjgsMTEzODEwNDEwNSwxMDAzMTc5Mj
-I4LC0xMjkwNjk5NzMzLC0xMDUwMTYzMTUzLDIwMTE5NzQ5MDIs
-MjAwMzkyMDc3OF19
+eyJoaXN0b3J5IjpbLTE2MjY5MjU2OCwxNjQ0MDExMzA5LDIxND
+IzOTg3NzEsNDAzMzYxMzA0LDExMzg0MDQ0MDMsMTcxOTQ2OTgw
+NywxOTE4NDY0NjUwLC0xNTI0NjU5NTA4LDQ3ODU2OTg0OCwtMT
+AyMTU3Njg4MiwxNjE1ODk2NTksLTIxNDMxNDU0NDEsLTE1OTEz
+NDUyOTQsMTk4MDM3NjYyOCwxMTM4MTA0MTA1LDEwMDMxNzkyMj
+gsLTEyOTA2OTk3MzMsLTEwNTAxNjMxNTMsMjAxMTk3NDkwMiwy
+MDAzOTIwNzc4XX0=
 -->
