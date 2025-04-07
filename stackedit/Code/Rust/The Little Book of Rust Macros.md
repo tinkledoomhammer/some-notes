@@ -101,6 +101,7 @@ They cannot be used in:
 1. Identifiers
 2. Match arms
 3. Struct fields
+
 There is no way to use syntax extensions in any position not on the first list
 
 ### 1.3 Expansion
@@ -240,7 +241,7 @@ macro_rules! add{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzU5NTIyMjEsLTE0ODE4NzA4OTUsLT
-E4MTM4ODUxMiw0OTUyNDc0ODMsNzM1MzkyNzkzLDg5MzcyNTIw
-NywtMTg3NTQyODQwNywxMjIxMjA2Mjc2XX0=
+eyJoaXN0b3J5IjpbLTc0OTQ2Mzk0NywtMTQ4MTg3MDg5NSwtMT
+gxMzg4NTEyLDQ5NTI0NzQ4Myw3MzUzOTI3OTMsODkzNzI1MjA3
+LC0xODc1NDI4NDA3LDEyMjEyMDYyNzZdfQ==
 -->
