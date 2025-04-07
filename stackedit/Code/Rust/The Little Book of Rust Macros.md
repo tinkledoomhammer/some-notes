@@ -96,6 +96,7 @@ Important Takeaways
 3. Expressions
 4. Items (this includes `impl` items)
 5. Types
+
 They cannot be used in:
 1. Identifiers
 2. Match arms
@@ -239,7 +240,7 @@ macro_rules! add{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODE4NzA4OTUsLTE4MTM4ODUxMiw0OT
-UyNDc0ODMsNzM1MzkyNzkzLDg5MzcyNTIwNywtMTg3NTQyODQw
-NywxMjIxMjA2Mjc2XX0=
+eyJoaXN0b3J5IjpbLTEwMzU5NTIyMjEsLTE0ODE4NzA4OTUsLT
+E4MTM4ODUxMiw0OTUyNDc0ODMsNzM1MzkyNzkzLDg5MzcyNTIw
+NywtMTg3NTQyODQwNywxMjIxMjA2Mjc2XX0=
 -->
