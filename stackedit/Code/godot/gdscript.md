@@ -105,6 +105,17 @@ Some constructs that look like literals but are not
 `$NodePath` | Shorthand for `get_node("NodePath")`
 `%UniqueNode` | Shorthand for `get_node("%UniqueNode")`
 
+Integers and floats can be separated with underscores `_` to make the more readable
+
+Regular string literals can contain escape sequences
+Escape sequence | Expands to
+--|--
+`\n`
+`\t`
+`\r`
+`\a` | Alert (beep)
+`\b` | backspace
+`\f` | form-feed / page break
 
 
 
@@ -203,6 +214,6 @@ Some constructs that look like literals but are not
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1NjUwNTkxNywtMTc1MDI0MzQ1MiwtOT
+eyJoaXN0b3J5IjpbLTE5NTQ5Nzc4NCwtMTc1MDI0MzQ1MiwtOT
 Q0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
