@@ -76,7 +76,11 @@ Operators | Description
 `or ` [double pipe] | boolean OR
 `x if y else z` | ternary if/else
 `x as Node` | Type casting
-`=` `+=` `-=` `*=` `/=` `**=` `%=` `&=` [pipe=
+`=` `+=` `-=` `*=` `/=` `**=` `%=` `&=` [pipe=] `^=` `<<=` `>>-` | Assignment
+
+Caveats
+1. If both operands of a division are ints, then integer division is performed
+2. The `%` operator is only available for ints. `fmod()` is for flo
 
 ### Lieterals
 
@@ -176,6 +180,6 @@ Operators | Description
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA5NzExMjc2LC0xNzUwMjQzNDUyLC05ND
-QwMDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbLTYyNjUxMDA3OSwtMTc1MDI0MzQ1MiwtOT
+Q0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
