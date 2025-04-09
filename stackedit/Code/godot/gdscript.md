@@ -119,8 +119,13 @@ Escape sequence | Expands to
 `\v` | vertical tab
 `\'` `\"` | single and double quote
 `\\` | `\`
-`\uXXXX` | UTF16 codepoint, hex, case insensitive
-`\UXXXXXXX` | Utf32 codepoint (hex, case
+`\uXXXX` | UTF16 codepoint (hex, case insensitive)
+`\UXXXXXXX` | Utf32 codepoint (hex, case-insensitive)
+
+Unicode characters above `0xFFFF` can be represented 2 wats
+1. as a UTF-16 surrogate paor `\uXXXX\uXXXX`
+2. As a single UTF-32 codepoint `\UXXXXXX`
+
 
 
 
@@ -219,6 +224,6 @@ Escape sequence | Expands to
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzk0NTEzNjUsLTE3NTAyNDM0NTIsLT
-k0NDAwODc3NiwtNzAwNzM0NzA0XX0=
+eyJoaXN0b3J5IjpbLTMyMjYzNDAzMywtMTc1MDI0MzQ1MiwtOT
+Q0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
