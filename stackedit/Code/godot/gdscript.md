@@ -64,7 +64,11 @@ Operators | Description
 `~x` | bitwise not
 `+x` , `-x` | Identity / Negation
 `*` , `/`, `%` | Multiplication/Division/remainder
-`+`, `-` |
+`+`, `-` | addition/concatenation and subtraction
+`<<` , `>>` | Bit shifting
+`&` | bitwise AND
+`^` | bitwise XOR
+<code>|</code> | bitwise OR
 
 ### Lieterals
 
@@ -164,6 +168,6 @@ Operators | Description
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNzk1Mjg2MSwtMTc1MDI0MzQ1MiwtOT
+eyJoaXN0b3J5IjpbMTI1MDE4NDA1NywtMTc1MDI0MzQ1MiwtOT
 Q0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
