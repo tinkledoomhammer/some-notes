@@ -83,7 +83,8 @@ Caveats
 2. The `%` operator is only available for ints. `fmod()` is for floats
 3. For negative `%` truncates instead of rounding down. See also `posmod()` and `fposmod()`
 4. `==` and `!=` sometimes works with mixed types, but other times it is a runtime error
-	* 
+	* `is_same()` performs a stricter check and does not generate runtime errors
+	* `is_equal_approx()` and `is_zero_approx()` work with floats to handle rounding errors
 
 ### Lieterals
 
@@ -183,6 +184,6 @@ Caveats
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4NzM5MTIyNCwtMTc1MDI0MzQ1MiwtOT
+eyJoaXN0b3J5IjpbLTk3Mjk0MTQzMywtMTc1MDI0MzQ1MiwtOT
 Q0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
