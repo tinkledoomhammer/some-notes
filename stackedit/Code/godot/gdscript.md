@@ -13,9 +13,55 @@ Overridable functions
 GDScript Reference
 : https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_basics.html
 
-# GDScript 
+## GDScript Reference (Basics)
+https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_basics.html
+
+### History
+
+### Example
+
+### Identifiers
+
+### Keywords
+
+### Operators
+
+
+### Lieterals
+
+
+### Annotations
+
+
+### Comments
+
+### Code Regions
+
+
+### Line continuation
+
+### Built-in types
+
+### Variables
+
+### Constants
+
+### Functions
+
+
+### Statements and control flow
+
+
+### Classes
+
+
+### Exports
+
+
+### Properties (setters and getters
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4MDM2ODYyMywtNzAwNzM0NzA0XX0=
+eyJoaXN0b3J5IjpbLTQwMjY0MjcyMSwtNzAwNzM0NzA0XX0=
 -->
