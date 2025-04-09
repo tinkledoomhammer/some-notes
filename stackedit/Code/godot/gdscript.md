@@ -177,8 +177,19 @@ func _ready():
 ```
 
 WARNING
-specifying `@onready` and `@export` on the same member will result in the `onready` 
+specifying `@onready` and `@export` on the same member will result in the `@onready`  overriding the export
+
+
 ### Comments
+
+anything from `#` to the end of the line is considered a comment
+
+Some special keywords will be highlighted by the editor when they are in comments
+Type(color) | Keywords
+--|--
+Critical (red) | `
+
+
 
 ### Code Regions
 
@@ -270,6 +281,6 @@ specifying `@onready` and `@export` on the same member will result in the `onrea
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzIwMzIxMjIsLTE3NTAyNDM0NTIsLT
-k0NDAwODc3NiwtNzAwNzM0NzA0XX0=
+eyJoaXN0b3J5IjpbNDQ4MDE1MTA2LC0xNzUwMjQzNDUyLC05ND
+QwMDg3NzYsLTcwMDczNDcwNF19
 -->
