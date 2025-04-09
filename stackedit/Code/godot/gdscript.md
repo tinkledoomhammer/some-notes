@@ -126,6 +126,9 @@ Unicode characters above `0xFFFF` can be represented 2 wats
 1. as a UTF-16 surrogate paor `\uXXXX\uXXXX`
 2. As a single UTF-32 codepoint `\UXXXXXX`
 
+* Using a `\` followed by a newline inside a string will continue the string on the next line without inserting a newline char into the string
+
+* Single quoted strings can contain double quotes and vice-versa
 
 
 
@@ -224,6 +227,6 @@ Unicode characters above `0xFFFF` can be represented 2 wats
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyMjYzNDAzMywtMTc1MDI0MzQ1MiwtOT
+eyJoaXN0b3J5IjpbLTkyNTY3Njk3MCwtMTc1MDI0MzQ1MiwtOT
 Q0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
