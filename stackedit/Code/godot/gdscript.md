@@ -72,7 +72,11 @@ Operators | Description
 `==` `!=` `<` `>` `<=` `>=` | Comparison
 `x in y` `x not in y` | Inclusion checking
 `not x` `!x` | boolean NOT
-
+`&&` `and` | boolean AND
+`or ` [double pipe] | boolean OR
+`x if y else z` | ternary if/else
+`x as Node` | Type casting
+`=` `+=` `-=` `*=` `/=` `**=` `%=` `&=` [pipe=
 
 ### Lieterals
 
@@ -172,6 +176,6 @@ Operators | Description
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMjUyMzUyMSwtMTc1MDI0MzQ1MiwtOT
-Q0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbNTA5NzExMjc2LC0xNzUwMjQzNDUyLC05ND
+QwMDg3NzYsLTcwMDczNDcwNF19
 -->
