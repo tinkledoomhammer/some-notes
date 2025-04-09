@@ -68,7 +68,11 @@ Operators | Description
 `<<` , `>>` | Bit shifting
 `&` | bitwise AND
 `^` | bitwise XOR
-<code>|</code> | bitwise OR
+[pipe] | bitwise OR
+`==` `!=` `<` `>` `<=` `>=` | Comparison
+`x in y` `x not in y` | Inclusion checking
+`not x` `!x` | boolean NOT
+
 
 ### Lieterals
 
@@ -168,6 +172,6 @@ Operators | Description
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MDE4NDA1NywtMTc1MDI0MzQ1MiwtOT
+eyJoaXN0b3J5IjpbLTUwMjUyMzUyMSwtMTc1MDI0MzQ1MiwtOT
 Q0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
