@@ -110,9 +110,9 @@ Integers and floats can be separated with underscores `_` to make the more reada
 Regular string literals can contain escape sequences
 Escape sequence | Expands to
 --|--
-`\n`
-`\t`
-`\r`
+`\n` |
+`\t`  |
+`\r` |
 `\a` | Alert (beep)
 `\b` | backspace
 `\f` | form-feed / page break
@@ -283,6 +283,6 @@ These keywords are all case sensitive
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU0MzQ4MTY0LC0xNzUwMjQzNDUyLC05ND
+eyJoaXN0b3J5IjpbNjk2NTkzMjIyLC0xNzUwMjQzNDUyLC05ND
 QwMDg3NzYsLTcwMDczNDcwNF19
 -->
