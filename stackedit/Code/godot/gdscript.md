@@ -149,7 +149,16 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_for
 ### Annotations
 
 Annotations
-: Special tokens in GDScript that act as modi
+: Special tokens in GDScript that act as modifiers to a script or its code and may affect how the script is treated by the engine or editor
+: They start with the `@` special char and are specified by name
+
+See the GDScript class reference 
+https://docs.godotengine.org/en/stable/classes/class_%40gdscript.html#class-gdscript
+
+for exports, see the exports article
+https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exports.html#doc-gdscript-exports
+
+
 
 ### Comments
 
@@ -243,6 +252,6 @@ Annotations
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0MjM1NjAzNiwtMTc1MDI0MzQ1MiwtOT
-Q0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbLTEwNTE3ODE1MTksLTE3NTAyNDM0NTIsLT
+k0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
