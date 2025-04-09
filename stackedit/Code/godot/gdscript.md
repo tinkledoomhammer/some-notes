@@ -52,6 +52,14 @@ PI TAU INF NAN
 
 ### Operators
 
+Operators | Description
+-|-
+`()` | Grouping
+`x[index]` | Subscription
+`x.attribute` | attribute reference
+`foo()` | function call
+`await x` | awaiting signals or coroutines
+`x is node` `x 
 
 ### Lieterals
 
@@ -151,6 +159,6 @@ PI TAU INF NAN
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNz
-AwNzM0NzA0XX0=
+eyJoaXN0b3J5IjpbLTQwNzg2ODQxLC0xNzUwMjQzNDUyLC05ND
+QwMDg3NzYsLTcwMDczNDcwNF19
 -->
