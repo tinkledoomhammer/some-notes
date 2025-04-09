@@ -85,9 +85,19 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_bas
 
 ### GDScript format strings
 
+## Core features
 
+### How to read the Godot API
+
+### Debug
+
+### Idle and Physics processing
+
+### Groups
+
+### Nodes 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDYxMzAxMjIsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbOTU4MjgwMjMxLC03MDA3MzQ3MDRdfQ==
 -->
