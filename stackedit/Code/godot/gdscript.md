@@ -26,9 +26,33 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_bas
 ```
 
 ### Identifiers
-* Restricted to alphabetic + digits 
+* Restricted to alphabetic + digits + `_` underscore
+* Can not start with a digit
+* case ssensitive
 
 ### Keywords
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Operators
 
@@ -131,6 +155,6 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_bas
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzM2Mjg2OTYsLTk0NDAwODc3NiwtNz
+eyJoaXN0b3J5IjpbLTEyNTgxNjg0ODQsLTk0NDAwODc3NiwtNz
 AwNzM0NzA0XX0=
 -->
