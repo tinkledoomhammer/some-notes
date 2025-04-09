@@ -169,8 +169,15 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exp
 * Defers initialization of a member variable until `_ready()` is called
 ```python
 var my_label
+func _ready():
+	my_label=get_node("MyLabel")
+
+# Is equivalent to
+@onready var my_label = get_node("MyLabel")
 ```
 
+WARNING
+specifying `@onready` and `@export` on the same member will result in the `onready` 
 ### Comments
 
 ### Code Regions
@@ -263,6 +270,6 @@ var my_label
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MzAxODY4NywtMTc1MDI0MzQ1MiwtOT
-Q0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbLTEzMzIwMzIxMjIsLTE3NTAyNDM0NTIsLT
+k0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
