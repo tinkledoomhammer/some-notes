@@ -88,6 +88,16 @@ Caveats
 
 ### Lieterals
 
+Examples | Dscription
+`null` | null value
+`false` `true` | boolean values
+`0x8f51` | base 16 integer
+`0b1010` | binary int
+`3.14` `58.1e-10` | floating point number
+`"Hello"` `'Hello'` | Regular strings
+`"""
+
+
 
 ### Annotations
 
@@ -184,6 +194,6 @@ Caveats
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3Mjk0MTQzMywtMTc1MDI0MzQ1MiwtOT
+eyJoaXN0b3J5IjpbMTYwNDA5OTA4OSwtMTc1MDI0MzQ1MiwtOT
 Q0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
