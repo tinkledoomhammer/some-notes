@@ -20,7 +20,13 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_bas
 
 ### Example
 
+```python
+# (optional) icon to show in the editor dialogs:
+@icon("res://path/to/optional/icon.svg")
+```
+
 ### Identifiers
+* Restricted to alphabetic + digits 
 
 ### Keywords
 
@@ -125,6 +131,6 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_bas
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTg5NDE2MjMsLTk0NDAwODc3NiwtNz
+eyJoaXN0b3J5IjpbLTEwMzM2Mjg2OTYsLTk0NDAwODc3NiwtNz
 AwNzM0NzA0XX0=
 -->
