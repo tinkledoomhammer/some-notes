@@ -98,7 +98,13 @@ Examples | Dscription
 `"""Hello"""` `'''Hello'''` | triple-quoted strings
 `r"Hello"` `r'Hi'` | Raw strings
 `r"""Hello"""``r'''hi'''` | tripple-quoted raw strings
-`&"name"` | [StringName](https://docs.godotengine.org/en/stable/classes/class_stringname.html#class-stringname
+`&"name"` | [StringName](https://docs.godotengine.org/en/stable/classes/class_stringname.html#class-stringname)
+`^Node/Label` [NodePath](https://docs.godotengine.org/en/stable/classes/class_nodepath.html#class-nodepath)
+
+Some constructs that look like literals but are not
+`$NodePath` | Shorthand for `get_node("NodePath")`
+`%UniqueNode` | Shorthand for `get_node("%UniqueNode")`
+
 
 
 
@@ -197,6 +203,6 @@ Examples | Dscription
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjc5OTY1ODksLTE3NTAyNDM0NTIsLT
-k0NDAwODc3NiwtNzAwNzM0NzA0XX0=
+eyJoaXN0b3J5IjpbMTg1NjUwNTkxNywtMTc1MDI0MzQ1MiwtOT
+Q0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
