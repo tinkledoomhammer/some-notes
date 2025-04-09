@@ -187,8 +187,10 @@ anything from `#` to the end of the line is considered a comment
 Some special keywords will be highlighted by the editor when they are in comments
 Type(color) | Keywords
 --|--
-Critical (red) | `
-
+Critical (red) | `ALERT` `ATTENTION` `CAUTION` `CRITICAL` `DANGER` `SECURITY`
+Warning (yellow) | `BUG` `DEPRECATED` `FIXME` `HACK` `TASK` `TPD` `TODO` `WARNING`
+Notice (green) | `INFO` `NOTE` `NOTICE` `TEST` `TESTING`
+These keywords are all case sensitive
 
 
 ### Code Regions
@@ -281,6 +283,6 @@ Critical (red) | `
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ4MDE1MTA2LC0xNzUwMjQzNDUyLC05ND
+eyJoaXN0b3J5IjpbODU0MzQ4MTY0LC0xNzUwMjQzNDUyLC05ND
 QwMDg3NzYsLTcwMDczNDcwNF19
 -->
