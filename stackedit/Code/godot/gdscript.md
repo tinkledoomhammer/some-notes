@@ -135,7 +135,8 @@ Unicode characters above `0xFFFF` can be represented 2 wats
 * always encode the string as it appears in the source code
 > A raw string literal doesn't process escape sequences, however it does recognize `\\` and `\"` (`\'`) and replaces them with themselves.. Thus a string can have a quote that matches the opening one, but only if it's preceded by a backslash.
 ```python
-print(\tchar
+print(\tchar=\"\\t\"") # Prints:`	char="\t"'
+print(r"\tchar=\"\\t\"")# prints:'\tchar=\"\\t\"`
 ```
 
 
@@ -235,6 +236,6 @@ print(\tchar
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MzcyMDAyMSwtMTc1MDI0MzQ1MiwtOT
+eyJoaXN0b3J5IjpbMTY4MDM5MTI3NiwtMTc1MDI0MzQ1MiwtOT
 Q0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
