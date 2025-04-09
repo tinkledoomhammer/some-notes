@@ -59,7 +59,12 @@ Operators | Description
 `x.attribute` | attribute reference
 `foo()` | function call
 `await x` | awaiting signals or coroutines
-`x is node` `x 
+`x is node` `x is not node` | Type checking, see also `is_instance_of()`
+`x**y` | power, similar to the `pow()` function
+`~x` | bitwise not
+`+x` , `-x` | Identity / Negation
+`*` , `/`, `%` | Multiplication/Division/remainder
+`+`, `-` |
 
 ### Lieterals
 
@@ -159,6 +164,6 @@ Operators | Description
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNzg2ODQxLC0xNzUwMjQzNDUyLC05ND
-QwMDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbMTYxNzk1Mjg2MSwtMTc1MDI0MzQ1MiwtOT
+Q0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
