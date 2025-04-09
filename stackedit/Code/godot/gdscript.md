@@ -132,7 +132,11 @@ Unicode characters above `0xFFFF` can be represented 2 wats
 * Triple quoted strings can contain either type of quote unless there are more than 2 consecutively or it is near the beginning or the end (i.e. when it is ambiguous where the string begins or ends)
 
 #### Raw string literals
-* always encode t
+* always encode the string as it appears in the source code
+> A raw string literal doesn't process escape sequences, however it does recognize `\\` and `\"` (`\'`) and replaces them with themselves.. Thus a string can have a quote that matches the opening one, but only if it's preceded by a backslash.
+```python
+print(\tchar
+```
 
 
 
@@ -231,6 +235,6 @@ Unicode characters above `0xFFFF` can be represented 2 wats
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxODgxMjQ1NiwtMTc1MDI0MzQ1MiwtOT
+eyJoaXN0b3J5IjpbMTM5MzcyMDAyMSwtMTc1MDI0MzQ1MiwtOT
 Q0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
