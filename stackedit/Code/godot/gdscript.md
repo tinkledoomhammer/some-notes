@@ -163,7 +163,7 @@ for exports,
 
 `@export` annotation
 see the exports article
-https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exports.html#doc-gdscript-exports
+https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exports.html
 
 `@onready` annotation
 * Defers initialization of a member variable until `_ready()` is called
@@ -192,6 +192,10 @@ Warning (yellow) | `BUG` `DEPRECATED` `FIXME` `HACK` `TASK` `TPD` `TODO` `WARNIN
 Notice (green) | `INFO` `NOTE` `NOTICE` `TEST` `TESTING`
 These keywords are all case sensitive
 
+Documentation Comments
+: Start with `##`
+: must appear above the item they are documenting or at the beginning of the file
+: See https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_documentation_comments.html
 
 ### Code Regions
 
@@ -283,6 +287,6 @@ These keywords are all case sensitive
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk2NTkzMjIyLC0xNzUwMjQzNDUyLC05ND
-QwMDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbLTIyNjgwNDU3NywtMTc1MDI0MzQ1MiwtOT
+Q0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
