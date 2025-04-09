@@ -155,9 +155,13 @@ Annotations
 See the GDScript class reference 
 https://docs.godotengine.org/en/stable/classes/class_%40gdscript.html#class-gdscript
 
-for exports, see the exports article
-https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exports.html#doc-gdscript-exports
+for exports, 
 
+* Annotations will modify the next statement that is not an annotation. ]
+* Multiple annotations can be on the same line or different lines
+* They can have arguments sent between parens `()` and separated by commas `,`
+
+`@export` annotation
 
 
 ### Comments
@@ -252,6 +256,6 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exp
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTE3ODE1MTksLTE3NTAyNDM0NTIsLT
-k0NDAwODc3NiwtNzAwNzM0NzA0XX0=
+eyJoaXN0b3J5IjpbODYyNzQ4NjY2LC0xNzUwMjQzNDUyLC05ND
+QwMDg3NzYsLTcwMDczNDcwNF19
 -->
