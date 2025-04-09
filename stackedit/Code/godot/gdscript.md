@@ -95,7 +95,10 @@ Examples | Dscription
 `0b1010` | binary int
 `3.14` `58.1e-10` | floating point number
 `"Hello"` `'Hello'` | Regular strings
-`"""
+`"""Hello"""` `'''Hello'''` | triple-quoted strings
+`r"Hello"` `r'Hi'` | Raw strings
+`r"""Hello"""``r'''hi'''` | tripple-quoted raw strings
+`&"name"` | [StringName](https://docs.godotengine.org/en/stable/classes/class_stringname.html#class-stringname
 
 
 
@@ -194,6 +197,6 @@ Examples | Dscription
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNDA5OTA4OSwtMTc1MDI0MzQ1MiwtOT
-Q0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbLTIwMjc5OTY1ODksLTE3NTAyNDM0NTIsLT
+k0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
