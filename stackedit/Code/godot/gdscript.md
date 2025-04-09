@@ -129,6 +129,10 @@ Unicode characters above `0xFFFF` can be represented 2 wats
 * Using a `\` followed by a newline inside a string will continue the string on the next line without inserting a newline char into the string
 
 * Single quoted strings can contain double quotes and vice-versa
+* Triple quoted strings can contain either type of quote unless there are more than 2 consecutively or it is near the beginning or the end (i.e. when it is ambiguous where the string begins or ends)
+
+#### Raw string literals
+* always encode t
 
 
 
@@ -227,6 +231,6 @@ Unicode characters above `0xFFFF` can be represented 2 wats
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNTY3Njk3MCwtMTc1MDI0MzQ1MiwtOT
+eyJoaXN0b3J5IjpbMTMxODgxMjQ1NiwtMTc1MDI0MzQ1MiwtOT
 Q0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
