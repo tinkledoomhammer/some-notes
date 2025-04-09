@@ -138,11 +138,18 @@ Unicode characters above `0xFFFF` can be represented 2 wats
 print(\tchar=\"\\t\"") # Prints:`	char="\t"'
 print(r"\tchar=\"\\t\"")# prints:'\tchar=\"\\t\"`
 ```
+Some strings cannot be represented with raw string literals:
+	1. those with an odd number of backslashes at the end of a string, or
+	2.  an unescaped opening quote inside the string
 
 
+GDScript also supports format strings
+https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_format_string.html#doc-gdscript-printf
 
 ### Annotations
 
+Annotations
+: Special tokens in GDScript that act as modi
 
 ### Comments
 
@@ -236,6 +243,6 @@ print(r"\tchar=\"\\t\"")# prints:'\tchar=\"\\t\"`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4MDM5MTI3NiwtMTc1MDI0MzQ1MiwtOT
+eyJoaXN0b3J5IjpbMTM0MjM1NjAzNiwtMTc1MDI0MzQ1MiwtOT
 Q0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
