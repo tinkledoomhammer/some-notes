@@ -79,11 +79,11 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_bas
 
 ## GDScript Style guide
 
-### Static typing in GDScript
+## Static typing in GDScript
 
-### GDScript warning system
+## GDScript warning system
 
-### GDScript format strings
+## GDScript format strings
 
 ## Core features
 
@@ -125,5 +125,6 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_bas
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
+eyJoaXN0b3J5IjpbLTE4MTg5NDE2MjMsLTk0NDAwODc3NiwtNz
+AwNzM0NzA0XX0=
 -->
