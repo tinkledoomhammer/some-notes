@@ -31,27 +31,23 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_bas
 * case ssensitive
 
 ### Keywords
+```python
+if elif else
+for while
+match when
+break continue pass return
+class class_name extends
+is in as
+self super
+signal
+static const enum var
+breakpoint
+preload
+await yield
+assert
+void
+PI TAU INF NAN
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ### Operators
@@ -155,6 +151,6 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_bas
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTgxNjg0ODQsLTk0NDAwODc3NiwtNz
+eyJoaXN0b3J5IjpbLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNz
 AwNzM0NzA0XX0=
 -->
