@@ -60,8 +60,34 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_bas
 
 ### Properties (setters and getters
 
+### Tool mode
+
+
+### Memory Management
+
+
+### Signals
+
+
+### Assert keyword
+
+## GDScript: An introduction to dynamic languages
+
+## GDScript exported properties
+
+## GDscript documentation comments
+
+## GDScript Style guide
+
+### Static typing in GDScript
+
+### GDScript warning system
+
+### GDScript format strings
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwMjY0MjcyMSwtNzAwNzM0NzA0XX0=
+eyJoaXN0b3J5IjpbLTE3MDYxMzAxMjIsLTcwMDczNDcwNF19
 -->
