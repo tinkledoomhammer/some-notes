@@ -162,7 +162,14 @@ for exports,
 * They can have arguments sent between parens `()` and separated by commas `,`
 
 `@export` annotation
+see the exports article
+https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exports.html#doc-gdscript-exports
 
+`@onready` annotation
+* Defers initialization of a member variable until `_ready()` is called
+```python
+var my_label
+```
 
 ### Comments
 
@@ -256,6 +263,6 @@ for exports,
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYyNzQ4NjY2LC0xNzUwMjQzNDUyLC05ND
-QwMDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbMTk5MzAxODY4NywtMTc1MDI0MzQ1MiwtOT
+Q0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
