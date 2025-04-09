@@ -116,6 +116,11 @@ Escape sequence | Expands to
 `\a` | Alert (beep)
 `\b` | backspace
 `\f` | form-feed / page break
+`\v` | vertical tab
+`\'` `\"` | single and double quote
+`\\` | `\`
+`\uXXXX` | UTF16 codepoint, hex, case insensitive
+`\UXXXXXXX` | Utf32 codepoint (hex, case
 
 
 
@@ -214,6 +219,6 @@ Escape sequence | Expands to
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTQ5Nzc4NCwtMTc1MDI0MzQ1MiwtOT
-Q0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbLTEyMzk0NTEzNjUsLTE3NTAyNDM0NTIsLT
+k0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
