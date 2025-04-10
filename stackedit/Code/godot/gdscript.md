@@ -644,7 +644,10 @@ https://docs.godotengine.org/en/stable/tutorials/plugins/running_code_in_the_edi
 
 ### Memory Management
 * There is no garbage collector
-* THe 
+* The `RefCounted` type use reference counting 
+	* `Resource` inherits from `RefCounted`
+* `Object` and its descendants are freed manually with the `.free()` method
+* for the `Node` branch of object's descendants use `queue_free()` instead
 
 ### Signals
 
@@ -705,8 +708,8 @@ https://docs.godotengine.org/en/stable/tutorials/plugins/running_code_in_the_edi
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk4MjQ0NjYyLC04MDAyOTgyNjYsMTU2MT
-I4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4
-OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ
-==
+eyJoaXN0b3J5IjpbMTA0ODY1NzM4NSwtODAwMjk4MjY2LDE1Nj
+EyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5
+ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX
+0=
 -->
