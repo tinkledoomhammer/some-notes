@@ -455,8 +455,19 @@ Expressions
 
 self
 : Refers to the current instance, often equivalent to accessing symbols directly
-* can also access 
+* can also access properties, methods, etc that are defined dynamically
+	* i.e. in subtype of the current class (bad practice)
+	* or using `_set()` and `_get()`
 
+#### `if` `else` `elif`
+```python
+if (expression):
+	statement(s)
+elif (expression):
+	statement(s)
+else:
+	statement(s)
+```
 ### Classes
 
 
@@ -530,7 +541,7 @@ self
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA1NDAwNjUsLTE0NTEyODY0MDMsNzk5Mz
-YwOTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDczNDcw
-NF19
+eyJoaXN0b3J5IjpbLTEwMDQyMTA1ODcsLTE0NTEyODY0MDMsNz
+k5MzYwOTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDcz
+NDcwNF19
 -->
