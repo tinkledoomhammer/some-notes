@@ -492,6 +492,7 @@ for x in [5,7,11]
 var names = ["a", "b"]
 for name:String in names:
 	...
+for i in names.size():
 
 for i in range(3): # 0,1,2
 for i in range(1,3): #1,2
@@ -501,6 +502,8 @@ for c in "Hello": #H,e,l,l,o
 for i in 3: #similar to range(3)
 for i in 2.2: # similar to range(ceil(2.2))
 ```
+Assigning to the local loop variable will not change the value in the array
+
 ### Classes
 
 
@@ -574,7 +577,7 @@ for i in 2.2: # similar to range(ceil(2.2))
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ4ODQ1NDY2LC00ODA5NjgxMTcsLTE0NT
-EyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3
-NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbMTU2MTI4NDYxMSwtNDgwOTY4MTE3LC0xND
+UxMjg2NDAzLDc5OTM2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4
+Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
