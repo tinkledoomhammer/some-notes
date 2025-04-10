@@ -394,7 +394,14 @@ enum {TILE_1,TILE_2 ,...}
 #Is the same as
 const TILE_1 = 0
 CONST TILE_2 = 1
+...
+
+# Named Enums - give the enum a name to put the consts in a dictionary
+enum State {STATE_1, STATE_2, ...}
+# Is the same as 
+
 ```
+
 
 ### Functions
 
@@ -475,7 +482,7 @@ CONST TILE_2 = 1
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTA1MjAxODEsLTE0NTEyODY0MDMsNz
+eyJoaXN0b3J5IjpbLTEwOTY2NzcxMzUsLTE0NTEyODY0MDMsNz
 k5MzYwOTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDcz
 NDcwNF19
 -->
