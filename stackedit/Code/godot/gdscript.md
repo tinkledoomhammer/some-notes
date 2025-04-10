@@ -377,9 +377,13 @@ Valid types are:
 * Values can only be assigned to variables with compatible types
 * Type coercion is done with the `as` operator
 * Casting between `object` types results in the same object if the value is the same type of a subtype of the cast type
-
+	* otherwise it is `null`
+* For built-in types, a forcible conversion is performed if possible, otherwise an error is raised
+* casting is recommended when working with the scene tree
 
 ### Constants
+
+`const A = 5` 
 
 ### Functions
 
@@ -460,7 +464,7 @@ Valid types are:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjMxOTMzMTQzLC0xNDUxMjg2NDAzLDc5OT
-M2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3
-MDRdfQ==
+eyJoaXN0b3J5IjpbMTY2NDU5NTQ0NywtMTQ1MTI4NjQwMyw3OT
+kzNjA5ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0
+NzA0XX0=
 -->
