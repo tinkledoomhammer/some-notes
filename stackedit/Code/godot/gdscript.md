@@ -771,7 +771,9 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exp
 * there are also export categories
 	* `@export_category("Main Category")` 
 	* It seems like `@export_category` can change the default category?
-	* 
+	* categories are higher level than groups
+	* they aren't collapsible
+	* they are presented visually in the same style as parent classes
 
 ## GDscript documentation comments
 
@@ -823,8 +825,8 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exp
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzOTM4NDI3NSwtMTIzMTY5NjgwMSwzND
-YwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00ODA5Njgx
-MTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQzNDUyLC
-05NDQwMDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbMTIxMzI3NzA2MCwxNTM5Mzg0Mjc1LC0xMj
+MxNjk2ODAxLDM0NjA3Mjc1NCwtODAwMjk4MjY2LDE1NjEyODQ2
+MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLT
+E3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
