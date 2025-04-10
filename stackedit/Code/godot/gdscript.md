@@ -412,7 +412,11 @@ State.STATE_1
 * The `self` variable is always available and can be used to access class members
 * A function can return at any time
 * The default return value is `null`
-* If a function is only one line long, then it can be all on one line
+* If a function body is only one line long, then it can be all on one line
+* The return value and parameters can also have a type specification
+	* If the argument has a default value then the type can be inferred
+* the return type can be expressed after the argument list with the `->` arrow token
+* 
 
 ### Statements and control flow
 
@@ -490,7 +494,7 @@ State.STATE_1
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MDEyOTQ0NiwtMTQ1MTI4NjQwMyw3OT
+eyJoaXN0b3J5IjpbMTAzMjA0MTU5MywtMTQ1MTI4NjQwMyw3OT
 kzNjA5ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0
 NzA0XX0=
 -->
