@@ -443,7 +443,14 @@ func cube(a):
 * static variables and static constructor are covered elsewhere in this doc
 
 ### Statements and control flow
+`;` is optional as a statement separator
+* statements can be assignments, function calls, flow control structures, etc.
 
+Expressions
+: sequences of operators and their operands i an orderly fashion
+: they can also be statements
+*  return values that can be assigned to valid targets
+* Operands
 
 ### Classes
 
@@ -518,7 +525,7 @@ func cube(a):
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ3NzQwNTg5LC0xNDUxMjg2NDAzLDc5OT
-M2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3
-MDRdfQ==
+eyJoaXN0b3J5IjpbLTE0MDI4NTMzNzAsLTE0NTEyODY0MDMsNz
+k5MzYwOTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDcz
+NDcwNF19
 -->
