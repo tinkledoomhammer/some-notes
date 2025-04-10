@@ -578,7 +578,11 @@ A class that is stored as a file can inherit fro
 * use the `is` keyword to determine if an instance inherits from a given class
 * functions in a super class, use the `super` keyword
 * if there is no name-shadowing, then the name of the parent-class member can be used without prefix
-* most functions are virtual except some
+* most functions are virtual except some engine specific functions:
+	* `get_class()` and `queue_free()` for example
+* engine functions that can be overrided will be marked as `virtual` in the docs
+	* such as `_ready()` and `_process()`
+###
 
 
 ### Exports
@@ -651,7 +655,7 @@ A class that is stored as a file can inherit fro
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyNDU4NjE0NSwxNTYxMjg0NjExLC00OD
+eyJoaXN0b3J5IjpbMjA1MDYxMDk3NiwxNTYxMjg0NjExLC00OD
 A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
 NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
