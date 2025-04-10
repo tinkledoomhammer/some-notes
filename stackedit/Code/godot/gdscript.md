@@ -828,9 +828,14 @@ String args
 
 #### Resources
 When the export type is or inherits from 1`Resource` then additional options are available
-* 
+* It is best to provide a more specific type than `Resource` because the list is long and won't be as type-safe
+
 
 #### Exporting bit flags
+`@expoort_flags(...)`
+* the type is int
+* The argument must be a l
+
 
 #### Enums
 
@@ -897,9 +902,9 @@ When the export type is or inherits from 1`Resource` then additional options are
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1OTc2NjY0MCwxMjEzMjc3MDYwLDE1Mz
-kzODQyNzUsLTEyMzE2OTY4MDEsMzQ2MDcyNzU0LC04MDAyOTgy
-NjYsMTU2MTI4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLD
-c5OTM2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3
-MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbLTEyMDcwNDgwMTcsMTIxMzI3NzA2MCwxNT
+M5Mzg0Mjc1LC0xMjMxNjk2ODAxLDM0NjA3Mjc1NCwtODAwMjk4
+MjY2LDE1NjEyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMy
+w3OTkzNjA5ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAw
+NzM0NzA0XX0=
 -->
