@@ -399,9 +399,12 @@ CONST TILE_2 = 1
 # Named Enums - give the enum a name to put the consts in a dictionary
 enum State {STATE_1, STATE_2, ...}
 # Is the same as 
+const State = {STATE_1, ...}
 
+#The keys are not registered as global constants. They are accessed like:
+State.STATE_1
 ```
-
+** There is also an array of the names? Prehaps it will be in the Dictionary section
 
 ### Functions
 
@@ -482,7 +485,7 @@ enum State {STATE_1, STATE_2, ...}
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTY2NzcxMzUsLTE0NTEyODY0MDMsNz
-k5MzYwOTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDcz
-NDcwNF19
+eyJoaXN0b3J5IjpbMTA1ODk1NjAxOCwtMTQ1MTI4NjQwMyw3OT
+kzNjA5ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0
+NzA0XX0=
 -->
