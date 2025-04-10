@@ -348,7 +348,11 @@ Valid types are:
 3. Constant names if they contain a script resource i.e. `const MyScript=preload("...`
 4. Other classes in the same script, respecting scope
 	* `OuterClass.NestedClass`
-5. 
+5. script classes declared with the `class_name` keyword
+6. Autoloads registered as singletons
+
+#### Initialization Order
+1. 
 
 ### Constants
 
@@ -431,6 +435,6 @@ Valid types are:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNDU3OTMwNyw3OTkzNjA5ODgsLTE3NT
+eyJoaXN0b3J5IjpbLTUyMDg5MjA2MSw3OTkzNjA5ODgsLTE3NT
 AyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
