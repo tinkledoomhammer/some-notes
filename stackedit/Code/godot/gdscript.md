@@ -777,8 +777,12 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exp
 #### Strings as paths
 ```
 @export_file var f
-@ex
+@export_dir var d
+@export_file("*.txt") var f
+@export_global_file("*.png") var gf
+@export_global_dir var gd
 ```
+Also: `@export_multiline var text`
 
 ## GDscript documentation comments
 
@@ -830,9 +834,9 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exp
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNTUzMDg5NSwxMjEzMjc3MDYwLDE1Mz
-kzODQyNzUsLTEyMzE2OTY4MDEsMzQ2MDcyNzU0LC04MDAyOTgy
-NjYsMTU2MTI4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLD
-c5OTM2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3
-MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbLTgzNTQ1NDg0LDEyMTMyNzcwNjAsMTUzOT
+M4NDI3NSwtMTIzMTY5NjgwMSwzNDYwNzI3NTQsLTgwMDI5ODI2
+NiwxNTYxMjg0NjExLC00ODA5NjgxMTcsLTE0NTEyODY0MDMsNz
+k5MzYwOTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDcz
+NDcwNF19
 -->
