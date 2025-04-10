@@ -485,6 +485,8 @@ var  fruit_alt  = \
 while(expression):
 	statement(s)
 ```
+#### for
+
 ### Classes
 
 
@@ -558,7 +560,7 @@ while(expression):
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NzIwMjA0MCwtMTQ1MTI4NjQwMyw3OT
+eyJoaXN0b3J5IjpbLTQ4MDk2ODExNywtMTQ1MTI4NjQwMyw3OT
 kzNjA5ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0
 NzA0XX0=
 -->
