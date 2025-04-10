@@ -360,7 +360,10 @@ Valid types are:
 5. (`Node`-derived only) - `@onready` vars
 6. (`Node`-derived only) - if it is defined, the `_ready()` method
 
-
+#### Static variables
+`static var a:int=0`
+* belong to the class, not the instances, and share values between multiple instances
+* `static` variables cannot be `@export` `@onready`, or local to a function
 
 ### Constants
 
@@ -443,6 +446,6 @@ Valid types are:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI4MDU5NTQ5LDc5OTM2MDk4OCwtMTc1MD
-I0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbMTcxNTk3NDkzOCw3OTkzNjA5ODgsLTE3NT
+AyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
