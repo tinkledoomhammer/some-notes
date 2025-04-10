@@ -352,7 +352,10 @@ Valid types are:
 6. Autoloads registered as singletons
 
 #### Initialization Order
-1. 
+1. Either `null` or  a type-specific value such as `0` `false` etc
+2. Assigned in the order specified in the script, from top to bottom
+	* For `Node`-derived classes, the `@onready` annotation moves initialization to step 5
+3. 
 
 ### Constants
 
@@ -435,6 +438,6 @@ Valid types are:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMDg5MjA2MSw3OTkzNjA5ODgsLTE3NT
+eyJoaXN0b3J5IjpbMTQ2OTI2OTE3NSw3OTkzNjA5ODgsLTE3NT
 AyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
