@@ -819,8 +819,11 @@ String args
 `@export_color_no_alpha ...` is the same but with no alpha
 
 #### Nodes
-When the export is a node type then you can drag a node from the current scene
-
+* When the export is a `Node` type then you can drag a node from the current scene
+* A class that inherits `Node` will filter options i.e. `@export var x : BaseButton`
+* There is an older `NodePath` type that is similar
+	* converting a `Node` to a `NodePath` uses the `get_node(node_path)` function
+	* 
 
 #### Resources
 
@@ -892,9 +895,9 @@ When the export is a node type then you can drag a node from the current scene
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzIzNzk4ODgsMTIxMzI3NzA2MCwxNT
-M5Mzg0Mjc1LC0xMjMxNjk2ODAxLDM0NjA3Mjc1NCwtODAwMjk4
-MjY2LDE1NjEyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMy
-w3OTkzNjA5ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAw
-NzM0NzA0XX0=
+eyJoaXN0b3J5IjpbLTc2MDcyODc5NiwxMjEzMjc3MDYwLDE1Mz
+kzODQyNzUsLTEyMzE2OTY4MDEsMzQ2MDcyNzU0LC04MDAyOTgy
+NjYsMTU2MTI4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLD
+c5OTM2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3
+MzQ3MDRdfQ==
 -->
