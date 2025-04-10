@@ -793,14 +793,16 @@ Also: `@export_multiline var text`
 
 #String arguments have special meanings
 @export_range(1,100,1,"or_less", "or_greater") var i3: int
-
 @export_range(0,1000,0.01, "exp") var f2: float
 @export_range(0,1000,0.01, "hide_slider") var f3: float
-
-
+etc
 ```
-#### Adding suffixes and handling angle units
+String args
+* "or_less", "or_greater" - allow setting outside the specified range by typing or dragging when not clicked on the slider
+* "exp" uses an exponential s
 
+
+`@export_range(0,100,1, "suffix:m" var
 #### Floats with easing hint
 
 #### Colors
@@ -877,7 +879,7 @@ Also: `@export_multiline var text`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzczMzIzNjI3LDEyMTMyNzcwNjAsMTUzOT
+eyJoaXN0b3J5IjpbNTE0NTgwNTYxLDEyMTMyNzcwNjAsMTUzOT
 M4NDI3NSwtMTIzMTY5NjgwMSwzNDYwNzI3NTQsLTgwMDI5ODI2
 NiwxNTYxMjg0NjExLC00ODA5NjgxMTcsLTE0NTEyODY0MDMsNz
 k5MzYwOTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDcz
