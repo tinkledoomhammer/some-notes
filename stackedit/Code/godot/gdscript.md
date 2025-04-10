@@ -438,7 +438,9 @@ func cube(a):
 		* they will not detect when the outer function assigns its variables
 		* mutable reference types are mutable
 #### Static functions
-
+* declared as static: `static func add(x,y): return x+y`
+* They do not have access to `self` or any instance members
+* static variables and static constructor are covered elsewhere in this doc
 
 ### Statements and control flow
 
@@ -516,7 +518,7 @@ func cube(a):
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzA2NTMyMTUsLTE0NTEyODY0MDMsNz
-k5MzYwOTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDcz
-NDcwNF19
+eyJoaXN0b3J5IjpbOTQ3NzQwNTg5LC0xNDUxMjg2NDAzLDc5OT
+M2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3
+MDRdfQ==
 -->
