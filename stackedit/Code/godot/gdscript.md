@@ -652,6 +652,16 @@ https://docs.godotengine.org/en/stable/tutorials/plugins/running_code_in_the_edi
 * The `WeakRef` function is used to create weak references to avoid circular references
 * the `is_instance_valid(instance)` function will return false if the `instance` has been freed
 
+```python
+extends Node
+var my_file_ref
+func _ready():
+	var f = FileAccess.open("User://example.json", FileAccess.READ)
+	my_file_ref = weakref(f)
+	other_node.use_file(f)
+func _this_is_called_la
+```
+
 ### Signals
 
 
@@ -711,7 +721,8 @@ https://docs.godotengine.org/en/stable/tutorials/plugins/running_code_in_the_edi
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU1NDk2MTQsLTgwMDI5ODI2NiwxNTYxMj
-g0NjExLC00ODA5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4
-LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbMTg0NTY3OTU4NiwtODAwMjk4MjY2LDE1Nj
+EyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5
+ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX
+0=
 -->
