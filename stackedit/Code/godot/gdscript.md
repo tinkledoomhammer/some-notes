@@ -505,7 +505,19 @@ for i in 2.2: # similar to range(ceil(2.2)) 0.0, 1.0, 2.0
 Assigning to the local loop variable will not change the value in the array
 
 #### Match
-
+```
+match  <test  value>:
+	<pattern(s)>:
+		<block>
+	<pattern(s)>  when  <pattern  guard>:
+		<block>
+	<...>
+```
+* no fallthrough
+* no break or case
+* the pattern to match defaults is `_`
+* The first match is the only one that will be executed
+* Aval
 ### Classes
 
 
@@ -579,7 +591,7 @@ Assigning to the local loop variable will not change the value in the array
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4OTQ0NDQ3OCwxNTYxMjg0NjExLC00OD
-A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
-NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbOTc5NTI4MDY1LDE1NjEyODQ2MTEsLTQ4MD
+k2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLTE3NTAyNDM0
+NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
