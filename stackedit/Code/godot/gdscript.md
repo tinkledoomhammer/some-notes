@@ -767,7 +767,10 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exp
 * `@export_goup("group")` to group all subsequent exports
 * end by using a different export group
 	* an empty string is equivalent to no group
-* `@exp
+* `@export_subgroup("subgroup name")` to nest
+* there are also export categories
+	* `@export_category("Main Category")` 
+	* It seems like export
 
 ## GDscript documentation comments
 
@@ -819,8 +822,8 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exp
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU3MjI0ODk1LC0xMjMxNjk2ODAxLDM0Nj
-A3Mjc1NCwtODAwMjk4MjY2LDE1NjEyODQ2MTEsLTQ4MDk2ODEx
-NywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLTE3NTAyNDM0NTIsLT
-k0NDAwODc3NiwtNzAwNzM0NzA0XX0=
+eyJoaXN0b3J5IjpbLTg1NTE2MDEwNSwtMTIzMTY5NjgwMSwzND
+YwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00ODA5Njgx
+MTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQzNDUyLC
+05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
