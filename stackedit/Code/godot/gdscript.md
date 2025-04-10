@@ -344,7 +344,11 @@ TODO: Typed dicts
 
 Valid types are:
 1. Built-in types (`Array`, `int` , etc)
-2. Engine clas
+2. Engine classes (`Node`, `Resource`, etc
+3. Constant names if they contain a script resource i.e. `const MyScript=preload("...`
+4. Other classes in the same script, respecting scope
+	* `OuterClass.NestedClass`
+5. 
 
 ### Constants
 
@@ -427,6 +431,6 @@ Valid types are:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA3NDU1ODUwLDc5OTM2MDk4OCwtMTc1MD
-I0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbLTUxNDU3OTMwNyw3OTkzNjA5ODgsLTE3NT
+AyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
