@@ -779,11 +779,28 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exp
 @export_file var f
 @export_dir var d
 @export_file("*.txt") var f
+
+#Pick a file from the global filesystem
 @export_global_file("*.png") var gf
 @export_global_dir var gd
 ```
 Also: `@export_multiline var text`
+#### Limiting editor input ranges
 
+#### Adding suffixes and handling angle units
+
+#### Floats with easing hint
+
+#### Colors
+
+#### Nodes
+
+#### Resources
+
+
+#### Exporting bit flags
+
+##
 ## GDscript documentation comments
 
 ## GDScript Style guide
@@ -834,9 +851,9 @@ Also: `@export_multiline var text`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzNTQ1NDg0LDEyMTMyNzcwNjAsMTUzOT
-M4NDI3NSwtMTIzMTY5NjgwMSwzNDYwNzI3NTQsLTgwMDI5ODI2
-NiwxNTYxMjg0NjExLC00ODA5NjgxMTcsLTE0NTEyODY0MDMsNz
-k5MzYwOTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDcz
-NDcwNF19
+eyJoaXN0b3J5IjpbMTQ2MDE3MzY4MSwxMjEzMjc3MDYwLDE1Mz
+kzODQyNzUsLTEyMzE2OTY4MDEsMzQ2MDcyNzU0LC04MDAyOTgy
+NjYsMTU2MTI4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLD
+c5OTM2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3
+MzQ3MDRdfQ==
 -->
