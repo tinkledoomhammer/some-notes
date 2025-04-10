@@ -700,7 +700,8 @@ Signals
 ### Assert keyword
 * the assert keyword is only used in debug builds
 * `assert(condition, message)` message is optional
-* If the condition is false then an error message with th
+* If the condition is false then an error with the specified message is generated
+* 
 
 
 
@@ -758,8 +759,8 @@ Signals
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc0MjUyNTczLDM0NjA3Mjc1NCwtODAwMj
-k4MjY2LDE1NjEyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQw
-Myw3OTkzNjA5ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNz
-AwNzM0NzA0XX0=
+eyJoaXN0b3J5IjpbLTEyMzE2OTY4MDEsMzQ2MDcyNzU0LC04MD
+AyOTgyNjYsMTU2MTI4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2
+NDAzLDc5OTM2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC
+03MDA3MzQ3MDRdfQ==
 -->
