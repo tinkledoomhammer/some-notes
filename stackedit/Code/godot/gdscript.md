@@ -625,9 +625,19 @@ var my_prop: get = get_my_prop, set = set_my_prop
 * Setters and getters are not called from inside themselves
 * Setters can be called from inside getters and vice versa 
 * Functions called from inside the setters and getters will still access the property via the setters and getters though
-* 
+
+```
+# infinite recursion
+var my_prop:
+	set(value):
+		set_my_prop(value)
+func set_my_prop(value)
+	my_prop=value # This will call the setter which will call this function
+```
+
 
 ### Tool mode
+
 
 
 ### Memory Management
@@ -692,8 +702,8 @@ var my_prop: get = get_my_prop, set = set_my_prop
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0Nzc1NDE0MSwtODAwMjk4MjY2LDE1Nj
-EyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5
-ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX
-0=
+eyJoaXN0b3J5IjpbLTg5MTkyNzQxLC04MDAyOTgyNjYsMTU2MT
+I4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4
+OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ
+==
 -->
