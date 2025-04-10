@@ -750,6 +750,10 @@ func _on_object_hit(object):
 ## GDScript exported properties
 https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exports.html
 
+* Exported properties are saved along with resources (like the scene)
+* They are available for editing in the property editor
+* Exporting is done using the `@export` annotation
+* Export variables must be initialized to a constant expression and/or have a type specifier
 
 ## GDscript documentation comments
 
@@ -801,7 +805,7 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exp
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1MTYyMzgzNiwtMTIzMTY5NjgwMSwzND
+eyJoaXN0b3J5IjpbMTA4ODAxODQxMSwtMTIzMTY5NjgwMSwzND
 YwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00ODA5Njgx
 MTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQzNDUyLC
 05NDQwMDg3NzYsLTcwMDczNDcwNF19
