@@ -592,7 +592,12 @@ Some rules:
 2. The inheriting class can have a different number of arguments thatn the base class
 
 Static Constructor
-: `_static_init` is called automatically when the class is loaded, after automatic static va
+: `_static_init` is called automatically when the class is loaded, after static variables have been automatically initialized
+
+Inner classes
+: Additional classes inside the file declared with the `class keyword`
+* `class SomeInnerClass:`
+* These are accessible as `ParentClass.SomeInnerClass`
 
 
 ### Exports
@@ -665,7 +670,7 @@ Static Constructor
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUyMjUzMzczLDE1NjEyODQ2MTEsLTQ4MD
+eyJoaXN0b3J5IjpbOTU0MTQ5OTE2LDE1NjEyODQ2MTEsLTQ4MD
 k2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLTE3NTAyNDM0
 NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
