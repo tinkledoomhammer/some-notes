@@ -486,7 +486,17 @@ while(expression):
 	statement(s)
 ```
 #### for
+```python
+for x in [5,7,11]
+	...
+var names = ["a", "b"]
+for name:String in names:
+	...
 
+for i in range(3): # 0,1,2
+for i in range(1,3): #1,2
+for i in range(2,8,2): 
+```
 ### Classes
 
 
@@ -560,7 +570,7 @@ while(expression):
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4MDk2ODExNywtMTQ1MTI4NjQwMyw3OT
-kzNjA5ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0
-NzA0XX0=
+eyJoaXN0b3J5IjpbMTQwNjMwMjc1OCwtNDgwOTY4MTE3LC0xND
+UxMjg2NDAzLDc5OTM2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4
+Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
