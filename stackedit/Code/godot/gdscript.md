@@ -522,7 +522,10 @@ match  <test  value>:
 	2. Expressions i.e. `match typeof(x):` ... `TYPE_FLOAT: `...
 	3. Wildcard pattern: `_` will match anything
 	4. Binding pattern, like `_` but with a variable name: `var new_var:`
-	5. 
+	5. Array pattern: matches an array
+		* every element of the pattern array is itself a pattern
+		* the length is tested first
+		* to match longer arrays use `..` i.e. `[42, ..]:` will match any array starting with `42`
 ### Classes
 
 
@@ -596,7 +599,7 @@ match  <test  value>:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4Njg2ODkxOCwxNTYxMjg0NjExLC00OD
+eyJoaXN0b3J5IjpbMTE0NDg0Mzk4MCwxNTYxMjg0NjExLC00OD
 A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
 NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
