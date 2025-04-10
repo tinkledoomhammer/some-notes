@@ -798,8 +798,11 @@ Also: `@export_multiline var text`
 etc
 ```
 String args
-* "or_less", "or_greater" - allow setting outside the specified range by typing or dragging when not clicked on the slider
-* "exp" uses an exponential s
+* `"or_less"`, `"or_greater"` - allow setting outside the specified range by typing or dragging when not clicked on the slider
+* `"exp"` uses an exponential scale rather than a linear scale for the slider
+* `"hide_slider"` prevents showing the slider at all
+* `"suffix:m"` sets a suffix (like for units and whatnot)
+* `"radians_as_degrees"` used 
 
 
 `@export_range(0,100,1, "suffix:m" var
@@ -879,9 +882,9 @@ String args
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE0NTgwNTYxLDEyMTMyNzcwNjAsMTUzOT
-M4NDI3NSwtMTIzMTY5NjgwMSwzNDYwNzI3NTQsLTgwMDI5ODI2
-NiwxNTYxMjg0NjExLC00ODA5NjgxMTcsLTE0NTEyODY0MDMsNz
-k5MzYwOTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDcz
-NDcwNF19
+eyJoaXN0b3J5IjpbMTk3MTU1NDM4OSwxMjEzMjc3MDYwLDE1Mz
+kzODQyNzUsLTEyMzE2OTY4MDEsMzQ2MDcyNzU0LC04MDAyOTgy
+NjYsMTU2MTI4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLD
+c5OTM2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3
+MzQ3MDRdfQ==
 -->
