@@ -676,6 +676,10 @@ Signals
 * and a `.emit()` method to call all the registered callbacks
 * they can also be `await`ed
 * `.emit()` can take arguments which are then passed to each callback
+* forwarded arguments can be specified in the `signal` declaration 
+	* `signal my_signal(a_val, b_val)`
+	* then the callbacks should take the same args
+	* the args should be passed to `emit()`
 
 
 
@@ -736,8 +740,8 @@ Signals
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAyODIwNzQ5LC04MDAyOTgyNjYsMTU2MT
-I4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4
-OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ
-==
+eyJoaXN0b3J5IjpbLTIyNjk3NjA2OCwtODAwMjk4MjY2LDE1Nj
+EyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5
+ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX
+0=
 -->
