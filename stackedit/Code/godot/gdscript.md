@@ -538,6 +538,14 @@ match  <test  value>:
 		* sub-patterns are comma-delimited 
 		* i.e. `{"name": "Dennis", "age": var age, ..}:`
 	7. Multiple patterns
+		* comma separated
+		* no bindings are allowed
+		* eg `1,2,3:` to match 1 or 2 or 3
+Pattern guard
+: an optional condition that follows the pattern list and allows additional checks before chosing a branch
+: can be an arbitrary expression, specified wi
+
+
 ### Classes
 
 
@@ -611,7 +619,7 @@ match  <test  value>:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyOTE1NzIwNiwxNTYxMjg0NjExLC00OD
-A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
-NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbLTE0NjgyODI0OTAsMTU2MTI4NDYxMSwtND
+gwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4OCwtMTc1MDI0
+MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
