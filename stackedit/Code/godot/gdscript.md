@@ -273,7 +273,15 @@ Rect2
 `Quaternion`
 : Used to represent 3D rotation
 
-`AABB
+`AABB`
+: Axis aligned bounding box -- like `Rect2` but its fields are `Vector3`s
+
+`Transform3D`
+: Contains a `basis` and a `Vector3` `origin`
+
+#### Engine built-in types
+`Array`
+: 
 
 ### Variables
 
@@ -358,6 +366,6 @@ Rect2
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3ODAzMzk3Miw3OTkzNjA5ODgsLTE3NT
-AyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
+eyJoaXN0b3J5IjpbLTE0MDY1MDQ3NjUsNzk5MzYwOTg4LC0xNz
+UwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
