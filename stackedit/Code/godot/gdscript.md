@@ -672,7 +672,10 @@ func _this_is_called_later():
 Signals
 : A tool to emit messages from an object to other listeners
 * Custom signals are created with the `signal` keyword, as class members
-* They have a `.connect(callable)` method t
+* They have a `.connect(callable)` method that registers listeners
+* and a `.emit()` method to call all the registered callbacks
+* they can also be `await`ed
+* `.emit()` can take arguments which are then passed to each callback
 
 
 
@@ -733,8 +736,8 @@ Signals
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTE1MzIzNTYsLTgwMDI5ODI2NiwxNT
-YxMjg0NjExLC00ODA5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYw
-OTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF
-19
+eyJoaXN0b3J5IjpbODAyODIwNzQ5LC04MDAyOTgyNjYsMTU2MT
+I4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4
+OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ
+==
 -->
