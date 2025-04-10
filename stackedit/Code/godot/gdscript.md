@@ -526,6 +526,9 @@ match  <test  value>:
 		* every element of the pattern array is itself a pattern
 		* the length is tested first
 		* to match longer arrays use `..` i.e. `[42, ..]:` will match any array starting with `42`
+		* wildcard patterns can be used as subpatterns
+		* the sub-patterns are comma-separated
+	6. Dictionary pattern: every key has to be a constant pattern. the size is tested first
 ### Classes
 
 
@@ -599,7 +602,7 @@ match  <test  value>:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0NDg0Mzk4MCwxNTYxMjg0NjExLC00OD
+eyJoaXN0b3J5IjpbMTA2MTYyMDE0OCwxNTYxMjg0NjExLC00OD
 A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
 NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
