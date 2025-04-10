@@ -230,19 +230,28 @@ With some exceptions
 Those exceptions are `Object` `Array` `Dictionary` and packed arrays
 
 #### Basic built-in types
-null
+`null`
 : An empty data type
 : Only types that can inherit from Object can have a `null` value
 : `Variant` types must have a valid value at all times
 
-bool
+`bool`
 : `true` or `false`
 
-int
+`int
 : integers, equivalent to `int64_t` in c++
 
-float
-: `double` Note: `Vector2`, `Vector3` and `PackedFloat32Array` store 32-bit f
+`float
+: `double` Note: `Vector2`, `Vector3` and `PackedFloat32Array` store 32-bit floating point values
+
+String
+: a sequence of chars in Unicode format
+
+StringName
+: An immutable unique string. Slower to create, especially when multithreading, but fast to compare. suitable for dictionary keys
+
+#### Vector built-in types
+`Vector2`
 
 ### Variables
 
@@ -327,6 +336,6 @@ float
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwMTI0NTk1NSw3OTkzNjA5ODgsLTE3NT
+eyJoaXN0b3J5IjpbLTMyOTQ3NjcyOSw3OTkzNjA5ODgsLTE3NT
 AyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
