@@ -297,7 +297,10 @@ arr.append(4)  # Array is now ["Hi!", 2, 3, 4].
 : Their methods still use `Variant` types
 : `var  a:  Array[int]`
 : Types cannot be mixed, even if one type is a subtype of the other
-* Typed arrays can be converted with the `Array.assign()` method
+* Typed arrays can be converted with the `Array.assign()` method https://docs.godotengine.org/en/stable/classes/class_array.html#class-array-method-assign
+#### Packed Arrays
+`Packed<type>Array` (i.e. `PackedInt32Array`)
+Allowed "types" : `Byte` `Int32` `Int64` `
 
 ### Variables
 
@@ -382,6 +385,6 @@ arr.append(4)  # Array is now ["Hi!", 2, 3, 4].
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5NDQ5MTE2NSw3OTkzNjA5ODgsLTE3NT
-AyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
+eyJoaXN0b3J5IjpbNjM4NDM2NTkxLDc5OTM2MDk4OCwtMTc1MD
+I0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
