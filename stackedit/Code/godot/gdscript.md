@@ -683,7 +683,12 @@ Signals
 	* the editor "Node" dock can generate callback functions automatically 
 * The registered callbacks can be created with `Callable.bind()` to send additional information to specific callbacks
 	* https://docs.godotengine.org/en/stable/classes/class_callable.html#class-callable-method-bind
-	* 
+
+#### Awaiting signals or coroutines
+`await`
+: keyword used to create coroutines
+: causes execution to wait until the signal is emitted before coninuing
+* usig the await keyword with a s
 
 
 
@@ -744,7 +749,7 @@ Signals
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0MTY1NzY0NiwtODAwMjk4MjY2LDE1Nj
+eyJoaXN0b3J5IjpbMTE2OTUwNTAyNywtODAwMjk4MjY2LDE1Nj
 EyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5
 ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX
 0=
