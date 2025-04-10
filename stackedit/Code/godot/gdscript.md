@@ -569,7 +569,14 @@ extends Node
 * Non-static variables are initizlized every time an instance is created, including arrays and dictionaries
 * The editor will hade custom classes that begin with the prefix "Editor" in the "Create new Node" and "Create new scene" dialog windows
 
-A class that is i
+A class that is stored as a file can inherit fro
+* a global calss
+* another class file
+* an inner class inside another file
+* inheritance uses the `extends` keyword
+* if no inheritance is specified, then `extends RefCounted` is the default
+* use the `is` keyword to determine if an instance inherits from a given class
+* to call a function in a super clas s, use the `super` keyword
 
 
 ### Exports
@@ -642,7 +649,7 @@ A class that is i
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTc5MjA4NzEsMTU2MTI4NDYxMSwtND
+eyJoaXN0b3J5IjpbLTEzNDAzOTQ1MjYsMTU2MTI4NDYxMSwtND
 gwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4OCwtMTc1MDI0
 MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
