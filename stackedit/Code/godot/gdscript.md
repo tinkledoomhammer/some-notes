@@ -312,9 +312,9 @@ Allowed "types" : `Byte` `Int32` `Int64` `Float32` `Float64` `String` `Vector2` 
 ```python
 # style 1 (json)
 var d = {4: 5, "A key": "A value", 28: [1, 2, 3]}
-# Assign to a
+# Assign to an empty key
 d["Hi!"] = 0
-
+#alternative 'Lua-style` syntax
 d = {
 	22: "value",
 	"some_key": 2,
@@ -322,7 +322,13 @@ d = {
 	"more_key": "Hello"
 }
 ```
+TODO: Typed dicts
 
+`Signal`
+: a message that can be emitted by an object to those who listen to it
+
+`Callable`
+: contains an object and a function which is usefull for passing functions a values
 ### Variables
 
 ### Constants
@@ -406,6 +412,6 @@ d = {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5NTM2NDIzNCw3OTkzNjA5ODgsLTE3NT
-AyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
+eyJoaXN0b3J5IjpbMzY3MTY1OTQxLDc5OTM2MDk4OCwtMTc1MD
+I0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
