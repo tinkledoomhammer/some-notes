@@ -679,7 +679,11 @@ Signals
 * forwarded arguments can be specified in the `signal` declaration 
 	* `signal my_signal(a_val, b_val)`
 	* then the callbacks should take the same args
-	* the args should be passed to `emit()`
+	* the args should be passed to `emit()` but this is not enforced at compile time
+	* the editor "Node" dock can generate callback functions automatically 
+* The registered callbacks can be created with `Callable.bind()` to send additional information to specific callbacks
+	* https://docs.godotengine.org/en/stable/classes/class_callable.html#class-callable-method-bind
+	* 
 
 
 
@@ -740,7 +744,7 @@ Signals
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNjk3NjA2OCwtODAwMjk4MjY2LDE1Nj
+eyJoaXN0b3J5IjpbMTg0MTY1NzY0NiwtODAwMjk4MjY2LDE1Nj
 EyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5
 ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX
 0=
