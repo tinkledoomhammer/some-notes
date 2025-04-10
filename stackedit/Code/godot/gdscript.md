@@ -413,10 +413,17 @@ State.STATE_1
 * A function can return at any time
 * The default return value is `null`
 * If a function body is only one line long, then it can be all on one line
+```python
+func square(a): return a*a
+func cube(a): 
+	return a*a*a
+```
 * The return value and parameters can also have a type specification
 	* If the argument has a default value then the type can be inferred
 * the return type can be expressed after the argument list with the `->` arrow token
-* 
+* `void` may be used as a return type
+	* `void` functions cannot return values
+* if a return type is specified then the function **must** return a value of that type
 
 ### Statements and control flow
 
@@ -494,7 +501,7 @@ State.STATE_1
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzMjA0MTU5MywtMTQ1MTI4NjQwMyw3OT
-kzNjA5ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0
-NzA0XX0=
+eyJoaXN0b3J5IjpbLTEyNDQ2NzczMzksLTE0NTEyODY0MDMsNz
+k5MzYwOTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDcz
+NDcwNF19
 -->
