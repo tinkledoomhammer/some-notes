@@ -528,12 +528,16 @@ match  <test  value>:
 		* to match longer arrays use `..` i.e. `[42, ..]:` will match any array starting with `42`
 		* wildcard patterns can be used as subpatterns
 		* the sub-patterns are comma-separated
+		* each pattern is enclosed in `[]`
 	6. Dictionary pattern: every key has to be a constant pattern.
 		* the size is tested first
 		* the pattern must be in key:value pairs
 		* if no value is specified in the pattern, then only the key is matched and any value will match
 		* the match can be open ended with `..` at the end
-		* each pattern is enclo
+		* each pattern is enclosed in `{}`
+		* sub-patterns are comma-delimited 
+		* i.e. `{"name": "Dennis", "age": var age, ..}:`
+	7. Multiple patterns
 ### Classes
 
 
@@ -607,7 +611,7 @@ match  <test  value>:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMDA4MTAyLDE1NjEyODQ2MTEsLTQ4MD
-k2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLTE3NTAyNDM0
-NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
+eyJoaXN0b3J5IjpbLTQyOTE1NzIwNiwxNTYxMjg0NjExLC00OD
+A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
+NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
