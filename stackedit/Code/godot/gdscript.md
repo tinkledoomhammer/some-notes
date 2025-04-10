@@ -582,7 +582,10 @@ A class that is stored as a file can inherit fro
 	* `get_class()` and `queue_free()` for example
 * engine functions that can be overrided will be marked as `virtual` in the docs
 	* such as `_ready()` and `_process()`
-###
+#### class constructor: `_init(arg)`
+* can call the base class constructor with `super`
+* Every class has an implicit constructor that is always called first (which initializes variables with the values specified outside of any function)
+* `super` will only call the explicit constructor
 
 
 ### Exports
@@ -655,7 +658,7 @@ A class that is stored as a file can inherit fro
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MDYxMDk3NiwxNTYxMjg0NjExLC00OD
-A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
-NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbNDYxMjQ2NTgxLDE1NjEyODQ2MTEsLTQ4MD
+k2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLTE3NTAyNDM0
+NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
