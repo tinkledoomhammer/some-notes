@@ -556,8 +556,15 @@ Pattern guard
 * the extends keyword can take an absolute or relative path
 #### Registering named classes
 * names are registered with the `class_name` keyword
-* an ico
-
+* an icon can be associated with the `@icon` annotation
+```
+@icon(res://interface/icons/item/png)
+class_name Item
+extends Node
+...
+```
+* `class_name` and `extends` can be on the same line
+* Named classes are available globally without `load()` 
 
 
 
@@ -631,7 +638,7 @@ Pattern guard
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNzk1NzAxNCwxNTYxMjg0NjExLC00OD
+eyJoaXN0b3J5IjpbMTI0OTQ3NjcyMCwxNTYxMjg0NjExLC00OD
 A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
 NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
