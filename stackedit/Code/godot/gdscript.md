@@ -807,9 +807,14 @@ String args
 
 #### Easing hints
 `@export_exp_easing var num`
-: exports a f
+: exports a floating-poit property with an easing editor widget
+* additional hints can be provided as string args
+	* `"attenuation"` flips the curve
+	* `"positive_only"` limits values to be $>=0$
+
 
 #### Colors
+`@export var col:
 
 #### Nodes
 
@@ -883,7 +888,7 @@ String args
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0MzIwMDk1OCwxMjEzMjc3MDYwLDE1Mz
+eyJoaXN0b3J5IjpbLTY2OTM2MjI3OCwxMjEzMjc3MDYwLDE1Mz
 kzODQyNzUsLTEyMzE2OTY4MDEsMzQ2MDcyNzU0LC04MDAyOTgy
 NjYsMTU2MTI4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLD
 c5OTM2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3
