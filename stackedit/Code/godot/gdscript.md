@@ -333,6 +333,8 @@ TODO: Typed dicts
 * Can be called by invoking the call method. `object.methodName.call(x,y)` is the same as `object.methodName(x,y)`
 
 ### Variables
+* can be cl
+
 
 ### Constants
 
@@ -415,6 +417,6 @@ TODO: Typed dicts
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NDc1MzE5Myw3OTkzNjA5ODgsLTE3NT
-AyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
+eyJoaXN0b3J5IjpbLTEyOTg2NzgwOTksNzk5MzYwOTg4LC0xNz
+UwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
