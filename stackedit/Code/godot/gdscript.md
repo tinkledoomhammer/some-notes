@@ -823,10 +823,12 @@ String args
 * A class that inherits `Node` will filter options i.e. `@export var x : BaseButton`
 * There is an older `NodePath` type that is similar
 	* converting a `Node` to a `NodePath` uses the `get_node(node_path)` function
-	* 
+	* `@export_node_path var nodepath` for unfiltered
+	* `@export_node_path("Button")` for filtered 
 
 #### Resources
-
+When the export type is or inherits from 1`Resource` then additional options are available
+* 
 
 #### Exporting bit flags
 
@@ -895,7 +897,7 @@ String args
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MDcyODc5NiwxMjEzMjc3MDYwLDE1Mz
+eyJoaXN0b3J5IjpbLTc1OTc2NjY0MCwxMjEzMjc3MDYwLDE1Mz
 kzODQyNzUsLTEyMzE2OTY4MDEsMzQ2MDcyNzU0LC04MDAyOTgy
 NjYsMTU2MTI4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLD
 c5OTM2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3
