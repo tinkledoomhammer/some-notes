@@ -705,7 +705,8 @@ Signals
 
 
 
-## GDScript: An introduction to dynamic languages
+### GDScript: An introduction to dynamic languages
+https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_advanced.html
 ### Custom Iterators
 Use `iter_init`, `_iter_next` and `_iter_get`
 ```
@@ -747,6 +748,8 @@ func _on_object_hit(object):
 		object.smash()
 ```
 ## GDScript exported properties
+https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exports.html
+
 
 ## GDscript documentation comments
 
@@ -798,8 +801,8 @@ func _on_object_hit(object):
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU2ODczNTUwLC0xMjMxNjk2ODAxLDM0Nj
-A3Mjc1NCwtODAwMjk4MjY2LDE1NjEyODQ2MTEsLTQ4MDk2ODEx
-NywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLTE3NTAyNDM0NTIsLT
-k0NDAwODc3NiwtNzAwNzM0NzA0XX0=
+eyJoaXN0b3J5IjpbLTM1MTYyMzgzNiwtMTIzMTY5NjgwMSwzND
+YwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00ODA5Njgx
+MTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQzNDUyLC
+05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
