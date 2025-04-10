@@ -198,6 +198,26 @@ Documentation Comments
 : See https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_documentation_comments.html
 
 #### Code Regions
+Collapsible sections of code in addition to the normal collapsible regions
+```python
+# This comment is outside the code region. It will be visible when collapsed.
+#region Terrain generation
+# This comment is inside the code region. It won't be visible when collapsed.
+func  generate_lakes():
+	pass
+func  generate_hills():
+	pass
+#endregion
+
+#region Terrain population
+func  place_vegetation():
+	pass
+
+func  place_roads():
+	pass
+#endregion
+```
+
 
 
 ### Line continuation
@@ -287,6 +307,6 @@ Documentation Comments
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk5MzYwOTg4LC0xNzUwMjQzNDUyLC05ND
-QwMDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbOTI1MjQzNDQxLDc5OTM2MDk4OCwtMTc1MD
+I0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
