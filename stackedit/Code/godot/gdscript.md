@@ -329,6 +329,9 @@ TODO: Typed dicts
 
 `Callable`
 : contains an object and a function which is usefull for passing functions a values
+* Getting a method as a member variable returns a callable `object.methodName` (no parens) 
+* Can be called by invoking the call method. `object.methodName.call(x,y)` is the same as `object.methodName(x,y)`
+
 ### Variables
 
 ### Constants
@@ -412,6 +415,6 @@ TODO: Typed dicts
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY3MTY1OTQxLDc5OTM2MDk4OCwtMTc1MD
-I0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbMjA0NDc1MzE5Myw3OTkzNjA5ODgsLTE3NT
+AyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
