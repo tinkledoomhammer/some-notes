@@ -637,11 +637,14 @@ func set_my_prop(value)
 
 
 ### Tool mode
-
+`@tool`
+: the annotationn allows scripts to be run inside the editor instead of only in the game
+https://docs.godotengine.org/en/stable/tutorials/plugins/running_code_in_the_editor.html
 
 
 ### Memory Management
-
+* There is no garbage collector
+* THe 
 
 ### Signals
 
@@ -702,7 +705,7 @@ func set_my_prop(value)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MTkyNzQxLC04MDAyOTgyNjYsMTU2MT
+eyJoaXN0b3J5IjpbODk4MjQ0NjYyLC04MDAyOTgyNjYsMTU2MT
 I4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4
 OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ
 ==
