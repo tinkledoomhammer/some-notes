@@ -622,6 +622,9 @@ var  my_prop:
 # it can all be on one line
 var my_prop: get = get_my_prop, set = set_my_prop
 ```
+* Setters and getters are not called from inside themselves
+* Setters can be called from inside getters and vice versa 
+* Functions called from inside the setters and getters will still access the property via the setters and getters though
 * 
 
 ### Tool mode
@@ -689,7 +692,7 @@ var my_prop: get = get_my_prop, set = set_my_prop
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3ODkxOTUyNCwtODAwMjk4MjY2LDE1Nj
+eyJoaXN0b3J5IjpbLTQ0Nzc1NDE0MSwtODAwMjk4MjY2LDE1Nj
 EyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5
 ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX
 0=
