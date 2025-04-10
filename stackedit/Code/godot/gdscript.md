@@ -787,7 +787,14 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exp
 Also: `@export_multiline var text`
 #### Limiting editor input ranges
 ```
-@export_range(0,20) var i
+@export_range(0,20) var i1
+@export_range(-10,20,0.2) var f1: float
+
+@export_range(1,100,1,"or_less", "or_greater") var i3: int
+
+@export_range(0,1000,0.01, "exp") var f2: float
+
+
 ```
 #### Adding suffixes and handling angle units
 
@@ -867,9 +874,9 @@ Also: `@export_multiline var text`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyODg0MzU3MSwxMjEzMjc3MDYwLDE1Mz
-kzODQyNzUsLTEyMzE2OTY4MDEsMzQ2MDcyNzU0LC04MDAyOTgy
-NjYsMTU2MTI4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLD
-c5OTM2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3
-MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbLTEzOTIxNDQzNTMsMTIxMzI3NzA2MCwxNT
+M5Mzg0Mjc1LC0xMjMxNjk2ODAxLDM0NjA3Mjc1NCwtODAwMjk4
+MjY2LDE1NjEyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMy
+w3OTkzNjA5ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAw
+NzM0NzA0XX0=
 -->
