@@ -735,6 +735,9 @@ class ForwardIterator:
 	func _iter_get(arg):
 		return current
 
+#Usage:
+var iter = ForwardIterator.new(0,6,2)
+for i in iter: print(i) # 0,2,4
 ```
 
 ## GDScript exported properties
@@ -789,7 +792,7 @@ class ForwardIterator:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ1MDY3ODUzLC0xMjMxNjk2ODAxLDM0Nj
+eyJoaXN0b3J5IjpbNDc2NjI3MjE0LC0xMjMxNjk2ODAxLDM0Nj
 A3Mjc1NCwtODAwMjk4MjY2LDE1NjEyODQ2MTEsLTQ4MDk2ODEx
 NywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLTE3NTAyNDM0NTIsLT
 k0NDAwODc3NiwtNzAwNzM0NzA0XX0=
