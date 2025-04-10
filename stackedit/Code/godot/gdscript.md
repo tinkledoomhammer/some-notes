@@ -688,7 +688,9 @@ Signals
 `await`
 : keyword used to create coroutines
 : causes execution to wait until the signal is emitted before coninuing
-* usig the await keyword with a s
+* usig the await keyword with a signal or a call to a function that is also a coroutine will immediately return control to the caller.
+	* when the signal is emitted or the coroutine finishes, it will resume execution from the point where it stopped
+* Calling a coroutine without using `await` will generate an 
 
 
 
@@ -749,7 +751,7 @@ Signals
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2OTUwNTAyNywtODAwMjk4MjY2LDE1Nj
+eyJoaXN0b3J5IjpbMjA3NjMxODIxMCwtODAwMjk4MjY2LDE1Nj
 EyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5
 ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX
 0=
