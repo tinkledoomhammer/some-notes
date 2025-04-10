@@ -690,7 +690,9 @@ Signals
 : causes execution to wait until the signal is emitted before coninuing
 * usig the await keyword with a signal or a call to a function that is also a coroutine will immediately return control to the caller.
 	* when the signal is emitted or the coroutine finishes, it will resume execution from the point where it stopped
-* Calling a coroutine without using `await` will generate an 
+* using a return value from a coroutine without using `await` will generate an error
+* If the return value is unneeded then `await` is optional
+* if `await` is used with an expression that is not a signal or coroutine then the value is returned immediately and the function will continue
 
 
 
@@ -751,8 +753,8 @@ Signals
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3NjMxODIxMCwtODAwMjk4MjY2LDE1Nj
-EyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5
-ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX
-0=
+eyJoaXN0b3J5IjpbMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MT
+I4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4
+OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ
+==
 -->
