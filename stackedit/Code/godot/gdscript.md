@@ -739,7 +739,13 @@ class ForwardIterator:
 var iter = ForwardIterator.new(0,6,2)
 for i in iter: print(i) # 0,2,4
 ```
-
+#### Duck typing
+use `object.has_method("methodName")`
+```
+func _on_object_hit(object):
+	if object.has_method("smash"):
+		object.smash()
+```
 ## GDScript exported properties
 
 ## GDscript documentation comments
@@ -792,7 +798,7 @@ for i in iter: print(i) # 0,2,4
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc2NjI3MjE0LC0xMjMxNjk2ODAxLDM0Nj
+eyJoaXN0b3J5IjpbNzU2ODczNTUwLC0xMjMxNjk2ODAxLDM0Nj
 A3Mjc1NCwtODAwMjk4MjY2LDE1NjEyODQ2MTEsLTQ4MDk2ODEx
 NywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLTE3NTAyNDM0NTIsLT
 k0NDAwODc3NiwtNzAwNzM0NzA0XX0=
