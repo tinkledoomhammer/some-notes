@@ -238,20 +238,29 @@ Those exceptions are `Object` `Array` `Dictionary` and packed arrays
 `bool`
 : `true` or `false`
 
-`int
+`int`
 : integers, equivalent to `int64_t` in c++
 
-`float
+`float`
 : `double` Note: `Vector2`, `Vector3` and `PackedFloat32Array` store 32-bit floating point values
 
-String
+`String`
 : a sequence of chars in Unicode format
 
-StringName
+`StringName`
 : An immutable unique string. Slower to create, especially when multithreading, but fast to compare. suitable for dictionary keys
 
 #### Vector built-in types
 `Vector2`
+: Contains `x` and `y` fields
+
+`Vector2i`
+: int `x` and `y`
+
+Rect2
+: `position` and `size` and also an `end` field which is `position+size`
+
+
 
 ### Variables
 
@@ -336,6 +345,6 @@ StringName
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyOTQ3NjcyOSw3OTkzNjA5ODgsLTE3NT
+eyJoaXN0b3J5IjpbMTQwMTA2MDEwMSw3OTkzNjA5ODgsLTE3NT
 AyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
