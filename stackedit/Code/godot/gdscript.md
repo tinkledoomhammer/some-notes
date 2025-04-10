@@ -427,7 +427,11 @@ func cube(a):
 #### Referencing and lambdas
 * Accessing a function without calling it (i.e. no arguments) returns a `Callable` object
 * Lambdas are created by assigning a function definition to a variable:
-* `
+* `var lambda = func(x): print(x)`
+* They are called with the `call()` method
+* They can be named for debugging `var lam = func my_func(x): print(x)`
+* Type specifiers can be used just like regular functions
+* a `return` must be explicit
 
 ### Statements and control flow
 
@@ -505,7 +509,7 @@ func cube(a):
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxODE1ODcyMywtMTQ1MTI4NjQwMyw3OT
+eyJoaXN0b3J5IjpbLTMxNDMwODQ2NiwtMTQ1MTI4NjQwMyw3OT
 kzNjA5ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0
 NzA0XX0=
 -->
