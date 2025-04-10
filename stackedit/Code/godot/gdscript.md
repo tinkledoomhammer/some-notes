@@ -774,6 +774,11 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exp
 	* categories are higher level than groups
 	* they aren't collapsible
 	* they are presented visually in the same style as parent classes
+#### Strings as paths
+```
+@export_file var f
+@ex
+```
 
 ## GDscript documentation comments
 
@@ -825,8 +830,9 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exp
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMzI3NzA2MCwxNTM5Mzg0Mjc1LC0xMj
-MxNjk2ODAxLDM0NjA3Mjc1NCwtODAwMjk4MjY2LDE1NjEyODQ2
-MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLT
-E3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
+eyJoaXN0b3J5IjpbMTMzNTUzMDg5NSwxMjEzMjc3MDYwLDE1Mz
+kzODQyNzUsLTEyMzE2OTY4MDEsMzQ2MDcyNzU0LC04MDAyOTgy
+NjYsMTU2MTI4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLD
+c5OTM2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3
+MzQ3MDRdfQ==
 -->
