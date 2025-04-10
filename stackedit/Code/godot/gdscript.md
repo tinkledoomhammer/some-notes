@@ -308,6 +308,20 @@ Allowed "types" : `Byte` `Int32` `Int64` `Float32` `Float64` `String` `Vector2` 
 * Typed arrays are fairly fast on their own. The packed arrays are useful to reduce memory fragmentation for very large collections
 
 `Dictionary`
+: Associative arrays which contain values referenced by unique keys
+```python
+# style 1 (json)
+var d = {4: 5, "A key": "A value", 28: [1, 2, 3]}
+# Assign to a
+d["Hi!"] = 0
+
+d = {
+	22: "value",
+	"some_key": 2,
+	"other_key": [2, 3, 4],
+	"more_key": "Hello"
+}
+```
 
 ### Variables
 
@@ -392,6 +406,6 @@ Allowed "types" : `Byte` `Int32` `Int64` `Float32` `Float64` `String` `Vector2` 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTMxMTQ0NTE5LDc5OTM2MDk4OCwtMTc1MD
-I0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbMTE5NTM2NDIzNCw3OTkzNjA5ODgsLTE3NT
+AyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
