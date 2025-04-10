@@ -706,6 +706,36 @@ Signals
 
 
 ## GDScript: An introduction to dynamic languages
+### Custom Iterators
+Use `iter_init`, `_iter_next` and `_iter_get`
+```
+class ForwardIterator:
+	var start
+	var current
+	var end
+	var increment
+
+	func _init(start, stop, increment):
+		self.start = start
+		self.current = start
+		self.end = stop
+		self.increment = increment
+
+	func should_continue():
+		return (current < end)
+
+	func _iter_init(arg):
+		current = start
+		return should_continue()
+
+	func _iter_next(arg):
+		current += increment
+		return should_continue()
+
+	func _iter_get(arg):
+		return current
+
+```
 
 ## GDScript exported properties
 
@@ -759,8 +789,8 @@ Signals
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzE2OTY4MDEsMzQ2MDcyNzU0LC04MD
-AyOTgyNjYsMTU2MTI4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2
-NDAzLDc5OTM2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC
-03MDA3MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbNzQ1MDY3ODUzLC0xMjMxNjk2ODAxLDM0Nj
+A3Mjc1NCwtODAwMjk4MjY2LDE1NjEyODQ2MTEsLTQ4MDk2ODEx
+NywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLTE3NTAyNDM0NTIsLT
+k0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
