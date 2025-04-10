@@ -449,8 +449,13 @@ func cube(a):
 Expressions
 : sequences of operators and their operands i an orderly fashion
 : they can also be statements
-*  return values that can be assigned to valid targets
-* Operands
+* Return values that can be assigned to valid targets
+* Operands to some operators can also be expression
+* Assignment is not an expression and does not return any value :<
+
+self
+: Refers to the current instance, often equivalent to accessing symbols directly
+* can also access 
 
 ### Classes
 
@@ -525,7 +530,7 @@ Expressions
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDI4NTMzNzAsLTE0NTEyODY0MDMsNz
-k5MzYwOTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDcz
-NDcwNF19
+eyJoaXN0b3J5IjpbODA1NDAwNjUsLTE0NTEyODY0MDMsNzk5Mz
+YwOTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDczNDcw
+NF19
 -->
