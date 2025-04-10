@@ -471,6 +471,19 @@ else:
 if (expression): statement
 # The ternary operator is the same but with no `:`
 var x = val1 if expression else val2
+
+# Ternary expressions can be nested but should be spread across lines:
+var  fruit_alt  = \
+		"apple"  if  count  ==  2 \
+		else  "pear"  if  count  ==  1 \
+		else  "banana"  if  count  ==  0 \
+		else  "orange"		
+```
+
+#### While
+```python
+while(expression):
+	statement(s)
 ```
 ### Classes
 
@@ -545,7 +558,7 @@ var x = val1 if expression else val2
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjUxMDQ4NDg2LC0xNDUxMjg2NDAzLDc5OT
-M2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3
-MDRdfQ==
+eyJoaXN0b3J5IjpbMTg0NzIwMjA0MCwtMTQ1MTI4NjQwMyw3OT
+kzNjA5ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0
+NzA0XX0=
 -->
