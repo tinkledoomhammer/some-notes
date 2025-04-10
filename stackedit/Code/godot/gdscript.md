@@ -564,8 +564,12 @@ extends Node
 ...
 ```
 * `class_name` and `extends` can be on the same line
-* Named classes are available globally without `load()` 
+* Named classes are available globally without `load()` or `preload()`
 
+* Non-static variables are initizlized every time an instance is created, including arrays and dictionaries
+* The editor will hade custom classes that begin with the prefix "Editor" in the "Create new Node" and "Create new scene" dialog windows
+
+A class that is i
 
 
 ### Exports
@@ -638,7 +642,7 @@ extends Node
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0OTQ3NjcyMCwxNTYxMjg0NjExLC00OD
-A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
-NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbLTEzNTc5MjA4NzEsMTU2MTI4NDYxMSwtND
+gwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4OCwtMTc1MDI0
+MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
