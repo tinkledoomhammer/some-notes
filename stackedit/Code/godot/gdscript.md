@@ -467,6 +467,10 @@ elif (expression):
 	statement(s)
 else:
 	statement(s)
+# Short form used when the statement(s) block is a single short statement
+if (expression): statement
+# The ternary operator is the same but with no `:`
+var x = val1 if expression else val2
 ```
 ### Classes
 
@@ -541,7 +545,7 @@ else:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDQyMTA1ODcsLTE0NTEyODY0MDMsNz
-k5MzYwOTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDcz
-NDcwNF19
+eyJoaXN0b3J5IjpbMjUxMDQ4NDg2LC0xNDUxMjg2NDAzLDc5OT
+M2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3
+MDRdfQ==
 -->
