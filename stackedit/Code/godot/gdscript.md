@@ -607,7 +607,22 @@ Classes as resources
 
 
 
-### Properties (setters and getters
+### Properties (setters and getters)
+```
+var milliseconds: int = 0
+var seconds: int:
+	get:
+		return milliseconds / 1000
+	set(value):
+		milliseconds = value * 1000
+# or methods can be used
+var  my_prop:
+	get  =  get_my_prop,  set  =  set_my_pro
+
+# it can all be on one line
+var my_prop: get = get_my_prop, set = set_my_prop
+```
+
 
 ### Tool mode
 
@@ -674,7 +689,7 @@ Classes as resources
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4NjA0NDU0MSwxNTYxMjg0NjExLC00OD
+eyJoaXN0b3J5IjpbLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00OD
 A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
 NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
