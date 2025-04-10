@@ -367,7 +367,11 @@ Valid types are:
 * they can have type hints, getters, and setters
 * Within the class they can be accessed without a prefix
 * Elsewhere they can be accessed by prefixing with the class name or an instance: `Class.stat` or `inst.stat`
-* They can
+* They can also be accessed via a child class
+
+`@static_unload` annotation
+* must be placed at the top of the script (before `extends` and `class_name`)
+* 
 
 
 ### Constants
@@ -451,6 +455,6 @@ Valid types are:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTMwMjg4NDcsNzk5MzYwOTg4LC0xNz
+eyJoaXN0b3J5IjpbLTEwMjcxNTU1OTksNzk5MzYwOTg4LC0xNz
 UwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
