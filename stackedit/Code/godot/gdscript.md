@@ -281,7 +281,21 @@ Rect2
 
 #### Engine built-in types
 `Array`
-: 
+: a sequence of arbitrary objects
+: passed by **reference**
+```python
+var  arr  =  []
+arr  =  [1,  2,  3]
+var  b  =  arr[1]  # This is 2.
+var  c  =  arr[arr.size()  -  1]  # This is 3.
+var  d  =  arr[-1]  # Same as the previous line, but shorter.
+arr[0]  =  "Hi!"  # Replacing value 1 with "Hi!".
+arr.append(4)  # Array is now ["Hi!", 2, 3, 4].
+```
+`TypedArrays`
+: Arrays that have a specific type
+: Their methods still use `Variant` types
+
 
 ### Variables
 
@@ -366,6 +380,6 @@ Rect2
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDY1MDQ3NjUsNzk5MzYwOTg4LC0xNz
-UwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbMzkxODE5NTgxLDc5OTM2MDk4OCwtMTc1MD
+I0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
