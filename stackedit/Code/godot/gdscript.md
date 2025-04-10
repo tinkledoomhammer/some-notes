@@ -552,7 +552,11 @@ Pattern guard
 
 
 ### Classes
-
+> **By default all script files are unnamed classes.**
+* the extends keyword can take an absolute or relative path
+#### Registering named classes
+* names are registered with the `class_name` keyword
+* an ico
 
 
 
@@ -627,7 +631,7 @@ Pattern guard
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NzM1OTYzMywxNTYxMjg0NjExLC00OD
+eyJoaXN0b3J5IjpbMTUwNzk1NzAxNCwxNTYxMjg0NjExLC00OD
 A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
 NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
