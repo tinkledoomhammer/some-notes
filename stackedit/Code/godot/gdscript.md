@@ -764,7 +764,10 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exp
 ```
 
 #### Grouping export
-
+* `@export_goup("group")` to group all subsequent exports
+* end by using a different export group
+	* an empty string is equivalent to no group
+* `@exp
 
 ## GDscript documentation comments
 
@@ -816,8 +819,8 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exp
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Nzk5MjY3MTAsLTEyMzE2OTY4MDEsMz
-Q2MDcyNzU0LC04MDAyOTgyNjYsMTU2MTI4NDYxMSwtNDgwOTY4
-MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4OCwtMTc1MDI0MzQ1Mi
-wtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbNjU3MjI0ODk1LC0xMjMxNjk2ODAxLDM0Nj
+A3Mjc1NCwtODAwMjk4MjY2LDE1NjEyODQ2MTEsLTQ4MDk2ODEx
+NywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLTE3NTAyNDM0NTIsLT
+k0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
