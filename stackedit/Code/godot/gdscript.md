@@ -424,6 +424,10 @@ func cube(a):
 * `void` may be used as a return type
 	* `void` functions cannot return values
 * if a return type is specified then the function **must** return a value of that type
+#### Referencing and lambdas
+* Accessing a function without calling it (i.e. no arguments) returns a `Callable` object
+* Lambdas are created by assigning a function definition to a variable:
+* `
 
 ### Statements and control flow
 
@@ -501,7 +505,7 @@ func cube(a):
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDQ2NzczMzksLTE0NTEyODY0MDMsNz
-k5MzYwOTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDcz
-NDcwNF19
+eyJoaXN0b3J5IjpbLTIxODE1ODcyMywtMTQ1MTI4NjQwMyw3OT
+kzNjA5ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0
+NzA0XX0=
 -->
