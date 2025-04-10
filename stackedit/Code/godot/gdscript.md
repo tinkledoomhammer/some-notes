@@ -499,10 +499,12 @@ for i in range(1,3): #1,2
 for i in range(2,8,2): # 2,4,6
 for i in range(8,2,-2): # 8,6,4
 for c in "Hello": #H,e,l,l,o
-for i in 3: #similar to range(3)
-for i in 2.2: # similar to range(ceil(2.2))
+for i in 3: #similar to range(3) 0,1,2
+for i in 2.2: # similar to range(ceil(2.2)) 0.0, 1.0, 2.0
 ```
 Assigning to the local loop variable will not change the value in the array
+
+#### Match
 
 ### Classes
 
@@ -577,7 +579,7 @@ Assigning to the local loop variable will not change the value in the array
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MTI4NDYxMSwtNDgwOTY4MTE3LC0xND
-UxMjg2NDAzLDc5OTM2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4
-Nzc2LC03MDA3MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbLTk4OTQ0NDQ3OCwxNTYxMjg0NjExLC00OD
+A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
+NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
