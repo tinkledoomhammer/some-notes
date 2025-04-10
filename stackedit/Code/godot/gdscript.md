@@ -666,9 +666,15 @@ func _this_is_called_later():
 ```
 
 * Use `weakref(obj)` to get a weakref
-* the `weakref` object has a `.get_ref()` method that will ret
+* the `weakref` object has a `.get_ref()` method that will return an actual reference if the object is still valid
 
 ### Signals
+Signals
+: A tool to emit messages from an object to other listeners
+* Custom signals are created with the `signal` keyword, as class members
+* They have a `.connect(callable)` method t
+
+
 
 
 ### Assert keyword
@@ -727,8 +733,8 @@ func _this_is_called_later():
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MjgyMjIxNCwtODAwMjk4MjY2LDE1Nj
-EyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5
-ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX
-0=
+eyJoaXN0b3J5IjpbLTE1MTE1MzIzNTYsLTgwMDI5ODI2NiwxNT
+YxMjg0NjExLC00ODA5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYw
+OTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF
+19
 -->
