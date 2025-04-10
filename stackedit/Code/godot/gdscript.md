@@ -364,6 +364,11 @@ Valid types are:
 `static var a:int=0`
 * belong to the class, not the instances, and share values between multiple instances
 * `static` variables cannot be `@export` `@onready`, or local to a function
+* they can have type hints, getters, and setters
+* Within the class they can be accessed without a prefix
+* Elsewhere they can be accessed by prefixing with the class name or an instance: `Class.stat` or `inst.stat`
+* They can
+
 
 ### Constants
 
@@ -446,6 +451,6 @@ Valid types are:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxNTk3NDkzOCw3OTkzNjA5ODgsLTE3NT
-AyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
+eyJoaXN0b3J5IjpbLTE3OTMwMjg4NDcsNzk5MzYwOTg4LC0xNz
+UwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
