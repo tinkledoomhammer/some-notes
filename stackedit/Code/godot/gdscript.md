@@ -770,7 +770,8 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exp
 * `@export_subgroup("subgroup name")` to nest
 * there are also export categories
 	* `@export_category("Main Category")` 
-	* It seems like export
+	* It seems like `@export_category` can change the default category?
+	* 
 
 ## GDscript documentation comments
 
@@ -822,7 +823,7 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exp
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1NTE2MDEwNSwtMTIzMTY5NjgwMSwzND
+eyJoaXN0b3J5IjpbMTUzOTM4NDI3NSwtMTIzMTY5NjgwMSwzND
 YwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00ODA5Njgx
 MTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQzNDUyLC
 05NDQwMDg3NzYsLTcwMDczNDcwNF19
