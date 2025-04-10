@@ -541,12 +541,20 @@ match  <test  value>:
 		* comma separated
 		* no bindings are allowed
 		* eg `1,2,3:` to match 1 or 2 or 3
+
 Pattern guard
 : an optional condition that follows the pattern list and allows additional checks before chosing a branch
-: can be an arbitrary expression, specified wi
+: can be an arbitrary expression, specified with the `when` keyword
+* eg `[var x, var y] when y==x:`
+* it will not be evaluated unless the pattern matches
+* if the base pattern matches then the guard pattern is evaluated
+* only if the guard pattern is true will the branch match
 
 
 ### Classes
+
+
+
 
 
 ### Exports
@@ -619,7 +627,7 @@ Pattern guard
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjgyODI0OTAsMTU2MTI4NDYxMSwtND
-gwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4OCwtMTc1MDI0
-MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbMTY5NzM1OTYzMywxNTYxMjg0NjExLC00OD
+A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
+NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
