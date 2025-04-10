@@ -299,8 +299,11 @@ arr.append(4)  # Array is now ["Hi!", 2, 3, 4].
 : Types cannot be mixed, even if one type is a subtype of the other
 * Typed arrays can be converted with the `Array.assign()` method https://docs.godotengine.org/en/stable/classes/class_array.html#class-array-method-assign
 #### Packed Arrays
-`Packed<type>Array` (i.e. `PackedInt32Array`)
-Allowed "types" : `Byte` `Int32` `Int64` `
+`Packed<pseudotype>Array` (i.e. `PackedInt32Array`)
+Allowed "types" : `Byte` `Int32` `Int64` `Float32` `Float64` `String` `Vector2` `Vector3` `Vector4` and `Color`
+
+* usually faster than other arrays, but in the worst case they are a slow as untyped arrays
+* They lack convenience methods like `Array.map
 
 ### Variables
 
@@ -385,6 +388,6 @@ Allowed "types" : `Byte` `Int32` `Int64` `
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM4NDM2NTkxLDc5OTM2MDk4OCwtMTc1MD
-I0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbLTczNjMwNjg2Myw3OTkzNjA5ODgsLTE3NT
+AyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
