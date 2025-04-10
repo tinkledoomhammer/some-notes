@@ -233,7 +233,16 @@ Those exceptions are `Object` `Array` `Dictionary` and packed arrays
 null
 : An empty data type
 : Only types that can inherit from Object can have a `null` value
-: `Variant` typ
+: `Variant` types must have a valid value at all times
+
+bool
+: `true` or `false`
+
+int
+: integers, equivalent to `int64_t` in c++
+
+float
+: `double` Note: `Vector2`, `Vector3` and `PackedFloat32Array` store 32-bit f
 
 ### Variables
 
@@ -318,6 +327,6 @@ null
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5NDIwNzcyNiw3OTkzNjA5ODgsLTE3NT
+eyJoaXN0b3J5IjpbMTkwMTI0NTk1NSw3OTkzNjA5ODgsLTE3NT
 AyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
