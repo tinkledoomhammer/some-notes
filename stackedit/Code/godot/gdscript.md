@@ -786,7 +786,9 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exp
 ```
 Also: `@export_multiline var text`
 #### Limiting editor input ranges
-
+```
+@export_range(0,20) var i
+```
 #### Adding suffixes and handling angle units
 
 #### Floats with easing hint
@@ -800,7 +802,21 @@ Also: `@export_multiline var text`
 
 #### Exporting bit flags
 
-##
+#### Enums
+
+#### Arrays
+
+#### `@export_storage`
+
+#### `@export_custom`
+
+#### `@export_tool_button`
+
+#### Setting exported variables from a ool script
+
+#### Advanced Exports
+
+
 ## GDscript documentation comments
 
 ## GDScript Style guide
@@ -851,7 +867,7 @@ Also: `@export_multiline var text`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MDE3MzY4MSwxMjEzMjc3MDYwLDE1Mz
+eyJoaXN0b3J5IjpbMTIyODg0MzU3MSwxMjEzMjc3MDYwLDE1Mz
 kzODQyNzUsLTEyMzE2OTY4MDEsMzQ2MDcyNzU0LC04MDAyOTgy
 NjYsMTU2MTI4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLD
 c5OTM2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3
