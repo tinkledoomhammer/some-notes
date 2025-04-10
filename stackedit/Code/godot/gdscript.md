@@ -339,8 +339,12 @@ TODO: Typed dicts
 * They can have an optional type specification i.e. `var a : int = 0`
 * Types can be inferred `var a :=0`
 	* Type inferencing is not allowed for a `Variant` type
-`var a` by with no initialization creates an untyped var and s
+* If no type is specified or inferred then the var is a `variant`
+`var a` by with no initialization creates an untyped var and initializes it to `null`
 
+Valid types are:
+1. Built-in types (`Array`, `int` , etc)
+2. Engine clas
 
 ### Constants
 
@@ -423,6 +427,6 @@ TODO: Typed dicts
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNzg2OTU1MSw3OTkzNjA5ODgsLTE3NT
-AyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
+eyJoaXN0b3J5IjpbODA3NDU1ODUwLDc5OTM2MDk4OCwtMTc1MD
+I0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
