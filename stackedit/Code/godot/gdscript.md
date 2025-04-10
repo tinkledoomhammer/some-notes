@@ -217,12 +217,16 @@ func  place_roads():
 	pass
 #endregion
 ```
-
+Code regions can be nested
 
 
 ### Line continuation
+Ending a line with a `\` backslash will continue the current line onto the next line
 
 ### Built-in types
+* Stack-allocated
+* Passed as values
+#### Basic built-in types
 
 ### Variables
 
@@ -307,6 +311,6 @@ func  place_roads():
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI1MjQzNDQxLDc5OTM2MDk4OCwtMTc1MD
-I0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbLTE0MDI4MjgyNjIsNzk5MzYwOTg4LC0xNz
+UwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
