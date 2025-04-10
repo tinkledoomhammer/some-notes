@@ -599,8 +599,12 @@ Inner classes
 * `class SomeInnerClass:`
 * These are accessible as `ParentClass.SomeInnerClass`
 
+Classes as resources
+* Classes at runtime are resource objects that can be loaded with the `load` or `preload` functions
+* The object has a `new` method used to instantiate instances of the class
 
-### Exports
+
+
 
 
 ### Properties (setters and getters
@@ -670,7 +674,7 @@ Inner classes
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU0MTQ5OTE2LDE1NjEyODQ2MTEsLTQ4MD
-k2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLTE3NTAyNDM0
-NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
+eyJoaXN0b3J5IjpbLTU4NjA0NDU0MSwxNTYxMjg0NjExLC00OD
+A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
+NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
