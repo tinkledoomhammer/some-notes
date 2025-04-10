@@ -224,9 +224,16 @@ Code regions can be nested
 Ending a line with a `\` backslash will continue the current line onto the next line
 
 ### Built-in types
+With some exceptions
 * Stack-allocated
 * Passed as values
+Those exceptions are `Object` `Array` `Dictionary` and packed arrays
+
 #### Basic built-in types
+null
+: An empty data type
+: Only types that can inherit from Object can have a `null` value
+: `Variant` typ
 
 ### Variables
 
@@ -311,6 +318,6 @@ Ending a line with a `\` backslash will continue the current line onto the next 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDI4MjgyNjIsNzk5MzYwOTg4LC0xNz
-UwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbMTI5NDIwNzcyNiw3OTkzNjA5ODgsLTE3NT
+AyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
