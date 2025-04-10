@@ -787,12 +787,15 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exp
 Also: `@export_multiline var text`
 #### Limiting editor input ranges
 ```
+# Basic format : @export(min,max,increment)
 @export_range(0,20) var i1
 @export_range(-10,20,0.2) var f1: float
 
+#String arguments have special meanings
 @export_range(1,100,1,"or_less", "or_greater") var i3: int
 
 @export_range(0,1000,0.01, "exp") var f2: float
+@export_range(0,1000,0.01, "hide_slider") var f3: float
 
 
 ```
@@ -874,9 +877,9 @@ Also: `@export_multiline var text`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTIxNDQzNTMsMTIxMzI3NzA2MCwxNT
-M5Mzg0Mjc1LC0xMjMxNjk2ODAxLDM0NjA3Mjc1NCwtODAwMjk4
-MjY2LDE1NjEyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMy
-w3OTkzNjA5ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAw
-NzM0NzA0XX0=
+eyJoaXN0b3J5IjpbNzczMzIzNjI3LDEyMTMyNzcwNjAsMTUzOT
+M4NDI3NSwtMTIzMTY5NjgwMSwzNDYwNzI3NTQsLTgwMDI5ODI2
+NiwxNTYxMjg0NjExLC00ODA5NjgxMTcsLTE0NTEyODY0MDMsNz
+k5MzYwOTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDcz
+NDcwNF19
 -->
