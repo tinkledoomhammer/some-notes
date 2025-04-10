@@ -373,9 +373,10 @@ Valid types are:
 * must be placed at the top of the script (before `extends` and `class_name`)
 * in theory the annotation allows the static variables to be freed when the script is no longer used
 * there is currently a bug that prevents scripts from ever being unloaded
-*
 #### Casting
-
+* Values can only be assigned to variables with compatible types
+* Type coercion is done with the `as` operator
+* Casting between `object` types results in the same object if the value is the same type of a subtype of the cast type
 
 
 ### Constants
@@ -459,6 +460,7 @@ Valid types are:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNz
-UwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbNjMxOTMzMTQzLC0xNDUxMjg2NDAzLDc5OT
+M2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3
+MDRdfQ==
 -->
