@@ -385,6 +385,17 @@ Valid types are:
 
 `const A = 5` 
 
+#### Enums
+* shorthand for a collection of integer constants
+```python
+# Automatic numbering 
+enum {TILE_1,TILE_2 ,...}
+
+#Is the same as
+const TILE_1 = 0
+CONST TILE_2 = 1
+```
+
 ### Functions
 
 
@@ -464,7 +475,7 @@ Valid types are:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2NDU5NTQ0NywtMTQ1MTI4NjQwMyw3OT
-kzNjA5ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0
-NzA0XX0=
+eyJoaXN0b3J5IjpbLTE5MTA1MjAxODEsLTE0NTEyODY0MDMsNz
+k5MzYwOTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDcz
+NDcwNF19
 -->
