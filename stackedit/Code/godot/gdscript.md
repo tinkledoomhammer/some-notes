@@ -407,7 +407,12 @@ State.STATE_1
 ** There is also an array of the names? Prehaps it will be in the Dictionary section
 
 ### Functions
-
+* Always belong to a class
+* The priority for variable lookup is local -> class member -> global
+* The `self` variable is always available and can be used to access class members
+* A function can return at any time
+* The default return value is `null`
+* If a function is only one line long, then it can be all on one line
 
 ### Statements and control flow
 
@@ -485,7 +490,7 @@ State.STATE_1
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1ODk1NjAxOCwtMTQ1MTI4NjQwMyw3OT
+eyJoaXN0b3J5IjpbMTQ2MDEyOTQ0NiwtMTQ1MTI4NjQwMyw3OT
 kzNjA5ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0
 NzA0XX0=
 -->
