@@ -432,6 +432,13 @@ func cube(a):
 * They can be named for debugging `var lam = func my_func(x): print(x)`
 * Type specifiers can be used just like regular functions
 * a `return` must be explicit
+* Lambda functions capture the local environment
+	* They are only captured once, so 
+		* they cannot assign to outer variables
+		* they will not detect when the outer function assigns its variables
+		* mutable reference types are mutable
+#### Static functions
+
 
 ### Statements and control flow
 
@@ -509,7 +516,7 @@ func cube(a):
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNDMwODQ2NiwtMTQ1MTI4NjQwMyw3OT
-kzNjA5ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0
-NzA0XX0=
+eyJoaXN0b3J5IjpbLTE1MzA2NTMyMTUsLTE0NTEyODY0MDMsNz
+k5MzYwOTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDcz
+NDcwNF19
 -->
