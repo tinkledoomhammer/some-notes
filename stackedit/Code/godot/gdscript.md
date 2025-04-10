@@ -802,11 +802,12 @@ String args
 * `"exp"` uses an exponential scale rather than a linear scale for the slider
 * `"hide_slider"` prevents showing the slider at all
 * `"suffix:m"` sets a suffix (like for units and whatnot)
-* `"radians_as_degrees"` used 
+* `"radians_as_degrees"` used for angles because built-in functions use radians
+	* also sets the degree sign as the suffix: `°`
 
-
-`@export_range(0,100,1, "suffix:m" var
-#### Floats with easing hint
+#### Easing hints
+`@export_exp_easing var num`
+: exports a f
 
 #### Colors
 
@@ -882,7 +883,7 @@ String args
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3MTU1NDM4OSwxMjEzMjc3MDYwLDE1Mz
+eyJoaXN0b3J5IjpbMTA0MzIwMDk1OCwxMjEzMjc3MDYwLDE1Mz
 kzODQyNzUsLTEyMzE2OTY4MDEsMzQ2MDcyNzU0LC04MDAyOTgy
 NjYsMTU2MTI4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLD
 c5OTM2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3
