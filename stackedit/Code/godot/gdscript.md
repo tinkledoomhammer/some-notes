@@ -420,6 +420,7 @@ func cube(a):
 ```
 * The return value and parameters can also have a type specification
 	* If the argument has a default value then the type can be inferred
+	* ` func asdf(x:=0)->void`
 * the return type can be expressed after the argument list with the `->` arrow token
 * `void` may be used as a return type
 	* `void` functions cannot return values
@@ -585,7 +586,9 @@ A class that is stored as a file can inherit fro
 #### class constructor: `_init(arg)`
 * can call the base class constructor with `super`
 * Every class has an implicit constructor that is always called first (which initializes variables with the values specified outside of any function)
-* `super` will only call the explicit constructor
+* `super` will only call the explicit constructor. the automatic one is already called
+Some rules:
+1. If the inherited class defines
 
 
 ### Exports
@@ -658,7 +661,7 @@ A class that is stored as a file can inherit fro
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDYxMjQ2NTgxLDE1NjEyODQ2MTEsLTQ4MD
-k2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLTE3NTAyNDM0
-NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
+eyJoaXN0b3J5IjpbMTAzODY3MzUwMywxNTYxMjg0NjExLC00OD
+A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
+NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
