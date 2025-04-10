@@ -371,7 +371,11 @@ Valid types are:
 
 `@static_unload` annotation
 * must be placed at the top of the script (before `extends` and `class_name`)
-* 
+* in theory the annotation allows the static variables to be freed when the script is no longer used
+* there is currently a bug that prevents scripts from ever being unloaded
+*
+#### Casting
+
 
 
 ### Constants
@@ -455,6 +459,6 @@ Valid types are:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjcxNTU1OTksNzk5MzYwOTg4LC0xNz
+eyJoaXN0b3J5IjpbLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNz
 UwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
