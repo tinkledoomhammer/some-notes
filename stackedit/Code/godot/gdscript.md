@@ -260,7 +260,20 @@ Those exceptions are `Object` `Array` `Dictionary` and packed arrays
 Rect2
 : `position` and `size` and also an `end` field which is `position+size`
 
+`Vector3` Vector3i`
+: `x` `y` and `z`
 
+`Transform2D`
+: a 3x2 matrix used for 2D transforms
+
+`Plane`
+: a 3d plane in normalized form 
+: contains a `normal` vector and a `d` scalar distance
+
+`Quaternion`
+: Used to represent 3D rotation
+
+`AABB
 
 ### Variables
 
@@ -345,6 +358,6 @@ Rect2
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMTA2MDEwMSw3OTkzNjA5ODgsLTE3NT
+eyJoaXN0b3J5IjpbMTU3ODAzMzk3Miw3OTkzNjA5ODgsLTE3NT
 AyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
