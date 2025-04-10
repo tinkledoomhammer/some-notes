@@ -588,7 +588,11 @@ A class that is stored as a file can inherit fro
 * Every class has an implicit constructor that is always called first (which initializes variables with the values specified outside of any function)
 * `super` will only call the explicit constructor. the automatic one is already called
 Some rules:
-1. If the inherited class defines
+1. If the inherited class defines an `_init` that takes arguments, the nthe inheriting class *must* define `_init` and pass the appropriate parameters to `super`
+2. The inheriting class can have a different number of arguments thatn the base class
+
+Static Constructor
+: `_static_init` is called automatically when the class is loaded, after automatic static va
 
 
 ### Exports
@@ -661,7 +665,7 @@ Some rules:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzODY3MzUwMywxNTYxMjg0NjExLC00OD
-A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
-NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbNzUyMjUzMzczLDE1NjEyODQ2MTEsLTQ4MD
+k2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLTE3NTAyNDM0
+NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
