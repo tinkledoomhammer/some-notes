@@ -659,8 +659,14 @@ func _ready():
 	var f = FileAccess.open("User://example.json", FileAccess.READ)
 	my_file_ref = weakref(f)
 	other_node.use_file(f)
-func _this_is_called_la
+func _this_is_called_later():
+	var my_file = my_file_ref.get_ref()
+	if my_file:
+		my_file.close()
 ```
+
+* Use `weakref(obj)` to get a weakref
+* the `weakref` object has a `.get_ref()` method that will ret
 
 ### Signals
 
@@ -721,7 +727,7 @@ func _this_is_called_la
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NTY3OTU4NiwtODAwMjk4MjY2LDE1Nj
+eyJoaXN0b3J5IjpbLTQ3MjgyMjIxNCwtODAwMjk4MjY2LDE1Nj
 EyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5
 ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX
 0=
