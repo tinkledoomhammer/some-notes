@@ -754,6 +754,17 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exp
 * They are available for editing in the property editor
 * Exporting is done using the `@export` annotation
 * Export variables must be initialized to a constant expression and/or have a type specifier
+#### Basic Use
+```
+@export var number = 4
+@export var other: int
+
+@export var resource: Resource
+@export var node: Node
+```
+
+#### Grouping export
+
 
 ## GDscript documentation comments
 
@@ -805,8 +816,8 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exp
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4ODAxODQxMSwtMTIzMTY5NjgwMSwzND
-YwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00ODA5Njgx
-MTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQzNDUyLC
-05NDQwMDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbLTE4Nzk5MjY3MTAsLTEyMzE2OTY4MDEsMz
+Q2MDcyNzU0LC04MDAyOTgyNjYsMTU2MTI4NDYxMSwtNDgwOTY4
+MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4OCwtMTc1MDI0MzQ1Mi
+wtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
