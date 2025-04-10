@@ -355,7 +355,12 @@ Valid types are:
 1. Either `null` or  a type-specific value such as `0` `false` etc
 2. Assigned in the order specified in the script, from top to bottom
 	* For `Node`-derived classes, the `@onready` annotation moves initialization to step 5
-3. 
+3. if it is defined, `_init()` method
+4. Export values (when instantiating scenes only)
+5. (`Node`-derived only) - `@onready` vars
+6. (`Node`-derived only) - if it is defined, the `_ready()` method
+
+
 
 ### Constants
 
@@ -438,6 +443,6 @@ Valid types are:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2OTI2OTE3NSw3OTkzNjA5ODgsLTE3NT
-AyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
+eyJoaXN0b3J5IjpbNzI4MDU5NTQ5LDc5OTM2MDk4OCwtMTc1MD
+I0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
