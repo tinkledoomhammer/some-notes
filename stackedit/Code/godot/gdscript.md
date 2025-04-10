@@ -832,9 +832,11 @@ When the export type is or inherits from 1`Resource` then additional options are
 
 
 #### Exporting bit flags
-`@expoort_flags(...)`
+`@expoort_flags(...) var varname : int`
 * the type is int
-* The argument must be a l
+* The argument must be a list of the flag names
+* Flag values can be assigned manually or automatically
+* Manyal assignment : `@export_flags("Self:4", "Allies:8", "Self and Allies: 12", ...`
 
 
 #### Enums
@@ -902,7 +904,7 @@ When the export type is or inherits from 1`Resource` then additional options are
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDcwNDgwMTcsMTIxMzI3NzA2MCwxNT
+eyJoaXN0b3J5IjpbLTEyMjAyMzg5NzQsMTIxMzI3NzA2MCwxNT
 M5Mzg0Mjc1LC0xMjMxNjk2ODAxLDM0NjA3Mjc1NCwtODAwMjk4
 MjY2LDE1NjEyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMy
 w3OTkzNjA5ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAw
