@@ -333,7 +333,13 @@ TODO: Typed dicts
 * Can be called by invoking the call method. `object.methodName.call(x,y)` is the same as `object.methodName(x,y)`
 
 ### Variables
-* can be cl
+* can be class members or local to functions
+* created with the `var` keyword
+* may be assigned upon or ofter initialization
+* They can have an optional type specification i.e. `var a : int = 0`
+* Types can be inferred `var a :=0`
+	* Type inferencing is not allowed for a `Variant` type
+`var a` by with no initialization creates an untyped var and s
 
 
 ### Constants
@@ -417,6 +423,6 @@ TODO: Typed dicts
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTg2NzgwOTksNzk5MzYwOTg4LC0xNz
-UwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbMTYxNzg2OTU1MSw3OTkzNjA5ODgsLTE3NT
+AyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
