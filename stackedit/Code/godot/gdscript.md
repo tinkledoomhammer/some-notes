@@ -517,7 +517,12 @@ match  <test  value>:
 * no break or case
 * the pattern to match defaults is `_`
 * The first match is the only one that will be executed
-* Aval
+* Available patterns
+	1. literals
+	2. Expressions i.e. `match typeof(x):` ... `TYPE_FLOAT: `...
+	3. Wildcard pattern: `_` will match anything
+	4. Binding pattern, like `_` but with a variable name: `var new_var:`
+	5. 
 ### Classes
 
 
@@ -591,7 +596,7 @@ match  <test  value>:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc5NTI4MDY1LDE1NjEyODQ2MTEsLTQ4MD
-k2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLTE3NTAyNDM0
-NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
+eyJoaXN0b3J5IjpbMTI4Njg2ODkxOCwxNTYxMjg0NjExLC00OD
+A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
+NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
