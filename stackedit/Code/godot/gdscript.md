@@ -1244,10 +1244,23 @@ Methods and static functions
 * then private methods
 
 #### Static typing
+**Avoid the following**
+```
+# Typed as int, but it could be that float was intended.
+var health := 0
 
+# The type hint has redundant information.
+var direction: Vector3 = Vector3(1, 2, 3)
+
+# What type is this? It's not immediately clear to the reader, so it's bad.
+var value := complex_function()
+```
 
 
 ## Static typing in GDScript
+
+#### Some settings
+* Text Editor > Completion > Add Type Hints (editor
 
 ## GDScript warning system
 
@@ -1293,10 +1306,10 @@ Methods and static functions
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1MjQ5Nzk3NSwtNTY2NjA3NzE4LDU5Mj
-EzNDczOSwtNDI1NTIyMjIsMTIxMzI3NzA2MCwxNTM5Mzg0Mjc1
-LC0xMjMxNjk2ODAxLDM0NjA3Mjc1NCwtODAwMjk4MjY2LDE1Nj
-EyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5
-ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX
-0=
+eyJoaXN0b3J5IjpbMTEwOTkxNTI3LC01NjY2MDc3MTgsNTkyMT
+M0NzM5LC00MjU1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUs
+LTEyMzE2OTY4MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MT
+I4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4
+OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ
+==
 -->
