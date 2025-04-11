@@ -1220,7 +1220,8 @@ Enums and constants
 Rules of Tumb
 1. Properties and signals first, followed by methods
 2. Public before private
-3. Virtual ca
+3. Virtual callbacks before the class interface
+4. Object construction and initialization (`_init` and `_ready`) before functions that modify the object at runtime
 
 
 ## Static typing in GDScript
@@ -1269,10 +1270,10 @@ Rules of Tumb
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTE5MTU5MjMsLTU2NjYwNzcxOCw1OT
-IxMzQ3MzksLTQyNTUyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3
-NSwtMTIzMTY5NjgwMSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNT
-YxMjg0NjExLC00ODA5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYw
-OTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF
-19
+eyJoaXN0b3J5IjpbNDUyOTgzMjc4LC01NjY2MDc3MTgsNTkyMT
+M0NzM5LC00MjU1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUs
+LTEyMzE2OTY4MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MT
+I4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4
+OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ
+==
 -->
