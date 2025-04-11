@@ -1122,7 +1122,15 @@ Blank lines
 One statement per line
 : one statement per line except for the ternary operator
 
-Format multi-line statements for readabli
+Format multi-line statements for readability
+: break on `else` and such if the line would be really long
+
+Avoid unnecessary prentheses
+: only use them when necessary for the order of operations
+
+Boolean operators
+: prefer the plain english versions (`and` instead of `&&` etc)
+
 
 ## Static typing in GDScript
 
@@ -1170,9 +1178,9 @@ Format multi-line statements for readabli
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODk1MjM1NjQsNTkyMTM0NzM5LC00Mj
-U1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUsLTEyMzE2OTY4
-MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MTI4NDYxMSwtND
-gwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4OCwtMTc1MDI0
-MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbLTEwMTM1Nzc5LDU5MjEzNDczOSwtNDI1NT
+IyMjIsMTIxMzI3NzA2MCwxNTM5Mzg0Mjc1LC0xMjMxNjk2ODAx
+LDM0NjA3Mjc1NCwtODAwMjk4MjY2LDE1NjEyODQ2MTEsLTQ4MD
+k2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLTE3NTAyNDM0
+NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
