@@ -883,10 +883,14 @@ If a tool script changes the value, the inspector won't automatically update unl
 #### Advanced Exports
 Object has some important methods:
  `Object._set()` `._get()` and `._get_property_list()` see https://docs.godotengine.org/en/stable/classes/class_object.html#class-object-private-method-get
- see also 
+ see also https://docs.godotengine.org/en/stable/tutorials/best_practices/godot_interfaces.html#doc-accessing-data-or-logic-from-object
+and also https://docs.godotengine.org/en/stable/contributing/development/core_and_modules/object_class.html#doc-binding-properties-using-set-get-property-list ( for C++ )
+
 
 
 ## GDscript documentation comments
+* must start with `##` (double hash symbols)
+* Must immediately precede a script member or 
 
 ## GDScript Style guide
 
@@ -936,7 +940,7 @@ Object has some important methods:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzMTM1MzIwNCw1OTIxMzQ3MzksLTQyNT
+eyJoaXN0b3J5IjpbLTYyMjQ0MzYwNCw1OTIxMzQ3MzksLTQyNT
 UyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5Njgw
 MSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00OD
 A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
