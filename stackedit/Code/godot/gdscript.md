@@ -862,8 +862,13 @@ https://docs.godotengine.org/en/stable/classes/class_%40gdscript.html#class-gdsc
 
 
 #### `@export_storage`
+* exports fields that are not shown in the inspector
+* They are still serialized with the scene and will be duplicated by `Node.duplicate()` and `Resource.duplicate()`
+
 
 #### `@export_custom`
+Used to specify a variety of hints. see 
+
 
 #### `@export_tool_button`
 
@@ -922,9 +927,9 @@ https://docs.godotengine.org/en/stable/classes/class_%40gdscript.html#class-gdsc
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkyMTM0NzM5LC00MjU1MjIyMiwxMjEzMj
-c3MDYwLDE1MzkzODQyNzUsLTEyMzE2OTY4MDEsMzQ2MDcyNzU0
-LC04MDAyOTgyNjYsMTU2MTI4NDYxMSwtNDgwOTY4MTE3LC0xND
-UxMjg2NDAzLDc5OTM2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4
-Nzc2LC03MDA3MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbLTc2MzkzNTQ4Myw1OTIxMzQ3MzksLTQyNT
+UyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5Njgw
+MSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00OD
+A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
+NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
