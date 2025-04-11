@@ -1258,9 +1258,22 @@ var value := complex_function()
 
 
 ## Static typing in GDScript
-
+https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/static_typing.html
 #### Some settings
-* Text Editor > Completion > Add Type Hints (editor
+* Text Editor > Completion > Add Type Hints (editor settings)
+* consider using some warnings that will be described below
+
+#### How to use
+
+#### Stick to one style
+
+#### Warning system
+
+#### Commmon unsae operations and their safe counterparts
+
+#### Cases where you can't specify types
+
+#### Summary
 
 ## GDScript warning system
 
@@ -1306,10 +1319,9 @@ var value := complex_function()
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwOTkxNTI3LC01NjY2MDc3MTgsNTkyMT
-M0NzM5LC00MjU1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUs
-LTEyMzE2OTY4MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MT
-I4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4
-OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ
-==
+eyJoaXN0b3J5IjpbNjY1MDIyNTYsLTU2NjYwNzcxOCw1OTIxMz
+Q3MzksLTQyNTUyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwt
+MTIzMTY5NjgwMSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMj
+g0NjExLC00ODA5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4
+LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
