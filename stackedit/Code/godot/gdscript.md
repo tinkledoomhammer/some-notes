@@ -1264,6 +1264,11 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/static_typin
 * consider using some warnings that will be described below
 
 #### How to use
+`var name: type = val`
+or 
+`var name := val` to infer the type
+
+Constant
 
 #### Stick to one style
 
@@ -1274,6 +1279,8 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/static_typin
 #### Cases where you can't specify types
 
 #### Summary
+
+
 
 ## GDScript warning system
 
@@ -1319,9 +1326,10 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/static_typin
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY1MDIyNTYsLTU2NjYwNzcxOCw1OTIxMz
-Q3MzksLTQyNTUyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwt
-MTIzMTY5NjgwMSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMj
-g0NjExLC00ODA5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4
-LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbMTg0NjcwNDIxNywtNTY2NjA3NzE4LDU5Mj
+EzNDczOSwtNDI1NTIyMjIsMTIxMzI3NzA2MCwxNTM5Mzg0Mjc1
+LC0xMjMxNjk2ODAxLDM0NjA3Mjc1NCwtODAwMjk4MjY2LDE1Nj
+EyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5
+ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX
+0=
 -->
