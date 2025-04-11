@@ -1228,6 +1228,13 @@ Signals and Properties
 * Enums should come after signals (to be used as export hints???)
 * then constants, exported variables, public, private, and onready variables in that order
 
+Variables
+: should be declared where used
+* Use locals instead of class members where possible
+* declare locals as close to their first use as possible
+
+Methods and static function
+
 ## Static typing in GDScript
 
 ## GDScript warning system
@@ -1274,7 +1281,7 @@ Signals and Properties
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDEwMDA1NzI1LC01NjY2MDc3MTgsNTkyMT
+eyJoaXN0b3J5IjpbMzEwNDQ4Mjg5LC01NjY2MDc3MTgsNTkyMT
 M0NzM5LC00MjU1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUs
 LTEyMzE2OTY4MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MT
 I4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4
