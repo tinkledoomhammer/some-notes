@@ -1015,7 +1015,11 @@ Tag | | Example/result
 Notes:
 1. Currently only [@GDScript](https://docs.godotengine.org/en/stable/classes/class_%40gdscript.html#class-gdscript) has annotations
 2. blocks created with `[kbd]` `[code]` and `[codeblock]` disable BBCode until the end of the block
-3. Inside codeblocks, always use 
+3. Inside codeblocks, always use **four spaces** or indentation. tabs will be deleted
+4. `[codeblock]` has an optional `lang=` attribute
+	* `lang=gdscript` is the default and provides syntax highlighting
+	* `lang=text` disables syntax highlighting
+	* `lang=csharp` uses C# syntax
 
 
 ## GDScript Style guide
@@ -1066,9 +1070,9 @@ Notes:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NDA2NDI3NSw1OTIxMzQ3MzksLTQyNT
-UyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5Njgw
-MSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00OD
-A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
-NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbLTIxMTM0NDIwODgsNTkyMTM0NzM5LC00Mj
+U1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUsLTEyMzE2OTY4
+MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MTI4NDYxMSwtND
+gwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4OCwtMTc1MDI0
+MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
