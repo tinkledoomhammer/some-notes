@@ -1280,7 +1280,14 @@ Allowed Type hints
 5. Global classes
 6. Inner classes
 7. Global, native, and named custom enums. this is the same as `int`
-	* Th
+	* There is no guarantee that the assigned values will be valid
+8. Constants that contain a preloaded class or enum
+
+Class names
+: Can be specified with `class_name` or `const ClassName=preload(...`
+
+`->`
+: 
 
 #### Stick to one style
 
@@ -1338,10 +1345,10 @@ Allowed Type hints
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4ODQyNDc1OSwtNTY2NjA3NzE4LDU5Mj
-EzNDczOSwtNDI1NTIyMjIsMTIxMzI3NzA2MCwxNTM5Mzg0Mjc1
-LC0xMjMxNjk2ODAxLDM0NjA3Mjc1NCwtODAwMjk4MjY2LDE1Nj
-EyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5
-ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX
-0=
+eyJoaXN0b3J5IjpbLTE4MjY2NTk3MDMsLTU2NjYwNzcxOCw1OT
+IxMzQ3MzksLTQyNTUyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3
+NSwtMTIzMTY5NjgwMSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNT
+YxMjg0NjExLC00ODA5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYw
+OTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF
+19
 -->
