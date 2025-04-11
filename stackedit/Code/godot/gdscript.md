@@ -1009,7 +1009,11 @@ Tag | | Example/result
  | link type 2 | [url=https://exmaple.com]Website[/url]
  `[center]`..`[/center]` | centering text | 
  `[kbd]`..`[/kbd]` | keyboard/mouse shortcut | Press [kbd]Ctrl + C[/kbd].
- `[
+ `[code]`..`[/code]` | code fragment | Returns [code]true[/code]
+ `[codeblock]` .. `[/codeblock]` | multiline codeblock
+
+Notes:
+1. Currently only p
 
 
 ## GDScript Style guide
@@ -1060,7 +1064,7 @@ Tag | | Example/result
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMzgwNjU2Miw1OTIxMzQ3MzksLTQyNT
+eyJoaXN0b3J5IjpbLTI4NDQxNDE1OSw1OTIxMzQ3MzksLTQyNT
 UyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5Njgw
 MSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00OD
 A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
