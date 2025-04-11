@@ -982,11 +982,11 @@ Note2: When the description spans multiple lines, they will be joined and trimme
 
 
 
-#### BBCode and class reference
+#### BBCode and class references
 Tag | | Example/result
 -|-|-
 `[Class]` | Link to a class | Move the [Sprite2D].
-`[annotation Class.name]` Link to annotation | See [annotation @GDScript.@rpc].
+`[annotation Class.name]` | Link to annotation | See [annotation @GDScript.@rpc].
 `[constant Class.name]`` | link to constant| See [constant COlor.RED].
 `[enum Class.name]` | |
 `[member Class.name]` | |
@@ -1006,7 +1006,7 @@ Tag | | Example/result
 `[font]`..`[/font]` | | [font=res://mono.ttf]License[/font]
 `[img]`..`[/img]` | image | [img width=32]res://icon.svg[/img]
 `[url]`..`[/url` | link type1 | [url]https://example.com[/ur]
- | link type 2 | [url=https://exmaple.com]Website[/url]
+_ | link type 2 | [url=https://exmaple.com]Website[/url]
  `[center]`..`[/center]` | centering text | 
  `[kbd]`..`[/kbd]` | keyboard/mouse shortcut | Press [kbd]Ctrl + C[/kbd].
  `[code]`..`[/code]` | code fragment | Returns [code]true[/code]
@@ -1070,9 +1070,9 @@ Notes:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTM0NDIwODgsNTkyMTM0NzM5LC00Mj
-U1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUsLTEyMzE2OTY4
-MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MTI4NDYxMSwtND
-gwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4OCwtMTc1MDI0
-MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbNDA4MDY4NjQ4LDU5MjEzNDczOSwtNDI1NT
+IyMjIsMTIxMzI3NzA2MCwxNTM5Mzg0Mjc1LC0xMjMxNjk2ODAx
+LDM0NjA3Mjc1NCwtODAwMjk4MjY2LDE1NjEyODQ2MTEsLTQ4MD
+k2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLTE3NTAyNDM0
+NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
