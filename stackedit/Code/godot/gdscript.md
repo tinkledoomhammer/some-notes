@@ -1268,7 +1268,13 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/static_typin
 or 
 `var name := val` to infer the type
 
-Constant
+Constants don't need type hints except for typed arrays:
+`const A: Array[int] = [1,2,3]` because arrays are untyped by default
+
+Allowed Type hints
+1. `Variant` "any type" - similar to not specifying any type except
+	* when used as a return type it forces some value to be returned
+
 
 #### Stick to one style
 
@@ -1326,10 +1332,10 @@ Constant
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NjcwNDIxNywtNTY2NjA3NzE4LDU5Mj
-EzNDczOSwtNDI1NTIyMjIsMTIxMzI3NzA2MCwxNTM5Mzg0Mjc1
-LC0xMjMxNjk2ODAxLDM0NjA3Mjc1NCwtODAwMjk4MjY2LDE1Nj
-EyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5
-ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX
-0=
+eyJoaXN0b3J5IjpbLTEyNDYwMzk1MDcsLTU2NjYwNzcxOCw1OT
+IxMzQ3MzksLTQyNTUyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3
+NSwtMTIzMTY5NjgwMSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNT
+YxMjg0NjExLC00ODA5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYw
+OTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF
+19
 -->
