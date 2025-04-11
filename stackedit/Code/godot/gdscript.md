@@ -1323,7 +1323,12 @@ let player = body as PlayerController
 	if not player:
 ```
 * Casting will allow full autocomplete
-* The is keyword is saferr
+* The is keyword is safer
+* If the conversion fails for most types, the operation will *silently* return `null`
+* If a cast with a built-in type fails, it will throw an error
+
+Safe Lines
+: A tool to tell when ambiguous lines of code are type-safe
 
 
 
@@ -1385,10 +1390,10 @@ let player = body as PlayerController
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4NzAxMDQ1OCwzODQxOTQwMDYsLTEwMT
-Y3NzU3NTIsLTU2NjYwNzcxOCw1OTIxMzQ3MzksLTQyNTUyMjIy
-LDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5NjgwMSwzND
-YwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00ODA5Njgx
-MTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQzNDUyLC
-05NDQwMDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbMTg3Mzc0NzcyLDM4NDE5NDAwNiwtMTAxNj
+c3NTc1MiwtNTY2NjA3NzE4LDU5MjEzNDczOSwtNDI1NTIyMjIs
+MTIxMzI3NzA2MCwxNTM5Mzg0Mjc1LC0xMjMxNjk2ODAxLDM0Nj
+A3Mjc1NCwtODAwMjk4MjY2LDE1NjEyODQ2MTEsLTQ4MDk2ODEx
+NywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLTE3NTAyNDM0NTIsLT
+k0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
