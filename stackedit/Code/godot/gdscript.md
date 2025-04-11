@@ -1233,8 +1233,13 @@ Variables
 * Use locals instead of class members where possible
 * declare locals as close to their first use as possible
 
-Methods and static function
-
+Methods and static functions
+: Right after properties
+* Initializers first, in the order they are called
+	* `_init()` first
+	* then `_ready()`
+* Then built-in virtual callbacks
+	* `_unhandled_input()` `_physics 
 ## Static typing in GDScript
 
 ## GDScript warning system
@@ -1281,10 +1286,10 @@ Methods and static function
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzEwNDQ4Mjg5LC01NjY2MDc3MTgsNTkyMT
-M0NzM5LC00MjU1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUs
-LTEyMzE2OTY4MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MT
-I4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4
-OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ
-==
+eyJoaXN0b3J5IjpbLTEyMjI1MTAyODEsLTU2NjYwNzcxOCw1OT
+IxMzQ3MzksLTQyNTUyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3
+NSwtMTIzMTY5NjgwMSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNT
+YxMjg0NjExLC00ODA5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYw
+OTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF
+19
 -->
