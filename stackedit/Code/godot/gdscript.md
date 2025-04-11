@@ -1313,7 +1313,12 @@ TODO: statically typed dictionary
 
 
 #### Type Casting
-` var pl
+` var player := body as PlayerController`
+* will be `null` when `body is PlayerController` is false
+```
+if not (body is PlayerController):
+if body is no
+```
 
 
 
@@ -1373,7 +1378,7 @@ TODO: statically typed dictionary
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxMDQ2NDYzOSwzODQxOTQwMDYsLTEwMT
+eyJoaXN0b3J5IjpbMTQzMjE0ODQ3NiwzODQxOTQwMDYsLTEwMT
 Y3NzU3NTIsLTU2NjYwNzcxOCw1OTIxMzQ3MzksLTQyNTUyMjIy
 LDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5NjgwMSwzND
 YwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00ODA5Njgx
