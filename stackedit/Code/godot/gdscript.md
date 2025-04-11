@@ -1179,7 +1179,16 @@ Functions and variables
 	* private methods
 
 Signals
-: snake 
+: **past tense** snake case
+
+Enums and constants
+: All caps for the constants
+: The enum name should be pascal case
+* Each enum member should be all caps on its own line
+*
+
+#### Code order
+
 
 
 ## Static typing in GDScript
@@ -1228,10 +1237,10 @@ Signals
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYxODI2NjY5LC01NjY2MDc3MTgsNTkyMT
-M0NzM5LC00MjU1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUs
-LTEyMzE2OTY4MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MT
-I4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4
-OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ
-==
+eyJoaXN0b3J5IjpbLTIxNDI4MTU3NzQsLTU2NjYwNzcxOCw1OT
+IxMzQ3MzksLTQyNTUyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3
+NSwtMTIzMTY5NjgwMSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNT
+YxMjg0NjExLC00ODA5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYw
+OTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF
+19
 -->
