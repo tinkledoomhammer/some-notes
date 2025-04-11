@@ -839,7 +839,8 @@ When the export type is or inherits from 1`Resource` then additional options are
 * Manual assignment : `@export_flags("Self:4", "Allies:8", "Self and Allies: 12", ...`
 * auto asignment will start with `1` and subsequent flags ill be 2x the previous
 * If Explicit and auto are mixed, then implicit values will not consider explicit values i.e.
-	* `
+	* `@export_flags("A:16", "B", "C") var x` will have `B:2` and `C:4`
+* Values must be in the range $[1..2^32^-1]$
 
 
 #### Enums
@@ -907,7 +908,7 @@ When the export type is or inherits from 1`Resource` then additional options are
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMDk0MTY0MCwxMjEzMjc3MDYwLDE1Mz
+eyJoaXN0b3J5IjpbLTc3NTk4ODUxNCwxMjEzMjc3MDYwLDE1Mz
 kzODQyNzUsLTEyMzE2OTY4MDEsMzQ2MDcyNzU0LC04MDAyOTgy
 NjYsMTU2MTI4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLD
 c5OTM2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3
