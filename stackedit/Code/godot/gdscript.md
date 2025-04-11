@@ -878,9 +878,12 @@ Used to specify a variety of hints. see https://docs.godotengine.org/en/stable/c
 		* The field is "hello_action" and clicking calls the member function `hello()`
 
 #### Setting exported variables from a tool script
-If a tool script changes the value, the inspector won't automatically update unless `notify_property_list_chang
+If a tool script changes the value, the inspector won't automatically update unless `notify_property_list_changed()` is called
 
 #### Advanced Exports
+Object has some important methods:
+ `Object._set()` `._get()` and `._get_property_list()` see https://docs.godotengine.org/en/stable/classes/class_object.html#class-object-private-method-get
+ see also 
 
 
 ## GDscript documentation comments
@@ -933,7 +936,7 @@ If a tool script changes the value, the inspector won't automatically update unl
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5Nzk0ODgzMCw1OTIxMzQ3MzksLTQyNT
+eyJoaXN0b3J5IjpbLTQzMTM1MzIwNCw1OTIxMzQ3MzksLTQyNT
 UyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5Njgw
 MSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00OD
 A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
