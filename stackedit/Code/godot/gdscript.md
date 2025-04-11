@@ -1165,7 +1165,8 @@ Constants | CONST_CASE | `const MAX_SPEED = 200`
 Enum names | PascalCase | `enum Element{..`
 Enum members | CONST_CASE | `{EARTH, WATER, ...`
 
-
+File names
+: should be the snake-case version of the PascalC
 
 
 ## Static typing in GDScript
@@ -1214,9 +1215,9 @@ Enum members | CONST_CASE | `{EARTH, WATER, ...`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE0NTM3NzQzLDU5MjEzNDczOSwtNDI1NT
-IyMjIsMTIxMzI3NzA2MCwxNTM5Mzg0Mjc1LC0xMjMxNjk2ODAx
-LDM0NjA3Mjc1NCwtODAwMjk4MjY2LDE1NjEyODQ2MTEsLTQ4MD
-k2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLTE3NTAyNDM0
-NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
+eyJoaXN0b3J5IjpbLTEzMjI3MjcwMzIsNTkyMTM0NzM5LC00Mj
+U1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUsLTEyMzE2OTY4
+MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MTI4NDYxMSwtND
+gwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4OCwtMTc1MDI0
+MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
