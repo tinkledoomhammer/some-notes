@@ -991,7 +991,11 @@ Tag | | Example/result
 `[enum Class.name]` | |
 `[member Class.name]` | |
 `[method Class.name]` | |
-`[constructor Class.name]` | | Use 
+`[constructor Class.name]` | | Use [constructor Color.Color]
+`[operator Class.name]` | | Use [operator Color.operator*].
+`[signal Class.name]` | | 
+`[theme_item Class.name]` | | see [theme_item Label.font].
+`[param name]]
 
 
 ## GDScript Style guide
@@ -1042,9 +1046,9 @@ Tag | | Example/result
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDA3MTU3MjcsNTkyMTM0NzM5LC00Mj
-U1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUsLTEyMzE2OTY4
-MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MTI4NDYxMSwtND
-gwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4OCwtMTc1MDI0
-MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbMTk5NjUzNTMyMSw1OTIxMzQ3MzksLTQyNT
+UyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5Njgw
+MSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00OD
+A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
+NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
