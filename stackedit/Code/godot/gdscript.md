@@ -1005,7 +1005,11 @@ Tag | | Example/result
 `[color]`..`[/color]` | color | [color=red]Error![/color]
 `[font]`..`[/font]` | | [font=res://mono.ttf]License[/font]
 `[img]`..`[/img]` | image | [img width=32]res://icon.svg[/img]
-`[url]`..`[/url` | link type1 | [url]https://exam
+`[url]`..`[/url` | link type1 | [url]https://example.com[/ur]
+ | link type 2 | [url=https://exmaple.com]Website[/url]
+ `[center]`..`[/center]` | centering text | 
+ `[kbd]`..`[/kbd]` | keyboard/mouse shortcut | Press [kbd]Ctrl + C[/kbd].
+ `[
 
 
 ## GDScript Style guide
@@ -1056,7 +1060,7 @@ Tag | | Example/result
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NTE2NzM1OCw1OTIxMzQ3MzksLTQyNT
+eyJoaXN0b3J5IjpbLTUyMzgwNjU2Miw1OTIxMzQ3MzksLTQyNT
 UyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5Njgw
 MSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00OD
 A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
