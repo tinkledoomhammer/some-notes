@@ -910,9 +910,23 @@ Experimental | `@experimental` or `@experimental: This class is unstable.`
 
 Example
 ```
-
+extends Node2D
+## A brief description of the class's role and functionality.
+##
+## The description of the script, what it can do,
+## and any further detail.
+##
+## @tutorial:             https://example.com/tutorial_1
+## @tutorial(Tutorial 2): https://example.com/tutorial_2
+## @experimental
 ```
+Note: No space is allowed between the tag name and the `:`
+Note2: When the description spans multiple lines, they will be joined and trimmed with a single space between. use `[br]` for manual breaks
 
+#### Documenting Script members
+
+
+#### Complete scri
 ## GDScript Style guide
 
 ## Static typing in GDScript
@@ -961,9 +975,9 @@ Example
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxOTExNTE4MCw1OTIxMzQ3MzksLTQyNT
-UyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5Njgw
-MSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00OD
-A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
-NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbLTIxNDY2NDM0NDcsNTkyMTM0NzM5LC00Mj
+U1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUsLTEyMzE2OTY4
+MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MTI4NDYxMSwtND
+gwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4OCwtMTc1MDI0
+MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
