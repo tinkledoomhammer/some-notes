@@ -1102,20 +1102,27 @@ class State:
 		print("Hello!")
 ```
 #### Formatting
-* use a single `LF` to terminate lines
-* use UTF-8 witout byte order mark
-* use **Tabs** for indentation
-#### Indentation
-* Code-block indent levels should be a single tab
-* line continuations should be 2 tabs
-	* except arrays, dictionaries, and enums which use a single tab
-#### Trailing coma
-* use a trailing comma in multiline lists
-* don't use a trailing coma in single-line lists
-#### Blank lines
-* surround functions and class definitions with 2 blank lines
-* 
+General (editor defaults
+: use a single `LF` to terminate lines
+: use UTF-8 witout byte order mark
+: use **Tabs** for indentation
 
+Indentation
+: Code-block indent levels should be a single tab
+: line continuations should be 2 tabs
+	* except arrays, dictionaries, and enums which use a single tab
+
+Trailing coma
+: use a trailing comma in multiline lists
+: don't use a trailing coma in single-line lists
+
+Blank lines
+: surround functions and class definitions with 2 blank lines
+
+One statement per line
+: one statement per line except for the ternary operator
+
+Format multi-line statements for readabli
 
 ## Static typing in GDScript
 
@@ -1163,9 +1170,9 @@ class State:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NTYzODA1NSw1OTIxMzQ3MzksLTQyNT
-UyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5Njgw
-MSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00OD
-A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
-NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbLTEwODk1MjM1NjQsNTkyMTM0NzM5LC00Mj
+U1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUsLTEyMzE2OTY4
+MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MTI4NDYxMSwtND
+gwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4OCwtMTc1MDI0
+MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
