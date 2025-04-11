@@ -875,9 +875,10 @@ Used to specify a variety of hints. see https://docs.godotengine.org/en/stable/c
 * Exports a callable as a clickable button
 * `@export_tool_button("Hello", "Callable") var hello_action = hello`
 		* The button is titled "Hello" and has the "Callable" icon
-		* The 
+		* The field is "hello_action" and clicking calls the member function `hello()`
 
-#### Setting exported variables from a ool script
+#### Setting exported variables from a tool script
+If a tool script changes the value, the inspector won't automatically update unless `notify_property_list_chang
 
 #### Advanced Exports
 
@@ -932,9 +933,9 @@ Used to specify a variety of hints. see https://docs.godotengine.org/en/stable/c
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTczMjI0MzAsNTkyMTM0NzM5LC00Mj
-U1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUsLTEyMzE2OTY4
-MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MTI4NDYxMSwtND
-gwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4OCwtMTc1MDI0
-MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbMTM5Nzk0ODgzMCw1OTIxMzQ3MzksLTQyNT
+UyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5Njgw
+MSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00OD
+A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
+NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
