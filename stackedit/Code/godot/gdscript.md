@@ -998,7 +998,9 @@ Tag | | Example/result
 `[param name]` | param name, not linked | Takes [param size] for the size.
 `[br]` | line break | 
 `[lb]` and `[rb]` | escapes `[` and `]` | [lb]asdf[rb] -> [asdf]
-
+`[b]`..`[/b]` | bold text | Do [b]not[/b] call this method.
+`[i]`..`[/i]` | italics |
+`[u]`..`[/u]`
 
 
 ## GDScript Style guide
@@ -1049,9 +1051,9 @@ Tag | | Example/result
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjIzMTI0NjMsNTkyMTM0NzM5LC00Mj
-U1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUsLTEyMzE2OTY4
-MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MTI4NDYxMSwtND
-gwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4OCwtMTc1MDI0
-MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbNjYyNTU3MDM1LDU5MjEzNDczOSwtNDI1NT
+IyMjIsMTIxMzI3NzA2MCwxNTM5Mzg0Mjc1LC0xMjMxNjk2ODAx
+LDM0NjA3Mjc1NCwtODAwMjk4MjY2LDE1NjEyODQ2MTEsLTQ4MD
+k2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLTE3NTAyNDM0
+NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
