@@ -832,6 +832,7 @@ When the export type is or inherits from 1`Resource` then additional options are
 
 
 #### Exporting bit flags
+https://docs.godotengine.org/en/stable/classes/class_%40gdscript.html#class-gdscript-annotation-export-flags
 `@expoort_flags(...) var varname : int`
 * the must be `int` `Array[int]` `PackedByteArray` `PackedInt32Array` or `PackedInt64Array`
 * The argument must be a list of the flag names
@@ -843,8 +844,12 @@ When the export type is or inherits from 1`Resource` then additional options are
 * Values must be in the range $[1..2^{32}-1]$
 
 There are special options for exporting layer selections: `@export_flags_...` where ... can be 
-* `2d_physics`
+* `2d_physics` `2d_render` `2d_navigation` `3d_physics` `3d_render` `3d_navigation`
+
 #### Enums
+https://docs.godotengine.org/en/stable/classes/class_%40gdscript.html#class-gdscript-annotation-export-enum
+
+
 
 #### Arrays
 
@@ -909,7 +914,7 @@ There are special options for exporting layer selections: `@export_flags_...` wh
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI2NjA3NTY3LDEyMTMyNzcwNjAsMTUzOT
+eyJoaXN0b3J5IjpbLTQyNTUyMjIyLDEyMTMyNzcwNjAsMTUzOT
 M4NDI3NSwtMTIzMTY5NjgwMSwzNDYwNzI3NTQsLTgwMDI5ODI2
 NiwxNTYxMjg0NjExLC00ODA5NjgxMTcsLTE0NTEyODY0MDMsNz
 k5MzYwOTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDcz
