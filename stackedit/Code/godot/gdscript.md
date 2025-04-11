@@ -904,7 +904,14 @@ Item | Tag example
 -|-
 Brief Description | No tag, just used at the beginning of the doc section
 Description | No tag. Use one blank line to saparate from the brief description
-Tutorial | `@tutorial:https://example.com` or `
+Tutorial | `@tutorial: https://example.com` or `@tutorial(Title Here): https://exmaple.com`
+Deprecated | `@deprecated` or `@deprecated: Use [AnotherClass] instead.
+Experimental | `@experimental` or `@experimental: This class is unstable.`
+
+Example
+```
+
+```
 
 ## GDScript Style guide
 
@@ -954,9 +961,9 @@ Tutorial | `@tutorial:https://example.com` or `
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjUwMTUyMjI0LDU5MjEzNDczOSwtNDI1NT
-IyMjIsMTIxMzI3NzA2MCwxNTM5Mzg0Mjc1LC0xMjMxNjk2ODAx
-LDM0NjA3Mjc1NCwtODAwMjk4MjY2LDE1NjEyODQ2MTEsLTQ4MD
-k2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLTE3NTAyNDM0
-NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
+eyJoaXN0b3J5IjpbLTIxOTExNTE4MCw1OTIxMzQ3MzksLTQyNT
+UyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5Njgw
+MSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00OD
+A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
+NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
