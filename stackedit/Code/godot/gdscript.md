@@ -867,10 +867,15 @@ https://docs.godotengine.org/en/stable/classes/class_%40gdscript.html#class-gdsc
 
 
 #### `@export_custom`
-Used to specify a variety of hints. see 
+Used to specify a variety of hints. see https://docs.godotengine.org/en/stable/classes/class_%40gdscript.html#class-gdscript-annotation-export-custom
 
 
 #### `@export_tool_button`
+* used in tool scripts
+* Exports a callable as a clickable button
+* `@export_tool_button("Hello", "Callable") var hello_action = hello`
+		* The button is titled "Hello" and has the "Callable" icon
+		* The 
 
 #### Setting exported variables from a ool script
 
@@ -927,9 +932,9 @@ Used to specify a variety of hints. see
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MzkzNTQ4Myw1OTIxMzQ3MzksLTQyNT
-UyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5Njgw
-MSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00OD
-A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
-NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbLTEyMTczMjI0MzAsNTkyMTM0NzM5LC00Mj
+U1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUsLTEyMzE2OTY4
+MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MTI4NDYxMSwtND
+gwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4OCwtMTc1MDI0
+MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
