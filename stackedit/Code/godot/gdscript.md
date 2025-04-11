@@ -1130,7 +1130,15 @@ Avoid unnecessary prentheses
 
 Boolean operators
 : prefer the plain english versions (`and` instead of `&&` etc)
+: parens can be used to make longer expressions more readable
 
+Comment spacing
+: Regular and documentation comments should begin with a space
+: commented-out code and regions should not begin with a space
+* prefer comments on their own line, expecially if they are long
+
+Whitespace
+:
 
 ## Static typing in GDScript
 
@@ -1178,9 +1186,9 @@ Boolean operators
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTM1Nzc5LDU5MjEzNDczOSwtNDI1NT
-IyMjIsMTIxMzI3NzA2MCwxNTM5Mzg0Mjc1LC0xMjMxNjk2ODAx
-LDM0NjA3Mjc1NCwtODAwMjk4MjY2LDE1NjEyODQ2MTEsLTQ4MD
-k2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLTE3NTAyNDM0
-NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
+eyJoaXN0b3J5IjpbMTgwOTM2NTkyNyw1OTIxMzQ3MzksLTQyNT
+UyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5Njgw
+MSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00OD
+A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
+NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
