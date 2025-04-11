@@ -935,10 +935,7 @@ enum Direction {
 	UP = 0,
 	## Direction down.
 	DOWN = 1,
-	## Direction left.
-	LEFT = 2,
-	## Direction right.
-	RIGHT = 3,
+	# ...
 }
 
 ## The description of a constant.
@@ -956,18 +953,15 @@ var v2: int
 @export
 var v3 := some_func()
 
-
 ## As the following function is documented, even though its name starts with
 ## an underscore, it will appear in the help window.
 func _fn(p1: int, p2: String) -> int:
 	return 0
 
-
 # The below function isn't documented and its name starts with an underscore
 # so it will treated as private and will not be shown in the help window.
 func _internal() -> void:
 	pass
-
 
 ## Documenting an inner class.
 ##
@@ -977,10 +971,8 @@ func _internal() -> void:
 ## @tutorial: https://example.com/tutorial
 ## @experimental
 class Inner:
-
 	## Inner class variable v4.
 	var v4
-
 
 	## Inner class function fn.
 	func fn(): pass
@@ -1047,9 +1039,9 @@ Note2: When the description spans multiple lines, they will be joined and trimme
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTU5NDE0NTIsNTkyMTM0NzM5LC00Mj
-U1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUsLTEyMzE2OTY4
-MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MTI4NDYxMSwtND
-gwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4OCwtMTc1MDI0
-MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbLTM4NTM5NjIwMCw1OTIxMzQ3MzksLTQyNT
+UyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5Njgw
+MSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00OD
+A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
+NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
