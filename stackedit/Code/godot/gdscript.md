@@ -890,7 +890,14 @@ and also https://docs.godotengine.org/en/stable/contributing/development/core_an
 
 ## GDscript documentation comments
 * must start with `##` (double hash symbols)
-* Must immediately precede a script member or 
+* Must immediately precede:
+	* a script member the top of the code (for function and script docs)
+	* an exported variable
+#### Documenting a script
+* Should be divided into 3 parts
+	1. A brief description
+	2. A detailed description
+	3. Tutorials and depricated/experimental marks
 
 ## GDScript Style guide
 
@@ -940,7 +947,7 @@ and also https://docs.godotengine.org/en/stable/contributing/development/core_an
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMjQ0MzYwNCw1OTIxMzQ3MzksLTQyNT
+eyJoaXN0b3J5IjpbMTQwNjY2OTE0NCw1OTIxMzQ3MzksLTQyNT
 UyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5Njgw
 MSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00OD
 A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
