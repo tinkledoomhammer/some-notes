@@ -848,7 +848,8 @@ There are special options for exporting layer selections: `@export_flags_...` wh
 
 #### Enums
 https://docs.godotengine.org/en/stable/classes/class_%40gdscript.html#class-gdscript-annotation-export-enum
-
+* Exports with an enum type are represented in the editor with a drop-down box
+* `@export_enum(...)` has the same syntax as `@ex
 
 
 #### Arrays
@@ -914,9 +915,9 @@ https://docs.godotengine.org/en/stable/classes/class_%40gdscript.html#class-gdsc
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNTUyMjIyLDEyMTMyNzcwNjAsMTUzOT
-M4NDI3NSwtMTIzMTY5NjgwMSwzNDYwNzI3NTQsLTgwMDI5ODI2
-NiwxNTYxMjg0NjExLC00ODA5NjgxMTcsLTE0NTEyODY0MDMsNz
-k5MzYwOTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDcz
-NDcwNF19
+eyJoaXN0b3J5IjpbMjA1MDcxNjkyNywtNDI1NTIyMjIsMTIxMz
+I3NzA2MCwxNTM5Mzg0Mjc1LC0xMjMxNjk2ODAxLDM0NjA3Mjc1
+NCwtODAwMjk4MjY2LDE1NjEyODQ2MTEsLTQ4MDk2ODExNywtMT
+Q1MTI4NjQwMyw3OTkzNjA5ODgsLTE3NTAyNDM0NTIsLTk0NDAw
+ODc3NiwtNzAwNzM0NzA0XX0=
 -->
