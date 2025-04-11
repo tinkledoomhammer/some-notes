@@ -1287,7 +1287,15 @@ Class names
 : Can be specified with `class_name` or `const ClassName=preload(...`
 
 `->`
-: 
+: specifies a return type
+* void for functions that don't return a value
+* `Variant` is also allowed, to force that some value must be returned
+
+Covariance and contravariance
+: Follow the [Liskov substitution principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle)
+
+Covariance
+: when inheriting a method, you can specify a more specific  return t
 
 #### Stick to one style
 
@@ -1345,10 +1353,10 @@ Class names
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjY2NTk3MDMsLTU2NjYwNzcxOCw1OT
-IxMzQ3MzksLTQyNTUyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3
-NSwtMTIzMTY5NjgwMSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNT
-YxMjg0NjExLC00ODA5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYw
-OTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF
-19
+eyJoaXN0b3J5IjpbMTA3MjE4OTU2NSwtNTY2NjA3NzE4LDU5Mj
+EzNDczOSwtNDI1NTIyMjIsMTIxMzI3NzA2MCwxNTM5Mzg0Mjc1
+LC0xMjMxNjk2ODAxLDM0NjA3Mjc1NCwtODAwMjk4MjY2LDE1Nj
+EyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5
+ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX
+0=
 -->
