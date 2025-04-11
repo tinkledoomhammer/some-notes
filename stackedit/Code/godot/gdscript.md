@@ -1345,7 +1345,8 @@ To enable: Project Settings -> Debug -> GDScript (with **Advanced settings** ena
 : does not include all cases
 
 `UNSAFE_PROPERTY_ACCESS` and `UNSAFE_METHOD_ACCESS`
-
+: Caused by duck-typeing, even after using `in` , `has_method()`, etc
+* To avoid it, cast to a script that defines the properties or methods
 
 #### Cases where you can't specify types
 
@@ -1397,7 +1398,7 @@ To enable: Project Settings -> Debug -> GDScript (with **Advanced settings** ena
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzkyNDc3NDA3LDM4NDE5NDAwNiwtMTAxNj
+eyJoaXN0b3J5IjpbLTQ2MzY4ODg4LDM4NDE5NDAwNiwtMTAxNj
 c3NTc1MiwtNTY2NjA3NzE4LDU5MjEzNDczOSwtNDI1NTIyMjIs
 MTIxMzI3NzA2MCwxNTM5Mzg0Mjc1LC0xMjMxNjk2ODAxLDM0Nj
 A3Mjc1NCwtODAwMjk4MjY2LDE1NjEyODQ2MTEsLTQ4MDk2ODEx
