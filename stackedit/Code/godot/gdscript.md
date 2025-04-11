@@ -1306,7 +1306,9 @@ Specify the element type of an Array
 	* `for` loop variables
 	* some operators like `[]` `[]=` and `+`
 * Variant is still used for
-	* array methods
+	* array methods (`push_back()`, `map`, etc
+	* some other operators such as `==`
+* Nested array type arrays are not supported
 
 #### Stick to one style
 
@@ -1364,10 +1366,10 @@ Specify the element type of an Array
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2MTczNjcxNiwtNTY2NjA3NzE4LDU5Mj
-EzNDczOSwtNDI1NTIyMjIsMTIxMzI3NzA2MCwxNTM5Mzg0Mjc1
-LC0xMjMxNjk2ODAxLDM0NjA3Mjc1NCwtODAwMjk4MjY2LDE1Nj
-EyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5
-ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX
-0=
+eyJoaXN0b3J5IjpbLTEwMTY3NzU3NTIsLTU2NjYwNzcxOCw1OT
+IxMzQ3MzksLTQyNTUyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3
+NSwtMTIzMTY5NjgwMSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNT
+YxMjg0NjExLC00ODA5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYw
+OTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF
+19
 -->
