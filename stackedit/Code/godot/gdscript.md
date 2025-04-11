@@ -1223,6 +1223,10 @@ Rules of Tumb
 3. Virtual callbacks before the class interface
 4. Object construction and initialization (`_init` and `_ready`) before functions that modify the object at runtime
 
+Signals and Properties
+: Docstring -> signals ->properties
+* Enums should come after signals (to be used as export hints???)
+* then constants, exported variables, public, private, and onready variables in that order
 
 ## Static typing in GDScript
 
@@ -1270,7 +1274,7 @@ Rules of Tumb
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUyOTgzMjc4LC01NjY2MDc3MTgsNTkyMT
+eyJoaXN0b3J5IjpbNDEwMDA1NzI1LC01NjY2MDc3MTgsNTkyMT
 M0NzM5LC00MjU1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUs
 LTEyMzE2OTY4MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MT
 I4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4
