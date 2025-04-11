@@ -1332,7 +1332,7 @@ Safe Lines
 : Shown with green line numbers in the editor (gray for unsafe lines)
 
 
-#### Warning system
+#### Warning system and safe counterparts to unsafe operations
 https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/warning_system.html
 
 To enable: Project Settings -> Debug -> GDScript (with **Advanced settings** enabled
@@ -1341,10 +1341,11 @@ To enable: Project Settings -> Debug -> GDScript (with **Advanced settings** ena
 `INFERRED_DECLARATION` -  to warn if the less verbose syntax is used (???)
 
 `UNSAFE_*` warnings
+: make many unsafe operations more noticeable
+: does not include all cases
 
+`UNSAFE_PROPERTY_ACCESS` and `UNSAFE_METHOD_ACCESS`
 
-
-#### Common unsafe operations and their safe counterparts
 
 #### Cases where you can't specify types
 
@@ -1396,10 +1397,10 @@ To enable: Project Settings -> Debug -> GDScript (with **Advanced settings** ena
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5MDE1OTUzNCwzODQxOTQwMDYsLTEwMT
-Y3NzU3NTIsLTU2NjYwNzcxOCw1OTIxMzQ3MzksLTQyNTUyMjIy
-LDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5NjgwMSwzND
-YwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00ODA5Njgx
-MTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQzNDUyLC
-05NDQwMDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbMzkyNDc3NDA3LDM4NDE5NDAwNiwtMTAxNj
+c3NTc1MiwtNTY2NjA3NzE4LDU5MjEzNDczOSwtNDI1NTIyMjIs
+MTIxMzI3NzA2MCwxNTM5Mzg0Mjc1LC0xMjMxNjk2ODAxLDM0Nj
+A3Mjc1NCwtODAwMjk4MjY2LDE1NjEyODQ2MTEsLTQ4MDk2ODEx
+NywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLTE3NTAyNDM0NTIsLT
+k0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
