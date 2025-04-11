@@ -858,7 +858,7 @@ https://docs.godotengine.org/en/stable/classes/class_%40gdscript.html#class-gdsc
 * `@export var ints: Array[int] = [1,2,3]`
 * If no initializer is provided then `null` will be assigned
 * `Packed...Array`s can also be used, but can only be initialized empty
-* other variants can be used with arrays: `@export_range` `@export_color
+* other variants can be used with arrays: `@export_range` `@export_enum` etc
 
 #### Arrays
 
@@ -923,9 +923,9 @@ https://docs.godotengine.org/en/stable/classes/class_%40gdscript.html#class-gdsc
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA5MTYzNDA5LC00MjU1MjIyMiwxMjEzMj
-c3MDYwLDE1MzkzODQyNzUsLTEyMzE2OTY4MDEsMzQ2MDcyNzU0
-LC04MDAyOTgyNjYsMTU2MTI4NDYxMSwtNDgwOTY4MTE3LC0xND
-UxMjg2NDAzLDc5OTM2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4
-Nzc2LC03MDA3MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbLTE4MTM0MjU3OTEsLTQyNTUyMjIyLDEyMT
+MyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5NjgwMSwzNDYwNzI3
+NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00ODA5NjgxMTcsLT
+E0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQzNDUyLC05NDQw
+MDg3NzYsLTcwMDczNDcwNF19
 -->
