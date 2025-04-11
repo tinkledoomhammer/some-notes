@@ -982,13 +982,10 @@ Note2: When the description spans multiple lines, they will be joined and trimme
 
 
 
-
-
-
-
-#### `@deprecated` and `@experimental` 
-
 #### BBCode and class reference
+Tag | | Example/result
+-|-|-
+`[Class]` | Link to a class | `Move the [Sprite2D].`
 
 
 ## GDScript Style guide
@@ -1039,9 +1036,9 @@ Note2: When the description spans multiple lines, they will be joined and trimme
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4NTM5NjIwMCw1OTIxMzQ3MzksLTQyNT
-UyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5Njgw
-MSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00OD
-A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
-NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbLTEzOTMwMjk1MjAsNTkyMTM0NzM5LC00Mj
+U1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUsLTEyMzE2OTY4
+MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MTI4NDYxMSwtND
+gwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4OCwtMTc1MDI0
+MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
