@@ -856,7 +856,9 @@ https://docs.godotengine.org/en/stable/classes/class_%40gdscript.html#class-gdsc
 * Default values must be constant expressions
 * The editor will allow adding and removing items to the array
 * `@export var ints: Array[int] = [1,2,3]`
-* If no initializer is provided then `null
+* If no initializer is provided then `null` will be assigned
+* `Packed...Array`s can also be used, but can only be initialized empty
+* other variants can be used with arrays: `@export_range` `@export_color
 
 #### Arrays
 
@@ -921,7 +923,7 @@ https://docs.godotengine.org/en/stable/classes/class_%40gdscript.html#class-gdsc
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg4MDM2MDk0LC00MjU1MjIyMiwxMjEzMj
+eyJoaXN0b3J5IjpbMzA5MTYzNDA5LC00MjU1MjIyMiwxMjEzMj
 c3MDYwLDE1MzkzODQyNzUsLTEyMzE2OTY4MDEsMzQ2MDcyNzU0
 LC04MDAyOTgyNjYsMTU2MTI4NDYxMSwtNDgwOTY4MTE3LC0xND
 UxMjg2NDAzLDc5OTM2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4
