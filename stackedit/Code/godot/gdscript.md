@@ -1337,6 +1337,10 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/warning_syst
 
 To enable: Project Settings -> Debug -> GDScript (with **Advanced settings** enabled
 
+`UNTYPED_DECLARATIONN` - warning is appropriate if static types are desired in all circumstances
+`INFERRED_DECLARATION` -  to warn if the less verbose syntax is used (???)
+
+`UNSAFE_*` warnings
 
 
 
@@ -1392,10 +1396,10 @@ To enable: Project Settings -> Debug -> GDScript (with **Advanced settings** ena
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjQ4NDI5NjMsMzg0MTk0MDA2LC0xMD
-E2Nzc1NzUyLC01NjY2MDc3MTgsNTkyMTM0NzM5LC00MjU1MjIy
-MiwxMjEzMjc3MDYwLDE1MzkzODQyNzUsLTEyMzE2OTY4MDEsMz
-Q2MDcyNzU0LC04MDAyOTgyNjYsMTU2MTI4NDYxMSwtNDgwOTY4
-MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4OCwtMTc1MDI0MzQ1Mi
-wtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbLTQ5MDE1OTUzNCwzODQxOTQwMDYsLTEwMT
+Y3NzU3NTIsLTU2NjYwNzcxOCw1OTIxMzQ3MzksLTQyNTUyMjIy
+LDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5NjgwMSwzND
+YwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00ODA5Njgx
+MTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQzNDUyLC
+05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
