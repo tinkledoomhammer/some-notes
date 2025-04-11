@@ -1301,7 +1301,13 @@ Contravariance
 : When inheriting a method **parameters** scan e a less specific type (supertype)
 
 Specify the element type of an Array
-: `var varname: Array[type] = [1,2`
+: `var varname: Array[type] = [1,2,...]`
+* array types are used with
+	* `for` loop variables
+	* some operators like `[]` `[]=` and `+`
+* Variant is still used for
+	* array methods
+
 #### Stick to one style
 
 #### Warning system
@@ -1358,7 +1364,7 @@ Specify the element type of an Array
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NDA0MzQ5NSwtNTY2NjA3NzE4LDU5Mj
+eyJoaXN0b3J5IjpbMTE2MTczNjcxNiwtNTY2NjA3NzE4LDU5Mj
 EzNDczOSwtNDI1NTIyMjIsMTIxMzI3NzA2MCwxNTM5Mzg0Mjc1
 LC0xMjMxNjk2ODAxLDM0NjA3Mjc1NCwtODAwMjk4MjY2LDE1Nj
 EyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5
