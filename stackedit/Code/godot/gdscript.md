@@ -1315,6 +1315,8 @@ TODO: statically typed dictionary
 #### Type Casting
 ` var player := body as PlayerController`
 * will be `null` when `body is PlayerController` is false
+
+Three ways to do type casting safely 
 ```
 if not (body is PlayerController):
 if body is not PlayerController:
@@ -1347,7 +1349,8 @@ To enable: Project Settings -> Debug -> GDScript (with **Advanced settings** ena
 `UNSAFE_PROPERTY_ACCESS` and `UNSAFE_METHOD_ACCESS`
 : Caused by duck-typeing, even after using `in` , `has_method()`, etc
 * To avoid it, cast to a script that defines the properties or methods after using `is` to verify that the cast will work
-* This can be done explicitely with the 1
+* This can be done explicitely with the `as` keyword, or by assigning the object to a new variable with the specified type
+* When using the `as` keyword to cast, the object can be test against `null` instead of using `is`
 
 #### Cases where you can't specify types
 
@@ -1399,10 +1402,10 @@ To enable: Project Settings -> Debug -> GDScript (with **Advanced settings** ena
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMDcwNjQzNSwzODQxOTQwMDYsLTEwMT
-Y3NzU3NTIsLTU2NjYwNzcxOCw1OTIxMzQ3MzksLTQyNTUyMjIy
-LDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5NjgwMSwzND
-YwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00ODA5Njgx
-MTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQzNDUyLC
-05NDQwMDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbLTg4MjQwNzcyLDM4NDE5NDAwNiwtMTAxNj
+c3NTc1MiwtNTY2NjA3NzE4LDU5MjEzNDczOSwtNDI1NTIyMjIs
+MTIxMzI3NzA2MCwxNTM5Mzg0Mjc1LC0xMjMxNjk2ODAxLDM0Nj
+A3Mjc1NCwtODAwMjk4MjY2LDE1NjEyODQ2MTEsLTQ4MDk2ODEx
+NywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLTE3NTAyNDM0NTIsLT
+k0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
