@@ -1309,8 +1309,12 @@ Specify the element type of an Array
 	* array methods (`push_back()`, `map`, etc
 	* some other operators such as `==`
 * Nested array type arrays are not supported
+TODO: statically typed dictionary
+
 
 #### Type Casting
+` var pl
+
 
 
 #### Stick to one style
@@ -1369,10 +1373,10 @@ Specify the element type of an Array
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg0MTk0MDA2LC0xMDE2Nzc1NzUyLC01Nj
-Y2MDc3MTgsNTkyMTM0NzM5LC00MjU1MjIyMiwxMjEzMjc3MDYw
-LDE1MzkzODQyNzUsLTEyMzE2OTY4MDEsMzQ2MDcyNzU0LC04MD
-AyOTgyNjYsMTU2MTI4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2
-NDAzLDc5OTM2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC
-03MDA3MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbMTQxMDQ2NDYzOSwzODQxOTQwMDYsLTEwMT
+Y3NzU3NTIsLTU2NjYwNzcxOCw1OTIxMzQ3MzksLTQyNTUyMjIy
+LDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5NjgwMSwzND
+YwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00ODA5Njgx
+MTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQzNDUyLC
+05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
