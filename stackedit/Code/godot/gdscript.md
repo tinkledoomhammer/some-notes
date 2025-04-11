@@ -1138,7 +1138,7 @@ Comment spacing
 * prefer comments on their own line, expecially if they are long
 
 Whitespace
-: use one space araound operators and after comas
+: use one space around operators and after comas
 : Avoid extra spaces in dictionaries and function calls
 * include one space for single-line dictionaries 
 * **don't** use spaces to align expressions vertically
@@ -1366,10 +1366,10 @@ Specify the element type of an Array
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTY3NzU3NTIsLTU2NjYwNzcxOCw1OT
-IxMzQ3MzksLTQyNTUyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3
-NSwtMTIzMTY5NjgwMSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNT
-YxMjg0NjExLC00ODA5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYw
-OTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF
-19
+eyJoaXN0b3J5IjpbMTQ0NDc2MzY1NywtMTAxNjc3NTc1MiwtNT
+Y2NjA3NzE4LDU5MjEzNDczOSwtNDI1NTIyMjIsMTIxMzI3NzA2
+MCwxNTM5Mzg0Mjc1LC0xMjMxNjk2ODAxLDM0NjA3Mjc1NCwtOD
+AwMjk4MjY2LDE1NjEyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4
+NjQwMyw3OTkzNjA5ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3Ni
+wtNzAwNzM0NzA0XX0=
 -->
