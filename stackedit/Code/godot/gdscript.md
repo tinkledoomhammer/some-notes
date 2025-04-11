@@ -1013,7 +1013,9 @@ Tag | | Example/result
  `[codeblock]` .. `[/codeblock]` | multiline codeblock
 
 Notes:
-1. Currently only p
+1. Currently only [@GDScript](https://docs.godotengine.org/en/stable/classes/class_%40gdscript.html#class-gdscript) has annotations
+2. blocks created with `[kbd]` `[code]` and `[codeblock]` disable BBCode until the end of the block
+3. Inside codeblocks, always use 
 
 
 ## GDScript Style guide
@@ -1064,7 +1066,7 @@ Notes:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NDQxNDE1OSw1OTIxMzQ3MzksLTQyNT
+eyJoaXN0b3J5IjpbLTY4NDA2NDI3NSw1OTIxMzQ3MzksLTQyNT
 UyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5Njgw
 MSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00OD
 A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
