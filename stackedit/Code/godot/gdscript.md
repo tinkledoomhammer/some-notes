@@ -853,7 +853,10 @@ https://docs.godotengine.org/en/stable/classes/class_%40gdscript.html#class-gdsc
 * the type can also be `String`
 
 #### Exporting arrays
-
+* Default values must be constant expressions
+* The editor will allow adding and removing items to the array
+* `@export var ints: Array[int] = [1,2,3]`
+* If no initializer is provided then `null
 
 #### Arrays
 
@@ -918,9 +921,9 @@ https://docs.godotengine.org/en/stable/classes/class_%40gdscript.html#class-gdsc
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzQyMzIzNDQsLTQyNTUyMjIyLDEyMT
-MyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5NjgwMSwzNDYwNzI3
-NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00ODA5NjgxMTcsLT
-E0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQzNDUyLC05NDQw
-MDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbMjg4MDM2MDk0LC00MjU1MjIyMiwxMjEzMj
+c3MDYwLDE1MzkzODQyNzUsLTEyMzE2OTY4MDEsMzQ2MDcyNzU0
+LC04MDAyOTgyNjYsMTU2MTI4NDYxMSwtNDgwOTY4MTE3LC0xND
+UxMjg2NDAzLDc5OTM2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4
+Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
