@@ -1295,8 +1295,13 @@ Covariance and contravariance
 : Follow the [Liskov substitution principle](https://en.wikipedia.org/wiki/Liskov_substitution_principle)
 
 Covariance
-: when inheriting a method, you can specify a more specific  return t
+: when inheriting a method, you can specify a more specific  (subtype) **return** type than the parent
 
+Contravariance
+: When inheriting a method **parameters** scan e a less specific type (supertype)
+
+Specify the element type of an Array
+: `var varname: Array[type] = [1,2`
 #### Stick to one style
 
 #### Warning system
@@ -1353,7 +1358,7 @@ Covariance
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3MjE4OTU2NSwtNTY2NjA3NzE4LDU5Mj
+eyJoaXN0b3J5IjpbLTI3NDA0MzQ5NSwtNTY2NjA3NzE4LDU5Mj
 EzNDczOSwtNDI1NTIyMjIsMTIxMzI3NzA2MCwxNTM5Mzg0Mjc1
 LC0xMjMxNjk2ODAxLDM0NjA3Mjc1NCwtODAwMjk4MjY2LDE1Nj
 EyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5
