@@ -924,9 +924,19 @@ Note: No space is allowed between the tag name and the `:`
 Note2: When the description spans multiple lines, they will be joined and trimmed with a single space between. use `[br]` for manual breaks
 
 #### Documenting Script members
+Members that can be documented:
+* Signal, enum, enum value, constant, variable, function, inner class
+* Documentation of a member must be immediately preceeded by its annotations
+* 
+
+#### Complete script example
 
 
-#### Complete scri
+#### `@deprecated` and `@experimental` 
+
+#### BBCode and class reference
+
+
 ## GDScript Style guide
 
 ## Static typing in GDScript
@@ -975,7 +985,7 @@ Note2: When the description spans multiple lines, they will be joined and trimme
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDY2NDM0NDcsNTkyMTM0NzM5LC00Mj
+eyJoaXN0b3J5IjpbLTEyMzg4MDkxNjgsNTkyMTM0NzM5LC00Mj
 U1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUsLTEyMzE2OTY4
 MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MTI4NDYxMSwtND
 gwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4OCwtMTc1MDI0
