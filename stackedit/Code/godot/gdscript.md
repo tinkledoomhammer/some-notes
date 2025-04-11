@@ -1168,6 +1168,18 @@ Enum members | CONST_CASE | `{EARTH, WATER, ...`
 File names
 : should be the snake-case version of the PascalCase class name
 
+Classes and Nodes
+: Use pascal case for the class name and `const`s that hold a `preload`
+
+Functions and variables
+: Snake case
+* use `_` at the beginning for
+	* virtual methods that the user must override
+	* private functions
+	* private methods
+
+Signals
+: snake 
 
 
 ## Static typing in GDScript
@@ -1216,9 +1228,10 @@ File names
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2NjYwNzcxOCw1OTIxMzQ3MzksLTQyNT
-UyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5Njgw
-MSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00OD
-A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
-NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbNjYxODI2NjY5LC01NjY2MDc3MTgsNTkyMT
+M0NzM5LC00MjU1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUs
+LTEyMzE2OTY4MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MT
+I4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4
+OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ
+==
 -->
