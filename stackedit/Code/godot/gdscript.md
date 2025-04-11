@@ -1317,8 +1317,15 @@ TODO: statically typed dictionary
 * will be `null` when `body is PlayerController` is false
 ```
 if not (body is PlayerController):
-if body is no
+if body is not PlayerController:
+
+let player = body as PlayerController
+	if not player:
 ```
+* Casting will allow full autocomplete
+* The is keyword is saferr
+
+
 
 
 
@@ -1378,7 +1385,7 @@ if body is no
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMjE0ODQ3NiwzODQxOTQwMDYsLTEwMT
+eyJoaXN0b3J5IjpbMTc4NzAxMDQ1OCwzODQxOTQwMDYsLTEwMT
 Y3NzU3NTIsLTU2NjYwNzcxOCw1OTIxMzQ3MzksLTQyNTUyMjIy
 LDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5NjgwMSwzND
 YwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00ODA5Njgx
