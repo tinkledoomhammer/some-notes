@@ -1160,6 +1160,10 @@ Class names | PascalCase | `class_name YAMLParser`
 Node names | PascalCase | `Camera3D, Player`
 Functions | snake_case | `func load_level():`
 Variables | snake_case | `var particle_effect`
+Signals | snake_case | `signal door_opened`
+Constants | CONST_CASE | `const MAX_SPEED = 200`
+Enum names | PascalCase | `enum Element{..`
+Enum members | CONST_CASE | `{EARTH, WATER, ...`
 
 
 ## Static typing in GDScript
@@ -1208,9 +1212,9 @@ Variables | snake_case | `var particle_effect`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDAwNTE4OTcsNTkyMTM0NzM5LC00Mj
-U1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUsLTEyMzE2OTY4
-MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MTI4NDYxMSwtND
-gwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4OCwtMTc1MDI0
-MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbMjA5NTM2NTg2Nyw1OTIxMzQ3MzksLTQyNT
+UyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5Njgw
+MSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00OD
+A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
+NDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
