@@ -1310,6 +1310,9 @@ Specify the element type of an Array
 	* some other operators such as `==`
 * Nested array type arrays are not supported
 
+#### Type Casting
+
+
 #### Stick to one style
 
 #### Warning system
@@ -1366,10 +1369,10 @@ Specify the element type of an Array
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NDc2MzY1NywtMTAxNjc3NTc1MiwtNT
-Y2NjA3NzE4LDU5MjEzNDczOSwtNDI1NTIyMjIsMTIxMzI3NzA2
-MCwxNTM5Mzg0Mjc1LC0xMjMxNjk2ODAxLDM0NjA3Mjc1NCwtOD
-AwMjk4MjY2LDE1NjEyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4
-NjQwMyw3OTkzNjA5ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3Ni
-wtNzAwNzM0NzA0XX0=
+eyJoaXN0b3J5IjpbMzg0MTk0MDA2LC0xMDE2Nzc1NzUyLC01Nj
+Y2MDc3MTgsNTkyMTM0NzM5LC00MjU1MjIyMiwxMjEzMjc3MDYw
+LDE1MzkzODQyNzUsLTEyMzE2OTY4MDEsMzQ2MDcyNzU0LC04MD
+AyOTgyNjYsMTU2MTI4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2
+NDAzLDc5OTM2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC
+03MDA3MzQ3MDRdfQ==
 -->
