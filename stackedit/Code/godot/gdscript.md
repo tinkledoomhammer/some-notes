@@ -1239,7 +1239,14 @@ Methods and static functions
 	* `_init()` first
 	* then `_ready()`
 * Then built-in virtual callbacks
-	* `_unhandled_input()` `_physics 
+	* `_unhandled_input()` `_physics_process()` etc
+* Then other public methods
+* then private methods
+
+#### Static typing
+
+
+
 ## Static typing in GDScript
 
 ## GDScript warning system
@@ -1286,10 +1293,10 @@ Methods and static functions
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjI1MTAyODEsLTU2NjYwNzcxOCw1OT
-IxMzQ3MzksLTQyNTUyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3
-NSwtMTIzMTY5NjgwMSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNT
-YxMjg0NjExLC00ODA5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYw
-OTg4LC0xNzUwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF
-19
+eyJoaXN0b3J5IjpbLTM1MjQ5Nzk3NSwtNTY2NjA3NzE4LDU5Mj
+EzNDczOSwtNDI1NTIyMjIsMTIxMzI3NzA2MCwxNTM5Mzg0Mjc1
+LC0xMjMxNjk2ODAxLDM0NjA3Mjc1NCwtODAwMjk4MjY2LDE1Nj
+EyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5
+ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX
+0=
 -->
