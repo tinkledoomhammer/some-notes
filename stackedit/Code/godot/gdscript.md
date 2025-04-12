@@ -1423,7 +1423,12 @@ char | meaning
 * Dynamic padding uses `*` with an optional `0` for zero-padding
 * `"%*.*f" %[7,3,8.888]` -> `"   8.889"
 
+
+### `String.format()`
+
+
 ## Core features
+
 
 ### How to read the Godot API
 
@@ -1463,11 +1468,11 @@ char | meaning
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc5NTc1NTI3LDQ4OTkyNjI4MCwtODgyND
-A3NzIsMzg0MTk0MDA2LC0xMDE2Nzc1NzUyLC01NjY2MDc3MTgs
-NTkyMTM0NzM5LC00MjU1MjIyMiwxMjEzMjc3MDYwLDE1MzkzOD
-QyNzUsLTEyMzE2OTY4MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYs
-MTU2MTI4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OT
-M2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3
-MDRdfQ==
+eyJoaXN0b3J5IjpbLTczMTcxNjUyNyw0ODk5MjYyODAsLTg4Mj
+QwNzcyLDM4NDE5NDAwNiwtMTAxNjc3NTc1MiwtNTY2NjA3NzE4
+LDU5MjEzNDczOSwtNDI1NTIyMjIsMTIxMzI3NzA2MCwxNTM5Mz
+g0Mjc1LC0xMjMxNjk2ODAxLDM0NjA3Mjc1NCwtODAwMjk4MjY2
+LDE1NjEyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMyw3OT
+kzNjA5ODgsLTE3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0
+NzA0XX0=
 -->
