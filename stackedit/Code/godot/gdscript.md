@@ -1378,6 +1378,8 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_for
 
 See also `String.format()` 
 
+Format strings use `%` as a special char. to include it as a literal, escape it with `%%`
+
 #### Multiple placeholders
 ```
 var  format_string  =  "%s was reluctant to learn %s, but now he enjoys it."
@@ -1461,10 +1463,11 @@ char | meaning
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg5OTI2MjgwLC04ODI0MDc3MiwzODQxOT
-QwMDYsLTEwMTY3NzU3NTIsLTU2NjYwNzcxOCw1OTIxMzQ3Mzks
-LTQyNTUyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMT
-Y5NjgwMSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjEx
-LC00ODA5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNz
-UwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbMjc5NTc1NTI3LDQ4OTkyNjI4MCwtODgyND
+A3NzIsMzg0MTk0MDA2LC0xMDE2Nzc1NzUyLC01NjY2MDc3MTgs
+NTkyMTM0NzM5LC00MjU1MjIyMiwxMjEzMjc3MDYwLDE1MzkzOD
+QyNzUsLTEyMzE2OTY4MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYs
+MTU2MTI4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OT
+M2MDk4OCwtMTc1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3
+MDRdfQ==
 -->
