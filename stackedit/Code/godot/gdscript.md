@@ -1417,7 +1417,9 @@ char | meaning
 * when using numbers for both padding and precision with `.` 
 	* the number before the `.`  sets the minimum overall length
 	* the number after the `.` is the number of decimal digits
-	* `print("%10.3f" % 10000
+	* `print("%10.3f" % 10000.5555)` -> " 10000.556"
+* Dynamic padding uses `*` with an optional `0` for zero-padding
+`
 
 ## Core features
 
@@ -1459,7 +1461,7 @@ char | meaning
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDM3NTE5OTcsLTg4MjQwNzcyLDM4ND
+eyJoaXN0b3J5IjpbLTExMzUxMzk2NzYsLTg4MjQwNzcyLDM4ND
 E5NDAwNiwtMTAxNjc3NTc1MiwtNTY2NjA3NzE4LDU5MjEzNDcz
 OSwtNDI1NTIyMjIsMTIxMzI3NzA2MCwxNTM5Mzg0Mjc1LC0xMj
 MxNjk2ODAxLDM0NjA3Mjc1NCwtODAwMjk4MjY2LDE1NjEyODQ2
