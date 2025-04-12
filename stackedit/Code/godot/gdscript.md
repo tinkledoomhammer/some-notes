@@ -1352,6 +1352,8 @@ To enable: Project Settings -> Debug -> GDScript (with **Advanced settings** ena
 * This can be done explicitely with the `as` keyword, or by assigning the object to a new variable with the specified type
 * When using the `as` keyword to cast, the object can be test against `null` instead of using `is`
 
+`UNSAFE_CAST`
+: 
 
 
 
@@ -1405,10 +1407,10 @@ To enable: Project Settings -> Debug -> GDScript (with **Advanced settings** ena
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4MzY0MjQ0NiwtODgyNDA3NzIsMzg0MT
-k0MDA2LC0xMDE2Nzc1NzUyLC01NjY2MDc3MTgsNTkyMTM0NzM5
-LC00MjU1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUsLTEyMz
-E2OTY4MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MTI4NDYx
-MSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4OCwtMT
-c1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
+eyJoaXN0b3J5IjpbLTIxMDYxMjEzMDAsLTg4MjQwNzcyLDM4ND
+E5NDAwNiwtMTAxNjc3NTc1MiwtNTY2NjA3NzE4LDU5MjEzNDcz
+OSwtNDI1NTIyMjIsMTIxMzI3NzA2MCwxNTM5Mzg0Mjc1LC0xMj
+MxNjk2ODAxLDM0NjA3Mjc1NCwtODAwMjk4MjY2LDE1NjEyODQ2
+MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLT
+E3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
