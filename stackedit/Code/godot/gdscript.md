@@ -1353,7 +1353,15 @@ To enable: Project Settings -> Debug -> GDScript (with **Advanced settings** ena
 * When using the `as` keyword to cast, the object can be test against `null` instead of using `is`
 
 `UNSAFE_CAST`
-: 
+: caused by casting from `Variant` to a real type
+To avoid both warnings:
+```
+func _on_body_entered(body: Node2D) -> void:
+	var label_variant: Variant = body.get("label")
+	if label_variant is Label:
+		var label: Label = label_variant
+		label.text = name
+```
 
 
 
@@ -1407,7 +1415,7 @@ To enable: Project Settings -> Debug -> GDScript (with **Advanced settings** ena
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDYxMjEzMDAsLTg4MjQwNzcyLDM4ND
+eyJoaXN0b3J5IjpbLTExMTQ5OTk3NTEsLTg4MjQwNzcyLDM4ND
 E5NDAwNiwtMTAxNjc3NTc1MiwtNTY2NjA3NzE4LDU5MjEzNDcz
 OSwtNDI1NTIyMjIsMTIxMzI3NzA2MCwxNTM5Mzg0Mjc1LC0xMj
 MxNjk2ODAxLDM0NjA3Mjc1NCwtODAwMjk4MjY2LDE1NjEyODQ2
