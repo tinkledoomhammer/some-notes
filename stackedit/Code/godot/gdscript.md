@@ -1419,7 +1419,7 @@ char | meaning
 	* the number after the `.` is the number of decimal digits
 	* `print("%10.3f" % 10000.5555)` -> " 10000.556"
 * Dynamic padding uses `*` with an optional `0` for zero-padding
-`
+* `"%*.*f" %[7,3,8.888]` -> `"   8.889"
 
 ## Core features
 
@@ -1461,10 +1461,10 @@ char | meaning
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzUxMzk2NzYsLTg4MjQwNzcyLDM4ND
-E5NDAwNiwtMTAxNjc3NTc1MiwtNTY2NjA3NzE4LDU5MjEzNDcz
-OSwtNDI1NTIyMjIsMTIxMzI3NzA2MCwxNTM5Mzg0Mjc1LC0xMj
-MxNjk2ODAxLDM0NjA3Mjc1NCwtODAwMjk4MjY2LDE1NjEyODQ2
-MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLT
-E3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
+eyJoaXN0b3J5IjpbNDg5OTI2MjgwLC04ODI0MDc3MiwzODQxOT
+QwMDYsLTEwMTY3NzU3NTIsLTU2NjYwNzcxOCw1OTIxMzQ3Mzks
+LTQyNTUyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMT
+Y5NjgwMSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjEx
+LC00ODA5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNz
+UwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
 -->
