@@ -1388,7 +1388,12 @@ print(actual_string)
 ```
 #### Format Specifiers
 Placeholder types
-:
+: only one per format specifier, must be the last character
+
+character | meaning
+-|-
+s | Simple - converts to string by the same method as implicit conversion
+c | a single unicode character. expects an unsigned 8-bit integer or sing
 
 ## Core features
 
@@ -1430,7 +1435,7 @@ Placeholder types
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMTMwNTk1MiwtODgyNDA3NzIsMzg0MT
+eyJoaXN0b3J5IjpbMTE1MjY5Nzk0NiwtODgyNDA3NzIsMzg0MT
 k0MDA2LC0xMDE2Nzc1NzUyLC01NjY2MDc3MTgsNTkyMTM0NzM5
 LC00MjU1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUsLTEyMz
 E2OTY4MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MTI4NDYx
