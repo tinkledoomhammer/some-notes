@@ -1378,6 +1378,18 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_for
 
 See also `String.format()` 
 
+#### Multiple placeholders
+```
+var  format_string  =  "%s was reluctant to learn %s, but now he enjoys it."
+var  actual_string  =  format_string  %  ["Estragon",  "GDScript"]
+
+print(actual_string)
+# Output: "Estragon was reluctant to learn GDScript, but now he enjoys it."
+```
+#### Format Specifiers
+Placeholder types
+:
+
 ## Core features
 
 ### How to read the Godot API
@@ -1418,7 +1430,7 @@ See also `String.format()`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3ODQ2NzIyNywtODgyNDA3NzIsMzg0MT
+eyJoaXN0b3J5IjpbMTUyMTMwNTk1MiwtODgyNDA3NzIsMzg0MT
 k0MDA2LC0xMDE2Nzc1NzUyLC01NjY2MDc3MTgsNTkyMTM0NzM5
 LC00MjU1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUsLTEyMz
 E2OTY4MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MTI4NDYx
