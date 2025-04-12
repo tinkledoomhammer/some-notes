@@ -1374,7 +1374,9 @@ func _on_body_entered(body: Node2D) -> void:
 https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/warning_system.html
 
 ## GDScript format strings
+https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_format_string.html
 
+See also `String.format()` 
 
 ## Core features
 
@@ -1416,10 +1418,10 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/warning_syst
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTIyMTcwMTYsLTg4MjQwNzcyLDM4ND
-E5NDAwNiwtMTAxNjc3NTc1MiwtNTY2NjA3NzE4LDU5MjEzNDcz
-OSwtNDI1NTIyMjIsMTIxMzI3NzA2MCwxNTM5Mzg0Mjc1LC0xMj
-MxNjk2ODAxLDM0NjA3Mjc1NCwtODAwMjk4MjY2LDE1NjEyODQ2
-MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLT
-E3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
+eyJoaXN0b3J5IjpbMTI3ODQ2NzIyNywtODgyNDA3NzIsMzg0MT
+k0MDA2LC0xMDE2Nzc1NzUyLC01NjY2MDc3MTgsNTkyMTM0NzM5
+LC00MjU1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUsLTEyMz
+E2OTY4MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MTI4NDYx
+MSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4OCwtMT
+c1MDI0MzQ1MiwtOTQ0MDA4Nzc2LC03MDA3MzQ3MDRdfQ==
 -->
