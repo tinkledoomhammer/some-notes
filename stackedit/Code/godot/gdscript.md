@@ -1406,7 +1406,9 @@ Placeholder modifiers
 char | meaning
 -|-
 `+` | in numbers, show `+` sign if the number is positive
-[integer] | set **padding** will be spaces if the int does not start with `0` the leading 
+[integer] | set **padding** will be spaces if the int does not start with `0` the leading 0. 
+`.`  | before `f` or `v` sets precision to 0. follow with a number to increase precision
+`-` | pad to the right will always use space instead of `0`
 
 ## Core features
 
@@ -1448,10 +1450,10 @@ char | meaning
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3MTY0NjcwLC04ODI0MDc3MiwzODQxOT
-QwMDYsLTEwMTY3NzU3NTIsLTU2NjYwNzcxOCw1OTIxMzQ3Mzks
-LTQyNTUyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMT
-Y5NjgwMSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjEx
-LC00ODA5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNz
-UwMjQzNDUyLC05NDQwMDg3NzYsLTcwMDczNDcwNF19
+eyJoaXN0b3J5IjpbLTEwODI2Njg2MzEsLTg4MjQwNzcyLDM4ND
+E5NDAwNiwtMTAxNjc3NTc1MiwtNTY2NjA3NzE4LDU5MjEzNDcz
+OSwtNDI1NTIyMjIsMTIxMzI3NzA2MCwxNTM5Mzg0Mjc1LC0xMj
+MxNjk2ODAxLDM0NjA3Mjc1NCwtODAwMjk4MjY2LDE1NjEyODQ2
+MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLT
+E3NTAyNDM0NTIsLTk0NDAwODc3NiwtNzAwNzM0NzA0XX0=
 -->
