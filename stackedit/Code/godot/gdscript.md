@@ -1363,17 +1363,18 @@ func _on_body_entered(body: Node2D) -> void:
 		label.text = name
 ```
 
-
-
 #### Cases where you can't specify types
+* Individual elements in an array
+* Nested types i.e. typed array of typed arrays
 
-#### Summary
 
 
 
 ## GDScript warning system
+https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/warning_system.html
 
 ## GDScript format strings
+
 
 ## Core features
 
@@ -1415,7 +1416,7 @@ func _on_body_entered(body: Node2D) -> void:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTQ5OTk3NTEsLTg4MjQwNzcyLDM4ND
+eyJoaXN0b3J5IjpbLTE2MTIyMTcwMTYsLTg4MjQwNzcyLDM4ND
 E5NDAwNiwtMTAxNjc3NTc1MiwtNTY2NjA3NzE4LDU5MjEzNDcz
 OSwtNDI1NTIyMjIsMTIxMzI3NzA2MCwxNTM5Mzg0Mjc1LC0xMj
 MxNjk2ODAxLDM0NjA3Mjc1NCwtODAwMjk4MjY2LDE1NjEyODQ2
