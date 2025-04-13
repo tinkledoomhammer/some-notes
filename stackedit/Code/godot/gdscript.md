@@ -1426,6 +1426,13 @@ char | meaning
 
 ### `String.format()`
 in general the format is `some_string_format(vals [,placeholder)`
+* vals cann be weird
+Placeholders
+
+Type | example | placeholder
+-|-|-
+Infix (default) | "Hi, {0} v{1}".format(["godette",3.0"],"{
+
 
 
 ## Core features
@@ -1469,11 +1476,11 @@ in general the format is `some_string_format(vals [,placeholder)`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM0MDI3MzA1LC0yMDMzOTI0MDM0LC03Mz
-E3MTY1MjcsNDg5OTI2MjgwLC04ODI0MDc3MiwzODQxOTQwMDYs
-LTEwMTY3NzU3NTIsLTU2NjYwNzcxOCw1OTIxMzQ3MzksLTQyNT
-UyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5Njgw
-MSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00OD
-A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
-NDUyXX0=
+eyJoaXN0b3J5IjpbLTE1MjMzNzg2ODYsLTIwMzM5MjQwMzQsLT
+czMTcxNjUyNyw0ODk5MjYyODAsLTg4MjQwNzcyLDM4NDE5NDAw
+NiwtMTAxNjc3NTc1MiwtNTY2NjA3NzE4LDU5MjEzNDczOSwtND
+I1NTIyMjIsMTIxMzI3NzA2MCwxNTM5Mzg0Mjc1LC0xMjMxNjk2
+ODAxLDM0NjA3Mjc1NCwtODAwMjk4MjY2LDE1NjEyODQ2MTEsLT
+Q4MDk2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLTE3NTAy
+NDM0NTJdfQ==
 -->
