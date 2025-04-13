@@ -1451,7 +1451,7 @@ Array | no index | "{} v{}" | `["aname","3.0"]`
 
 `String.format()` does not have a way to manipulate number representations
 : Use it with the `%` operattor
-* `"{0} v{1}".fo
+* `"{0} v{1}".format(["aname", "%0.2f" % 3.0])`
 
 
 
@@ -1496,11 +1496,11 @@ Array | no index | "{} v{}" | `["aname","3.0"]`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc2ODg3NDY5LC02MDU2MzE5OTEsODMzNz
-kzNjQsLTIwMzM5MjQwMzQsLTczMTcxNjUyNyw0ODk5MjYyODAs
-LTg4MjQwNzcyLDM4NDE5NDAwNiwtMTAxNjc3NTc1MiwtNTY2Nj
-A3NzE4LDU5MjEzNDczOSwtNDI1NTIyMjIsMTIxMzI3NzA2MCwx
-NTM5Mzg0Mjc1LC0xMjMxNjk2ODAxLDM0NjA3Mjc1NCwtODAwMj
-k4MjY2LDE1NjEyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQw
-M119
+eyJoaXN0b3J5IjpbMTk5NTk0NTc1NywtNjA1NjMxOTkxLDgzMz
+c5MzY0LC0yMDMzOTI0MDM0LC03MzE3MTY1MjcsNDg5OTI2Mjgw
+LC04ODI0MDc3MiwzODQxOTQwMDYsLTEwMTY3NzU3NTIsLTU2Nj
+YwNzcxOCw1OTIxMzQ3MzksLTQyNTUyMjIyLDEyMTMyNzcwNjAs
+MTUzOTM4NDI3NSwtMTIzMTY5NjgwMSwzNDYwNzI3NTQsLTgwMD
+I5ODI2NiwxNTYxMjg0NjExLC00ODA5NjgxMTcsLTE0NTEyODY0
+MDNdfQ==
 -->
