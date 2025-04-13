@@ -1431,7 +1431,9 @@ Placeholders
 
 Type | example | placeholder
 -|-|-
-Infix (default) | "Hi, {0} v{1}".format(["godette",3.0"],"{
+Infix (default) | "Hi, {0} v{1}".format(["godette",3.0"],"{_}") | "{_}"
+Postfix | "Hi, 0% v1%".format(["Godette", "3.0"],"%") | "_%"
+Prefix | "Hi, %0 v%1".format(["Godette", "3.0"],"%") | "_%"
 
 
 
@@ -1476,11 +1478,11 @@ Infix (default) | "Hi, {0} v{1}".format(["godette",3.0"],"{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjMzNzg2ODYsLTIwMzM5MjQwMzQsLT
-czMTcxNjUyNyw0ODk5MjYyODAsLTg4MjQwNzcyLDM4NDE5NDAw
-NiwtMTAxNjc3NTc1MiwtNTY2NjA3NzE4LDU5MjEzNDczOSwtND
-I1NTIyMjIsMTIxMzI3NzA2MCwxNTM5Mzg0Mjc1LC0xMjMxNjk2
-ODAxLDM0NjA3Mjc1NCwtODAwMjk4MjY2LDE1NjEyODQ2MTEsLT
-Q4MDk2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLTE3NTAy
-NDM0NTJdfQ==
+eyJoaXN0b3J5IjpbLTYyMTY1NDY2NywtMjAzMzkyNDAzNCwtNz
+MxNzE2NTI3LDQ4OTkyNjI4MCwtODgyNDA3NzIsMzg0MTk0MDA2
+LC0xMDE2Nzc1NzUyLC01NjY2MDc3MTgsNTkyMTM0NzM5LC00Mj
+U1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUsLTEyMzE2OTY4
+MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MTI4NDYxMSwtND
+gwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4OCwtMTc1MDI0
+MzQ1Ml19
 -->
