@@ -1431,9 +1431,9 @@ Placeholders
 
 Type | example | placeholder
 -|-|-
-Infix (default) | "Hi, {0} v{1}".format(["godette",3.0"],"{_}") | "{_}"
-Postfix | "Hi, 0% v1%".format(["Godette", "3.0"],"%") | "_%"
-Prefix | "Hi, %0 v%1".format(["Godette", "3.0"],"%") | "_%"
+Infix (default) | `"Hi, {0} v{1}".format(["godette",3.0"],"{_}")` | `"{_}"`
+Postfix | `"Hi, 0% v1%".format(["Godette", "3.0"],"_%")` | `"_%"`
+Prefix | `"Hi, %0 v%1".format(["Godette", "3.0"],"%_")` | `"%_"`
 
 
 
@@ -1478,7 +1478,7 @@ Prefix | "Hi, %0 v%1".format(["Godette", "3.0"],"%") | "_%"
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMTY1NDY2NywtMjAzMzkyNDAzNCwtNz
+eyJoaXN0b3J5IjpbMTM1MzQ5MjU2MSwtMjAzMzkyNDAzNCwtNz
 MxNzE2NTI3LDQ4OTkyNjI4MCwtODgyNDA3NzIsMzg0MTk0MDA2
 LC0xMDE2Nzc1NzUyLC01NjY2MDc3MTgsNTkyMTM0NzM5LC00Mj
 U1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUsLTEyMzE2OTY4
