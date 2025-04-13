@@ -1426,9 +1426,10 @@ char | meaning
 
 ### `String.format()`
 in general the format is `some_string_format(vals [,placeholder)`
-* vals cann be weird
-Placeholders
+* vals can be a dictionary or an array
 
+
+Placeholders
 Type | example | placeholder
 -|-|-
 Infix (default) | `"Hi, {0} v{1}".format(["Godette",3.0"],"{_}")` | `"{_}"`
@@ -1480,11 +1481,11 @@ No index | `"Hi, {} v{}".format(["Godette", "3.0"],"{}")` | `"{}"`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODMzNzkzNjQsLTIwMzM5MjQwMzQsLTczMT
-cxNjUyNyw0ODk5MjYyODAsLTg4MjQwNzcyLDM4NDE5NDAwNiwt
-MTAxNjc3NTc1MiwtNTY2NjA3NzE4LDU5MjEzNDczOSwtNDI1NT
-IyMjIsMTIxMzI3NzA2MCwxNTM5Mzg0Mjc1LC0xMjMxNjk2ODAx
-LDM0NjA3Mjc1NCwtODAwMjk4MjY2LDE1NjEyODQ2MTEsLTQ4MD
-k2ODExNywtMTQ1MTI4NjQwMyw3OTkzNjA5ODgsLTE3NTAyNDM0
-NTJdfQ==
+eyJoaXN0b3J5IjpbLTYwNTYzMTk5MSw4MzM3OTM2NCwtMjAzMz
+kyNDAzNCwtNzMxNzE2NTI3LDQ4OTkyNjI4MCwtODgyNDA3NzIs
+Mzg0MTk0MDA2LC0xMDE2Nzc1NzUyLC01NjY2MDc3MTgsNTkyMT
+M0NzM5LC00MjU1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUs
+LTEyMzE2OTY4MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MT
+I4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4
+OF19
 -->
