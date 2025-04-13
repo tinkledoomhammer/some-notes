@@ -1456,7 +1456,7 @@ Array | no index | "{} v{}" | `["aname","3.0"]`
 
 
 ## Core features
-
+https://docs.godotengine.org/en/stable/tutorials/scripting/index.html#core-features
 
 ### How to read the Godot API
 
@@ -1496,7 +1496,7 @@ Array | no index | "{} v{}" | `["aname","3.0"]`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5NTk0NTc1NywtNjA1NjMxOTkxLDgzMz
+eyJoaXN0b3J5IjpbLTI3NjQzODk3MiwtNjA1NjMxOTkxLDgzMz
 c5MzY0LC0yMDMzOTI0MDM0LC03MzE3MTY1MjcsNDg5OTI2Mjgw
 LC04ODI0MDc3MiwzODQxOTQwMDYsLTEwMTY3NzU3NTIsLTU2Nj
 YwNzcxOCw1OTIxMzQ3MzksLTQyNTUyMjIyLDEyMTMyNzcwNjAs
