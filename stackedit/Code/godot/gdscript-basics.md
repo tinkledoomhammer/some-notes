@@ -556,7 +556,9 @@ Pattern guard
 ## Classes
 > **By default all script files are unnamed classes.**
 * the extends keyword can take an absolute or relative path
-#### Registering named classes
+
+### Registering named classes
+
 * names are registered with the `class_name` keyword
 * an icon can be associated with the `@icon` annotation
 ```
@@ -584,7 +586,9 @@ A class that is stored as a file can inherit fro
 	* `get_class()` and `queue_free()` for example
 * engine functions that can be overrided will be marked as `virtual` in the docs
 	* such as `_ready()` and `_process()`
-#### class constructor: `_init(arg)`
+
+### class constructor: `_init(arg)`
+
 * can call the base class constructor with `super`
 * Every class has an implicit constructor that is always called first (which initializes variables with the values specified outside of any function)
 * `super` will only call the explicit constructor. the automatic one is already called
@@ -637,13 +641,13 @@ func set_my_prop(value)
 ```
 
 
-### Tool mode
+## Tool mode
 `@tool`
 : the annotationn allows scripts to be run inside the editor instead of only in the game
 https://docs.godotengine.org/en/stable/tutorials/plugins/running_code_in_the_editor.html
 
 
-### Memory Management
+## Memory Management
 * There is no garbage collector
 * The `RefCounted` type use reference counting 
 	* `Resource` inherits from `RefCounted`
@@ -669,7 +673,7 @@ func _this_is_called_later():
 * Use `weakref(obj)` to get a weakref
 * the `weakref` object has a `.get_ref()` method that will return an actual reference if the object is still valid
 
-### Signals
+## Signals
 Signals
 : A tool to emit messages from an object to other listeners
 * Custom signals are created with the `signal` keyword, as class members
@@ -685,7 +689,7 @@ Signals
 * The registered callbacks can be created with `Callable.bind()` to send additional information to specific callbacks
 	* https://docs.godotengine.org/en/stable/classes/class_callable.html#class-callable-method-bind
 
-#### Awaiting signals or coroutines
+### Awaiting signals or coroutines
 `await`
 : keyword used to create coroutines
 : causes execution to wait until the signal is emitted before coninuing
@@ -698,7 +702,7 @@ Signals
 
 
 
-### Assert keyword
+## Assert keyword
 * the assert keyword is only used in debug builds
 * `assert(condition, message)` message is optional
 * If the condition is false then an error with the specified message is generated
@@ -706,9 +710,11 @@ Signals
 
 
 
-### GDScript: An introduction to dynamic languages
+## GDScript: An introduction to dynamic languages
+
 https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_advanced.html
-### Custom Iterators
+
+## Custom Iterators
 Use `iter_init`, `_iter_next` and `_iter_get`
 ```
 class ForwardIterator:
@@ -741,7 +747,7 @@ class ForwardIterator:
 var iter = ForwardIterator.new(0,6,2)
 for i in iter: print(i) # 0,2,4
 ```
-#### Duck typing
+### Duck typing
 use `object.has_method("methodName")`
 ```
 func _on_object_hit(object):
@@ -752,5 +758,5 @@ func _on_object_hit(object):
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2MDE1MDg2MiwtMjA3OTI2MzQ0OV19
+eyJoaXN0b3J5IjpbNjMxMzExMDg4LC0yMDc5MjYzNDQ5XX0=
 -->
