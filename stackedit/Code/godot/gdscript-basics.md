@@ -250,7 +250,7 @@ Those exceptions are `Object` `Array` `Dictionary` and packed arrays
 `StringName`
 : An immutable unique string. Slower to create, especially when multithreading, but fast to compare. suitable for dictionary keys
 
-#### Vector built-in types
+### Vector built-in types
 `Vector2`
 : Contains `x` and `y` fields
 
@@ -279,7 +279,7 @@ Rect2
 `Transform3D`
 : Contains a `basis` and a `Vector3` `origin`
 
-#### Engine built-in types
+### Engine built-in types
 `Array`
 : a sequence of arbitrary objects
 : passed by **reference**
@@ -298,7 +298,8 @@ arr.append(4)  # Array is now ["Hi!", 2, 3, 4].
 : `var  a:  Array[int]`
 : Types cannot be mixed, even if one type is a subtype of the other
 * Typed arrays can be converted with the `Array.assign()` method https://docs.godotengine.org/en/stable/classes/class_array.html#class-array-method-assign
-#### Packed Arrays
+
+### Packed Arrays
 `Packed<pseudotype>Array` (i.e. `PackedInt32Array`)
 Allowed "types" : `Byte` `Int32` `Int64` `Float32` `Float64` `String` `Vector2` `Vector3` `Vector4` and `Color`
 
@@ -307,7 +308,7 @@ Allowed "types" : `Byte` `Int32` `Int64` `Float32` `Float64` `String` `Vector2` 
 * Usually much faster to iterate
 * Typed arrays are fairly fast on their own. The packed arrays are useful to reduce memory fragmentation for very large collections
 
-`Dictionary`
+### `Dictionary`
 : Associative arrays which contain values referenced by unique keys
 ```python
 # style 1 (json)
@@ -332,7 +333,7 @@ TODO: Typed dicts
 * Getting a method as a member variable returns a callable `object.methodName` (no parens) 
 * Can be called by invoking the call method. `object.methodName.call(x,y)` is the same as `object.methodName(x,y)`
 
-### Variables
+## Variables
 * can be class members or local to functions
 * created with the `var` keyword
 * may be assigned upon or ofter initialization
@@ -751,5 +752,5 @@ func _on_object_hit(object):
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MTIwMjY4MSwtMjA3OTI2MzQ0OV19
+eyJoaXN0b3J5IjpbLTUwNTcxMDc1NCwtMjA3OTI2MzQ0OV19
 -->
