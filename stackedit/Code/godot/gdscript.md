@@ -1437,6 +1437,9 @@ Postfix | `"Hi, 0% v1%".format(["Godette", "3.0"],"_%")` | `"_%"`
 Prefix | `"Hi, %0 v%1".format(["Godette", "3.0"],"%_")` | `"%_"`
 No index | `"Hi, {} v{}".format(["Godette", "3.0"],"{}")` | `"{}"`
 
+Type | Style | String | Vals
+-|-|-|-
+Dictionary | key | "{name} v{version}" | 
 
 
 
@@ -1481,11 +1484,11 @@ No index | `"Hi, {} v{}".format(["Godette", "3.0"],"{}")` | `"{}"`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNTYzMTk5MSw4MzM3OTM2NCwtMjAzMz
-kyNDAzNCwtNzMxNzE2NTI3LDQ4OTkyNjI4MCwtODgyNDA3NzIs
-Mzg0MTk0MDA2LC0xMDE2Nzc1NzUyLC01NjY2MDc3MTgsNTkyMT
-M0NzM5LC00MjU1MjIyMiwxMjEzMjc3MDYwLDE1MzkzODQyNzUs
-LTEyMzE2OTY4MDEsMzQ2MDcyNzU0LC04MDAyOTgyNjYsMTU2MT
-I4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2NDAzLDc5OTM2MDk4
-OF19
+eyJoaXN0b3J5IjpbMTk4ODk3MzI1NSwtNjA1NjMxOTkxLDgzMz
+c5MzY0LC0yMDMzOTI0MDM0LC03MzE3MTY1MjcsNDg5OTI2Mjgw
+LC04ODI0MDc3MiwzODQxOTQwMDYsLTEwMTY3NzU3NTIsLTU2Nj
+YwNzcxOCw1OTIxMzQ3MzksLTQyNTUyMjIyLDEyMTMyNzcwNjAs
+MTUzOTM4NDI3NSwtMTIzMTY5NjgwMSwzNDYwNzI3NTQsLTgwMD
+I5ODI2NiwxNTYxMjg0NjExLC00ODA5NjgxMTcsLTE0NTEyODY0
+MDNdfQ==
 -->
