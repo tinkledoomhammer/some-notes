@@ -1425,7 +1425,8 @@ char | meaning
 
 
 ### `String.format()`
-in general
+in general the format is `some_string_format(vals [,placeholder)`
+
 
 ## Core features
 
@@ -1468,11 +1469,11 @@ in general
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzM5MjQwMzQsLTczMTcxNjUyNyw0OD
-k5MjYyODAsLTg4MjQwNzcyLDM4NDE5NDAwNiwtMTAxNjc3NTc1
-MiwtNTY2NjA3NzE4LDU5MjEzNDczOSwtNDI1NTIyMjIsMTIxMz
-I3NzA2MCwxNTM5Mzg0Mjc1LC0xMjMxNjk2ODAxLDM0NjA3Mjc1
-NCwtODAwMjk4MjY2LDE1NjEyODQ2MTEsLTQ4MDk2ODExNywtMT
-Q1MTI4NjQwMyw3OTkzNjA5ODgsLTE3NTAyNDM0NTIsLTk0NDAw
-ODc3Nl19
+eyJoaXN0b3J5IjpbOTM0MDI3MzA1LC0yMDMzOTI0MDM0LC03Mz
+E3MTY1MjcsNDg5OTI2MjgwLC04ODI0MDc3MiwzODQxOTQwMDYs
+LTEwMTY3NzU3NTIsLTU2NjYwNzcxOCw1OTIxMzQ3MzksLTQyNT
+UyMjIyLDEyMTMyNzcwNjAsMTUzOTM4NDI3NSwtMTIzMTY5Njgw
+MSwzNDYwNzI3NTQsLTgwMDI5ODI2NiwxNTYxMjg0NjExLC00OD
+A5NjgxMTcsLTE0NTEyODY0MDMsNzk5MzYwOTg4LC0xNzUwMjQz
+NDUyXX0=
 -->
