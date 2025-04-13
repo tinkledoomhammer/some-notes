@@ -13,24 +13,24 @@ Overridable functions
 GDScript Reference
 : https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_basics.html
 
-## GDScript Reference (Basics)
+# GDScript Reference (Basics)
 https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_basics.html
 
-### History
+## History
 
-### Example
+## Example
 
 ```python
 # (optional) icon to show in the editor dialogs:
 @icon("res://path/to/optional/icon.svg")
 ```
 
-### Identifiers
+## Identifiers
 * Restricted to alphabetic + digits + `_` underscore
 * Can not start with a digit
 * case ssensitive
 
-### Keywords
+## Keywords
 ```python
 if elif else
 for while
@@ -50,7 +50,7 @@ PI TAU INF NAN
 ```
 
 
-### Operators
+## Operators
 
 Operators | Description
 -|-
@@ -86,7 +86,7 @@ Caveats
 	* `is_same()` performs a stricter check and does not generate runtime errors
 	* `is_equal_approx()` and `is_zero_approx()` work with floats to handle rounding errors
 
-### Lieterals
+## Lieterals
 
 Examples | Dscription
 `null` | null value
@@ -131,7 +131,7 @@ Unicode characters above `0xFFFF` can be represented 2 wats
 * Single quoted strings can contain double quotes and vice-versa
 * Triple quoted strings can contain either type of quote unless there are more than 2 consecutively or it is near the beginning or the end (i.e. when it is ambiguous where the string begins or ends)
 
-#### Raw string literals
+### Raw string literals
 * always encode the string as it appears in the source code
 > A raw string literal doesn't process escape sequences, however it does recognize `\\` and `\"` (`\'`) and replaces them with themselves.. Thus a string can have a quote that matches the opening one, but only if it's preceded by a backslash.
 ```python
@@ -146,7 +146,7 @@ Some strings cannot be represented with raw string literals:
 GDScript also supports format strings
 https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_format_string.html#doc-gdscript-printf
 
-### Annotations
+## Annotations
 
 Annotations
 : Special tokens in GDScript that act as modifiers to a script or its code and may affect how the script is treated by the engine or editor
@@ -180,7 +180,7 @@ WARNING
 specifying `@onready` and `@export` on the same member will result in the `@onready`  overriding the export
 
 
-### Comments
+## Comments
 
 anything from `#` to the end of the line is considered a comment
 
@@ -197,7 +197,7 @@ Documentation Comments
 : must appear above the item they are documenting or at the beginning of the file
 : See https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_documentation_comments.html
 
-#### Code Regions
+### Code Regions
 Collapsible sections of code in addition to the normal collapsible regions
 ```python
 # This comment is outside the code region. It will be visible when collapsed.
@@ -220,16 +220,16 @@ func  place_roads():
 Code regions can be nested
 
 
-### Line continuation
+## Line continuation
 Ending a line with a `\` backslash will continue the current line onto the next line
 
-### Built-in types
+## Built-in types
 With some exceptions
 * Stack-allocated
 * Passed as values
 Those exceptions are `Object` `Array` `Dictionary` and packed arrays
 
-#### Basic built-in types
+### Basic built-in types
 `null`
 : An empty data type
 : Only types that can inherit from Object can have a `null` value
@@ -751,5 +751,5 @@ func _on_object_hit(object):
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzkyNjM0NDldfQ==
+eyJoaXN0b3J5IjpbMTk5MTIwMjY4MSwtMjA3OTI2MzQ0OV19
 -->
