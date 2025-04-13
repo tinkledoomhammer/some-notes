@@ -325,10 +325,10 @@ d = {
 ```
 TODO: Typed dicts
 
-`Signal`
+### `Signal`
 : a message that can be emitted by an object to those who listen to it
 
-`Callable`
+### `Callable`
 : contains an object and a function which is usefull for passing functions a values
 * Getting a method as a member variable returns a callable `object.methodName` (no parens) 
 * Can be called by invoking the call method. `object.methodName.call(x,y)` is the same as `object.methodName(x,y)`
@@ -352,7 +352,7 @@ Valid types are:
 5. script classes declared with the `class_name` keyword
 6. Autoloads registered as singletons
 
-#### Initialization Order
+### Initialization Order
 1. Either `null` or  a type-specific value such as `0` `false` etc
 2. Assigned in the order specified in the script, from top to bottom
 	* For `Node`-derived classes, the `@onready` annotation moves initialization to step 5
@@ -361,7 +361,7 @@ Valid types are:
 5. (`Node`-derived only) - `@onready` vars
 6. (`Node`-derived only) - if it is defined, the `_ready()` method
 
-#### Static variables
+### Static variables
 `static var a:int=0`
 * belong to the class, not the instances, and share values between multiple instances
 * `static` variables cannot be `@export` `@onready`, or local to a function
@@ -374,7 +374,7 @@ Valid types are:
 * must be placed at the top of the script (before `extends` and `class_name`)
 * in theory the annotation allows the static variables to be freed when the script is no longer used
 * there is currently a bug that prevents scripts from ever being unloaded
-#### Casting
+### Casting
 * Values can only be assigned to variables with compatible types
 * Type coercion is done with the `as` operator
 * Casting between `object` types results in the same object if the value is the same type of a subtype of the cast type
@@ -382,11 +382,11 @@ Valid types are:
 * For built-in types, a forcible conversion is performed if possible, otherwise an error is raised
 * casting is recommended when working with the scene tree
 
-### Constants
+## Constants
 
 `const A = 5` 
 
-#### Enums
+### Enums
 * shorthand for a collection of integer constants
 ```python
 # Automatic numbering 
@@ -407,7 +407,7 @@ State.STATE_1
 ```
 ** There is also an array of the names? Prehaps it will be in the Dictionary section
 
-### Functions
+## Functions
 * Always belong to a class
 * The priority for variable lookup is local -> class member -> global
 * The `self` variable is always available and can be used to access class members
@@ -426,7 +426,7 @@ func cube(a):
 * `void` may be used as a return type
 	* `void` functions cannot return values
 * if a return type is specified then the function **must** return a value of that type
-#### Referencing and lambdas
+### Referencing and lambdas
 * Accessing a function without calling it (i.e. no arguments) returns a `Callable` object
 * Lambdas are created by assigning a function definition to a variable:
 * `var lambda = func(x): print(x)`
@@ -439,12 +439,12 @@ func cube(a):
 		* they cannot assign to outer variables
 		* they will not detect when the outer function assigns its variables
 		* mutable reference types are mutable
-#### Static functions
+### Static functions
 * declared as static: `static func add(x,y): return x+y`
 * They do not have access to `self` or any instance members
 * static variables and static constructor are covered elsewhere in this doc
 
-### Statements and control flow
+## Statements and control flow
 `;` is optional as a statement separator
 * statements can be assignments, function calls, flow control structures, etc.
 
@@ -461,7 +461,7 @@ self
 	* i.e. in subtype of the current class (bad practice)
 	* or using `_set()` and `_get()`
 
-#### `if` `else` `elif`
+### `if` `else` `elif`
 ```python
 if (expression):
 	statement(s)
@@ -482,12 +482,12 @@ var  fruit_alt  = \
 		else  "orange"		
 ```
 
-#### While
+### While
 ```python
 while(expression):
 	statement(s)
 ```
-#### for
+### for
 ```python
 for x in [5,7,11]
 	...
@@ -506,7 +506,7 @@ for i in 2.2: # similar to range(ceil(2.2)) 0.0, 1.0, 2.0
 ```
 Assigning to the local loop variable will not change the value in the array
 
-#### Match
+### Match
 ```
 match  <test  value>:
 	<pattern(s)>:
@@ -553,7 +553,7 @@ Pattern guard
 * only if the guard pattern is true will the branch match
 
 
-### Classes
+## Classes
 > **By default all script files are unnamed classes.**
 * the extends keyword can take an absolute or relative path
 #### Registering named classes
@@ -752,5 +752,5 @@ func _on_object_hit(object):
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNTcxMDc1NCwtMjA3OTI2MzQ0OV19
+eyJoaXN0b3J5IjpbMjA2MDE1MDg2MiwtMjA3OTI2MzQ0OV19
 -->
