@@ -1,4 +1,4 @@
-
+V
 ## GDScript exported properties
 https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exports.html
 
@@ -709,5 +709,6 @@ Array | no index | "{} v{}" | `["aname","3.0"]`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzE5NDc4MDRdfQ==
+eyJoaXN0b3J5IjpbLTE3OTA0MjI2NDYsLTE4NzE5NDc4MDRdfQ
+==
 -->
