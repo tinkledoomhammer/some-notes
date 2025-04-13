@@ -1438,7 +1438,7 @@ Prefix | `"Hi, %0 v%1".format(["Godette", "3.0"],"%_")` | `"%_"`
 No index | `"Hi, {} v{}".format(["Godette", "3.0"],"{}")` | `"{}"`
 
 
-Ways 
+Ways to format "aname v3.0"
 Type | Style | String | Vals
 -|-|-|-
 Dictionary | key | "{n} v{v}" | `{"n": "aname","v":"3.0"}`
@@ -1449,7 +1449,9 @@ Array | index | "{0} v{1} | `["aname","3.0"]`
 Array | mix | "{n} v{0}" | `["3.0", ["n","aname"]]`
 Array | no index | "{} v{}" | `["aname","3.0"]`
 
-
+`String.format()` does not have a way to manipulate number representations
+: Use it with the `%` operattor
+* `"{0} v{1}".fo
 
 
 
@@ -1494,7 +1496,7 @@ Array | no index | "{} v{}" | `["aname","3.0"]`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjYwNDE1ODM1LC02MDU2MzE5OTEsODMzNz
+eyJoaXN0b3J5IjpbNjc2ODg3NDY5LC02MDU2MzE5OTEsODMzNz
 kzNjQsLTIwMzM5MjQwMzQsLTczMTcxNjUyNyw0ODk5MjYyODAs
 LTg4MjQwNzcyLDM4NDE5NDAwNiwtMTAxNjc3NTc1MiwtNTY2Nj
 A3NzE4LDU5MjEzNDczOSwtNDI1NTIyMjIsMTIxMzI3NzA2MCwx
