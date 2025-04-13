@@ -1439,7 +1439,9 @@ No index | `"Hi, {} v{}".format(["Godette", "3.0"],"{}")` | `"{}"`
 
 Type | Style | String | Vals
 -|-|-|-
-Dictionary | key | "{name} v{version}" | 
+Dictionary | key | "{n} v{v}" | `{"n": "aname","v":"version"}`
+Dictionary | index | "{0} v{1} | `{"0": "aname", "1":"version"}`
+Dictionary | mixed |
 
 
 
@@ -1484,7 +1486,7 @@ Dictionary | key | "{name} v{version}" |
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4ODk3MzI1NSwtNjA1NjMxOTkxLDgzMz
+eyJoaXN0b3J5IjpbLTM4MTc1ODc4MSwtNjA1NjMxOTkxLDgzMz
 c5MzY0LC0yMDMzOTI0MDM0LC03MzE3MTY1MjcsNDg5OTI2Mjgw
 LC04ODI0MDc3MiwzODQxOTQwMDYsLTEwMTY3NzU3NTIsLTU2Nj
 YwNzcxOCw1OTIxMzQ3MzksLTQyNTUyMjIyLDEyMTMyNzcwNjAs
