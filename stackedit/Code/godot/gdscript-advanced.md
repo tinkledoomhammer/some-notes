@@ -1,4 +1,49 @@
-V
+## GDScript: An introduction to dynamic languages
+
+https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_advanced.html
+
+## Custom Iterators
+Use `iter_init`, `_iter_next` and `_iter_get`
+```
+class ForwardIterator:
+	var start
+	var current
+	var end
+	var increment
+
+	func _init(start, stop, increment):
+		self.start = start
+		self.current = start
+		self.end = stop
+		self.increment = increment
+
+	func should_continue():
+		return (current < end)
+
+	func _iter_init(arg):
+		current = start
+		return should_continue()
+
+	func _iter_next(arg):
+		current += increment
+		return should_continue()
+
+	func _iter_get(arg):
+		return current
+
+#Usage:
+var iter = ForwardIterator.new(0,6,2)
+for i in iter: print(i) # 0,2,4
+```
+### Duck typing
+use `object.has_method("methodName")`
+```
+func _on_object_hit(object):
+	if object.has_method("smash"):
+		object.smash()
+```
+
+
 ## GDScript exported properties
 https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_exports.html
 
@@ -709,6 +754,6 @@ Array | no index | "{} v{}" | `["aname","3.0"]`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTA0MjI2NDYsLTE4NzE5NDc4MDRdfQ
+eyJoaXN0b3J5IjpbLTE4NzI3OTk2NjYsLTE4NzE5NDc4MDRdfQ
 ==
 -->
