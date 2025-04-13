@@ -1437,15 +1437,17 @@ Postfix | `"Hi, 0% v1%".format(["Godette", "3.0"],"_%")` | `"_%"`
 Prefix | `"Hi, %0 v%1".format(["Godette", "3.0"],"%_")` | `"%_"`
 No index | `"Hi, {} v{}".format(["Godette", "3.0"],"{}")` | `"{}"`
 
+
+Ways 
 Type | Style | String | Vals
 -|-|-|-
-Dictionary | key | "{n} v{v}" | `{"n": "aname","v":"version"}`
-Dictionary | index | "{0} v{1} | `{"0": "aname", "1":"version"}`
-Dictionary | mixed | "{0} v{v}" | `{"0":"aname", "v":"version"}`
-Array | key | "{n} v{v}" | `[["n","aname"], ["v","version"]]`
-Array | index | "{0} v{1} | `["aname","version"]`
-Array | mix | "{n} v{0}" | `["version", ["n","aname"]]`
-Array | no index | "{} v{}" | `["aname","version"]`
+Dictionary | key | "{n} v{v}" | `{"n": "aname","v":"3.0"}`
+Dictionary | index | "{0} v{1} | `{"0": "aname", "1":"3.0"}`
+Dictionary | mixed | "{0} v{v}" | `{"0":"aname", "v":"3.0"}`
+Array | key | "{n} v{v}" | `[["n","aname"], ["v","3.0"]]`
+Array | index | "{0} v{1} | `["aname","3.0"]`
+Array | mix | "{n} v{0}" | `["3.0", ["n","aname"]]`
+Array | no index | "{} v{}" | `["aname","3.0"]`
 
 
 
@@ -1492,11 +1494,11 @@ Array | no index | "{} v{}" | `["aname","version"]`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyNDcxOTYwNCwtNjA1NjMxOTkxLDgzMz
-c5MzY0LC0yMDMzOTI0MDM0LC03MzE3MTY1MjcsNDg5OTI2Mjgw
-LC04ODI0MDc3MiwzODQxOTQwMDYsLTEwMTY3NzU3NTIsLTU2Nj
-YwNzcxOCw1OTIxMzQ3MzksLTQyNTUyMjIyLDEyMTMyNzcwNjAs
-MTUzOTM4NDI3NSwtMTIzMTY5NjgwMSwzNDYwNzI3NTQsLTgwMD
-I5ODI2NiwxNTYxMjg0NjExLC00ODA5NjgxMTcsLTE0NTEyODY0
-MDNdfQ==
+eyJoaXN0b3J5IjpbMjYwNDE1ODM1LC02MDU2MzE5OTEsODMzNz
+kzNjQsLTIwMzM5MjQwMzQsLTczMTcxNjUyNyw0ODk5MjYyODAs
+LTg4MjQwNzcyLDM4NDE5NDAwNiwtMTAxNjc3NTc1MiwtNTY2Nj
+A3NzE4LDU5MjEzNDczOSwtNDI1NTIyMjIsMTIxMzI3NzA2MCwx
+NTM5Mzg0Mjc1LC0xMjMxNjk2ODAxLDM0NjA3Mjc1NCwtODAwMj
+k4MjY2LDE1NjEyODQ2MTEsLTQ4MDk2ODExNywtMTQ1MTI4NjQw
+M119
 -->
