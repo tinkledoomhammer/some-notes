@@ -1441,7 +1441,8 @@ Type | Style | String | Vals
 -|-|-|-
 Dictionary | key | "{n} v{v}" | `{"n": "aname","v":"version"}`
 Dictionary | index | "{0} v{1} | `{"0": "aname", "1":"version"}`
-Dictionary | mixed |
+Dictionary | mixed | "{0} v{v}" | `{"0":"aname", "v":"version"}`
+Array | key | "{n} v{v}" | `[["n","aname"]
 
 
 
@@ -1486,11 +1487,11 @@ Dictionary | mixed |
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MTc1ODc4MSwtNjA1NjMxOTkxLDgzMz
-c5MzY0LC0yMDMzOTI0MDM0LC03MzE3MTY1MjcsNDg5OTI2Mjgw
-LC04ODI0MDc3MiwzODQxOTQwMDYsLTEwMTY3NzU3NTIsLTU2Nj
-YwNzcxOCw1OTIxMzQ3MzksLTQyNTUyMjIyLDEyMTMyNzcwNjAs
-MTUzOTM4NDI3NSwtMTIzMTY5NjgwMSwzNDYwNzI3NTQsLTgwMD
-I5ODI2NiwxNTYxMjg0NjExLC00ODA5NjgxMTcsLTE0NTEyODY0
-MDNdfQ==
+eyJoaXN0b3J5IjpbLTE2OTMyNTIwNTAsLTYwNTYzMTk5MSw4Mz
+M3OTM2NCwtMjAzMzkyNDAzNCwtNzMxNzE2NTI3LDQ4OTkyNjI4
+MCwtODgyNDA3NzIsMzg0MTk0MDA2LC0xMDE2Nzc1NzUyLC01Nj
+Y2MDc3MTgsNTkyMTM0NzM5LC00MjU1MjIyMiwxMjEzMjc3MDYw
+LDE1MzkzODQyNzUsLTEyMzE2OTY4MDEsMzQ2MDcyNzU0LC04MD
+AyOTgyNjYsMTU2MTI4NDYxMSwtNDgwOTY4MTE3LC0xNDUxMjg2
+NDAzXX0=
 -->
