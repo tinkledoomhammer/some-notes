@@ -56,7 +56,10 @@ Host file system
 
 ### Drawbacks
 * moving assets will break existing references to those assets
-	* moving, renaming, et
+	* moving, renaming, etc in the Godot editor will result in fewer broken references
+* in windows and macOS path names are case insinsitive
+	* using all lower-case seems like the best resolution
+* 
 
 ## Resources
 
@@ -69,6 +72,6 @@ Host file system
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg1NTU1MDE4LC0xMDAwOTA1Njg5LDc1Nz
-AwNzEyNV19
+eyJoaXN0b3J5IjpbMTM3MTM3OTQxMywtMTAwMDkwNTY4OSw3NT
+cwMDcxMjVdfQ==
 -->
