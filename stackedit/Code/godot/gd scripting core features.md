@@ -27,7 +27,17 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/index.html#core-featu
 ## Pausing games and process mode
 
 ## File system
-
+Example:
+```
+/project.godot
+/enemy/enemy.tscn
+/enemy/enemy.gd
+/enemy/enemysprite.png
+/player/player.gd
+```
+project.godot
+: Defines the project root
+* in `win.ini` format
 
 ## Resources
 
@@ -40,5 +50,6 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/index.html#core-featu
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDA5MDU2ODksNzU3MDA3MTI1XX0=
+eyJoaXN0b3J5IjpbLTE0MTA3Nzc3NTgsLTEwMDA5MDU2ODksNz
+U3MDA3MTI1XX0=
 -->
