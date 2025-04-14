@@ -39,6 +39,17 @@ project.godot
 : Defines the project root
 * in `win.ini` format
 
+Path delimeter
+: `/` on all platforms
+
+Resource path
+: `res://` will always point to the project root
+* r/w when running the project locally from the editor
+* is read-only for exported projects
+
+User path
+: 
+
 ## Resources
 
 ## Singletons (Autoload)
@@ -50,6 +61,6 @@ project.godot
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTA3Nzc3NTgsLTEwMDA5MDU2ODksNz
-U3MDA3MTI1XX0=
+eyJoaXN0b3J5IjpbMTM5NzY0MDkxMiwtMTAwMDkwNTY4OSw3NT
+cwMDcxMjVdfQ==
 -->
