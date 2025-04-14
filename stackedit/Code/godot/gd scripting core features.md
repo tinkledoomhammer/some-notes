@@ -48,7 +48,15 @@ Resource path
 * is read-only for exported projects
 
 User path
-: 
+: `user://` is always r/w on all platforms
+* resolves to different host file systems depending on the os
+
+Host file system
+: technically accessible but not recommended
+
+### Drawbacks
+* moving assets will break existing references to those assets
+	* moving, renaming, et
 
 ## Resources
 
@@ -61,6 +69,6 @@ User path
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NzY0MDkxMiwtMTAwMDkwNTY4OSw3NT
-cwMDcxMjVdfQ==
+eyJoaXN0b3J5IjpbOTg1NTU1MDE4LC0xMDAwOTA1Njg5LDc1Nz
+AwNzEyNV19
 -->
