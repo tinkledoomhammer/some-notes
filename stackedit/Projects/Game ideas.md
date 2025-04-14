@@ -19,7 +19,7 @@
 	* Import/export from file? like a spreadsheet?
 	* Put all of the unit data in a single autoload, json style but in gdscript?
 		* Can't have constants with custom types. Perhaps there is a way with GDExtension, otherwise 
-### Spreadsheet -> resource
+### Spreadsheet -> resource/gd
 * Spread sheets 
 * exported to csv or something
 * a toolscript that 
@@ -28,7 +28,10 @@
 	* produces one or more .gd files with constants
 * Perhaps something better than spreadsheets. to more easily maintain integrity
 
+### Resource -> csv -> resource/gd
+* The editor is nice except when it silently deletes data
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc4NzE3OTYyLDEwOTA2OTM1NDFdfQ==
+eyJoaXN0b3J5IjpbLTQ4NTkzMTExNCwxMDkwNjkzNTQxXX0=
 -->
