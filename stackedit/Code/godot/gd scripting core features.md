@@ -28,6 +28,7 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/index.html#core-featu
 
 ## File system
 
+
 ## Resources
 
 ## Singletons (Autoload)
@@ -39,5 +40,5 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/index.html#core-featu
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU3MDA3MTI1XX0=
+eyJoaXN0b3J5IjpbLTEwMDA5MDU2ODksNzU3MDA3MTI1XX0=
 -->
