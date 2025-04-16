@@ -31,7 +31,10 @@
 ### Resource -> csv -> resource/gd
 * The editor is nice except when it silently deletes data
 
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NTkzMTExNCwxMDkwNjkzNTQxXX0=
+eyJoaXN0b3J5IjpbLTEyMDU4NDY2NzAsLTQ4NTkzMTExNCwxMD
+kwNjkzNTQxXX0=
 -->
