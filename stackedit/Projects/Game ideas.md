@@ -3,6 +3,8 @@
 
 ### Tower defense
 * Need enemies
+* Tower types
+* upgrades
 
 
 
@@ -48,7 +50,7 @@ func __migrate__():
     hitpoints = hp
 ```
 
-Then
+Then have a  toolscript to do the conversion
 
 ```gdscript
 @tool
@@ -122,9 +124,13 @@ func get_all_file_paths(path: String, extensions: Array[String]) -> Array[String
     return file_paths
 ```
 
+Finally, change the original file to the new version (and remove the `@tool` and old var.
+
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMDgyMzM0MSwtNDg1OTMxMTE0LDEwOT
+eyJoaXN0b3J5IjpbLTgwNDQxMTEzMSwtNDg1OTMxMTE0LDEwOT
 A2OTM1NDFdfQ==
 -->
