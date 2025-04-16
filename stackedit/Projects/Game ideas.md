@@ -5,6 +5,8 @@
 * Need enemies
 * Tower types
 * upgrades
+* pathing/spawn points
+* 
 
 
 
@@ -131,6 +133,6 @@ Finally, change the original file to the new version (and remove the `@tool` and
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNDQxMTEzMSwtNDg1OTMxMTE0LDEwOT
+eyJoaXN0b3J5IjpbMjE0NTk1OTQwNywtNDg1OTMxMTE0LDEwOT
 A2OTM1NDFdfQ==
 -->
