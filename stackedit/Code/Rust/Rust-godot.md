@@ -17,10 +17,14 @@ https://godot-rust.github.io/book/
 : the rust bindings for GDNative (godot3) 
 
 extension
-: a dynamic C library developed in any language. These use the GDExtension 
+: a dynamic C library developed in any language. These use the GDExtension API and can be loaded by Godot 4
+
+
+The API docs: https://godot-rust.github.io/docs/gdext/master/godot/
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk0OTk4OTA2LC0xNzExMjAwNTMzXX0=
+eyJoaXN0b3J5IjpbNzgzNjY2MTQ4LC0xNzExMjAwNTMzXX0=
 -->
