@@ -38,7 +38,7 @@ https://godot-rust.github.io/book/intro/setup.html
 	* fore more info see https://godot-rust.github.io/book/toolchain/godot-version.html
 
 ### Hello World
-
+```
 📂 project_dir
 │
 ├── 📂 .git
@@ -54,13 +54,13 @@ https://godot-rust.github.io/book/intro/setup.html
     │   └── 📄 lib.rs
     └── 📂 target
         └── 📂 debug
-
+```
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDQwOTQ5MjIsLTE3MTEyMDA1MzNdfQ
+eyJoaXN0b3J5IjpbLTEzOTMxNzc4ODAsLTE3MTEyMDA1MzNdfQ
 ==
 -->
