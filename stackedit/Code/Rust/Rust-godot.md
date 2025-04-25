@@ -10,10 +10,17 @@ https://godot-rust.github.io/book/
 `GDNative`
 : C API provided by Godot 3
 
-`gde
+`gdext`
+: The rust binding for GDExtension (Godot4) what this book focuses (and these notes) focuses on
+
+`gdnative`
+: the rust bindings for GDNative (godot3) 
+
+extension
+: a dynamic C library developed in any language. These use the GDExtension 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNTM1NjQ4MywtMTcxMTIwMDUzM119
+eyJoaXN0b3J5IjpbODk0OTk4OTA2LC0xNzExMjAwNTMzXX0=
 -->
