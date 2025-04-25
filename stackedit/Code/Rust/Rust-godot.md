@@ -22,9 +22,16 @@ extension
 
 The API docs: https://godot-rust.github.io/docs/gdext/master/godot/
 
+## Setup
+https://godot-rust.github.io/book/intro/setup.html
 
+* environment variable 
+
+`GODOT4_BIN`
+: 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgzNjY2MTQ4LC0xNzExMjAwNTMzXX0=
+eyJoaXN0b3J5IjpbLTEzNDA0OTA5MzEsLTE3MTEyMDA1MzNdfQ
+==
 -->
