@@ -31,13 +31,12 @@ https://godot-rust.github.io/book/intro/setup.html
 : `C:\Godot\Godot_v4.4-stable_win64\Godot_v4.4-stable_win64.exe`
 * or it could be added to `PATH`
 
-* LLVM
+*s LLVM
 	* Required for older versions
 	* still required to use `api-custom` feature
 	* fore more info see https://godot-rust.github.io/book/toolchain/godot-version.html
 s
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjE0ODQ4MzEsLTE3MTEyMDA1MzNdfQ
-==
+eyJoaXN0b3J5IjpbLTE3NTMxOTM2LC0xNzExMjAwNTMzXX0=
 -->
