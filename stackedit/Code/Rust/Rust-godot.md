@@ -22,7 +22,8 @@ extension
 
 The API docs: https://godot-rust.github.io/docs/gdext/master/godot/
 
-## Setup
+## Intro
+### Setup
 https://godot-rust.github.io/book/intro/setup.html
 
 * environment variable 
@@ -35,8 +36,31 @@ https://godot-rust.github.io/book/intro/setup.html
 	* Required for older versions
 	* still required to use `api-custom` feature
 	* fore more info see https://godot-rust.github.io/book/toolchain/godot-version.html
-s
+
+### Hello World
+
+📂 project_dir
+│
+├── 📂 .git
+│
+├── 📂 godot
+│   ├── 📂 .godot
+│   ├── 📄 HelloWorld.gdextension
+│   └── 📄 project.godot
+│
+└── 📂 rust
+    ├── 📄 Cargo.toml
+    ├── 📂 src
+    │   └── 📄 lib.rs
+    └── 📂 target
+        └── 📂 debug
+
+
+
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTMxOTM2LC0xNzExMjAwNTMzXX0=
+eyJoaXN0b3J5IjpbLTIwNDQwOTQ5MjIsLTE3MTEyMDA1MzNdfQ
+==
 -->
