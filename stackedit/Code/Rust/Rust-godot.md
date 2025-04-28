@@ -303,17 +303,18 @@ Chapter 4 [Registering Rust symbols](https://godot-rust.github.io/book/register/
 	* `Variant` (includes implicit)
 	* Strings:
 		* `String` -> `GString` i.e. `"a string"` or `GString::from("a string")`
-		* `StringName` -> can use string literals
-		* `NodePath` can also use string literals
+		* `StringName` -> can use string literals. but its expensive
+		* `NodePath` 
 	* Ref-counted containers:
 		* `Array` -> `Array<Variant>` i.e. `varray![1, "Two",3]`
 		*  `Array[T]` -> `Array<T>` i.e. `array![1,2,3]`
+		* `Dictionary` i.e. `dict!{"key": "value"}`
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwODg5MTM5MSwtODgwNTAzNzYxLC0yMD
-U0NjIwMzM0LC0xMjkzNjkzMDA5LC0xODYwMDkzMTEyLC03MzMx
-ODI3NjUsLTEzOTMxNzc4ODAsLTE3MTEyMDA1MzNdfQ==
+eyJoaXN0b3J5IjpbLTE0ODQyMTI3MjEsLTg4MDUwMzc2MSwtMj
+A1NDYyMDMzNCwtMTI5MzY5MzAwOSwtMTg2MDA5MzExMiwtNzMz
+MTgyNzY1LC0xMzkzMTc3ODgwLC0xNzExMjAwNTMzXX0=
 -->
