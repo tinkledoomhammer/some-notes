@@ -180,6 +180,9 @@ Tells godot how to load the compiled extension
 
 #### Troubleshooting first-time setup
 * run `cargo build`
+* does `Cargo.toml` have `crate-type = ["cdylib"]`
+* in `my-extension.gdextension` must have `entry_symbol= "gdext_rust_init"`
+* check paths in `my-extension.gdextension`
 
 #### lib.rs details
 
@@ -200,7 +203,7 @@ unsafe impl ExtensionLibrary for MyExtension {}
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzAxOTQ2MzQsLTEyOTM2OTMwMDksLT
-E4NjAwOTMxMTIsLTczMzE4Mjc2NSwtMTM5MzE3Nzg4MCwtMTcx
-MTIwMDUzM119
+eyJoaXN0b3J5IjpbLTE3ODcwNzgwNiwtMTI5MzY5MzAwOSwtMT
+g2MDA5MzExMiwtNzMzMTgyNzY1LC0xMzkzMTc3ODgwLC0xNzEx
+MjAwNTMzXX0=
 -->
