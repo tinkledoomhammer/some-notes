@@ -265,10 +265,13 @@ impl ISprite2D for Player {
 * explicit method calls are required in situations where properties are used in gdscript
 * use `self.base()` or `self.base_mut()` instead of just `self.base` to access base class methods
 
+##### Custom rust api 
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTI2OTM0ODAsLTEyOTM2OTMwMDksLT
+eyJoaXN0b3J5IjpbLTIwNTQ2MjAzMzQsLTEyOTM2OTMwMDksLT
 E4NjAwOTMxMTIsLTczMzE4Mjc2NSwtMTM5MzE3Nzg4MCwtMTcx
 MTIwMDUzM119
 -->
