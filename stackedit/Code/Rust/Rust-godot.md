@@ -59,7 +59,9 @@ https://godot-rust.github.io/book/intro/setup.html
 Create the `rust` folder and `Cargo.toml` file:
 `cargo new "rust" --lib`
 
-```toml
+
+`HelloWorld.gdextension` - in the godot project folder
+```ini
 [configuration]
 entry_symbol = "gdext_rust_init"
 compatibility_minimum = 4.1
@@ -75,11 +77,24 @@ macos.release =          "res://../rust/target/release/lib/rust_project.dylib"
 macos.debug.arm64 =      "res://../rust/target/debug/lib/rust_project.dylib"
 macos.release.arm64 =    "res://../rust/target/release/lib/rust_project.dylib"
 ```
+`cargo.toml`
+```ini
+[package]
+name = "rust_project"
+version = "0.1.0"
+edition = "2024"
+[lib]
 
+crate-type = ["cdylib"]
+
+[dependencies]
+
+godot = "0.2.4"
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU2NzU5NjEwLC03MzMxODI3NjUsLTEzOT
-MxNzc4ODAsLTE3MTEyMDA1MzNdfQ==
+eyJoaXN0b3J5IjpbLTE2OTg0NjMwODIsLTczMzE4Mjc2NSwtMT
+M5MzE3Nzg4MCwtMTcxMTIwMDUzM119
 -->
