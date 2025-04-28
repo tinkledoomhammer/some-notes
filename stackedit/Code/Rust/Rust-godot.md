@@ -246,12 +246,17 @@ impl ISprite2D for Player {
 	}
 }
 ```
-* `#[godot_api]` attribute exposes the methos to godot
+* `#[godot_api]` attribute exposes the methos to godot.
+	* It is required. Not including it will produce a compilation error
+* `impl ISprite2D` 
+	* Each engine class has a corresponding interface of the form I{ClassName}
+	* these interfaces come with virtual functions for that class as well as general-purpose functions like `init` and `to_string`
+	* the trait
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0MTQ5MjE5NSwtMTI5MzY5MzAwOSwtMT
+eyJoaXN0b3J5IjpbMTc0MTY1MDYzOSwtMTI5MzY5MzAwOSwtMT
 g2MDA5MzExMiwtNzMzMTgyNzY1LC0xMzkzMTc3ODgwLC0xNzEx
 MjAwNTMzXX0=
 -->
