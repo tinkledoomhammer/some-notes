@@ -146,10 +146,17 @@ impl Player{
 ```
 
 `cargo add godot`
-: Adds the libraries fo
+: Adds the libraries for gdext
+
+`cargo build`
+: The first run took about 5 minutes, and was mostly building dependencies
+
+`.gdextension` file
+: Tells godot how to load the compiled extension
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTE3MTk1NDksLTE4NjAwOTMxMTIsLT
+eyJoaXN0b3J5IjpbLTExNjQ3ODExNDUsLTE4NjAwOTMxMTIsLT
 czMzE4Mjc2NSwtMTM5MzE3Nzg4MCwtMTcxMTIwMDUzM119
 -->
