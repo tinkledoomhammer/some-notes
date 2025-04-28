@@ -190,7 +190,10 @@ Tells godot how to load the compiled extension
 	* leave the `extension_list.cfg`
 * if `api-custom` is used:
 	* godot must be in `PATH` env var as `godot4` (not sure what that means)
-	* or an env var anmed `GODOT4_BIN` that points to the god
+	* or an env var anmed `GODOT4_BIN` that points to the godot executable
+* verify the directory structure
+	* there must be a usable library file i.e. `rust/target/debug/my_extension.dll`
+* 
 
 #### lib.rs details
 
@@ -207,11 +210,19 @@ unsafe impl ExtensionLibrary for MyExtension {}
 * `impl ExtensionLibrary` - must be marked with the `#[gdextension]` attribute
 	* will declare the entry point, proc-macros handle the details
 
+##### Rust class
+Declared like 
+```rust
+use godot::prelude::*;
+use godot::classes::Sprite2D;
+
+#[derve(GodotClass)
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2ODg0NzM5NiwtMTI5MzY5MzAwOSwtMT
+eyJoaXN0b3J5IjpbMTY1MDMxNjgzNiwtMTI5MzY5MzAwOSwtMT
 g2MDA5MzExMiwtNzMzMTgyNzY1LC0xMzkzMTc3ODgwLC0xNzEx
 MjAwNTMzXX0=
 -->
