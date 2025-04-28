@@ -326,13 +326,16 @@ Some others
 
 GDScript | Rust | Example
 --|--|--
-`Object`
+`Object` | `GD<Object>` | `Object::new_alloc()`
+`SomeClass` | `Gd<SomeClass>` | `Resource::new_gd()`
+(nullable) `SomeClass` | `Option<Gd<SomeClass>>`| `None`
+`Variant` | Variant | `Variant::nil()`
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU3Mjc2ODgsLTg4MDUwMzc2MSwtMjA1ND
-YyMDMzNCwtMTI5MzY5MzAwOSwtMTg2MDA5MzExMiwtNzMzMTgy
-NzY1LC0xMzkzMTc3ODgwLC0xNzExMjAwNTMzXX0=
+eyJoaXN0b3J5IjpbLTk0MjM0MTAxMSwtODgwNTAzNzYxLC0yMD
+U0NjIwMzM0LC0xMjkzNjkzMDA5LC0xODYwMDkzMTEyLC03MzMx
+ODI3NjUsLTEzOTMxNzc4ODAsLTE3MTEyMDA1MzNdfQ==
 -->
