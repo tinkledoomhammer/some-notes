@@ -145,9 +145,11 @@ impl Player{
 }
 ```
 
+`cargo add godot`
+: Adds the libraries fo
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjAwOTMxMTIsLTczMzE4Mjc2NSwtMT
-M5MzE3Nzg4MCwtMTcxMTIwMDUzM119
+eyJoaXN0b3J5IjpbLTE5NTE3MTk1NDksLTE4NjAwOTMxMTIsLT
+czMzE4Mjc2NSwtMTM5MzE3Nzg4MCwtMTcxMTIwMDUzM119
 -->
