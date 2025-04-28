@@ -283,11 +283,12 @@ impl Player {
 * `#[godot_api]` is required before the `impl` block for gdext to register the functions with Godot
 * `#[func]` prefixes public methods
 * `#[signal]` prefixes a function that will be used for a signal
-* 
+	* can be emitted with `base_mut().emit_signal("signal_name",...);`
+* API attributes 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwMTQ1NTU5NiwtMjA1NDYyMDMzNCwtMT
-I5MzY5MzAwOSwtMTg2MDA5MzExMiwtNzMzMTgyNzY1LC0xMzkz
-MTc3ODgwLC0xNzExMjAwNTMzXX0=
+eyJoaXN0b3J5IjpbLTE1Mzg5MDM5MTcsLTIwNTQ2MjAzMzQsLT
+EyOTM2OTMwMDksLTE4NjAwOTMxMTIsLTczMzE4Mjc2NSwtMTM5
+MzE3Nzg4MCwtMTcxMTIwMDUzM119
 -->
