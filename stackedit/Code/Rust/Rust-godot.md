@@ -220,7 +220,7 @@ use godot::classes::Sprite2D;
 #[class(base=Sprite2D)]
 struct Player {
 	...
-	base : Base<Sprite2D>
+	base : Base<Sprite2D>,
 }
 ```
 * the `godot::prelude` has the most used symbols
@@ -228,11 +228,13 @@ struct Player {
 * `#[derive]` attribute registers the class with the game engine
 	* https://godot-rust.github.io/docs/gdext/master/godot/register/derive.GodotClass.html for details
 * the `[#class]` attribute is optional and configures how the class is registered. If no `base` is specified then `RefCounted` will be used by default
-* 
+* the `Base<T>` type allows the base object to be accessed via `self.base()` and `self.base_mut()`
+	* This is a composition relationship
+	* `T` must 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTAyMjk4MjAsLTEyOTM2OTMwMDksLT
+eyJoaXN0b3J5IjpbLTE0NjQ2NTM0MDIsLTEyOTM2OTMwMDksLT
 E4NjAwOTMxMTIsLTczMzE4Mjc2NSwtMTM5MzE3Nzg4MCwtMTcx
 MTIwMDUzM119
 -->
