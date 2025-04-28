@@ -309,12 +309,15 @@ Chapter 4 [Registering Rust symbols](https://godot-rust.github.io/book/register/
 		* `Array` -> `Array<Variant>` i.e. `varray![1, "Two",3]`
 		*  `Array[T]` -> `Array<T>` i.e. `array![1,2,3]`
 		* `Dictionary` i.e. `dict!{"key": "value"}`
+	* Packed arrays: `Packed*Array` where `*` can be:
+		* `Byte`, `Int32`, `Int64`, `Float32`, `Float64`, `Vector2`...`Vector4`, `Color`, `String`
+	* Functional: `Callable`, `Signal`
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODQyMTI3MjEsLTg4MDUwMzc2MSwtMj
-A1NDYyMDMzNCwtMTI5MzY5MzAwOSwtMTg2MDA5MzExMiwtNzMz
-MTgyNzY1LC0xMzkzMTc3ODgwLC0xNzExMjAwNTMzXX0=
+eyJoaXN0b3J5IjpbNjU5NjUzMTk5LC04ODA1MDM3NjEsLTIwNT
+Q2MjAzMzQsLTEyOTM2OTMwMDksLTE4NjAwOTMxMTIsLTczMzE4
+Mjc2NSwtMTM5MzE3Nzg4MCwtMTcxMTIwMDUzM119
 -->
