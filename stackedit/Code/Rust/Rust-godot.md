@@ -291,14 +291,14 @@ https://godot-rust.github.io/book/godot-api/index.html
 Chapter 4 [Registering Rust symbols](https://godot-rust.github.io/book/register/index.html) will go into details about registering symbols
 
 ### Built -in types
-
-
+* Found in `godot::builtin`
+* many are 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4MDUwMzc2MSwtMjA1NDYyMDMzNCwtMT
-I5MzY5MzAwOSwtMTg2MDA5MzExMiwtNzMzMTgyNzY1LC0xMzkz
-MTc3ODgwLC0xNzExMjAwNTMzXX0=
+eyJoaXN0b3J5IjpbNzMyMTgyNTI5LC04ODA1MDM3NjEsLTIwNT
+Q2MjAzMzQsLTEyOTM2OTMwMDksLTE4NjAwOTMxMTIsLTczMzE4
+Mjc2NSwtMTM5MzE3Nzg4MCwtMTcxMTIwMDUzM119
 -->
