@@ -84,17 +84,119 @@ name = "rust_project"
 version = "0.1.0"
 edition = "2024"
 [lib]
-
 crate-type = ["cdylib"]
-
 [dependencies]
-
 godot = "0.2.4"
+```
+
+
+`rust/src/lib.rs`
+```rust
+use  godot::prelude::*;
+
+  
+
+use  godot::classes::Sprite2D;
+
+use  godot::classes::ISprite2D;
+
+  
+  
+
+struct  MyExtension;
+
+  
+
+#[gdextension]
+
+unsafe  impl  ExtensionLibrary  for  MyExtension {}
+
+  
+
+#[derive(GodotClass)]
+
+#[class(base=Sprite2D)]
+
+struct  Player{
+
+speed:  f64,
+
+angular_speed:  f64,
+
+base:  Base<Sprite2D>
+
+  
+
+}
+
+  
+
+#[godot_api]
+
+impl  ISprite2D  for  Player{
+
+fn  init(base:  Base<Sprite2D>) ->  Self{
+
+godot_print!("Hello, world!");
+
+Self { speed:  400.0,
+
+angular_speed:  std::f64::consts::PI,
+
+base
+
+}
+
+}
+
+  
+
+fn  physics_process(&mut  self, delta:  f64){
+
+let  radians  = (self.angular_speed  *  delta) as  f32;
+
+self.base_mut().rotate(radians);
+
+  
+
+let  rotation  =  self.base().get_rotation();
+
+let  velocity  =  Vector2::UP.rotated(rotation) *  self.speed  as  f32;
+
+self.base_mut().translate(velocity  *  delta  as  f32);
+
+}
+
+}
+
+  
+
+#[godot_api]
+
+impl  Player{
+
+#[func]
+
+fn  increase_speed(&mut  self, amount:  f64){
+
+self.speed+=amount;
+
+self.base_mut().emit_signal("Speed_increased", &[]);
+
+}
+
+  
+
+#[signal]
+
+fn  speed_increased();
+
+}
 ```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTg0NjMwODIsLTczMzE4Mjc2NSwtMT
-M5MzE3Nzg4MCwtMTcxMTIwMDUzM119
+eyJoaXN0b3J5IjpbMTM1OTY0MzIwNCwtNzMzMTgyNzY1LC0xMz
+kzMTc3ODgwLC0xNzExMjAwNTMzXX0=
 -->
