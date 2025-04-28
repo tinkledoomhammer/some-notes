@@ -254,12 +254,19 @@ impl ISprite2D for Player {
 	* the trait has no required methods
 * `init` constructor is an associated function (static method) that takes the base instance and returns a constructed instance of `self`
 	* base is usually forwarded while other values are initialized
-* `proce
+
+`process` and `physics_process` methods work like `_process` etc
+```rust
+// continuing the above impl block
+	fn physics_process(&mut self, delta: f64){
+		...
+	
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjg2OTMyMjksLTEyOTM2OTMwMDksLT
-E4NjAwOTMxMTIsLTczMzE4Mjc2NSwtMTM5MzE3Nzg4MCwtMTcx
-MTIwMDUzM119
+eyJoaXN0b3J5IjpbLTY1MDU1NTEyMSwtMTI5MzY5MzAwOSwtMT
+g2MDA5MzExMiwtNzMzMTgyNzY1LC0xMzkzMTc3ODgwLC0xNzEx
+MjAwNTMzXX0=
 -->
