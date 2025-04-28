@@ -312,12 +312,18 @@ Chapter 4 [Registering Rust symbols](https://godot-rust.github.io/book/register/
 	* Packed arrays: `Packed*Array` where `*` can be:
 		* `Byte`, `Int32`, `Int64`, `Float32`, `Float64`, `Vector2`...`Vector4`, `Color`, `String`
 	* Functional: `Callable`, `Signal`
+* Geometric types
+	* Vectors : `2`,`3`, and `4` and their `i` variations
+	* Bounding Boxes: `Rect2`, `Rect2i`, `AABB`
+	* Matricies: `Transform2D`, `Transform3D`, `Basis`, `Projection`
+	* Rotation: `Quaternion`
+	* Geometric objects: `Plane`
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU5NjUzMTk5LC04ODA1MDM3NjEsLTIwNT
+eyJoaXN0b3J5IjpbMTQ2NjI4ODAxLC04ODA1MDM3NjEsLTIwNT
 Q2MjAzMzQsLTEyOTM2OTMwMDksLTE4NjAwOTMxMTIsLTczMzE4
 Mjc2NSwtMTM5MzE3Nzg4MCwtMTcxMTIwMDUzM119
 -->
