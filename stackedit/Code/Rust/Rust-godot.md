@@ -281,11 +281,13 @@ impl Player {
 }
 ```
 * `#[godot_api]` is required before the `impl` block for gdext to register the functions with Godot
-* `#[func]
+* `#[func]` prefixes public methods
+* `#[signal]` prefixes a function that will be used for a signal
+* 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzODMwMjA5NCwtMjA1NDYyMDMzNCwtMT
+eyJoaXN0b3J5IjpbMTkwMTQ1NTU5NiwtMjA1NDYyMDMzNCwtMT
 I5MzY5MzAwOSwtMTg2MDA5MzExMiwtNzMzMTgyNzY1LC0xMzkz
 MTc3ODgwLC0xNzExMjAwNTMzXX0=
 -->
