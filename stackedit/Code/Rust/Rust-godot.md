@@ -294,6 +294,9 @@ Chapter 4 [Registering Rust symbols](https://godot-rust.github.io/book/register/
 * Found in `godot::builtin`
 * many are also in `godot::prelude`
 * They map one-one with the GDScript names in most cases
+
+#### List
+
 * Simple Types
 	* `bool`
 	* `int` -> `i64`
@@ -314,7 +317,7 @@ Chapter 4 [Registering Rust symbols](https://godot-rust.github.io/book/register/
 	* Functional: `Callable`, `Signal`
 * Geometric types
 	* Vectors : `2`,`3`, and `4` and their `i` variations
-	* Bounding Boxes: `Rect2`, `Rect2i`, `AABB`
+	* Bounding Boxes: `Rect2`, `Rect2i`, `AABB`-?`Aabb`
 	* Matricies: `Transform2D`, `Transform3D`, `Basis`, `Projection`
 	* Rotation: `Quaternion`
 	* Geometric objects: `Plane`
@@ -322,7 +325,7 @@ Chapter 4 [Registering Rust symbols](https://godot-rust.github.io/book/register/
 	* `Color`
 	* `RID` (resource id)
 	
-Some others
+#### Binding to rust
 
 GDScript | Rust | Example
 --|--|--
@@ -330,12 +333,13 @@ GDScript | Rust | Example
 `SomeClass` | `Gd<SomeClass>` | `Resource::new_gd()`
 (nullable) `SomeClass` | `Option<Gd<SomeClass>>`| `None`
 `Variant` | Variant | `Variant::nil()`
+`AABB` | `Aabb` | `Aabb::new(pos,size)`
 
-
+#### String Types
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0MjM0MTAxMSwtODgwNTAzNzYxLC0yMD
-U0NjIwMzM0LC0xMjkzNjkzMDA5LC0xODYwMDkzMTEyLC03MzMx
-ODI3NjUsLTEzOTMxNzc4ODAsLTE3MTEyMDA1MzNdfQ==
+eyJoaXN0b3J5IjpbNjc0MjUzODgwLC04ODA1MDM3NjEsLTIwNT
+Q2MjAzMzQsLTEyOTM2OTMwMDksLTE4NjAwOTMxMTIsLTczMzE4
+Mjc2NSwtMTM5MzE3Nzg4MCwtMTcxMTIwMDUzM119
 -->
