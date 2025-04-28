@@ -288,7 +288,9 @@ impl Player {
 
 ## Using the godot API
 https://godot-rust.github.io/book/godot-api/index.html
-see also [Registering Rust symbols](https://godot-rust.github.io/book/register/index.html)
+Chapter 4 [Registering Rust symbols](https://godot-rust.github.io/book/register/index.html) will go into details about registering symbols
+
+### Built -in types
 
 
 
@@ -296,7 +298,7 @@ see also [Registering Rust symbols](https://godot-rust.github.io/book/register/i
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1OTA0NTU3OSwtMjA1NDYyMDMzNCwtMT
+eyJoaXN0b3J5IjpbLTg4MDUwMzc2MSwtMjA1NDYyMDMzNCwtMT
 I5MzY5MzAwOSwtMTg2MDA5MzExMiwtNzMzMTgyNzY1LC0xMzkz
 MTc3ODgwLC0xNzExMjAwNTMzXX0=
 -->
