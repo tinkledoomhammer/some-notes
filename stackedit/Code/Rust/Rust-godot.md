@@ -234,9 +234,19 @@ struct Player {
 	* the name can be whatever but `base` is a common convention
 	* If the field is not declared, then the base object cannot be accessed via `self`
 
+##### Method Declaration
+the `init` method corresponds to GDScript's `_init()` function
+```rust
+use godot::classes::ISprite2D;
+#[godot_api]
+impl ISprite2D for Player {
+	fn init(base: Base<Sprite2D) -> self{
+	
+```
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NjI3NDQ4OSwtMTI5MzY5MzAwOSwtMT
+eyJoaXN0b3J5IjpbLTI5NzUxMzk4NywtMTI5MzY5MzAwOSwtMT
 g2MDA5MzExMiwtNzMzMTgyNzY1LC0xMzkzMTc3ODgwLC0xNzEx
 MjAwNTMzXX0=
 -->
