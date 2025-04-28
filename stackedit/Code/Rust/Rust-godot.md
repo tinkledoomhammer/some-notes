@@ -251,12 +251,15 @@ impl ISprite2D for Player {
 * `impl ISprite2D` 
 	* Each engine class has a corresponding interface of the form I{ClassName}
 	* these interfaces come with virtual functions for that class as well as general-purpose functions like `init` and `to_string`
-	* the trait
+	* the trait has no required methods
+* `init` constructor is an associated function (static method) that takes the base instance and returns a constructed instance of `self`
+	* base is usually forwarded while other values are initialized
+* `proce
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MTY1MDYzOSwtMTI5MzY5MzAwOSwtMT
-g2MDA5MzExMiwtNzMzMTgyNzY1LC0xMzkzMTc3ODgwLC0xNzEx
-MjAwNTMzXX0=
+eyJoaXN0b3J5IjpbLTExMjg2OTMyMjksLTEyOTM2OTMwMDksLT
+E4NjAwOTMxMTIsLTczMzE4Mjc2NSwtMTM5MzE3Nzg4MCwtMTcx
+MTIwMDUzM119
 -->
