@@ -151,12 +151,17 @@ impl Player{
 `cargo build`
 : The first run took about 5 minutes, and was mostly building dependencies
 
-`.gdextension` file
-: Tells godot how to load the compiled extension
+#### `.gdextension` file
+Tells godot how to load the compiled extension
 
+##### 
+`entry_symbol`
+: the entry point
+* must be `"gdext_rust_init"` -- this can be configured
+`compatibility_minimum`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjQ3ODExNDUsLTE4NjAwOTMxMTIsLT
-czMzE4Mjc2NSwtMTM5MzE3Nzg4MCwtMTcxMTIwMDUzM119
+eyJoaXN0b3J5IjpbMTI2MzY1NjMwOCwtMTg2MDA5MzExMiwtNz
+MzMTgyNzY1LC0xMzkzMTc3ODgwLC0xNzExMjAwNTMzXX0=
 -->
