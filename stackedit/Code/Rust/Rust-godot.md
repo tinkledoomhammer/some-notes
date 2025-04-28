@@ -299,13 +299,19 @@ Chapter 4 [Registering Rust symbols](https://godot-rust.github.io/book/register/
 	* `int` -> `i64`
 	* `float` -> f64
 	* `real` -> `real` (either `f32` or `f64`)
-* 
+* Composite types
+	* `Variant` (includes implicit)
+	* Strings:
+		* `String` -> `GString`
+		* `StringName`
+		* `NodePath`
+	* Ref-counted containers 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU2MDk0MjE0LC04ODA1MDM3NjEsLTIwNT
-Q2MjAzMzQsLTEyOTM2OTMwMDksLTE4NjAwOTMxMTIsLTczMzE4
-Mjc2NSwtMTM5MzE3Nzg4MCwtMTcxMTIwMDUzM119
+eyJoaXN0b3J5IjpbMjA4MjE1MDQ1NywtODgwNTAzNzYxLC0yMD
+U0NjIwMzM0LC0xMjkzNjkzMDA5LC0xODYwMDkzMTEyLC03MzMx
+ODI3NjUsLTEzOTMxNzc4ODAsLTE3MTEyMDA1MzNdfQ==
 -->
