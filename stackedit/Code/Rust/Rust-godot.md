@@ -169,10 +169,12 @@ Tells godot how to load the compiled extension
 ##### The `[libraries]` section
 : contains the path to the binary files
 * in `os.dist.arch = "res://..."` format
-* see https://docs.godotengine.org/en/stable/tutorials/scripting/gdextension/gdextension_cpp_example.html#using-the-gdextension-module
+* see [GDExtension Docs](https://docs.godotengine.org/en/stable/tutorials/scripting/gdextension/gdextension_cpp_example.html#using-the-gdextension-module) for allowed keys
+* At a minimum the current os in debug mode must be specified
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Nzg0MDg5MTUsLTE4NjAwOTMxMTIsLT
+eyJoaXN0b3J5IjpbLTEyOTM2OTMwMDksLTE4NjAwOTMxMTIsLT
 czMzE4Mjc2NSwtMTM5MzE3Nzg4MCwtMTcxMTIwMDUzM119
 -->
