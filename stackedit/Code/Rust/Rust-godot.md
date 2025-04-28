@@ -267,11 +267,25 @@ impl ISprite2D for Player {
 
 ##### Custom rust api 
 
+```rust
+#[godot_api]
+impl Player {
+    #[func]
+    fn increase_speed(&mut self, amount: f64) {
+        self.speed += amount;
+        self.base_mut().emit_signal("speed_increased", &[]);
+    }
 
+    #[signal]
+    fn speed_increased();
+}
+```
+* `#[godot_api]` is required before the `impl` block for gdext to register the functions with Godot
+* `#[func]
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTQ2MjAzMzQsLTEyOTM2OTMwMDksLT
-E4NjAwOTMxMTIsLTczMzE4Mjc2NSwtMTM5MzE3Nzg4MCwtMTcx
-MTIwMDUzM119
+eyJoaXN0b3J5IjpbLTMzODMwMjA5NCwtMjA1NDYyMDMzNCwtMT
+I5MzY5MzAwOSwtMTg2MDA5MzExMiwtNzMzMTgyNzY1LC0xMzkz
+MTc3ODgwLC0xNzExMjAwNTMzXX0=
 -->
