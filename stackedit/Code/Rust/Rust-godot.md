@@ -230,11 +230,13 @@ struct Player {
 * the `[#class]` attribute is optional and configures how the class is registered. If no `base` is specified then `RefCounted` will be used by default
 * the `Base<T>` type allows the base object to be accessed via `self.base()` and `self.base_mut()`
 	* This is a composition relationship
-	* `T` must 
+	* `T` must match the declared base class
+	* the name can be whatever but `base` is a common convention
+	* If the field is not declared, then the base object cannot be accessed via `self`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjQ2NTM0MDIsLTEyOTM2OTMwMDksLT
-E4NjAwOTMxMTIsLTczMzE4Mjc2NSwtMTM5MzE3Nzg4MCwtMTcx
-MTIwMDUzM119
+eyJoaXN0b3J5IjpbMjA0NjI3NDQ4OSwtMTI5MzY5MzAwOSwtMT
+g2MDA5MzExMiwtNzMzMTgyNzY1LC0xMzkzMTc3ODgwLC0xNzEx
+MjAwNTMzXX0=
 -->
