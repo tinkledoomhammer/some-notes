@@ -186,13 +186,16 @@ use godot::prelude::*;
 struct MyExtension;
 
 #[gdextension]
-unsafe impl ExtensionLibrary for 
+unsafe impl ExtensionLibrary for MyExtension {}
 ```
+* `godot::prelude::*` has the most common symbols that will be used by gdextensions
+* `struct MyExtension;` just a tag type, can be named whatever
+* `impl ExtensionLibrary` - must be marked with the `#[gdextension
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTc2NjI0NDcsLTEyOTM2OTMwMDksLT
-E4NjAwOTMxMTIsLTczMzE4Mjc2NSwtMTM5MzE3Nzg4MCwtMTcx
-MTIwMDUzM119
+eyJoaXN0b3J5IjpbMTAwMzk4ODgyMywtMTI5MzY5MzAwOSwtMT
+g2MDA5MzExMiwtNzMzMTgyNzY1LC0xMzkzMTc3ODgwLC0xNzEx
+MjAwNTMzXX0=
 -->
