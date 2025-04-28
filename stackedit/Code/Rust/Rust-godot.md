@@ -305,13 +305,15 @@ Chapter 4 [Registering Rust symbols](https://godot-rust.github.io/book/register/
 		* `String` -> `GString`
 		* `StringName`
 		* `NodePath`
-	* Ref-counted containers 
+	* Ref-counted containers:
+		* `Array` -> `Array<Variant>` i.e. `varray![1, "Two",3]`
+		*  `Array[T]` -> `Array<T>` i.e. `array![1,2,3]`
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4MjE1MDQ1NywtODgwNTAzNzYxLC0yMD
-U0NjIwMzM0LC0xMjkzNjkzMDA5LC0xODYwMDkzMTEyLC03MzMx
-ODI3NjUsLTEzOTMxNzc4ODAsLTE3MTEyMDA1MzNdfQ==
+eyJoaXN0b3J5IjpbNDc2NzEzODMyLC04ODA1MDM3NjEsLTIwNT
+Q2MjAzMzQsLTEyOTM2OTMwMDksLTE4NjAwOTMxMTIsLTczMzE4
+Mjc2NSwtMTM5MzE3Nzg4MCwtMTcxMTIwMDUzM119
 -->
