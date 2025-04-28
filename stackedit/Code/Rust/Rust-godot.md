@@ -164,10 +164,15 @@ Tells godot how to load the compiled extension
 
 `reloadable`
 : if `true` then the extension will reload when the editor window loses and regains focus
-* see 
+* see https://github.com/godotengine/godot/pull/80284
+
+##### The `[libraries]` section
+: contains the path to the binary files
+* in `os.dist.arch = "res://..."` format
+* see https://docs.godotengine.org/en/stable/tutorials/scripting/gdextension/gdextension_cpp_example.html#using-the-gdextension-module
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyMTg5NjYzMCwtMTg2MDA5MzExMiwtNz
-MzMTgyNzY1LC0xMzkzMTc3ODgwLC0xNzExMjAwNTMzXX0=
+eyJoaXN0b3J5IjpbLTE1Nzg0MDg5MTUsLTE4NjAwOTMxMTIsLT
+czMzE4Mjc2NSwtMTM5MzE3Nzg4MCwtMTcxMTIwMDUzM119
 -->
