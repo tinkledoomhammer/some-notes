@@ -292,13 +292,20 @@ Chapter 4 [Registering Rust symbols](https://godot-rust.github.io/book/register/
 
 ### Built -in types
 * Found in `godot::builtin`
-* many are 
+* many are also in `godot::prelude`
+* They map one-one with the GDScript names in most cases
+* Simple Types
+	* `bool`
+	* `int` -> `i64`
+	* `float` -> f64
+	* `real` -> `real` (either `f32` or `f64`)
+* 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMyMTgyNTI5LC04ODA1MDM3NjEsLTIwNT
+eyJoaXN0b3J5IjpbOTU2MDk0MjE0LC04ODA1MDM3NjEsLTIwNT
 Q2MjAzMzQsLTEyOTM2OTMwMDksLTE4NjAwOTMxMTIsLTczMzE4
 Mjc2NSwtMTM5MzE3Nzg4MCwtMTcxMTIwMDUzM119
 -->
