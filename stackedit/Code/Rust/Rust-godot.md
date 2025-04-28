@@ -56,11 +56,30 @@ https://godot-rust.github.io/book/intro/setup.html
         └── 📂 debug
 ```
 
+Create the `rust` folder and `Cargo.toml` file:
+`cargo new "rust" --lib`
+
+```toml
+[configuration]
+entry_symbol = "gdext_rust_init"
+compatibility_minimum = 4.1
+reloadable = true
+
+[libraries]
+linux.debug.x86_64 =     "res://../rust/target/debug/lib/rust_project.so"
+linux.release.x86_64 =   "res://../rust/target/release/lib/rust_project.so"
+windows.debug.x86_64 =   "res://../rust/target/debug/rust_project.dll"
+windows.release.x86_64 = "res://../rust/target/release/rust_project.dll"
+macos.debug =            "res://../rust/target/debug/lib/rust_project.dylib"
+macos.release =          "res://../rust/target/release/lib/rust_project.dylib"
+macos.debug.arm64 =      "res://../rust/target/debug/lib/rust_project.dylib"
+macos.release.arm64 =    "res://../rust/target/release/lib/rust_project.dylib"
+```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczMzE4Mjc2NSwtMTM5MzE3Nzg4MCwtMT
-cxMTIwMDUzM119
+eyJoaXN0b3J5IjpbOTU2NzU5NjEwLC03MzMxODI3NjUsLTEzOT
+MxNzc4ODAsLTE3MTEyMDA1MzNdfQ==
 -->
