@@ -59,6 +59,7 @@ https://godot-rust.github.io/book/intro/setup.html
 Create the `rust` folder and `Cargo.toml` file:
 `cargo new "rust" --lib`
 
+--------
 
 `HelloWorld.gdextension` - in the godot project folder
 ```ini
@@ -77,6 +78,9 @@ macos.release =          "res://../rust/target/release/lib/rust_project.dylib"
 macos.debug.arm64 =      "res://../rust/target/debug/lib/rust_project.dylib"
 macos.release.arm64 =    "res://../rust/target/release/lib/rust_project.dylib"
 ```
+
+--------
+
 `cargo.toml`
 ```ini
 [package]
@@ -89,6 +93,7 @@ crate-type = ["cdylib"]
 godot = "0.2.4"
 ```
 
+--------------
 
 `rust/src/lib.rs`
 ```rust
@@ -144,6 +149,7 @@ impl Player{
     fn speed_increased();
 }
 ```
+--------------
 
 `cargo add godot`
 : Adds the libraries for gdext
@@ -173,8 +179,10 @@ Tells godot how to load the compiled extension
 * At a minimum the current os in debug mode must be specified
 
 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTM2OTMwMDksLTE4NjAwOTMxMTIsLT
-czMzE4Mjc2NSwtMTM5MzE3Nzg4MCwtMTcxMTIwMDUzM119
+eyJoaXN0b3J5IjpbMTU0MTAwMDMyMSwtMTI5MzY5MzAwOSwtMT
+g2MDA5MzExMiwtNzMzMTgyNzY1LC0xMzkzMTc3ODgwLC0xNzEx
+MjAwNTMzXX0=
 -->
