@@ -186,7 +186,11 @@ Tells godot how to load the compiled extension
 	* paths must be relative to `project.godot` and use `res://...`
 * is an entry point established in the rust project (see below)
 * are the versions of gdext and godot compatible
-* Try clearing the godot cache in the `.godot` fol
+* Try clearing the godot cache in the `.godot` folder. 
+	* leave the `extension_list.cfg`
+* if `api-custom` is used:
+	* godot must be in `PATH` env var as `godot4` (not sure what that means)
+	* or an env var anmed `GODOT4_BIN` that points to the god
 
 #### lib.rs details
 
@@ -207,7 +211,7 @@ unsafe impl ExtensionLibrary for MyExtension {}
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3ODc4MDc3MywtMTI5MzY5MzAwOSwtMT
+eyJoaXN0b3J5IjpbMTQ2ODg0NzM5NiwtMTI5MzY5MzAwOSwtMT
 g2MDA5MzExMiwtNzMzMTgyNzY1LC0xMzkzMTc3ODgwLC0xNzEx
 MjAwNTMzXX0=
 -->
