@@ -178,11 +178,21 @@ Tells godot how to load the compiled extension
 * see [GDExtension Docs](https://docs.godotengine.org/en/stable/tutorials/scripting/gdextension/gdextension_cpp_example.html#using-the-gdextension-module) for allowed keys
 * At a minimum the current os in debug mode must be specified
 
+#### lib.rs details
+
+##### Entry point
+```rust
+use godot::prelude::*;
+struct MyExtension;
+
+#[gdextension]
+unsafe impl ExtensionLibrary for 
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0MTAwMDMyMSwtMTI5MzY5MzAwOSwtMT
-g2MDA5MzExMiwtNzMzMTgyNzY1LC0xMzkzMTc3ODgwLC0xNzEx
-MjAwNTMzXX0=
+eyJoaXN0b3J5IjpbLTE2MTc2NjI0NDcsLTEyOTM2OTMwMDksLT
+E4NjAwOTMxMTIsLTczMzE4Mjc2NSwtMTM5MzE3Nzg4MCwtMTcx
+MTIwMDUzM119
 -->
