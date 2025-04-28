@@ -216,13 +216,19 @@ Declared like
 use godot::prelude::*;
 use godot::classes::Sprite2D;
 
-#[derve(GodotClass)
+#[derve(GodotClass)]
+#[class(base=Sprite2D)]
+struct Player {
+	...
+}
 ```
-
+* the `godot::prelude` has the most used symbols
+	* `godot::engine` has some less-frequently used classes
+* `#[derive]` attribute registers the class with the 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1MDMxNjgzNiwtMTI5MzY5MzAwOSwtMT
+eyJoaXN0b3J5IjpbMTMyNDExNjI2MiwtMTI5MzY5MzAwOSwtMT
 g2MDA5MzExMiwtNzMzMTgyNzY1LC0xMzkzMTc3ODgwLC0xNzEx
 MjAwNTMzXX0=
 -->
