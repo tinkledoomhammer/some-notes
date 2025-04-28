@@ -260,13 +260,15 @@ impl ISprite2D for Player {
 // continuing the above impl block
 	fn physics_process(&mut self, delta: f64){
 		...
-	
+	}
 ```
+* explicit method calls are required in situations where properties are used in gdscript
+* use `self.base()` or `self.base_mut()` instead of just `self.base` to access base class methods
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MDU1NTEyMSwtMTI5MzY5MzAwOSwtMT
-g2MDA5MzExMiwtNzMzMTgyNzY1LC0xMzkzMTc3ODgwLC0xNzEx
-MjAwNTMzXX0=
+eyJoaXN0b3J5IjpbLTE4OTI2OTM0ODAsLTEyOTM2OTMwMDksLT
+E4NjAwOTMxMTIsLTczMzE4Mjc2NSwtMTM5MzE3Nzg4MCwtMTcx
+MTIwMDUzM119
 -->
