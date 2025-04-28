@@ -284,11 +284,19 @@ impl Player {
 * `#[func]` prefixes public methods
 * `#[signal]` prefixes a function that will be used for a signal
 	* can be emitted with `base_mut().emit_signal("signal_name",...);`
-* API attributes 
+* API attributes often follow GDScript keywords: `class` `func` `signal` `export` `var`
+
+## Using the godot API
+https://godot-rust.github.io/book/godot-api/index.html
+see also [Registering Rust symbols](https://godot-rust.github.io/book/register/index.html)
+
+
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Mzg5MDM5MTcsLTIwNTQ2MjAzMzQsLT
-EyOTM2OTMwMDksLTE4NjAwOTMxMTIsLTczMzE4Mjc2NSwtMTM5
-MzE3Nzg4MCwtMTcxMTIwMDUzM119
+eyJoaXN0b3J5IjpbLTY1OTA0NTU3OSwtMjA1NDYyMDMzNCwtMT
+I5MzY5MzAwOSwtMTg2MDA5MzExMiwtNzMzMTgyNzY1LC0xMzkz
+MTc3ODgwLC0xNzExMjAwNTMzXX0=
 -->
