@@ -318,12 +318,21 @@ Chapter 4 [Registering Rust symbols](https://godot-rust.github.io/book/register/
 	* Matricies: `Transform2D`, `Transform3D`, `Basis`, `Projection`
 	* Rotation: `Quaternion`
 	* Geometric objects: `Plane`
+* Miscellaneious
+	* `Color`
+	* `RID` (resource id)
+	
+Some others
+
+GDScript | Rust | Example
+--|--|--
+`Object`
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2NjI4ODAxLC04ODA1MDM3NjEsLTIwNT
-Q2MjAzMzQsLTEyOTM2OTMwMDksLTE4NjAwOTMxMTIsLTczMzE4
-Mjc2NSwtMTM5MzE3Nzg4MCwtMTcxMTIwMDUzM119
+eyJoaXN0b3J5IjpbNDU3Mjc2ODgsLTg4MDUwMzc2MSwtMjA1ND
+YyMDMzNCwtMTI5MzY5MzAwOSwtMTg2MDA5MzExMiwtNzMzMTgy
+NzY1LC0xMzkzMTc3ODgwLC0xNzExMjAwNTMzXX0=
 -->
