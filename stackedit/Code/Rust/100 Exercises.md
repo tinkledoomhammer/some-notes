@@ -403,16 +403,27 @@ where
 ```
 
 ### 4.10 Generics and associated types
-TTri
+Trait examples
+```rust
+pub trait From<T>{
+	fn from(Value: T) -> Self;
+} // generic
+
+pub trait Deref{
+	type Target;
+	fn deref(&self) -> &Self::Target;
+} // associated type ("Target")
+
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzQ5OTE4ODQsMTg2NzgwNzY5MSwxMj
-gyOTcwOTc1LC0xODA3MTIwODcsLTE0MjM0NjEwMTAsLTg2OTIz
-MDE4LC03NDE2NjM4MjYsOTk0MTgwNzMzLDE2NDQwMTEzMDksMj
-E0MjM5ODc3MSw0MDMzNjEzMDQsMTEzODQwNDQwMywxNzE5NDY5
-ODA3LDE5MTg0NjQ2NTAsLTE1MjQ2NTk1MDgsNDc4NTY5ODQ4LC
-0xMDIxNTc2ODgyLDE2MTU4OTY1OSwtMjE0MzE0NTQ0MSwtMTU5
-MTM0NTI5NF19
+eyJoaXN0b3J5IjpbLTc0OTkzMDgzLDE4Njc4MDc2OTEsMTI4Mj
+k3MDk3NSwtMTgwNzEyMDg3LC0xNDIzNDYxMDEwLC04NjkyMzAx
+OCwtNzQxNjYzODI2LDk5NDE4MDczMywxNjQ0MDExMzA5LDIxND
+IzOTg3NzEsNDAzMzYxMzA0LDExMzg0MDQ0MDMsMTcxOTQ2OTgw
+NywxOTE4NDY0NjUwLC0xNTI0NjU5NTA4LDQ3ODU2OTg0OCwtMT
+AyMTU3Njg4MiwxNjE1ODk2NTksLTIxNDMxNDU0NDEsLTE1OTEz
+NDUyOTRdfQ==
 -->
