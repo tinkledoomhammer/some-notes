@@ -407,23 +407,26 @@ Trait examples
 ```rust
 pub trait From<T>{
 	fn from(Value: T) -> Self;
-} // generic
+} // generic 
 
 pub trait Deref{
 	type Target;
 	fn deref(&self) -> &Self::Target;
 } // associated type ("Target")
-
 ```
+
+* In `From<T>` `from` can be implemented for any number of types within a single implementation(?
+* In `Deref` each 
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0OTkzMDgzLDE4Njc4MDc2OTEsMTI4Mj
-k3MDk3NSwtMTgwNzEyMDg3LC0xNDIzNDYxMDEwLC04NjkyMzAx
-OCwtNzQxNjYzODI2LDk5NDE4MDczMywxNjQ0MDExMzA5LDIxND
-IzOTg3NzEsNDAzMzYxMzA0LDExMzg0MDQ0MDMsMTcxOTQ2OTgw
-NywxOTE4NDY0NjUwLC0xNTI0NjU5NTA4LDQ3ODU2OTg0OCwtMT
-AyMTU3Njg4MiwxNjE1ODk2NTksLTIxNDMxNDU0NDEsLTE1OTEz
-NDUyOTRdfQ==
+eyJoaXN0b3J5IjpbMTEzMjUxNjk5NCwxODY3ODA3NjkxLDEyOD
+I5NzA5NzUsLTE4MDcxMjA4NywtMTQyMzQ2MTAxMCwtODY5MjMw
+MTgsLTc0MTY2MzgyNiw5OTQxODA3MzMsMTY0NDAxMTMwOSwyMT
+QyMzk4NzcxLDQwMzM2MTMwNCwxMTM4NDA0NDAzLDE3MTk0Njk4
+MDcsMTkxODQ2NDY1MCwtMTUyNDY1OTUwOCw0Nzg1Njk4NDgsLT
+EwMjE1NzY4ODIsMTYxNTg5NjU5LC0yMTQzMTQ1NDQxLC0xNTkx
+MzQ1Mjk0XX0=
 -->
