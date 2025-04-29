@@ -415,18 +415,27 @@ pub trait Deref{
 } // associated type ("Target")
 ```
 
-* In `From<T>` `from` can be implemented for any number of types within a single implementation(?
-* In `Deref` each 
+* In `From<T>` `from` can be implemented for any number of types within a single implementation(?)
+* In `Deref` each implementation must use the same `Target` type
+
+Implementation examples
+```rust
+impl From<u32> for WrappingU32{
+	fn from(value:u32) -> Self{ ... }
+}
+
+impl From<u16> for WrappingU32 {
+```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMjUxNjk5NCwxODY3ODA3NjkxLDEyOD
-I5NzA5NzUsLTE4MDcxMjA4NywtMTQyMzQ2MTAxMCwtODY5MjMw
-MTgsLTc0MTY2MzgyNiw5OTQxODA3MzMsMTY0NDAxMTMwOSwyMT
-QyMzk4NzcxLDQwMzM2MTMwNCwxMTM4NDA0NDAzLDE3MTk0Njk4
-MDcsMTkxODQ2NDY1MCwtMTUyNDY1OTUwOCw0Nzg1Njk4NDgsLT
-EwMjE1NzY4ODIsMTYxNTg5NjU5LC0yMTQzMTQ1NDQxLC0xNTkx
-MzQ1Mjk0XX0=
+eyJoaXN0b3J5IjpbLTIwNjk0MDkzMTAsMTg2NzgwNzY5MSwxMj
+gyOTcwOTc1LC0xODA3MTIwODcsLTE0MjM0NjEwMTAsLTg2OTIz
+MDE4LC03NDE2NjM4MjYsOTk0MTgwNzMzLDE2NDQwMTEzMDksMj
+E0MjM5ODc3MSw0MDMzNjEzMDQsMTEzODQwNDQwMywxNzE5NDY5
+ODA3LDE5MTg0NjQ2NTAsLTE1MjQ2NTk1MDgsNDc4NTY5ODQ4LC
+0xMDIxNTc2ODgyLDE2MTU4OTY1OSwtMjE0MzE0NTQ0MSwtMTU5
+MTM0NTI5NF19
 -->
