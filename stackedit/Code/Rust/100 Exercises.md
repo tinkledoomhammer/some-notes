@@ -445,13 +445,24 @@ impl Add<u32> for u32{
 	type Output = u32; 
 	// Now whenever Add<T> is implemented for u32
 	// the Output type must be the same?
-	fn add(self, rhs: u32) -> u32
+	fn add(self, rhs: u32) -> u32 {
+		...
+		// the return type could also be Self::Output
+		// or Add::Output?
+	}
+}
+
+impl Add<&u32> for u32{
+	type Output = u32;
+	fn add(self,rhs: &u32) -> u32{
+		...
+	}
 ```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0ODQyMjQ2OSwtMTE5Mzg2NDcxMywxOD
+eyJoaXN0b3J5IjpbLTYzMzc1NTU4NSwtMTE5Mzg2NDcxMywxOD
 Y3ODA3NjkxLDEyODI5NzA5NzUsLTE4MDcxMjA4NywtMTQyMzQ2
 MTAxMCwtODY5MjMwMTgsLTc0MTY2MzgyNiw5OTQxODA3MzMsMT
 Y0NDAxMTMwOSwyMTQyMzk4NzcxLDQwMzM2MTMwNCwxMTM4NDA0
