@@ -435,16 +435,27 @@ impl Deref for Asdf
 	fn deref(&self) -> Deref::target { ... }
 ```
 #### Combining both
+```rust
+pub trait Add<RHS = Self> {
+	type Output;
+	fn add(slef, rhs: RHS) -> Self::Output;
+}
 
+impl Add<u32> for u32{
+	type Output = u32; 
+	// Now whenever Add<T> is implemented for u32
+	// the Output type must be the same?
+	fn add(self, rhs: u32) -> u32
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg1MDgwODM4LC0xMTkzODY0NzEzLDE4Nj
-c4MDc2OTEsMTI4Mjk3MDk3NSwtMTgwNzEyMDg3LC0xNDIzNDYx
-MDEwLC04NjkyMzAxOCwtNzQxNjYzODI2LDk5NDE4MDczMywxNj
-Q0MDExMzA5LDIxNDIzOTg3NzEsNDAzMzYxMzA0LDExMzg0MDQ0
-MDMsMTcxOTQ2OTgwNywxOTE4NDY0NjUwLC0xNTI0NjU5NTA4LD
-Q3ODU2OTg0OCwtMTAyMTU3Njg4MiwxNjE1ODk2NTksLTIxNDMx
-NDU0NDFdfQ==
+eyJoaXN0b3J5IjpbMTA0ODQyMjQ2OSwtMTE5Mzg2NDcxMywxOD
+Y3ODA3NjkxLDEyODI5NzA5NzUsLTE4MDcxMjA4NywtMTQyMzQ2
+MTAxMCwtODY5MjMwMTgsLTc0MTY2MzgyNiw5OTQxODA3MzMsMT
+Y0NDAxMTMwOSwyMTQyMzk4NzcxLDQwMzM2MTMwNCwxMTM4NDA0
+NDAzLDE3MTk0Njk4MDcsMTkxODQ2NDY1MCwtMTUyNDY1OTUwOC
+w0Nzg1Njk4NDgsLTEwMjE1NzY4ODIsMTYxNTg5NjU5LC0yMTQz
+MTQ1NDQxXX0=
 -->
