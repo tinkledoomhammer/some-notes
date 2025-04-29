@@ -1,4 +1,8 @@
 # 100-exercises-to-learn-rust.pdf
+https://rust-exercises.com/100-exercises/04_traits/10_assoc_vs_generic.html
+
+Use `wr` to check exercises
+
 
 ## 3 Modeling a Ticket
 ### 3.3 Modules
@@ -404,11 +408,11 @@ where
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4Mjk3MDk3NSwtMTgwNzEyMDg3LC0xND
-IzNDYxMDEwLC04NjkyMzAxOCwtNzQxNjYzODI2LDk5NDE4MDcz
-MywxNjQ0MDExMzA5LDIxNDIzOTg3NzEsNDAzMzYxMzA0LDExMz
-g0MDQ0MDMsMTcxOTQ2OTgwNywxOTE4NDY0NjUwLC0xNTI0NjU5
-NTA4LDQ3ODU2OTg0OCwtMTAyMTU3Njg4MiwxNjE1ODk2NTksLT
-IxNDMxNDU0NDEsLTE1OTEzNDUyOTQsMTk4MDM3NjYyOCwxMTM4
-MTA0MTA1XX0=
+eyJoaXN0b3J5IjpbMTg2NzgwNzY5MSwxMjgyOTcwOTc1LC0xOD
+A3MTIwODcsLTE0MjM0NjEwMTAsLTg2OTIzMDE4LC03NDE2NjM4
+MjYsOTk0MTgwNzMzLDE2NDQwMTEzMDksMjE0MjM5ODc3MSw0MD
+MzNjEzMDQsMTEzODQwNDQwMywxNzE5NDY5ODA3LDE5MTg0NjQ2
+NTAsLTE1MjQ2NTk1MDgsNDc4NTY5ODQ4LC0xMDIxNTc2ODgyLD
+E2MTU4OTY1OSwtMjE0MzE0NTQ0MSwtMTU5MTM0NTI5NCwxOTgw
+Mzc2NjI4XX0=
 -->
