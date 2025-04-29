@@ -415,8 +415,8 @@ pub trait Deref{
 } // associated type ("Target")
 ```
 
-* In `From<T>` `from` can be implemented for any number of types within a single implementation(?)
-* In `Deref` each implementation must use the same `Target` type
+* In `From<T>` `from` can be implemented any number of times for a single type i.e (see the next code block)
+* In `Deref` each implementation for a given `for` type must use the same `Target` type
 
 Implementation examples
 ```rust
@@ -439,11 +439,11 @@ impl Deref for Asdf
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTM4NjQ3MTMsMTg2NzgwNzY5MSwxMj
-gyOTcwOTc1LC0xODA3MTIwODcsLTE0MjM0NjEwMTAsLTg2OTIz
-MDE4LC03NDE2NjM4MjYsOTk0MTgwNzMzLDE2NDQwMTEzMDksMj
-E0MjM5ODc3MSw0MDMzNjEzMDQsMTEzODQwNDQwMywxNzE5NDY5
-ODA3LDE5MTg0NjQ2NTAsLTE1MjQ2NTk1MDgsNDc4NTY5ODQ4LC
-0xMDIxNTc2ODgyLDE2MTU4OTY1OSwtMjE0MzE0NTQ0MSwtMTU5
-MTM0NTI5NF19
+eyJoaXN0b3J5IjpbLTc0MTYyMTQ5NywtMTE5Mzg2NDcxMywxOD
+Y3ODA3NjkxLDEyODI5NzA5NzUsLTE4MDcxMjA4NywtMTQyMzQ2
+MTAxMCwtODY5MjMwMTgsLTc0MTY2MzgyNiw5OTQxODA3MzMsMT
+Y0NDAxMTMwOSwyMTQyMzk4NzcxLDQwMzM2MTMwNCwxMTM4NDA0
+NDAzLDE3MTk0Njk4MDcsMTkxODQ2NDY1MCwtMTUyNDY1OTUwOC
+w0Nzg1Njk4NDgsLTEwMjE1NzY4ODIsMTYxNTg5NjU5LC0yMTQz
+MTQ1NDQxXX0=
 -->
