@@ -446,7 +446,7 @@ impl Add<u32> for u32{
 	// Now whenever Add<T> is implemented for u32
 	// the Output type must be the same?
 	fn add(self, rhs: u32) -> u32 {
-		...
+		// ...
 		// the return type could also be Self::Output
 		// or Add::Output?
 	}
@@ -455,18 +455,18 @@ impl Add<u32> for u32{
 impl Add<&u32> for u32{
 	type Output = u32;
 	fn add(self,rhs: &u32) -> u32{
-		...
+		// ...
 	}
 ```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMzc1NTU4NSwtMTE5Mzg2NDcxMywxOD
-Y3ODA3NjkxLDEyODI5NzA5NzUsLTE4MDcxMjA4NywtMTQyMzQ2
-MTAxMCwtODY5MjMwMTgsLTc0MTY2MzgyNiw5OTQxODA3MzMsMT
-Y0NDAxMTMwOSwyMTQyMzk4NzcxLDQwMzM2MTMwNCwxMTM4NDA0
-NDAzLDE3MTk0Njk4MDcsMTkxODQ2NDY1MCwtMTUyNDY1OTUwOC
-w0Nzg1Njk4NDgsLTEwMjE1NzY4ODIsMTYxNTg5NjU5LC0yMTQz
-MTQ1NDQxXX0=
+eyJoaXN0b3J5IjpbLTE0OTA3MzY0ODksLTExOTM4NjQ3MTMsMT
+g2NzgwNzY5MSwxMjgyOTcwOTc1LC0xODA3MTIwODcsLTE0MjM0
+NjEwMTAsLTg2OTIzMDE4LC03NDE2NjM4MjYsOTk0MTgwNzMzLD
+E2NDQwMTEzMDksMjE0MjM5ODc3MSw0MDMzNjEzMDQsMTEzODQw
+NDQwMywxNzE5NDY5ODA3LDE5MTg0NjQ2NTAsLTE1MjQ2NTk1MD
+gsNDc4NTY5ODQ4LC0xMDIxNTc2ODgyLDE2MTU4OTY1OSwtMjE0
+MzE0NTQ0MV19
 -->
