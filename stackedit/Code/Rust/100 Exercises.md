@@ -448,7 +448,7 @@ impl Add<u32> for u32{
 	fn add(self, rhs: u32) -> u32 {
 		// ...
 		// the return type could also be Self::Output
-		// or Add::Output?
+		// or <Self as Add>::Output
 	}
 }
 
@@ -462,11 +462,11 @@ impl Add<&u32> for u32{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMDc0Njk4NSwtMTQ5MDczNjQ4OSwtMT
-E5Mzg2NDcxMywxODY3ODA3NjkxLDEyODI5NzA5NzUsLTE4MDcx
-MjA4NywtMTQyMzQ2MTAxMCwtODY5MjMwMTgsLTc0MTY2MzgyNi
-w5OTQxODA3MzMsMTY0NDAxMTMwOSwyMTQyMzk4NzcxLDQwMzM2
-MTMwNCwxMTM4NDA0NDAzLDE3MTk0Njk4MDcsMTkxODQ2NDY1MC
-wtMTUyNDY1OTUwOCw0Nzg1Njk4NDgsLTEwMjE1NzY4ODIsMTYx
-NTg5NjU5XX0=
+eyJoaXN0b3J5IjpbMTY3Mzc3NzYwMiwtNTAwNzQ2OTg1LC0xND
+kwNzM2NDg5LC0xMTkzODY0NzEzLDE4Njc4MDc2OTEsMTI4Mjk3
+MDk3NSwtMTgwNzEyMDg3LC0xNDIzNDYxMDEwLC04NjkyMzAxOC
+wtNzQxNjYzODI2LDk5NDE4MDczMywxNjQ0MDExMzA5LDIxNDIz
+OTg3NzEsNDAzMzYxMzA0LDExMzg0MDQ0MDMsMTcxOTQ2OTgwNy
+wxOTE4NDY0NjUwLC0xNTI0NjU5NTA4LDQ3ODU2OTg0OCwtMTAy
+MTU3Njg4Ml19
 -->
