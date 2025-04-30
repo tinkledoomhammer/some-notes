@@ -169,7 +169,7 @@ String's Memory Layout (24 bytes on 64-bit)
 * There is no standard mechanism for tracking the heap usage of particular objects
 
 #### 3.10 References
-**Most references are stored internally as a pointer ** `<usize>`
+**Most references are stored internally as a pointer**  `<usize>`
 * Pointers don't always point to the heap
 
 ### 3.11 Destructors
@@ -462,11 +462,11 @@ impl Add<&u32> for u32{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTA3MzY0ODksLTExOTM4NjQ3MTMsMT
-g2NzgwNzY5MSwxMjgyOTcwOTc1LC0xODA3MTIwODcsLTE0MjM0
-NjEwMTAsLTg2OTIzMDE4LC03NDE2NjM4MjYsOTk0MTgwNzMzLD
-E2NDQwMTEzMDksMjE0MjM5ODc3MSw0MDMzNjEzMDQsMTEzODQw
-NDQwMywxNzE5NDY5ODA3LDE5MTg0NjQ2NTAsLTE1MjQ2NTk1MD
-gsNDc4NTY5ODQ4LC0xMDIxNTc2ODgyLDE2MTU4OTY1OSwtMjE0
-MzE0NTQ0MV19
+eyJoaXN0b3J5IjpbLTUwMDc0Njk4NSwtMTQ5MDczNjQ4OSwtMT
+E5Mzg2NDcxMywxODY3ODA3NjkxLDEyODI5NzA5NzUsLTE4MDcx
+MjA4NywtMTQyMzQ2MTAxMCwtODY5MjMwMTgsLTc0MTY2MzgyNi
+w5OTQxODA3MzMsMTY0NDAxMTMwOSwyMTQyMzk4NzcxLDQwMzM2
+MTMwNCwxMTM4NDA0NDAzLDE3MTk0Njk4MDcsMTkxODQ2NDY1MC
+wtMTUyNDY1OTUwOCw0Nzg1Njk4NDgsLTEwMjE1NzY4ODIsMTYx
+NTg5NjU5XX0=
 -->
