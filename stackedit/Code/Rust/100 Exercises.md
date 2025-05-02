@@ -468,9 +468,15 @@ Ownership rules:
 : `pub trait Clone { fn clone(&self) -> Self; }`
 * takes a ref to self and returns an **owned** instance of the same type
 
+Implementing Clone
+* the default implementation will clone each member of a struct
+* so you can `#[derive(Clone)]`
+
+### 4.12 Copy
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzODEzMDU1MCwxNjczNzc3NjAyLC01MD
+eyJoaXN0b3J5IjpbLTQxOTcwNDQxNSwxNjczNzc3NjAyLC01MD
 A3NDY5ODUsLTE0OTA3MzY0ODksLTExOTM4NjQ3MTMsMTg2Nzgw
 NzY5MSwxMjgyOTcwOTc1LC0xODA3MTIwODcsLTE0MjM0NjEwMT
 AsLTg2OTIzMDE4LC03NDE2NjM4MjYsOTk0MTgwNzMzLDE2NDQw
