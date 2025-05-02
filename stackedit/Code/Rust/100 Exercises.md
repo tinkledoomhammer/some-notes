@@ -507,16 +507,21 @@ impl Drop for MyStruct{
 **`Drop` and `Copy` cannot be implemented on the same type**
 * trying will produce a compiler error
 
-
+### Traits Wrapup
+* Don't make a function eneric if it is always invoked with a single type.
+* Don't create a trait if you only have one implementation
+* Implement standard traits for custome types (`Debug`, `PartialEq`, etc)
+* Implement traits from 3rd party crates to use their functionality
+* 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTc1NDAwNjksLTUzMDQ5NzQ4NSwxNj
-czNzc3NjAyLC01MDA3NDY5ODUsLTE0OTA3MzY0ODksLTExOTM4
-NjQ3MTMsMTg2NzgwNzY5MSwxMjgyOTcwOTc1LC0xODA3MTIwOD
-csLTE0MjM0NjEwMTAsLTg2OTIzMDE4LC03NDE2NjM4MjYsOTk0
-MTgwNzMzLDE2NDQwMTEzMDksMjE0MjM5ODc3MSw0MDMzNjEzMD
-QsMTEzODQwNDQwMywxNzE5NDY5ODA3LDE5MTg0NjQ2NTAsLTE1
-MjQ2NTk1MDhdfQ==
+eyJoaXN0b3J5IjpbNTAyMzI2NjcwLC0yMTE3NTQwMDY5LC01Mz
+A0OTc0ODUsMTY3Mzc3NzYwMiwtNTAwNzQ2OTg1LC0xNDkwNzM2
+NDg5LC0xMTkzODY0NzEzLDE4Njc4MDc2OTEsMTI4Mjk3MDk3NS
+wtMTgwNzEyMDg3LC0xNDIzNDYxMDEwLC04NjkyMzAxOCwtNzQx
+NjYzODI2LDk5NDE4MDczMywxNjQ0MDExMzA5LDIxNDIzOTg3Nz
+EsNDAzMzYxMzA0LDExMzg0MDQ0MDMsMTcxOTQ2OTgwNywxOTE4
+NDY0NjUwXX0=
 -->
