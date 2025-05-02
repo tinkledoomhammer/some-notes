@@ -522,12 +522,21 @@ Covers
 3. The `Debug` and `Display` traits for printing
 4. The `Error` trait to mark error types
 5. The `TryFrom` and `TryInto` traits for fallible conversions
+6. Rust's Package system
 
+### 5.1 Enums
+```rust
+enum Status{
+	ToDo,
+	InProgress,
+	Done,
+}
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3OTIyMjMzOCwtMTg4OTA0Njk3MywtMj
+eyJoaXN0b3J5IjpbLTYwOTAxMjQwMywtMTg4OTA0Njk3MywtMj
 ExNzU0MDA2OSwtNTMwNDk3NDg1LDE2NzM3Nzc2MDIsLTUwMDc0
 Njk4NSwtMTQ5MDczNjQ4OSwtMTE5Mzg2NDcxMywxODY3ODA3Nj
 kxLDEyODI5NzA5NzUsLTE4MDcxMjA4NywtMTQyMzQ2MTAxMCwt
