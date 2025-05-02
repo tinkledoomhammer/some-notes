@@ -515,13 +515,20 @@ impl Drop for MyStruct{
 * Beware making generics solely to use mocks. see the [testing masterclass](https://github.com/mainmatter/rust-advanced-testing-workshop) for better options
 
 
+## 05 Modelling a Ticket, pt 2
+Covers
+1. `enum` s
+2. The `Option` and `Result` type
+3. 
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODkwNDY5NzMsLTIxMTc1NDAwNjksLT
-UzMDQ5NzQ4NSwxNjczNzc3NjAyLC01MDA3NDY5ODUsLTE0OTA3
-MzY0ODksLTExOTM4NjQ3MTMsMTg2NzgwNzY5MSwxMjgyOTcwOT
-c1LC0xODA3MTIwODcsLTE0MjM0NjEwMTAsLTg2OTIzMDE4LC03
-NDE2NjM4MjYsOTk0MTgwNzMzLDE2NDQwMTEzMDksMjE0MjM5OD
-c3MSw0MDMzNjEzMDQsMTEzODQwNDQwMywxNzE5NDY5ODA3LDE5
-MTg0NjQ2NTBdfQ==
+eyJoaXN0b3J5IjpbLTc5OTI5NjkzNCwtMTg4OTA0Njk3MywtMj
+ExNzU0MDA2OSwtNTMwNDk3NDg1LDE2NzM3Nzc2MDIsLTUwMDc0
+Njk4NSwtMTQ5MDczNjQ4OSwtMTE5Mzg2NDcxMywxODY3ODA3Nj
+kxLDEyODI5NzA5NzUsLTE4MDcxMjA4NywtMTQyMzQ2MTAxMCwt
+ODY5MjMwMTgsLTc0MTY2MzgyNiw5OTQxODA3MzMsMTY0NDAxMT
+MwOSwyMTQyMzk4NzcxLDQwMzM2MTMwNCwxMTM4NDA0NDAzLDE3
+MTk0Njk4MDddfQ==
 -->
