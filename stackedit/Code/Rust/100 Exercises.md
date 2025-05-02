@@ -561,7 +561,7 @@ match <var> {
 Compiler driven refactoring
 : using `enum`s and `match` statements so that the adding a new option to the `enum` will generate compiler errors in each place the code must be updated 
 
-
+#### Variants can hold data
 
 
 
@@ -572,11 +572,11 @@ Compiler driven refactoring
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDA0MzE1NCwtNjA5MDEyNDAzLC0xOD
-g5MDQ2OTczLC0yMTE3NTQwMDY5LC01MzA0OTc0ODUsMTY3Mzc3
-NzYwMiwtNTAwNzQ2OTg1LC0xNDkwNzM2NDg5LC0xMTkzODY0Nz
-EzLDE4Njc4MDc2OTEsMTI4Mjk3MDk3NSwtMTgwNzEyMDg3LC0x
-NDIzNDYxMDEwLC04NjkyMzAxOCwtNzQxNjYzODI2LDk5NDE4MD
-czMywxNjQ0MDExMzA5LDIxNDIzOTg3NzEsNDAzMzYxMzA0LDEx
-Mzg0MDQ0MDNdfQ==
+eyJoaXN0b3J5IjpbLTg5OTY4NjE5LC0yMTQwNDMxNTQsLTYwOT
+AxMjQwMywtMTg4OTA0Njk3MywtMjExNzU0MDA2OSwtNTMwNDk3
+NDg1LDE2NzM3Nzc2MDIsLTUwMDc0Njk4NSwtMTQ5MDczNjQ4OS
+wtMTE5Mzg2NDcxMywxODY3ODA3NjkxLDEyODI5NzA5NzUsLTE4
+MDcxMjA4NywtMTQyMzQ2MTAxMCwtODY5MjMwMTgsLTc0MTY2Mz
+gyNiw5OTQxODA3MzMsMTY0NDAxMTMwOSwyMTQyMzk4NzcxLDQw
+MzM2MTMwNF19
 -->
