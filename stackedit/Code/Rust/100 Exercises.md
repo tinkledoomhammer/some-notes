@@ -562,7 +562,14 @@ Compiler driven refactoring
 : using `enum`s and `match` statements so that the adding a new option to the `enum` will generate compiler errors in each place the code must be updated 
 
 #### Variants can hold data
+C-style enum
+: don't have data, basically named constants
 
+struct-like variant
+: a variant that has member variables
+* They are inlined as a struct inside the enum
+```rust
+enum S
 
 
 
@@ -572,11 +579,11 @@ Compiler driven refactoring
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5OTY4NjE5LC0yMTQwNDMxNTQsLTYwOT
-AxMjQwMywtMTg4OTA0Njk3MywtMjExNzU0MDA2OSwtNTMwNDk3
-NDg1LDE2NzM3Nzc2MDIsLTUwMDc0Njk4NSwtMTQ5MDczNjQ4OS
-wtMTE5Mzg2NDcxMywxODY3ODA3NjkxLDEyODI5NzA5NzUsLTE4
-MDcxMjA4NywtMTQyMzQ2MTAxMCwtODY5MjMwMTgsLTc0MTY2Mz
-gyNiw5OTQxODA3MzMsMTY0NDAxMTMwOSwyMTQyMzk4NzcxLDQw
-MzM2MTMwNF19
+eyJoaXN0b3J5IjpbLTE1OTcyODkwMDgsLTg5OTY4NjE5LC0yMT
+QwNDMxNTQsLTYwOTAxMjQwMywtMTg4OTA0Njk3MywtMjExNzU0
+MDA2OSwtNTMwNDk3NDg1LDE2NzM3Nzc2MDIsLTUwMDc0Njk4NS
+wtMTQ5MDczNjQ4OSwtMTE5Mzg2NDcxMywxODY3ODA3NjkxLDEy
+ODI5NzA5NzUsLTE4MDcxMjA4NywtMTQyMzQ2MTAxMCwtODY5Mj
+MwMTgsLTc0MTY2MzgyNiw5OTQxODA3MzMsMTY0NDAxMTMwOSwy
+MTQyMzk4NzcxXX0=
 -->
