@@ -512,16 +512,16 @@ impl Drop for MyStruct{
 * Don't create a trait if you only have one implementation
 * Implement standard traits for custome types (`Debug`, `PartialEq`, etc)
 * Implement traits from 3rd party crates to use their functionality
-* 
+* Beware making generics solely to use mocks. see the [testing masterclass](https://github.com/mainmatter/rust-advanced-testing-workshop) for better options
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTAyMzI2NjcwLC0yMTE3NTQwMDY5LC01Mz
-A0OTc0ODUsMTY3Mzc3NzYwMiwtNTAwNzQ2OTg1LC0xNDkwNzM2
-NDg5LC0xMTkzODY0NzEzLDE4Njc4MDc2OTEsMTI4Mjk3MDk3NS
-wtMTgwNzEyMDg3LC0xNDIzNDYxMDEwLC04NjkyMzAxOCwtNzQx
-NjYzODI2LDk5NDE4MDczMywxNjQ0MDExMzA5LDIxNDIzOTg3Nz
-EsNDAzMzYxMzA0LDExMzg0MDQ0MDMsMTcxOTQ2OTgwNywxOTE4
-NDY0NjUwXX0=
+eyJoaXN0b3J5IjpbLTE4ODkwNDY5NzMsLTIxMTc1NDAwNjksLT
+UzMDQ5NzQ4NSwxNjczNzc3NjAyLC01MDA3NDY5ODUsLTE0OTA3
+MzY0ODksLTExOTM4NjQ3MTMsMTg2NzgwNzY5MSwxMjgyOTcwOT
+c1LC0xODA3MTIwODcsLTE0MjM0NjEwMTAsLTg2OTIzMDE4LC03
+NDE2NjM4MjYsOTk0MTgwNzMzLDE2NDQwMTEzMDksMjE0MjM5OD
+c3MSw0MDMzNjEzMDQsMTEzODQwNDQwMywxNzE5NDY5ODA3LDE5
+MTg0NjQ2NTBdfQ==
 -->
