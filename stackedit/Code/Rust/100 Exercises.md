@@ -494,12 +494,22 @@ Effects
 ### 4.13 `Drop` trait
 ```rust
 pub trait Drop{
-	fn drop(
+	fn drop(&mut self);
+}
+
+impl Drop for MyStruct{
+	fn drop(&mut self){
+		// any cleanup
+		// even an empty function will cause deallocation
+	}
+}
 ```
+#### `Dro
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyNjc5MTIyMywtNTMwNDk3NDg1LDE2Nz
+eyJoaXN0b3J5IjpbMjAyODgwNDU0NiwtNTMwNDk3NDg1LDE2Nz
 M3Nzc2MDIsLTUwMDc0Njk4NSwtMTQ5MDczNjQ4OSwtMTE5Mzg2
 NDcxMywxODY3ODA3NjkxLDEyODI5NzA5NzUsLTE4MDcxMjA4Ny
 wtMTQyMzQ2MTAxMCwtODY5MjMwMTgsLTc0MTY2MzgyNiw5OTQx
