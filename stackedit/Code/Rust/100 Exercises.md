@@ -569,14 +569,24 @@ struct-like variant
 : a variant that has member variables
 * They are inlined as a struct inside the enum
 ```rust
+//Declaration
 enum Status {
 	ToDo,
 	InProgress {assigned_to: String,},
 	Done,
 {
+
+//Access
 match status{
 	Status::InProgress { assigned_to} => {
+	// alternatively Status::InProgress {assigned_to: person} =>
 		println!("Assigned to: {}", assigned_to);
+	},
+	Status::ToDo | Status::Done => {
+		println!("ToDo or Done");
+	}
+}
+
 ```
 
 
@@ -588,11 +598,11 @@ match status{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc1Mzk0Nzk3LC04OTk2ODYxOSwtMjE0MD
-QzMTU0LC02MDkwMTI0MDMsLTE4ODkwNDY5NzMsLTIxMTc1NDAw
-NjksLTUzMDQ5NzQ4NSwxNjczNzc3NjAyLC01MDA3NDY5ODUsLT
-E0OTA3MzY0ODksLTExOTM4NjQ3MTMsMTg2NzgwNzY5MSwxMjgy
-OTcwOTc1LC0xODA3MTIwODcsLTE0MjM0NjEwMTAsLTg2OTIzMD
-E4LC03NDE2NjM4MjYsOTk0MTgwNzMzLDE2NDQwMTEzMDksMjE0
-MjM5ODc3MV19
+eyJoaXN0b3J5IjpbLTEwNDkzNzExMjcsLTg5OTY4NjE5LC0yMT
+QwNDMxNTQsLTYwOTAxMjQwMywtMTg4OTA0Njk3MywtMjExNzU0
+MDA2OSwtNTMwNDk3NDg1LDE2NzM3Nzc2MDIsLTUwMDc0Njk4NS
+wtMTQ5MDczNjQ4OSwtMTE5Mzg2NDcxMywxODY3ODA3NjkxLDEy
+ODI5NzA5NzUsLTE4MDcxMjA4NywtMTQyMzQ2MTAxMCwtODY5Mj
+MwMTgsLTc0MTY2MzgyNiw5OTQxODA3MzMsMTY0NDAxMTMwOSwy
+MTQyMzk4NzcxXX0=
 -->
