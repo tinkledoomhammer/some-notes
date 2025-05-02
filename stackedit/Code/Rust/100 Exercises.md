@@ -555,15 +555,19 @@ match <var> {
 	_ => defaultResult,
 }
 ```
-* `_` is a wildcard pattern that will catchany unmatched va
+* `_` is a wildcard pattern that will catch any unmatched variants
+* If it is used, the compiler-driven refactoring won't be an option
+
+Compiler driven refactoring
+: using `enum`s and `match` statements so that the adding a new option to the enum will generate compiler errors in each place the code must be updated 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODQ2NTQwMDcsLTYwOTAxMjQwMywtMT
-g4OTA0Njk3MywtMjExNzU0MDA2OSwtNTMwNDk3NDg1LDE2NzM3
-Nzc2MDIsLTUwMDc0Njk4NSwtMTQ5MDczNjQ4OSwtMTE5Mzg2ND
-cxMywxODY3ODA3NjkxLDEyODI5NzA5NzUsLTE4MDcxMjA4Nywt
-MTQyMzQ2MTAxMCwtODY5MjMwMTgsLTc0MTY2MzgyNiw5OTQxOD
-A3MzMsMTY0NDAxMTMwOSwyMTQyMzk4NzcxLDQwMzM2MTMwNCwx
-MTM4NDA0NDAzXX0=
+eyJoaXN0b3J5IjpbMTEzMDAzOTUwLC02MDkwMTI0MDMsLTE4OD
+kwNDY5NzMsLTIxMTc1NDAwNjksLTUzMDQ5NzQ4NSwxNjczNzc3
+NjAyLC01MDA3NDY5ODUsLTE0OTA3MzY0ODksLTExOTM4NjQ3MT
+MsMTg2NzgwNzY5MSwxMjgyOTcwOTc1LC0xODA3MTIwODcsLTE0
+MjM0NjEwMTAsLTg2OTIzMDE4LC03NDE2NjM4MjYsOTk0MTgwNz
+MzLDE2NDQwMTEzMDksMjE0MjM5ODc3MSw0MDMzNjEzMDQsMTEz
+ODQwNDQwM119
 -->
