@@ -459,14 +459,18 @@ impl Add<&u32> for u32{
 	}
 ```
 
+### 4.11 Clone Trait
+Ownership rules:
+1. Every value has a single owner at any given time
+2. When a function takes ownership of a value ("consumes
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3Mzc3NzYwMiwtNTAwNzQ2OTg1LC0xND
-kwNzM2NDg5LC0xMTkzODY0NzEzLDE4Njc4MDc2OTEsMTI4Mjk3
-MDk3NSwtMTgwNzEyMDg3LC0xNDIzNDYxMDEwLC04NjkyMzAxOC
-wtNzQxNjYzODI2LDk5NDE4MDczMywxNjQ0MDExMzA5LDIxNDIz
-OTg3NzEsNDAzMzYxMzA0LDExMzg0MDQ0MDMsMTcxOTQ2OTgwNy
-wxOTE4NDY0NjUwLC0xNTI0NjU5NTA4LDQ3ODU2OTg0OCwtMTAy
-MTU3Njg4Ml19
+eyJoaXN0b3J5IjpbMTI0NjgyMzE1OCwxNjczNzc3NjAyLC01MD
+A3NDY5ODUsLTE0OTA3MzY0ODksLTExOTM4NjQ3MTMsMTg2Nzgw
+NzY5MSwxMjgyOTcwOTc1LC0xODA3MTIwODcsLTE0MjM0NjEwMT
+AsLTg2OTIzMDE4LC03NDE2NjM4MjYsOTk0MTgwNzMzLDE2NDQw
+MTEzMDksMjE0MjM5ODc3MSw0MDMzNjEzMDQsMTEzODQwNDQwMy
+wxNzE5NDY5ODA3LDE5MTg0NjQ2NTAsLTE1MjQ2NTk1MDgsNDc4
+NTY5ODQ4XX0=
 -->
