@@ -559,15 +559,24 @@ match <var> {
 * If it is used, the compiler-driven refactoring won't be an option
 
 Compiler driven refactoring
-: using `enum`s and `match` statements so that the adding a new option to the enum will generate compiler errors in each place the code must be updated 
+: using `enum`s and `match` statements so that the adding a new option to the `enum` will generate compiler errors in each place the code must be updated 
+
+
+
+
+
+
+
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMDAzOTUwLC02MDkwMTI0MDMsLTE4OD
-kwNDY5NzMsLTIxMTc1NDAwNjksLTUzMDQ5NzQ4NSwxNjczNzc3
-NjAyLC01MDA3NDY5ODUsLTE0OTA3MzY0ODksLTExOTM4NjQ3MT
-MsMTg2NzgwNzY5MSwxMjgyOTcwOTc1LC0xODA3MTIwODcsLTE0
-MjM0NjEwMTAsLTg2OTIzMDE4LC03NDE2NjM4MjYsOTk0MTgwNz
-MzLDE2NDQwMTEzMDksMjE0MjM5ODc3MSw0MDMzNjEzMDQsMTEz
-ODQwNDQwM119
+eyJoaXN0b3J5IjpbLTIxNDA0MzE1NCwtNjA5MDEyNDAzLC0xOD
+g5MDQ2OTczLC0yMTE3NTQwMDY5LC01MzA0OTc0ODUsMTY3Mzc3
+NzYwMiwtNTAwNzQ2OTg1LC0xNDkwNzM2NDg5LC0xMTkzODY0Nz
+EzLDE4Njc4MDc2OTEsMTI4Mjk3MDk3NSwtMTgwNzEyMDg3LC0x
+NDIzNDYxMDEwLC04NjkyMzAxOCwtNzQxNjYzODI2LDk5NDE4MD
+czMywxNjQ0MDExMzA5LDIxNDIzOTg3NzEsNDAzMzYxMzA0LDEx
+Mzg0MDQ0MDNdfQ==
 -->
