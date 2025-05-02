@@ -477,16 +477,23 @@ Implementing Clone
 ### 4.12 `Copy` trait
 
 ```rust
-pub trait Copy: Cl
+pub trait Copy: Clone { }
 ```
+Restricted to types that 
+1. Don't manage any additional resources
+2. Are not mutable references 
+
+Effects
+1. Allows automatic/implicit cloning
+2. The clones will be **bitwise coppies**
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4ODQzODc2OSwxNjczNzc3NjAyLC01MD
-A3NDY5ODUsLTE0OTA3MzY0ODksLTExOTM4NjQ3MTMsMTg2Nzgw
-NzY5MSwxMjgyOTcwOTc1LC0xODA3MTIwODcsLTE0MjM0NjEwMT
-AsLTg2OTIzMDE4LC03NDE2NjM4MjYsOTk0MTgwNzMzLDE2NDQw
-MTEzMDksMjE0MjM5ODc3MSw0MDMzNjEzMDQsMTEzODQwNDQwMy
-wxNzE5NDY5ODA3LDE5MTg0NjQ2NTAsLTE1MjQ2NTk1MDgsNDc4
-NTY5ODQ4XX0=
+eyJoaXN0b3J5IjpbLTE2NjY3MjY3NTAsMTY3Mzc3NzYwMiwtNT
+AwNzQ2OTg1LC0xNDkwNzM2NDg5LC0xMTkzODY0NzEzLDE4Njc4
+MDc2OTEsMTI4Mjk3MDk3NSwtMTgwNzEyMDg3LC0xNDIzNDYxMD
+EwLC04NjkyMzAxOCwtNzQxNjYzODI2LDk5NDE4MDczMywxNjQ0
+MDExMzA5LDIxNDIzOTg3NzEsNDAzMzYxMzA0LDExMzg0MDQ0MD
+MsMTcxOTQ2OTgwNywxOTE4NDY0NjUwLC0xNTI0NjU5NTA4LDQ3
+ODU2OTg0OF19
 -->
