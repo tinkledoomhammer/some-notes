@@ -462,11 +462,15 @@ impl Add<&u32> for u32{
 ### 4.11 Clone Trait
 Ownership rules:
 1. Every value has a single owner at any given time
-2. When a function takes ownership of a value ("consumes
+2. When a function takes ownership of a value ("consumes" it) the caller can't use that value anymore
+
+`Clone` trait
+: `pub trait Clone { fn clone(&self) -> Self; }`
+* takes a ref to self and returns an **owned** instance of the same type
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0NjgyMzE1OCwxNjczNzc3NjAyLC01MD
+eyJoaXN0b3J5IjpbMTAzODEzMDU1MCwxNjczNzc3NjAyLC01MD
 A3NDY5ODUsLTE0OTA3MzY0ODksLTExOTM4NjQ3MTMsMTg2Nzgw
 NzY5MSwxMjgyOTcwOTc1LC0xODA3MTIwODcsLTE0MjM0NjEwMT
 AsLTg2OTIzMDE4LC03NDE2NjM4MjYsOTk0MTgwNzMzLDE2NDQw
