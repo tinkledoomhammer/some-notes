@@ -476,10 +476,13 @@ Implementing Clone
 
 ### 4.12 `Copy` trait
 
+```rust
+pub trait Copy: Cl
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5ODcxMDk3NiwxNjczNzc3NjAyLC01MD
+eyJoaXN0b3J5IjpbLTQ4ODQzODc2OSwxNjczNzc3NjAyLC01MD
 A3NDY5ODUsLTE0OTA3MzY0ODksLTExOTM4NjQ3MTMsMTg2Nzgw
 NzY5MSwxMjgyOTcwOTc1LC0xODA3MTIwODcsLTE0MjM0NjEwMT
 AsLTg2OTIzMDE4LC03NDE2NjM4MjYsOTk0MTgwNzMzLDE2NDQw
