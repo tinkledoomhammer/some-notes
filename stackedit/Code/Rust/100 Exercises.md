@@ -579,7 +579,7 @@ enum Status {
 //Access
 match status{
 	Status::InProgress { assigned_to} => {
-	// alternatively Status::InProgress {assigned_to: person} =>
+	// alternatively Status::InProgress {assigned_to: person} => ...
 		println!("Assigned to: {}", assigned_to);
 	},
 	Status::ToDo | Status::Done => {
@@ -598,11 +598,11 @@ match status{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDkzNzExMjcsLTg5OTY4NjE5LC0yMT
-QwNDMxNTQsLTYwOTAxMjQwMywtMTg4OTA0Njk3MywtMjExNzU0
-MDA2OSwtNTMwNDk3NDg1LDE2NzM3Nzc2MDIsLTUwMDc0Njk4NS
-wtMTQ5MDczNjQ4OSwtMTE5Mzg2NDcxMywxODY3ODA3NjkxLDEy
-ODI5NzA5NzUsLTE4MDcxMjA4NywtMTQyMzQ2MTAxMCwtODY5Mj
-MwMTgsLTc0MTY2MzgyNiw5OTQxODA3MzMsMTY0NDAxMTMwOSwy
-MTQyMzk4NzcxXX0=
+eyJoaXN0b3J5IjpbMTIyNzgzMTYzOSwtODk5Njg2MTksLTIxND
+A0MzE1NCwtNjA5MDEyNDAzLC0xODg5MDQ2OTczLC0yMTE3NTQw
+MDY5LC01MzA0OTc0ODUsMTY3Mzc3NzYwMiwtNTAwNzQ2OTg1LC
+0xNDkwNzM2NDg5LC0xMTkzODY0NzEzLDE4Njc4MDc2OTEsMTI4
+Mjk3MDk3NSwtMTgwNzEyMDg3LC0xNDIzNDYxMDEwLC04NjkyMz
+AxOCwtNzQxNjYzODI2LDk5NDE4MDczMywxNjQ0MDExMzA5LDIx
+NDIzOTg3NzFdfQ==
 -->
