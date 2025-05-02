@@ -518,13 +518,16 @@ impl Drop for MyStruct{
 ## 05 Modelling a Ticket, pt 2
 Covers
 1. `enum` s
-2. The `Option` and `Result` type
-3. 
+2. The `Option` and `Result` type for nullable returns and recoverable errors
+3. The `Debug` and `Display` traits for printing
+4. The `Error` trait to mark error types
+5. The `TryFrom` and `TryInto` traits for fallible conversions
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5OTI5NjkzNCwtMTg4OTA0Njk3MywtMj
+eyJoaXN0b3J5IjpbLTY3OTIyMjMzOCwtMTg4OTA0Njk3MywtMj
 ExNzU0MDA2OSwtNTMwNDk3NDg1LDE2NzM3Nzc2MDIsLTUwMDc0
 Njk4NSwtMTQ5MDczNjQ4OSwtMTE5Mzg2NDcxMywxODY3ODA3Nj
 kxLDEyODI5NzA5NzUsLTE4MDcxMjA4NywtMTQyMzQ2MTAxMCwt
