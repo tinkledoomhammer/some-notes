@@ -539,7 +539,7 @@ let status: Status = Status::ToDo;
 impl Status{
 	fn is_done(&self) -> bool {
 		match self{
-			Status:: Done => true,
+			Status::Done => true,
 			Status::InProgress | Status::ToDo => false
 		}
 	}
@@ -547,15 +547,23 @@ impl Status{
 ```
 * Like a type-level if
 * no pass through, must exhaust all options
-*
+The general format
+```rust
+match <var> {
+	pattern1 => result1,
+	pattern2 => result2,
+	_ => defaultResult,
+}
+```
+* `_` is a wildcard pattern that will catchany unmatched va
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1NTcwMDExNSwtNjA5MDEyNDAzLC0xOD
-g5MDQ2OTczLC0yMTE3NTQwMDY5LC01MzA0OTc0ODUsMTY3Mzc3
-NzYwMiwtNTAwNzQ2OTg1LC0xNDkwNzM2NDg5LC0xMTkzODY0Nz
-EzLDE4Njc4MDc2OTEsMTI4Mjk3MDk3NSwtMTgwNzEyMDg3LC0x
-NDIzNDYxMDEwLC04NjkyMzAxOCwtNzQxNjYzODI2LDk5NDE4MD
-czMywxNjQ0MDExMzA5LDIxNDIzOTg3NzEsNDAzMzYxMzA0LDEx
-Mzg0MDQ0MDNdfQ==
+eyJoaXN0b3J5IjpbLTEwODQ2NTQwMDcsLTYwOTAxMjQwMywtMT
+g4OTA0Njk3MywtMjExNzU0MDA2OSwtNTMwNDk3NDg1LDE2NzM3
+Nzc2MDIsLTUwMDc0Njk4NSwtMTQ5MDczNjQ4OSwtMTE5Mzg2ND
+cxMywxODY3ODA3NjkxLDEyODI5NzA5NzUsLTE4MDcxMjA4Nywt
+MTQyMzQ2MTAxMCwtODY5MjMwMTgsLTc0MTY2MzgyNiw5OTQxOD
+A3MzMsMTY0NDAxMTMwOSwyMTQyMzk4NzcxLDQwMzM2MTMwNCwx
+MTM4NDA0NDAzXX0=
 -->
