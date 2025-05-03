@@ -659,13 +659,21 @@ enum Option<T> {
 }
 ```
 
+Exercise
+```rust
+pub fn assigned_to(&self) -> Option<&String>{
+	let Status::InProgres{assigned_to} = &self.status
+	else { return None;};
+	return Some(assigned_to);
+}
+```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMDQ1MjE0NiwtMTkxMjg3NTg1OCw3OD
-YxNDI3NDUsMTI1NjUzNTYyNCwxMjI3ODMxNjM5LC04OTk2ODYx
-OSwtMjE0MDQzMTU0LC02MDkwMTI0MDMsLTE4ODkwNDY5NzMsLT
-IxMTc1NDAwNjksLTUzMDQ5NzQ4NSwxNjczNzc3NjAyLC01MDA3
-NDY5ODUsLTE0OTA3MzY0ODksLTExOTM4NjQ3MTMsMTg2NzgwNz
-Y5MSwxMjgyOTcwOTc1LC0xODA3MTIwODcsLTE0MjM0NjEwMTAs
-LTg2OTIzMDE4XX0=
+eyJoaXN0b3J5IjpbMTQxNzM4NTc1OSwyMDIwNDUyMTQ2LC0xOT
+EyODc1ODU4LDc4NjE0Mjc0NSwxMjU2NTM1NjI0LDEyMjc4MzE2
+MzksLTg5OTY4NjE5LC0yMTQwNDMxNTQsLTYwOTAxMjQwMywtMT
+g4OTA0Njk3MywtMjExNzU0MDA2OSwtNTMwNDk3NDg1LDE2NzM3
+Nzc2MDIsLTUwMDc0Njk4NSwtMTQ5MDczNjQ4OSwtMTE5Mzg2ND
+cxMywxODY3ODA3NjkxLDEyODI5NzA5NzUsLTE4MDcxMjA4Nywt
+MTQyMzQ2MTAxMF19
 -->
