@@ -835,17 +835,22 @@ static_assertions = "1.1.0"
 ```
 **use `cargo search <packagename>` to search for packages on `crates.io`**
 
+### 5.12 `thiserror`
+* a package with a procedural macro to help define custom error messages
+```rust
 
+
+```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MjY4NTk0NCwtNzIxNDUzNTYyLDE5ND
-QyMzI4MjcsLTEyNDA2NjI1MDUsODMwMDMzNDI0LC01NTgwMzIw
-MzcsMjE0OTY5NDA2LDkyNTA2NTI3OCwtMTA1ODg3MzU2MCwxMz
-UzNzE5Nzg3LDE3MTExNDI5NDYsMTQxNzM4NTc1OSwyMDIwNDUy
-MTQ2LC0xOTEyODc1ODU4LDc4NjE0Mjc0NSwxMjU2NTM1NjI0LD
-EyMjc4MzE2MzksLTg5OTY4NjE5LC0yMTQwNDMxNTQsLTYwOTAx
-MjQwM119
+eyJoaXN0b3J5IjpbMzU5MzIyMzY0LC03MjE0NTM1NjIsMTk0ND
+IzMjgyNywtMTI0MDY2MjUwNSw4MzAwMzM0MjQsLTU1ODAzMjAz
+NywyMTQ5Njk0MDYsOTI1MDY1Mjc4LC0xMDU4ODczNTYwLDEzNT
+M3MTk3ODcsMTcxMTE0Mjk0NiwxNDE3Mzg1NzU5LDIwMjA0NTIx
+NDYsLTE5MTI4NzU4NTgsNzg2MTQyNzQ1LDEyNTY1MzU2MjQsMT
+IyNzgzMTYzOSwtODk5Njg2MTksLTIxNDA0MzE1NCwtNjA5MDEy
+NDAzXX0=
 -->
