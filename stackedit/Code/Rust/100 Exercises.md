@@ -848,16 +848,16 @@ enum TicketNewError {
 
 `#[error("{0}")]`
 : specifies which field of the variant will be returned.
-* in this case the e0 
+* in this case the 0^th^ field of the tuple 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5OTI4Njc5MSwtNzIxNDUzNTYyLDE5ND
-QyMzI4MjcsLTEyNDA2NjI1MDUsODMwMDMzNDI0LC01NTgwMzIw
-MzcsMjE0OTY5NDA2LDkyNTA2NTI3OCwtMTA1ODg3MzU2MCwxMz
-UzNzE5Nzg3LDE3MTExNDI5NDYsMTQxNzM4NTc1OSwyMDIwNDUy
-MTQ2LC0xOTEyODc1ODU4LDc4NjE0Mjc0NSwxMjU2NTM1NjI0LD
-EyMjc4MzE2MzksLTg5OTY4NjE5LC0yMTQwNDMxNTQsLTYwOTAx
-MjQwM119
+eyJoaXN0b3J5IjpbLTE0MTI1OTYxODQsLTcyMTQ1MzU2MiwxOT
+Q0MjMyODI3LC0xMjQwNjYyNTA1LDgzMDAzMzQyNCwtNTU4MDMy
+MDM3LDIxNDk2OTQwNiw5MjUwNjUyNzgsLTEwNTg4NzM1NjAsMT
+M1MzcxOTc4NywxNzExMTQyOTQ2LDE0MTczODU3NTksMjAyMDQ1
+MjE0NiwtMTkxMjg3NTg1OCw3ODYxNDI3NDUsMTI1NjUzNTYyNC
+wxMjI3ODMxNjM5LC04OTk2ODYxOSwtMjE0MDQzMTU0LC02MDkw
+MTI0MDNdfQ==
 -->
