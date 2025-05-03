@@ -917,8 +917,14 @@ impl TryFrom<&str> for Status{
 }
 ```
 
-### 5.15 Error::source
+### 5.14 Error::source
 
+```rust
+pub trait Error: Debug + Display {
+	fn source(&self) -> Option(&dyn Error + 'static)>{
+		None
+	}
+```
 
 
 
@@ -926,11 +932,11 @@ impl TryFrom<&str> for Status{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjYxMzQ2ODcsLTEyMTEwMjk0NjcsLT
-E0MTI1OTYxODQsLTcyMTQ1MzU2MiwxOTQ0MjMyODI3LC0xMjQw
-NjYyNTA1LDgzMDAzMzQyNCwtNTU4MDMyMDM3LDIxNDk2OTQwNi
-w5MjUwNjUyNzgsLTEwNTg4NzM1NjAsMTM1MzcxOTc4NywxNzEx
-MTQyOTQ2LDE0MTczODU3NTksMjAyMDQ1MjE0NiwtMTkxMjg3NT
-g1OCw3ODYxNDI3NDUsMTI1NjUzNTYyNCwxMjI3ODMxNjM5LC04
-OTk2ODYxOV19
+eyJoaXN0b3J5IjpbLTY3Njc0NTQxMCwtMTIxMTAyOTQ2NywtMT
+QxMjU5NjE4NCwtNzIxNDUzNTYyLDE5NDQyMzI4MjcsLTEyNDA2
+NjI1MDUsODMwMDMzNDI0LC01NTgwMzIwMzcsMjE0OTY5NDA2LD
+kyNTA2NTI3OCwtMTA1ODg3MzU2MCwxMzUzNzE5Nzg3LDE3MTEx
+NDI5NDYsMTQxNzM4NTc1OSwyMDIwNDUyMTQ2LC0xOTEyODc1OD
+U4LDc4NjE0Mjc0NSwxMjU2NTM1NjI0LDEyMjc4MzE2MzksLTg5
+OTY4NjE5XX0=
 -->
