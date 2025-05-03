@@ -718,6 +718,10 @@ let number = parse_int("43"){
 	Err(err) => panic!("{}",err),
 }
 
+//using let else
+let Result::Ok(number) = parse_int("42") else
+{ panic!("{}" Err(
+
 ```
 
 
@@ -727,7 +731,7 @@ let number = parse_int("43"){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDQxNzQ0ODksLTEwNTg4NzM1NjAsMT
+eyJoaXN0b3J5IjpbLTE1ODg3NzkwNzMsLTEwNTg4NzM1NjAsMT
 M1MzcxOTc4NywxNzExMTQyOTQ2LDE0MTczODU3NTksMjAyMDQ1
 MjE0NiwtMTkxMjg3NTg1OCw3ODYxNDI3NDUsMTI1NjUzNTYyNC
 wxMjI3ODMxNjM5LC04OTk2ODYxOSwtMjE0MDQzMTU0LC02MDkw
