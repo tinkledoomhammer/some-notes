@@ -686,7 +686,10 @@ Recoverable errors
 * No exceptions
 
 Unrecoverable errors
-: `panic!
+: `panic!("Message")`
+* should be used sparingly
+
+
 
 
 
@@ -696,11 +699,11 @@ Unrecoverable errors
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDI5MTYxMTAsMTQxNzM4NTc1OSwyMD
-IwNDUyMTQ2LC0xOTEyODc1ODU4LDc4NjE0Mjc0NSwxMjU2NTM1
-NjI0LDEyMjc4MzE2MzksLTg5OTY4NjE5LC0yMTQwNDMxNTQsLT
-YwOTAxMjQwMywtMTg4OTA0Njk3MywtMjExNzU0MDA2OSwtNTMw
-NDk3NDg1LDE2NzM3Nzc2MDIsLTUwMDc0Njk4NSwtMTQ5MDczNj
-Q4OSwtMTE5Mzg2NDcxMywxODY3ODA3NjkxLDEyODI5NzA5NzUs
-LTE4MDcxMjA4N119
+eyJoaXN0b3J5IjpbMTcxMTE0Mjk0NiwxNDE3Mzg1NzU5LDIwMj
+A0NTIxNDYsLTE5MTI4NzU4NTgsNzg2MTQyNzQ1LDEyNTY1MzU2
+MjQsMTIyNzgzMTYzOSwtODk5Njg2MTksLTIxNDA0MzE1NCwtNj
+A5MDEyNDAzLC0xODg5MDQ2OTczLC0yMTE3NTQwMDY5LC01MzA0
+OTc0ODUsMTY3Mzc3NzYwMiwtNTAwNzQ2OTg1LC0xNDkwNzM2ND
+g5LC0xMTkzODY0NzEzLDE4Njc4MDc2OTEsMTI4Mjk3MDk3NSwt
+MTgwNzEyMDg3XX0=
 -->
