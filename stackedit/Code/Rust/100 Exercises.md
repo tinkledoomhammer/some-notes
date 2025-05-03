@@ -651,11 +651,17 @@ println("({},{})",point.0, point.1);
 ```
 
 Tuple-like Variants
-: 
+: a variant (within an enum) that holds unnamed fields
+```rust
+enum Option<T> {
+	Some(T),
+	None,
+}
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MzExMjI2MSwtMTkxMjg3NTg1OCw3OD
+eyJoaXN0b3J5IjpbMjAyMDQ1MjE0NiwtMTkxMjg3NTg1OCw3OD
 YxNDI3NDUsMTI1NjUzNTYyNCwxMjI3ODMxNjM5LC04OTk2ODYx
 OSwtMjE0MDQzMTU0LC02MDkwMTI0MDMsLTE4ODkwNDY5NzMsLT
 IxMTc1NDAwNjksLTUzMDQ5NzQ4NSwxNjczNzc3NjAyLC01MDA3
