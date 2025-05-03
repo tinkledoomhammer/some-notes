@@ -713,7 +713,7 @@ let number = parse_int("34").unwrap();
 let number = parse_int("42").expect("Failed to parse integerr");
 
 //or match
-let number = parse_int("43"){
+let number = match parse_int("43"){
 	Ok(number) => number,
 	Err(err) => panic!("{}",err),
 }
@@ -726,11 +726,11 @@ let number = parse_int("43"){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MTA0MDEwNyw5MjUwNjUyNzgsLTEwNT
-g4NzM1NjAsMTM1MzcxOTc4NywxNzExMTQyOTQ2LDE0MTczODU3
-NTksMjAyMDQ1MjE0NiwtMTkxMjg3NTg1OCw3ODYxNDI3NDUsMT
-I1NjUzNTYyNCwxMjI3ODMxNjM5LC04OTk2ODYxOSwtMjE0MDQz
-MTU0LC02MDkwMTI0MDMsLTE4ODkwNDY5NzMsLTIxMTc1NDAwNj
-ksLTUzMDQ5NzQ4NSwxNjczNzc3NjAyLC01MDA3NDY5ODUsLTE0
-OTA3MzY0ODldfQ==
+eyJoaXN0b3J5IjpbLTIwMzgzMjAzMjYsOTI1MDY1Mjc4LC0xMD
+U4ODczNTYwLDEzNTM3MTk3ODcsMTcxMTE0Mjk0NiwxNDE3Mzg1
+NzU5LDIwMjA0NTIxNDYsLTE5MTI4NzU4NTgsNzg2MTQyNzQ1LD
+EyNTY1MzU2MjQsMTIyNzgzMTYzOSwtODk5Njg2MTksLTIxNDA0
+MzE1NCwtNjA5MDEyNDAzLC0xODg5MDQ2OTczLC0yMTE3NTQwMD
+Y5LC01MzA0OTc0ODUsMTY3Mzc3NzYwMiwtNTAwNzQ2OTg1LC0x
+NDkwNzM2NDg5XX0=
 -->
