@@ -601,7 +601,19 @@ match status{
     }
 ```
 
-#### `if let`
+#### branching `let`
+If let
+```rust
+impl Ticket{
+	pub fn assigned_to(&self) -> &str {
+		if let Status::InProgress {assigned_to} = &self.status {
+			assigned_to
+		} else {
+			panic!("Only `In-Progress` tickets...");
+		}
+	}
+	
+```
 
 
 
@@ -609,7 +621,7 @@ match status{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDAxMjkxMzcsMTI1NjUzNTYyNCwxMj
+eyJoaXN0b3J5IjpbLTE3MzA5NzcxNTksMTI1NjUzNTYyNCwxMj
 I3ODMxNjM5LC04OTk2ODYxOSwtMjE0MDQzMTU0LC02MDkwMTI0
 MDMsLTE4ODkwNDY5NzMsLTIxMTc1NDAwNjksLTUzMDQ5NzQ4NS
 wxNjczNzc3NjAyLC01MDA3NDY5ODUsLTE0OTA3MzY0ODksLTEx
