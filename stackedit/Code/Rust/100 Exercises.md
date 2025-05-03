@@ -670,7 +670,15 @@ pub fn assigned_to(&self) -> Option<&String>{
 }
 ```
 
+### 5.6 Fallibility
 
+`Result`
+: an `enum that can return a result or an error
+enum Result<T,E> {
+	Ok(T),
+	Err(E),
+}
+```
 
 
 
@@ -681,7 +689,7 @@ pub fn assigned_to(&self) -> Option<&String>{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU1NjUwNTY4LDE0MTczODU3NTksMjAyMD
+eyJoaXN0b3J5IjpbMTExNDA3MTE0LDE0MTczODU3NTksMjAyMD
 Q1MjE0NiwtMTkxMjg3NTg1OCw3ODYxNDI3NDUsMTI1NjUzNTYy
 NCwxMjI3ODMxNjM5LC04OTk2ODYxOSwtMjE0MDQzMTU0LC02MD
 kwMTI0MDMsLTE4ODkwNDY5NzMsLTIxMTc1NDAwNjksLTUzMDQ5
