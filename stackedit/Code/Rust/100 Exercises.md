@@ -750,16 +750,38 @@ pub trait Display {
 1. Debug is intended for developers and has a default implementation
 2. Display is intended for end users and must be implemented
 
+```rust
+use std::fmt::{Display, Formatter, Debug};
+use std::error::Error;
 
+#[derive(Debug)]
+enum TicketNewError {
+    TitleError(String),
+    DescriptionError(String),
+}
+
+impl Display for TicketNewError{
+    fn fmt(&self, f: &mut Formatter<'_>) -> std::fmt::Result{
+        match &self{
+            TicketNewError::TitleError(string) | 
+            TicketNewError::DescriptionError(string) => {
+                write!(f,"{}",string)
+            }
+        }
+    }
+}
+
+impl Error for TicketNewError {}
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODMwMDMzNDI0LC01NTgwMzIwMzcsMjE0OT
-Y5NDA2LDkyNTA2NTI3OCwtMTA1ODg3MzU2MCwxMzUzNzE5Nzg3
-LDE3MTExNDI5NDYsMTQxNzM4NTc1OSwyMDIwNDUyMTQ2LC0xOT
-EyODc1ODU4LDc4NjE0Mjc0NSwxMjU2NTM1NjI0LDEyMjc4MzE2
-MzksLTg5OTY4NjE5LC0yMTQwNDMxNTQsLTYwOTAxMjQwMywtMT
-g4OTA0Njk3MywtMjExNzU0MDA2OSwtNTMwNDk3NDg1LDE2NzM3
-Nzc2MDJdfQ==
+eyJoaXN0b3J5IjpbLTEyNDA2NjI1MDUsODMwMDMzNDI0LC01NT
+gwMzIwMzcsMjE0OTY5NDA2LDkyNTA2NTI3OCwtMTA1ODg3MzU2
+MCwxMzUzNzE5Nzg3LDE3MTExNDI5NDYsMTQxNzM4NTc1OSwyMD
+IwNDUyMTQ2LC0xOTEyODc1ODU4LDc4NjE0Mjc0NSwxMjU2NTM1
+NjI0LDEyMjc4MzE2MzksLTg5OTY4NjE5LC0yMTQwNDMxNTQsLT
+YwOTAxMjQwMywtMTg4OTA0Njk3MywtMjExNzU0MDA2OSwtNTMw
+NDk3NDg1XX0=
 -->
