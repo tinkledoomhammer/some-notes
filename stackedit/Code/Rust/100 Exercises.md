@@ -644,16 +644,18 @@ println!("{}, {}", first.0, first.1);
 
 Tuple-like Structs
 ```rust
-struct Point(i32, i32)
+struct Point(i32, i32);
+let point=Point(10,20);
+println("({},{})",point.0, point.1);
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Nzk2NzQ4MTEsLTE5MTI4NzU4NTgsNz
-g2MTQyNzQ1LDEyNTY1MzU2MjQsMTIyNzgzMTYzOSwtODk5Njg2
-MTksLTIxNDA0MzE1NCwtNjA5MDEyNDAzLC0xODg5MDQ2OTczLC
-0yMTE3NTQwMDY5LC01MzA0OTc0ODUsMTY3Mzc3NzYwMiwtNTAw
-NzQ2OTg1LC0xNDkwNzM2NDg5LC0xMTkzODY0NzEzLDE4Njc4MD
-c2OTEsMTI4Mjk3MDk3NSwtMTgwNzEyMDg3LC0xNDIzNDYxMDEw
-LC04NjkyMzAxOF19
+eyJoaXN0b3J5IjpbLTM3NzQ0NzA4LC0xOTEyODc1ODU4LDc4Nj
+E0Mjc0NSwxMjU2NTM1NjI0LDEyMjc4MzE2MzksLTg5OTY4NjE5
+LC0yMTQwNDMxNTQsLTYwOTAxMjQwMywtMTg4OTA0Njk3MywtMj
+ExNzU0MDA2OSwtNTMwNDk3NDg1LDE2NzM3Nzc2MDIsLTUwMDc0
+Njk4NSwtMTQ5MDczNjQ4OSwtMTE5Mzg2NDcxMywxODY3ODA3Nj
+kxLDEyODI5NzA5NzUsLTE4MDcxMjA4NywtMTQyMzQ2MTAxMCwt
+ODY5MjMwMThdfQ==
 -->
