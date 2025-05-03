@@ -689,6 +689,10 @@ Unrecoverable errors
 : `panic!("Message")`
 * should be used sparingly
 
+Exercise
+```rust
+fn new(title: String) -> Result<Ticket,String>{
+```
 
 
 
@@ -699,11 +703,11 @@ Unrecoverable errors
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMTE0Mjk0NiwxNDE3Mzg1NzU5LDIwMj
-A0NTIxNDYsLTE5MTI4NzU4NTgsNzg2MTQyNzQ1LDEyNTY1MzU2
-MjQsMTIyNzgzMTYzOSwtODk5Njg2MTksLTIxNDA0MzE1NCwtNj
-A5MDEyNDAzLC0xODg5MDQ2OTczLC0yMTE3NTQwMDY5LC01MzA0
-OTc0ODUsMTY3Mzc3NzYwMiwtNTAwNzQ2OTg1LC0xNDkwNzM2ND
-g5LC0xMTkzODY0NzEzLDE4Njc4MDc2OTEsMTI4Mjk3MDk3NSwt
-MTgwNzEyMDg3XX0=
+eyJoaXN0b3J5IjpbLTM1NzIzNjI2MiwxNzExMTQyOTQ2LDE0MT
+czODU3NTksMjAyMDQ1MjE0NiwtMTkxMjg3NTg1OCw3ODYxNDI3
+NDUsMTI1NjUzNTYyNCwxMjI3ODMxNjM5LC04OTk2ODYxOSwtMj
+E0MDQzMTU0LC02MDkwMTI0MDMsLTE4ODkwNDY5NzMsLTIxMTc1
+NDAwNjksLTUzMDQ5NzQ4NSwxNjczNzc3NjAyLC01MDA3NDY5OD
+UsLTE0OTA3MzY0ODksLTExOTM4NjQ3MTMsMTg2NzgwNzY5MSwx
+MjgyOTcwOTc1XX0=
 -->
