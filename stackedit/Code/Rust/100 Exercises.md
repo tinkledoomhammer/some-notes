@@ -784,15 +784,24 @@ Crate
 * can be **binary** or **library** crates
 
 Binaries
-: a program compiled into an executa
+: a program compiled into an executable file
+* must in clude a `main` function
+
+Libraries
+: a group of code (functions, types, etc) that can be used by other packages as a **dependency**
+
+Conventions
+1. The packages source code is in its `src` directory
+2. if there's a `src/lib.rs` file, cargo will infer a library crate
+2. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE3OTIzMDgzLC0xMjQwNjYyNTA1LDgzMD
-AzMzQyNCwtNTU4MDMyMDM3LDIxNDk2OTQwNiw5MjUwNjUyNzgs
-LTEwNTg4NzM1NjAsMTM1MzcxOTc4NywxNzExMTQyOTQ2LDE0MT
-czODU3NTksMjAyMDQ1MjE0NiwtMTkxMjg3NTg1OCw3ODYxNDI3
-NDUsMTI1NjUzNTYyNCwxMjI3ODMxNjM5LC04OTk2ODYxOSwtMj
-E0MDQzMTU0LC02MDkwMTI0MDMsLTE4ODkwNDY5NzMsLTIxMTc1
-NDAwNjldfQ==
+eyJoaXN0b3J5IjpbLTE2OTk1NTg0NSwtMTI0MDY2MjUwNSw4Mz
+AwMzM0MjQsLTU1ODAzMjAzNywyMTQ5Njk0MDYsOTI1MDY1Mjc4
+LC0xMDU4ODczNTYwLDEzNTM3MTk3ODcsMTcxMTE0Mjk0NiwxND
+E3Mzg1NzU5LDIwMjA0NTIxNDYsLTE5MTI4NzU4NTgsNzg2MTQy
+NzQ1LDEyNTY1MzU2MjQsMTIyNzgzMTYzOSwtODk5Njg2MTksLT
+IxNDA0MzE1NCwtNjA5MDEyNDAzLC0xODg5MDQ2OTczLC0yMTE3
+NTQwMDY5XX0=
 -->
