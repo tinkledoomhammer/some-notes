@@ -823,18 +823,26 @@ my-library = { path = "../my-library" }
 ```
 * The path is relative to the `Cargo.toml` file that declares the dependency
 
-Other Sou
+Other sources
 : https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html
+
+`[dev-dependencies]` section of `Cargo.toml`
+: specifies that are only used for development
+* they only get pulled in when running `cargo test`
+```ini
+[dev-dependencies]
+static_assertions = "1.1.0"
+```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0NzY3NzkzLDE5NDQyMzI4MjcsLTEyND
-A2NjI1MDUsODMwMDMzNDI0LC01NTgwMzIwMzcsMjE0OTY5NDA2
-LDkyNTA2NTI3OCwtMTA1ODg3MzU2MCwxMzUzNzE5Nzg3LDE3MT
-ExNDI5NDYsMTQxNzM4NTc1OSwyMDIwNDUyMTQ2LC0xOTEyODc1
-ODU4LDc4NjE0Mjc0NSwxMjU2NTM1NjI0LDEyMjc4MzE2MzksLT
-g5OTY4NjE5LC0yMTQwNDMxNTQsLTYwOTAxMjQwMywtMTg4OTA0
-Njk3M119
+eyJoaXN0b3J5IjpbLTcyMTQ1MzU2MiwxOTQ0MjMyODI3LC0xMj
+QwNjYyNTA1LDgzMDAzMzQyNCwtNTU4MDMyMDM3LDIxNDk2OTQw
+Niw5MjUwNjUyNzgsLTEwNTg4NzM1NjAsMTM1MzcxOTc4NywxNz
+ExMTQyOTQ2LDE0MTczODU3NTksMjAyMDQ1MjE0NiwtMTkxMjg3
+NTg1OCw3ODYxNDI3NDUsMTI1NjUzNTYyNCwxMjI3ODMxNjM5LC
+04OTk2ODYxOSwtMjE0MDQzMTU0LC02MDkwMTI0MDMsLTE4ODkw
+NDY5NzNdfQ==
 -->
