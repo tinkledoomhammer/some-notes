@@ -884,6 +884,41 @@ pub trait TryInto<T>: Sized {
 ```
 **Implementing `TryFrom` gives a matching `TryInto` for free**
 
+Exercise
+```rust
+#[derive(Debug, PartialEq, Clone)]
+enum Status {
+    ToDo,
+    InProgress,
+    Done,
+}
+impl TryFrom<String> for Status{
+    type Error = String;
+    fn try_from(value: String) -> Result<Status, Self::Error> {
+        <Self as TryFrom<&str>>::try_from(&value[..])
+    } 
+}
+
+impl TryFrom<&str> for Status{
+    type Error = String;
+    fn try_from(value: &str) -> Result<Status, Self::Error> {
+        if value.to_ascii_lowercase() == "todo"{
+            return Ok(Status::ToDo);
+        }
+        if value.to_ascii_lowercase() == "inprogress"{
+            return Ok(Status::InProgress)
+        }
+        if value.to_ascii_lowercase() == "done" {
+            return Ok(Status::Done)
+        }
+
+        Err("Invalid".into())
+    }
+}
+```
+
+### 5.15 Error::source
+
 
 
 
@@ -891,11 +926,11 @@ pub trait TryInto<T>: Sized {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTEwMjk0NjcsLTE0MTI1OTYxODQsLT
-cyMTQ1MzU2MiwxOTQ0MjMyODI3LC0xMjQwNjYyNTA1LDgzMDAz
-MzQyNCwtNTU4MDMyMDM3LDIxNDk2OTQwNiw5MjUwNjUyNzgsLT
-EwNTg4NzM1NjAsMTM1MzcxOTc4NywxNzExMTQyOTQ2LDE0MTcz
-ODU3NTksMjAyMDQ1MjE0NiwtMTkxMjg3NTg1OCw3ODYxNDI3ND
-UsMTI1NjUzNTYyNCwxMjI3ODMxNjM5LC04OTk2ODYxOSwtMjE0
-MDQzMTU0XX0=
+eyJoaXN0b3J5IjpbLTEyMjYxMzQ2ODcsLTEyMTEwMjk0NjcsLT
+E0MTI1OTYxODQsLTcyMTQ1MzU2MiwxOTQ0MjMyODI3LC0xMjQw
+NjYyNTA1LDgzMDAzMzQyNCwtNTU4MDMyMDM3LDIxNDk2OTQwNi
+w5MjUwNjUyNzgsLTEwNTg4NzM1NjAsMTM1MzcxOTc4NywxNzEx
+MTQyOTQ2LDE0MTczODU3NTksMjAyMDQ1MjE0NiwtMTkxMjg3NT
+g1OCw3ODYxNDI3NDUsMTI1NjUzNTYyNCwxMjI3ODMxNjM5LC04
+OTk2ODYxOV19
 -->
