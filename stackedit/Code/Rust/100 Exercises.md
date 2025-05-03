@@ -703,7 +703,8 @@ fn new(title: String) -> Result<Ticket,String>{
 `result.unwrap()`
 : returns the `Ok` value or panics on `Err`
 
-
+`result.expect("error message")`
+: returns the `Ok` value or panics with the specified message on `Err`
 
 
 
@@ -714,11 +715,11 @@ fn new(title: String) -> Result<Ticket,String>{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MDE0NDQzMCwxMzUzNzE5Nzg3LDE3MT
-ExNDI5NDYsMTQxNzM4NTc1OSwyMDIwNDUyMTQ2LC0xOTEyODc1
-ODU4LDc4NjE0Mjc0NSwxMjU2NTM1NjI0LDEyMjc4MzE2MzksLT
-g5OTY4NjE5LC0yMTQwNDMxNTQsLTYwOTAxMjQwMywtMTg4OTA0
-Njk3MywtMjExNzU0MDA2OSwtNTMwNDk3NDg1LDE2NzM3Nzc2MD
-IsLTUwMDc0Njk4NSwtMTQ5MDczNjQ4OSwtMTE5Mzg2NDcxMywx
-ODY3ODA3NjkxXX0=
+eyJoaXN0b3J5IjpbLTEwNTg4NzM1NjAsMTM1MzcxOTc4NywxNz
+ExMTQyOTQ2LDE0MTczODU3NTksMjAyMDQ1MjE0NiwtMTkxMjg3
+NTg1OCw3ODYxNDI3NDUsMTI1NjUzNTYyNCwxMjI3ODMxNjM5LC
+04OTk2ODYxOSwtMjE0MDQzMTU0LC02MDkwMTI0MDMsLTE4ODkw
+NDY5NzMsLTIxMTc1NDAwNjksLTUzMDQ5NzQ4NSwxNjczNzc3Nj
+AyLC01MDA3NDY5ODUsLTE0OTA3MzY0ODksLTExOTM4NjQ3MTMs
+MTg2NzgwNzY5MV19
 -->
