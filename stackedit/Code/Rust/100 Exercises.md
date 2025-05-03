@@ -600,7 +600,7 @@ match status{
     }
 ```
 
-#### branching `let`
+### 5.4 branching `let`
 `if let`
 ```rust
 impl Ticket{
@@ -633,14 +633,21 @@ else{ panic!("...") };
 ```
 **
 
+### 5.5 Nullability
+
+Tuples
+: like structs but without naming members
+```rust
+let first : (i32, i32) = (3, 4);
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg1Njc1MDIsLTE5MTI4NzU4NTgsNzg2MT
-QyNzQ1LDEyNTY1MzU2MjQsMTIyNzgzMTYzOSwtODk5Njg2MTks
-LTIxNDA0MzE1NCwtNjA5MDEyNDAzLC0xODg5MDQ2OTczLC0yMT
-E3NTQwMDY5LC01MzA0OTc0ODUsMTY3Mzc3NzYwMiwtNTAwNzQ2
-OTg1LC0xNDkwNzM2NDg5LC0xMTkzODY0NzEzLDE4Njc4MDc2OT
-EsMTI4Mjk3MDk3NSwtMTgwNzEyMDg3LC0xNDIzNDYxMDEwLC04
-NjkyMzAxOF19
+eyJoaXN0b3J5IjpbLTM0MDQ1ODk4OCwtMTkxMjg3NTg1OCw3OD
+YxNDI3NDUsMTI1NjUzNTYyNCwxMjI3ODMxNjM5LC04OTk2ODYx
+OSwtMjE0MDQzMTU0LC02MDkwMTI0MDMsLTE4ODkwNDY5NzMsLT
+IxMTc1NDAwNjksLTUzMDQ5NzQ4NSwxNjczNzc3NjAyLC01MDA3
+NDY5ODUsLTE0OTA3MzY0ODksLTExOTM4NjQ3MTMsMTg2NzgwNz
+Y5MSwxMjgyOTcwOTc1LC0xODA3MTIwODcsLTE0MjM0NjEwMTAs
+LTg2OTIzMDE4XX0=
 -->
