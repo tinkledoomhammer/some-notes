@@ -811,14 +811,20 @@ thiserror = "1"
 	2. Downloading dependencies
 	3. Compiling the project (including dependencies)
 * Dependency resolution is skipped if there is a `Cargo.lock` file and `Cargo.toml` has not changed
+	* `Cargo.lock` file lists the **exact** versions of dependencies
+	* It should be stored in version control
+* `cargo update` will update the `Cargo.lock` file with the latest compatible versions of all dependencies
+
+Path dependencies
+: dependenci
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY4MDQ0Nzk0LDE5NDQyMzI4MjcsLTEyND
-A2NjI1MDUsODMwMDMzNDI0LC01NTgwMzIwMzcsMjE0OTY5NDA2
-LDkyNTA2NTI3OCwtMTA1ODg3MzU2MCwxMzUzNzE5Nzg3LDE3MT
-ExNDI5NDYsMTQxNzM4NTc1OSwyMDIwNDUyMTQ2LC0xOTEyODc1
-ODU4LDc4NjE0Mjc0NSwxMjU2NTM1NjI0LDEyMjc4MzE2MzksLT
-g5OTY4NjE5LC0yMTQwNDMxNTQsLTYwOTAxMjQwMywtMTg4OTA0
-Njk3M119
+eyJoaXN0b3J5IjpbMTc4NDMzNTY4MCwxOTQ0MjMyODI3LC0xMj
+QwNjYyNTA1LDgzMDAzMzQyNCwtNTU4MDMyMDM3LDIxNDk2OTQw
+Niw5MjUwNjUyNzgsLTEwNTg4NzM1NjAsMTM1MzcxOTc4NywxNz
+ExMTQyOTQ2LDE0MTczODU3NTksMjAyMDQ1MjE0NiwtMTkxMjg3
+NTg1OCw3ODYxNDI3NDUsMTI1NjUzNTYyNCwxMjI3ODMxNjM5LC
+04OTk2ODYxOSwtMjE0MDQzMTU0LC02MDkwMTI0MDMsLTE4ODkw
+NDY5NzNdfQ==
 -->
