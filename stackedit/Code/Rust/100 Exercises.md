@@ -673,13 +673,20 @@ pub fn assigned_to(&self) -> Option<&String>{
 ### 5.6 Fallibility
 
 `Result`
-: an `enum that can return a result or an error
+: an `enum` that can return a result or an error
+```rust
 enum Result<T,E> {
 	Ok(T),
 	Err(E),
 }
 ```
 
+Recoverable errors
+: represented as values in rust
+* No exceptions
+
+Unrecoverable errors
+: `panic!
 
 
 
@@ -689,11 +696,11 @@ enum Result<T,E> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExNDA3MTE0LDE0MTczODU3NTksMjAyMD
-Q1MjE0NiwtMTkxMjg3NTg1OCw3ODYxNDI3NDUsMTI1NjUzNTYy
-NCwxMjI3ODMxNjM5LC04OTk2ODYxOSwtMjE0MDQzMTU0LC02MD
-kwMTI0MDMsLTE4ODkwNDY5NzMsLTIxMTc1NDAwNjksLTUzMDQ5
-NzQ4NSwxNjczNzc3NjAyLC01MDA3NDY5ODUsLTE0OTA3MzY0OD
-ksLTExOTM4NjQ3MTMsMTg2NzgwNzY5MSwxMjgyOTcwOTc1LC0x
-ODA3MTIwODddfQ==
+eyJoaXN0b3J5IjpbLTEwMDI5MTYxMTAsMTQxNzM4NTc1OSwyMD
+IwNDUyMTQ2LC0xOTEyODc1ODU4LDc4NjE0Mjc0NSwxMjU2NTM1
+NjI0LDEyMjc4MzE2MzksLTg5OTY4NjE5LC0yMTQwNDMxNTQsLT
+YwOTAxMjQwMywtMTg4OTA0Njk3MywtMjExNzU0MDA2OSwtNTMw
+NDk3NDg1LDE2NzM3Nzc2MDIsLTUwMDc0Njk4NSwtMTQ5MDczNj
+Q4OSwtMTE5Mzg2NDcxMywxODY3ODA3NjkxLDEyODI5NzA5NzUs
+LTE4MDcxMjA4N119
 -->
