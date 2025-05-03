@@ -698,6 +698,13 @@ fn new(title: String) -> Result<Ticket,String>{
 	Ok(Ticket{title})
 ```
 
+### 5.7 Unwrapping
+
+`result.unwrap()`
+: returns the `Ok` value or panics on `Err`
+
+
+
 
 
 
@@ -707,11 +714,11 @@ fn new(title: String) -> Result<Ticket,String>{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1MzcxOTc4NywxNzExMTQyOTQ2LDE0MT
-czODU3NTksMjAyMDQ1MjE0NiwtMTkxMjg3NTg1OCw3ODYxNDI3
-NDUsMTI1NjUzNTYyNCwxMjI3ODMxNjM5LC04OTk2ODYxOSwtMj
-E0MDQzMTU0LC02MDkwMTI0MDMsLTE4ODkwNDY5NzMsLTIxMTc1
-NDAwNjksLTUzMDQ5NzQ4NSwxNjczNzc3NjAyLC01MDA3NDY5OD
-UsLTE0OTA3MzY0ODksLTExOTM4NjQ3MTMsMTg2NzgwNzY5MSwx
-MjgyOTcwOTc1XX0=
+eyJoaXN0b3J5IjpbMTc1MDE0NDQzMCwxMzUzNzE5Nzg3LDE3MT
+ExNDI5NDYsMTQxNzM4NTc1OSwyMDIwNDUyMTQ2LC0xOTEyODc1
+ODU4LDc4NjE0Mjc0NSwxMjU2NTM1NjI0LDEyMjc4MzE2MzksLT
+g5OTY4NjE5LC0yMTQwNDMxNTQsLTYwOTAxMjQwMywtMTg4OTA0
+Njk3MywtMjExNzU0MDA2OSwtNTMwNDk3NDg1LDE2NzM3Nzc2MD
+IsLTUwMDc0Njk4NSwtMTQ5MDczNjQ4OSwtMTE5Mzg2NDcxMywx
+ODY3ODA3NjkxXX0=
 -->
