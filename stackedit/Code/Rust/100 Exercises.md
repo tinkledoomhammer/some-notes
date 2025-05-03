@@ -805,15 +805,20 @@ thiserror = "1"
 ```
 `[dependencies]` section in `Cargo.toml`
 : defines the dependencies and version requirements for the package
-* Will be downloaded from 
+* Will be downloaded from `crates.io`
+* cargo build goes through stages
+	1. Dependency resolution
+	2. Downloading dependencies
+	3. Compiling the project (including dependencies)
+* Dependency resolution is skipped if there is a `Cargo.lock` file and `Cargo.toml` has not changed
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2Mjc0NTIwMSwxOTQ0MjMyODI3LC0xMj
-QwNjYyNTA1LDgzMDAzMzQyNCwtNTU4MDMyMDM3LDIxNDk2OTQw
-Niw5MjUwNjUyNzgsLTEwNTg4NzM1NjAsMTM1MzcxOTc4NywxNz
-ExMTQyOTQ2LDE0MTczODU3NTksMjAyMDQ1MjE0NiwtMTkxMjg3
-NTg1OCw3ODYxNDI3NDUsMTI1NjUzNTYyNCwxMjI3ODMxNjM5LC
-04OTk2ODYxOSwtMjE0MDQzMTU0LC02MDkwMTI0MDMsLTE4ODkw
-NDY5NzNdfQ==
+eyJoaXN0b3J5IjpbOTY4MDQ0Nzk0LDE5NDQyMzI4MjcsLTEyND
+A2NjI1MDUsODMwMDMzNDI0LC01NTgwMzIwMzcsMjE0OTY5NDA2
+LDkyNTA2NTI3OCwtMTA1ODg3MzU2MCwxMzUzNzE5Nzg3LDE3MT
+ExNDI5NDYsMTQxNzM4NTc1OSwyMDIwNDUyMTQ2LC0xOTEyODc1
+ODU4LDc4NjE0Mjc0NSwxMjU2NTM1NjI0LDEyMjc4MzE2MzksLT
+g5OTY4NjE5LC0yMTQwNDMxNTQsLTYwOTAxMjQwMywtMTg4OTA0
+Njk3M119
 -->
