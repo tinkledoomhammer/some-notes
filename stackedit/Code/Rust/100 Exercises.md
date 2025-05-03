@@ -706,7 +706,13 @@ fn new(title: String) -> Result<Ticket,String>{
 `result.expect("error message")`
 : returns the `Ok` value or panics with the specified message on `Err`
 
+```rust
+// Panics
+let number = parse_int("34").unwrap();
+//again but with an error message
+let number = parse_int("42").expec
 
+```
 
 
 
@@ -715,11 +721,11 @@ fn new(title: String) -> Result<Ticket,String>{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTg4NzM1NjAsMTM1MzcxOTc4NywxNz
-ExMTQyOTQ2LDE0MTczODU3NTksMjAyMDQ1MjE0NiwtMTkxMjg3
-NTg1OCw3ODYxNDI3NDUsMTI1NjUzNTYyNCwxMjI3ODMxNjM5LC
-04OTk2ODYxOSwtMjE0MDQzMTU0LC02MDkwMTI0MDMsLTE4ODkw
-NDY5NzMsLTIxMTc1NDAwNjksLTUzMDQ5NzQ4NSwxNjczNzc3Nj
-AyLC01MDA3NDY5ODUsLTE0OTA3MzY0ODksLTExOTM4NjQ3MTMs
-MTg2NzgwNzY5MV19
+eyJoaXN0b3J5IjpbLTM2ODc2ODY4NiwtMTA1ODg3MzU2MCwxMz
+UzNzE5Nzg3LDE3MTExNDI5NDYsMTQxNzM4NTc1OSwyMDIwNDUy
+MTQ2LC0xOTEyODc1ODU4LDc4NjE0Mjc0NSwxMjU2NTM1NjI0LD
+EyMjc4MzE2MzksLTg5OTY4NjE5LC0yMTQwNDMxNTQsLTYwOTAx
+MjQwMywtMTg4OTA0Njk3MywtMjExNzU0MDA2OSwtNTMwNDk3ND
+g1LDE2NzM3Nzc2MDIsLTUwMDc0Njk4NSwtMTQ5MDczNjQ4OSwt
+MTE5Mzg2NDcxM119
 -->
