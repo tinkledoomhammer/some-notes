@@ -692,6 +692,10 @@ Unrecoverable errors
 Exercise
 ```rust
 fn new(title: String) -> Result<Ticket,String>{
+	if title.is_empty() {
+		return Err("Title cannot be empty".to_string());
+	}
+	Ok(Ticket{title})
 ```
 
 
@@ -703,7 +707,7 @@ fn new(title: String) -> Result<Ticket,String>{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NzIzNjI2MiwxNzExMTQyOTQ2LDE0MT
+eyJoaXN0b3J5IjpbMTM1MzcxOTc4NywxNzExMTQyOTQ2LDE0MT
 czODU3NTksMjAyMDQ1MjE0NiwtMTkxMjg3NTg1OCw3ODYxNDI3
 NDUsMTI1NjUzNTYyNCwxMjI3ODMxNjM5LC04OTk2ODYxOSwtMj
 E0MDQzMTU0LC02MDkwMTI0MDMsLTE4ODkwNDY5NzMsLTIxMTc1
