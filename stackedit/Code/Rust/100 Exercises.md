@@ -710,7 +710,13 @@ fn new(title: String) -> Result<Ticket,String>{
 // Panics
 let number = parse_int("34").unwrap();
 //again but with an error message
-let number = parse_int("42").expec
+let number = parse_int("42").expect("Failed to parse integerr");
+
+//or match
+let number = parse_int("43"){
+	Ok(number) => number,
+	Err(err) => panic!("{}",err),
+}
 
 ```
 
@@ -721,11 +727,11 @@ let number = parse_int("42").expec
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2ODc2ODY4NiwtMTA1ODg3MzU2MCwxMz
-UzNzE5Nzg3LDE3MTExNDI5NDYsMTQxNzM4NTc1OSwyMDIwNDUy
-MTQ2LC0xOTEyODc1ODU4LDc4NjE0Mjc0NSwxMjU2NTM1NjI0LD
-EyMjc4MzE2MzksLTg5OTY4NjE5LC0yMTQwNDMxNTQsLTYwOTAx
-MjQwMywtMTg4OTA0Njk3MywtMjExNzU0MDA2OSwtNTMwNDk3ND
-g1LDE2NzM3Nzc2MDIsLTUwMDc0Njk4NSwtMTQ5MDczNjQ4OSwt
-MTE5Mzg2NDcxM119
+eyJoaXN0b3J5IjpbLTIwMDQxNzQ0ODksLTEwNTg4NzM1NjAsMT
+M1MzcxOTc4NywxNzExMTQyOTQ2LDE0MTczODU3NTksMjAyMDQ1
+MjE0NiwtMTkxMjg3NTg1OCw3ODYxNDI3NDUsMTI1NjUzNTYyNC
+wxMjI3ODMxNjM5LC04OTk2ODYxOSwtMjE0MDQzMTU0LC02MDkw
+MTI0MDMsLTE4ODkwNDY5NzMsLTIxMTc1NDAwNjksLTUzMDQ5Nz
+Q4NSwxNjczNzc3NjAyLC01MDA3NDY5ODUsLTE0OTA3MzY0ODks
+LTExOTM4NjQ3MTNdfQ==
 -->
