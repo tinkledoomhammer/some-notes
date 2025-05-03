@@ -796,15 +796,19 @@ Conventions
 3. `src/main.rs` for binary crates
 4. This can all be changed by editing `Cargo.toml` see https://doc.rust-lang.org/cargo/reference/cargo-targets.html#cargo-targets
 
+* You can just add a `lib.rs` file to add a library to an existing project with a binary crate
 
+### 5.11 Dependencies
+```toml
+``
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NDIzMjgyNywtMTI0MDY2MjUwNSw4Mz
-AwMzM0MjQsLTU1ODAzMjAzNywyMTQ5Njk0MDYsOTI1MDY1Mjc4
-LC0xMDU4ODczNTYwLDEzNTM3MTk3ODcsMTcxMTE0Mjk0NiwxND
-E3Mzg1NzU5LDIwMjA0NTIxNDYsLTE5MTI4NzU4NTgsNzg2MTQy
-NzQ1LDEyNTY1MzU2MjQsMTIyNzgzMTYzOSwtODk5Njg2MTksLT
-IxNDA0MzE1NCwtNjA5MDEyNDAzLC0xODg5MDQ2OTczLC0yMTE3
-NTQwMDY5XX0=
+eyJoaXN0b3J5IjpbLTEyMzE3NzAwNTAsMTk0NDIzMjgyNywtMT
+I0MDY2MjUwNSw4MzAwMzM0MjQsLTU1ODAzMjAzNywyMTQ5Njk0
+MDYsOTI1MDY1Mjc4LC0xMDU4ODczNTYwLDEzNTM3MTk3ODcsMT
+cxMTE0Mjk0NiwxNDE3Mzg1NzU5LDIwMjA0NTIxNDYsLTE5MTI4
+NzU4NTgsNzg2MTQyNzQ1LDEyNTY1MzU2MjQsMTIyNzgzMTYzOS
+wtODk5Njg2MTksLTIxNDA0MzE1NCwtNjA5MDEyNDAzLC0xODg5
+MDQ2OTczXX0=
 -->
