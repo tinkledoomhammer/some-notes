@@ -850,14 +850,33 @@ enum TicketNewError {
 : specifies which field of the variant will be returned.
 * in this case the 0^th^ field of the tuple 
 
+Exercise
+```rust
+#[derive(thiserror::Error, Debug)]
+enum TicketNewError {
+    #[error("Title cannot be empty")]
+    TitleCannotBeEmpty,
+    #[error("Title cannot be longer than 50 bytes")]
+    TitleTooLong,
+    #[error("Description cannot be empty")]
+    DescriptionCannotBeEmpty,
+    #[error("Description cannot be longer than 500 bytes")]
+    DescriptionTooLong,
+}
+```
+
+### 5.13 `TryFrom` and `TryInto`
+defined in `std::convert` 
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTI1OTYxODQsLTcyMTQ1MzU2MiwxOT
-Q0MjMyODI3LC0xMjQwNjYyNTA1LDgzMDAzMzQyNCwtNTU4MDMy
-MDM3LDIxNDk2OTQwNiw5MjUwNjUyNzgsLTEwNTg4NzM1NjAsMT
-M1MzcxOTc4NywxNzExMTQyOTQ2LDE0MTczODU3NTksMjAyMDQ1
-MjE0NiwtMTkxMjg3NTg1OCw3ODYxNDI3NDUsMTI1NjUzNTYyNC
-wxMjI3ODMxNjM5LC04OTk2ODYxOSwtMjE0MDQzMTU0LC02MDkw
-MTI0MDNdfQ==
+eyJoaXN0b3J5IjpbLTEzNzQ2MDgzOTYsLTE0MTI1OTYxODQsLT
+cyMTQ1MzU2MiwxOTQ0MjMyODI3LC0xMjQwNjYyNTA1LDgzMDAz
+MzQyNCwtNTU4MDMyMDM3LDIxNDk2OTQwNiw5MjUwNjUyNzgsLT
+EwNTg4NzM1NjAsMTM1MzcxOTc4NywxNzExMTQyOTQ2LDE0MTcz
+ODU3NTksMjAyMDQ1MjE0NiwtMTkxMjg3NTg1OCw3ODYxNDI3ND
+UsMTI1NjUzNTYyNCwxMjI3ODMxNjM5LC04OTk2ODYxOSwtMjE0
+MDQzMTU0XX0=
 -->
