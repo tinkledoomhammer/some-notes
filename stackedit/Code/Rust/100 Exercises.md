@@ -742,18 +742,24 @@ match s.parse_u32() {
 
 ```rust
 pub trait Debug {
-	fn fmt(&self, f: &mut Formatter<`_>
+	fn fmt(&self, f: &mut Formatter<`_>) -> Result<(), Error>;
+}
+pub trait Display {
+	// same as Debug
+```
+1. Debug is intended for developers and has a default implementation
+2. Display is intended for end users and must be implemented
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTExMjY4MzY2LC01NTgwMzIwMzcsMjE0OT
-Y5NDA2LDkyNTA2NTI3OCwtMTA1ODg3MzU2MCwxMzUzNzE5Nzg3
-LDE3MTExNDI5NDYsMTQxNzM4NTc1OSwyMDIwNDUyMTQ2LC0xOT
-EyODc1ODU4LDc4NjE0Mjc0NSwxMjU2NTM1NjI0LDEyMjc4MzE2
-MzksLTg5OTY4NjE5LC0yMTQwNDMxNTQsLTYwOTAxMjQwMywtMT
-g4OTA0Njk3MywtMjExNzU0MDA2OSwtNTMwNDk3NDg1LDE2NzM3
-Nzc2MDJdfQ==
+eyJoaXN0b3J5IjpbMTc3Nzc4NDMzMSwtNTU4MDMyMDM3LDIxND
+k2OTQwNiw5MjUwNjUyNzgsLTEwNTg4NzM1NjAsMTM1MzcxOTc4
+NywxNzExMTQyOTQ2LDE0MTczODU3NTksMjAyMDQ1MjE0NiwtMT
+kxMjg3NTg1OCw3ODYxNDI3NDUsMTI1NjUzNTYyNCwxMjI3ODMx
+NjM5LC04OTk2ODYxOSwtMjE0MDQzMTU0LC02MDkwMTI0MDMsLT
+E4ODkwNDY5NzMsLTIxMTc1NDAwNjksLTUzMDQ5NzQ4NSwxNjcz
+Nzc3NjAyXX0=
 -->
