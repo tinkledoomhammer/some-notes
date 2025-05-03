@@ -872,7 +872,16 @@ enum TicketNewError {
 * defined in `std::convert` like `From` and `Into`
 
 ```rust
-pu
+pub trait TryFrom<T> : Sized {
+	type Error;
+	fn try_from(value: T) -> Result<Self, Self::Error>;
+}
+
+pub trait TryInto<T>: Sized {
+	type Error
+	fn try_into(self) -> Result<T, Self::Error>;
+}
+
 ```
 
 
@@ -881,11 +890,11 @@ pu
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjYwOTY2OTAsLTE0MTI1OTYxODQsLT
-cyMTQ1MzU2MiwxOTQ0MjMyODI3LC0xMjQwNjYyNTA1LDgzMDAz
-MzQyNCwtNTU4MDMyMDM3LDIxNDk2OTQwNiw5MjUwNjUyNzgsLT
-EwNTg4NzM1NjAsMTM1MzcxOTc4NywxNzExMTQyOTQ2LDE0MTcz
-ODU3NTksMjAyMDQ1MjE0NiwtMTkxMjg3NTg1OCw3ODYxNDI3ND
-UsMTI1NjUzNTYyNCwxMjI3ODMxNjM5LC04OTk2ODYxOSwtMjE0
-MDQzMTU0XX0=
+eyJoaXN0b3J5IjpbLTI4OTg0MTQ0NywtMTQxMjU5NjE4NCwtNz
+IxNDUzNTYyLDE5NDQyMzI4MjcsLTEyNDA2NjI1MDUsODMwMDMz
+NDI0LC01NTgwMzIwMzcsMjE0OTY5NDA2LDkyNTA2NTI3OCwtMT
+A1ODg3MzU2MCwxMzUzNzE5Nzg3LDE3MTExNDI5NDYsMTQxNzM4
+NTc1OSwyMDIwNDUyMTQ2LC0xOTEyODc1ODU4LDc4NjE0Mjc0NS
+wxMjU2NTM1NjI0LDEyMjc4MzE2MzksLTg5OTY4NjE5LC0yMTQw
+NDMxNTRdfQ==
 -->
