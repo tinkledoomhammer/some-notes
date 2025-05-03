@@ -728,7 +728,13 @@ enum U32ParseError {
 }
 
 match s.parse_u32() {
-	
+	Ok(n) => n,
+	Err(U32ParseError::Negative) => 0,
+	Error(U32ParseError::TooLarge) => u32::MAX,
+	Err(U32ParseError::NotANumberr) => {
+		panic!("Not a number: {}", s);
+	}
+}
 ```
 
 
@@ -736,7 +742,7 @@ match s.parse_u32() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE2MjU3OTg5LDkyNTA2NTI3OCwtMTA1OD
+eyJoaXN0b3J5IjpbMjE0OTY5NDA2LDkyNTA2NTI3OCwtMTA1OD
 g3MzU2MCwxMzUzNzE5Nzg3LDE3MTExNDI5NDYsMTQxNzM4NTc1
 OSwyMDIwNDUyMTQ2LC0xOTEyODc1ODU4LDc4NjE0Mjc0NSwxMj
 U2NTM1NjI0LDEyMjc4MzE2MzksLTg5OTY4NjE5LC0yMTQwNDMx
