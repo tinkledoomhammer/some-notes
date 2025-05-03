@@ -921,7 +921,7 @@ impl TryFrom<&str> for Status{
 The full definition of `std::error::Error`
 ```rust
 pub trait Error: Debug + Display {
-	fn source(&self) -> Option(&dyn Error + 'static)>{
+	fn source(&self) -> Option<&(dyn Error + 'static)>{
 		None
 	}
 }
@@ -933,11 +933,11 @@ pub trait Error: Debug + Display {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzEzMjQzNzQsLTEyMTEwMjk0NjcsLT
-E0MTI1OTYxODQsLTcyMTQ1MzU2MiwxOTQ0MjMyODI3LC0xMjQw
-NjYyNTA1LDgzMDAzMzQyNCwtNTU4MDMyMDM3LDIxNDk2OTQwNi
-w5MjUwNjUyNzgsLTEwNTg4NzM1NjAsMTM1MzcxOTc4NywxNzEx
-MTQyOTQ2LDE0MTczODU3NTksMjAyMDQ1MjE0NiwtMTkxMjg3NT
-g1OCw3ODYxNDI3NDUsMTI1NjUzNTYyNCwxMjI3ODMxNjM5LC04
-OTk2ODYxOV19
+eyJoaXN0b3J5IjpbNjU0ODUyNjM2LC0xMjExMDI5NDY3LC0xND
+EyNTk2MTg0LC03MjE0NTM1NjIsMTk0NDIzMjgyNywtMTI0MDY2
+MjUwNSw4MzAwMzM0MjQsLTU1ODAzMjAzNywyMTQ5Njk0MDYsOT
+I1MDY1Mjc4LC0xMDU4ODczNTYwLDEzNTM3MTk3ODcsMTcxMTE0
+Mjk0NiwxNDE3Mzg1NzU5LDIwMjA0NTIxNDYsLTE5MTI4NzU4NT
+gsNzg2MTQyNzQ1LDEyNTY1MzU2MjQsMTIyNzgzMTYzOSwtODk5
+Njg2MTldfQ==
 -->
