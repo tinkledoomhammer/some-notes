@@ -47,7 +47,8 @@ name = "hello_cargo"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+# See more keys and their definitions at 
+# https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 
@@ -664,11 +665,11 @@ fn return_a_string() -> &String{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3MzI2MzE0MCwtNTM4MDE5NzAwLDgzNj
-U1NTQ5NywtMzk0MTczODkzLC0xNDQzNzg5NzA4LDYzNTQ1MzI1
-OSwxNTMzNTMyMTYxLC0yNTAyMzAxODQsMjI0Nzk2NDAxLDM4Mj
-k1OTcxMiwxOTA3NDcxMDM1LDY3MTg4NDIzMCwtMTkxODMyOTI2
-NiwxNTc5ODAyMTE1LDI0NDY2NjAzMywtMTM1ODYzODQ2NiwxMD
-Q4MTI1MjM0LC0xNDEwODQzMjE4LDYwNjU2MjIzMCw0MTY1NzU5
-MDJdfQ==
+eyJoaXN0b3J5IjpbLTExNTU5OTgyNTEsMTE3MzI2MzE0MCwtNT
+M4MDE5NzAwLDgzNjU1NTQ5NywtMzk0MTczODkzLC0xNDQzNzg5
+NzA4LDYzNTQ1MzI1OSwxNTMzNTMyMTYxLC0yNTAyMzAxODQsMj
+I0Nzk2NDAxLDM4Mjk1OTcxMiwxOTA3NDcxMDM1LDY3MTg4NDIz
+MCwtMTkxODMyOTI2NiwxNTc5ODAyMTE1LDI0NDY2NjAzMywtMT
+M1ODYzODQ2NiwxMDQ4MTI1MjM0LC0xNDEwODQzMjE4LDYwNjU2
+MjIzMF19
 -->
