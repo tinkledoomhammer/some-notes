@@ -618,25 +618,25 @@ impl Ticket{
 ```rust
 impl Ticket{
 	pub fn assigned_to(&self) -> &str {
-		let Status::InProgress {assigned_to} - &self.status else {
+		let Status::InProgress {assigned_to} = &self.status else {
 			panic(!"...");
 		}
 		assigned_to
 	}
 }
 ```
-`let else` 
+`let else` is used to avoid increasing indentation levels
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDU1OTU2MzUsMTI1NjUzNTYyNCwxMj
-I3ODMxNjM5LC04OTk2ODYxOSwtMjE0MDQzMTU0LC02MDkwMTI0
-MDMsLTE4ODkwNDY5NzMsLTIxMTc1NDAwNjksLTUzMDQ5NzQ4NS
-wxNjczNzc3NjAyLC01MDA3NDY5ODUsLTE0OTA3MzY0ODksLTEx
-OTM4NjQ3MTMsMTg2NzgwNzY5MSwxMjgyOTcwOTc1LC0xODA3MT
-IwODcsLTE0MjM0NjEwMTAsLTg2OTIzMDE4LC03NDE2NjM4MjYs
-OTk0MTgwNzMzXX0=
+eyJoaXN0b3J5IjpbNzg2MTQyNzQ1LDEyNTY1MzU2MjQsMTIyNz
+gzMTYzOSwtODk5Njg2MTksLTIxNDA0MzE1NCwtNjA5MDEyNDAz
+LC0xODg5MDQ2OTczLC0yMTE3NTQwMDY5LC01MzA0OTc0ODUsMT
+Y3Mzc3NzYwMiwtNTAwNzQ2OTg1LC0xNDkwNzM2NDg5LC0xMTkz
+ODY0NzEzLDE4Njc4MDc2OTEsMTI4Mjk3MDk3NSwtMTgwNzEyMD
+g3LC0xNDIzNDYxMDEwLC04NjkyMzAxOCwtNzQxNjYzODI2LDk5
+NDE4MDczM119
 -->
