@@ -1000,16 +1000,18 @@ fn read_file() -> Result<String, std::io::Error> {
 	Ok(contents)
 ```
 * It will automatically convert the error type of the result to the error type of the function is possible
+```rust
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMwMjYyNjI5LDY1NDg1MjYzNiwtMTIxMT
-AyOTQ2NywtMTQxMjU5NjE4NCwtNzIxNDUzNTYyLDE5NDQyMzI4
-MjcsLTEyNDA2NjI1MDUsODMwMDMzNDI0LC01NTgwMzIwMzcsMj
-E0OTY5NDA2LDkyNTA2NTI3OCwtMTA1ODg3MzU2MCwxMzUzNzE5
-Nzg3LDE3MTExNDI5NDYsMTQxNzM4NTc1OSwyMDIwNDUyMTQ2LC
-0xOTEyODc1ODU4LDc4NjE0Mjc0NSwxMjU2NTM1NjI0LDEyMjc4
-MzE2MzldfQ==
+eyJoaXN0b3J5IjpbMTY1MDg2NDkxOSw3MzAyNjI2MjksNjU0OD
+UyNjM2LC0xMjExMDI5NDY3LC0xNDEyNTk2MTg0LC03MjE0NTM1
+NjIsMTk0NDIzMjgyNywtMTI0MDY2MjUwNSw4MzAwMzM0MjQsLT
+U1ODAzMjAzNywyMTQ5Njk0MDYsOTI1MDY1Mjc4LC0xMDU4ODcz
+NTYwLDEzNTM3MTk3ODcsMTcxMTE0Mjk0NiwxNDE3Mzg1NzU5LD
+IwMjA0NTIxNDYsLTE5MTI4NzU4NTgsNzg2MTQyNzQ1LDEyNTY1
+MzU2MjRdfQ==
 -->
