@@ -866,13 +866,22 @@ enum TicketNewError {
 ```
 
 ### 5.13 `TryFrom` and `TryInto`
-defined in `std::convert` 
+
+`TryFrom` and `TryInto`
+: fallible versions of `From` and `Into`
+* defined in `std::convert` like `From` and `Into`
+
+```rust
+pu
+```
+
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzQ2MDgzOTYsLTE0MTI1OTYxODQsLT
+eyJoaXN0b3J5IjpbLTE0MjYwOTY2OTAsLTE0MTI1OTYxODQsLT
 cyMTQ1MzU2MiwxOTQ0MjMyODI3LC0xMjQwNjYyNTA1LDgzMDAz
 MzQyNCwtNTU4MDMyMDM3LDIxNDk2OTQwNiw5MjUwNjUyNzgsLT
 EwNTg4NzM1NjAsMTM1MzcxOTc4NywxNzExMTQyOTQ2LDE0MTcz
