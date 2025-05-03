@@ -777,11 +777,18 @@ impl Error for TicketNewError {}
 ### 5.10 Packages
 
 Package
-: Defined by the 
+: Defined by the `[package]` section in `Cargo.toml`
+
+Crate
+: components of a package, also known as targets
+* can be **binary** or **library** crates
+
+Binaries
+: a program compiled into an executa
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ0MjM5NzQ3LC0xMjQwNjYyNTA1LDgzMD
+eyJoaXN0b3J5IjpbOTE3OTIzMDgzLC0xMjQwNjYyNTA1LDgzMD
 AzMzQyNCwtNTU4MDMyMDM3LDIxNDk2OTQwNiw5MjUwNjUyNzgs
 LTEwNTg4NzM1NjAsMTM1MzcxOTc4NywxNzExMTQyOTQ2LDE0MT
 czODU3NTksMjAyMDQ1MjE0NiwtMTkxMjg3NTg1OCw3ODYxNDI3
