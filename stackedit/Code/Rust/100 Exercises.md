@@ -665,15 +665,26 @@ pub fn assigned_to(&self) -> Option<&String>{
 	let Status::InProgres{assigned_to} = &self.status
 	else { return None;};
 	return Some(assigned_to);
+	// or Option::Some(assigned_to);
+	// or Option::<&String>::Some(assigned_to);
 }
 ```
+
+```rust
+
+
+```
+
+
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNzM4NTc1OSwyMDIwNDUyMTQ2LC0xOT
-EyODc1ODU4LDc4NjE0Mjc0NSwxMjU2NTM1NjI0LDEyMjc4MzE2
-MzksLTg5OTY4NjE5LC0yMTQwNDMxNTQsLTYwOTAxMjQwMywtMT
-g4OTA0Njk3MywtMjExNzU0MDA2OSwtNTMwNDk3NDg1LDE2NzM3
-Nzc2MDIsLTUwMDc0Njk4NSwtMTQ5MDczNjQ4OSwtMTE5Mzg2ND
-cxMywxODY3ODA3NjkxLDEyODI5NzA5NzUsLTE4MDcxMjA4Nywt
-MTQyMzQ2MTAxMF19
+eyJoaXN0b3J5IjpbMTI2NDMzNDE4NiwxNDE3Mzg1NzU5LDIwMj
+A0NTIxNDYsLTE5MTI4NzU4NTgsNzg2MTQyNzQ1LDEyNTY1MzU2
+MjQsMTIyNzgzMTYzOSwtODk5Njg2MTksLTIxNDA0MzE1NCwtNj
+A5MDEyNDAzLC0xODg5MDQ2OTczLC0yMTE3NTQwMDY5LC01MzA0
+OTc0ODUsMTY3Mzc3NzYwMiwtNTAwNzQ2OTg1LC0xNDkwNzM2ND
+g5LC0xMTkzODY0NzEzLDE4Njc4MDc2OTEsMTI4Mjk3MDk3NSwt
+MTgwNzEyMDg3XX0=
 -->
