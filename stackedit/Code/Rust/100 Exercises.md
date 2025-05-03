@@ -838,7 +838,10 @@ static_assertions = "1.1.0"
 ### 5.12 `thiserror`
 * a package with a procedural macro to help define custom error messages
 ```rust
-
+#[derive(thiserror::Error, Debug)]
+enum TicketNewError {
+	#[error("{0}")]
+	TitleErro
 
 ```
 
@@ -846,11 +849,11 @@ static_assertions = "1.1.0"
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU5MzIyMzY0LC03MjE0NTM1NjIsMTk0ND
-IzMjgyNywtMTI0MDY2MjUwNSw4MzAwMzM0MjQsLTU1ODAzMjAz
-NywyMTQ5Njk0MDYsOTI1MDY1Mjc4LC0xMDU4ODczNTYwLDEzNT
-M3MTk3ODcsMTcxMTE0Mjk0NiwxNDE3Mzg1NzU5LDIwMjA0NTIx
-NDYsLTE5MTI4NzU4NTgsNzg2MTQyNzQ1LDEyNTY1MzU2MjQsMT
-IyNzgzMTYzOSwtODk5Njg2MTksLTIxNDA0MzE1NCwtNjA5MDEy
-NDAzXX0=
+eyJoaXN0b3J5IjpbLTE1ODg3ODYyNDYsLTcyMTQ1MzU2MiwxOT
+Q0MjMyODI3LC0xMjQwNjYyNTA1LDgzMDAzMzQyNCwtNTU4MDMy
+MDM3LDIxNDk2OTQwNiw5MjUwNjUyNzgsLTEwNTg4NzM1NjAsMT
+M1MzcxOTc4NywxNzExMTQyOTQ2LDE0MTczODU3NTksMjAyMDQ1
+MjE0NiwtMTkxMjg3NTg1OCw3ODYxNDI3NDUsMTI1NjUzNTYyNC
+wxMjI3ODMxNjM5LC04OTk2ODYxOSwtMjE0MDQzMTU0LC02MDkw
+MTI0MDNdfQ==
 -->
