@@ -737,7 +737,7 @@ match s.parse_u32() {
 }
 ```
 ### 5.9 `Error` `Debug` and `Display` traits
-`pub trait Error: Debug + Display {}`
+`pub trait std::error::Error: Debug + Display {}`
 : A marker for error objects requires both debug and display
 
 ```rust
@@ -755,11 +755,11 @@ pub trait Display {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3Nzc4NDMzMSwtNTU4MDMyMDM3LDIxND
-k2OTQwNiw5MjUwNjUyNzgsLTEwNTg4NzM1NjAsMTM1MzcxOTc4
-NywxNzExMTQyOTQ2LDE0MTczODU3NTksMjAyMDQ1MjE0NiwtMT
-kxMjg3NTg1OCw3ODYxNDI3NDUsMTI1NjUzNTYyNCwxMjI3ODMx
-NjM5LC04OTk2ODYxOSwtMjE0MDQzMTU0LC02MDkwMTI0MDMsLT
-E4ODkwNDY5NzMsLTIxMTc1NDAwNjksLTUzMDQ5NzQ4NSwxNjcz
-Nzc3NjAyXX0=
+eyJoaXN0b3J5IjpbODMwMDMzNDI0LC01NTgwMzIwMzcsMjE0OT
+Y5NDA2LDkyNTA2NTI3OCwtMTA1ODg3MzU2MCwxMzUzNzE5Nzg3
+LDE3MTExNDI5NDYsMTQxNzM4NTc1OSwyMDIwNDUyMTQ2LC0xOT
+EyODc1ODU4LDc4NjE0Mjc0NSwxMjU2NTM1NjI0LDEyMjc4MzE2
+MzksLTg5OTY4NjE5LC0yMTQwNDMxNTQsLTYwOTAxMjQwMywtMT
+g4OTA0Njk3MywtMjExNzU0MDA2OSwtNTMwNDk3NDg1LDE2NzM3
+Nzc2MDJdfQ==
 -->
