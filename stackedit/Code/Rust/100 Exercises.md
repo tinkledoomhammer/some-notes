@@ -730,7 +730,7 @@ enum U32ParseError {
 match s.parse_u32() {
 	Ok(n) => n,
 	Err(U32ParseError::Negative) => 0,
-	Error(U32ParseError::TooLarge) => u32::MAX,
+	Err(U32ParseError::TooLarge) => u32::MAX,
 	Err(U32ParseError::NotANumberr) => {
 		panic!("Not a number: {}", s);
 	}
@@ -742,11 +742,11 @@ match s.parse_u32() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0OTY5NDA2LDkyNTA2NTI3OCwtMTA1OD
-g3MzU2MCwxMzUzNzE5Nzg3LDE3MTExNDI5NDYsMTQxNzM4NTc1
-OSwyMDIwNDUyMTQ2LC0xOTEyODc1ODU4LDc4NjE0Mjc0NSwxMj
-U2NTM1NjI0LDEyMjc4MzE2MzksLTg5OTY4NjE5LC0yMTQwNDMx
-NTQsLTYwOTAxMjQwMywtMTg4OTA0Njk3MywtMjExNzU0MDA2OS
-wtNTMwNDk3NDg1LDE2NzM3Nzc2MDIsLTUwMDc0Njk4NSwtMTQ5
-MDczNjQ4OV19
+eyJoaXN0b3J5IjpbLTU1ODAzMjAzNywyMTQ5Njk0MDYsOTI1MD
+Y1Mjc4LC0xMDU4ODczNTYwLDEzNTM3MTk3ODcsMTcxMTE0Mjk0
+NiwxNDE3Mzg1NzU5LDIwMjA0NTIxNDYsLTE5MTI4NzU4NTgsNz
+g2MTQyNzQ1LDEyNTY1MzU2MjQsMTIyNzgzMTYzOSwtODk5Njg2
+MTksLTIxNDA0MzE1NCwtNjA5MDEyNDAzLC0xODg5MDQ2OTczLC
+0yMTE3NTQwMDY5LC01MzA0OTc0ODUsMTY3Mzc3NzYwMiwtNTAw
+NzQ2OTg1XX0=
 -->
