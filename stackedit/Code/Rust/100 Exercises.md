@@ -643,19 +643,23 @@ println!("{}, {}", first.0, first.1);
 ```
 
 Tuple-like Structs
+: Structs with `()` that have only **unnamed fields**
 ```rust
 struct Point(i32, i32);
-let point=Point(10,20);
+let point = Point(10,20);
 println("({},{})",point.0, point.1);
 ```
 
+Tuple-like Variants
+: 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NzQ0NzA4LC0xOTEyODc1ODU4LDc4Nj
-E0Mjc0NSwxMjU2NTM1NjI0LDEyMjc4MzE2MzksLTg5OTY4NjE5
-LC0yMTQwNDMxNTQsLTYwOTAxMjQwMywtMTg4OTA0Njk3MywtMj
-ExNzU0MDA2OSwtNTMwNDk3NDg1LDE2NzM3Nzc2MDIsLTUwMDc0
-Njk4NSwtMTQ5MDczNjQ4OSwtMTE5Mzg2NDcxMywxODY3ODA3Nj
-kxLDEyODI5NzA5NzUsLTE4MDcxMjA4NywtMTQyMzQ2MTAxMCwt
-ODY5MjMwMThdfQ==
+eyJoaXN0b3J5IjpbLTY1MzExMjI2MSwtMTkxMjg3NTg1OCw3OD
+YxNDI3NDUsMTI1NjUzNTYyNCwxMjI3ODMxNjM5LC04OTk2ODYx
+OSwtMjE0MDQzMTU0LC02MDkwMTI0MDMsLTE4ODkwNDY5NzMsLT
+IxMTc1NDAwNjksLTUzMDQ5NzQ4NSwxNjczNzc3NjAyLC01MDA3
+NDY5ODUsLTE0OTA3MzY0ODksLTExOTM4NjQ3MTMsMTg2NzgwNz
+Y5MSwxMjgyOTcwOTc1LC0xODA3MTIwODcsLTE0MjM0NjEwMTAs
+LTg2OTIzMDE4XX0=
 -->
