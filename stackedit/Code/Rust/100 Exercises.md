@@ -200,7 +200,7 @@ Some types of traits in the standard library:
 5. `Sized` to mark types with a known size
 6. `Drop` for custom cleanup logic
 
-## 04.01 Traits
+### 04.01 Traits
 
 Traits
 : Rust's way of defining **interfaces**
@@ -515,8 +515,7 @@ impl Drop for MyStruct{
 * Beware making generics solely to use mocks. see the [testing masterclass](https://github.com/mainmatter/rust-advanced-testing-workshop) for better options
 
 
-## 05 Modelling a Ticket, pt 2
-Covers
+## 05 Enums
 1. `enum` s
 2. The `Option` and `Result` type for nullable returns and recoverable errors
 3. The `Debug` and `Display` traits for printing
@@ -534,7 +533,7 @@ enum Status{
 
 let status: Status = Status::ToDo;
 ```
-#### `match`
+### 5.2 `match`
 ```rust
 impl Status{
 	fn is_done(&self) -> bool {
@@ -561,7 +560,7 @@ match <var> {
 Compiler driven refactoring
 : using `enum`s and `match` statements so that the adding a new option to the `enum` will generate compiler errors in each place the code must be updated 
 
-#### Variants can hold data
+### 5.3 Variants can hold data
 C-style enum
 : don't have data, basically named constants
 
@@ -637,11 +636,11 @@ else{ panic!("...") };
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTI4NzU4NTgsNzg2MTQyNzQ1LDEyNT
-Y1MzU2MjQsMTIyNzgzMTYzOSwtODk5Njg2MTksLTIxNDA0MzE1
-NCwtNjA5MDEyNDAzLC0xODg5MDQ2OTczLC0yMTE3NTQwMDY5LC
-01MzA0OTc0ODUsMTY3Mzc3NzYwMiwtNTAwNzQ2OTg1LC0xNDkw
-NzM2NDg5LC0xMTkzODY0NzEzLDE4Njc4MDc2OTEsMTI4Mjk3MD
-k3NSwtMTgwNzEyMDg3LC0xNDIzNDYxMDEwLC04NjkyMzAxOCwt
-NzQxNjYzODI2XX0=
+eyJoaXN0b3J5IjpbODg1Njc1MDIsLTE5MTI4NzU4NTgsNzg2MT
+QyNzQ1LDEyNTY1MzU2MjQsMTIyNzgzMTYzOSwtODk5Njg2MTks
+LTIxNDA0MzE1NCwtNjA5MDEyNDAzLC0xODg5MDQ2OTczLC0yMT
+E3NTQwMDY5LC01MzA0OTc0ODUsMTY3Mzc3NzYwMiwtNTAwNzQ2
+OTg1LC0xNDkwNzM2NDg5LC0xMTkzODY0NzEzLDE4Njc4MDc2OT
+EsMTI4Mjk3MDk3NSwtMTgwNzEyMDg3LC0xNDIzNDYxMDEwLC04
+NjkyMzAxOF19
 -->
