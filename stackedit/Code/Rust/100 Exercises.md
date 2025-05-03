@@ -793,11 +793,14 @@ Libraries
 Conventions
 1. The packages source code is in its `src` directory
 2. if there's a `src/lib.rs` file, cargo will infer a library crate
-2. 
+3. `src/main.rs` for binary crates
+4. This can all be changed by editing `Cargo.toml` see https://doc.rust-lang.org/cargo/reference/cargo-targets.html#cargo-targets
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTk1NTg0NSwtMTI0MDY2MjUwNSw4Mz
+eyJoaXN0b3J5IjpbMTk0NDIzMjgyNywtMTI0MDY2MjUwNSw4Mz
 AwMzM0MjQsLTU1ODAzMjAzNywyMTQ5Njk0MDYsOTI1MDY1Mjc4
 LC0xMDU4ODczNTYwLDEzNTM3MTk3ODcsMTcxMTE0Mjk0NiwxND
 E3Mzg1NzU5LDIwMjA0NTIxNDYsLTE5MTI4NzU4NTgsNzg2MTQy
