@@ -926,18 +926,29 @@ pub trait Error: Debug + Display {
 	}
 }
 ```
+`Error:source`
+: a method that tracks the error that caused the current error
+```rust
+use std::error::Error
 
+#[derive(Debug)]
+struct DatabaseError{
+	source: std::io::Error
+}
+
+impl std::fmt::Display for DatabaseError{
+```
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU0ODUyNjM2LC0xMjExMDI5NDY3LC0xND
-EyNTk2MTg0LC03MjE0NTM1NjIsMTk0NDIzMjgyNywtMTI0MDY2
-MjUwNSw4MzAwMzM0MjQsLTU1ODAzMjAzNywyMTQ5Njk0MDYsOT
-I1MDY1Mjc4LC0xMDU4ODczNTYwLDEzNTM3MTk3ODcsMTcxMTE0
-Mjk0NiwxNDE3Mzg1NzU5LDIwMjA0NTIxNDYsLTE5MTI4NzU4NT
-gsNzg2MTQyNzQ1LDEyNTY1MzU2MjQsMTIyNzgzMTYzOSwtODk5
-Njg2MTldfQ==
+eyJoaXN0b3J5IjpbMTY3MTYyMjY5OCw2NTQ4NTI2MzYsLTEyMT
+EwMjk0NjcsLTE0MTI1OTYxODQsLTcyMTQ1MzU2MiwxOTQ0MjMy
+ODI3LC0xMjQwNjYyNTA1LDgzMDAzMzQyNCwtNTU4MDMyMDM3LD
+IxNDk2OTQwNiw5MjUwNjUyNzgsLTEwNTg4NzM1NjAsMTM1Mzcx
+OTc4NywxNzExMTQyOTQ2LDE0MTczODU3NTksMjAyMDQ1MjE0Ni
+wtMTkxMjg3NTg1OCw3ODYxNDI3NDUsMTI1NjUzNTYyNCwxMjI3
+ODMxNjM5XX0=
 -->
