@@ -717,11 +717,6 @@ let number = parse_int("43"){
 	Ok(number) => number,
 	Err(err) => panic!("{}",err),
 }
-
-//using let else
-let Result::Ok(number) = parse_int("42") else
-{ panic!("{}" Err(parse_int("42");};
-
 ```
 
 
@@ -731,11 +726,11 @@ let Result::Ok(number) = parse_int("42") else
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI1MDY1Mjc4LC0xMDU4ODczNTYwLDEzNT
-M3MTk3ODcsMTcxMTE0Mjk0NiwxNDE3Mzg1NzU5LDIwMjA0NTIx
-NDYsLTE5MTI4NzU4NTgsNzg2MTQyNzQ1LDEyNTY1MzU2MjQsMT
-IyNzgzMTYzOSwtODk5Njg2MTksLTIxNDA0MzE1NCwtNjA5MDEy
-NDAzLC0xODg5MDQ2OTczLC0yMTE3NTQwMDY5LC01MzA0OTc0OD
-UsMTY3Mzc3NzYwMiwtNTAwNzQ2OTg1LC0xNDkwNzM2NDg5LC0x
-MTkzODY0NzEzXX0=
+eyJoaXN0b3J5IjpbLTg5MTA0MDEwNyw5MjUwNjUyNzgsLTEwNT
+g4NzM1NjAsMTM1MzcxOTc4NywxNzExMTQyOTQ2LDE0MTczODU3
+NTksMjAyMDQ1MjE0NiwtMTkxMjg3NTg1OCw3ODYxNDI3NDUsMT
+I1NjUzNTYyNCwxMjI3ODMxNjM5LC04OTk2ODYxOSwtMjE0MDQz
+MTU0LC02MDkwMTI0MDMsLTE4ODkwNDY5NzMsLTIxMTc1NDAwNj
+ksLTUzMDQ5NzQ4NSwxNjczNzc3NjAyLC01MDA3NDY5ODUsLTE0
+OTA3MzY0ODldfQ==
 -->
