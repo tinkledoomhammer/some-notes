@@ -799,16 +799,21 @@ Conventions
 * You can just add a `lib.rs` file to add a library to an existing project with a binary crate
 
 ### 5.11 Dependencies
-```toml
-``
+```ini
+[dependencies]
+thiserror = "1"
+```
+`[dependencies]` section in `Cargo.toml`
+: defines the dependencies and version requirements for the package
+* Will be downloaded from 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzE3NzAwNTAsMTk0NDIzMjgyNywtMT
-I0MDY2MjUwNSw4MzAwMzM0MjQsLTU1ODAzMjAzNywyMTQ5Njk0
-MDYsOTI1MDY1Mjc4LC0xMDU4ODczNTYwLDEzNTM3MTk3ODcsMT
-cxMTE0Mjk0NiwxNDE3Mzg1NzU5LDIwMjA0NTIxNDYsLTE5MTI4
-NzU4NTgsNzg2MTQyNzQ1LDEyNTY1MzU2MjQsMTIyNzgzMTYzOS
-wtODk5Njg2MTksLTIxNDA0MzE1NCwtNjA5MDEyNDAzLC0xODg5
-MDQ2OTczXX0=
+eyJoaXN0b3J5IjpbMTQ2Mjc0NTIwMSwxOTQ0MjMyODI3LC0xMj
+QwNjYyNTA1LDgzMDAzMzQyNCwtNTU4MDMyMDM3LDIxNDk2OTQw
+Niw5MjUwNjUyNzgsLTEwNTg4NzM1NjAsMTM1MzcxOTc4NywxNz
+ExMTQyOTQ2LDE0MTczODU3NTksMjAyMDQ1MjE0NiwtMTkxMjg3
+NTg1OCw3ODYxNDI3NDUsMTI1NjUzNTYyNCwxMjI3ODMxNjM5LC
+04OTk2ODYxOSwtMjE0MDQzMTU0LC02MDkwMTI0MDMsLTE4ODkw
+NDY5NzNdfQ==
 -->
