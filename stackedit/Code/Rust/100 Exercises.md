@@ -515,7 +515,7 @@ impl Drop for MyStruct{
 * Beware making generics solely to use mocks. see the [testing masterclass](https://github.com/mainmatter/rust-advanced-testing-workshop) for better options
 
 
-## 05 Enums
+## 05 Enums, packages
 1. `enum` s
 2. The `Option` and `Result` type for nullable returns and recoverable errors
 3. The `Debug` and `Display` traits for printing
@@ -774,14 +774,18 @@ impl Display for TicketNewError{
 impl Error for TicketNewError {}
 ```
 
+### 5.10 Packages
+
+Package
+: Defined by the 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDA2NjI1MDUsODMwMDMzNDI0LC01NT
-gwMzIwMzcsMjE0OTY5NDA2LDkyNTA2NTI3OCwtMTA1ODg3MzU2
-MCwxMzUzNzE5Nzg3LDE3MTExNDI5NDYsMTQxNzM4NTc1OSwyMD
-IwNDUyMTQ2LC0xOTEyODc1ODU4LDc4NjE0Mjc0NSwxMjU2NTM1
-NjI0LDEyMjc4MzE2MzksLTg5OTY4NjE5LC0yMTQwNDMxNTQsLT
-YwOTAxMjQwMywtMTg4OTA0Njk3MywtMjExNzU0MDA2OSwtNTMw
-NDk3NDg1XX0=
+eyJoaXN0b3J5IjpbNzQ0MjM5NzQ3LC0xMjQwNjYyNTA1LDgzMD
+AzMzQyNCwtNTU4MDMyMDM3LDIxNDk2OTQwNiw5MjUwNjUyNzgs
+LTEwNTg4NzM1NjAsMTM1MzcxOTc4NywxNzExMTQyOTQ2LDE0MT
+czODU3NTksMjAyMDQ1MjE0NiwtMTkxMjg3NTg1OCw3ODYxNDI3
+NDUsMTI1NjUzNTYyNCwxMjI3ODMxNjM5LC04OTk2ODYxOSwtMj
+E0MDQzMTU0LC02MDkwMTI0MDMsLTE4ODkwNDY5NzMsLTIxMTc1
+NDAwNjldfQ==
 -->
