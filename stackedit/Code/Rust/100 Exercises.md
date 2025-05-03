@@ -987,25 +987,29 @@ pub enum MyError[
 use std::fs::File
 fn read_file() -> Result<String, std::io::Error> {
 	let mut file = File::open("file.txt")?;
-	...
+	// ...
 	Ok(contents)
 }
 
 fn read_file() -> Result<String, std::io::Error> {
-	let mut file = match File::open("file.txt"
-
-
-
+	let mut file = match File::open("file.txt"){
+		Ok(file) => file,
+		Err(e) => return Err(e);
+	};
+	// ...
+	Ok(contents)
 ```
+* It will automatically convert the error type of the result to the error type of the function is possible
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3ODg2NzM5MCw2NTQ4NTI2MzYsLTEyMT
-EwMjk0NjcsLTE0MTI1OTYxODQsLTcyMTQ1MzU2MiwxOTQ0MjMy
-ODI3LC0xMjQwNjYyNTA1LDgzMDAzMzQyNCwtNTU4MDMyMDM3LD
-IxNDk2OTQwNiw5MjUwNjUyNzgsLTEwNTg4NzM1NjAsMTM1Mzcx
-OTc4NywxNzExMTQyOTQ2LDE0MTczODU3NTksMjAyMDQ1MjE0Ni
-wtMTkxMjg3NTg1OCw3ODYxNDI3NDUsMTI1NjUzNTYyNCwxMjI3
-ODMxNjM5XX0=
+eyJoaXN0b3J5IjpbNzMwMjYyNjI5LDY1NDg1MjYzNiwtMTIxMT
+AyOTQ2NywtMTQxMjU5NjE4NCwtNzIxNDUzNTYyLDE5NDQyMzI4
+MjcsLTEyNDA2NjI1MDUsODMwMDMzNDI0LC01NTgwMzIwMzcsMj
+E0OTY5NDA2LDkyNTA2NTI3OCwtMTA1ODg3MzU2MCwxMzUzNzE5
+Nzg3LDE3MTExNDI5NDYsMTQxNzM4NTc1OSwyMDIwNDUyMTQ2LC
+0xOTEyODc1ODU4LDc4NjE0Mjc0NSwxMjU2NTM1NjI0LDEyMjc4
+MzE2MzldfQ==
 -->
