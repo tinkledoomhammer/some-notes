@@ -945,14 +945,17 @@ impl std::error::Error for DatabaseError {
 	}																				]
 ```
 
-`&(
+`&(dyn Error + 'static)`
+: The `Some` returned by `source`
+* `dyn Error` is a **trait object**. it can refer to any type that implements `Error`
+* `'static` is a **lifetime specifier**
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MjQ4ODg4Miw2NTQ4NTI2MzYsLTEyMT
+eyJoaXN0b3J5IjpbLTkyNTAzMzU3Myw2NTQ4NTI2MzYsLTEyMT
 EwMjk0NjcsLTE0MTI1OTYxODQsLTcyMTQ1MzU2MiwxOTQ0MjMy
 ODI3LC0xMjQwNjYyNTA1LDgzMDAzMzQyNCwtNTU4MDMyMDM3LD
 IxNDk2OTQwNiw5MjUwNjUyNzgsLTEwNTg4NzM1NjAsMTM1Mzcx
