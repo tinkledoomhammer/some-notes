@@ -591,7 +591,14 @@ match status{
 
 **Need to get a better understanding of refs as arguments for trait functions**
 ```rust
-
+ pub fn assigned_to(&self) -> &str {
+        match &self.status{
+            Status::ToDo | Status::Done => {
+                panic!("Only `In-Progress` tickets can be assigned to someone")
+            }
+            Status::InProgress{assigned_to} => return assigned_to
+        }
+    }
 ```
 
 
@@ -602,11 +609,11 @@ match status{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1NjUzNTYyNCwxMjI3ODMxNjM5LC04OT
-k2ODYxOSwtMjE0MDQzMTU0LC02MDkwMTI0MDMsLTE4ODkwNDY5
-NzMsLTIxMTc1NDAwNjksLTUzMDQ5NzQ4NSwxNjczNzc3NjAyLC
-01MDA3NDY5ODUsLTE0OTA3MzY0ODksLTExOTM4NjQ3MTMsMTg2
-NzgwNzY5MSwxMjgyOTcwOTc1LC0xODA3MTIwODcsLTE0MjM0Nj
-EwMTAsLTg2OTIzMDE4LC03NDE2NjM4MjYsOTk0MTgwNzMzLDE2
-NDQwMTEzMDldfQ==
+eyJoaXN0b3J5IjpbODMzNzAyMDc4LDEyNTY1MzU2MjQsMTIyNz
+gzMTYzOSwtODk5Njg2MTksLTIxNDA0MzE1NCwtNjA5MDEyNDAz
+LC0xODg5MDQ2OTczLC0yMTE3NTQwMDY5LC01MzA0OTc0ODUsMT
+Y3Mzc3NzYwMiwtNTAwNzQ2OTg1LC0xNDkwNzM2NDg5LC0xMTkz
+ODY0NzEzLDE4Njc4MDc2OTEsMTI4Mjk3MDk3NSwtMTgwNzEyMD
+g3LC0xNDIzNDYxMDEwLC04NjkyMzAxOCwtNzQxNjYzODI2LDk5
+NDE4MDczM119
 -->
