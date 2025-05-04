@@ -1010,16 +1010,23 @@ let status = match Status::try_from(status){
 let status = Status::try_from(status)?;
 ```
 
-
+## 06 "Ticket Management"
+Covers
+* stack-allocated arrays
+* `Vec` - growable arrays
+* `Iterator` and `IntoIterator`
+* Slices
+* Lifetimes
+* `HashMap` `BTree
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDcxNjg5NjMsNzMwMjYyNjI5LDY1ND
-g1MjYzNiwtMTIxMTAyOTQ2NywtMTQxMjU5NjE4NCwtNzIxNDUz
-NTYyLDE5NDQyMzI4MjcsLTEyNDA2NjI1MDUsODMwMDMzNDI0LC
-01NTgwMzIwMzcsMjE0OTY5NDA2LDkyNTA2NTI3OCwtMTA1ODg3
-MzU2MCwxMzUzNzE5Nzg3LDE3MTExNDI5NDYsMTQxNzM4NTc1OS
-wyMDIwNDUyMTQ2LC0xOTEyODc1ODU4LDc4NjE0Mjc0NSwxMjU2
-NTM1NjI0XX0=
+eyJoaXN0b3J5IjpbLTExODQ0OTgzNzIsLTE3NDcxNjg5NjMsNz
+MwMjYyNjI5LDY1NDg1MjYzNiwtMTIxMTAyOTQ2NywtMTQxMjU5
+NjE4NCwtNzIxNDUzNTYyLDE5NDQyMzI4MjcsLTEyNDA2NjI1MD
+UsODMwMDMzNDI0LC01NTgwMzIwMzcsMjE0OTY5NDA2LDkyNTA2
+NTI3OCwtMTA1ODg3MzU2MCwxMzUzNzE5Nzg3LDE3MTExNDI5ND
+YsMTQxNzM4NTc1OSwyMDIwNDUyMTQ2LC0xOTEyODc1ODU4LDc4
+NjE0Mjc0NV19
 -->
