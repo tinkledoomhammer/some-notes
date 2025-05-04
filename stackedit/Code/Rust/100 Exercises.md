@@ -1044,17 +1044,20 @@ Out-of-bounds access
 `array.get(ind)`
 : returns an `Option`, avoids panic
 
+Exercise
+`<enum> as usize` allows it to be used as an index
+* doesn't work for enums that hold data
+* https://doc.rust-lang.org/reference/items/enumerations.html#custom-discriminant-values-for-fieldless-enumerations
 
-
-
+### 5.2 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODc5NzMyODcsLTIwMzAxNjM5MzgsLT
-E3NDcxNjg5NjMsNzMwMjYyNjI5LDY1NDg1MjYzNiwtMTIxMTAy
-OTQ2NywtMTQxMjU5NjE4NCwtNzIxNDUzNTYyLDE5NDQyMzI4Mj
-csLTEyNDA2NjI1MDUsODMwMDMzNDI0LC01NTgwMzIwMzcsMjE0
-OTY5NDA2LDkyNTA2NTI3OCwtMTA1ODg3MzU2MCwxMzUzNzE5Nz
-g3LDE3MTExNDI5NDYsMTQxNzM4NTc1OSwyMDIwNDUyMTQ2LC0x
-OTEyODc1ODU4XX0=
+eyJoaXN0b3J5IjpbMTQ4MjE5OTg2MiwtMTQ4Nzk3MzI4NywtMj
+AzMDE2MzkzOCwtMTc0NzE2ODk2Myw3MzAyNjI2MjksNjU0ODUy
+NjM2LC0xMjExMDI5NDY3LC0xNDEyNTk2MTg0LC03MjE0NTM1Nj
+IsMTk0NDIzMjgyNywtMTI0MDY2MjUwNSw4MzAwMzM0MjQsLTU1
+ODAzMjAzNywyMTQ5Njk0MDYsOTI1MDY1Mjc4LC0xMDU4ODczNT
+YwLDEzNTM3MTk3ODcsMTcxMTE0Mjk0NiwxNDE3Mzg1NzU5LDIw
+MjA0NTIxNDZdfQ==
 -->
