@@ -1056,14 +1056,16 @@ Exercise
 * created by `Vec::new()`
 * or with the `vec!` macro `let numbers = vec![1,2,3];`
 * Elements are accessed in the same way as arrays
-* `Vec::with_capacity(n);` al
-Memory Layout
+* `Vec::with_capacity(n);` sets a minimum starting capacity
 
+Memory Layout
+: A pointer, length, and capacity are stack allocated
+* just like `String`
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgwNjI1MTMwLC0xNDg3OTczMjg3LC0yMD
+eyJoaXN0b3J5IjpbNzIxNTI3OTM3LC0xNDg3OTczMjg3LC0yMD
 MwMTYzOTM4LC0xNzQ3MTY4OTYzLDczMDI2MjYyOSw2NTQ4NTI2
 MzYsLTEyMTEwMjk0NjcsLTE0MTI1OTYxODQsLTcyMTQ1MzU2Mi
 wxOTQ0MjMyODI3LC0xMjQwNjYyNTA1LDgzMDAzMzQyNCwtNTU4
