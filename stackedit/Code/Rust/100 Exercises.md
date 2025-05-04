@@ -1036,18 +1036,23 @@ let first = numbers[0];
 ```
 **Zero Indexed**
 
+Out-of-bounds access
+: Panics by default
+* checks can be optimized away by the compiler in many cases, particularly with iterators
 
+`array.get(ind)`
+: returns an `Option`, avoids panic
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzAxNjM5MzgsLTE3NDcxNjg5NjMsNz
-MwMjYyNjI5LDY1NDg1MjYzNiwtMTIxMTAyOTQ2NywtMTQxMjU5
-NjE4NCwtNzIxNDUzNTYyLDE5NDQyMzI4MjcsLTEyNDA2NjI1MD
-UsODMwMDMzNDI0LC01NTgwMzIwMzcsMjE0OTY5NDA2LDkyNTA2
-NTI3OCwtMTA1ODg3MzU2MCwxMzUzNzE5Nzg3LDE3MTExNDI5ND
-YsMTQxNzM4NTc1OSwyMDIwNDUyMTQ2LC0xOTEyODc1ODU4LDc4
-NjE0Mjc0NV19
+eyJoaXN0b3J5IjpbLTE5MTY0MDU3MTUsLTIwMzAxNjM5MzgsLT
+E3NDcxNjg5NjMsNzMwMjYyNjI5LDY1NDg1MjYzNiwtMTIxMTAy
+OTQ2NywtMTQxMjU5NjE4NCwtNzIxNDUzNTYyLDE5NDQyMzI4Mj
+csLTEyNDA2NjI1MDUsODMwMDMzNDI0LC01NTgwMzIwMzcsMjE0
+OTY5NDA2LDkyNTA2NTI3OCwtMTA1ODg3MzU2MCwxMzUzNzE5Nz
+g3LDE3MTExNDI5NDYsMTQxNzM4NTc1OSwyMDIwNDUyMTQ2LC0x
+OTEyODc1ODU4XX0=
 -->
