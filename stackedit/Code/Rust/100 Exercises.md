@@ -1023,16 +1023,23 @@ Covers
 
 ### 06.01 Arrays
 Arrays
-: 
+: fixed-size collections of elements of the same type
+
+```rust
+let numbbers : [u32;3] = [1,2,3];
+// [<type>;<count>]
+let numbers : [u32;3] = [1;3];
+
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTI5OTQ5NzksLTE3NDcxNjg5NjMsNz
-MwMjYyNjI5LDY1NDg1MjYzNiwtMTIxMTAyOTQ2NywtMTQxMjU5
-NjE4NCwtNzIxNDUzNTYyLDE5NDQyMzI4MjcsLTEyNDA2NjI1MD
-UsODMwMDMzNDI0LC01NTgwMzIwMzcsMjE0OTY5NDA2LDkyNTA2
-NTI3OCwtMTA1ODg3MzU2MCwxMzUzNzE5Nzg3LDE3MTExNDI5ND
-YsMTQxNzM4NTc1OSwyMDIwNDUyMTQ2LC0xOTEyODc1ODU4LDc4
-NjE0Mjc0NV19
+eyJoaXN0b3J5IjpbLTE5Mzg3ODY3LC0xNzQ3MTY4OTYzLDczMD
+I2MjYyOSw2NTQ4NTI2MzYsLTEyMTEwMjk0NjcsLTE0MTI1OTYx
+ODQsLTcyMTQ1MzU2MiwxOTQ0MjMyODI3LC0xMjQwNjYyNTA1LD
+gzMDAzMzQyNCwtNTU4MDMyMDM3LDIxNDk2OTQwNiw5MjUwNjUy
+NzgsLTEwNTg4NzM1NjAsMTM1MzcxOTc4NywxNzExMTQyOTQ2LD
+E0MTczODU3NTksMjAyMDQ1MjE0NiwtMTkxMjg3NTg1OCw3ODYx
+NDI3NDVdfQ==
 -->
