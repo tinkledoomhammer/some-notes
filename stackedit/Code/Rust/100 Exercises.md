@@ -1017,12 +1017,18 @@ Covers
 * `Iterator` and `IntoIterator`
 * Slices
 * Lifetimes
-* `HashMap` `BTree
+* `HashMap` `BTreeMap` key-value structure
+* `Ord` and `PartialOrd` required for `BTreeMap`
+* `Index` and `IndexMut` to access elements in a collection
+
+### 06.01 Arrays
+Arrays
+: 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODQ0OTgzNzIsLTE3NDcxNjg5NjMsNz
+eyJoaXN0b3J5IjpbLTE3NTI5OTQ5NzksLTE3NDcxNjg5NjMsNz
 MwMjYyNjI5LDY1NDg1MjYzNiwtMTIxMTAyOTQ2NywtMTQxMjU5
 NjE4NCwtNzIxNDUzNTYyLDE5NDQyMzI4MjcsLTEyNDA2NjI1MD
 UsODMwMDMzNDI0LC01NTgwMzIwMzcsMjE0OTY5NDA2LDkyNTA2
