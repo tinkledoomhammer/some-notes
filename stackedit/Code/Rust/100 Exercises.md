@@ -1031,8 +1031,9 @@ let numbbers : [u32;3] = [1,2,3];
 let numbers : [u32;3] = [1;3];
 // [type;count] = [<init>,<number>]
 
-//assignment
+//access
 let first = numbers[0];
+let second = numbers.get(1); // won't panic
 ```
 **Zero Indexed**
 
@@ -1046,9 +1047,10 @@ Out-of-bounds access
 
 
 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTY0MDU3MTUsLTIwMzAxNjM5MzgsLT
+eyJoaXN0b3J5IjpbLTE0ODc5NzMyODcsLTIwMzAxNjM5MzgsLT
 E3NDcxNjg5NjMsNzMwMjYyNjI5LDY1NDg1MjYzNiwtMTIxMTAy
 OTQ2NywtMTQxMjU5NjE4NCwtNzIxNDUzNTYyLDE5NDQyMzI4Mj
 csLTEyNDA2NjI1MDUsODMwMDMzNDI0LC01NTgwMzIwMzcsMjE0
