@@ -1062,14 +1062,16 @@ Memory Layout
 : A pointer, length, and capacity are stack allocated
 * just like `String`
 
+Indexing with `enum`s
+: use `as usize`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzIxNTI3OTM3LC0xNDg3OTczMjg3LC0yMD
-MwMTYzOTM4LC0xNzQ3MTY4OTYzLDczMDI2MjYyOSw2NTQ4NTI2
-MzYsLTEyMTEwMjk0NjcsLTE0MTI1OTYxODQsLTcyMTQ1MzU2Mi
-wxOTQ0MjMyODI3LC0xMjQwNjYyNTA1LDgzMDAzMzQyNCwtNTU4
-MDMyMDM3LDIxNDk2OTQwNiw5MjUwNjUyNzgsLTEwNTg4NzM1Nj
-AsMTM1MzcxOTc4NywxNzExMTQyOTQ2LDE0MTczODU3NTksMjAy
-MDQ1MjE0Nl19
+eyJoaXN0b3J5IjpbMzk1Njg2MzQyLDcyMTUyNzkzNywtMTQ4Nz
+k3MzI4NywtMjAzMDE2MzkzOCwtMTc0NzE2ODk2Myw3MzAyNjI2
+MjksNjU0ODUyNjM2LC0xMjExMDI5NDY3LC0xNDEyNTk2MTg0LC
+03MjE0NTM1NjIsMTk0NDIzMjgyNywtMTI0MDY2MjUwNSw4MzAw
+MzM0MjQsLTU1ODAzMjAzNywyMTQ5Njk0MDYsOTI1MDY1Mjc4LC
+0xMDU4ODczNTYwLDEzNTM3MTk3ODcsMTcxMTE0Mjk0NiwxNDE3
+Mzg1NzU5XX0=
 -->
