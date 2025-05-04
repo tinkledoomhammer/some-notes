@@ -1054,15 +1054,20 @@ Exercise
 `vec`
 : A growable array type in the standard library
 * created by `Vec::new()`
-* or with the `vec!` macro `
+* or with the `vec!` macro `let numbers = vec![1,2,3];`
+* Elements are accessed in the same way as arrays
+* `Vec::with_capacity(n);` al
+Memory Layout
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MDQzMzc3NCwtMTQ4Nzk3MzI4NywtMj
-AzMDE2MzkzOCwtMTc0NzE2ODk2Myw3MzAyNjI2MjksNjU0ODUy
-NjM2LC0xMjExMDI5NDY3LC0xNDEyNTk2MTg0LC03MjE0NTM1Nj
-IsMTk0NDIzMjgyNywtMTI0MDY2MjUwNSw4MzAwMzM0MjQsLTU1
-ODAzMjAzNywyMTQ5Njk0MDYsOTI1MDY1Mjc4LC0xMDU4ODczNT
-YwLDEzNTM3MTk3ODcsMTcxMTE0Mjk0NiwxNDE3Mzg1NzU5LDIw
-MjA0NTIxNDZdfQ==
+eyJoaXN0b3J5IjpbMzgwNjI1MTMwLC0xNDg3OTczMjg3LC0yMD
+MwMTYzOTM4LC0xNzQ3MTY4OTYzLDczMDI2MjYyOSw2NTQ4NTI2
+MzYsLTEyMTEwMjk0NjcsLTE0MTI1OTYxODQsLTcyMTQ1MzU2Mi
+wxOTQ0MjMyODI3LC0xMjQwNjYyNTA1LDgzMDAzMzQyNCwtNTU4
+MDMyMDM3LDIxNDk2OTQwNiw5MjUwNjUyNzgsLTEwNTg4NzM1Nj
+AsMTM1MzcxOTc4NywxNzExMTQyOTQ2LDE0MTczODU3NTksMjAy
+MDQ1MjE0Nl19
 -->
