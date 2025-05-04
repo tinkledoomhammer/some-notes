@@ -1049,11 +1049,16 @@ Exercise
 * doesn't work for enums that hold data
 * https://doc.rust-lang.org/reference/items/enumerations.html#custom-discriminant-values-for-fieldless-enumerations
 
-### 5.2 
+### 5.2 Vectors
+
+`vec`
+: A growable array type in the standard library
+* created by `Vec::new()`
+* or with the `vec!` macro `
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4MjE5OTg2MiwtMTQ4Nzk3MzI4NywtMj
+eyJoaXN0b3J5IjpbMTA4MDQzMzc3NCwtMTQ4Nzk3MzI4NywtMj
 AzMDE2MzkzOCwtMTc0NzE2ODk2Myw3MzAyNjI2MjksNjU0ODUy
 NjM2LC0xMjExMDI5NDY3LC0xNDEyNTk2MTg0LC03MjE0NTM1Nj
 IsMTk0NDIzMjgyNywtMTI0MDY2MjUwNSw4MzAwMzM0MjQsLTU1
