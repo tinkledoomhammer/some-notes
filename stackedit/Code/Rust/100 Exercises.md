@@ -1251,7 +1251,7 @@ let square_of_evens = numbers.iter()
 
 
 ### 6.08 `impl` Trait
-`impl Trait`
+`impl Trait` (return)
 : A feature that allows returning types that don't have names
 * Aka **opaque return type**
 
@@ -1273,13 +1273,22 @@ RPIT
 : "Return position Imp Trait"
 * found in RFCs and such, and refers to the use of `impl Trait` in the return position
 
+`impl Trait` as argument type
+: Similar to a generic
+* is usually not used because it does not allow turbofish syntax
+* No upside?
+
+### 06.10
+
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTAxNzMwMzQsLTIwMzQ2ODk4MTQsLT
-U2MDA4NTE0MSwtMTg5NDQwMTY3NiwtMTMxNzY3NTMyMCwtMzU5
-NzI4NzIsLTEzNjA2OTU5NjgsLTE3OTgyNDA4OTksNTYzNTk5NT
-ExLDE2NzQ1MjI2MzIsLTI3MTYyNjYxMCwxNTkxMTc5NTM0LC0x
-OTAyNzIwNDAxLDcyMTUyNzkzNywtMTQ4Nzk3MzI4NywtMjAzMD
-E2MzkzOCwtMTc0NzE2ODk2Myw3MzAyNjI2MjksNjU0ODUyNjM2
-LC0xMjExMDI5NDY3XX0=
+eyJoaXN0b3J5IjpbMTIyMTM5MDc4OCwtMTU1MDE3MzAzNCwtMj
+AzNDY4OTgxNCwtNTYwMDg1MTQxLC0xODk0NDAxNjc2LC0xMzE3
+Njc1MzIwLC0zNTk3Mjg3MiwtMTM2MDY5NTk2OCwtMTc5ODI0MD
+g5OSw1NjM1OTk1MTEsMTY3NDUyMjYzMiwtMjcxNjI2NjEwLDE1
+OTExNzk1MzQsLTE5MDI3MjA0MDEsNzIxNTI3OTM3LC0xNDg3OT
+czMjg3LC0yMDMwMTYzOTM4LC0xNzQ3MTY4OTYzLDczMDI2MjYy
+OSw2NTQ4NTI2MzZdfQ==
 -->
