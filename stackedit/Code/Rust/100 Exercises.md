@@ -1221,16 +1221,20 @@ let add_one = |x| x +1;
 let add_one = |x| {x + 1};
 ```
 
+#### `collect`
+`.collect()`
+: consumes the iterator and collects its elements into a collection
+* it is a generic over its
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjkzNzEzOTQ1LC01NjAwODUxNDEsLTE4OT
-Q0MDE2NzYsLTEzMTc2NzUzMjAsLTM1OTcyODcyLC0xMzYwNjk1
-OTY4LC0xNzk4MjQwODk5LDU2MzU5OTUxMSwxNjc0NTIyNjMyLC
-0yNzE2MjY2MTAsMTU5MTE3OTUzNCwtMTkwMjcyMDQwMSw3MjE1
-Mjc5MzcsLTE0ODc5NzMyODcsLTIwMzAxNjM5MzgsLTE3NDcxNj
-g5NjMsNzMwMjYyNjI5LDY1NDg1MjYzNiwtMTIxMTAyOTQ2Nywt
-MTQxMjU5NjE4NF19
+eyJoaXN0b3J5IjpbMTg0MDkwMzUzNSwtNTYwMDg1MTQxLC0xOD
+k0NDAxNjc2LC0xMzE3Njc1MzIwLC0zNTk3Mjg3MiwtMTM2MDY5
+NTk2OCwtMTc5ODI0MDg5OSw1NjM1OTk1MTEsMTY3NDUyMjYzMi
+wtMjcxNjI2NjEwLDE1OTExNzk1MzQsLTE5MDI3MjA0MDEsNzIx
+NTI3OTM3LC0xNDg3OTczMjg3LC0yMDMwMTYzOTM4LC0xNzQ3MT
+Y4OTYzLDczMDI2MjYyOSw2NTQ4NTI2MzYsLTEyMTEwMjk0Njcs
+LTE0MTI1OTYxODRdfQ==
 -->
