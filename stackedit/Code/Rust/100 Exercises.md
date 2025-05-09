@@ -1079,18 +1079,28 @@ loop{
 for n in v {
 	println!("{}",n);
 }
+```
+```rust
+
+
+
+// Implementing IntoIter for a vector
+
+type IntoIter = std::vec::IntoIter<Self::Item>;
+// or 
+type IntoIter = std::vec::IntoIter<Self::Item>;
+
 
 ```
 
 
-
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3NDUyMjYzMiwtMjcxNjI2NjEwLDE1OT
-ExNzk1MzQsLTE5MDI3MjA0MDEsNzIxNTI3OTM3LC0xNDg3OTcz
-Mjg3LC0yMDMwMTYzOTM4LC0xNzQ3MTY4OTYzLDczMDI2MjYyOS
-w2NTQ4NTI2MzYsLTEyMTEwMjk0NjcsLTE0MTI1OTYxODQsLTcy
-MTQ1MzU2MiwxOTQ0MjMyODI3LC0xMjQwNjYyNTA1LDgzMDAzMz
-QyNCwtNTU4MDMyMDM3LDIxNDk2OTQwNiw5MjUwNjUyNzgsLTEw
-NTg4NzM1NjBdfQ==
+eyJoaXN0b3J5IjpbLTE3NjM0NDczMDEsMTY3NDUyMjYzMiwtMj
+cxNjI2NjEwLDE1OTExNzk1MzQsLTE5MDI3MjA0MDEsNzIxNTI3
+OTM3LC0xNDg3OTczMjg3LC0yMDMwMTYzOTM4LC0xNzQ3MTY4OT
+YzLDczMDI2MjYyOSw2NTQ4NTI2MzYsLTEyMTEwMjk0NjcsLTE0
+MTI1OTYxODQsLTcyMTQ1MzU2MiwxOTQ0MjMyODI3LC0xMjQwNj
+YyNTA1LDgzMDAzMzQyNCwtNTU4MDMyMDM3LDIxNDk2OTQwNiw5
+MjUwNjUyNzhdfQ==
 -->
