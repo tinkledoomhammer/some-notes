@@ -1092,7 +1092,8 @@ trait IntoIterator {
 }
 
 // Implementing IntoIter for a vector
-
+// From the exercise (06/05)
+// The i
 type IntoIter = std::vec::IntoIter<Self::Item>;
 // or 
 type IntoIter = std::vec::IntoIter<Self::Item>;
@@ -1102,11 +1103,11 @@ type IntoIter = std::vec::IntoIter<Self::Item>;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYzNTk5NTExLDE2NzQ1MjI2MzIsLTI3MT
-YyNjYxMCwxNTkxMTc5NTM0LC0xOTAyNzIwNDAxLDcyMTUyNzkz
-NywtMTQ4Nzk3MzI4NywtMjAzMDE2MzkzOCwtMTc0NzE2ODk2My
-w3MzAyNjI2MjksNjU0ODUyNjM2LC0xMjExMDI5NDY3LC0xNDEy
-NTk2MTg0LC03MjE0NTM1NjIsMTk0NDIzMjgyNywtMTI0MDY2Mj
-UwNSw4MzAwMzM0MjQsLTU1ODAzMjAzNywyMTQ5Njk0MDYsOTI1
-MDY1Mjc4XX0=
+eyJoaXN0b3J5IjpbLTYxNjUyODI1Myw1NjM1OTk1MTEsMTY3ND
+UyMjYzMiwtMjcxNjI2NjEwLDE1OTExNzk1MzQsLTE5MDI3MjA0
+MDEsNzIxNTI3OTM3LC0xNDg3OTczMjg3LC0yMDMwMTYzOTM4LC
+0xNzQ3MTY4OTYzLDczMDI2MjYyOSw2NTQ4NTI2MzYsLTEyMTEw
+Mjk0NjcsLTE0MTI1OTYxODQsLTcyMTQ1MzU2MiwxOTQ0MjMyOD
+I3LC0xMjQwNjYyNTA1LDgzMDAzMzQyNCwtNTU4MDMyMDM3LDIx
+NDk2OTQwNl19
 -->
