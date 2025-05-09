@@ -1191,14 +1191,28 @@ fn iter(&self) -> Iter<'_,T>
 Questions from the exercise:
 * Why do associated types need a lifetime? shouldn't that be done on a method-by-method basis?
 
+```rust
+impl<'a> IntoIterator for &'a TicketStore{
+    type Item = &'a Ticket;
+    type IntoIter = std::slice::Iter<'a, Ticket>;
+    fn into_iter(self) -> Self::IntoIter{
+        //self.iter()
+        //(*self).tickets.iter()
+        self.tickets.iter()
+    }
+}
+```
+
+### 06.07 Combinators
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MDA4NTE0MSwtMTg5NDQwMTY3NiwtMT
-MxNzY3NTMyMCwtMzU5NzI4NzIsLTEzNjA2OTU5NjgsLTE3OTgy
-NDA4OTksNTYzNTk5NTExLDE2NzQ1MjI2MzIsLTI3MTYyNjYxMC
-wxNTkxMTc5NTM0LC0xOTAyNzIwNDAxLDcyMTUyNzkzNywtMTQ4
-Nzk3MzI4NywtMjAzMDE2MzkzOCwtMTc0NzE2ODk2Myw3MzAyNj
-I2MjksNjU0ODUyNjM2LC0xMjExMDI5NDY3LC0xNDEyNTk2MTg0
-LC03MjE0NTM1NjJdfQ==
+eyJoaXN0b3J5IjpbMTg5MzI4Mjc0NywtNTYwMDg1MTQxLC0xOD
+k0NDAxNjc2LC0xMzE3Njc1MzIwLC0zNTk3Mjg3MiwtMTM2MDY5
+NTk2OCwtMTc5ODI0MDg5OSw1NjM1OTk1MTEsMTY3NDUyMjYzMi
+wtMjcxNjI2NjEwLDE1OTExNzk1MzQsLTE5MDI3MjA0MDEsNzIx
+NTI3OTM3LC0xNDg3OTczMjg3LC0yMDMwMTYzOTM4LC0xNzQ3MT
+Y4OTYzLDczMDI2MjYyOSw2NTQ4NTI2MzYsLTEyMTEwMjk0Njcs
+LTE0MTI1OTYxODRdfQ==
 -->
