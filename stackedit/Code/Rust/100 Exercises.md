@@ -1204,19 +1204,26 @@ impl<'a> IntoIterator for &'a TicketStore{
 ```
 
 ### 06.07 Combinators
-Useful `Iterator` functions
+Useful `Iterator` functions called **combinators**
 * `map` applies a function to each element of the iterator
 * `filter` keeps only elements that satisfy a predicate
 * `filter_map` combines `filter` and `map` in one step
-* `cloned` conver
+* `cloned` converts an iterator of references to an iterator of cloned values
+* `skip` skips the first `n` elements of the iterator
+* `take` stops the iterator after `n` elements
+* `chain` combines two iterators into one
+
+#### closures
+closures
+: 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDc0Nzg0MDUsLTU2MDA4NTE0MSwtMT
-g5NDQwMTY3NiwtMTMxNzY3NTMyMCwtMzU5NzI4NzIsLTEzNjA2
-OTU5NjgsLTE3OTgyNDA4OTksNTYzNTk5NTExLDE2NzQ1MjI2Mz
-IsLTI3MTYyNjYxMCwxNTkxMTc5NTM0LC0xOTAyNzIwNDAxLDcy
-MTUyNzkzNywtMTQ4Nzk3MzI4NywtMjAzMDE2MzkzOCwtMTc0Nz
-E2ODk2Myw3MzAyNjI2MjksNjU0ODUyNjM2LC0xMjExMDI5NDY3
-LC0xNDEyNTk2MTg0XX0=
+eyJoaXN0b3J5IjpbMzc1NDc2MTksLTU2MDA4NTE0MSwtMTg5ND
+QwMTY3NiwtMTMxNzY3NTMyMCwtMzU5NzI4NzIsLTEzNjA2OTU5
+NjgsLTE3OTgyNDA4OTksNTYzNTk5NTExLDE2NzQ1MjI2MzIsLT
+I3MTYyNjYxMCwxNTkxMTc5NTM0LC0xOTAyNzIwNDAxLDcyMTUy
+NzkzNywtMTQ4Nzk3MzI4NywtMjAzMDE2MzkzOCwtMTc0NzE2OD
+k2Myw3MzAyNjI2MjksNjU0ODUyNjM2LC0xMjExMDI5NDY3LC0x
+NDEyNTk2MTg0XX0=
 -->
