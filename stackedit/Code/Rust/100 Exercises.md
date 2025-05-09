@@ -146,7 +146,7 @@ Methods with `&mut self`
 * doesn't take ownership
 * cannot chain calls
 
-### 3.8 Memory Layout
+### 3.08 Memory Layout
 `std::mem::size_of::<T>()`
 : Returns the size in bytes the type takes on the stack
 
@@ -155,7 +155,7 @@ String's Memory Layout (24 bytes on 64-bit)
 * the *length* of the string
 * The *capacity* of the string (reservation)
 
-### 3.9 References
+### 3.09 References
 * references put a 	`usize` on the stack (8 bytes)
 
 #### Heap
@@ -523,7 +523,7 @@ impl Drop for MyStruct{
 5. The `TryFrom` and `TryInto` traits for fallible conversions
 6. Rust's Package system
 
-### 5.1 Enums
+### 5.01 Enums
 ```rust
 enum Status{
 	ToDo,
@@ -533,7 +533,7 @@ enum Status{
 
 let status: Status = Status::ToDo;
 ```
-### 5.2 `match`
+### 5.02 `match`
 ```rust
 impl Status{
 	fn is_done(&self) -> bool {
@@ -560,7 +560,7 @@ match <var> {
 Compiler driven refactoring
 : using `enum`s and `match` statements so that the adding a new option to the `enum` will generate compiler errors in each place the code must be updated 
 
-### 5.3 Variants can hold data
+### 5.03 Variants can hold data
 C-style enum
 : don't have data, basically named constants
 
@@ -600,7 +600,7 @@ match status{
     }
 ```
 
-### 5.4 branching `let`
+### 5.04 branching `let`
 `if let`
 ```rust
 impl Ticket{
@@ -633,7 +633,7 @@ else{ panic!("...") };
 ```
 **
 
-### 5.5 Nullability
+### 5.05 Nullability
 
 Tuples
 : like structs but without naming members
@@ -670,7 +670,7 @@ pub fn assigned_to(&self) -> Option<&String>{
 }
 ```
 
-### 5.6 Fallibility
+### 5.06 Fallibility
 
 `Result`
 : an `enum` that can return a result or an error
@@ -698,7 +698,7 @@ fn new(title: String) -> Result<Ticket,String>{
 	Ok(Ticket{title})
 ```
 
-### 5.7 Unwrapping
+### 5.07 Unwrapping
 
 `result.unwrap()`
 : returns the `Ok` value or panics on `Err`
@@ -719,7 +719,7 @@ let number = match parse_int("43"){
 }
 ```
 
-### 5.8 Error enums
+### 5.08 Error enums
 ```rust
 enum U32ParseError {
 	NotANumber,
@@ -736,7 +736,7 @@ match s.parse_u32() {
 	}
 }
 ```
-### 5.9 `Error` `Debug` and `Display` traits
+### 5.09 `Error` `Debug` and `Display` traits
 `pub trait std::error::Error: Debug + Display {}`
 : A marker for error objects requires both debug and display
 
@@ -1086,11 +1086,11 @@ for n in v {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkyOTU4OTIsLTI3MTYyNjYxMCwxNTkxMT
-c5NTM0LC0xOTAyNzIwNDAxLDcyMTUyNzkzNywtMTQ4Nzk3MzI4
-NywtMjAzMDE2MzkzOCwtMTc0NzE2ODk2Myw3MzAyNjI2MjksNj
-U0ODUyNjM2LC0xMjExMDI5NDY3LC0xNDEyNTk2MTg0LC03MjE0
-NTM1NjIsMTk0NDIzMjgyNywtMTI0MDY2MjUwNSw4MzAwMzM0Mj
-QsLTU1ODAzMjAzNywyMTQ5Njk0MDYsOTI1MDY1Mjc4LC0xMDU4
-ODczNTYwXX0=
+eyJoaXN0b3J5IjpbMTY3NDUyMjYzMiwtMjcxNjI2NjEwLDE1OT
+ExNzk1MzQsLTE5MDI3MjA0MDEsNzIxNTI3OTM3LC0xNDg3OTcz
+Mjg3LC0yMDMwMTYzOTM4LC0xNzQ3MTY4OTYzLDczMDI2MjYyOS
+w2NTQ4NTI2MzYsLTEyMTEwMjk0NjcsLTE0MTI1OTYxODQsLTcy
+MTQ1MzU2MiwxOTQ0MjMyODI3LC0xMjQwNjYyNTA1LDgzMDAzMz
+QyNCwtNTU4MDMyMDM3LDIxNDk2OTQwNiw5MjUwNjUyNzgsLTEw
+NTg4NzM1NjBdfQ==
 -->
