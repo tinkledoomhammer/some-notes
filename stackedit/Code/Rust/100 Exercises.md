@@ -1139,7 +1139,13 @@ pub fn iter(&self) -> std::slice::Iter<Ticket> {...
 //or
 pub fn iter(&self) -> <&Vec<Ticket> as IntoIterator>::IntoIter {...
 
+//Now things that don't work
 pub fn iter(&self) -> Iter<'_, Self::Item> { ...
+	// Iter is not in scope
+pub fn iter(&self) -> std::slice::Iter<'_, Self::Item> {...
+	// Self::Item is ambiguous
+	//Dropping the lifetime (or whatever that is) and 
+	//	usig `Ticket` instead of `Self::I
 ```
 I was supposed to figure this out based on the docs again but 
 in https://doc.rust-lang.org/std/vec/struct.Vec.html there is `pub fn iter(&self) -> Iter<'_, T>`
@@ -1148,7 +1154,7 @@ in https://doc.rust-lang.org/std/vec/struct.Vec.html there is `pub fn iter(&self
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4Njc3NjkxMCwtMTM2MDY5NTk2OCwtMT
+eyJoaXN0b3J5IjpbMTY5OTg2MDQ5OSwtMTM2MDY5NTk2OCwtMT
 c5ODI0MDg5OSw1NjM1OTk1MTEsMTY3NDUyMjYzMiwtMjcxNjI2
 NjEwLDE1OTExNzk1MzQsLTE5MDI3MjA0MDEsNzIxNTI3OTM3LC
 0xNDg3OTczMjg3LC0yMDMwMTYzOTM4LC0xNzQ3MTY4OTYzLDcz
