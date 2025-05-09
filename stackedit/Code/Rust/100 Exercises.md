@@ -1093,17 +1093,18 @@ trait IntoIterator {
 
 // Implementing IntoIter for a vector
 // From the exercise (06/05)
-// The i
+// The IntoIter type from IntoIterator for TicketStore
 type IntoIter = std::vec::IntoIter<Self::Item>;
 // or 
 type IntoIter = std::vec::IntoIter<Self::Item>;
-
 ```
+**`Iterator`s automatically implement `IntoIterator` by returning themselves**
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNjUyODI1Myw1NjM1OTk1MTEsMTY3ND
+eyJoaXN0b3J5IjpbLTE4OTQ5MzMxMiw1NjM1OTk1MTEsMTY3ND
 UyMjYzMiwtMjcxNjI2NjEwLDE1OTExNzk1MzQsLTE5MDI3MjA0
 MDEsNzIxNTI3OTM3LC0xNDg3OTczMjg3LC0yMDMwMTYzOTM4LC
 0xNzQ3MTY4OTYzLDczMDI2MjYyOSw2NTQ4NTI2MzYsLTEyMTEw
