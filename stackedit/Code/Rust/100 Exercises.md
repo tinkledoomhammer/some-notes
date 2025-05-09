@@ -1178,7 +1178,7 @@ Lifetime elision
 : omission of explicit lifetime annotations in specific circumstances according to **lifetime elision rules**
 
 `'_`
-: a placeholder used for lifetimes in methods
+: a placeholder used for lifetimes in methods, makes the lifetime the same as `self`
 ```rust
 fn iter<'a>(&'a self) -> Iter<'a,T>
 // is the same as 
@@ -1189,11 +1189,11 @@ fn iter(&self) -> Iter<'_,T>
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTc2NzUzMjAsLTM1OTcyODcyLC0xMz
-YwNjk1OTY4LC0xNzk4MjQwODk5LDU2MzU5OTUxMSwxNjc0NTIy
-NjMyLC0yNzE2MjY2MTAsMTU5MTE3OTUzNCwtMTkwMjcyMDQwMS
-w3MjE1Mjc5MzcsLTE0ODc5NzMyODcsLTIwMzAxNjM5MzgsLTE3
-NDcxNjg5NjMsNzMwMjYyNjI5LDY1NDg1MjYzNiwtMTIxMTAyOT
-Q2NywtMTQxMjU5NjE4NCwtNzIxNDUzNTYyLDE5NDQyMzI4Mjcs
-LTEyNDA2NjI1MDVdfQ==
+eyJoaXN0b3J5IjpbLTE4OTQ0MDE2NzYsLTEzMTc2NzUzMjAsLT
+M1OTcyODcyLC0xMzYwNjk1OTY4LC0xNzk4MjQwODk5LDU2MzU5
+OTUxMSwxNjc0NTIyNjMyLC0yNzE2MjY2MTAsMTU5MTE3OTUzNC
+wtMTkwMjcyMDQwMSw3MjE1Mjc5MzcsLTE0ODc5NzMyODcsLTIw
+MzAxNjM5MzgsLTE3NDcxNjg5NjMsNzMwMjYyNjI5LDY1NDg1Mj
+YzNiwtMTIxMTAyOTQ2NywtMTQxMjU5NjE4NCwtNzIxNDUzNTYy
+LDE5NDQyMzI4MjddfQ==
 -->
