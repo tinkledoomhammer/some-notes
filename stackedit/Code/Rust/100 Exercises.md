@@ -1151,15 +1151,22 @@ pub fn iter(&self) -> std::slice::Iter<'_, Self::Item> {...
 I was supposed to figure this out based on the docs again but 
 in https://doc.rust-lang.org/std/vec/struct.Vec.html there is `pub fn iter(&self) -> Iter<'_, T>`
 * which is not what the exercise says
-* 
+
+
+### 6.06 Lifetimes
+```rust
+impl IntoIterator for &TicketStore{
+	type Item = &Ticket;
+	type IntoIter = std::slice::Iter<Tic
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1OTcyODcyLC0xMzYwNjk1OTY4LC0xNz
-k4MjQwODk5LDU2MzU5OTUxMSwxNjc0NTIyNjMyLC0yNzE2MjY2
-MTAsMTU5MTE3OTUzNCwtMTkwMjcyMDQwMSw3MjE1Mjc5MzcsLT
-E0ODc5NzMyODcsLTIwMzAxNjM5MzgsLTE3NDcxNjg5NjMsNzMw
-MjYyNjI5LDY1NDg1MjYzNiwtMTIxMTAyOTQ2NywtMTQxMjU5Nj
-E4NCwtNzIxNDUzNTYyLDE5NDQyMzI4MjcsLTEyNDA2NjI1MDUs
-ODMwMDMzNDI0XX0=
+eyJoaXN0b3J5IjpbLTQxOTAwMDgzOSwtMzU5NzI4NzIsLTEzNj
+A2OTU5NjgsLTE3OTgyNDA4OTksNTYzNTk5NTExLDE2NzQ1MjI2
+MzIsLTI3MTYyNjYxMCwxNTkxMTc5NTM0LC0xOTAyNzIwNDAxLD
+cyMTUyNzkzNywtMTQ4Nzk3MzI4NywtMjAzMDE2MzkzOCwtMTc0
+NzE2ODk2Myw3MzAyNjI2MjksNjU0ODUyNjM2LC0xMjExMDI5ND
+Y3LC0xNDEyNTk2MTg0LC03MjE0NTM1NjIsMTk0NDIzMjgyNywt
+MTI0MDY2MjUwNV19
 -->
