@@ -5,7 +5,7 @@ Use `wr` to check exercises
 
 
 ## 3 Modeling a Ticket
-### 3.3 Modules
+### 3.03 Modules
 Module
 : A way to group related code together under a common namespace
 
@@ -46,7 +46,7 @@ Modules form a tree structure
 : imports all the items in the entire namespace
 : This is discouraged in most cases because it clutters the namespace
 
-### 3.4 Visibility
+### 3.04 Visibility
 
 Private by default
 : can only be accessed  in the module where its defined or
@@ -66,7 +66,7 @@ Visibility Modifiers
 `pub(in path::to::module)`
 : makes the entity public to the specified module
 
-### 3.5 Encapsulation
+### 3.05 Encapsulation
 * Private fields prevent the use of the constructor syntax
 ```rust
 let ticket = Ticket {
@@ -88,7 +88,7 @@ impl Ticket{
 Accessor methods
 : public methods that allow reading values of private fields
 
-### 3.6 Ownership
+### 3.06 Ownership
 The ownership system ensures that :
 1. Data is never mutated while it is being read
 2. Data is never read while it's being mutated
@@ -122,7 +122,7 @@ Restrictions that prevent simultaneous reading and mutating data
 4. Can have many mutable references at the same time, as long as there are no mutable reference
 
 
-### 3.7 Mutable references
+### 3.07 Mutable references
 Methods with `mut self`
 * should return `self`
 ```rust
@@ -235,7 +235,7 @@ Prelude
 Inherent method
 : A method defined directly on a type, without using a trait
 
-### 4.2 Implementing Traits
+### 4.02 Implementing Traits
 * When a type is defined in a different crate, then trying to define new methods for it will generate a compiler error
 
 Extension Trait
@@ -249,7 +249,7 @@ Orphan Rule
 : 1. The trait is defined in the current trait or
 : 2. The implementor type is defined in the current crate
 
-### 4.3 Operator overloading
+### 4.03 Operator overloading
 
 Operator Overloading
 : The ability to define custom behavior for operators like `+`, `-`, `*`, `/`, `==`, `!=`, etc
@@ -264,7 +264,7 @@ Default Implementations
 * specified in the trait definition by providing a body for the method
 * for example `std::cmp::PartialEq` defines `.ne(...)`
 
-### 4.4 Derive Macros
+### 4.04 Derive Macros
 Destructuring
 ```rust
 let Ticket {
@@ -287,7 +287,7 @@ struct Ticket{...}
 //now PartialEq and Debug are implemented for Ticket
 ```
 
-### 4.5 Trait Bounds
+### 4.05 Trait Bounds
 Traits can also be used for generic programming
 
 Generics
@@ -312,7 +312,7 @@ fn print_if_even<T: IsEven + Debug> (n: T{...}
 
 Type parameter names should be in *upper camel case*
 
-### 4.6 String Slices
+### 4.06 String Slices
 
 `&str`
 : A view of string data
@@ -322,7 +322,7 @@ Type parameter names should be in *upper camel case*
 * `String` has and owns exactly one heap allocated section of memory
 
 
-### 4.7  `Deref` trait
+### 4.07  `Deref` trait
 aka **deref coercion**
 * defined in `std::ops`
 ```rust
@@ -339,7 +339,7 @@ impl Deref for String{
 }
 ```
 
-### 4.8 `Sized`
+### 4.08 `Sized`
 * the `Sized` trait is implemented for fixed-size types
 * it is an **auto** trait and a **marker** trait
 
@@ -364,7 +364,7 @@ Dynamically sized types like `str`
 
 This allows for implicit conversion
 
-### 4.9 `From` and `Into`
+### 4.09 `From` and `Into`
 `std::convert` defines 2 traits for **infallible conversions** : `From` and `Into`
 
 ```rust
@@ -1049,7 +1049,7 @@ Exercise
 * doesn't work for enums that hold data
 * https://doc.rust-lang.org/reference/items/enumerations.html#custom-discriminant-values-for-fieldless-enumerations
 
-### 6.2 Vectors
+### 6.02 Vectors
 
 `vec`
 : A growable array type in the standard library
@@ -1086,11 +1086,11 @@ for n in v {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3MTYyNjYxMCwxNTkxMTc5NTM0LC0xOT
-AyNzIwNDAxLDcyMTUyNzkzNywtMTQ4Nzk3MzI4NywtMjAzMDE2
-MzkzOCwtMTc0NzE2ODk2Myw3MzAyNjI2MjksNjU0ODUyNjM2LC
-0xMjExMDI5NDY3LC0xNDEyNTk2MTg0LC03MjE0NTM1NjIsMTk0
-NDIzMjgyNywtMTI0MDY2MjUwNSw4MzAwMzM0MjQsLTU1ODAzMj
-AzNywyMTQ5Njk0MDYsOTI1MDY1Mjc4LC0xMDU4ODczNTYwLDEz
-NTM3MTk3ODddfQ==
+eyJoaXN0b3J5IjpbOTkyOTU4OTIsLTI3MTYyNjYxMCwxNTkxMT
+c5NTM0LC0xOTAyNzIwNDAxLDcyMTUyNzkzNywtMTQ4Nzk3MzI4
+NywtMjAzMDE2MzkzOCwtMTc0NzE2ODk2Myw3MzAyNjI2MjksNj
+U0ODUyNjM2LC0xMjExMDI5NDY3LC0xNDEyNTk2MTg0LC03MjE0
+NTM1NjIsMTk0NDIzMjgyNywtMTI0MDY2MjUwNSw4MzAwMzM0Mj
+QsLTU1ODAzMjAzNywyMTQ5Njk0MDYsOTI1MDY1Mjc4LC0xMDU4
+ODczNTYwXX0=
 -->
