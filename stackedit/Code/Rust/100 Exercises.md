@@ -1182,18 +1182,18 @@ Lifetime elision
 ```rust
 fn iter<'a>(&'a self) -> Iter<'a,T>
 // is the same as 
-fn iter(&self) -> Iter<'_,
+fn iter(&self) -> Iter<'_,T>
 ```
 
 [Lifetime elision rules](https://doc.rust-lang.org/reference/lifetime-elision.html)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg0NzgzNjY2LC0zNTk3Mjg3MiwtMTM2MD
-Y5NTk2OCwtMTc5ODI0MDg5OSw1NjM1OTk1MTEsMTY3NDUyMjYz
-MiwtMjcxNjI2NjEwLDE1OTExNzk1MzQsLTE5MDI3MjA0MDEsNz
-IxNTI3OTM3LC0xNDg3OTczMjg3LC0yMDMwMTYzOTM4LC0xNzQ3
-MTY4OTYzLDczMDI2MjYyOSw2NTQ4NTI2MzYsLTEyMTEwMjk0Nj
-csLTE0MTI1OTYxODQsLTcyMTQ1MzU2MiwxOTQ0MjMyODI3LC0x
-MjQwNjYyNTA1XX0=
+eyJoaXN0b3J5IjpbLTEzMTc2NzUzMjAsLTM1OTcyODcyLC0xMz
+YwNjk1OTY4LC0xNzk4MjQwODk5LDU2MzU5OTUxMSwxNjc0NTIy
+NjMyLC0yNzE2MjY2MTAsMTU5MTE3OTUzNCwtMTkwMjcyMDQwMS
+w3MjE1Mjc5MzcsLTE0ODc5NzMyODcsLTIwMzAxNjM5MzgsLTE3
+NDcxNjg5NjMsNzMwMjYyNjI5LDY1NDg1MjYzNiwtMTIxMTAyOT
+Q2NywtMTQxMjU5NjE4NCwtNzIxNDUzNTYyLDE5NDQyMzI4Mjcs
+LTEyNDA2NjI1MDVdfQ==
 -->
