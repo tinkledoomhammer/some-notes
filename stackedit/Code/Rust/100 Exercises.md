@@ -1099,12 +1099,15 @@ type IntoIter = std::vec::IntoIter<Self::Item>;
 type IntoIter = std::vec::IntoIter<Self::Item>;
 ```
 **`Iterator`s automatically implement `IntoIterator` by returning themselves**
+**An iterator might not be done when it returns `None`**
+* the `FusedIterator` trait does that
 
-
+#### Bounds check
+* 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTQ5MzMxMiw1NjM1OTk1MTEsMTY3ND
+eyJoaXN0b3J5IjpbMjExOTg0NDM0Nyw1NjM1OTk1MTEsMTY3ND
 UyMjYzMiwtMjcxNjI2NjEwLDE1OTExNzk1MzQsLTE5MDI3MjA0
 MDEsNzIxNTI3OTM3LC0xNDg3OTczMjg3LC0yMDMwMTYzOTM4LC
 0xNzQ3MTY4OTYzLDczMDI2MjYyOSw2NTQ4NTI2MzYsLTEyMTEw
