@@ -1140,15 +1140,16 @@ pub fn iter(&self) -> std::slice::Iter<Ticket> {...
 pub fn iter(&self) -> <&Vec<Ticket> as IntoIterator>::IntoIter {...
 ```
 I was supposed to figure this out based on the docs again but 
-
+in https://doc.rust-lang.org/std/vec/struct.Vec.html there is `pub fn iter(&self) -> Iter<'_, T>`
+* 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODQyMjQ3MDIsLTE3OTgyNDA4OTksNT
-YzNTk5NTExLDE2NzQ1MjI2MzIsLTI3MTYyNjYxMCwxNTkxMTc5
-NTM0LC0xOTAyNzIwNDAxLDcyMTUyNzkzNywtMTQ4Nzk3MzI4Ny
-wtMjAzMDE2MzkzOCwtMTc0NzE2ODk2Myw3MzAyNjI2MjksNjU0
-ODUyNjM2LC0xMjExMDI5NDY3LC0xNDEyNTk2MTg0LC03MjE0NT
-M1NjIsMTk0NDIzMjgyNywtMTI0MDY2MjUwNSw4MzAwMzM0MjQs
-LTU1ODAzMjAzN119
+eyJoaXN0b3J5IjpbLTM0NDA1MTQxOCwtMTc5ODI0MDg5OSw1Nj
+M1OTk1MTEsMTY3NDUyMjYzMiwtMjcxNjI2NjEwLDE1OTExNzk1
+MzQsLTE5MDI3MjA0MDEsNzIxNTI3OTM3LC0xNDg3OTczMjg3LC
+0yMDMwMTYzOTM4LC0xNzQ3MTY4OTYzLDczMDI2MjYyOSw2NTQ4
+NTI2MzYsLTEyMTEwMjk0NjcsLTE0MTI1OTYxODQsLTcyMTQ1Mz
+U2MiwxOTQ0MjMyODI3LC0xMjQwNjYyNTA1LDgzMDAzMzQyNCwt
+NTU4MDMyMDM3XX0=
 -->
