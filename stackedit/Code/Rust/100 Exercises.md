@@ -1103,11 +1103,18 @@ type IntoIter = std::vec::IntoIter<Self::Item>;
 * the `FusedIterator` trait does that
 
 #### Bounds check
-* 
+* Using iterators allows some bounds checks to be removed in optimization
+```rust
+let v = vec![1,2,3]
+//slower
+for n in 0..v.len() { ... }
+//faster
+for n in v {...}
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExOTg0NDM0Nyw1NjM1OTk1MTEsMTY3ND
+eyJoaXN0b3J5IjpbMTk2NDkwODgzMCw1NjM1OTk1MTEsMTY3ND
 UyMjYzMiwtMjcxNjI2NjEwLDE1OTExNzk1MzQsLTE5MDI3MjA0
 MDEsNzIxNTI3OTM3LC0xNDg3OTczMjg3LC0yMDMwMTYzOTM4LC
 0xNzQ3MTY4OTYzLDczMDI2MjYyOSw2NTQ4NTI2MzYsLTEyMTEw
