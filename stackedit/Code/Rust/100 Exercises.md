@@ -1215,15 +1215,22 @@ Useful `Iterator` functions called **combinators**
 
 #### closures
 closures
-: 
+: anonymous functions
+```rust
+let add_one = |x| x +1;
+let add_one = |x| {x + 1};
+```
+
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc1NDc2MTksLTU2MDA4NTE0MSwtMTg5ND
-QwMTY3NiwtMTMxNzY3NTMyMCwtMzU5NzI4NzIsLTEzNjA2OTU5
-NjgsLTE3OTgyNDA4OTksNTYzNTk5NTExLDE2NzQ1MjI2MzIsLT
-I3MTYyNjYxMCwxNTkxMTc5NTM0LC0xOTAyNzIwNDAxLDcyMTUy
-NzkzNywtMTQ4Nzk3MzI4NywtMjAzMDE2MzkzOCwtMTc0NzE2OD
-k2Myw3MzAyNjI2MjksNjU0ODUyNjM2LC0xMjExMDI5NDY3LC0x
-NDEyNTk2MTg0XX0=
+eyJoaXN0b3J5IjpbNjkzNzEzOTQ1LC01NjAwODUxNDEsLTE4OT
+Q0MDE2NzYsLTEzMTc2NzUzMjAsLTM1OTcyODcyLC0xMzYwNjk1
+OTY4LC0xNzk4MjQwODk5LDU2MzU5OTUxMSwxNjc0NTIyNjMyLC
+0yNzE2MjY2MTAsMTU5MTE3OTUzNCwtMTkwMjcyMDQwMSw3MjE1
+Mjc5MzcsLTE0ODc5NzMyODcsLTIwMzAxNjM5MzgsLTE3NDcxNj
+g5NjMsNzMwMjYyNjI5LDY1NDg1MjYzNiwtMTIxMTAyOTQ2Nywt
+MTQxMjU5NjE4NF19
 -->
