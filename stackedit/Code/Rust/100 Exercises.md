@@ -1111,10 +1111,15 @@ for n in 0..v.len() { ... }
 //faster
 for n in v {...}
 ```
+### 6.05 `.iter()`
+
+**`IntoIterator` consumes `self` to create an iterator**
+
+Mo
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2NDkwODgzMCw1NjM1OTk1MTEsMTY3ND
+eyJoaXN0b3J5IjpbLTE1ODU0MjQwMiw1NjM1OTk1MTEsMTY3ND
 UyMjYzMiwtMjcxNjI2NjEwLDE1OTExNzk1MzQsLTE5MDI3MjA0
 MDEsNzIxNTI3OTM3LC0xNDg3OTczMjg3LC0yMDMwMTYzOTM4LC
 0xNzQ3MTY4OTYzLDczMDI2MjYyOSw2NTQ4NTI2MzYsLTEyMTEw
