@@ -1268,15 +1268,18 @@ impl TicketStore {
 // P is a closure, which has no named type
 ```
 * This is not a generic. Only one implementation is generated
-* 
+
+RPIT
+: "Return position Imp Trait"
+* found in RFCs and such, and refers to the use of `impl Trait` in the return position
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1Mjg0ODE0MCwtMjAzNDY4OTgxNCwtNT
-YwMDg1MTQxLC0xODk0NDAxNjc2LC0xMzE3Njc1MzIwLC0zNTk3
-Mjg3MiwtMTM2MDY5NTk2OCwtMTc5ODI0MDg5OSw1NjM1OTk1MT
-EsMTY3NDUyMjYzMiwtMjcxNjI2NjEwLDE1OTExNzk1MzQsLTE5
-MDI3MjA0MDEsNzIxNTI3OTM3LC0xNDg3OTczMjg3LC0yMDMwMT
-YzOTM4LC0xNzQ3MTY4OTYzLDczMDI2MjYyOSw2NTQ4NTI2MzYs
-LTEyMTEwMjk0NjddfQ==
+eyJoaXN0b3J5IjpbLTE1NTAxNzMwMzQsLTIwMzQ2ODk4MTQsLT
+U2MDA4NTE0MSwtMTg5NDQwMTY3NiwtMTMxNzY3NTMyMCwtMzU5
+NzI4NzIsLTEzNjA2OTU5NjgsLTE3OTgyNDA4OTksNTYzNTk5NT
+ExLDE2NzQ1MjI2MzIsLTI3MTYyNjYxMCwxNTkxMTc5NTM0LC0x
+OTAyNzIwNDAxLDcyMTUyNzkzNywtMTQ4Nzk3MzI4NywtMjAzMD
+E2MzkzOCwtMTc0NzE2ODk2Myw3MzAyNjI2MjksNjU0ODUyNjM2
+LC0xMjExMDI5NDY3XX0=
 -->
