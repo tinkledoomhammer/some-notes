@@ -1204,7 +1204,7 @@ impl<'a> IntoIterator for &'a TicketStore{
 ```
 
 ### 06.07 Combinators
-Useful `Iterator` functions called **combinators**
+Useful `Iterator` functions called **combinators** that return iterators
 * `map` applies a function to each element of the iterator
 * `filter` keeps only elements that satisfy a predicate
 * `filter_map` combines `filter` and `map` in one step
@@ -1212,6 +1212,7 @@ Useful `Iterator` functions called **combinators**
 * `skip` skips the first `n` elements of the iterator
 * `take` stops the iterator after `n` elements
 * `chain` combines two iterators into one
+
 
 #### closures
 closures
@@ -1244,18 +1245,19 @@ let square_of_evens = numbers.iter()
 	.collect::<Vec<u32>>();
 ```
 #### See also
-[`Iterator`'s docs](https://doc.rust-lang.org/std/iter/trait.Iterator.html)
-t
+* [`Iterator`'s docs](https://doc.rust-lang.org/std/iter/trait.Iterator.html)
+* The [`itertools` crate](https://docs.rs/itertools/)
+	* for more combinators
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5NDE3Mjk5NCwtMjAzNDY4OTgxNCwtNT
-YwMDg1MTQxLC0xODk0NDAxNjc2LC0xMzE3Njc1MzIwLC0zNTk3
-Mjg3MiwtMTM2MDY5NTk2OCwtMTc5ODI0MDg5OSw1NjM1OTk1MT
-EsMTY3NDUyMjYzMiwtMjcxNjI2NjEwLDE1OTExNzk1MzQsLTE5
-MDI3MjA0MDEsNzIxNTI3OTM3LC0xNDg3OTczMjg3LC0yMDMwMT
-YzOTM4LC0xNzQ3MTY4OTYzLDczMDI2MjYyOSw2NTQ4NTI2MzYs
-LTEyMTEwMjk0NjddfQ==
+eyJoaXN0b3J5IjpbMjg2OTk1NTE5LC0yMDM0Njg5ODE0LC01Nj
+AwODUxNDEsLTE4OTQ0MDE2NzYsLTEzMTc2NzUzMjAsLTM1OTcy
+ODcyLC0xMzYwNjk1OTY4LC0xNzk4MjQwODk5LDU2MzU5OTUxMS
+wxNjc0NTIyNjMyLC0yNzE2MjY2MTAsMTU5MTE3OTUzNCwtMTkw
+MjcyMDQwMSw3MjE1Mjc5MzcsLTE0ODc5NzMyODcsLTIwMzAxNj
+M5MzgsLTE3NDcxNjg5NjMsNzMwMjYyNjI5LDY1NDg1MjYzNiwt
+MTIxMTAyOTQ2N119
 -->
