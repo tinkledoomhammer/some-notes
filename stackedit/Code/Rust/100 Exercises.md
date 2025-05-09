@@ -1057,6 +1057,7 @@ Exercise
 * or with the `vec!` macro `let numbers = vec![1,2,3];`
 * Elements are accessed in the same way as arrays
 * `Vec::with_capacity(n);` sets a minimum starting capacity
+* `Vec::capacity()` - returns the current capacity
 
 Memory Layout
 : A pointer, length, and capacity are stack allocated
@@ -1066,11 +1067,11 @@ Memory Layout
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MTE3OTUzNCwtMTkwMjcyMDQwMSw3Mj
-E1Mjc5MzcsLTE0ODc5NzMyODcsLTIwMzAxNjM5MzgsLTE3NDcx
-Njg5NjMsNzMwMjYyNjI5LDY1NDg1MjYzNiwtMTIxMTAyOTQ2Ny
-wtMTQxMjU5NjE4NCwtNzIxNDUzNTYyLDE5NDQyMzI4MjcsLTEy
-NDA2NjI1MDUsODMwMDMzNDI0LC01NTgwMzIwMzcsMjE0OTY5ND
-A2LDkyNTA2NTI3OCwtMTA1ODg3MzU2MCwxMzUzNzE5Nzg3LDE3
-MTExNDI5NDZdfQ==
+eyJoaXN0b3J5IjpbMTM1NDc2NjM5MSwxNTkxMTc5NTM0LC0xOT
+AyNzIwNDAxLDcyMTUyNzkzNywtMTQ4Nzk3MzI4NywtMjAzMDE2
+MzkzOCwtMTc0NzE2ODk2Myw3MzAyNjI2MjksNjU0ODUyNjM2LC
+0xMjExMDI5NDY3LC0xNDEyNTk2MTg0LC03MjE0NTM1NjIsMTk0
+NDIzMjgyNywtMTI0MDY2MjUwNSw4MzAwMzM0MjQsLTU1ODAzMj
+AzNywyMTQ5Njk0MDYsOTI1MDY1Mjc4LC0xMDU4ODczNTYwLDEz
+NTM3MTk3ODddfQ==
 -->
