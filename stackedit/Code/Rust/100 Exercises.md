@@ -1081,8 +1081,16 @@ for n in v {
 }
 ```
 ```rust
+trait Iterator {
+	type Item;
+	fn next(&mut self) -> Option<Self::Item>;
+}
 
-
+trait IntoIterator {
+	type Item;
+	type IntoIter: Iterator<Item = Self::Item>;
+	fn into_iter(self) -> Self::IntoIter;
+}
 
 // Implementing IntoIter for a vector
 
@@ -1090,17 +1098,16 @@ type IntoIter = std::vec::IntoIter<Self::Item>;
 // or 
 type IntoIter = std::vec::IntoIter<Self::Item>;
 
-
 ```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjM0NDczMDEsMTY3NDUyMjYzMiwtMj
-cxNjI2NjEwLDE1OTExNzk1MzQsLTE5MDI3MjA0MDEsNzIxNTI3
-OTM3LC0xNDg3OTczMjg3LC0yMDMwMTYzOTM4LC0xNzQ3MTY4OT
-YzLDczMDI2MjYyOSw2NTQ4NTI2MzYsLTEyMTEwMjk0NjcsLTE0
-MTI1OTYxODQsLTcyMTQ1MzU2MiwxOTQ0MjMyODI3LC0xMjQwNj
-YyNTA1LDgzMDAzMzQyNCwtNTU4MDMyMDM3LDIxNDk2OTQwNiw5
-MjUwNjUyNzhdfQ==
+eyJoaXN0b3J5IjpbOTc1NDM1ODgxLDE2NzQ1MjI2MzIsLTI3MT
+YyNjYxMCwxNTkxMTc5NTM0LC0xOTAyNzIwNDAxLDcyMTUyNzkz
+NywtMTQ4Nzk3MzI4NywtMjAzMDE2MzkzOCwtMTc0NzE2ODk2My
+w3MzAyNjI2MjksNjU0ODUyNjM2LC0xMjExMDI5NDY3LC0xNDEy
+NTk2MTg0LC03MjE0NTM1NjIsMTk0NDIzMjgyNywtMTI0MDY2Mj
+UwNSw4MzAwMzM0MjQsLTU1ODAzMjAzNywyMTQ5Njk0MDYsOTI1
+MDY1Mjc4XX0=
 -->
