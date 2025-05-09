@@ -1166,17 +1166,22 @@ impl IntoIterator for &TicketStore{
 
 Lifetime Parameters
 : labels used by the compiler to track how long a reference is valid
-
+```rust
+impl <T> Vec<T>{
+	//this is simplified
+	pub fn iter<'a>(&'a self) -> Iter<'a, T>{ ...}
+}
+```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNDgwMDkxMiwtMzU5NzI4NzIsLTEzNj
-A2OTU5NjgsLTE3OTgyNDA4OTksNTYzNTk5NTExLDE2NzQ1MjI2
-MzIsLTI3MTYyNjYxMCwxNTkxMTc5NTM0LC0xOTAyNzIwNDAxLD
-cyMTUyNzkzNywtMTQ4Nzk3MzI4NywtMjAzMDE2MzkzOCwtMTc0
-NzE2ODk2Myw3MzAyNjI2MjksNjU0ODUyNjM2LC0xMjExMDI5ND
-Y3LC0xNDEyNTk2MTg0LC03MjE0NTM1NjIsMTk0NDIzMjgyNywt
-MTI0MDY2MjUwNV19
+eyJoaXN0b3J5IjpbLTE3ODEyODcyNDcsLTM1OTcyODcyLC0xMz
+YwNjk1OTY4LC0xNzk4MjQwODk5LDU2MzU5OTUxMSwxNjc0NTIy
+NjMyLC0yNzE2MjY2MTAsMTU5MTE3OTUzNCwtMTkwMjcyMDQwMS
+w3MjE1Mjc5MzcsLTE0ODc5NzMyODcsLTIwMzAxNjM5MzgsLTE3
+NDcxNjg5NjMsNzMwMjYyNjI5LDY1NDg1MjYzNiwtMTIxMTAyOT
+Q2NywtMTQxMjU5NjE4NCwtNzIxNDUzNTYyLDE5NDQyMzI4Mjcs
+LTEyNDA2NjI1MDVdfQ==
 -->
