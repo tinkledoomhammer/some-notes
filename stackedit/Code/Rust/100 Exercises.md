@@ -1187,13 +1187,18 @@ fn iter(&self) -> Iter<'_,T>
 
 [Lifetime elision rules](https://doc.rust-lang.org/reference/lifetime-elision.html)
 
+
+Questions from the exercise:
+* Why do associated types need a lifetime? shouldn't that be done on a method-by-method basis?
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTQ0MDE2NzYsLTEzMTc2NzUzMjAsLT
-M1OTcyODcyLC0xMzYwNjk1OTY4LC0xNzk4MjQwODk5LDU2MzU5
-OTUxMSwxNjc0NTIyNjMyLC0yNzE2MjY2MTAsMTU5MTE3OTUzNC
-wtMTkwMjcyMDQwMSw3MjE1Mjc5MzcsLTE0ODc5NzMyODcsLTIw
-MzAxNjM5MzgsLTE3NDcxNjg5NjMsNzMwMjYyNjI5LDY1NDg1Mj
-YzNiwtMTIxMTAyOTQ2NywtMTQxMjU5NjE4NCwtNzIxNDUzNTYy
-LDE5NDQyMzI4MjddfQ==
+eyJoaXN0b3J5IjpbLTU2MDA4NTE0MSwtMTg5NDQwMTY3NiwtMT
+MxNzY3NTMyMCwtMzU5NzI4NzIsLTEzNjA2OTU5NjgsLTE3OTgy
+NDA4OTksNTYzNTk5NTExLDE2NzQ1MjI2MzIsLTI3MTYyNjYxMC
+wxNTkxMTc5NTM0LC0xOTAyNzIwNDAxLDcyMTUyNzkzNywtMTQ4
+Nzk3MzI4NywtMjAzMDE2MzkzOCwtMTc0NzE2ODk2Myw3MzAyNj
+I2MjksNjU0ODUyNjM2LC0xMjExMDI5NDY3LC0xNDEyNTk2MTg0
+LC03MjE0NTM1NjJdfQ==
 -->
