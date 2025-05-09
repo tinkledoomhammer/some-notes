@@ -1236,24 +1236,26 @@ let squares_of_evens: Vec<u32> = numbers.iter()
 turbofish syntax
 : `collect::<Vec<u32>>();`
 * `method::<return_type>();`
-
+* the `::` is to resolve ambiguity with comparison operators
 ```rust
 let square_of_evens = numbers.iter()
 	.filter(|&n| n # 2 == 0)
 	.map(|&n| n * n)
 	.collect::<Vec<u32>>();
 ```
-
+#### See also
+[`Iterator`'s docs](https://doc.rust-lang.org/std/iter/trait.Iterator.html)
+t
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzQ2ODk4MTQsLTU2MDA4NTE0MSwtMT
-g5NDQwMTY3NiwtMTMxNzY3NTMyMCwtMzU5NzI4NzIsLTEzNjA2
-OTU5NjgsLTE3OTgyNDA4OTksNTYzNTk5NTExLDE2NzQ1MjI2Mz
-IsLTI3MTYyNjYxMCwxNTkxMTc5NTM0LC0xOTAyNzIwNDAxLDcy
-MTUyNzkzNywtMTQ4Nzk3MzI4NywtMjAzMDE2MzkzOCwtMTc0Nz
-E2ODk2Myw3MzAyNjI2MjksNjU0ODUyNjM2LC0xMjExMDI5NDY3
-LC0xNDEyNTk2MTg0XX0=
+eyJoaXN0b3J5IjpbMTk5NDE3Mjk5NCwtMjAzNDY4OTgxNCwtNT
+YwMDg1MTQxLC0xODk0NDAxNjc2LC0xMzE3Njc1MzIwLC0zNTk3
+Mjg3MiwtMTM2MDY5NTk2OCwtMTc5ODI0MDg5OSw1NjM1OTk1MT
+EsMTY3NDUyMjYzMiwtMjcxNjI2NjEwLDE1OTExNzk1MzQsLTE5
+MDI3MjA0MDEsNzIxNTI3OTM3LC0xNDg3OTczMjg3LC0yMDMwMT
+YzOTM4LC0xNzQ3MTY4OTYzLDczMDI2MjYyOSw2NTQ4NTI2MzYs
+LTEyMTEwMjk0NjddfQ==
 -->
