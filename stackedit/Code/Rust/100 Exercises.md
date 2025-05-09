@@ -1049,7 +1049,7 @@ Exercise
 * doesn't work for enums that hold data
 * https://doc.rust-lang.org/reference/items/enumerations.html#custom-discriminant-values-for-fieldless-enumerations
 
-### 5.2 Vectors
+### 6.2 Vectors
 
 `vec`
 : A growable array type in the standard library
@@ -1066,11 +1066,11 @@ Memory Layout
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDI3MjA0MDEsNzIxNTI3OTM3LC0xND
-g3OTczMjg3LC0yMDMwMTYzOTM4LC0xNzQ3MTY4OTYzLDczMDI2
-MjYyOSw2NTQ4NTI2MzYsLTEyMTEwMjk0NjcsLTE0MTI1OTYxOD
-QsLTcyMTQ1MzU2MiwxOTQ0MjMyODI3LC0xMjQwNjYyNTA1LDgz
-MDAzMzQyNCwtNTU4MDMyMDM3LDIxNDk2OTQwNiw5MjUwNjUyNz
-gsLTEwNTg4NzM1NjAsMTM1MzcxOTc4NywxNzExMTQyOTQ2LDE0
-MTczODU3NTldfQ==
+eyJoaXN0b3J5IjpbMTU5MTE3OTUzNCwtMTkwMjcyMDQwMSw3Mj
+E1Mjc5MzcsLTE0ODc5NzMyODcsLTIwMzAxNjM5MzgsLTE3NDcx
+Njg5NjMsNzMwMjYyNjI5LDY1NDg1MjYzNiwtMTIxMTAyOTQ2Ny
+wtMTQxMjU5NjE4NCwtNzIxNDUzNTYyLDE5NDQyMzI4MjcsLTEy
+NDA2NjI1MDUsODMwMDMzNDI0LC01NTgwMzIwMzcsMjE0OTY5ND
+A2LDkyNTA2NTI3OCwtMTA1ODg3MzU2MCwxMzUzNzE5Nzg3LDE3
+MTExNDI5NDZdfQ==
 -->
