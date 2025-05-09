@@ -1145,7 +1145,8 @@ pub fn iter(&self) -> Iter<'_, Self::Item> { ...
 pub fn iter(&self) -> std::slice::Iter<'_, Self::Item> {...
 	// Self::Item is ambiguous
 	//Dropping the lifetime (or whatever that is) and 
-	//	usig `Ticket` instead of `Self::I
+	//	usig `Ticket` instead of `Self::Item` seems to work
+
 ```
 I was supposed to figure this out based on the docs again but 
 in https://doc.rust-lang.org/std/vec/struct.Vec.html there is `pub fn iter(&self) -> Iter<'_, T>`
@@ -1154,11 +1155,11 @@ in https://doc.rust-lang.org/std/vec/struct.Vec.html there is `pub fn iter(&self
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5OTg2MDQ5OSwtMTM2MDY5NTk2OCwtMT
-c5ODI0MDg5OSw1NjM1OTk1MTEsMTY3NDUyMjYzMiwtMjcxNjI2
-NjEwLDE1OTExNzk1MzQsLTE5MDI3MjA0MDEsNzIxNTI3OTM3LC
-0xNDg3OTczMjg3LC0yMDMwMTYzOTM4LC0xNzQ3MTY4OTYzLDcz
-MDI2MjYyOSw2NTQ4NTI2MzYsLTEyMTEwMjk0NjcsLTE0MTI1OT
-YxODQsLTcyMTQ1MzU2MiwxOTQ0MjMyODI3LC0xMjQwNjYyNTA1
-LDgzMDAzMzQyNF19
+eyJoaXN0b3J5IjpbLTM1OTcyODcyLC0xMzYwNjk1OTY4LC0xNz
+k4MjQwODk5LDU2MzU5OTUxMSwxNjc0NTIyNjMyLC0yNzE2MjY2
+MTAsMTU5MTE3OTUzNCwtMTkwMjcyMDQwMSw3MjE1Mjc5MzcsLT
+E0ODc5NzMyODcsLTIwMzAxNjM5MzgsLTE3NDcxNjg5NjMsNzMw
+MjYyNjI5LDY1NDg1MjYzNiwtMTIxMTAyOTQ2NywtMTQxMjU5Nj
+E4NCwtNzIxNDUzNTYyLDE5NDQyMzI4MjcsLTEyNDA2NjI1MDUs
+ODMwMDMzNDI0XX0=
 -->
