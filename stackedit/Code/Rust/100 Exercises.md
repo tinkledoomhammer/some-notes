@@ -1177,15 +1177,23 @@ The above means that the returned `Iter` object cannot outlive the `Vec`.
 Lifetime elision
 : omission of explicit lifetime annotations in specific circumstances according to **lifetime elision rules**
 
+`'_`
+: a placeholder used for lifetimes in methods
+```rust
+fn iter<'a>(&'a self) -> Iter<'a,T>
+// is the same as 
+fn iter(&self) -> Iter<'_,
+```
 
+[Lifetime elision rules](https://doc.rust-lang.org/reference/lifetime-elision.html)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMDAyMTM1MSwtMzU5NzI4NzIsLTEzNj
-A2OTU5NjgsLTE3OTgyNDA4OTksNTYzNTk5NTExLDE2NzQ1MjI2
-MzIsLTI3MTYyNjYxMCwxNTkxMTc5NTM0LC0xOTAyNzIwNDAxLD
-cyMTUyNzkzNywtMTQ4Nzk3MzI4NywtMjAzMDE2MzkzOCwtMTc0
-NzE2ODk2Myw3MzAyNjI2MjksNjU0ODUyNjM2LC0xMjExMDI5ND
-Y3LC0xNDEyNTk2MTg0LC03MjE0NTM1NjIsMTk0NDIzMjgyNywt
-MTI0MDY2MjUwNV19
+eyJoaXN0b3J5IjpbNDg0NzgzNjY2LC0zNTk3Mjg3MiwtMTM2MD
+Y5NTk2OCwtMTc5ODI0MDg5OSw1NjM1OTk1MTEsMTY3NDUyMjYz
+MiwtMjcxNjI2NjEwLDE1OTExNzk1MzQsLTE5MDI3MjA0MDEsNz
+IxNTI3OTM3LC0xNDg3OTczMjg3LC0yMDMwMTYzOTM4LC0xNzQ3
+MTY4OTYzLDczMDI2MjYyOSw2NTQ4NTI2MzYsLTEyMTEwMjk0Nj
+csLTE0MTI1OTYxODQsLTcyMTQ1MzU2MiwxOTQ0MjMyODI3LC0x
+MjQwNjYyNTA1XX0=
 -->
