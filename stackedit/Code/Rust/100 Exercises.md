@@ -1050,7 +1050,6 @@ Exercise
 * https://doc.rust-lang.org/reference/items/enumerations.html#custom-discriminant-values-for-fieldless-enumerations
 
 ### 6.02 Vectors
-
 `vec`
 : A growable array type in the standard library
 * created by `Vec::new()`
@@ -1103,7 +1102,7 @@ type IntoIter = std::vec::IntoIter<Self::Item>;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc1NDM1ODgxLDE2NzQ1MjI2MzIsLTI3MT
+eyJoaXN0b3J5IjpbNTYzNTk5NTExLDE2NzQ1MjI2MzIsLTI3MT
 YyNjYxMCwxNTkxMTc5NTM0LC0xOTAyNzIwNDAxLDcyMTUyNzkz
 NywtMTQ4Nzk3MzI4NywtMjAzMDE2MzkzOCwtMTc0NzE2ODk2My
 w3MzAyNjI2MjksNjU0ODUyNjM2LC0xMjExMDI5NDY3LC0xNDEy
