@@ -1063,15 +1063,22 @@ Memory Layout
 : A pointer, length, and capacity are stack allocated
 * just like `String`
 
+### 6.04 Iterators
+For loop expansion
+```rust
+let mut iter = IntoIterator::
+
+```
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1NDc2NjM5MSwxNTkxMTc5NTM0LC0xOT
-AyNzIwNDAxLDcyMTUyNzkzNywtMTQ4Nzk3MzI4NywtMjAzMDE2
-MzkzOCwtMTc0NzE2ODk2Myw3MzAyNjI2MjksNjU0ODUyNjM2LC
-0xMjExMDI5NDY3LC0xNDEyNTk2MTg0LC03MjE0NTM1NjIsMTk0
-NDIzMjgyNywtMTI0MDY2MjUwNSw4MzAwMzM0MjQsLTU1ODAzMj
-AzNywyMTQ5Njk0MDYsOTI1MDY1Mjc4LC0xMDU4ODczNTYwLDEz
-NTM3MTk3ODddfQ==
+eyJoaXN0b3J5IjpbLTEzMzkyMTExMTMsMTU5MTE3OTUzNCwtMT
+kwMjcyMDQwMSw3MjE1Mjc5MzcsLTE0ODc5NzMyODcsLTIwMzAx
+NjM5MzgsLTE3NDcxNjg5NjMsNzMwMjYyNjI5LDY1NDg1MjYzNi
+wtMTIxMTAyOTQ2NywtMTQxMjU5NjE4NCwtNzIxNDUzNTYyLDE5
+NDQyMzI4MjcsLTEyNDA2NjI1MDUsODMwMDMzNDI0LC01NTgwMz
+IwMzcsMjE0OTY5NDA2LDkyNTA2NTI3OCwtMTA1ODg3MzU2MCwx
+MzUzNzE5Nzg3XX0=
 -->
