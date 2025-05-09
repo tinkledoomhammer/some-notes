@@ -1157,12 +1157,22 @@ in https://doc.rust-lang.org/std/vec/struct.Vec.html there is `pub fn iter(&self
 ```rust
 impl IntoIterator for &TicketStore{
 	type Item = &Ticket;
-	type IntoIter = std::slice::Iter<Tic
+	type IntoIter = std::slice::Iter<Ticket>;
+	fn into_iter(self) -> Self::IntoIter {
+		self.tickets.iter()
+	}
+}
 ```
+
+Lifetime Parameters
+: labels used by the compiler to track how long a reference is valid
+
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxOTAwMDgzOSwtMzU5NzI4NzIsLTEzNj
+eyJoaXN0b3J5IjpbLTQyNDgwMDkxMiwtMzU5NzI4NzIsLTEzNj
 A2OTU5NjgsLTE3OTgyNDA4OTksNTYzNTk5NTExLDE2NzQ1MjI2
 MzIsLTI3MTYyNjYxMCwxNTkxMTc5NTM0LC0xOTAyNzIwNDAxLD
 cyMTUyNzkzNywtMTQ4Nzk3MzI4NywtMjAzMDE2MzkzOCwtMTc0
