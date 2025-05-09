@@ -1204,15 +1204,19 @@ impl<'a> IntoIterator for &'a TicketStore{
 ```
 
 ### 06.07 Combinators
-
+Useful `Iterator` functions
+* `map` applies a function to each element of the iterator
+* `filter` keeps only elements that satisfy a predicate
+* `filter_map` combines `filter` and `map` in one step
+* `cloned` conver
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MzI4Mjc0NywtNTYwMDg1MTQxLC0xOD
-k0NDAxNjc2LC0xMzE3Njc1MzIwLC0zNTk3Mjg3MiwtMTM2MDY5
-NTk2OCwtMTc5ODI0MDg5OSw1NjM1OTk1MTEsMTY3NDUyMjYzMi
-wtMjcxNjI2NjEwLDE1OTExNzk1MzQsLTE5MDI3MjA0MDEsNzIx
-NTI3OTM3LC0xNDg3OTczMjg3LC0yMDMwMTYzOTM4LC0xNzQ3MT
-Y4OTYzLDczMDI2MjYyOSw2NTQ4NTI2MzYsLTEyMTEwMjk0Njcs
-LTE0MTI1OTYxODRdfQ==
+eyJoaXN0b3J5IjpbLTEwMDc0Nzg0MDUsLTU2MDA4NTE0MSwtMT
+g5NDQwMTY3NiwtMTMxNzY3NTMyMCwtMzU5NzI4NzIsLTEzNjA2
+OTU5NjgsLTE3OTgyNDA4OTksNTYzNTk5NTExLDE2NzQ1MjI2Mz
+IsLTI3MTYyNjYxMCwxNTkxMTc5NTM0LC0xOTAyNzIwNDAxLDcy
+MTUyNzkzNywtMTQ4Nzk3MzI4NywtMjAzMDE2MzkzOCwtMTc0Nz
+E2ODk2Myw3MzAyNjI2MjksNjU0ODUyNjM2LC0xMjExMDI5NDY3
+LC0xNDEyNTk2MTg0XX0=
 -->
