@@ -1137,13 +1137,13 @@ Exercise
 ```rust
 pub fn iter(&self) -> std::slice::Iter<Ticket> {...
 
-pub fn iter(&self) -> <Vec<Ticket> as IntoIter>::Iter
+pub fn iter(&self) -> <&Vec<Ticket> as IntoIterator>::IntoIter
 ```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mjk5ODQ0NywtMTc5ODI0MDg5OSw1Nj
+eyJoaXN0b3J5IjpbMTMyMTk0MjY3NSwtMTc5ODI0MDg5OSw1Nj
 M1OTk1MTEsMTY3NDUyMjYzMiwtMjcxNjI2NjEwLDE1OTExNzk1
 MzQsLTE5MDI3MjA0MDEsNzIxNTI3OTM3LC0xNDg3OTczMjg3LC
 0yMDMwMTYzOTM4LC0xNzQ3MTY4OTYzLDczMDI2MjYyOSw2NTQ4
