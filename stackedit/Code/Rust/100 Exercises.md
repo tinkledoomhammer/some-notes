@@ -1507,8 +1507,10 @@ println("While: {v:?}");
  * takes a closure as an argument that takes a `Scope` object as its single parameter
  	* the object has a `spawn` method that takes a closure
  	* It is of type `ScopedJoinHandle<'_, T>` where T is the return value of the closure it is passed
+ 	* basically the same as `JoinHandle` but not `'static`
 * will automatically join all of its contained threads before exiting
 * can return a value
+* the internal threads can be joined manually.
 
 Exercise
 ```rust
@@ -1534,11 +1536,11 @@ pub fn sum(v:Vec<i32>) -> i32 {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMjIzNjQ4NSwxOTc1MDY3ODYxLC0xNT
-A5NDgwMjE5LC0xNzkyMDE1MTkxLC0xNzE1NzUxNTc1LDE4NDA2
-OTAzODYsLTc1NDk1NjA2LDIxMDc5ODQyMDYsMTgwOTEyMzIyNC
-w4NDk0NjY4MDQsLTM1NzEwODE1NSwxNjA0ODYzNDc5LC03MDU0
-MTYyMTAsLTE1NjUzMzQ3ODksNjIxNTQzNjc3LDg3NjYxOTYwNC
-w5NjE1ODE2NDEsMTIyMTM5MDc4OCwtMTU1MDE3MzAzNCwtMjAz
-NDY4OTgxNF19
+eyJoaXN0b3J5IjpbLTE1NDI2NTM1MDcsMTk3NTA2Nzg2MSwtMT
+UwOTQ4MDIxOSwtMTc5MjAxNTE5MSwtMTcxNTc1MTU3NSwxODQw
+NjkwMzg2LC03NTQ5NTYwNiwyMTA3OTg0MjA2LDE4MDkxMjMyMj
+QsODQ5NDY2ODA0LC0zNTcxMDgxNTUsMTYwNDg2MzQ3OSwtNzA1
+NDE2MjEwLC0xNTY1MzM0Nzg5LDYyMTU0MzY3Nyw4NzY2MTk2MD
+QsOTYxNTgxNjQxLDEyMjEzOTA3ODgsLTE1NTAxNzMwMzQsLTIw
+MzQ2ODk4MTRdfQ==
 -->
