@@ -1422,7 +1422,7 @@ enum Ordering {
 * Shared state using `Arc` `Mutex` and `RwLock`
 * `Send` and `Sync` - the traits that encode concurrency guarantees
 
-### 7.01
+### 7.01 `std::thread`
 Thread
 : an execution context with its own stack and instruction pointer
 
@@ -1444,16 +1444,22 @@ Process
 * `JoinHandle::join()` will cause the calling thread to block until the thread referred to ends
 	* returns an `Option` of the return value(?)
 
-
+### 7.02 `'static`
+```rust
+pub fn spawn<F, T>(f:F) ->JoinHandle<T>
+where
+	f: FnOnce() -> T + Send + 'static,
+	T: Send 
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTU3NTE1NzUsMTg0MDY5MDM4NiwtNz
-U0OTU2MDYsMjEwNzk4NDIwNiwxODA5MTIzMjI0LDg0OTQ2Njgw
-NCwtMzU3MTA4MTU1LDE2MDQ4NjM0NzksLTcwNTQxNjIxMCwtMT
-U2NTMzNDc4OSw2MjE1NDM2NzcsODc2NjE5NjA0LDk2MTU4MTY0
-MSwxMjIxMzkwNzg4LC0xNTUwMTczMDM0LC0yMDM0Njg5ODE0LC
-01NjAwODUxNDEsLTE4OTQ0MDE2NzYsLTEzMTc2NzUzMjAsLTM1
-OTcyODcyXX0=
+eyJoaXN0b3J5IjpbLTE4Mzg4OTc5NTAsLTE3MTU3NTE1NzUsMT
+g0MDY5MDM4NiwtNzU0OTU2MDYsMjEwNzk4NDIwNiwxODA5MTIz
+MjI0LDg0OTQ2NjgwNCwtMzU3MTA4MTU1LDE2MDQ4NjM0NzksLT
+cwNTQxNjIxMCwtMTU2NTMzNDc4OSw2MjE1NDM2NzcsODc2NjE5
+NjA0LDk2MTU4MTY0MSwxMjIxMzkwNzg4LC0xNTUwMTczMDM0LC
+0yMDM0Njg5ODE0LC01NjAwODUxNDEsLTE4OTQ0MDE2NzYsLTEz
+MTc2NzUzMjBdfQ==
 -->
