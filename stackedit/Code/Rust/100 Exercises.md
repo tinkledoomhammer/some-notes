@@ -1484,21 +1484,29 @@ std::thread::scope(|scope| {
 println!("Whole: {v:?}");
 
 // The same thing without std::thread::scope
+
 let v = vec![1,2,3];
 let midpoint = v.len()/2;
 let handle1 = std::thread::spawn(||{
 	let first = &v[..midpoint];
 	println!("First half: {first:?");
+});
+let handle2 = ...
+	...
+});
+handl1.join().unwrap();
+handle2.join().unwrap();
+println("While: {v:?}");
 ```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUyODA3OTczLC0xNTA5NDgwMjE5LC0xNz
-kyMDE1MTkxLC0xNzE1NzUxNTc1LDE4NDA2OTAzODYsLTc1NDk1
-NjA2LDIxMDc5ODQyMDYsMTgwOTEyMzIyNCw4NDk0NjY4MDQsLT
-M1NzEwODE1NSwxNjA0ODYzNDc5LC03MDU0MTYyMTAsLTE1NjUz
-MzQ3ODksNjIxNTQzNjc3LDg3NjYxOTYwNCw5NjE1ODE2NDEsMT
-IyMTM5MDc4OCwtMTU1MDE3MzAzNCwtMjAzNDY4OTgxNCwtNTYw
-MDg1MTQxXX0=
+eyJoaXN0b3J5IjpbLTIwNTg5OTY2ODgsLTE1MDk0ODAyMTksLT
+E3OTIwMTUxOTEsLTE3MTU3NTE1NzUsMTg0MDY5MDM4NiwtNzU0
+OTU2MDYsMjEwNzk4NDIwNiwxODA5MTIzMjI0LDg0OTQ2NjgwNC
+wtMzU3MTA4MTU1LDE2MDQ4NjM0NzksLTcwNTQxNjIxMCwtMTU2
+NTMzNDc4OSw2MjE1NDM2NzcsODc2NjE5NjA0LDk2MTU4MTY0MS
+wxMjIxMzkwNzg4LC0xNTUwMTczMDM0LC0yMDM0Njg5ODE0LC01
+NjAwODUxNDFdfQ==
 -->
