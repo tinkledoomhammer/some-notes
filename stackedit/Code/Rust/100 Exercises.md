@@ -1506,6 +1506,7 @@ println("While: {v:?}");
 :  can safely borrow from the environment
  * takes a closure as an argument that takes a `Scope` object as its single parameter
  	* the object has a `spawn` method that takes a closure
+ 	* It is of type `ScopedJoinHandle<'_, T>` where T is the return value of the closure it is passed
 * will automatically join all of its contained threads before exiting
 * can return a value
 
@@ -1533,7 +1534,7 @@ pub fn sum(v:Vec<i32>) -> i32 {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNjk1NzA4OCwxOTc1MDY3ODYxLC0xNT
+eyJoaXN0b3J5IjpbMTQzMjIzNjQ4NSwxOTc1MDY3ODYxLC0xNT
 A5NDgwMjE5LC0xNzkyMDE1MTkxLC0xNzE1NzUxNTc1LDE4NDA2
 OTAzODYsLTc1NDk1NjA2LDIxMDc5ODQyMDYsMTgwOTEyMzIyNC
 w4NDk0NjY4MDQsLTM1NzEwODE1NSwxNjA0ODYzNDc5LC03MDU0
