@@ -1539,11 +1539,15 @@ pub fn sum(v:Vec<i32>) -> i32 {
 `std::sync::mpsc::channel`
 : multi-producer, single-consumer channels
 `let (sender,receiver) = std::sync::mpsc::channel();`
-* `sender.send(...)` to push data in
+* `sender.send(...)` to push data into the channel
+* `receiver.recv` to pull data from the channel
+* `Sender` is clonable. Multiple coppies will send data to the same channel
+* `Receiverr` is not clonable. there can be only one receiver per mpsc
+* Both `Sender` and `Receiver` are generic over a type parameter `T`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MzY5MzM0NiwtMTU0MjY1MzUwNywxOT
+eyJoaXN0b3J5IjpbMTMzMjQyMjA2NCwtMTU0MjY1MzUwNywxOT
 c1MDY3ODYxLC0xNTA5NDgwMjE5LC0xNzkyMDE1MTkxLC0xNzE1
 NzUxNTc1LDE4NDA2OTAzODYsLTc1NDk1NjA2LDIxMDc5ODQyMD
 YsMTgwOTEyMzIyNCw4NDk0NjY4MDQsLTM1NzEwODE1NSwxNjA0
