@@ -200,7 +200,7 @@ Some types of traits in the standard library:
 5. `Sized` to mark types with a known size
 6. `Drop` for custom cleanup logic
 
-### 04.01 Traits
+### 4.01 Traits
 
 Traits
 : Rust's way of defining **interfaces**
@@ -1278,7 +1278,7 @@ RPIT
 * is usually not used because it does not allow turbofish syntax
 * No upside?
 
-### 06.10 Slices
+### 6.10 Slices
 `&[T]`
 : a borrowed reference to a contiguous block of `T`s
 
@@ -1313,7 +1313,7 @@ slice.push(1); // won't compile because slices have no `push`
 ```
 * For mutable slices, `Vec` is preferable in some circumstances
 
-### 06.12 Two States
+### 6.12 Two States
 ```rust
 //The problem
 pub struct Ticket{pub id: TicketId, ... }
@@ -1332,16 +1332,24 @@ pub struct TicketDraft { ...}
 pub struct Ticket {pub id: TicketId, ... }
 ```
 
+### 6.13 Indexing
+```rust
+// Simplified
+pub trait Index<Idx> {
+	type Output;
+	//required method index
+	fn index(&self, index: Idx) -> &Self::Outpu
+```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjUzMzQ3ODksNjIxNTQzNjc3LDg3Nj
-YxOTYwNCw5NjE1ODE2NDEsMTIyMTM5MDc4OCwtMTU1MDE3MzAz
-NCwtMjAzNDY4OTgxNCwtNTYwMDg1MTQxLC0xODk0NDAxNjc2LC
-0xMzE3Njc1MzIwLC0zNTk3Mjg3MiwtMTM2MDY5NTk2OCwtMTc5
-ODI0MDg5OSw1NjM1OTk1MTEsMTY3NDUyMjYzMiwtMjcxNjI2Nj
-EwLDE1OTExNzk1MzQsLTE5MDI3MjA0MDEsNzIxNTI3OTM3LC0x
-NDg3OTczMjg3XX0=
+eyJoaXN0b3J5IjpbMzc3MDk3Njg5LC0xNTY1MzM0Nzg5LDYyMT
+U0MzY3Nyw4NzY2MTk2MDQsOTYxNTgxNjQxLDEyMjEzOTA3ODgs
+LTE1NTAxNzMwMzQsLTIwMzQ2ODk4MTQsLTU2MDA4NTE0MSwtMT
+g5NDQwMTY3NiwtMTMxNzY3NTMyMCwtMzU5NzI4NzIsLTEzNjA2
+OTU5NjgsLTE3OTgyNDA4OTksNTYzNTk5NTExLDE2NzQ1MjI2Mz
+IsLTI3MTYyNjYxMCwxNTkxMTc5NTM0LC0xOTAyNzIwNDAxLDcy
+MTUyNzkzN119
 -->
