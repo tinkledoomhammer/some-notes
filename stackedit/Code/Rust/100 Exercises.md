@@ -1314,18 +1314,28 @@ slice.push(1); // won't compile because slices have no `push`
 * For mutable slices, `Vec` is preferable in some circumstances
 
 ### 06.12 Two States
+```rust
+//The problem
+pub struct Ticket{pub id: TicketId, ... }
+or 
+pub struct Ticket{
+	pub id: Option<TicketId>,
+	...
+}
 
+
+```
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMzQ5MjE4MCw2MjE1NDM2NzcsODc2Nj
-E5NjA0LDk2MTU4MTY0MSwxMjIxMzkwNzg4LC0xNTUwMTczMDM0
-LC0yMDM0Njg5ODE0LC01NjAwODUxNDEsLTE4OTQ0MDE2NzYsLT
-EzMTc2NzUzMjAsLTM1OTcyODcyLC0xMzYwNjk1OTY4LC0xNzk4
-MjQwODk5LDU2MzU5OTUxMSwxNjc0NTIyNjMyLC0yNzE2MjY2MT
-AsMTU5MTE3OTUzNCwtMTkwMjcyMDQwMSw3MjE1Mjc5MzcsLTE0
-ODc5NzMyODddfQ==
+eyJoaXN0b3J5IjpbMzYyODc0NDc2LDYyMTU0MzY3Nyw4NzY2MT
+k2MDQsOTYxNTgxNjQxLDEyMjEzOTA3ODgsLTE1NTAxNzMwMzQs
+LTIwMzQ2ODk4MTQsLTU2MDA4NTE0MSwtMTg5NDQwMTY3NiwtMT
+MxNzY3NTMyMCwtMzU5NzI4NzIsLTEzNjA2OTU5NjgsLTE3OTgy
+NDA4OTksNTYzNTk5NTExLDE2NzQ1MjI2MzIsLTI3MTYyNjYxMC
+wxNTkxMTc5NTM0LC0xOTAyNzIwNDAxLDcyMTUyNzkzNywtMTQ4
+Nzk3MzI4N119
 -->
