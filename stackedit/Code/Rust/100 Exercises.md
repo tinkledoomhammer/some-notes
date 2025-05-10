@@ -1302,7 +1302,10 @@ let slice = &numbers[..];
 * allows changing the elements of the `T`
 * they are limited in that they cannot access the backing type
 ```rust
-let mut numbers = ve
+let mut numbers = vec![1,2,3];
+let mut slice: &mut[i32] = &mut numbers;
+//!!
+slice.push(1); // won't compile because slices have no `push`
 ```
 
 * prefer slices because they can be backed by arrays or vectors
@@ -1313,11 +1316,11 @@ let mut numbers = ve
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDA3OTM1Niw4NzY2MTk2MDQsOTYxNT
-gxNjQxLDEyMjEzOTA3ODgsLTE1NTAxNzMwMzQsLTIwMzQ2ODk4
-MTQsLTU2MDA4NTE0MSwtMTg5NDQwMTY3NiwtMTMxNzY3NTMyMC
-wtMzU5NzI4NzIsLTEzNjA2OTU5NjgsLTE3OTgyNDA4OTksNTYz
-NTk5NTExLDE2NzQ1MjI2MzIsLTI3MTYyNjYxMCwxNTkxMTc5NT
-M0LC0xOTAyNzIwNDAxLDcyMTUyNzkzNywtMTQ4Nzk3MzI4Nywt
-MjAzMDE2MzkzOF19
+eyJoaXN0b3J5IjpbNjIxNTQzNjc3LDg3NjYxOTYwNCw5NjE1OD
+E2NDEsMTIyMTM5MDc4OCwtMTU1MDE3MzAzNCwtMjAzNDY4OTgx
+NCwtNTYwMDg1MTQxLC0xODk0NDAxNjc2LC0xMzE3Njc1MzIwLC
+0zNTk3Mjg3MiwtMTM2MDY5NTk2OCwtMTc5ODI0MDg5OSw1NjM1
+OTk1MTEsMTY3NDUyMjYzMiwtMjcxNjI2NjEwLDE1OTExNzk1Mz
+QsLTE5MDI3MjA0MDEsNzIxNTI3OTM3LC0xNDg3OTczMjg3LC0y
+MDMwMTYzOTM4XX0=
 -->
