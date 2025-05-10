@@ -1297,6 +1297,14 @@ let numbers = [1,2,3];
 let slice = &numbers[..];
 ```
 
+`&mut [T]`
+: a mutable slice
+* allows changing the elements of the `T`
+* they are limited in that they cannot access the backing type
+```rust
+let mut numbers = ve
+```
+
 * prefer slices because they can be backed by arrays or vectors
 
 
@@ -1305,11 +1313,11 @@ let slice = &numbers[..];
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc2NjE5NjA0LDk2MTU4MTY0MSwxMjIxMz
-kwNzg4LC0xNTUwMTczMDM0LC0yMDM0Njg5ODE0LC01NjAwODUx
-NDEsLTE4OTQ0MDE2NzYsLTEzMTc2NzUzMjAsLTM1OTcyODcyLC
-0xMzYwNjk1OTY4LC0xNzk4MjQwODk5LDU2MzU5OTUxMSwxNjc0
-NTIyNjMyLC0yNzE2MjY2MTAsMTU5MTE3OTUzNCwtMTkwMjcyMD
-QwMSw3MjE1Mjc5MzcsLTE0ODc5NzMyODcsLTIwMzAxNjM5Mzgs
-LTE3NDcxNjg5NjNdfQ==
+eyJoaXN0b3J5IjpbLTE5NDA3OTM1Niw4NzY2MTk2MDQsOTYxNT
+gxNjQxLDEyMjEzOTA3ODgsLTE1NTAxNzMwMzQsLTIwMzQ2ODk4
+MTQsLTU2MDA4NTE0MSwtMTg5NDQwMTY3NiwtMTMxNzY3NTMyMC
+wtMzU5NzI4NzIsLTEzNjA2OTU5NjgsLTE3OTgyNDA4OTksNTYz
+NTk5NTExLDE2NzQ1MjI2MzIsLTI3MTYyNjYxMCwxNTkxMTc5NT
+M0LC0xOTAyNzIwNDAxLDcyMTUyNzkzNywtMTQ4Nzk3MzI4Nywt
+MjAzMDE2MzkzOF19
 -->
