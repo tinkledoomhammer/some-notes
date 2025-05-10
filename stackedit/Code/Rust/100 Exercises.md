@@ -1558,14 +1558,15 @@ impl<T> Sender<T> {
 * Since the function above adds messages to a queue and is clonable, it must be a mutable ref
 * What has been thusfar called mutable references `&mut T` should be called **exclusive references**
 * `&T` does not actually guarantee that the data it refers to is immutable
-* 
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Nzg5NDQ5NzIsLTc5NTg2NjY3NiwtMT
-U0MjY1MzUwNywxOTc1MDY3ODYxLC0xNTA5NDgwMjE5LC0xNzky
-MDE1MTkxLC0xNzE1NzUxNTc1LDE4NDA2OTAzODYsLTc1NDk1Nj
-A2LDIxMDc5ODQyMDYsMTgwOTEyMzIyNCw4NDk0NjY4MDQsLTM1
-NzEwODE1NSwxNjA0ODYzNDc5LC03MDU0MTYyMTAsLTE1NjUzMz
-Q3ODksNjIxNTQzNjc3LDg3NjYxOTYwNCw5NjE1ODE2NDEsMTIy
-MTM5MDc4OF19
+eyJoaXN0b3J5IjpbLTgzNDA1NDA1NiwtNzk1ODY2Njc2LC0xNT
+QyNjUzNTA3LDE5NzUwNjc4NjEsLTE1MDk0ODAyMTksLTE3OTIw
+MTUxOTEsLTE3MTU3NTE1NzUsMTg0MDY5MDM4NiwtNzU0OTU2MD
+YsMjEwNzk4NDIwNiwxODA5MTIzMjI0LDg0OTQ2NjgwNCwtMzU3
+MTA4MTU1LDE2MDQ4NjM0NzksLTcwNTQxNjIxMCwtMTU2NTMzND
+c4OSw2MjE1NDM2NzcsODc2NjE5NjA0LDk2MTU4MTY0MSwxMjIx
+MzkwNzg4XX0=
 -->
