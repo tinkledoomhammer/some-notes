@@ -1220,7 +1220,14 @@ closures
 ```rust
 let add_one = |x| x +1;
 let add_one = |x| {x + 1};
+
+//Types can be specified
+// Just the input type  let
+add_one = |x: i32| x + 1;
+// Or both input and output types, using the `fn` syntax  
+let add_one: fn(i32) -> i32 = |x| x + 1;
 ```
+* They capture their environment
 
 #### `collect`
 `.collect()`
@@ -1442,11 +1449,11 @@ Process
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0MDY5MDM4NiwtNzU0OTU2MDYsMjEwNz
-k4NDIwNiwxODA5MTIzMjI0LDg0OTQ2NjgwNCwtMzU3MTA4MTU1
-LDE2MDQ4NjM0NzksLTcwNTQxNjIxMCwtMTU2NTMzNDc4OSw2Mj
-E1NDM2NzcsODc2NjE5NjA0LDk2MTU4MTY0MSwxMjIxMzkwNzg4
-LC0xNTUwMTczMDM0LC0yMDM0Njg5ODE0LC01NjAwODUxNDEsLT
-E4OTQ0MDE2NzYsLTEzMTc2NzUzMjAsLTM1OTcyODcyLC0xMzYw
-Njk1OTY4XX0=
+eyJoaXN0b3J5IjpbLTE3MTU3NTE1NzUsMTg0MDY5MDM4NiwtNz
+U0OTU2MDYsMjEwNzk4NDIwNiwxODA5MTIzMjI0LDg0OTQ2Njgw
+NCwtMzU3MTA4MTU1LDE2MDQ4NjM0NzksLTcwNTQxNjIxMCwtMT
+U2NTMzNDc4OSw2MjE1NDM2NzcsODc2NjE5NjA0LDk2MTU4MTY0
+MSwxMjIxMzkwNzg4LC0xNTUwMTczMDM0LC0yMDM0Njg5ODE0LC
+01NjAwODUxNDEsLTE4OTQ0MDE2NzYsLTEzMTc2NzUzMjAsLTM1
+OTcyODcyXX0=
 -->
