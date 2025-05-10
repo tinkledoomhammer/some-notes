@@ -1497,16 +1497,20 @@ let handle2 = ...
 handl1.join().unwrap();
 handle2.join().unwrap();
 println("While: {v:?}");
+
+// But the last version won't copile
+//because `v` does not have a static lifetime
 ```
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTg5OTY2ODgsLTE1MDk0ODAyMTksLT
-E3OTIwMTUxOTEsLTE3MTU3NTE1NzUsMTg0MDY5MDM4NiwtNzU0
-OTU2MDYsMjEwNzk4NDIwNiwxODA5MTIzMjI0LDg0OTQ2NjgwNC
-wtMzU3MTA4MTU1LDE2MDQ4NjM0NzksLTcwNTQxNjIxMCwtMTU2
-NTMzNDc4OSw2MjE1NDM2NzcsODc2NjE5NjA0LDk2MTU4MTY0MS
-wxMjIxMzkwNzg4LC0xNTUwMTczMDM0LC0yMDM0Njg5ODE0LC01
-NjAwODUxNDFdfQ==
+eyJoaXN0b3J5IjpbMTY0NTQ2NTg0OSwtMTUwOTQ4MDIxOSwtMT
+c5MjAxNTE5MSwtMTcxNTc1MTU3NSwxODQwNjkwMzg2LC03NTQ5
+NTYwNiwyMTA3OTg0MjA2LDE4MDkxMjMyMjQsODQ5NDY2ODA0LC
+0zNTcxMDgxNTUsMTYwNDg2MzQ3OSwtNzA1NDE2MjEwLC0xNTY1
+MzM0Nzg5LDYyMTU0MzY3Nyw4NzY2MTk2MDQsOTYxNTgxNjQxLD
+EyMjEzOTA3ODgsLTE1NTAxNzMwMzQsLTIwMzQ2ODk4MTQsLTU2
+MDA4NTE0MV19
 -->
