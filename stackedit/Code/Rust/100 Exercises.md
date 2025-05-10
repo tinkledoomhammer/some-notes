@@ -1506,6 +1506,8 @@ println("While: {v:?}");
 :  can safely borrow from the environment
  * takes a closure as an argument that takes a `Scope` object as its single parameter
  	* the object has a `spawn` method that takes a closure
+* will automatically join all of its contained threads before exiting
+* can return a value
 
 Exercise
 ```rust
@@ -1519,12 +1521,19 @@ pub fn sum(v:Vec<i32>) -> i32 {
         left.join().unwrap() + right.join().unwrap()
     })
     // my first attempt
-    
+    let mut sum1 = 0;
+    let mut sum2 = 0;
+    std::thread::scope(|scope| {
+        scope.spawn(|| sum1=v[..mid].iter().sum::<i32>());
+        scope.spawn(|| sum2=v[mid..].iter().sum::<i32>());
+    });
+    sum1+sum2
+    // both pass all tests
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3MTQ4NDk2NywxOTc1MDY3ODYxLC0xNT
+eyJoaXN0b3J5IjpbMTMwNjk1NzA4OCwxOTc1MDY3ODYxLC0xNT
 A5NDgwMjE5LC0xNzkyMDE1MTkxLC0xNzE1NzUxNTc1LDE4NDA2
 OTAzODYsLTc1NDk1NjA2LDIxMDc5ODQyMDYsMTgwOTEyMzIyNC
 w4NDk0NjY4MDQsLTM1NzEwODE1NSwxNjA0ODYzNDc5LC03MDU0
