@@ -1328,6 +1328,7 @@ pub struct Ticket{
 ```rust
 // the solution
 pub struct TicketDraft { ...}
+// Ticket draft has no `id` or `status`
 pub struct Ticket {pub id: TicketId, ... }
 ```
 
@@ -1336,11 +1337,11 @@ pub struct Ticket {pub id: TicketId, ... }
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjQ0NTI0MSw2MjE1NDM2NzcsODc2Nj
-E5NjA0LDk2MTU4MTY0MSwxMjIxMzkwNzg4LC0xNTUwMTczMDM0
-LC0yMDM0Njg5ODE0LC01NjAwODUxNDEsLTE4OTQ0MDE2NzYsLT
-EzMTc2NzUzMjAsLTM1OTcyODcyLC0xMzYwNjk1OTY4LC0xNzk4
-MjQwODk5LDU2MzU5OTUxMSwxNjc0NTIyNjMyLC0yNzE2MjY2MT
-AsMTU5MTE3OTUzNCwtMTkwMjcyMDQwMSw3MjE1Mjc5MzcsLTE0
-ODc5NzMyODddfQ==
+eyJoaXN0b3J5IjpbLTE1NjUzMzQ3ODksNjIxNTQzNjc3LDg3Nj
+YxOTYwNCw5NjE1ODE2NDEsMTIyMTM5MDc4OCwtMTU1MDE3MzAz
+NCwtMjAzNDY4OTgxNCwtNTYwMDg1MTQxLC0xODk0NDAxNjc2LC
+0xMzE3Njc1MzIwLC0zNTk3Mjg3MiwtMTM2MDY5NTk2OCwtMTc5
+ODI0MDg5OSw1NjM1OTk1MTEsMTY3NDUyMjYzMiwtMjcxNjI2Nj
+EwLDE1OTExNzk1MzQsLTE5MDI3MjA0MDEsNzIxNTI3OTM3LC0x
+NDg3OTczMjg3XX0=
 -->
