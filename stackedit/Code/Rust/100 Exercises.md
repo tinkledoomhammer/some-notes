@@ -1555,14 +1555,16 @@ impl<T> Sender<T> {
 	pub fn send(&self, t: T) -> Result<(), SendError<T>> { ...}
 }
 ```
-* Since the function above adds 
+* Since the function above adds messages to a queue and is clonable, it must be a mutable ref
+* What has been thusfar called mutable references `&mut T` should be called **exclusive references**
+* `&T` does not actually guarantee that the data it refers to is immu
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MDQ1MTEzOCwtNzk1ODY2Njc2LC0xNT
-QyNjUzNTA3LDE5NzUwNjc4NjEsLTE1MDk0ODAyMTksLTE3OTIw
-MTUxOTEsLTE3MTU3NTE1NzUsMTg0MDY5MDM4NiwtNzU0OTU2MD
-YsMjEwNzk4NDIwNiwxODA5MTIzMjI0LDg0OTQ2NjgwNCwtMzU3
-MTA4MTU1LDE2MDQ4NjM0NzksLTcwNTQxNjIxMCwtMTU2NTMzND
-c4OSw2MjE1NDM2NzcsODc2NjE5NjA0LDk2MTU4MTY0MSwxMjIx
-MzkwNzg4XX0=
+eyJoaXN0b3J5IjpbMTYyOTI3NDkwLC03OTU4NjY2NzYsLTE1ND
+I2NTM1MDcsMTk3NTA2Nzg2MSwtMTUwOTQ4MDIxOSwtMTc5MjAx
+NTE5MSwtMTcxNTc1MTU3NSwxODQwNjkwMzg2LC03NTQ5NTYwNi
+wyMTA3OTg0MjA2LDE4MDkxMjMyMjQsODQ5NDY2ODA0LC0zNTcx
+MDgxNTUsMTYwNDg2MzQ3OSwtNzA1NDE2MjEwLC0xNTY1MzM0Nz
+g5LDYyMTU0MzY3Nyw4NzY2MTk2MDQsOTYxNTgxNjQxLDEyMjEz
+OTA3ODhdfQ==
 -->
