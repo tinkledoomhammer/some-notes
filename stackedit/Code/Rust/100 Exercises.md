@@ -1413,13 +1413,17 @@ enum Ordering {
 * Threads useing `std::thread` module
 * Message passing using channels
 * Shared state using `Arc` `Mutex` and `RwLock`
-* `Send` and `S
+* `Send` and `Sync` - the traits that encode concurrency guarantees
+
+### 7.01
+Thread
+: an execution context with its own stack and instructi
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4ODQ2NzM0NSwyMTA3OTg0MjA2LDE4MD
+eyJoaXN0b3J5IjpbMTIxNjE3MDQzNCwyMTA3OTg0MjA2LDE4MD
 kxMjMyMjQsODQ5NDY2ODA0LC0zNTcxMDgxNTUsMTYwNDg2MzQ3
 OSwtNzA1NDE2MjEwLC0xNTY1MzM0Nzg5LDYyMTU0MzY3Nyw4Nz
 Y2MTk2MDQsOTYxNTgxNjQxLDEyMjEzOTA3ODgsLTE1NTAxNzMw
