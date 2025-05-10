@@ -1361,17 +1361,25 @@ impl std::ops::IndexMut<Idx>
 ### 6.15 HashMap
 `HashMap<K,V>`
 * O(1) for insert, retrieve, and remove
-Requirements
+#### Requirements
+Key must implement `Hash` and `Eq`
+
+#### Hash
+``` rust
+pub trait Hash{
+	// required method
+	fn has
+```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTExMjQzOTA5LC0zNTcxMDgxNTUsMTYwND
-g2MzQ3OSwtNzA1NDE2MjEwLC0xNTY1MzM0Nzg5LDYyMTU0MzY3
-Nyw4NzY2MTk2MDQsOTYxNTgxNjQxLDEyMjEzOTA3ODgsLTE1NT
-AxNzMwMzQsLTIwMzQ2ODk4MTQsLTU2MDA4NTE0MSwtMTg5NDQw
-MTY3NiwtMTMxNzY3NTMyMCwtMzU5NzI4NzIsLTEzNjA2OTU5Nj
-gsLTE3OTgyNDA4OTksNTYzNTk5NTExLDE2NzQ1MjI2MzIsLTI3
-MTYyNjYxMF19
+eyJoaXN0b3J5IjpbMTIxNDEyMjcxOSwtMzU3MTA4MTU1LDE2MD
+Q4NjM0NzksLTcwNTQxNjIxMCwtMTU2NTMzNDc4OSw2MjE1NDM2
+NzcsODc2NjE5NjA0LDk2MTU4MTY0MSwxMjIxMzkwNzg4LC0xNT
+UwMTczMDM0LC0yMDM0Njg5ODE0LC01NjAwODUxNDEsLTE4OTQ0
+MDE2NzYsLTEzMTc2NzUzMjAsLTM1OTcyODcyLC0xMzYwNjk1OT
+Y4LC0xNzk4MjQwODk5LDU2MzU5OTUxMSwxNjc0NTIyNjMyLC0y
+NzE2MjY2MTBdfQ==
 -->
