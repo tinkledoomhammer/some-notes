@@ -1417,13 +1417,23 @@ enum Ordering {
 
 ### 7.01
 Thread
-: an execution context with its own stack and instructi
+: an execution context with its own stack and instruction pointer
 
+Process
+: A memory space tht can be shared between threads
+
+
+`main` thread
+: The first thread created when the program starts
+
+`std::thread`
+: the module for creating and managing threads
+* `
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxNjE3MDQzNCwyMTA3OTg0MjA2LDE4MD
+eyJoaXN0b3J5IjpbLTYxNDI0Njc1OCwyMTA3OTg0MjA2LDE4MD
 kxMjMyMjQsODQ5NDY2ODA0LC0zNTcxMDgxNTUsMTYwNDg2MzQ3
 OSwtNzA1NDE2MjEwLC0xNTY1MzM0Nzg5LDYyMTU0MzY3Nyw4Nz
 Y2MTk2MDQsOTYxNTgxNjQxLDEyMjEzOTA3ODgsLTE1NTAxNzMw
