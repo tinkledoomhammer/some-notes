@@ -1456,12 +1456,14 @@ where
 : A lifetime specifier that can be satisfied with (1) an owned value or (2) a ref that will last until the program finishes execution
 
 Detached threads
-: Threads launched via `thread::spaw
+: Threads launched via `thread::spawn` can outlive the thread that spawned it
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDUzMTc5NjgsLTE3MTU3NTE1NzUsMT
+eyJoaXN0b3J5IjpbLTE3OTIwMTUxOTEsLTE3MTU3NTE1NzUsMT
 g0MDY5MDM4NiwtNzU0OTU2MDYsMjEwNzk4NDIwNiwxODA5MTIz
 MjI0LDg0OTQ2NjgwNCwtMzU3MTA4MTU1LDE2MDQ4NjM0NzksLT
 cwNTQxNjIxMCwtMTU2NTMzNDc4OSw2MjE1NDM2NzcsODc2NjE5
