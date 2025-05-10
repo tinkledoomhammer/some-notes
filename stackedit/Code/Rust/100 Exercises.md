@@ -1549,15 +1549,19 @@ pub fn sum(v:Vec<i32>) -> i32 {
 	* `send` will return an error if the receiver has been dropped
 	* `recv` returns an error if all shenders have dropped and the channel is empty
 
-###
-
+### 7.06 Interior Mutability
+```rust
+impl<T> Sender<T> {
+	pub fn send(&self, t: T) -> Result<(), SendError<T>> { ...}
+}
+```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUwMTgwOTg1LC03OTU4NjY2NzYsLTE1ND
-I2NTM1MDcsMTk3NTA2Nzg2MSwtMTUwOTQ4MDIxOSwtMTc5MjAx
-NTE5MSwtMTcxNTc1MTU3NSwxODQwNjkwMzg2LC03NTQ5NTYwNi
-wyMTA3OTg0MjA2LDE4MDkxMjMyMjQsODQ5NDY2ODA0LC0zNTcx
-MDgxNTUsMTYwNDg2MzQ3OSwtNzA1NDE2MjEwLC0xNTY1MzM0Nz
-g5LDYyMTU0MzY3Nyw4NzY2MTk2MDQsOTYxNTgxNjQxLDEyMjEz
-OTA3ODhdfQ==
+eyJoaXN0b3J5IjpbLTEwOTM0ODczNjIsLTc5NTg2NjY3NiwtMT
+U0MjY1MzUwNywxOTc1MDY3ODYxLC0xNTA5NDgwMjE5LC0xNzky
+MDE1MTkxLC0xNzE1NzUxNTc1LDE4NDA2OTAzODYsLTc1NDk1Nj
+A2LDIxMDc5ODQyMDYsMTgwOTEyMzIyNCw4NDk0NjY4MDQsLTM1
+NzEwODE1NSwxNjA0ODYzNDc5LC03MDU0MTYyMTAsLTE1NjUzMz
+Q3ODksNjIxNTQzNjc3LDg3NjYxOTYwNCw5NjE1ODE2NDEsMTIy
+MTM5MDc4OF19
 -->
