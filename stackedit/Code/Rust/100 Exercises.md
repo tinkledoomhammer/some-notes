@@ -1385,17 +1385,23 @@ struct ...
 
 
 ### 6.16 `BTreeMap`
+* like `HashMap` but **the elements are stored in order**
 
+#### Requirements
+#### Keys must implement `Ord`
+`Ord`
+: Defined in `std::cmp`
+* has a `cmp` method that returns an 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA0NjM1NDI1LDg0OTQ2NjgwNCwtMzU3MT
-A4MTU1LDE2MDQ4NjM0NzksLTcwNTQxNjIxMCwtMTU2NTMzNDc4
-OSw2MjE1NDM2NzcsODc2NjE5NjA0LDk2MTU4MTY0MSwxMjIxMz
-kwNzg4LC0xNTUwMTczMDM0LC0yMDM0Njg5ODE0LC01NjAwODUx
-NDEsLTE4OTQ0MDE2NzYsLTEzMTc2NzUzMjAsLTM1OTcyODcyLC
-0xMzYwNjk1OTY4LC0xNzk4MjQwODk5LDU2MzU5OTUxMSwxNjc0
-NTIyNjMyXX0=
+eyJoaXN0b3J5IjpbMTY0NDc1ODIwNSw4NDk0NjY4MDQsLTM1Nz
+EwODE1NSwxNjA0ODYzNDc5LC03MDU0MTYyMTAsLTE1NjUzMzQ3
+ODksNjIxNTQzNjc3LDg3NjYxOTYwNCw5NjE1ODE2NDEsMTIyMT
+M5MDc4OCwtMTU1MDE3MzAzNCwtMjAzNDY4OTgxNCwtNTYwMDg1
+MTQxLC0xODk0NDAxNjc2LC0xMzE3Njc1MzIwLC0zNTk3Mjg3Mi
+wtMTM2MDY5NTk2OCwtMTc5ODI0MDg5OSw1NjM1OTk1MTEsMTY3
+NDUyMjYzMl19
 -->
