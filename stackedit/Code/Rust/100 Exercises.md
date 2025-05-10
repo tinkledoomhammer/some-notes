@@ -1285,17 +1285,27 @@ RPIT
 Memory Layout
 : A pointer and a length (both `usize`)
 ```rust
-let numbers = vec![1, 2, 3]
+let numbers = vec![1, 2, 3];
+//via index syntax
+	let slice: *[i32] = &numbers[..];
+//via method
+	let slice: &[i32] = numbers.as_slice();
+//or indexing a subset
+	let slice: &[i32] = &numbers[1..];
+
+let numbers = [1,2,3];
+let slice
+```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3ODkwMzIsOTYxNTgxNjQxLDEyMjEzOT
-A3ODgsLTE1NTAxNzMwMzQsLTIwMzQ2ODk4MTQsLTU2MDA4NTE0
-MSwtMTg5NDQwMTY3NiwtMTMxNzY3NTMyMCwtMzU5NzI4NzIsLT
-EzNjA2OTU5NjgsLTE3OTgyNDA4OTksNTYzNTk5NTExLDE2NzQ1
-MjI2MzIsLTI3MTYyNjYxMCwxNTkxMTc5NTM0LC0xOTAyNzIwND
-AxLDcyMTUyNzkzNywtMTQ4Nzk3MzI4NywtMjAzMDE2MzkzOCwt
-MTc0NzE2ODk2M119
+eyJoaXN0b3J5IjpbLTE1OTc2NTM4MTUsOTYxNTgxNjQxLDEyMj
+EzOTA3ODgsLTE1NTAxNzMwMzQsLTIwMzQ2ODk4MTQsLTU2MDA4
+NTE0MSwtMTg5NDQwMTY3NiwtMTMxNzY3NTMyMCwtMzU5NzI4Nz
+IsLTEzNjA2OTU5NjgsLTE3OTgyNDA4OTksNTYzNTk5NTExLDE2
+NzQ1MjI2MzIsLTI3MTYyNjYxMCwxNTkxMTc5NTM0LC0xOTAyNz
+IwNDAxLDcyMTUyNzkzNywtMTQ4Nzk3MzI4NywtMjAzMDE2Mzkz
+OCwtMTc0NzE2ODk2M119
 -->
