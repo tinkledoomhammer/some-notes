@@ -1363,6 +1363,8 @@ impl std::ops::IndexMut<Idx>
 * O(1) for insert, retrieve, and remove
 #### Requirements
 Key must implement `Hash` and `Eq`
+* The trait bounds are listed in the methods rather than the trait
+	* Why? Can custom implementations bypass those restrictions?
 
 #### `Hash`
 ```rust
@@ -1389,11 +1391,11 @@ struct ...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1NzMxMTk1Miw4NDk0NjY4MDQsLTM1Nz
-EwODE1NSwxNjA0ODYzNDc5LC03MDU0MTYyMTAsLTE1NjUzMzQ3
-ODksNjIxNTQzNjc3LDg3NjYxOTYwNCw5NjE1ODE2NDEsMTIyMT
-M5MDc4OCwtMTU1MDE3MzAzNCwtMjAzNDY4OTgxNCwtNTYwMDg1
-MTQxLC0xODk0NDAxNjc2LC0xMzE3Njc1MzIwLC0zNTk3Mjg3Mi
-wtMTM2MDY5NTk2OCwtMTc5ODI0MDg5OSw1NjM1OTk1MTEsMTY3
-NDUyMjYzMl19
+eyJoaXN0b3J5IjpbNDA0NjM1NDI1LDg0OTQ2NjgwNCwtMzU3MT
+A4MTU1LDE2MDQ4NjM0NzksLTcwNTQxNjIxMCwtMTU2NTMzNDc4
+OSw2MjE1NDM2NzcsODc2NjE5NjA0LDk2MTU4MTY0MSwxMjIxMz
+kwNzg4LC0xNTUwMTczMDM0LC0yMDM0Njg5ODE0LC01NjAwODUx
+NDEsLTE4OTQ0MDE2NzYsLTEzMTc2NzUzMjAsLTM1OTcyODcyLC
+0xMzYwNjk1OTY4LC0xNzk4MjQwODk5LDU2MzU5OTUxMSwxNjc0
+NTIyNjMyXX0=
 -->
