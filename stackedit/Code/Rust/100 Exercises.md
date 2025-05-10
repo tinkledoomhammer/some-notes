@@ -1358,16 +1358,20 @@ impl std::ops::IndexMut<Idx>
 ```
 * can only be implemented if `Index` is already implemented
 
+### 6.15 HashMap
+`HashMap<K,V>`
+* O(1) for insert, retrieve, and remove
+Requirements
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NzEwODE1NSwxNjA0ODYzNDc5LC03MD
-U0MTYyMTAsLTE1NjUzMzQ3ODksNjIxNTQzNjc3LDg3NjYxOTYw
-NCw5NjE1ODE2NDEsMTIyMTM5MDc4OCwtMTU1MDE3MzAzNCwtMj
-AzNDY4OTgxNCwtNTYwMDg1MTQxLC0xODk0NDAxNjc2LC0xMzE3
-Njc1MzIwLC0zNTk3Mjg3MiwtMTM2MDY5NTk2OCwtMTc5ODI0MD
-g5OSw1NjM1OTk1MTEsMTY3NDUyMjYzMiwtMjcxNjI2NjEwLDE1
-OTExNzk1MzRdfQ==
+eyJoaXN0b3J5IjpbOTExMjQzOTA5LC0zNTcxMDgxNTUsMTYwND
+g2MzQ3OSwtNzA1NDE2MjEwLC0xNTY1MzM0Nzg5LDYyMTU0MzY3
+Nyw4NzY2MTk2MDQsOTYxNTgxNjQxLDEyMjEzOTA3ODgsLTE1NT
+AxNzMwMzQsLTIwMzQ2ODk4MTQsLTU2MDA4NTE0MSwtMTg5NDQw
+MTY3NiwtMTMxNzY3NTMyMCwtMzU5NzI4NzIsLTEzNjA2OTU5Nj
+gsLTE3OTgyNDA4OTksNTYzNTk5NTExLDE2NzQ1MjI2MzIsLTI3
+MTYyNjYxMF19
 -->
