@@ -1547,15 +1547,17 @@ pub fn sum(v:Vec<i32>) -> i32 {
 	* `T` is the type of data passed through the channel i.e. **message type**
 * Errors are returned when the channel is effectively closed
 	* `send` will return an error if the receiver has been dropped
-	* `recv` returns an error if all shenders have dropped ant 
+	* `recv` returns an error if all shenders have dropped and the channel is empty
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTA0Njc5NjUsLTE1NDI2NTM1MDcsMT
-k3NTA2Nzg2MSwtMTUwOTQ4MDIxOSwtMTc5MjAxNTE5MSwtMTcx
-NTc1MTU3NSwxODQwNjkwMzg2LC03NTQ5NTYwNiwyMTA3OTg0Mj
-A2LDE4MDkxMjMyMjQsODQ5NDY2ODA0LC0zNTcxMDgxNTUsMTYw
-NDg2MzQ3OSwtNzA1NDE2MjEwLC0xNTY1MzM0Nzg5LDYyMTU0Mz
-Y3Nyw4NzY2MTk2MDQsOTYxNTgxNjQxLDEyMjEzOTA3ODgsLTE1
-NTAxNzMwMzRdfQ==
+eyJoaXN0b3J5IjpbLTc5NTg2NjY3NiwtMTU0MjY1MzUwNywxOT
+c1MDY3ODYxLC0xNTA5NDgwMjE5LC0xNzkyMDE1MTkxLC0xNzE1
+NzUxNTc1LDE4NDA2OTAzODYsLTc1NDk1NjA2LDIxMDc5ODQyMD
+YsMTgwOTEyMzIyNCw4NDk0NjY4MDQsLTM1NzEwODE1NSwxNjA0
+ODYzNDc5LC03MDU0MTYyMTAsLTE1NjUzMzQ3ODksNjIxNTQzNj
+c3LDg3NjYxOTYwNCw5NjE1ODE2NDEsMTIyMTM5MDc4OCwtMTU1
+MDE3MzAzNF19
 -->
