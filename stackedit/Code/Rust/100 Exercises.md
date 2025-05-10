@@ -1507,15 +1507,28 @@ println("While: {v:?}");
  * takes a closure as an argument that takes a `Scope` object as its single parameter
  	* the object has a `spawn` method that takes a closure
 
-
+Exercise
+```rust
+pub fn sum(v:Vec<i32>) -> i32 {
+	let mid = v.len()/2;
+	//the one on github
+	let(left,right) = v.split_at(mid);
+    std::thread::scope(|s|{
+        let left = s.spawn(|| left.iter().sum::<i32>());
+        let right=s.spawn(|| right.iter().sum::<i32>());
+        left.join().unwrap() + right.join().unwrap()
+    })
+    // my first attempt
+    
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3NTA2Nzg2MSwtMTUwOTQ4MDIxOSwtMT
-c5MjAxNTE5MSwtMTcxNTc1MTU3NSwxODQwNjkwMzg2LC03NTQ5
-NTYwNiwyMTA3OTg0MjA2LDE4MDkxMjMyMjQsODQ5NDY2ODA0LC
-0zNTcxMDgxNTUsMTYwNDg2MzQ3OSwtNzA1NDE2MjEwLC0xNTY1
-MzM0Nzg5LDYyMTU0MzY3Nyw4NzY2MTk2MDQsOTYxNTgxNjQxLD
-EyMjEzOTA3ODgsLTE1NTAxNzMwMzQsLTIwMzQ2ODk4MTQsLTU2
-MDA4NTE0MV19
+eyJoaXN0b3J5IjpbMTE3MTQ4NDk2NywxOTc1MDY3ODYxLC0xNT
+A5NDgwMjE5LC0xNzkyMDE1MTkxLC0xNzE1NzUxNTc1LDE4NDA2
+OTAzODYsLTc1NDk1NjA2LDIxMDc5ODQyMDYsMTgwOTEyMzIyNC
+w4NDk0NjY4MDQsLTM1NzEwODE1NSwxNjA0ODYzNDc5LC03MDU0
+MTYyMTAsLTE1NjUzMzQ3ODksNjIxNTQzNjc3LDg3NjYxOTYwNC
+w5NjE1ODE2NDEsMTIyMTM5MDc4OCwtMTU1MDE3MzAzNCwtMjAz
+NDY4OTgxNF19
 -->
