@@ -1428,16 +1428,19 @@ Process
 
 `std::thread`
 : the module for creating and managing threads
-* `
+* `std::thread::spawn(||)`
+	* the function to create new threads (using closures
+* Process termination
+	* 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNDI0Njc1OCwyMTA3OTg0MjA2LDE4MD
-kxMjMyMjQsODQ5NDY2ODA0LC0zNTcxMDgxNTUsMTYwNDg2MzQ3
-OSwtNzA1NDE2MjEwLC0xNTY1MzM0Nzg5LDYyMTU0MzY3Nyw4Nz
-Y2MTk2MDQsOTYxNTgxNjQxLDEyMjEzOTA3ODgsLTE1NTAxNzMw
-MzQsLTIwMzQ2ODk4MTQsLTU2MDA4NTE0MSwtMTg5NDQwMTY3Ni
-wtMTMxNzY3NTMyMCwtMzU5NzI4NzIsLTEzNjA2OTU5NjgsLTE3
-OTgyNDA4OTldfQ==
+eyJoaXN0b3J5IjpbNDUxNzY4MzY1LDIxMDc5ODQyMDYsMTgwOT
+EyMzIyNCw4NDk0NjY4MDQsLTM1NzEwODE1NSwxNjA0ODYzNDc5
+LC03MDU0MTYyMTAsLTE1NjUzMzQ3ODksNjIxNTQzNjc3LDg3Nj
+YxOTYwNCw5NjE1ODE2NDEsMTIyMTM5MDc4OCwtMTU1MDE3MzAz
+NCwtMjAzNDY4OTgxNCwtNTYwMDg1MTQxLC0xODk0NDAxNjc2LC
+0xMzE3Njc1MzIwLC0zNTk3Mjg3MiwtMTM2MDY5NTk2OCwtMTc5
+ODI0MDg5OV19
 -->
