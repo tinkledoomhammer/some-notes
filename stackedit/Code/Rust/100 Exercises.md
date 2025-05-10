@@ -1341,25 +1341,31 @@ pub trait Index<Idx> {
 	fn index(&self, index: Idx) -> &Self::Output;
 }
 
-impl std::ops::index<Idx> ...
+impl std::ops::Index<Idx> ...
 ```
 * Should panic if the index is invalid
 
 #### 6.14 Mutable indexing
 ```rust
 // simplified
-pub trait 
+pub trait IndexMut<Idx> : Index<Idx {
+	// extends Index
+	fn index_mut(&mut self, index: Idx)
+		-> &mut Self::Output;
+}
+
+impl std::ops::IndexMut<Idx>
 ```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0NDIwMTU5NCwtNzA1NDE2MjEwLC0xNT
-Y1MzM0Nzg5LDYyMTU0MzY3Nyw4NzY2MTk2MDQsOTYxNTgxNjQx
-LDEyMjEzOTA3ODgsLTE1NTAxNzMwMzQsLTIwMzQ2ODk4MTQsLT
-U2MDA4NTE0MSwtMTg5NDQwMTY3NiwtMTMxNzY3NTMyMCwtMzU5
-NzI4NzIsLTEzNjA2OTU5NjgsLTE3OTgyNDA4OTksNTYzNTk5NT
-ExLDE2NzQ1MjI2MzIsLTI3MTYyNjYxMCwxNTkxMTc5NTM0LC0x
-OTAyNzIwNDAxXX0=
+eyJoaXN0b3J5IjpbLTE5MzYwODU5ODcsLTcwNTQxNjIxMCwtMT
+U2NTMzNDc4OSw2MjE1NDM2NzcsODc2NjE5NjA0LDk2MTU4MTY0
+MSwxMjIxMzkwNzg4LC0xNTUwMTczMDM0LC0yMDM0Njg5ODE0LC
+01NjAwODUxNDEsLTE4OTQ0MDE2NzYsLTEzMTc2NzUzMjAsLTM1
+OTcyODcyLC0xMzYwNjk1OTY4LC0xNzk4MjQwODk5LDU2MzU5OT
+UxMSwxNjc0NTIyNjMyLC0yNzE2MjY2MTAsMTU5MTE3OTUzNCwt
+MTkwMjcyMDQwMV19
 -->
