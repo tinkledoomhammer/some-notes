@@ -1322,8 +1322,13 @@ pub struct Ticket{
 	pub id: Option<TicketId>,
 	...
 }
+```
+* Neither is desirable because an Id is not available at construction time but should be available thereafter
 
-
+```rust
+// the solution
+pub struct TicketDraft { ...}
+pub struct Ticket {pub id: TicketId, ... }
 ```
 
 
@@ -1331,11 +1336,11 @@ pub struct Ticket{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYyODc0NDc2LDYyMTU0MzY3Nyw4NzY2MT
-k2MDQsOTYxNTgxNjQxLDEyMjEzOTA3ODgsLTE1NTAxNzMwMzQs
-LTIwMzQ2ODk4MTQsLTU2MDA4NTE0MSwtMTg5NDQwMTY3NiwtMT
-MxNzY3NTMyMCwtMzU5NzI4NzIsLTEzNjA2OTU5NjgsLTE3OTgy
-NDA4OTksNTYzNTk5NTExLDE2NzQ1MjI2MzIsLTI3MTYyNjYxMC
-wxNTkxMTc5NTM0LC0xOTAyNzIwNDAxLDcyMTUyNzkzNywtMTQ4
-Nzk3MzI4N119
+eyJoaXN0b3J5IjpbLTE1MjQ0NTI0MSw2MjE1NDM2NzcsODc2Nj
+E5NjA0LDk2MTU4MTY0MSwxMjIxMzkwNzg4LC0xNTUwMTczMDM0
+LC0yMDM0Njg5ODE0LC01NjAwODUxNDEsLTE4OTQ0MDE2NzYsLT
+EzMTc2NzUzMjAsLTM1OTcyODcyLC0xMzYwNjk1OTY4LC0xNzk4
+MjQwODk5LDU2MzU5OTUxMSwxNjc0NTIyNjMyLC0yNzE2MjY2MT
+AsMTU5MTE3OTUzNCwtMTkwMjcyMDQwMSw3MjE1Mjc5MzcsLTE0
+ODc5NzMyODddfQ==
 -->
