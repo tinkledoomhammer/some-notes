@@ -1549,15 +1549,15 @@ pub fn sum(v:Vec<i32>) -> i32 {
 	* `send` will return an error if the receiver has been dropped
 	* `recv` returns an error if all shenders have dropped and the channel is empty
 
-
+###
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NTg2NjY3NiwtMTU0MjY1MzUwNywxOT
-c1MDY3ODYxLC0xNTA5NDgwMjE5LC0xNzkyMDE1MTkxLC0xNzE1
-NzUxNTc1LDE4NDA2OTAzODYsLTc1NDk1NjA2LDIxMDc5ODQyMD
-YsMTgwOTEyMzIyNCw4NDk0NjY4MDQsLTM1NzEwODE1NSwxNjA0
-ODYzNDc5LC03MDU0MTYyMTAsLTE1NjUzMzQ3ODksNjIxNTQzNj
-c3LDg3NjYxOTYwNCw5NjE1ODE2NDEsMTIyMTM5MDc4OCwtMTU1
-MDE3MzAzNF19
+eyJoaXN0b3J5IjpbNTUwMTgwOTg1LC03OTU4NjY2NzYsLTE1ND
+I2NTM1MDcsMTk3NTA2Nzg2MSwtMTUwOTQ4MDIxOSwtMTc5MjAx
+NTE5MSwtMTcxNTc1MTU3NSwxODQwNjkwMzg2LC03NTQ5NTYwNi
+wyMTA3OTg0MjA2LDE4MDkxMjMyMjQsODQ5NDY2ODA0LC0zNTcx
+MDgxNTUsMTYwNDg2MzQ3OSwtNzA1NDE2MjEwLC0xNTY1MzM0Nz
+g5LDYyMTU0MzY3Nyw4NzY2MTk2MDQsOTYxNTgxNjQxLDEyMjEz
+OTA3ODhdfQ==
 -->
