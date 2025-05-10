@@ -1460,12 +1460,16 @@ Detached threads
 
 ### 7.03 Leaking memory
 `Box::leak`
-: A meth
-
+: A method that will return a `&'static ` or `&'static mut` to the contents of a box
+```rust
+let x = Box::new(41u32);
+let static_ref: &'static mut u32 = Box::leak(x)
+```
+Data leakage is proce
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4MjMwMTIwMSwtMTc5MjAxNTE5MSwtMT
+eyJoaXN0b3J5IjpbLTgyMDQ4MjMyOSwtMTc5MjAxNTE5MSwtMT
 cxNTc1MTU3NSwxODQwNjkwMzg2LC03NTQ5NTYwNiwyMTA3OTg0
 MjA2LDE4MDkxMjMyMjQsODQ5NDY2ODA0LC0zNTcxMDgxNTUsMT
 YwNDg2MzQ3OSwtNzA1NDE2MjEwLC0xNTY1MzM0Nzg5LDYyMTU0
