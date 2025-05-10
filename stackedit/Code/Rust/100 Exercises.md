@@ -1348,7 +1348,7 @@ impl std::ops::Index<Idx> ...
 #### 6.14 Mutable indexing
 ```rust
 // simplified
-pub trait IndexMut<Idx> : Index<Idx {
+pub trait IndexMut<Idx> : Index<Idx> {
 	// extends Index
 	fn index_mut(&mut self, index: Idx)
 		-> &mut Self::Output;
@@ -1363,11 +1363,11 @@ impl std::ops::IndexMut<Idx>
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNDg2MzQ3OSwtNzA1NDE2MjEwLC0xNT
-Y1MzM0Nzg5LDYyMTU0MzY3Nyw4NzY2MTk2MDQsOTYxNTgxNjQx
-LDEyMjEzOTA3ODgsLTE1NTAxNzMwMzQsLTIwMzQ2ODk4MTQsLT
-U2MDA4NTE0MSwtMTg5NDQwMTY3NiwtMTMxNzY3NTMyMCwtMzU5
-NzI4NzIsLTEzNjA2OTU5NjgsLTE3OTgyNDA4OTksNTYzNTk5NT
-ExLDE2NzQ1MjI2MzIsLTI3MTYyNjYxMCwxNTkxMTc5NTM0LC0x
-OTAyNzIwNDAxXX0=
+eyJoaXN0b3J5IjpbLTM1NzEwODE1NSwxNjA0ODYzNDc5LC03MD
+U0MTYyMTAsLTE1NjUzMzQ3ODksNjIxNTQzNjc3LDg3NjYxOTYw
+NCw5NjE1ODE2NDEsMTIyMTM5MDc4OCwtMTU1MDE3MzAzNCwtMj
+AzNDY4OTgxNCwtNTYwMDg1MTQxLC0xODk0NDAxNjc2LC0xMzE3
+Njc1MzIwLC0zNTk3Mjg3MiwtMTM2MDY5NTk2OCwtMTc5ODI0MD
+g5OSw1NjM1OTk1MTEsMTY3NDUyMjYzMiwtMjcxNjI2NjEwLDE1
+OTExNzk1MzRdfQ==
 -->
