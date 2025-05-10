@@ -1297,6 +1297,9 @@ let numbers = [1,2,3];
 let slice = &numbers[..];
 ```
 
+* prefer immutable slices because they can be backed by arrays or vectors
+
+
 `&mut [T]`
 : a mutable slice
 * allows changing the elements of the `T`
@@ -1307,8 +1310,7 @@ let mut slice: &mut[i32] = &mut numbers;
 //!!
 slice.push(1); // won't compile because slices have no `push`
 ```
-
-* prefer slices because they can be backed by arrays or vectors
+* For mutable slices, 
 
 
 
@@ -1316,11 +1318,11 @@ slice.push(1); // won't compile because slices have no `push`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIxNTQzNjc3LDg3NjYxOTYwNCw5NjE1OD
-E2NDEsMTIyMTM5MDc4OCwtMTU1MDE3MzAzNCwtMjAzNDY4OTgx
-NCwtNTYwMDg1MTQxLC0xODk0NDAxNjc2LC0xMzE3Njc1MzIwLC
-0zNTk3Mjg3MiwtMTM2MDY5NTk2OCwtMTc5ODI0MDg5OSw1NjM1
-OTk1MTEsMTY3NDUyMjYzMiwtMjcxNjI2NjEwLDE1OTExNzk1Mz
-QsLTE5MDI3MjA0MDEsNzIxNTI3OTM3LC0xNDg3OTczMjg3LC0y
-MDMwMTYzOTM4XX0=
+eyJoaXN0b3J5IjpbMjc5NDkyMzYxLDYyMTU0MzY3Nyw4NzY2MT
+k2MDQsOTYxNTgxNjQxLDEyMjEzOTA3ODgsLTE1NTAxNzMwMzQs
+LTIwMzQ2ODk4MTQsLTU2MDA4NTE0MSwtMTg5NDQwMTY3NiwtMT
+MxNzY3NTMyMCwtMzU5NzI4NzIsLTEzNjA2OTU5NjgsLTE3OTgy
+NDA4OTksNTYzNTk5NTExLDE2NzQ1MjI2MzIsLTI3MTYyNjYxMC
+wxNTkxMTc5NTM0LC0xOTAyNzIwNDAxLDcyMTUyNzkzNywtMTQ4
+Nzk3MzI4N119
 -->
