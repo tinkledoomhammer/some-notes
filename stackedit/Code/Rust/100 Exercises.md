@@ -1338,18 +1338,19 @@ pub struct Ticket {pub id: TicketId, ... }
 pub trait Index<Idx> {
 	type Output;
 	//required method index
-	fn index(&self, index: Idx) -> &Self::Outpu
+	fn index(&self, index: Idx) -> &Self::Output;
+}
 ```
-
+* Should panic if the index is invalid
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc3MDk3Njg5LC0xNTY1MzM0Nzg5LDYyMT
-U0MzY3Nyw4NzY2MTk2MDQsOTYxNTgxNjQxLDEyMjEzOTA3ODgs
-LTE1NTAxNzMwMzQsLTIwMzQ2ODk4MTQsLTU2MDA4NTE0MSwtMT
-g5NDQwMTY3NiwtMTMxNzY3NTMyMCwtMzU5NzI4NzIsLTEzNjA2
-OTU5NjgsLTE3OTgyNDA4OTksNTYzNTk5NTExLDE2NzQ1MjI2Mz
-IsLTI3MTYyNjYxMCwxNTkxMTc5NTM0LC0xOTAyNzIwNDAxLDcy
-MTUyNzkzN119
+eyJoaXN0b3J5IjpbLTcwNTQxNjIxMCwtMTU2NTMzNDc4OSw2Mj
+E1NDM2NzcsODc2NjE5NjA0LDk2MTU4MTY0MSwxMjIxMzkwNzg4
+LC0xNTUwMTczMDM0LC0yMDM0Njg5ODE0LC01NjAwODUxNDEsLT
+E4OTQ0MDE2NzYsLTEzMTc2NzUzMjAsLTM1OTcyODcyLC0xMzYw
+Njk1OTY4LC0xNzk4MjQwODk5LDU2MzU5OTUxMSwxNjc0NTIyNj
+MyLC0yNzE2MjY2MTAsMTU5MTE3OTUzNCwtMTkwMjcyMDQwMSw3
+MjE1Mjc5MzddfQ==
 -->
