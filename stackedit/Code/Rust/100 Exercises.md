@@ -1292,20 +1292,24 @@ let numbers = vec![1, 2, 3];
 	let slice: &[i32] = numbers.as_slice();
 //or indexing a subset
 	let slice: &[i32] = &numbers[1..];
-
+//Also with arrays instead of vecs
 let numbers = [1,2,3];
-let slice
+let slice = &numbers[..];
 ```
+
+* prefer slices because they can be backed by arrays or vectors
+
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTc2NTM4MTUsOTYxNTgxNjQxLDEyMj
-EzOTA3ODgsLTE1NTAxNzMwMzQsLTIwMzQ2ODk4MTQsLTU2MDA4
-NTE0MSwtMTg5NDQwMTY3NiwtMTMxNzY3NTMyMCwtMzU5NzI4Nz
-IsLTEzNjA2OTU5NjgsLTE3OTgyNDA4OTksNTYzNTk5NTExLDE2
-NzQ1MjI2MzIsLTI3MTYyNjYxMCwxNTkxMTc5NTM0LC0xOTAyNz
-IwNDAxLDcyMTUyNzkzNywtMTQ4Nzk3MzI4NywtMjAzMDE2Mzkz
-OCwtMTc0NzE2ODk2M119
+eyJoaXN0b3J5IjpbODc2NjE5NjA0LDk2MTU4MTY0MSwxMjIxMz
+kwNzg4LC0xNTUwMTczMDM0LC0yMDM0Njg5ODE0LC01NjAwODUx
+NDEsLTE4OTQ0MDE2NzYsLTEzMTc2NzUzMjAsLTM1OTcyODcyLC
+0xMzYwNjk1OTY4LC0xNzk4MjQwODk5LDU2MzU5OTUxMSwxNjc0
+NTIyNjMyLC0yNzE2MjY2MTAsMTU5MTE3OTUzNCwtMTkwMjcyMD
+QwMSw3MjE1Mjc5MzcsLTE0ODc5NzMyODcsLTIwMzAxNjM5Mzgs
+LTE3NDcxNjg5NjNdfQ==
 -->
