@@ -1435,17 +1435,18 @@ Process
 	* when the main thread ends, the process will terminate
 	* spawned threads will continue running until the main thread finishes
 * `JoinHandle::join()` will cause the calling thread to block until the thread referred to ends
+	* returns an `Option` of the return value(?)
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NDk1NjA2LDIxMDc5ODQyMDYsMTgwOT
-EyMzIyNCw4NDk0NjY4MDQsLTM1NzEwODE1NSwxNjA0ODYzNDc5
-LC03MDU0MTYyMTAsLTE1NjUzMzQ3ODksNjIxNTQzNjc3LDg3Nj
-YxOTYwNCw5NjE1ODE2NDEsMTIyMTM5MDc4OCwtMTU1MDE3MzAz
-NCwtMjAzNDY4OTgxNCwtNTYwMDg1MTQxLC0xODk0NDAxNjc2LC
-0xMzE3Njc1MzIwLC0zNTk3Mjg3MiwtMTM2MDY5NTk2OCwtMTc5
-ODI0MDg5OV19
+eyJoaXN0b3J5IjpbMTg0MDY5MDM4NiwtNzU0OTU2MDYsMjEwNz
+k4NDIwNiwxODA5MTIzMjI0LDg0OTQ2NjgwNCwtMzU3MTA4MTU1
+LDE2MDQ4NjM0NzksLTcwNTQxNjIxMCwtMTU2NTMzNDc4OSw2Mj
+E1NDM2NzcsODc2NjE5NjA0LDk2MTU4MTY0MSwxMjIxMzkwNzg4
+LC0xNTUwMTczMDM0LC0yMDM0Njg5ODE0LC01NjAwODUxNDEsLT
+E4OTQ0MDE2NzYsLTEzMTc2NzUzMjAsLTM1OTcyODcyLC0xMzYw
+Njk1OTY4XX0=
 -->
