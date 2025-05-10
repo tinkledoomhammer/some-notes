@@ -1392,7 +1392,7 @@ struct ...
 `Ord`
 : Defined in `std::cmp`
 * has a `cmp` method that returns an `Ordering` `enum`
-
+* Is a stricter version of `PartialOrd` which must return a value instead of an `Option`
 ```rust
 pub trait Ord: Eq + PartialOrd {
 	fn cmp(&self, other: &Self) -> Ordering;
@@ -1403,11 +1403,11 @@ enum Ordering {
 	Greater,
 }
 ```
-
+* float types do not implement `Eq` or `Ord` because `NaN` values are not comparable.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0MzQxMjMwLDg0OTQ2NjgwNCwtMzU3MT
+eyJoaXN0b3J5IjpbNTE4Nzk2NjA3LDg0OTQ2NjgwNCwtMzU3MT
 A4MTU1LDE2MDQ4NjM0NzksLTcwNTQxNjIxMCwtMTU2NTMzNDc4
 OSw2MjE1NDM2NzcsODc2NjE5NjA0LDk2MTU4MTY0MSwxMjIxMz
 kwNzg4LC0xNTUwMTczMDM0LC0yMDM0Njg5ODE0LC01NjAwODUx
