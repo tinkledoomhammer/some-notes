@@ -1340,17 +1340,19 @@ pub trait Index<Idx> {
 	//required method index
 	fn index(&self, index: Idx) -> &Self::Output;
 }
+
+impl std::ops::index<Idx> ...
 ```
 * Should panic if the index is invalid
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNTQxNjIxMCwtMTU2NTMzNDc4OSw2Mj
-E1NDM2NzcsODc2NjE5NjA0LDk2MTU4MTY0MSwxMjIxMzkwNzg4
-LC0xNTUwMTczMDM0LC0yMDM0Njg5ODE0LC01NjAwODUxNDEsLT
-E4OTQ0MDE2NzYsLTEzMTc2NzUzMjAsLTM1OTcyODcyLC0xMzYw
-Njk1OTY4LC0xNzk4MjQwODk5LDU2MzU5OTUxMSwxNjc0NTIyNj
-MyLC0yNzE2MjY2MTAsMTU5MTE3OTUzNCwtMTkwMjcyMDQwMSw3
-MjE1Mjc5MzddfQ==
+eyJoaXN0b3J5IjpbNDk0OTI5MTQ0LC03MDU0MTYyMTAsLTE1Nj
+UzMzQ3ODksNjIxNTQzNjc3LDg3NjYxOTYwNCw5NjE1ODE2NDEs
+MTIyMTM5MDc4OCwtMTU1MDE3MzAzNCwtMjAzNDY4OTgxNCwtNT
+YwMDg1MTQxLC0xODk0NDAxNjc2LC0xMzE3Njc1MzIwLC0zNTk3
+Mjg3MiwtMTM2MDY5NTk2OCwtMTc5ODI0MDg5OSw1NjM1OTk1MT
+EsMTY3NDUyMjYzMiwtMjcxNjI2NjEwLDE1OTExNzk1MzQsLTE5
+MDI3MjA0MDFdfQ==
 -->
