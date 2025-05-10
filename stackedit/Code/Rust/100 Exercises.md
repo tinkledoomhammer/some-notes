@@ -1502,11 +1502,14 @@ println("While: {v:?}");
 //because `v` does not have a static lifetime
 ```
 
+`std::thread::scope`
+: takes a closure as an argument that takes a `Sc
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0NTQ2NTg0OSwtMTUwOTQ4MDIxOSwtMT
+eyJoaXN0b3J5IjpbMTYyODU1MTkyMiwtMTUwOTQ4MDIxOSwtMT
 c5MjAxNTE5MSwtMTcxNTc1MTU3NSwxODQwNjkwMzg2LC03NTQ5
 NTYwNiwyMTA3OTg0MjA2LDE4MDkxMjMyMjQsODQ5NDY2ODA0LC
 0zNTcxMDgxNTUsMTYwNDg2MzQ3OSwtNzA1NDE2MjEwLC0xNTY1
