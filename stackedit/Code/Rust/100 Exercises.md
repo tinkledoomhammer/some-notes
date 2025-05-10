@@ -1279,17 +1279,23 @@ RPIT
 * No upside?
 
 ### 06.10 Slices
+`&[T]`
+: a borrowed reference to a contiguous block of `T`s
 
+Memory Layout
+: A pointer and a length (both `usize`)
+```rust
+let numbers = vec![1, 2, 3]
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYxNTgxNjQxLDEyMjEzOTA3ODgsLTE1NT
-AxNzMwMzQsLTIwMzQ2ODk4MTQsLTU2MDA4NTE0MSwtMTg5NDQw
-MTY3NiwtMTMxNzY3NTMyMCwtMzU5NzI4NzIsLTEzNjA2OTU5Nj
-gsLTE3OTgyNDA4OTksNTYzNTk5NTExLDE2NzQ1MjI2MzIsLTI3
-MTYyNjYxMCwxNTkxMTc5NTM0LC0xOTAyNzIwNDAxLDcyMTUyNz
-kzNywtMTQ4Nzk3MzI4NywtMjAzMDE2MzkzOCwtMTc0NzE2ODk2
-Myw3MzAyNjI2MjldfQ==
+eyJoaXN0b3J5IjpbMTE3ODkwMzIsOTYxNTgxNjQxLDEyMjEzOT
+A3ODgsLTE1NTAxNzMwMzQsLTIwMzQ2ODk4MTQsLTU2MDA4NTE0
+MSwtMTg5NDQwMTY3NiwtMTMxNzY3NTMyMCwtMzU5NzI4NzIsLT
+EzNjA2OTU5NjgsLTE3OTgyNDA4OTksNTYzNTk5NTExLDE2NzQ1
+MjI2MzIsLTI3MTYyNjYxMCwxNTkxMTc5NTM0LC0xOTAyNzIwND
+AxLDcyMTUyNzkzNywtMTQ4Nzk3MzI4NywtMjAzMDE2MzkzOCwt
+MTc0NzE2ODk2M119
 -->
