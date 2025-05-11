@@ -1561,15 +1561,21 @@ impl<T> Sender<T> {
 
 Interior mutability
 : Whenever a type allows mutation of data through a shared reference
-* Rust optimizes code based on the assumption that shared references are i
+* Rust optimizes code based on the assumption that shared references are immutable
+
+UnsafeCell
+: wraps data to indicate to the compiler that it might be mutated through a shared reference
+
+safe abstractions
+: Code that guarantees safety
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY4Mjk2MDU1LC04MzQwNTQwNTYsLTc5NT
-g2NjY3NiwtMTU0MjY1MzUwNywxOTc1MDY3ODYxLC0xNTA5NDgw
-MjE5LC0xNzkyMDE1MTkxLC0xNzE1NzUxNTc1LDE4NDA2OTAzOD
-YsLTc1NDk1NjA2LDIxMDc5ODQyMDYsMTgwOTEyMzIyNCw4NDk0
-NjY4MDQsLTM1NzEwODE1NSwxNjA0ODYzNDc5LC03MDU0MTYyMT
-AsLTE1NjUzMzQ3ODksNjIxNTQzNjc3LDg3NjYxOTYwNCw5NjE1
-ODE2NDFdfQ==
+eyJoaXN0b3J5IjpbLTE3NDAzOTE2NTcsLTgzNDA1NDA1NiwtNz
+k1ODY2Njc2LC0xNTQyNjUzNTA3LDE5NzUwNjc4NjEsLTE1MDk0
+ODAyMTksLTE3OTIwMTUxOTEsLTE3MTU3NTE1NzUsMTg0MDY5MD
+M4NiwtNzU0OTU2MDYsMjEwNzk4NDIwNiwxODA5MTIzMjI0LDg0
+OTQ2NjgwNCwtMzU3MTA4MTU1LDE2MDQ4NjM0NzksLTcwNTQxNj
+IxMCwtMTU2NTMzNDc4OSw2MjE1NDM2NzcsODc2NjE5NjA0LDk2
+MTU4MTY0MV19
 -->
