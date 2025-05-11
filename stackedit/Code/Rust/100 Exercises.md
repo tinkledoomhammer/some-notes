@@ -1604,17 +1604,18 @@ let z = x.borrow_mut(); // Panics because y is alive
 
 ### 06.07 Two-way communication, the ack pattern
 * The `Sender` channel can send an acknowledgement to the sender
-* 
+
+Setting up 2-way channels is quite a bit of boilerplate. Exercise 6.08 establishes
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjE4MTEzODEsLTE2NDUyNjk0NTIsLT
-gzNDA1NDA1NiwtNzk1ODY2Njc2LC0xNTQyNjUzNTA3LDE5NzUw
-Njc4NjEsLTE1MDk0ODAyMTksLTE3OTIwMTUxOTEsLTE3MTU3NT
-E1NzUsMTg0MDY5MDM4NiwtNzU0OTU2MDYsMjEwNzk4NDIwNiwx
-ODA5MTIzMjI0LDg0OTQ2NjgwNCwtMzU3MTA4MTU1LDE2MDQ4Nj
-M0NzksLTcwNTQxNjIxMCwtMTU2NTMzNDc4OSw2MjE1NDM2Nzcs
-ODc2NjE5NjA0XX0=
+eyJoaXN0b3J5IjpbLTU2MjMyMjkzOSwtMTI2MTgxMTM4MSwtMT
+Y0NTI2OTQ1MiwtODM0MDU0MDU2LC03OTU4NjY2NzYsLTE1NDI2
+NTM1MDcsMTk3NTA2Nzg2MSwtMTUwOTQ4MDIxOSwtMTc5MjAxNT
+E5MSwtMTcxNTc1MTU3NSwxODQwNjkwMzg2LC03NTQ5NTYwNiwy
+MTA3OTg0MjA2LDE4MDkxMjMyMjQsODQ5NDY2ODA0LC0zNTcxMD
+gxNTUsMTYwNDg2MzQ3OSwtNzA1NDE2MjEwLC0xNTY1MzM0Nzg5
+LDYyMTU0MzY3N119
 -->
