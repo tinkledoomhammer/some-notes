@@ -1615,15 +1615,16 @@ Bounded channels
 let(sender, receiver) = std::sync::mpsc::sync_channel(n);
 //n is how many messages can be buffered
 ```
-
+* `SyncSender::send` - will enqueue a mmessage and return `Ok(())` or it will block if the channel is full
+* `SyncSender::try_send` - 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTc1NDU1ODMsLTU2MjMyMjkzOSwtMT
-I2MTgxMTM4MSwtMTY0NTI2OTQ1MiwtODM0MDU0MDU2LC03OTU4
-NjY2NzYsLTE1NDI2NTM1MDcsMTk3NTA2Nzg2MSwtMTUwOTQ4MD
-IxOSwtMTc5MjAxNTE5MSwtMTcxNTc1MTU3NSwxODQwNjkwMzg2
-LC03NTQ5NTYwNiwyMTA3OTg0MjA2LDE4MDkxMjMyMjQsODQ5ND
-Y2ODA0LC0zNTcxMDgxNTUsMTYwNDg2MzQ3OSwtNzA1NDE2MjEw
-LC0xNTY1MzM0Nzg5XX0=
+eyJoaXN0b3J5IjpbLTExOTQ0NDU4MjAsLTE1OTc1NDU1ODMsLT
+U2MjMyMjkzOSwtMTI2MTgxMTM4MSwtMTY0NTI2OTQ1MiwtODM0
+MDU0MDU2LC03OTU4NjY2NzYsLTE1NDI2NTM1MDcsMTk3NTA2Nz
+g2MSwtMTUwOTQ4MDIxOSwtMTc5MjAxNTE5MSwtMTcxNTc1MTU3
+NSwxODQwNjkwMzg2LC03NTQ5NTYwNiwyMTA3OTg0MjA2LDE4MD
+kxMjMyMjQsODQ5NDY2ODA0LC0zNTcxMDgxNTUsMTYwNDg2MzQ3
+OSwtNzA1NDE2MjEwXX0=
 -->
