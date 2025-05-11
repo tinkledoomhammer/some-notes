@@ -1567,11 +1567,18 @@ UnsafeCell
 : wraps data to indicate to the compiler that it might be mutated through a shared reference
 
 safe abstractions
-: Code that guarantees safety
+: Code that guarantees safety in ways that cannot be directly expressed in Rust's type system
+
+safety preconditions
+: the circumstances in which it is safe tu use an `unsafe` block
+* will depend on the function
+* see `UnsafeCell` in [std's docs](https://doc.rust-lang.org/std/cell/struct.UnsafeCell.html)
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDAzOTE2NTcsLTgzNDA1NDA1NiwtNz
+eyJoaXN0b3J5IjpbLTE2ODg1ODc0MzUsLTgzNDA1NDA1NiwtNz
 k1ODY2Njc2LC0xNTQyNjUzNTA3LDE5NzUwNjc4NjEsLTE1MDk0
 ODAyMTksLTE3OTIwMTUxOTEsLTE3MTU3NTE1NzUsMTg0MDY5MD
 M4NiwtNzU0OTU2MDYsMjEwNzk4NDIwNiwxODA5MTIzMjI0LDg0
