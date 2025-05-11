@@ -1593,13 +1593,20 @@ assert_eq!(Rc::strong_count(&b), 2);
 `RefCell`
 : allows mutating the value it wraps through a shared reference to the `RefCell` itself
 * uses **runtime borrow checking**
-* 
+* Will panic if you attempt to borrow illegally
+```rust
+use std::cell::RefCell;
+let x = RefCell::new(42);
+let y = x.borrow(); // works
+let z = x.borrow_mut(); // Panics because y is alive
+```
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDcxNjI0MDYsLTgzNDA1NDA1NiwtNz
+eyJoaXN0b3J5IjpbLTE2NDUyNjk0NTIsLTgzNDA1NDA1NiwtNz
 k1ODY2Njc2LC0xNTQyNjUzNTA3LDE5NzUwNjc4NjEsLTE1MDk0
 ODAyMTksLTE3OTIwMTUxOTEsLTE3MTU3NTE1NzUsMTg0MDY5MD
 M4NiwtNzU0OTU2MDYsMjEwNzk4NDIwNiwxODA5MTIzMjI0LDg0
