@@ -1618,11 +1618,13 @@ let(sender, receiver) = std::sync::mpsc::sync_channel(n);
 * `SyncSender::send` - will enqueue a mmessage and return `Ok(())` or it will block if the channel is full
 * `SyncSender::try_send` - if the queue is full it will return `Err(TrySendError::Full(value))` where `value` is the message
 
-Bonded channels are mostly used to provide **backpressure**, forcing producers to slow down when c
+Bonded channels are mostly used to provide **backpressure**, forcing producers to slow down
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzOTkxMTQ2NCwtMTU5NzU0NTU4MywtNT
+eyJoaXN0b3J5IjpbMTM3MDU1MDg2MywtMTU5NzU0NTU4MywtNT
 YyMzIyOTM5LC0xMjYxODExMzgxLC0xNjQ1MjY5NDUyLC04MzQw
 NTQwNTYsLTc5NTg2NjY3NiwtMTU0MjY1MzUwNywxOTc1MDY3OD
 YxLC0xNTA5NDgwMjE5LC0xNzkyMDE1MTkxLC0xNzE1NzUxNTc1
