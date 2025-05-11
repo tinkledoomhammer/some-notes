@@ -1581,17 +1581,23 @@ safety preconditions
 use std::rc::Rc;
 let a: Rc<String> = Rc::new("My string".to_string());
 //Only one ref exists
+assert_eq!(Rc::strong_count(&a),1);
 
+let b = Rc::clone(&a);
+// clones the Rc but not the underlying string
+assert_eq!(Rc::strong_count(&a), 2);
+assert_eq!(Rc::strong_count(&b), 2);
+// since both a and b refer to the 
 ```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwMDk1OTAyNywtODM0MDU0MDU2LC03OT
-U4NjY2NzYsLTE1NDI2NTM1MDcsMTk3NTA2Nzg2MSwtMTUwOTQ4
-MDIxOSwtMTc5MjAxNTE5MSwtMTcxNTc1MTU3NSwxODQwNjkwMz
-g2LC03NTQ5NTYwNiwyMTA3OTg0MjA2LDE4MDkxMjMyMjQsODQ5
-NDY2ODA0LC0zNTcxMDgxNTUsMTYwNDg2MzQ3OSwtNzA1NDE2Mj
-EwLC0xNTY1MzM0Nzg5LDYyMTU0MzY3Nyw4NzY2MTk2MDQsOTYx
-NTgxNjQxXX0=
+eyJoaXN0b3J5IjpbLTEzNDMyODYxODAsLTgzNDA1NDA1NiwtNz
+k1ODY2Njc2LC0xNTQyNjUzNTA3LDE5NzUwNjc4NjEsLTE1MDk0
+ODAyMTksLTE3OTIwMTUxOTEsLTE3MTU3NTE1NzUsMTg0MDY5MD
+M4NiwtNzU0OTU2MDYsMjEwNzk4NDIwNiwxODA5MTIzMjI0LDg0
+OTQ2NjgwNCwtMzU3MTA4MTU1LDE2MDQ4NjM0NzksLTcwNTQxNj
+IxMCwtMTU2NTMzNDc4OSw2MjE1NDM2NzcsODc2NjE5NjA0LDk2
+MTU4MTY0MV19
 -->
