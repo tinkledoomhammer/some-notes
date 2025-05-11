@@ -1577,6 +1577,7 @@ safety preconditions
 `Rc`
 : a reference counted pointer
 * it's wrapped value is immutable. you can only get shared refs to it
+* It uses `UnsafeCell` internally
 ```rust
 use std::rc::Rc;
 let a: Rc<String> = Rc::new("My string".to_string());
@@ -1587,13 +1588,18 @@ let b = Rc::clone(&a);
 // clones the Rc but not the underlying string
 assert_eq!(Rc::strong_count(&a), 2);
 assert_eq!(Rc::strong_count(&b), 2);
-// since both a and b refer to the 
+// since both a and b refer to the same data, they have the same counter value
 ```
+`RefCell`
+: allows mutating the value it wraps through a shared reference to the `RefCell` itself
+* uses **runtime borrow checking**
+* 
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDMyODYxODAsLTgzNDA1NDA1NiwtNz
+eyJoaXN0b3J5IjpbLTE2MDcxNjI0MDYsLTgzNDA1NDA1NiwtNz
 k1ODY2Njc2LC0xNTQyNjUzNTA3LDE5NzUwNjc4NjEsLTE1MDk0
 ODAyMTksLTE3OTIwMTUxOTEsLTE3MTU3NTE1NzUsMTg0MDY5MD
 M4NiwtNzU0OTU2MDYsMjEwNzk4NDIwNiwxODA5MTIzMjI0LDg0
