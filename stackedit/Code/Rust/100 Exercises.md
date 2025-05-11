@@ -1559,14 +1559,17 @@ impl<T> Sender<T> {
 * What has been thusfar called mutable references `&mut T` should be called **exclusive references**
 * `&T` does not actually guarantee that the data it refers to is immutable
 
+Interior mutability
+: Whenever a type allows mutation of data through a shared reference
+* Rust optimizes code based on the assumption that shared references are i
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzNDA1NDA1NiwtNzk1ODY2Njc2LC0xNT
-QyNjUzNTA3LDE5NzUwNjc4NjEsLTE1MDk0ODAyMTksLTE3OTIw
-MTUxOTEsLTE3MTU3NTE1NzUsMTg0MDY5MDM4NiwtNzU0OTU2MD
-YsMjEwNzk4NDIwNiwxODA5MTIzMjI0LDg0OTQ2NjgwNCwtMzU3
-MTA4MTU1LDE2MDQ4NjM0NzksLTcwNTQxNjIxMCwtMTU2NTMzND
-c4OSw2MjE1NDM2NzcsODc2NjE5NjA0LDk2MTU4MTY0MSwxMjIx
-MzkwNzg4XX0=
+eyJoaXN0b3J5IjpbODY4Mjk2MDU1LC04MzQwNTQwNTYsLTc5NT
+g2NjY3NiwtMTU0MjY1MzUwNywxOTc1MDY3ODYxLC0xNTA5NDgw
+MjE5LC0xNzkyMDE1MTkxLC0xNzE1NzUxNTc1LDE4NDA2OTAzOD
+YsLTc1NDk1NjA2LDIxMDc5ODQyMDYsMTgwOTEyMzIyNCw4NDk0
+NjY4MDQsLTM1NzEwODE1NSwxNjA0ODYzNDc5LC03MDU0MTYyMT
+AsLTE1NjUzMzQ3ODksNjIxNTQzNjc3LDg3NjYxOTYwNCw5NjE1
+ODE2NDFdfQ==
 -->
