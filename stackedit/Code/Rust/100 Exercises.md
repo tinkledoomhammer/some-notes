@@ -1574,15 +1574,24 @@ safety preconditions
 * will depend on the function
 * see `UnsafeCell` in [std's docs](https://doc.rust-lang.org/std/cell/struct.UnsafeCell.html)
 
+`Rc`
+: a reference counted pointer
+* it's wrapped value is immutable. you can only get shared refs to it
+```rust
+use std::rc::Rc;
+let a: Rc<String> = Rc::new("My string".to_string());
+//Only one ref exists
+
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODg1ODc0MzUsLTgzNDA1NDA1NiwtNz
-k1ODY2Njc2LC0xNTQyNjUzNTA3LDE5NzUwNjc4NjEsLTE1MDk0
-ODAyMTksLTE3OTIwMTUxOTEsLTE3MTU3NTE1NzUsMTg0MDY5MD
-M4NiwtNzU0OTU2MDYsMjEwNzk4NDIwNiwxODA5MTIzMjI0LDg0
-OTQ2NjgwNCwtMzU3MTA4MTU1LDE2MDQ4NjM0NzksLTcwNTQxNj
-IxMCwtMTU2NTMzNDc4OSw2MjE1NDM2NzcsODc2NjE5NjA0LDk2
-MTU4MTY0MV19
+eyJoaXN0b3J5IjpbMjEwMDk1OTAyNywtODM0MDU0MDU2LC03OT
+U4NjY2NzYsLTE1NDI2NTM1MDcsMTk3NTA2Nzg2MSwtMTUwOTQ4
+MDIxOSwtMTc5MjAxNTE5MSwtMTcxNTc1MTU3NSwxODQwNjkwMz
+g2LC03NTQ5NTYwNiwyMTA3OTg0MjA2LDE4MDkxMjMyMjQsODQ5
+NDY2ODA0LC0zNTcxMDgxNTUsMTYwNDg2MzQ3OSwtNzA1NDE2Mj
+EwLC0xNTY1MzM0Nzg5LDYyMTU0MzY3Nyw4NzY2MTk2MDQsOTYx
+NTgxNjQxXX0=
 -->
