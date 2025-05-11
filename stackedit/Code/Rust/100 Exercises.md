@@ -1542,12 +1542,12 @@ pub fn sum(v:Vec<i32>) -> i32 {
 * `sender.send(...)` to push data into the channel
 * `receiver.recv` to pull data from the channel
 * `Sender` is clonable. Multiple coppies will send data to the same channel
-* `Receiverr` is not clonable. there can be only one receiver per mpsc
+* `Receiver` is not clonable. there can be only one receiver per mpsc
 * Both `Sender` and `Receiver` are generic over a type parameter `T`
 	* `T` is the type of data passed through the channel i.e. **message type**
 * Errors are returned when the channel is effectively closed
 	* `send` will return an error if the receiver has been dropped
-	* `recv` returns an error if all shenders have dropped and the channel is empty
+	* `recv` returns an error if all senders have dropped and the channel is empty
 
 ### 7.06 Interior Mutability
 ```rust
@@ -1624,11 +1624,11 @@ Bonded channels are mostly used to provide **backpressure**, forcing producers t
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MTEzNjgzLDEzNzA1NTA4NjMsLTE1OT
-c1NDU1ODMsLTU2MjMyMjkzOSwtMTI2MTgxMTM4MSwtMTY0NTI2
-OTQ1MiwtODM0MDU0MDU2LC03OTU4NjY2NzYsLTE1NDI2NTM1MD
-csMTk3NTA2Nzg2MSwtMTUwOTQ4MDIxOSwtMTc5MjAxNTE5MSwt
-MTcxNTc1MTU3NSwxODQwNjkwMzg2LC03NTQ5NTYwNiwyMTA3OT
-g0MjA2LDE4MDkxMjMyMjQsODQ5NDY2ODA0LC0zNTcxMDgxNTUs
-MTYwNDg2MzQ3OV19
+eyJoaXN0b3J5IjpbLTE2NjQ2MzQ5NDksMTc5MTEzNjgzLDEzNz
+A1NTA4NjMsLTE1OTc1NDU1ODMsLTU2MjMyMjkzOSwtMTI2MTgx
+MTM4MSwtMTY0NTI2OTQ1MiwtODM0MDU0MDU2LC03OTU4NjY2Nz
+YsLTE1NDI2NTM1MDcsMTk3NTA2Nzg2MSwtMTUwOTQ4MDIxOSwt
+MTc5MjAxNTE5MSwtMTcxNTc1MTU3NSwxODQwNjkwMzg2LC03NT
+Q5NTYwNiwyMTA3OTg0MjA2LDE4MDkxMjMyMjQsODQ5NDY2ODA0
+LC0zNTcxMDgxNTVdfQ==
 -->
