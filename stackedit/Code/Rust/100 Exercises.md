@@ -1607,15 +1607,22 @@ let z = x.borrow_mut(); // Panics because y is alive
 
 Setting up 2-way channels is quite a bit of boilerplate. Exercise 6.08 establishes
 
+### 06.09 Bounded vs unbounded channels
+Bounded channels
+: have a fixed capacity
 
+```rust
+let(sender, receiver) = std::sync::mpsc::sync_channel(n);
+//n is how many 
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MjMyMjkzOSwtMTI2MTgxMTM4MSwtMT
-Y0NTI2OTQ1MiwtODM0MDU0MDU2LC03OTU4NjY2NzYsLTE1NDI2
-NTM1MDcsMTk3NTA2Nzg2MSwtMTUwOTQ4MDIxOSwtMTc5MjAxNT
-E5MSwtMTcxNTc1MTU3NSwxODQwNjkwMzg2LC03NTQ5NTYwNiwy
-MTA3OTg0MjA2LDE4MDkxMjMyMjQsODQ5NDY2ODA0LC0zNTcxMD
-gxNTUsMTYwNDg2MzQ3OSwtNzA1NDE2MjEwLC0xNTY1MzM0Nzg5
-LDYyMTU0MzY3N119
+eyJoaXN0b3J5IjpbMTc2ODY5ODkyMywtNTYyMzIyOTM5LC0xMj
+YxODExMzgxLC0xNjQ1MjY5NDUyLC04MzQwNTQwNTYsLTc5NTg2
+NjY3NiwtMTU0MjY1MzUwNywxOTc1MDY3ODYxLC0xNTA5NDgwMj
+E5LC0xNzkyMDE1MTkxLC0xNzE1NzUxNTc1LDE4NDA2OTAzODYs
+LTc1NDk1NjA2LDIxMDc5ODQyMDYsMTgwOTEyMzIyNCw4NDk0Nj
+Y4MDQsLTM1NzEwODE1NSwxNjA0ODYzNDc5LC03MDU0MTYyMTAs
+LTE1NjUzMzQ3ODldfQ==
 -->
