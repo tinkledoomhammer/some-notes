@@ -1616,15 +1616,17 @@ let(sender, receiver) = std::sync::mpsc::sync_channel(n);
 //n is how many messages can be buffered
 ```
 * `SyncSender::send` - will enqueue a mmessage and return `Ok(())` or it will block if the channel is full
-* `SyncSender::try_send` - 
+* `SyncSender::try_send` - if the queue is full it will return `Err(TrySendError::Full(value))` where `value` is the message
+
+Bonded channels are mostly used to provide **backpressure**, forcing producers to slow down when c
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTQ0NDU4MjAsLTE1OTc1NDU1ODMsLT
-U2MjMyMjkzOSwtMTI2MTgxMTM4MSwtMTY0NTI2OTQ1MiwtODM0
-MDU0MDU2LC03OTU4NjY2NzYsLTE1NDI2NTM1MDcsMTk3NTA2Nz
-g2MSwtMTUwOTQ4MDIxOSwtMTc5MjAxNTE5MSwtMTcxNTc1MTU3
-NSwxODQwNjkwMzg2LC03NTQ5NTYwNiwyMTA3OTg0MjA2LDE4MD
-kxMjMyMjQsODQ5NDY2ODA0LC0zNTcxMDgxNTUsMTYwNDg2MzQ3
-OSwtNzA1NDE2MjEwXX0=
+eyJoaXN0b3J5IjpbLTQzOTkxMTQ2NCwtMTU5NzU0NTU4MywtNT
+YyMzIyOTM5LC0xMjYxODExMzgxLC0xNjQ1MjY5NDUyLC04MzQw
+NTQwNTYsLTc5NTg2NjY3NiwtMTU0MjY1MzUwNywxOTc1MDY3OD
+YxLC0xNTA5NDgwMjE5LC0xNzkyMDE1MTkxLC0xNzE1NzUxNTc1
+LDE4NDA2OTAzODYsLTc1NDk1NjA2LDIxMDc5ODQyMDYsMTgwOT
+EyMzIyNCw4NDk0NjY4MDQsLTM1NzEwODE1NSwxNjA0ODYzNDc5
+LC03MDU0MTYyMTBdfQ==
 -->
