@@ -1601,18 +1601,17 @@ let y = x.borrow(); // works
 let z = x.borrow_mut(); // Panics because y is alive
 ```
 
-Exercise
- The instructions explicitly call for the use of `usize` but the tests use number literals without a type specifier, which defaults to `i32`. Not sure why. The solution on git
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDYwNDMzODAsLTE2NDUyNjk0NTIsLT
-gzNDA1NDA1NiwtNzk1ODY2Njc2LC0xNTQyNjUzNTA3LDE5NzUw
-Njc4NjEsLTE1MDk0ODAyMTksLTE3OTIwMTUxOTEsLTE3MTU3NT
-E1NzUsMTg0MDY5MDM4NiwtNzU0OTU2MDYsMjEwNzk4NDIwNiwx
-ODA5MTIzMjI0LDg0OTQ2NjgwNCwtMzU3MTA4MTU1LDE2MDQ4Nj
-M0NzksLTcwNTQxNjIxMCwtMTU2NTMzNDc4OSw2MjE1NDM2Nzcs
-ODc2NjE5NjA0XX0=
+eyJoaXN0b3J5IjpbLTYyMzQ0MzUwLC0xNjQ1MjY5NDUyLC04Mz
+QwNTQwNTYsLTc5NTg2NjY3NiwtMTU0MjY1MzUwNywxOTc1MDY3
+ODYxLC0xNTA5NDgwMjE5LC0xNzkyMDE1MTkxLC0xNzE1NzUxNT
+c1LDE4NDA2OTAzODYsLTc1NDk1NjA2LDIxMDc5ODQyMDYsMTgw
+OTEyMzIyNCw4NDk0NjY4MDQsLTM1NzEwODE1NSwxNjA0ODYzND
+c5LC03MDU0MTYyMTAsLTE1NjUzMzQ3ODksNjIxNTQzNjc3LDg3
+NjYxOTYwNF19
 -->
