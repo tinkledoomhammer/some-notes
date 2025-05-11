@@ -1602,13 +1602,15 @@ let z = x.borrow_mut(); // Panics because y is alive
 ```
 
 
-### 06.07 
+### 06.07 Two-way communication, the ack pattern
+* The `Sender` channel can send an acknowledgement to the sender
+* 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTYyODA1MTAsLTE2NDUyNjk0NTIsLT
+eyJoaXN0b3J5IjpbLTEyNjE4MTEzODEsLTE2NDUyNjk0NTIsLT
 gzNDA1NDA1NiwtNzk1ODY2Njc2LC0xNTQyNjUzNTA3LDE5NzUw
 Njc4NjEsLTE1MDk0ODAyMTksLTE3OTIwMTUxOTEsLTE3MTU3NT
 E1NzUsMTg0MDY5MDM4NiwtNzU0OTU2MDYsMjEwNzk4NDIwNiwx
