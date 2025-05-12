@@ -1644,6 +1644,7 @@ Exercise:
 : Allows one ref to the `T` whether it mutable or not
 * `.lock()` (blocking) and `.try_lock()` non blocking, returns a `Result`
 * the returned object is a "guard object" that dereferences to the data
+* `Mutex` is not `Clone` and therefore cannot be passed between threads. We need a `Clone`able wrapper to pass it between threads
 
 ```rust
 use std::sync::Mutex;
@@ -1662,7 +1663,7 @@ drop(guard);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMTE5MDM1MiwtMTAwODA4MzQ0MiwtND
+eyJoaXN0b3J5IjpbMTMwMzUwMTEzOCwtMTAwODA4MzQ0MiwtND
 c3NjEwNDcwLC0xNjY0NjM0OTQ5LDE3OTExMzY4MywxMzcwNTUw
 ODYzLC0xNTk3NTQ1NTgzLC01NjIzMjI5MzksLTEyNjE4MTEzOD
 EsLTE2NDUyNjk0NTIsLTgzNDA1NDA1NiwtNzk1ODY2Njc2LC0x
