@@ -1640,12 +1640,16 @@ Exercise:
 * the `mut` keyword is unneeded for `let x = f(n)` when `f` returns a `&mut`
 
 ### 7.11 `Mutex` `Send` and `Arc`
-`Mutex<T>`
-: Allows on
+`std::sync::Mutex<T>`
+: Allows one ref to the `T` whether it mutable or not
+* `.lock()` (blocking) and `.try_lock()` non blocking, returns a `Result`
+
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgwNzkzOTQyLC0xMDA4MDgzNDQyLC00Nz
+eyJoaXN0b3J5IjpbMTk0NzA1MTAwLC0xMDA4MDgzNDQyLC00Nz
 c2MTA0NzAsLTE2NjQ2MzQ5NDksMTc5MTEzNjgzLDEzNzA1NTA4
 NjMsLTE1OTc1NDU1ODMsLTU2MjMyMjkzOSwtMTI2MTgxMTM4MS
 wtMTY0NTI2OTQ1MiwtODM0MDU0MDU2LC03OTU4NjY2NzYsLTE1
