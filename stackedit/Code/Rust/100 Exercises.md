@@ -1602,12 +1602,12 @@ let z = x.borrow_mut(); // Panics because y is alive
 ```
 
 
-### 06.07 Two-way communication, the ack pattern
+### 7.07 Two-way communication, the ack pattern
 * The `Sender` channel can send an acknowledgement to the sender
 
 Setting up 2-way channels is quite a bit of boilerplate. Exercise 6.08 establishes
 
-### 06.09 Bounded vs unbounded channels
+### 7.09 Bounded vs unbounded channels
 Bounded channels
 : have a fixed capacity
 
@@ -1620,15 +1620,19 @@ let(sync_sender, receiver) = std::sync::mpsc::sync_channel(n);
 
 Bonded channels are mostly used to provide **backpressure**, forcing producers to slow down
 
-###
+### 7.10 Patching
+
+
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ3NDg1NzM4LC0xNjY0NjM0OTQ5LDE3OT
-ExMzY4MywxMzcwNTUwODYzLC0xNTk3NTQ1NTgzLC01NjIzMjI5
-MzksLTEyNjE4MTEzODEsLTE2NDUyNjk0NTIsLTgzNDA1NDA1Ni
-wtNzk1ODY2Njc2LC0xNTQyNjUzNTA3LDE5NzUwNjc4NjEsLTE1
-MDk0ODAyMTksLTE3OTIwMTUxOTEsLTE3MTU3NTE1NzUsMTg0MD
-Y5MDM4NiwtNzU0OTU2MDYsMjEwNzk4NDIwNiwxODA5MTIzMjI0
-LDg0OTQ2NjgwNF19
+eyJoaXN0b3J5IjpbLTE1OTQ4ODU4MCwtMTY2NDYzNDk0OSwxNz
+kxMTM2ODMsMTM3MDU1MDg2MywtMTU5NzU0NTU4MywtNTYyMzIy
+OTM5LC0xMjYxODExMzgxLC0xNjQ1MjY5NDUyLC04MzQwNTQwNT
+YsLTc5NTg2NjY3NiwtMTU0MjY1MzUwNywxOTc1MDY3ODYxLC0x
+NTA5NDgwMjE5LC0xNzkyMDE1MTkxLC0xNzE1NzUxNTc1LDE4ND
+A2OTAzODYsLTc1NDk1NjA2LDIxMDc5ODQyMDYsMTgwOTEyMzIy
+NCw4NDk0NjY4MDRdfQ==
 -->
