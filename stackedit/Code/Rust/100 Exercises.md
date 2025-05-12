@@ -1628,18 +1628,23 @@ struct TicketPatch {
 	id: TicketId, //required
 	title: Option<TicketTitle>,
 	description: Option<TicketDescription>,
-	status: 
+	status: Option<TicketStatus>,
+}
+```
+* `id` is mandatory
+* the options should be `None` if that field should not be updated
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjU3MjE0MTUsLTE2NjQ2MzQ5NDksMT
-c5MTEzNjgzLDEzNzA1NTA4NjMsLTE1OTc1NDU1ODMsLTU2MjMy
-MjkzOSwtMTI2MTgxMTM4MSwtMTY0NTI2OTQ1MiwtODM0MDU0MD
-U2LC03OTU4NjY2NzYsLTE1NDI2NTM1MDcsMTk3NTA2Nzg2MSwt
-MTUwOTQ4MDIxOSwtMTc5MjAxNTE5MSwtMTcxNTc1MTU3NSwxOD
-QwNjkwMzg2LC03NTQ5NTYwNiwyMTA3OTg0MjA2LDE4MDkxMjMy
-MjQsODQ5NDY2ODA0XX0=
+eyJoaXN0b3J5IjpbLTQ3NzYxMDQ3MCwtMTY2NDYzNDk0OSwxNz
+kxMTM2ODMsMTM3MDU1MDg2MywtMTU5NzU0NTU4MywtNTYyMzIy
+OTM5LC0xMjYxODExMzgxLC0xNjQ1MjY5NDUyLC04MzQwNTQwNT
+YsLTc5NTg2NjY3NiwtMTU0MjY1MzUwNywxOTc1MDY3ODYxLC0x
+NTA5NDgwMjE5LC0xNzkyMDE1MTkxLC0xNzE1NzUxNTc1LDE4ND
+A2OTAzODYsLTc1NDk1NjA2LDIxMDc5ODQyMDYsMTgwOTEyMzIy
+NCw4NDk0NjY4MDRdfQ==
 -->
