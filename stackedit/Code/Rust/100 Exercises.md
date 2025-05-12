@@ -1635,16 +1635,20 @@ struct TicketPatch {
 * the options should be `None` if that field should not be updated
 
 
+Exercise:
+* `result.map_error` reminder  it takes a closure and returns an optionally modified error, does not alter `Ok`
+* the `mut` keyword is unneeded for `let x = f(n)` when `f` returns a `&mut`
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NzYxMDQ3MCwtMTY2NDYzNDk0OSwxNz
-kxMTM2ODMsMTM3MDU1MDg2MywtMTU5NzU0NTU4MywtNTYyMzIy
-OTM5LC0xMjYxODExMzgxLC0xNjQ1MjY5NDUyLC04MzQwNTQwNT
-YsLTc5NTg2NjY3NiwtMTU0MjY1MzUwNywxOTc1MDY3ODYxLC0x
-NTA5NDgwMjE5LC0xNzkyMDE1MTkxLC0xNzE1NzUxNTc1LDE4ND
-A2OTAzODYsLTc1NDk1NjA2LDIxMDc5ODQyMDYsMTgwOTEyMzIy
-NCw4NDk0NjY4MDRdfQ==
+eyJoaXN0b3J5IjpbLTEwMDgwODM0NDIsLTQ3NzYxMDQ3MCwtMT
+Y2NDYzNDk0OSwxNzkxMTM2ODMsMTM3MDU1MDg2MywtMTU5NzU0
+NTU4MywtNTYyMzIyOTM5LC0xMjYxODExMzgxLC0xNjQ1MjY5ND
+UyLC04MzQwNTQwNTYsLTc5NTg2NjY3NiwtMTU0MjY1MzUwNywx
+OTc1MDY3ODYxLC0xNTA5NDgwMjE5LC0xNzkyMDE1MTkxLC0xNz
+E1NzUxNTc1LDE4NDA2OTAzODYsLTc1NDk1NjA2LDIxMDc5ODQy
+MDYsMTgwOTEyMzIyNF19
 -->
