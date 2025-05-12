@@ -1660,13 +1660,15 @@ drop(guard);
 `Send`
 : an auto + marker trait
 * it can only be implemented manually in `unsafe`
+* It is automatically applied to all types that the compiler determines can be safely passed between threads
+* `Sender<T>`, `SyncSender<T>` and `Receiver<T>` are 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxODYwNDY5LC0xMDA4MDgzNDQyLC00Nz
+eyJoaXN0b3J5IjpbLTQ2Mzg2MTY3LC0xMDA4MDgzNDQyLC00Nz
 c2MTA0NzAsLTE2NjQ2MzQ5NDksMTc5MTEzNjgzLDEzNzA1NTA4
 NjMsLTE1OTc1NDU1ODMsLTU2MjMyMjkzOSwtMTI2MTgxMTM4MS
 wtMTY0NTI2OTQ1MiwtODM0MDU0MDU2LC03OTU4NjY2NzYsLTE1
