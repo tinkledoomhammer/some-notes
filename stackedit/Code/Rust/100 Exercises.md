@@ -1643,17 +1643,26 @@ Exercise:
 `std::sync::Mutex<T>`
 : Allows one ref to the `T` whether it mutable or not
 * `.lock()` (blocking) and `.try_lock()` non blocking, returns a `Result`
-* the returned object is a "guard 
+* the returned object is a "guard object" that dereferences to the data
+
+```rust
+use std::sync::Mutex;
+let lock = Mutex::new(0);
+let mut guard = lock.lock().unwrap();
+
+//Use deref corecion to modify the data
+*guard +=1
+```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4ODM0NDUxLC0xMDA4MDgzNDQyLC00Nz
-c2MTA0NzAsLTE2NjQ2MzQ5NDksMTc5MTEzNjgzLDEzNzA1NTA4
-NjMsLTE1OTc1NDU1ODMsLTU2MjMyMjkzOSwtMTI2MTgxMTM4MS
-wtMTY0NTI2OTQ1MiwtODM0MDU0MDU2LC03OTU4NjY2NzYsLTE1
-NDI2NTM1MDcsMTk3NTA2Nzg2MSwtMTUwOTQ4MDIxOSwtMTc5Mj
-AxNTE5MSwtMTcxNTc1MTU3NSwxODQwNjkwMzg2LC03NTQ5NTYw
-NiwyMTA3OTg0MjA2XX0=
+eyJoaXN0b3J5IjpbLTE4MzgwNDE0ODMsLTEwMDgwODM0NDIsLT
+Q3NzYxMDQ3MCwtMTY2NDYzNDk0OSwxNzkxMTM2ODMsMTM3MDU1
+MDg2MywtMTU5NzU0NTU4MywtNTYyMzIyOTM5LC0xMjYxODExMz
+gxLC0xNjQ1MjY5NDUyLC04MzQwNTQwNTYsLTc5NTg2NjY3Niwt
+MTU0MjY1MzUwNywxOTc1MDY3ODYxLC0xNTA5NDgwMjE5LC0xNz
+kyMDE1MTkxLC0xNzE1NzUxNTc1LDE4NDA2OTAzODYsLTc1NDk1
+NjA2LDIxMDc5ODQyMDZdfQ==
 -->
