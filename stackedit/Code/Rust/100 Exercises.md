@@ -1664,17 +1664,19 @@ drop(guard);
 * `Sender<T>`, `SyncSender<T>` and `Receiver<T>` are `Send` if and only if `T` is `Send`
 * `MutexGuard` is not `Send` because the underlying primitives it uses require (on some platforms) that the lock is released from the same thread that acquires it
 	* releasing a `MutexGuard` on a different thread than the one that acquired it would result in undefined behavior
+* `Mutex` is `Send` iff the data it protects is `Send`
+* Mutex is not `'static` 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzY0MTg5MTQsLTEwMDgwODM0NDIsLT
-Q3NzYxMDQ3MCwtMTY2NDYzNDk0OSwxNzkxMTM2ODMsMTM3MDU1
-MDg2MywtMTU5NzU0NTU4MywtNTYyMzIyOTM5LC0xMjYxODExMz
-gxLC0xNjQ1MjY5NDUyLC04MzQwNTQwNTYsLTc5NTg2NjY3Niwt
-MTU0MjY1MzUwNywxOTc1MDY3ODYxLC0xNTA5NDgwMjE5LC0xNz
-kyMDE1MTkxLC0xNzE1NzUxNTc1LDE4NDA2OTAzODYsLTc1NDk1
-NjA2LDIxMDc5ODQyMDZdfQ==
+eyJoaXN0b3J5IjpbNDY2NTg1NDA3LC0xMDA4MDgzNDQyLC00Nz
+c2MTA0NzAsLTE2NjQ2MzQ5NDksMTc5MTEzNjgzLDEzNzA1NTA4
+NjMsLTE1OTc1NDU1ODMsLTU2MjMyMjkzOSwtMTI2MTgxMTM4MS
+wtMTY0NTI2OTQ1MiwtODM0MDU0MDU2LC03OTU4NjY2NzYsLTE1
+NDI2NTM1MDcsMTk3NTA2Nzg2MSwtMTUwOTQ4MDIxOSwtMTc5Mj
+AxNTE5MSwtMTcxNTc1MTU3NSwxODQwNjkwMzg2LC03NTQ5NTYw
+NiwyMTA3OTg0MjA2XX0=
 -->
