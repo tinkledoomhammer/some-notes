@@ -1670,14 +1670,14 @@ drop(guard);
 `Arc`
 : Atomic Reference Counting
 * the value it wraps is immutable. you can only share refs to it
-* 
+* it is `Send` while `Rc` is not
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NzIwNzcxNywtMTAwODA4MzQ0MiwtND
+eyJoaXN0b3J5IjpbLTQ3MDQ2NzEzMywtMTAwODA4MzQ0MiwtND
 c3NjEwNDcwLC0xNjY0NjM0OTQ5LDE3OTExMzY4MywxMzcwNTUw
 ODYzLC0xNTk3NTQ1NTgzLC01NjIzMjI5MzksLTEyNjE4MTEzOD
 EsLTE2NDUyNjk0NTIsLTgzNDA1NDA1NiwtNzk1ODY2Njc2LC0x
