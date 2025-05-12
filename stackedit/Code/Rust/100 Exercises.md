@@ -1621,18 +1621,25 @@ let(sync_sender, receiver) = std::sync::mpsc::sync_channel(n);
 Bonded channels are mostly used to provide **backpressure**, forcing producers to slow down
 
 ### 7.10 Patching
-The ticket store object in the exercises has a `get_mut` method, but we can't pass a mutable reference to a different thread
+The ticket store object in the exercises has a `get_mut` method, but we can't pass a mutable reference to a different thread because they don't satisfy `'static` and so can't be passed in a closure to `std::thread::spawn`
+
+```rust
+struct TicketPatch {
+	id: TicketId, //required
+	title: Option<TicketTitle>,
+	description: Option<TicketDescription>,
+	status: 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3OTkzNjMsLTE2NjQ2MzQ5NDksMTc5MT
-EzNjgzLDEzNzA1NTA4NjMsLTE1OTc1NDU1ODMsLTU2MjMyMjkz
-OSwtMTI2MTgxMTM4MSwtMTY0NTI2OTQ1MiwtODM0MDU0MDU2LC
-03OTU4NjY2NzYsLTE1NDI2NTM1MDcsMTk3NTA2Nzg2MSwtMTUw
-OTQ4MDIxOSwtMTc5MjAxNTE5MSwtMTcxNTc1MTU3NSwxODQwNj
-kwMzg2LC03NTQ5NTYwNiwyMTA3OTg0MjA2LDE4MDkxMjMyMjQs
-ODQ5NDY2ODA0XX0=
+eyJoaXN0b3J5IjpbLTE0NjU3MjE0MTUsLTE2NjQ2MzQ5NDksMT
+c5MTEzNjgzLDEzNzA1NTA4NjMsLTE1OTc1NDU1ODMsLTU2MjMy
+MjkzOSwtMTI2MTgxMTM4MSwtMTY0NTI2OTQ1MiwtODM0MDU0MD
+U2LC03OTU4NjY2NzYsLTE1NDI2NTM1MDcsMTk3NTA2Nzg2MSwt
+MTUwOTQ4MDIxOSwtMTc5MjAxNTE5MSwtMTcxNTc1MTU3NSwxOD
+QwNjkwMzg2LC03NTQ5NTYwNiwyMTA3OTg0MjA2LDE4MDkxMjMy
+MjQsODQ5NDY2ODA0XX0=
 -->
