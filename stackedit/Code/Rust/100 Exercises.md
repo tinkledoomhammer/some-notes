@@ -1645,7 +1645,7 @@ Exercise:
 * `.lock()` (blocking) and `.try_lock()` non blocking, returns a `Result`
 * the returned object is a "guard object" that dereferences to the data
 * `Mutex` is not `Clone` and therefore cannot be passed between threads. We need a `Clone`able wrapper to pass it between threads
-
+* `MutexGuard<'_, T>`
 ```rust
 use std::sync::Mutex;
 let lock = Mutex::new(0);
@@ -1657,17 +1657,20 @@ let mut guard = lock.lock().unwrap();
 drop(guard);
 ```
 
+`Send`
+: an auto + marker trait
+* it can only be implemented manually in `unsafe`
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMzUwMTEzOCwtMTAwODA4MzQ0MiwtND
-c3NjEwNDcwLC0xNjY0NjM0OTQ5LDE3OTExMzY4MywxMzcwNTUw
-ODYzLC0xNTk3NTQ1NTgzLC01NjIzMjI5MzksLTEyNjE4MTEzOD
-EsLTE2NDUyNjk0NTIsLTgzNDA1NDA1NiwtNzk1ODY2Njc2LC0x
-NTQyNjUzNTA3LDE5NzUwNjc4NjEsLTE1MDk0ODAyMTksLTE3OT
-IwMTUxOTEsLTE3MTU3NTE1NzUsMTg0MDY5MDM4NiwtNzU0OTU2
-MDYsMjEwNzk4NDIwNl19
+eyJoaXN0b3J5IjpbMjAxODYwNDY5LC0xMDA4MDgzNDQyLC00Nz
+c2MTA0NzAsLTE2NjQ2MzQ5NDksMTc5MTEzNjgzLDEzNzA1NTA4
+NjMsLTE1OTc1NDU1ODMsLTU2MjMyMjkzOSwtMTI2MTgxMTM4MS
+wtMTY0NTI2OTQ1MiwtODM0MDU0MDU2LC03OTU4NjY2NzYsLTE1
+NDI2NTM1MDcsMTk3NTA2Nzg2MSwtMTUwOTQ4MDIxOSwtMTc5Mj
+AxNTE5MSwtMTcxNTc1MTU3NSwxODQwNjkwMzg2LC03NTQ5NTYw
+NiwyMTA3OTg0MjA2XX0=
 -->
