@@ -1665,18 +1665,23 @@ drop(guard);
 * `MutexGuard` is not `Send` because the underlying primitives it uses require (on some platforms) that the lock is released from the same thread that acquires it
 	* releasing a `MutexGuard` on a different thread than the one that acquired it would result in undefined behavior
 * `Mutex` is `Send` iff the data it protects is `Send`
-* Mutex is not `'static` 
+	* but the channels require passing ownership, so it won't work directly
+
+`Arc`
+: Atomic Reference Counting
+* the value it wraps is immutable. you can only share refs to it
+* 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY2NTg1NDA3LC0xMDA4MDgzNDQyLC00Nz
-c2MTA0NzAsLTE2NjQ2MzQ5NDksMTc5MTEzNjgzLDEzNzA1NTA4
-NjMsLTE1OTc1NDU1ODMsLTU2MjMyMjkzOSwtMTI2MTgxMTM4MS
-wtMTY0NTI2OTQ1MiwtODM0MDU0MDU2LC03OTU4NjY2NzYsLTE1
-NDI2NTM1MDcsMTk3NTA2Nzg2MSwtMTUwOTQ4MDIxOSwtMTc5Mj
-AxNTE5MSwtMTcxNTc1MTU3NSwxODQwNjkwMzg2LC03NTQ5NTYw
-NiwyMTA3OTg0MjA2XX0=
+eyJoaXN0b3J5IjpbLTM1NzIwNzcxNywtMTAwODA4MzQ0MiwtND
+c3NjEwNDcwLC0xNjY0NjM0OTQ5LDE3OTExMzY4MywxMzcwNTUw
+ODYzLC0xNTk3NTQ1NTgzLC01NjIzMjI5MzksLTEyNjE4MTEzOD
+EsLTE2NDUyNjk0NTIsLTgzNDA1NDA1NiwtNzk1ODY2Njc2LC0x
+NTQyNjUzNTA3LDE5NzUwNjc4NjEsLTE1MDk0ODAyMTksLTE3OT
+IwMTUxOTEsLTE3MTU3NTE1NzUsMTg0MDY5MDM4NiwtNzU0OTU2
+MDYsMjEwNzk4NDIwNl19
 -->
