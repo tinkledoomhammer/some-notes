@@ -1662,14 +1662,15 @@ drop(guard);
 * it can only be implemented manually in `unsafe`
 * It is automatically applied to all types that the compiler determines can be safely passed between threads
 * `Sender<T>`, `SyncSender<T>` and `Receiver<T>` are `Send` if and only if `T` is `Send`
-* `MutexGuard` is not `Send` because the underlying primitives it uses require (on some platforms) that the lock is released from the same thread that aquires it
+* `MutexGuard` is not `Send` because the underlying primitives it uses require (on some platforms) that the lock is released from the same thread that acquires it
+	* releasing a `MutexGuard` on a different thread than the one that acquired it would result in undefined behavior
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTUzMjUxMDAsLTEwMDgwODM0NDIsLT
+eyJoaXN0b3J5IjpbLTIxMzY0MTg5MTQsLTEwMDgwODM0NDIsLT
 Q3NzYxMDQ3MCwtMTY2NDYzNDk0OSwxNzkxMTM2ODMsMTM3MDU1
 MDg2MywtMTU5NzU0NTU4MywtNTYyMzIyOTM5LC0xMjYxODExMz
 gxLC0xNjQ1MjY5NDUyLC04MzQwNTQwNTYsLTc5NTg2NjY3Niwt
