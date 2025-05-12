@@ -1652,17 +1652,21 @@ let mut guard = lock.lock().unwrap();
 
 //Use deref corecion to modify the data
 *guard +=1
+//No additional guards for the data can be obtained until the guard is dropped
+drop(guard);
 ```
+
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzgwNDE0ODMsLTEwMDgwODM0NDIsLT
-Q3NzYxMDQ3MCwtMTY2NDYzNDk0OSwxNzkxMTM2ODMsMTM3MDU1
-MDg2MywtMTU5NzU0NTU4MywtNTYyMzIyOTM5LC0xMjYxODExMz
-gxLC0xNjQ1MjY5NDUyLC04MzQwNTQwNTYsLTc5NTg2NjY3Niwt
-MTU0MjY1MzUwNywxOTc1MDY3ODYxLC0xNTA5NDgwMjE5LC0xNz
-kyMDE1MTkxLC0xNzE1NzUxNTc1LDE4NDA2OTAzODYsLTc1NDk1
-NjA2LDIxMDc5ODQyMDZdfQ==
+eyJoaXN0b3J5IjpbMTIwMTE5MDM1MiwtMTAwODA4MzQ0MiwtND
+c3NjEwNDcwLC0xNjY0NjM0OTQ5LDE3OTExMzY4MywxMzcwNTUw
+ODYzLC0xNTk3NTQ1NTgzLC01NjIzMjI5MzksLTEyNjE4MTEzOD
+EsLTE2NDUyNjk0NTIsLTgzNDA1NDA1NiwtNzk1ODY2Njc2LC0x
+NTQyNjUzNTA3LDE5NzUwNjc4NjEsLTE1MDk0ODAyMTksLTE3OT
+IwMTUxOTEsLTE3MTU3NTE1NzUsMTg0MDY5MDM4NiwtNzU0OTU2
+MDYsMjEwNzk4NDIwNl19
 -->
