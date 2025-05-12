@@ -1639,16 +1639,17 @@ Exercise:
 * `result.map_error` reminder  it takes a closure and returns an optionally modified error, does not alter `Ok`
 * the `mut` keyword is unneeded for `let x = f(n)` when `f` returns a `&mut`
 
-
-
+### 7.11 `Mutex` `Send` and `Arc`
+`Mutex<T>`
+: Allows on
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDgwODM0NDIsLTQ3NzYxMDQ3MCwtMT
-Y2NDYzNDk0OSwxNzkxMTM2ODMsMTM3MDU1MDg2MywtMTU5NzU0
-NTU4MywtNTYyMzIyOTM5LC0xMjYxODExMzgxLC0xNjQ1MjY5ND
-UyLC04MzQwNTQwNTYsLTc5NTg2NjY3NiwtMTU0MjY1MzUwNywx
-OTc1MDY3ODYxLC0xNTA5NDgwMjE5LC0xNzkyMDE1MTkxLC0xNz
-E1NzUxNTc1LDE4NDA2OTAzODYsLTc1NDk1NjA2LDIxMDc5ODQy
-MDYsMTgwOTEyMzIyNF19
+eyJoaXN0b3J5IjpbNzgwNzkzOTQyLC0xMDA4MDgzNDQyLC00Nz
+c2MTA0NzAsLTE2NjQ2MzQ5NDksMTc5MTEzNjgzLDEzNzA1NTA4
+NjMsLTE1OTc1NDU1ODMsLTU2MjMyMjkzOSwtMTI2MTgxMTM4MS
+wtMTY0NTI2OTQ1MiwtODM0MDU0MDU2LC03OTU4NjY2NzYsLTE1
+NDI2NTM1MDcsMTk3NTA2Nzg2MSwtMTUwOTQ4MDIxOSwtMTc5Mj
+AxNTE5MSwtMTcxNTc1MTU3NSwxODQwNjkwMzg2LC03NTQ5NTYw
+NiwyMTA3OTg0MjA2XX0=
 -->
