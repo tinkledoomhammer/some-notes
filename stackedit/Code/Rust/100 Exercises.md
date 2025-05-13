@@ -1672,16 +1672,21 @@ drop(guard);
 * the value it wraps is immutable. you can only share refs to it
 * it is `Send` while `Rc` is not
 
+`Arc<Mutex<T>>`
+* can be sent between threads
+	* `Arc` is send if `T` is `Send`
+	* `Mutex` is `Send` if `T` is `Send`
+* Can be cloned b
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MDQ2NzEzMywtMTAwODA4MzQ0MiwtND
-c3NjEwNDcwLC0xNjY0NjM0OTQ5LDE3OTExMzY4MywxMzcwNTUw
-ODYzLC0xNTk3NTQ1NTgzLC01NjIzMjI5MzksLTEyNjE4MTEzOD
-EsLTE2NDUyNjk0NTIsLTgzNDA1NDA1NiwtNzk1ODY2Njc2LC0x
-NTQyNjUzNTA3LDE5NzUwNjc4NjEsLTE1MDk0ODAyMTksLTE3OT
-IwMTUxOTEsLTE3MTU3NTE1NzUsMTg0MDY5MDM4NiwtNzU0OTU2
-MDYsMjEwNzk4NDIwNl19
+eyJoaXN0b3J5IjpbMTYzMTg2OTAzOSwtNDcwNDY3MTMzLC0xMD
+A4MDgzNDQyLC00Nzc2MTA0NzAsLTE2NjQ2MzQ5NDksMTc5MTEz
+NjgzLDEzNzA1NTA4NjMsLTE1OTc1NDU1ODMsLTU2MjMyMjkzOS
+wtMTI2MTgxMTM4MSwtMTY0NTI2OTQ1MiwtODM0MDU0MDU2LC03
+OTU4NjY2NzYsLTE1NDI2NTM1MDcsMTk3NTA2Nzg2MSwtMTUwOT
+Q4MDIxOSwtMTc5MjAxNTE5MSwtMTcxNTc1MTU3NSwxODQwNjkw
+Mzg2LC03NTQ5NTYwNl19
 -->
