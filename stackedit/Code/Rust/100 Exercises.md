@@ -1695,14 +1695,16 @@ An alternative approach : wrap the entire `TicketStore` in an `<Arc<RwLock<>>`
 * `T: Sync` if `&T: Send`
 * `T: Sync` does not imply `T:Send`
 	* i.e. `MuteGuard`
-		* Cannot be `Send` because threads must be 
+		* Cannot be `Send` because it must be dropped on the thread that aquires it
+		* `&MutexGuard` does not affect where the guard is dropped
+		* therefore
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI0ODkwNzk1LDExNjA5MTQ2MzUsMTEwMD
+eyJoaXN0b3J5IjpbNjI4MjQxNjU5LDExNjA5MTQ2MzUsMTEwMD
 Q0MTgxNiwtMTY2OTE0Mjg3LC0xNzUzNDQ0Mzg0LDgyNDQ0Njc1
 MSwtMTQyNzQxOTA4LC00NzA0NjcxMzMsLTEwMDgwODM0NDIsLT
 Q3NzYxMDQ3MCwtMTY2NDYzNDk0OSwxNzkxMTM2ODMsMTM3MDU1
