@@ -29,10 +29,14 @@ ac
 door
 computer
 
+phone
+keychain
+
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI4NDI2NDc1XX0=
+eyJoaXN0b3J5IjpbMTI0NjAxNTc0NV19
 -->
