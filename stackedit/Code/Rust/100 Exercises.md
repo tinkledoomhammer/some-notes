@@ -1687,17 +1687,19 @@ drop(guard);
 * Can cause **write starvation** where writers never get a chance to run because priority is determined by the OS
 * `.read()` and `.write()` unwrap to a `RwLock...Guard<'_, T>` that derefs to the data
 
-An
+An alternative approach : wrap the entire `TicketStore` in an `<Arc<RwLock<>>`
+
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDI3OTA2NzcsMTEwMDQ0MTgxNiwtMT
-Y2OTE0Mjg3LC0xNzUzNDQ0Mzg0LDgyNDQ0Njc1MSwtMTQyNzQx
-OTA4LC00NzA0NjcxMzMsLTEwMDgwODM0NDIsLTQ3NzYxMDQ3MC
-wtMTY2NDYzNDk0OSwxNzkxMTM2ODMsMTM3MDU1MDg2MywtMTU5
-NzU0NTU4MywtNTYyMzIyOTM5LC0xMjYxODExMzgxLC0xNjQ1Mj
-Y5NDUyLC04MzQwNTQwNTYsLTc5NTg2NjY3NiwtMTU0MjY1MzUw
-NywxOTc1MDY3ODYxXX0=
+eyJoaXN0b3J5IjpbMTE2MDkxNDYzNSwxMTAwNDQxODE2LC0xNj
+Y5MTQyODcsLTE3NTM0NDQzODQsODI0NDQ2NzUxLC0xNDI3NDE5
+MDgsLTQ3MDQ2NzEzMywtMTAwODA4MzQ0MiwtNDc3NjEwNDcwLC
+0xNjY0NjM0OTQ5LDE3OTExMzY4MywxMzcwNTUwODYzLC0xNTk3
+NTQ1NTgzLC01NjIzMjI5MzksLTEyNjE4MTEzODEsLTE2NDUyNj
+k0NTIsLTgzNDA1NDA1NiwtNzk1ODY2Njc2LC0xNTQyNjUzNTA3
+LDE5NzUwNjc4NjFdfQ==
 -->
