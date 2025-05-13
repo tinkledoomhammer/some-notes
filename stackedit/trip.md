@@ -11,11 +11,12 @@ medicine
 cleaning
 * cotton
 * peroxide
-* waterx2
+* water x2
 * pokeys?
 * drops
 * tp
 * trash bags
+* ziplock
 
 
 Electronic
@@ -38,5 +39,5 @@ keychain
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0NjAxNTc0NV19
+eyJoaXN0b3J5IjpbNjc2NjA2MTE1LDEyNDYwMTU3NDVdfQ==
 -->
