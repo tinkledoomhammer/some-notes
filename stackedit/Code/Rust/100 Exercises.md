@@ -1676,17 +1676,18 @@ drop(guard);
 * can be sent between threads
 	* `Arc` is send if `T` is `Send`
 	* `Mutex` is `Send` if `T` is `Send`
-* Can be cloned b
+* Can be cloned because `Arc` is `Clone`. Cloning an `Arc` increases the ref count, not the data copied
+* Can modify the data it wraps. 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMTg2OTAzOSwtNDcwNDY3MTMzLC0xMD
-A4MDgzNDQyLC00Nzc2MTA0NzAsLTE2NjQ2MzQ5NDksMTc5MTEz
-NjgzLDEzNzA1NTA4NjMsLTE1OTc1NDU1ODMsLTU2MjMyMjkzOS
-wtMTI2MTgxMTM4MSwtMTY0NTI2OTQ1MiwtODM0MDU0MDU2LC03
-OTU4NjY2NzYsLTE1NDI2NTM1MDcsMTk3NTA2Nzg2MSwtMTUwOT
-Q4MDIxOSwtMTc5MjAxNTE5MSwtMTcxNTc1MTU3NSwxODQwNjkw
-Mzg2LC03NTQ5NTYwNl19
+eyJoaXN0b3J5IjpbLTIxNDA2MjU0ODAsLTQ3MDQ2NzEzMywtMT
+AwODA4MzQ0MiwtNDc3NjEwNDcwLC0xNjY0NjM0OTQ5LDE3OTEx
+MzY4MywxMzcwNTUwODYzLC0xNTk3NTQ1NTgzLC01NjIzMjI5Mz
+ksLTEyNjE4MTEzODEsLTE2NDUyNjk0NTIsLTgzNDA1NDA1Niwt
+Nzk1ODY2Njc2LC0xNTQyNjUzNTA3LDE5NzUwNjc4NjEsLTE1MD
+k0ODAyMTksLTE3OTIwMTUxOTEsLTE3MTU3NTE1NzUsMTg0MDY5
+MDM4NiwtNzU0OTU2MDZdfQ==
 -->
