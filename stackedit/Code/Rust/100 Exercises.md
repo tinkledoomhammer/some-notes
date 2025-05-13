@@ -1680,15 +1680,18 @@ drop(guard);
 * Can be cloned because `Arc` is `Clone`. Cloning an `Arc` increases the ref count, not the data copied
 * Can modify the data it wraps. 
 
+### 7.12 `RwLock`
+`RwLock<T>`
+: allows multiple concurrent readers, so it can halp
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mjc0MTkwOCwtNDcwNDY3MTMzLC0xMD
-A4MDgzNDQyLC00Nzc2MTA0NzAsLTE2NjQ2MzQ5NDksMTc5MTEz
-NjgzLDEzNzA1NTA4NjMsLTE1OTc1NDU1ODMsLTU2MjMyMjkzOS
-wtMTI2MTgxMTM4MSwtMTY0NTI2OTQ1MiwtODM0MDU0MDU2LC03
-OTU4NjY2NzYsLTE1NDI2NTM1MDcsMTk3NTA2Nzg2MSwtMTUwOT
-Q4MDIxOSwtMTc5MjAxNTE5MSwtMTcxNTc1MTU3NSwxODQwNjkw
-Mzg2LC03NTQ5NTYwNl19
+eyJoaXN0b3J5IjpbLTEyNjY4NjcwMjIsLTE0Mjc0MTkwOCwtND
+cwNDY3MTMzLC0xMDA4MDgzNDQyLC00Nzc2MTA0NzAsLTE2NjQ2
+MzQ5NDksMTc5MTEzNjgzLDEzNzA1NTA4NjMsLTE1OTc1NDU1OD
+MsLTU2MjMyMjkzOSwtMTI2MTgxMTM4MSwtMTY0NTI2OTQ1Miwt
+ODM0MDU0MDU2LC03OTU4NjY2NzYsLTE1NDI2NTM1MDcsMTk3NT
+A2Nzg2MSwtMTUwOTQ4MDIxOSwtMTc5MjAxNTE5MSwtMTcxNTc1
+MTU3NSwxODQwNjkwMzg2XX0=
 -->
