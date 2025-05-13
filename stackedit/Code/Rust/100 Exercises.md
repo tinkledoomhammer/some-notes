@@ -1682,12 +1682,14 @@ drop(guard);
 
 ### 7.12 `RwLock`
 `RwLock<T>`
-: allows multiple concurrent readers, so it can halp
+: allows multiple concurrent readers, so it can help performance
+* Locking is more expensive than `Mutex`. 
+* Can cause **write starvation
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjY4NjcwMjIsLTE0Mjc0MTkwOCwtND
+eyJoaXN0b3J5IjpbLTIwMTM5ODQwMTgsLTE0Mjc0MTkwOCwtND
 cwNDY3MTMzLC0xMDA4MDgzNDQyLC00Nzc2MTA0NzAsLTE2NjQ2
 MzQ5NDksMTc5MTEzNjgzLDEzNzA1NTA4NjMsLTE1OTc1NDU1OD
 MsLTU2MjMyMjkzOSwtMTI2MTgxMTM4MSwtMTY0NTI2OTQ1Miwt
