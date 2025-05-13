@@ -1680,7 +1680,7 @@ drop(guard);
 * Can be cloned because `Arc` is `Clone`. Cloning an `Arc` increases the ref count, not the data copied
 * Can modify the data it wraps. 
 
-### 7.12 `RwLock`
+### 7.12 `RwLock` and 7.13, no channels
 `RwLock<T>`
 : allows multiple concurrent readers, so it can help performance
 * Locking is more expensive than `Mutex`. 
@@ -1693,11 +1693,11 @@ drop(guard);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjkxNDI4NywtMTc1MzQ0NDM4NCw4Mj
-Q0NDY3NTEsLTE0Mjc0MTkwOCwtNDcwNDY3MTMzLC0xMDA4MDgz
-NDQyLC00Nzc2MTA0NzAsLTE2NjQ2MzQ5NDksMTc5MTEzNjgzLD
-EzNzA1NTA4NjMsLTE1OTc1NDU1ODMsLTU2MjMyMjkzOSwtMTI2
-MTgxMTM4MSwtMTY0NTI2OTQ1MiwtODM0MDU0MDU2LC03OTU4Nj
-Y2NzYsLTE1NDI2NTM1MDcsMTk3NTA2Nzg2MSwtMTUwOTQ4MDIx
-OSwtMTc5MjAxNTE5MV19
+eyJoaXN0b3J5IjpbMTEwMDQ0MTgxNiwtMTY2OTE0Mjg3LC0xNz
+UzNDQ0Mzg0LDgyNDQ0Njc1MSwtMTQyNzQxOTA4LC00NzA0Njcx
+MzMsLTEwMDgwODM0NDIsLTQ3NzYxMDQ3MCwtMTY2NDYzNDk0OS
+wxNzkxMTM2ODMsMTM3MDU1MDg2MywtMTU5NzU0NTU4MywtNTYy
+MzIyOTM5LC0xMjYxODExMzgxLC0xNjQ1MjY5NDUyLC04MzQwNT
+QwNTYsLTc5NTg2NjY3NiwtMTU0MjY1MzUwNywxOTc1MDY3ODYx
+LC0xNTA5NDgwMjE5XX0=
 -->
