@@ -1684,16 +1684,17 @@ drop(guard);
 `RwLock<T>`
 : allows multiple concurrent readers, so it can help performance
 * Locking is more expensive than `Mutex`. 
-* Can cause **write starvation
+* Can cause **write starvation** where writers never get a chance to run because priority is determined by the OS
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTM5ODQwMTgsLTE0Mjc0MTkwOCwtND
-cwNDY3MTMzLC0xMDA4MDgzNDQyLC00Nzc2MTA0NzAsLTE2NjQ2
-MzQ5NDksMTc5MTEzNjgzLDEzNzA1NTA4NjMsLTE1OTc1NDU1OD
-MsLTU2MjMyMjkzOSwtMTI2MTgxMTM4MSwtMTY0NTI2OTQ1Miwt
-ODM0MDU0MDU2LC03OTU4NjY2NzYsLTE1NDI2NTM1MDcsMTk3NT
-A2Nzg2MSwtMTUwOTQ4MDIxOSwtMTc5MjAxNTE5MSwtMTcxNTc1
-MTU3NSwxODQwNjkwMzg2XX0=
+eyJoaXN0b3J5IjpbODI0NDQ2NzUxLC0xNDI3NDE5MDgsLTQ3MD
+Q2NzEzMywtMTAwODA4MzQ0MiwtNDc3NjEwNDcwLC0xNjY0NjM0
+OTQ5LDE3OTExMzY4MywxMzcwNTUwODYzLC0xNTk3NTQ1NTgzLC
+01NjIzMjI5MzksLTEyNjE4MTEzODEsLTE2NDUyNjk0NTIsLTgz
+NDA1NDA1NiwtNzk1ODY2Njc2LC0xNTQyNjUzNTA3LDE5NzUwNj
+c4NjEsLTE1MDk0ODAyMTksLTE3OTIwMTUxOTEsLTE3MTU3NTE1
+NzUsMTg0MDY5MDM4Nl19
 -->
