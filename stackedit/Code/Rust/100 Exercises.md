@@ -1689,17 +1689,22 @@ drop(guard);
 
 An alternative approach : wrap the entire `TicketStore` in an `<Arc<RwLock<>>`
 
+### 7.14 `Sync`
+`Sync`
+: An auto trait that is automatically implemented for all types that can safely be **shard** between threads
+* `T` is `Sync` if `&T` is `Send`
+* `T: Sync` does not imply `T:Sen
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2MDkxNDYzNSwxMTAwNDQxODE2LC0xNj
-Y5MTQyODcsLTE3NTM0NDQzODQsODI0NDQ2NzUxLC0xNDI3NDE5
-MDgsLTQ3MDQ2NzEzMywtMTAwODA4MzQ0MiwtNDc3NjEwNDcwLC
-0xNjY0NjM0OTQ5LDE3OTExMzY4MywxMzcwNTUwODYzLC0xNTk3
-NTQ1NTgzLC01NjIzMjI5MzksLTEyNjE4MTEzODEsLTE2NDUyNj
-k0NTIsLTgzNDA1NDA1NiwtNzk1ODY2Njc2LC0xNTQyNjUzNTA3
-LDE5NzUwNjc4NjFdfQ==
+eyJoaXN0b3J5IjpbLTE0MDIwNDczOTIsMTE2MDkxNDYzNSwxMT
+AwNDQxODE2LC0xNjY5MTQyODcsLTE3NTM0NDQzODQsODI0NDQ2
+NzUxLC0xNDI3NDE5MDgsLTQ3MDQ2NzEzMywtMTAwODA4MzQ0Mi
+wtNDc3NjEwNDcwLC0xNjY0NjM0OTQ5LDE3OTExMzY4MywxMzcw
+NTUwODYzLC0xNTk3NTQ1NTgzLC01NjIzMjI5MzksLTEyNjE4MT
+EzODEsLTE2NDUyNjk0NTIsLTgzNDA1NDA1NiwtNzk1ODY2Njc2
+LC0xNTQyNjUzNTA3XX0=
 -->
