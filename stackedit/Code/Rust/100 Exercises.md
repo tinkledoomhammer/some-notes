@@ -1702,16 +1702,17 @@ An alternative approach : wrap the entire `TicketStore` in an `<Arc<RwLock<>>`
 	* `Refcell<T: Send>` is send but cannot be sync
 		* It does not matter which thread changes the refcount as long as only one thread has access at a time
 
+## 08 Futures
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDAwMjc5MTEsMTE2MDkxNDYzNSwxMT
-AwNDQxODE2LC0xNjY5MTQyODcsLTE3NTM0NDQzODQsODI0NDQ2
-NzUxLC0xNDI3NDE5MDgsLTQ3MDQ2NzEzMywtMTAwODA4MzQ0Mi
-wtNDc3NjEwNDcwLC0xNjY0NjM0OTQ5LDE3OTExMzY4MywxMzcw
-NTUwODYzLC0xNTk3NTQ1NTgzLC01NjIzMjI5MzksLTEyNjE4MT
-EzODEsLTE2NDUyNjk0NTIsLTgzNDA1NDA1NiwtNzk1ODY2Njc2
-LC0xNTQyNjUzNTA3XX0=
+eyJoaXN0b3J5IjpbMzQxMTU0NTcsMTE2MDkxNDYzNSwxMTAwND
+QxODE2LC0xNjY5MTQyODcsLTE3NTM0NDQzODQsODI0NDQ2NzUx
+LC0xNDI3NDE5MDgsLTQ3MDQ2NzEzMywtMTAwODA4MzQ0MiwtND
+c3NjEwNDcwLC0xNjY0NjM0OTQ5LDE3OTExMzY4MywxMzcwNTUw
+ODYzLC0xNTk3NTQ1NTgzLC01NjIzMjI5MzksLTEyNjE4MTEzOD
+EsLTE2NDUyNjk0NTIsLTgzNDA1NDA1NiwtNzk1ODY2Njc2LC0x
+NTQyNjUzNTA3XX0=
 -->
