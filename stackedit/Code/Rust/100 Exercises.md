@@ -1699,18 +1699,19 @@ An alternative approach : wrap the entire `TicketStore` in an `<Arc<RwLock<>>`
 		* `&MutexGuard` does not affect where the guard is dropped
 		* therefore `MutexGuard: Sync`
 * `T: Send` does **not** imply `T: Sync`
-	* `Refcell<T: Send>` is send
+	* `Refcell<T: Send>` is send but cannot be sync
+		* It does not matter which thread changes the refcount as long as only one thread has access at a time
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ4MzQ2MDAzLDExNjA5MTQ2MzUsMTEwMD
-Q0MTgxNiwtMTY2OTE0Mjg3LC0xNzUzNDQ0Mzg0LDgyNDQ0Njc1
-MSwtMTQyNzQxOTA4LC00NzA0NjcxMzMsLTEwMDgwODM0NDIsLT
-Q3NzYxMDQ3MCwtMTY2NDYzNDk0OSwxNzkxMTM2ODMsMTM3MDU1
-MDg2MywtMTU5NzU0NTU4MywtNTYyMzIyOTM5LC0xMjYxODExMz
-gxLC0xNjQ1MjY5NDUyLC04MzQwNTQwNTYsLTc5NTg2NjY3Niwt
-MTU0MjY1MzUwN119
+eyJoaXN0b3J5IjpbLTIwNDAwMjc5MTEsMTE2MDkxNDYzNSwxMT
+AwNDQxODE2LC0xNjY5MTQyODcsLTE3NTM0NDQzODQsODI0NDQ2
+NzUxLC0xNDI3NDE5MDgsLTQ3MDQ2NzEzMywtMTAwODA4MzQ0Mi
+wtNDc3NjEwNDcwLC0xNjY0NjM0OTQ5LDE3OTExMzY4MywxMzcw
+NTUwODYzLC0xNTk3NTQ1NTgzLC01NjIzMjI5MzksLTEyNjE4MT
+EzODEsLTE2NDUyNjk0NTIsLTgzNDA1NDA1NiwtNzk1ODY2Njc2
+LC0xNTQyNjUzNTA3XX0=
 -->
