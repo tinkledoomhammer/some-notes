@@ -1671,6 +1671,7 @@ drop(guard);
 : Atomic Reference Counting
 * the value it wraps is immutable. you can only share refs to it
 * it is `Send` while `Rc` is not
+* implements `Deref<T>` so it can be implicitly cast to `&T
 
 `Arc<Mutex<T>>`
 * can be sent between threads
@@ -1683,11 +1684,11 @@ drop(guard);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDA2MjU0ODAsLTQ3MDQ2NzEzMywtMT
-AwODA4MzQ0MiwtNDc3NjEwNDcwLC0xNjY0NjM0OTQ5LDE3OTEx
-MzY4MywxMzcwNTUwODYzLC0xNTk3NTQ1NTgzLC01NjIzMjI5Mz
-ksLTEyNjE4MTEzODEsLTE2NDUyNjk0NTIsLTgzNDA1NDA1Niwt
-Nzk1ODY2Njc2LC0xNTQyNjUzNTA3LDE5NzUwNjc4NjEsLTE1MD
-k0ODAyMTksLTE3OTIwMTUxOTEsLTE3MTU3NTE1NzUsMTg0MDY5
-MDM4NiwtNzU0OTU2MDZdfQ==
+eyJoaXN0b3J5IjpbLTE2ODgzMDEzMCwtNDcwNDY3MTMzLC0xMD
+A4MDgzNDQyLC00Nzc2MTA0NzAsLTE2NjQ2MzQ5NDksMTc5MTEz
+NjgzLDEzNzA1NTA4NjMsLTE1OTc1NDU1ODMsLTU2MjMyMjkzOS
+wtMTI2MTgxMTM4MSwtMTY0NTI2OTQ1MiwtODM0MDU0MDU2LC03
+OTU4NjY2NzYsLTE1NDI2NTM1MDcsMTk3NTA2Nzg2MSwtMTUwOT
+Q4MDIxOSwtMTc5MjAxNTE5MSwtMTcxNTc1MTU3NSwxODQwNjkw
+Mzg2LC03NTQ5NTYwNl19
 -->
