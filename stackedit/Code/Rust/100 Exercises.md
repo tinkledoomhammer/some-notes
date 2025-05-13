@@ -1687,17 +1687,17 @@ drop(guard);
 * Can cause **write starvation** where writers never get a chance to run because priority is determined by the OS
 * `.read()` and `.write()` unwrap to a `RwLock...Guard<'_, T>` that derefs to the data
 
-
+An
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMDQ0MTgxNiwtMTY2OTE0Mjg3LC0xNz
-UzNDQ0Mzg0LDgyNDQ0Njc1MSwtMTQyNzQxOTA4LC00NzA0Njcx
-MzMsLTEwMDgwODM0NDIsLTQ3NzYxMDQ3MCwtMTY2NDYzNDk0OS
-wxNzkxMTM2ODMsMTM3MDU1MDg2MywtMTU5NzU0NTU4MywtNTYy
-MzIyOTM5LC0xMjYxODExMzgxLC0xNjQ1MjY5NDUyLC04MzQwNT
-QwNTYsLTc5NTg2NjY3NiwtMTU0MjY1MzUwNywxOTc1MDY3ODYx
-LC0xNTA5NDgwMjE5XX0=
+eyJoaXN0b3J5IjpbLTE0NDI3OTA2NzcsMTEwMDQ0MTgxNiwtMT
+Y2OTE0Mjg3LC0xNzUzNDQ0Mzg0LDgyNDQ0Njc1MSwtMTQyNzQx
+OTA4LC00NzA0NjcxMzMsLTEwMDgwODM0NDIsLTQ3NzYxMDQ3MC
+wtMTY2NDYzNDk0OSwxNzkxMTM2ODMsMTM3MDU1MDg2MywtMTU5
+NzU0NTU4MywtNTYyMzIyOTM5LC0xMjYxODExMzgxLC0xNjQ1Mj
+Y5NDUyLC04MzQwNTQwNTYsLTc5NTg2NjY3NiwtMTU0MjY1MzUw
+NywxOTc1MDY3ODYxXX0=
 -->
