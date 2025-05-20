@@ -1716,16 +1716,19 @@ async fn bind_random() -> TcpListener { /* ... */ }
 
 //invoking
 let listener = bind_random(); // doesn't do anything!
+let listener = bind_random().await; // this one does
+//TcpListener implements the `Future` trait
+// so .await 
 ```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjkzNjA3NTQ2LDM0MTE1NDU3LDExNjA5MT
-Q2MzUsMTEwMDQ0MTgxNiwtMTY2OTE0Mjg3LC0xNzUzNDQ0Mzg0
-LDgyNDQ0Njc1MSwtMTQyNzQxOTA4LC00NzA0NjcxMzMsLTEwMD
-gwODM0NDIsLTQ3NzYxMDQ3MCwtMTY2NDYzNDk0OSwxNzkxMTM2
-ODMsMTM3MDU1MDg2MywtMTU5NzU0NTU4MywtNTYyMzIyOTM5LC
-0xMjYxODExMzgxLC0xNjQ1MjY5NDUyLC04MzQwNTQwNTYsLTc5
-NTg2NjY3Nl19
+eyJoaXN0b3J5IjpbLTE2NzI1NTAyNDEsMzQxMTU0NTcsMTE2MD
+kxNDYzNSwxMTAwNDQxODE2LC0xNjY5MTQyODcsLTE3NTM0NDQz
+ODQsODI0NDQ2NzUxLC0xNDI3NDE5MDgsLTQ3MDQ2NzEzMywtMT
+AwODA4MzQ0MiwtNDc3NjEwNDcwLC0xNjY0NjM0OTQ5LDE3OTEx
+MzY4MywxMzcwNTUwODYzLC0xNTk3NTQ1NTgzLC01NjIzMjI5Mz
+ksLTEyNjE4MTEzODEsLTE2NDUyNjk0NTIsLTgzNDA1NDA1Niwt
+Nzk1ODY2Njc2XX0=
 -->
