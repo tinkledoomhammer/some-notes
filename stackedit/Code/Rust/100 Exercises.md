@@ -1724,13 +1724,13 @@ let listener = bind_random().await; // this one does
 : A value of a type that implements the `Future` trait
 : represents a computation that may complete later
 
-** Async functions in rust are 
+* Async functions in rust are **lazy**. They will not do work until they are told to
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NDI1OTU5MywzNDExNTQ1NywxMTYwOT
+eyJoaXN0b3J5IjpbLTkyOTIwOTE3MiwzNDExNTQ1NywxMTYwOT
 E0NjM1LDExMDA0NDE4MTYsLTE2NjkxNDI4NywtMTc1MzQ0NDM4
 NCw4MjQ0NDY3NTEsLTE0Mjc0MTkwOCwtNDcwNDY3MTMzLC0xMD
 A4MDgzNDQyLC00Nzc2MTA0NzAsLTE2NjQ2MzQ5NDksMTc5MTEz
