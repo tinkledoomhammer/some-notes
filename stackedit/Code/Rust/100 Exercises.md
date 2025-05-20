@@ -1776,18 +1776,20 @@ Asynchronous blocks
 * has a `.await` that returns a `Result`
 
 Panic boundary
-: panics won't propigate
-* 
+: panics won't propagate automatically
+* `JoinError::is_panic` will determine whether the thread paniced
+
+`std::thread::s
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjYzMDE1NzksLTE1MzA2MTgyNTcsOD
-c2ODE3MzcwLC05MjkyMDkxNzIsMzQxMTU0NTcsMTE2MDkxNDYz
-NSwxMTAwNDQxODE2LC0xNjY5MTQyODcsLTE3NTM0NDQzODQsOD
-I0NDQ2NzUxLC0xNDI3NDE5MDgsLTQ3MDQ2NzEzMywtMTAwODA4
-MzQ0MiwtNDc3NjEwNDcwLC0xNjY0NjM0OTQ5LDE3OTExMzY4My
-wxMzcwNTUwODYzLC0xNTk3NTQ1NTgzLC01NjIzMjI5MzksLTEy
-NjE4MTEzODFdfQ==
+eyJoaXN0b3J5IjpbLTQ0OTU0OTM2MywtMTUzMDYxODI1Nyw4Nz
+Y4MTczNzAsLTkyOTIwOTE3MiwzNDExNTQ1NywxMTYwOTE0NjM1
+LDExMDA0NDE4MTYsLTE2NjkxNDI4NywtMTc1MzQ0NDM4NCw4Mj
+Q0NDY3NTEsLTE0Mjc0MTkwOCwtNDcwNDY3MTMzLC0xMDA4MDgz
+NDQyLC00Nzc2MTA0NzAsLTE2NjQ2MzQ5NDksMTc5MTEzNjgzLD
+EzNzA1NTA4NjMsLTE1OTc1NDU1ODMsLTU2MjMyMjkzOSwtMTI2
+MTgxMTM4MV19
 -->
