@@ -1784,16 +1784,23 @@ Panic boundary
 * in tokio, the executor, which runs in user space, decides which thread to run next
 
 ### 8.03 runtime
+
 `tokio` comes with two different flavors, configured via `tokio::runtime::Builder`
 * `Builder::new_multi_thread` or `Builder::new_current_thread` 
+* `#[tokio::main]` runs a multithreaded runtime by default
+* `#[tokio::test]` uses a concurrent runtime by default
+* 
+
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1NjE5MjA4MiwtMTYyMDI2NjIyMSwtMT
-UzMDYxODI1Nyw4NzY4MTczNzAsLTkyOTIwOTE3MiwzNDExNTQ1
-NywxMTYwOTE0NjM1LDExMDA0NDE4MTYsLTE2NjkxNDI4NywtMT
-c1MzQ0NDM4NCw4MjQ0NDY3NTEsLTE0Mjc0MTkwOCwtNDcwNDY3
-MTMzLC0xMDA4MDgzNDQyLC00Nzc2MTA0NzAsLTE2NjQ2MzQ5ND
-ksMTc5MTEzNjgzLDEzNzA1NTA4NjMsLTE1OTc1NDU1ODMsLTU2
-MjMyMjkzOV19
+eyJoaXN0b3J5IjpbLTEyMDIzNDI2NTAsLTE2MjAyNjYyMjEsLT
+E1MzA2MTgyNTcsODc2ODE3MzcwLC05MjkyMDkxNzIsMzQxMTU0
+NTcsMTE2MDkxNDYzNSwxMTAwNDQxODE2LC0xNjY5MTQyODcsLT
+E3NTM0NDQzODQsODI0NDQ2NzUxLC0xNDI3NDE5MDgsLTQ3MDQ2
+NzEzMywtMTAwODA4MzQ0MiwtNDc3NjEwNDcwLC0xNjY0NjM0OT
+Q5LDE3OTExMzY4MywxMzcwNTUwODYzLC0xNTk3NTQ1NTgzLC01
+NjIzMjI5MzldfQ==
 -->
