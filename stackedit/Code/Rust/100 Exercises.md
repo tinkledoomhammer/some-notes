@@ -1783,15 +1783,17 @@ Panic boundary
 : `std::thread` delegates scheduling to the OS
 * in tokio, the executor, which runs in user space, decides which thread to run next
 
-
+### 8.03 runtime
+`tokio` comes with two different flavors, configured via `tokio::runtime::Builder`
+* `Builder::new_multi_thread` or `Builder::new_current_thread` 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjAyNjYyMjEsLTE1MzA2MTgyNTcsOD
-c2ODE3MzcwLC05MjkyMDkxNzIsMzQxMTU0NTcsMTE2MDkxNDYz
-NSwxMTAwNDQxODE2LC0xNjY5MTQyODcsLTE3NTM0NDQzODQsOD
-I0NDQ2NzUxLC0xNDI3NDE5MDgsLTQ3MDQ2NzEzMywtMTAwODA4
-MzQ0MiwtNDc3NjEwNDcwLC0xNjY0NjM0OTQ5LDE3OTExMzY4My
-wxMzcwNTUwODYzLC0xNTk3NTQ1NTgzLC01NjIzMjI5MzksLTEy
-NjE4MTEzODFdfQ==
+eyJoaXN0b3J5IjpbLTI1NjE5MjA4MiwtMTYyMDI2NjIyMSwtMT
+UzMDYxODI1Nyw4NzY4MTczNzAsLTkyOTIwOTE3MiwzNDExNTQ1
+NywxMTYwOTE0NjM1LDExMDA0NDE4MTYsLTE2NjkxNDI4NywtMT
+c1MzQ0NDM4NCw4MjQ0NDY3NTEsLTE0Mjc0MTkwOCwtNDcwNDY3
+MTMzLC0xMDA4MDgzNDQyLC00Nzc2MTA0NzAsLTE2NjQ2MzQ5ND
+ksMTc5MTEzNjgzLDEzNzA1NTA4NjMsLTE1OTc1NDU1ODMsLTU2
+MjMyMjkzOV19
 -->
