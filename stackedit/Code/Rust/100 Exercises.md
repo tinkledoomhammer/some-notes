@@ -1703,16 +1703,18 @@ An alternative approach : wrap the entire `TicketStore` in an `<Arc<RwLock<>>`
 		* It does not matter which thread changes the refcount as long as only one thread has access at a time
 
 ## 08 Futures
-
+* `async` and `.await` keywords
+* the `Future` trait
+* the `tokio` tr
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQxMTU0NTcsMTE2MDkxNDYzNSwxMTAwND
-QxODE2LC0xNjY5MTQyODcsLTE3NTM0NDQzODQsODI0NDQ2NzUx
-LC0xNDI3NDE5MDgsLTQ3MDQ2NzEzMywtMTAwODA4MzQ0MiwtND
-c3NjEwNDcwLC0xNjY0NjM0OTQ5LDE3OTExMzY4MywxMzcwNTUw
-ODYzLC0xNTk3NTQ1NTgzLC01NjIzMjI5MzksLTEyNjE4MTEzOD
-EsLTE2NDUyNjk0NTIsLTgzNDA1NDA1NiwtNzk1ODY2Njc2LC0x
-NTQyNjUzNTA3XX0=
+eyJoaXN0b3J5IjpbMjM1MTYzMzU5LDM0MTE1NDU3LDExNjA5MT
+Q2MzUsMTEwMDQ0MTgxNiwtMTY2OTE0Mjg3LC0xNzUzNDQ0Mzg0
+LDgyNDQ0Njc1MSwtMTQyNzQxOTA4LC00NzA0NjcxMzMsLTEwMD
+gwODM0NDIsLTQ3NzYxMDQ3MCwtMTY2NDYzNDk0OSwxNzkxMTM2
+ODMsMTM3MDU1MDg2MywtMTU5NzU0NTU4MywtNTYyMzIyOTM5LC
+0xMjYxODExMzgxLC0xNjQ1MjY5NDUyLC04MzQwNTQwNTYsLTc5
+NTg2NjY3Nl19
 -->
