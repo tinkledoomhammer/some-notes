@@ -1720,15 +1720,21 @@ let listener = bind_random().await; // this one does
 //TcpListener implements the `Future` trait
 // so .await 
 ```
+`Future`
+: A value of a type that implements the `Future` trait
+: represents a computation that may complete later
+
+** Async functions in rust are 
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzI1NTAyNDEsMzQxMTU0NTcsMTE2MD
-kxNDYzNSwxMTAwNDQxODE2LC0xNjY5MTQyODcsLTE3NTM0NDQz
-ODQsODI0NDQ2NzUxLC0xNDI3NDE5MDgsLTQ3MDQ2NzEzMywtMT
-AwODA4MzQ0MiwtNDc3NjEwNDcwLC0xNjY0NjM0OTQ5LDE3OTEx
-MzY4MywxMzcwNTUwODYzLC0xNTk3NTQ1NTgzLC01NjIzMjI5Mz
-ksLTEyNjE4MTEzODEsLTE2NDUyNjk0NTIsLTgzNDA1NDA1Niwt
-Nzk1ODY2Njc2XX0=
+eyJoaXN0b3J5IjpbMTE2NDI1OTU5MywzNDExNTQ1NywxMTYwOT
+E0NjM1LDExMDA0NDE4MTYsLTE2NjkxNDI4NywtMTc1MzQ0NDM4
+NCw4MjQ0NDY3NTEsLTE0Mjc0MTkwOCwtNDcwNDY3MTMzLC0xMD
+A4MDgzNDQyLC00Nzc2MTA0NzAsLTE2NjQ2MzQ5NDksMTc5MTEz
+NjgzLDEzNzA1NTA4NjMsLTE1OTc1NDU1ODMsLTU2MjMyMjkzOS
+wtMTI2MTgxMTM4MSwtMTY0NTI2OTQ1MiwtODM0MDU0MDU2LC03
+OTU4NjY2NzZdfQ==
 -->
