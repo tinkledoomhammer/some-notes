@@ -1726,16 +1726,27 @@ let listener = bind_random().await; // this one does
 
 * Async functions in rust are **lazy**. They will not do work until they are told to
 
+> The entrypoint of your executable, the `main` function, must be a synchronous function. That's where you're supposed to set up and launch your chosen async runtime.
+> Most runtimes provide a macro to make this easer. For `Tokio`, it's `tokio::main`
+```rust
+#[tokio::main]
+async fn main() {
+	//async code goes here
+}
+'// this expands to
+
+
+```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc2ODE3MzcwLC05MjkyMDkxNzIsMzQxMT
-U0NTcsMTE2MDkxNDYzNSwxMTAwNDQxODE2LC0xNjY5MTQyODcs
-LTE3NTM0NDQzODQsODI0NDQ2NzUxLC0xNDI3NDE5MDgsLTQ3MD
-Q2NzEzMywtMTAwODA4MzQ0MiwtNDc3NjEwNDcwLC0xNjY0NjM0
-OTQ5LDE3OTExMzY4MywxMzcwNTUwODYzLC0xNTk3NTQ1NTgzLC
-01NjIzMjI5MzksLTEyNjE4MTEzODEsLTE2NDUyNjk0NTIsLTgz
-NDA1NDA1Nl19
+eyJoaXN0b3J5IjpbLTgzNzAzMzU2LDg3NjgxNzM3MCwtOTI5Mj
+A5MTcyLDM0MTE1NDU3LDExNjA5MTQ2MzUsMTEwMDQ0MTgxNiwt
+MTY2OTE0Mjg3LC0xNzUzNDQ0Mzg0LDgyNDQ0Njc1MSwtMTQyNz
+QxOTA4LC00NzA0NjcxMzMsLTEwMDgwODM0NDIsLTQ3NzYxMDQ3
+MCwtMTY2NDYzNDk0OSwxNzkxMTM2ODMsMTM3MDU1MDg2MywtMT
+U5NzU0NTU4MywtNTYyMzIyOTM5LC0xMjYxODExMzgxLC0xNjQ1
+MjY5NDUyXX0=
 -->
