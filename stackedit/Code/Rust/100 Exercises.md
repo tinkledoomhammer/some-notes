@@ -1733,20 +1733,31 @@ let listener = bind_random().await; // this one does
 async fn main() {
 	//async code goes here
 }
-'// this expands to
+// this expands to
+fn main() {
+	let rt = tokio::runtime::Runtime::new().unwrap();
+	rt.block_on(
+		// async main code goes here
+		//
+	);
+}
 
-
+// and for tests:
+#[tokio::test]
+async fn my_test() {
+	// async test code goes here
+}
 ```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzNzAzMzU2LDg3NjgxNzM3MCwtOTI5Mj
-A5MTcyLDM0MTE1NDU3LDExNjA5MTQ2MzUsMTEwMDQ0MTgxNiwt
-MTY2OTE0Mjg3LC0xNzUzNDQ0Mzg0LDgyNDQ0Njc1MSwtMTQyNz
-QxOTA4LC00NzA0NjcxMzMsLTEwMDgwODM0NDIsLTQ3NzYxMDQ3
-MCwtMTY2NDYzNDk0OSwxNzkxMTM2ODMsMTM3MDU1MDg2MywtMT
-U5NzU0NTU4MywtNTYyMzIyOTM5LC0xMjYxODExMzgxLC0xNjQ1
-MjY5NDUyXX0=
+eyJoaXN0b3J5IjpbLTE1MzA2MTgyNTcsODc2ODE3MzcwLC05Mj
+kyMDkxNzIsMzQxMTU0NTcsMTE2MDkxNDYzNSwxMTAwNDQxODE2
+LC0xNjY5MTQyODcsLTE3NTM0NDQzODQsODI0NDQ2NzUxLC0xND
+I3NDE5MDgsLTQ3MDQ2NzEzMywtMTAwODA4MzQ0MiwtNDc3NjEw
+NDcwLC0xNjY0NjM0OTQ5LDE3OTExMzY4MywxMzcwNTUwODYzLC
+0xNTk3NTQ1NTgzLC01NjIzMjI5MzksLTEyNjE4MTEzODEsLTE2
+NDUyNjk0NTJdfQ==
 -->
