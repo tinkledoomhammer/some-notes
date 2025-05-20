@@ -1757,16 +1757,24 @@ async fn my_test() {
 use tokio::net::TcpLisetner;
 
 pub async fn echo(listener: TcpListener) -> Result<(), anyhow::Error> {
+	loop {
+		let (mut socket, _) = listener.accept().await?;
+		tokio::spawn( async move {
+			let (mut reader, mut writer) = socket.split();
+			tokio::io::copy(&mut reader, &mut writer).await?;
+		});
+	}
+}
 ```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MjQyNDA3MiwtMTUzMDYxODI1Nyw4Nz
-Y4MTczNzAsLTkyOTIwOTE3MiwzNDExNTQ1NywxMTYwOTE0NjM1
-LDExMDA0NDE4MTYsLTE2NjkxNDI4NywtMTc1MzQ0NDM4NCw4Mj
-Q0NDY3NTEsLTE0Mjc0MTkwOCwtNDcwNDY3MTMzLC0xMDA4MDgz
-NDQyLC00Nzc2MTA0NzAsLTE2NjQ2MzQ5NDksMTc5MTEzNjgzLD
-EzNzA1NTA4NjMsLTE1OTc1NDU1ODMsLTU2MjMyMjkzOSwtMTI2
-MTgxMTM4MV19
+eyJoaXN0b3J5IjpbLTE5ODQ4NDg2OTMsLTE1MzA2MTgyNTcsOD
+c2ODE3MzcwLC05MjkyMDkxNzIsMzQxMTU0NTcsMTE2MDkxNDYz
+NSwxMTAwNDQxODE2LC0xNjY5MTQyODcsLTE3NTM0NDQzODQsOD
+I0NDQ2NzUxLC0xNDI3NDE5MDgsLTQ3MDQ2NzEzMywtMTAwODA4
+MzQ0MiwtNDc3NjEwNDcwLC0xNjY0NjM0OTQ5LDE3OTExMzY4My
+wxMzcwNTUwODYzLC0xNTk3NTQ1NTgzLC01NjIzMjI5MzksLTEy
+NjE4MTEzODFdfQ==
 -->
