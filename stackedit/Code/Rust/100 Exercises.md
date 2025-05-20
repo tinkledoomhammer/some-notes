@@ -1711,17 +1711,21 @@ An alternative approach : wrap the entire `TicketStore` in an `<Arc<RwLock<>>`
 ### 08.01 Asynchronous functions
 ```rust
 use tokio::net::TcpListener;
-async fn bind_random() -> TcpListener { /* */ 
+//define an async function
+async fn bind_random() -> TcpListener { /* ... */ }
+
+//invoking
+let listener = bind_random(); // doesn't do anything!
 ```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NjgzODEyOSwzNDExNTQ1NywxMTYwOT
-E0NjM1LDExMDA0NDE4MTYsLTE2NjkxNDI4NywtMTc1MzQ0NDM4
-NCw4MjQ0NDY3NTEsLTE0Mjc0MTkwOCwtNDcwNDY3MTMzLC0xMD
-A4MDgzNDQyLC00Nzc2MTA0NzAsLTE2NjQ2MzQ5NDksMTc5MTEz
-NjgzLDEzNzA1NTA4NjMsLTE1OTc1NDU1ODMsLTU2MjMyMjkzOS
-wtMTI2MTgxMTM4MSwtMTY0NTI2OTQ1MiwtODM0MDU0MDU2LC03
-OTU4NjY2NzZdfQ==
+eyJoaXN0b3J5IjpbNjkzNjA3NTQ2LDM0MTE1NDU3LDExNjA5MT
+Q2MzUsMTEwMDQ0MTgxNiwtMTY2OTE0Mjg3LC0xNzUzNDQ0Mzg0
+LDgyNDQ0Njc1MSwtMTQyNzQxOTA4LC00NzA0NjcxMzMsLTEwMD
+gwODM0NDIsLTQ3NzYxMDQ3MCwtMTY2NDYzNDk0OSwxNzkxMTM2
+ODMsMTM3MDU1MDg2MywtMTU5NzU0NTU4MywtNTYyMzIyOTM5LC
+0xMjYxODExMzgxLC0xNjQ1MjY5NDUyLC04MzQwNTQwNTYsLTc5
+NTg2NjY3Nl19
 -->
