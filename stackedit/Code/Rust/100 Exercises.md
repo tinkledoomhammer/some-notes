@@ -1792,7 +1792,8 @@ Panic boundary
 	* 
 * current thread 
 	* `#[tokio::test]` uses a concurrent runtime by default
-	* 
+	* uses a single thread, does not support **parallelism**
+	* does allow **concurrency**
 * 
 
 
@@ -1800,7 +1801,7 @@ Panic boundary
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTQ4MDk1NTEsLTE2MjAyNjYyMjEsLT
+eyJoaXN0b3J5IjpbLTE3MTAyNjAxNTgsLTE2MjAyNjYyMjEsLT
 E1MzA2MTgyNTcsODc2ODE3MzcwLC05MjkyMDkxNzIsMzQxMTU0
 NTcsMTE2MDkxNDYzNSwxMTAwNDQxODE2LC0xNjY5MTQyODcsLT
 E3NTM0NDQzODQsODI0NDQ2NzUxLC0xNDI3NDE5MDgsLTQ3MDQ2
