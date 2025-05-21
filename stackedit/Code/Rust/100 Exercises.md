@@ -1801,7 +1801,9 @@ Exercise
 * Thus `spawn` requires inputs to be `Send` and have a `'static` lifetime
 	* so the spawned thread may outlive the spawning context
 	* Also the **work-stealing** strategy can cause a task to be moved between processes
-* 
+ 
+
+### 8.04 `Future` trait
 
 
 
@@ -1812,11 +1814,11 @@ Exercise
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5NTk4OTkxOSw2ODc3NDgzMjgsLTExMD
-AxMDkyMTEsLTE3MTAyNjAxNTgsLTE2MjAyNjYyMjEsLTE1MzA2
-MTgyNTcsODc2ODE3MzcwLC05MjkyMDkxNzIsMzQxMTU0NTcsMT
-E2MDkxNDYzNSwxMTAwNDQxODE2LC0xNjY5MTQyODcsLTE3NTM0
-NDQzODQsODI0NDQ2NzUxLC0xNDI3NDE5MDgsLTQ3MDQ2NzEzMy
-wtMTAwODA4MzQ0MiwtNDc3NjEwNDcwLC0xNjY0NjM0OTQ5LDE3
-OTExMzY4M119
+eyJoaXN0b3J5IjpbLTQzNjU2NzkzLC00OTU5ODk5MTksNjg3Nz
+Q4MzI4LC0xMTAwMTA5MjExLC0xNzEwMjYwMTU4LC0xNjIwMjY2
+MjIxLC0xNTMwNjE4MjU3LDg3NjgxNzM3MCwtOTI5MjA5MTcyLD
+M0MTE1NDU3LDExNjA5MTQ2MzUsMTEwMDQ0MTgxNiwtMTY2OTE0
+Mjg3LC0xNzUzNDQ0Mzg0LDgyNDQ0Njc1MSwtMTQyNzQxOTA4LC
+00NzA0NjcxMzMsLTEwMDgwODM0NDIsLTQ3NzYxMDQ3MCwtMTY2
+NDYzNDk0OV19
 -->
