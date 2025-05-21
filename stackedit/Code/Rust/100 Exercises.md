@@ -1798,7 +1798,9 @@ Exercise
 	* uses a single thread, does not support **parallelism**
 	* does allow **concurrency**
 * `tokio::spawn` is agnostic to which runtime is used, so it assumes multithreaded because that is the worst case scenario
-* Thus `spawn`
+* Thus `spawn` requires inputs to be `Send` and have a `'static` lifetime
+	* so the spawned thread may outlive the spawning context
+	* 
 
 
 
@@ -1809,7 +1811,7 @@ Exercise
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI3Mjk0NzUyLDY4Nzc0ODMyOCwtMTEwMD
+eyJoaXN0b3J5IjpbNDIwNjM5OTEyLDY4Nzc0ODMyOCwtMTEwMD
 EwOTIxMSwtMTcxMDI2MDE1OCwtMTYyMDI2NjIyMSwtMTUzMDYx
 ODI1Nyw4NzY4MTczNzAsLTkyOTIwOTE3MiwzNDExNTQ1NywxMT
 YwOTE0NjM1LDExMDA0NDE4MTYsLTE2NjkxNDI4NywtMTc1MzQ0
