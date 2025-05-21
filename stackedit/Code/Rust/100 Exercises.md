@@ -1800,7 +1800,8 @@ Exercise
 * `tokio::spawn` is agnostic to which runtime is used, so it assumes multithreaded because that is the worst case scenario
 * Thus `spawn` requires inputs to be `Send` and have a `'static` lifetime
 	* so the spawned thread may outlive the spawning context
-	* 
+	* Also the **work-stealing** strategy can cause a task to be moved between processes
+* 
 
 
 
@@ -1811,11 +1812,11 @@ Exercise
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIwNjM5OTEyLDY4Nzc0ODMyOCwtMTEwMD
-EwOTIxMSwtMTcxMDI2MDE1OCwtMTYyMDI2NjIyMSwtMTUzMDYx
-ODI1Nyw4NzY4MTczNzAsLTkyOTIwOTE3MiwzNDExNTQ1NywxMT
-YwOTE0NjM1LDExMDA0NDE4MTYsLTE2NjkxNDI4NywtMTc1MzQ0
-NDM4NCw4MjQ0NDY3NTEsLTE0Mjc0MTkwOCwtNDcwNDY3MTMzLC
-0xMDA4MDgzNDQyLC00Nzc2MTA0NzAsLTE2NjQ2MzQ5NDksMTc5
-MTEzNjgzXX0=
+eyJoaXN0b3J5IjpbLTQ5NTk4OTkxOSw2ODc3NDgzMjgsLTExMD
+AxMDkyMTEsLTE3MTAyNjAxNTgsLTE2MjAyNjYyMjEsLTE1MzA2
+MTgyNTcsODc2ODE3MzcwLC05MjkyMDkxNzIsMzQxMTU0NTcsMT
+E2MDkxNDYzNSwxMTAwNDQxODE2LC0xNjY5MTQyODcsLTE3NTM0
+NDQzODQsODI0NDQ2NzUxLC0xNDI3NDE5MDgsLTQ3MDQ2NzEzMy
+wtMTAwODA4MzQ0MiwtNDc3NjEwNDcwLC0xNjY0NjM0OTQ5LDE3
+OTExMzY4M119
 -->
