@@ -1796,16 +1796,20 @@ Panic boundary
 	* does allow **concurrency**
 * 
 
+Exercise
+* `tokio::join!(` macro takes a list of `JoinHandle`s and returns a tuple of `<Result<Result...>`s
+
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTAyNjAxNTgsLTE2MjAyNjYyMjEsLT
-E1MzA2MTgyNTcsODc2ODE3MzcwLC05MjkyMDkxNzIsMzQxMTU0
-NTcsMTE2MDkxNDYzNSwxMTAwNDQxODE2LC0xNjY5MTQyODcsLT
-E3NTM0NDQzODQsODI0NDQ2NzUxLC0xNDI3NDE5MDgsLTQ3MDQ2
-NzEzMywtMTAwODA4MzQ0MiwtNDc3NjEwNDcwLC0xNjY0NjM0OT
-Q5LDE3OTExMzY4MywxMzcwNTUwODYzLC0xNTk3NTQ1NTgzLC01
-NjIzMjI5MzldfQ==
+eyJoaXN0b3J5IjpbLTExMDAxMDkyMTEsLTE3MTAyNjAxNTgsLT
+E2MjAyNjYyMjEsLTE1MzA2MTgyNTcsODc2ODE3MzcwLC05Mjky
+MDkxNzIsMzQxMTU0NTcsMTE2MDkxNDYzNSwxMTAwNDQxODE2LC
+0xNjY5MTQyODcsLTE3NTM0NDQzODQsODI0NDQ2NzUxLC0xNDI3
+NDE5MDgsLTQ3MDQ2NzEzMywtMTAwODA4MzQ0MiwtNDc3NjEwND
+cwLC0xNjY0NjM0OTQ5LDE3OTExMzY4MywxMzcwNTUwODYzLC0x
+NTk3NTQ1NTgzXX0=
 -->
