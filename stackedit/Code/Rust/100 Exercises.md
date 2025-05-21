@@ -1797,7 +1797,8 @@ Exercise
 	* `#[tokio::test]` uses a concurrent runtime by default
 	* uses a single thread, does not support **parallelism**
 	* does allow **concurrency**
-* 
+* `tokio::spawn` is agnostic to which runtime is used, so it assumes multithreaded because that is the worst case scenario
+* Thus `spawn`
 
 
 
@@ -1808,11 +1809,11 @@ Exercise
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg3NzQ4MzI4LC0xMTAwMTA5MjExLC0xNz
-EwMjYwMTU4LC0xNjIwMjY2MjIxLC0xNTMwNjE4MjU3LDg3Njgx
-NzM3MCwtOTI5MjA5MTcyLDM0MTE1NDU3LDExNjA5MTQ2MzUsMT
-EwMDQ0MTgxNiwtMTY2OTE0Mjg3LC0xNzUzNDQ0Mzg0LDgyNDQ0
-Njc1MSwtMTQyNzQxOTA4LC00NzA0NjcxMzMsLTEwMDgwODM0ND
-IsLTQ3NzYxMDQ3MCwtMTY2NDYzNDk0OSwxNzkxMTM2ODMsMTM3
-MDU1MDg2M119
+eyJoaXN0b3J5IjpbMjI3Mjk0NzUyLDY4Nzc0ODMyOCwtMTEwMD
+EwOTIxMSwtMTcxMDI2MDE1OCwtMTYyMDI2NjIyMSwtMTUzMDYx
+ODI1Nyw4NzY4MTczNzAsLTkyOTIwOTE3MiwzNDExNTQ1NywxMT
+YwOTE0NjM1LDExMDA0NDE4MTYsLTE2NjkxNDI4NywtMTc1MzQ0
+NDM4NCw4MjQ0NDY3NTEsLTE0Mjc0MTkwOCwtNDcwNDY3MTMzLC
+0xMDA4MDgzNDQyLC00Nzc2MTA0NzAsLTE2NjQ2MzQ5NDksMTc5
+MTEzNjgzXX0=
 -->
