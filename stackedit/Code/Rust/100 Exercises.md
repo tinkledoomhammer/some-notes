@@ -1787,8 +1787,12 @@ Panic boundary
 
 `tokio` comes with two different flavors, configured via `tokio::runtime::Builder`
 * `Builder::new_multi_thread` or `Builder::new_current_thread` 
-* `#[tokio::main]` runs a multithreaded runtime by default
-* `#[tokio::test]` uses a concurrent runtime by default
+* multithreaded 
+	* `#[tokio::main]` runs a multithreaded runtime by default
+	* 
+* current thread 
+	* `#[tokio::test]` uses a concurrent runtime by default
+	* 
 * 
 
 
@@ -1796,7 +1800,7 @@ Panic boundary
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDIzNDI2NTAsLTE2MjAyNjYyMjEsLT
+eyJoaXN0b3J5IjpbLTE3NTQ4MDk1NTEsLTE2MjAyNjYyMjEsLT
 E1MzA2MTgyNTcsODc2ODE3MzcwLC05MjkyMDkxNzIsMzQxMTU0
 NTcsMTE2MDkxNDYzNSwxMTAwNDQxODE2LC0xNjY5MTQyODcsLT
 E3NTM0NDQzODQsODI0NDQ2NzUxLC0xNDI3NDE5MDgsLTQ3MDQ2
