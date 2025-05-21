@@ -1783,6 +1783,9 @@ Panic boundary
 : `std::thread` delegates scheduling to the OS
 * in tokio, the executor, which runs in user space, decides which thread to run next
 
+Exercise
+* `tokio::join!(` macro takes a list of `JoinHandle`s and returns a tuple of `<Result<Result...>`
+
 ### 8.03 runtime
 
 `tokio` comes with two different flavors, configured via `tokio::runtime::Builder`
@@ -1796,8 +1799,8 @@ Panic boundary
 	* does allow **concurrency**
 * 
 
-Exercise
-* `tokio::join!(` macro takes a list of `JoinHandle`s and returns a tuple of `<Result<Result...>`s
+
+
 
 
 
@@ -1805,11 +1808,11 @@ Exercise
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDAxMDkyMTEsLTE3MTAyNjAxNTgsLT
-E2MjAyNjYyMjEsLTE1MzA2MTgyNTcsODc2ODE3MzcwLC05Mjky
-MDkxNzIsMzQxMTU0NTcsMTE2MDkxNDYzNSwxMTAwNDQxODE2LC
-0xNjY5MTQyODcsLTE3NTM0NDQzODQsODI0NDQ2NzUxLC0xNDI3
-NDE5MDgsLTQ3MDQ2NzEzMywtMTAwODA4MzQ0MiwtNDc3NjEwND
-cwLC0xNjY0NjM0OTQ5LDE3OTExMzY4MywxMzcwNTUwODYzLC0x
-NTk3NTQ1NTgzXX0=
+eyJoaXN0b3J5IjpbNjg3NzQ4MzI4LC0xMTAwMTA5MjExLC0xNz
+EwMjYwMTU4LC0xNjIwMjY2MjIxLC0xNTMwNjE4MjU3LDg3Njgx
+NzM3MCwtOTI5MjA5MTcyLDM0MTE1NDU3LDExNjA5MTQ2MzUsMT
+EwMDQ0MTgxNiwtMTY2OTE0Mjg3LC0xNzUzNDQ0Mzg0LDgyNDQ0
+Njc1MSwtMTQyNzQxOTA4LC00NzA0NjcxMzMsLTEwMDgwODM0ND
+IsLTQ3NzYxMDQ3MCwtMTY2NDYzNDk0OSwxNzkxMTM2ODMsMTM3
+MDU1MDg2M119
 -->
