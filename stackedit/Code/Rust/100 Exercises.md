@@ -1864,14 +1864,17 @@ See also
 : [Alice Ryhl's blog post](https://ryhl.io/blog/async-what-is-blocking/)
 
 ### 8.06 Async-aware primitives
+`std::sync` has a lot of blocking methods.
+use `tokio::sync::`... instead i.e. `tokio::sync::Mutex` 
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzY0NTgyODEsMjE0MTE5NDQ3OCwxOD
-QyODc0NDM4LC00MzY1Njc5MywtNDk1OTg5OTE5LDY4Nzc0ODMy
-OCwtMTEwMDEwOTIxMSwtMTcxMDI2MDE1OCwtMTYyMDI2NjIyMS
-wtMTUzMDYxODI1Nyw4NzY4MTczNzAsLTkyOTIwOTE3MiwzNDEx
-NTQ1NywxMTYwOTE0NjM1LDExMDA0NDE4MTYsLTE2NjkxNDI4Ny
-wtMTc1MzQ0NDM4NCw4MjQ0NDY3NTEsLTE0Mjc0MTkwOCwtNDcw
-NDY3MTMzXX0=
+eyJoaXN0b3J5IjpbMTc0ODYxNzAwOSwtMTQ3NjQ1ODI4MSwyMT
+QxMTk0NDc4LDE4NDI4NzQ0MzgsLTQzNjU2NzkzLC00OTU5ODk5
+MTksNjg3NzQ4MzI4LC0xMTAwMTA5MjExLC0xNzEwMjYwMTU4LC
+0xNjIwMjY2MjIxLC0xNTMwNjE4MjU3LDg3NjgxNzM3MCwtOTI5
+MjA5MTcyLDM0MTE1NDU3LDExNjA5MTQ2MzUsMTEwMDQ0MTgxNi
+wtMTY2OTE0Mjg3LC0xNzUzNDQ0Mzg0LDgyNDQ0Njc1MSwtMTQy
+NzQxOTA4XX0=
 -->
