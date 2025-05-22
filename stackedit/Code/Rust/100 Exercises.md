@@ -1826,17 +1826,24 @@ Yield points
 
 ### 8.06 Blocking in `tokio`
 **Rust tasks cannot be prempted**
-* Tokio regains 
+* Tokio regains control from a thread **exclusively** when it yields
+	* when `Future::poll` returns `Poll::Pending`
+	* or when an `async fn` `.await`s a future
+* If a task never yeilds or `.await`s it will **block the runtime**
+
+Consequences
+: Blocking the runtime can cause
+* De
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5Njc3NDYxLDIxNDExOTQ0NzgsMTg0Mj
-g3NDQzOCwtNDM2NTY3OTMsLTQ5NTk4OTkxOSw2ODc3NDgzMjgs
-LTExMDAxMDkyMTEsLTE3MTAyNjAxNTgsLTE2MjAyNjYyMjEsLT
-E1MzA2MTgyNTcsODc2ODE3MzcwLC05MjkyMDkxNzIsMzQxMTU0
-NTcsMTE2MDkxNDYzNSwxMTAwNDQxODE2LC0xNjY5MTQyODcsLT
-E3NTM0NDQzODQsODI0NDQ2NzUxLC0xNDI3NDE5MDgsLTQ3MDQ2
-NzEzM119
+eyJoaXN0b3J5IjpbMTQ0MDY1NTkzNywyMTQxMTk0NDc4LDE4ND
+I4NzQ0MzgsLTQzNjU2NzkzLC00OTU5ODk5MTksNjg3NzQ4MzI4
+LC0xMTAwMTA5MjExLC0xNzEwMjYwMTU4LC0xNjIwMjY2MjIxLC
+0xNTMwNjE4MjU3LDg3NjgxNzM3MCwtOTI5MjA5MTcyLDM0MTE1
+NDU3LDExNjA5MTQ2MzUsMTEwMDQ0MTgxNiwtMTY2OTE0Mjg3LC
+0xNzUzNDQ0Mzg0LDgyNDQ0Njc1MSwtMTQyNzQxOTA4LC00NzA0
+NjcxMzNdfQ==
 -->
