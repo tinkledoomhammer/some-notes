@@ -1873,20 +1873,26 @@ async fn http_all(v: &[u65]) { /* */ }
 use std::sync::{Arc, Mutex};
 async fn run(m: Arc<Mutex<Vec<u64>>>) {
 	let guard = m.lock().unwrap();
-	// ^^ will blo
+	// ^^ will block if the mutex is already locked ^^
 	http_call(&guard).await;
+	// ^^ allows another thread to run ^^
 	prinln!("Sent {:?} to the server", &guard);
 	//guard is dropped here
 }
 
-// 
+// The non-blocking way
+use std::sync::Arc;
+use tokio::sync::Mutex;
+async fn run(m: Arc<Mutex<Vec<u64>>>) {
+	let guard = m.lock().await;
+	// ^^ now it will yield if the mutex is l
 
 ```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY0MTQ4NzE3LDE3NDg2MTcwMDksLTE0Nz
+eyJoaXN0b3J5IjpbNzM2Mjg4NjE4LDE3NDg2MTcwMDksLTE0Nz
 Y0NTgyODEsMjE0MTE5NDQ3OCwxODQyODc0NDM4LC00MzY1Njc5
 MywtNDk1OTg5OTE5LDY4Nzc0ODMyOCwtMTEwMDEwOTIxMSwtMT
 cxMDI2MDE1OCwtMTYyMDI2NjIyMSwtMTUzMDYxODI1Nyw4NzY4
