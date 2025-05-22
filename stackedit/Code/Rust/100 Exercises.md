@@ -1817,20 +1817,23 @@ Future objects are in one of two states
 
 `async fn`
 * return futures
-* each `.poll` will run until it recyes a call to `tokio::task::yield_now` or the end of the function
-* any values used before a `yield_now()` must be`Send` because execution may resume in a different thread
+* each `.poll` will run until it reaches an await on `tokio::task::yield_now` or the end of the function
+* any values used before a `yield_now().await` must be`Send` because execution may resume in a different thread
 
+Yield points
+: created by `.await` points
+: create a new intermediate state in the lifecycle of a fu
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mzk2NzI0MjgsMTg0Mjg3NDQzOCwtND
-M2NTY3OTMsLTQ5NTk4OTkxOSw2ODc3NDgzMjgsLTExMDAxMDky
-MTEsLTE3MTAyNjAxNTgsLTE2MjAyNjYyMjEsLTE1MzA2MTgyNT
-csODc2ODE3MzcwLC05MjkyMDkxNzIsMzQxMTU0NTcsMTE2MDkx
-NDYzNSwxMTAwNDQxODE2LC0xNjY5MTQyODcsLTE3NTM0NDQzOD
-QsODI0NDQ2NzUxLC0xNDI3NDE5MDgsLTQ3MDQ2NzEzMywtMTAw
-ODA4MzQ0Ml19
+eyJoaXN0b3J5IjpbMTkzMTI3NTE4OCwxODQyODc0NDM4LC00Mz
+Y1Njc5MywtNDk1OTg5OTE5LDY4Nzc0ODMyOCwtMTEwMDEwOTIx
+MSwtMTcxMDI2MDE1OCwtMTYyMDI2NjIyMSwtMTUzMDYxODI1Ny
+w4NzY4MTczNzAsLTkyOTIwOTE3MiwzNDExNTQ1NywxMTYwOTE0
+NjM1LDExMDA0NDE4MTYsLTE2NjkxNDI4NywtMTc1MzQ0NDM4NC
+w4MjQ0NDY3NTEsLTE0Mjc0MTkwOCwtNDcwNDY3MTMzLC0xMDA4
+MDgzNDQyXX0=
 -->
