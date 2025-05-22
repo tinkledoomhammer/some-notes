@@ -1824,17 +1824,19 @@ Yield points
 : created by `.await` points
 : create a new intermediate state in the lifecycle of a future
 
-
+### 8.06 Blocking in `tokio`
+**Rust tasks cannot be prempted**
+* Tokio regains 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0MTE5NDQ3OCwxODQyODc0NDM4LC00Mz
-Y1Njc5MywtNDk1OTg5OTE5LDY4Nzc0ODMyOCwtMTEwMDEwOTIx
-MSwtMTcxMDI2MDE1OCwtMTYyMDI2NjIyMSwtMTUzMDYxODI1Ny
-w4NzY4MTczNzAsLTkyOTIwOTE3MiwzNDExNTQ1NywxMTYwOTE0
-NjM1LDExMDA0NDE4MTYsLTE2NjkxNDI4NywtMTc1MzQ0NDM4NC
-w4MjQ0NDY3NTEsLTE0Mjc0MTkwOCwtNDcwNDY3MTMzLC0xMDA4
-MDgzNDQyXX0=
+eyJoaXN0b3J5IjpbLTY5Njc3NDYxLDIxNDExOTQ0NzgsMTg0Mj
+g3NDQzOCwtNDM2NTY3OTMsLTQ5NTk4OTkxOSw2ODc3NDgzMjgs
+LTExMDAxMDkyMTEsLTE3MTAyNjAxNTgsLTE2MjAyNjYyMjEsLT
+E1MzA2MTgyNTcsODc2ODE3MzcwLC05MjkyMDkxNzIsMzQxMTU0
+NTcsMTE2MDkxNDYzNSwxMTAwNDQxODE2LC0xNjY5MTQyODcsLT
+E3NTM0NDQzODQsODI0NDQ2NzUxLC0xNDI3NDE5MDgsLTQ3MDQ2
+NzEzM119
 -->
