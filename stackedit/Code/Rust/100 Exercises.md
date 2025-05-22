@@ -1844,22 +1844,30 @@ Blocking is not always obvious
 
 blocking pool
 : `tokio` provides a separate pool of threads for tasks that can block
-* `tokio::spawn_blocking()` returns a future that resolves to the result of the completed operation
+* `tokio::task::spawn_blocking()` returns a future that resolves to the result of the completed operation
+* should spawn faster than `std::thread::spawn` because threads are reused
 ```rust
 use tokio::task;
 
 fn expensivve_computation() -> u64 {
+	// ... expensive math goes here
+}
 
+async fn run() {
+	let handle = task::spawn_blocking(expensive_computation);
+	// we can do other stuff in the meantime
+	let result = handle.await.unwrap();
+}
 ```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzAyMjg0OTYsMjE0MTE5NDQ3OCwxOD
-QyODc0NDM4LC00MzY1Njc5MywtNDk1OTg5OTE5LDY4Nzc0ODMy
-OCwtMTEwMDEwOTIxMSwtMTcxMDI2MDE1OCwtMTYyMDI2NjIyMS
-wtMTUzMDYxODI1Nyw4NzY4MTczNzAsLTkyOTIwOTE3MiwzNDEx
-NTQ1NywxMTYwOTE0NjM1LDExMDA0NDE4MTYsLTE2NjkxNDI4Ny
-wtMTc1MzQ0NDM4NCw4MjQ0NDY3NTEsLTE0Mjc0MTkwOCwtNDcw
-NDY3MTMzXX0=
+eyJoaXN0b3J5IjpbMTkxMDY1NzM0OCwyMTQxMTk0NDc4LDE4ND
+I4NzQ0MzgsLTQzNjU2NzkzLC00OTU5ODk5MTksNjg3NzQ4MzI4
+LC0xMTAwMTA5MjExLC0xNzEwMjYwMTU4LC0xNjIwMjY2MjIxLC
+0xNTMwNjE4MjU3LDg3NjgxNzM3MCwtOTI5MjA5MTcyLDM0MTE1
+NDU3LDExNjA5MTQ2MzUsMTEwMDQ0MTgxNiwtMTY2OTE0Mjg3LC
+0xNzUzNDQ0Mzg0LDgyNDQ0Njc1MSwtMTQyNzQxOTA4LC00NzA0
+NjcxMzNdfQ==
 -->
