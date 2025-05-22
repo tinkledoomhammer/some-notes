@@ -1896,15 +1896,15 @@ async fn run(m: Arc<Mutex<Vec<u64>>>) {
 The async-aware `Mutex` comes with a performance penalty
 * you can use `std::sync::Mutex` as long as it is never held across a yield point
 
-
+### 8.07 Cancellation
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ5MDA4NTQsMTc0ODYxNzAwOSwtMTQ3Nj
-Q1ODI4MSwyMTQxMTk0NDc4LDE4NDI4NzQ0MzgsLTQzNjU2Nzkz
-LC00OTU5ODk5MTksNjg3NzQ4MzI4LC0xMTAwMTA5MjExLC0xNz
-EwMjYwMTU4LC0xNjIwMjY2MjIxLC0xNTMwNjE4MjU3LDg3Njgx
-NzM3MCwtOTI5MjA5MTcyLDM0MTE1NDU3LDExNjA5MTQ2MzUsMT
-EwMDQ0MTgxNiwtMTY2OTE0Mjg3LC0xNzUzNDQ0Mzg0LDgyNDQ0
-Njc1MV19
+eyJoaXN0b3J5IjpbLTE2NTQzOTUwNjMsMTc0ODYxNzAwOSwtMT
+Q3NjQ1ODI4MSwyMTQxMTk0NDc4LDE4NDI4NzQ0MzgsLTQzNjU2
+NzkzLC00OTU5ODk5MTksNjg3NzQ4MzI4LC0xMTAwMTA5MjExLC
+0xNzEwMjYwMTU4LC0xNjIwMjY2MjIxLC0xNTMwNjE4MjU3LDg3
+NjgxNzM3MCwtOTI5MjA5MTcyLDM0MTE1NDU3LDExNjA5MTQ2Mz
+UsMTEwMDQ0MTgxNiwtMTY2OTE0Mjg3LC0xNzUzNDQ0Mzg0LDgy
+NDQ0Njc1MV19
 -->
