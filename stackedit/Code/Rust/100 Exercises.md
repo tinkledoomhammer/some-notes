@@ -1810,7 +1810,11 @@ Future objects are in one of two states
 * ready : the computation has finished, there is output
 * the `.poll()` method returns a `Poll` enumeration
 	* `Poll::Pending` 
-	* `Poll::Ready(value)` value is the resu
+	* `Poll::Ready(value)` value is the result of the computation
+		* it's type is `Self::Output`
+		* once `Poll::Ready` is returned, `.poll` should not be polled again
+	* `.poll()` is usually not called directly
+
 
 
 
@@ -1819,11 +1823,11 @@ Future objects are in one of two states
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA3Nzc1MjUyLC00MzY1Njc5MywtNDk1OT
-g5OTE5LDY4Nzc0ODMyOCwtMTEwMDEwOTIxMSwtMTcxMDI2MDE1
-OCwtMTYyMDI2NjIyMSwtMTUzMDYxODI1Nyw4NzY4MTczNzAsLT
-kyOTIwOTE3MiwzNDExNTQ1NywxMTYwOTE0NjM1LDExMDA0NDE4
-MTYsLTE2NjkxNDI4NywtMTc1MzQ0NDM4NCw4MjQ0NDY3NTEsLT
-E0Mjc0MTkwOCwtNDcwNDY3MTMzLC0xMDA4MDgzNDQyLC00Nzc2
-MTA0NzBdfQ==
+eyJoaXN0b3J5IjpbMTg0Mjg3NDQzOCwtNDM2NTY3OTMsLTQ5NT
+k4OTkxOSw2ODc3NDgzMjgsLTExMDAxMDkyMTEsLTE3MTAyNjAx
+NTgsLTE2MjAyNjYyMjEsLTE1MzA2MTgyNTcsODc2ODE3MzcwLC
+05MjkyMDkxNzIsMzQxMTU0NTcsMTE2MDkxNDYzNSwxMTAwNDQx
+ODE2LC0xNjY5MTQyODcsLTE3NTM0NDQzODQsODI0NDQ2NzUxLC
+0xNDI3NDE5MDgsLTQ3MDQ2NzEzMywtMTAwODA4MzQ0MiwtNDc3
+NjEwNDcwXX0=
 -->
