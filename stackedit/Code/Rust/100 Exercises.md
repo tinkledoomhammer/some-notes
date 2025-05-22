@@ -1891,17 +1891,20 @@ async fn run(m: Arc<Mutex<Vec<u64>>>) {
 	println!("Sent {:?} to the server", &guard);
 	// guard is dropped here
 }
-
 ```
+
+The async-aware `Mutex` comes with a performance penalty
+* you can use `std::sync::Mutex` as long as it is never held across a yield point
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0ODIwNTk3OCwxNzQ4NjE3MDA5LC0xND
-c2NDU4MjgxLDIxNDExOTQ0NzgsMTg0Mjg3NDQzOCwtNDM2NTY3
-OTMsLTQ5NTk4OTkxOSw2ODc3NDgzMjgsLTExMDAxMDkyMTEsLT
-E3MTAyNjAxNTgsLTE2MjAyNjYyMjEsLTE1MzA2MTgyNTcsODc2
-ODE3MzcwLC05MjkyMDkxNzIsMzQxMTU0NTcsMTE2MDkxNDYzNS
-wxMTAwNDQxODE2LC0xNjY5MTQyODcsLTE3NTM0NDQzODQsODI0
-NDQ2NzUxXX0=
+eyJoaXN0b3J5IjpbNzQ5MDA4NTQsMTc0ODYxNzAwOSwtMTQ3Nj
+Q1ODI4MSwyMTQxMTk0NDc4LDE4NDI4NzQ0MzgsLTQzNjU2Nzkz
+LC00OTU5ODk5MTksNjg3NzQ4MzI4LC0xMTAwMTA5MjExLC0xNz
+EwMjYwMTU4LC0xNjIwMjY2MjIxLC0xNTMwNjE4MjU3LDg3Njgx
+NzM3MCwtOTI5MjA5MTcyLDM0MTE1NDU3LDExNjA5MTQ2MzUsMT
+EwMDQ0MTgxNiwtMTY2OTE0Mjg3LC0xNzUzNDQ0Mzg0LDgyNDQ0
+Njc1MV19
 -->
