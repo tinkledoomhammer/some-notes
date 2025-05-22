@@ -1822,14 +1822,15 @@ Future objects are in one of two states
 
 Yield points
 : created by `.await` points
-: create a new intermediate state in the lifecycle of a fu
+: create a new intermediate state in the lifecycle of a future
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMTI3NTE4OCwxODQyODc0NDM4LC00Mz
+eyJoaXN0b3J5IjpbMjE0MTE5NDQ3OCwxODQyODc0NDM4LC00Mz
 Y1Njc5MywtNDk1OTg5OTE5LDY4Nzc0ODMyOCwtMTEwMDEwOTIx
 MSwtMTcxMDI2MDE1OCwtMTYyMDI2NjIyMSwtMTUzMDYxODI1Ny
 w4NzY4MTczNzAsLTkyOTIwOTE3MiwzNDExNTQ1NywxMTYwOTE0
