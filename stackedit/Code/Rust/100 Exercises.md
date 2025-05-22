@@ -1905,12 +1905,20 @@ Cancelled
 * `tokio::spawn` will hold a reference that can be cancelled by `.abort()`ing the `JoinHandle`
 * A  [`CancellationToken`](https://docs.rs/tokio-util/latest/tokio_util/sync/struct.CancellationToken.html)  may be preferable to  `JoinHandle::abort`  in some cases.
 * [`select!`](https://tokio.rs/tokio/tutorial/select) macro causes a race that can be dangerous unless steps are taken to ensure **cancellation safety**
-* to interleave two asy
+* to interleave two asynchrouous streams of data (like a socket and a channel) use [`StreamExt::merge`](https://docs.rs/tokio-stream/latest/tokio_stream/trait.StreamExt.html#method.merge)
+
+Cancellation is usually managed
+: with the `Drop` trait
+* Spawn a new task for cleanup
+* enqueue a message on a channel
+* spawn a background thread
+
+* There is no built-
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4MTAwMTExNywtMTY1NDM5NTA2MywxNz
+eyJoaXN0b3J5IjpbMTA1Mjk2MzkzNywtMTY1NDM5NTA2MywxNz
 Q4NjE3MDA5LC0xNDc2NDU4MjgxLDIxNDExOTQ0NzgsMTg0Mjg3
 NDQzOCwtNDM2NTY3OTMsLTQ5NTk4OTkxOSw2ODc3NDgzMjgsLT
 ExMDAxMDkyMTEsLTE3MTAyNjAxNTgsLTE2MjAyNjYyMjEsLTE1
