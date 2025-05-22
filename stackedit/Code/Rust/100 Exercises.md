@@ -1805,7 +1805,12 @@ Exercise
 
 ### 8.04 `Future` trait
 > Any value that's *held across a* `.await` *point* has to be `Send`
-Future objects are i
+Future objects are in one of two states
+* pending : the computation has not finished yet
+* ready : the computation has finished, there is output
+* the `.poll()` method returns a `Poll` enumeration
+	* `Poll::Pending` 
+	* `Poll::Ready(value)` value is the resu
 
 
 
@@ -1814,7 +1819,7 @@ Future objects are i
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMzEwNjE2LC00MzY1Njc5MywtNDk1OT
+eyJoaXN0b3J5IjpbNzA3Nzc1MjUyLC00MzY1Njc5MywtNDk1OT
 g5OTE5LDY4Nzc0ODMyOCwtMTEwMDEwOTIxMSwtMTcxMDI2MDE1
 OCwtMTYyMDI2NjIyMSwtMTUzMDYxODI1Nyw4NzY4MTczNzAsLT
 kyOTIwOTE3MiwzNDExNTQ1NywxMTYwOTE0NjM1LDExMDA0NDE4
