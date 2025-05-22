@@ -1901,15 +1901,15 @@ The async-aware `Mutex` comes with a performance penalty
 **Cancelation occurs when a future is dropped while still pending**
 
 Cancelled
-: The tur
+: The runtime will no longer poll the task
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQyNzQ3NTIsLTE2NTQzOTUwNjMsMTc0OD
-YxNzAwOSwtMTQ3NjQ1ODI4MSwyMTQxMTk0NDc4LDE4NDI4NzQ0
-MzgsLTQzNjU2NzkzLC00OTU5ODk5MTksNjg3NzQ4MzI4LC0xMT
-AwMTA5MjExLC0xNzEwMjYwMTU4LC0xNjIwMjY2MjIxLC0xNTMw
-NjE4MjU3LDg3NjgxNzM3MCwtOTI5MjA5MTcyLDM0MTE1NDU3LD
-ExNjA5MTQ2MzUsMTEwMDQ0MTgxNiwtMTY2OTE0Mjg3LC0xNzUz
-NDQ0Mzg0XX0=
+eyJoaXN0b3J5IjpbLTIwNzUwNjgzMjAsLTE2NTQzOTUwNjMsMT
+c0ODYxNzAwOSwtMTQ3NjQ1ODI4MSwyMTQxMTk0NDc4LDE4NDI4
+NzQ0MzgsLTQzNjU2NzkzLC00OTU5ODk5MTksNjg3NzQ4MzI4LC
+0xMTAwMTA5MjExLC0xNzEwMjYwMTU4LC0xNjIwMjY2MjIxLC0x
+NTMwNjE4MjU3LDg3NjgxNzM3MCwtOTI5MjA5MTcyLDM0MTE1ND
+U3LDExNjA5MTQ2MzUsMTEwMDQ0MTgxNiwtMTY2OTE0Mjg3LC0x
+NzUzNDQ0Mzg0XX0=
 -->
