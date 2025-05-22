@@ -1866,15 +1866,22 @@ See also
 ### 8.06 Async-aware primitives
 `std::sync` has a lot of blocking methods.
 use `tokio::sync::`... instead i.e. `tokio::sync::Mutex` 
+```rust
+use std::sync::{Arc, Mutex};
+
+async fn run(m: Arc<Mutex<Vec<u64>>>) {
+	let guard = m.lock().unwrap();
+	http_
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0ODYxNzAwOSwtMTQ3NjQ1ODI4MSwyMT
-QxMTk0NDc4LDE4NDI4NzQ0MzgsLTQzNjU2NzkzLC00OTU5ODk5
-MTksNjg3NzQ4MzI4LC0xMTAwMTA5MjExLC0xNzEwMjYwMTU4LC
-0xNjIwMjY2MjIxLC0xNTMwNjE4MjU3LDg3NjgxNzM3MCwtOTI5
-MjA5MTcyLDM0MTE1NDU3LDExNjA5MTQ2MzUsMTEwMDQ0MTgxNi
-wtMTY2OTE0Mjg3LC0xNzUzNDQ0Mzg0LDgyNDQ0Njc1MSwtMTQy
-NzQxOTA4XX0=
+eyJoaXN0b3J5IjpbLTUwOTkzOTAxNCwxNzQ4NjE3MDA5LC0xND
+c2NDU4MjgxLDIxNDExOTQ0NzgsMTg0Mjg3NDQzOCwtNDM2NTY3
+OTMsLTQ5NTk4OTkxOSw2ODc3NDgzMjgsLTExMDAxMDkyMTEsLT
+E3MTAyNjAxNTgsLTE2MjAyNjYyMjEsLTE1MzA2MTgyNTcsODc2
+ODE3MzcwLC05MjkyMDkxNzIsMzQxMTU0NTcsMTE2MDkxNDYzNS
+wxMTAwNDQxODE2LC0xNjY5MTQyODcsLTE3NTM0NDQzODQsODI0
+NDQ2NzUxXX0=
 -->
