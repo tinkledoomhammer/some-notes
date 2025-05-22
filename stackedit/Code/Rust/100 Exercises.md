@@ -1815,7 +1815,10 @@ Future objects are in one of two states
 		* once `Poll::Ready` is returned, `.poll` should not be polled again
 	* `.poll()` is usually not called directly
 
-
+`async fn`
+* return futures
+* each `.poll` will run until it recyes a call to `tokio::task::yield_now` or the end of the function
+* 
 
 
 
@@ -1823,11 +1826,11 @@ Future objects are in one of two states
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0Mjg3NDQzOCwtNDM2NTY3OTMsLTQ5NT
-k4OTkxOSw2ODc3NDgzMjgsLTExMDAxMDkyMTEsLTE3MTAyNjAx
-NTgsLTE2MjAyNjYyMjEsLTE1MzA2MTgyNTcsODc2ODE3MzcwLC
-05MjkyMDkxNzIsMzQxMTU0NTcsMTE2MDkxNDYzNSwxMTAwNDQx
-ODE2LC0xNjY5MTQyODcsLTE3NTM0NDQzODQsODI0NDQ2NzUxLC
-0xNDI3NDE5MDgsLTQ3MDQ2NzEzMywtMTAwODA4MzQ0MiwtNDc3
-NjEwNDcwXX0=
+eyJoaXN0b3J5IjpbMTQ3MDI3OTI1LDE4NDI4NzQ0MzgsLTQzNj
+U2NzkzLC00OTU5ODk5MTksNjg3NzQ4MzI4LC0xMTAwMTA5MjEx
+LC0xNzEwMjYwMTU4LC0xNjIwMjY2MjIxLC0xNTMwNjE4MjU3LD
+g3NjgxNzM3MCwtOTI5MjA5MTcyLDM0MTE1NDU3LDExNjA5MTQ2
+MzUsMTEwMDQ0MTgxNiwtMTY2OTE0Mjg3LC0xNzUzNDQ0Mzg0LD
+gyNDQ0Njc1MSwtMTQyNzQxOTA4LC00NzA0NjcxMzMsLTEwMDgw
+ODM0NDJdfQ==
 -->
