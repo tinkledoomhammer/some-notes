@@ -1830,16 +1830,23 @@ Yield points
 	* when `Future::poll` returns `Poll::Pending`
 	* or when an `async fn` `.await`s a future
 * If a task never yeilds or `.await`s it will **block the runtime**
+* In general, less than 100us is acceptable
 
 Consequences
 : Blocking the runtime can cause
-* De
+* Deadlocks
+* Starvation (high tail latencies
+
+Blocking is not always obvious
+: Some sneaky causes
+* Synchronous I/O
+* Expensive CPU-bound computations
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MDY1NTkzNywyMTQxMTk0NDc4LDE4ND
+eyJoaXN0b3J5IjpbMTI5OTMwOTIyOCwyMTQxMTk0NDc4LDE4ND
 I4NzQ0MzgsLTQzNjU2NzkzLC00OTU5ODk5MTksNjg3NzQ4MzI4
 LC0xMTAwMTA5MjExLC0xNzEwMjYwMTU4LC0xNjIwMjY2MjIxLC
 0xNTMwNjE4MjU3LDg3NjgxNzM3MCwtOTI5MjA5MTcyLDM0MTE1
