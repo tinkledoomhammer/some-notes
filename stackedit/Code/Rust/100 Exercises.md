@@ -1867,21 +1867,30 @@ See also
 `std::sync` has a lot of blocking methods.
 use `tokio::sync::`... instead i.e. `tokio::sync::Mutex` 
 ```rust
-use std::sync::{Arc, Mutex};
+async fn http_all(v: &[u65]) { /* */ }
 
+//The blocking way
+use std::sync::{Arc, Mutex};
 async fn run(m: Arc<Mutex<Vec<u64>>>) {
 	let guard = m.lock().unwrap();
-	http_
+	// ^^ will blo
+	http_call(&guard).await;
+	prinln!("Sent {:?} to the server", &guard);
+	//guard is dropped here
+}
+
+// 
+
 ```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwOTkzOTAxNCwxNzQ4NjE3MDA5LC0xND
-c2NDU4MjgxLDIxNDExOTQ0NzgsMTg0Mjg3NDQzOCwtNDM2NTY3
-OTMsLTQ5NTk4OTkxOSw2ODc3NDgzMjgsLTExMDAxMDkyMTEsLT
-E3MTAyNjAxNTgsLTE2MjAyNjYyMjEsLTE1MzA2MTgyNTcsODc2
-ODE3MzcwLC05MjkyMDkxNzIsMzQxMTU0NTcsMTE2MDkxNDYzNS
-wxMTAwNDQxODE2LC0xNjY5MTQyODcsLTE3NTM0NDQzODQsODI0
-NDQ2NzUxXX0=
+eyJoaXN0b3J5IjpbODY0MTQ4NzE3LDE3NDg2MTcwMDksLTE0Nz
+Y0NTgyODEsMjE0MTE5NDQ3OCwxODQyODc0NDM4LC00MzY1Njc5
+MywtNDk1OTg5OTE5LDY4Nzc0ODMyOCwtMTEwMDEwOTIxMSwtMT
+cxMDI2MDE1OCwtMTYyMDI2NjIyMSwtMTUzMDYxODI1Nyw4NzY4
+MTczNzAsLTkyOTIwOTE3MiwzNDExNTQ1NywxMTYwOTE0NjM1LD
+ExMDA0NDE4MTYsLTE2NjkxNDI4NywtMTc1MzQ0NDM4NCw4MjQ0
+NDY3NTFdfQ==
 -->
