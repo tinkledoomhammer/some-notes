@@ -1902,15 +1902,16 @@ The async-aware `Mutex` comes with a performance penalty
 
 Cancelled
 : The runtime will no longer poll the task
-* `tokio::spawn` will hold a re
+* `tokio::spawn` will hold a reference that can be cancelled by `.abort()`ing the `JoinHandle`
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNzU1ODk1MCwtMTY1NDM5NTA2MywxNz
-Q4NjE3MDA5LC0xNDc2NDU4MjgxLDIxNDExOTQ0NzgsMTg0Mjg3
-NDQzOCwtNDM2NTY3OTMsLTQ5NTk4OTkxOSw2ODc3NDgzMjgsLT
-ExMDAxMDkyMTEsLTE3MTAyNjAxNTgsLTE2MjAyNjYyMjEsLTE1
-MzA2MTgyNTcsODc2ODE3MzcwLC05MjkyMDkxNzIsMzQxMTU0NT
-csMTE2MDkxNDYzNSwxMTAwNDQxODE2LC0xNjY5MTQyODcsLTE3
-NTM0NDQzODRdfQ==
+eyJoaXN0b3J5IjpbNjcxOTk0ODY4LC0xNjU0Mzk1MDYzLDE3ND
+g2MTcwMDksLTE0NzY0NTgyODEsMjE0MTE5NDQ3OCwxODQyODc0
+NDM4LC00MzY1Njc5MywtNDk1OTg5OTE5LDY4Nzc0ODMyOCwtMT
+EwMDEwOTIxMSwtMTcxMDI2MDE1OCwtMTYyMDI2NjIyMSwtMTUz
+MDYxODI1Nyw4NzY4MTczNzAsLTkyOTIwOTE3MiwzNDExNTQ1Ny
+wxMTYwOTE0NjM1LDExMDA0NDE4MTYsLTE2NjkxNDI4NywtMTc1
+MzQ0NDM4NF19
 -->
