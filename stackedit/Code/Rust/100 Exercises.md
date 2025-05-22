@@ -1818,7 +1818,7 @@ Future objects are in one of two states
 `async fn`
 * return futures
 * each `.poll` will run until it recyes a call to `tokio::task::yield_now` or the end of the function
-* 
+* any values used before a `yield_now()` must be`Send` because execution may resume in a different thread
 
 
 
@@ -1826,11 +1826,11 @@ Future objects are in one of two states
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MDI3OTI1LDE4NDI4NzQ0MzgsLTQzNj
-U2NzkzLC00OTU5ODk5MTksNjg3NzQ4MzI4LC0xMTAwMTA5MjEx
-LC0xNzEwMjYwMTU4LC0xNjIwMjY2MjIxLC0xNTMwNjE4MjU3LD
-g3NjgxNzM3MCwtOTI5MjA5MTcyLDM0MTE1NDU3LDExNjA5MTQ2
-MzUsMTEwMDQ0MTgxNiwtMTY2OTE0Mjg3LC0xNzUzNDQ0Mzg0LD
-gyNDQ0Njc1MSwtMTQyNzQxOTA4LC00NzA0NjcxMzMsLTEwMDgw
-ODM0NDJdfQ==
+eyJoaXN0b3J5IjpbLTE3Mzk2NzI0MjgsMTg0Mjg3NDQzOCwtND
+M2NTY3OTMsLTQ5NTk4OTkxOSw2ODc3NDgzMjgsLTExMDAxMDky
+MTEsLTE3MTAyNjAxNTgsLTE2MjAyNjYyMjEsLTE1MzA2MTgyNT
+csODc2ODE3MzcwLC05MjkyMDkxNzIsMzQxMTU0NTcsMTE2MDkx
+NDYzNSwxMTAwNDQxODE2LC0xNjY5MTQyODcsLTE3NTM0NDQzOD
+QsODI0NDQ2NzUxLC0xNDI3NDE5MDgsLTQ3MDQ2NzEzMywtMTAw
+ODA4MzQ0Ml19
 -->
