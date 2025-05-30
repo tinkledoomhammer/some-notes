@@ -22,7 +22,9 @@ https://rustwasm.github.io/docs/book/
 	* community
 
 ## 3 Background and concepts
-### 3.01 What is s
+### 3.01 What is webasembly
+[extensive specification](https://webassembly.github.io/spec/)
+
 
 
 
@@ -30,5 +32,5 @@ https://rustwasm.github.io/docs/book/
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MTgzNjE1XX0=
+eyJoaXN0b3J5IjpbLTIxNDQwODY3MTFdfQ==
 -->
