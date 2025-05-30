@@ -15,11 +15,20 @@ https://rustwasm.github.io/docs/book/
 * Existing code can be replaced modularly
 * Plays well with others
 	* Integrates with existing JavaScript tooling. Support s ECMAScript modules
+	* can continue using npm, WebPak, etc
+* Amenities
+	* `cargo` package management
+	* expressive zero-cost abstractions
+	* community
+
+## 3 Background and concepts
+### 3.01 What is s
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNjc2MDgwXX0=
+eyJoaXN0b3J5IjpbMTQ0MTgzNjE1XX0=
 -->
