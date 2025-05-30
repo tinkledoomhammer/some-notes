@@ -70,12 +70,15 @@ Is webAssembly just for the web?
 	* A workflow for developing polyglot programs
 	* How to design appropriate APIs for use with the various languages
 	* How to debug wasm modules compiled from rust
-	* how to time profile Rust and WebAs
+	* how to (time and size) (profile and optimize) (Rust and WebAssembly) programs 
 
+### 4.01 Setup
+* Rust toolchain:
+	* r
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODkzMzkwODFdfQ==
+eyJoaXN0b3J5IjpbLTk0OTE5MTcxMV19
 -->
