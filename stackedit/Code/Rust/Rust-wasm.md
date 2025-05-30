@@ -25,6 +25,18 @@ https://rustwasm.github.io/docs/book/
 ### 3.01 What is webasembly
 [extensive specification](https://webassembly.github.io/spec/)
 
+`.wat` text format
+: "**W**eb**A**ssembly **T**ext"
+: Uses [S-expressions](https://en.wikipedia.org/wiki/S-expression) like Scheme and Clojure
+
+`.wasm` binary format
+; lower level, conceptually simiar to ELF and Mach-O
+
+```wat
+(module
+	(func 4fac (p
+```
+
 
 
 
@@ -32,5 +44,5 @@ https://rustwasm.github.io/docs/book/
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDQwODY3MTFdfQ==
+eyJoaXN0b3J5IjpbLTE4OTIzMzA5NjJdfQ==
 -->
