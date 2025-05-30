@@ -63,12 +63,19 @@ Is webAssembly just for the web?
 : for now, yes but it could be a general portable application format
 
 ## 4 Tutorial
-
+* Intended audience
+	* basic knowledge of Rust, JS, and HTML
+* Learning goals
+	* How to setup a Rust toolchain for compiling WebAssembly
+	* A workflow for developing polyglot programs
+	* How to design appropriate APIs for use with the various languages
+	* How to debug wasm modules compiled from rust
+	* how to time profile Rust and WebAs
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDc3ODMxMzRdfQ==
+eyJoaXN0b3J5IjpbLTE2ODkzMzkwODFdfQ==
 -->
