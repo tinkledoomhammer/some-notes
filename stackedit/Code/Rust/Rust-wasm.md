@@ -48,15 +48,20 @@ https://rustwasm.github.io/docs/book/
 			call $fac
 			f64.mul
 		end)
-	(export "fac" (func $fac)))
+	(export "fac" (func $fac))
+)
 ```
 
+* [wat2wasm demo](https://webassembly.github.io/wabt/demo/wat2wasm/) to see how it compiles
 
+Linear Memroy
+: wasm has a very simple [memory model](https://webassembly.github.io/spec/core/syntax/modules.html#syntax-mem)
+: a wasm module has access to a single "linear memory" that can be
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjU1ODEzNjhdfQ==
+eyJoaXN0b3J5IjpbLTEyNjM4NjM5MjhdfQ==
 -->
