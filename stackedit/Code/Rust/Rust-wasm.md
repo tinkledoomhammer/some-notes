@@ -8,12 +8,18 @@ https://rustwasm.github.io/docs/book/
 
 ## 2 Why rust and WebAssembly
 
-* Low level ontrol 
+* Low level ontrol with High-level Ergonomics
+* Small `.wasm` files
+	* Unused functions are not included
+	* no runtime, garbage collector, etc
+* Existing code can be replaced modularly
+* Plays well with others
+	* Integrates with existing JavaScript tooling. Support s ECMAScript modules
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2OTM3NzM2NF19
+eyJoaXN0b3J5IjpbLTMwNjc2MDgwXX0=
 -->
