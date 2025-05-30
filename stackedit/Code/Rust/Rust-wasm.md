@@ -74,11 +74,15 @@ Is webAssembly just for the web?
 
 ### 4.01 Setup
 * Rust toolchain:
-	* r
+	* `rustup` `rustc` and `cargo`
+* `wasm-pack`
+	* [Get  `wasm-pack`  here!](https://rustwasm.github.io/wasm-pack/installer/)
+* `cargo-generate`
+	* https://github.com/ashleygwilliams/cargo-generate)
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0OTE5MTcxMV19
+eyJoaXN0b3J5IjpbLTE2OTg1NzYyNDhdfQ==
 -->
