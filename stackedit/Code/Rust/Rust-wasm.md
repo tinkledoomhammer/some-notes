@@ -78,11 +78,16 @@ Is webAssembly just for the web?
 * `wasm-pack`
 	* [Get  `wasm-pack`  here!](https://rustwasm.github.io/wasm-pack/installer/)
 * `cargo-generate`
-	* https://github.com/ashleygwilliams/cargo-generate)
+	* https://github.com/ashleygwilliams/cargo-generate
+	* `cargo install cargo-generate`
+* `npm`
+	* JS package manager that this tutorial uses to
+		* install and run a JS bundler and dev server
+		* publish the compiled `.
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTg1NzYyNDhdfQ==
+eyJoaXN0b3J5IjpbMTUzMDg0MzA4OF19
 -->
