@@ -83,11 +83,12 @@ Is webAssembly just for the web?
 * `npm`
 	* JS package manager that this tutorial uses to
 		* install and run a JS bundler and dev server
-		* publish the compiled `.
+		* publish the compiled `.wasm` to `npm` at the end of the tutorual
+	* [Follow these instructions to install  `npm`](https://www.npmjs.com/get-npm)
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMDg0MzA4OF19
+eyJoaXN0b3J5IjpbLTE3MjIyNjQyMjRdfQ==
 -->
