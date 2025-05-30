@@ -1,5 +1,6 @@
 
 # *Rust and WebAssembly*
+## Conway's Game of Life tutorial
 https://rustwasm.github.io/docs/book/
 
 ## 1 Frontmatter
@@ -56,12 +57,18 @@ https://rustwasm.github.io/docs/book/
 
 Linear Memroy
 : wasm has a very simple [memory model](https://webassembly.github.io/spec/core/syntax/modules.html#syntax-mem)
-: a wasm module has access to a single "linear memory" that can be
+: a wasm module has access to a single "linear memory" that can be grown by multiples of 64K, but cannot shrink
+
+Is webAssembly just for the web?
+: for now, yes but it could be a general portable application format
+
+## 4 Tutorial
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjM4NjM5MjhdfQ==
+eyJoaXN0b3J5IjpbLTE2MDc3ODMxMzRdfQ==
 -->
