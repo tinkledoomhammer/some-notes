@@ -85,11 +85,17 @@ Is webAssembly just for the web?
 		* install and run a JS bundler and dev server
 		* publish the compiled `.wasm` to `npm` at the end of the tutorual
 	* [Follow these instructions to install  `npm`](https://www.npmjs.com/get-npm)
-	* 
+		* It doesn't actually have installation instructions
+		* so I installed node
+	* to update npm `npm install npm@latest -g`
+*
+
+### 4.02 "Hello, World"
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NTg3Nzg4OCwtMTcyMjI2NDIyNF19
+eyJoaXN0b3J5IjpbMTIyNDE3ODcyNCwtMTcyMjI2NDIyNF19
 -->
