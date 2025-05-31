@@ -217,11 +217,13 @@ wasm-game-of-life/www/
 		}
 	}
 	```
+* Edit `www/index.js` to `import * as wasm from "wasm-game-of-life";` 
+	* instead of `...from "hello-wasm-package";`
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5OTExNDkxOSwxMTQ4NzU4MTAzLDY4MD
-g1MjA4NSwtMTUwMTA2OTQwMyw2MDEyMDM1ODksMTIyNDE3ODcy
-NCwtMTcyMjI2NDIyNF19
+eyJoaXN0b3J5IjpbLTQwNTA5Nzg3LDExNDg3NTgxMDMsNjgwOD
+UyMDg1LC0xNTAxMDY5NDAzLDYwMTIwMzU4OSwxMjI0MTc4NzI0
+LC0xNzIyMjY0MjI0XX0=
 -->
