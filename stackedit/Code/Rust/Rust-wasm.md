@@ -194,19 +194,20 @@ wasm-game-of-life/www/
 	* the main entry point for the page's JS.
 	* imports `hello-wasm-pack` npm package which contains
 		* `wasm-pack-template`'s comipled webassembly and JS glue
-		* then calls `hell-wasm-pack` 's greet function
+		* then calls `hello-wasm-pack` 's greet function
 		
 `npm install` within `www/`
 : to install all the dependencies 
 : like the dev serverr and the `webpack` JS bundler
 : alternatives include Parcel and Rollup
 : the bundler isn't strictly required
+* it seems that 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjU1NDQwODksNjgwODUyMDg1LC0xNT
-AxMDY5NDAzLDYwMTIwMzU4OSwxMjI0MTc4NzI0LC0xNzIyMjY0
-MjI0XX0=
+eyJoaXN0b3J5IjpbMTE0ODc1ODEwMyw2ODA4NTIwODUsLTE1MD
+EwNjk0MDMsNjAxMjAzNTg5LDEyMjQxNzg3MjQsLTE3MjIyNjQy
+MjRdfQ==
 -->
