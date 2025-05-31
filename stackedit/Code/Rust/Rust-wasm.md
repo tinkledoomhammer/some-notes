@@ -77,6 +77,8 @@ Is webAssembly just for the web?
 	* `rustup` `rustc` and `cargo`
 * `wasm-pack`
 	* [Get  `wasm-pack`  here!](https://rustwasm.github.io/wasm-pack/installer/)
+	* or just `cargo install wasm-pack` to build from source
+	* or `npm install wasm-pack` to install the binary
 * `cargo-generate`
 	* https://github.com/ashleygwilliams/cargo-generate
 	* `cargo install cargo-generate`
@@ -97,5 +99,6 @@ Is webAssembly just for the web?
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNDE3ODcyNCwtMTcyMjI2NDIyNF19
+eyJoaXN0b3J5IjpbNjAxMjAzNTg5LDEyMjQxNzg3MjQsLTE3Mj
+IyNjQyMjRdfQ==
 -->
