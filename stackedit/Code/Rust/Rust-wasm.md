@@ -201,13 +201,15 @@ wasm-game-of-life/www/
 : like the dev server and the `webpack` JS bundler
 : alternatives include Parcel and Rollup
 : the bundler isn't strictly required
-* it seems that `wasm-app` is quite ol
-
+* it seems that `wasm-app` is quite old and links to a bunch of deprecated packages
+#### Using our local `wasm-game-of-life` package in `www`
+* instead of the `hello-wasm-pack` from npm
+* editing 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNjkwOTUzNSwxMTQ4NzU4MTAzLDY4MD
-g1MjA4NSwtMTUwMTA2OTQwMyw2MDEyMDM1ODksMTIyNDE3ODcy
-NCwtMTcyMjI2NDIyNF19
+eyJoaXN0b3J5IjpbNzUxMzI3MDEzLDExNDg3NTgxMDMsNjgwOD
+UyMDg1LC0xNTAxMDY5NDAzLDYwMTIwMzU4OSwxMjI0MTc4NzI0
+LC0xNzIyMjY0MjI0XX0=
 -->
