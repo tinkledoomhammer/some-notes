@@ -198,12 +198,15 @@ wasm-game-of-life/www/
 		
 `npm install` within `www/`
 : to install all the dependencies 
-: like the dev serverr and the `webp
+: like the dev serverr and the `webpack` JS bundler
+: alternatives include Parcel and Rollup
+: the bundler isn't strictly required
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTM0NzI4NjgsNjgwODUyMDg1LC0xNT
+eyJoaXN0b3J5IjpbLTE0MjU1NDQwODksNjgwODUyMDg1LC0xNT
 AxMDY5NDAzLDYwMTIwMzU4OSwxMjI0MTc4NzI0LC0xNzIyMjY0
 MjI0XX0=
 -->
