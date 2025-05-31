@@ -138,11 +138,15 @@ pub fn greet(){
 `wasm-game-of-life/src/utils.rs`
 : provides common utilities. For now it just sets the error panic hook if that feature is enabled
 
-### Build the project
+#### Build the project
+
+`wasm-pack build`
+: Compiles the `.wasm` via `cargo build` and 
+: uses `wasm-bindgen` to generate the JSS api 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjAzMjg4MjU2LDYwMTIwMzU4OSwxMjI0MT
+eyJoaXN0b3J5IjpbMTk3MDEzMjAwLDYwMTIwMzU4OSwxMjI0MT
 c4NzI0LC0xNzIyMjY0MjI0XX0=
 -->
