@@ -220,10 +220,11 @@ wasm-game-of-life/www/
 * Edit `www/index.js` to `import * as wasm from "wasm-game-of-life";` 
 	* instead of `...from "hello-wasm-package";`
 
+* found a typo. apparently mmy `wasm_game...` are all `was_game...`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMDU4MjcwNCwtNDA1MDk3ODcsMTE0OD
-c1ODEwMyw2ODA4NTIwODUsLTE1MDEwNjk0MDMsNjAxMjAzNTg5
-LDEyMjQxNzg3MjQsLTE3MjIyNjQyMjRdfQ==
+eyJoaXN0b3J5IjpbOTYwOTgyNDQsLTQwNTA5Nzg3LDExNDg3NT
+gxMDMsNjgwODUyMDg1LC0xNTAxMDY5NDAzLDYwMTIwMzU4OSwx
+MjI0MTc4NzI0LC0xNzIyMjY0MjI0XX0=
 -->
