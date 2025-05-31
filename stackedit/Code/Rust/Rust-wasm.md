@@ -142,11 +142,22 @@ pub fn greet(){
 
 `wasm-pack build`
 : Compiles the `.wasm` via `cargo build` and 
-: uses `wasm-bindgen` to generate the JSS api 
+: uses `wasm-bindgen` to generate the JS api
+
+* new folder `pkg/`
+pkg/
+├── package.json
+├── README.md
+├── wasm_game_of_life_bg.wasm
+├── wasm_game_of_life.d.ts
+└── wasm_game_of_life.js
+* `README.md` is copied from the project root
+* `pkg/wasm_game_of_life_bg.wasm`
+	* 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3MDEzMjAwLDYwMTIwMzU4OSwxMjI0MT
-c4NzI0LC0xNzIyMjY0MjI0XX0=
+eyJoaXN0b3J5IjpbLTE1MTY3NTQ0NzgsNjAxMjAzNTg5LDEyMj
+QxNzg3MjQsLTE3MjIyNjQyMjRdfQ==
 -->
