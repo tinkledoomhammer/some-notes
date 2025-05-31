@@ -98,12 +98,20 @@ Is webAssembly just for the web?
 * when prompted for a project name, use `wasm-game-of-life`
 
 `cd wasm-game-of-life`  and then `ls`
+wasm-game-of-life/
+├── Cargo.toml
+├── LICENSE_APACHE
+├── LICENSE_MIT
+├── README.md
+└── src
+    ├── lib.rs
+    └── utils.rs
 
-
+`wasm-game-of-life/Cargo.toml
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMzc3Nzc4Niw2MDEyMDM1ODksMTIyND
+eyJoaXN0b3J5IjpbMTM5MDU4NDAwNyw2MDEyMDM1ODksMTIyND
 E3ODcyNCwtMTcyMjI2NDIyNF19
 -->
