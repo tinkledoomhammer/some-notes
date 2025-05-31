@@ -254,12 +254,48 @@ cd webpack-demo
 npm init -y
 npm install webpack webpack-cli --save-dev
 ```
-c
+create `index.html` and `index.js`
+src/index.js
+```javascript
+function component() {
+  const element = document.createElement('div');
+
+  // Lodash, currently included via a script, is required for this line to work
+  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+
+  return element;
+}
+
+document.body.appendChild(component());
+```
+
+d
+
+Modify package.json
+```diff
+ {
+   "name": "webpack-demo",
+   "version": "1.0.0",
+   "description": "",
+-  "main": "index.js",
++  "private": true,
+   "scripts": {
+     "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "MIT",
+   "devDependencies": {
+     "webpack": "^5.38.1",
+     "webpack-cli": "^4.7.2"
+   }
+ }
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MzAzMDE5MCwtMTA0MTcwMzc0OSwtNj
-czMzA3NDE1LDk2MDk4MjQ0LC00MDUwOTc4NywxMTQ4NzU4MTAz
-LDY4MDg1MjA4NSwtMTUwMTA2OTQwMyw2MDEyMDM1ODksMTIyND
-E3ODcyNCwtMTcyMjI2NDIyNF19
+eyJoaXN0b3J5IjpbNjI2MjMyMjYzLC0xMDQxNzAzNzQ5LC02Nz
+MzMDc0MTUsOTYwOTgyNDQsLTQwNTA5Nzg3LDExNDg3NTgxMDMs
+NjgwODUyMDg1LC0xNTAxMDY5NDAzLDYwMTIwMzU4OSwxMjI0MT
+c4NzI0LC0xNzIyMjY0MjI0XX0=
 -->
