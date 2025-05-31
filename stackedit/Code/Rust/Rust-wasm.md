@@ -241,10 +241,25 @@ w-gol/www/
 
 * found a typo. apparently mmy `wasm_game...` are all `was_game...`
 
+
+
+
+# Webpack getting started guide
+https://webpack.js.org/guides/getting-started/
+
+## Basic Setup
+```bash
+mkdir webpack-demo
+cd webpack-demo
+npm init -y
+npm install webpack webpack-cli --save-dev
+```
+c
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDE3MDM3NDksLTY3MzMwNzQxNSw5Nj
-A5ODI0NCwtNDA1MDk3ODcsMTE0ODc1ODEwMyw2ODA4NTIwODUs
-LTE1MDEwNjk0MDMsNjAxMjAzNTg5LDEyMjQxNzg3MjQsLTE3Mj
-IyNjQyMjRdfQ==
+eyJoaXN0b3J5IjpbMTM5MzAzMDE5MCwtMTA0MTcwMzc0OSwtNj
+czMzA3NDE1LDk2MDk4MjQ0LC00MDUwOTc4NywxMTQ4NzU4MTAz
+LDY4MDg1MjA4NSwtMTUwMTA2OTQwMyw2MDEyMDM1ODksMTIyND
+E3ODcyNCwtMTcyMjI2NDIyNF19
 -->
