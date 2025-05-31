@@ -156,11 +156,12 @@ pkg/
 	* the compiled rust code in `wasm`
 * `pkg/wasm_game_of_life.js`
 	* generated bindings that will import and export as needed
-* 
+	* mostly imports from other files... My dir has several more files than the example
+	* 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDEwNjk0MDMsNjAxMjAzNTg5LDEyMj
-QxNzg3MjQsLTE3MjIyNjQyMjRdfQ==
+eyJoaXN0b3J5IjpbMTM2MzA1MDQ4MywtMTUwMTA2OTQwMyw2MD
+EyMDM1ODksMTIyNDE3ODcyNCwtMTcyMjI2NDIyNF19
 -->
