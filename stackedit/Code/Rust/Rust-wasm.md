@@ -122,12 +122,23 @@ use wasm_bindgen::prelude::*;
 //When the 'wee_alloc' feature is enabled,
 // use 'wee_alloc' as the global allocator
 #[cfg(feature = "wee_alloc")]
-#[global_a
+#[global_allocator]
+static ALLOC: wee_alloc::WeeAllocwee_alloc::weeAlloc::INIT;
+
+#[wasm_bindgen]
+extern{
+	fn alert(s: &str);
+}
+
+#[wasm_bindgen]
+pub fn greet(){
+	alert("Hello, wasm-game-of-life!");
+)
 ```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU1MDIwNjIyLDYwMTIwMzU4OSwxMjI0MT
-c4NzI0LC0xNzIyMjY0MjI0XX0=
+eyJoaXN0b3J5IjpbLTIxOTE0NzEyNSw2MDEyMDM1ODksMTIyND
+E3ODcyNCwtMTcyMjI2NDIyNF19
 -->
