@@ -135,10 +135,14 @@ pub fn greet(){
 	alert("Hello, wasm-game-of-life!");
 )
 ```
+`wasm-game-of-life/src/utils.rs`
+: provides common utilities. For now it just sets the error panic hook if that feature is enabled
+
+### Build the project
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxOTE0NzEyNSw2MDEyMDM1ODksMTIyND
-E3ODcyNCwtMTcyMjI2NDIyNF19
+eyJoaXN0b3J5IjpbNjAzMjg4MjU2LDYwMTIwMzU4OSwxMjI0MT
+c4NzI0LC0xNzIyMjY0MjI0XX0=
 -->
