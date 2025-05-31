@@ -96,11 +96,11 @@ Is webAssembly just for the web?
 * after installation, using `c:\proj\rust\wasm\wasm01\`
 * `cargo-generate --git https://github.com/rustwasm/wasm-pack-template`
 * when prompted for a project name, use `wasm-game-of-life`
-* I later changed the dir to `wasm-gol`
+*I used `w-gol` instead
 
-`cd wasm-gol`  and then `ls`
+`cd w-gol`  and then `ls`
 
-wasm-game-of-life/
+wgol/
 : ├── Cargo.toml
 : ├── LICENSE_APACHE
 : ├── LICENSE_MIT
@@ -243,7 +243,8 @@ wasm-game-of-life/www/
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MzMwNzQxNSw5NjA5ODI0NCwtNDA1MD
-k3ODcsMTE0ODc1ODEwMyw2ODA4NTIwODUsLTE1MDEwNjk0MDMs
-NjAxMjAzNTg5LDEyMjQxNzg3MjQsLTE3MjIyNjQyMjRdfQ==
+eyJoaXN0b3J5IjpbMTc3NjAzODg3MCwtNjczMzA3NDE1LDk2MD
+k4MjQ0LC00MDUwOTc4NywxMTQ4NzU4MTAzLDY4MDg1MjA4NSwt
+MTUwMTA2OTQwMyw2MDEyMDM1ODksMTIyNDE3ODcyNCwtMTcyMj
+I2NDIyNF19
 -->
