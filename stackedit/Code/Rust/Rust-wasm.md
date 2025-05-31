@@ -170,6 +170,23 @@ pkg/
 in `was-game-of-life/`
 `npm init wasm-app www`
 
+
+```json
+module.exports = {  
+  //......  
+  devServer: {  
+    ....        
+  },  
+  watchOptions: {  
+    poll: 1000,   
+    //......  
+  },  
+  ....  
+}
+```
+Using this setting your CTRL + C command will be lightning fast.  
+here is the  [documentation](https://webpack.js.org/configuration/watch/#watchoptionspoll)  if you want to read more about the config
+
 New `www` subdirectory
 * contains the files that will be used by the frontend
 
@@ -224,7 +241,7 @@ wasm-game-of-life/www/
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYwOTgyNDQsLTQwNTA5Nzg3LDExNDg3NT
-gxMDMsNjgwODUyMDg1LC0xNTAxMDY5NDAzLDYwMTIwMzU4OSwx
-MjI0MTc4NzI0LC0xNzIyMjY0MjI0XX0=
+eyJoaXN0b3J5IjpbMTYzNDkwOTMwNSw5NjA5ODI0NCwtNDA1MD
+k3ODcsMTE0ODc1ODEwMyw2ODA4NTIwODUsLTE1MDEwNjk0MDMs
+NjAxMjAzNTg5LDEyMjQxNzg3MjQsLTE3MjIyNjQyMjRdfQ==
 -->
