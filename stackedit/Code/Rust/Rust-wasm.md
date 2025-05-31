@@ -151,23 +151,23 @@ pub fn greet(){
 pkg/
 : ├── package.json
 : ├── README.md
-: ├── w-gol_bg.wasm
-: ├── w-gol.d.ts
-: └── w-gol.js
+: ├── w_gol_bg.wasm
+: ├── w_gol.d.ts
+: └── w_gol.js
 * `README.md` is copied from the project root
-* `pkg/wasm_game_of_life_bg.wasm`
+* `pkg/w_gol.wasm`
 	* the compiled rust code in `wasm`
-* `pkg/wasm_game_of_life.js`
+* `pkg/w_gol.js`
 	* generated bindings that will import and export as needed
 	* mostly imports from other files... My dir has several more files than the example
-* `pkg/wasm_game_of_life.d.ts`
+* `pkg/w_gol.d.ts`
 	* the typescript definitions required to use TS goodness 
 * `pkg/package.json`
 	* used by `npm` and JS bunlers to determine dependencies,
 	* helps to integrate with toolchain integration
 
 #### Putting it into a web page
-in `was-game-of-life/`
+in `w-gol/`
 `npm init wasm-app www`
 
 
@@ -190,7 +190,7 @@ here is the  [documentation](https://webpack.js.org/configuration/watch/#watchop
 New `www` subdirectory
 * contains the files that will be used by the frontend
 
-wasm-game-of-life/www/
+w-gol/www/
 : ├── bootstrap.js
 : ├── index.html
 : ├── index.js
@@ -243,8 +243,8 @@ wasm-game-of-life/www/
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3MDIyMDgsLTY3MzMwNzQxNSw5NjA5OD
-I0NCwtNDA1MDk3ODcsMTE0ODc1ODEwMyw2ODA4NTIwODUsLTE1
-MDEwNjk0MDMsNjAxMjAzNTg5LDEyMjQxNzg3MjQsLTE3MjIyNj
-QyMjRdfQ==
+eyJoaXN0b3J5IjpbLTEwNDE3MDM3NDksLTY3MzMwNzQxNSw5Nj
+A5ODI0NCwtNDA1MDk3ODcsMTE0ODc1ODEwMyw2ODA4NTIwODUs
+LTE1MDEwNjk0MDMsNjAxMjAzNTg5LDEyMjQxNzg3MjQsLTE3Mj
+IyNjQyMjRdfQ==
 -->
