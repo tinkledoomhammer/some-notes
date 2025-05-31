@@ -269,7 +269,20 @@ function component() {
 document.body.appendChild(component());
 ```
 
-d
+dist/index.html
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Getting Started</title>
+    <script src="https://unpkg.com/lodash@4.17.20"></script>
+  </head>
+  <body>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
+```
 
 Modify package.json
 ```diff
@@ -294,7 +307,7 @@ Modify package.json
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI2MjMyMjYzLC0xMDQxNzAzNzQ5LC02Nz
+eyJoaXN0b3J5IjpbNzc5MjE2MDA4LC0xMDQxNzAzNzQ5LC02Nz
 MzMDc0MTUsOTYwOTgyNDQsLTQwNTA5Nzg3LDExNDg3NTgxMDMs
 NjgwODUyMDg1LC0xNTAxMDY5NDAzLDYwMTIwMzU4OSwxMjI0MT
 c4NzI0LC0xNzIyMjY0MjI0XX0=
