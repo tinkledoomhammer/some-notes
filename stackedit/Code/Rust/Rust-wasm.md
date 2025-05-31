@@ -210,13 +210,18 @@ wasm-game-of-life/www/
 	{
 		//...
 		"dependencies": {
-		
+			"wasm-game-of-life": "file:../pkg"
+		},
+		"devDependencies": {
+			//...
+		}
+	}
 	```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMzY3MTc4MiwxMTQ4NzU4MTAzLDY4MD
+eyJoaXN0b3J5IjpbMTA5OTExNDkxOSwxMTQ4NzU4MTAzLDY4MD
 g1MjA4NSwtMTUwMTA2OTQwMyw2MDEyMDM1ODksMTIyNDE3ODcy
 NCwtMTcyMjI2NDIyNF19
 -->
