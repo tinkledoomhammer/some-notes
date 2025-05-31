@@ -192,12 +192,18 @@ wasm-game-of-life/www/
 	* mostly just loads `bootstrap.js`
 * `www/index.js`
 	* the main entry point for the page's JS.
-	* imports `hello-wasm-pack` npm pa
+	* imports `hello-wasm-pack` npm package which contains
+		* `wasm-pack-template`'s comipled webassembly and JS glue
+		* then calls `hell-wasm-pack` 's greet function
+		
+`npm install` within `www/`
+: to install all the dependencies 
+: like the dev serverr and the `webp
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNDEyNDc3Nyw2ODA4NTIwODUsLTE1MD
-EwNjk0MDMsNjAxMjAzNTg5LDEyMjQxNzg3MjQsLTE3MjIyNjQy
-MjRdfQ==
+eyJoaXN0b3J5IjpbLTEzOTM0NzI4NjgsNjgwODUyMDg1LC0xNT
+AxMDY5NDAzLDYwMTIwMzU4OSwxMjI0MTc4NzI0LC0xNzIyMjY0
+MjI0XX0=
 -->
