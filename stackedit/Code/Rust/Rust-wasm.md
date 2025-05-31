@@ -188,7 +188,7 @@ wasm-game-of-life/www/
 	* configures webpack and its local dev server. 
 	* preconfigured and shouldn't need to be tweaked
 * `www/index.html`
-	* the root HTMML file for the webpage
+	* the root HTML file for the webpage
 	* mostly just loads `bootstrap.js`
 * `www/index.js`
 	* the main entry point for the page's JS.
@@ -198,16 +198,16 @@ wasm-game-of-life/www/
 		
 `npm install` within `www/`
 : to install all the dependencies 
-: like the dev serverr and the `webpack` JS bundler
+: like the dev server and the `webpack` JS bundler
 : alternatives include Parcel and Rollup
 : the bundler isn't strictly required
-* it seems that 
+* it seems that `wasm-app` is quite ol
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0ODc1ODEwMyw2ODA4NTIwODUsLTE1MD
-EwNjk0MDMsNjAxMjAzNTg5LDEyMjQxNzg3MjQsLTE3MjIyNjQy
-MjRdfQ==
+eyJoaXN0b3J5IjpbLTYwNjkwOTUzNSwxMTQ4NzU4MTAzLDY4MD
+g1MjA4NSwtMTUwMTA2OTQwMyw2MDEyMDM1ODksMTIyNDE3ODcy
+NCwtMTcyMjI2NDIyNF19
 -->
