@@ -151,9 +151,9 @@ pub fn greet(){
 pkg/
 : ├── package.json
 : ├── README.md
-: ├── wasm_game_of_life_bg.wasm
-: ├── wasm_game_of_life.d.ts
-: └── wasm_game_of_life.js
+: ├── w-gol_bg.wasm
+: ├── w-gol.d.ts
+: └── w-gol.js
 * `README.md` is copied from the project root
 * `pkg/wasm_game_of_life_bg.wasm`
 	* the compiled rust code in `wasm`
@@ -243,8 +243,8 @@ wasm-game-of-life/www/
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTA5MDU1MDAsLTY3MzMwNzQxNSw5Nj
-A5ODI0NCwtNDA1MDk3ODcsMTE0ODc1ODEwMyw2ODA4NTIwODUs
-LTE1MDEwNjk0MDMsNjAxMjAzNTg5LDEyMjQxNzg3MjQsLTE3Mj
-IyNjQyMjRdfQ==
+eyJoaXN0b3J5IjpbLTc3MDIyMDgsLTY3MzMwNzQxNSw5NjA5OD
+I0NCwtNDA1MDk3ODcsMTE0ODc1ODEwMyw2ODA4NTIwODUsLTE1
+MDEwNjk0MDMsNjAxMjAzNTg5LDEyMjQxNzg3MjQsLTE3MjIyNj
+QyMjRdfQ==
 -->
