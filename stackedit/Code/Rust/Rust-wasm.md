@@ -159,11 +159,16 @@ pkg/
 	* mostly imports from other files... My dir has several more files than the example
 * `pkg/wasm_game_of_life.d.ts`
 	* the typescript definitions required to use TS goodness 
-* `pkg/wasm=game-o
+* `pkg/package.json`
+	* used by `npm` and JS bunlers to determine dependencies,
+	* helps to integrate with toolchain integration
+
+#### Putting it into a web page
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NzA3NzYyMSwtMTUwMTA2OTQwMyw2MD
+eyJoaXN0b3J5IjpbLTk5NzkyMTkzMCwtMTUwMTA2OTQwMyw2MD
 EyMDM1ODksMTIyNDE3ODcyNCwtMTcyMjI2NDIyNF19
 -->
