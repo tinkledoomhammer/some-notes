@@ -107,11 +107,16 @@ wasm-game-of-life/
     ├── lib.rs
     └── utils.rs
 
-`wasm-game-of-life/Cargo.toml
+`wasm-game-of-life/Cargo.toml`
+: preconfigured with a `wasm-bindgen` dependency and a few optional dependencies
+: uses the correct crate-type: `crate-type = ["cdylib", "rlib"]`
+
+`wasm-game-of-life/src/lib.rs`
+: exports a `greet` rust funnction, an
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MDU4NDAwNyw2MDEyMDM1ODksMTIyND
+eyJoaXN0b3J5IjpbMTQ5ODEzNzk4Nyw2MDEyMDM1ODksMTIyND
 E3ODcyNCwtMTcyMjI2NDIyNF19
 -->
