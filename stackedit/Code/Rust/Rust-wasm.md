@@ -93,12 +93,17 @@ Is webAssembly just for the web?
 *
 
 ### 4.02 "Hello, World"
+* after installation, using `c:\proj\rust\wasm\wasm01\`
+* `cargo-generate --git https://github.com/rustwasm/wasm-pack-template`
+* when prompted for a project name, use `wasm-game-of-life`
+
+`cd wasm-game-of-life`  and then `ls`
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjAxMjAzNTg5LDEyMjQxNzg3MjQsLTE3Mj
-IyNjQyMjRdfQ==
+eyJoaXN0b3J5IjpbMTIwMzc3Nzc4Niw2MDEyMDM1ODksMTIyND
+E3ODcyNCwtMTcyMjI2NDIyNF19
 -->
