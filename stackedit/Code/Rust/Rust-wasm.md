@@ -205,7 +205,7 @@ wasm-game-of-life/www/
 	* configures webpack and its local dev server. 
 	* preconfigured and shouldn't need to be tweaked
 	* See the above snippet for graceful exiting
-	* Also 
+	* Also changes are required in newer versions of webpack to use wasm at all
 * `www/index.html`
 	* the root HTML file for the webpage
 	* mostly just loads `bootstrap.js`
@@ -243,7 +243,7 @@ wasm-game-of-life/www/
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MzkxNzUxMiw5NjA5ODI0NCwtNDA1MD
+eyJoaXN0b3J5IjpbLTY3MzMwNzQxNSw5NjA5ODI0NCwtNDA1MD
 k3ODcsMTE0ODc1ODEwMyw2ODA4NTIwODUsLTE1MDEwNjk0MDMs
 NjAxMjAzNTg5LDEyMjQxNzg3MjQsLTE3MjIyNjQyMjRdfQ==
 -->
