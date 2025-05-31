@@ -153,11 +153,14 @@ pkg/
 └── wasm_game_of_life.js
 * `README.md` is copied from the project root
 * `pkg/wasm_game_of_life_bg.wasm`
-	* 
+	* the compiled rust code in `wasm`
+* `pkg/wasm_game_of_life.js`
+	* generated bindings that will import and export as needed
+* 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTY3NTQ0NzgsNjAxMjAzNTg5LDEyMj
+eyJoaXN0b3J5IjpbLTE1MDEwNjk0MDMsNjAxMjAzNTg5LDEyMj
 QxNzg3MjQsLTE3MjIyNjQyMjRdfQ==
 -->
