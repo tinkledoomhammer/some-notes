@@ -157,11 +157,13 @@ pkg/
 * `pkg/wasm_game_of_life.js`
 	* generated bindings that will import and export as needed
 	* mostly imports from other files... My dir has several more files than the example
-	* 
+* `pkg/wasm_game_of_life.d.ts`
+	* the typescript definitions required to use TS goodness 
+* `pkg/wasm=game-o
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MzA1MDQ4MywtMTUwMTA2OTQwMyw2MD
+eyJoaXN0b3J5IjpbLTY4NzA3NzYyMSwtMTUwMTA2OTQwMyw2MD
 EyMDM1ODksMTIyNDE3ODcyNCwtMTcyMjI2NDIyNF19
 -->
