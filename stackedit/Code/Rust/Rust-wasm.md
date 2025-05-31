@@ -109,11 +109,11 @@ wgol/
 :    ├── lib.rs
 :    └── utils.rs
 
-`wasm-game-of-life/Cargo.toml`
+`w-gol/Cargo.toml`
 : preconfigured with a `wasm-bindgen` dependency and a few optional dependencies
 : uses the correct crate-type: `crate-type = ["cdylib", "rlib"]`
 
-`wasm-game-of-life/src/lib.rs`
+`w-gol/src/lib.rs`
 : exports a `greet` rust funnction, and imports the `window.alert` JS function
 : uses `wasm-bindgen` to interface with JS
 ```rust
@@ -137,7 +137,7 @@ pub fn greet(){
 	alert("Hello, wasm-game-of-life!");
 )
 ```
-`wasm-game-of-life/src/utils.rs`
+`w-gol/src/utils.rs`
 : provides common utilities. For now it just sets the error panic hook if that feature is enabled
 
 #### Build the project
@@ -243,8 +243,8 @@ wasm-game-of-life/www/
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3NjAzODg3MCwtNjczMzA3NDE1LDk2MD
-k4MjQ0LC00MDUwOTc4NywxMTQ4NzU4MTAzLDY4MDg1MjA4NSwt
-MTUwMTA2OTQwMyw2MDEyMDM1ODksMTIyNDE3ODcyNCwtMTcyMj
-I2NDIyNF19
+eyJoaXN0b3J5IjpbLTIwOTA5MDU1MDAsLTY3MzMwNzQxNSw5Nj
+A5ODI0NCwtNDA1MDk3ODcsMTE0ODc1ODEwMyw2ODA4NTIwODUs
+LTE1MDEwNjk0MDMsNjAxMjAzNTg5LDEyMjQxNzg3MjQsLTE3Mj
+IyNjQyMjRdfQ==
 -->
