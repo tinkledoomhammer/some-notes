@@ -112,11 +112,22 @@ wasm-game-of-life/
 : uses the correct crate-type: `crate-type = ["cdylib", "rlib"]`
 
 `wasm-game-of-life/src/lib.rs`
-: exports a `greet` rust funnction, an
+: exports a `greet` rust funnction, and imports the `window.alert` JS function
+: uses `wasm-bindgen` to interface with JS
+```rust
+mod utils;
+
+use wasm_bindgen::prelude::*;
+
+//When the 'wee_alloc' feature is enabled,
+// use 'wee_alloc' as the global allocator
+#[cfg(feature = "wee_alloc")]
+#[global_a
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5ODEzNzk4Nyw2MDEyMDM1ODksMTIyND
-E3ODcyNCwtMTcyMjI2NDIyNF19
+eyJoaXN0b3J5IjpbNzU1MDIwNjIyLDYwMTIwMzU4OSwxMjI0MT
+c4NzI0LC0xNzIyMjY0MjI0XX0=
 -->
