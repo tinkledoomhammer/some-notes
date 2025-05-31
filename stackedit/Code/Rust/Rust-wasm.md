@@ -171,7 +171,7 @@ in `was-game-of-life/`
 `npm init wasm-app www`
 
 New `www` subdirectory
-* contains the files that will be sent to the frontend
+* contains the files that will be used by the frontend
 
 wasm-game-of-life/www/
 : ├── bootstrap.js
@@ -183,11 +183,16 @@ wasm-game-of-life/www/
 : ├── README.md
 : └── webpack.config.js
 
-this `package.json` is preconfigured by the `wasm-app` template
+* this `package.json` is preconfigured by the `wasm-app` template
+* `www/webpack.config.js`
+	* configures webpack and its local dev server. 
+	* preconfigured and shouldn't need to be tweaked
+	* 
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MzY5MTAwMCw2ODA4NTIwODUsLTE1MD
+eyJoaXN0b3J5IjpbMjEzNDMyNTMzOCw2ODA4NTIwODUsLTE1MD
 EwNjk0MDMsNjAxMjAzNTg5LDEyMjQxNzg3MjQsLTE3MjIyNjQy
 MjRdfQ==
 -->
