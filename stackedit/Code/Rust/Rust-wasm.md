@@ -169,7 +169,9 @@ pkg/
 #### Putting it into a web page
 in `was-game-of-life/`
 `npm init wasm-app www`
-New `www` subdirectory;
+
+New `www` subdirectory
+* contains the files that will be sent to the frontend
 
 wasm-game-of-life/www/
 : ├── bootstrap.js
@@ -181,10 +183,11 @@ wasm-game-of-life/www/
 : ├── README.md
 : └── webpack.config.js
 
-
+this `package.json` is preconfigured by the `wasm-app` template
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgwODUyMDg1LC0xNTAxMDY5NDAzLDYwMT
-IwMzU4OSwxMjI0MTc4NzI0LC0xNzIyMjY0MjI0XX0=
+eyJoaXN0b3J5IjpbLTI1MzY5MTAwMCw2ODA4NTIwODUsLTE1MD
+EwNjk0MDMsNjAxMjAzNTg5LDEyMjQxNzg3MjQsLTE3MjIyNjQy
+MjRdfQ==
 -->
