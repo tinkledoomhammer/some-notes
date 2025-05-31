@@ -187,12 +187,17 @@ wasm-game-of-life/www/
 * `www/webpack.config.js`
 	* configures webpack and its local dev server. 
 	* preconfigured and shouldn't need to be tweaked
-	* 
+* `www/index.html`
+	* the root HTMML file for the webpage
+	* mostly just loads `bootstrap.js`
+* `www/index.js`
+	* the main entry point for the page's JS.
+	* imports `hello-wasm-pack` npm pa
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzNDMyNTMzOCw2ODA4NTIwODUsLTE1MD
+eyJoaXN0b3J5IjpbLTMzNDEyNDc3Nyw2ODA4NTIwODUsLTE1MD
 EwNjk0MDMsNjAxMjAzNTg5LDEyMjQxNzg3MjQsLTE3MjIyNjQy
 MjRdfQ==
 -->
