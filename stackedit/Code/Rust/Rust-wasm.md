@@ -204,12 +204,19 @@ wasm-game-of-life/www/
 * it seems that `wasm-app` is quite old and links to a bunch of deprecated packages
 #### Using our local `wasm-game-of-life` package in `www`
 * instead of the `hello-wasm-pack` from npm
-* editing 
+* editing `www/package.json` in the `devDependencies` section
+	* add the `"dependencies"` field and include `"wasm-game-of-lafe" : "file: ../pkg"
+	```json
+	{
+		//...
+		"dependencies": {
+		
+	```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUxMzI3MDEzLDExNDg3NTgxMDMsNjgwOD
-UyMDg1LC0xNTAxMDY5NDAzLDYwMTIwMzU4OSwxMjI0MTc4NzI0
-LC0xNzIyMjY0MjI0XX0=
+eyJoaXN0b3J5IjpbMjEzMzY3MTc4MiwxMTQ4NzU4MTAzLDY4MD
+g1MjA4NSwtMTUwMTA2OTQwMyw2MDEyMDM1ODksMTIyNDE3ODcy
+NCwtMTcyMjI2NDIyNF19
 -->
