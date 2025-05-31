@@ -96,16 +96,18 @@ Is webAssembly just for the web?
 * after installation, using `c:\proj\rust\wasm\wasm01\`
 * `cargo-generate --git https://github.com/rustwasm/wasm-pack-template`
 * when prompted for a project name, use `wasm-game-of-life`
+* I later changed the dir to `wasm-gol`
 
-`cd wasm-game-of-life`  and then `ls`
+`cd wasm-gol`  and then `ls`
+
 wasm-game-of-life/
-├── Cargo.toml
-├── LICENSE_APACHE
-├── LICENSE_MIT
-├── README.md
-└── src
-    ├── lib.rs
-    └── utils.rs
+: ├── Cargo.toml
+: ├── LICENSE_APACHE
+: ├── LICENSE_MIT
+: ├── README.md
+: └── src
+:    ├── lib.rs
+:    └── utils.rs
 
 `wasm-game-of-life/Cargo.toml`
 : preconfigured with a `wasm-bindgen` dependency and a few optional dependencies
@@ -145,11 +147,12 @@ pub fn greet(){
 : uses `wasm-bindgen` to generate the JS api
 
 * new folder `pkg/`
+
 pkg/
-├── package.json
-├── README.md
-├── wasm_game_of_life_bg.wasm
-├── wasm_game_of_life.d.ts
+: ├── package.json
+: ├── README.md
+: ├── wasm_game_of_life_bg.wasm
+: ├── wasm_game_of_life.d.ts
 └── wasm_game_of_life.js
 * `README.md` is copied from the project root
 * `pkg/wasm_game_of_life_bg.wasm`
@@ -182,6 +185,6 @@ wasm-game-of-life/www/
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NTc0MTExMywtMTUwMTA2OTQwMyw2MD
+eyJoaXN0b3J5IjpbMTMzMTU1NDQ1OSwtMTUwMTA2OTQwMyw2MD
 EyMDM1ODksMTIyNDE3ODcyNCwtMTcyMjI2NDIyNF19
 -->
