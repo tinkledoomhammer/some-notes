@@ -164,11 +164,24 @@ pkg/
 	* helps to integrate with toolchain integration
 
 #### Putting it into a web page
+in `was-game-of-life/`
+`npm init wasm-app www`
+New `www` subdirectory;
+
+wasm-game-of-life/www/
+: ├── bootstrap.js
+: ├── index.html
+: ├── index.js
+: ├── LICENSE-APACHE
+: ├── LICENSE-MIT
+: ├── package.json
+: ├── README.md
+: └── webpack.config.js
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NzkyMTkzMCwtMTUwMTA2OTQwMyw2MD
+eyJoaXN0b3J5IjpbLTQ3NTc0MTExMywtMTUwMTA2OTQwMyw2MD
 EyMDM1ODksMTIyNDE3ODcyNCwtMTcyMjI2NDIyNF19
 -->
