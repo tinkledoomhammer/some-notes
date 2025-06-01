@@ -51,9 +51,9 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 	* `import { name, draw, reportArea } from "./modules/square.js";`
 		> **Note:** In some module systems, you can use a module specifier like `modules/square` that isn't a relative or absolute path, and that doesn't have a file extension. This kind of specifier can be used in a browser environment if you first define an [import map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules#importing_modules_using_import_maps).
 
-
+## Import maps
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM5OTc1MDIxLC0xODQ0MjkwODc0XX0=
+eyJoaXN0b3J5IjpbMTg0NDU0OTQwMywtMTg0NDI5MDg3NF19
 -->
