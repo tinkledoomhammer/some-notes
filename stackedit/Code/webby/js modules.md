@@ -83,8 +83,14 @@ import { name as squareNameThree } from "https://example.com/shapes/square.js";
 ```
 * if multiple keys can match the import's `from` specifier, the most specific one will be used
 * if **both** the *key* and *value* have a trailing `/` then it can be sued as a **path-prefix**
+
+## To be continued
+Most of the rest of the article looks useful. should finish it later
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5NzI5NTg0NSwtMTYzNTU2OTkwNiwtMT
-g0NDI5MDg3NF19
+eyJoaXN0b3J5IjpbLTQ5ODA5NDMwNiwtODk3Mjk1ODQ1LC0xNj
+M1NTY5OTA2LC0xODQ0MjkwODc0XX0=
 -->
