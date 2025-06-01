@@ -20,11 +20,11 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 	* some servers might not recognize the correct `Content-Type` for `.mjs` 
 * html can use `<script type="module">` to mark that the script file is a module
 ## Example
-index.html
-main.js
-modules/
-┝    canvas.js
-  ┝  square.js
+┝index.html
+┝main.js
+┝modules/
+	┝─canvas.js
+	┝─square.js
 
 ## Exporting
 * can export `var` `let` `const` `function` and classes
@@ -43,6 +43,6 @@ modules/
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mjg2NjU5MTksLTE4NDQyOTA4NzRdfQ
+eyJoaXN0b3J5IjpbLTE1NzA3NTk4NzgsLTE4NDQyOTA4NzRdfQ
 ==
 -->
