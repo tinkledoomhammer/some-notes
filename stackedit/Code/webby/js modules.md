@@ -56,9 +56,21 @@ import {name as circleName } from "https://example.com/shapes/circle.js";
 import {name as squareName } from "./shapes/square.js"
 ```
 ## Import maps
-
-
+```html
+<script type="importmap">
+  {
+    "imports": {
+      "shapes": "./shapes/square.js",
+      "shapes/square": "./modules/shapes/square.js",
+      "https://example.com/shapes/square.js": "./shapes/square.js",
+      "https://example.com/shapes/": "/shapes/square/",
+      "../shapes/square": "./shapes/square.js"
+    }
+  }
+</script>
+```
+* This causes imports to ma the ke
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzMzIzNzExMiwtMTg0NDI5MDg3NF19
+eyJoaXN0b3J5IjpbMTc5NjMzMzc0NSwtMTg0NDI5MDg3NF19
 -->
