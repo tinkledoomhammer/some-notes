@@ -19,6 +19,13 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 		*  node can be configured to  use a `.js` module
 	* some servers might not recognize the correct `Content-Type` for `.mjs` 
 * html can use `<script type="module">` to mark that the script file is a module
+## Example
+index.html
+main.js
+modules/
+┝    canvas.js
+  ┝  square.js
+
 ## Exporting
 * can export `var` `let` `const` `function` and classes
 * all exports must be top level
@@ -27,6 +34,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 		* `export const name = "square";`
 	* one one line at the end of the file
 		* `export {name, draw, reportArea };
+
 ## Importing
 	* `import { name, draw, reportArea } from "./modules/square.js";`
 		> **Note:** In some module systems, you can use a module specifier like `modules/square` that isn't a relative or absolute path, and that doesn't have a file extension. This kind of specifier can be used in a browser environment if you first define an [import map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules#importing_modules_using_import_maps).
@@ -35,5 +43,6 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NTMxNTEyMSwtMTg0NDI5MDg3NF19
+eyJoaXN0b3J5IjpbLTE3Mjg2NjU5MTksLTE4NDQyOTA4NzRdfQ
+==
 -->
