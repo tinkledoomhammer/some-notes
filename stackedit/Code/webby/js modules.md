@@ -81,10 +81,10 @@ import { name as squareNameTwo } from "shapes/square";
 // Remap a URL to another URL
 import { name as squareNameThree } from "https://example.com/shapes/square.js";
 ```
-* if multiple keys can match the import's `from` specifier, the most specific one wil be used
-
+* if multiple keys can match the import's `from` specifier, the most specific one will be used
+* if **both** the *key* and *value* have a trailing `/` then it can be sued as a **path-prefix**
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzU1Njk5MDYsLTE4NDQyOTA4NzRdfQ
-==
+eyJoaXN0b3J5IjpbLTg5NzI5NTg0NSwtMTYzNTU2OTkwNiwtMT
+g0NDI5MDg3NF19
 -->
