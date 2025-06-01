@@ -48,12 +48,17 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 		* `export {name, draw, reportArea };
 
 ## Importing
-	* `import { name, draw, reportArea } from "./modules/square.js";`
+* `import { name, draw, reportArea } from "./modules/square.js";`
 		> **Note:** In some module systems, you can use a module specifier like `modules/square` that isn't a relative or absolute path, and that doesn't have a file extension. This kind of specifier can be used in a browser environment if you first define an [import map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules#importing_modules_using_import_maps).
-
+* relative URLs are resolved relative to the base URL of the document
+```js
+import {name as circleName } from "https://example.com/shapes/circle.js";
+import {name as squareName } from "./shapes/square.js"
+```
 ## Import maps
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NDU0OTQwMywtMTg0NDI5MDg3NF19
+eyJoaXN0b3J5IjpbMTIzMzIzNzExMiwtMTg0NDI5MDg3NF19
 -->
