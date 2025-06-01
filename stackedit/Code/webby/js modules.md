@@ -69,8 +69,20 @@ import {name as squareName } from "./shapes/square.js"
   }
 </script>
 ```
-* This causes imports to ma the ke
+* This causes imports to map the keys (on the left) with their values (on the right)
+* the `<script>` element must have `type="importmap"`
+* Does not affect how imports are mapped in worker or worklet context
+```
+// Bare module names as module specifiers
+import { name as squareNameOne } from "shapes";
+import { name as squareNameTwo } from "shapes/square";
+
+// Remap a URL to another URL
+import { name as squareNameThree } from "https://example.com/shapes/square.js";
+```
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NjMzMzc0NSwtMTg0NDI5MDg3NF19
+eyJoaXN0b3J5IjpbMTM4NjcxNzU5NCwtMTg0NDI5MDg3NF19
 -->
