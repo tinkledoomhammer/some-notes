@@ -20,12 +20,15 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 	* some servers might not recognize the correct `Content-Type` for `.mjs` 
 * html can use `<script type="module">` to mark that the script file is a module
 ## Example
-* index.html
-* main.js
-* modules/
-	* canvas.js
-	* square.js
-
+### Basic structure
+* `index.html`
+* `main.js`
+* `modules/`
+	* `canvas.js`
+	* `square.js`
+### Contents
+* `canvas.js`
+	* `create()` creates a canvas with a specified `width` and `height` inside a `<div>`
 ## Exporting
 * can export `var` `let` `const` `function` and classes
 * all exports must be top level
@@ -43,5 +46,5 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNTEzNTgxMSwtMTg0NDI5MDg3NF19
+eyJoaXN0b3J5IjpbLTc2MjYwNTk5LC0xODQ0MjkwODc0XX0=
 -->
