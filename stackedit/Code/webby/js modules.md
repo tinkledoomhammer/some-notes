@@ -33,7 +33,11 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 	* returns the list's ID
 * `square.js` 
 	* `name` = "square"
-	* `draw()`
+	* `draw()` draws a square using the specified canvas, size, position, and color.
+		* returns an object reporting the square's size, position, and color
+	* `reportArea()` - writes the sauqre's area to the she specified report list, returns its length
+	* `reportPerimeter()` like above but perimeter
+
 ## Exporting
 * can export `var` `let` `const` `function` and classes
 * all exports must be top level
@@ -51,5 +55,5 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNjk4OTU5NywtMTg0NDI5MDg3NF19
+eyJoaXN0b3J5IjpbODM5OTc1MDIxLC0xODQ0MjkwODc0XX0=
 -->
