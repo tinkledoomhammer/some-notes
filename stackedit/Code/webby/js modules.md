@@ -28,7 +28,12 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 	* `square.js`
 ### Contents
 * `canvas.js`
-	* `create()` creates a canvas with a specified `width` and `height` inside a `<div>`
+	* `create()` creates a canvas with a specified `width` and `height` inside a `<div>` specified by ID which gets appended to the parent element
+	* `createReportList()` creates an unordered list appended inside a specified wrapper element
+	* returns the list's ID
+* `square.js` 
+	* `name` = "square"
+	* `draw()`
 ## Exporting
 * can export `var` `let` `const` `function` and classes
 * all exports must be top level
@@ -46,5 +51,5 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MjYwNTk5LC0xODQ0MjkwODc0XX0=
+eyJoaXN0b3J5IjpbLTQxNjk4OTU5NywtMTg0NDI5MDg3NF19
 -->
