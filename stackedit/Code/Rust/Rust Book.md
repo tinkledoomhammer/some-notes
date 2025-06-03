@@ -354,7 +354,7 @@ let (x,y) = tup;
 * Elements are accessed with square brackets
 	* `a[0]` 
 * Bounds are checked automatically 
-	* Out-of bounds access will cause a panic
+	* Out-of-bounds access will cause a panic
 
 ### 03.03 Functions
 * declared with `fn`
@@ -665,7 +665,7 @@ fn return_a_string() -> &String{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTM3MjczMTUsMTg2NTgyODY1NSwtMT
+eyJoaXN0b3J5IjpbLTE0NjU4MTk1ODQsMTg2NTgyODY1NSwtMT
 E1NTk5ODI1MSwxMTczMjYzMTQwLC01MzgwMTk3MDAsODM2NTU1
 NDk3LC0zOTQxNzM4OTMsLTE0NDM3ODk3MDgsNjM1NDUzMjU5LD
 E1MzM1MzIxNjEsLTI1MDIzMDE4NCwyMjQ3OTY0MDEsMzgyOTU5
