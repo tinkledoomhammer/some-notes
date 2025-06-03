@@ -84,6 +84,7 @@ fn main() {
 * They are a 'simple path' that is either followed by 
 	* an `=` token and a literal expression or
 	* a token tree
+
 Important Takeaways
 1. There are multiple kinds of syntax extensions in Rust
 2. Just seeing something inthe form `$name! $arg` doesn't tell what kind of syntax extension it is
@@ -241,7 +242,7 @@ macro_rules! add{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0OTQ2Mzk0NywtMTQ4MTg3MDg5NSwtMT
-gxMzg4NTEyLDQ5NTI0NzQ4Myw3MzUzOTI3OTMsODkzNzI1MjA3
-LC0xODc1NDI4NDA3LDEyMjEyMDYyNzZdfQ==
+eyJoaXN0b3J5IjpbMTQzNzI2Njk3OSwtNzQ5NDYzOTQ3LC0xND
+gxODcwODk1LC0xODEzODg1MTIsNDk1MjQ3NDgzLDczNTM5Mjc5
+Myw4OTM3MjUyMDcsLTE4NzU0Mjg0MDcsMTIyMTIwNjI3Nl19
 -->
