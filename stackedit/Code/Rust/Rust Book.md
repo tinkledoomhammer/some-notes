@@ -566,6 +566,8 @@ Three things that can go wrong
 2. Mutating aliased data, invalidating expected runtime properties of that data
 3. Concurrently mutating aliased data, resulting in a race
 
+
+
 Pointer Safety Principle
 : Data should never be aliased and mutated at the same time
 * Boxes cannot be aliased -- assignment moves ownership
@@ -665,11 +667,11 @@ fn return_a_string() -> &String{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyOTI0NzQ1OCwtMTQ2NTgxOTU4NCwxOD
-Y1ODI4NjU1LC0xMTU1OTk4MjUxLDExNzMyNjMxNDAsLTUzODAx
-OTcwMCw4MzY1NTU0OTcsLTM5NDE3Mzg5MywtMTQ0Mzc4OTcwOC
-w2MzU0NTMyNTksMTUzMzUzMjE2MSwtMjUwMjMwMTg0LDIyNDc5
-NjQwMSwzODI5NTk3MTIsMTkwNzQ3MTAzNSw2NzE4ODQyMzAsLT
-E5MTgzMjkyNjYsMTU3OTgwMjExNSwyNDQ2NjYwMzMsLTEzNTg2
-Mzg0NjZdfQ==
+eyJoaXN0b3J5IjpbNTgxNTczODk0LDE1MjkyNDc0NTgsLTE0Nj
+U4MTk1ODQsMTg2NTgyODY1NSwtMTE1NTk5ODI1MSwxMTczMjYz
+MTQwLC01MzgwMTk3MDAsODM2NTU1NDk3LC0zOTQxNzM4OTMsLT
+E0NDM3ODk3MDgsNjM1NDUzMjU5LDE1MzM1MzIxNjEsLTI1MDIz
+MDE4NCwyMjQ3OTY0MDEsMzgyOTU5NzEyLDE5MDc0NzEwMzUsNj
+cxODg0MjMwLC0xOTE4MzI5MjY2LDE1Nzk4MDIxMTUsMjQ0NjY2
+MDMzXX0=
 -->
