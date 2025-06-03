@@ -657,7 +657,7 @@ fn return_a_string() -> &String{
 * All variables can read, own, and optionally write their data
 * creating a reference will transfer permissions from the borrowed place to the ref
 * perms are returned at the end of the ref's lifetime
-* data must outlie all references that point to it
+* data must outlive all references that point to it
 
 
 ### 04.03 Fixing Ownership Errors
@@ -665,11 +665,11 @@ fn return_a_string() -> &String{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTMxODEwNjUsLTExNTU5OTgyNTEsMT
-E3MzI2MzE0MCwtNTM4MDE5NzAwLDgzNjU1NTQ5NywtMzk0MTcz
-ODkzLC0xNDQzNzg5NzA4LDYzNTQ1MzI1OSwxNTMzNTMyMTYxLC
-0yNTAyMzAxODQsMjI0Nzk2NDAxLDM4Mjk1OTcxMiwxOTA3NDcx
-MDM1LDY3MTg4NDIzMCwtMTkxODMyOTI2NiwxNTc5ODAyMTE1LD
-I0NDY2NjAzMywtMTM1ODYzODQ2NiwxMDQ4MTI1MjM0LC0xNDEw
-ODQzMjE4XX0=
+eyJoaXN0b3J5IjpbMTg2NTgyODY1NSwtMTE1NTk5ODI1MSwxMT
+czMjYzMTQwLC01MzgwMTk3MDAsODM2NTU1NDk3LC0zOTQxNzM4
+OTMsLTE0NDM3ODk3MDgsNjM1NDUzMjU5LDE1MzM1MzIxNjEsLT
+I1MDIzMDE4NCwyMjQ3OTY0MDEsMzgyOTU5NzEyLDE5MDc0NzEw
+MzUsNjcxODg0MjMwLC0xOTE4MzI5MjY2LDE1Nzk4MDIxMTUsMj
+Q0NjY2MDMzLC0xMzU4NjM4NDY2LDEwNDgxMjUyMzQsLTE0MTA4
+NDMyMThdfQ==
 -->
