@@ -509,7 +509,7 @@ The nearly correct deallocation principle
 Moved heap data principle
 : If a variable `x` moves ownership of heap data to another variable `y`, then `x` cannot be used after the move
 
-### References and Borrowing
+### 04.04 References and Borrowing
 Having to pass/return all objects that are used more than once would suck...
 ```rust
 fn greet(g1: String, g2: String) -> (String,String){
@@ -660,16 +660,16 @@ fn return_a_string() -> &String{
 * data must outlie all references that point to it
 
 
-### Fixing Ownership Errors
+### 04.03 Fixing Ownership Errors
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNzI3MTYwMiwtMTE1NTk5ODI1MSwxMT
-czMjYzMTQwLC01MzgwMTk3MDAsODM2NTU1NDk3LC0zOTQxNzM4
-OTMsLTE0NDM3ODk3MDgsNjM1NDUzMjU5LDE1MzM1MzIxNjEsLT
-I1MDIzMDE4NCwyMjQ3OTY0MDEsMzgyOTU5NzEyLDE5MDc0NzEw
-MzUsNjcxODg0MjMwLC0xOTE4MzI5MjY2LDE1Nzk4MDIxMTUsMj
-Q0NjY2MDMzLC0xMzU4NjM4NDY2LDEwNDgxMjUyMzQsLTE0MTA4
-NDMyMThdfQ==
+eyJoaXN0b3J5IjpbLTE1NTMxODEwNjUsLTExNTU5OTgyNTEsMT
+E3MzI2MzE0MCwtNTM4MDE5NzAwLDgzNjU1NTQ5NywtMzk0MTcz
+ODkzLC0xNDQzNzg5NzA4LDYzNTQ1MzI1OSwxNTMzNTMyMTYxLC
+0yNTAyMzAxODQsMjI0Nzk2NDAxLDM4Mjk1OTcxMiwxOTA3NDcx
+MDM1LDY3MTg4NDIzMCwtMTkxODMyOTI2NiwxNTc5ODAyMTE1LD
+I0NDY2NjAzMywtMTM1ODYzODQ2NiwxMDQ4MTI1MjM0LC0xNDEw
+ODQzMjE4XX0=
 -->
