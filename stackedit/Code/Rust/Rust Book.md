@@ -246,7 +246,7 @@ fn main(){
 
 ## 03 Common Programming Concepts
 https://rust-book.cs.brown.edu/ch03-00-common-programming-concepts.html
-### 03.01Variables and Mutabbility
+### 03.01 Variables and Mutabbility
 * Variables are immutable by default
 * They can be redefined with another `let` but they cannot be simply assigned
 	* assigning to an immutable variable generates a compiler error
@@ -276,7 +276,7 @@ fn main(){
 	println!("x = {x}"); // x = 6
 }
 ```
-### Data Types
+### 03.02 Data Types
 Type annotation
 `let guess: u32 = ...`
 #### Scalar Types
@@ -356,7 +356,7 @@ let (x,y) = tup;
 * Bounds are checked automatically 
 	* Out-of bounds access will cause a panic
 
-### Functions
+### 03.03 Functions
 * declared with `fn`
 * parameter types **must** be declared in the signature
 
@@ -388,7 +388,7 @@ caution: `fn five() ->i32 {5;}` will cause a mismatched type error
 
 Also note that it is `->` and not `=>`
 
-### Comments
+### 03.04 Comments
 ```rust
 // comment to the end of the line
 /* this
@@ -396,7 +396,7 @@ Also note that it is `->` and not `=>`
 	comment
 */
 ```
-### Control flow
+### 03.05 Control flow
 #### `if` (an expression!)
 ```rust
 fn main() {
@@ -458,8 +458,8 @@ let result = loop{
 `for num in (start..end)` // [start , end)
 `for num in (start..=end)` [start , end]
 
-## Ownership
-### Definition of ownership
+## 04 Ownership
+### 04.01 Definition of ownership
 Safety
 : The absence of undefined behavior
 
@@ -665,11 +665,11 @@ fn return_a_string() -> &String{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk2MTA1NDc5LC0xMTU1OTk4MjUxLDExNz
-MyNjMxNDAsLTUzODAxOTcwMCw4MzY1NTU0OTcsLTM5NDE3Mzg5
-MywtMTQ0Mzc4OTcwOCw2MzU0NTMyNTksMTUzMzUzMjE2MSwtMj
-UwMjMwMTg0LDIyNDc5NjQwMSwzODI5NTk3MTIsMTkwNzQ3MTAz
-NSw2NzE4ODQyMzAsLTE5MTgzMjkyNjYsMTU3OTgwMjExNSwyND
-Q2NjYwMzMsLTEzNTg2Mzg0NjYsMTA0ODEyNTIzNCwtMTQxMDg0
-MzIxOF19
+eyJoaXN0b3J5IjpbMjAzNzI3MTYwMiwtMTE1NTk5ODI1MSwxMT
+czMjYzMTQwLC01MzgwMTk3MDAsODM2NTU1NDk3LC0zOTQxNzM4
+OTMsLTE0NDM3ODk3MDgsNjM1NDUzMjU5LDE1MzM1MzIxNjEsLT
+I1MDIzMDE4NCwyMjQ3OTY0MDEsMzgyOTU5NzEyLDE5MDc0NzEw
+MzUsNjcxODg0MjMwLC0xOTE4MzI5MjY2LDE1Nzk4MDIxMTUsMj
+Q0NjY2MDMzLC0xMzU4NjM4NDY2LDEwNDgxMjUyMzQsLTE0MTA4
+NDMyMThdfQ==
 -->
