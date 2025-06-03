@@ -2,7 +2,7 @@
 "The Rust Programming Language"
 https://rust-book.cs.brown.edu/
 
-## Getting Started
+## 01 Getting Started
 Rust is installed and it's versions are managed with `rustup` which is a small download. https://www.rust-lang.org/tools/install Running it in windows uses a cli installer (press 1 for default setup). It will update the command path so that `rust c` `cargo` and `rustup` are all available
 
 Also see
@@ -665,11 +665,11 @@ fn return_a_string() -> &String{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTU5OTgyNTEsMTE3MzI2MzE0MCwtNT
-M4MDE5NzAwLDgzNjU1NTQ5NywtMzk0MTczODkzLC0xNDQzNzg5
-NzA4LDYzNTQ1MzI1OSwxNTMzNTMyMTYxLC0yNTAyMzAxODQsMj
-I0Nzk2NDAxLDM4Mjk1OTcxMiwxOTA3NDcxMDM1LDY3MTg4NDIz
-MCwtMTkxODMyOTI2NiwxNTc5ODAyMTE1LDI0NDY2NjAzMywtMT
-M1ODYzODQ2NiwxMDQ4MTI1MjM0LC0xNDEwODQzMjE4LDYwNjU2
-MjIzMF19
+eyJoaXN0b3J5IjpbLTE1MjIwMjE2NjIsLTExNTU5OTgyNTEsMT
+E3MzI2MzE0MCwtNTM4MDE5NzAwLDgzNjU1NTQ5NywtMzk0MTcz
+ODkzLC0xNDQzNzg5NzA4LDYzNTQ1MzI1OSwxNTMzNTMyMTYxLC
+0yNTAyMzAxODQsMjI0Nzk2NDAxLDM4Mjk1OTcxMiwxOTA3NDcx
+MDM1LDY3MTg4NDIzMCwtMTkxODMyOTI2NiwxNTc5ODAyMTE1LD
+I0NDY2NjAzMywtMTM1ODYzODQ2NiwxMDQ4MTI1MjM0LC0xNDEw
+ODQzMjE4XX0=
 -->
