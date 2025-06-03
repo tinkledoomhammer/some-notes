@@ -609,6 +609,15 @@ Places
 * Array accesses of places
 * fields of places
 * combinations of the above
+```rust
+let x = 0; // x: +R +O
+let mut x_ref = &x; // mutable borrow
+	// x: +R (lost O)
+	// x_ref: +R+W+O
+	// *x_ref +R
+```
+
+
 
 #### The borrow checker finds permission violations
 * creating references requires permissions
@@ -667,11 +676,11 @@ fn return_a_string() -> &String{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgxNTczODk0LDE1MjkyNDc0NTgsLTE0Nj
-U4MTk1ODQsMTg2NTgyODY1NSwtMTE1NTk5ODI1MSwxMTczMjYz
-MTQwLC01MzgwMTk3MDAsODM2NTU1NDk3LC0zOTQxNzM4OTMsLT
-E0NDM3ODk3MDgsNjM1NDUzMjU5LDE1MzM1MzIxNjEsLTI1MDIz
-MDE4NCwyMjQ3OTY0MDEsMzgyOTU5NzEyLDE5MDc0NzEwMzUsNj
-cxODg0MjMwLC0xOTE4MzI5MjY2LDE1Nzk4MDIxMTUsMjQ0NjY2
-MDMzXX0=
+eyJoaXN0b3J5IjpbLTgxMjg0MTc5NSw1ODE1NzM4OTQsMTUyOT
+I0NzQ1OCwtMTQ2NTgxOTU4NCwxODY1ODI4NjU1LC0xMTU1OTk4
+MjUxLDExNzMyNjMxNDAsLTUzODAxOTcwMCw4MzY1NTU0OTcsLT
+M5NDE3Mzg5MywtMTQ0Mzc4OTcwOCw2MzU0NTMyNTksMTUzMzUz
+MjE2MSwtMjUwMjMwMTg0LDIyNDc5NjQwMSwzODI5NTk3MTIsMT
+kwNzQ3MTAzNSw2NzE4ODQyMzAsLTE5MTgzMjkyNjYsMTU3OTgw
+MjExNV19
 -->
