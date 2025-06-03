@@ -244,9 +244,9 @@ fn main(){
 
 ```
 
-## Common Programming Concepts
+## 03 Common Programming Concepts
 https://rust-book.cs.brown.edu/ch03-00-common-programming-concepts.html
-### Variables and Mutabbility
+### 03.01Variables and Mutabbility
 * Variables are immutable by default
 * They can be redefined with another `let` but they cannot be simply assigned
 	* assigning to an immutable variable generates a compiler error
@@ -665,11 +665,11 @@ fn return_a_string() -> &String{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjIwMjE2NjIsLTExNTU5OTgyNTEsMT
-E3MzI2MzE0MCwtNTM4MDE5NzAwLDgzNjU1NTQ5NywtMzk0MTcz
-ODkzLC0xNDQzNzg5NzA4LDYzNTQ1MzI1OSwxNTMzNTMyMTYxLC
-0yNTAyMzAxODQsMjI0Nzk2NDAxLDM4Mjk1OTcxMiwxOTA3NDcx
-MDM1LDY3MTg4NDIzMCwtMTkxODMyOTI2NiwxNTc5ODAyMTE1LD
-I0NDY2NjAzMywtMTM1ODYzODQ2NiwxMDQ4MTI1MjM0LC0xNDEw
-ODQzMjE4XX0=
+eyJoaXN0b3J5IjpbNjk2MTA1NDc5LC0xMTU1OTk4MjUxLDExNz
+MyNjMxNDAsLTUzODAxOTcwMCw4MzY1NTU0OTcsLTM5NDE3Mzg5
+MywtMTQ0Mzc4OTcwOCw2MzU0NTMyNTksMTUzMzUzMjE2MSwtMj
+UwMjMwMTg0LDIyNDc5NjQwMSwzODI5NTk3MTIsMTkwNzQ3MTAz
+NSw2NzE4ODQyMzAsLTE5MTgzMjkyNjYsMTU3OTgwMjExNSwyND
+Q2NjYwMzMsLTEzNTg2Mzg0NjYsMTA0ODEyNTIzNCwtMTQxMDg0
+MzIxOF19
 -->
