@@ -614,8 +614,11 @@ let x = 0; // x: +R +O
 let mut x_ref = &x; // mutable borrow
 	// x: +R (lost O)
 	// x_ref: +R+W+O
-	// *x_ref +R
+	// *x_ref +R only
+// so x_ref can be re-assignedd but not mutated
 ```
+
+
 
 
 
@@ -676,11 +679,11 @@ fn return_a_string() -> &String{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMjg0MTc5NSw1ODE1NzM4OTQsMTUyOT
-I0NzQ1OCwtMTQ2NTgxOTU4NCwxODY1ODI4NjU1LC0xMTU1OTk4
-MjUxLDExNzMyNjMxNDAsLTUzODAxOTcwMCw4MzY1NTU0OTcsLT
-M5NDE3Mzg5MywtMTQ0Mzc4OTcwOCw2MzU0NTMyNTksMTUzMzUz
-MjE2MSwtMjUwMjMwMTg0LDIyNDc5NjQwMSwzODI5NTk3MTIsMT
-kwNzQ3MTAzNSw2NzE4ODQyMzAsLTE5MTgzMjkyNjYsMTU3OTgw
-MjExNV19
+eyJoaXN0b3J5IjpbLTE2MzQ4NzkyNjYsNTgxNTczODk0LDE1Mj
+kyNDc0NTgsLTE0NjU4MTk1ODQsMTg2NTgyODY1NSwtMTE1NTk5
+ODI1MSwxMTczMjYzMTQwLC01MzgwMTk3MDAsODM2NTU1NDk3LC
+0zOTQxNzM4OTMsLTE0NDM3ODk3MDgsNjM1NDUzMjU5LDE1MzM1
+MzIxNjEsLTI1MDIzMDE4NCwyMjQ3OTY0MDEsMzgyOTU5NzEyLD
+E5MDc0NzEwMzUsNjcxODg0MjMwLC0xOTE4MzI5MjY2LDE1Nzk4
+MDIxMTVdfQ==
 -->
