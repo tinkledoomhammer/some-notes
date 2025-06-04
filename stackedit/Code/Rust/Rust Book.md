@@ -751,9 +751,11 @@ fn stringify_name_with_title(name: & Vec<String>) -> String {
 fn add_big_strings(dst: &mut Vec<String>, src: &[String]) {
 	let largest: &String = 
 		dst.iter().max_by_key(|s| s.len()).unwrap();
+		// ^^ Removes W perm from `dst` ^^
 	for s in src {
 		if s.len() > largest.len() {
 			dst.push(s.clone());
+			
 		}
 	}
 }
@@ -761,7 +763,7 @@ fn add_big_strings(dst: &mut Vec<String>, src: &[String]) {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0NTY1NzA5MCwtMTYzNDg3OTI2Niw1OD
+eyJoaXN0b3J5IjpbMTgxNTQ0NTAyNSwtMTYzNDg3OTI2Niw1OD
 E1NzM4OTQsMTUyOTI0NzQ1OCwtMTQ2NTgxOTU4NCwxODY1ODI4
 NjU1LC0xMTU1OTk4MjUxLDExNzMyNjMxNDAsLTUzODAxOTcwMC
 w4MzY1NTU0OTcsLTM5NDE3Mzg5MywtMTQ0Mzc4OTcwOCw2MzU0
