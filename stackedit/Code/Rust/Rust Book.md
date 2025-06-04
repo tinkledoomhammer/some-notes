@@ -670,6 +670,8 @@ fn return_a_string() -> &String{
 #### Summary
 * All variables can read, own, and optionally write their data
 * creating a reference will transfer permissions from the borrowed place to the ref
+	* write and ownership are always lost from the source
+	* read is also removed when the ref is `mut`
 * perms are returned at the end of the ref's lifetime
 * data must outlive all references that point to it
 
@@ -679,11 +681,11 @@ fn return_a_string() -> &String{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzQ4NzkyNjYsNTgxNTczODk0LDE1Mj
-kyNDc0NTgsLTE0NjU4MTk1ODQsMTg2NTgyODY1NSwtMTE1NTk5
-ODI1MSwxMTczMjYzMTQwLC01MzgwMTk3MDAsODM2NTU1NDk3LC
-0zOTQxNzM4OTMsLTE0NDM3ODk3MDgsNjM1NDUzMjU5LDE1MzM1
-MzIxNjEsLTI1MDIzMDE4NCwyMjQ3OTY0MDEsMzgyOTU5NzEyLD
-E5MDc0NzEwMzUsNjcxODg0MjMwLC0xOTE4MzI5MjY2LDE1Nzk4
-MDIxMTVdfQ==
+eyJoaXN0b3J5IjpbNDM2MTIwMDIxLC0xNjM0ODc5MjY2LDU4MT
+U3Mzg5NCwxNTI5MjQ3NDU4LC0xNDY1ODE5NTg0LDE4NjU4Mjg2
+NTUsLTExNTU5OTgyNTEsMTE3MzI2MzE0MCwtNTM4MDE5NzAwLD
+gzNjU1NTQ5NywtMzk0MTczODkzLC0xNDQzNzg5NzA4LDYzNTQ1
+MzI1OSwxNTMzNTMyMTYxLC0yNTAyMzAxODQsMjI0Nzk2NDAxLD
+M4Mjk1OTcxMiwxOTA3NDcxMDM1LDY3MTg4NDIzMCwtMTkxODMy
+OTI2Nl19
 -->
