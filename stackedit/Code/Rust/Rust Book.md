@@ -859,7 +859,12 @@ fn main() {
         String::from("Rustacean")
     );
     let first = get_first(&name);
-    name.1.push_str(", Esq.");
+    // first blocks W perms for `name` because
+    //	 the borrow checker doesn't know which
+    //	members of 'name' it refers to
+    name.1.push_str(", Esq.");//Error
+    // be
+    
     println!("{first} {}", name.1);
 }
 
@@ -871,7 +876,7 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg0MDAyMDE5LDc1NjIyNzg3OCwtNDg3Nj
+eyJoaXN0b3J5IjpbNDUzNTIzNDM5LDc1NjIyNzg3OCwtNDg3Nj
 QyNjYzLC0xNjM0ODc5MjY2LDU4MTU3Mzg5NCwxNTI5MjQ3NDU4
 LC0xNDY1ODE5NTg0LDE4NjU4Mjg2NTUsLTExNTU5OTgyNTEsMT
 E3MzI2MzE0MCwtNTM4MDE5NzAwLDgzNjU1NTQ5NywtMzk0MTcz
