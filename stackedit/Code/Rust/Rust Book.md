@@ -713,12 +713,22 @@ fn return_a_string() -> Rc<String> {
 fn return_a_string(output: &mut String) {
 	output.replace_range(.., "Hello world");
 }
-// 
+// more verbbose but allows the caller to control allocations
+```
+
+#### Fixing : Not enough permissions
+i.e. trying to mutate read-only data, drop data behind a ref, etc
+
+```rust
+//Bad
+fn stringify_name_with_title(name: &Vec<String>) -> String {
+	name
+}
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2NTY3NzE2MCwtMTYzNDg3OTI2Niw1OD
+eyJoaXN0b3J5IjpbMTYyMDYxMTYyNSwtMTYzNDg3OTI2Niw1OD
 E1NzM4OTQsMTUyOTI0NzQ1OCwtMTQ2NTgxOTU4NCwxODY1ODI4
 NjU1LC0xMTU1OTk4MjUxLDExNzMyNjMxNDAsLTUzODAxOTcwMC
 w4MzY1NTU0OTcsLTM5NDE3Mzg5MywtMTQ0Mzc4OTcwOCw2MzU0
