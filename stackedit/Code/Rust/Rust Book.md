@@ -753,17 +753,19 @@ fn add_big_strings(dst: &mut Vec<String>, src: &[String]) {
 		dst.iter().max_by_key(|s| s.len()).unwrap();
 	for s in src {
 		if s.len() > largest.len() {
-			dst.push(s.clone())
+			dst.push(s.clone());
+		}
+	}
 }
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mzc0Nzg3NzEsLTE2MzQ4NzkyNjYsNT
-gxNTczODk0LDE1MjkyNDc0NTgsLTE0NjU4MTk1ODQsMTg2NTgy
-ODY1NSwtMTE1NTk5ODI1MSwxMTczMjYzMTQwLC01MzgwMTk3MD
-AsODM2NTU1NDk3LC0zOTQxNzM4OTMsLTE0NDM3ODk3MDgsNjM1
-NDUzMjU5LDE1MzM1MzIxNjEsLTI1MDIzMDE4NCwyMjQ3OTY0MD
-EsMzgyOTU5NzEyLDE5MDc0NzEwMzUsNjcxODg0MjMwLC0xOTE4
-MzI5MjY2XX0=
+eyJoaXN0b3J5IjpbMTM0NTY1NzA5MCwtMTYzNDg3OTI2Niw1OD
+E1NzM4OTQsMTUyOTI0NzQ1OCwtMTQ2NTgxOTU4NCwxODY1ODI4
+NjU1LC0xMTU1OTk4MjUxLDExNzMyNjMxNDAsLTUzODAxOTcwMC
+w4MzY1NTU0OTcsLTM5NDE3Mzg5MywtMTQ0Mzc4OTcwOCw2MzU0
+NTMyNTksMTUzMzUzMjE2MSwtMjUwMjMwMTg0LDIyNDc5NjQwMS
+wzODI5NTk3MTIsMTkwNzQ3MTAzNSw2NzE4ODQyMzAsLTE5MTgz
+MjkyNjZdfQ==
 -->
