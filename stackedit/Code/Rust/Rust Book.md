@@ -761,16 +761,36 @@ fn add_big_strings(dst: &mut Vec<String>, src: &[String]) {
 	}
 }
 
+// works, but slowly
+fn add_big_strings(dst: &mut Vec<String>, src: &[String]) {
+    let largest: String = dst.iter().max_by_key(|s| s.len()).unwrap().clone();
+    // clone the largest string so that `largest` doesn't ref to `dst`
+    for s in src {
+        if s.len() > largest.len() {
+            dst.push(s.clone());
+        }
+    }
+}
+
+// also works, also slow
+fn add_big_strings(dst: &mut Vec<String>, src: &[String]) {
+    let largest: &String = dst.iter().max_by_key(|s| s.len()).unwrap();
+    let to_add: Vec<String> = 
+        src.iter().filter(|s| s.len() > largest.len()).cloned().collect();
+    dst.extend(to_add);
+}
+
+
 
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNTAwNjQ1MCwtMTYzNDg3OTI2Niw1OD
-E1NzM4OTQsMTUyOTI0NzQ1OCwtMTQ2NTgxOTU4NCwxODY1ODI4
-NjU1LC0xMTU1OTk4MjUxLDExNzMyNjMxNDAsLTUzODAxOTcwMC
-w4MzY1NTU0OTcsLTM5NDE3Mzg5MywtMTQ0Mzc4OTcwOCw2MzU0
-NTMyNTksMTUzMzUzMjE2MSwtMjUwMjMwMTg0LDIyNDc5NjQwMS
-wzODI5NTk3MTIsMTkwNzQ3MTAzNSw2NzE4ODQyMzAsLTE5MTgz
-MjkyNjZdfQ==
+eyJoaXN0b3J5IjpbODExMjkyOTc0LC0xNjM0ODc5MjY2LDU4MT
+U3Mzg5NCwxNTI5MjQ3NDU4LC0xNDY1ODE5NTg0LDE4NjU4Mjg2
+NTUsLTExNTU5OTgyNTEsMTE3MzI2MzE0MCwtNTM4MDE5NzAwLD
+gzNjU1NTQ5NywtMzk0MTczODkzLC0xNDQzNzg5NzA4LDYzNTQ1
+MzI1OSwxNTMzNTMyMTYxLC0yNTAyMzAxODQsMjI0Nzk2NDAxLD
+M4Mjk1OTcxMiwxOTA3NDcxMDM1LDY3MTg4NDIzMCwtMTkxODMy
+OTI2Nl19
 -->
