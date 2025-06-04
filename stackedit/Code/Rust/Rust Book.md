@@ -813,14 +813,16 @@ let s: String = *s_ref;// Error :
 Some examples
 * `i32` **does not** own heap data so it **can** be copied without a move
 * a `String` **does** own heap data so it **can not** be copied without a move
-* 
+* an `&String` **does not** own heap data so it **can** be copied without a move
+* `
+```rust
 
 
 
 ```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0MDYwNDk0LC00ODc2NDI2NjMsLTE2Mz
+eyJoaXN0b3J5IjpbNjQ3OTIwMDIyLC00ODc2NDI2NjMsLTE2Mz
 Q4NzkyNjYsNTgxNTczODk0LDE1MjkyNDc0NTgsLTE0NjU4MTk1
 ODQsMTg2NTgyODY1NSwtMTE1NTk5ODI1MSwxMTczMjYzMTQwLC
 01MzgwMTk3MDAsODM2NTU1NDk3LC0zOTQxNzM4OTMsLTE0NDM3
