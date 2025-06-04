@@ -735,12 +735,17 @@ fn stringify_name_with_title(&mut name: Vec...) // the rest is the same as abovv
 	// This will satisfy the borrow checker but it mutates the vector
 // a better solution
 fn stringify_name_with_title(name: & Vec<String>) -> String {
-	let mut full
+	let mut full = name.join(" ");
+		// .join() coppeis the data in `name` into the string `full`
+	full.push_str(" Esq.");
+	full
+}
 ```
+**It is very rare for rust functions to take ownership of heap-owning data structures like `Vec` and `String`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNTU0OTY4OSwtMTYzNDg3OTI2Niw1OD
+eyJoaXN0b3J5IjpbMTYzMTIyMDgzNiwtMTYzNDg3OTI2Niw1OD
 E1NzM4OTQsMTUyOTI0NzQ1OCwtMTQ2NTgxOTU4NCwxODY1ODI4
 NjU1LC0xMTU1OTk4MjUxLDExNzMyNjMxNDAsLTUzODAxOTcwMC
 w4MzY1NTU0OTcsLTM5NDE3Mzg5MywtMTQ0Mzc4OTcwOCw2MzU0
