@@ -677,15 +677,23 @@ fn return_a_string() -> &String{
 
 
 ### 04.03 Fixing Ownership Errors
+**Sometimes rust will reject safe code**
+* but it will always reject unsafe code unless it's marked `unsafe`
 
+#### Unsafe program: returning a reference to the stack
+```rust
+//bad
+fn return_a_string() -> &String{
+	
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM2MTIwMDIxLC0xNjM0ODc5MjY2LDU4MT
-U3Mzg5NCwxNTI5MjQ3NDU4LC0xNDY1ODE5NTg0LDE4NjU4Mjg2
-NTUsLTExNTU5OTgyNTEsMTE3MzI2MzE0MCwtNTM4MDE5NzAwLD
-gzNjU1NTQ5NywtMzk0MTczODkzLC0xNDQzNzg5NzA4LDYzNTQ1
-MzI1OSwxNTMzNTMyMTYxLC0yNTAyMzAxODQsMjI0Nzk2NDAxLD
-M4Mjk1OTcxMiwxOTA3NDcxMDM1LDY3MTg4NDIzMCwtMTkxODMy
-OTI2Nl19
+eyJoaXN0b3J5IjpbLTEyOTEwNjE4NjksLTE2MzQ4NzkyNjYsNT
+gxNTczODk0LDE1MjkyNDc0NTgsLTE0NjU4MTk1ODQsMTg2NTgy
+ODY1NSwtMTE1NTk5ODI1MSwxMTczMjYzMTQwLC01MzgwMTk3MD
+AsODM2NTU1NDk3LC0zOTQxNzM4OTMsLTE0NDM3ODk3MDgsNjM1
+NDUzMjU5LDE1MzM1MzIxNjEsLTI1MDIzMDE4NCwyMjQ3OTY0MD
+EsMzgyOTU5NzEyLDE5MDc0NzEwMzUsNjcxODg0MjMwLC0xOTE4
+MzI5MjY2XX0=
 -->
