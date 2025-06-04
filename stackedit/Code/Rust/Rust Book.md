@@ -785,16 +785,24 @@ fn add_big_strings(dst: &mut Vec<String>, src: &[String]) {
 fn add_big_strings(dst: &mut Vec<String>, src: &[String]) {
 	let largest_len: usize = dst.iter().max_by_key(
 		|s| s.len()).unwrap().len();
-
+	// just store the length
+	for s in src{
+		if s.len() > largest_len {
+			dst.push(s.clone());
+		}
+	}
+}
 ```
+
+#### Fixing unsafe copying vs moving out of a collection
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU4NzI4NTIwLC0xNjM0ODc5MjY2LDU4MT
-U3Mzg5NCwxNTI5MjQ3NDU4LC0xNDY1ODE5NTg0LDE4NjU4Mjg2
-NTUsLTExNTU5OTgyNTEsMTE3MzI2MzE0MCwtNTM4MDE5NzAwLD
-gzNjU1NTQ5NywtMzk0MTczODkzLC0xNDQzNzg5NzA4LDYzNTQ1
-MzI1OSwxNTMzNTMyMTYxLC0yNTAyMzAxODQsMjI0Nzk2NDAxLD
-M4Mjk1OTcxMiwxOTA3NDcxMDM1LDY3MTg4NDIzMCwtMTkxODMy
-OTI2Nl19
+eyJoaXN0b3J5IjpbLTQ4NzY0MjY2MywtMTYzNDg3OTI2Niw1OD
+E1NzM4OTQsMTUyOTI0NzQ1OCwtMTQ2NTgxOTU4NCwxODY1ODI4
+NjU1LC0xMTU1OTk4MjUxLDExNzMyNjMxNDAsLTUzODAxOTcwMC
+w4MzY1NTU0OTcsLTM5NDE3Mzg5MywtMTQ0Mzc4OTcwOCw2MzU0
+NTMyNTksMTUzMzUzMjE2MSwtMjUwMjMwMTg0LDIyNDc5NjQwMS
+wzODI5NTk3MTIsMTkwNzQ3MTAzNSw2NzE4ODQyMzAsLTE5MTgz
+MjkyNjZdfQ==
 -->
