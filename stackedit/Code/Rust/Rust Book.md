@@ -722,17 +722,21 @@ i.e. trying to mutate read-only data, drop data behind a ref, etc
 ```rust
 //Bad
 fn stringify_name_with_title(name: &Vec<String>) -> String {
-	name
+	name.push(String::from("Esq.")); // fails
+		// String::push is a mutation but the argumment `name` is imm
+	let full = name.join(" ");
+	full
 }
+	// Ideally ["Ferris", "Jr."] => "Ferris, Jr. Esq."
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMDYxMTYyNSwtMTYzNDg3OTI2Niw1OD
-E1NzM4OTQsMTUyOTI0NzQ1OCwtMTQ2NTgxOTU4NCwxODY1ODI4
-NjU1LC0xMTU1OTk4MjUxLDExNzMyNjMxNDAsLTUzODAxOTcwMC
-w4MzY1NTU0OTcsLTM5NDE3Mzg5MywtMTQ0Mzc4OTcwOCw2MzU0
-NTMyNTksMTUzMzUzMjE2MSwtMjUwMjMwMTg0LDIyNDc5NjQwMS
-wzODI5NTk3MTIsMTkwNzQ3MTAzNSw2NzE4ODQyMzAsLTE5MTgz
-MjkyNjZdfQ==
+eyJoaXN0b3J5IjpbLTE1ODA0MDY1NDcsLTE2MzQ4NzkyNjYsNT
+gxNTczODk0LDE1MjkyNDc0NTgsLTE0NjU4MTk1ODQsMTg2NTgy
+ODY1NSwtMTE1NTk5ODI1MSwxMTczMjYzMTQwLC01MzgwMTk3MD
+AsODM2NTU1NDk3LC0zOTQxNzM4OTMsLTE0NDM3ODk3MDgsNjM1
+NDUzMjU5LDE1MzM1MzIxNjEsLTI1MDIzMDE4NCwyMjQ3OTY0MD
+EsMzgyOTU5NzEyLDE5MDc0NzEwMzUsNjcxODg0MjMwLC0xOTE4
+MzI5MjY2XX0=
 -->
