@@ -777,16 +777,20 @@ fn add_big_strings(dst: &mut Vec<String>, src: &[String]) {
     let largest: &String = dst.iter().max_by_key(|s| s.len()).unwrap();
     let to_add: Vec<String> = 
         src.iter().filter(|s| s.len() > largest.len()).cloned().collect();
+        // Use another Vec to store strings to add
     dst.extend(to_add);
 }
 
-
+//The best way 
+fn add_big_strings(dst: &mut Vec<String>, src: &[String]) {
+	let largest_len: usize = dst.iter().max_by_key(
+		|s| s.len()).unwrap().len();
 
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODExMjkyOTc0LC0xNjM0ODc5MjY2LDU4MT
+eyJoaXN0b3J5IjpbNDU4NzI4NTIwLC0xNjM0ODc5MjY2LDU4MT
 U3Mzg5NCwxNTI5MjQ3NDU4LC0xNDY1ODE5NTg0LDE4NjU4Mjg2
 NTUsLTExNTU5OTgyNTEsMTE3MzI2MzE0MCwtNTM4MDE5NzAwLD
 gzNjU1NTQ5NywtMzk0MTczODkzLC0xNDQzNzg5NzA4LDYzNTQ1
