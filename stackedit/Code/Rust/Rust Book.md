@@ -836,17 +836,15 @@ s.push('!');
 * The borrow checker can track fine-grained permissions
 * But it doesn't analyze called functions beyond looking at ther signatures
 ```rust
-
 // works fine
-
 fn main() {
-let mut name = (
-    String::from("Ferris"), 
-    String::from("Rustacean")
-);
-let first = &name.0;
-name.1.push_str(", Esq.");
-println!("{first} {}", name.1);
+	let mut name = (
+	    String::from("Ferris"), 
+	    String::from("Rustacean")
+	);
+	let first = &name.0;
+	name.1.push_str(", Esq.");
+	println!("{first} {}", name.1);
 }
 
 //Does not work
@@ -863,12 +861,9 @@ fn main() {
     //	 the borrow checker doesn't know which
     //	members of 'name' it refers to
     name.1.push_str(", Esq.");//Error
-    // be
-    
+    // because 'name.1' might be referred to by 'first'
     println!("{first} {}", name.1);
 }
-
-
 ```
 
 
@@ -876,7 +871,7 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUzNTIzNDM5LDc1NjIyNzg3OCwtNDg3Nj
+eyJoaXN0b3J5IjpbMzIxNDk0NDg5LDc1NjIyNzg3OCwtNDg3Nj
 QyNjYzLC0xNjM0ODc5MjY2LDU4MTU3Mzg5NCwxNTI5MjQ3NDU4
 LC0xNDY1ODE5NTg0LDE4NjU4Mjg2NTUsLTExNTU5OTgyNTEsMT
 E3MzI2MzE0MCwtNTM4MDE5NzAwLDgzNjU1NTQ5NywtMzk0MTcz
