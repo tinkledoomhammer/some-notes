@@ -696,12 +696,20 @@ fn return_a_string() -> String{
 }
 
 //or return a string literal
-fn return_a_string() -> 'static str
+fn return_a_string() -> 'static str {
+	"Hello world"
+}
+
+//Or do borrow checking at runtime with reference counting
+use std::rc::Rc;
+fn return_a_string() -> Rc<String> {
+	let s = Rc::new(String::from("Hello world"));
+	Rc::clone(&s)
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNTUyMjI1LC0xNjM0ODc5MjY2LDU4MT
+eyJoaXN0b3J5IjpbMTY4NzA3OTY3LC0xNjM0ODc5MjY2LDU4MT
 U3Mzg5NCwxNTI5MjQ3NDU4LC0xNDY1ODE5NTg0LDE4NjU4Mjg2
 NTUsLTExNTU5OTgyNTEsMTE3MzI2MzE0MCwtNTM4MDE5NzAwLD
 gzNjU1NTQ5NywtMzk0MTczODkzLC0xNDQzNzg5NzA4LDYzNTQ1
