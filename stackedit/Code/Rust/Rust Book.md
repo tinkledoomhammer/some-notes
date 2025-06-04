@@ -834,17 +834,44 @@ s.push('!');
 
 #### Fixing a safe program: Mutating different tuple fields
 * The borrow checker can track fine-grained permissions
+* But it doesn't analyze called functions beyond looking at ther signatures
+```rust
+fn main() {
+let mut name = (
+    String::from("Ferris"), 
+    String::from("Rustacean")
+);
+let first = &name.0;
+name.1.push_str(", Esq.");
+println!("{first} {}", name.1);
+}
+fn get_first(name: &(String, String)) -> &String {
+    &name.0
+}
+
+fn main() {
+    let mut name = (
+        String::from("Ferris"), 
+        String::from("Rustacean")
+    );
+    let first = get_first(&name);
+    name.1.push_str(", Esq.");
+    println!("{first} {}", name.1);
+}
+
+
+```
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDczMjE3NTAsLTQ4NzY0MjY2MywtMT
-YzNDg3OTI2Niw1ODE1NzM4OTQsMTUyOTI0NzQ1OCwtMTQ2NTgx
-OTU4NCwxODY1ODI4NjU1LC0xMTU1OTk4MjUxLDExNzMyNjMxND
-AsLTUzODAxOTcwMCw4MzY1NTU0OTcsLTM5NDE3Mzg5MywtMTQ0
-Mzc4OTcwOCw2MzU0NTMyNTksMTUzMzUzMjE2MSwtMjUwMjMwMT
-g0LDIyNDc5NjQwMSwzODI5NTk3MTIsMTkwNzQ3MTAzNSw2NzE4
-ODQyMzBdfQ==
+eyJoaXN0b3J5IjpbNzU2MjI3ODc4LC00ODc2NDI2NjMsLTE2Mz
+Q4NzkyNjYsNTgxNTczODk0LDE1MjkyNDc0NTgsLTE0NjU4MTk1
+ODQsMTg2NTgyODY1NSwtMTE1NTk5ODI1MSwxMTczMjYzMTQwLC
+01MzgwMTk3MDAsODM2NTU1NDk3LC0zOTQxNzM4OTMsLTE0NDM3
+ODk3MDgsNjM1NDUzMjU5LDE1MzM1MzIxNjEsLTI1MDIzMDE4NC
+wyMjQ3OTY0MDEsMzgyOTU5NzEyLDE5MDc0NzEwMzUsNjcxODg0
+MjMwXX0=
 -->
