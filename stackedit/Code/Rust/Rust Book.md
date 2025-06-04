@@ -723,16 +723,21 @@ i.e. trying to mutate read-only data, drop data behind a ref, etc
 //Bad
 fn stringify_name_with_title(name: &Vec<String>) -> String {
 	name.push(String::from("Esq.")); // fails
-		// String::push is a mutation but the argumment `name` is imm
+		// String::push is a mutation but the
+		//	argumment `name` is immutable
 	let full = name.join(" ");
 	full
 }
 	// Ideally ["Ferris", "Jr."] => "Ferris, Jr. Esq."
+
+// a bad solution
+fn stringify_name_with_title(mut name ...) // the rest is the same as abovve
+	// This will satisfy the borrow checker but it mutates the vector
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODA0MDY1NDcsLTE2MzQ4NzkyNjYsNT
+eyJoaXN0b3J5IjpbLTE4MDI2MjEyMjQsLTE2MzQ4NzkyNjYsNT
 gxNTczODk0LDE1MjkyNDc0NTgsLTE0NjU4MTk1ODQsMTg2NTgy
 ODY1NSwtMTE1NTk5ODI1MSwxMTczMjYzMTQwLC01MzgwMTk3MD
 AsODM2NTU1NDk3LC0zOTQxNzM4OTMsLTE0NDM3ODk3MDgsNjM1
