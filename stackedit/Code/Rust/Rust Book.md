@@ -684,16 +684,28 @@ fn return_a_string() -> &String{
 ```rust
 //bad
 fn return_a_string() -> &String{
-	
+	let s = String::from("Hello world");
+	&s
+}
+
+//better
+fn return_a_string() -> String{
+	let s = String::from("hi");
+	s
+	//just return the string, not the ref
+}
+
+//or return a string literal
+fn return_a_string() -> 'static str
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTEwNjE4NjksLTE2MzQ4NzkyNjYsNT
-gxNTczODk0LDE1MjkyNDc0NTgsLTE0NjU4MTk1ODQsMTg2NTgy
-ODY1NSwtMTE1NTk5ODI1MSwxMTczMjYzMTQwLC01MzgwMTk3MD
-AsODM2NTU1NDk3LC0zOTQxNzM4OTMsLTE0NDM3ODk3MDgsNjM1
-NDUzMjU5LDE1MzM1MzIxNjEsLTI1MDIzMDE4NCwyMjQ3OTY0MD
-EsMzgyOTU5NzEyLDE5MDc0NzEwMzUsNjcxODg0MjMwLC0xOTE4
-MzI5MjY2XX0=
+eyJoaXN0b3J5IjpbLTUwNTUyMjI1LC0xNjM0ODc5MjY2LDU4MT
+U3Mzg5NCwxNTI5MjQ3NDU4LC0xNDY1ODE5NTg0LDE4NjU4Mjg2
+NTUsLTExNTU5OTgyNTEsMTE3MzI2MzE0MCwtNTM4MDE5NzAwLD
+gzNjU1NTQ5NywtMzk0MTczODkzLC0xNDQzNzg5NzA4LDYzNTQ1
+MzI1OSwxNTMzNTMyMTYxLC0yNTAyMzAxODQsMjI0Nzk2NDAxLD
+M4Mjk1OTcxMiwxOTA3NDcxMDM1LDY3MTg4NDIzMCwtMTkxODMy
+OTI2Nl19
 -->
