@@ -745,15 +745,25 @@ fn stringify_name_with_title(name: & Vec<String>) -> String {
 ```
 **It is very rare for rust functions to take ownership of heap-owning data structures like `Vec` and `String`**
 
-
+#### Fixing unsafe: Aliasing and Mutating a data structure
+```rust
+//bad
+fn add_big_strings(dst: &mut Vec<String>, src: &[String]) {
+	let largest: &String = 
+		dst.iter().max_by_key(|s| s.len()).unwrap();
+	for s in src {
+		if s.len() > largest.len() {
+			dst.push(s.clone())
+}
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwOTk5Mjg5LC0xNjM0ODc5MjY2LDU4MT
-U3Mzg5NCwxNTI5MjQ3NDU4LC0xNDY1ODE5NTg0LDE4NjU4Mjg2
-NTUsLTExNTU5OTgyNTEsMTE3MzI2MzE0MCwtNTM4MDE5NzAwLD
-gzNjU1NTQ5NywtMzk0MTczODkzLC0xNDQzNzg5NzA4LDYzNTQ1
-MzI1OSwxNTMzNTMyMTYxLC0yNTAyMzAxODQsMjI0Nzk2NDAxLD
-M4Mjk1OTcxMiwxOTA3NDcxMDM1LDY3MTg4NDIzMCwtMTkxODMy
-OTI2Nl19
+eyJoaXN0b3J5IjpbLTE3Mzc0Nzg3NzEsLTE2MzQ4NzkyNjYsNT
+gxNTczODk0LDE1MjkyNDc0NTgsLTE0NjU4MTk1ODQsMTg2NTgy
+ODY1NSwtMTE1NTk5ODI1MSwxMTczMjYzMTQwLC01MzgwMTk3MD
+AsODM2NTU1NDk3LC0zOTQxNzM4OTMsLTE0NDM3ODk3MDgsNjM1
+NDUzMjU5LDE1MzM1MzIxNjEsLTI1MDIzMDE4NCwyMjQ3OTY0MD
+EsMzgyOTU5NzEyLDE5MDc0NzEwMzUsNjcxODg0MjMwLC0xOTE4
+MzI5MjY2XX0=
 -->
