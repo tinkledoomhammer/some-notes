@@ -836,6 +836,9 @@ s.push('!');
 * The borrow checker can track fine-grained permissions
 * But it doesn't analyze called functions beyond looking at ther signatures
 ```rust
+
+// works fine
+
 fn main() {
 let mut name = (
     String::from("Ferris"), 
@@ -845,10 +848,11 @@ let first = &name.0;
 name.1.push_str(", Esq.");
 println!("{first} {}", name.1);
 }
+
+//Does not work
 fn get_first(name: &(String, String)) -> &String {
     &name.0
 }
-
 fn main() {
     let mut name = (
         String::from("Ferris"), 
@@ -867,11 +871,11 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU2MjI3ODc4LC00ODc2NDI2NjMsLTE2Mz
-Q4NzkyNjYsNTgxNTczODk0LDE1MjkyNDc0NTgsLTE0NjU4MTk1
-ODQsMTg2NTgyODY1NSwtMTE1NTk5ODI1MSwxMTczMjYzMTQwLC
-01MzgwMTk3MDAsODM2NTU1NDk3LC0zOTQxNzM4OTMsLTE0NDM3
-ODk3MDgsNjM1NDUzMjU5LDE1MzM1MzIxNjEsLTI1MDIzMDE4NC
-wyMjQ3OTY0MDEsMzgyOTU5NzEyLDE5MDc0NzEwMzUsNjcxODg0
-MjMwXX0=
+eyJoaXN0b3J5IjpbMjg0MDAyMDE5LDc1NjIyNzg3OCwtNDg3Nj
+QyNjYzLC0xNjM0ODc5MjY2LDU4MTU3Mzg5NCwxNTI5MjQ3NDU4
+LC0xNDY1ODE5NTg0LDE4NjU4Mjg2NTUsLTExNTU5OTgyNTEsMT
+E3MzI2MzE0MCwtNTM4MDE5NzAwLDgzNjU1NTQ5NywtMzk0MTcz
+ODkzLC0xNDQzNzg5NzA4LDYzNTQ1MzI1OSwxNTMzNTMyMTYxLC
+0yNTAyMzAxODQsMjI0Nzk2NDAxLDM4Mjk1OTcxMiwxOTA3NDcx
+MDM1XX0=
 -->
