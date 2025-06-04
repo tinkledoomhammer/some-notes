@@ -754,16 +754,19 @@ fn add_big_strings(dst: &mut Vec<String>, src: &[String]) {
 		// ^^ Removes W perm from `dst` ^^
 	for s in src {
 		if s.len() > largest.len() {
+			// ^^ uses largest, keeping W perms from dst ^^
 			dst.push(s.clone());
-			
+			// ^^ requires W perm on `dst` ^^
 		}
 	}
 }
+
+
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNTQ0NTAyNSwtMTYzNDg3OTI2Niw1OD
+eyJoaXN0b3J5IjpbLTQwNTAwNjQ1MCwtMTYzNDg3OTI2Niw1OD
 E1NzM4OTQsMTUyOTI0NzQ1OCwtMTQ2NTgxOTU4NCwxODY1ODI4
 NjU1LC0xMTU1OTk4MjUxLDExNzMyNjMxNDAsLTUzODAxOTcwMC
 w4MzY1NTU0OTcsLTM5NDE3Mzg5MywtMTQ0Mzc4OTcwOCw2MzU0
