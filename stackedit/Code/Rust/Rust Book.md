@@ -795,14 +795,23 @@ fn add_big_strings(dst: &mut Vec<String>, src: &[String]) {
 ```
 
 #### Fixing unsafe copying vs moving out of a collection
+```rust
+// Below works fine
+let v: Vec<i32> = vec![0,1,2]
+let n_ref: &i32 = &v[0];
+let n: i32 = *n_ref;
 
+// This \/ does not
+let v: Vec<
+
+```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NzY0MjY2MywtMTYzNDg3OTI2Niw1OD
-E1NzM4OTQsMTUyOTI0NzQ1OCwtMTQ2NTgxOTU4NCwxODY1ODI4
-NjU1LC0xMTU1OTk4MjUxLDExNzMyNjMxNDAsLTUzODAxOTcwMC
-w4MzY1NTU0OTcsLTM5NDE3Mzg5MywtMTQ0Mzc4OTcwOCw2MzU0
-NTMyNTksMTUzMzUzMjE2MSwtMjUwMjMwMTg0LDIyNDc5NjQwMS
-wzODI5NTk3MTIsMTkwNzQ3MTAzNSw2NzE4ODQyMzAsLTE5MTgz
-MjkyNjZdfQ==
+eyJoaXN0b3J5IjpbNDcwMTUzMzgwLC00ODc2NDI2NjMsLTE2Mz
+Q4NzkyNjYsNTgxNTczODk0LDE1MjkyNDc0NTgsLTE0NjU4MTk1
+ODQsMTg2NTgyODY1NSwtMTE1NTk5ODI1MSwxMTczMjYzMTQwLC
+01MzgwMTk3MDAsODM2NTU1NDk3LC0zOTQxNzM4OTMsLTE0NDM3
+ODk3MDgsNjM1NDUzMjU5LDE1MzM1MzIxNjEsLTI1MDIzMDE4NC
+wyMjQ3OTY0MDEsMzgyOTU5NzEyLDE5MDc0NzEwMzUsNjcxODg0
+MjMwXX0=
 -->
