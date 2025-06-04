@@ -800,19 +800,23 @@ fn add_big_strings(dst: &mut Vec<String>, src: &[String]) {
 let v: Vec<i32> = vec![0,1,2]
 let n_ref: &i32 = &v[0];
 let n: i32 = *n_ref;
+// works because i32 does not own heap data
 
 // This \/ does not
 let v: Vec<String> = vec![String::from("hi")];
 let s_ref: &String = &v[0];
 let s: String = *s_ref;// Error : 
 // cannot move out of *s_ref which is behind a shared ref
+// this would result in a double free
+// because s is dropped and v is dropped
+
 
 
 
 ```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MTgzMDEzOCwtNDg3NjQyNjYzLC0xNj
+eyJoaXN0b3J5IjpbMjE0MTc5NzIyNSwtNDg3NjQyNjYzLC0xNj
 M0ODc5MjY2LDU4MTU3Mzg5NCwxNTI5MjQ3NDU4LC0xNDY1ODE5
 NTg0LDE4NjU4Mjg2NTUsLTExNTU5OTgyNTEsMTE3MzI2MzE0MC
 wtNTM4MDE5NzAwLDgzNjU1NTQ5NywtMzk0MTczODkzLC0xNDQz
