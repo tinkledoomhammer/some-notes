@@ -809,18 +809,22 @@ let s: String = *s_ref;// Error :
 // cannot move out of *s_ref which is behind a shared ref
 // this would result in a double free
 // because s is dropped and v is dropped
-
+```
+Some examples
+* `i32` **does not** own heap data so it **can** be copied without a move
+* a `String` **does** own heap data so it **can not** be copied without a move
+* 
 
 
 
 ```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0MTc5NzIyNSwtNDg3NjQyNjYzLC0xNj
-M0ODc5MjY2LDU4MTU3Mzg5NCwxNTI5MjQ3NDU4LC0xNDY1ODE5
-NTg0LDE4NjU4Mjg2NTUsLTExNTU5OTgyNTEsMTE3MzI2MzE0MC
-wtNTM4MDE5NzAwLDgzNjU1NTQ5NywtMzk0MTczODkzLC0xNDQz
-Nzg5NzA4LDYzNTQ1MzI1OSwxNTMzNTMyMTYxLC0yNTAyMzAxOD
-QsMjI0Nzk2NDAxLDM4Mjk1OTcxMiwxOTA3NDcxMDM1LDY3MTg4
-NDIzMF19
+eyJoaXN0b3J5IjpbMjE0MDYwNDk0LC00ODc2NDI2NjMsLTE2Mz
+Q4NzkyNjYsNTgxNTczODk0LDE1MjkyNDc0NTgsLTE0NjU4MTk1
+ODQsMTg2NTgyODY1NSwtMTE1NTk5ODI1MSwxMTczMjYzMTQwLC
+01MzgwMTk3MDAsODM2NTU1NDk3LC0zOTQxNzM4OTMsLTE0NDM3
+ODk3MDgsNjM1NDUzMjU5LDE1MzM1MzIxNjEsLTI1MDIzMDE4NC
+wyMjQ3OTY0MDEsMzgyOTU5NzEyLDE5MDc0NzEwMzUsNjcxODg0
+MjMwXX0=
 -->
