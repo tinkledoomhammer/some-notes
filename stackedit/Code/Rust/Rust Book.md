@@ -830,15 +830,21 @@ s.push('!');
 let mut v: Vec<String> = vec![String::from("Hi")];
 let mut s: String = v.remove();
 s.push('!');
-
 ```
+
+#### Fixing a safe program: Mutating different tuple fields
+* The borrow checker can track fine-grained permissions
+
+
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2NTI2MzMzOSwtNDg3NjQyNjYzLC0xNj
-M0ODc5MjY2LDU4MTU3Mzg5NCwxNTI5MjQ3NDU4LC0xNDY1ODE5
-NTg0LDE4NjU4Mjg2NTUsLTExNTU5OTgyNTEsMTE3MzI2MzE0MC
-wtNTM4MDE5NzAwLDgzNjU1NTQ5NywtMzk0MTczODkzLC0xNDQz
-Nzg5NzA4LDYzNTQ1MzI1OSwxNTMzNTMyMTYxLC0yNTAyMzAxOD
-QsMjI0Nzk2NDAxLDM4Mjk1OTcxMiwxOTA3NDcxMDM1LDY3MTg4
-NDIzMF19
+eyJoaXN0b3J5IjpbLTE0NDczMjE3NTAsLTQ4NzY0MjY2MywtMT
+YzNDg3OTI2Niw1ODE1NzM4OTQsMTUyOTI0NzQ1OCwtMTQ2NTgx
+OTU4NCwxODY1ODI4NjU1LC0xMTU1OTk4MjUxLDExNzMyNjMxND
+AsLTUzODAxOTcwMCw4MzY1NTU0OTcsLTM5NDE3Mzg5MywtMTQ0
+Mzc4OTcwOCw2MzU0NTMyNTksMTUzMzUzMjE2MSwtMjUwMjMwMT
+g0LDIyNDc5NjQwMSwzODI5NTk3MTIsMTkwNzQ3MTAzNSw2NzE4
+ODQyMzBdfQ==
 -->
