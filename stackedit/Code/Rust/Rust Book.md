@@ -867,21 +867,25 @@ fn main() {
 ```
 
 #### Fixing a safe program: Mutating different array elements
+Rust does **not** track elements of an array as different places.
+
+
 ```rust
 let mut a = [0,1,2,3];
 let x = &mut a[1];
-*x +=1
+*x +=1;
+println("{a:?}");
 ```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjExMjAzNjYsMzIxNDk0NDg5LDc1Nj
-IyNzg3OCwtNDg3NjQyNjYzLC0xNjM0ODc5MjY2LDU4MTU3Mzg5
-NCwxNTI5MjQ3NDU4LC0xNDY1ODE5NTg0LDE4NjU4Mjg2NTUsLT
-ExNTU5OTgyNTEsMTE3MzI2MzE0MCwtNTM4MDE5NzAwLDgzNjU1
-NTQ5NywtMzk0MTczODkzLC0xNDQzNzg5NzA4LDYzNTQ1MzI1OS
-wxNTMzNTMyMTYxLC0yNTAyMzAxODQsMjI0Nzk2NDAxLDM4Mjk1
-OTcxMl19
+eyJoaXN0b3J5IjpbLTk3Mjk0MTE0OCwzMjE0OTQ0ODksNzU2Mj
+I3ODc4LC00ODc2NDI2NjMsLTE2MzQ4NzkyNjYsNTgxNTczODk0
+LDE1MjkyNDc0NTgsLTE0NjU4MTk1ODQsMTg2NTgyODY1NSwtMT
+E1NTk5ODI1MSwxMTczMjYzMTQwLC01MzgwMTk3MDAsODM2NTU1
+NDk3LC0zOTQxNzM4OTMsLTE0NDM3ODk3MDgsNjM1NDUzMjU5LD
+E1MzM1MzIxNjEsLTI1MDIzMDE4NCwyMjQ3OTY0MDEsMzgyOTU5
+NzEyXX0=
 -->
