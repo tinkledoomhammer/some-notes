@@ -909,8 +909,8 @@ let slice1 = &s[..1];
 let full = &s[..];
 ```
 
-#### Range syntax
-`first..last+1`
+Range syntax
+: `first..last+1`
 : i.e. `[0..2]` means the first two elements
 * the first number is optional, `0` is the default
 * the second number is optional with the length-1 being default
@@ -928,12 +928,13 @@ fn first_word(s: &String) -> &str {
 	&s[..]
 }
 ```
+**String literals are slices**
 
  
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2MjEzNjIyMCwyMTkwNTkzNzYsLTY1Mj
+eyJoaXN0b3J5IjpbLTkyOTMxODc5MCwyMTkwNTkzNzYsLTY1Mj
 AxMTEwNSwtOTcyOTQxMTQ4LDMyMTQ5NDQ4OSw3NTYyMjc4Nzgs
 LTQ4NzY0MjY2MywtMTYzNDg3OTI2Niw1ODE1NzM4OTQsMTUyOT
 I0NzQ1OCwtMTQ2NTgxOTU4NCwxODY1ODI4NjU1LC0xMTU1OTk4
