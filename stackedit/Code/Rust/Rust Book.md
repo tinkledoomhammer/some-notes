@@ -899,7 +899,11 @@ Example: returning a part of a string
 * Returning an index is bad because it is a number and is not tied to the lifetime of the string
 * instead returning a slice will tie the lifetimes
 
-** Memory
+** Memory**
+: Allocates two sizes on the stack
+* a pointer (like a ref)
+* a size
+
 String slice
 : A reference to a part of a string 
 : `&str`
@@ -938,12 +942,14 @@ let slice = &a[1..3]; // slice: &[i32]
 assert_eq!(slice, &[2,3]);
 ```
 
+### 04.05 Ownership recap
+
 
  
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2ODQyMDg3NiwyMTkwNTkzNzYsLTY1Mj
+eyJoaXN0b3J5IjpbMTkwNzM5NjcyMiwyMTkwNTkzNzYsLTY1Mj
 AxMTEwNSwtOTcyOTQxMTQ4LDMyMTQ5NDQ4OSw3NTYyMjc4Nzgs
 LTQ4NzY0MjY2MywtMTYzNDg3OTI2Niw1ODE1NzM4OTQsMTUyOT
 I0NzQ1OCwtMTQ2NTgxOTU4NCwxODY1ODI4NjU1LC0xMTU1OTk4
