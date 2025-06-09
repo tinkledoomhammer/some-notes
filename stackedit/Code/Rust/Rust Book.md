@@ -900,7 +900,8 @@ Example: returning a part of a string
 * instead returning a slice will tie the lifetimes
 
 String slice
-: A reference to a part of a string
+: A reference to a part of a string 
+: `&str`
 ```rust
 let s = String::from("hello");
 let len =s.len();
@@ -916,17 +917,27 @@ let full = &s[..];
 	* i.e. the maximum allowed
 * `[..]` refers to the entire allowed range 
 
+```rust
+fn first_word(s: &String) -> &str {
+	let bytes = s.as_bytes();
+	for (i, &item) in bytes.iter().enumerate() {
+		if item ==b' ' {
+			return &s[0..i]
+		}
+	}
+	&s[..]
+}
 ```
 
  
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzIzMDkyMDQsMjE5MDU5Mzc2LC02NT
-IwMTExMDUsLTk3Mjk0MTE0OCwzMjE0OTQ0ODksNzU2MjI3ODc4
-LC00ODc2NDI2NjMsLTE2MzQ4NzkyNjYsNTgxNTczODk0LDE1Mj
-kyNDc0NTgsLTE0NjU4MTk1ODQsMTg2NTgyODY1NSwtMTE1NTk5
-ODI1MSwxMTczMjYzMTQwLC01MzgwMTk3MDAsODM2NTU1NDk3LC
-0zOTQxNzM4OTMsLTE0NDM3ODk3MDgsNjM1NDUzMjU5LDE1MzM1
-MzIxNjFdfQ==
+eyJoaXN0b3J5IjpbLTY2MjEzNjIyMCwyMTkwNTkzNzYsLTY1Mj
+AxMTEwNSwtOTcyOTQxMTQ4LDMyMTQ5NDQ4OSw3NTYyMjc4Nzgs
+LTQ4NzY0MjY2MywtMTYzNDg3OTI2Niw1ODE1NzM4OTQsMTUyOT
+I0NzQ1OCwtMTQ2NTgxOTU4NCwxODY1ODI4NjU1LC0xMTU1OTk4
+MjUxLDExNzMyNjMxNDAsLTUzODAxOTcwMCw4MzY1NTU0OTcsLT
+M5NDE3Mzg5MywtMTQ0Mzc4OTcwOCw2MzU0NTMyNTksMTUzMzUz
+MjE2MV19
 -->
