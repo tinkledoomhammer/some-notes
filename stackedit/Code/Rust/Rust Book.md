@@ -895,16 +895,18 @@ From the exercise:
 **Dereferencing and owned type takes ownership**
 
 ### 04.04 The Slice Type
-
+Example: returning a part of a string
+* Returning an index is bad because it is a number and is not tied to the lifetime of the string
+* instead returning a slice will tie the lifetimes
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE5MDU5Mzc2LC02NTIwMTExMDUsLTk3Mj
-k0MTE0OCwzMjE0OTQ0ODksNzU2MjI3ODc4LC00ODc2NDI2NjMs
-LTE2MzQ4NzkyNjYsNTgxNTczODk0LDE1MjkyNDc0NTgsLTE0Nj
-U4MTk1ODQsMTg2NTgyODY1NSwtMTE1NTk5ODI1MSwxMTczMjYz
-MTQwLC01MzgwMTk3MDAsODM2NTU1NDk3LC0zOTQxNzM4OTMsLT
-E0NDM3ODk3MDgsNjM1NDUzMjU5LDE1MzM1MzIxNjEsLTI1MDIz
-MDE4NF19
+eyJoaXN0b3J5IjpbMjAxODEwNzc2MCwyMTkwNTkzNzYsLTY1Mj
+AxMTEwNSwtOTcyOTQxMTQ4LDMyMTQ5NDQ4OSw3NTYyMjc4Nzgs
+LTQ4NzY0MjY2MywtMTYzNDg3OTI2Niw1ODE1NzM4OTQsMTUyOT
+I0NzQ1OCwtMTQ2NTgxOTU4NCwxODY1ODI4NjU1LC0xMTU1OTk4
+MjUxLDExNzMyNjMxNDAsLTUzODAxOTcwMCw4MzY1NTU0OTcsLT
+M5NDE3Mzg5MywtMTQ0Mzc4OTcwOCw2MzU0NTMyNTksMTUzMzUz
+MjE2MV19
 -->
