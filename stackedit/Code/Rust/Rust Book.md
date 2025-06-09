@@ -878,14 +878,16 @@ println("{a:?}");
 
 //fails
 let mut a = [0,1,2,3];
-le
+let x = &mut a[1];// a[_]: -R-W
+let y = &a[2];//Error because a[_] must be +R
+*x+=*y;
 ```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNjQxMjY3OSwtOTcyOTQxMTQ4LDMyMT
+eyJoaXN0b3J5IjpbLTQzMTQ5OTI1MCwtOTcyOTQxMTQ4LDMyMT
 Q5NDQ4OSw3NTYyMjc4NzgsLTQ4NzY0MjY2MywtMTYzNDg3OTI2
 Niw1ODE1NzM4OTQsMTUyOTI0NzQ1OCwtMTQ2NTgxOTU4NCwxOD
 Y1ODI4NjU1LC0xMTU1OTk4MjUxLDExNzMyNjMxNDAsLTUzODAx
