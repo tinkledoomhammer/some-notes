@@ -901,20 +901,28 @@ Example: returning a part of a string
 
 String slice
 : A reference to a part of a string
+```rust
+let s = String::from("hello");
+let len =s.len();
+let slice1 = &s[..1];
+let full = &s[..];
+```
 
 #### Range syntax
-
-`first..last-1`
+`first..last+1`
 : i.e. `[0..2]` means the first two elements
 * the first number is optional, `0` is the default
 * the second number is optional with the length-1 being default
 	* i.e. the maximum allowed
-* `[..]` refers to the entire allowed range
-* 
+* `[..]` refers to the entire allowed range 
+
+```
+
+ 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzgyODE5MjAsMjE5MDU5Mzc2LC02NT
+eyJoaXN0b3J5IjpbLTE5MzIzMDkyMDQsMjE5MDU5Mzc2LC02NT
 IwMTExMDUsLTk3Mjk0MTE0OCwzMjE0OTQ0ODksNzU2MjI3ODc4
 LC00ODc2NDI2NjMsLTE2MzQ4NzkyNjYsNTgxNTczODk0LDE1Mj
 kyNDc0NTgsLTE0NjU4MTk1ODQsMTg2NTgyODY1NSwtMTE1NTk5
