@@ -885,6 +885,7 @@ let y = &a[2];//Error because a[_] must be +R
 
 //Solution:
 let (a_l, a_r) = a.split_at_mut(2);
+// ^^ Uses an `unsafe` block to split a into two locations ^^
 let x = &mut a_l[1];
 let y = &a_r[0];
 *x += *y;
@@ -894,7 +895,7 @@ let y = &a_r[0];
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4NzY2MzY2OSwtOTcyOTQxMTQ4LDMyMT
+eyJoaXN0b3J5IjpbLTY1MjAxMTEwNSwtOTcyOTQxMTQ4LDMyMT
 Q5NDQ4OSw3NTYyMjc4NzgsLTQ4NzY0MjY2MywtMTYzNDg3OTI2
 Niw1ODE1NzM4OTQsMTUyOTI0NzQ1OCwtMTQ2NTgxOTU4NCwxOD
 Y1ODI4NjU1LC0xMTU1OTk4MjUxLDExNzMyNjMxNDAsLTUzODAx
