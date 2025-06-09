@@ -880,14 +880,21 @@ println("{a:?}");
 let mut a = [0,1,2,3];
 let x = &mut a[1];// a[_]: -R-W
 let y = &a[2];//Error because a[_] must be +R
-*x+=*y;
+*x += *y;
+// The above is actually safe but the compiler doesn't determine that
+
+//Solution:
+let (a_l, a_r) = a.split_at_mut(2);
+let x = &mut a_l[1];
+let y = &a_r[0];
+*x += *y;
 ```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzMTQ5OTI1MCwtOTcyOTQxMTQ4LDMyMT
+eyJoaXN0b3J5IjpbMTg4NzY2MzY2OSwtOTcyOTQxMTQ4LDMyMT
 Q5NDQ4OSw3NTYyMjc4NzgsLTQ4NzY0MjY2MywtMTYzNDg3OTI2
 Niw1ODE1NzM4OTQsMTUyOTI0NzQ1OCwtMTQ2NTgxOTU4NCwxOD
 Y1ODI4NjU1LC0xMTU1OTk4MjUxLDExNzMyNjMxNDAsLTUzODAx
