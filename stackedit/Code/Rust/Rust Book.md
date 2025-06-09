@@ -933,13 +933,14 @@ fn first_word(s: &String) -> &str {
 Other types:
 ```rust
 leat a = [1,2,3,5,5];
-let slice = &a[1..3]; // slice: &[i32
+let slice = &a[1..3]; // slice: &[i32]
+assert_eq!(slice, &[2,3]);
 ```
  
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4MTY2NzgxLDIxOTA1OTM3NiwtNjUyMD
+eyJoaXN0b3J5IjpbLTc1NzI1NTQ1LDIxOTA1OTM3NiwtNjUyMD
 ExMTA1LC05NzI5NDExNDgsMzIxNDk0NDg5LDc1NjIyNzg3OCwt
 NDg3NjQyNjYzLC0xNjM0ODc5MjY2LDU4MTU3Mzg5NCwxNTI5Mj
 Q3NDU4LC0xNDY1ODE5NTg0LDE4NjU4Mjg2NTUsLTExNTU5OTgy
