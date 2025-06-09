@@ -905,15 +905,20 @@ String slice
 #### Range syntax
 
 `first..last-1`
-: 
+: i.e. `[0..2]` means the first two elements
+* the first number is optional, `0` is the default
+* the second number is optional with the length-1 being default
+	* i.e. the maximum allowed
+* `[..]` refers to the entire allowed range
+* 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU2NDMzNTY5LDIxOTA1OTM3NiwtNjUyMD
-ExMTA1LC05NzI5NDExNDgsMzIxNDk0NDg5LDc1NjIyNzg3OCwt
-NDg3NjQyNjYzLC0xNjM0ODc5MjY2LDU4MTU3Mzg5NCwxNTI5Mj
-Q3NDU4LC0xNDY1ODE5NTg0LDE4NjU4Mjg2NTUsLTExNTU5OTgy
-NTEsMTE3MzI2MzE0MCwtNTM4MDE5NzAwLDgzNjU1NTQ5NywtMz
-k0MTczODkzLC0xNDQzNzg5NzA4LDYzNTQ1MzI1OSwxNTMzNTMy
-MTYxXX0=
+eyJoaXN0b3J5IjpbLTEzMzgyODE5MjAsMjE5MDU5Mzc2LC02NT
+IwMTExMDUsLTk3Mjk0MTE0OCwzMjE0OTQ0ODksNzU2MjI3ODc4
+LC00ODc2NDI2NjMsLTE2MzQ4NzkyNjYsNTgxNTczODk0LDE1Mj
+kyNDc0NTgsLTE0NjU4MTk1ODQsMTg2NTgyODY1NSwtMTE1NTk5
+ODI1MSwxMTczMjYzMTQwLC01MzgwMTk3MDAsODM2NTU1NDk3LC
+0zOTQxNzM4OTMsLTE0NDM3ODk3MDgsNjM1NDUzMjU5LDE1MzM1
+MzIxNjFdfQ==
 -->
