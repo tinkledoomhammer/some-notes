@@ -899,6 +899,7 @@ Example: returning a part of a string
 * Returning an index is bad because it is a number and is not tied to the lifetime of the string
 * instead returning a slice will tie the lifetimes
 
+** Memory
 String slice
 : A reference to a part of a string 
 : `&str`
@@ -936,15 +937,17 @@ leat a = [1,2,3,5,5];
 let slice = &a[1..3]; // slice: &[i32]
 assert_eq!(slice, &[2,3]);
 ```
+
+
  
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NzI1NTQ1LDIxOTA1OTM3NiwtNjUyMD
-ExMTA1LC05NzI5NDExNDgsMzIxNDk0NDg5LDc1NjIyNzg3OCwt
-NDg3NjQyNjYzLC0xNjM0ODc5MjY2LDU4MTU3Mzg5NCwxNTI5Mj
-Q3NDU4LC0xNDY1ODE5NTg0LDE4NjU4Mjg2NTUsLTExNTU5OTgy
-NTEsMTE3MzI2MzE0MCwtNTM4MDE5NzAwLDgzNjU1NTQ5NywtMz
-k0MTczODkzLC0xNDQzNzg5NzA4LDYzNTQ1MzI1OSwxNTMzNTMy
-MTYxXX0=
+eyJoaXN0b3J5IjpbLTU2ODQyMDg3NiwyMTkwNTkzNzYsLTY1Mj
+AxMTEwNSwtOTcyOTQxMTQ4LDMyMTQ5NDQ4OSw3NTYyMjc4Nzgs
+LTQ4NzY0MjY2MywtMTYzNDg3OTI2Niw1ODE1NzM4OTQsMTUyOT
+I0NzQ1OCwtMTQ2NTgxOTU4NCwxODY1ODI4NjU1LC0xMTU1OTk4
+MjUxLDExNzMyNjMxNDAsLTUzODAxOTcwMCw4MzY1NTU0OTcsLT
+M5NDE3Mzg5MywtMTQ0Mzc4OTcwOCw2MzU0NTMyNTksMTUzMzUz
+MjE2MV19
 -->
