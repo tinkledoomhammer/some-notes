@@ -1450,7 +1450,7 @@ Array | mix | "{n} v{0}" | `["3.0", ["n","aname"]]`
 Array | no index | "{} v{}" | `["aname","3.0"]`
 
 `String.format()` does not have a way to manipulate number representations
-: Use it with the `%` operattor
+: Use it with the `%` operator
 * `"{0} v{1}".format(["aname", "%0.2f" % 3.0])`
 
 
@@ -1529,5 +1529,6 @@ Host file system
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDExMjkwMTgwLC0yNzY0Mzg5NzJdfQ==
+eyJoaXN0b3J5IjpbLTEzNjA3NDE3MjgsNDExMjkwMTgwLC0yNz
+Y0Mzg5NzJdfQ==
 -->
