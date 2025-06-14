@@ -211,11 +211,13 @@ Recall Lydia
 -2.61
 = 1.65 39%
 
-300/55
+55/300 18.3%
+`
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA5MzQxNzQwLC0xMDY2NjQ5NzgyXX0=
+eyJoaXN0b3J5IjpbLTE5MzU4Mzk3MzcsLTEwNjY2NDk3ODJdfQ
+==
 -->
