@@ -206,7 +206,16 @@ Recall Lydia
 
 [How to finish broken quests](https://steamcommunity.com/sharedfiles/filedetails/?id=446371882)
 
+
+4.26
+-2.61
+= 1.65 39%
+
+300/55
+
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjY2NDk3ODJdfQ==
+eyJoaXN0b3J5IjpbODA5MzQxNzQwLC0xMDY2NjQ5NzgyXX0=
 -->
