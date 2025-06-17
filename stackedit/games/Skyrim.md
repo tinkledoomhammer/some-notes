@@ -225,11 +225,16 @@ Recall Lydia
 	2. Mora's grasp - freeze target for 30 secs, making them immune to dmg
 	3. Mora's boon - restores health, mag, stam
 4. Sallow regent
-	1. Seeker of might - combat skills +10%
-	1. Seeker of arcanca - magic skills +10%  (incl
+	1. Seeker of might - combat skills +10% (incl smithing)
+	2. Seeker of arcanca - magic skills +10%  (incl enchanting)
+	3. seeker of shadows - stealth skills +10% incl alchemy
+5.  Winds of change
+	1. companion's insight - shouts and destruction spells do not damage followers
+	2. lover's insight +10% damage and 10% better prices vs opposite sex
+	3. Scho
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxODc2NjMwMSwtMTkzNTgzOTczNywtMT
-A2NjY0OTc4Ml19
+eyJoaXN0b3J5IjpbLTE1MDEwMzgxMzAsLTE5MzU4Mzk3MzcsLT
+EwNjY2NDk3ODJdfQ==
 -->
