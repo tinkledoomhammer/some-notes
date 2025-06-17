@@ -215,10 +215,16 @@ Recall Lydia
 `
 
 ## Black books
-1. Epistol ac
+1. Epistol accumen -- no repeat
+2. Filament and Filigree
+	1. Secret of strength - power attacks cost no stamina (30 sec)
+	2. Secret of arcana - spells cost no magica for 30 sec
+	3. secret of protection - take half damage
+3. Hidden twilight
+	1. Mora's agony - summon a field of tentacle
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjkxMDI3OTcsLTE5MzU4Mzk3MzcsLT
+eyJoaXN0b3J5IjpbLTE1MTA3NDI2NDksLTE5MzU4Mzk3MzcsLT
 EwNjY2NDk3ODJdfQ==
 -->
