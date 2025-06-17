@@ -231,10 +231,14 @@ Recall Lydia
 5.  Winds of change
 	1. companion's insight - shouts and destruction spells do not damage followers
 	2. lover's insight +10% damage and 10% better prices vs opposite sex
-	3. Scho
+	3. Scholar's insight - skill books give an extra point
+6. Untold Legends
+	1. Bardic knowledge - increased stam regen for 5 minutes
+	2. Black market - summons a dremora merchant for 15 seconds
+	3. secret servant - summons a butler to carry excess items for 15 secs
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDEwMzgxMzAsLTE5MzU4Mzk3MzcsLT
-EwNjY2NDk3ODJdfQ==
+eyJoaXN0b3J5IjpbMTQzMjc1MDA0OCwtMTkzNTgzOTczNywtMT
+A2NjY0OTc4Ml19
 -->
