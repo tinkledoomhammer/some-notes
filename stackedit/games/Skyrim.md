@@ -221,10 +221,15 @@ Recall Lydia
 	2. Secret of arcana - spells cost no magica for 30 sec
 	3. secret of protection - take half damage
 3. Hidden twilight
-	1. Mora's agony - summon a field of tentacle
+	1. Mora's agony - summon a field of tentacles that poison
+	2. Mora's grasp - freeze target for 30 secs, making them immune to dmg
+	3. Mora's boon - restores health, mag, stam
+4. Sallow regent
+	1. Seeker of might - combat skills +10%
+	1. Seeker of arcanca - magic skills +10%  (incl
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTA3NDI2NDksLTE5MzU4Mzk3MzcsLT
-EwNjY2NDk3ODJdfQ==
+eyJoaXN0b3J5IjpbMTAxODc2NjMwMSwtMTkzNTgzOTczNywtMT
+A2NjY0OTc4Ml19
 -->
