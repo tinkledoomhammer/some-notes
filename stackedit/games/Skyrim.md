@@ -235,10 +235,10 @@ Recall Lydia
 6. Untold Legends
 	1. Bardic knowledge - increased stam regen for 5 minutes
 	2. Black market - summons a dremora merchant for 15 seconds
-	3. secret servant - summons a butler to carry excess items for 15 secs
+	3. secret servant - summons a butler to carry excess items for 15 secs\
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMjc1MDA0OCwtMTkzNTgzOTczNywtMT
-A2NjY0OTc4Ml19
+eyJoaXN0b3J5IjpbMTk4MDkxMTA0LDE0MzI3NTAwNDgsLTE5Mz
+U4Mzk3MzcsLTEwNjY2NDk3ODJdfQ==
 -->
