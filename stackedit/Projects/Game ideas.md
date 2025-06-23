@@ -3,9 +3,19 @@
 
 ### Tower defense
 * Need enemies
+	* fast
+	* armored
+	* high-health
+	* swarmer
+	* 
 * Tower types
+	* include repair
 * upgrades
+	* Allow upgrading individual stats
+	* cost curve depends on total improved s
 * pathing/spawn points
+* Goals/player health
+	* like maybe a gate
 
 
 
@@ -133,6 +143,6 @@ Finally, change the original file to the new version (and remove the `@tool` and
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjI0Njg3NDMsMjE0NTk1OTQwNywtND
-g1OTMxMTE0LDEwOTA2OTM1NDFdfQ==
+eyJoaXN0b3J5IjpbODA4NTE0OTQ2LC0xODIyNDY4NzQzLDIxND
+U5NTk0MDcsLTQ4NTkzMTExNCwxMDkwNjkzNTQxXX0=
 -->
