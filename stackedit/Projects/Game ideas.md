@@ -9,7 +9,7 @@
 	* swarmer
 	* Damage types/resistances?
 * Tower types
-	* include repair
+	* include repair?
 	* variations in
 		* rate of fire
 		* damage per hit
@@ -18,8 +18,11 @@
 		* specials
 			* dot
 			* damage armor
-			* slow
+			* slow and other debuffs 
 			* chaining
+			* criticals
+			* damage types?
+		* Melee / fix enemies in place?
 * upgrades
 	* Allow upgrading individual stats
 	* cost curve depends on
@@ -156,6 +159,6 @@ Finally, change the original file to the new version (and remove the `@tool` and
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjYyNDQwMCwtMTgyMjQ2ODc0MywyMT
-Q1OTU5NDA3LC00ODU5MzExMTQsMTA5MDY5MzU0MV19
+eyJoaXN0b3J5IjpbLTE4OTc4Nzk3NTUsLTE4MjI0Njg3NDMsMj
+E0NTk1OTQwNywtNDg1OTMxMTE0LDEwOTA2OTM1NDFdfQ==
 -->
