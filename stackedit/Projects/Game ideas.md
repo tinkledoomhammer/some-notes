@@ -7,13 +7,26 @@
 	* armored
 	* high-health
 	* swarmer
-	* 
+	* Damage types/resistances?
 * Tower types
 	* include repair
+	* variations in
+		* rate of fire
+		* damage per hit
+		* aoe
+		* damage types?
+		* specials
+			* dot
+			* damage armor
+			* slow
+			* chaining
 * upgrades
 	* Allow upgrading individual stats
-	* cost curve depends on total improved s
+	* cost curve depends on
+		* total improvements for that tower
+		* improvements of that stat
 * pathing/spawn points
+	* simple flow at first, perhaps allow different movement types
 * Goals/player health
 	* like maybe a gate
 
@@ -143,6 +156,6 @@ Finally, change the original file to the new version (and remove the `@tool` and
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA4NTE0OTQ2LC0xODIyNDY4NzQzLDIxND
-U5NTk0MDcsLTQ4NTkzMTExNCwxMDkwNjkzNTQxXX0=
+eyJoaXN0b3J5IjpbLTE0NjYyNDQwMCwtMTgyMjQ2ODc0MywyMT
+Q1OTU5NDA3LC00ODU5MzExMTQsMTA5MDY5MzU0MV19
 -->
