@@ -194,7 +194,7 @@ illusion
 |Glow Dust | Ectoplasm | red mtn flwr | fort mag, fort dest pwr, restore mag
 |Grass Pod | Red mtn flwr | | rest mag
 |Grass Pod | Red mtn flwr | tundra cotton| rest mag, fort mag
-d		`
+
 
 (mtn flwr) fort mag(tundra coton), fort barter
 (grass pod) resist poi , fort alt pwr (river betty)
@@ -255,6 +255,6 @@ Warhammers | 1.4 | 0.6 | 1.25 (1.35)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDAxNjExNzUsLTE2NzE1NDc0NjgsMT
-QzMjc1MDA0OCwtMTkzNTgzOTczNywtMTA2NjY0OTc4Ml19
+eyJoaXN0b3J5IjpbMTM5NDI0MDc1NywtMTY3MTU0NzQ2OCwxND
+MyNzUwMDQ4LC0xOTM1ODM5NzM3LC0xMDY2NjQ5NzgyXX0=
 -->
