@@ -241,48 +241,20 @@ Recall Lydia
 
 
 ### Weapons
-* maces 
-	* reach 1
-	* speed 0.8
-	* stagger 1
-* daggers 
-	* reach 0.7
-	* speed 1.3
-	* stagger 0.0
-* swords	
-	* reach 1
-	* speed 1
-	* stagger 0.75 (0.85 for stalhrim)
-* war axes 
-	* reach 1
-	* speed 09
-
-greatsword
-	reach 1.3 (1.0 for ebony)
-	speed 0.7 (0.75 with patch) (1.0 ebony)
-	stagger 1.1 (0.75 ebony, 1.2 stalhrim)
-battleaxes
-	reach 1.3
-	speed 0.7
-	stagger 1.15
-warhammers
-	reach 1.3
-	speed 0.6
-	stagger 1.25 (1.35 for stalhrim)
-
 
 Weapon | Reach | Speed | Stagger
 --|--|--|--
 Maces | 1 | 0.8 | 1
 Daggers | 0.7 | 1.4 | 0.0
-Swords | 1 | 1 | 0.75 (0.85 for stalhrom)
+Swords | 1 | 1 | 0.75 (0.85 for stalhrim)
 War Axes | 1 | 0.9 | ?
-Greatswords | 1.3 (1.0 for ebony) | 0.75 (1.0) | 1.1 / 0.75 / 1.2
+Greatswords | 1.3 (1.0 for ebony) | 0.75 (1.0) | 1.1 / 0.75 / 1.2 (eb/st)
 Battleaxes | 1.3 | 0.7 | 1.15
+Warhammers | 1.4 | 0.6 | 1.25 (1.35)
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNDUwNjQ5NSwtMTY3MTU0NzQ2OCwxND
-MyNzUwMDQ4LC0xOTM1ODM5NzM3LC0xMDY2NjQ5NzgyXX0=
+eyJoaXN0b3J5IjpbLTE0NDAxNjExNzUsLTE2NzE1NDc0NjgsMT
+QzMjc1MDA0OCwtMTkzNTgzOTczNywtMTA2NjY0OTc4Ml19
 -->
