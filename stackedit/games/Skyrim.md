@@ -274,10 +274,15 @@ warhammers
 Weapon | Reach | Speed | Stagger
 --|--|--|--
 Maces | 1 | 0.8 | 1
-Daggers |
+Daggers | 0.7 | 1.4 | 0.0
+Swords | 1 | 1 | 0.75 (0.85 for stalhrom)
+War Axes | 1 | 0.9 | ?
+Greatswords | 1.3 (1.0 for ebony) | 0.75 (1.0) | 1.1 / 0.75 / 1.2
+Battleaxes | 1.3 | 0.7 | 1.15
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5MTEyNzk4MSwtMTY3MTU0NzQ2OCwxND
+eyJoaXN0b3J5IjpbMTkwNDUwNjQ5NSwtMTY3MTU0NzQ2OCwxND
 MyNzUwMDQ4LC0xOTM1ODM5NzM3LC0xMDY2NjQ5NzgyXX0=
 -->
