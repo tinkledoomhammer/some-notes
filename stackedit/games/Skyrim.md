@@ -283,11 +283,20 @@ Butterfly wing | Lng Dmg Stam
 Chaurus Egg | wk Poison
 Hanging Moss | Dmg Weapon
 Luna moth wing | all buffs
+Trama Root | Wk Shock Burden
+
+### Damage Weapon
+Ingr | Aff | aff |aff
+-|-|-|-
+Blue But wing | Dmg Stam
+Chicken egg | Lng Dmg Stam
+Hanging Moss | Dmg Mag
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg1NjE1NTMsMTM5NDI0MDc1NywtMTY3MT
-U0NzQ2OCwxNDMyNzUwMDQ4LC0xOTM1ODM5NzM3LC0xMDY2NjQ5
-NzgyXX0=
+eyJoaXN0b3J5IjpbLTY4NDkyMzg1MSwxMzk0MjQwNzU3LC0xNj
+cxNTQ3NDY4LDE0MzI3NTAwNDgsLTE5MzU4Mzk3MzcsLTEwNjY2
+NDk3ODJdfQ==
 -->
