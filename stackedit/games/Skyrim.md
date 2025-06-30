@@ -181,7 +181,16 @@ illusion
 
 	
 
+## Solstheim home
+### Quick Walkthrough( https://en.uesp.net/wiki/Skyrim:Served_Cold )
 
+1.  Receive a message from  [Captain Veleth](https://en.uesp.net/wiki/Skyrim:Captain_Veleth "Skyrim:Captain Veleth").
+2.  Listen to  [Arano](https://en.uesp.net/wiki/Skyrim:Adril_Arano "Skyrim:Adril Arano")'s concerns, and speak with  [Geldis Sadri](https://en.uesp.net/wiki/Skyrim:Geldis_Sadri "Skyrim:Geldis Sadri").
+3.  Stake out the  [Ulen Ancestral Tomb](https://en.uesp.net/wiki/Skyrim:Ulen_Ancestral_Tomb "Skyrim:Ulen Ancestral Tomb").
+4.  Report back to Arano and obtain the key to  [Severin Manor](https://en.uesp.net/wiki/Skyrim:Severin_Manor "Skyrim:Severin Manor").
+5.  Retrieve the evidence from the safe in Severin Manor.
+6.  Travel through  [Ashfallow Citadel](https://en.uesp.net/wiki/Skyrim:Ashfallow_Citadel "Skyrim:Ashfallow Citadel")  and kill the conspirator.
+7.  Return to Arano, and follow him to receive your reward from  [Councilor Morvayn](https://en.uesp.net/wiki/Skyrim:Lleril_Morvayn "Skyrim:Lleril Morvayn").
 
 
 ## Apothecary mod
@@ -428,9 +437,9 @@ Tundra Cotton | Resi Mag | Forti Mag | Forti Mag Reg
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzY3NzkzOSwtMzk1NzQxMDcsMTc0ND
-E0MDQ3NywtMjgwODU3MzQ1LC0yMTMxNTkxNjY1LDEzMjc1NDI3
-MTIsLTYzMjI0MTc4OSwxMzk0MjQwNzU3LC0xNjcxNTQ3NDY4LD
-E0MzI3NTAwNDgsLTE5MzU4Mzk3MzcsLTEwNjY2NDk3ODJdfQ==
-
+eyJoaXN0b3J5IjpbLTk1NDEyMjM4NSwtMjEzNjc3OTM5LC0zOT
+U3NDEwNywxNzQ0MTQwNDc3LC0yODA4NTczNDUsLTIxMzE1OTE2
+NjUsMTMyNzU0MjcxMiwtNjMyMjQxNzg5LDEzOTQyNDA3NTcsLT
+E2NzE1NDc0NjgsMTQzMjc1MDA0OCwtMTkzNTgzOTczNywtMTA2
+NjY0OTc4Ml19
 -->
