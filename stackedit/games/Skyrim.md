@@ -300,11 +300,22 @@ Mora Tapinella | Frenzy
 Orange Dartwing | Silence
 Scathecraw | Calm | Silence | command
 
-### Lingering damage Magick
+### Lingering damage Magicka
+Ingr | Aff | aff |aff
+-|-|-|-
+Purple Mountain Flower | all buffs
+Swamp fungal pod | Paralysis
+Torchbug thorax | buffs
+Wheat | buffs
+
+#### Lingering Damage Stamina
+Ingr | Aff | aff |aff
+-|-|-|-
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5NTE4NTE2NCwxMzk0MjQwNzU3LC0xNj
+eyJoaXN0b3J5IjpbLTY2MDE1OTY0OCwxMzk0MjQwNzU3LC0xNj
 cxNTQ3NDY4LDE0MzI3NTAwNDgsLTE5MzU4Mzk3MzcsLTEwNjY2
 NDk3ODJdfQ==
 -->
