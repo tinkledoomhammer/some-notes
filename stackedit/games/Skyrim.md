@@ -311,11 +311,20 @@ Wheat | buffs
 #### Lingering Damage Stamina
 Ingr | Aff | aff |aff
 -|-|-|-
+Butterfly wing | damage magicka 
+Chickens egg | Damage Weapon
+Nightshade | Dmage health | Dmg Armor
 
+#### Paralysis 
+Ingr | Aff | aff |aff
+-|-|-|-
+Canis Root | Dmg Stam
+imp stool | Dmg health | lng Dmg hlth
+swamp fungal pod | L
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2MDE1OTY0OCwxMzk0MjQwNzU3LC0xNj
+eyJoaXN0b3J5IjpbMjA3MzgxOTk5MCwxMzk0MjQwNzU3LC0xNj
 cxNTQ3NDY4LDE0MzI3NTAwNDgsLTE5MzU4Mzk3MzcsLTEwNjY2
 NDk3ODJdfQ==
 -->
