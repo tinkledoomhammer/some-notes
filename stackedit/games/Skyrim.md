@@ -267,7 +267,16 @@ Bone meal | buffs
 Cyrodilic Spadetail | Dmg Stam | Fear
 Giant Lichen | Wk Shock | Wk poison
 Jazbay Grapes | buffs
+Scathecraw | silence | command | lingering damage health
+Silverside Perch | buffs
 
+#### Command
+Ingr | Aff | aff |aff
+-|-|-|-
+Bee | Wk Shock
+Deathbell | DMg Hlth | Wk Pois
+Honeycomb | buffs
+Scathecraw | Calm | Silence | Linger
 
 #### Damage Armor
 Ingr | Aff | aff |aff
@@ -376,7 +385,7 @@ Trama Root | Burden | Dmg Mag
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxNjA2NTYyNSwxMzk0MjQwNzU3LC0xNj
-cxNTQ3NDY4LDE0MzI3NTAwNDgsLTE5MzU4Mzk3MzcsLTEwNjY2
-NDk3ODJdfQ==
+eyJoaXN0b3J5IjpbNTc0NTk5NjIsMTM5NDI0MDc1NywtMTY3MT
+U0NzQ2OCwxNDMyNzUwMDQ4LC0xOTM1ODM5NzM3LC0xMDY2NjQ5
+NzgyXX0=
 -->
