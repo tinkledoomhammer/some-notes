@@ -351,12 +351,22 @@ Ingr | Aff | aff |aff
 Chaurus eggs | Dmg Mag
 Deathbell | Dmg Hlth | Command
 Giant Lichen | Wk Shock | Calm
-Nirnroor | Dmg Hlth
+Nirnroot | Dmg Hlth
+
+#### Weakness to Shock
+Ingr | Aff | aff |aff
+-|-|-|-
+Ashen grass pod | buffs
+Bee | Command
+Giant Lichen | Wk Poi | calm
+Trama Root | Burden | Dmg Mag
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNTExMzc2MCwxMzk0MjQwNzU3LC0xNj
-cxNTQ3NDY4LDE0MzI3NTAwNDgsLTE5MzU4Mzk3MzcsLTEwNjY2
-NDk3ODJdfQ==
+eyJoaXN0b3J5IjpbMjY2NTY0OTI3LDEzOTQyNDA3NTcsLTE2Nz
+E1NDc0NjgsMTQzMjc1MDA0OCwtMTkzNTgzOTczNywtMTA2NjY0
+OTc4Ml19
 -->
