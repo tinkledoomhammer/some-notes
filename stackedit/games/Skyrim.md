@@ -276,7 +276,9 @@ Ingr | Aff | aff |aff
 Bee | Wk Shock
 Deathbell | DMg Hlth | Wk Pois
 Honeycomb | buffs
-Scathecraw | Calm | Silence | Linger
+Scathecraw | Calm | Silence | Lingering Dmg Hlth
+Thistle Branch | buffs
+
 
 #### Damage Armor
 Ingr | Aff | aff |aff
@@ -285,7 +287,7 @@ Bear Claws | all buffs
 Blue Mtn Flwr | all buffs
 Nightshade | Ling Dmg Stam | Dmg Hlth
 
-### Damage Health
+#### Damage Health
 Ingr | Aff | aff |aff
 -|-|-|-
 Deathbell | Wk Poison | Command
@@ -295,7 +297,7 @@ Nirnroot | Wk Pois
 Red Mtn Flwr | All buffs
 River Betty | Burden
 
-### Damage Magicka
+#### Damage Magicka
 Ingr | Aff | aff |aff
 -|-|-|-
 Butterfly wing | Lng Dmg Stam
@@ -304,14 +306,14 @@ Hanging Moss | Dmg Weapon
 Luna moth wing | all buffs
 Trama Root | Wk Shock Burden
 
-### Damage Weapon
+#### Damage Weapon
 Ingr | Aff | aff |aff
 -|-|-|-
 Blue But wing | Dmg Stam
 Chicken egg | Lng Dmg Stam
 Hanging Moss | Dmg Mag
 
-### Lingering Damage Health
+#### Lingering Damage Health
 Ingr | Aff | aff |aff
 -|-|-|-
 Imp Stool | Lng Dmg Hlth | Paralysis
@@ -319,7 +321,7 @@ Mora Tapinella | Frenzy
 Orange Dartwing | Silence
 Scathecraw | Calm | Silence | command
 
-### Lingering damage Magicka
+#### Lingering damage Magicka
 Ingr | Aff | aff |aff
 -|-|-|-
 Purple Mountain Flower | all buffs
@@ -380,12 +382,13 @@ Bee | Command
 Giant Lichen | Wk Poi | calm
 Trama Root | Burden | Dmg Mag
 
+### Potions
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc0NTk5NjIsMTM5NDI0MDc1NywtMTY3MT
-U0NzQ2OCwxNDMyNzUwMDQ4LC0xOTM1ODM5NzM3LC0xMDY2NjQ5
-NzgyXX0=
+eyJoaXN0b3J5IjpbLTc4MjE3MDUxNywxMzk0MjQwNzU3LC0xNj
+cxNTQ3NDY4LDE0MzI3NTAwNDgsLTE5MzU4Mzk3MzcsLTEwNjY2
+NDk3ODJdfQ==
 -->
