@@ -199,7 +199,7 @@ bleeding crown | Tundra cotton | jazbay grapes | Mag Res, Fort Mag, Fort Block, 
 
 
 glowing mushroom  res sho ; fort armro; fort dest; fort health
-carry w
+carry wt, barter, fort stam, res fire
 
 (mtn flwr) fort mag(tundra coton), fort barter
 (grass pod) resist poi , fort alt pwr (river betty)
@@ -428,8 +428,8 @@ Tundra Cotton | Resi Mag | Forti Mag | Forti Mag Reg
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI0MjIyMTUsMTc0NDE0MDQ3NywtMjgwOD
-U3MzQ1LC0yMTMxNTkxNjY1LDEzMjc1NDI3MTIsLTYzMjI0MTc4
-OSwxMzk0MjQwNzU3LC0xNjcxNTQ3NDY4LDE0MzI3NTAwNDgsLT
-E5MzU4Mzk3MzcsLTEwNjY2NDk3ODJdfQ==
+eyJoaXN0b3J5IjpbLTM5NTc0MTA3LDE3NDQxNDA0NzcsLTI4MD
+g1NzM0NSwtMjEzMTU5MTY2NSwxMzI3NTQyNzEyLC02MzIyNDE3
+ODksMTM5NDI0MDc1NywtMTY3MTU0NzQ2OCwxNDMyNzUwMDQ4LC
+0xOTM1ODM5NzM3LC0xMDY2NjQ5NzgyXX0=
 -->
