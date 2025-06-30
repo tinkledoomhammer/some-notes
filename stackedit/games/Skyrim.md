@@ -195,7 +195,7 @@ illusion
 |Grass Pod | Red mtn flwr | | rest mag
 |Grass Pod | Red mtn flwr | tundra cotton| rest mag, fort mag
 Nirnroot | Scathecraw | Deathbell | Command, Wk Pois, Dmg Hlth
-
+bleeding crown | Tundra cotton | jazbay grapes | Mag Res, Fort Mag, Fort Block, fort Mag Reg		
 
 
 (mtn flwr) fort mag(tundra coton), fort barter
@@ -425,7 +425,8 @@ Tundra Cotton | Resi Mag | Forti Mag | Forti Mag Reg
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzE1OTE2NjUsMTMyNzU0MjcxMiwtNj
-MyMjQxNzg5LDEzOTQyNDA3NTcsLTE2NzE1NDc0NjgsMTQzMjc1
-MDA0OCwtMTkzNTgzOTczNywtMTA2NjY0OTc4Ml19
+eyJoaXN0b3J5IjpbLTI4MDg1NzM0NSwtMjEzMTU5MTY2NSwxMz
+I3NTQyNzEyLC02MzIyNDE3ODksMTM5NDI0MDc1NywtMTY3MTU0
+NzQ2OCwxNDMyNzUwMDQ4LC0xOTM1ODM5NzM3LC0xMDY2NjQ5Nz
+gyXX0=
 -->
