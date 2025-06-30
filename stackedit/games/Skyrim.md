@@ -266,14 +266,18 @@ Bear Claws | all buffs
 Blue Mtn Flwr | all buffs
 Nightshade | Ling Dmg Stam | Dmg Hlth
 
-
+### Damage Health
 Ingr | Aff | aff |aff
 -|-|-|-
-
+Deathbell | Wk Poison | Command
+Imp Stool | Paralysis | Lng Dmg Hlth
+Nightshade | Lnd Dmg Stam | Dmg Armor
+Nirnroot | Wk Pois
+Red Mtn Flwr | All good
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyMDQzMjY1NCwxMzk0MjQwNzU3LC0xNj
-cxNTQ3NDY4LDE0MzI3NTAwNDgsLTE5MzU4Mzk3MzcsLTEwNjY2
-NDk3ODJdfQ==
+eyJoaXN0b3J5IjpbLTE2MTg2NDgyMDQsMTM5NDI0MDc1NywtMT
+Y3MTU0NzQ2OCwxNDMyNzUwMDQ4LC0xOTM1ODM5NzM3LC0xMDY2
+NjQ5NzgyXX0=
 -->
