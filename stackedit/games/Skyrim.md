@@ -257,7 +257,17 @@ Warhammers | 1.4 | 0.6 | 1.25 (1.35)
 Ingr | Aff | aff |aff
 -|-|-|-
 River Betty | Dmg Hlth |
-Trama Root | Wk Shock | Dmg Magicka 
+Trama Root | Wk Shock | Dmg Magicka \
+
+
+#### Calm
+Ingr | Aff | aff |aff
+-|-|-|-
+Bone meal | buffs
+Cyrodilic Spadetail | Dmg Stam | Fear
+Giant Lichen | Wk Shock | Wk poison
+Jazbay Grapes | buffs
+
 
 #### Damage Armor
 Ingr | Aff | aff |aff
@@ -366,7 +376,7 @@ Trama Root | Burden | Dmg Mag
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY2NTY0OTI3LDEzOTQyNDA3NTcsLTE2Nz
-E1NDc0NjgsMTQzMjc1MDA0OCwtMTkzNTgzOTczNywtMTA2NjY0
-OTc4Ml19
+eyJoaXN0b3J5IjpbMTcxNjA2NTYyNSwxMzk0MjQwNzU3LC0xNj
+cxNTQ3NDY4LDE0MzI3NTAwNDgsLTE5MzU4Mzk3MzcsLTEwNjY2
+NDk3ODJdfQ==
 -->
