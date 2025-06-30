@@ -320,11 +320,21 @@ Ingr | Aff | aff |aff
 -|-|-|-
 Canis Root | Dmg Stam
 imp stool | Dmg health | lng Dmg hlth
-swamp fungal pod | L
+swamp fungal pod | Lng Dmg Mag
+
+#### Silence
+Ingr | Aff | aff |aff
+-|-|-|-
+Frost Mirriam | buffs
+grass pod | buffs
+lavender | buffs
+Orange Dartwing | Lng Dmg hlth
+Scathecraw | Command | Lng Dmg Hlth
+White cap | calm
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MzgxOTk5MCwxMzk0MjQwNzU3LC0xNj
-cxNTQ3NDY4LDE0MzI3NTAwNDgsLTE5MzU4Mzk3MzcsLTEwNjY2
-NDk3ODJdfQ==
+eyJoaXN0b3J5IjpbLTE2Mjk4MzgwMjksMTM5NDI0MDc1NywtMT
+Y3MTU0NzQ2OCwxNDMyNzUwMDQ4LC0xOTM1ODM5NzM3LC0xMDY2
+NjQ5NzgyXX0=
 -->
