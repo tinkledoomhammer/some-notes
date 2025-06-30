@@ -273,11 +273,21 @@ Deathbell | Wk Poison | Command
 Imp Stool | Paralysis | Lng Dmg Hlth
 Nightshade | Lnd Dmg Stam | Dmg Armor
 Nirnroot | Wk Pois
-Red Mtn Flwr | All good
+Red Mtn Flwr | All buffs
+River Betty | Burden
+
+### Damage Magicka
+Ingr | Aff | aff |aff
+-|-|-|-
+Butterfly wing | Lng Dmg Stam
+Chaurus Egg | wk Poison
+Hanging Moss | Dmg Weapon
+Luna moth wing | all buffs
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTg2NDgyMDQsMTM5NDI0MDc1NywtMT
-Y3MTU0NzQ2OCwxNDMyNzUwMDQ4LC0xOTM1ODM5NzM3LC0xMDY2
-NjQ5NzgyXX0=
+eyJoaXN0b3J5IjpbNjg1NjE1NTMsMTM5NDI0MDc1NywtMTY3MT
+U0NzQ2OCwxNDMyNzUwMDQ4LC0xOTM1ODM5NzM3LC0xMDY2NjQ5
+NzgyXX0=
 -->
