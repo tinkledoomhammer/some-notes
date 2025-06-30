@@ -394,13 +394,21 @@ River Betty | Fort Carry Wt
 Ingr | Aff | aff |aff
 -|-|-|-
 Blisterwort | Restore Health | Resist Mag
-Glowing Mushroom | Resist Sh
+Glowing Mushroom | Resist Shock | Fort Dest | Fort Health
+Lavender | Fort Stam Regen | Fort Conj Power
+
+#### Fort Barter
+Ingr | Aff | aff |aff
+-|-|-|-
+Butterfly wing | Restore Hlth
+Dragon's Tongue | Fort Carry | Fort Illusion | Fort 2H
+Red Mountain Flower | 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjk3MjE2NjAsMTM5NDI0MDc1NywtMT
-Y3MTU0NzQ2OCwxNDMyNzUwMDQ4LC0xOTM1ODM5NzM3LC0xMDY2
-NjQ5NzgyXX0=
+eyJoaXN0b3J5IjpbMTcwMTExNDIyMiwxMzk0MjQwNzU3LC0xNj
+cxNTQ3NDY4LDE0MzI3NTAwNDgsLTE5MzU4Mzk3MzcsLTEwNjY2
+NDk3ODJdfQ==
 -->
