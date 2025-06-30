@@ -198,6 +198,9 @@ Nirnroot | Scathecraw | Deathbell | Command, Wk Pois, Dmg Hlth
 bleeding crown | Tundra cotton | jazbay grapes | Mag Res, Fort Mag, Fort Block, fort Mag Reg		
 
 
+glowing mushroom  res sho ; fort armro; fort dest; fort health
+
+
 (mtn flwr) fort mag(tundra coton), fort barter
 (grass pod) resist poi , fort alt pwr (river betty)
 
@@ -425,8 +428,8 @@ Tundra Cotton | Resi Mag | Forti Mag | Forti Mag Reg
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4MDg1NzM0NSwtMjEzMTU5MTY2NSwxMz
-I3NTQyNzEyLC02MzIyNDE3ODksMTM5NDI0MDc1NywtMTY3MTU0
-NzQ2OCwxNDMyNzUwMDQ4LC0xOTM1ODM5NzM3LC0xMDY2NjQ5Nz
-gyXX0=
+eyJoaXN0b3J5IjpbMTc0NDE0MDQ3NywtMjgwODU3MzQ1LC0yMT
+MxNTkxNjY1LDEzMjc1NDI3MTIsLTYzMjI0MTc4OSwxMzk0MjQw
+NzU3LC0xNjcxNTQ3NDY4LDE0MzI3NTAwNDgsLTE5MzU4Mzk3Mz
+csLTEwNjY2NDk3ODJdfQ==
 -->
