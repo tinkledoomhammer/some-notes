@@ -313,6 +313,12 @@ Blue But wing | Dmg Stam
 Chicken egg | Lng Dmg Stam
 Hanging Moss | Dmg Mag
 
+#### Frenzy
+Ingr | Aff | aff |aff
+-|-|-|-
+Blisterwort | Buffs
+
+
 #### Lingering Damage Health
 Ingr | Aff | aff |aff
 -|-|-|-
@@ -416,7 +422,7 @@ Tundra Cotton | Resi Mag | Forti Mag | Forti Mag Reg
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMjI0MTc4OSwxMzk0MjQwNzU3LC0xNj
-cxNTQ3NDY4LDE0MzI3NTAwNDgsLTE5MzU4Mzk3MzcsLTEwNjY2
-NDk3ODJdfQ==
+eyJoaXN0b3J5IjpbMTczOTExNDE5NywtNjMyMjQxNzg5LDEzOT
+QyNDA3NTcsLTE2NzE1NDc0NjgsMTQzMjc1MDA0OCwtMTkzNTgz
+OTczNywtMTA2NjY0OTc4Ml19
 -->
