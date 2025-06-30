@@ -342,11 +342,21 @@ Juniper berries | buffs
 Ingr | Aff | aff |aff
 -|-|-|-
 Abecean Longfin | buffs
-Eles ear
+Elves ear | buffs
+white cap | silence
+
+#### Weakness to poison
+Ingr | Aff | aff |aff
+-|-|-|-
+Chaurus eggs | Dmg Mag
+Deathbell | Dmg Hlth | Command
+Giant Lichen | Wk Shock | Calm
+Nirnroor | Dmg Hlth
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNDM5NTUyMSwxMzk0MjQwNzU3LC0xNj
+eyJoaXN0b3J5IjpbMTYxNTExMzc2MCwxMzk0MjQwNzU3LC0xNj
 cxNTQ3NDY4LDE0MzI3NTAwNDgsLTE5MzU4Mzk3MzcsLTEwNjY2
 NDk3ODJdfQ==
 -->
