@@ -259,10 +259,21 @@ Ingr | Aff | aff |aff
 River Betty | Dmg Hlth |
 Trama Root | Wk Shock | Dmg Magicka 
 
+#### Damage Armor
+Ingr | Aff | aff |aff
+-|-|-|-
+Bear Claws | all buffs
+Blue Mtn Flwr | all buffs
+Nightshade | Ling Dmg Stam | Dmg Hlth
+
+
+Ingr | Aff | aff |aff
+-|-|-|-
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDMzOTA1MTYsMTM5NDI0MDc1NywtMT
-Y3MTU0NzQ2OCwxNDMyNzUwMDQ4LC0xOTM1ODM5NzM3LC0xMDY2
-NjQ5NzgyXX0=
+eyJoaXN0b3J5IjpbLTcyMDQzMjY1NCwxMzk0MjQwNzU3LC0xNj
+cxNTQ3NDY4LDE0MzI3NTAwNDgsLTE5MzU4Mzk3MzcsLTEwNjY2
+NDk3ODJdfQ==
 -->
