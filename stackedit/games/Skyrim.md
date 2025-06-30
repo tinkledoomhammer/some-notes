@@ -330,11 +330,23 @@ grass pod | buffs
 lavender | buffs
 Orange Dartwing | Lng Dmg hlth
 Scathecraw | Command | Lng Dmg Hlth
-White cap | calm
+White cap | Weak Frost
+
+#### Weakness to fire
+Ingr | Aff | aff |aff
+-|-|-|-
+Bleeding Crown | buffs
+Juniper berries | buffs
+
+#### Weakness to frost
+Ingr | Aff | aff |aff
+-|-|-|-
+Abecean Longfin | buffs
+Eles ear
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mjk4MzgwMjksMTM5NDI0MDc1NywtMT
-Y3MTU0NzQ2OCwxNDMyNzUwMDQ4LC0xOTM1ODM5NzM3LC0xMDY2
-NjQ5NzgyXX0=
+eyJoaXN0b3J5IjpbLTYwNDM5NTUyMSwxMzk0MjQwNzU3LC0xNj
+cxNTQ3NDY4LDE0MzI3NTAwNDgsLTE5MzU4Mzk3MzcsLTEwNjY2
+NDk3ODJdfQ==
 -->
