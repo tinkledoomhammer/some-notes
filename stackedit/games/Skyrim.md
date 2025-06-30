@@ -317,7 +317,8 @@ Hanging Moss | Dmg Mag
 Ingr | Aff | aff |aff
 -|-|-|-
 Blisterwort | Buffs
-
+Mort Tapinella | Lingering Dmg Hlth
+Troll Fat | buffs
 
 #### Lingering Damage Health
 Ingr | Aff | aff |aff
@@ -422,7 +423,7 @@ Tundra Cotton | Resi Mag | Forti Mag | Forti Mag Reg
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczOTExNDE5NywtNjMyMjQxNzg5LDEzOT
+eyJoaXN0b3J5IjpbMTMyNzU0MjcxMiwtNjMyMjQxNzg5LDEzOT
 QyNDA3NTcsLTE2NzE1NDc0NjgsMTQzMjc1MDA0OCwtMTkzNTgz
 OTczNywtMTA2NjY0OTc4Ml19
 -->
