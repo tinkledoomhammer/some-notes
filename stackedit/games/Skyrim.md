@@ -402,13 +402,21 @@ Ingr | Aff | aff |aff
 -|-|-|-
 Butterfly wing | Restore Hlth
 Dragon's Tongue | Fort Carry | Fort Illusion | Fort 2H
-Red Mountain Flower | 
+Red Mountain Flower | Rest Mag | Fort Mag 
+
+#### Fort Block
+Ingr | Aff | aff |aff
+-|-|-|-
+Bleeding Crown | Fort Speed | Resi Mag
+Honeycomb | Rest Stam | Fort Pwr Atk 
+Tundra Cotton | Resi Mag | Forti Mag | Forti Mag Reg
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwMTExNDIyMiwxMzk0MjQwNzU3LC0xNj
+eyJoaXN0b3J5IjpbLTYzMjI0MTc4OSwxMzk0MjQwNzU3LC0xNj
 cxNTQ3NDY4LDE0MzI3NTAwNDgsLTE5MzU4Mzk3MzcsLTEwNjY2
 NDk3ODJdfQ==
 -->
