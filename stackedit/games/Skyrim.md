@@ -292,11 +292,19 @@ Blue But wing | Dmg Stam
 Chicken egg | Lng Dmg Stam
 Hanging Moss | Dmg Mag
 
+### Lingering Damage Health
+Ingr | Aff | aff |aff
+-|-|-|-
+Imp Stool | Lng Dmg Hlth | Paralysis
+Mora Tapinella | Frenzy
+Orange Dartwing | Silence
+Scathecraw | Calm | Silence | command
 
+### Lingering damage Magick
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NDkyMzg1MSwxMzk0MjQwNzU3LC0xNj
+eyJoaXN0b3J5IjpbMTI5NTE4NTE2NCwxMzk0MjQwNzU3LC0xNj
 cxNTQ3NDY4LDE0MzI3NTAwNDgsLTE5MzU4Mzk3MzcsLTEwNjY2
 NDk3ODJdfQ==
 -->
