@@ -252,9 +252,17 @@ Greatswords | 1.3 (1.0 for ebony) | 0.75 (1.0) | 1.1 / 0.75 / 1.2 (eb/st)
 Battleaxes | 1.3 | 0.7 | 1.15
 Warhammers | 1.4 | 0.6 | 1.25 (1.35)
 
+### Apothocary mod Poisons
+#### Burden
+Ingr | Aff | aff |aff
+-|-|-|-
+River Betty | Dmg Hlth |
+Trama Root | Wk Shock | Dmg Magicka 
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NDI0MDc1NywtMTY3MTU0NzQ2OCwxND
-MyNzUwMDQ4LC0xOTM1ODM5NzM3LC0xMDY2NjQ5NzgyXX0=
+eyJoaXN0b3J5IjpbLTEwNDMzOTA1MTYsMTM5NDI0MDc1NywtMT
+Y3MTU0NzQ2OCwxNDMyNzUwMDQ4LC0xOTM1ODM5NzM3LC0xMDY2
+NjQ5NzgyXX0=
 -->
