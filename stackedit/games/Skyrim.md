@@ -194,7 +194,8 @@ illusion
 |Glow Dust | Ectoplasm | red mtn flwr | fort mag, fort dest pwr, restore mag
 |Grass Pod | Red mtn flwr | | rest mag
 |Grass Pod | Red mtn flwr | tundra cotton| rest mag, fort mag
-Nirnroot | Scathecraw | Deathbell | Command, Wk Pois, Dmg 
+Nirnroot | Scathecraw | Deathbell | Command, Wk Pois, Dmg Hlth
+
 
 
 (mtn flwr) fort mag(tundra coton), fort barter
@@ -424,7 +425,7 @@ Tundra Cotton | Resi Mag | Forti Mag | Forti Mag Reg
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNjEwODQwOSwxMzI3NTQyNzEyLC02Mz
-IyNDE3ODksMTM5NDI0MDc1NywtMTY3MTU0NzQ2OCwxNDMyNzUw
-MDQ4LC0xOTM1ODM5NzM3LC0xMDY2NjQ5NzgyXX0=
+eyJoaXN0b3J5IjpbLTIxMzE1OTE2NjUsMTMyNzU0MjcxMiwtNj
+MyMjQxNzg5LDEzOTQyNDA3NTcsLTE2NzE1NDc0NjgsMTQzMjc1
+MDA0OCwtMTkzNTgzOTczNywtMTA2NjY0OTc4Ml19
 -->
