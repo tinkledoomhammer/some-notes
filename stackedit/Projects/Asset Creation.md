@@ -22,6 +22,7 @@
 	* Each node has its own local transform
 		* which is defined by animation rules
 		* so the transform is function of all of the animatable parameters
+* When is easing applied
 
 ## Blender/Python
 
@@ -39,5 +40,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3MjQzNDddfQ==
+eyJoaXN0b3J5IjpbMjY2NjAyMjldfQ==
 -->
