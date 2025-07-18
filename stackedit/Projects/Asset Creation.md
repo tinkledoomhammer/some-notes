@@ -8,6 +8,10 @@
 4. Export as vector and raster
 5. Integration with Godot
 
+### Features
+* Pallet swapping
+* Skeleton-based design
+* 
 
 ## Blender/Python
 
@@ -25,5 +29,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTE1OTUzNDhdfQ==
+eyJoaXN0b3J5IjpbMjA5NDQ0NjYxMF19
 -->
