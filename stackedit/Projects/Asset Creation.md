@@ -11,7 +11,13 @@
 ### Features
 * Pallet swapping
 * Skeleton-based design
-* 
+* Parameterized morphing color manipulation
+
+### Design Ideas
+* Skeleton-first design of anmiation
+* Parameterized color and motion
+* Design nested 2D or 3D point clouds
+	* 
 
 ## Blender/Python
 
@@ -29,5 +35,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NDQ0NjYxMF19
+eyJoaXN0b3J5IjpbLTE5MzgzNjcwMjVdfQ==
 -->
