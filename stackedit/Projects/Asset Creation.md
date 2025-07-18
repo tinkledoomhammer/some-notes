@@ -17,7 +17,11 @@
 * Skeleton-first design of anmiation
 * Parameterized color and motion
 * Design nested 2D or 3D point clouds
-	* 
+	* the geometry should all be defined in terms of a relatively small number of points
+	* The point clouds are arranged in a tree
+	* Each node has its own local transform
+		* which is defined by animation rules
+		* so the 
 
 ## Blender/Python
 
@@ -35,5 +39,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzgzNjcwMjVdfQ==
+eyJoaXN0b3J5IjpbMTA0MzY0MDAyOV19
 -->
