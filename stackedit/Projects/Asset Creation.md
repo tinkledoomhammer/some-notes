@@ -21,7 +21,7 @@
 	* The point clouds are arranged in a tree
 	* Each node has its own local transform
 		* which is defined by animation rules
-		* so the 
+		* so the transform is function of all of the animatable parameters
 
 ## Blender/Python
 
@@ -39,5 +39,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0MzY0MDAyOV19
+eyJoaXN0b3J5IjpbLTI3MjQzNDddfQ==
 -->
