@@ -364,13 +364,16 @@ let (x,y) = tup;
 * parameter types **must** be declared in the signature
 
 ### Statements and expressions
-Statements : instructions that perform some action and do not return a value
-Expressions: evaluate to a resultant value
+Statements 
+: instructions that perform some action and do not return a value
+
+Expressions
+: evaluate to a resultant value
 
 Function definitions are statements
-Calling functions are part of an expression
+Function invocations are part of an expression
 
-This means that assignment cannot be chained because assignments are statements and therefore have no value
+This means that *assignment can**not** be chained* because assignments are statements and therefore have no value
 
 Scope blocks created with curly brackets are expressions:
 ```rust
@@ -952,7 +955,7 @@ assert_eq!(slice, &[2,3]);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTExMDIyMTQsNzU3MzI3MzUsMTY1Nz
+eyJoaXN0b3J5IjpbLTEyNjI0MTM0MTYsNzU3MzI3MzUsMTY1Nz
 I2MzczMCwxOTA3Mzk2NzIyLDIxOTA1OTM3NiwtNjUyMDExMTA1
 LC05NzI5NDExNDgsMzIxNDk0NDg5LDc1NjIyNzg3OCwtNDg3Nj
 QyNjYzLC0xNjM0ODc5MjY2LDU4MTU3Mzg5NCwxNTI5MjQ3NDU4
