@@ -457,6 +457,8 @@ let result = loop{
 		count +=1;
 	}
 	```
+	* To exit to a label with a  value , `break 'lable retv;`
+
 #### `while` and `for`loops
 `while <condition> {stufff}`
 	* avoids having to use if..break 
@@ -955,11 +957,11 @@ assert_eq!(slice, &[2,3]);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDE2NTAwLDc1NzMyNzM1LDE2NTcyNj
-M3MzAsMTkwNzM5NjcyMiwyMTkwNTkzNzYsLTY1MjAxMTEwNSwt
-OTcyOTQxMTQ4LDMyMTQ5NDQ4OSw3NTYyMjc4NzgsLTQ4NzY0Mj
-Y2MywtMTYzNDg3OTI2Niw1ODE1NzM4OTQsMTUyOTI0NzQ1OCwt
-MTQ2NTgxOTU4NCwxODY1ODI4NjU1LC0xMTU1OTk4MjUxLDExNz
-MyNjMxNDAsLTUzODAxOTcwMCw4MzY1NTU0OTcsLTM5NDE3Mzg5
-M119
+eyJoaXN0b3J5IjpbMzQxOTAwOTYzLC0xODAxNjUwMCw3NTczMj
+czNSwxNjU3MjYzNzMwLDE5MDczOTY3MjIsMjE5MDU5Mzc2LC02
+NTIwMTExMDUsLTk3Mjk0MTE0OCwzMjE0OTQ0ODksNzU2MjI3OD
+c4LC00ODc2NDI2NjMsLTE2MzQ4NzkyNjYsNTgxNTczODk0LDE1
+MjkyNDc0NTgsLTE0NjU4MTk1ODQsMTg2NTgyODY1NSwtMTE1NT
+k5ODI1MSwxMTczMjYzMTQwLC01MzgwMTk3MDAsODM2NTU1NDk3
+XX0=
 -->
