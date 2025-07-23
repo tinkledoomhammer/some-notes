@@ -120,7 +120,7 @@ io::stdin()
 	* `println!("x={x} and y+2 = {}",y+2);`
 
 #### Dependencies
-* Uses a crate name d `rand`
+* Uses a crate named `rand`
 	* in `Cargo.toml`:
 ```toml
 [dependencies]
@@ -949,11 +949,11 @@ assert_eq!(slice, &[2,3]);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNzM5NjcyMiwyMTkwNTkzNzYsLTY1Mj
-AxMTEwNSwtOTcyOTQxMTQ4LDMyMTQ5NDQ4OSw3NTYyMjc4Nzgs
-LTQ4NzY0MjY2MywtMTYzNDg3OTI2Niw1ODE1NzM4OTQsMTUyOT
-I0NzQ1OCwtMTQ2NTgxOTU4NCwxODY1ODI4NjU1LC0xMTU1OTk4
-MjUxLDExNzMyNjMxNDAsLTUzODAxOTcwMCw4MzY1NTU0OTcsLT
-M5NDE3Mzg5MywtMTQ0Mzc4OTcwOCw2MzU0NTMyNTksMTUzMzUz
-MjE2MV19
+eyJoaXN0b3J5IjpbMTY1NzI2MzczMCwxOTA3Mzk2NzIyLDIxOT
+A1OTM3NiwtNjUyMDExMTA1LC05NzI5NDExNDgsMzIxNDk0NDg5
+LDc1NjIyNzg3OCwtNDg3NjQyNjYzLC0xNjM0ODc5MjY2LDU4MT
+U3Mzg5NCwxNTI5MjQ3NDU4LC0xNDY1ODE5NTg0LDE4NjU4Mjg2
+NTUsLTExNTU5OTgyNTEsMTE3MzI2MzE0MCwtNTM4MDE5NzAwLD
+gzNjU1NTQ5NywtMzk0MTczODkzLC0xNDQzNzg5NzA4LDYzNTQ1
+MzI1OV19
 -->
