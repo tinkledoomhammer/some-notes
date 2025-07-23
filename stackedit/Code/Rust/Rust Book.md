@@ -352,7 +352,8 @@ let (x,y) = tup;
 * They can be initialized by repeating a value:
 	* `let a = [3;5]` will produce `[3,3,3,3,3]`
 * To specify the type and initialize with repetition:
-	* `let a:[
+	* `let a: [u32;5] = [3;5]`
+	* the size must be repeated
 * Elements are accessed with square brackets
 	* `a[0]` 
 * Bounds are checked automatically 
@@ -951,7 +952,7 @@ assert_eq!(slice, &[2,3]);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTA1MzgzNTEsNzU3MzI3MzUsMTY1Nz
+eyJoaXN0b3J5IjpbLTEzOTExMDIyMTQsNzU3MzI3MzUsMTY1Nz
 I2MzczMCwxOTA3Mzk2NzIyLDIxOTA1OTM3NiwtNjUyMDExMTA1
 LC05NzI5NDExNDgsMzIxNDk0NDg5LDc1NjIyNzg3OCwtNDg3Nj
 QyNjYzLC0xNjM0ODc5MjY2LDU4MTU3Mzg5NCwxNTI5MjQ3NDU4
