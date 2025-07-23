@@ -375,7 +375,7 @@ Function invocations are part of an expression
 
 This means that *assignment can**not** be chained* because assignments are statements and therefore have no value
 
-Scope blocks created with curly brackets are expressions:
+**Scope blocks created with curly brackets are expressions**:
 ```rust
 let y = {
 	let x = 3;
@@ -444,7 +444,7 @@ let result = loop{
 * **Loop Lables** can be used to disambiguate loops
 	* Loop labels begin with a single quote, and are ended with a colon 
 	```rust
-	let mut count =0;
+	let mut count = 0;
 	`counting_up: loop{
 		println!("count = {count}")
 		let mut remaining = 10;
@@ -955,11 +955,11 @@ assert_eq!(slice, &[2,3]);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjI0MTM0MTYsNzU3MzI3MzUsMTY1Nz
-I2MzczMCwxOTA3Mzk2NzIyLDIxOTA1OTM3NiwtNjUyMDExMTA1
-LC05NzI5NDExNDgsMzIxNDk0NDg5LDc1NjIyNzg3OCwtNDg3Nj
-QyNjYzLC0xNjM0ODc5MjY2LDU4MTU3Mzg5NCwxNTI5MjQ3NDU4
-LC0xNDY1ODE5NTg0LDE4NjU4Mjg2NTUsLTExNTU5OTgyNTEsMT
-E3MzI2MzE0MCwtNTM4MDE5NzAwLDgzNjU1NTQ5NywtMzk0MTcz
-ODkzXX0=
+eyJoaXN0b3J5IjpbLTE4MDE2NTAwLDc1NzMyNzM1LDE2NTcyNj
+M3MzAsMTkwNzM5NjcyMiwyMTkwNTkzNzYsLTY1MjAxMTEwNSwt
+OTcyOTQxMTQ4LDMyMTQ5NDQ4OSw3NTYyMjc4NzgsLTQ4NzY0Mj
+Y2MywtMTYzNDg3OTI2Niw1ODE1NzM4OTQsMTUyOTI0NzQ1OCwt
+MTQ2NTgxOTU4NCwxODY1ODI4NjU1LC0xMTU1OTk4MjUxLDExNz
+MyNjMxNDAsLTUzODAxOTcwMCw4MzY1NTU0OTcsLTM5NDE3Mzg5
+M119
 -->
