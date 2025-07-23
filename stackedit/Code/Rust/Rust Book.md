@@ -316,11 +316,11 @@ Byte `u8` only | b'A'
 * `+` `-` `*` `/` and `%` work as expected
 * For a full list of operators, see https://rust-book.cs.brown.edu/appendix-02-operators.html
 
-#### Bools
+#### `bool`s
 * one byte in size
 * allowed values are `true` and `false`
 
-#### Char Type
+#### `char` Type
 * 4-byte character codes
 * literals use single quotes `let c: char = 'z';`
 * They are *Unicode Scalar Value*s
@@ -949,11 +949,11 @@ assert_eq!(slice, &[2,3]);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDgxMTQwMjUsMTY1NzI2MzczMCwxOT
-A3Mzk2NzIyLDIxOTA1OTM3NiwtNjUyMDExMTA1LC05NzI5NDEx
-NDgsMzIxNDk0NDg5LDc1NjIyNzg3OCwtNDg3NjQyNjYzLC0xNj
-M0ODc5MjY2LDU4MTU3Mzg5NCwxNTI5MjQ3NDU4LC0xNDY1ODE5
-NTg0LDE4NjU4Mjg2NTUsLTExNTU5OTgyNTEsMTE3MzI2MzE0MC
-wtNTM4MDE5NzAwLDgzNjU1NTQ5NywtMzk0MTczODkzLC0xNDQz
-Nzg5NzA4XX0=
+eyJoaXN0b3J5IjpbNzU3MzI3MzUsMTY1NzI2MzczMCwxOTA3Mz
+k2NzIyLDIxOTA1OTM3NiwtNjUyMDExMTA1LC05NzI5NDExNDgs
+MzIxNDk0NDg5LDc1NjIyNzg3OCwtNDg3NjQyNjYzLC0xNjM0OD
+c5MjY2LDU4MTU3Mzg5NCwxNTI5MjQ3NDU4LC0xNDY1ODE5NTg0
+LDE4NjU4Mjg2NTUsLTExNTU5OTgyNTEsMTE3MzI2MzE0MCwtNT
+M4MDE5NzAwLDgzNjU1NTQ5NywtMzk0MTczODkzLC0xNDQzNzg5
+NzA4XX0=
 -->
