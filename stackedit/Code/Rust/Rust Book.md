@@ -303,7 +303,7 @@ Byte `u8` only | b'A'
 * In `--release` builds, the checking code is removed and rust will perform *two's complement wrapping*
 * Rust has a family of methods to customize overflow handling
 	* `wrapping_*` such as `wrapping_add` will cause wrapping
-	* `checked_*` will return none in the event of verflow
+	* `checked_*` will return none in the event of overflow
 	* `overflowing_*` returns a bool indicating whether an overflow occurred 
 	* `saturating_*` will clamp the return value
 
@@ -949,11 +949,11 @@ assert_eq!(slice, &[2,3]);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1NzI2MzczMCwxOTA3Mzk2NzIyLDIxOT
-A1OTM3NiwtNjUyMDExMTA1LC05NzI5NDExNDgsMzIxNDk0NDg5
-LDc1NjIyNzg3OCwtNDg3NjQyNjYzLC0xNjM0ODc5MjY2LDU4MT
-U3Mzg5NCwxNTI5MjQ3NDU4LC0xNDY1ODE5NTg0LDE4NjU4Mjg2
-NTUsLTExNTU5OTgyNTEsMTE3MzI2MzE0MCwtNTM4MDE5NzAwLD
-gzNjU1NTQ5NywtMzk0MTczODkzLC0xNDQzNzg5NzA4LDYzNTQ1
-MzI1OV19
+eyJoaXN0b3J5IjpbLTIxMDgxMTQwMjUsMTY1NzI2MzczMCwxOT
+A3Mzk2NzIyLDIxOTA1OTM3NiwtNjUyMDExMTA1LC05NzI5NDEx
+NDgsMzIxNDk0NDg5LDc1NjIyNzg3OCwtNDg3NjQyNjYzLC0xNj
+M0ODc5MjY2LDU4MTU3Mzg5NCwxNTI5MjQ3NDU4LC0xNDY1ODE5
+NTg0LDE4NjU4Mjg2NTUsLTExNTU5OTgyNTEsMTE3MzI2MzE0MC
+wtNTM4MDE5NzAwLDgzNjU1NTQ5NywtMzk0MTczODkzLC0xNDQz
+Nzg5NzA4XX0=
 -->
