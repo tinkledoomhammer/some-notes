@@ -282,7 +282,7 @@ Derive macro
 : A particular flavour of rust macro specified as an **attribute** on top of a struct
 
 ```rust
-#[defive(PartialEq, Debug)]
+#[derive(PartialEq, Debug)]
 struct Ticket{...}
 //now PartialEq and Debug are implemented for Ticket
 ```
@@ -298,7 +298,7 @@ fn print_if_even<T>(n: T)
 where
 	T: IsEven + Debug
 {
-	fi n.is_even(){
+	if n.is_even(){
 		println!("{n:?} is even");
 	}
 }
@@ -1918,7 +1918,7 @@ Cancellation is usually manually managed
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTk5MzI4NDgsOTkwNzk3ODY5LDE0Mz
+eyJoaXN0b3J5IjpbLTIxMDE3MDAyOTgsOTkwNzk3ODY5LDE0Mz
 I4NTYwNzMsLTE0Nzc4NzY0MTEsLTMyOTA2ODk4NCwtMTY1NDM5
 NTA2MywxNzQ4NjE3MDA5LC0xNDc2NDU4MjgxLDIxNDExOTQ0Nz
 gsMTg0Mjg3NDQzOCwtNDM2NTY3OTMsLTQ5NTk4OTkxOSw2ODc3
