@@ -21,7 +21,7 @@ Modules form a tree structure
 
 #### External modules and the filesystem
 `mod dog;` declares the existence of a submodule
-* If it is declared in the root of the crate (`src/lib.rs` or `src/main.rs`) then cargo expects to find the file containing the submodule to boe in either:
+* If it is declared in the root of the crate (`src/lib.rs` or `src/main.rs`) then cargo expects to find the file containing the submodule to be in either:
 	* `src/<module_name>.rs` or
 	* `src/<module_name>/mod.rs`
 * If it is a submodule of another (non-root) module then it should be named:
@@ -30,7 +30,7 @@ Modules form a tree structure
 
 #### Item Paths and `use` statements
 
-* Items defined in the smae module don't require any special syntax
+* Items defined in the same module don't require any special syntax
 * For items in other modules the path can be composed in 3 ways
 	* from the root of the current crate `crate::module_1::MyStruct`
 	* from the parent module `super::my_function`
@@ -1918,11 +1918,11 @@ Cancellation is usually manually managed
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyOTA2ODk4NCwtMTY1NDM5NTA2MywxNz
-Q4NjE3MDA5LC0xNDc2NDU4MjgxLDIxNDExOTQ0NzgsMTg0Mjg3
-NDQzOCwtNDM2NTY3OTMsLTQ5NTk4OTkxOSw2ODc3NDgzMjgsLT
-ExMDAxMDkyMTEsLTE3MTAyNjAxNTgsLTE2MjAyNjYyMjEsLTE1
-MzA2MTgyNTcsODc2ODE3MzcwLC05MjkyMDkxNzIsMzQxMTU0NT
-csMTE2MDkxNDYzNSwxMTAwNDQxODE2LC0xNjY5MTQyODcsLTE3
-NTM0NDQzODRdfQ==
+eyJoaXN0b3J5IjpbLTE0Nzc4NzY0MTEsLTMyOTA2ODk4NCwtMT
+Y1NDM5NTA2MywxNzQ4NjE3MDA5LC0xNDc2NDU4MjgxLDIxNDEx
+OTQ0NzgsMTg0Mjg3NDQzOCwtNDM2NTY3OTMsLTQ5NTk4OTkxOS
+w2ODc3NDgzMjgsLTExMDAxMDkyMTEsLTE3MTAyNjAxNTgsLTE2
+MjAyNjYyMjEsLTE1MzA2MTgyNTcsODc2ODE3MzcwLC05MjkyMD
+kxNzIsMzQxMTU0NTcsMTE2MDkxNDYzNSwxMTAwNDQxODE2LC0x
+NjY5MTQyODddfQ==
 -->
