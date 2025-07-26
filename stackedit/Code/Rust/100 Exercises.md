@@ -10,7 +10,7 @@ Module
 : A way to group related code together under a common namespace
 
 Inline Modules
-: The module declaration and the module contents (inside `{ ... }` are next to eachother
+: The module declaration and the module contents (inside `{ ... }` are next to each other
 
 Crate Root
 : Aka Root module
@@ -1918,11 +1918,11 @@ Cancellation is usually manually managed
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Nzc4NzY0MTEsLTMyOTA2ODk4NCwtMT
-Y1NDM5NTA2MywxNzQ4NjE3MDA5LC0xNDc2NDU4MjgxLDIxNDEx
-OTQ0NzgsMTg0Mjg3NDQzOCwtNDM2NTY3OTMsLTQ5NTk4OTkxOS
-w2ODc3NDgzMjgsLTExMDAxMDkyMTEsLTE3MTAyNjAxNTgsLTE2
-MjAyNjYyMjEsLTE1MzA2MTgyNTcsODc2ODE3MzcwLC05MjkyMD
-kxNzIsMzQxMTU0NTcsMTE2MDkxNDYzNSwxMTAwNDQxODE2LC0x
-NjY5MTQyODddfQ==
+eyJoaXN0b3J5IjpbMTQzMjg1NjA3MywtMTQ3Nzg3NjQxMSwtMz
+I5MDY4OTg0LC0xNjU0Mzk1MDYzLDE3NDg2MTcwMDksLTE0NzY0
+NTgyODEsMjE0MTE5NDQ3OCwxODQyODc0NDM4LC00MzY1Njc5My
+wtNDk1OTg5OTE5LDY4Nzc0ODMyOCwtMTEwMDEwOTIxMSwtMTcx
+MDI2MDE1OCwtMTYyMDI2NjIyMSwtMTUzMDYxODI1Nyw4NzY4MT
+czNzAsLTkyOTIwOTE3MiwzNDExNTQ1NywxMTYwOTE0NjM1LDEx
+MDA0NDE4MTZdfQ==
 -->
