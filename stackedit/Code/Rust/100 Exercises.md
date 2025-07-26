@@ -119,7 +119,7 @@ Restrictions that prevent simultaneous reading and mutating data
 1. Can't have a mutable and an immutable reference at the same time
 2. can't have more than one mutable reference at the same time
 3. The owner can't mutate a value while it is borrowed
-4. Can have many mutable references at the same time, as long as there are no mutable reference
+4. Can have many immutable references at the same time, as long as there are no mutable reference
 
 
 ### 3.07 Mutable references
@@ -1918,11 +1918,11 @@ Cancellation is usually manually managed
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMjg1NjA3MywtMTQ3Nzg3NjQxMSwtMz
-I5MDY4OTg0LC0xNjU0Mzk1MDYzLDE3NDg2MTcwMDksLTE0NzY0
-NTgyODEsMjE0MTE5NDQ3OCwxODQyODc0NDM4LC00MzY1Njc5My
-wtNDk1OTg5OTE5LDY4Nzc0ODMyOCwtMTEwMDEwOTIxMSwtMTcx
-MDI2MDE1OCwtMTYyMDI2NjIyMSwtMTUzMDYxODI1Nyw4NzY4MT
-czNzAsLTkyOTIwOTE3MiwzNDExNTQ1NywxMTYwOTE0NjM1LDEx
-MDA0NDE4MTZdfQ==
+eyJoaXN0b3J5IjpbOTkwNzk3ODY5LDE0MzI4NTYwNzMsLTE0Nz
+c4NzY0MTEsLTMyOTA2ODk4NCwtMTY1NDM5NTA2MywxNzQ4NjE3
+MDA5LC0xNDc2NDU4MjgxLDIxNDExOTQ0NzgsMTg0Mjg3NDQzOC
+wtNDM2NTY3OTMsLTQ5NTk4OTkxOSw2ODc3NDgzMjgsLTExMDAx
+MDkyMTEsLTE3MTAyNjAxNTgsLTE2MjAyNjYyMjEsLTE1MzA2MT
+gyNTcsODc2ODE3MzcwLC05MjkyMDkxNzIsMzQxMTU0NTcsMTE2
+MDkxNDYzNV19
 -->
