@@ -247,7 +247,7 @@ Limitations on traits
 Orphan Rule
 : Traits when multiple crates are involved must meet one of 2 rules
 : 1. The trait is defined in the current trait or
-: 2. The implementer type is defined in the current crate
+: 2. **or** The implementer type is defined in the current crate
 
 ### 4.03 Operator overloading
 
@@ -1918,11 +1918,11 @@ Cancellation is usually manually managed
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI5MzMyNDY3LDk5MDc5Nzg2OSwxNDMyOD
-U2MDczLC0xNDc3ODc2NDExLC0zMjkwNjg5ODQsLTE2NTQzOTUw
-NjMsMTc0ODYxNzAwOSwtMTQ3NjQ1ODI4MSwyMTQxMTk0NDc4LD
-E4NDI4NzQ0MzgsLTQzNjU2NzkzLC00OTU5ODk5MTksNjg3NzQ4
-MzI4LC0xMTAwMTA5MjExLC0xNzEwMjYwMTU4LC0xNjIwMjY2Mj
-IxLC0xNTMwNjE4MjU3LDg3NjgxNzM3MCwtOTI5MjA5MTcyLDM0
-MTE1NDU3XX0=
+eyJoaXN0b3J5IjpbLTE1OTk5MzI4NDgsOTkwNzk3ODY5LDE0Mz
+I4NTYwNzMsLTE0Nzc4NzY0MTEsLTMyOTA2ODk4NCwtMTY1NDM5
+NTA2MywxNzQ4NjE3MDA5LC0xNDc2NDU4MjgxLDIxNDExOTQ0Nz
+gsMTg0Mjg3NDQzOCwtNDM2NTY3OTMsLTQ5NTk4OTkxOSw2ODc3
+NDgzMjgsLTExMDAxMDkyMTEsLTE3MTAyNjAxNTgsLTE2MjAyNj
+YyMjEsLTE1MzA2MTgyNTcsODc2ODE3MzcwLC05MjkyMDkxNzIs
+MzQxMTU0NTddfQ==
 -->
