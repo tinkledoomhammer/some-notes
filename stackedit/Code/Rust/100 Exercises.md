@@ -229,7 +229,7 @@ A `use` statement may be required to get the trait in scope
 	* or it is defined in the standard library's **prelude**
 
 Prelude
-: A set of traits and types that are automtically imported into every Rust program
+: A set of traits and types that are automatically imported into every Rust program
 : `use std::prelude::*;` duplicates the effect of the auto-import
 
 Inherent method
@@ -239,7 +239,7 @@ Inherent method
 * When a type is defined in a different crate, then trying to define new methods for it will generate a compiler error
 
 Extension Trait
-: a trait whose primary purpose is to attach new methods to foreign types (such as `u32`
+: a trait whose primary purpose is to attach new methods to foreign types (such as `u32`)
 
 Limitations on traits
 1. You can't implement the same trait for the same type in the same crate twice
@@ -247,7 +247,7 @@ Limitations on traits
 Orphan Rule
 : Traits when multiple crates are involved must meet one of 2 rules
 : 1. The trait is defined in the current trait or
-: 2. The implementor type is defined in the current crate
+: 2. The implementer type is defined in the current crate
 
 ### 4.03 Operator overloading
 
@@ -1918,11 +1918,11 @@ Cancellation is usually manually managed
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkwNzk3ODY5LDE0MzI4NTYwNzMsLTE0Nz
-c4NzY0MTEsLTMyOTA2ODk4NCwtMTY1NDM5NTA2MywxNzQ4NjE3
-MDA5LC0xNDc2NDU4MjgxLDIxNDExOTQ0NzgsMTg0Mjg3NDQzOC
-wtNDM2NTY3OTMsLTQ5NTk4OTkxOSw2ODc3NDgzMjgsLTExMDAx
-MDkyMTEsLTE3MTAyNjAxNTgsLTE2MjAyNjYyMjEsLTE1MzA2MT
-gyNTcsODc2ODE3MzcwLC05MjkyMDkxNzIsMzQxMTU0NTcsMTE2
-MDkxNDYzNV19
+eyJoaXN0b3J5IjpbODI5MzMyNDY3LDk5MDc5Nzg2OSwxNDMyOD
+U2MDczLC0xNDc3ODc2NDExLC0zMjkwNjg5ODQsLTE2NTQzOTUw
+NjMsMTc0ODYxNzAwOSwtMTQ3NjQ1ODI4MSwyMTQxMTk0NDc4LD
+E4NDI4NzQ0MzgsLTQzNjU2NzkzLC00OTU5ODk5MTksNjg3NzQ4
+MzI4LC0xMTAwMTA5MjExLC0xNzEwMjYwMTU4LC0xNjIwMjY2Mj
+IxLC0xNTMwNjE4MjU3LDg3NjgxNzM3MCwtOTI5MjA5MTcyLDM0
+MTE1NDU3XX0=
 -->
