@@ -436,7 +436,7 @@ impl Deref for Asdf
 ```rust
 pub trait Add<RHS = Self> {
 	type Output;
-	fn add(slef, rhs: RHS) -> Self::Output;
+	fn add(self, rhs: RHS) -> Self::Output;
 }
 
 impl Add<u32> for u32{
@@ -1916,11 +1916,11 @@ Cancellation is usually manually managed
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNjk4MDg3MSw5OTA3OTc4NjksMTQzMj
-g1NjA3MywtMTQ3Nzg3NjQxMSwtMzI5MDY4OTg0LC0xNjU0Mzk1
-MDYzLDE3NDg2MTcwMDksLTE0NzY0NTgyODEsMjE0MTE5NDQ3OC
-wxODQyODc0NDM4LC00MzY1Njc5MywtNDk1OTg5OTE5LDY4Nzc0
-ODMyOCwtMTEwMDEwOTIxMSwtMTcxMDI2MDE1OCwtMTYyMDI2Nj
-IyMSwtMTUzMDYxODI1Nyw4NzY4MTczNzAsLTkyOTIwOTE3Miwz
-NDExNTQ1N119
+eyJoaXN0b3J5IjpbLTEyMzgzMTI5NDksLTQyNjk4MDg3MSw5OT
+A3OTc4NjksMTQzMjg1NjA3MywtMTQ3Nzg3NjQxMSwtMzI5MDY4
+OTg0LC0xNjU0Mzk1MDYzLDE3NDg2MTcwMDksLTE0NzY0NTgyOD
+EsMjE0MTE5NDQ3OCwxODQyODc0NDM4LC00MzY1Njc5MywtNDk1
+OTg5OTE5LDY4Nzc0ODMyOCwtMTEwMDEwOTIxMSwtMTcxMDI2MD
+E1OCwtMTYyMDI2NjIyMSwtMTUzMDYxODI1Nyw4NzY4MTczNzAs
+LTkyOTIwOTE3Ml19
 -->
