@@ -958,13 +958,15 @@ In chapter 4
 
 #### Ownership vs Garbage collection
 Garbage collection
-: scanns memory at runtime to deallocate un
+: scans memory at runtime to deallocate unreachable variables.
+: Pro: Avoids use-after-free and double-free; avoids a complicated type system; avoids undefined behavior
+: Cons runs at runtime, with either large but infrequent or frequent but short cleanup operations
 
  
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5ODQ3MzU1NywzNDE5MDA5NjMsLTE4MD
+eyJoaXN0b3J5IjpbMTIwMjI3MTAwMSwzNDE5MDA5NjMsLTE4MD
 E2NTAwLDc1NzMyNzM1LDE2NTcyNjM3MzAsMTkwNzM5NjcyMiwy
 MTkwNTkzNzYsLTY1MjAxMTEwNSwtOTcyOTQxMTQ4LDMyMTQ5ND
 Q4OSw3NTYyMjc4NzgsLTQ4NzY0MjY2MywtMTYzNDg3OTI2Niw1
