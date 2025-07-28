@@ -980,27 +980,38 @@ Garbage collection
 		d2.add_word("world")
 		
 	```
+
 Ownership
 : uses a more complicated type system to deallocate as soon as memory goes out of scope, without reference counting
-```rust
-fn main() {
-    let words = vec!["hello".to_string()];
-    let d = new_document(words);
 
-    // .to_vec() converts &[String] to Vec<String> by cloning each string
-    let words_copy = get_words(&d).to_vec();
-    let mut d2 = new_document(words_copy);
-    add_word(&mut d2, "world".to_string());
+	```rust
+		type Document = Vec<String>;
 
-    // The modification to `d2` does not affect `d`
-    assert!(!get_words(&d).contains(&"world".into()));
-}
+		fn new_document(words: Vec<String>) -> Document {
+		    words
+		}
 
+		fn add_word(this: &mut Document, word: String) {
+		    this.push(word);
+		}
 
+		fn get_words(this: &Document) -> &[String] {
+		    this.as_slice()
+		}
 
+		fn main() {
+		    let words = vec!["hello".to_string()];
+		    let d = new_document(words);
 
+		    // .to_vec() converts &[String] to Vec<String> by cloning each string
+		    let words_copy = get_words(&d).to_vec();
+		    let mut d2 = new_document(words_copy);
+		    add_word(&mut d2, "world".to_string());
 
-```
+		    // The modification to `d2` does not affect `d`
+		    assert!(!get_words(&d).contains(&"world".into()));
+		}
+	```
  
 
 
@@ -1029,7 +1040,7 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MDY2ODE5MiwzNDE5MDA5NjMsLTE4MD
+eyJoaXN0b3J5IjpbLTg2MzE4MzMyMSwzNDE5MDA5NjMsLTE4MD
 E2NTAwLDc1NzMyNzM1LDE2NTcyNjM3MzAsMTkwNzM5NjcyMiwy
 MTkwNTkzNzYsLTY1MjAxMTEwNSwtOTcyOTQxMTQ4LDMyMTQ5ND
 Q4OSw3NTYyMjc4NzgsLTQ4NzY0MjY2MywtMTYzNDg3OTI2Niw1
