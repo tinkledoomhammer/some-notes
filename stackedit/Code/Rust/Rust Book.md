@@ -1016,6 +1016,10 @@ Ownership
 	* `add_word` requires a `&mut Document`, and consumes the input 	`word`
 	* `get_words` returns an immutable reference to strings
  
+ #### Concepts of ownership
+ Ownership at Runtime
+ : * Rust allocates local variables in stack frames
+ :
 
 
 
@@ -1043,11 +1047,11 @@ Ownership
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExNDY0NjIxMywzNDE5MDA5NjMsLTE4MD
-E2NTAwLDc1NzMyNzM1LDE2NTcyNjM3MzAsMTkwNzM5NjcyMiwy
-MTkwNTkzNzYsLTY1MjAxMTEwNSwtOTcyOTQxMTQ4LDMyMTQ5ND
-Q4OSw3NTYyMjc4NzgsLTQ4NzY0MjY2MywtMTYzNDg3OTI2Niw1
-ODE1NzM4OTQsMTUyOTI0NzQ1OCwtMTQ2NTgxOTU4NCwxODY1OD
-I4NjU1LC0xMTU1OTk4MjUxLDExNzMyNjMxNDAsLTUzODAxOTcw
-MF19
+eyJoaXN0b3J5IjpbNTM5MjIzMjksMTExNDY0NjIxMywzNDE5MD
+A5NjMsLTE4MDE2NTAwLDc1NzMyNzM1LDE2NTcyNjM3MzAsMTkw
+NzM5NjcyMiwyMTkwNTkzNzYsLTY1MjAxMTEwNSwtOTcyOTQxMT
+Q4LDMyMTQ5NDQ4OSw3NTYyMjc4NzgsLTQ4NzY0MjY2MywtMTYz
+NDg3OTI2Niw1ODE1NzM4OTQsMTUyOTI0NzQ1OCwtMTQ2NTgxOT
+U4NCwxODY1ODI4NjU1LC0xMTU1OTk4MjUxLDExNzMyNjMxNDBd
+fQ==
 -->
