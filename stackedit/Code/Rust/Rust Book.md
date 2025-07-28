@@ -978,38 +978,11 @@ Garbage collection
 		words = ["Hello"]
 		d = Document(d.get_words())
 		d2.add_word("world")
+		
 	```
 Ownership
 : uses a more complicated type system to deallocate as soon as memory goes out of scope, without reference counting
-	```rust
-		type Document = Vec<String>;
-		fn new_document(words: Vec<String>) -> Document {
-		    words
-		}
-		fn add_word(this: &mut Document, word: String) {
-		    this.push(word);
-		}
-		fn get_words(this: &Document) -> &[String] {
-		    this.as_slice()
-		}
-		fn main() {
-			
-	```
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```rust
 fn main() {
     let words = vec!["hello".to_string()];
     let d = new_document(words);
@@ -1027,17 +1000,40 @@ fn main() {
 
 
 
+```
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzEyODQ3NDYsMzQxOTAwOTYzLC0xOD
-AxNjUwMCw3NTczMjczNSwxNjU3MjYzNzMwLDE5MDczOTY3MjIs
-MjE5MDU5Mzc2LC02NTIwMTExMDUsLTk3Mjk0MTE0OCwzMjE0OT
-Q0ODksNzU2MjI3ODc4LC00ODc2NDI2NjMsLTE2MzQ4NzkyNjYs
-NTgxNTczODk0LDE1MjkyNDc0NTgsLTE0NjU4MTk1ODQsMTg2NT
-gyODY1NSwtMTE1NTk5ODI1MSwxMTczMjYzMTQwLC01MzgwMTk3
-MDBdfQ==
+eyJoaXN0b3J5IjpbMTU2MDY2ODE5MiwzNDE5MDA5NjMsLTE4MD
+E2NTAwLDc1NzMyNzM1LDE2NTcyNjM3MzAsMTkwNzM5NjcyMiwy
+MTkwNTkzNzYsLTY1MjAxMTEwNSwtOTcyOTQxMTQ4LDMyMTQ5ND
+Q4OSw3NTYyMjc4NzgsLTQ4NzY0MjY2MywtMTYzNDg3OTI2Niw1
+ODE1NzM4OTQsMTUyOTI0NzQ1OCwtMTQ2NTgxOTU4NCwxODY1OD
+I4NjU1LC0xMTU1OTk4MjUxLDExNzMyNjMxNDAsLTUzODAxOTcw
+MF19
 -->
