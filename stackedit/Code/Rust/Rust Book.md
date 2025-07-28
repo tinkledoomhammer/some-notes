@@ -1033,7 +1033,7 @@ fn inner(x: &mut i32) {
 
   let a_box = Box::new(2);  
   let a_box_stack_ref = &a_box;
-  let a_box_heap_ref = &*a_box;
+  let a_box_heap_ref = &*a_box; // points to the heap
 
   *x += 5;
 }
@@ -1066,11 +1066,11 @@ fn inner(x: &mut i32) {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM0MTE2MzYwLDExMTQ2NDYyMTMsMzQxOT
-AwOTYzLC0xODAxNjUwMCw3NTczMjczNSwxNjU3MjYzNzMwLDE5
-MDczOTY3MjIsMjE5MDU5Mzc2LC02NTIwMTExMDUsLTk3Mjk0MT
-E0OCwzMjE0OTQ0ODksNzU2MjI3ODc4LC00ODc2NDI2NjMsLTE2
-MzQ4NzkyNjYsNTgxNTczODk0LDE1MjkyNDc0NTgsLTE0NjU4MT
-k1ODQsMTg2NTgyODY1NSwtMTE1NTk5ODI1MSwxMTczMjYzMTQw
-XX0=
+eyJoaXN0b3J5IjpbNjk0MDE2MDY5LDYzNDExNjM2MCwxMTE0Nj
+Q2MjEzLDM0MTkwMDk2MywtMTgwMTY1MDAsNzU3MzI3MzUsMTY1
+NzI2MzczMCwxOTA3Mzk2NzIyLDIxOTA1OTM3NiwtNjUyMDExMT
+A1LC05NzI5NDExNDgsMzIxNDk0NDg5LDc1NjIyNzg3OCwtNDg3
+NjQyNjYzLC0xNjM0ODc5MjY2LDU4MTU3Mzg5NCwxNTI5MjQ3ND
+U4LC0xNDY1ODE5NTg0LDE4NjU4Mjg2NTUsLTExNTU5OTgyNTFd
+fQ==
 -->
