@@ -950,14 +950,21 @@ let slice = &a[1..3]; // slice: &[i32]
 assert_eq!(slice, &[2,3]);
 ```
 
+
 ### 04.05 Ownership recap
-#### Ownership vs Garbage colle
+In chapter 4
+: ownership, borrowing, slices
+: memory allocation, stack vs heap, pointers, and undefined behavior
+
+#### Ownership vs Garbage collection
+Garbage collection
+: scanns memory at runtime to deallocate un
 
  
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0NjAxOTMzNywzNDE5MDA5NjMsLTE4MD
+eyJoaXN0b3J5IjpbMTU5ODQ3MzU1NywzNDE5MDA5NjMsLTE4MD
 E2NTAwLDc1NzMyNzM1LDE2NTcyNjM3MzAsMTkwNzM5NjcyMiwy
 MTkwNTkzNzYsLTY1MjAxMTEwNSwtOTcyOTQxMTQ4LDMyMTQ5ND
 Q4OSw3NTYyMjc4NzgsLTQ4NzY0MjY2MywtMTYzNDg3OTI2Niw1
