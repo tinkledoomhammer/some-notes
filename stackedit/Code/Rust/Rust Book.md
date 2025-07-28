@@ -960,13 +960,15 @@ In chapter 4
 Garbage collection
 : scans memory at runtime to deallocate unreachable variables.
 : Pro: Avoids use-after-free and double-free; avoids a complicated type system; avoids undefined behavior
-: Cons runs at runtime, with either large but infrequent or frequent but short cleanup operations
+: Cons:  runs at runtime, with either large but infrequent or frequent but short cleanup operations
+: Cons: can be difficult to tell when variables will be garbage-collected from reading the source code
+: Cons: aliasing problems
 
  
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMjI3MTAwMSwzNDE5MDA5NjMsLTE4MD
+eyJoaXN0b3J5IjpbMjAxNjIxNzU4OCwzNDE5MDA5NjMsLTE4MD
 E2NTAwLDc1NzMyNzM1LDE2NTcyNjM3MzAsMTkwNzM5NjcyMiwy
 MTkwNTkzNzYsLTY1MjAxMTEwNSwtOTcyOTQxMTQ4LDMyMTQ5ND
 Q4OSw3NTYyMjc4NzgsLTQ4NzY0MjY2MywtMTYzNDg3OTI2Niw1
