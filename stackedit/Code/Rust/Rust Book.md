@@ -1012,6 +1012,9 @@ Ownership
 		    assert!(!get_words(&d).contains(&"world".into()));
 		}
 	```
+	* `new_document` consumes ownership of thevector, so it takes ownership
+	* `add_word` requires a `&mut Document`, and consumes the input 	`word`
+	* `get_words` returns a n
  
 
 
@@ -1040,11 +1043,11 @@ Ownership
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MzE4MzMyMSwzNDE5MDA5NjMsLTE4MD
-E2NTAwLDc1NzMyNzM1LDE2NTcyNjM3MzAsMTkwNzM5NjcyMiwy
-MTkwNTkzNzYsLTY1MjAxMTEwNSwtOTcyOTQxMTQ4LDMyMTQ5ND
-Q4OSw3NTYyMjc4NzgsLTQ4NzY0MjY2MywtMTYzNDg3OTI2Niw1
-ODE1NzM4OTQsMTUyOTI0NzQ1OCwtMTQ2NTgxOTU4NCwxODY1OD
-I4NjU1LC0xMTU1OTk4MjUxLDExNzMyNjMxNDAsLTUzODAxOTcw
-MF19
+eyJoaXN0b3J5IjpbLTEzMzAwNDEwMzksMzQxOTAwOTYzLC0xOD
+AxNjUwMCw3NTczMjczNSwxNjU3MjYzNzMwLDE5MDczOTY3MjIs
+MjE5MDU5Mzc2LC02NTIwMTExMDUsLTk3Mjk0MTE0OCwzMjE0OT
+Q0ODksNzU2MjI3ODc4LC00ODc2NDI2NjMsLTE2MzQ4NzkyNjYs
+NTgxNTczODk0LDE1MjkyNDc0NTgsLTE0NjU4MTk1ODQsMTg2NT
+gyODY1NSwtMTE1NTk5ODI1MSwxMTczMjYzMTQwLC01MzgwMTk3
+MDBdfQ==
 -->
