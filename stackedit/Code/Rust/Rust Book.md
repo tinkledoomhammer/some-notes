@@ -1019,7 +1019,26 @@ Ownership
  #### Concepts of ownership
  Ownership at Runtime
  : * Rust allocates local variables in stack frames
- :
+ : local variables can hold either data or pointers
+ : Pointers can be either boxes (which own heap data) or references (non-owning pointers).
+```rust
+fn main() {
+  let mut a_num = 0;
+  inner(&mut a_num);
+}
+
+fn inner(x: &mut i32) {
+  let another_num = 1;
+  let a_stack_ref = &another_num;
+
+  let a_box = Box::new(2);  
+  let a_box_stack_ref = &a_box;
+  let a_box_heap_ref = &*a_box;
+
+  *x += 5;
+}
+```
+
 
 
 
@@ -1047,11 +1066,11 @@ Ownership
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM5MjIzMjksMTExNDY0NjIxMywzNDE5MD
-A5NjMsLTE4MDE2NTAwLDc1NzMyNzM1LDE2NTcyNjM3MzAsMTkw
-NzM5NjcyMiwyMTkwNTkzNzYsLTY1MjAxMTEwNSwtOTcyOTQxMT
-Q4LDMyMTQ5NDQ4OSw3NTYyMjc4NzgsLTQ4NzY0MjY2MywtMTYz
-NDg3OTI2Niw1ODE1NzM4OTQsMTUyOTI0NzQ1OCwtMTQ2NTgxOT
-U4NCwxODY1ODI4NjU1LC0xMTU1OTk4MjUxLDExNzMyNjMxNDBd
-fQ==
+eyJoaXN0b3J5IjpbNjM0MTE2MzYwLDExMTQ2NDYyMTMsMzQxOT
+AwOTYzLC0xODAxNjUwMCw3NTczMjczNSwxNjU3MjYzNzMwLDE5
+MDczOTY3MjIsMjE5MDU5Mzc2LC02NTIwMTExMDUsLTk3Mjk0MT
+E0OCwzMjE0OTQ0ODksNzU2MjI3ODc4LC00ODc2NDI2NjMsLTE2
+MzQ4NzkyNjYsNTgxNTczODk0LDE1MjkyNDc0NTgsLTE0NjU4MT
+k1ODQsMTg2NTgyODY1NSwtMTE1NTk5ODI1MSwxMTczMjYzMTQw
+XX0=
 -->
