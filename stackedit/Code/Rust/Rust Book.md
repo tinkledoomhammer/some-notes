@@ -1012,7 +1012,7 @@ Ownership
 		    assert!(!get_words(&d).contains(&"world".into()));
 		}
 	```
-	* `new_document` consumes ownership of the vector, so the takes ownership
+	* `new_document` consumes ownership of the vector, so the document owns the parameter it is passed
 	* `add_word` requires a `&mut Document`, and consumes the input 	`word`
 	* `get_words` returns an immutable reference to strings
  
@@ -1066,7 +1066,7 @@ fn inner(x: &mut i32) {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNDE4MDU0Niw2OTQwMTYwNjksNjM0MT
+eyJoaXN0b3J5IjpbLTMzODExMDk1Niw2OTQwMTYwNjksNjM0MT
 E2MzYwLDExMTQ2NDYyMTMsMzQxOTAwOTYzLC0xODAxNjUwMCw3
 NTczMjczNSwxNjU3MjYzNzMwLDE5MDczOTY3MjIsMjE5MDU5Mz
 c2LC02NTIwMTExMDUsLTk3Mjk0MTE0OCwzMjE0OTQ0ODksNzU2
