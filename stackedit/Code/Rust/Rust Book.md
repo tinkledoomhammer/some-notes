@@ -959,7 +959,7 @@ In chapter 4
 #### Ownership vs Garbage collection
 Garbage collection
 : scans memory at runtime to deallocate unreachable variables.
-: * Pro: Avoids use-after-free and double-free; avoids a complicated type system; avoids undefined behavior
+: * Pros: Avoids use-after-free and double-free; avoids a complicated type system; avoids undefined behavior
 : * Con:  runs at runtime, with either large but infrequent or frequent but short cleanup operations
 : * Con: can be difficult to tell when variables will be garbage-collected from reading the source code
 : * Cons: aliasing problems. obfuscating and restricting pointers
@@ -1012,7 +1012,7 @@ Ownership
 		    assert!(!get_words(&d).contains(&"world".into()));
 		}
 	```
-	* `new_document` consumes ownership of thevector, so it takes ownership
+	* `new_document` consumes ownership of the vector, so the takes ownership
 	* `add_word` requires a `&mut Document`, and consumes the input 	`word`
 	* `get_words` returns an immutable reference to strings
  
@@ -1066,7 +1066,7 @@ fn inner(x: &mut i32) {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyMzg2NjgyMyw2OTQwMTYwNjksNjM0MT
+eyJoaXN0b3J5IjpbMTkzNDE4MDU0Niw2OTQwMTYwNjksNjM0MT
 E2MzYwLDExMTQ2NDYyMTMsMzQxOTAwOTYzLC0xODAxNjUwMCw3
 NTczMjczNSwxNjU3MjYzNzMwLDE5MDczOTY3MjIsMjE5MDU5Mz
 c2LC02NTIwMTExMDUsLTk3Mjk0MTE0OCwzMjE0OTQ0ODksNzU2
