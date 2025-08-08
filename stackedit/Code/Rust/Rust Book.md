@@ -959,10 +959,10 @@ In chapter 4
 #### Ownership vs Garbage collection
 Garbage collection
 : scans memory at runtime to deallocate unreachable variables.
-: Pro: Avoids use-after-free and double-free; avoids a complicated type system; avoids undefined behavior
-: Cons:  runs at runtime, with either large but infrequent or frequent but short cleanup operations
-: Cons: can be difficult to tell when variables will be garbage-collected from reading the source code
-: Cons: aliasing problems. obfuscating and restricting pointers
+: * Pro: Avoids use-after-free and double-free; avoids a complicated type system; avoids undefined behavior
+: * Con:  runs at runtime, with either large but infrequent or frequent but short cleanup operations
+: * Con: can be difficult to tell when variables will be garbage-collected from reading the source code
+: * Cons: aliasing problems. obfuscating and restricting pointers
 : Example 
 	```python
 		class Document:  
@@ -1066,11 +1066,11 @@ fn inner(x: &mut i32) {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk0MDE2MDY5LDYzNDExNjM2MCwxMTE0Nj
-Q2MjEzLDM0MTkwMDk2MywtMTgwMTY1MDAsNzU3MzI3MzUsMTY1
-NzI2MzczMCwxOTA3Mzk2NzIyLDIxOTA1OTM3NiwtNjUyMDExMT
-A1LC05NzI5NDExNDgsMzIxNDk0NDg5LDc1NjIyNzg3OCwtNDg3
-NjQyNjYzLC0xNjM0ODc5MjY2LDU4MTU3Mzg5NCwxNTI5MjQ3ND
-U4LC0xNDY1ODE5NTg0LDE4NjU4Mjg2NTUsLTExNTU5OTgyNTFd
-fQ==
+eyJoaXN0b3J5IjpbMTgyMzg2NjgyMyw2OTQwMTYwNjksNjM0MT
+E2MzYwLDExMTQ2NDYyMTMsMzQxOTAwOTYzLC0xODAxNjUwMCw3
+NTczMjczNSwxNjU3MjYzNzMwLDE5MDczOTY3MjIsMjE5MDU5Mz
+c2LC02NTIwMTExMDUsLTk3Mjk0MTE0OCwzMjE0OTQ0ODksNzU2
+MjI3ODc4LC00ODc2NDI2NjMsLTE2MzQ4NzkyNjYsNTgxNTczOD
+k0LDE1MjkyNDc0NTgsLTE0NjU4MTk1ODQsMTg2NTgyODY1NV19
+
 -->
