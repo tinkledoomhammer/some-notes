@@ -1061,7 +1061,13 @@ drop(v2);
 // now freeing v2 also frees v
 drop(v); //This would double-free v and v2
 
-//
+//Use after free example
+let mut v = vec![1,2,3];
+let n = &v[0]; // [L1]
+// v and n point ot the same heap address
+v.push(4); [L2]
+// v is the same but n points to nothing
+
 
 
 
@@ -1105,11 +1111,11 @@ fn extract(b: &Box<i32>) -> i32 {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTgyMzU2MTEsLTMzODExMDk1Niw2OT
-QwMTYwNjksNjM0MTE2MzYwLDExMTQ2NDYyMTMsMzQxOTAwOTYz
-LC0xODAxNjUwMCw3NTczMjczNSwxNjU3MjYzNzMwLDE5MDczOT
-Y3MjIsMjE5MDU5Mzc2LC02NTIwMTExMDUsLTk3Mjk0MTE0OCwz
-MjE0OTQ0ODksNzU2MjI3ODc4LC00ODc2NDI2NjMsLTE2MzQ4Nz
-kyNjYsNTgxNTczODk0LDE1MjkyNDc0NTgsLTE0NjU4MTk1ODRd
-fQ==
+eyJoaXN0b3J5IjpbMTg0NDQwNTg2NiwtMzM4MTEwOTU2LDY5ND
+AxNjA2OSw2MzQxMTYzNjAsMTExNDY0NjIxMywzNDE5MDA5NjMs
+LTE4MDE2NTAwLDc1NzMyNzM1LDE2NTcyNjM3MzAsMTkwNzM5Nj
+cyMiwyMTkwNTkzNzYsLTY1MjAxMTEwNSwtOTcyOTQxMTQ4LDMy
+MTQ5NDQ4OSw3NTYyMjc4NzgsLTQ4NzY0MjY2MywtMTYzNDg3OT
+I2Niw1ODE1NzM4OTQsMTUyOTI0NzQ1OCwtMTQ2NTgxOTU4NF19
+
 -->
