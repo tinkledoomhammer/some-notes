@@ -1040,7 +1040,11 @@ fn inner(x: &mut i32) {
 ```
 Ownership at Compile-time
 : Read, Write, and Own perms are tracked on each variable
-: Ruest requires that a variable have the appro
+: Rust requires that a variable have the appropriate perms for the operation
+: Perms are changed if the variable is **moved** or **borrowed**
+: Moving a non-copyable type requires RO perms, and eliminates all perms on the original var
+
+
 
 
 #### From the quiz
@@ -1083,11 +1087,11 @@ fn extract(b: &Box<i32>) -> i32 {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY3NDY5MjgzLC0zMzgxMTA5NTYsNjk0MD
-E2MDY5LDYzNDExNjM2MCwxMTE0NjQ2MjEzLDM0MTkwMDk2Mywt
-MTgwMTY1MDAsNzU3MzI3MzUsMTY1NzI2MzczMCwxOTA3Mzk2Nz
-IyLDIxOTA1OTM3NiwtNjUyMDExMTA1LC05NzI5NDExNDgsMzIx
-NDk0NDg5LDc1NjIyNzg3OCwtNDg3NjQyNjYzLC0xNjM0ODc5Mj
-Y2LDU4MTU3Mzg5NCwxNTI5MjQ3NDU4LC0xNDY1ODE5NTg0XX0=
-
+eyJoaXN0b3J5IjpbLTEzMDIxMjgyNjYsLTMzODExMDk1Niw2OT
+QwMTYwNjksNjM0MTE2MzYwLDExMTQ2NDYyMTMsMzQxOTAwOTYz
+LC0xODAxNjUwMCw3NTczMjczNSwxNjU3MjYzNzMwLDE5MDczOT
+Y3MjIsMjE5MDU5Mzc2LC02NTIwMTExMDUsLTk3Mjk0MTE0OCwz
+MjE0OTQ0ODksNzU2MjI3ODc4LC00ODc2NDI2NjMsLTE2MzQ4Nz
+kyNjYsNTgxNTczODk0LDE1MjkyNDc0NTgsLTE0NjU4MTk1ODRd
+fQ==
 -->
