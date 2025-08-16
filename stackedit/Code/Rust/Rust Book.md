@@ -1025,7 +1025,7 @@ Ownership
 fn main() {
   let mut a_num = 0;
   inner(&mut a_num);
-  // a_num ==5 
+  // a_num == 5 
 }
 
 fn inner(x: &mut i32) {
@@ -1038,6 +1038,8 @@ fn inner(x: &mut i32) {
   *x += 5;
 }
 ```
+#### 
+
 
 #### From the quiz
 ```rust
@@ -1079,7 +1081,7 @@ fn extract(b: &Box<i32>) -> i32 {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyMTM5MjAyMSwtMzM4MTEwOTU2LDY5ND
+eyJoaXN0b3J5IjpbMTA1NzA1Mzc3MywtMzM4MTEwOTU2LDY5ND
 AxNjA2OSw2MzQxMTYzNjAsMTExNDY0NjIxMywzNDE5MDA5NjMs
 LTE4MDE2NTAwLDc1NzMyNzM1LDE2NTcyNjM3MzAsMTkwNzM5Nj
 cyMiwyMTkwNTkzNzYsLTY1MjAxMTEwNSwtOTcyOTQxMTQ4LDMy
