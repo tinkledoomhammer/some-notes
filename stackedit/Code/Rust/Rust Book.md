@@ -1150,13 +1150,16 @@ fn main() {
 * moves data
 
 
-### Tuple Structs
+### Tuple Structs, Unit-Like Structs
 
 `struct Color(i32, i32, i32);`
 :  creates a new tuple type
-: it has a name and will be considered a different type than other tuples that contain the same types
+: it has a name and 
+: is a different type than other tuples that contain the same types
 
-
+`struct StructName;`
+: an empty data type
+: as with tuple-like structs, each one 
 
 
 
@@ -1176,11 +1179,11 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2Mzk0MDAyMCwtMTk0Njc3NjEzMCwtMz
-M4MTEwOTU2LDY5NDAxNjA2OSw2MzQxMTYzNjAsMTExNDY0NjIx
-MywzNDE5MDA5NjMsLTE4MDE2NTAwLDc1NzMyNzM1LDE2NTcyNj
-M3MzAsMTkwNzM5NjcyMiwyMTkwNTkzNzYsLTY1MjAxMTEwNSwt
-OTcyOTQxMTQ4LDMyMTQ5NDQ4OSw3NTYyMjc4NzgsLTQ4NzY0Mj
-Y2MywtMTYzNDg3OTI2Niw1ODE1NzM4OTQsMTUyOTI0NzQ1OF19
+eyJoaXN0b3J5IjpbNjk5MTk0MTgsLTE5NDY3NzYxMzAsLTMzOD
+ExMDk1Niw2OTQwMTYwNjksNjM0MTE2MzYwLDExMTQ2NDYyMTMs
+MzQxOTAwOTYzLC0xODAxNjUwMCw3NTczMjczNSwxNjU3MjYzNz
+MwLDE5MDczOTY3MjIsMjE5MDU5Mzc2LC02NTIwMTExMDUsLTk3
+Mjk0MTE0OCwzMjE0OTQ0ODksNzU2MjI3ODc4LC00ODc2NDI2Nj
+MsLTE2MzQ4NzkyNjYsNTgxNTczODk0LDE1MjkyNDc0NThdfQ==
 
 -->
