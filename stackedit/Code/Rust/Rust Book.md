@@ -1083,7 +1083,11 @@ fn extract(b: &Box<i32>) -> i32 {
 }
 //casues a double free
 ```
+## 5 Structures
+`struct`
+: A custom data type that packages together and name related values
 
+### 05.0
 
 
 
@@ -1113,11 +1117,11 @@ fn extract(b: &Box<i32>) -> i32 {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDY3NzYxMzAsLTMzODExMDk1Niw2OT
-QwMTYwNjksNjM0MTE2MzYwLDExMTQ2NDYyMTMsMzQxOTAwOTYz
-LC0xODAxNjUwMCw3NTczMjczNSwxNjU3MjYzNzMwLDE5MDczOT
-Y3MjIsMjE5MDU5Mzc2LC02NTIwMTExMDUsLTk3Mjk0MTE0OCwz
-MjE0OTQ0ODksNzU2MjI3ODc4LC00ODc2NDI2NjMsLTE2MzQ4Nz
-kyNjYsNTgxNTczODk0LDE1MjkyNDc0NTgsLTE0NjU4MTk1ODRd
-fQ==
+eyJoaXN0b3J5IjpbNTE3MDAzNjE1LC0xOTQ2Nzc2MTMwLC0zMz
+gxMTA5NTYsNjk0MDE2MDY5LDYzNDExNjM2MCwxMTE0NjQ2MjEz
+LDM0MTkwMDk2MywtMTgwMTY1MDAsNzU3MzI3MzUsMTY1NzI2Mz
+czMCwxOTA3Mzk2NzIyLDIxOTA1OTM3NiwtNjUyMDExMTA1LC05
+NzI5NDExNDgsMzIxNDk0NDg5LDc1NjIyNzg3OCwtNDg3NjQyNj
+YzLC0xNjM0ODc5MjY2LDU4MTU3Mzg5NCwxNTI5MjQ3NDU4XX0=
+
 -->
