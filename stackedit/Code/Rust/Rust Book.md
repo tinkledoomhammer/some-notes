@@ -1103,8 +1103,8 @@ struct User {
 ```
 Creation
 : Create an **instance** of the struct by 
-: 	* specifying concrete values in `key: value,` pairs
-:	* enclosed in a `<name>{...}` block
+: 	specifying concrete values in `key: value,` pairs
+:	enclosed in a `<name>{...}` block
 
 ```rust
 fn main() {
@@ -1114,9 +1114,11 @@ fn main() {
 		active: true,
 		sign_in_count: 1,
 	};
+	println!("{}",
 }
 ```
-
+Accessing values
+: `structVar.field` 
 
 
 
@@ -1144,11 +1146,11 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIyMTM0MDA5LC0xOTQ2Nzc2MTMwLC0zMz
-gxMTA5NTYsNjk0MDE2MDY5LDYzNDExNjM2MCwxMTE0NjQ2MjEz
-LDM0MTkwMDk2MywtMTgwMTY1MDAsNzU3MzI3MzUsMTY1NzI2Mz
-czMCwxOTA3Mzk2NzIyLDIxOTA1OTM3NiwtNjUyMDExMTA1LC05
-NzI5NDExNDgsMzIxNDk0NDg5LDc1NjIyNzg3OCwtNDg3NjQyNj
-YzLC0xNjM0ODc5MjY2LDU4MTU3Mzg5NCwxNTI5MjQ3NDU4XX0=
-
+eyJoaXN0b3J5IjpbLTEzMjk1Mjk1MDMsLTE5NDY3NzYxMzAsLT
+MzODExMDk1Niw2OTQwMTYwNjksNjM0MTE2MzYwLDExMTQ2NDYy
+MTMsMzQxOTAwOTYzLC0xODAxNjUwMCw3NTczMjczNSwxNjU3Mj
+YzNzMwLDE5MDczOTY3MjIsMjE5MDU5Mzc2LC02NTIwMTExMDUs
+LTk3Mjk0MTE0OCwzMjE0OTQ0ODksNzU2MjI3ODc4LC00ODc2ND
+I2NjMsLTE2MzQ4NzkyNjYsNTgxNTczODk0LDE1MjkyNDc0NThd
+fQ==
 -->
