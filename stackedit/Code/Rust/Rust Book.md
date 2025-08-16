@@ -1087,7 +1087,21 @@ fn extract(b: &Box<i32>) -> i32 {
 `struct`
 : A custom data type that packages together and name related values
 
-### 05.0
+### 05.01 Defining and Instancing Structs
+
+```rust
+struct User {
+	active: bool,
+	username: String,
+	email: String,
+	sign_in_count: u64,
+}
+fn main() {
+	let user1 = User {
+		email: String::from("asdf@gasg"),
+		username: String::from("asdf"),
+}
+```
 
 
 
@@ -1117,7 +1131,7 @@ fn extract(b: &Box<i32>) -> i32 {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE3MDAzNjE1LC0xOTQ2Nzc2MTMwLC0zMz
+eyJoaXN0b3J5IjpbMjM4MDQ2NTY5LC0xOTQ2Nzc2MTMwLC0zMz
 gxMTA5NTYsNjk0MDE2MDY5LDYzNDExNjM2MCwxMTE0NjQ2MjEz
 LDM0MTkwMDk2MywtMTgwMTY1MDAsNzU3MzI3MzUsMTY1NzI2Mz
 czMCwxOTA3Mzk2NzIyLDIxOTA1OTM3NiwtNjUyMDExMTA1LC05
