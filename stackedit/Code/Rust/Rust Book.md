@@ -1159,7 +1159,10 @@ fn main() {
 
 `struct StructName;`
 : an empty data type
-: as with tuple-like structs, each one 
+: as with tuple-like structs, each one is a different type
+
+### Ownership of struct data
+
 
 
 
@@ -1179,11 +1182,11 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk5MTk0MTgsLTE5NDY3NzYxMzAsLTMzOD
-ExMDk1Niw2OTQwMTYwNjksNjM0MTE2MzYwLDExMTQ2NDYyMTMs
-MzQxOTAwOTYzLC0xODAxNjUwMCw3NTczMjczNSwxNjU3MjYzNz
-MwLDE5MDczOTY3MjIsMjE5MDU5Mzc2LC02NTIwMTExMDUsLTk3
-Mjk0MTE0OCwzMjE0OTQ0ODksNzU2MjI3ODc4LC00ODc2NDI2Nj
-MsLTE2MzQ4NzkyNjYsNTgxNTczODk0LDE1MjkyNDc0NThdfQ==
-
+eyJoaXN0b3J5IjpbLTIwOTgxNDE5MTIsLTE5NDY3NzYxMzAsLT
+MzODExMDk1Niw2OTQwMTYwNjksNjM0MTE2MzYwLDExMTQ2NDYy
+MTMsMzQxOTAwOTYzLC0xODAxNjUwMCw3NTczMjczNSwxNjU3Mj
+YzNzMwLDE5MDczOTY3MjIsMjE5MDU5Mzc2LC02NTIwMTExMDUs
+LTk3Mjk0MTE0OCwzMjE0OTQ0ODksNzU2MjI3ODc4LC00ODc2ND
+I2NjMsLTE2MzQ4NzkyNjYsNTgxNTczODk0LDE1MjkyNDc0NThd
+fQ==
 -->
