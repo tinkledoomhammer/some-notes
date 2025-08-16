@@ -1105,7 +1105,11 @@ fn main() {
 	};
 }
 ```
-* Defined with the `struct <name>{...}` construct
+* Defined with the `struct <name>{...}` construct which is
+	* filled with `key: type,` pairs for each **field**
+* Create an **instance** of the struct by 
+	* specifying concrete values in `key: value,` pairs
+	* enclosed in a <stru
 
 
 
@@ -1134,7 +1138,7 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4NDMwNjU5NCwtMTk0Njc3NjEzMCwtMz
+eyJoaXN0b3J5IjpbLTg0NTk5NDEzMCwtMTk0Njc3NjEzMCwtMz
 M4MTEwOTU2LDY5NDAxNjA2OSw2MzQxMTYzNjAsMTExNDY0NjIx
 MywzNDE5MDA5NjMsLTE4MDE2NTAwLDc1NzMyNzM1LDE2NTcyNj
 M3MzAsMTkwNzM5NjcyMiwyMTkwNTkzNzYsLTY1MjAxMTEwNSwt
