@@ -1180,7 +1180,21 @@ let x = &mut p.x;
 #### Quiz example(s)
 ```rust
 struct Point { x: i32, y: i32 };
-fn test1
+fn test1(){
+	let mut a = Point {x: 1, y: 2};
+	a.x+=1;
+	let b = Point{y: 1, ..a};
+	a.x+=1;
+	println!("{}", b.x);
+}	// Prints "2"
+
+fn test2(){
+	let mut p = Point{x: 1, y: 2};
+	let x = &mut p.x;
+	let y = &mut p.y;
+	*x+=1;
+	*y+=1;
+	
 ```
 
 
@@ -1200,11 +1214,11 @@ fn test1
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzkzODA5NzUsMTg0NDUxMjI1NSwtMj
-A5ODE0MTkxMiwtMTk0Njc3NjEzMCwtMzM4MTEwOTU2LDY5NDAx
-NjA2OSw2MzQxMTYzNjAsMTExNDY0NjIxMywzNDE5MDA5NjMsLT
-E4MDE2NTAwLDc1NzMyNzM1LDE2NTcyNjM3MzAsMTkwNzM5Njcy
-MiwyMTkwNTkzNzYsLTY1MjAxMTEwNSwtOTcyOTQxMTQ4LDMyMT
-Q5NDQ4OSw3NTYyMjc4NzgsLTQ4NzY0MjY2MywtMTYzNDg3OTI2
-Nl19
+eyJoaXN0b3J5IjpbMTg0MjkzNzA3MCwxODQ0NTEyMjU1LC0yMD
+k4MTQxOTEyLC0xOTQ2Nzc2MTMwLC0zMzgxMTA5NTYsNjk0MDE2
+MDY5LDYzNDExNjM2MCwxMTE0NjQ2MjEzLDM0MTkwMDk2MywtMT
+gwMTY1MDAsNzU3MzI3MzUsMTY1NzI2MzczMCwxOTA3Mzk2NzIy
+LDIxOTA1OTM3NiwtNjUyMDExMTA1LC05NzI5NDExNDgsMzIxND
+k0NDg5LDc1NjIyNzg3OCwtNDg3NjQyNjYzLC0xNjM0ODc5MjY2
+XX0=
 -->
