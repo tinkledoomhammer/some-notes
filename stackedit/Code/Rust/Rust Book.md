@@ -1167,7 +1167,11 @@ fn main() {
 
 #### Borrowing fields of a struct
 * Rust will track ownership and permissions at both the struct- and field-level
-* 
+```rust
+struct Point {x: i32, y: i32};
+let mut p = Point { x: 0, y: 0 };
+//p, p.x, and p.y are all now +
+```
 
 
 
@@ -1187,7 +1191,7 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjg1NjIzNTUsLTIwOTgxNDE5MTIsLT
+eyJoaXN0b3J5IjpbLTE3Nzc5NzI5NTIsLTIwOTgxNDE5MTIsLT
 E5NDY3NzYxMzAsLTMzODExMDk1Niw2OTQwMTYwNjksNjM0MTE2
 MzYwLDExMTQ2NDYyMTMsMzQxOTAwOTYzLC0xODAxNjUwMCw3NT
 czMjczNSwxNjU3MjYzNzMwLDE5MDczOTY3MjIsMjE5MDU5Mzc2
