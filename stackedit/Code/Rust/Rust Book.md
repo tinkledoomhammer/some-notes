@@ -1150,6 +1150,11 @@ fn main() {
 * moves data
 
 
+### Tuple Structs
+
+`struct Color(i32, i32, i32);`
+:  creates a new tuple type
+: it has a name and will be considered a different type than other tuples that contain the same types
 
 
 
@@ -1171,7 +1176,7 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1NzE2OTM5NSwtMTk0Njc3NjEzMCwtMz
+eyJoaXN0b3J5IjpbMTI2Mzk0MDAyMCwtMTk0Njc3NjEzMCwtMz
 M4MTEwOTU2LDY5NDAxNjA2OSw2MzQxMTYzNjAsMTExNDY0NjIx
 MywzNDE5MDA5NjMsLTE4MDE2NTAwLDc1NzMyNzM1LDE2NTcyNj
 M3MzAsMTkwNzM5NjcyMiwyMTkwNTkzNzYsLTY1MjAxMTEwNSwt
