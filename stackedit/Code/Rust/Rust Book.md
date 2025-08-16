@@ -1067,7 +1067,9 @@ let n = &v[0]; // [L1]
 // v and n point ot the same heap address
 v.push(4); [L2]
 // v is the same but n points to nothing
-
+// because mutating v is not allowed with a living ref
+println!("{n}"); //[L3]
+// this would be undefined because n might b
 
 
 
@@ -1111,11 +1113,11 @@ fn extract(b: &Box<i32>) -> i32 {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NDQwNTg2NiwtMzM4MTEwOTU2LDY5ND
-AxNjA2OSw2MzQxMTYzNjAsMTExNDY0NjIxMywzNDE5MDA5NjMs
-LTE4MDE2NTAwLDc1NzMyNzM1LDE2NTcyNjM3MzAsMTkwNzM5Nj
-cyMiwyMTkwNTkzNzYsLTY1MjAxMTEwNSwtOTcyOTQxMTQ4LDMy
-MTQ5NDQ4OSw3NTYyMjc4NzgsLTQ4NzY0MjY2MywtMTYzNDg3OT
-I2Niw1ODE1NzM4OTQsMTUyOTI0NzQ1OCwtMTQ2NTgxOTU4NF19
+eyJoaXN0b3J5IjpbNzM3NTYyMTExLC0zMzgxMTA5NTYsNjk0MD
+E2MDY5LDYzNDExNjM2MCwxMTE0NjQ2MjEzLDM0MTkwMDk2Mywt
+MTgwMTY1MDAsNzU3MzI3MzUsMTY1NzI2MzczMCwxOTA3Mzk2Nz
+IyLDIxOTA1OTM3NiwtNjUyMDExMTA1LC05NzI5NDExNDgsMzIx
+NDk0NDg5LDc1NjIyNzg3OCwtNDg3NjQyNjYzLC0xNjM0ODc5Mj
+Y2LDU4MTU3Mzg5NCwxNTI5MjQ3NDU4LC0xNDY1ODE5NTg0XX0=
 
 -->
