@@ -1122,8 +1122,18 @@ Accessing values
 
 
 ### Field Init shorthand
+```rust
+fn build_user(email: String, username: String) -> User {
+	user {
+		active: true,
+		username,
+		email,
+		sign_in_count: 1,
+	}
+}
+```
 
-
+### Struct 
 
 
 
@@ -1148,11 +1158,11 @@ Accessing values
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4MTMzNDMzLC0xOTQ2Nzc2MTMwLC0zMz
-gxMTA5NTYsNjk0MDE2MDY5LDYzNDExNjM2MCwxMTE0NjQ2MjEz
-LDM0MTkwMDk2MywtMTgwMTY1MDAsNzU3MzI3MzUsMTY1NzI2Mz
-czMCwxOTA3Mzk2NzIyLDIxOTA1OTM3NiwtNjUyMDExMTA1LC05
-NzI5NDExNDgsMzIxNDk0NDg5LDc1NjIyNzg3OCwtNDg3NjQyNj
-YzLC0xNjM0ODc5MjY2LDU4MTU3Mzg5NCwxNTI5MjQ3NDU4XX0=
+eyJoaXN0b3J5IjpbLTIyOTQzMTUxMSwtMTk0Njc3NjEzMCwtMz
+M4MTEwOTU2LDY5NDAxNjA2OSw2MzQxMTYzNjAsMTExNDY0NjIx
+MywzNDE5MDA5NjMsLTE4MDE2NTAwLDc1NzMyNzM1LDE2NTcyNj
+M3MzAsMTkwNzM5NjcyMiwyMTkwNTkzNzYsLTY1MjAxMTEwNSwt
+OTcyOTQxMTQ4LDMyMTQ5NDQ4OSw3NTYyMjc4NzgsLTQ4NzY0Mj
+Y2MywtMTYzNDg3OTI2Niw1ODE1NzM4OTQsMTUyOTI0NzQ1OF19
 
 -->
