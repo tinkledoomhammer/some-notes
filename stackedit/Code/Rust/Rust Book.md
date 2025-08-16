@@ -1050,7 +1050,14 @@ Connecting Ownership between run and compile time
 : **Use-after-free** : immut borrows remove W perms
 : **double-free** : Dereferences of refs to non-copyable data do not have O perm
 
-``
+```rust
+//Double free example
+let v = vec![1,2,3];
+let v_ref: &Vec<i32) = &v;
+let v2 = *v_ref; // [L1]
+// v and v2 point to the same heap address
+// vref points to v
+
 
 
 #### From the quiz
@@ -1093,7 +1100,7 @@ fn extract(b: &Box<i32>) -> i32 {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA0MzE2NDUyLC0zMzgxMTA5NTYsNjk0MD
+eyJoaXN0b3J5IjpbNjM2NjgwNjU3LC0zMzgxMTA5NTYsNjk0MD
 E2MDY5LDYzNDExNjM2MCwxMTE0NjQ2MjEzLDM0MTkwMDk2Mywt
 MTgwMTY1MDAsNzU3MzI3MzUsMTY1NzI2MzczMCwxOTA3Mzk2Nz
 IyLDIxOTA1OTM3NiwtNjUyMDExMTA1LC05NzI5NDExNDgsMzIx
