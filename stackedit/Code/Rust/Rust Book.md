@@ -1025,6 +1025,7 @@ Ownership
 fn main() {
   let mut a_num = 0;
   inner(&mut a_num);
+  // a_num ==5 
 }
 
 fn inner(x: &mut i32) {
@@ -1032,9 +1033,8 @@ fn inner(x: &mut i32) {
   let a_stack_ref = &another_num;
 
   let a_box = Box::new(2);  
-  let a_box_stack_ref = &a_box;
+  let a_box_stack_ref = &a_box; //points to the stack
   let a_box_heap_ref = &*a_box; // points to the heap
-
   *x += 5;
 }
 ```
@@ -1079,11 +1079,11 @@ fn extract(b: &Box<i32>) -> i32 {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTg1NzkzNTksLTMzODExMDk1Niw2OT
-QwMTYwNjksNjM0MTE2MzYwLDExMTQ2NDYyMTMsMzQxOTAwOTYz
-LC0xODAxNjUwMCw3NTczMjczNSwxNjU3MjYzNzMwLDE5MDczOT
-Y3MjIsMjE5MDU5Mzc2LC02NTIwMTExMDUsLTk3Mjk0MTE0OCwz
-MjE0OTQ0ODksNzU2MjI3ODc4LC00ODc2NDI2NjMsLTE2MzQ4Nz
-kyNjYsNTgxNTczODk0LDE1MjkyNDc0NTgsLTE0NjU4MTk1ODRd
-fQ==
+eyJoaXN0b3J5IjpbMTgyMTM5MjAyMSwtMzM4MTEwOTU2LDY5ND
+AxNjA2OSw2MzQxMTYzNjAsMTExNDY0NjIxMywzNDE5MDA5NjMs
+LTE4MDE2NTAwLDc1NzMyNzM1LDE2NTcyNjM3MzAsMTkwNzM5Nj
+cyMiwyMTkwNTkzNzYsLTY1MjAxMTEwNSwtOTcyOTQxMTQ4LDMy
+MTQ5NDQ4OSw3NTYyMjc4NzgsLTQ4NzY0MjY2MywtMTYzNDg3OT
+I2Niw1ODE1NzM4OTQsMTUyOTI0NzQ1OCwtMTQ2NTgxOTU4NF19
+
 -->
