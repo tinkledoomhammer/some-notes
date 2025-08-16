@@ -1162,7 +1162,12 @@ fn main() {
 : as with tuple-like structs, each one is a different type
 
 ### Ownership of struct data
+* Struct members that are references require lifetime parameters
+* This will be discussed in ch. 10
 
+#### Borrowing fields of a struct
+* Rust will track ownership and permissions at both the struct- and field-level
+* 
 
 
 
@@ -1182,11 +1187,11 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTgxNDE5MTIsLTE5NDY3NzYxMzAsLT
-MzODExMDk1Niw2OTQwMTYwNjksNjM0MTE2MzYwLDExMTQ2NDYy
-MTMsMzQxOTAwOTYzLC0xODAxNjUwMCw3NTczMjczNSwxNjU3Mj
-YzNzMwLDE5MDczOTY3MjIsMjE5MDU5Mzc2LC02NTIwMTExMDUs
-LTk3Mjk0MTE0OCwzMjE0OTQ0ODksNzU2MjI3ODc4LC00ODc2ND
-I2NjMsLTE2MzQ4NzkyNjYsNTgxNTczODk0LDE1MjkyNDc0NThd
-fQ==
+eyJoaXN0b3J5IjpbLTEzNjg1NjIzNTUsLTIwOTgxNDE5MTIsLT
+E5NDY3NzYxMzAsLTMzODExMDk1Niw2OTQwMTYwNjksNjM0MTE2
+MzYwLDExMTQ2NDYyMTMsMzQxOTAwOTYzLC0xODAxNjUwMCw3NT
+czMjczNSwxNjU3MjYzNzMwLDE5MDczOTY3MjIsMjE5MDU5Mzc2
+LC02NTIwMTExMDUsLTk3Mjk0MTE0OCwzMjE0OTQ0ODksNzU2Mj
+I3ODc4LC00ODc2NDI2NjMsLTE2MzQ4NzkyNjYsNTgxNTczODk0
+XX0=
 -->
