@@ -1056,7 +1056,12 @@ let v = vec![1,2,3];
 let v_ref: &Vec<i32) = &v;
 let v2 = *v_ref; // [L1]
 // v and v2 point to the same heap address
-// vref points to v
+// vref points to v in the stack
+drop(v2); 
+// now freeing v2 also frees v
+drop(v); //This would double-free v and v2
+
+//
 
 
 
@@ -1100,11 +1105,11 @@ fn extract(b: &Box<i32>) -> i32 {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM2NjgwNjU3LC0zMzgxMTA5NTYsNjk0MD
-E2MDY5LDYzNDExNjM2MCwxMTE0NjQ2MjEzLDM0MTkwMDk2Mywt
-MTgwMTY1MDAsNzU3MzI3MzUsMTY1NzI2MzczMCwxOTA3Mzk2Nz
-IyLDIxOTA1OTM3NiwtNjUyMDExMTA1LC05NzI5NDExNDgsMzIx
-NDk0NDg5LDc1NjIyNzg3OCwtNDg3NjQyNjYzLC0xNjM0ODc5Mj
-Y2LDU4MTU3Mzg5NCwxNTI5MjQ3NDU4LC0xNDY1ODE5NTg0XX0=
-
+eyJoaXN0b3J5IjpbLTEwMTgyMzU2MTEsLTMzODExMDk1Niw2OT
+QwMTYwNjksNjM0MTE2MzYwLDExMTQ2NDYyMTMsMzQxOTAwOTYz
+LC0xODAxNjUwMCw3NTczMjczNSwxNjU3MjYzNzMwLDE5MDczOT
+Y3MjIsMjE5MDU5Mzc2LC02NTIwMTExMDUsLTk3Mjk0MTE0OCwz
+MjE0OTQ0ODksNzU2MjI3ODc4LC00ODc2NDI2NjMsLTE2MzQ4Nz
+kyNjYsNTgxNTczODk0LDE1MjkyNDc0NTgsLTE0NjU4MTk1ODRd
+fQ==
 -->
