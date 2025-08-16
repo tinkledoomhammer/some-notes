@@ -1046,7 +1046,9 @@ Ownership at Compile-time
 : Borrowing a variable removes some perms
 
 Connecting Ownership between run and compile time
-: The system is designed to prevent undefined behavior, such as use-after-free
+: The system is designed to prevent undefined behavior, such as 
+: **Use-after-free** : immut borrows remove W perms
+: *
 
 
 
@@ -1090,7 +1092,7 @@ fn extract(b: &Box<i32>) -> i32 {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NTU1NTczLC0zMzgxMTA5NTYsNjk0MD
+eyJoaXN0b3J5IjpbNTc2MzgwNTM1LC0zMzgxMTA5NTYsNjk0MD
 E2MDY5LDYzNDExNjM2MCwxMTE0NjQ2MjEzLDM0MTkwMDk2Mywt
 MTgwMTY1MDAsNzU3MzI3MzUsMTY1NzI2MzczMCwxOTA3Mzk2Nz
 IyLDIxOTA1OTM3NiwtNjUyMDExMTA1LC05NzI5NDExNDgsMzIx
