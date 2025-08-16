@@ -1083,7 +1083,7 @@ fn extract(b: &Box<i32>) -> i32 {
 }
 //casues a double free
 ```
-## 5 Structures
+## 05 Structures
 `struct`
 : A custom data type that packages together and name related values
 
@@ -1121,7 +1121,7 @@ Accessing values
 : `structVar.field` i.e. `user1.email`
 
 
-### Field Init shorthand
+#### Field Init shorthand
 ```rust
 fn build_user(email: String, username: String) -> User {
 	user {
@@ -1133,7 +1133,7 @@ fn build_user(email: String, username: String) -> User {
 }
 ```
 
-### Struct Update syntax
+#### Struct Update syntax
 
 ```rust
 fn main() {
@@ -1150,7 +1150,7 @@ fn main() {
 * moves data
 
 
-### Tuple Structs, Unit-Like Structs
+#### Tuple Structs, Unit-Like Structs
 
 `struct Color(i32, i32, i32);`
 :  creates a new tuple type
@@ -1161,11 +1161,11 @@ fn main() {
 : an empty data type
 : as with tuple-like structs, each one is a different type
 
-### Ownership of struct data
+#### Ownership of struct data
 * Struct members that are references require lifetime parameters
 * This will be discussed in ch. 10
 
-#### Borrowing fields of a struct
+##### Borrowing fields of a struct
 * Rust will track ownership and permissions at both the struct- and field-level
 ```rust
 struct Point {x: i32, y: i32};
@@ -1177,7 +1177,11 @@ let x = &mut p.x;
 *x+=1; //this is the LAST use of x
 //perms are returned
 ```
-
+#### Quiz example(s)
+```rust
+struct Point { x: i32, y: i32 };
+fn test1
+```
 
 
 
@@ -1196,11 +1200,11 @@ let x = &mut p.x;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NDUxMjI1NSwtMjA5ODE0MTkxMiwtMT
-k0Njc3NjEzMCwtMzM4MTEwOTU2LDY5NDAxNjA2OSw2MzQxMTYz
-NjAsMTExNDY0NjIxMywzNDE5MDA5NjMsLTE4MDE2NTAwLDc1Nz
-MyNzM1LDE2NTcyNjM3MzAsMTkwNzM5NjcyMiwyMTkwNTkzNzYs
-LTY1MjAxMTEwNSwtOTcyOTQxMTQ4LDMyMTQ5NDQ4OSw3NTYyMj
-c4NzgsLTQ4NzY0MjY2MywtMTYzNDg3OTI2Niw1ODE1NzM4OTRd
-fQ==
+eyJoaXN0b3J5IjpbLTIxMzkzODA5NzUsMTg0NDUxMjI1NSwtMj
+A5ODE0MTkxMiwtMTk0Njc3NjEzMCwtMzM4MTEwOTU2LDY5NDAx
+NjA2OSw2MzQxMTYzNjAsMTExNDY0NjIxMywzNDE5MDA5NjMsLT
+E4MDE2NTAwLDc1NzMyNzM1LDE2NTcyNjM3MzAsMTkwNzM5Njcy
+MiwyMTkwNTkzNzYsLTY1MjAxMTEwNSwtOTcyOTQxMTQ4LDMyMT
+Q5NDQ4OSw3NTYyMjc4NzgsLTQ4NzY0MjY2MywtMTYzNDg3OTI2
+Nl19
 -->
