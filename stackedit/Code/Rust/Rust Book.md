@@ -1042,7 +1042,12 @@ fn inner(x: &mut i32) {
 #### From the quiz
 ```rust
 //rejected by the borrow cheker
-fn extract(b: 
+fn extract(b: &Box<i32>) -> i32 {
+	let b2: Box(i32) = *b; // creates an owned copy!!
+	*b2
+	//b2 gets freed here
+}
+//casues a double free
 ```
 
 
@@ -1074,11 +1079,11 @@ fn extract(b:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5ODE4OTMxMiwtMzM4MTEwOTU2LDY5ND
-AxNjA2OSw2MzQxMTYzNjAsMTExNDY0NjIxMywzNDE5MDA5NjMs
-LTE4MDE2NTAwLDc1NzMyNzM1LDE2NTcyNjM3MzAsMTkwNzM5Nj
-cyMiwyMTkwNTkzNzYsLTY1MjAxMTEwNSwtOTcyOTQxMTQ4LDMy
-MTQ5NDQ4OSw3NTYyMjc4NzgsLTQ4NzY0MjY2MywtMTYzNDg3OT
-I2Niw1ODE1NzM4OTQsMTUyOTI0NzQ1OCwtMTQ2NTgxOTU4NF19
-
+eyJoaXN0b3J5IjpbLTIxMTg1NzkzNTksLTMzODExMDk1Niw2OT
+QwMTYwNjksNjM0MTE2MzYwLDExMTQ2NDYyMTMsMzQxOTAwOTYz
+LC0xODAxNjUwMCw3NTczMjczNSwxNjU3MjYzNzMwLDE5MDczOT
+Y3MjIsMjE5MDU5Mzc2LC02NTIwMTExMDUsLTk3Mjk0MTE0OCwz
+MjE0OTQ0ODksNzU2MjI3ODc4LC00ODc2NDI2NjMsLTE2MzQ4Nz
+kyNjYsNTgxNTczODk0LDE1MjkyNDc0NTgsLTE0NjU4MTk1ODRd
+fQ==
 -->
