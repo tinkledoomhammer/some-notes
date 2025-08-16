@@ -1039,6 +1039,14 @@ fn inner(x: &mut i32) {
 }
 ```
 
+#### From the quiz
+```rust
+//rejected by the borrow cheker
+fn extract(b: 
+```
+
+
+
 
 
 
@@ -1066,11 +1074,11 @@ fn inner(x: &mut i32) {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzODExMDk1Niw2OTQwMTYwNjksNjM0MT
-E2MzYwLDExMTQ2NDYyMTMsMzQxOTAwOTYzLC0xODAxNjUwMCw3
-NTczMjczNSwxNjU3MjYzNzMwLDE5MDczOTY3MjIsMjE5MDU5Mz
-c2LC02NTIwMTExMDUsLTk3Mjk0MTE0OCwzMjE0OTQ0ODksNzU2
-MjI3ODc4LC00ODc2NDI2NjMsLTE2MzQ4NzkyNjYsNTgxNTczOD
-k0LDE1MjkyNDc0NTgsLTE0NjU4MTk1ODQsMTg2NTgyODY1NV19
+eyJoaXN0b3J5IjpbLTQ5ODE4OTMxMiwtMzM4MTEwOTU2LDY5ND
+AxNjA2OSw2MzQxMTYzNjAsMTExNDY0NjIxMywzNDE5MDA5NjMs
+LTE4MDE2NTAwLDc1NzMyNzM1LDE2NTcyNjM3MzAsMTkwNzM5Nj
+cyMiwyMTkwNTkzNzYsLTY1MjAxMTEwNSwtOTcyOTQxMTQ4LDMy
+MTQ5NDQ4OSw3NTYyMjc4NzgsLTQ4NzY0MjY2MywtMTYzNDg3OT
+I2Niw1ODE1NzM4OTQsMTUyOTI0NzQ1OCwtMTQ2NTgxOTU4NF19
 
 -->
