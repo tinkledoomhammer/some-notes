@@ -1141,8 +1141,8 @@ fn main() {
 	let user2 = User {
 		email: String::from("blargh"),
 		..user1
-		// mmoves u
-		// coppies all other values from user1
+		// coppies copyable un-specified values from `user1`
+		// moves the remaining values from user1
 		
 	};
 }
@@ -1171,11 +1171,11 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjY1NzU3NzQsLTE5NDY3NzYxMzAsLT
-MzODExMDk1Niw2OTQwMTYwNjksNjM0MTE2MzYwLDExMTQ2NDYy
-MTMsMzQxOTAwOTYzLC0xODAxNjUwMCw3NTczMjczNSwxNjU3Mj
-YzNzMwLDE5MDczOTY3MjIsMjE5MDU5Mzc2LC02NTIwMTExMDUs
-LTk3Mjk0MTE0OCwzMjE0OTQ0ODksNzU2MjI3ODc4LC00ODc2ND
-I2NjMsLTE2MzQ4NzkyNjYsNTgxNTczODk0LDE1MjkyNDc0NThd
-fQ==
+eyJoaXN0b3J5IjpbMTc1NzE2OTM5NSwtMTk0Njc3NjEzMCwtMz
+M4MTEwOTU2LDY5NDAxNjA2OSw2MzQxMTYzNjAsMTExNDY0NjIx
+MywzNDE5MDA5NjMsLTE4MDE2NTAwLDc1NzMyNzM1LDE2NTcyNj
+M3MzAsMTkwNzM5NjcyMiwyMTkwNTkzNzYsLTY1MjAxMTEwNSwt
+OTcyOTQxMTQ4LDMyMTQ5NDQ4OSw3NTYyMjc4NzgsLTQ4NzY0Mj
+Y2MywtMTYzNDg3OTI2Niw1ODE1NzM4OTQsMTUyOTI0NzQ1OF19
+
 -->
