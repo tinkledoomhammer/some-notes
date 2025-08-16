@@ -1141,11 +1141,13 @@ fn main() {
 	let user2 = User {
 		email: String::from("blargh"),
 		..user1
+		// mmoves u
 		// coppies all other values from user1
+		
 	};
 }
 ```
-
+* moves data
 
 
 
@@ -1169,7 +1171,7 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTcyOTA3NTYsLTE5NDY3NzYxMzAsLT
+eyJoaXN0b3J5IjpbLTE4MjY1NzU3NzQsLTE5NDY3NzYxMzAsLT
 MzODExMDk1Niw2OTQwMTYwNjksNjM0MTE2MzYwLDExMTQ2NDYy
 MTMsMzQxOTAwOTYzLC0xODAxNjUwMCw3NTczMjczNSwxNjU3Mj
 YzNzMwLDE5MDczOTY3MjIsMjE5MDU5Mzc2LC02NTIwMTExMDUs
