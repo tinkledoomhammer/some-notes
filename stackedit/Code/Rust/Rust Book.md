@@ -1170,7 +1170,12 @@ fn main() {
 ```rust
 struct Point {x: i32, y: i32};
 let mut p = Point { x: 0, y: 0 };
-//p, p.x, and p.y are all now +
+//p, p.x, and p.y are all now +RWO
+let x = &mut p.x;
+//now p and p.x have lost all perms
+// p.y is unaffected
+*x+=1; //this is the LAST use of x
+//perms are returned
 ```
 
 
@@ -1191,11 +1196,11 @@ let mut p = Point { x: 0, y: 0 };
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Nzc5NzI5NTIsLTIwOTgxNDE5MTIsLT
-E5NDY3NzYxMzAsLTMzODExMDk1Niw2OTQwMTYwNjksNjM0MTE2
-MzYwLDExMTQ2NDYyMTMsMzQxOTAwOTYzLC0xODAxNjUwMCw3NT
-czMjczNSwxNjU3MjYzNzMwLDE5MDczOTY3MjIsMjE5MDU5Mzc2
-LC02NTIwMTExMDUsLTk3Mjk0MTE0OCwzMjE0OTQ0ODksNzU2Mj
-I3ODc4LC00ODc2NDI2NjMsLTE2MzQ4NzkyNjYsNTgxNTczODk0
-XX0=
+eyJoaXN0b3J5IjpbMTg0NDUxMjI1NSwtMjA5ODE0MTkxMiwtMT
+k0Njc3NjEzMCwtMzM4MTEwOTU2LDY5NDAxNjA2OSw2MzQxMTYz
+NjAsMTExNDY0NjIxMywzNDE5MDA5NjMsLTE4MDE2NTAwLDc1Nz
+MyNzM1LDE2NTcyNjM3MzAsMTkwNzM5NjcyMiwyMTkwNTkzNzYs
+LTY1MjAxMTEwNSwtOTcyOTQxMTQ4LDMyMTQ5NDQ4OSw3NTYyMj
+c4NzgsLTQ4NzY0MjY2MywtMTYzNDg3OTI2Niw1ODE1NzM4OTRd
+fQ==
 -->
