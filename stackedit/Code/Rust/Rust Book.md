@@ -1194,8 +1194,14 @@ fn test2(){
 	let y = &mut p.y;
 	*x+=1;
 	*y+=1;
-	
+	println!("{} {}", p.x, p.y);
+} // prints "2 3"
 ```
+
+### 05.02 Example program using structs
+
+
+
 
 
 
@@ -1214,11 +1220,11 @@ fn test2(){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0MjkzNzA3MCwxODQ0NTEyMjU1LC0yMD
-k4MTQxOTEyLC0xOTQ2Nzc2MTMwLC0zMzgxMTA5NTYsNjk0MDE2
-MDY5LDYzNDExNjM2MCwxMTE0NjQ2MjEzLDM0MTkwMDk2MywtMT
-gwMTY1MDAsNzU3MzI3MzUsMTY1NzI2MzczMCwxOTA3Mzk2NzIy
-LDIxOTA1OTM3NiwtNjUyMDExMTA1LC05NzI5NDExNDgsMzIxND
-k0NDg5LDc1NjIyNzg3OCwtNDg3NjQyNjYzLC0xNjM0ODc5MjY2
-XX0=
+eyJoaXN0b3J5IjpbNDE4MzU5MDczLDE4NDQ1MTIyNTUsLTIwOT
+gxNDE5MTIsLTE5NDY3NzYxMzAsLTMzODExMDk1Niw2OTQwMTYw
+NjksNjM0MTE2MzYwLDExMTQ2NDYyMTMsMzQxOTAwOTYzLC0xOD
+AxNjUwMCw3NTczMjczNSwxNjU3MjYzNzMwLDE5MDczOTY3MjIs
+MjE5MDU5Mzc2LC02NTIwMTExMDUsLTk3Mjk0MTE0OCwzMjE0OT
+Q0ODksNzU2MjI3ODc4LC00ODc2NDI2NjMsLTE2MzQ4NzkyNjZd
+fQ==
 -->
