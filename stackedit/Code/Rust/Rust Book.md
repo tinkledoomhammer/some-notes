@@ -1234,6 +1234,7 @@ impl Rectangle{
 	* Other options are
 		* `self` to take ownership
 		* `&mut self` to mutate the self variable
+* Can be named the same as a field
 
 
 
@@ -1249,11 +1250,11 @@ impl Rectangle{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjQ5Mzg3Niw0MTgzNTkwNzMsMTg0ND
-UxMjI1NSwtMjA5ODE0MTkxMiwtMTk0Njc3NjEzMCwtMzM4MTEw
-OTU2LDY5NDAxNjA2OSw2MzQxMTYzNjAsMTExNDY0NjIxMywzND
-E5MDA5NjMsLTE4MDE2NTAwLDc1NzMyNzM1LDE2NTcyNjM3MzAs
-MTkwNzM5NjcyMiwyMTkwNTkzNzYsLTY1MjAxMTEwNSwtOTcyOT
-QxMTQ4LDMyMTQ5NDQ4OSw3NTYyMjc4NzgsLTQ4NzY0MjY2M119
+eyJoaXN0b3J5IjpbLTc5NTY4MzIwLDQxODM1OTA3MywxODQ0NT
+EyMjU1LC0yMDk4MTQxOTEyLC0xOTQ2Nzc2MTMwLC0zMzgxMTA5
+NTYsNjk0MDE2MDY5LDYzNDExNjM2MCwxMTE0NjQ2MjEzLDM0MT
+kwMDk2MywtMTgwMTY1MDAsNzU3MzI3MzUsMTY1NzI2MzczMCwx
+OTA3Mzk2NzIyLDIxOTA1OTM3NiwtNjUyMDExMTA1LC05NzI5ND
+ExNDgsMzIxNDk0NDg5LDc1NjIyNzg3OCwtNDg3NjQyNjYzXX0=
 
 -->
