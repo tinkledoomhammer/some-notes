@@ -1235,7 +1235,11 @@ impl Rectangle{
 		* `self` to take ownership
 		* `&mut self` to mutate the self variable
 * Can be named the same as a field
-* 
+
+Associated Functions
+: functions defined in an `impl` block 
+: they do not necessarily take a `self` parameter
+
 
 
 
@@ -1251,7 +1255,7 @@ impl Rectangle{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1ODQ5OTg0OCw0MTgzNTkwNzMsMTg0ND
+eyJoaXN0b3J5IjpbLTQwNTMyNTUxOSw0MTgzNTkwNzMsMTg0ND
 UxMjI1NSwtMjA5ODE0MTkxMiwtMTk0Njc3NjEzMCwtMzM4MTEw
 OTU2LDY5NDAxNjA2OSw2MzQxMTYzNjAsMTExNDY0NjIxMywzND
 E5MDA5NjMsLTE4MDE2NTAwLDc1NzMyNzM1LDE2NTcyNjM3MzAs
