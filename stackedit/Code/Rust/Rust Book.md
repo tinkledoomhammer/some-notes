@@ -1213,7 +1213,10 @@ The `Debug` trait
 The `dbg!` macro
 : prints an expression, the value of the expression, and the line and file where the macro is run
 : takes ownership of its arguments but can be passed refs to retain ownership
-: `dbg!(30*scale)
+: returns the value of the expression
+: `dbg!(30*scale)` -> "[src/main.rs:10:16] 30*scale = 60"
+
+
 
 
 
@@ -1230,7 +1233,7 @@ The `dbg!` macro
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ0Mjc4MzQ4LDQxODM1OTA3MywxODQ0NT
+eyJoaXN0b3J5IjpbMTEwNTgyMDgxLDQxODM1OTA3MywxODQ0NT
 EyMjU1LC0yMDk4MTQxOTEyLC0xOTQ2Nzc2MTMwLC0zMzgxMTA5
 NTYsNjk0MDE2MDY5LDYzNDExNjM2MCwxMTE0NjQ2MjEzLDM0MT
 kwMDk2MywtMTgwMTY1MDAsNzU3MzI3MzUsMTY1NzI2MzczMCwx
