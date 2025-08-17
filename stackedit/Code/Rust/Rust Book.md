@@ -1211,7 +1211,9 @@ The `Debug` trait
 : 2. or with `dbg!(&rect1);`
 
 The `dbg!` macro
-: prints the varriable, along with its name and the line and file where the macro is run
+: prints an expression, the value of the expression, and the line and file where the macro is run
+: takes ownership of its arguments but can be passed refs to retain ownership
+: `dbg!(30*scale)
 
 
 
@@ -1228,7 +1230,7 @@ The `dbg!` macro
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI0MzkyMDgzLDQxODM1OTA3MywxODQ0NT
+eyJoaXN0b3J5IjpbNTQ0Mjc4MzQ4LDQxODM1OTA3MywxODQ0NT
 EyMjU1LC0yMDk4MTQxOTEyLC0xOTQ2Nzc2MTMwLC0zMzgxMTA5
 NTYsNjk0MDE2MDY5LDYzNDExNjM2MCwxMTE0NjQ2MjEzLDM0MT
 kwMDk2MywtMTgwMTY1MDAsNzU3MzI3MzUsMTY1NzI2MzczMCwx
