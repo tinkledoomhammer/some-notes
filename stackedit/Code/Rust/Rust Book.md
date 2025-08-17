@@ -1231,6 +1231,9 @@ impl Rectangle{
 * The first parameter must be `self` and must be the same type as the struct
 	* `&self` is short for `self: &Self`
 	* `Self` is an alias for the type implementing the method
+	* Other options are
+		* `self` to take ownership
+		* `&mut self` to mutate the self variable
 
 
 
@@ -1246,11 +1249,11 @@ impl Rectangle{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTA1NTAzODMsNDE4MzU5MDczLDE4ND
-Q1MTIyNTUsLTIwOTgxNDE5MTIsLTE5NDY3NzYxMzAsLTMzODEx
-MDk1Niw2OTQwMTYwNjksNjM0MTE2MzYwLDExMTQ2NDYyMTMsMz
-QxOTAwOTYzLC0xODAxNjUwMCw3NTczMjczNSwxNjU3MjYzNzMw
-LDE5MDczOTY3MjIsMjE5MDU5Mzc2LC02NTIwMTExMDUsLTk3Mj
-k0MTE0OCwzMjE0OTQ0ODksNzU2MjI3ODc4LC00ODc2NDI2NjNd
-fQ==
+eyJoaXN0b3J5IjpbLTE4NjQ5Mzg3Niw0MTgzNTkwNzMsMTg0ND
+UxMjI1NSwtMjA5ODE0MTkxMiwtMTk0Njc3NjEzMCwtMzM4MTEw
+OTU2LDY5NDAxNjA2OSw2MzQxMTYzNjAsMTExNDY0NjIxMywzND
+E5MDA5NjMsLTE4MDE2NTAwLDc1NzMyNzM1LDE2NTcyNjM3MzAs
+MTkwNzM5NjcyMiwyMTkwNTkzNzYsLTY1MjAxMTEwNSwtOTcyOT
+QxMTQ4LDMyMTQ5NDQ4OSw3NTYyMjc4NzgsLTQ4NzY0MjY2M119
+
 -->
