@@ -1228,6 +1228,7 @@ impl Rectangle{
 	}
 }
 ```
+* called like `object.method()`
 * The first parameter must be `self` and must be the same type as the struct
 	* `&self` is short for `self: &Self`
 	* `Self` is an alias for the type implementing the method
@@ -1239,6 +1240,9 @@ impl Rectangle{
 Associated Functions
 : functions defined in an `impl` block 
 : they do not necessarily take a `self` parameter
+* methods are a category of associated functions
+* They can use the `Self` type alias in their definitions
+* Can be called with `::` syntax: `Rectangle::square(3)`
 
 
 
@@ -1255,11 +1259,11 @@ Associated Functions
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNTMyNTUxOSw0MTgzNTkwNzMsMTg0ND
-UxMjI1NSwtMjA5ODE0MTkxMiwtMTk0Njc3NjEzMCwtMzM4MTEw
-OTU2LDY5NDAxNjA2OSw2MzQxMTYzNjAsMTExNDY0NjIxMywzND
-E5MDA5NjMsLTE4MDE2NTAwLDc1NzMyNzM1LDE2NTcyNjM3MzAs
-MTkwNzM5NjcyMiwyMTkwNTkzNzYsLTY1MjAxMTEwNSwtOTcyOT
-QxMTQ4LDMyMTQ5NDQ4OSw3NTYyMjc4NzgsLTQ4NzY0MjY2M119
+eyJoaXN0b3J5IjpbMTUwMTY2NzE1LDQxODM1OTA3MywxODQ0NT
+EyMjU1LC0yMDk4MTQxOTEyLC0xOTQ2Nzc2MTMwLC0zMzgxMTA5
+NTYsNjk0MDE2MDY5LDYzNDExNjM2MCwxMTE0NjQ2MjEzLDM0MT
+kwMDk2MywtMTgwMTY1MDAsNzU3MzI3MzUsMTY1NzI2MzczMCwx
+OTA3Mzk2NzIyLDIxOTA1OTM3NiwtNjUyMDExMTA1LC05NzI5ND
+ExNDgsMzIxNDk0NDg5LDc1NjIyNzg3OCwtNDg3NjQyNjYzXX0=
 
 -->
