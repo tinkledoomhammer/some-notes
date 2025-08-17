@@ -1253,10 +1253,11 @@ Associated Functions
 r.area()
 // equivalent to
 Rectangle::area(&r)
+```
 
 #### Methods and ownership
 
-```
+
 
 
 
@@ -1273,11 +1274,11 @@ Rectangle::area(&r)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg5NjA5NTI0LDQxODM1OTA3MywxODQ0NT
-EyMjU1LC0yMDk4MTQxOTEyLC0xOTQ2Nzc2MTMwLC0zMzgxMTA5
-NTYsNjk0MDE2MDY5LDYzNDExNjM2MCwxMTE0NjQ2MjEzLDM0MT
-kwMDk2MywtMTgwMTY1MDAsNzU3MzI3MzUsMTY1NzI2MzczMCwx
-OTA3Mzk2NzIyLDIxOTA1OTM3NiwtNjUyMDExMTA1LC05NzI5ND
-ExNDgsMzIxNDk0NDg5LDc1NjIyNzg3OCwtNDg3NjQyNjYzXX0=
+eyJoaXN0b3J5IjpbMTYyMTYxNDkxOCw0MTgzNTkwNzMsMTg0ND
+UxMjI1NSwtMjA5ODE0MTkxMiwtMTk0Njc3NjEzMCwtMzM4MTEw
+OTU2LDY5NDAxNjA2OSw2MzQxMTYzNjAsMTExNDY0NjIxMywzND
+E5MDA5NjMsLTE4MDE2NTAwLDc1NzMyNzM1LDE2NTcyNjM3MzAs
+MTkwNzM5NjcyMiwyMTkwNTkzNzYsLTY1MjAxMTEwNSwtOTcyOT
+QxMTQ4LDMyMTQ5NDQ4OSw3NTYyMjc4NzgsLTQ4NzY0MjY2M119
 
 -->
