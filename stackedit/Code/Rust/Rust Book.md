@@ -1248,7 +1248,15 @@ Associated Functions
 #### Caveats
 
 * Multiple `impl` blocks **are allowed**
-* Methods 
+* Methods are sugar for function calls
+```rust
+r.area()
+// equivalent to
+Rectangle::area(&r)
+
+#### Methods and ownership
+
+```
 
 
 
@@ -1265,7 +1273,7 @@ Associated Functions
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE1MTI1NzA0LDQxODM1OTA3MywxODQ0NT
+eyJoaXN0b3J5IjpbODg5NjA5NTI0LDQxODM1OTA3MywxODQ0NT
 EyMjU1LC0yMDk4MTQxOTEyLC0xOTQ2Nzc2MTMwLC0zMzgxMTA5
 NTYsNjk0MDE2MDY5LDYzNDExNjM2MCwxMTE0NjQ2MjEzLDM0MT
 kwMDk2MywtMTgwMTY1MDAsNzU3MzI3MzUsMTY1NzI2MzczMCwx
