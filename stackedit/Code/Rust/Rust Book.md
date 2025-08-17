@@ -1220,8 +1220,15 @@ The `dbg!` macro
 #### Defining methods
 ```rust
 #[derive(Debug)]
-struct Rec
+struct Rectangle { width: u32, Height: u32,}
+
+impl Rectangle{
+	fn area(&self) -> u32 {
+		self.width*self.height
+	}
+}
 ```
+* The 
 
 
 
@@ -1237,11 +1244,11 @@ struct Rec
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mjg0MTM3NjksNDE4MzU5MDczLDE4ND
-Q1MTIyNTUsLTIwOTgxNDE5MTIsLTE5NDY3NzYxMzAsLTMzODEx
-MDk1Niw2OTQwMTYwNjksNjM0MTE2MzYwLDExMTQ2NDYyMTMsMz
-QxOTAwOTYzLC0xODAxNjUwMCw3NTczMjczNSwxNjU3MjYzNzMw
-LDE5MDczOTY3MjIsMjE5MDU5Mzc2LC02NTIwMTExMDUsLTk3Mj
-k0MTE0OCwzMjE0OTQ0ODksNzU2MjI3ODc4LC00ODc2NDI2NjNd
-fQ==
+eyJoaXN0b3J5IjpbLTkzMjExNzM3LDQxODM1OTA3MywxODQ0NT
+EyMjU1LC0yMDk4MTQxOTEyLC0xOTQ2Nzc2MTMwLC0zMzgxMTA5
+NTYsNjk0MDE2MDY5LDYzNDExNjM2MCwxMTE0NjQ2MjEzLDM0MT
+kwMDk2MywtMTgwMTY1MDAsNzU3MzI3MzUsMTY1NzI2MzczMCwx
+OTA3Mzk2NzIyLDIxOTA1OTM3NiwtNjUyMDExMTA1LC05NzI5ND
+ExNDgsMzIxNDk0NDg5LDc1NjIyNzg3OCwtNDg3NjQyNjYzXX0=
+
 -->
