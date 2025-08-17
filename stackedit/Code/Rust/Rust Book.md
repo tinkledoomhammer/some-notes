@@ -1205,7 +1205,10 @@ fn test2(){
 #[derive(Debug)]
 struct Rectangle { ... }
 ```
-T
+The `Debug` trait
+: allows printing variables
+: 1. with `println!("rect1 is {rect1:?}");`
+: 2. or with `dbg!(&rect1);`
 
 
 
@@ -1224,7 +1227,7 @@ T
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDY5NTU1NzksNDE4MzU5MDczLDE4ND
+eyJoaXN0b3J5IjpbLTEwODY4MTEzNzcsNDE4MzU5MDczLDE4ND
 Q1MTIyNTUsLTIwOTgxNDE5MTIsLTE5NDY3NzYxMzAsLTMzODEx
 MDk1Niw2OTQwMTYwNjksNjM0MTE2MzYwLDExMTQ2NDYyMTMsMz
 QxOTAwOTYzLC0xODAxNjUwMCw3NTczMjczNSwxNjU3MjYzNzMw
