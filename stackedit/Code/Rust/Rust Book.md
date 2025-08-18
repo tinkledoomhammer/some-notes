@@ -1349,7 +1349,16 @@ enum Coin {
 	Penny,
 	Nickel,
 	Dime,
-	
+	Quarter(UsState),
+}
+fn value_in_cents(coin: Coin) -> u8 {
+	match coin {
+		Coin::Penny=> // --snip--
+		Coin::Quarter(state) => {
+			println("State quarter from {state:?}!");
+		}
+	}
+}
 
 ```
 
@@ -1366,7 +1375,7 @@ enum Coin {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3OTIzOTA4LC0xMjY1MTk5MDU1LDk3MD
+eyJoaXN0b3J5IjpbMTkxNjQ5MjM4LC0xMjY1MTk5MDU1LDk3MD
 E4MTE3MSwtNTM4Mjk5NDgxLDUyMjkzNDkxNSwxNjIxNjE0OTE4
 LDQxODM1OTA3MywxODQ0NTEyMjU1LC0yMDk4MTQxOTEyLC0xOT
 Q2Nzc2MTMwLC0zMzgxMTA5NTYsNjk0MDE2MDY5LDYzNDExNjM2
