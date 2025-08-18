@@ -1276,12 +1276,14 @@ struct StructVariant01{
 }
 
 enum Message {
-	Var2, // Unit-like variant
-	Var3(i32,i32), // Tuple-like variant
-	Var4{x: i32, y: i32}, // Struct-like variant
-	Var
+	Var1, // Unit-like variant
+	Var2(i32,i32), // Tuple-like variant
+	Var3{x: i32, y: i32}, // Struct-like variant
+	Var4(String), // Containing a numerical data type
 }
 ```
+
+* An `enum` *instance* represents exactly one of the defined variants.
 
 
 
@@ -1295,7 +1297,7 @@ enum Message {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjg5MjAzNTgsOTcwMTgxMTcxLC01Mz
+eyJoaXN0b3J5IjpbLTEyNjUxOTkwNTUsOTcwMTgxMTcxLC01Mz
 gyOTk0ODEsNTIyOTM0OTE1LDE2MjE2MTQ5MTgsNDE4MzU5MDcz
 LDE4NDQ1MTIyNTUsLTIwOTgxNDE5MTIsLTE5NDY3NzYxMzAsLT
 MzODExMDk1Niw2OTQwMTYwNjksNjM0MTE2MzYwLDExMTQ2NDYy
