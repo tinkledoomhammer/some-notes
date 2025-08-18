@@ -900,7 +900,7 @@ let y = &a_r[0];
 ```
 
 From the exercise:
-**Dereferencing and owned type takes ownership**
+**Dereferencing an owned type takes ownership**
 
 ### 04.04 The Slice Type
 Example: returning a part of a string
@@ -1277,11 +1277,11 @@ Accessing a method on  a struct requires perms on the struct depending on the `s
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIyOTM0OTE1LDE2MjE2MTQ5MTgsNDE4Mz
-U5MDczLDE4NDQ1MTIyNTUsLTIwOTgxNDE5MTIsLTE5NDY3NzYx
-MzAsLTMzODExMDk1Niw2OTQwMTYwNjksNjM0MTE2MzYwLDExMT
-Q2NDYyMTMsMzQxOTAwOTYzLC0xODAxNjUwMCw3NTczMjczNSwx
-NjU3MjYzNzMwLDE5MDczOTY3MjIsMjE5MDU5Mzc2LC02NTIwMT
-ExMDUsLTk3Mjk0MTE0OCwzMjE0OTQ0ODksNzU2MjI3ODc4XX0=
+eyJoaXN0b3J5IjpbMTAxNjY0MzI1Myw1MjI5MzQ5MTUsMTYyMT
+YxNDkxOCw0MTgzNTkwNzMsMTg0NDUxMjI1NSwtMjA5ODE0MTkx
+MiwtMTk0Njc3NjEzMCwtMzM4MTEwOTU2LDY5NDAxNjA2OSw2Mz
+QxMTYzNjAsMTExNDY0NjIxMywzNDE5MDA5NjMsLTE4MDE2NTAw
+LDc1NzMyNzM1LDE2NTcyNjM3MzAsMTkwNzM5NjcyMiwyMTkwNT
+kzNzYsLTY1MjAxMTEwNSwtOTcyOTQxMTQ4LDMyMTQ5NDQ4OV19
 
 -->
