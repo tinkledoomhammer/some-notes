@@ -1396,7 +1396,14 @@ match coin{
 #### Matches and ownership
 **when values are matched, they are assigned**
 **assigning to** `_` **will not assign a value**
-*ma
+* Matching on a ref will **"Push Down"** the ref from the outer enum
+```rust
+let opt: Option<String> = 
+	Some(String::from("Hello world"));
+match opt{
+	Some(s) => Println!("Some: {}",s),
+	N
+```
 
 
 
@@ -1408,7 +1415,7 @@ match coin{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNzM2OTkwMSwxOTk1NjI5NTAyLC0xMj
+eyJoaXN0b3J5IjpbLTg3NDY1MDk3MSwxOTk1NjI5NTAyLC0xMj
 Y1MTk5MDU1LDk3MDE4MTE3MSwtNTM4Mjk5NDgxLDUyMjkzNDkx
 NSwxNjIxNjE0OTE4LDQxODM1OTA3MywxODQ0NTEyMjU1LC0yMD
 k4MTQxOTEyLC0xOTQ2Nzc2MTMwLC0zMzgxMTA5NTYsNjk0MDE2
