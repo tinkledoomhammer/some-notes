@@ -1261,6 +1261,9 @@ Accessing a method on  a struct requires perms on the struct depending on the `s
 * `self` requires an owned struct (+O perms)
 * `&self` requires only read perms (+R)
 
+`#[derive(Copy, CLone)]`
+: allows silent copying of data types as long as they don't own heap data
+: 
 
 
 
@@ -1277,7 +1280,7 @@ Accessing a method on  a struct requires perms on the struct depending on the `s
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxNjY0MzI1Myw1MjI5MzQ5MTUsMTYyMT
+eyJoaXN0b3J5IjpbMTAwMzE3NTI5MCw1MjI5MzQ5MTUsMTYyMT
 YxNDkxOCw0MTgzNTkwNzMsMTg0NDUxMjI1NSwtMjA5ODE0MTkx
 MiwtMTk0Njc3NjEzMCwtMzM4MTEwOTU2LDY5NDAxNjA2OSw2Mz
 QxMTYzNjAsMTExNDY0NjIxMywzNDE5MDA5NjMsLTE4MDE2NTAw
