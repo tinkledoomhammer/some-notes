@@ -1339,6 +1339,7 @@ fn value_in_cents(coin: Coin) -> u8 {
 
 #### Patterns that bind to values
 ```rust
+#[derive(Debug)]
 enum UsState {
 	Alabama,
 	Alaska,
@@ -1356,9 +1357,16 @@ fn value_in_cents(coin: Coin) -> u8 {
 		Coin::Penny=> // --snip--
 		Coin::Quarter(state) => {
 			println("State quarter from {state:?}!");
+			25
 		}
 	}
 }
+
+```
+
+#### Matching `Option<T>`
+```rust
+fn plus_one(x: Option<i32>
 
 ```
 
@@ -1371,15 +1379,13 @@ fn value_in_cents(coin: Coin) -> u8 {
 
 
 
-
-
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNjQ5MjM4LC0xMjY1MTk5MDU1LDk3MD
-E4MTE3MSwtNTM4Mjk5NDgxLDUyMjkzNDkxNSwxNjIxNjE0OTE4
-LDQxODM1OTA3MywxODQ0NTEyMjU1LC0yMDk4MTQxOTEyLC0xOT
-Q2Nzc2MTMwLC0zMzgxMTA5NTYsNjk0MDE2MDY5LDYzNDExNjM2
-MCwxMTE0NjQ2MjEzLDM0MTkwMDk2MywtMTgwMTY1MDAsNzU3Mz
-I3MzUsMTY1NzI2MzczMCwxOTA3Mzk2NzIyLDIxOTA1OTM3Nl19
-
+eyJoaXN0b3J5IjpbLTE2NzQxOTI4MjcsLTEyNjUxOTkwNTUsOT
+cwMTgxMTcxLC01MzgyOTk0ODEsNTIyOTM0OTE1LDE2MjE2MTQ5
+MTgsNDE4MzU5MDczLDE4NDQ1MTIyNTUsLTIwOTgxNDE5MTIsLT
+E5NDY3NzYxMzAsLTMzODExMDk1Niw2OTQwMTYwNjksNjM0MTE2
+MzYwLDExMTQ2NDYyMTMsMzQxOTAwOTYzLC0xODAxNjUwMCw3NT
+czMjczNSwxNjU3MjYzNzMwLDE5MDczOTY3MjIsMjE5MDU5Mzc2
+XX0=
 -->
