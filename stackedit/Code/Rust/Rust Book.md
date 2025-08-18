@@ -1327,8 +1327,13 @@ fn value_in_cents(coin: Coin) -> u8 {
 * `match` keyword and an expression
 	*	The expression can be any type
 *	One or more match arms
-	*	each has is *pattern* `=>` *code to run*
+	*	each has is *pattern* `=>` *expression to run*
 *	Only the first match will be executed
+*	At least one arm must match
+*	The entire match expression returns the value from the arm that matches
+*	Longer arms can enclose the *code to run* in curley braces
+	*	then the `,` coma is optional
+
 
 
 
@@ -1343,11 +1348,11 @@ fn value_in_cents(coin: Coin) -> u8 {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDU5NTY0NTksLTEyNjUxOTkwNTUsOT
-cwMTgxMTcxLC01MzgyOTk0ODEsNTIyOTM0OTE1LDE2MjE2MTQ5
-MTgsNDE4MzU5MDczLDE4NDQ1MTIyNTUsLTIwOTgxNDE5MTIsLT
-E5NDY3NzYxMzAsLTMzODExMDk1Niw2OTQwMTYwNjksNjM0MTE2
-MzYwLDExMTQ2NDYyMTMsMzQxOTAwOTYzLC0xODAxNjUwMCw3NT
-czMjczNSwxNjU3MjYzNzMwLDE5MDczOTY3MjIsMjE5MDU5Mzc2
-XX0=
+eyJoaXN0b3J5IjpbMTc4MTA5OTE4NywtMTI2NTE5OTA1NSw5Nz
+AxODExNzEsLTUzODI5OTQ4MSw1MjI5MzQ5MTUsMTYyMTYxNDkx
+OCw0MTgzNTkwNzMsMTg0NDUxMjI1NSwtMjA5ODE0MTkxMiwtMT
+k0Njc3NjEzMCwtMzM4MTEwOTU2LDY5NDAxNjA2OSw2MzQxMTYz
+NjAsMTExNDY0NjIxMywzNDE5MDA5NjMsLTE4MDE2NTAwLDc1Nz
+MyNzM1LDE2NTcyNjM3MzAsMTkwNzM5NjcyMiwyMTkwNTkzNzZd
+fQ==
 -->
