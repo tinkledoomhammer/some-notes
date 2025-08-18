@@ -1315,8 +1315,17 @@ enum Coin {
 	Quarter,
 }
 fn value_in_cents(coin: Coin) -> u8 {
-	match coi
+	match coin{
+		Coin::Penny =>1,
+		Coin::Nickle => 5,
+		Coin::Dime => 10,
+		Coin::Quarter => 25,
+	}
+}
 ```
+#### Structure of match
+* `match` keyword and an expression
+	*	The expression can be an
 
 
 
@@ -1331,7 +1340,7 @@ fn value_in_cents(coin: Coin) -> u8 {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM2MDk0OTgzLC0xMjY1MTk5MDU1LDk3MD
+eyJoaXN0b3J5IjpbODQ4NzI1MTI3LC0xMjY1MTk5MDU1LDk3MD
 E4MTE3MSwtNTM4Mjk5NDgxLDUyMjkzNDkxNSwxNjIxNjE0OTE4
 LDQxODM1OTA3MywxODQ0NTEyMjU1LC0yMDk4MTQxOTEyLC0xOT
 Q2Nzc2MTMwLC0zMzgxMTA5NTYsNjk0MDE2MDY5LDYzNDExNjM2
