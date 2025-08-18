@@ -1379,9 +1379,11 @@ fn plus_one(x: Option<i32>) -> Option<i32> {
 let dice_roll = 9;
 match dice_roll {
 	3 => add_fancy_hat(),
-	
+	7 => remove_fancy_hat(),
+	_ => (), // will execute whenever no other patterns match
 }
 ```
+`_` will match any value or variant
 
 
 
@@ -1394,7 +1396,7 @@ match dice_roll {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1ODU5NzAxMywtMTI2NTE5OTA1NSw5Nz
+eyJoaXN0b3J5IjpbMTk5NTYyOTUwMiwtMTI2NTE5OTA1NSw5Nz
 AxODExNzEsLTUzODI5OTQ4MSw1MjI5MzQ5MTUsMTYyMTYxNDkx
 OCw0MTgzNTkwNzMsMTg0NDUxMjI1NSwtMjA5ODE0MTkxMiwtMT
 k0Njc3NjEzMCwtMzM4MTEwOTU2LDY5NDAxNjA2OSw2MzQxMTYz
