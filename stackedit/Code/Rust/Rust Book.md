@@ -1403,7 +1403,18 @@ match coin{
 ```
 
 ### 06.03 `if let` and `let else`
-`
+`if let`
+: for matching one pattern and ignoring the rest
+```rust
+let config_max = some(3u8);
+if let Some(max) = config_max {
+	println!("The max is {max}");
+}
+//equivalent match statement
+match config_max {
+	some(max) => println
+}
+```
 
 
 
@@ -1450,7 +1461,7 @@ println!("{:?}", opt);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzODMyMzg1NCwxODM1MDEyMDA4LDE5OT
+eyJoaXN0b3J5IjpbMTQxNzAxNjcyMSwxODM1MDEyMDA4LDE5OT
 U2Mjk1MDIsLTEyNjUxOTkwNTUsOTcwMTgxMTcxLC01MzgyOTk0
 ODEsNTIyOTM0OTE1LDE2MjE2MTQ5MTgsNDE4MzU5MDczLDE4ND
 Q1MTIyNTUsLTIwOTgxNDE5MTIsLTE5NDY3NzYxMzAsLTMzODEx
