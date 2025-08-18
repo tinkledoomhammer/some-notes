@@ -1412,8 +1412,13 @@ if let Some(max) = config_max {
 }
 //equivalent match statement
 match config_max {
-	some(max) => println
+	some(max) => println!("The max is {max}");
+	_ => (),
 }
+```
+* `if let` can have an `else` block
+```rust
+
 ```
 
 
@@ -1461,11 +1466,11 @@ println!("{:?}", opt);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNzAxNjcyMSwxODM1MDEyMDA4LDE5OT
-U2Mjk1MDIsLTEyNjUxOTkwNTUsOTcwMTgxMTcxLC01MzgyOTk0
-ODEsNTIyOTM0OTE1LDE2MjE2MTQ5MTgsNDE4MzU5MDczLDE4ND
-Q1MTIyNTUsLTIwOTgxNDE5MTIsLTE5NDY3NzYxMzAsLTMzODEx
-MDk1Niw2OTQwMTYwNjksNjM0MTE2MzYwLDExMTQ2NDYyMTMsMz
-QxOTAwOTYzLC0xODAxNjUwMCw3NTczMjczNSwxNjU3MjYzNzMw
-XX0=
+eyJoaXN0b3J5IjpbLTE4NjcwOTE4OTUsMTgzNTAxMjAwOCwxOT
+k1NjI5NTAyLC0xMjY1MTk5MDU1LDk3MDE4MTE3MSwtNTM4Mjk5
+NDgxLDUyMjkzNDkxNSwxNjIxNjE0OTE4LDQxODM1OTA3MywxOD
+Q0NTEyMjU1LC0yMDk4MTQxOTEyLC0xOTQ2Nzc2MTMwLC0zMzgx
+MTA5NTYsNjk0MDE2MDY5LDYzNDExNjM2MCwxMTE0NjQ2MjEzLD
+M0MTkwMDk2MywtMTgwMTY1MDAsNzU3MzI3MzUsMTY1NzI2Mzcz
+MF19
 -->
