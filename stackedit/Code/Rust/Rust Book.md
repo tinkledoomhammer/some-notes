@@ -1270,6 +1270,15 @@ Accessing a method on  a struct requires perms on the struct depending on the `s
 
 ### 06.01 Defining an Enum
 
+```rust
+struct StructVariant01{
+	// -- snip --
+}
+
+enum Message {
+	Var1(StructVariant01), // 
+	Var2, // Unit-like variant
+```
 
 
 
@@ -1283,11 +1292,11 @@ Accessing a method on  a struct requires perms on the struct depending on the `s
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTcwMTgxMTcxLC01MzgyOTk0ODEsNTIyOT
-M0OTE1LDE2MjE2MTQ5MTgsNDE4MzU5MDczLDE4NDQ1MTIyNTUs
-LTIwOTgxNDE5MTIsLTE5NDY3NzYxMzAsLTMzODExMDk1Niw2OT
-QwMTYwNjksNjM0MTE2MzYwLDExMTQ2NDYyMTMsMzQxOTAwOTYz
-LC0xODAxNjUwMCw3NTczMjczNSwxNjU3MjYzNzMwLDE5MDczOT
-Y3MjIsMjE5MDU5Mzc2LC02NTIwMTExMDUsLTk3Mjk0MTE0OF19
+eyJoaXN0b3J5IjpbNjQ2Mjc0MzAwLDk3MDE4MTE3MSwtNTM4Mj
+k5NDgxLDUyMjkzNDkxNSwxNjIxNjE0OTE4LDQxODM1OTA3Mywx
+ODQ0NTEyMjU1LC0yMDk4MTQxOTEyLC0xOTQ2Nzc2MTMwLC0zMz
+gxMTA5NTYsNjk0MDE2MDY5LDYzNDExNjM2MCwxMTE0NjQ2MjEz
+LDM0MTkwMDk2MywtMTgwMTY1MDAsNzU3MzI3MzUsMTY1NzI2Mz
+czMCwxOTA3Mzk2NzIyLDIxOTA1OTM3NiwtNjUyMDExMTA1XX0=
 
 -->
