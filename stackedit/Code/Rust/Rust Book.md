@@ -1266,6 +1266,9 @@ Accessing a method on  a struct requires perms on the struct depending on the `s
 : This means that you can "take ownership" without taking ownership
 
 
+## 06 Enums and Pattern Matching
+
+### 06.01 Defining an Enum
 
 
 
@@ -1280,11 +1283,11 @@ Accessing a method on  a struct requires perms on the struct depending on the `s
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzODI5OTQ4MSw1MjI5MzQ5MTUsMTYyMT
-YxNDkxOCw0MTgzNTkwNzMsMTg0NDUxMjI1NSwtMjA5ODE0MTkx
-MiwtMTk0Njc3NjEzMCwtMzM4MTEwOTU2LDY5NDAxNjA2OSw2Mz
-QxMTYzNjAsMTExNDY0NjIxMywzNDE5MDA5NjMsLTE4MDE2NTAw
-LDc1NzMyNzM1LDE2NTcyNjM3MzAsMTkwNzM5NjcyMiwyMTkwNT
-kzNzYsLTY1MjAxMTEwNSwtOTcyOTQxMTQ4LDMyMTQ5NDQ4OV19
+eyJoaXN0b3J5IjpbOTcwMTgxMTcxLC01MzgyOTk0ODEsNTIyOT
+M0OTE1LDE2MjE2MTQ5MTgsNDE4MzU5MDczLDE4NDQ1MTIyNTUs
+LTIwOTgxNDE5MTIsLTE5NDY3NzYxMzAsLTMzODExMDk1Niw2OT
+QwMTYwNjksNjM0MTE2MzYwLDExMTQ2NDYyMTMsMzQxOTAwOTYz
+LC0xODAxNjUwMCw3NTczMjczNSwxNjU3MjYzNzMwLDE5MDczOT
+Y3MjIsMjE5MDU5Mzc2LC02NTIwMTExMDUsLTk3Mjk0MTE0OF19
 
 -->
