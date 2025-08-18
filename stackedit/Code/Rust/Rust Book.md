@@ -1361,7 +1361,15 @@ fn value_in_cents(coin: Coin) -> u8 {
 		}
 	}
 }
-
+```
+```rust
+fn decr_twice_v1(n: u32) -> Option<u32> {
+	match n {
+		0 => None,
+		1 => None,
+		n2 => Some(n2-2),
+	}
+}
 ```
 
 #### Matching `Option<T>`
@@ -1394,12 +1402,10 @@ match coin{
 }
 ```
 
+### 06.03 `if let` and `let els`
 
 
 
-```
-fn decr_twice_v1(n: u32) -> Option<u32> {
-```
 
 
 
@@ -1443,7 +1449,7 @@ println!("{:?}", opt);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDAxNTA0OTksMTgzNTAxMjAwOCwxOT
+eyJoaXN0b3J5IjpbLTEwMzI2MDMzODcsMTgzNTAxMjAwOCwxOT
 k1NjI5NTAyLC0xMjY1MTk5MDU1LDk3MDE4MTE3MSwtNTM4Mjk5
 NDgxLDUyMjkzNDkxNSwxNjIxNjE0OTE4LDQxODM1OTA3MywxOD
 Q0NTEyMjU1LC0yMDk4MTQxOTEyLC0xOTQ2Nzc2MTMwLC0zMzgx
