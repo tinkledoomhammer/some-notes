@@ -1428,6 +1428,7 @@ if let Coin::Quarter(state) = coin {
 
 `let else`
 : Facilitates staying on the "happy path" 
+: usefull wh
 ```rust
 fn describe_state_quarter(coin: Coin) -> Option<String> {
 	let Coin::Quarter(state) = coin else{
@@ -1446,8 +1447,10 @@ let state = if let Coin::Quarter(state) = coin {
 } else {
 	return None;
 };
-if state.
+// ... --snip--
 ```
+
+both contain a *pattern* = *source* construct
 
 
 
@@ -1494,11 +1497,11 @@ println!("{:?}", opt);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc5NzgwOTc0LDE4MzUwMTIwMDgsMTk5NT
-YyOTUwMiwtMTI2NTE5OTA1NSw5NzAxODExNzEsLTUzODI5OTQ4
-MSw1MjI5MzQ5MTUsMTYyMTYxNDkxOCw0MTgzNTkwNzMsMTg0ND
-UxMjI1NSwtMjA5ODE0MTkxMiwtMTk0Njc3NjEzMCwtMzM4MTEw
-OTU2LDY5NDAxNjA2OSw2MzQxMTYzNjAsMTExNDY0NjIxMywzND
-E5MDA5NjMsLTE4MDE2NTAwLDc1NzMyNzM1LDE2NTcyNjM3MzBd
-fQ==
+eyJoaXN0b3J5IjpbLTEwMTA0NDc3NiwxODM1MDEyMDA4LDE5OT
+U2Mjk1MDIsLTEyNjUxOTkwNTUsOTcwMTgxMTcxLC01MzgyOTk0
+ODEsNTIyOTM0OTE1LDE2MjE2MTQ5MTgsNDE4MzU5MDczLDE4ND
+Q1MTIyNTUsLTIwOTgxNDE5MTIsLTE5NDY3NzYxMzAsLTMzODEx
+MDk1Niw2OTQwMTYwNjksNjM0MTE2MzYwLDExMTQ2NDYyMTMsMz
+QxOTAwOTYzLC0xODAxNjUwMCw3NTczMjczNSwxNjU3MjYzNzMw
+XX0=
 -->
