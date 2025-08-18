@@ -1303,6 +1303,9 @@ enum Option<T> {
 	* `let some_number = Option::<i32>::Some(5);`
 	* or `let some_number: Option<i32> = Some(5);`
 * also `let no_number : Option<i32> = None;`
+* Using the enum means that you have explicitely opted in to allowing null values
+	* and so must explicitely account for the possiblity of n
+
 
 
 
@@ -1317,7 +1320,7 @@ enum Option<T> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjE5NTQ3NSwtMTI2NTE5OTA1NSw5Nz
+eyJoaXN0b3J5IjpbLTU2NjQxMDc2NywtMTI2NTE5OTA1NSw5Nz
 AxODExNzEsLTUzODI5OTQ4MSw1MjI5MzQ5MTUsMTYyMTYxNDkx
 OCw0MTgzNTkwNzMsMTg0NDUxMjI1NSwtMjA5ODE0MTkxMiwtMT
 k0Njc3NjEzMCwtMzM4MTEwOTU2LDY5NDAxNjA2OSw2MzQxMTYz
