@@ -1297,6 +1297,10 @@ enum Option<T> {
 	Some(T),
 }
 ```
+`Option<T>` is defined in the standard prelude
+* Its variants `Some` and `None` can be accessed directly 
+	* `let some_number = Some(5);`  is equivalent to 
+	* `let some_number = 
 
 
 
@@ -1310,11 +1314,11 @@ enum Option<T> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjE0NzUzMzUsLTEyNjUxOTkwNTUsOT
-cwMTgxMTcxLC01MzgyOTk0ODEsNTIyOTM0OTE1LDE2MjE2MTQ5
-MTgsNDE4MzU5MDczLDE4NDQ1MTIyNTUsLTIwOTgxNDE5MTIsLT
-E5NDY3NzYxMzAsLTMzODExMDk1Niw2OTQwMTYwNjksNjM0MTE2
-MzYwLDExMTQ2NDYyMTMsMzQxOTAwOTYzLC0xODAxNjUwMCw3NT
-czMjczNSwxNjU3MjYzNzMwLDE5MDczOTY3MjIsMjE5MDU5Mzc2
-XX0=
+eyJoaXN0b3J5IjpbMTM0NzkwNTI0MiwtMTI2NTE5OTA1NSw5Nz
+AxODExNzEsLTUzODI5OTQ4MSw1MjI5MzQ5MTUsMTYyMTYxNDkx
+OCw0MTgzNTkwNzMsMTg0NDUxMjI1NSwtMjA5ODE0MTkxMiwtMT
+k0Njc3NjEzMCwtMzM4MTEwOTU2LDY5NDAxNjA2OSw2MzQxMTYz
+NjAsMTExNDY0NjIxMywzNDE5MDA5NjMsLTE4MDE2NTAwLDc1Nz
+MyNzM1LDE2NTcyNjM3MzAsMTkwNzM5NjcyMiwyMTkwNTkzNzZd
+fQ==
 -->
