@@ -1366,9 +1366,16 @@ fn value_in_cents(coin: Coin) -> u8 {
 
 #### Matching `Option<T>`
 ```rust
-fn plus_one(x: Option<i32>
-
+fn plus_one(x: Option<i32>) -> Option<i32> {
+	match x {
+		None => None,
+		Some(i) => Some(i+1),
+	}
+}
 ```
+
+#### Exhaustive matching and the `_` Placeholder
+
 
 
 
@@ -1381,11 +1388,11 @@ fn plus_one(x: Option<i32>
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzQxOTI4MjcsLTEyNjUxOTkwNTUsOT
-cwMTgxMTcxLC01MzgyOTk0ODEsNTIyOTM0OTE1LDE2MjE2MTQ5
-MTgsNDE4MzU5MDczLDE4NDQ1MTIyNTUsLTIwOTgxNDE5MTIsLT
-E5NDY3NzYxMzAsLTMzODExMDk1Niw2OTQwMTYwNjksNjM0MTE2
-MzYwLDExMTQ2NDYyMTMsMzQxOTAwOTYzLC0xODAxNjUwMCw3NT
-czMjczNSwxNjU3MjYzNzMwLDE5MDczOTY3MjIsMjE5MDU5Mzc2
-XX0=
+eyJoaXN0b3J5IjpbMTIyNDIzOCwtMTI2NTE5OTA1NSw5NzAxOD
+ExNzEsLTUzODI5OTQ4MSw1MjI5MzQ5MTUsMTYyMTYxNDkxOCw0
+MTgzNTkwNzMsMTg0NDUxMjI1NSwtMjA5ODE0MTkxMiwtMTk0Nj
+c3NjEzMCwtMzM4MTEwOTU2LDY5NDAxNjA2OSw2MzQxMTYzNjAs
+MTExNDY0NjIxMywzNDE5MDA5NjMsLTE4MDE2NTAwLDc1NzMyNz
+M1LDE2NTcyNjM3MzAsMTkwNzM5NjcyMiwyMTkwNTkzNzZdfQ==
+
 -->
