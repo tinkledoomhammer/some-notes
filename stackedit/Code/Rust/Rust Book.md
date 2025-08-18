@@ -1281,9 +1281,22 @@ enum Message {
 	Var3{x: i32, y: i32}, // Struct-like variant
 	Var4(String), // Containing a numerical data type
 }
+
+impl Message {
+	fn call(&self){
+		// -- snip --
+	}
+}
 ```
 
 * An `enum` *instance* represents exactly one of the defined variants.
+#### `Option<T>`
+```rust
+enum Option<T> {
+	None,
+	Some(T),
+}
+```
 
 
 
@@ -1297,11 +1310,11 @@ enum Message {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjUxOTkwNTUsOTcwMTgxMTcxLC01Mz
-gyOTk0ODEsNTIyOTM0OTE1LDE2MjE2MTQ5MTgsNDE4MzU5MDcz
-LDE4NDQ1MTIyNTUsLTIwOTgxNDE5MTIsLTE5NDY3NzYxMzAsLT
-MzODExMDk1Niw2OTQwMTYwNjksNjM0MTE2MzYwLDExMTQ2NDYy
-MTMsMzQxOTAwOTYzLC0xODAxNjUwMCw3NTczMjczNSwxNjU3Mj
-YzNzMwLDE5MDczOTY3MjIsMjE5MDU5Mzc2LC02NTIwMTExMDVd
-fQ==
+eyJoaXN0b3J5IjpbLTE3MjE0NzUzMzUsLTEyNjUxOTkwNTUsOT
+cwMTgxMTcxLC01MzgyOTk0ODEsNTIyOTM0OTE1LDE2MjE2MTQ5
+MTgsNDE4MzU5MDczLDE4NDQ1MTIyNTUsLTIwOTgxNDE5MTIsLT
+E5NDY3NzYxMzAsLTMzODExMDk1Niw2OTQwMTYwNjksNjM0MTE2
+MzYwLDExMTQ2NDYyMTMsMzQxOTAwOTYzLC0xODAxNjUwMCw3NT
+czMjczNSwxNjU3MjYzNzMwLDE5MDczOTY3MjIsMjE5MDU5Mzc2
+XX0=
 -->
