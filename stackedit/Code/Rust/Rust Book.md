@@ -1375,7 +1375,13 @@ fn plus_one(x: Option<i32>) -> Option<i32> {
 ```
 
 #### Exhaustive matching and the `_` Placeholder
-
+```rust
+let dice_roll = 9;
+match dice_roll {
+	3 => add_fancy_hat(),
+	
+}
+```
 
 
 
@@ -1388,11 +1394,11 @@ fn plus_one(x: Option<i32>) -> Option<i32> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNDIzOCwtMTI2NTE5OTA1NSw5NzAxOD
-ExNzEsLTUzODI5OTQ4MSw1MjI5MzQ5MTUsMTYyMTYxNDkxOCw0
-MTgzNTkwNzMsMTg0NDUxMjI1NSwtMjA5ODE0MTkxMiwtMTk0Nj
-c3NjEzMCwtMzM4MTEwOTU2LDY5NDAxNjA2OSw2MzQxMTYzNjAs
-MTExNDY0NjIxMywzNDE5MDA5NjMsLTE4MDE2NTAwLDc1NzMyNz
-M1LDE2NTcyNjM3MzAsMTkwNzM5NjcyMiwyMTkwNTkzNzZdfQ==
-
+eyJoaXN0b3J5IjpbMTc1ODU5NzAxMywtMTI2NTE5OTA1NSw5Nz
+AxODExNzEsLTUzODI5OTQ4MSw1MjI5MzQ5MTUsMTYyMTYxNDkx
+OCw0MTgzNTkwNzMsMTg0NDUxMjI1NSwtMjA5ODE0MTkxMiwtMT
+k0Njc3NjEzMCwtMzM4MTEwOTU2LDY5NDAxNjA2OSw2MzQxMTYz
+NjAsMTExNDY0NjIxMywzNDE5MDA5NjMsLTE4MDE2NTAwLDc1Nz
+MyNzM1LDE2NTcyNjM3MzAsMTkwNzM5NjcyMiwyMTkwNTkzNzZd
+fQ==
 -->
