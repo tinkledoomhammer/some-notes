@@ -1276,8 +1276,11 @@ struct StructVariant01{
 }
 
 enum Message {
-	Var1(StructVariant01), // 
 	Var2, // Unit-like variant
+	Var3(i32,i32), // Tuple-like variant
+	Var4{x: i32, y: i32}, // Struct-like variant
+	Var
+}
 ```
 
 
@@ -1292,11 +1295,11 @@ enum Message {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ2Mjc0MzAwLDk3MDE4MTE3MSwtNTM4Mj
-k5NDgxLDUyMjkzNDkxNSwxNjIxNjE0OTE4LDQxODM1OTA3Mywx
-ODQ0NTEyMjU1LC0yMDk4MTQxOTEyLC0xOTQ2Nzc2MTMwLC0zMz
-gxMTA5NTYsNjk0MDE2MDY5LDYzNDExNjM2MCwxMTE0NjQ2MjEz
-LDM0MTkwMDk2MywtMTgwMTY1MDAsNzU3MzI3MzUsMTY1NzI2Mz
-czMCwxOTA3Mzk2NzIyLDIxOTA1OTM3NiwtNjUyMDExMTA1XX0=
-
+eyJoaXN0b3J5IjpbLTEzNjg5MjAzNTgsOTcwMTgxMTcxLC01Mz
+gyOTk0ODEsNTIyOTM0OTE1LDE2MjE2MTQ5MTgsNDE4MzU5MDcz
+LDE4NDQ1MTIyNTUsLTIwOTgxNDE5MTIsLTE5NDY3NzYxMzAsLT
+MzODExMDk1Niw2OTQwMTYwNjksNjM0MTE2MzYwLDExMTQ2NDYy
+MTMsMzQxOTAwOTYzLC0xODAxNjUwMCw3NTczMjczNSwxNjU3Mj
+YzNzMwLDE5MDczOTY3MjIsMjE5MDU5Mzc2LC02NTIwMTExMDVd
+fQ==
 -->
