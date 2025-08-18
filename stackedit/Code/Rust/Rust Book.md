@@ -1385,7 +1385,13 @@ match dice_roll {
 ```
 `_` will match any value or variant
 
-
+```rust
+// with coin: Coin
+match coin{
+	Penny => 1,
+	Quarter(_) => 25, //
+	
+```
 
 
 
@@ -1398,7 +1404,7 @@ match dice_roll {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzODUwNjg1NCwxOTk1NjI5NTAyLC0xMj
+eyJoaXN0b3J5IjpbMjA4MDMyOTg2NywxOTk1NjI5NTAyLC0xMj
 Y1MTk5MDU1LDk3MDE4MTE3MSwtNTM4Mjk5NDgxLDUyMjkzNDkx
 NSwxNjIxNjE0OTE4LDQxODM1OTA3MywxODQ0NTEyMjU1LC0yMD
 k4MTQxOTEyLC0xOTQ2Nzc2MTMwLC0zMzgxMTA5NTYsNjk0MDE2
