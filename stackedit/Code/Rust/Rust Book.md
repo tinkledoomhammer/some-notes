@@ -1303,9 +1303,20 @@ enum Option<T> {
 	* `let some_number = Option::<i32>::Some(5);`
 	* or `let some_number: Option<i32> = Some(5);`
 * also `let no_number : Option<i32> = None;`
-* Using the enum means that you have explicitely opted in to allowing null values
-	* and so must explicitely account for the possiblity of n
+* Using the enum means that you have explicitly opted in to allowing null values
+	* and so must explicitly account for the possibility of null values
 
+### 06.02 `match` control flow construct
+```rust
+enum Coin {
+	Penny,
+	Nickle,
+	Dime,
+	Quarter,
+}
+fn value_in_cents(coin: Coin) -> u8 {
+	match coi
+```
 
 
 
@@ -1320,11 +1331,11 @@ enum Option<T> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2NjQxMDc2NywtMTI2NTE5OTA1NSw5Nz
-AxODExNzEsLTUzODI5OTQ4MSw1MjI5MzQ5MTUsMTYyMTYxNDkx
-OCw0MTgzNTkwNzMsMTg0NDUxMjI1NSwtMjA5ODE0MTkxMiwtMT
-k0Njc3NjEzMCwtMzM4MTEwOTU2LDY5NDAxNjA2OSw2MzQxMTYz
-NjAsMTExNDY0NjIxMywzNDE5MDA5NjMsLTE4MDE2NTAwLDc1Nz
-MyNzM1LDE2NTcyNjM3MzAsMTkwNzM5NjcyMiwyMTkwNTkzNzZd
-fQ==
+eyJoaXN0b3J5IjpbMzM2MDk0OTgzLC0xMjY1MTk5MDU1LDk3MD
+E4MTE3MSwtNTM4Mjk5NDgxLDUyMjkzNDkxNSwxNjIxNjE0OTE4
+LDQxODM1OTA3MywxODQ0NTEyMjU1LC0yMDk4MTQxOTEyLC0xOT
+Q2Nzc2MTMwLC0zMzgxMTA5NTYsNjk0MDE2MDY5LDYzNDExNjM2
+MCwxMTE0NjQ2MjEzLDM0MTkwMDk2MywtMTgwMTY1MDAsNzU3Mz
+I3MzUsMTY1NzI2MzczMCwxOTA3Mzk2NzIyLDIxOTA1OTM3Nl19
+
 -->
