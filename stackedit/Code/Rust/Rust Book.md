@@ -1316,7 +1316,10 @@ enum Coin {
 }
 fn value_in_cents(coin: Coin) -> u8 {
 	match coin{
-		Coin::Penny =>1,
+		Coin::Penny => {
+			println!("Lucky Penny!");
+			1
+		},
 		Coin::Nickle => 5,
 		Coin::Dime => 10,
 		Coin::Quarter => 25,
@@ -1334,6 +1337,21 @@ fn value_in_cents(coin: Coin) -> u8 {
 *	Longer arms can enclose the *code to run* in curley braces
 	*	then the `,` coma is optional
 
+#### Patterns that bind to values
+```rust
+enum UsState {
+	Alabama,
+	Alaska,
+	// -- ... 
+}
+
+enum Coin {
+	Penny,
+	Nickel,
+	Dime,
+	
+
+```
 
 
 
@@ -1348,11 +1366,11 @@ fn value_in_cents(coin: Coin) -> u8 {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4MTA5OTE4NywtMTI2NTE5OTA1NSw5Nz
-AxODExNzEsLTUzODI5OTQ4MSw1MjI5MzQ5MTUsMTYyMTYxNDkx
-OCw0MTgzNTkwNzMsMTg0NDUxMjI1NSwtMjA5ODE0MTkxMiwtMT
-k0Njc3NjEzMCwtMzM4MTEwOTU2LDY5NDAxNjA2OSw2MzQxMTYz
-NjAsMTExNDY0NjIxMywzNDE5MDA5NjMsLTE4MDE2NTAwLDc1Nz
-MyNzM1LDE2NTcyNjM3MzAsMTkwNzM5NjcyMiwyMTkwNTkzNzZd
-fQ==
+eyJoaXN0b3J5IjpbLTQ3OTIzOTA4LC0xMjY1MTk5MDU1LDk3MD
+E4MTE3MSwtNTM4Mjk5NDgxLDUyMjkzNDkxNSwxNjIxNjE0OTE4
+LDQxODM1OTA3MywxODQ0NTEyMjU1LC0yMDk4MTQxOTEyLC0xOT
+Q2Nzc2MTMwLC0zMzgxMTA5NTYsNjk0MDE2MDY5LDYzNDExNjM2
+MCwxMTE0NjQ2MjEzLDM0MTkwMDk2MywtMTgwMTY1MDAsNzU3Mz
+I3MzUsMTY1NzI2MzczMCwxOTA3Mzk2NzIyLDIxOTA1OTM3Nl19
+
 -->
