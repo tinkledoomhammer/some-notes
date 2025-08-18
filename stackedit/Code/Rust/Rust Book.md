@@ -1393,6 +1393,20 @@ match coin{
 	_ => 10, // will match any other variant
 }
 ```
+
+
+
+
+```
+fn decr_twice_v1(n: u32) -> Option<u32> {
+```
+
+
+
+
+
+
+
 #### Matches and ownership
 **when values are matched, they are assigned**
 **assigning to** `_` **will not assign a value**
@@ -1429,11 +1443,11 @@ println!("{:?}", opt);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzNTAxMjAwOCwxOTk1NjI5NTAyLC0xMj
-Y1MTk5MDU1LDk3MDE4MTE3MSwtNTM4Mjk5NDgxLDUyMjkzNDkx
-NSwxNjIxNjE0OTE4LDQxODM1OTA3MywxODQ0NTEyMjU1LC0yMD
-k4MTQxOTEyLC0xOTQ2Nzc2MTMwLC0zMzgxMTA5NTYsNjk0MDE2
-MDY5LDYzNDExNjM2MCwxMTE0NjQ2MjEzLDM0MTkwMDk2MywtMT
-gwMTY1MDAsNzU3MzI3MzUsMTY1NzI2MzczMCwxOTA3Mzk2NzIy
-XX0=
+eyJoaXN0b3J5IjpbLTE4MDAxNTA0OTksMTgzNTAxMjAwOCwxOT
+k1NjI5NTAyLC0xMjY1MTk5MDU1LDk3MDE4MTE3MSwtNTM4Mjk5
+NDgxLDUyMjkzNDkxNSwxNjIxNjE0OTE4LDQxODM1OTA3MywxOD
+Q0NTEyMjU1LC0yMDk4MTQxOTEyLC0xOTQ2Nzc2MTMwLC0zMzgx
+MTA5NTYsNjk0MDE2MDY5LDYzNDExNjM2MCwxMTE0NjQ2MjEzLD
+M0MTkwMDk2MywtMTgwMTY1MDAsNzU3MzI3MzUsMTY1NzI2Mzcz
+MF19
 -->
