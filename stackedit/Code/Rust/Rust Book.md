@@ -1383,16 +1383,20 @@ match dice_roll {
 	_ => (), // will execute whenever no other patterns match
 }
 ```
-`_` will match any value or variant
 
+`_` will match any value or variant
 ```rust
 // with coin: Coin
 match coin{
 	Penny => 1,
-	Quarter(_) => 25, //
-	
+	Quarter(_) => 25, // Discardes the state
+	_ => 10, // will match any other variant
+}
 ```
-
+#### Matches and ownership
+**when values are matched, they are assigned**
+**assigning to** `_` **will not assign a value**
+*ma
 
 
 
@@ -1404,7 +1408,7 @@ match coin{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4MDMyOTg2NywxOTk1NjI5NTAyLC0xMj
+eyJoaXN0b3J5IjpbMTIwNzM2OTkwMSwxOTk1NjI5NTAyLC0xMj
 Y1MTk5MDU1LDk3MDE4MTE3MSwtNTM4Mjk5NDgxLDUyMjkzNDkx
 NSwxNjIxNjE0OTE4LDQxODM1OTA3MywxODQ0NTEyMjU1LC0yMD
 k4MTQxOTEyLC0xOTQ2Nzc2MTMwLC0zMzgxMTA5NTYsNjk0MDE2
