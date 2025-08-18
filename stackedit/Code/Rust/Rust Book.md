@@ -1429,7 +1429,15 @@ if let Coin::Quarter(state) = coin {
 `let else`
 : Facilitates staying on the "happy path" 
 ```rust
-
+fn describe_state_quarter(coin: Coin) -> Option<String> {
+	let Coin::Quarter(state) = coin else{
+		return None;
+	};
+	if state.existed_in(1900) {
+		Some(format!("{state:?} is pretty old."));
+	} else {
+		Some(format!("{state:?} is p
+}
 ```
 
 
@@ -1477,11 +1485,11 @@ println!("{:?}", opt);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY5MjUwMTk5LDE4MzUwMTIwMDgsMTk5NT
-YyOTUwMiwtMTI2NTE5OTA1NSw5NzAxODExNzEsLTUzODI5OTQ4
-MSw1MjI5MzQ5MTUsMTYyMTYxNDkxOCw0MTgzNTkwNzMsMTg0ND
-UxMjI1NSwtMjA5ODE0MTkxMiwtMTk0Njc3NjEzMCwtMzM4MTEw
-OTU2LDY5NDAxNjA2OSw2MzQxMTYzNjAsMTExNDY0NjIxMywzND
-E5MDA5NjMsLTE4MDE2NTAwLDc1NzMyNzM1LDE2NTcyNjM3MzBd
-fQ==
+eyJoaXN0b3J5IjpbLTEwODQzMjQ2MDUsMTgzNTAxMjAwOCwxOT
+k1NjI5NTAyLC0xMjY1MTk5MDU1LDk3MDE4MTE3MSwtNTM4Mjk5
+NDgxLDUyMjkzNDkxNSwxNjIxNjE0OTE4LDQxODM1OTA3MywxOD
+Q0NTEyMjU1LC0yMDk4MTQxOTEyLC0xOTQ2Nzc2MTMwLC0zMzgx
+MTA5NTYsNjk0MDE2MDY5LDYzNDExNjM2MCwxMTE0NjQ2MjEzLD
+M0MTkwMDk2MywtMTgwMTY1MDAsNzU3MzI3MzUsMTY1NzI2Mzcz
+MF19
 -->
