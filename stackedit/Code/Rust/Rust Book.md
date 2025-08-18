@@ -1257,9 +1257,10 @@ Rectangle::area(&r)
 
 #### Methods and ownership
 Accessing a method on  a struct requires perms on the struct depending on the `self` parameter.
-* `&mut self` requires `mut struct` or `&mut struct`
-* `self` requires an owned struct
-* `&self` requires only read perms
+* `&mut self` requires `mut struct` or `&mut struct` (+RW perms)
+* `self` requires an owned struct (+O perms)
+* `&self` requires only read perms (+R)
+
 
 
 
@@ -1276,11 +1277,11 @@ Accessing a method on  a struct requires perms on the struct depending on the `s
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDY2NzAyMjcsMTYyMTYxNDkxOCw0MT
-gzNTkwNzMsMTg0NDUxMjI1NSwtMjA5ODE0MTkxMiwtMTk0Njc3
-NjEzMCwtMzM4MTEwOTU2LDY5NDAxNjA2OSw2MzQxMTYzNjAsMT
-ExNDY0NjIxMywzNDE5MDA5NjMsLTE4MDE2NTAwLDc1NzMyNzM1
-LDE2NTcyNjM3MzAsMTkwNzM5NjcyMiwyMTkwNTkzNzYsLTY1Mj
-AxMTEwNSwtOTcyOTQxMTQ4LDMyMTQ5NDQ4OSw3NTYyMjc4Nzhd
-fQ==
+eyJoaXN0b3J5IjpbNTIyOTM0OTE1LDE2MjE2MTQ5MTgsNDE4Mz
+U5MDczLDE4NDQ1MTIyNTUsLTIwOTgxNDE5MTIsLTE5NDY3NzYx
+MzAsLTMzODExMDk1Niw2OTQwMTYwNjksNjM0MTE2MzYwLDExMT
+Q2NDYyMTMsMzQxOTAwOTYzLC0xODAxNjUwMCw3NTczMjczNSwx
+NjU3MjYzNzMwLDE5MDczOTY3MjIsMjE5MDU5Mzc2LC02NTIwMT
+ExMDUsLTk3Mjk0MTE0OCwzMjE0OTQ0ODksNzU2MjI3ODc4XX0=
+
 -->
