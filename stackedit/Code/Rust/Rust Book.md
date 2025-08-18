@@ -1412,7 +1412,11 @@ println("{:?}",opt);
 //To avoid taking ownership
 
 match &opt{
-	Some(s) => println!("Some: {}",s), // 
+	Some(s) => println!("Some: {}",s), // now s is &String
+	None => ...
+}
+//now we can still use opt
+println!("{:?}", opt);
 ```
 
 
@@ -1425,11 +1429,11 @@ match &opt{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNjg3NDM4LDE5OTU2Mjk1MDIsLTEyNj
-UxOTkwNTUsOTcwMTgxMTcxLC01MzgyOTk0ODEsNTIyOTM0OTE1
-LDE2MjE2MTQ5MTgsNDE4MzU5MDczLDE4NDQ1MTIyNTUsLTIwOT
-gxNDE5MTIsLTE5NDY3NzYxMzAsLTMzODExMDk1Niw2OTQwMTYw
-NjksNjM0MTE2MzYwLDExMTQ2NDYyMTMsMzQxOTAwOTYzLC0xOD
-AxNjUwMCw3NTczMjczNSwxNjU3MjYzNzMwLDE5MDczOTY3MjJd
-fQ==
+eyJoaXN0b3J5IjpbMTgzNTAxMjAwOCwxOTk1NjI5NTAyLC0xMj
+Y1MTk5MDU1LDk3MDE4MTE3MSwtNTM4Mjk5NDgxLDUyMjkzNDkx
+NSwxNjIxNjE0OTE4LDQxODM1OTA3MywxODQ0NTEyMjU1LC0yMD
+k4MTQxOTEyLC0xOTQ2Nzc2MTMwLC0zMzgxMTA5NTYsNjk0MDE2
+MDY5LDYzNDExNjM2MCwxMTE0NjQ2MjEzLDM0MTkwMDk2MywtMT
+gwMTY1MDAsNzU3MzI3MzUsMTY1NzI2MzczMCwxOTA3Mzk2NzIy
+XX0=
 -->
