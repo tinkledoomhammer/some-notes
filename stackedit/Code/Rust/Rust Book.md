@@ -1588,7 +1588,17 @@ Tips for modules
 	* then `Asparagus` can be used
 	* 
 
+### 07.03 Paths for referring to an item in the module tree
 
+**Paths can take 2 forms**
+
+absolute path
+: the full path starting from the crate root
+: for external crates, the path begins with the crate name
+: for internal crates, the path begins with the literal `crate`
+
+relative path
+: starts from the current module and uses `self` ,
 
 
 
@@ -1598,11 +1608,11 @@ Tips for modules
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDY0NTczMywtMTE0OTI2NjI1OSwtNz
-c3Njc0MjU3LDEzNTI2Nzc3NDMsLTEwNjcwMDY5NzUsMTgzNTAx
-MjAwOCwxOTk1NjI5NTAyLC0xMjY1MTk5MDU1LDk3MDE4MTE3MS
-wtNTM4Mjk5NDgxLDUyMjkzNDkxNSwxNjIxNjE0OTE4LDQxODM1
-OTA3MywxODQ0NTEyMjU1LC0yMDk4MTQxOTEyLC0xOTQ2Nzc2MT
-MwLC0zMzgxMTA5NTYsNjk0MDE2MDY5LDYzNDExNjM2MCwxMTE0
-NjQ2MjEzXX0=
+eyJoaXN0b3J5IjpbOTM3NzY5ODM2LC0xMTQ5MjY2MjU5LC03Nz
+c2NzQyNTcsMTM1MjY3Nzc0MywtMTA2NzAwNjk3NSwxODM1MDEy
+MDA4LDE5OTU2Mjk1MDIsLTEyNjUxOTkwNTUsOTcwMTgxMTcxLC
+01MzgyOTk0ODEsNTIyOTM0OTE1LDE2MjE2MTQ5MTgsNDE4MzU5
+MDczLDE4NDQ1MTIyNTUsLTIwOTgxNDE5MTIsLTE5NDY3NzYxMz
+AsLTMzODExMDk1Niw2OTQwMTYwNjksNjM0MTE2MzYwLDExMTQ2
+NDYyMTNdfQ==
 -->
