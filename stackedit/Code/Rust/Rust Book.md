@@ -1524,7 +1524,15 @@ package
 : contains a `Cargo.toml` file
 : can contain many binary crates, and at most one library crate
 
-
+```bash
+$ cargo new my-project
+	Created binary (application) 'my-project'
+$ ls my-project
+Cargo.toml
+src
+$ ls my-project/src
+main.rs
+```
 
 
 
@@ -1536,7 +1544,7 @@ package
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzU4NjI3MjksMTM1MjY3Nzc0MywtMT
+eyJoaXN0b3J5IjpbLTE0NDA1MTM5MTQsMTM1MjY3Nzc0MywtMT
 A2NzAwNjk3NSwxODM1MDEyMDA4LDE5OTU2Mjk1MDIsLTEyNjUx
 OTkwNTUsOTcwMTgxMTcxLC01MzgyOTk0ODEsNTIyOTM0OTE1LD
 E2MjE2MTQ5MTgsNDE4MzU5MDczLDE4NDQ1MTIyNTUsLTIwOTgx
