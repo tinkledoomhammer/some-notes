@@ -1549,7 +1549,15 @@ Imagine you see a Rust package  `foobar`  with the following files:
 		`└── bin/` 
 				`└── alt.rs`
 
-How many crates does this package contain? Write your answer as a digit, e.g. 0, 1, and so on.
+How many crates does this package contain? **3**
+`main.rs` produces a binary crate, `lib.rs` produces a library crate, and `bin/alt.rs` produces a binary crate. The `util.rs` would presumably be used as a module within one of these crates, but it is not a special filename recognized by Rust, so it would not be its own crate. `build.rs` is a build script.
+
+
+### 07.02 Modules
+`use`
+: keyword that brings a path into scope
+
+`pub`
 
 
 
@@ -1560,7 +1568,7 @@ How many crates does this package contain? Write your answer as a digit, e.g. 0,
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MTgyMTc3NywxMzUyNjc3NzQzLC0xMD
+eyJoaXN0b3J5IjpbMjEzMzcxNTQ1MiwxMzUyNjc3NzQzLC0xMD
 Y3MDA2OTc1LDE4MzUwMTIwMDgsMTk5NTYyOTUwMiwtMTI2NTE5
 OTA1NSw5NzAxODExNzEsLTUzODI5OTQ4MSw1MjI5MzQ5MTUsMT
 YyMTYxNDkxOCw0MTgzNTkwNzMsMTg0NDUxMjI1NSwtMjA5ODE0
