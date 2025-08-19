@@ -1558,6 +1558,15 @@ How many crates does this package contain? **3**
 : keyword that brings a path into scope
 
 `pub`
+: keyword to make items public
+
+`path`
+: names for items
+
+`as`
+: keyword for naming paths from external packages
+
+
 
 
 
@@ -1568,7 +1577,7 @@ How many crates does this package contain? **3**
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMzcxNTQ1MiwxMzUyNjc3NzQzLC0xMD
+eyJoaXN0b3J5IjpbLTc3NzY3NDI1NywxMzUyNjc3NzQzLC0xMD
 Y3MDA2OTc1LDE4MzUwMTIwMDgsMTk5NTYyOTUwMiwtMTI2NTE5
 OTA1NSw5NzAxODExNzEsLTUzODI5OTQ4MSw1MjI5MzQ5MTUsMT
 YyMTYxNDkxOCw0MTgzNTkwNzMsMTg0NDUxMjI1NSwtMjA5ODE0
