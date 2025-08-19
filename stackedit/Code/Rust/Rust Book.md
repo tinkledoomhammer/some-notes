@@ -1616,9 +1616,12 @@ pub fn eat_at_restaurant() {
 	crate::front_of_house::hosting::add_to_waitlist();
 	//RELATIVE Path
 	front_of_house::hosting::add_to_waitlist();
-	
 }
 ```
+**modules and items inside the module are private by default**
+**modules do not have access to private members of their submodules**
+
+
 
 
 
@@ -1628,7 +1631,7 @@ pub fn eat_at_restaurant() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1MDUyMDQ2MCwtMTE0OTI2NjI1OSwtNz
+eyJoaXN0b3J5IjpbLTM3OTI0NTI0NCwtMTE0OTI2NjI1OSwtNz
 c3Njc0MjU3LDEzNTI2Nzc3NDMsLTEwNjcwMDY5NzUsMTgzNTAx
 MjAwOCwxOTk1NjI5NTAyLC0xMjY1MTk5MDU1LDk3MDE4MTE3MS
 wtNTM4Mjk5NDgxLDUyMjkzNDkxNSwxNjIxNjE0OTE4LDQxODM1
