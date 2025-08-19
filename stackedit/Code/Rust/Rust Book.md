@@ -1507,7 +1507,13 @@ Paths
 : A way of naming an item, such as a struct, function, or module
 
 Cargo workspaces
-: 
+: a cargo feature for managing multiple interrelated packages that evolve together
+
+### 07.01 Packages and Crates
+crate
+: the smallest amount of code that the compiler considers at a time
+
+
 
 
 
@@ -1518,7 +1524,7 @@ Cargo workspaces
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1NjQ1NjExMywxMzUyNjc3NzQzLC0xMD
+eyJoaXN0b3J5IjpbLTc5OTU2MTc3NywxMzUyNjc3NzQzLC0xMD
 Y3MDA2OTc1LDE4MzUwMTIwMDgsMTk5NTYyOTUwMiwtMTI2NTE5
 OTA1NSw5NzAxODExNzEsLTUzODI5OTQ4MSw1MjI5MzQ5MTUsMT
 YyMTYxNDkxOCw0MTgzNTkwNzMsMTg0NDUxMjI1NSwtMjA5ODE0
