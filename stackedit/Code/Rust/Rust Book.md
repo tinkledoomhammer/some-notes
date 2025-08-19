@@ -1584,7 +1584,9 @@ Tips for modules
 	* can be declared 	`pub mod`
 	* items in the module that will be public must also be declared 	`pub`
 * The `use` keyword
-	* i.e. `u
+	* i.e. `use crate::garden::vegetables::Asparagus;`
+	* then `Asparagus` can be used
+	* 
 
 
 
@@ -1595,7 +1597,7 @@ Tips for modules
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzQ5NDcwNTcsLTc3NzY3NDI1NywxMz
+eyJoaXN0b3J5IjpbLTExNDkyNjYyNTksLTc3NzY3NDI1NywxMz
 UyNjc3NzQzLC0xMDY3MDA2OTc1LDE4MzUwMTIwMDgsMTk5NTYy
 OTUwMiwtMTI2NTE5OTA1NSw5NzAxODExNzEsLTUzODI5OTQ4MS
 w1MjI5MzQ5MTUsMTYyMTYxNDkxOCw0MTgzNTkwNzMsMTg0NDUx
