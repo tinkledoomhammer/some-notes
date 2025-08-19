@@ -1512,7 +1512,15 @@ Cargo workspaces
 ### 07.01 Packages and Crates
 crate
 : the smallest amount of code that the compiler considers at a time
+: can contain modules
+: may have multiple source files and modules
+: is either binary or library. binary crates must have a `main` function
 
+crate root
+: a source file that the compiler starts from and makes the root module of the root crate
+
+package
+: a bundle of one or more crates that provides
 
 
 
@@ -1524,11 +1532,11 @@ crate
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5OTU2MTc3NywxMzUyNjc3NzQzLC0xMD
-Y3MDA2OTc1LDE4MzUwMTIwMDgsMTk5NTYyOTUwMiwtMTI2NTE5
-OTA1NSw5NzAxODExNzEsLTUzODI5OTQ4MSw1MjI5MzQ5MTUsMT
-YyMTYxNDkxOCw0MTgzNTkwNzMsMTg0NDUxMjI1NSwtMjA5ODE0
-MTkxMiwtMTk0Njc3NjEzMCwtMzM4MTEwOTU2LDY5NDAxNjA2OS
-w2MzQxMTYzNjAsMTExNDY0NjIxMywzNDE5MDA5NjMsLTE4MDE2
-NTAwXX0=
+eyJoaXN0b3J5IjpbLTE2ODU4Mjk1NjksMTM1MjY3Nzc0MywtMT
+A2NzAwNjk3NSwxODM1MDEyMDA4LDE5OTU2Mjk1MDIsLTEyNjUx
+OTkwNTUsOTcwMTgxMTcxLC01MzgyOTk0ODEsNTIyOTM0OTE1LD
+E2MjE2MTQ5MTgsNDE4MzU5MDczLDE4NDQ1MTIyNTUsLTIwOTgx
+NDE5MTIsLTE5NDY3NzYxMzAsLTMzODExMDk1Niw2OTQwMTYwNj
+ksNjM0MTE2MzYwLDExMTQ2NDYyMTMsMzQxOTAwOTYzLC0xODAx
+NjUwMF19
 -->
