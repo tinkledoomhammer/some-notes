@@ -1621,7 +1621,10 @@ pub fn eat_at_restaurant() {
 **modules and items inside the module are private by default**
 **modules do not have access to private members of their submodules**
 
+#### Starting relative paths with `super`
 
+`super::module::submodule`
+: maps the submodule of 
 
 
 
@@ -1631,11 +1634,11 @@ pub fn eat_at_restaurant() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3OTI0NTI0NCwtMTE0OTI2NjI1OSwtNz
-c3Njc0MjU3LDEzNTI2Nzc3NDMsLTEwNjcwMDY5NzUsMTgzNTAx
-MjAwOCwxOTk1NjI5NTAyLC0xMjY1MTk5MDU1LDk3MDE4MTE3MS
-wtNTM4Mjk5NDgxLDUyMjkzNDkxNSwxNjIxNjE0OTE4LDQxODM1
-OTA3MywxODQ0NTEyMjU1LC0yMDk4MTQxOTEyLC0xOTQ2Nzc2MT
-MwLC0zMzgxMTA5NTYsNjk0MDE2MDY5LDYzNDExNjM2MCwxMTE0
-NjQ2MjEzXX0=
+eyJoaXN0b3J5IjpbLTIwMjI3NzU1MTMsLTM3OTI0NTI0NCwtMT
+E0OTI2NjI1OSwtNzc3Njc0MjU3LDEzNTI2Nzc3NDMsLTEwNjcw
+MDY5NzUsMTgzNTAxMjAwOCwxOTk1NjI5NTAyLC0xMjY1MTk5MD
+U1LDk3MDE4MTE3MSwtNTM4Mjk5NDgxLDUyMjkzNDkxNSwxNjIx
+NjE0OTE4LDQxODM1OTA3MywxODQ0NTEyMjU1LC0yMDk4MTQxOT
+EyLC0xOTQ2Nzc2MTMwLC0zMzgxMTA5NTYsNjk0MDE2MDY5LDYz
+NDExNjM2MF19
 -->
