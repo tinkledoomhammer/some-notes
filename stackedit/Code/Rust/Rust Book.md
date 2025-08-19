@@ -1490,6 +1490,14 @@ println!("{:?}", opt);
 
 
 ## 07 Packages, Crates, and Modules
+* a package can contain one library crate and one or more binary crates
+* As a package grows it can be split into multiple crates
+
+Packages
+: A cargo feature for building, testing, and sharing crates
+
+Crates
+: A tree of modules that produces a library or executalbe
 
 
 
@@ -1501,11 +1509,11 @@ println!("{:?}", opt);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1MjY3Nzc0MywtMTA2NzAwNjk3NSwxOD
-M1MDEyMDA4LDE5OTU2Mjk1MDIsLTEyNjUxOTkwNTUsOTcwMTgx
-MTcxLC01MzgyOTk0ODEsNTIyOTM0OTE1LDE2MjE2MTQ5MTgsND
-E4MzU5MDczLDE4NDQ1MTIyNTUsLTIwOTgxNDE5MTIsLTE5NDY3
-NzYxMzAsLTMzODExMDk1Niw2OTQwMTYwNjksNjM0MTE2MzYwLD
-ExMTQ2NDYyMTMsMzQxOTAwOTYzLC0xODAxNjUwMCw3NTczMjcz
-NV19
+eyJoaXN0b3J5IjpbNDYzMDMyNjE5LDEzNTI2Nzc3NDMsLTEwNj
+cwMDY5NzUsMTgzNTAxMjAwOCwxOTk1NjI5NTAyLC0xMjY1MTk5
+MDU1LDk3MDE4MTE3MSwtNTM4Mjk5NDgxLDUyMjkzNDkxNSwxNj
+IxNjE0OTE4LDQxODM1OTA3MywxODQ0NTEyMjU1LC0yMDk4MTQx
+OTEyLC0xOTQ2Nzc2MTMwLC0zMzgxMTA5NTYsNjk0MDE2MDY5LD
+YzNDExNjM2MCwxMTE0NjQ2MjEzLDM0MTkwMDk2MywtMTgwMTY1
+MDBdfQ==
 -->
