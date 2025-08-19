@@ -1636,6 +1636,9 @@ mod back_of_house{
 }
 ```
 
+#### Making `struct`s and `enum`s public
+* IF a
+
 
 
 
@@ -1644,7 +1647,7 @@ mod back_of_house{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5OTIzNzY3MywtMzc5MjQ1MjQ0LC0xMT
+eyJoaXN0b3J5IjpbLTgxOTUyNDUyNCwtMzc5MjQ1MjQ0LC0xMT
 Q5MjY2MjU5LC03Nzc2NzQyNTcsMTM1MjY3Nzc0MywtMTA2NzAw
 Njk3NSwxODM1MDEyMDA4LDE5OTU2Mjk1MDIsLTEyNjUxOTkwNT
 UsOTcwMTgxMTcxLC01MzgyOTk0ODEsNTIyOTM0OTE1LDE2MjE2
