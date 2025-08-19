@@ -1612,7 +1612,11 @@ mod front_of_house {
 }
 
 pub fn eat at restaurant() {
-// 
+// ABSOLUTE PATH
+	crate::front_of_house::hosting::add_to_waitlist();
+	//RELATIVE Path
+	front_of_house::hosting::add_to_waitlist();
+	
 }
 ```
 
@@ -1624,7 +1628,7 @@ pub fn eat at restaurant() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzU0NjU5MjUsLTExNDkyNjYyNTksLT
+eyJoaXN0b3J5IjpbLTEwNDQwNTc0MjUsLTExNDkyNjYyNTksLT
 c3NzY3NDI1NywxMzUyNjc3NzQzLC0xMDY3MDA2OTc1LDE4MzUw
 MTIwMDgsMTk5NTYyOTUwMiwtMTI2NTE5OTA1NSw5NzAxODExNz
 EsLTUzODI5OTQ4MSw1MjI5MzQ5MTUsMTYyMTYxNDkxOCw0MTgz
