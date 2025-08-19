@@ -1605,13 +1605,13 @@ relative path
 : separates parts of a path
 
 ```rust
-mod front_of_house {
-	mod hosting {
-		fn add_to_waitlist() {}
+pub mod front_of_house {
+	pub mod hosting {
+		pub fn add_to_waitlist() {}
 	}
 }
 
-pub fn eat at restaurant() {
+pub fn eat_at_restaurant() {
 // ABSOLUTE PATH
 	crate::front_of_house::hosting::add_to_waitlist();
 	//RELATIVE Path
@@ -1628,11 +1628,11 @@ pub fn eat at restaurant() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDQwNTc0MjUsLTExNDkyNjYyNTksLT
-c3NzY3NDI1NywxMzUyNjc3NzQzLC0xMDY3MDA2OTc1LDE4MzUw
-MTIwMDgsMTk5NTYyOTUwMiwtMTI2NTE5OTA1NSw5NzAxODExNz
-EsLTUzODI5OTQ4MSw1MjI5MzQ5MTUsMTYyMTYxNDkxOCw0MTgz
-NTkwNzMsMTg0NDUxMjI1NSwtMjA5ODE0MTkxMiwtMTk0Njc3Nj
-EzMCwtMzM4MTEwOTU2LDY5NDAxNjA2OSw2MzQxMTYzNjAsMTEx
-NDY0NjIxM119
+eyJoaXN0b3J5IjpbMTY1MDUyMDQ2MCwtMTE0OTI2NjI1OSwtNz
+c3Njc0MjU3LDEzNTI2Nzc3NDMsLTEwNjcwMDY5NzUsMTgzNTAx
+MjAwOCwxOTk1NjI5NTAyLC0xMjY1MTk5MDU1LDk3MDE4MTE3MS
+wtNTM4Mjk5NDgxLDUyMjkzNDkxNSwxNjIxNjE0OTE4LDQxODM1
+OTA3MywxODQ0NTEyMjU1LC0yMDk4MTQxOTEyLC0xOTQ2Nzc2MT
+MwLC0zMzgxMTA5NTYsNjk0MDE2MDY5LDYzNDExNjM2MCwxMTE0
+NjQ2MjEzXX0=
 -->
