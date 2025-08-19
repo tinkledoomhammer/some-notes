@@ -1497,8 +1497,17 @@ Packages
 : A cargo feature for building, testing, and sharing crates
 
 Crates
-: A tree of modules that produces a library or executalbe
+: A tree of modules that produces a library or executable
 
+Modules and use
+: let you control the organization, scope, and privacy of paths
+: manage namespaces
+
+Paths
+: A way of naming an item, such as a struct, function, or module
+
+Cargo workspaces
+: 
 
 
 
@@ -1509,11 +1518,11 @@ Crates
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDYzMDMyNjE5LDEzNTI2Nzc3NDMsLTEwNj
-cwMDY5NzUsMTgzNTAxMjAwOCwxOTk1NjI5NTAyLC0xMjY1MTk5
-MDU1LDk3MDE4MTE3MSwtNTM4Mjk5NDgxLDUyMjkzNDkxNSwxNj
-IxNjE0OTE4LDQxODM1OTA3MywxODQ0NTEyMjU1LC0yMDk4MTQx
-OTEyLC0xOTQ2Nzc2MTMwLC0zMzgxMTA5NTYsNjk0MDE2MDY5LD
-YzNDExNjM2MCwxMTE0NjQ2MjEzLDM0MTkwMDk2MywtMTgwMTY1
-MDBdfQ==
+eyJoaXN0b3J5IjpbMTg1NjQ1NjExMywxMzUyNjc3NzQzLC0xMD
+Y3MDA2OTc1LDE4MzUwMTIwMDgsMTk5NTYyOTUwMiwtMTI2NTE5
+OTA1NSw5NzAxODExNzEsLTUzODI5OTQ4MSw1MjI5MzQ5MTUsMT
+YyMTYxNDkxOCw0MTgzNTkwNzMsMTg0NDUxMjI1NSwtMjA5ODE0
+MTkxMiwtMTk0Njc3NjEzMCwtMzM4MTEwOTU2LDY5NDAxNjA2OS
+w2MzQxMTYzNjAsMTExNDY0NjIxMywzNDE5MDA5NjMsLTE4MDE2
+NTAwXX0=
 -->
