@@ -1598,7 +1598,23 @@ absolute path
 : for internal crates, the path begins with the literal `crate`
 
 relative path
-: starts from the current module and uses `self` ,
+: starts from the current module and uses `self` , `super` or
+: or an identifier in the current module
+
+`::`
+: separates parts of a path
+
+```rust
+mod front_of_house {
+	mod hosting {
+		fn add_to_waitlist() {}
+	}
+}
+
+pub fn eat at restaurant() {
+// 
+}
+```
 
 
 
@@ -1608,11 +1624,11 @@ relative path
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM3NzY5ODM2LC0xMTQ5MjY2MjU5LC03Nz
-c2NzQyNTcsMTM1MjY3Nzc0MywtMTA2NzAwNjk3NSwxODM1MDEy
-MDA4LDE5OTU2Mjk1MDIsLTEyNjUxOTkwNTUsOTcwMTgxMTcxLC
-01MzgyOTk0ODEsNTIyOTM0OTE1LDE2MjE2MTQ5MTgsNDE4MzU5
-MDczLDE4NDQ1MTIyNTUsLTIwOTgxNDE5MTIsLTE5NDY3NzYxMz
-AsLTMzODExMDk1Niw2OTQwMTYwNjksNjM0MTE2MzYwLDExMTQ2
-NDYyMTNdfQ==
+eyJoaXN0b3J5IjpbLTEzMzU0NjU5MjUsLTExNDkyNjYyNTksLT
+c3NzY3NDI1NywxMzUyNjc3NzQzLC0xMDY3MDA2OTc1LDE4MzUw
+MTIwMDgsMTk5NTYyOTUwMiwtMTI2NTE5OTA1NSw5NzAxODExNz
+EsLTUzODI5OTQ4MSw1MjI5MzQ5MTUsMTYyMTYxNDkxOCw0MTgz
+NTkwNzMsMTg0NDUxMjI1NSwtMjA5ODE0MTkxMiwtMTk0Njc3Nj
+EzMCwtMzM4MTEwOTU2LDY5NDAxNjA2OSw2MzQxMTYzNjAsMTEx
+NDY0NjIxM119
 -->
