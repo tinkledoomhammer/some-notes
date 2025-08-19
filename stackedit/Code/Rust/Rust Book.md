@@ -1535,7 +1535,21 @@ main.rs
 ```
 
 
+#### Question  2
 
+Imagine you see a Rust package  `foobar`  with the following files:
+
+`foobar`
+`├── Cargo.toml`
+`├── build.rs`
+`└── src/`
+		`├── main.rs` 
+		`├── util.rs` 
+		`├── lib.rs` 
+		`└── bin/` 
+				`└── alt.rs`
+
+How many crates does this package contain? Write your answer as a digit, e.g. 0, 1, and so on.
 
 
 
@@ -1546,11 +1560,11 @@ main.rs
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzA2NDMxMDIsMTM1MjY3Nzc0MywtMT
-A2NzAwNjk3NSwxODM1MDEyMDA4LDE5OTU2Mjk1MDIsLTEyNjUx
-OTkwNTUsOTcwMTgxMTcxLC01MzgyOTk0ODEsNTIyOTM0OTE1LD
-E2MjE2MTQ5MTgsNDE4MzU5MDczLDE4NDQ1MTIyNTUsLTIwOTgx
-NDE5MTIsLTE5NDY3NzYxMzAsLTMzODExMDk1Niw2OTQwMTYwNj
-ksNjM0MTE2MzYwLDExMTQ2NDYyMTMsMzQxOTAwOTYzLC0xODAx
-NjUwMF19
+eyJoaXN0b3J5IjpbLTg1MTgyMTc3NywxMzUyNjc3NzQzLC0xMD
+Y3MDA2OTc1LDE4MzUwMTIwMDgsMTk5NTYyOTUwMiwtMTI2NTE5
+OTA1NSw5NzAxODExNzEsLTUzODI5OTQ4MSw1MjI5MzQ5MTUsMT
+YyMTYxNDkxOCw0MTgzNTkwNzMsMTg0NDUxMjI1NSwtMjA5ODE0
+MTkxMiwtMTk0Njc3NjEzMCwtMzM4MTEwOTU2LDY5NDAxNjA2OS
+w2MzQxMTYzNjAsMTExNDY0NjIxMywzNDE5MDA5NjMsLTE4MDE2
+NTAwXX0=
 -->
