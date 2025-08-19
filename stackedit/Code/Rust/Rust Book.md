@@ -1568,8 +1568,10 @@ How many crates does this package contain? **3**
 
 Tips for modules
 * Start from the crate root (usually `src/lib.rs` or `src/main.rs`)
-* declaring modules eg garden
-	* `mod garden` 
+* declaring modules eg `mod garden` the compiler search order
+	* inline (within `{ ... }` which replac
+* declaring submodules eg `garden.rs` contains `mod vegetables` the comiler will look
+	* inline
 
 
 
@@ -1580,11 +1582,11 @@ Tips for modules
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTIwODc4MTYsLTc3NzY3NDI1NywxMz
-UyNjc3NzQzLC0xMDY3MDA2OTc1LDE4MzUwMTIwMDgsMTk5NTYy
-OTUwMiwtMTI2NTE5OTA1NSw5NzAxODExNzEsLTUzODI5OTQ4MS
-w1MjI5MzQ5MTUsMTYyMTYxNDkxOCw0MTgzNTkwNzMsMTg0NDUx
-MjI1NSwtMjA5ODE0MTkxMiwtMTk0Njc3NjEzMCwtMzM4MTEwOT
-U2LDY5NDAxNjA2OSw2MzQxMTYzNjAsMTExNDY0NjIxMywzNDE5
-MDA5NjNdfQ==
+eyJoaXN0b3J5IjpbNzQ2MTg5NzE4LC03Nzc2NzQyNTcsMTM1Mj
+Y3Nzc0MywtMTA2NzAwNjk3NSwxODM1MDEyMDA4LDE5OTU2Mjk1
+MDIsLTEyNjUxOTkwNTUsOTcwMTgxMTcxLC01MzgyOTk0ODEsNT
+IyOTM0OTE1LDE2MjE2MTQ5MTgsNDE4MzU5MDczLDE4NDQ1MTIy
+NTUsLTIwOTgxNDE5MTIsLTE5NDY3NzYxMzAsLTMzODExMDk1Ni
+w2OTQwMTYwNjksNjM0MTE2MzYwLDExMTQ2NDYyMTMsMzQxOTAw
+OTYzXX0=
 -->
