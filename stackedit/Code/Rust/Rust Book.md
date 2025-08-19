@@ -1566,7 +1566,10 @@ How many crates does this package contain? **3**
 `as`
 : keyword for naming paths from external packages
 
-
+Tips for modules
+* Start from the crate root (usually `src/lib.rs` or `src/main.rs`)
+* declaring modules eg garden
+	* `mod garden` 
 
 
 
@@ -1577,11 +1580,11 @@ How many crates does this package contain? **3**
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3NzY3NDI1NywxMzUyNjc3NzQzLC0xMD
-Y3MDA2OTc1LDE4MzUwMTIwMDgsMTk5NTYyOTUwMiwtMTI2NTE5
-OTA1NSw5NzAxODExNzEsLTUzODI5OTQ4MSw1MjI5MzQ5MTUsMT
-YyMTYxNDkxOCw0MTgzNTkwNzMsMTg0NDUxMjI1NSwtMjA5ODE0
-MTkxMiwtMTk0Njc3NjEzMCwtMzM4MTEwOTU2LDY5NDAxNjA2OS
-w2MzQxMTYzNjAsMTExNDY0NjIxMywzNDE5MDA5NjMsLTE4MDE2
-NTAwXX0=
+eyJoaXN0b3J5IjpbLTExNTIwODc4MTYsLTc3NzY3NDI1NywxMz
+UyNjc3NzQzLC0xMDY3MDA2OTc1LDE4MzUwMTIwMDgsMTk5NTYy
+OTUwMiwtMTI2NTE5OTA1NSw5NzAxODExNzEsLTUzODI5OTQ4MS
+w1MjI5MzQ5MTUsMTYyMTYxNDkxOCw0MTgzNTkwNzMsMTg0NDUx
+MjI1NSwtMjA5ODE0MTkxMiwtMTk0Njc3NjEzMCwtMzM4MTEwOT
+U2LDY5NDAxNjA2OSw2MzQxMTYzNjAsMTExNDY0NjIxMywzNDE5
+MDA5NjNdfQ==
 -->
