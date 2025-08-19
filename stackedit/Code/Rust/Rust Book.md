@@ -1624,7 +1624,17 @@ pub fn eat_at_restaurant() {
 #### Starting relative paths with `super`
 
 `super::module::submodule`
-: maps the submodule of 
+: maps the submodule of `module` which is sibling to the current module
+```rust
+fn deliver_order() {}
+mod back_of_house{
+	fn fix_incorrect_order() {
+		cook_order();
+		super::deliver_order();
+	}
+	fn cook_order() {}
+}
+```
 
 
 
@@ -1634,11 +1644,11 @@ pub fn eat_at_restaurant() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjI3NzU1MTMsLTM3OTI0NTI0NCwtMT
-E0OTI2NjI1OSwtNzc3Njc0MjU3LDEzNTI2Nzc3NDMsLTEwNjcw
-MDY5NzUsMTgzNTAxMjAwOCwxOTk1NjI5NTAyLC0xMjY1MTk5MD
-U1LDk3MDE4MTE3MSwtNTM4Mjk5NDgxLDUyMjkzNDkxNSwxNjIx
-NjE0OTE4LDQxODM1OTA3MywxODQ0NTEyMjU1LC0yMDk4MTQxOT
-EyLC0xOTQ2Nzc2MTMwLC0zMzgxMTA5NTYsNjk0MDE2MDY5LDYz
-NDExNjM2MF19
+eyJoaXN0b3J5IjpbMTU5OTIzNzY3MywtMzc5MjQ1MjQ0LC0xMT
+Q5MjY2MjU5LC03Nzc2NzQyNTcsMTM1MjY3Nzc0MywtMTA2NzAw
+Njk3NSwxODM1MDEyMDA4LDE5OTU2Mjk1MDIsLTEyNjUxOTkwNT
+UsOTcwMTgxMTcxLC01MzgyOTk0ODEsNTIyOTM0OTE1LDE2MjE2
+MTQ5MTgsNDE4MzU5MDczLDE4NDQ1MTIyNTUsLTIwOTgxNDE5MT
+IsLTE5NDY3NzYxMzAsLTMzODExMDk1Niw2OTQwMTYwNjksNjM0
+MTE2MzYwXX0=
 -->
