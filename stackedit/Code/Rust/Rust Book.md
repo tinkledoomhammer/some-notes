@@ -1637,7 +1637,9 @@ mod back_of_house{
 ```
 
 #### Making `struct`s and `enum`s public
-* IF a
+* If a `struct` is `pub`lic then its fields may or may not be public
+	* they default to private
+* If an `enum` is `pub`lic then all of its variants are public 
 
 
 
@@ -1647,11 +1649,11 @@ mod back_of_house{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxOTUyNDUyNCwtMzc5MjQ1MjQ0LC0xMT
-Q5MjY2MjU5LC03Nzc2NzQyNTcsMTM1MjY3Nzc0MywtMTA2NzAw
-Njk3NSwxODM1MDEyMDA4LDE5OTU2Mjk1MDIsLTEyNjUxOTkwNT
-UsOTcwMTgxMTcxLC01MzgyOTk0ODEsNTIyOTM0OTE1LDE2MjE2
-MTQ5MTgsNDE4MzU5MDczLDE4NDQ1MTIyNTUsLTIwOTgxNDE5MT
-IsLTE5NDY3NzYxMzAsLTMzODExMDk1Niw2OTQwMTYwNjksNjM0
-MTE2MzYwXX0=
+eyJoaXN0b3J5IjpbLTE2OTUxNjEzNDcsLTM3OTI0NTI0NCwtMT
+E0OTI2NjI1OSwtNzc3Njc0MjU3LDEzNTI2Nzc3NDMsLTEwNjcw
+MDY5NzUsMTgzNTAxMjAwOCwxOTk1NjI5NTAyLC0xMjY1MTk5MD
+U1LDk3MDE4MTE3MSwtNTM4Mjk5NDgxLDUyMjkzNDkxNSwxNjIx
+NjE0OTE4LDQxODM1OTA3MywxODQ0NTEyMjU1LC0yMDk4MTQxOT
+EyLC0xOTQ2Nzc2MTMwLC0zMzgxMTA5NTYsNjk0MDE2MDY5LDYz
+NDExNjM2MF19
 -->
