@@ -1520,7 +1520,11 @@ crate root
 : a source file that the compiler starts from and makes the root module of the root crate
 
 package
-: a bundle of one or more crates that provides
+: a bundle of one or more crates that provides a set of functionality. 
+: contains a `Cargo.toml` file
+: can contain many binary crates, and at most one library crate
+
+
 
 
 
@@ -1532,7 +1536,7 @@ package
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODU4Mjk1NjksMTM1MjY3Nzc0MywtMT
+eyJoaXN0b3J5IjpbLTEyNzU4NjI3MjksMTM1MjY3Nzc0MywtMT
 A2NzAwNjk3NSwxODM1MDEyMDA4LDE5OTU2Mjk1MDIsLTEyNjUx
 OTkwNTUsOTcwMTgxMTcxLC01MzgyOTk0ODEsNTIyOTM0OTE1LD
 E2MjE2MTQ5MTgsNDE4MzU5MDczLDE4NDQ1MTIyNTUsLTIwOTgx
