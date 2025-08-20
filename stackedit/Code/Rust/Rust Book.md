@@ -1659,7 +1659,10 @@ mod back_of_house{
 * 
 
 #### External packages
-1. add to cargo.toml `package = "version"` i.e. `
+1. add to `cargo.toml` `package = "version"` i.e. `rand = "0.8.5"
+2. then in a `.rs` file `use package;` i.e. `use rand::Rng`
+3. Crates can be found on [crates.io]
+4. `std` does **not** need to be added to `Cargo.toml`
 
 
 
@@ -1679,7 +1682,7 @@ mod back_of_house{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NTczMDM0OSwtMjgwMzc0MiwtMTY5NT
+eyJoaXN0b3J5IjpbMTc0NDg1NjUxOCwtMjgwMzc0MiwtMTY5NT
 E2MTM0NywtMzc5MjQ1MjQ0LC0xMTQ5MjY2MjU5LC03Nzc2NzQy
 NTcsMTM1MjY3Nzc0MywtMTA2NzAwNjk3NSwxODM1MDEyMDA4LD
 E5OTU2Mjk1MDIsLTEyNjUxOTkwNTUsOTcwMTgxMTcxLC01Mzgy
