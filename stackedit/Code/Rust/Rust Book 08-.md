@@ -37,6 +37,13 @@ for i in &mut v {
 }
 ```
 
+#### Safely using `iter`ators
+More details in [13.2 Processing a series...](https://rust-book.cs.brown.edu/ch13-02-iterators.html)
+
+** 
+
+
+
 ### 08.02 UTF-8  encoded `String`s
 
 ### 08.03 `HashMap`s
@@ -45,6 +52,6 @@ for i in &mut v {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMzE2MDU1MSwtMjU5MDczMDI5LDEyND
-M2ODM3MTFdfQ==
+eyJoaXN0b3J5IjpbLTM4NzkyODY5LDEzMzMxNjA1NTEsLTI1OT
+A3MzAyOSwxMjQzNjgzNzExXX0=
 -->
