@@ -1653,8 +1653,10 @@ mod back_of_house{
 : allows the alias to be different from the name being brought into scope
 : `use std::io::Result as IoResult;`
 
-#### visibility of `use`
-* `use` by default creates privat
+#### re-exporting and visibility of `use`
+* `use` by default creates private identifiers
+* `pub use` will allow other modules access
+* 
 
 
 
@@ -1675,11 +1677,11 @@ mod back_of_house{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0OTY1Mzk1NSwtMjgwMzc0MiwtMTY5NT
-E2MTM0NywtMzc5MjQ1MjQ0LC0xMTQ5MjY2MjU5LC03Nzc2NzQy
-NTcsMTM1MjY3Nzc0MywtMTA2NzAwNjk3NSwxODM1MDEyMDA4LD
-E5OTU2Mjk1MDIsLTEyNjUxOTkwNTUsOTcwMTgxMTcxLC01Mzgy
-OTk0ODEsNTIyOTM0OTE1LDE2MjE2MTQ5MTgsNDE4MzU5MDczLD
-E4NDQ1MTIyNTUsLTIwOTgxNDE5MTIsLTE5NDY3NzYxMzAsLTMz
-ODExMDk1Nl19
+eyJoaXN0b3J5IjpbMzEyMDg5NDA5LC0yODAzNzQyLC0xNjk1MT
+YxMzQ3LC0zNzkyNDUyNDQsLTExNDkyNjYyNTksLTc3NzY3NDI1
+NywxMzUyNjc3NzQzLC0xMDY3MDA2OTc1LDE4MzUwMTIwMDgsMT
+k5NTYyOTUwMiwtMTI2NTE5OTA1NSw5NzAxODExNzEsLTUzODI5
+OTQ4MSw1MjI5MzQ5MTUsMTYyMTYxNDkxOCw0MTgzNTkwNzMsMT
+g0NDUxMjI1NSwtMjA5ODE0MTkxMiwtMTk0Njc3NjEzMCwtMzM4
+MTEwOTU2XX0=
 -->
