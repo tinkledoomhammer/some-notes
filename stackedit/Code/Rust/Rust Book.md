@@ -1684,6 +1684,7 @@ use std::collections::*;
 * can be at any level of nesting
 * the glob operator `*` will import all from that level
 
+### Separating Modules into different filess
 
 
 
@@ -1700,11 +1701,11 @@ use std::collections::*;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMjI5OTM1MiwtMjgwMzc0MiwtMTY5NT
-E2MTM0NywtMzc5MjQ1MjQ0LC0xMTQ5MjY2MjU5LC03Nzc2NzQy
-NTcsMTM1MjY3Nzc0MywtMTA2NzAwNjk3NSwxODM1MDEyMDA4LD
-E5OTU2Mjk1MDIsLTEyNjUxOTkwNTUsOTcwMTgxMTcxLC01Mzgy
-OTk0ODEsNTIyOTM0OTE1LDE2MjE2MTQ5MTgsNDE4MzU5MDczLD
-E4NDQ1MTIyNTUsLTIwOTgxNDE5MTIsLTE5NDY3NzYxMzAsLTMz
-ODExMDk1Nl19
+eyJoaXN0b3J5IjpbMjA4OTIwMjU5MSwxNTMyMjk5MzUyLC0yOD
+AzNzQyLC0xNjk1MTYxMzQ3LC0zNzkyNDUyNDQsLTExNDkyNjYy
+NTksLTc3NzY3NDI1NywxMzUyNjc3NzQzLC0xMDY3MDA2OTc1LD
+E4MzUwMTIwMDgsMTk5NTYyOTUwMiwtMTI2NTE5OTA1NSw5NzAx
+ODExNzEsLTUzODI5OTQ4MSw1MjI5MzQ5MTUsMTYyMTYxNDkxOC
+w0MTgzNTkwNzMsMTg0NDUxMjI1NSwtMjA5ODE0MTkxMiwtMTk0
+Njc3NjEzMF19
 -->
