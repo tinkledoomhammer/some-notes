@@ -1684,9 +1684,25 @@ use std::collections::*;
 * can be at any level of nesting
 * the glob operator `*` will import all from that level
 
-### Separating Modules into different filess
+### Separating Modules into different files
+* The `mod` keyword describes the file structure
+* `use` and `pub use` describe the path in code to the items
 
 
+Imagine a Rust package with the following directory structure:
+
+`foobar``├── Cargo.toml``└── src/` `├── lib.rs` `├── engine.rs` `└── engine/` `└── analysis.rs`
+
+The contents of each file are:
+
+// engine/analysis.rs
+pub fn run() {}`
+
+`// engine.rs``mod analysis;``pub use analysis::*;`
+
+`// lib.rs``pub mod engine;`
+
+```
 
 
 
@@ -1701,11 +1717,11 @@ use std::collections::*;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4OTIwMjU5MSwxNTMyMjk5MzUyLC0yOD
-AzNzQyLC0xNjk1MTYxMzQ3LC0zNzkyNDUyNDQsLTExNDkyNjYy
-NTksLTc3NzY3NDI1NywxMzUyNjc3NzQzLC0xMDY3MDA2OTc1LD
-E4MzUwMTIwMDgsMTk5NTYyOTUwMiwtMTI2NTE5OTA1NSw5NzAx
-ODExNzEsLTUzODI5OTQ4MSw1MjI5MzQ5MTUsMTYyMTYxNDkxOC
-w0MTgzNTkwNzMsMTg0NDUxMjI1NSwtMjA5ODE0MTkxMiwtMTk0
-Njc3NjEzMF19
+eyJoaXN0b3J5IjpbMTU5Njc0MzQ0MCwyMDg5MjAyNTkxLDE1Mz
+IyOTkzNTIsLTI4MDM3NDIsLTE2OTUxNjEzNDcsLTM3OTI0NTI0
+NCwtMTE0OTI2NjI1OSwtNzc3Njc0MjU3LDEzNTI2Nzc3NDMsLT
+EwNjcwMDY5NzUsMTgzNTAxMjAwOCwxOTk1NjI5NTAyLC0xMjY1
+MTk5MDU1LDk3MDE4MTE3MSwtNTM4Mjk5NDgxLDUyMjkzNDkxNS
+wxNjIxNjE0OTE4LDQxODM1OTA3MywxODQ0NTEyMjU1LC0yMDk4
+MTQxOTEyXX0=
 -->
