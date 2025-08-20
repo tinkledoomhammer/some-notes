@@ -1647,7 +1647,14 @@ mod back_of_house{
 * This does **not** allow the identifier to be used in a submodule
 * it is idiomatic to bring modules into scope rather than individual functions
 * But it is idiomatic to bring structs, enums, and other items in directly
-* Rust does not allow having two items witht the 
+* Rust does not allow having two items with the same name in scope
+
+`as` keyword
+: allows the alias to be different from the name being brought into scope
+: `use std::io::Result as IoResult;`
+
+#### visibility of `use`
+* `use` by default creates privat
 
 
 
@@ -1668,7 +1675,7 @@ mod back_of_house{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4MjU0MDU3MSwtMjgwMzc0MiwtMTY5NT
+eyJoaXN0b3J5IjpbMTQ0OTY1Mzk1NSwtMjgwMzc0MiwtMTY5NT
 E2MTM0NywtMzc5MjQ1MjQ0LC0xMTQ5MjY2MjU5LC03Nzc2NzQy
 NTcsMTM1MjY3Nzc0MywtMTA2NzAwNjk3NSwxODM1MDEyMDA4LD
 E5OTU2Mjk1MDIsLTEyNjUxOTkwNTUsOTcwMTgxMTcxLC01Mzgy
