@@ -74,7 +74,7 @@ let row = vec![
     SpreadsheetCell::Float(10.12),
 ];
 ```
-
+**Dropping a vector drops its elements**
 
 
 
@@ -86,6 +86,6 @@ let row = vec![
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTI2NzMwNzAsMzI1NzI5Njc3LDEzMz
-MxNjA1NTEsLTI1OTA3MzAyOSwxMjQzNjgzNzExXX0=
+eyJoaXN0b3J5IjpbMjAzOTEyODU4NCwzMjU3Mjk2NzcsMTMzMz
+E2MDU1MSwtMjU5MDczMDI5LDEyNDM2ODM3MTFdfQ==
 -->
