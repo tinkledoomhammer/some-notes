@@ -4,6 +4,8 @@ https://rust-book.cs.brown.edu/
 
 ## 08 Common Collections
 
+**Dropping a vector drops its elements**
+
 ### 08.01 `Vec`tors
 * `let v: Vec<i32> = Vec::new();`
 * `Vec`s are generics, with the type being stored as the generic parameter
@@ -74,6 +76,8 @@ let row = vec![
     SpreadsheetCell::Float(10.12),
 ];
 ```
+
+
 **Dropping a vector drops its elements**
 
 
@@ -86,6 +90,6 @@ let row = vec![
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzOTEyODU4NCwzMjU3Mjk2NzcsMTMzMz
+eyJoaXN0b3J5IjpbLTk5MDQ4OTk5NCwzMjU3Mjk2NzcsMTMzMz
 E2MDU1MSwtMjU5MDczMDI5LDEyNDM2ODM3MTFdfQ==
 -->
