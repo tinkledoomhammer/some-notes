@@ -52,6 +52,8 @@ let n2: &i32                = iter.next().unwrap();
 let end: Option<&i32>       = iter.next();
 }
 ```
+Values can**not** be added or removed while the
+
 
 ### 08.02 UTF-8  encoded `String`s
 
@@ -61,6 +63,6 @@ let end: Option<&i32>       = iter.next();
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI1NzI5Njc3LDEzMzMxNjA1NTEsLTI1OT
-A3MzAyOSwxMjQzNjgzNzExXX0=
+eyJoaXN0b3J5IjpbMTAzMjAzMzM1NiwzMjU3Mjk2NzcsMTMzMz
+E2MDU1MSwtMjU5MDczMDI5LDEyNDM2ODM3MTFdfQ==
 -->
