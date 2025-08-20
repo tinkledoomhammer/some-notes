@@ -23,6 +23,9 @@ let third: &i32 = &v[2];
 let third: Option<&i32> = v.get(2);
 // will not panic, ruturns None if out of bounds
 ```
+**Note:** The borrow checker considers the entire vec to be one item
+
+#### Iterating over values in a `vec`
 
 
 ### 08.02 UTF-8  encoded `String`s
@@ -33,5 +36,5 @@ let third: Option<&i32> = v.get(2);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTg2NTU4NzAsMTI0MzY4MzcxMV19
+eyJoaXN0b3J5IjpbLTI1OTA3MzAyOSwxMjQzNjgzNzExXX0=
 -->
