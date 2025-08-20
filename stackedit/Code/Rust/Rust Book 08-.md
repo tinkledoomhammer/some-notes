@@ -52,7 +52,14 @@ let n2: &i32                = iter.next().unwrap();
 let end: Option<&i32>       = iter.next();
 }
 ```
-Values can**not** be added or removed while the
+Values can**not** be added or removed while the iterator is alive.
+Instead, iterate over a range:
+```rust
+let mut v: Vec<i32>			= vec![1,2];
+let mut iter: Range<usize>	= 0..v.len();
+let i11: usize				= iter.next().unwrap();
+let n1: &i32				= &v[i1];
+```
 
 
 ### 08.02 UTF-8  encoded `String`s
@@ -63,6 +70,6 @@ Values can**not** be added or removed while the
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzMjAzMzM1NiwzMjU3Mjk2NzcsMTMzMz
+eyJoaXN0b3J5IjpbLTI2ODMwMTg4MCwzMjU3Mjk2NzcsMTMzMz
 E2MDU1MSwtMjU5MDczMDI5LDEyNDM2ODM3MTFdfQ==
 -->
