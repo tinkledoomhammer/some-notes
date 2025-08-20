@@ -57,9 +57,25 @@ Instead, iterate over a range:
 ```rust
 let mut v: Vec<i32>			= vec![1,2];
 let mut iter: Range<usize>	= 0..v.len();
-let i11: usize				= iter.next().unwrap();
+let i1: usize				= iter.next().unwrap();
 let n1: &i32				= &v[i1];
 ```
+#### Vecs of Enums
+```rust
+enum SpreadsheetCell {
+    Int(i32),
+    Float(f64),
+    Text(String),
+}
+
+let row = vec![
+    SpreadsheetCell::Int(3),
+    SpreadsheetCell::Text(String::from("blue")),
+    SpreadsheetCell::Float(10.12),
+];
+```
+
+
 
 
 ### 08.02 UTF-8  encoded `String`s
@@ -70,6 +86,6 @@ let n1: &i32				= &v[i1];
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2ODMwMTg4MCwzMjU3Mjk2NzcsMTMzMz
-E2MDU1MSwtMjU5MDczMDI5LDEyNDM2ODM3MTFdfQ==
+eyJoaXN0b3J5IjpbLTIwNTI2NzMwNzAsMzI1NzI5Njc3LDEzMz
+MxNjA1NTEsLTI1OTA3MzAyOSwxMjQzNjgzNzExXX0=
 -->
