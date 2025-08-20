@@ -1671,9 +1671,18 @@ use std::io;
 //or 
 use std::{cmp::Ordering, io};
 
+//Example 2: self
+use std::io;
+use std::io::Write;
+// or
+use std::io{self, Write};
 
+//Example 3: globs
+use std::collections::*;
 ```
-* use curley braces to list multiple imports
+* use curley braces to list multiple imports inline (in the same line)
+* can be at any level of nesting
+* the glob operator `*` will import all from that level
 
 
 
@@ -1691,11 +1700,11 @@ use std::{cmp::Ordering, io};
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODc1MjkxMzksLTI4MDM3NDIsLTE2OT
-UxNjEzNDcsLTM3OTI0NTI0NCwtMTE0OTI2NjI1OSwtNzc3Njc0
-MjU3LDEzNTI2Nzc3NDMsLTEwNjcwMDY5NzUsMTgzNTAxMjAwOC
-wxOTk1NjI5NTAyLC0xMjY1MTk5MDU1LDk3MDE4MTE3MSwtNTM4
-Mjk5NDgxLDUyMjkzNDkxNSwxNjIxNjE0OTE4LDQxODM1OTA3My
-wxODQ0NTEyMjU1LC0yMDk4MTQxOTEyLC0xOTQ2Nzc2MTMwLC0z
-MzgxMTA5NTZdfQ==
+eyJoaXN0b3J5IjpbMTUzMjI5OTM1MiwtMjgwMzc0MiwtMTY5NT
+E2MTM0NywtMzc5MjQ1MjQ0LC0xMTQ5MjY2MjU5LC03Nzc2NzQy
+NTcsMTM1MjY3Nzc0MywtMTA2NzAwNjk3NSwxODM1MDEyMDA4LD
+E5OTU2Mjk1MDIsLTEyNjUxOTkwNTUsOTcwMTgxMTcxLC01Mzgy
+OTk0ODEsNTIyOTM0OTE1LDE2MjE2MTQ5MTgsNDE4MzU5MDczLD
+E4NDQ1MTIyNTUsLTIwOTgxNDE5MTIsLTE5NDY3NzYxMzAsLTMz
+ODExMDk1Nl19
 -->
