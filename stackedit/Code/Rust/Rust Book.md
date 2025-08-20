@@ -1645,7 +1645,9 @@ mod back_of_house{
 ### 07.04 `use`
 * like a symlink in a file system, `use path::to::module;` makes an alias `module` in the current scope
 * This does **not** allow the identifier to be used in a submodule
-
+* it is idiomatic to bring modules into scope rather than individual functions
+* But it is idiomatic to bring structs, enums, and other items in directly
+* Rust does not allow having two items witht the 
 
 
 
@@ -1666,11 +1668,11 @@ mod back_of_house{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI1NDU3MTkxLC0yODAzNzQyLC0xNjk1MT
-YxMzQ3LC0zNzkyNDUyNDQsLTExNDkyNjYyNTksLTc3NzY3NDI1
-NywxMzUyNjc3NzQzLC0xMDY3MDA2OTc1LDE4MzUwMTIwMDgsMT
-k5NTYyOTUwMiwtMTI2NTE5OTA1NSw5NzAxODExNzEsLTUzODI5
-OTQ4MSw1MjI5MzQ5MTUsMTYyMTYxNDkxOCw0MTgzNTkwNzMsMT
-g0NDUxMjI1NSwtMjA5ODE0MTkxMiwtMTk0Njc3NjEzMCwtMzM4
-MTEwOTU2XX0=
+eyJoaXN0b3J5IjpbLTU4MjU0MDU3MSwtMjgwMzc0MiwtMTY5NT
+E2MTM0NywtMzc5MjQ1MjQ0LC0xMTQ5MjY2MjU5LC03Nzc2NzQy
+NTcsMTM1MjY3Nzc0MywtMTA2NzAwNjk3NSwxODM1MDEyMDA4LD
+E5OTU2Mjk1MDIsLTEyNjUxOTkwNTUsOTcwMTgxMTcxLC01Mzgy
+OTk0ODEsNTIyOTM0OTE1LDE2MjE2MTQ5MTgsNDE4MzU5MDczLD
+E4NDQ1MTIyNTUsLTIwOTgxNDE5MTIsLTE5NDY3NzYxMzAsLTMz
+ODExMDk1Nl19
 -->
