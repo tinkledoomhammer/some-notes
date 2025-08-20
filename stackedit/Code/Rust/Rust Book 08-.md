@@ -26,7 +26,16 @@ let third: Option<&i32> = v.get(2);
 **Note:** The borrow checker considers the entire vec to be one item
 
 #### Iterating over values in a `vec`
-
+```rust
+let v = vec![100,32,57];
+for i in &v {
+	println!("{i}");
+}
+let mut v = vec![100,32,57];
+for i in &mut v {
+	*i +=50;
+}
+```
 
 ### 08.02 UTF-8  encoded `String`s
 
@@ -36,5 +45,6 @@ let third: Option<&i32> = v.get(2);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1OTA3MzAyOSwxMjQzNjgzNzExXX0=
+eyJoaXN0b3J5IjpbMTMzMzE2MDU1MSwtMjU5MDczMDI5LDEyND
+M2ODM3MTFdfQ==
 -->
