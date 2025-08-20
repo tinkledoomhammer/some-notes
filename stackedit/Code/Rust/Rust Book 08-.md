@@ -14,7 +14,11 @@ https://rust-book.cs.brown.edu/
 
 #### Reading elements
 ```rust
-let v = vec![1,2,3,4,5]
+let v = vec![1,2,3,4,5];
+//using [] to index
+let third: &i32 = &v[2];
+// with Vec<T>.get(index) -> Option<&T>
+let third: Option<&i32> = v.get(2);
 
 ```
 
@@ -27,5 +31,5 @@ let v = vec![1,2,3,4,5]
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzE4MDg1NjAsMTI0MzY4MzcxMV19
+eyJoaXN0b3J5IjpbMTM5NzgwMzU3MSwxMjQzNjgzNzExXX0=
 -->
