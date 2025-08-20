@@ -17,9 +17,11 @@ https://rust-book.cs.brown.edu/
 let v = vec![1,2,3,4,5];
 //using [] to index
 let third: &i32 = &v[2];
+// will panic if the index is out of bounds
+
 // with Vec<T>.get(index) -> Option<&T>
 let third: Option<&i32> = v.get(2);
-
+// will not panic, ruturns None if out of bounds
 ```
 
 
@@ -31,5 +33,5 @@ let third: Option<&i32> = v.get(2);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NzgwMzU3MSwxMjQzNjgzNzExXX0=
+eyJoaXN0b3J5IjpbLTExOTg2NTU4NzAsMTI0MzY4MzcxMV19
 -->
