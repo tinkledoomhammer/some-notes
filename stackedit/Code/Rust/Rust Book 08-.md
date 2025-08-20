@@ -40,9 +40,18 @@ for i in &mut v {
 #### Safely using `iter`ators
 More details in [13.2 Processing a series...](https://rust-book.cs.brown.edu/ch13-02-iterators.html)
 
-** 
+ `Vec::iter` and `Iterator::next`
 
-
+```rust
+fn main() {
+use std::slice::Iter;  
+let mut v: Vec<i32>         = vec![1, 2];
+let mut iter: Iter<'_, i32> = v.iter();
+let n1: &i32                = iter.next().unwrap();
+let n2: &i32                = iter.next().unwrap();
+let end: Option<&i32>       = iter.next();
+}
+```
 
 ### 08.02 UTF-8  encoded `String`s
 
@@ -52,6 +61,6 @@ More details in [13.2 Processing a series...](https://rust-book.cs.brown.edu/ch1
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4NzkyODY5LDEzMzMxNjA1NTEsLTI1OT
+eyJoaXN0b3J5IjpbMzI1NzI5Njc3LDEzMzMxNjA1NTEsLTI1OT
 A3MzAyOSwxMjQzNjgzNzExXX0=
 -->
