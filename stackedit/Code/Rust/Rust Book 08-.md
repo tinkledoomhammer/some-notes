@@ -144,6 +144,8 @@ let s = s1 + "-" + &s2 + "-" + &s3;
 * Grapheme clusters are one or more scalar values
 
 ### Slicing Strings
+**Technically allowed with ranges**
+**Will p
 
 ## 08.03 `HashMap`s
 
@@ -151,7 +153,7 @@ let s = s1 + "-" + &s2 + "-" + &s3;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODcyNDI1NDMsLTk5MDQ4OTk5NCwzMj
-U3Mjk2NzcsMTMzMzE2MDU1MSwtMjU5MDczMDI5LDEyNDM2ODM3
-MTFdfQ==
+eyJoaXN0b3J5IjpbNTgwMDg1NDgzLC05OTA0ODk5OTQsMzI1Nz
+I5Njc3LDEzMzMxNjA1NTEsLTI1OTA3MzAyOSwxMjQzNjgzNzEx
+XX0=
 -->
