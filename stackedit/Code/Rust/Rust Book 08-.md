@@ -134,6 +134,10 @@ let s = s1 + "-" + &s2 + "-" + &s3;
 
 **Internal Representation**
 * `String` is a wrapper over a `Vec<u8>`
+* The elements of that `Vec` are scalars, not chars
+
+**Bytes vs Scalars vs Grapheme Clusters**
+
 
 ### 08.03 `HashMap`s
 
@@ -141,7 +145,7 @@ let s = s1 + "-" + &s2 + "-" + &s3;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1OTI0MDkxMCwtOTkwNDg5OTk0LDMyNT
+eyJoaXN0b3J5IjpbMTUxMjI1NDU3MywtOTkwNDg5OTk0LDMyNT
 cyOTY3NywxMzMzMTYwNTUxLC0yNTkwNzMwMjksMTI0MzY4Mzcx
 MV19
 -->
