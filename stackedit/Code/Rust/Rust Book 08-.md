@@ -1,4 +1,4 @@
-# The Rust Book
+# The Rust Book part 2
 "The Rust Programming Language"
 https://rust-book.cs.brown.edu/
 
@@ -90,6 +90,7 @@ let row = vec![
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5MDQ4OTk5NCwzMjU3Mjk2NzcsMTMzMz
-E2MDU1MSwtMjU5MDczMDI5LDEyNDM2ODM3MTFdfQ==
+eyJoaXN0b3J5IjpbLTEyNjM1NjgzNzcsLTk5MDQ4OTk5NCwzMj
+U3Mjk2NzcsMTMzMzE2MDU1MSwtMjU5MDczMDI5LDEyNDM2ODM3
+MTFdfQ==
 -->
