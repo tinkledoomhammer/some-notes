@@ -130,7 +130,10 @@ let s = s1 + "-" + &s2 + "-" + &s3;
 ```
 
 #### Indexing into `String`s
+**regular indexing is invalid in rust due to the variable-length of UTF-8 chars
 
+**Internal Representation**
+* `String` is a wrapper over a `Vec<u8>`
 
 ### 08.03 `HashMap`s
 
@@ -138,7 +141,7 @@ let s = s1 + "-" + &s2 + "-" + &s3;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc2MjUxNzY2LC05OTA0ODk5OTQsMzI1Nz
-I5Njc3LDEzMzMxNjA1NTEsLTI1OTA3MzAyOSwxMjQzNjgzNzEx
-XX0=
+eyJoaXN0b3J5IjpbLTk1OTI0MDkxMCwtOTkwNDg5OTk0LDMyNT
+cyOTY3NywxMzMzMTYwNTUxLC0yNTkwNzMwMjksMTI0MzY4Mzcx
+MV19
 -->
