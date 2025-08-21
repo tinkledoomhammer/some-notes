@@ -113,6 +113,8 @@ let s3 = "initial contents".to_string();
 : Modifies/consumes the self, and returns the resultant combination
 : `s1 + &s2` where both are `String` coerces `&s2` to `&str`
 
+`format!` macro
+: uses `println!` like syntax to make combining strings less cumbersome 
 
 
 ### 08.03 `HashMap`s
@@ -121,7 +123,7 @@ let s3 = "initial contents".to_string();
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5Mzg5OTI0NiwtOTkwNDg5OTk0LDMyNT
+eyJoaXN0b3J5IjpbLTcyMzQ1NDUyNiwtOTkwNDg5OTk0LDMyNT
 cyOTY3NywxMzMzMTYwNTUxLC0yNTkwNzMwMjksMTI0MzY4Mzcx
 MV19
 -->
