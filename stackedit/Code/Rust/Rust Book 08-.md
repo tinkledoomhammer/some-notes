@@ -84,13 +84,22 @@ let row = vec![
 
 ### 08.02 UTF-8  encoded `String`s
 
+string slices
+: `str` type, usually used as `&str`
+: The native type for string literals
+: the only string type in the core language
+
+#### Creating a new String
+`let mut s = String::new();
+
+
 ### 08.03 `HashMap`s
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjM1NjgzNzcsLTk5MDQ4OTk5NCwzMj
-U3Mjk2NzcsMTMzMzE2MDU1MSwtMjU5MDczMDI5LDEyNDM2ODM3
-MTFdfQ==
+eyJoaXN0b3J5IjpbMTM0MzYxODAxMywtOTkwNDg5OTk0LDMyNT
+cyOTY3NywxMzMzMTYwNTUxLC0yNTkwNzMwMjksMTI0MzY4Mzcx
+MV19
 -->
