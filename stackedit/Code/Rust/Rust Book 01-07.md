@@ -307,20 +307,20 @@ Byte `u8` only | b'A'
 	* `overflowing_*` returns a bool indicating whether an overflow occurred 
 	* `saturating_*` will clamp the return value
 
-#### Floating point types
+### Floating point types
 `f32` and `f64`
 * `f64` is the default
 * IEEEE-754
 
-#### Numerical operations
+### Numerical operations
 * `+` `-` `*` `/` and `%` work as expected
 * For a full list of operators, see https://rust-book.cs.brown.edu/appendix-02-operators.html
 
-#### `bool`s
+### `bool`s
 * one byte in size
 * allowed values are `true` and `false`
 
-#### `char` Type
+### `char` Type
 * 4-byte character codes
 * literals use single quotes `let c: char = 'z';`
 * They are *Unicode Scalar Value*s
@@ -328,7 +328,7 @@ Byte `u8` only | b'A'
 * See also [“Storing UTF-8 Encoded Text with Strings”](https://rust-book.cs.brown.edu/ch08-02-strings.html#storing-utf-8-encoded-text-with-strings)
 
 
-#### Tuples (A Compound Type)
+### Tuples (A Compound Type)
 * a coma separated list of values inside parens
 * `let tup: (i32, f64, u8) = (500, 6.4, 1);`
 * Members are accessed with dot notation and a numerical index
@@ -342,7 +342,7 @@ let tup = (50,6.4);
 let (x,y) = tup;
 // x == 50, y == 6.4
 ```
-#### Array type (compound)
+### Array type (compound)
 * every element must have the same type
 * The size is fixed
 * Values are specified in a coma separated list inside square brackets
@@ -359,7 +359,7 @@ let (x,y) = tup;
 * Bounds are checked automatically 
 	* Out-of-bounds access will cause a panic
 
-### 03.03 Functions
+## 03.03 Functions
 * declared with `fn`
 * parameter types **must** be declared in the signature
 
@@ -383,7 +383,7 @@ let y = {
 };
 // y is 4
 ```
-#### Functions with return values
+### Functions with return values
 `fn five() -> i32 {5}`
 
 caution: `fn five() ->i32 {5;}` will cause a mismatched type error
@@ -394,7 +394,7 @@ caution: `fn five() ->i32 {5;}` will cause a mismatched type error
 
 Also note that it is `->` and not `=>`
 
-### 03.04 Comments
+## 03.04 Comments
 ```rust
 // comment to the end of the line
 /* this
@@ -402,8 +402,8 @@ Also note that it is `->` and not `=>`
 	comment
 */
 ```
-### 03.05 Control flow
-#### `if` (an expression!)
+## 03.05 Control flow
+### `if` (an expression!)
 ```rust
 fn main() {
     let number = 6;
@@ -426,7 +426,7 @@ fn main() {
 
 * The condition must explicitly be a `bool` there are no `truthy` of `falsy` values
 
-#### Loops
+### Loops
 ```rust
 let mut counter =0;
 let result = loop{
@@ -459,15 +459,15 @@ let result = loop{
 	```
 	* To exit to a label with a  value , `break 'lable retv;`
 
-#### `while` and `for`loops
+### `while` and `for`loops
 `while <condition> {stufff}`
 	* avoids having to use if..break 
 `for element in collection {stuff}`
 `for num in (start..end)` // [start , end)
 `for num in (start..=end)` [start , end]
 
-## 04 Ownership
-### 04.01 Definition of ownership
+# 04 Ownership
+## 04.01 Definition of ownership
 Safety
 : The absence of undefined behavior
 
@@ -476,7 +476,7 @@ Ownership
 
  The Rust Reference maintains a large list of [“Behavior considered undefined”](https://doc.rust-lang.org/reference/behavior-considered-undefined.html).
 
-#### Variables live in the Stack
+### Variables live in the Stack
 * Variables exist in stack frames
 * This doc describes changes as new frames. I.e. Main before a function call and main after a function call which is used to define a value are different frames
 * Variables are copied into new frames, so changes will not affect the parent frame
@@ -1725,5 +1725,5 @@ mod engine;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyODIxNDgyMSwtNTYxNzE5ODA2XX0=
+eyJoaXN0b3J5IjpbLTE3MzY4NDM0OTEsLTU2MTcxOTgwNl19
 -->
