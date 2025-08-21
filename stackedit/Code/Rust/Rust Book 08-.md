@@ -2,11 +2,11 @@
 "The Rust Programming Language"
 https://rust-book.cs.brown.edu/
 
-## 08 Common Collections
+# 08 Common Collections
 
 **Dropping a vector drops its elements**
 
-### 08.01 `Vec`tors
+## 08.01 `Vec`tors
 * `let v: Vec<i32> = Vec::new();`
 * `Vec`s are generics, with the type being stored as the generic parameter
 * `let v = vec![1, 2, 3];`
@@ -27,7 +27,7 @@ let third: Option<&i32> = v.get(2);
 ```
 **Note:** The borrow checker considers the entire vec to be one item
 
-#### Iterating over values in a `vec`
+### Iterating over values in a `vec`
 ```rust
 let v = vec![100,32,57];
 for i in &v {
@@ -39,7 +39,7 @@ for i in &mut v {
 }
 ```
 
-#### Safely using `iter`ators
+### Safely using `iter`ators
 More details in [13.2 Processing a series...](https://rust-book.cs.brown.edu/ch13-02-iterators.html)
 
  `Vec::iter` and `Iterator::next`
@@ -62,7 +62,7 @@ let mut iter: Range<usize>	= 0..v.len();
 let i1: usize				= iter.next().unwrap();
 let n1: &i32				= &v[i1];
 ```
-#### Vecs of Enums
+### Vecs of Enums
 ```rust
 enum SpreadsheetCell {
     Int(i32),
@@ -82,14 +82,14 @@ let row = vec![
 
 
 
-### 08.02 UTF-8  encoded `String`s
+## 08.02 UTF-8  encoded `String`s
 
 string slices
 : `str` type, usually used as `&str`
 : The native type for string literals
 : the only string type in the core language
 
-#### Creating a new String
+### Creating a new String
 ```rust
 let mut s = String::new();
 let data: str = "initial contents";
@@ -98,7 +98,7 @@ let s3 = "initial contents".to_string();
 ```
 **UTF-8 Encoding allows strings in a variety of languages**
 
-#### Updating a String
+### Updating a String
 * can grow in size
 * the `+` operator or the `format!` macro can concatenate strings
 
@@ -129,7 +129,7 @@ let s = s1 + "-" + &s2 + "-" + &s3;
 //same result but up to 7 reallocations
 ```
 
-#### Indexing into `String`s
+### Indexing into `String`s
 * regular indexing is invalid in rust due to the variable-length of UTF-8 chars
 * And also indexing cannot be guaranteed to be O(1) (constant time) 
 
@@ -143,14 +143,15 @@ let s = s1 + "-" + &s2 + "-" + &s3;
 * scalars are Unicode scalar values, which can be characters or diacritics
 * Grapheme clusters are one or more scalar values
 
+### Slicing Strings
 
-### 08.03 `HashMap`s
+## 08.03 `HashMap`s
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MDg1NjY1LC05OTA0ODk5OTQsMzI1Nz
-I5Njc3LDEzMzMxNjA1NTEsLTI1OTA3MzAyOSwxMjQzNjgzNzEx
-XX0=
+eyJoaXN0b3J5IjpbLTEzODcyNDI1NDMsLTk5MDQ4OTk5NCwzMj
+U3Mjk2NzcsMTMzMzE2MDU1MSwtMjU5MDczMDI5LDEyNDM2ODM3
+MTFdfQ==
 -->
