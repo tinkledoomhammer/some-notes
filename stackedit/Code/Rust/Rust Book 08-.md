@@ -108,8 +108,9 @@ let s3 = "initial contents".to_string();
 **push**`
 * `s.push('a')` -- adds a single char to the end of the string
 
-**
-
+`+` operator
+: `fn add(self, s: &str) -> String {...`
+: modifies the first string, consumes the second string, and returns the result
 
 ### 08.03 `HashMap`s
 
@@ -117,7 +118,7 @@ let s3 = "initial contents".to_string();
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc5MDM4NzgzLC05OTA0ODk5OTQsMzI1Nz
+eyJoaXN0b3J5IjpbODc0NDU3NjU0LC05OTA0ODk5OTQsMzI1Nz
 I5Njc3LDEzMzMxNjA1NTEsLTI1OTA3MzAyOSwxMjQzNjgzNzEx
 XX0=
 -->
