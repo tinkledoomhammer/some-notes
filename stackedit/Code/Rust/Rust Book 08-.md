@@ -115,7 +115,15 @@ let s3 = "initial contents".to_string();
 
 `format!` macro
 : uses `println!` like syntax to make combining strings less cumbersome 
-
+```rust
+let s1 = String::from("tic");
+let s2 = String::from("tac");
+let s3 = String::from("toe");
+let s = format!("{s1}-{s2}-{s3}");
+//"tic-tac-toe"
+//equivalent to
+let s = s1 + "-" + &s2 + "-" +
+```
 
 ### 08.03 `HashMap`s
 
@@ -123,7 +131,7 @@ let s3 = "initial contents".to_string();
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyMzQ1NDUyNiwtOTkwNDg5OTk0LDMyNT
+eyJoaXN0b3J5IjpbMTI1NjI3NTg3MywtOTkwNDg5OTk0LDMyNT
 cyOTY3NywxMzMzMTYwNTUxLC0yNTkwNzMwMjksMTI0MzY4Mzcx
 MV19
 -->
