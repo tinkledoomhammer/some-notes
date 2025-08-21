@@ -153,6 +153,7 @@ Slicing
 
 Iterating
 : `.chars()` or `.bytes()`
+: The standard library does not provide a way to iterate over grapheme clusters
 ```rust
 for c in "Зд".chars() {
     println!("{c}");
@@ -175,7 +176,7 @@ for b in  "Зд".bytes() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2NDM2NjIxMiwtOTkwNDg5OTk0LDMyNT
-cyOTY3NywxMzMzMTYwNTUxLC0yNTkwNzMwMjksMTI0MzY4Mzcx
-MV19
+eyJoaXN0b3J5IjpbLTEyODQwNTA0MzksLTk5MDQ4OTk5NCwzMj
+U3Mjk2NzcsMTMzMzE2MDU1MSwtMjU5MDczMDI5LDEyNDM2ODM3
+MTFdfQ==
 -->
