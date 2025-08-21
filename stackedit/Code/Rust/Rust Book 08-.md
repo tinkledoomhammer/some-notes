@@ -129,7 +129,8 @@ let s = s1 + "-" + &s2 + "-" + &s3;
 //same result but up to 7 reallocations
 ```
 
-#### Indexing into 
+#### Indexing into `String`s
+
 
 ### 08.03 `HashMap`s
 
@@ -137,7 +138,7 @@ let s = s1 + "-" + &s2 + "-" + &s3;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1ODcwODQ1MCwtOTkwNDg5OTk0LDMyNT
-cyOTY3NywxMzMzMTYwNTUxLC0yNTkwNzMwMjksMTI0MzY4Mzcx
-MV19
+eyJoaXN0b3J5IjpbNDc2MjUxNzY2LC05OTA0ODk5OTQsMzI1Nz
+I5Njc3LDEzMzMxNjA1NTEsLTI1OTA3MzAyOSwxMjQzNjgzNzEx
+XX0=
 -->
