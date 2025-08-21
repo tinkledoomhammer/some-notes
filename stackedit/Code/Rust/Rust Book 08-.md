@@ -130,11 +130,13 @@ let s = s1 + "-" + &s2 + "-" + &s3;
 ```
 
 #### Indexing into `String`s
-**regular indexing is invalid in rust due to the variable-length of UTF-8 chars
+* regular indexing is invalid in rust due to the variable-length of UTF-8 chars
+* And also indexing cannot be guaranteed to be O(1) (constant time) 
 
 **Internal Representation**
 * `String` is a wrapper over a `Vec<u8>`
-* The elements of that `Vec` are calars, not chars
+* The elements of that `Vec` are u8, not chars
+* Rust's chars are Unicode scalars
 
 **Bytes vs Scalars vs Grapheme Clusters**
 * bytes are bytes
@@ -148,7 +150,7 @@ let s = s1 + "-" + &s2 + "-" + &s3;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5NjY1NTIzMCwtOTkwNDg5OTk0LDMyNT
-cyOTY3NywxMzMzMTYwNTUxLC0yNTkwNzMwMjksMTI0MzY4Mzcx
-MV19
+eyJoaXN0b3J5IjpbLTU2MDg1NjY1LC05OTA0ODk5OTQsMzI1Nz
+I5Njc3LDEzMzMxNjA1NTEsLTI1OTA3MzAyOSwxMjQzNjgzNzEx
+XX0=
 -->
