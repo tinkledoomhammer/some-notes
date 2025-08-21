@@ -143,11 +143,23 @@ let s = s1 + "-" + &s2 + "-" + &s3;
 * scalars are Unicode scalar values, which can be characters or diacritics
 * Grapheme clusters are one or more scalar values
 
-### Slicing Strings
-**Technically allowed with ranges**
-**Indexes are in bytes**
-**Will cause a panic if it includes part of a char**
-`let s =&hello[0..4]`
+### Slicing and Iterating over Strings
+
+Slicing
+: Technically allowed with ranges
+: Indexes are in bytes
+: Will cause a panic if it includes part of a char
+: `let s =&hello[0..4]`
+
+Iterating
+: `.chars()` or `.bytes()`
+```rust
+for c in "Зд".chars() {
+    println!("{c}");
+}
+
+```
+
 
 ## 08.03 `HashMap`s
 
@@ -155,7 +167,7 @@ let s = s1 + "-" + &s2 + "-" + &s3;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUxMjUzODExLC05OTA0ODk5OTQsMzI1Nz
+eyJoaXN0b3J5IjpbNDI2NDg2NzI3LC05OTA0ODk5OTQsMzI1Nz
 I5Njc3LDEzMzMxNjA1NTEsLTI1OTA3MzAyOSwxMjQzNjgzNzEx
 XX0=
 -->
