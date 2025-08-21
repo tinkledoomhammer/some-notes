@@ -157,8 +157,16 @@ Iterating
 for c in "Зд".chars() {
     println!("{c}");
 }
-
+for b in  "Зд".bytes() {
+ qprintln!("{b}");
+}
 ```
+>З
+>д
+>208
+>151
+>208
+>180
 
 
 ## 08.03 `HashMap`s
@@ -167,7 +175,7 @@ for c in "Зд".chars() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI2NDg2NzI3LC05OTA0ODk5OTQsMzI1Nz
-I5Njc3LDEzMzMxNjA1NTEsLTI1OTA3MzAyOSwxMjQzNjgzNzEx
-XX0=
+eyJoaXN0b3J5IjpbMTI2NDM2NjIxMiwtOTkwNDg5OTk0LDMyNT
+cyOTY3NywxMzMzMTYwNTUxLC0yNTkwNzMwMjksMTI0MzY4Mzcx
+MV19
 -->
