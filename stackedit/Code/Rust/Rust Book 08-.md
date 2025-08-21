@@ -90,7 +90,12 @@ string slices
 : the only string type in the core language
 
 #### Creating a new String
-`let mut s = String::new();
+```rust
+let mut s = String::new();
+let data: str = "initial contents";
+let s2 = data.to_string();
+let s3 = "initial contents".to_string();
+```
 
 
 ### 08.03 `HashMap`s
@@ -99,7 +104,7 @@ string slices
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0MzYxODAxMywtOTkwNDg5OTk0LDMyNT
-cyOTY3NywxMzMzMTYwNTUxLC0yNTkwNzMwMjksMTI0MzY4Mzcx
-MV19
+eyJoaXN0b3J5IjpbMzUwMDMwNjUwLC05OTA0ODk5OTQsMzI1Nz
+I5Njc3LDEzMzMxNjA1NTEsLTI1OTA3MzAyOSwxMjQzNjgzNzEx
+XX0=
 -->
