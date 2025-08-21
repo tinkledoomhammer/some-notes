@@ -145,7 +145,9 @@ let s = s1 + "-" + &s2 + "-" + &s3;
 
 ### Slicing Strings
 **Technically allowed with ranges**
-**Will p
+**Indexes are in bytes**
+**Will cause a panic if it includes part of a char**
+`let s =&hello[0..4]`
 
 ## 08.03 `HashMap`s
 
@@ -153,7 +155,7 @@ let s = s1 + "-" + &s2 + "-" + &s3;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgwMDg1NDgzLC05OTA0ODk5OTQsMzI1Nz
+eyJoaXN0b3J5IjpbNTUxMjUzODExLC05OTA0ODk5OTQsMzI1Nz
 I5Njc3LDEzMzMxNjA1NTEsLTI1OTA3MzAyOSwxMjQzNjgzNzEx
 XX0=
 -->
