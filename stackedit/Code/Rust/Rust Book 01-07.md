@@ -481,7 +481,7 @@ Ownership
 * This doc describes changes as new frames. I.e. Main before a function call and main after a function call which is used to define a value are different frames
 * Variables are copied into new frames, so changes will not affect the parent frame
 
-#### Boxes live in the heap
+### Boxes live in the heap
 Pointer
 : a value that describes a memory location (internal in rust?)
 
@@ -502,7 +502,7 @@ i.e.
 	//Copying a gives coppies the pointer
 		//so we avoid the 4MB copy
 	```
-#### Rust does not permit manual memory management
+### Rust does not permit manual memory management
 Memory Management
 : The process of allocating and deallocating memory
 
@@ -513,11 +513,11 @@ The nearly correct deallocation principle
 * Ownership is transferred on assignment to avoid double deallocation 
 * Assignment seems to include passing it as a argument
 
-#### Variables cannot be used after being moved
+### Variables cannot be used after being moved
 Moved heap data principle
 : If a variable `x` moves ownership of heap data to another variable `y`, then `x` cannot be used after the move
 
-### 04.02 References and Borrowing
+## 04.02 References and Borrowing
 Having to pass/return all objects that are used more than once would suck...
 ```rust
 fn greet(g1: String, g2: String) -> (String,String){
@@ -540,7 +540,7 @@ fn greet(g1: &String, g2: &String){
 greet(&m1, &m2);
 ```
 
-#### Dereferencing a pointer Accesses its data
+### Dereferencing a pointer Accesses its data
 ```rust
 let mut x: Box<i32> = Box::new(1);
 let a: i32 = *x;         // *x reads the heap value, so a = 1
@@ -568,7 +568,7 @@ let s_len1 = str::len(&s); // explicit reference
 let s_len2 = s.len(); // implicit reference  
 assert_eq!(s_len1, s_len2);
 ```
-#### Rust avoids Simultaneous Aliasing and mutation
+### Rust avoids Simultaneous Aliasing and mutation
 Three things that can go wrong 
 1. Deallocating aliased data, leaving the original variable pointing to deallocated memory
 2. Mutating aliased data, invalidating expected runtime properties of that data
@@ -583,7 +583,7 @@ Pointer Safety Principle
 
 i.e. If you have a ref to a member of a vector, then resizing the vector will invalidate the ref
 
-#### References change the permissions on places
+### References change the permissions on places
 Permissions
 1. Read (R) : Data can be copied to another location
 2. Write (W) : Data can be mutated
@@ -630,12 +630,12 @@ let mut x_ref = &x; // mutable borrow
 
 
 
-#### The borrow checker finds permission violations
+### The borrow checker finds permission violations
 * creating references requires permissions
 * i.e. the `Vec<i32>::push()`  requires read and write permissions
 Once a reference is no longer needed, the borrow ends and the permissions are restored
 
-#### Mutable references provide unique and non-owning access to data
+### Mutable references provide unique and non-owning access to data
 Mutable reference
 : aka Unique reference
 : allows mutation but not aliasing
@@ -653,7 +653,7 @@ let num: &mut i32 = &mut v[2];
 let num2: &i32 = &*num; // this borrow removes the W perm from num
 // the perm will be returned at the end of num2's lifetime
 ```
-#### Data must outlive all of its references
+### Data must outlive all of its references
 * within a single lexical scope, the permission system above is adequate
 	*	because the lifetime is known to the compiler from that function's code alone
 *	when references are input to a function or output from a function
@@ -675,7 +675,7 @@ fn return_a_string() -> &String{
 ```
 
 
-#### Summary
+### Summary
 * All variables can read, own, and optionally write their data
 * creating a reference will transfer permissions from the borrowed place to the ref
 	* write and ownership are always lost from the source
@@ -684,11 +684,11 @@ fn return_a_string() -> &String{
 * data must outlive all references that point to it
 
 
-### 04.03 Fixing Ownership Errors
+## 04.03 Fixing Ownership Errors
 **Sometimes rust will reject safe code**
 * but it will always reject unsafe code unless it's marked `unsafe`
 
-#### Unsafe program: returning a reference to the stack
+### Unsafe program: returning a reference to the stack
 ```rust
 //bad
 fn return_a_string() -> &String{
@@ -724,7 +724,7 @@ fn return_a_string(output: &mut String) {
 // more verbbose but allows the caller to control allocations
 ```
 
-#### Fixing : Not enough permissions
+### Fixing : Not enough permissions
 i.e. trying to mutate read-only data, drop data behind a ref, etc
 
 ```rust
@@ -753,7 +753,7 @@ fn stringify_name_with_title(name: & Vec<String>) -> String {
 ```
 **It is very rare for rust functions to take ownership of heap-owning data structures like `Vec` and `String`**
 
-#### Fixing unsafe: Aliasing and Mutating a data structure
+### Fixing unsafe: Aliasing and Mutating a data structure
 ```rust
 //bad
 fn add_big_strings(dst: &mut Vec<String>, src: &[String]) {
@@ -802,7 +802,7 @@ fn add_big_strings(dst: &mut Vec<String>, src: &[String]) {
 }
 ```
 
-#### Fixing unsafe copying vs moving out of a collection
+### Fixing unsafe copying vs moving out of a collection
 ```rust
 // Below works fine
 let v: Vec<i32> = vec![0,1,2]
@@ -840,7 +840,7 @@ let mut s: String = v.remove();
 s.push('!');
 ```
 
-#### Fixing a safe program: Mutating different tuple fields
+### Fixing a safe program: Mutating different tuple fields
 * The borrow checker can track fine-grained permissions
 * But it doesn't analyze called functions beyond looking at ther signatures
 ```rust
@@ -874,7 +874,7 @@ fn main() {
 }
 ```
 
-#### Fixing a safe program: Mutating different array elements
+### Fixing a safe program: Mutating different array elements
 Rust does **not** track elements of an array as different places.
 
 ```rust
@@ -902,7 +902,7 @@ let y = &a_r[0];
 From the exercise:
 **Dereferencing an owned type takes ownership**
 
-### 04.04 The Slice Type
+## 04.04 The Slice Type
 Example: returning a part of a string
 * Returning an index is bad because it is a number and is not tied to the lifetime of the string
 * instead returning a slice will tie the lifetimes
@@ -951,12 +951,12 @@ assert_eq!(slice, &[2,3]);
 ```
 
 
-### 04.05 Ownership recap
+## 04.05 Ownership recap
 In chapter 4
 : ownership, borrowing, slices
 : memory allocation, stack vs heap, pointers, and undefined behavior
 
-#### Ownership vs Garbage collection
+### Ownership vs Garbage collection
 Garbage collection
 : scans memory at runtime to deallocate unreachable variables.
 : * Pros: Avoids use-after-free and double-free; avoids a complicated type system; avoids undefined behavior
@@ -1016,7 +1016,7 @@ Ownership
 	* `add_word` requires a `&mut Document`, and consumes the input 	`word`
 	* `get_words` returns an immutable reference to strings
  
- #### Concepts of ownership
+ ### Concepts of ownership
  Ownership at Runtime
  : * Rust allocates local variables in stack frames
  : local variables can hold either data or pointers
@@ -1073,7 +1073,7 @@ println!("{n}"); //[L3]
 ```
 
 
-#### From the quiz
+### From the quiz
 ```rust
 //rejected by the borrow cheker
 fn extract(b: &Box<i32>) -> i32 {
@@ -1083,11 +1083,11 @@ fn extract(b: &Box<i32>) -> i32 {
 }
 //casues a double free
 ```
-## 05 Structures
+# 05 Structures
 `struct`
 : A custom data type that packages together and name related values
 
-### 05.01 Defining and Instancing Structs
+## 05.01 Defining and Instancing Structs
 Defined
 : with the `struct <name>{...}` construct which is
 : filled with `key: type,` pairs for each **field**
@@ -1121,7 +1121,7 @@ Accessing values
 : `structVar.field` i.e. `user1.email`
 
 
-#### Field Init shorthand
+### Field Init shorthand
 ```rust
 fn build_user(email: String, username: String) -> User {
 	user {
@@ -1133,7 +1133,7 @@ fn build_user(email: String, username: String) -> User {
 }
 ```
 
-#### Struct Update syntax
+### Struct Update syntax
 
 ```rust
 fn main() {
@@ -1150,7 +1150,7 @@ fn main() {
 * moves data
 
 
-#### Tuple Structs, Unit-Like Structs
+### Tuple Structs, Unit-Like Structs
 
 `struct Color(i32, i32, i32);`
 :  creates a new tuple type
@@ -1161,11 +1161,11 @@ fn main() {
 : an empty data type
 : as with tuple-like structs, each one is a different type
 
-#### Ownership of struct data
+### Ownership of struct data
 * Struct members that are references require lifetime parameters
 * This will be discussed in ch. 10
 
-##### Borrowing fields of a struct
+#### Borrowing fields of a struct
 * Rust will track ownership and permissions at both the struct- and field-level
 ```rust
 struct Point {x: i32, y: i32};
@@ -1177,7 +1177,7 @@ let x = &mut p.x;
 *x+=1; //this is the LAST use of x
 //perms are returned
 ```
-#### Quiz example(s)
+### Quiz example(s)
 ```rust
 struct Point { x: i32, y: i32 };
 fn test1(){
@@ -1198,9 +1198,9 @@ fn test2(){
 } // prints "2 3"
 ```
 
-### 05.02 Example program using structs
+## 05.02 Example program using structs
 
-#### Derive traits
+### Derive traits
 ```rust
 #[derive(Debug)]
 struct Rectangle { ... }
@@ -1216,7 +1216,7 @@ The `dbg!` macro
 : returns the value of the expression
 : `dbg!(30*scale)` -> "[src/main.rs:10:16] 30*scale = 60"
 
-### 05.03 Method Syntax
+## 05.03 Method Syntax
 #### Defining methods
 ```rust
 #[derive(Debug)]
@@ -1725,5 +1725,5 @@ mod engine;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzY4NDM0OTEsLTU2MTcxOTgwNl19
+eyJoaXN0b3J5IjpbLTE3OTAyNTgxMjksLTU2MTcxOTgwNl19
 -->
