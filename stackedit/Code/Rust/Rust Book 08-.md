@@ -101,10 +101,14 @@ let s3 = "initial contents".to_string();
 #### Updating a String
 * can grow in size
 * the `+` operator or the `format!` macro can concatenate strings
-**push_str**
-`s.push_str("bar");` => `"foobar"`
-* 
 
+**push_str**
+* `s.push_str("bar");` => `"foobar"`
+* takes a `&str` argument and appends it to the end of the string
+**push**`
+* `s.push('a')` -- adds a single char to the end of the string
+
+**
 
 
 ### 08.03 `HashMap`s
@@ -113,7 +117,7 @@ let s3 = "initial contents".to_string();
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMzgyNTAxNSwtOTkwNDg5OTk0LDMyNT
-cyOTY3NywxMzMzMTYwNTUxLC0yNTkwNzMwMjksMTI0MzY4Mzcx
-MV19
+eyJoaXN0b3J5IjpbNDc5MDM4NzgzLC05OTA0ODk5OTQsMzI1Nz
+I5Njc3LDEzMzMxNjA1NTEsLTI1OTA3MzAyOSwxMjQzNjgzNzEx
+XX0=
 -->
