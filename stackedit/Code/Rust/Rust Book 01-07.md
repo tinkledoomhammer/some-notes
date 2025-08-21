@@ -1217,7 +1217,7 @@ The `dbg!` macro
 : `dbg!(30*scale)` -> "[src/main.rs:10:16] 30*scale = 60"
 
 ## 05.03 Method Syntax
-#### Defining methods
+### Defining methods
 ```rust
 #[derive(Debug)]
 struct Rectangle { width: u32, Height: u32,}
@@ -1245,7 +1245,7 @@ Associated Functions
 * They can use the `Self` type alias in their definitions
 * Can be called with `::` syntax: `Rectangle::square(3)`
 
-#### Caveats
+### Caveats
 
 * Multiple `impl` blocks **are allowed**
 * Methods are sugar for function calls
@@ -1255,7 +1255,7 @@ r.area()
 Rectangle::area(&r)
 ```
 
-#### Methods and ownership
+### Methods and ownership
 Accessing a method on  a struct requires perms on the struct depending on the `self` parameter.
 * `&mut self` requires `mut struct` or `&mut struct` (+RW perms)
 * `self` requires an owned struct (+O perms)
@@ -1266,9 +1266,9 @@ Accessing a method on  a struct requires perms on the struct depending on the `s
 : This means that you can "take ownership" without taking ownership
 
 
-## 06 Enums and Pattern Matching
+# 06 Enums and Pattern Matching
 
-### 06.01 Defining an Enum
+## 06.01 Defining an Enum
 
 ```rust
 struct StructVariant01{
@@ -1290,7 +1290,7 @@ impl Message {
 ```
 
 * An `enum` *instance* represents exactly one of the defined variants.
-#### `Option<T>`
+### `Option<T>`
 ```rust
 enum Option<T> {
 	None,
@@ -1306,7 +1306,7 @@ enum Option<T> {
 * Using the enum means that you have explicitly opted in to allowing null values
 	* and so must explicitly account for the possibility of null values
 
-### 06.02 `match` control flow construct
+## 06.02 `match` control flow construct
 ```rust
 enum Coin {
 	Penny,
@@ -1326,7 +1326,7 @@ fn value_in_cents(coin: Coin) -> u8 {
 	}
 }
 ```
-#### Structure of match
+### Structure of match
 * `match` keyword and an expression
 	*	The expression can be any type
 *	One or more match arms
@@ -1337,7 +1337,7 @@ fn value_in_cents(coin: Coin) -> u8 {
 *	Longer arms can enclose the *code to run* in curley braces
 	*	then the `,` coma is optional
 
-#### Patterns that bind to values
+### Patterns that bind to values
 ```rust
 #[derive(Debug)]
 enum UsState {
@@ -1372,7 +1372,7 @@ fn decr_twice_v1(n: u32) -> Option<u32> {
 }
 ```
 
-#### Matching `Option<T>`
+### Matching `Option<T>`
 ```rust
 fn plus_one(x: Option<i32>) -> Option<i32> {
 	match x {
@@ -1382,7 +1382,7 @@ fn plus_one(x: Option<i32>) -> Option<i32> {
 }
 ```
 
-#### Exhaustive matching and the `_` Placeholder
+### Exhaustive matching and the `_` Placeholder
 ```rust
 let dice_roll = 9;
 match dice_roll {
@@ -1402,7 +1402,7 @@ match coin{
 }
 ```
 
-### 06.03 `if let` and `let else`
+## 06.03 `if let` and `let else`
 `if let`
 : for matching one pattern and ignoring the rest
 ```rust
@@ -1453,15 +1453,7 @@ let state = if let Coin::Quarter(state) = coin {
 both contain a *pattern* = *source* construct
 
 
-
-
-
-
-
-
-
-
-#### Matches and ownership
+### Matches and ownership
 **when values are matched, they are assigned**
 **assigning to** `_` **will not assign a value**
 * Matching on a ref will **"Push Down"** the ref from the outer enum
@@ -1489,7 +1481,7 @@ println!("{:?}", opt);
 
 
 
-## 07 Packages, Crates, and Modules
+# 07 Packages, Crates, and Modules
 * a package can contain one library crate and one or more binary crates
 * As a package grows it can be split into multiple crates
 
@@ -1509,7 +1501,7 @@ Paths
 Cargo workspaces
 : a cargo feature for managing multiple interrelated packages that evolve together
 
-### 07.01 Packages and Crates
+## 07.01 Packages and Crates
 crate
 : the smallest amount of code that the compiler considers at a time
 : can contain modules
@@ -1535,7 +1527,7 @@ main.rs
 ```
 
 
-#### Question  2
+### Question  2
 
 Imagine you see a Rust package  `foobar`  with the following files:
 
@@ -1553,7 +1545,7 @@ How many crates does this package contain? **3**
 `main.rs` produces a binary crate, `lib.rs` produces a library crate, and `bin/alt.rs` produces a binary crate. The `util.rs` would presumably be used as a module within one of these crates, but it is not a special filename recognized by Rust, so it would not be its own crate. `build.rs` is a build script.
 
 
-### 07.02 Modules
+## 07.02 Modules
 `use`
 : keyword that brings a path into scope
 
@@ -1588,7 +1580,7 @@ Tips for modules
 	* then `Asparagus` can be used
 	* 
 
-### 07.03 Paths for referring to an item in the module tree
+## 07.03 Paths for referring to an item in the module tree
 
 **Paths can take 2 forms**
 
@@ -1621,7 +1613,7 @@ pub fn eat_at_restaurant() {
 **modules and items inside the module are private by default**
 **modules do not have access to private members of their submodules**
 
-#### Starting relative paths with `super`
+### Starting relative paths with `super`
 
 `super::module::submodule`
 : maps the submodule of `module` which is sibling to the current module
@@ -1636,13 +1628,13 @@ mod back_of_house{
 }
 ```
 
-#### Making `struct`s and `enum`s public
+### Making `struct`s and `enum`s public
 * If a `struct` is `pub`lic then its fields may or may not be public
 	* they default to private
 * If an `enum` is `pub`lic then all of its variants are public 
 
 
-### 07.04 `use`
+## 07.04 `use`
 * like a symlink in a file system, `use path::to::module;` makes an alias `module` in the current scope
 * This does **not** allow the identifier to be used in a submodule
 * it is idiomatic to bring modules into scope rather than individual functions
@@ -1653,18 +1645,18 @@ mod back_of_house{
 : allows the alias to be different from the name being brought into scope
 : `use std::io::Result as IoResult;`
 
-#### re-exporting and visibility of `use`
+### re-exporting and visibility of `use`
 * `use` by default creates private identifiers
 * `pub use` will allow other modules access
 * 
 
-#### External packages
+### External packages
 1. add to `cargo.toml` `package = "version"` i.e. `rand = "0.8.5"
 2. then in a `.rs` file `use package;` i.e. `use rand::Rng`
 3. Crates can be found on [crates.io]
 4. `std` does **not** need to be added to `Cargo.toml`
 
-#### Nested paths
+### Nested paths
 ```rust
 use std::cmp::Ordering;
 use std::io;
@@ -1684,7 +1676,7 @@ use std::collections::*;
 * can be at any level of nesting
 * the glob operator `*` will import all from that level
 
-### Separating Modules into different files
+## Separating Modules into different files
 * The `mod` keyword describes the file structure
 * `use` and `pub use` describe the path in code to the items
 
@@ -1715,15 +1707,7 @@ mod engine;
 
 
 
-
-
-
-
-
-
-
-
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTAyNTgxMjksLTU2MTcxOTgwNl19
+eyJoaXN0b3J5IjpbLTE0MzkzODIwNjYsLTU2MTcxOTgwNl19
 -->
