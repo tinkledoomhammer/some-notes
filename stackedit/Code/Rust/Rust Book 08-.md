@@ -96,7 +96,12 @@ let data: str = "initial contents";
 let s2 = data.to_string();
 let s3 = "initial contents".to_string();
 ```
+**UTF-8 Encoding allows strings in a variety of languages**
 
+#### Updating a String
+* can grow in size
+* the `+` operator or the `format!` macro can concatenate strings
+**
 
 ### 08.03 `HashMap`s
 
@@ -104,7 +109,7 @@ let s3 = "initial contents".to_string();
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUwMDMwNjUwLC05OTA0ODk5OTQsMzI1Nz
+eyJoaXN0b3J5IjpbMjg4MDcyNDA1LC05OTA0ODk5OTQsMzI1Nz
 I5Njc3LDEzMzMxNjA1NTEsLTI1OTA3MzAyOSwxMjQzNjgzNzEx
 XX0=
 -->
