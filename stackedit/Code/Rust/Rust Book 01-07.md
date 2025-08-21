@@ -2,7 +2,7 @@
 "The Rust Programming Language"
 https://rust-book.cs.brown.edu/
 
-## 01 Getting Started
+# 01 Getting Started
 Rust is installed and it's versions are managed with `rustup` which is a small download. https://www.rust-lang.org/tools/install Running it in windows uses a cli installer (press 1 for default setup). It will update the command path so that `rust c` `cargo` and `rustup` are all available
 
 Also see
@@ -10,7 +10,7 @@ https://users.rust-lang.org/t/setting-up-rust-with-vs-code/76907
 for vs code setup
 * using the 'Code Runner' extension, the executor settings need to be updated: `"rust" : "cargo run # $fileName",`
 
-### Hello World
+## Hello World
 ```bash
 $ mkdir ~/projects
 $ cd ~/projects
@@ -30,7 +30,7 @@ $ rustc main.rs
 $ ./main
 ```
 
-### Hello Cargo
+## Hello Cargo
 `cargo --version`
 `cargo new hello_cargo`
 `cd hello_cargo`
@@ -63,13 +63,13 @@ edition = "2021"
 [Cargo Docs](https://doc.rust-lang.org/cargo/)
 
 
-## 02 - Programming a Guessing Game
+# 02 - Programming a Guessing Game
 https://rust-book.cs.brown.edu/ch02-00-guessing-game-tutorial.html
 
 * `cargo new guessing_game`
 * It also created `src/main.rs`
 
-### Processing a guess
+## Processing a guess
 * edit `src/main.rs`
 ```rust
 use std::io;
@@ -92,7 +92,7 @@ fn main(){
 	* `String::new()` just what it looks like
 * 
 
-#### Receiving User Input
+### Receiving User Input
 ```rust
 io::stdin()
 	.read_line(&mut guess)
@@ -101,7 +101,7 @@ io::stdin()
 * the `read_line` method appends user input ot the end of the argument, so it has t obe mutable
 * `&` means to pass by reference
 * references are also immutable by default, hince `&mut guess`
-#### Handling Potential failure with Result
+### Handling Potential failure with Result
 * `.expect("Failed to read line");`
 * The `read_line` method puts the data into the argument and returns a `Result`
 * `Result`s are enumerations that can be `Ok` or `Err`
@@ -112,14 +112,14 @@ io::stdin()
 		* if the call is omitted then the compiler will generate warning
 * Error handling is covered in chapter 9  https://rust-book.cs.brown.edu/ch09-02-recoverable-errors-with-result.html
 
-#### `println!` placeholders
+### `println!` placeholders
 `println!("You guessed: {}", guess);`
 * `{}` is the insertion point
 * when printing the value of a variable, then the name of the var can go inside the brackets
 * the result of an expression has to be in a separate argument:
 	* `println!("x={x} and y+2 = {}",y+2);`
 
-#### Dependencies
+### Dependencies
 * Uses a crate named `rand`
 	* in `Cargo.toml`:
 ```toml
@@ -139,7 +139,7 @@ rand = "0.8.5"
 * If the version specification in `Cargo.toml` change, then the next `cargo build` will update the registry of crates and re-evaluate which versions to use
 * The cargo ecosystem is covered more in chapter 14 and also https://doc.rust-lang.org/cargo/
 
-#### Generating a random number
+### Generating a random number
 ```rust
 use std::io;
 use rand::Rng;
@@ -165,7 +165,7 @@ fn main() {
 	* takes an expression as an argument and returns a random number in the range
 	* the expression `1..=100` expresses a range that is inclusive at both bounds
 
-#### Comparing the Guess to the Secret Number
+### Comparing the Guess to the Secret Number
 ```rust
 use std::cmp::Ordering;
 //snip
@@ -190,7 +190,7 @@ fn main(){
 	* assignment without `let` would fail here because `guess` was previously a string
 * string's `.parse()` converts a string to some other type. In this case it is the type specified in the `let` statement
 
-#### Looping, handling invalid input, and quitting the loop
+### Looping, handling invalid input, and quitting the loop
 ```rust
 loop {
 	//-- the guess and check code goes here
@@ -244,22 +244,22 @@ fn main(){
 
 ```
 
-## 03 Common Programming Concepts
+# 03 Common Programming Concepts
 https://rust-book.cs.brown.edu/ch03-00-common-programming-concepts.html
-### 03.01 Variables and Mutabbility
+## 03.01 Variables and Mutabbility
 * Variables are immutable by default
 * They can be redefined with another `let` but they cannot be simply assigned
 	* assigning to an immutable variable generates a compiler error
 * `let` must be used in a local scope(??)
 * `let` can also change the type of the variable
-#### Constant
+### Constant
 * Like immutable variables, but they must:
 	* be known at compile time
 	* explicitly specify a type
 	* `const` can be used in the global scope
 * They are usually named in all caps `const THREE_HOURS_IN_SECONDS: u32 = 60*60*3`
 * [Rust Reference’s section on constant evaluation] (https://doc.rust-lang.org/reference/const_eval.html)
-#### Shadowing
+### Shadowing
 * a variable can shadow a variable of the same name in a containing scope
 * It can be initialized from the parent scope
 * The variable in the child scope will only be accessible in that scope
@@ -276,11 +276,11 @@ fn main(){
 	println!("x = {x}"); // x = 6
 }
 ```
-### 03.02 Data Types
+## 03.02 Data Types
 Type annotation
 `let guess: u32 = ...`
-#### Scalar Types
-#### Integers
+### Scalar Types
+### Integers
 * `i8`, `u8`, powers of 2 up to `i128` and `u128`
 	* `i32` is the default
 * `isize` and `usize` are architecture dependent 
@@ -1725,5 +1725,5 @@ mod engine;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MTcxOTgwNl19
+eyJoaXN0b3J5IjpbLTMyODIxNDgyMSwtNTYxNzE5ODA2XX0=
 -->
