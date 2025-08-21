@@ -104,8 +104,9 @@ let s3 = "initial contents".to_string();
 
 **push_str**
 * `s.push_str("bar");` => `"foobar"`
-* `fn push_str(&mut self, *
+* `fn push_str(&mut self, s: &str) ;`
 * takes a `&str` argument and appends it to the end of the string
+
 **push**`
 * `s.push('a')` -- adds a single char to the end of the string
 
@@ -116,15 +117,19 @@ let s3 = "initial contents".to_string();
 
 `format!` macro
 : uses `println!` like syntax to make combining strings less cumbersome 
+: can avoid many re-allocations
 ```rust
 let s1 = String::from("tic");
 let s2 = String::from("tac");
 let s3 = String::from("toe");
 let s = format!("{s1}-{s2}-{s3}");
-//"tic-tac-toe"
+//"tic-tac-toe", one allocation
 //equivalent to
 let s = s1 + "-" + &s2 + "-" + &s3;
+//same result but up to 7 reallocations
 ```
+
+#### Indexing into 
 
 ### 08.03 `HashMap`s
 
@@ -132,7 +137,7 @@ let s = s1 + "-" + &s2 + "-" + &s3;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTkxMTU5NTQsLTk5MDQ4OTk5NCwzMj
-U3Mjk2NzcsMTMzMzE2MDU1MSwtMjU5MDczMDI5LDEyNDM2ODM3
-MTFdfQ==
+eyJoaXN0b3J5IjpbMTI1ODcwODQ1MCwtOTkwNDg5OTk0LDMyNT
+cyOTY3NywxMzMzMTYwNTUxLC0yNTkwNzMwMjksMTI0MzY4Mzcx
+MV19
 -->
