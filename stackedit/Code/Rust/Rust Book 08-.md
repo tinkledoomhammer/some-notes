@@ -110,8 +110,10 @@ let s3 = "initial contents".to_string();
 
 `+` operator
 : `fn add(self, s: &str) -> String {...`
-: Consumes both args, and returns the resultant combination
-:
+: Modifies/consumes the self, and returns the resultant combination
+: `s1 + &s2` where both are `String` coerces `&s2` to `&str`
+
+
 
 ### 08.03 `HashMap`s
 
@@ -119,7 +121,7 @@ let s3 = "initial contents".to_string();
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTg2MDkzODYsLTk5MDQ4OTk5NCwzMj
-U3Mjk2NzcsMTMzMzE2MDU1MSwtMjU5MDczMDI5LDEyNDM2ODM3
-MTFdfQ==
+eyJoaXN0b3J5IjpbMTM5Mzg5OTI0NiwtOTkwNDg5OTk0LDMyNT
+cyOTY3NywxMzMzMTYwNTUxLC0yNTkwNzMwMjksMTI0MzY4Mzcx
+MV19
 -->
