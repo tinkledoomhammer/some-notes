@@ -107,7 +107,7 @@ let s3 = "initial contents".to_string();
 * `fn push_str(&mut self, s: &str) ;`
 * takes a `&str` argument and appends it to the end of the string
 
-**push**`
+**push**
 * `s.push('a')` -- adds a single char to the end of the string
 
 `+` operator
@@ -176,7 +176,7 @@ for b in  "Зд".bytes() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODQwNTA0MzksLTk5MDQ4OTk5NCwzMj
-U3Mjk2NzcsMTMzMzE2MDU1MSwtMjU5MDczMDI5LDEyNDM2ODM3
-MTFdfQ==
+eyJoaXN0b3J5IjpbLTEzMTQ4ODM4MDMsLTEyODQwNTA0MzksLT
+k5MDQ4OTk5NCwzMjU3Mjk2NzcsMTMzMzE2MDU1MSwtMjU5MDcz
+MDI5LDEyNDM2ODM3MTFdfQ==
 -->
