@@ -309,6 +309,7 @@ fn main() {
 }
 ```
 **Alternatives to match**
+
 `result.unwrap_or_else(..)`
 : a method that takes a closure and returns the result or sends the error to the closure
 ```rust
@@ -326,12 +327,16 @@ fn main(){
 }
 ```
 
+`result.unwrap()`
+: returns the Ok, or panics on Err
+
+`result.expect
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzY2MDkyMTcsMTc1NTI0MzU2MCwtMT
-UwNjczMjIyNywtMTk3NzM4MDY2NSwtMjAwNTMzNDI2NiwxNTky
-NDA4OTY3LC0xMzE0ODgzODAzLC0xMjg0MDUwNDM5LC05OTA0OD
-k5OTQsMzI1NzI5Njc3LDEzMzMxNjA1NTEsLTI1OTA3MzAyOSwx
-MjQzNjgzNzExXX0=
+eyJoaXN0b3J5IjpbOTY5OTUzMjY1LDE3NTUyNDM1NjAsLTE1MD
+Y3MzIyMjcsLTE5NzczODA2NjUsLTIwMDUzMzQyNjYsMTU5MjQw
+ODk2NywtMTMxNDg4MzgwMywtMTI4NDA1MDQzOSwtOTkwNDg5OT
+k0LDMyNTcyOTY3NywxMzMzMTYwNTUxLC0yNTkwNzMwMjksMTI0
+MzY4MzcxMV19
 -->
