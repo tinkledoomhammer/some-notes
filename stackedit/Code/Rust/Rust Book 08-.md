@@ -212,11 +212,20 @@ map.entry(key2).or_insert(val2);
 //	will return a mutable referrence to the value, assigning one if none is present
 ```
 
+```rust
+use std::collections::HashMap;
+let text = "hello world wonderful world";
+let mut map = HashMap::new();
+for word in text.split_whitespace(){
+	let count = map.entry(word).or_ins
+}
+```
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjg1Mzc0ODgsLTEzMTQ4ODM4MDMsLT
-EyODQwNTA0MzksLTk5MDQ4OTk5NCwzMjU3Mjk2NzcsMTMzMzE2
-MDU1MSwtMjU5MDczMDI5LDEyNDM2ODM3MTFdfQ==
+eyJoaXN0b3J5IjpbMTY4NTkzNzI0NiwtMTMxNDg4MzgwMywtMT
+I4NDA1MDQzOSwtOTkwNDg5OTk0LDMyNTcyOTY3NywxMzMzMTYw
+NTUxLC0yNTkwNzMwMjksMTI0MzY4MzcxMV19
 -->
