@@ -368,6 +368,7 @@ fn read_from_file1() -> Result<String, io::Error>
 
 **Can only be used when the return types are compatible.**
 : It must implement `FromResidual` such as `Result` and `Option`
+: `Result<T,Box<dyn Error>>` works with any `Result`
 
 
 
@@ -375,9 +376,9 @@ fn read_from_file1() -> Result<String, io::Error>
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTEzNTk5MzcsLTExODY4NDgxMzcsMT
-c1NTI0MzU2MCwtMTUwNjczMjIyNywtMTk3NzM4MDY2NSwtMjAw
-NTMzNDI2NiwxNTkyNDA4OTY3LC0xMzE0ODgzODAzLC0xMjg0MD
-UwNDM5LC05OTA0ODk5OTQsMzI1NzI5Njc3LDEzMzMxNjA1NTEs
-LTI1OTA3MzAyOSwxMjQzNjgzNzExXX0=
+eyJoaXN0b3J5IjpbNzI3MzE3OTY1LC0xMTg2ODQ4MTM3LDE3NT
+UyNDM1NjAsLTE1MDY3MzIyMjcsLTE5NzczODA2NjUsLTIwMDUz
+MzQyNjYsMTU5MjQwODk2NywtMTMxNDg4MzgwMywtMTI4NDA1MD
+QzOSwtOTkwNDg5OTk0LDMyNTcyOTY3NywxMzMzMTYwNTUxLC0y
+NTkwNzMwMjksMTI0MzY4MzcxMV19
 -->
