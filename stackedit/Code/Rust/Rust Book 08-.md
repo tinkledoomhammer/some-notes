@@ -338,12 +338,19 @@ fn main(){
 
 ### Propagating Errors
 
+`?` Operator
+: Evaluates to the `Ok` result or causes the function to return the `Err` result
+```rust
+use std::fs::File;
+use std::io::{self, 
+```
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODY4NDgxMzcsMTc1NTI0MzU2MCwtMT
-UwNjczMjIyNywtMTk3NzM4MDY2NSwtMjAwNTMzNDI2NiwxNTky
-NDA4OTY3LC0xMzE0ODgzODAzLC0xMjg0MDUwNDM5LC05OTA0OD
-k5OTQsMzI1NzI5Njc3LDEzMzMxNjA1NTEsLTI1OTA3MzAyOSwx
-MjQzNjgzNzExXX0=
+eyJoaXN0b3J5IjpbMTExNzcxMjc2LC0xMTg2ODQ4MTM3LDE3NT
+UyNDM1NjAsLTE1MDY3MzIyMjcsLTE5NzczODA2NjUsLTIwMDUz
+MzQyNjYsMTU5MjQwODk2NywtMTMxNDg4MzgwMywtMTI4NDA1MD
+QzOSwtOTkwNDg5OTk0LDMyNTcyOTY3NywxMzMzMTYwNTUxLC0y
+NTkwNzMwMjksMTI0MzY4MzcxMV19
 -->
