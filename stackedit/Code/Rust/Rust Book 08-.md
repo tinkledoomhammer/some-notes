@@ -217,15 +217,18 @@ use std::collections::HashMap;
 let text = "hello world wonderful world";
 let mut map = HashMap::new();
 for word in text.split_whitespace(){
-	let count = map.entry(word).or_ins
+	let count = map.entry(word).or_insert(0);
+	*count +=1;
 }
+println!("{map:?}");
+//{"world": 2, "hello: 1, "wonderful:: 1}
 ```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4NTkzNzI0NiwtMTMxNDg4MzgwMywtMT
+eyJoaXN0b3J5IjpbMTU5MjQwODk2NywtMTMxNDg4MzgwMywtMT
 I4NDA1MDQzOSwtOTkwNDg5OTk0LDMyNTcyOTY3NywxMzMzMTYw
 NTUxLC0yNTkwNzMwMjksMTI0MzY4MzcxMV19
 -->
