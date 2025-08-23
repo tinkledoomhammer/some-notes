@@ -263,13 +263,15 @@ crash and burn
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 ```
 
+* a panic will also occur from various bugs, such as attempting to access an array out of bounds
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI2Mjg5MzA0LDE3NTUyNDM1NjAsLTE1MD
-Y3MzIyMjcsLTE5NzczODA2NjUsLTIwMDUzMzQyNjYsMTU5MjQw
-ODk2NywtMTMxNDg4MzgwMywtMTI4NDA1MDQzOSwtOTkwNDg5OT
-k0LDMyNTcyOTY3NywxMzMzMTYwNTUxLC0yNTkwNzMwMjksMTI0
-MzY4MzcxMV19
+eyJoaXN0b3J5IjpbMTUyMzMxMDY0NiwxNzU1MjQzNTYwLC0xNT
+A2NzMyMjI3LC0xOTc3MzgwNjY1LC0yMDA1MzM0MjY2LDE1OTI0
+MDg5NjcsLTEzMTQ4ODM4MDMsLTEyODQwNTA0MzksLTk5MDQ4OT
+k5NCwzMjU3Mjk2NzcsMTMzMzE2MDU1MSwtMjU5MDczMDI5LDEy
+NDM2ODM3MTFdfQ==
 -->
