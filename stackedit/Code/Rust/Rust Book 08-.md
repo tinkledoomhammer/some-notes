@@ -201,13 +201,19 @@ for (key, value) in &scores {
 **Each key can only have one associated value**
 
 ```rust
+map.insert(key1, val1);
+map.insert(key1, val2);
+// key1 => val2
+// insert will replace a value if the key exists
+
+map.entry(key2).or_insert(val2);
+```
 
 
-```	
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTc2MjM1MDgsLTEzMTQ4ODM4MDMsLT
+eyJoaXN0b3J5IjpbLTEzNTQzMDA5NzUsLTEzMTQ4ODM4MDMsLT
 EyODQwNTA0MzksLTk5MDQ4OTk5NCwzMjU3Mjk2NzcsMTMzMzE2
 MDU1MSwtMjU5MDczMDI5LDEyNDM2ODM3MTFdfQ==
 -->
