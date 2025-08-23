@@ -232,14 +232,21 @@ println!("{map:?}");
 ## 08.04 Ownership quiz 2
 
 # 09 Error Handling
-`panic~
+`panic!`
+: macro causes the program to exit immediately 
+
+`Result<T,E>`
+: type used to represent possible errors
+
+
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTAxMDAyNSwtMTUwNjczMjIyNywtMT
+eyJoaXN0b3J5IjpbMTc1NTI0MzU2MCwtMTUwNjczMjIyNywtMT
 k3NzM4MDY2NSwtMjAwNTMzNDI2NiwxNTkyNDA4OTY3LC0xMzE0
 ODgzODAzLC0xMjg0MDUwNDM5LC05OTA0ODk5OTQsMzI1NzI5Nj
 c3LDEzMzMxNjA1NTEsLTI1OTA3MzAyOSwxMjQzNjgzNzExXX0=
