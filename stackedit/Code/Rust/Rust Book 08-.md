@@ -191,7 +191,7 @@ for (key, value) in &scores {
 	println("{key}: {value}");
 }
 
-sc
+scores[somekey] // will panic if `somekey` is not present
 ```
 
 ### Ownership and Updating
@@ -229,11 +229,15 @@ println!("{map:?}");
 ### See Also [Chapter 10](https://rust-book.cs.brown.edu/ch10-02-traits.html) for changing the hash function
 * The built in one is fairly slow for security reasons
 
+## 08.04 Ownership quiz 2
+
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDc3MjcwODYsLTIwMDUzMzQyNjYsMT
+eyJoaXN0b3J5IjpbLTE5NzczODA2NjUsLTIwMDUzMzQyNjYsMT
 U5MjQwODk2NywtMTMxNDg4MzgwMywtMTI4NDA1MDQzOSwtOTkw
 NDg5OTk0LDMyNTcyOTY3NywxMzMzMTYwNTUxLC0yNTkwNzMwMj
 ksMTI0MzY4MzcxMV19
