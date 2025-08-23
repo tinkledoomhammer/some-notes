@@ -366,12 +366,17 @@ fn read_from_file1() -> Result<String, io::Error>
 }
 ```
 
+**Can only be used when the return types are compatible.**
+: 
+
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk2NjQ3MzU5LC0xMTg2ODQ4MTM3LDE3NT
-UyNDM1NjAsLTE1MDY3MzIyMjcsLTE5NzczODA2NjUsLTIwMDUz
-MzQyNjYsMTU5MjQwODk2NywtMTMxNDg4MzgwMywtMTI4NDA1MD
-QzOSwtOTkwNDg5OTk0LDMyNTcyOTY3NywxMzMzMTYwNTUxLC0y
-NTkwNzMwMjksMTI0MzY4MzcxMV19
+eyJoaXN0b3J5IjpbLTQ1NjY1NzY2NywtMTE4Njg0ODEzNywxNz
+U1MjQzNTYwLC0xNTA2NzMyMjI3LC0xOTc3MzgwNjY1LC0yMDA1
+MzM0MjY2LDE1OTI0MDg5NjcsLTEzMTQ4ODM4MDMsLTEyODQwNT
+A0MzksLTk5MDQ4OTk5NCwzMjU3Mjk2NzcsMTMzMzE2MDU1MSwt
+MjU5MDczMDI5LDEyNDM2ODM3MTFdfQ==
 -->
