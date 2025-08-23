@@ -231,16 +231,17 @@ println!("{map:?}");
 
 ## 08.04 Ownership quiz 2
 
-# 08 Error Handling
-
+# 09 Error Handling
+`panic~
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDY3MzIyMjcsLTE5NzczODA2NjUsLT
-IwMDUzMzQyNjYsMTU5MjQwODk2NywtMTMxNDg4MzgwMywtMTI4
-NDA1MDQzOSwtOTkwNDg5OTk0LDMyNTcyOTY3NywxMzMzMTYwNT
-UxLC0yNTkwNzMwMjksMTI0MzY4MzcxMV19
+eyJoaXN0b3J5IjpbLTEwMTAxMDAyNSwtMTUwNjczMjIyNywtMT
+k3NzM4MDY2NSwtMjAwNTMzNDI2NiwxNTkyNDA4OTY3LC0xMzE0
+ODgzODAzLC0xMjg0MDUwNDM5LC05OTA0ODk5OTQsMzI1NzI5Nj
+c3LDEzMzMxNjA1NTEsLTI1OTA3MzAyOSwxMjQzNjgzNzExXX0=
+
 -->
