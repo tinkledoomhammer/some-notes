@@ -192,15 +192,18 @@ for (key, value) in &scores {
 }
 ```
 
-### Ownership
+### Ownership and Updating
 * Values with the `Copy` trait are copied into the hm
 * other values are moved
 * References can be added, and will not move the target of the ref
-	* but the re
+	* but the ref must be valid for at least as long as the hm is valid
+	
+**Each key can only have one associated value**
+	
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUyMDQ4OTcsLTEzMTQ4ODM4MDMsLTEyOD
-QwNTA0MzksLTk5MDQ4OTk5NCwzMjU3Mjk2NzcsMTMzMzE2MDU1
-MSwtMjU5MDczMDI5LDEyNDM2ODM3MTFdfQ==
+eyJoaXN0b3J5IjpbLTI3NjMyOTM3MiwtMTMxNDg4MzgwMywtMT
+I4NDA1MDQzOSwtOTkwNDg5OTk0LDMyNTcyOTY3NywxMzMzMTYw
+NTUxLC0yNTkwNzMwMjksMTI0MzY4MzcxMV19
 -->
