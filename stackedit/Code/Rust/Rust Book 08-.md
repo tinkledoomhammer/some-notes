@@ -342,13 +342,18 @@ fn main(){
 : Evaluates to the `Ok` result or causes the function to return the `Err` result
 ```rust
 use std::fs::File;
-use std::io::{self, 
+use std::io::{self, Read};
+fn read_from_file1() -> Result<String, io::Error> {
+	let mut st = String::new();
+	let file = match File::open("hello.txt") {
+		Ok(fi) => fi,
+		Er
 ```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExNzcxMjc2LC0xMTg2ODQ4MTM3LDE3NT
+eyJoaXN0b3J5IjpbMjIyMTY5NTQwLC0xMTg2ODQ4MTM3LDE3NT
 UyNDM1NjAsLTE1MDY3MzIyMjcsLTE5NzczODA2NjUsLTIwMDUz
 MzQyNjYsMTU5MjQwODk2NywtMTMxNDg4MzgwMywtMTI4NDA1MD
 QzOSwtOTkwNDg5OTk0LDMyNTcyOTY3NywxMzMzMTYwNTUxLC0y
