@@ -246,6 +246,12 @@ println!("{map:?}");
 	* `panic = abort` in the appropriate `[profile]` section i.e. `[profile.release]`
 	* this will force the os to clean up memory, but is a faster and results in a smaller binary
 
+```rust
+fn main() {
+	panic!("crash and burn");
+}
+```
+
 ```bash
 $ cargo run
    Compiling panic v0.1.0 (file:///projects/panic)
@@ -261,7 +267,7 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMTQwOTk3LDE3NTUyNDM1NjAsLTE1MD
+eyJoaXN0b3J5IjpbOTI2Mjg5MzA0LDE3NTUyNDM1NjAsLTE1MD
 Y3MzIyMjcsLTE5NzczODA2NjUsLTIwMDUzMzQyNjYsMTU5MjQw
 ODk2NywtMTMxNDg4MzgwMywtMTI4NDA1MDQzOSwtOTkwNDg5OT
 k0LDMyNTcyOTY3NywxMzMzMTYwNTUxLC0yNTkwNzMwMjksMTI0
