@@ -265,11 +265,16 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
 * a panic will also occur from various bugs, such as attempting to access an array out of bounds
 
+## 09.02 Reocverable `Error`s with `Result`
+```rust
+enum Result<T, E> {
+
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMzMxMDY0NiwxNzU1MjQzNTYwLC0xNT
+eyJoaXN0b3J5IjpbMTY2MDYxNDA3NSwxNzU1MjQzNTYwLC0xNT
 A2NzMyMjI3LC0xOTc3MzgwNjY1LC0yMDA1MzM0MjY2LDE1OTI0
 MDg5NjcsLTEzMTQ4ODM4MDMsLTEyODQwNTA0MzksLTk5MDQ4OT
 k5NCwzMjU3Mjk2NzcsMTMzMzE2MDU1MSwtMjU5MDczMDI5LDEy
