@@ -390,7 +390,8 @@ Tests
 : because `panic!` is how tests are supposed to fail
 
 Cases in which you have more info that the compiler
-: for things that will never fail in
+: for things that will never fail, use `.expect` to document why the code is expected to never fail
+
 
 
 
@@ -398,9 +399,9 @@ Cases in which you have more info that the compiler
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTM1NjQwNjEsLTE2MjYwODE5NjEsLT
-ExODY4NDgxMzcsMTc1NTI0MzU2MCwtMTUwNjczMjIyNywtMTk3
-NzM4MDY2NSwtMjAwNTMzNDI2NiwxNTkyNDA4OTY3LC0xMzE0OD
-gzODAzLC0xMjg0MDUwNDM5LC05OTA0ODk5OTQsMzI1NzI5Njc3
-LDEzMzMxNjA1NTEsLTI1OTA3MzAyOSwxMjQzNjgzNzExXX0=
+eyJoaXN0b3J5IjpbMTQyODk3MTYwMSwtMTYyNjA4MTk2MSwtMT
+E4Njg0ODEzNywxNzU1MjQzNTYwLC0xNTA2NzMyMjI3LC0xOTc3
+MzgwNjY1LC0yMDA1MzM0MjY2LDE1OTI0MDg5NjcsLTEzMTQ4OD
+M4MDMsLTEyODQwNTA0MzksLTk5MDQ4OTk5NCwzMjU3Mjk2Nzcs
+MTMzMzE2MDU1MSwtMjU5MDczMDI5LDEyNDM2ODM3MTFdfQ==
 -->
