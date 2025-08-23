@@ -371,14 +371,20 @@ fn read_from_file1() -> Result<String, io::Error>
 : `Result<T,Box<dyn Error>>` works with any `Result`
 
 
+**Main can return any of a number of different types**
+: They must implement `std::process::Termination`
+: it has a `report` function that returns `ExitCode`
+: the `ExitCode` should be 0 on success, or something else if the program 
+
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI3MzE3OTY1LC0xMTg2ODQ4MTM3LDE3NT
-UyNDM1NjAsLTE1MDY3MzIyMjcsLTE5NzczODA2NjUsLTIwMDUz
-MzQyNjYsMTU5MjQwODk2NywtMTMxNDg4MzgwMywtMTI4NDA1MD
-QzOSwtOTkwNDg5OTk0LDMyNTcyOTY3NywxMzMzMTYwNTUxLC0y
-NTkwNzMwMjksMTI0MzY4MzcxMV19
+eyJoaXN0b3J5IjpbLTkxOTcyMzEyMywtMTE4Njg0ODEzNywxNz
+U1MjQzNTYwLC0xNTA2NzMyMjI3LC0xOTc3MzgwNjY1LC0yMDA1
+MzM0MjY2LDE1OTI0MDg5NjcsLTEzMTQ4ODM4MDMsLTEyODQwNT
+A0MzksLTk5MDQ4OTk5NCwzMjU3Mjk2NzcsMTMzMzE2MDU1MSwt
+MjU5MDczMDI5LDEyNDM2ODM3MTFdfQ==
 -->
