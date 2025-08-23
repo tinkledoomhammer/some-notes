@@ -374,7 +374,9 @@ fn read_from_file1() -> Result<String, io::Error>
 **Main can return any of a number of different types**
 : They must implement `std::process::Termination`
 : it has a `report` function that returns `ExitCode`
-: the `ExitCode` should be 0 on success, or something else if the program 
+: the `ExitCode` should be 0 on success, or something else if the program terminates with an error
+
+
 
 
 
@@ -382,7 +384,7 @@ fn read_from_file1() -> Result<String, io::Error>
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxOTcyMzEyMywtMTE4Njg0ODEzNywxNz
+eyJoaXN0b3J5IjpbLTkzOTcyOTcyMCwtMTE4Njg0ODEzNywxNz
 U1MjQzNTYwLC0xNTA2NzMyMjI3LC0xOTc3MzgwNjY1LC0yMDA1
 MzM0MjY2LDE1OTI0MDg5NjcsLTEzMTQ4ODM4MDMsLTEyODQwNT
 A0MzksLTk5MDQ4OTk5NCwzMjU3Mjk2NzcsMTMzMzE2MDU1MSwt
