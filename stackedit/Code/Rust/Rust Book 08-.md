@@ -176,11 +176,20 @@ for b in  "Зд".bytes() {
 : stores mapping of `K` type keys to `V` type values
 : uses a *hashing function* to determine how keys and values are stored in memory
 
+```rust
+use std::collection::HashMap;
+let mut scores = HashMap::new();
+scores.insert(String::from("Blue"), 10);
+scores.insert(String::fom("Yellow"),50);
+
+let team_name = String::from("Blue");
+let score = scores.get(&team_name)
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMjM5ODM0LC0xMzE0ODgzODAzLC0xMj
-g0MDUwNDM5LC05OTA0ODk5OTQsMzI1NzI5Njc3LDEzMzMxNjA1
-NTEsLTI1OTA3MzAyOSwxMjQzNjgzNzExXX0=
+eyJoaXN0b3J5IjpbLTIxMTk3MzQwMjksLTEzMTQ4ODM4MDMsLT
+EyODQwNTA0MzksLTk5MDQ4OTk5NCwzMjU3Mjk2NzcsMTMzMzE2
+MDU1MSwtMjU5MDczMDI5LDEyNDM2ODM3MTFdfQ==
 -->
