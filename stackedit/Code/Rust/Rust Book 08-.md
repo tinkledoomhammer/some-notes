@@ -238,6 +238,7 @@ println!("{map:?}");
 `Result<T,E>`
 : type used to represent possible errors
 
+## 09.01 Unrecoverable errors with `panic!`
 
 
 
@@ -246,9 +247,9 @@ println!("{map:?}");
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1NTI0MzU2MCwtMTUwNjczMjIyNywtMT
-k3NzM4MDY2NSwtMjAwNTMzNDI2NiwxNTkyNDA4OTY3LC0xMzE0
-ODgzODAzLC0xMjg0MDUwNDM5LC05OTA0ODk5OTQsMzI1NzI5Nj
-c3LDEzMzMxNjA1NTEsLTI1OTA3MzAyOSwxMjQzNjgzNzExXX0=
-
+eyJoaXN0b3J5IjpbNDU0ODczNzQsMTc1NTI0MzU2MCwtMTUwNj
+czMjIyNywtMTk3NzM4MDY2NSwtMjAwNTMzNDI2NiwxNTkyNDA4
+OTY3LC0xMzE0ODgzODAzLC0xMjg0MDUwNDM5LC05OTA0ODk5OT
+QsMzI1NzI5Njc3LDEzMzMxNjA1NTEsLTI1OTA3MzAyOSwxMjQz
+NjgzNzExXX0=
 -->
