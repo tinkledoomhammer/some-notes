@@ -309,17 +309,21 @@ fn main() {
 }
 ```
 **Alternatives to match**
-result.
+`result.unwrap_or_else(..)`
+: a method that takes a closure and returns the result or sends the error to the closure
 ```rust
-
+usie std::{fs::File, io::ErrorKind};
+fn main(){
+	let file = File::open("hello.txt").unwrap_or_else(|error| {
+		if error.kind() == ErrorKind::NotFound
 ```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNjgyMDI2MiwxNzU1MjQzNTYwLC0xNT
-A2NzMyMjI3LC0xOTc3MzgwNjY1LC0yMDA1MzM0MjY2LDE1OTI0
-MDg5NjcsLTEzMTQ4ODM4MDMsLTEyODQwNTA0MzksLTk5MDQ4OT
-k5NCwzMjU3Mjk2NzcsMTMzMzE2MDU1MSwtMjU5MDczMDI5LDEy
-NDM2ODM3MTFdfQ==
+eyJoaXN0b3J5IjpbLTEyMzIyNzc0NTMsMTc1NTI0MzU2MCwtMT
+UwNjczMjIyNywtMTk3NzM4MDY2NSwtMjAwNTMzNDI2NiwxNTky
+NDA4OTY3LC0xMzE0ODgzODAzLC0xMjg0MDUwNDM5LC05OTA0OD
+k5OTQsMzI1NzI5Njc3LDEzMzMxNjA1NTEsLTI1OTA3MzAyOSwx
+MjQzNjgzNzExXX0=
 -->
