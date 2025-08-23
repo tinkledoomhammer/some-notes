@@ -367,16 +367,17 @@ fn read_from_file1() -> Result<String, io::Error>
 ```
 
 **Can only be used when the return types are compatible.**
-: 
+: It must implement `FromResidual` such as `Result` and `Option`
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1NjY1NzY2NywtMTE4Njg0ODEzNywxNz
-U1MjQzNTYwLC0xNTA2NzMyMjI3LC0xOTc3MzgwNjY1LC0yMDA1
-MzM0MjY2LDE1OTI0MDg5NjcsLTEzMTQ4ODM4MDMsLTEyODQwNT
-A0MzksLTk5MDQ4OTk5NCwzMjU3Mjk2NzcsMTMzMzE2MDU1MSwt
-MjU5MDczMDI5LDEyNDM2ODM3MTFdfQ==
+eyJoaXN0b3J5IjpbLTE4OTEzNTk5MzcsLTExODY4NDgxMzcsMT
+c1NTI0MzU2MCwtMTUwNjczMjIyNywtMTk3NzM4MDY2NSwtMjAw
+NTMzNDI2NiwxNTkyNDA4OTY3LC0xMzE0ODgzODAzLC0xMjg0MD
+UwNDM5LC05OTA0ODk5OTQsMzI1NzI5Njc3LDEzMzMxNjA1NTEs
+LTI1OTA3MzAyOSwxMjQzNjgzNzExXX0=
 -->
