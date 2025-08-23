@@ -315,13 +315,21 @@ fn main() {
 usie std::{fs::File, io::ErrorKind};
 fn main(){
 	let file = File::open("hello.txt").unwrap_or_else(|error| {
-		if error.kind() == ErrorKind::NotFound
+		if error.kind() == ErrorKind::NotFound {
+			File::create("hello.txt").unwrap_or_else(|er| {
+				panic!(Couldn't create the file ({er:?})");
+			})
+		} else {
+			pannic!("Other error {error:?}");
+		}
+	});
+}
 ```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzIyNzc0NTMsMTc1NTI0MzU2MCwtMT
+eyJoaXN0b3J5IjpbLTE1MzY2MDkyMTcsMTc1NTI0MzU2MCwtMT
 UwNjczMjIyNywtMTk3NzM4MDY2NSwtMjAwNTMzNDI2NiwxNTky
 NDA4OTY3LC0xMzE0ODgzODAzLC0xMjg0MDUwNDM5LC05OTA0OD
 k5OTQsMzI1NzI5Njc3LDEzMzMxNjA1NTEsLTI1OTA3MzAyOSwx
