@@ -377,7 +377,13 @@ fn read_from_file1() -> Result<String, io::Error>
 : it has a `report` function that returns `ExitCode`
 : the `ExitCode` should be 0 on success, or something else if the program terminates with an error
 
+### 09.03 When to use
 
+Examples
+: Use `.unwrap()` for readability
+
+Prototype Code
+: use `.unwrap` and `.expect`
 
 
 
@@ -385,9 +391,9 @@ fn read_from_file1() -> Result<String, io::Error>
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjYwODE5NjEsLTExODY4NDgxMzcsMT
-c1NTI0MzU2MCwtMTUwNjczMjIyNywtMTk3NzM4MDY2NSwtMjAw
-NTMzNDI2NiwxNTkyNDA4OTY3LC0xMzE0ODgzODAzLC0xMjg0MD
-UwNDM5LC05OTA0ODk5OTQsMzI1NzI5Njc3LDEzMzMxNjA1NTEs
-LTI1OTA3MzAyOSwxMjQzNjgzNzExXX0=
+eyJoaXN0b3J5IjpbMTQwNzgzMjczMiwtMTYyNjA4MTk2MSwtMT
+E4Njg0ODEzNywxNzU1MjQzNTYwLC0xNTA2NzMyMjI3LC0xOTc3
+MzgwNjY1LC0yMDA1MzM0MjY2LDE1OTI0MDg5NjcsLTEzMTQ4OD
+M4MDMsLTEyODQwNTA0MzksLTk5MDQ4OTk5NCwzMjU3Mjk2Nzcs
+MTMzMzE2MDU1MSwtMjU5MDczMDI5LDEyNDM2ODM3MTFdfQ==
 -->
