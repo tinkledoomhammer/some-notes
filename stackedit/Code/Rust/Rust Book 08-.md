@@ -172,11 +172,15 @@ for b in  "Зд".bytes() {
 
 ## 08.03 `HashMap`s
 
+`HashMap<K, V>`
+: stores mapping of `K` type keys to `V` type values
+: uses a *hashing function* to determine how keys and values are stored in memory
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTQ4ODM4MDMsLTEyODQwNTA0MzksLT
-k5MDQ4OTk5NCwzMjU3Mjk2NzcsMTMzMzE2MDU1MSwtMjU5MDcz
-MDI5LDEyNDM2ODM3MTFdfQ==
+eyJoaXN0b3J5IjpbMTIwMjM5ODM0LC0xMzE0ODgzODAzLC0xMj
+g0MDUwNDM5LC05OTA0ODk5OTQsMzI1NzI5Njc3LDEzMzMxNjA1
+NTEsLTI1OTA3MzAyOSwxMjQzNjgzNzExXX0=
 -->
