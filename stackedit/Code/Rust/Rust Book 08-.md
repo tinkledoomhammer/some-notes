@@ -343,14 +343,7 @@ fn main(){
 ```rust
 use std::fs::File;
 use std::io::{self, Read};
-fn read_from_file1() -> Result<String, io::Error> {
-	let mut st = String::new();
-	let mut file = match File::open("hello.txt") {
-		Ok(fi) => fi,
-		Err(error) => return Err(error),
-	}
-	file.read_to_string(&mut st)
-}
+
 //Is a shorter version of the following
 fn read_from_file2() -> Result<String, io::Error> {
 	let file_result = File::open("hello.txt");
@@ -369,9 +362,9 @@ fn read_from_file2() -> Result<String, io::Error> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTM0MDQxMjksLTExODY4NDgxMzcsMT
-c1NTI0MzU2MCwtMTUwNjczMjIyNywtMTk3NzM4MDY2NSwtMjAw
-NTMzNDI2NiwxNTkyNDA4OTY3LC0xMzE0ODgzODAzLC0xMjg0MD
-UwNDM5LC05OTA0ODk5OTQsMzI1NzI5Njc3LDEzMzMxNjA1NTEs
-LTI1OTA3MzAyOSwxMjQzNjgzNzExXX0=
+eyJoaXN0b3J5IjpbMTQyODE2NzM5MywtMTE4Njg0ODEzNywxNz
+U1MjQzNTYwLC0xNTA2NzMyMjI3LC0xOTc3MzgwNjY1LC0yMDA1
+MzM0MjY2LDE1OTI0MDg5NjcsLTEzMTQ4ODM4MDMsLTEyODQwNT
+A0MzksLTk5MDQ4OTk5NCwzMjU3Mjk2NzcsMTMzMzE2MDU1MSwt
+MjU5MDczMDI5LDEyNDM2ODM3MTFdfQ==
 -->
