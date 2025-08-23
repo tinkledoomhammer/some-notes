@@ -240,6 +240,10 @@ println!("{map:?}");
 
 ## 09.01 Unrecoverable errors with `panic!`
 
+### Unwinding vs Aborting
+* By default panics cause the stack to unwind, deallocating memory as it goes
+* alternatively the binary can be compiled to abort
+	* `panic = abort` in the appropriate 
 
 
 
@@ -247,9 +251,9 @@ println!("{map:?}");
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU0ODczNzQsMTc1NTI0MzU2MCwtMTUwNj
-czMjIyNywtMTk3NzM4MDY2NSwtMjAwNTMzNDI2NiwxNTkyNDA4
-OTY3LC0xMzE0ODgzODAzLC0xMjg0MDUwNDM5LC05OTA0ODk5OT
-QsMzI1NzI5Njc3LDEzMzMxNjA1NTEsLTI1OTA3MzAyOSwxMjQz
-NjgzNzExXX0=
+eyJoaXN0b3J5IjpbLTg3MTg5ODg1NiwxNzU1MjQzNTYwLC0xNT
+A2NzMyMjI3LC0xOTc3MzgwNjY1LC0yMDA1MzM0MjY2LDE1OTI0
+MDg5NjcsLTEzMTQ4ODM4MDMsLTEyODQwNTA0MzksLTk5MDQ4OT
+k5NCwzMjU3Mjk2NzcsMTMzMzE2MDU1MSwtMjU5MDczMDI5LDEy
+NDM2ODM3MTFdfQ==
 -->
