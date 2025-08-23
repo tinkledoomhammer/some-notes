@@ -279,13 +279,24 @@ use std::io::Error;
 let file_result: Result<File,Error> = File::Open("text.txt");
 ```
 
-* `Ok` and `Err` are in scope from the standard prelude and 
+* `Ok` and `Err` are in scope from the standard prelude and don't require the `Result::` prefix
+
+### Matching errors
+```rust
+use std::fs::File;
+fn main() {
+	let file_result = File::open("hello.txt");
+	let file = match file_result {
+		
+	}
+}
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwNjAyMTY1OCwxNzU1MjQzNTYwLC0xNT
-A2NzMyMjI3LC0xOTc3MzgwNjY1LC0yMDA1MzM0MjY2LDE1OTI0
-MDg5NjcsLTEzMTQ4ODM4MDMsLTEyODQwNTA0MzksLTk5MDQ4OT
-k5NCwzMjU3Mjk2NzcsMTMzMzE2MDU1MSwtMjU5MDczMDI5LDEy
-NDM2ODM3MTFdfQ==
+eyJoaXN0b3J5IjpbLTE5MjQ5MzgzMTcsMTc1NTI0MzU2MCwtMT
+UwNjczMjIyNywtMTk3NzM4MDY2NSwtMjAwNTMzNDI2NiwxNTky
+NDA4OTY3LC0xMzE0ODgzODAzLC0xMjg0MDUwNDM5LC05OTA0OD
+k5OTQsMzI1NzI5Njc3LDEzMzMxNjA1NTEsLTI1OTA3MzAyOSwx
+MjQzNjgzNzExXX0=
 -->
