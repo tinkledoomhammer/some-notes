@@ -224,11 +224,15 @@ println!("{map:?}");
 //{"world": 2, "hello: 1, "wonderful:: 1}
 ```
 
+### See Also [Chapter 10](https://rust-book.cs.brown.edu/ch10-02-traits.html) for changing the hash function
+* The built in one is fairly slow for security reasons
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MjQwODk2NywtMTMxNDg4MzgwMywtMT
-I4NDA1MDQzOSwtOTkwNDg5OTk0LDMyNTcyOTY3NywxMzMzMTYw
-NTUxLC0yNTkwNzMwMjksMTI0MzY4MzcxMV19
+eyJoaXN0b3J5IjpbLTIwMDUzMzQyNjYsMTU5MjQwODk2NywtMT
+MxNDg4MzgwMywtMTI4NDA1MDQzOSwtOTkwNDg5OTk0LDMyNTcy
+OTY3NywxMzMzMTYwNTUxLC0yNTkwNzMwMjksMTI0MzY4MzcxMV
+19
 -->
