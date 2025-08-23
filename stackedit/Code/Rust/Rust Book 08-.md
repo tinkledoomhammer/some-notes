@@ -190,6 +190,8 @@ let score = scores.get(&team_name).copied().unwrap_or(0);
 for (key, value) in &scores {
 	println("{key}: {value}");
 }
+
+sc
 ```
 
 ### Ownership and Updating
@@ -231,8 +233,8 @@ println!("{map:?}");
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDUzMzQyNjYsMTU5MjQwODk2NywtMT
-MxNDg4MzgwMywtMTI4NDA1MDQzOSwtOTkwNDg5OTk0LDMyNTcy
-OTY3NywxMzMzMTYwNTUxLC0yNTkwNzMwMjksMTI0MzY4MzcxMV
-19
+eyJoaXN0b3J5IjpbLTEzMDc3MjcwODYsLTIwMDUzMzQyNjYsMT
+U5MjQwODk2NywtMTMxNDg4MzgwMywtMTI4NDA1MDQzOSwtOTkw
+NDg5OTk0LDMyNTcyOTY3NywxMzMzMTYwNTUxLC0yNTkwNzMwMj
+ksMTI0MzY4MzcxMV19
 -->
