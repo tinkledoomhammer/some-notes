@@ -328,13 +328,15 @@ fn main(){
 ```
 
 `result.unwrap()`
-: returns the Ok, or panics on Err
+: returns the `Ok`, or panics on `Err`
 
-`result.expect
+`result.expect(msg: &str)`
+: returns the `Ok`, or panics with the specified error message on `Err`
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY5OTUzMjY1LDE3NTUyNDM1NjAsLTE1MD
+eyJoaXN0b3J5IjpbNzcwOTIyNDk5LDE3NTUyNDM1NjAsLTE1MD
 Y3MzIyMjcsLTE5NzczODA2NjUsLTIwMDUzMzQyNjYsMTU5MjQw
 ODk2NywtMTMxNDg4MzgwMywtMTI4NDA1MDQzOSwtOTkwNDg5OT
 k0LDMyNTcyOTY3NywxMzMzMTYwNTUxLC0yNTkwNzMwMjksMTI0
