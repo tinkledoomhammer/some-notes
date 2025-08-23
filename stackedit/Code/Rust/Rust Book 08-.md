@@ -300,14 +300,20 @@ fn main() {
 		Ok(file) => file,
 		Err(error) => match error.kind() {
 			ErrorKind::NotFound => match File::create("hello.txt") {
-			
+				Ok(fc) => fc,
+				Err(e) => panic!("Can't create file: {e:?}"),
+			},
+			_ => panic!("Can't open file: {error:?}"),
+		}
+	};
+}
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3ODQ1MzY0MywxNzU1MjQzNTYwLC0xNT
-A2NzMyMjI3LC0xOTc3MzgwNjY1LC0yMDA1MzM0MjY2LDE1OTI0
-MDg5NjcsLTEzMTQ4ODM4MDMsLTEyODQwNTA0MzksLTk5MDQ4OT
-k5NCwzMjU3Mjk2NzcsMTMzMzE2MDU1MSwtMjU5MDczMDI5LDEy
-NDM2ODM3MTFdfQ==
+eyJoaXN0b3J5IjpbNTMwNjgzODUzLDE3NTUyNDM1NjAsLTE1MD
+Y3MzIyMjcsLTE5NzczODA2NjUsLTIwMDUzMzQyNjYsMTU5MjQw
+ODk2NywtMTMxNDg4MzgwMywtMTI4NDA1MDQzOSwtOTkwNDg5OT
+k0LDMyNTcyOTY3NywxMzMzMTYwNTUxLC0yNTkwNzMwMjksMTI0
+MzY4MzcxMV19
 -->
