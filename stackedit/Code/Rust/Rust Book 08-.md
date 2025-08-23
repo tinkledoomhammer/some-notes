@@ -172,6 +172,8 @@ for b in  "Зд".bytes() {
 
 ## 08.03 `HashMap`s
 
+### Creating and using `HashMap`s
+
 `HashMap<K, V>`
 : stores mapping of `K` type keys to `V` type values
 : uses a *hashing function* to determine how keys and values are stored in memory
@@ -183,13 +185,18 @@ scores.insert(String::from("Blue"), 10);
 scores.insert(String::fom("Yellow"),50);
 
 let team_name = String::from("Blue");
-let score = scores.get(&team_name)
+let score = scores.get(&team_name).copied().unwrap_or(0);
+
+for (key, value) in &scores {
+	println("{key}: {value}");
+}
 ```
 
+### Ownership
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTk3MzQwMjksLTEzMTQ4ODM4MDMsLT
-EyODQwNTA0MzksLTk5MDQ4OTk5NCwzMjU3Mjk2NzcsMTMzMzE2
-MDU1MSwtMjU5MDczMDI5LDEyNDM2ODM3MTFdfQ==
+eyJoaXN0b3J5IjpbMTc2NDY1MDk4MiwtMTMxNDg4MzgwMywtMT
+I4NDA1MDQzOSwtOTkwNDg5OTk0LDMyNTcyOTY3NywxMzMzMTYw
+NTUxLC0yNTkwNzMwMjksMTI0MzY4MzcxMV19
 -->
