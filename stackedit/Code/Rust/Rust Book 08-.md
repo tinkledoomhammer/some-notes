@@ -345,17 +345,22 @@ use std::fs::File;
 use std::io::{self, Read};
 fn read_from_file1() -> Result<String, io::Error> {
 	let mut st = String::new();
-	let file = match File::open("hello.txt") {
+	let mut file = match File::open("hello.txt") {
 		Ok(fi) => fi,
 		Err(error) => return Err(error),
 	}
 	file.read_to_string(&mut st)
+}
+//Is a shorter version of the following
+fn read_from_file2() -> Result<String, io::Error> {
+	let file_result = File::open("hello.txt");
+	let mut file = 
 ```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExOTE3OTA1MSwtMTE4Njg0ODEzNywxNz
+eyJoaXN0b3J5IjpbLTEwOTkyNjczMCwtMTE4Njg0ODEzNywxNz
 U1MjQzNTYwLC0xNTA2NzMyMjI3LC0xOTc3MzgwNjY1LC0yMDA1
 MzM0MjY2LDE1OTI0MDg5NjcsLTEzMTQ4ODM4MDMsLTEyODQwNT
 A0MzksLTk5MDQ4OTk5NCwzMjU3Mjk2NzcsMTMzMzE2MDU1MSwt
