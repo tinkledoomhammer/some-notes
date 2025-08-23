@@ -295,12 +295,17 @@ fn main() {
 // or to match the kind of error
 use std::io::ErrorKind;
 fn main() {
-	let file_result = match fi
+	let file_result = match File::open("hello.txt");
+	let file = match file_result{
+		Ok(file) => file,
+		Err(error) => match error.kind() {
+			ErrorKind::NotFound => match File::create("hello.txt") {
+			
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNjgyNDE0MywxNzU1MjQzNTYwLC0xNT
+eyJoaXN0b3J5IjpbLTk3ODQ1MzY0MywxNzU1MjQzNTYwLC0xNT
 A2NzMyMjI3LC0xOTc3MzgwNjY1LC0yMDA1MzM0MjY2LDE1OTI0
 MDg5NjcsLTEzMTQ4ODM4MDMsLTEyODQwNTA0MzksLTk5MDQ4OT
 k5NCwzMjU3Mjk2NzcsMTMzMzE2MDU1MSwtMjU5MDczMDI5LDEy
