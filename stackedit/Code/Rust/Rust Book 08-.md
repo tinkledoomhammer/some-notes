@@ -287,16 +287,22 @@ use std::fs::File;
 fn main() {
 	let file_result = File::open("hello.txt");
 	let file = match file_result {
-		
-	}
+		Ok(file) => file,
+		Err(error) => panic!("Problem opening file: {error:?}"),
+	};
 }
+
+// or to match the kind of error
+use std::io::ErrorKind;
+fn main() {
+	let file_result = match fi
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjQ5MzgzMTcsMTc1NTI0MzU2MCwtMT
-UwNjczMjIyNywtMTk3NzM4MDY2NSwtMjAwNTMzNDI2NiwxNTky
-NDA4OTY3LC0xMzE0ODgzODAzLC0xMjg0MDUwNDM5LC05OTA0OD
-k5OTQsMzI1NzI5Njc3LDEzMzMxNjA1NTEsLTI1OTA3MzAyOSwx
-MjQzNjgzNzExXX0=
+eyJoaXN0b3J5IjpbMTgwNjgyNDE0MywxNzU1MjQzNTYwLC0xNT
+A2NzMyMjI3LC0xOTc3MzgwNjY1LC0yMDA1MzM0MjY2LDE1OTI0
+MDg5NjcsLTEzMTQ4ODM4MDMsLTEyODQwNTA0MzksLTk5MDQ4OT
+k5NCwzMjU3Mjk2NzcsMTMzMzE2MDU1MSwtMjU5MDczMDI5LDEy
+NDM2ODM3MTFdfQ==
 -->
