@@ -207,13 +207,16 @@ map.insert(key1, val2);
 // insert will replace a value if the key exists
 
 map.entry(key2).or_insert(val2);
+//the entry() method returns an Entry enum
+//the Entry.or_isert(val) method
+//	will return a mutable referrence to the value, assigning one if none is present
 ```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTQzMDA5NzUsLTEzMTQ4ODM4MDMsLT
+eyJoaXN0b3J5IjpbLTEyMjg1Mzc0ODgsLTEzMTQ4ODM4MDMsLT
 EyODQwNTA0MzksLTk5MDQ4OTk5NCwzMjU3Mjk2NzcsMTMzMzE2
 MDU1MSwtMjU5MDczMDI5LDEyNDM2ODM3MTFdfQ==
 -->
