@@ -199,11 +199,15 @@ for (key, value) in &scores {
 	* but the ref must be valid for at least as long as the hm is valid
 	
 **Each key can only have one associated value**
-	
+
+```rust
+
+
+```	
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NjMyOTM3MiwtMTMxNDg4MzgwMywtMT
-I4NDA1MDQzOSwtOTkwNDg5OTk0LDMyNTcyOTY3NywxMzMzMTYw
-NTUxLC0yNTkwNzMwMjksMTI0MzY4MzcxMV19
+eyJoaXN0b3J5IjpbLTE4NTc2MjM1MDgsLTEzMTQ4ODM4MDMsLT
+EyODQwNTA0MzksLTk5MDQ4OTk5NCwzMjU3Mjk2NzcsMTMzMzE2
+MDU1MSwtMjU5MDczMDI5LDEyNDM2ODM3MTFdfQ==
 -->
