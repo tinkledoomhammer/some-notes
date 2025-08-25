@@ -414,13 +414,14 @@ bad state
 * the type's `new` function or other constructor functions can panic when given invalid inputs
 * this means that the caller has to validate the input first to avoid the panic
 
+## 10 Generic Types, Traits, and Lifetimes
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzNTgxMDA3OCwtNjU0MTkyMDY1LDE0Mj
+eyJoaXN0b3J5IjpbMTc1MDcwOTAzMSwtNjU0MTkyMDY1LDE0Mj
 g5NzE2MDEsLTE2MjYwODE5NjEsLTExODY4NDgxMzcsMTc1NTI0
 MzU2MCwtMTUwNjczMjIyNywtMTk3NzM4MDY2NSwtMjAwNTMzND
 I2NiwxNTkyNDA4OTY3LC0xMzE0ODgzODAzLC0xMjg0MDUwNDM5
