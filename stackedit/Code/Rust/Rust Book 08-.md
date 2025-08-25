@@ -401,15 +401,16 @@ bad state
 : * subsequent code needs to rely on not being in a bad state (rather than checking for problems at every step
 : * there is no good way to encode this information in types see [“Encoding States and Behavior as Types”](https://rust-book.cs.brown.edu/ch18-03-oo-design-patterns.html#encoding-states-and-behavior-as-types) 
 
-Some reasons to panic
+**Some reasons to panic**
 * continuing could be insecure or harmful
 * when calling external code and there is no way to fix the problem
 * Invalid inputs from code. The user code should coder needs to fix the problem, not the code. i.e. the solution is to stop sending bad arguments
 
 
-Some reasons not to panic
+**Some reasons not to panic**
 * when failure is expected sometimes
 
+#### Creating custom types for validation
 
 
 
@@ -417,7 +418,7 @@ Some reasons not to panic
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNTQwOTE2NSwtNjU0MTkyMDY1LDE0Mj
+eyJoaXN0b3J5IjpbMjA4MzE2NTI3MiwtNjU0MTkyMDY1LDE0Mj
 g5NzE2MDEsLTE2MjYwODE5NjEsLTExODY4NDgxMzcsMTc1NTI0
 MzU2MCwtMTUwNjczMjIyNywtMTk3NzM4MDY2NSwtMjAwNTMzND
 I2NiwxNTkyNDA4OTY3LC0xMzE0ODgzODAzLC0xMjg0MDUwNDM5
