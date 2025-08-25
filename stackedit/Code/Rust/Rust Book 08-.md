@@ -402,7 +402,11 @@ bad state
 : * there is no good way to encode this information in types see [“Encoding States and Behavior as Types”](https://rust-book.cs.brown.edu/ch18-03-oo-design-patterns.html#encoding-states-and-behavior-as-types) 
 
 Some reasons to panic
+* continuing could be insecure or harmful
+* when calling external code and there is no way to fix the problem
 
+Some reasons not to panic
+* when failure is expected sometimes
 
 
 
@@ -411,10 +415,10 @@ Some reasons to panic
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNjk2NjEwNiwtNjU0MTkyMDY1LDE0Mj
-g5NzE2MDEsLTE2MjYwODE5NjEsLTExODY4NDgxMzcsMTc1NTI0
-MzU2MCwtMTUwNjczMjIyNywtMTk3NzM4MDY2NSwtMjAwNTMzND
-I2NiwxNTkyNDA4OTY3LC0xMzE0ODgzODAzLC0xMjg0MDUwNDM5
-LC05OTA0ODk5OTQsMzI1NzI5Njc3LDEzMzMxNjA1NTEsLTI1OT
-A3MzAyOSwxMjQzNjgzNzExXX0=
+eyJoaXN0b3J5IjpbLTIwODk5NDM1NjMsLTY1NDE5MjA2NSwxND
+I4OTcxNjAxLC0xNjI2MDgxOTYxLC0xMTg2ODQ4MTM3LDE3NTUy
+NDM1NjAsLTE1MDY3MzIyMjcsLTE5NzczODA2NjUsLTIwMDUzMz
+QyNjYsMTU5MjQwODk2NywtMTMxNDg4MzgwMywtMTI4NDA1MDQz
+OSwtOTkwNDg5OTk0LDMyNTcyOTY3NywxMzMzMTYwNTUxLC0yNT
+kwNzMwMjksMTI0MzY4MzcxMV19
 -->
