@@ -395,7 +395,10 @@ Cases in which you have more info that the compiler
 #### Guidelines for error handling
 
 bad state
-: 
+: when some assumption, guarantee, contract, or invariant has been borken
+: i.e. invalid, contradictory, or missing values are passed to your code plus at least on of
+: * the state is unexpected, rather than occasionally expected.
+: * subsequent code 
 
 
 
@@ -404,10 +407,10 @@ bad state
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDIzNjg2OTAsLTY1NDE5MjA2NSwxND
-I4OTcxNjAxLC0xNjI2MDgxOTYxLC0xMTg2ODQ4MTM3LDE3NTUy
-NDM1NjAsLTE1MDY3MzIyMjcsLTE5NzczODA2NjUsLTIwMDUzMz
-QyNjYsMTU5MjQwODk2NywtMTMxNDg4MzgwMywtMTI4NDA1MDQz
-OSwtOTkwNDg5OTk0LDMyNTcyOTY3NywxMzMzMTYwNTUxLC0yNT
-kwNzMwMjksMTI0MzY4MzcxMV19
+eyJoaXN0b3J5IjpbOTE1MDg4Njg0LC02NTQxOTIwNjUsMTQyOD
+k3MTYwMSwtMTYyNjA4MTk2MSwtMTE4Njg0ODEzNywxNzU1MjQz
+NTYwLC0xNTA2NzMyMjI3LC0xOTc3MzgwNjY1LC0yMDA1MzM0Mj
+Y2LDE1OTI0MDg5NjcsLTEzMTQ4ODM4MDMsLTEyODQwNTA0Mzks
+LTk5MDQ4OTk5NCwzMjU3Mjk2NzcsMTMzMzE2MDU1MSwtMjU5MD
+czMDI5LDEyNDM2ODM3MTFdfQ==
 -->
