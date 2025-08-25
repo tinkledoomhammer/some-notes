@@ -392,6 +392,10 @@ Tests
 Cases in which you have more info that the compiler
 : for things that will never fail, use `.expect` to document why the code is expected to never fail
 
+#### Guidelines for error handling
+
+bad state
+: 
 
 
 
@@ -400,10 +404,10 @@ Cases in which you have more info that the compiler
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1NDE5MjA2NSwxNDI4OTcxNjAxLC0xNj
-I2MDgxOTYxLC0xMTg2ODQ4MTM3LDE3NTUyNDM1NjAsLTE1MDY3
-MzIyMjcsLTE5NzczODA2NjUsLTIwMDUzMzQyNjYsMTU5MjQwOD
-k2NywtMTMxNDg4MzgwMywtMTI4NDA1MDQzOSwtOTkwNDg5OTk0
-LDMyNTcyOTY3NywxMzMzMTYwNTUxLC0yNTkwNzMwMjksMTI0Mz
-Y4MzcxMV19
+eyJoaXN0b3J5IjpbLTE4NDIzNjg2OTAsLTY1NDE5MjA2NSwxND
+I4OTcxNjAxLC0xNjI2MDgxOTYxLC0xMTg2ODQ4MTM3LDE3NTUy
+NDM1NjAsLTE1MDY3MzIyMjcsLTE5NzczODA2NjUsLTIwMDUzMz
+QyNjYsMTU5MjQwODk2NywtMTMxNDg4MzgwMywtMTI4NDA1MDQz
+OSwtOTkwNDg5OTk0LDMyNTcyOTY3NywxMzMzMTYwNTUxLC0yNT
+kwNzMwMjksMTI0MzY4MzcxMV19
 -->
