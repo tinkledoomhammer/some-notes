@@ -398,7 +398,11 @@ bad state
 : when some assumption, guarantee, contract, or invariant has been borken
 : i.e. invalid, contradictory, or missing values are passed to your code plus at least on of
 : * the state is unexpected, rather than occasionally expected.
-: * subsequent code 
+: * subsequent code needs to rely on not being in a bad state (rather than checking for problems at every step
+: * there is no good way to encode this information in types see [“Encoding States and Behavior as Types”](https://rust-book.cs.brown.edu/ch18-03-oo-design-patterns.html#encoding-states-and-behavior-as-types) 
+
+Some reasons to panic
+
 
 
 
@@ -407,10 +411,10 @@ bad state
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE1MDg4Njg0LC02NTQxOTIwNjUsMTQyOD
-k3MTYwMSwtMTYyNjA4MTk2MSwtMTE4Njg0ODEzNywxNzU1MjQz
-NTYwLC0xNTA2NzMyMjI3LC0xOTc3MzgwNjY1LC0yMDA1MzM0Mj
-Y2LDE1OTI0MDg5NjcsLTEzMTQ4ODM4MDMsLTEyODQwNTA0Mzks
-LTk5MDQ4OTk5NCwzMjU3Mjk2NzcsMTMzMzE2MDU1MSwtMjU5MD
-czMDI5LDEyNDM2ODM3MTFdfQ==
+eyJoaXN0b3J5IjpbMTIwNjk2NjEwNiwtNjU0MTkyMDY1LDE0Mj
+g5NzE2MDEsLTE2MjYwODE5NjEsLTExODY4NDgxMzcsMTc1NTI0
+MzU2MCwtMTUwNjczMjIyNywtMTk3NzM4MDY2NSwtMjAwNTMzND
+I2NiwxNTkyNDA4OTY3LC0xMzE0ODgzODAzLC0xMjg0MDUwNDM5
+LC05OTA0ODk5OTQsMzI1NzI5Njc3LDEzMzMxNjA1NTEsLTI1OT
+A3MzAyOSwxMjQzNjgzNzExXX0=
 -->
