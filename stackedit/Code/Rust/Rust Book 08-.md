@@ -417,16 +417,28 @@ bad state
 ## 10 Generic Types, Traits, and Lifetimes
 ### 10.01 Generic Data Types
 #### In Function Definitions
+```rust
+fn largest<T> (List: &[T]) -> &T {
+	let mut largest = &list[0];
+	for item in list {
+		if item > largest {
+			largest = item;
+		}
+	}
+	largest
+}
 
+
+```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ4MDMzODMsMTc1MDcwOTAzMSwtNjU0MT
-kyMDY1LDE0Mjg5NzE2MDEsLTE2MjYwODE5NjEsLTExODY4NDgx
-MzcsMTc1NTI0MzU2MCwtMTUwNjczMjIyNywtMTk3NzM4MDY2NS
-wtMjAwNTMzNDI2NiwxNTkyNDA4OTY3LC0xMzE0ODgzODAzLC0x
-Mjg0MDUwNDM5LC05OTA0ODk5OTQsMzI1NzI5Njc3LDEzMzMxNj
-A1NTEsLTI1OTA3MzAyOSwxMjQzNjgzNzExXX0=
+eyJoaXN0b3J5IjpbLTQ2OTY2NTM2LDE3NTA3MDkwMzEsLTY1ND
+E5MjA2NSwxNDI4OTcxNjAxLC0xNjI2MDgxOTYxLC0xMTg2ODQ4
+MTM3LDE3NTUyNDM1NjAsLTE1MDY3MzIyMjcsLTE5NzczODA2Nj
+UsLTIwMDUzMzQyNjYsMTU5MjQwODk2NywtMTMxNDg4MzgwMywt
+MTI4NDA1MDQzOSwtOTkwNDg5OTk0LDMyNTcyOTY3NywxMzMzMT
+YwNTUxLC0yNTkwNzMwMjksMTI0MzY4MzcxMV19
 -->
