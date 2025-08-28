@@ -617,10 +617,11 @@ output lifetimes
 : the lifetimes of return values
 
 The lifetime elision rules
-1. the compiler assigns a different lifetime to each input parameter
+1. the compiler assigns a different lifetime parameters to each input
 2. If there is exactly one input lifetime, then it is assigned to all output lifetime parameters
-3. if there are multiple input lifetime parametes, but one is `&self` or `&mut self`, the lifetime of `self` is assigned to all output lifetime parameters
-4. Ot
+3. if there are multiple input lifetime parameters, but one is `&self` or `&mut self`, the lifetime of `self` is assigned to all output lifetime parameters
+4. Otherwise explicit lifetime parameters are required
+
 
 
 
@@ -637,7 +638,7 @@ The lifetime elision rules
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0ODE4NTI4NCwtMTQyMDE2ODk1NSwxMD
+eyJoaXN0b3J5IjpbLTI3NzI4MzY1NiwtMTQyMDE2ODk1NSwxMD
 Q3NzI1ODMsMTcwNTI2MDMyMSwtMTMxOTA0OTkyNiwxNTgxMjQ4
 NTA5LDExMzgyNTIyNSwxNDMxNzQxMjEzLDE2OTc0OTM3MDcsLT
 Q2OTY2NTM2LDE3NTA3MDkwMzEsLTY1NDE5MjA2NSwxNDI4OTcx
