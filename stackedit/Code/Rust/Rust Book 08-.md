@@ -638,7 +638,17 @@ impl<'a> Excerpt<'a> {...}
 ** Combined example Type params, trait bounds, and lifetimes **
 ```rust
 use std::fmt::Display;
-fn longest_with_announnce<'a, T>
+fn longest_with_ann<'a, T>(
+	x: &'a str,
+	y: &'a str,
+	ann: T,
+) -> &'a str
+where
+	T: Display,
+{
+	println!("Announcement! {ann}");
+	if x.len() > y.len() {x} else {y}
+}
 
 ```
 
@@ -655,11 +665,11 @@ fn longest_with_announnce<'a, T>
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjA4NDk2NTYsMTQ3OTU3NzI3MiwtMT
-QyMDE2ODk1NSwxMDQ3NzI1ODMsMTcwNTI2MDMyMSwtMTMxOTA0
-OTkyNiwxNTgxMjQ4NTA5LDExMzgyNTIyNSwxNDMxNzQxMjEzLD
-E2OTc0OTM3MDcsLTQ2OTY2NTM2LDE3NTA3MDkwMzEsLTY1NDE5
-MjA2NSwxNDI4OTcxNjAxLC0xNjI2MDgxOTYxLC0xMTg2ODQ4MT
-M3LDE3NTUyNDM1NjAsLTE1MDY3MzIyMjcsLTE5NzczODA2NjUs
-LTIwMDUzMzQyNjZdfQ==
+eyJoaXN0b3J5IjpbMTYwMTQwNzMxMywxNDc5NTc3MjcyLC0xND
+IwMTY4OTU1LDEwNDc3MjU4MywxNzA1MjYwMzIxLC0xMzE5MDQ5
+OTI2LDE1ODEyNDg1MDksMTEzODI1MjI1LDE0MzE3NDEyMTMsMT
+Y5NzQ5MzcwNywtNDY5NjY1MzYsMTc1MDcwOTAzMSwtNjU0MTky
+MDY1LDE0Mjg5NzE2MDEsLTE2MjYwODE5NjEsLTExODY4NDgxMz
+csMTc1NTI0MzU2MCwtMTUwNjczMjIyNywtMTk3NzM4MDY2NSwt
+MjAwNTMzNDI2Nl19
 -->
