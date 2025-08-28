@@ -652,7 +652,14 @@ where
 
 ```
 
-
+**Quiz**
+```rust
+//the following will not compile
+struc Foo<'a> {
+	bar: &'a i32,
+}
+fn baz(f: &Foo) -> &i32 {/* .
+```
 
 
 
@@ -665,11 +672,11 @@ where
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMTQwNzMxMywxNDc5NTc3MjcyLC0xND
-IwMTY4OTU1LDEwNDc3MjU4MywxNzA1MjYwMzIxLC0xMzE5MDQ5
-OTI2LDE1ODEyNDg1MDksMTEzODI1MjI1LDE0MzE3NDEyMTMsMT
-Y5NzQ5MzcwNywtNDY5NjY1MzYsMTc1MDcwOTAzMSwtNjU0MTky
-MDY1LDE0Mjg5NzE2MDEsLTE2MjYwODE5NjEsLTExODY4NDgxMz
-csMTc1NTI0MzU2MCwtMTUwNjczMjIyNywtMTk3NzM4MDY2NSwt
-MjAwNTMzNDI2Nl19
+eyJoaXN0b3J5IjpbLTE4MzIwNDM3NDUsMTYwMTQwNzMxMywxND
+c5NTc3MjcyLC0xNDIwMTY4OTU1LDEwNDc3MjU4MywxNzA1MjYw
+MzIxLC0xMzE5MDQ5OTI2LDE1ODEyNDg1MDksMTEzODI1MjI1LD
+E0MzE3NDEyMTMsMTY5NzQ5MzcwNywtNDY5NjY1MzYsMTc1MDcw
+OTAzMSwtNjU0MTkyMDY1LDE0Mjg5NzE2MDEsLTE2MjYwODE5Nj
+EsLTExODY4NDgxMzcsMTc1NTI0MzU2MCwtMTUwNjczMjIyNywt
+MTk3NzM4MDY2NV19
 -->
