@@ -570,6 +570,16 @@ Dangling Ref
 #### Lifetime Annotation Syntax
 
 * specified with a single quote: `'`
+```rust
+&i32 // a reference
+&'a i32 // a refreence with an explicit lifetime
+&'a mut i32 // a mut ref with explicit lifetime
+
+fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
+	if x.len() > y.len() { x } else { y }
+}
+
+```
 
 
 
@@ -588,7 +598,7 @@ Dangling Ref
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyMTkzMzE1NywxNzA1MjYwMzIxLC0xMz
+eyJoaXN0b3J5IjpbMTc3NTYzMjg1OCwxNzA1MjYwMzIxLC0xMz
 E5MDQ5OTI2LDE1ODEyNDg1MDksMTEzODI1MjI1LDE0MzE3NDEy
 MTMsMTY5NzQ5MzcwNywtNDY5NjY1MzYsMTc1MDcwOTAzMSwtNj
 U0MTkyMDY1LDE0Mjg5NzE2MDEsLTE2MjYwODE5NjEsLTExODY4
