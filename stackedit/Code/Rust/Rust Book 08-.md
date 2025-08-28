@@ -616,7 +616,9 @@ input lifetimes
 output lifetimes
 : the lifetimes of return values
 
-T
+The lifetime elision rules
+1. the compiler assigns a different lifetime to each input parameter
+2. If there is exactly one 
 
 
 
@@ -633,7 +635,7 @@ T
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjA1MzcxODYsLTE0MjAxNjg5NTUsMT
+eyJoaXN0b3J5IjpbLTE2ODgyMjgyNTAsLTE0MjAxNjg5NTUsMT
 A0NzcyNTgzLDE3MDUyNjAzMjEsLTEzMTkwNDk5MjYsMTU4MTI0
 ODUwOSwxMTM4MjUyMjUsMTQzMTc0MTIxMywxNjk3NDkzNzA3LC
 00Njk2NjUzNiwxNzUwNzA5MDMxLC02NTQxOTIwNjUsMTQyODk3
