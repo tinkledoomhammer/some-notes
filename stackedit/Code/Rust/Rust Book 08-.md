@@ -603,7 +603,7 @@ struct Excerpt<'a> {
 ```
 * references held by structs require a lifetime annotation
 
-Lifetime Elision
+#### Lifetime Elision
 : like type inferences, but for lifetimes
 : typically, when a func takes one ref and returns another, the lifetime is assumed the same for both
 
@@ -635,7 +635,7 @@ impl<'a> Excerpt<'a> {...}
 : special lifetime that denotes that the reference *can* live for the entire duration of the programs
 : like all string literals
 
-** Combined example Type params, trait bounds, and lifetimes **
+### Combined example Type params, trait bounds, and lifetimes
 ```rust
 use std::fmt::Display;
 fn longest_with_ann<'a, T>(
@@ -658,7 +658,8 @@ where
 struc Foo<'a> {
 	bar: &'a i32,
 }
-fn baz(f: &Foo) -> &i32 {/* .
+fn baz(f: &Foo) -> &i32 {/* ...*/}
+//because the lifetime of the return could be tied to Foo or to Foo.bar
 ```
 
 
@@ -672,11 +673,11 @@ fn baz(f: &Foo) -> &i32 {/* .
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzIwNDM3NDUsMTYwMTQwNzMxMywxND
-c5NTc3MjcyLC0xNDIwMTY4OTU1LDEwNDc3MjU4MywxNzA1MjYw
-MzIxLC0xMzE5MDQ5OTI2LDE1ODEyNDg1MDksMTEzODI1MjI1LD
-E0MzE3NDEyMTMsMTY5NzQ5MzcwNywtNDY5NjY1MzYsMTc1MDcw
-OTAzMSwtNjU0MTkyMDY1LDE0Mjg5NzE2MDEsLTE2MjYwODE5Nj
-EsLTExODY4NDgxMzcsMTc1NTI0MzU2MCwtMTUwNjczMjIyNywt
-MTk3NzM4MDY2NV19
+eyJoaXN0b3J5IjpbMTQ4ODU1NDczNiwxNjAxNDA3MzEzLDE0Nz
+k1NzcyNzIsLTE0MjAxNjg5NTUsMTA0NzcyNTgzLDE3MDUyNjAz
+MjEsLTEzMTkwNDk5MjYsMTU4MTI0ODUwOSwxMTM4MjUyMjUsMT
+QzMTc0MTIxMywxNjk3NDkzNzA3LC00Njk2NjUzNiwxNzUwNzA5
+MDMxLC02NTQxOTIwNjUsMTQyODk3MTYwMSwtMTYyNjA4MTk2MS
+wtMTE4Njg0ODEzNywxNzU1MjQzNTYwLC0xNTA2NzMyMjI3LC0x
+OTc3MzgwNjY1XX0=
 -->
