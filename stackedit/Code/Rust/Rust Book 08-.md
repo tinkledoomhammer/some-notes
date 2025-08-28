@@ -565,7 +565,7 @@ Lifetime
 : the region of code where a value is available
 
 Dangling Ref
-: when a ref outlives the data it points to
+: when a ref outlives the data it points to aka **use after free**
 
 #### Lifetime Annotation Syntax
 
@@ -606,11 +606,11 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0NzcyNTgzLDE3MDUyNjAzMjEsLTEzMT
-kwNDk5MjYsMTU4MTI0ODUwOSwxMTM4MjUyMjUsMTQzMTc0MTIx
-MywxNjk3NDkzNzA3LC00Njk2NjUzNiwxNzUwNzA5MDMxLC02NT
-QxOTIwNjUsMTQyODk3MTYwMSwtMTYyNjA4MTk2MSwtMTE4Njg0
-ODEzNywxNzU1MjQzNTYwLC0xNTA2NzMyMjI3LC0xOTc3MzgwNj
-Y1LC0yMDA1MzM0MjY2LDE1OTI0MDg5NjcsLTEzMTQ4ODM4MDMs
-LTEyODQwNTA0MzldfQ==
+eyJoaXN0b3J5IjpbLTE0MjAxNjg5NTUsMTA0NzcyNTgzLDE3MD
+UyNjAzMjEsLTEzMTkwNDk5MjYsMTU4MTI0ODUwOSwxMTM4MjUy
+MjUsMTQzMTc0MTIxMywxNjk3NDkzNzA3LC00Njk2NjUzNiwxNz
+UwNzA5MDMxLC02NTQxOTIwNjUsMTQyODk3MTYwMSwtMTYyNjA4
+MTk2MSwtMTE4Njg0ODEzNywxNzU1MjQzNTYwLC0xNTA2NzMyMj
+I3LC0xOTc3MzgwNjY1LC0yMDA1MzM0MjY2LDE1OTI0MDg5Njcs
+LTEzMTQ4ODM4MDNdfQ==
 -->
