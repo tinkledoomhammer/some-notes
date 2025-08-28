@@ -507,7 +507,26 @@ where
 #### Trait bounds for conditional implementations
 
 blanket implementation
-: 
+: generic implementations apply to any type that implements the trait bounds
+
+```rust
+use std::fmt::Display
+
+struct Pair<T> {
+	x: T,
+	y: T,
+}
+
+impl<T> Pair<T> {
+	fn new (x: T, y: T) -> Self {
+		Self{ x,y }
+	}
+}
+
+impl<T: Display + PartialOrd> Pair<T> {
+	fn 
+
+```
 
 
 
@@ -529,11 +548,11 @@ blanket implementation
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzQ3NDU4NTYsMTEzODI1MjI1LDE0Mz
-E3NDEyMTMsMTY5NzQ5MzcwNywtNDY5NjY1MzYsMTc1MDcwOTAz
-MSwtNjU0MTkyMDY1LDE0Mjg5NzE2MDEsLTE2MjYwODE5NjEsLT
-ExODY4NDgxMzcsMTc1NTI0MzU2MCwtMTUwNjczMjIyNywtMTk3
-NzM4MDY2NSwtMjAwNTMzNDI2NiwxNTkyNDA4OTY3LC0xMzE0OD
-gzODAzLC0xMjg0MDUwNDM5LC05OTA0ODk5OTQsMzI1NzI5Njc3
-LDEzMzMxNjA1NTFdfQ==
+eyJoaXN0b3J5IjpbLTM0ODAxNDY1MywxMTM4MjUyMjUsMTQzMT
+c0MTIxMywxNjk3NDkzNzA3LC00Njk2NjUzNiwxNzUwNzA5MDMx
+LC02NTQxOTIwNjUsMTQyODk3MTYwMSwtMTYyNjA4MTk2MSwtMT
+E4Njg0ODEzNywxNzU1MjQzNTYwLC0xNTA2NzMyMjI3LC0xOTc3
+MzgwNjY1LC0yMDA1MzM0MjY2LDE1OTI0MDg5NjcsLTEzMTQ4OD
+M4MDMsLTEyODQwNTA0MzksLTk5MDQ4OTk5NCwzMjU3Mjk2Nzcs
+MTMzMzE2MDU1MV19
 -->
