@@ -485,9 +485,17 @@ Trait Bound syntax
 `where` clauses to declutter
 : specifies the bounds immediately before the body, in a `,` separated list
 ```rust
-pub func_1<T: Display + Clone, U: Clone+Debug> (t: &T, u: &U) ->i32 { //...
-
-
+fn func_1<T: Display + Clone, U: Clone+Debug> (t: &T, u: &U) ->i32 {
+	//...
+}
+//or for readability
+fn func_2<T,U>(t: &T, u: &U) -> i32
+where
+	T: Display + Clone,
+	U: Clone + Debug,
+{ 
+	//...
+}
 ```
 
 
@@ -496,7 +504,7 @@ pub func_1<T: Display + Clone, U: Clone+Debug> (t: &T, u: &U) ->i32 { //...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTczNzI1MDE0LDE0MzE3NDEyMTMsMTY5Nz
+eyJoaXN0b3J5IjpbMTEzODI1MjI1LDE0MzE3NDEyMTMsMTY5Nz
 Q5MzcwNywtNDY5NjY1MzYsMTc1MDcwOTAzMSwtNjU0MTkyMDY1
 LDE0Mjg5NzE2MDEsLTE2MjYwODE5NjEsLTExODY4NDgxMzcsMT
 c1NTI0MzU2MCwtMTUwNjczMjIyNywtMTk3NzM4MDY2NSwtMjAw
