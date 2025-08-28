@@ -607,6 +607,16 @@ Lifetime Elision
 : like type inferences, but for lifetimes
 : typically, when a func takes one ref and returns another, the lifetime is assumed the same for both
 
+lifetime elision rules
+: the rules the compiler follows to determine lifetimes without explicit specifiers
+
+input lifetimes
+: the lifetimes of parameters
+
+output lifetimes
+: the lifetimes of return values
+
+T
 
 
 
@@ -623,11 +633,11 @@ Lifetime Elision
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzODI1MTc4MSwtMTQyMDE2ODk1NSwxMD
-Q3NzI1ODMsMTcwNTI2MDMyMSwtMTMxOTA0OTkyNiwxNTgxMjQ4
-NTA5LDExMzgyNTIyNSwxNDMxNzQxMjEzLDE2OTc0OTM3MDcsLT
-Q2OTY2NTM2LDE3NTA3MDkwMzEsLTY1NDE5MjA2NSwxNDI4OTcx
-NjAxLC0xNjI2MDgxOTYxLC0xMTg2ODQ4MTM3LDE3NTUyNDM1Nj
-AsLTE1MDY3MzIyMjcsLTE5NzczODA2NjUsLTIwMDUzMzQyNjYs
-MTU5MjQwODk2N119
+eyJoaXN0b3J5IjpbLTE5NjA1MzcxODYsLTE0MjAxNjg5NTUsMT
+A0NzcyNTgzLDE3MDUyNjAzMjEsLTEzMTkwNDk5MjYsMTU4MTI0
+ODUwOSwxMTM4MjUyMjUsMTQzMTc0MTIxMywxNjk3NDkzNzA3LC
+00Njk2NjUzNiwxNzUwNzA5MDMxLC02NTQxOTIwNjUsMTQyODk3
+MTYwMSwtMTYyNjA4MTk2MSwtMTE4Njg0ODEzNywxNzU1MjQzNT
+YwLC0xNTA2NzMyMjI3LC0xOTc3MzgwNjY1LC0yMDA1MzM0MjY2
+LDE1OTI0MDg5NjddfQ==
 -->
