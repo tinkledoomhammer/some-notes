@@ -503,7 +503,7 @@ where
 * often used when the return type is anonymous or very long
 	* such as closures and iterators
 * [“Using Trait Objects That Allow for Values of Different Types”](https://rust-book.cs.brown.edu/ch18-02-trait-objects.html#using-trait-objects-that-allow-for-values-of-different-types) will be covered in ch. 18
-
+* Also the compiler will be limited in what it can do with t
 #### Trait bounds for conditional implementations
 
 blanket implementation
@@ -558,11 +558,11 @@ impl<T: Display + PartialOrd> Pair<T> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTkwNDk5MjYsMTU4MTI0ODUwOSwxMT
-M4MjUyMjUsMTQzMTc0MTIxMywxNjk3NDkzNzA3LC00Njk2NjUz
-NiwxNzUwNzA5MDMxLC02NTQxOTIwNjUsMTQyODk3MTYwMSwtMT
-YyNjA4MTk2MSwtMTE4Njg0ODEzNywxNzU1MjQzNTYwLC0xNTA2
-NzMyMjI3LC0xOTc3MzgwNjY1LC0yMDA1MzM0MjY2LDE1OTI0MD
-g5NjcsLTEzMTQ4ODM4MDMsLTEyODQwNTA0MzksLTk5MDQ4OTk5
-NCwzMjU3Mjk2NzddfQ==
+eyJoaXN0b3J5IjpbLTE5OTQ2MDc5ODksLTEzMTkwNDk5MjYsMT
+U4MTI0ODUwOSwxMTM4MjUyMjUsMTQzMTc0MTIxMywxNjk3NDkz
+NzA3LC00Njk2NjUzNiwxNzUwNzA5MDMxLC02NTQxOTIwNjUsMT
+QyODk3MTYwMSwtMTYyNjA4MTk2MSwtMTE4Njg0ODEzNywxNzU1
+MjQzNTYwLC0xNTA2NzMyMjI3LC0xOTc3MzgwNjY1LC0yMDA1Mz
+M0MjY2LDE1OTI0MDg5NjcsLTEzMTQ4ODM4MDMsLTEyODQwNTA0
+MzksLTk5MDQ4OTk5NF19
 -->
