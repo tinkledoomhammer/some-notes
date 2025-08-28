@@ -448,17 +448,25 @@ impl Summmary for SocialPost{
 }
 ```
 
-Similar to implementing methods for structs, but `impl` *trait* `for` *struct* `{///
+Similar to implementing methods for structs, but `impl` *trait* `for` *struct* `{...}`
+
+
+#### Default implementations
+* including a function definition in the trait definition
+* Then to use the default implementation have an empty `impl` block
+```rust
+
+```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNDUxODk3NSwxNDMxNzQxMjEzLDE2OT
-c0OTM3MDcsLTQ2OTY2NTM2LDE3NTA3MDkwMzEsLTY1NDE5MjA2
-NSwxNDI4OTcxNjAxLC0xNjI2MDgxOTYxLC0xMTg2ODQ4MTM3LD
-E3NTUyNDM1NjAsLTE1MDY3MzIyMjcsLTE5NzczODA2NjUsLTIw
-MDUzMzQyNjYsMTU5MjQwODk2NywtMTMxNDg4MzgwMywtMTI4ND
-A1MDQzOSwtOTkwNDg5OTk0LDMyNTcyOTY3NywxMzMzMTYwNTUx
-LC0yNTkwNzMwMjldfQ==
+eyJoaXN0b3J5IjpbLTEwMTA1Mjk2NTMsMTQzMTc0MTIxMywxNj
+k3NDkzNzA3LC00Njk2NjUzNiwxNzUwNzA5MDMxLC02NTQxOTIw
+NjUsMTQyODk3MTYwMSwtMTYyNjA4MTk2MSwtMTE4Njg0ODEzNy
+wxNzU1MjQzNTYwLC0xNTA2NzMyMjI3LC0xOTc3MzgwNjY1LC0y
+MDA1MzM0MjY2LDE1OTI0MDg5NjcsLTEzMTQ4ODM4MDMsLTEyOD
+QwNTA0MzksLTk5MDQ4OTk5NCwzMjU3Mjk2NzcsMTMzMzE2MDU1
+MSwtMjU5MDczMDI5XX0=
 -->
