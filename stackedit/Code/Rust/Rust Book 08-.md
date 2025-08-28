@@ -504,17 +504,36 @@ where
 	* such as closures and iterators
 * [“Using Trait Objects That Allow for Values of Different Types”](https://rust-book.cs.brown.edu/ch18-02-trait-objects.html#using-trait-objects-that-allow-for-values-of-different-types) will be covered in ch. 18
 
+#### Trait bounds for conditional implementations
+
+blanket implementation
+: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1ODk4NTIxOCwxMTM4MjUyMjUsMTQzMT
-c0MTIxMywxNjk3NDkzNzA3LC00Njk2NjUzNiwxNzUwNzA5MDMx
-LC02NTQxOTIwNjUsMTQyODk3MTYwMSwtMTYyNjA4MTk2MSwtMT
-E4Njg0ODEzNywxNzU1MjQzNTYwLC0xNTA2NzMyMjI3LC0xOTc3
-MzgwNjY1LC0yMDA1MzM0MjY2LDE1OTI0MDg5NjcsLTEzMTQ4OD
-M4MDMsLTEyODQwNTA0MzksLTk5MDQ4OTk5NCwzMjU3Mjk2Nzcs
-MTMzMzE2MDU1MV19
+eyJoaXN0b3J5IjpbLTEyMzQ3NDU4NTYsMTEzODI1MjI1LDE0Mz
+E3NDEyMTMsMTY5NzQ5MzcwNywtNDY5NjY1MzYsMTc1MDcwOTAz
+MSwtNjU0MTkyMDY1LDE0Mjg5NzE2MDEsLTE2MjYwODE5NjEsLT
+ExODY4NDgxMzcsMTc1NTI0MzU2MCwtMTUwNjczMjIyNywtMTk3
+NzM4MDY2NSwtMjAwNTMzNDI2NiwxNTkyNDA4OTY3LC0xMzE0OD
+gzODAzLC0xMjg0MDUwNDM5LC05OTA0ODk5OTQsMzI1NzI5Njc3
+LDEzMzMxNjA1NTFdfQ==
 -->
