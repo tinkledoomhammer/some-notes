@@ -466,13 +466,14 @@ impl Summary for NewsArticle {}
 * The syntax for overriding a default implementation is the same as the syntax for providing an implementation for a function that does not have a default implementation
 
 
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODQwMTYwOTAsMTQzMTc0MTIxMywxNj
-k3NDkzNzA3LC00Njk2NjUzNiwxNzUwNzA5MDMxLC02NTQxOTIw
-NjUsMTQyODk3MTYwMSwtMTYyNjA4MTk2MSwtMTE4Njg0ODEzNy
-wxNzU1MjQzNTYwLC0xNTA2NzMyMjI3LC0xOTc3MzgwNjY1LC0y
-MDA1MzM0MjY2LDE1OTI0MDg5NjcsLTEzMTQ4ODM4MDMsLTEyOD
-QwNTA0MzksLTk5MDQ4OTk5NCwzMjU3Mjk2NzcsMTMzMzE2MDU1
-MSwtMjU5MDczMDI5XX0=
+eyJoaXN0b3J5IjpbODIwNTA1MDQ0LDE0MzE3NDEyMTMsMTY5Nz
+Q5MzcwNywtNDY5NjY1MzYsMTc1MDcwOTAzMSwtNjU0MTkyMDY1
+LDE0Mjg5NzE2MDEsLTE2MjYwODE5NjEsLTExODY4NDgxMzcsMT
+c1NTI0MzU2MCwtMTUwNjczMjIyNywtMTk3NzM4MDY2NSwtMjAw
+NTMzNDI2NiwxNTkyNDA4OTY3LC0xMzE0ODgzODAzLC0xMjg0MD
+UwNDM5LC05OTA0ODk5OTQsMzI1NzI5Njc3LDEzMzMxNjA1NTEs
+LTI1OTA3MzAyOV19
 -->
