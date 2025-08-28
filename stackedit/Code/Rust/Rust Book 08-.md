@@ -418,19 +418,25 @@ bad state
 ### 10.01 Generic Data Types
 ### 10.02 Traits
 
+Traits
+: Basically interfaces
 
-
+#### Defining Traits
+```rust
+pub trait Summary {
+	fn sumarize(&self) -> String;
+}
 ```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMTc0MTIxMywxNjk3NDkzNzA3LC00Nj
-k2NjUzNiwxNzUwNzA5MDMxLC02NTQxOTIwNjUsMTQyODk3MTYw
-MSwtMTYyNjA4MTk2MSwtMTE4Njg0ODEzNywxNzU1MjQzNTYwLC
-0xNTA2NzMyMjI3LC0xOTc3MzgwNjY1LC0yMDA1MzM0MjY2LDE1
-OTI0MDg5NjcsLTEzMTQ4ODM4MDMsLTEyODQwNTA0MzksLTk5MD
-Q4OTk5NCwzMjU3Mjk2NzcsMTMzMzE2MDU1MSwtMjU5MDczMDI5
-LDEyNDM2ODM3MTFdfQ==
+eyJoaXN0b3J5IjpbODg0Mjg3NDg2LDE0MzE3NDEyMTMsMTY5Nz
+Q5MzcwNywtNDY5NjY1MzYsMTc1MDcwOTAzMSwtNjU0MTkyMDY1
+LDE0Mjg5NzE2MDEsLTE2MjYwODE5NjEsLTExODY4NDgxMzcsMT
+c1NTI0MzU2MCwtMTUwNjczMjIyNywtMTk3NzM4MDY2NSwtMjAw
+NTMzNDI2NiwxNTkyNDA4OTY3LC0xMzE0ODgzODAzLC0xMjg0MD
+UwNDM5LC05OTA0ODk5OTQsMzI1NzI5Njc3LDEzMzMxNjA1NTEs
+LTI1OTA3MzAyOV19
 -->
