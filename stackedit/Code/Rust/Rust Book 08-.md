@@ -450,6 +450,9 @@ impl Summmary for SocialPost{
 
 Similar to implementing methods for structs, but `impl` *trait* `for` *struct* `{...}`
 
+Orphan Rule
+: You can not implement an external trait for an external type
+
 
 #### Default implementations
 * including a function definition in the trait definition
@@ -465,15 +468,18 @@ impl Summary for NewsArticle {}
 
 * The syntax for overriding a default implementation is the same as the syntax for providing an implementation for a function that does not have a default implementation
 
+#### Traits as Parameters
 
+`impl trait` syntax
+: `pub
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIwNTA1MDQ0LDE0MzE3NDEyMTMsMTY5Nz
-Q5MzcwNywtNDY5NjY1MzYsMTc1MDcwOTAzMSwtNjU0MTkyMDY1
-LDE0Mjg5NzE2MDEsLTE2MjYwODE5NjEsLTExODY4NDgxMzcsMT
-c1NTI0MzU2MCwtMTUwNjczMjIyNywtMTk3NzM4MDY2NSwtMjAw
-NTMzNDI2NiwxNTkyNDA4OTY3LC0xMzE0ODgzODAzLC0xMjg0MD
-UwNDM5LC05OTA0ODk5OTQsMzI1NzI5Njc3LDEzMzMxNjA1NTEs
-LTI1OTA3MzAyOV19
+eyJoaXN0b3J5IjpbNjk2OTk3ODcsMTQzMTc0MTIxMywxNjk3ND
+kzNzA3LC00Njk2NjUzNiwxNzUwNzA5MDMxLC02NTQxOTIwNjUs
+MTQyODk3MTYwMSwtMTYyNjA4MTk2MSwtMTE4Njg0ODEzNywxNz
+U1MjQzNTYwLC0xNTA2NzMyMjI3LC0xOTc3MzgwNjY1LC0yMDA1
+MzM0MjY2LDE1OTI0MDg5NjcsLTEzMTQ4ODM4MDMsLTEyODQwNT
+A0MzksLTk5MDQ4OTk5NCwzMjU3Mjk2NzcsMTMzMzE2MDU1MSwt
+MjU5MDczMDI5XX0=
 -->
