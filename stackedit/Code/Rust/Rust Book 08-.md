@@ -504,6 +504,7 @@ where
 	* such as closures and iterators
 * [“Using Trait Objects That Allow for Values of Different Types”](https://rust-book.cs.brown.edu/ch18-02-trait-objects.html#using-trait-objects-that-allow-for-values-of-different-types) will be covered in ch. 18
 * Also the compiler will be limited in what it can do with the returned value
+	* only met
 ```rust
 use std::fmt::Display;
 fn displayable<T: Display>(t:T) -> impl Display { t }
@@ -512,6 +513,11 @@ fn disp2<T: Display>(t:T) -> T {t}
 fn main() {
 	let s = String::from("hello");
 	let mut s2 = disp2(s);
+	let s = String::from("hello");
+	let mut s3 = display(s);
+	s2.push_str(" world"); // s2="hello world"
+	//The next line will not compile
+	s3.push_str(" world"); // s3 doesn't have 'push_str'
 }
 
 ```
@@ -569,7 +575,7 @@ impl<T: Display + PartialOrd> Pair<T> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3NDgzNjA0NCwtMTMxOTA0OTkyNiwxNT
+eyJoaXN0b3J5IjpbLTE4NTU4Njc3MiwtMTMxOTA0OTkyNiwxNT
 gxMjQ4NTA5LDExMzgyNTIyNSwxNDMxNzQxMjEzLDE2OTc0OTM3
 MDcsLTQ2OTY2NTM2LDE3NTA3MDkwMzEsLTY1NDE5MjA2NSwxND
 I4OTcxNjAxLC0xNjI2MDgxOTYxLC0xMTg2ODQ4MTM3LDE3NTUy
