@@ -431,18 +431,32 @@ pub struct NewsArticle {
 	pub headline: String,
 	pub author: String, //...
 }
-impl Summary for
+impl Summary for NewsArticle {
+	fn summarize(&self) -> String {
+		format!("{} by {}", self.headline, self.author);
+	}
+}
+pub struct SocialPost{
+	pub username: String,
+	pub content: String, //...
+}
+
+impl Summmary for SocialPost{
+	fn summarize(&self) -> String {
+
+	}
+	}
 ```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2Mjk3MDY0NSwxNDMxNzQxMjEzLDE2OT
-c0OTM3MDcsLTQ2OTY2NTM2LDE3NTA3MDkwMzEsLTY1NDE5MjA2
-NSwxNDI4OTcxNjAxLC0xNjI2MDgxOTYxLC0xMTg2ODQ4MTM3LD
-E3NTUyNDM1NjAsLTE1MDY3MzIyMjcsLTE5NzczODA2NjUsLTIw
-MDUzMzQyNjYsMTU5MjQwODk2NywtMTMxNDg4MzgwMywtMTI4ND
-A1MDQzOSwtOTkwNDg5OTk0LDMyNTcyOTY3NywxMzMzMTYwNTUx
-LC0yNTkwNzMwMjldfQ==
+eyJoaXN0b3J5IjpbNjMyNDUzNDYxLDE0MzE3NDEyMTMsMTY5Nz
+Q5MzcwNywtNDY5NjY1MzYsMTc1MDcwOTAzMSwtNjU0MTkyMDY1
+LDE0Mjg5NzE2MDEsLTE2MjYwODE5NjEsLTExODY4NDgxMzcsMT
+c1NTI0MzU2MCwtMTUwNjczMjIyNywtMTk3NzM4MDY2NSwtMjAw
+NTMzNDI2NiwxNTkyNDA4OTY3LC0xMzE0ODgzODAzLC0xMjg0MD
+UwNDM5LC05OTA0ODk5OTQsMzI1NzI5Njc3LDEzMzMxNjA1NTEs
+LTI1OTA3MzAyOV19
 -->
