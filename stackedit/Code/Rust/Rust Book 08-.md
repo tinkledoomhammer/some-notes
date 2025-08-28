@@ -557,10 +557,19 @@ impl<T: Display + PartialOrd> Pair<T> {
 ```
 
 ### 10.03 Validating References with Lifetimes
-Lifetimes
+Lifetime Annotations
 : A type of generic that ensures that a reference is as valid for as long as needed
 : they are often inferred
 
+Lifetime
+: the region of code where a value is available
+
+Dangling Ref
+: when a ref outlives the data it points to
+
+#### Lifetime Annotation Syntax
+
+* specified with a single quote: `'`
 
 
 
@@ -579,11 +588,11 @@ Lifetimes
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwNTI2MDMyMSwtMTMxOTA0OTkyNiwxNT
-gxMjQ4NTA5LDExMzgyNTIyNSwxNDMxNzQxMjEzLDE2OTc0OTM3
-MDcsLTQ2OTY2NTM2LDE3NTA3MDkwMzEsLTY1NDE5MjA2NSwxND
-I4OTcxNjAxLC0xNjI2MDgxOTYxLC0xMTg2ODQ4MTM3LDE3NTUy
-NDM1NjAsLTE1MDY3MzIyMjcsLTE5NzczODA2NjUsLTIwMDUzMz
-QyNjYsMTU5MjQwODk2NywtMTMxNDg4MzgwMywtMTI4NDA1MDQz
-OSwtOTkwNDg5OTk0XX0=
+eyJoaXN0b3J5IjpbMTgyMTkzMzE1NywxNzA1MjYwMzIxLC0xMz
+E5MDQ5OTI2LDE1ODEyNDg1MDksMTEzODI1MjI1LDE0MzE3NDEy
+MTMsMTY5NzQ5MzcwNywtNDY5NjY1MzYsMTc1MDcwOTAzMSwtNj
+U0MTkyMDY1LDE0Mjg5NzE2MDEsLTE2MjYwODE5NjEsLTExODY4
+NDgxMzcsMTc1NTI0MzU2MCwtMTUwNjczMjIyNywtMTk3NzM4MD
+Y2NSwtMjAwNTMzNDI2NiwxNTkyNDA4OTY3LC0xMzE0ODgzODAz
+LC0xMjg0MDUwNDM5XX0=
 -->
