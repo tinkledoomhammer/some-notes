@@ -517,15 +517,23 @@ struct Pair<T> {
 	y: T,
 }
 
+//No bounds, will implement for any type
 impl<T> Pair<T> {
 	fn new (x: T, y: T) -> Self {
 		Self{ x,y }
 	}
 }
 
+//This blanket implementation has 2 bounds
 impl<T: Display + PartialOrd> Pair<T> {
-	fn 
-
+	fn cmp_display(&self) {
+		if self.x >= self.y {
+			println!("x is larger");
+		}else{
+			println!("y is larger");
+		}
+	}
+}
 ```
 
 
@@ -548,7 +556,7 @@ impl<T: Display + PartialOrd> Pair<T> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0ODAxNDY1MywxMTM4MjUyMjUsMTQzMT
+eyJoaXN0b3J5IjpbMTU4MTI0ODUwOSwxMTM4MjUyMjUsMTQzMT
 c0MTIxMywxNjk3NDkzNzA3LC00Njk2NjUzNiwxNzUwNzA5MDMx
 LC02NTQxOTIwNjUsMTQyODk3MTYwMSwtMTYyNjA4MTk2MSwtMT
 E4Njg0ODEzNywxNzU1MjQzNTYwLC0xNTA2NzMyMjI3LC0xOTc3
