@@ -508,6 +508,8 @@ where
 
 blanket implementation
 : generic implementations apply to any type that implements the trait bounds
+: there are several in the standard library
+: such as `impl<T: Display> ToString for T { ...`
 
 ```rust
 use std::fmt::Display
@@ -556,11 +558,11 @@ impl<T: Display + PartialOrd> Pair<T> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4MTI0ODUwOSwxMTM4MjUyMjUsMTQzMT
-c0MTIxMywxNjk3NDkzNzA3LC00Njk2NjUzNiwxNzUwNzA5MDMx
-LC02NTQxOTIwNjUsMTQyODk3MTYwMSwtMTYyNjA4MTk2MSwtMT
-E4Njg0ODEzNywxNzU1MjQzNTYwLC0xNTA2NzMyMjI3LC0xOTc3
-MzgwNjY1LC0yMDA1MzM0MjY2LDE1OTI0MDg5NjcsLTEzMTQ4OD
-M4MDMsLTEyODQwNTA0MzksLTk5MDQ4OTk5NCwzMjU3Mjk2Nzcs
-MTMzMzE2MDU1MV19
+eyJoaXN0b3J5IjpbLTEzMTkwNDk5MjYsMTU4MTI0ODUwOSwxMT
+M4MjUyMjUsMTQzMTc0MTIxMywxNjk3NDkzNzA3LC00Njk2NjUz
+NiwxNzUwNzA5MDMxLC02NTQxOTIwNjUsMTQyODk3MTYwMSwtMT
+YyNjA4MTk2MSwtMTE4Njg0ODEzNywxNzU1MjQzNTYwLC0xNTA2
+NzMyMjI3LC0xOTc3MzgwNjY1LC0yMDA1MzM0MjY2LDE1OTI0MD
+g5NjcsLTEzMTQ4ODM4MDMsLTEyODQwNTA0MzksLTk5MDQ4OTk5
+NCwzMjU3Mjk2NzddfQ==
 -->
