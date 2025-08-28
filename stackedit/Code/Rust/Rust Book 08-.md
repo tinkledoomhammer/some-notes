@@ -597,7 +597,12 @@ fn longest <'a>(x: &'a str, y: &str) -> &'a str {x}
 
 #### Lifetime annotations in struct definitions
 ```rust
-
+struct Excerpt<'a> {
+	part: &'a str,
+}
+```
+* references held by structs require a lifetime annotation
+* 
 
 
 
@@ -614,11 +619,11 @@ fn longest <'a>(x: &'a str, y: &str) -> &'a str {x}
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0MzMzMzU4MywtMTQyMDE2ODk1NSwxMD
-Q3NzI1ODMsMTcwNTI2MDMyMSwtMTMxOTA0OTkyNiwxNTgxMjQ4
-NTA5LDExMzgyNTIyNSwxNDMxNzQxMjEzLDE2OTc0OTM3MDcsLT
-Q2OTY2NTM2LDE3NTA3MDkwMzEsLTY1NDE5MjA2NSwxNDI4OTcx
-NjAxLC0xNjI2MDgxOTYxLC0xMTg2ODQ4MTM3LDE3NTUyNDM1Nj
-AsLTE1MDY3MzIyMjcsLTE5NzczODA2NjUsLTIwMDUzMzQyNjYs
-MTU5MjQwODk2N119
+eyJoaXN0b3J5IjpbLTE1Mjg0NTIxMTEsLTE0MjAxNjg5NTUsMT
+A0NzcyNTgzLDE3MDUyNjAzMjEsLTEzMTkwNDk5MjYsMTU4MTI0
+ODUwOSwxMTM4MjUyMjUsMTQzMTc0MTIxMywxNjk3NDkzNzA3LC
+00Njk2NjUzNiwxNzUwNzA5MDMxLC02NTQxOTIwNjUsMTQyODk3
+MTYwMSwtMTYyNjA4MTk2MSwtMTE4Njg0ODEzNywxNzU1MjQzNT
+YwLC0xNTA2NzMyMjI3LC0xOTc3MzgwNjY1LC0yMDA1MzM0MjY2
+LDE1OTI0MDg5NjddfQ==
 -->
