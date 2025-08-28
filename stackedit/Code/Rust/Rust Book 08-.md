@@ -499,15 +499,18 @@ where
 ```
 
 #### `impl` *trait* as a return type
-* can only return one concrete type
-* often used 
+* can **only** return **one** concrete type
+* often used when the return type is anonymous or very long
+	* such as closures and iterators
+* [“Using Trait Objects That Allow for Values of Different Types”](https://rust-book.cs.brown.edu/ch18-02-trait-objects.html#using-trait-objects-that-allow-for-values-of-different-types) will be covered in ch. 18
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwOTI3MTQ2MiwxMTM4MjUyMjUsMTQzMT
+eyJoaXN0b3J5IjpbLTk1ODk4NTIxOCwxMTM4MjUyMjUsMTQzMT
 c0MTIxMywxNjk3NDkzNzA3LC00Njk2NjUzNiwxNzUwNzA5MDMx
 LC02NTQxOTIwNjUsMTQyODk3MTYwMSwtMTYyNjA4MTk2MSwtMT
 E4Njg0ODEzNywxNzU1MjQzNTYwLC0xNTA2NzMyMjI3LC0xOTc3
