@@ -622,6 +622,9 @@ The lifetime elision rules
 3. if there are multiple input lifetime parameters, but one is `&self` or `&mut self`, the lifetime of `self` is assigned to all output lifetime parameters
 4. Otherwise explicit lifetime parameters are required
 
+** Lifetime annotations in method definitions **
+
+Lifetime names for struct fields need to be declared after the `impl` keyword and used after the struct's name because they are a part of the struct's type
 
 
 
@@ -638,7 +641,7 @@ The lifetime elision rules
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NzI4MzY1NiwtMTQyMDE2ODk1NSwxMD
+eyJoaXN0b3J5IjpbMTYwNzc2MzEzNSwtMTQyMDE2ODk1NSwxMD
 Q3NzI1ODMsMTcwNTI2MDMyMSwtMTMxOTA0OTkyNiwxNTgxMjQ4
 NTA5LDExMzgyNTIyNSwxNDMxNzQxMjEzLDE2OTc0OTM3MDcsLT
 Q2OTY2NTM2LDE3NTA3MDkwMzEsLTY1NDE5MjA2NSwxNDI4OTcx
