@@ -421,22 +421,28 @@ bad state
 Traits
 : Basically interfaces
 
-#### Defining Traits
+#### Defining and implementing traits
 ```rust
 pub trait Summary {
 	fn sumarize(&self) -> String;
 }
+
+pub struct NewsArticle {
+	pub headline: String,
+	pub author: String, //...
+}
+impl Summary for
 ```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg0Mjg3NDg2LDE0MzE3NDEyMTMsMTY5Nz
-Q5MzcwNywtNDY5NjY1MzYsMTc1MDcwOTAzMSwtNjU0MTkyMDY1
-LDE0Mjg5NzE2MDEsLTE2MjYwODE5NjEsLTExODY4NDgxMzcsMT
-c1NTI0MzU2MCwtMTUwNjczMjIyNywtMTk3NzM4MDY2NSwtMjAw
-NTMzNDI2NiwxNTkyNDA4OTY3LC0xMzE0ODgzODAzLC0xMjg0MD
-UwNDM5LC05OTA0ODk5OTQsMzI1NzI5Njc3LDEzMzMxNjA1NTEs
-LTI1OTA3MzAyOV19
+eyJoaXN0b3J5IjpbMTI2Mjk3MDY0NSwxNDMxNzQxMjEzLDE2OT
+c0OTM3MDcsLTQ2OTY2NTM2LDE3NTA3MDkwMzEsLTY1NDE5MjA2
+NSwxNDI4OTcxNjAxLC0xNjI2MDgxOTYxLC0xMTg2ODQ4MTM3LD
+E3NTUyNDM1NjAsLTE1MDY3MzIyMjcsLTE5NzczODA2NjUsLTIw
+MDUzMzQyNjYsMTU5MjQwODk2NywtMTMxNDg4MzgwMywtMTI4ND
+A1MDQzOSwtOTkwNDg5OTk0LDMyNTcyOTY3NywxMzMzMTYwNTUx
+LC0yNTkwNzMwMjldfQ==
 -->
