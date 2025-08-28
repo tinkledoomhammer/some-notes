@@ -504,7 +504,8 @@ where
 	* such as closures and iterators
 * [“Using Trait Objects That Allow for Values of Different Types”](https://rust-book.cs.brown.edu/ch18-02-trait-objects.html#using-trait-objects-that-allow-for-values-of-different-types) will be covered in ch. 18
 * Also the compiler will be limited in what it can do with the returned value
-	* only met
+	* only methods defined in the trait can be invoked
+	* i.e. the calling code only knows the return type as specified in the called function
 ```rust
 use std::fmt::Display;
 fn displayable<T: Display>(t:T) -> impl Display { t }
@@ -555,7 +556,9 @@ impl<T: Display + PartialOrd> Pair<T> {
 }
 ```
 
-
+### 10.03 Validating References with Lifetimes
+Lifetimes
+: A type of generic that ensures that a reference is as valid 
 
 
 
@@ -575,11 +578,11 @@ impl<T: Display + PartialOrd> Pair<T> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTU4Njc3MiwtMTMxOTA0OTkyNiwxNT
-gxMjQ4NTA5LDExMzgyNTIyNSwxNDMxNzQxMjEzLDE2OTc0OTM3
-MDcsLTQ2OTY2NTM2LDE3NTA3MDkwMzEsLTY1NDE5MjA2NSwxND
-I4OTcxNjAxLC0xNjI2MDgxOTYxLC0xMTg2ODQ4MTM3LDE3NTUy
-NDM1NjAsLTE1MDY3MzIyMjcsLTE5NzczODA2NjUsLTIwMDUzMz
-QyNjYsMTU5MjQwODk2NywtMTMxNDg4MzgwMywtMTI4NDA1MDQz
-OSwtOTkwNDg5OTk0XX0=
+eyJoaXN0b3J5IjpbNTM3ODI3NTcyLC0xMzE5MDQ5OTI2LDE1OD
+EyNDg1MDksMTEzODI1MjI1LDE0MzE3NDEyMTMsMTY5NzQ5Mzcw
+NywtNDY5NjY1MzYsMTc1MDcwOTAzMSwtNjU0MTkyMDY1LDE0Mj
+g5NzE2MDEsLTE2MjYwODE5NjEsLTExODY4NDgxMzcsMTc1NTI0
+MzU2MCwtMTUwNjczMjIyNywtMTk3NzM4MDY2NSwtMjAwNTMzND
+I2NiwxNTkyNDA4OTY3LC0xMzE0ODgzODAzLC0xMjg0MDUwNDM5
+LC05OTA0ODk5OTRdfQ==
 -->
