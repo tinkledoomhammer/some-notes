@@ -635,7 +635,12 @@ impl<'a> Excerpt<'a> {...}
 : special lifetime that denotes that the reference *can* live for the entire duration of the programs
 : like all string literals
 
+** Combined example Type params, trait bounds, and lifetimes **
+```rust
+use std::fmt::Display;
+fn longest_with_announnce<'a, T>
 
+```
 
 
 
@@ -650,11 +655,11 @@ impl<'a> Excerpt<'a> {...}
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3OTU3NzI3MiwtMTQyMDE2ODk1NSwxMD
-Q3NzI1ODMsMTcwNTI2MDMyMSwtMTMxOTA0OTkyNiwxNTgxMjQ4
-NTA5LDExMzgyNTIyNSwxNDMxNzQxMjEzLDE2OTc0OTM3MDcsLT
-Q2OTY2NTM2LDE3NTA3MDkwMzEsLTY1NDE5MjA2NSwxNDI4OTcx
-NjAxLC0xNjI2MDgxOTYxLC0xMTg2ODQ4MTM3LDE3NTUyNDM1Nj
-AsLTE1MDY3MzIyMjcsLTE5NzczODA2NjUsLTIwMDUzMzQyNjYs
-MTU5MjQwODk2N119
+eyJoaXN0b3J5IjpbLTE0NjA4NDk2NTYsMTQ3OTU3NzI3MiwtMT
+QyMDE2ODk1NSwxMDQ3NzI1ODMsMTcwNTI2MDMyMSwtMTMxOTA0
+OTkyNiwxNTgxMjQ4NTA5LDExMzgyNTIyNSwxNDMxNzQxMjEzLD
+E2OTc0OTM3MDcsLTQ2OTY2NTM2LDE3NTA3MDkwMzEsLTY1NDE5
+MjA2NSwxNDI4OTcxNjAxLC0xNjI2MDgxOTYxLC0xMTg2ODQ4MT
+M3LDE3NTUyNDM1NjAsLTE1MDY3MzIyMjcsLTE5NzczODA2NjUs
+LTIwMDUzMzQyNjZdfQ==
 -->
