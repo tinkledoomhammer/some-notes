@@ -578,8 +578,10 @@ Dangling Ref
 fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 	if x.len() > y.len() { x } else { y }
 }
-
 ```
+* the specifier means "at least as long as"
+* so in the above example, the return value expires with the shortest lived parameter
+* 
 
 
 
@@ -598,7 +600,7 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3NTYzMjg1OCwxNzA1MjYwMzIxLC0xMz
+eyJoaXN0b3J5IjpbLTg2ODUyMTc5NiwxNzA1MjYwMzIxLC0xMz
 E5MDQ5OTI2LDE1ODEyNDg1MDksMTEzODI1MjI1LDE0MzE3NDEy
 MTMsMTY5NzQ5MzcwNywtNDY5NjY1MzYsMTc1MDcwOTAzMSwtNj
 U0MTkyMDY1LDE0Mjg5NzE2MDEsLTE2MjYwODE5NjEsLTExODY4
