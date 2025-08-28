@@ -587,7 +587,14 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 * Annotations go in the signature, not the body, making them part of the function's contract
 * Explicit lifetimes allow the compiler to more precisely point out and describe the error
 	* even where implicit lifetimes are possible, the eventual error may be elsewhere
-* 
+
+
+#### Thinking in terms of lifetimes
+```rust
+fn longest <'a>(x: &'a str, y: &str) -> &'a str {x}
+```
+* only lifetimes that can apply to the return value need to be specified
+* the return lifetime cannot be local
 
 
 
@@ -606,11 +613,11 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjAxNjg5NTUsMTA0NzcyNTgzLDE3MD
-UyNjAzMjEsLTEzMTkwNDk5MjYsMTU4MTI0ODUwOSwxMTM4MjUy
-MjUsMTQzMTc0MTIxMywxNjk3NDkzNzA3LC00Njk2NjUzNiwxNz
-UwNzA5MDMxLC02NTQxOTIwNjUsMTQyODk3MTYwMSwtMTYyNjA4
-MTk2MSwtMTE4Njg0ODEzNywxNzU1MjQzNTYwLC0xNTA2NzMyMj
-I3LC0xOTc3MzgwNjY1LC0yMDA1MzM0MjY2LDE1OTI0MDg5Njcs
-LTEzMTQ4ODM4MDNdfQ==
+eyJoaXN0b3J5IjpbLTExNjk3NTc4OTEsLTE0MjAxNjg5NTUsMT
+A0NzcyNTgzLDE3MDUyNjAzMjEsLTEzMTkwNDk5MjYsMTU4MTI0
+ODUwOSwxMTM4MjUyMjUsMTQzMTc0MTIxMywxNjk3NDkzNzA3LC
+00Njk2NjUzNiwxNzUwNzA5MDMxLC02NTQxOTIwNjUsMTQyODk3
+MTYwMSwtMTYyNjA4MTk2MSwtMTE4Njg0ODEzNywxNzU1MjQzNT
+YwLC0xNTA2NzMyMjI3LC0xOTc3MzgwNjY1LC0yMDA1MzM0MjY2
+LDE1OTI0MDg5NjddfQ==
 -->
