@@ -503,7 +503,18 @@ where
 * often used when the return type is anonymous or very long
 	* such as closures and iterators
 * [“Using Trait Objects That Allow for Values of Different Types”](https://rust-book.cs.brown.edu/ch18-02-trait-objects.html#using-trait-objects-that-allow-for-values-of-different-types) will be covered in ch. 18
-* Also the compiler will be limited in what it can do with t
+* Also the compiler will be limited in what it can do with the returned value
+```rust
+use std::fmt::Display;
+fn displayable<T: Display>(t:T) -> impl Display { t }
+fn disp2<T: Display>(t:T) -> T {t}
+
+fn main() {
+	let s = String::from("hello");
+	let mut s2 = disp2(s);
+}
+
+```
 #### Trait bounds for conditional implementations
 
 blanket implementation
@@ -558,11 +569,11 @@ impl<T: Display + PartialOrd> Pair<T> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTQ2MDc5ODksLTEzMTkwNDk5MjYsMT
-U4MTI0ODUwOSwxMTM4MjUyMjUsMTQzMTc0MTIxMywxNjk3NDkz
-NzA3LC00Njk2NjUzNiwxNzUwNzA5MDMxLC02NTQxOTIwNjUsMT
-QyODk3MTYwMSwtMTYyNjA4MTk2MSwtMTE4Njg0ODEzNywxNzU1
-MjQzNTYwLC0xNTA2NzMyMjI3LC0xOTc3MzgwNjY1LC0yMDA1Mz
-M0MjY2LDE1OTI0MDg5NjcsLTEzMTQ4ODM4MDMsLTEyODQwNTA0
-MzksLTk5MDQ4OTk5NF19
+eyJoaXN0b3J5IjpbMTU3NDgzNjA0NCwtMTMxOTA0OTkyNiwxNT
+gxMjQ4NTA5LDExMzgyNTIyNSwxNDMxNzQxMjEzLDE2OTc0OTM3
+MDcsLTQ2OTY2NTM2LDE3NTA3MDkwMzEsLTY1NDE5MjA2NSwxND
+I4OTcxNjAxLC0xNjI2MDgxOTYxLC0xMTg2ODQ4MTM3LDE3NTUy
+NDM1NjAsLTE1MDY3MzIyMjcsLTE5NzczODA2NjUsLTIwMDUzMz
+QyNjYsMTU5MjQwODk2NywtMTMxNDg4MzgwMywtMTI4NDA1MDQz
+OSwtOTkwNDg5OTk0XX0=
 -->
