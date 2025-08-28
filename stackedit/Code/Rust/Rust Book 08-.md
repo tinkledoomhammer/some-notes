@@ -581,9 +581,12 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 ```
 * the specifier means "at least as long as"
 * so in the above example, the return value expires with the shortest lived parameter
+	* i.e. the *concrete* lifetime that the compiler uses will be the shortest
 * the specifiers do not change the lifetime of the values
 * rather they specify a contract that the compiler can enforce
 * Annotations go in the signature, not the body, making them part of the function's contract
+* Explicit lifetimes allow the compiler to more precisely point out and describe the error
+	* even where implicit lifetimes are possible, the eventual error may be elsewhere
 * 
 
 
@@ -603,11 +606,11 @@ fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0ODU4NjMsMTcwNTI2MDMyMSwtMTMxOT
-A0OTkyNiwxNTgxMjQ4NTA5LDExMzgyNTIyNSwxNDMxNzQxMjEz
-LDE2OTc0OTM3MDcsLTQ2OTY2NTM2LDE3NTA3MDkwMzEsLTY1ND
-E5MjA2NSwxNDI4OTcxNjAxLC0xNjI2MDgxOTYxLC0xMTg2ODQ4
-MTM3LDE3NTUyNDM1NjAsLTE1MDY3MzIyMjcsLTE5NzczODA2Nj
-UsLTIwMDUzMzQyNjYsMTU5MjQwODk2NywtMTMxNDg4MzgwMywt
-MTI4NDA1MDQzOV19
+eyJoaXN0b3J5IjpbMTA0NzcyNTgzLDE3MDUyNjAzMjEsLTEzMT
+kwNDk5MjYsMTU4MTI0ODUwOSwxMTM4MjUyMjUsMTQzMTc0MTIx
+MywxNjk3NDkzNzA3LC00Njk2NjUzNiwxNzUwNzA5MDMxLC02NT
+QxOTIwNjUsMTQyODk3MTYwMSwtMTYyNjA4MTk2MSwtMTE4Njg0
+ODEzNywxNzU1MjQzNTYwLC0xNTA2NzMyMjI3LC0xOTc3MzgwNj
+Y1LC0yMDA1MzM0MjY2LDE1OTI0MDg5NjcsLTEzMTQ4ODM4MDMs
+LTEyODQwNTA0MzldfQ==
 -->
