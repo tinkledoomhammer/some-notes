@@ -622,7 +622,7 @@ The lifetime elision rules
 3. if there are multiple input lifetime parameters, but one is `&self` or `&mut self`, the lifetime of `self` is assigned to all output lifetime parameters
 4. Otherwise explicit lifetime parameters are required
 
-** Lifetime annotations in method definitions **
+#### Method definitions and 'static
 
 Lifetime names for struct fields need to be declared after the `impl` keyword and used after the struct's name because they are a part of the struct's type
 ```rust
@@ -631,11 +631,11 @@ impl<'a> Excerpt<'a> {...}
 ```
 
 
-`static lifetime
+'static lifetime
 : special lifetime that denotes that the reference *can* live for the entire duration of the programs
 : like all string literals
 
-### Combined example Type params, trait bounds, and lifetimes
+#### Combined example Type params, trait bounds, and lifetimes
 ```rust
 use std::fmt::Display;
 fn longest_with_ann<'a, T>(
@@ -673,7 +673,7 @@ fn baz(f: &Foo) -> &i32 {/* ...*/}
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4ODU1NDczNiwxNjAxNDA3MzEzLDE0Nz
+eyJoaXN0b3J5IjpbMTQ4NjAyNjMxOCwxNjAxNDA3MzEzLDE0Nz
 k1NzcyNzIsLTE0MjAxNjg5NTUsMTA0NzcyNTgzLDE3MDUyNjAz
 MjEsLTEzMTkwNDk5MjYsMTU4MTI0ODUwOSwxMTM4MjUyMjUsMT
 QzMTc0MTIxMywxNjk3NDkzNzA3LC00Njk2NjUzNiwxNzUwNzA5
