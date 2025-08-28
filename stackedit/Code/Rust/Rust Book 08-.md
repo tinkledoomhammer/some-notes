@@ -471,15 +471,20 @@ impl Summary for NewsArticle {}
 #### Traits as Parameters
 
 `impl trait` syntax
-: `pub
+: `pub fn notify(item: &impl Summary) {...}`
+
+Trait Bound syntax
+: used with generics
+: `pub fn notify<T: Summary>(item: &T){...}`
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk2OTk3ODcsMTQzMTc0MTIxMywxNjk3ND
-kzNzA3LC00Njk2NjUzNiwxNzUwNzA5MDMxLC02NTQxOTIwNjUs
-MTQyODk3MTYwMSwtMTYyNjA4MTk2MSwtMTE4Njg0ODEzNywxNz
-U1MjQzNTYwLC0xNTA2NzMyMjI3LC0xOTc3MzgwNjY1LC0yMDA1
-MzM0MjY2LDE1OTI0MDg5NjcsLTEzMTQ4ODM4MDMsLTEyODQwNT
-A0MzksLTk5MDQ4OTk5NCwzMjU3Mjk2NzcsMTMzMzE2MDU1MSwt
-MjU5MDczMDI5XX0=
+eyJoaXN0b3J5IjpbMTk5NzMwOTI0NiwxNDMxNzQxMjEzLDE2OT
+c0OTM3MDcsLTQ2OTY2NTM2LDE3NTA3MDkwMzEsLTY1NDE5MjA2
+NSwxNDI4OTcxNjAxLC0xNjI2MDgxOTYxLC0xMTg2ODQ4MTM3LD
+E3NTUyNDM1NjAsLTE1MDY3MzIyMjcsLTE5NzczODA2NjUsLTIw
+MDUzMzQyNjYsMTU5MjQwODk2NywtMTMxNDg4MzgwMywtMTI4ND
+A1MDQzOSwtOTkwNDg5OTk0LDMyNTcyOTY3NywxMzMzMTYwNTUx
+LC0yNTkwNzMwMjldfQ==
 -->
