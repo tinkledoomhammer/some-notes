@@ -663,7 +663,13 @@ fn baz(f: &Foo) -> &i32 {/* ...*/}
 ```
 
 # 11 Automated Tests
+## 11.01 How to Write Tests
+Tests typically
+1. Set up any needed data or state
+2. Run the code to be tested
+3. Assert that the results are as expected
 
+### Anatomy of a Test Function
 
 
 
@@ -674,11 +680,11 @@ fn baz(f: &Foo) -> &i32 {/* ...*/}
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5OTgxMzU1MCwxNDg2MDI2MzE4LDE2MD
-E0MDczMTMsMTQ3OTU3NzI3MiwtMTQyMDE2ODk1NSwxMDQ3NzI1
-ODMsMTcwNTI2MDMyMSwtMTMxOTA0OTkyNiwxNTgxMjQ4NTA5LD
-ExMzgyNTIyNSwxNDMxNzQxMjEzLDE2OTc0OTM3MDcsLTQ2OTY2
-NTM2LDE3NTA3MDkwMzEsLTY1NDE5MjA2NSwxNDI4OTcxNjAxLC
-0xNjI2MDgxOTYxLC0xMTg2ODQ4MTM3LDE3NTUyNDM1NjAsLTE1
-MDY3MzIyMjddfQ==
+eyJoaXN0b3J5IjpbNTI1NDcyNDEyLDE0ODYwMjYzMTgsMTYwMT
+QwNzMxMywxNDc5NTc3MjcyLC0xNDIwMTY4OTU1LDEwNDc3MjU4
+MywxNzA1MjYwMzIxLC0xMzE5MDQ5OTI2LDE1ODEyNDg1MDksMT
+EzODI1MjI1LDE0MzE3NDEyMTMsMTY5NzQ5MzcwNywtNDY5NjY1
+MzYsMTc1MDcwOTAzMSwtNjU0MTkyMDY1LDE0Mjg5NzE2MDEsLT
+E2MjYwODE5NjEsLTExODY4NDgxMzcsMTc1NTI0MzU2MCwtMTUw
+NjczMjIyN119
 -->
