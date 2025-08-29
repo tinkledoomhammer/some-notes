@@ -682,7 +682,16 @@ $ cd adder
 $ code src/lib.rs
 ```
 ```rust
-pub fn add(left: u64, ri
+pub fn add(left: u64, right: u64) -> u64 { left + right }
+#[cfg(test)]
+mod tests {
+	use super::*;
+	#[test]
+	fn it_works() {
+		let result = add(2,2);
+		assert_eq!(result, 4);
+	}
+}
 ```
 
 
@@ -693,11 +702,11 @@ pub fn add(left: u64, ri
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY0MTI2MjE2LDUyNTQ3MjQxMiwxNDg2MD
-I2MzE4LDE2MDE0MDczMTMsMTQ3OTU3NzI3MiwtMTQyMDE2ODk1
-NSwxMDQ3NzI1ODMsMTcwNTI2MDMyMSwtMTMxOTA0OTkyNiwxNT
-gxMjQ4NTA5LDExMzgyNTIyNSwxNDMxNzQxMjEzLDE2OTc0OTM3
-MDcsLTQ2OTY2NTM2LDE3NTA3MDkwMzEsLTY1NDE5MjA2NSwxND
-I4OTcxNjAxLC0xNjI2MDgxOTYxLC0xMTg2ODQ4MTM3LDE3NTUy
-NDM1NjBdfQ==
+eyJoaXN0b3J5IjpbLTIwODMyNzA1MTQsNTI1NDcyNDEyLDE0OD
+YwMjYzMTgsMTYwMTQwNzMxMywxNDc5NTc3MjcyLC0xNDIwMTY4
+OTU1LDEwNDc3MjU4MywxNzA1MjYwMzIxLC0xMzE5MDQ5OTI2LD
+E1ODEyNDg1MDksMTEzODI1MjI1LDE0MzE3NDEyMTMsMTY5NzQ5
+MzcwNywtNDY5NjY1MzYsMTc1MDcwOTAzMSwtNjU0MTkyMDY1LD
+E0Mjg5NzE2MDEsLTE2MjYwODE5NjEsLTExODY4NDgxMzcsMTc1
+NTI0MzU2MF19
 -->
