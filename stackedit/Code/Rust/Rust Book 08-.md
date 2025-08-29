@@ -414,14 +414,14 @@ bad state
 * the type's `new` function or other constructor functions can panic when given invalid inputs
 * this means that the caller has to validate the input first to avoid the panic
 
-## 10 Generic Types, Traits, and Lifetimes
+# 10 Generic Types, Traits, and Lifetimes
 ### 10.01 Generic Data Types
-### 10.02 Traits
+## 10.02 Traits
 
 Traits
 : Basically interfaces
 
-#### Defining and implementing traits
+### Defining and implementing traits
 ```rust
 pub trait Summary {
 	fn sumarize(&self) -> String;
@@ -454,7 +454,7 @@ Orphan Rule
 : You can not implement an external trait for an external type
 
 
-#### Default implementations
+### Default implementations
 * including a function definition in the trait definition
 * Then to use the default implementation have an empty `impl` block
 ```rust
@@ -468,7 +468,7 @@ impl Summary for NewsArticle {}
 
 * The syntax for overriding a default implementation is the same as the syntax for providing an implementation for a function that does not have a default implementation
 
-#### Traits as Parameters
+### Traits as Parameters
 
 `impl trait` syntax
 : `pub fn notify(item: &impl Summary) {...}`
@@ -498,7 +498,7 @@ where
 }
 ```
 
-#### `impl` *trait* as a return type
+### `impl` *trait* as a return type
 * can **only** return **one** concrete type
 * often used when the return type is anonymous or very long
 	* such as closures and iterators
@@ -522,7 +522,7 @@ fn main() {
 }
 
 ```
-#### Trait bounds for conditional implementations
+### Trait bounds for conditional implementations
 
 blanket implementation
 : generic implementations apply to any type that implements the trait bounds
@@ -556,7 +556,7 @@ impl<T: Display + PartialOrd> Pair<T> {
 }
 ```
 
-### 10.03 Validating References with Lifetimes
+## 10.03 Validating References with Lifetimes
 Lifetime Annotations
 : A type of generic that ensures that a reference is as valid for as long as needed
 : they are often inferred
@@ -567,7 +567,7 @@ Lifetime
 Dangling Ref
 : when a ref outlives the data it points to aka **use after free**
 
-#### Lifetime Annotation Syntax
+### Lifetime Annotation Syntax
 
 * specified with a single quote: `'`
 ```rust
@@ -603,7 +603,7 @@ struct Excerpt<'a> {
 ```
 * references held by structs require a lifetime annotation
 
-#### Lifetime Elision
+### Lifetime Elision
 : like type inferences, but for lifetimes
 : typically, when a func takes one ref and returns another, the lifetime is assumed the same for both
 
@@ -622,7 +622,7 @@ The lifetime elision rules
 3. if there are multiple input lifetime parameters, but one is `&self` or `&mut self`, the lifetime of `self` is assigned to all output lifetime parameters
 4. Otherwise explicit lifetime parameters are required
 
-#### Method definitions and 'static
+### Method definitions and 'static
 
 Lifetime names for struct fields need to be declared after the `impl` keyword and used after the struct's name because they are a part of the struct's type
 ```rust
@@ -635,7 +635,7 @@ impl<'a> Excerpt<'a> {...}
 : special lifetime that denotes that the reference *can* live for the entire duration of the programs
 : like all string literals
 
-#### Combined example Type params, trait bounds, and lifetimes
+### Combined example Type params, trait bounds, and lifetimes
 ```rust
 use std::fmt::Display;
 fn longest_with_ann<'a, T>(
@@ -662,6 +662,7 @@ fn baz(f: &Foo) -> &i32 {/* ...*/}
 //because the lifetime of the return could be tied to Foo or to Foo.bar
 ```
 
+# 11 Automated Tests
 
 
 
@@ -673,11 +674,11 @@ fn baz(f: &Foo) -> &i32 {/* ...*/}
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4NjAyNjMxOCwxNjAxNDA3MzEzLDE0Nz
-k1NzcyNzIsLTE0MjAxNjg5NTUsMTA0NzcyNTgzLDE3MDUyNjAz
-MjEsLTEzMTkwNDk5MjYsMTU4MTI0ODUwOSwxMTM4MjUyMjUsMT
-QzMTc0MTIxMywxNjk3NDkzNzA3LC00Njk2NjUzNiwxNzUwNzA5
-MDMxLC02NTQxOTIwNjUsMTQyODk3MTYwMSwtMTYyNjA4MTk2MS
-wtMTE4Njg0ODEzNywxNzU1MjQzNTYwLC0xNTA2NzMyMjI3LC0x
-OTc3MzgwNjY1XX0=
+eyJoaXN0b3J5IjpbMTY5OTgxMzU1MCwxNDg2MDI2MzE4LDE2MD
+E0MDczMTMsMTQ3OTU3NzI3MiwtMTQyMDE2ODk1NSwxMDQ3NzI1
+ODMsMTcwNTI2MDMyMSwtMTMxOTA0OTkyNiwxNTgxMjQ4NTA5LD
+ExMzgyNTIyNSwxNDMxNzQxMjEzLDE2OTc0OTM3MDcsLTQ2OTY2
+NTM2LDE3NTA3MDkwMzEsLTY1NDE5MjA2NSwxNDI4OTcxNjAxLC
+0xNjI2MDgxOTYxLC0xMTg2ODQ4MTM3LDE3NTUyNDM1NjAsLTE1
+MDY3MzIyMjddfQ==
 -->
