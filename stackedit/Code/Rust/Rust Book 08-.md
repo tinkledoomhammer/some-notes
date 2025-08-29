@@ -670,7 +670,11 @@ Tests typically
 3. Assert that the results are as expected
 
 ### Anatomy of a Test Function
+`#[test]`
+: attribute that annotates test functions
+: will be run by `cargo test`
 
+* Creating a new library project in Cargo creates a test module aotumatically
 
 
 
@@ -680,11 +684,11 @@ Tests typically
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI1NDcyNDEyLDE0ODYwMjYzMTgsMTYwMT
-QwNzMxMywxNDc5NTc3MjcyLC0xNDIwMTY4OTU1LDEwNDc3MjU4
-MywxNzA1MjYwMzIxLC0xMzE5MDQ5OTI2LDE1ODEyNDg1MDksMT
-EzODI1MjI1LDE0MzE3NDEyMTMsMTY5NzQ5MzcwNywtNDY5NjY1
-MzYsMTc1MDcwOTAzMSwtNjU0MTkyMDY1LDE0Mjg5NzE2MDEsLT
-E2MjYwODE5NjEsLTExODY4NDgxMzcsMTc1NTI0MzU2MCwtMTUw
-NjczMjIyN119
+eyJoaXN0b3J5IjpbMTkyMzM0MzU2Nyw1MjU0NzI0MTIsMTQ4Nj
+AyNjMxOCwxNjAxNDA3MzEzLDE0Nzk1NzcyNzIsLTE0MjAxNjg5
+NTUsMTA0NzcyNTgzLDE3MDUyNjAzMjEsLTEzMTkwNDk5MjYsMT
+U4MTI0ODUwOSwxMTM4MjUyMjUsMTQzMTc0MTIxMywxNjk3NDkz
+NzA3LC00Njk2NjUzNiwxNzUwNzA5MDMxLC02NTQxOTIwNjUsMT
+QyODk3MTYwMSwtMTYyNjA4MTk2MSwtMTE4Njg0ODEzNywxNzU1
+MjQzNTYwXX0=
 -->
