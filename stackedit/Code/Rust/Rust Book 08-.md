@@ -675,6 +675,15 @@ Tests typically
 : will be run by `cargo test`
 
 * Creating a new library project in Cargo creates a test module aotumatically
+```bash
+$ cargo new adder --lib
+	Created library 'adder' project
+$ cd adder
+$ code src/lib.rs
+```
+```rust
+pub fn add(left: u64, ri
+```
 
 
 
@@ -684,11 +693,11 @@ Tests typically
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMzM0MzU2Nyw1MjU0NzI0MTIsMTQ4Nj
-AyNjMxOCwxNjAxNDA3MzEzLDE0Nzk1NzcyNzIsLTE0MjAxNjg5
-NTUsMTA0NzcyNTgzLDE3MDUyNjAzMjEsLTEzMTkwNDk5MjYsMT
-U4MTI0ODUwOSwxMTM4MjUyMjUsMTQzMTc0MTIxMywxNjk3NDkz
-NzA3LC00Njk2NjUzNiwxNzUwNzA5MDMxLC02NTQxOTIwNjUsMT
-QyODk3MTYwMSwtMTYyNjA4MTk2MSwtMTE4Njg0ODEzNywxNzU1
-MjQzNTYwXX0=
+eyJoaXN0b3J5IjpbNzY0MTI2MjE2LDUyNTQ3MjQxMiwxNDg2MD
+I2MzE4LDE2MDE0MDczMTMsMTQ3OTU3NzI3MiwtMTQyMDE2ODk1
+NSwxMDQ3NzI1ODMsMTcwNTI2MDMyMSwtMTMxOTA0OTkyNiwxNT
+gxMjQ4NTA5LDExMzgyNTIyNSwxNDMxNzQxMjEzLDE2OTc0OTM3
+MDcsLTQ2OTY2NTM2LDE3NTA3MDkwMzEsLTY1NDE5MjA2NSwxND
+I4OTcxNjAxLC0xNjI2MDgxOTYxLC0xMTg2ODQ4MTM3LDE3NTUy
+NDM1NjBdfQ==
 -->
