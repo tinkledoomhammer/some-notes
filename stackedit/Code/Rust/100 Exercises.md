@@ -341,9 +341,7 @@ impl Deref for String{
 
 ### 4.08 `Sized`
 * the `Sized` trait is implemented for fixed-size types
-* it is an **auto** trait and a **marker** trait
-
-Dynamically sized type (DST)
+* it is an **auto** trait and a **marker** traitynamically sized type (DST)
 : a type whose size is not known at compile time
 : references are **fat pointers**
 
@@ -358,7 +356,9 @@ Marker Traits
 Auto Traits
 : does not be need to be implemented explicitly; the compiler does so automatically
 
-`Sized` is an auto/marker trait that applies to all previously discussed types except `str` and other dynamically sized types
+`Sized` is an auto/marker trait that applies to all previously discussed types except `str` and other d
+
+Dynamically sized types
 
 This allows for implicit conversion
 
@@ -436,7 +436,7 @@ impl Deref for Asdf
 ```rust
 pub trait Add<RHS = Self> {
 	type Output;
-	fn add(self, rhs: RHS) -> Self::Output;
+	fn add(selef, rhs: RHS) -> Self::Output;
 }
 
 impl Add<u32> for u32{
@@ -1916,11 +1916,11 @@ Cancellation is usually manually managed
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzgzMTI5NDksLTQyNjk4MDg3MSw5OT
-A3OTc4NjksMTQzMjg1NjA3MywtMTQ3Nzg3NjQxMSwtMzI5MDY4
-OTg0LC0xNjU0Mzk1MDYzLDE3NDg2MTcwMDksLTE0NzY0NTgyOD
-EsMjE0MTE5NDQ3OCwxODQyODc0NDM4LC00MzY1Njc5MywtNDk1
-OTg5OTE5LDY4Nzc0ODMyOCwtMTEwMDEwOTIxMSwtMTcxMDI2MD
-E1OCwtMTYyMDI2NjIyMSwtMTUzMDYxODI1Nyw4NzY4MTczNzAs
-LTkyOTIwOTE3Ml19
+eyJoaXN0b3J5IjpbNzIwMzc5NDk2LC0xMjM4MzEyOTQ5LC00Mj
+Y5ODA4NzEsOTkwNzk3ODY5LDE0MzI4NTYwNzMsLTE0Nzc4NzY0
+MTEsLTMyOTA2ODk4NCwtMTY1NDM5NTA2MywxNzQ4NjE3MDA5LC
+0xNDc2NDU4MjgxLDIxNDExOTQ0NzgsMTg0Mjg3NDQzOCwtNDM2
+NTY3OTMsLTQ5NTk4OTkxOSw2ODc3NDgzMjgsLTExMDAxMDkyMT
+EsLTE3MTAyNjAxNTgsLTE2MjAyNjYyMjEsLTE1MzA2MTgyNTcs
+ODc2ODE3MzcwXX0=
 -->
