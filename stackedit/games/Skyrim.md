@@ -220,6 +220,7 @@ Recall Lydia
 
 
 serana  xx002B6C
+	02002b74
 
 [How to finish broken quests](https://steamcommunity.com/sharedfiles/filedetails/?id=446371882)
 
@@ -440,9 +441,9 @@ Tundra Cotton | Resi Mag | Forti Mag | Forti Mag Reg
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzgyMzczNiwtOTU0MTIyMzg1LC0yMT
-M2Nzc5MzksLTM5NTc0MTA3LDE3NDQxNDA0NzcsLTI4MDg1NzM0
-NSwtMjEzMTU5MTY2NSwxMzI3NTQyNzEyLC02MzIyNDE3ODksMT
-M5NDI0MDc1NywtMTY3MTU0NzQ2OCwxNDMyNzUwMDQ4LC0xOTM1
-ODM5NzM3LC0xMDY2NjQ5NzgyXX0=
+eyJoaXN0b3J5IjpbLTE0NjAxNTk2OTcsLTk1NDEyMjM4NSwtMj
+EzNjc3OTM5LC0zOTU3NDEwNywxNzQ0MTQwNDc3LC0yODA4NTcz
+NDUsLTIxMzE1OTE2NjUsMTMyNzU0MjcxMiwtNjMyMjQxNzg5LD
+EzOTQyNDA3NTcsLTE2NzE1NDc0NjgsMTQzMjc1MDA0OCwtMTkz
+NTgzOTczNywtMTA2NjY0OTc4Ml19
 -->
