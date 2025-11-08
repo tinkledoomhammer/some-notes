@@ -324,7 +324,7 @@ Byte `u8` only | b'A'
 * 4-byte character codes
 * literals use single quotes `let c: char = 'z';`
 * They are *Unicode Scalar Value*s
-* Valid values are in [U+0000 , U+D7FF]$ and U+E0000 , U+10FFFF]
+* Valid values are in [U+0000 , U+D7FF] and [U+E0000 , U+10FFFF]
 * See also [“Storing UTF-8 Encoded Text with Strings”](https://rust-book.cs.brown.edu/ch08-02-strings.html#storing-utf-8-encoded-text-with-strings)
 
 
@@ -1709,6 +1709,6 @@ mod engine;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MDY1OTAxMywxMTUxNjQzNSwtMTQzOT
-M4MjA2NiwtNTYxNzE5ODA2XX0=
+eyJoaXN0b3J5IjpbMTQyNDUwNTIyNCwtMzcwNjU5MDEzLDExNT
+E2NDM1LC0xNDM5MzgyMDY2LC01NjE3MTk4MDZdfQ==
 -->
