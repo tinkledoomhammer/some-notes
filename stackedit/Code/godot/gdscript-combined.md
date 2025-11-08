@@ -257,10 +257,10 @@ Those exceptions are `Object` `Array` `Dictionary` and packed arrays
 `Vector2i`
 : int `x` and `y`
 
-Rect2
+`Rect2`
 : `position` and `size` and also an `end` field which is `position+size`
 
-`Vector3` Vector3i`
+`Vector3` and `Vector3i`
 : `x` `y` and `z`
 
 `Transform2D`
@@ -1529,6 +1529,6 @@ Host file system
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNTkzMzk0MSwtMTM2MDc0MTcyOCw0MT
-EyOTAxODAsLTI3NjQzODk3Ml19
+eyJoaXN0b3J5IjpbLTE3ODk5OTEyMTYsLTUzNTkzMzk0MSwtMT
+M2MDc0MTcyOCw0MTEyOTAxODAsLTI3NjQzODk3Ml19
 -->
