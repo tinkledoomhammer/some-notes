@@ -158,7 +158,7 @@ fn main() {
 ```
 * `cargo doc --open` will autogenerate documentation, including all the dependencies, and open it in a browser
 
-* `use rand::Rng;` The `Rng` trait defines methods that number random generators implement. Traits are covered in chapter 10
+* `use rand::Rng;` The `Rng` trait defines methods that random number generators implement. Traits are covered in chapter 10
 
 *`rand::thread_rng()` function gives a random number generator that is local to the current thread and seeded by the os
 * the `.gen_range()` method is defined by the `Rng` trait
@@ -1709,6 +1709,6 @@ mod engine;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjU0Mzc4NTcsLTE0MzkzODIwNjYsLT
-U2MTcxOTgwNl19
+eyJoaXN0b3J5IjpbMTE1MTY0MzUsLTE0MzkzODIwNjYsLTU2MT
+cxOTgwNl19
 -->
