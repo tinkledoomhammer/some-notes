@@ -68,7 +68,7 @@ Operators | Description
 `<<` , `>>` | Bit shifting
 `&` | bitwise AND
 `^` | bitwise XOR
-[pipe] | bitwise OR
+[pipe]| bitwise OR
 `==` `!=` `<` `>` `<=` `>=` | Comparison
 `x in y` `x not in y` | Inclusion checking
 `not x` `!x` | boolean NOT
@@ -1529,6 +1529,6 @@ Host file system
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0OTM3NDE0OSwtMTM2MDc0MTcyOCw0MT
+eyJoaXN0b3J5IjpbMTE0Nzg0OTA5MSwtMTM2MDc0MTcyOCw0MT
 EyOTAxODAsLTI3NjQzODk3Ml19
 -->
