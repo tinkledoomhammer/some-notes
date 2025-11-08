@@ -106,7 +106,7 @@ io::stdin()
 * The `read_line` method puts the data into the argument and returns a `Result`
 * `Result`s are enumerations that can be `Ok` or `Err`
 	* If `Ok` was returned, then it will contain the generated value
-	* `Err` indicates an error and it contains information about how/why the failiure occured
+	* `Err` indicates an error and it contains information about how/why the failure occurred
 	* `.expect` is a method on the `Result` type
 		* It causes the program to crash and print the argument passed to `.expect` when an  `Err` is returned
 		* if the call is omitted then the compiler will generate warning
@@ -1709,6 +1709,6 @@ mod engine;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5NzkwNjc2NCwtMTQzOTM4MjA2NiwtNT
-YxNzE5ODA2XX0=
+eyJoaXN0b3J5IjpbLTIxMjU0Mzc4NTcsLTE0MzkzODIwNjYsLT
+U2MTcxOTgwNl19
 -->
