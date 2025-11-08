@@ -68,7 +68,7 @@ Operators | Description
 `<<` , `>>` | Bit shifting
 `&` | bitwise AND
 `^` | bitwise XOR
-[pipe]| bitwise OR
+[pipe] | bitwise OR
 `==` `!=` `<` `>` `<=` `>=` | Comparison
 `x in y` `x not in y` | Inclusion checking
 `not x` `!x` | boolean NOT
@@ -123,7 +123,7 @@ Escape sequence | Expands to
 `\UXXXXXXX` | Utf32 codepoint (hex, case-insensitive)
 
 Unicode characters above `0xFFFF` can be represented 2 wats
-1. as a UTF-16 surrogate paor `\uXXXX\uXXXX`
+1. as a UTF-16 surrogate pair `\uXXXX\uXXXX`
 2. As a single UTF-32 codepoint `\UXXXXXX`
 
 * Using a `\` followed by a newline inside a string will continue the string on the next line without inserting a newline char into the string
@@ -1529,6 +1529,6 @@ Host file system
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0Nzg0OTA5MSwtMTM2MDc0MTcyOCw0MT
+eyJoaXN0b3J5IjpbLTUzNTkzMzk0MSwtMTM2MDc0MTcyOCw0MT
 EyOTAxODAsLTI3NjQzODk3Ml19
 -->
