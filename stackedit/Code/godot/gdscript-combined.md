@@ -28,7 +28,7 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_bas
 ### Identifiers
 * Restricted to alphabetic + digits + `_` underscore
 * Can not start with a digit
-* case ssensitive
+* case sensitive
 
 ### Keywords
 ```python
@@ -1529,6 +1529,6 @@ Host file system
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjA3NDE3MjgsNDExMjkwMTgwLC0yNz
-Y0Mzg5NzJdfQ==
+eyJoaXN0b3J5IjpbMTc0OTM3NDE0OSwtMTM2MDc0MTcyOCw0MT
+EyOTAxODAsLTI3NjQzODk3Ml19
 -->
