@@ -593,7 +593,7 @@ A class that is stored as a file can inherit from
 * Every class has an implicit constructor that is always called first (which initializes variables with the values specified outside of any function)
 * `super` will only call the explicit constructor. the automatic one is already called
 Some rules:
-1. If the inherited class defines an `_init` that takes arguments, the nthe inheriting class *must* define `_init` and pass the appropriate parameters to `super`
+1. If the inherited class defines an `_init` that takes arguments, then the inheriting class *must* define `_init` and pass the appropriate parameters to `super`
 2. The inheriting class can have a different number of arguments thatn the base class
 
 Static Constructor
@@ -758,5 +758,5 @@ func _on_object_hit(object):
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NDAyNzM5Nyw2MzEzMTEwODhdfQ==
+eyJoaXN0b3J5IjpbNjA4OTI5MTIxLDYzMTMxMTA4OF19
 -->
