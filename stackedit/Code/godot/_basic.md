@@ -643,7 +643,7 @@ func set_my_prop(value)
 
 ## Tool mode
 `@tool`
-: the annotationn allows scripts to be run inside the editor instead of only in the game
+: the annotation allows scripts to be run inside the editor instead of only in the game
 https://docs.godotengine.org/en/stable/tutorials/plugins/running_code_in_the_editor.html
 
 
@@ -758,5 +758,5 @@ func _on_object_hit(object):
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg3NzM5NTAxLDYzMTMxMTA4OF19
+eyJoaXN0b3J5IjpbMTkxNDMwODg4Myw2MzEzMTEwODhdfQ==
 -->
