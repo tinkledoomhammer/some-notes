@@ -4,8 +4,12 @@
 	* Damage types
 	* AOE?
 	* Fire rate, crits, other stats
+	* debuffs?
+	* obstruction?
 * a variety of enemy types
-	* moven
+	* movement speed
+	* defenses 
+	* damage?
 * pathing
 * damage calculations
 * victory conditions
@@ -20,5 +24,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE1NDYxODRdfQ==
+eyJoaXN0b3J5IjpbLTEwOTE4NzE0ODFdfQ==
 -->
