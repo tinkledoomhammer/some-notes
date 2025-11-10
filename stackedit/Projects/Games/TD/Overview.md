@@ -10,6 +10,7 @@
 	* movement speed
 	* defenses 
 	* damage?
+	* movement types
 * pathing
 * damage calculations
 * victory conditions
@@ -22,7 +23,12 @@
 * Walls?
 * 
 
+## Assets
+### Visual
+* rendered vector graphics
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTE4NzE0ODFdfQ==
+eyJoaXN0b3J5IjpbMTEyODMyNTc4MF19
 -->
