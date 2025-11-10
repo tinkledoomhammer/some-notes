@@ -571,9 +571,9 @@ extends Node
 * Named classes are available globally without `load()` or `preload()`
 
 * Non-static variables are initizlized every time an instance is created, including arrays and dictionaries
-* The editor will hade custom classes that begin with the prefix "Editor" in the "Create new Node" and "Create new scene" dialog windows
+* The editor will have custom classes that begin with the prefix "Editor" in the "Create new Node" and "Create new scene" dialog windows
 
-A class that is stored as a file can inherit fro
+A class that is stored as a file can inherit from
 * a global calss
 * another class file
 * an inner class inside another file
@@ -758,5 +758,5 @@ func _on_object_hit(object):
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjMxMzExMDg4XX0=
+eyJoaXN0b3J5IjpbMTE2NDAyNzM5Nyw2MzEzMTEwODhdfQ==
 -->
