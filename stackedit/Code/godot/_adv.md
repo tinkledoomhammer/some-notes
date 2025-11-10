@@ -284,7 +284,7 @@ Tag | | Example/result
 -|-|-
 `[Class]` | Link to a class | Move the [Sprite2D].
 `[annotation Class.name]` | Link to annotation | See [annotation @GDScript.@rpc].
-`[constant Class.name]`` | link to constant| See [constant COlor.RED].
+`[constant Class.name]` | link to constant| See [constant Color.RED].
 `[enum Class.name]` | |
 `[member Class.name]` | |
 `[method Class.name]` | |
@@ -754,5 +754,5 @@ Array | no index | "{} v{}" | `["aname","3.0"]`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzI3OTk2NjZdfQ==
+eyJoaXN0b3J5IjpbMTY5NTAyNjI4MCwtMTg3Mjc5OTY2Nl19
 -->
