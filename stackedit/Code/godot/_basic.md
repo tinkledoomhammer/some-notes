@@ -622,7 +622,7 @@ var seconds: int:
 		milliseconds = value * 1000
 # or methods can be used
 var  my_prop:
-	get  =  get_my_prop,  set  =  set_my_pro
+	get  =  get_my_prop,  set  =  set_my_prop
 
 # it can all be on one line
 var my_prop: get = get_my_prop, set = set_my_prop
@@ -758,5 +758,5 @@ func _on_object_hit(object):
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA4OTI5MTIxLDYzMTMxMTA4OF19
+eyJoaXN0b3J5IjpbMzg3NzM5NTAxLDYzMTMxMTA4OF19
 -->
