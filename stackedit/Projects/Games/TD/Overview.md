@@ -26,9 +26,15 @@
 ## Assets
 ### Visual
 * rendered vector graphics
+	* perhaps 3d
+	* Need a system for procedurally generating graphics
+
+
+* or free online stuff
+* 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyODMyNTc4MF19
+eyJoaXN0b3J5IjpbODg3NjU3NzM2XX0=
 -->
