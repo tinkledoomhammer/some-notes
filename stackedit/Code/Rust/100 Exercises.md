@@ -506,7 +506,7 @@ impl Drop for MyStruct{
 * trying will produce a compiler error
 
 ### Traits Wrapup
-* Don't make a function eneric if it is always invoked with a single type.
+* Don't make a function generic if it is always invoked with a single type.
 * Don't create a trait if you only have one implementation
 * Implement standard traits for custome types (`Debug`, `PartialEq`, etc)
 * Implement traits from 3rd party crates to use their functionality
@@ -1916,11 +1916,11 @@ Cancellation is usually manually managed
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDQ0NjQyNiw3MjAzNzk0OTYsLTEyMz
-gzMTI5NDksLTQyNjk4MDg3MSw5OTA3OTc4NjksMTQzMjg1NjA3
-MywtMTQ3Nzg3NjQxMSwtMzI5MDY4OTg0LC0xNjU0Mzk1MDYzLD
-E3NDg2MTcwMDksLTE0NzY0NTgyODEsMjE0MTE5NDQ3OCwxODQy
-ODc0NDM4LC00MzY1Njc5MywtNDk1OTg5OTE5LDY4Nzc0ODMyOC
-wtMTEwMDEwOTIxMSwtMTcxMDI2MDE1OCwtMTYyMDI2NjIyMSwt
-MTUzMDYxODI1N119
+eyJoaXN0b3J5IjpbNDgzODk0NzQ5LC0xMDA0NDY0MjYsNzIwMz
+c5NDk2LC0xMjM4MzEyOTQ5LC00MjY5ODA4NzEsOTkwNzk3ODY5
+LDE0MzI4NTYwNzMsLTE0Nzc4NzY0MTEsLTMyOTA2ODk4NCwtMT
+Y1NDM5NTA2MywxNzQ4NjE3MDA5LC0xNDc2NDU4MjgxLDIxNDEx
+OTQ0NzgsMTg0Mjg3NDQzOCwtNDM2NTY3OTMsLTQ5NTk4OTkxOS
+w2ODc3NDgzMjgsLTExMDAxMDkyMTEsLTE3MTAyNjAxNTgsLTE2
+MjAyNjYyMjFdfQ==
 -->
