@@ -783,7 +783,7 @@ Crate
 
 Binaries
 : a program compiled into an executable file
-* must in clude a `main` function
+* must include a `main` function
 
 Libraries
 : a group of code (functions, types, etc) that can be used by other packages as a **dependency**
@@ -1916,11 +1916,11 @@ Cancellation is usually manually managed
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgzODk0NzQ5LC0xMDA0NDY0MjYsNzIwMz
-c5NDk2LC0xMjM4MzEyOTQ5LC00MjY5ODA4NzEsOTkwNzk3ODY5
-LDE0MzI4NTYwNzMsLTE0Nzc4NzY0MTEsLTMyOTA2ODk4NCwtMT
-Y1NDM5NTA2MywxNzQ4NjE3MDA5LC0xNDc2NDU4MjgxLDIxNDEx
-OTQ0NzgsMTg0Mjg3NDQzOCwtNDM2NTY3OTMsLTQ5NTk4OTkxOS
-w2ODc3NDgzMjgsLTExMDAxMDkyMTEsLTE3MTAyNjAxNTgsLTE2
-MjAyNjYyMjFdfQ==
+eyJoaXN0b3J5IjpbLTE0MDA5NDAzMDksNDgzODk0NzQ5LC0xMD
+A0NDY0MjYsNzIwMzc5NDk2LC0xMjM4MzEyOTQ5LC00MjY5ODA4
+NzEsOTkwNzk3ODY5LDE0MzI4NTYwNzMsLTE0Nzc4NzY0MTEsLT
+MyOTA2ODk4NCwtMTY1NDM5NTA2MywxNzQ4NjE3MDA5LC0xNDc2
+NDU4MjgxLDIxNDExOTQ0NzgsMTg0Mjg3NDQzOCwtNDM2NTY3OT
+MsLTQ5NTk4OTkxOSw2ODc3NDgzMjgsLTExMDAxMDkyMTEsLTE3
+MTAyNjAxNThdfQ==
 -->
