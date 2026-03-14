@@ -586,7 +586,7 @@ match status{
 
 ```
 
-**Need to get a better understanding of refs as arguments for trait methods **
+**Need to get a better understanding of refs as arguments for trait methods**
 ```rust
  pub fn assigned_to(&self) -> &str {
         match &self.status{
@@ -1916,11 +1916,11 @@ Cancellation is usually manually managed
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDA5NDAzMDksNDgzODk0NzQ5LC0xMD
-A0NDY0MjYsNzIwMzc5NDk2LC0xMjM4MzEyOTQ5LC00MjY5ODA4
-NzEsOTkwNzk3ODY5LDE0MzI4NTYwNzMsLTE0Nzc4NzY0MTEsLT
-MyOTA2ODk4NCwtMTY1NDM5NTA2MywxNzQ4NjE3MDA5LC0xNDc2
-NDU4MjgxLDIxNDExOTQ0NzgsMTg0Mjg3NDQzOCwtNDM2NTY3OT
-MsLTQ5NTk4OTkxOSw2ODc3NDgzMjgsLTExMDAxMDkyMTEsLTE3
-MTAyNjAxNThdfQ==
+eyJoaXN0b3J5IjpbMzE0MjU5NzczLC0xNDAwOTQwMzA5LDQ4Mz
+g5NDc0OSwtMTAwNDQ2NDI2LDcyMDM3OTQ5NiwtMTIzODMxMjk0
+OSwtNDI2OTgwODcxLDk5MDc5Nzg2OSwxNDMyODU2MDczLC0xND
+c3ODc2NDExLC0zMjkwNjg5ODQsLTE2NTQzOTUwNjMsMTc0ODYx
+NzAwOSwtMTQ3NjQ1ODI4MSwyMTQxMTk0NDc4LDE4NDI4NzQ0Mz
+gsLTQzNjU2NzkzLC00OTU5ODk5MTksNjg3NzQ4MzI4LC0xMTAw
+MTA5MjExXX0=
 -->
