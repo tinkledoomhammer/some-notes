@@ -81,7 +81,7 @@ impl Ticket{
 		//...
 		Ticket{title, ...}
 	}
-	//or ... ?
+	//or 
 	pub fn new(title: String, ...) ->Self ...
 }
 ```
@@ -1916,11 +1916,11 @@ Cancellation is usually manually managed
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk5ODE4Njg5LDMxNDI1OTc3MywtMTQwMD
-k0MDMwOSw0ODM4OTQ3NDksLTEwMDQ0NjQyNiw3MjAzNzk0OTYs
-LTEyMzgzMTI5NDksLTQyNjk4MDg3MSw5OTA3OTc4NjksMTQzMj
-g1NjA3MywtMTQ3Nzg3NjQxMSwtMzI5MDY4OTg0LC0xNjU0Mzk1
-MDYzLDE3NDg2MTcwMDksLTE0NzY0NTgyODEsMjE0MTE5NDQ3OC
-wxODQyODc0NDM4LC00MzY1Njc5MywtNDk1OTg5OTE5LDY4Nzc0
-ODMyOF19
+eyJoaXN0b3J5IjpbMTMyOTAyOTA5NCw5OTk4MTg2ODksMzE0Mj
+U5NzczLC0xNDAwOTQwMzA5LDQ4Mzg5NDc0OSwtMTAwNDQ2NDI2
+LDcyMDM3OTQ5NiwtMTIzODMxMjk0OSwtNDI2OTgwODcxLDk5MD
+c5Nzg2OSwxNDMyODU2MDczLC0xNDc3ODc2NDExLC0zMjkwNjg5
+ODQsLTE2NTQzOTUwNjMsMTc0ODYxNzAwOSwtMTQ3NjQ1ODI4MS
+wyMTQxMTk0NDc4LDE4NDI4NzQ0MzgsLTQzNjU2NzkzLC00OTU5
+ODk5MTldfQ==
 -->
