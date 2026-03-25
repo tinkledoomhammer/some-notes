@@ -217,7 +217,7 @@ carry wt, barter, fort stam, res fire
 ## Console notes
 Recall Lydia 
 **Type "prid 000A2c94" (without quotation marks) and hit Enter**. Type "moveto player" (again no quotation marks) and hit Enter.
-
+barabus 00052535
 
 serana  xx002B6C
 	02002b74
@@ -441,9 +441,9 @@ Tundra Cotton | Resi Mag | Forti Mag | Forti Mag Reg
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjAxNTk2OTcsLTk1NDEyMjM4NSwtMj
-EzNjc3OTM5LC0zOTU3NDEwNywxNzQ0MTQwNDc3LC0yODA4NTcz
-NDUsLTIxMzE1OTE2NjUsMTMyNzU0MjcxMiwtNjMyMjQxNzg5LD
-EzOTQyNDA3NTcsLTE2NzE1NDc0NjgsMTQzMjc1MDA0OCwtMTkz
-NTgzOTczNywtMTA2NjY0OTc4Ml19
+eyJoaXN0b3J5IjpbLTE3NjUxOTgxNywtMTQ2MDE1OTY5NywtOT
+U0MTIyMzg1LC0yMTM2Nzc5MzksLTM5NTc0MTA3LDE3NDQxNDA0
+NzcsLTI4MDg1NzM0NSwtMjEzMTU5MTY2NSwxMzI3NTQyNzEyLC
+02MzIyNDE3ODksMTM5NDI0MDc1NywtMTY3MTU0NzQ2OCwxNDMy
+NzUwMDQ4LC0xOTM1ODM5NzM3LC0xMDY2NjQ5NzgyXX0=
 -->
