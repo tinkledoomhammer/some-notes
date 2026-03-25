@@ -217,9 +217,10 @@ carry wt, barter, fort stam, res fire
 ## Console notes
 Recall Lydia 
 **Type "prid 000A2c94" (without quotation marks) and hit Enter**. Type "moveto player" (again no quotation marks) and hit Enter.
-barabus 00052535
 
+barabus 00052535
 serana  xx002B6C
+
 	02002b74
 
 [How to finish broken quests](https://steamcommunity.com/sharedfiles/filedetails/?id=446371882)
@@ -441,9 +442,10 @@ Tundra Cotton | Resi Mag | Forti Mag | Forti Mag Reg
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjUxOTgxNywtMTQ2MDE1OTY5NywtOT
-U0MTIyMzg1LC0yMTM2Nzc5MzksLTM5NTc0MTA3LDE3NDQxNDA0
-NzcsLTI4MDg1NzM0NSwtMjEzMTU5MTY2NSwxMzI3NTQyNzEyLC
-02MzIyNDE3ODksMTM5NDI0MDc1NywtMTY3MTU0NzQ2OCwxNDMy
-NzUwMDQ4LC0xOTM1ODM5NzM3LC0xMDY2NjQ5NzgyXX0=
+eyJoaXN0b3J5IjpbMTg5MDE2NjM3MywtMTc2NTE5ODE3LC0xND
+YwMTU5Njk3LC05NTQxMjIzODUsLTIxMzY3NzkzOSwtMzk1NzQx
+MDcsMTc0NDE0MDQ3NywtMjgwODU3MzQ1LC0yMTMxNTkxNjY1LD
+EzMjc1NDI3MTIsLTYzMjI0MTc4OSwxMzk0MjQwNzU3LC0xNjcx
+NTQ3NDY4LDE0MzI3NTAwNDgsLTE5MzU4Mzk3MzcsLTEwNjY2ND
+k3ODJdfQ==
 -->
