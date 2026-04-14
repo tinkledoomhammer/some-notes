@@ -28,7 +28,7 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_bas
 ## Identifiers
 * Restricted to alphabetic + digits + `_` underscore
 * Can not start with a digit
-* case ssensitive
+* case sensitive
 
 ## Keywords
 ```python
@@ -758,5 +758,6 @@ func _on_object_hit(object):
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNDMwODg4Myw2MzEzMTEwODhdfQ==
+eyJoaXN0b3J5IjpbNjM0MzE4MDcyLDE5MTQzMDg4ODMsNjMxMz
+ExMDg4XX0=
 -->
