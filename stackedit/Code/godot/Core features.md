@@ -1,32 +1,32 @@
 # Core features
 https://docs.godotengine.org/en/stable/tutorials/scripting/index.html#core-features
 
-### How to read the Godot API
+## How to read the Godot API
 
-### Debug
+## Debug
 
-### Idle and Physics processing
+## Idle and Physics processing
 
-### Groups
+## Groups
 
-### Nodes and scene instances
+## Nodes and scene instances
 
-### Overridable functions
+## Overridable functions
 
-### Cross-language scripting
+## Cross-language scripting
 
-### Creating script templates
+## Creating script templates
 
-### Evaluating expressions
+## Evaluating expressions
 
-### change scenes manually
+## change scenes manually
 
-### Instancing with signals
+## Instancing with signals
 
 
-### Pausing games and process mode
+## Pausing games and process mode
 
-### File system
+## File system
 Example:
 ```
 /project.godot
@@ -61,17 +61,17 @@ Host file system
 	* using all lower-case seems like the best resolution
 * 
 
-### Resources
+## Resources
 
-### Singletons (Autoload)
+## Singletons (Autoload)
 
-### Using SceneTree
+## Using SceneTree
 
-### Scene Unique Nodes
+## Scene Unique Nodes
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mzc3Mjc0MjZdfQ==
+eyJoaXN0b3J5IjpbLTE2NTcwOTg4NV19
 -->
