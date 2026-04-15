@@ -19,7 +19,7 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/index.html#core-featu
 
 ## Evaluating expressions
 
-## change scenes manually
+## Change scenes manually
 
 ## Instancing with signals
 
@@ -69,9 +69,9 @@ Host file system
 
 ## Scene Unique Nodes
 
-
+## Logging
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTcwOTg4NV19
+eyJoaXN0b3J5IjpbLTkxMTcyMjQ5MiwtMTY1NzA5ODg1XX0=
 -->
