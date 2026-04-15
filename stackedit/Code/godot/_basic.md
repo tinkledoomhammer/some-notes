@@ -309,7 +309,7 @@ Allowed "types" : `Byte` `Int32` `Int64` `Float32` `Float64` `String` `Vector2` 
 * Typed arrays are fairly fast on their own. The packed arrays are useful to reduce memory fragmentation for very large collections
 
 ### `Dictionary`
-: Associative arrays which contain values referenced by unique keys
+ : Associative arrays which contain values referenced by unique keys
 ```python
 # style 1 (json)
 var d = {4: 5, "A key": "A value", 28: [1, 2, 3]}
@@ -758,6 +758,6 @@ func _on_object_hit(object):
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA1Mjk1NjgwLDYzNDMxODA3MiwxOTE0Mz
-A4ODgzLDYzMTMxMTA4OF19
+eyJoaXN0b3J5IjpbMTc0Njc3MTI3MCw2MzQzMTgwNzIsMTkxND
+MwODg4Myw2MzEzMTEwODhdfQ==
 -->
