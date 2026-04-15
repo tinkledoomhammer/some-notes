@@ -332,6 +332,8 @@ TODO: Typed dicts
 : contains an object and a function which is usefull for passing functions a values
 * Getting a method as a member variable returns a callable `object.methodName` (no parens) 
 * Can be called by invoking the call method. `object.methodName.call(x,y)` is the same as `object.methodName(x,y)`
+* can be invoked later with `obect.methodName.call_defferred(x,y)`
+	* will not be executed during frame rendering (
 
 ## Variables
 * can be class members or local to functions
@@ -758,6 +760,6 @@ func _on_object_hit(object):
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0Njc3MTI3MCw2MzQzMTgwNzIsMTkxND
-MwODg4Myw2MzEzMTEwODhdfQ==
+eyJoaXN0b3J5IjpbMTAxNTAxNzcxLDE3NDY3NzEyNzAsNjM0Mz
+E4MDcyLDE5MTQzMDg4ODMsNjMxMzExMDg4XX0=
 -->
