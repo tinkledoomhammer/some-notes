@@ -333,12 +333,13 @@ TODO: Typed dicts
 * Getting a method as a member variable returns a callable `object.methodName` (no parens) 
 * Can be called by invoking the call method. `object.methodName.call(x,y)` is the same as `object.methodName(x,y)`
 * can be invoked later with `obect.methodName.call_defferred(x,y)`
-	* will not be executed during frame rendering (
+	* will not be executed during frame rendering (i.e. `_process()` and `_physics_process()`
+	* 
 
 ## Variables
 * can be class members or local to functions
 * created with the `var` keyword
-* may be assigned upon or ofter initialization
+* may be assigned upon or after initialization
 * They can have an optional type specification i.e. `var a : int = 0`
 * Types can be inferred `var a :=0`
 	* Type inferencing is not allowed for a `Variant` type
@@ -760,6 +761,6 @@ func _on_object_hit(object):
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxNTAxNzcxLDE3NDY3NzEyNzAsNjM0Mz
-E4MDcyLDE5MTQzMDg4ODMsNjMxMzExMDg4XX0=
+eyJoaXN0b3J5IjpbMTA1ODA4NDQ4OCwxNzQ2NzcxMjcwLDYzND
+MxODA3MiwxOTE0MzA4ODgzLDYzMTMxMTA4OF19
 -->
