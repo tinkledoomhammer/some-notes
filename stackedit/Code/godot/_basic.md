@@ -452,7 +452,7 @@ func cube(a):
 * statements can be assignments, function calls, flow control structures, etc.
 
 Expressions
-: sequences of operators and their operands i an orderly fashion
+: sequences of operators and their operands in an orderly fashion
 : they can also be statements
 * Return values that can be assigned to valid targets
 * Operands to some operators can also be expression
@@ -761,6 +761,7 @@ func _on_object_hit(object):
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1ODA4NDQ4OCwxNzQ2NzcxMjcwLDYzND
-MxODA3MiwxOTE0MzA4ODgzLDYzMTMxMTA4OF19
+eyJoaXN0b3J5IjpbLTE5OTY2MDEwMjgsMTA1ODA4NDQ4OCwxNz
+Q2NzcxMjcwLDYzNDMxODA3MiwxOTE0MzA4ODgzLDYzMTMxMTA4
+OF19
 -->
