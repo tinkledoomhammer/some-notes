@@ -696,7 +696,7 @@ Signals
 `await`
 : keyword used to create coroutines
 : causes execution to wait until the signal is emitted before coninuing
-* usig the await keyword with a signal or a call to a function that is also a coroutine will immediately return control to the caller.
+* using the await keyword with a signal or a call to a function that is also a coroutine will immediately return control to the caller.
 	* when the signal is emitted or the coroutine finishes, it will resume execution from the point where it stopped
 * using a return value from a coroutine without using `await` will generate an error
 * If the return value is unneeded then `await` is optional
@@ -761,7 +761,7 @@ func _on_object_hit(object):
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTY2MDEwMjgsMTA1ODA4NDQ4OCwxNz
-Q2NzcxMjcwLDYzNDMxODA3MiwxOTE0MzA4ODgzLDYzMTMxMTA4
-OF19
+eyJoaXN0b3J5IjpbMTk1MjA0ODYxMCwtMTk5NjYwMTAyOCwxMD
+U4MDg0NDg4LDE3NDY3NzEyNzAsNjM0MzE4MDcyLDE5MTQzMDg4
+ODMsNjMxMzExMDg4XX0=
 -->
