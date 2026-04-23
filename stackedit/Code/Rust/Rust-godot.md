@@ -329,7 +329,9 @@ Chapter 4 [Registering Rust symbols](https://godot-rust.github.io/book/register/
 
 GDScript | Rust | Example
 --|--|--
-`int` | `i64
+`int` | `i64` | `-123`
+`float` | `f64` | `3.14`
+`String` | `GString` | "some String"
 `Object` | `GD<Object>` | `Object::new_alloc()`
 `SomeClass` | `Gd<SomeClass>` | `Resource::new_gd()`
 (nullable) `SomeClass` | `Option<Gd<SomeClass>>`| `None`
@@ -340,8 +342,8 @@ GDScript | Rust | Example
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzU5NzYwOTIsLTExMjQ2MTMxNjAsNj
-c0MjUzODgwLC04ODA1MDM3NjEsLTIwNTQ2MjAzMzQsLTEyOTM2
-OTMwMDksLTE4NjAwOTMxMTIsLTczMzE4Mjc2NSwtMTM5MzE3Nz
-g4MCwtMTcxMTIwMDUzM119
+eyJoaXN0b3J5IjpbMTAwMzIwNzM1NywtMTEyNDYxMzE2MCw2Nz
+QyNTM4ODAsLTg4MDUwMzc2MSwtMjA1NDYyMDMzNCwtMTI5MzY5
+MzAwOSwtMTg2MDA5MzExMiwtNzMzMTgyNzY1LC0xMzkzMTc3OD
+gwLC0xNzExMjAwNTMzXX0=
 -->
