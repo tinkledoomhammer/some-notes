@@ -354,14 +354,17 @@ or `Array[Variant]` | or `Array<Variant>` |
 Godot APIs will accept references of the desired type, i.e. `&GString` or rust string types (`&str`, `&String`).
 To pass one godot type where another is desired, use `.arg()` i.e.
 ```rust
-let string_name =St
+let string_name = StringName::From("my other text");
+let gstring = GString::From("Third text");
 label.set_text("my text");
+label.set_text(string_name.arg());
+label.set_text(&gstring);
 ```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgyMzc3MDEzLC0xNzU1MzA0ODQzLC0xMT
+eyJoaXN0b3J5IjpbNTI1NTI1OTEzLC0xNzU1MzA0ODQzLC0xMT
 I0NjEzMTYwLDY3NDI1Mzg4MCwtODgwNTAzNzYxLC0yMDU0NjIw
 MzM0LC0xMjkzNjkzMDA5LC0xODYwMDkzMTEyLC03MzMxODI3Nj
 UsLTEzOTMxNzc4ODAsLTE3MTEyMDA1MzNdfQ==
