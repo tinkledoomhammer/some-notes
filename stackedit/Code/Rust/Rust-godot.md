@@ -1,6 +1,6 @@
 
 https://godot-rust.github.io/book/
-
+https://godot-rust.github.io/book/index.html
 `godot-rust`
 : The projet covered in these notes, including bindings for gd3 and 4
 
@@ -339,7 +339,8 @@ GDScript | Rust | Example
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc0MjUzODgwLC04ODA1MDM3NjEsLTIwNT
-Q2MjAzMzQsLTEyOTM2OTMwMDksLTE4NjAwOTMxMTIsLTczMzE4
-Mjc2NSwtMTM5MzE3Nzg4MCwtMTcxMTIwMDUzM119
+eyJoaXN0b3J5IjpbLTExMjQ2MTMxNjAsNjc0MjUzODgwLC04OD
+A1MDM3NjEsLTIwNTQ2MjAzMzQsLTEyOTM2OTMwMDksLTE4NjAw
+OTMxMTIsLTczMzE4Mjc2NSwtMTM5MzE3Nzg4MCwtMTcxMTIwMD
+UzM119
 -->
