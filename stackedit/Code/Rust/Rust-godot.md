@@ -1,4 +1,5 @@
-
+# Godot-rust
+## Intro
 https://godot-rust.github.io/book/
 https://godot-rust.github.io/book/index.html
 `godot-rust`
@@ -22,8 +23,8 @@ extension
 
 The API docs: https://godot-rust.github.io/docs/gdext/master/godot/
 
-## Intro
-### Setup
+
+## Setup
 https://godot-rust.github.io/book/intro/setup.html
 
 * environment variable 
@@ -365,13 +366,13 @@ label.set_text(&gstring);
 label.set_text(&lastString);
 ```
 
-### Arrays and Dictionar
+### Arrays and Dictionaries
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjYyODcxNzEsLTE3NTUzMDQ4NDMsLT
-ExMjQ2MTMxNjAsNjc0MjUzODgwLC04ODA1MDM3NjEsLTIwNTQ2
-MjAzMzQsLTEyOTM2OTMwMDksLTE4NjAwOTMxMTIsLTczMzE4Mj
-c2NSwtMTM5MzE3Nzg4MCwtMTcxMTIwMDUzM119
+eyJoaXN0b3J5IjpbODkyNDA0NTY4LC0xNzU1MzA0ODQzLC0xMT
+I0NjEzMTYwLDY3NDI1Mzg4MCwtODgwNTAzNzYxLC0yMDU0NjIw
+MzM0LC0xMjkzNjkzMDA5LC0xODYwMDkzMTEyLC03MzMxODI3Nj
+UsLTEzOTMxNzc4ODAsLTE3MTEyMDA1MzNdfQ==
 -->
