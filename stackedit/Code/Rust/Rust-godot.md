@@ -333,7 +333,9 @@ GDScript | Rust | Example
 `float` | `f64` | `3.14`
 `String` | `GString` | "some String"
 `StringName` | `StringName` | "My Class"
-
+`NodePath` | `NodePath` | "Nodes/MyNode"
+`Array[T]` | `Array<T>` | `array![1, 2, 3]`
+`Array` | `VariantArray`
 `Object` | `GD<Object>` | `Object::new_alloc()`
 `SomeClass` | `Gd<SomeClass>` | `Resource::new_gd()`
 (nullable) `SomeClass` | `Option<Gd<SomeClass>>`| `None`
@@ -344,8 +346,8 @@ GDScript | Rust | Example
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzMzg3NjE3NSwtMTEyNDYxMzE2MCw2Nz
-QyNTM4ODAsLTg4MDUwMzc2MSwtMjA1NDYyMDMzNCwtMTI5MzY5
-MzAwOSwtMTg2MDA5MzExMiwtNzMzMTgyNzY1LC0xMzkzMTc3OD
-gwLC0xNzExMjAwNTMzXX0=
+eyJoaXN0b3J5IjpbLTEzOTc1ODA5MDQsLTExMjQ2MTMxNjAsNj
+c0MjUzODgwLC04ODA1MDM3NjEsLTIwNTQ2MjAzMzQsLTEyOTM2
+OTMwMDksLTE4NjAwOTMxMTIsLTczMzE4Mjc2NSwtMTM5MzE3Nz
+g4MCwtMTcxMTIwMDUzM119
 -->
