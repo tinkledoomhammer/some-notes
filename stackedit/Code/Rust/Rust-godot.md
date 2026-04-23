@@ -351,13 +351,14 @@ or `Array[Variant]` | or `Array<Variant>` |
 		* C-string literals i.e. `c"hello"` is faster but holds on to memory until shutdown
 
 #### String Types
-Godot APIs will accept references of the desired type,
+Godot APIs will accept references of the desired type, i.e. `&GString` or rust string types (`&str`, `&String`).
+To pass one godot-rust type
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzQwNjIwNSwtMTc1NTMwNDg0MywtMT
-EyNDYxMzE2MCw2NzQyNTM4ODAsLTg4MDUwMzc2MSwtMjA1NDYy
-MDMzNCwtMTI5MzY5MzAwOSwtMTg2MDA5MzExMiwtNzMzMTgyNz
-Y1LC0xMzkzMTc3ODgwLC0xNzExMjAwNTMzXX0=
+eyJoaXN0b3J5IjpbODQwMzI3NzQ1LC0xNzU1MzA0ODQzLC0xMT
+I0NjEzMTYwLDY3NDI1Mzg4MCwtODgwNTAzNzYxLC0yMDU0NjIw
+MzM0LC0xMjkzNjkzMDA5LC0xODYwMDkzMTEyLC03MzMxODI3Nj
+UsLTEzOTMxNzc4ODAsLTE3MTEyMDA1MzNdfQ==
 -->
