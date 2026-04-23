@@ -337,18 +337,20 @@ GDScript | Rust | Example
 `Array[T]` | `Array<T>` | `array![1, 2, 3]`
 `Array` | `VariantArray` | `varray![1, "two", true]`
 or `Array[Variant]` | or `Array<Variant>` | 
+`Dictionary` | `Dictionary` | `vdict!{"key": "value"}`
 `Object` | `GD<Object>` | `Object::new_alloc()`
 `SomeClass` | `Gd<SomeClass>` | `Resource::new_gd()`
 (nullable) `SomeClass` | `Option<Gd<SomeClass>>`| `None`
 `Variant` | Variant | `Variant::nil()`
 `AABB` | `Aabb` | `Aabb::new(pos,size)`
 
+
 #### String Types
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTEzNDY2MzcsLTExMjQ2MTMxNjAsNj
-c0MjUzODgwLC04ODA1MDM3NjEsLTIwNTQ2MjAzMzQsLTEyOTM2
-OTMwMDksLTE4NjAwOTMxMTIsLTczMzE4Mjc2NSwtMTM5MzE3Nz
-g4MCwtMTcxMTIwMDUzM119
+eyJoaXN0b3J5IjpbLTE1MDY1NjkxNiwtMTEyNDYxMzE2MCw2Nz
+QyNTM4ODAsLTg4MDUwMzc2MSwtMjA1NDYyMDMzNCwtMTI5MzY5
+MzAwOSwtMTg2MDA5MzExMiwtNzMzMTgyNzY1LC0xMzkzMTc3OD
+gwLC0xNzExMjAwNTMzXX0=
 -->
