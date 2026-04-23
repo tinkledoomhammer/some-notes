@@ -344,12 +344,13 @@ or `Array[Variant]` | or `Array<Variant>` |
 `Variant` | Variant | `Variant::nil()`
 `AABB` | `Aabb` | `Aabb::new(pos,size)`
 
+* Godot does not support nullability yet
 
 #### String Types
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDY1NjkxNiwtMTEyNDYxMzE2MCw2Nz
+eyJoaXN0b3J5IjpbMTU3NTgzNjUzNywtMTEyNDYxMzE2MCw2Nz
 QyNTM4ODAsLTg4MDUwMzc2MSwtMjA1NDYyMDMzNCwtMTI5MzY5
 MzAwOSwtMTg2MDA5MzExMiwtNzMzMTgyNzY1LC0xMzkzMTc3OD
 gwLC0xNzExMjAwNTMzXX0=
