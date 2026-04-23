@@ -348,16 +348,16 @@ or `Array[Variant]` | or `Array<Variant>` |
 * `GString` `StringName` and `NodePath` can be passed in as string literals
 	* to assign values use i.e. `GString::from("string")` or `"string"`
 	* Constructing `StringName` from `&str` or `String` is expensive
-	* C-string literals i.e. `c"hello"` is faster but holds on to memory until shutdown
+		* C-string literals i.e. `c"hello"` is faster but holds on to memory until shutdown
 
 #### String Types
-
+Godot APIs will accept references of the desired type,
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTUzMDQ4NDMsLTExMjQ2MTMxNjAsNj
-c0MjUzODgwLC04ODA1MDM3NjEsLTIwNTQ2MjAzMzQsLTEyOTM2
-OTMwMDksLTE4NjAwOTMxMTIsLTczMzE4Mjc2NSwtMTM5MzE3Nz
-g4MCwtMTcxMTIwMDUzM119
+eyJoaXN0b3J5IjpbLTIxMzQwNjIwNSwtMTc1NTMwNDg0MywtMT
+EyNDYxMzE2MCw2NzQyNTM4ODAsLTg4MDUwMzc2MSwtMjA1NDYy
+MDMzNCwtMTI5MzY5MzAwOSwtMTg2MDA5MzExMiwtNzMzMTgyNz
+Y1LC0xMzkzMTc3ODgwLC0xNzExMjAwNTMzXX0=
 -->
