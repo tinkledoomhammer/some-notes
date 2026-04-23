@@ -345,12 +345,15 @@ or `Array[Variant]` | or `Array<Variant>` |
 `AABB` | `Aabb` | `Aabb::new(pos,size)`
 
 * Godot does not support nullability yet
+* `GString` `StringName` and `NodePath` can be passed in as string literals
+	* to assign values use i.e. `GString::from("string")` or `"string"`
+	* Construc
 
 #### String Types
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3NTgzNjUzNywtMTEyNDYxMzE2MCw2Nz
+eyJoaXN0b3J5IjpbMjAyMzc5MjQ5NCwtMTEyNDYxMzE2MCw2Nz
 QyNTM4ODAsLTg4MDUwMzc2MSwtMjA1NDYyMDMzNCwtMTI5MzY5
 MzAwOSwtMTg2MDA5MzExMiwtNzMzMTgyNzY1LC0xMzkzMTc3OD
 gwLC0xNzExMjAwNTMzXX0=
