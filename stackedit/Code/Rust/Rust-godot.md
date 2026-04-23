@@ -332,6 +332,8 @@ GDScript | Rust | Example
 `int` | `i64` | `-123`
 `float` | `f64` | `3.14`
 `String` | `GString` | "some String"
+`StringName` | `StringName` | "My Class"
+
 `Object` | `GD<Object>` | `Object::new_alloc()`
 `SomeClass` | `Gd<SomeClass>` | `Resource::new_gd()`
 (nullable) `SomeClass` | `Option<Gd<SomeClass>>`| `None`
@@ -342,7 +344,7 @@ GDScript | Rust | Example
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwMzIwNzM1NywtMTEyNDYxMzE2MCw2Nz
+eyJoaXN0b3J5IjpbLTMzMzg3NjE3NSwtMTEyNDYxMzE2MCw2Nz
 QyNTM4ODAsLTg4MDUwMzc2MSwtMjA1NDYyMDMzNCwtMTI5MzY5
 MzAwOSwtMTg2MDA5MzExMiwtNzMzMTgyNzY1LC0xMzkzMTc3OD
 gwLC0xNzExMjAwNTMzXX0=
