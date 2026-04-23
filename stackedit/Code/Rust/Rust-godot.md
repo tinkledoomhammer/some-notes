@@ -24,7 +24,7 @@ extension
 The API docs: https://godot-rust.github.io/docs/gdext/master/godot/
 
 
-## Setup
+### Setup
 https://godot-rust.github.io/book/intro/setup.html
 
 * environment variable 
@@ -196,7 +196,7 @@ Tells godot how to load the compiled extension
 	* there must be a usable library file i.e. `rust/target/debug/my_extension.dll`
 * 
 
-#### lib.rs details
+### lib.rs details
 
 ##### Entry point
 ```rust
@@ -371,8 +371,8 @@ label.set_text(&lastString);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkyNDA0NTY4LC0xNzU1MzA0ODQzLC0xMT
-I0NjEzMTYwLDY3NDI1Mzg4MCwtODgwNTAzNzYxLC0yMDU0NjIw
-MzM0LC0xMjkzNjkzMDA5LC0xODYwMDkzMTEyLC03MzMxODI3Nj
-UsLTEzOTMxNzc4ODAsLTE3MTEyMDA1MzNdfQ==
+eyJoaXN0b3J5IjpbLTE4NDUzMDQ1NzIsLTE3NTUzMDQ4NDMsLT
+ExMjQ2MTMxNjAsNjc0MjUzODgwLC04ODA1MDM3NjEsLTIwNTQ2
+MjAzMzQsLTEyOTM2OTMwMDksLTE4NjAwOTMxMTIsLTczMzE4Mj
+c2NSwtMTM5MzE3Nzg4MCwtMTcxMTIwMDUzM119
 -->
