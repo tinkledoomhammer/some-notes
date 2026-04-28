@@ -719,7 +719,7 @@ https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_adv
 
 ## Custom Iterators
 Use `iter_init`, `_iter_next` and `_iter_get`
-```
+```python
 class ForwardIterator:
 	var start
 	var current
@@ -761,7 +761,7 @@ func _on_object_hit(object):
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MjA0ODYxMCwtMTk5NjYwMTAyOCwxMD
-U4MDg0NDg4LDE3NDY3NzEyNzAsNjM0MzE4MDcyLDE5MTQzMDg4
-ODMsNjMxMzExMDg4XX0=
+eyJoaXN0b3J5IjpbLTE1NTY5MTI0NDIsLTE5OTY2MDEwMjgsMT
+A1ODA4NDQ4OCwxNzQ2NzcxMjcwLDYzNDMxODA3MiwxOTE0MzA4
+ODgzLDYzMTMxMTA4OF19
 -->
