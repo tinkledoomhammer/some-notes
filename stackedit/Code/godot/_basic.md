@@ -718,7 +718,7 @@ Signals
 https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_advanced.html
 
 ## Custom Iterators
-Use `iter_init`, `_iter_next` and `_iter_get`
+Use `_iter_init`, `_iter_next` and `_iter_get`
 ```
 class ForwardIterator:
 	var start
@@ -761,7 +761,7 @@ func _on_object_hit(object):
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MjA0ODYxMCwtMTk5NjYwMTAyOCwxMD
-U4MDg0NDg4LDE3NDY3NzEyNzAsNjM0MzE4MDcyLDE5MTQzMDg4
-ODMsNjMxMzExMDg4XX0=
+eyJoaXN0b3J5IjpbMTU4NTAwNTAwMSwxOTUyMDQ4NjEwLC0xOT
+k2NjAxMDI4LDEwNTgwODQ0ODgsMTc0Njc3MTI3MCw2MzQzMTgw
+NzIsMTkxNDMwODg4Myw2MzEzMTEwODhdfQ==
 -->
