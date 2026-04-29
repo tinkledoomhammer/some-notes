@@ -246,7 +246,7 @@ Limitations on traits
 
 Orphan Rule
 : Traits when multiple crates are involved must meet one of 2 rules
-: 1. The trait is defined in the current trait or
+: 1. The trait is defined in the current crate or
 : 2. **or** The implementer type is defined in the current crate
 
 ### 4.03 Operator overloading
@@ -254,7 +254,7 @@ Orphan Rule
 Operator Overloading
 : The ability to define custom behavior for operators like `+`, `-`, `*`, `/`, `==`, `!=`, etc
 
-* Operatos are traits
+* Operators are traits
 
 `+ - * / %` are  `Add Sub Mul Div Rem` all from `std::ops`
 `==` and `!=` are `PartialEq` from `std::cmp`
@@ -1916,11 +1916,11 @@ Cancellation is usually manually managed
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyOTAyOTA5NCw5OTk4MTg2ODksMzE0Mj
-U5NzczLC0xNDAwOTQwMzA5LDQ4Mzg5NDc0OSwtMTAwNDQ2NDI2
-LDcyMDM3OTQ5NiwtMTIzODMxMjk0OSwtNDI2OTgwODcxLDk5MD
-c5Nzg2OSwxNDMyODU2MDczLC0xNDc3ODc2NDExLC0zMjkwNjg5
-ODQsLTE2NTQzOTUwNjMsMTc0ODYxNzAwOSwtMTQ3NjQ1ODI4MS
-wyMTQxMTk0NDc4LDE4NDI4NzQ0MzgsLTQzNjU2NzkzLC00OTU5
-ODk5MTldfQ==
+eyJoaXN0b3J5IjpbLTE4NjE0MTM3OTcsMTMyOTAyOTA5NCw5OT
+k4MTg2ODksMzE0MjU5NzczLC0xNDAwOTQwMzA5LDQ4Mzg5NDc0
+OSwtMTAwNDQ2NDI2LDcyMDM3OTQ5NiwtMTIzODMxMjk0OSwtND
+I2OTgwODcxLDk5MDc5Nzg2OSwxNDMyODU2MDczLC0xNDc3ODc2
+NDExLC0zMjkwNjg5ODQsLTE2NTQzOTUwNjMsMTc0ODYxNzAwOS
+wtMTQ3NjQ1ODI4MSwyMTQxMTk0NDc4LDE4NDI4NzQ0MzgsLTQz
+NjU2NzkzXX0=
 -->
