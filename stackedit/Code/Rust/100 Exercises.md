@@ -997,7 +997,7 @@ fn read_file() -> Result<String, std::io::Error> {
 	// ...
 	Ok(contents)
 ```
-* It will automatically convert the error type of the result to the error type of the function is possible
+* It will automatically convert the error type of the result to the error type of the function if possible
 ```rust
 let status = match Status::try_from(status){
 	Ok(status) => status,
@@ -1916,11 +1916,11 @@ Cancellation is usually manually managed
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjE0MTM3OTcsMTMyOTAyOTA5NCw5OT
-k4MTg2ODksMzE0MjU5NzczLC0xNDAwOTQwMzA5LDQ4Mzg5NDc0
-OSwtMTAwNDQ2NDI2LDcyMDM3OTQ5NiwtMTIzODMxMjk0OSwtND
-I2OTgwODcxLDk5MDc5Nzg2OSwxNDMyODU2MDczLC0xNDc3ODc2
-NDExLC0zMjkwNjg5ODQsLTE2NTQzOTUwNjMsMTc0ODYxNzAwOS
-wtMTQ3NjQ1ODI4MSwyMTQxMTk0NDc4LDE4NDI4NzQ0MzgsLTQz
-NjU2NzkzXX0=
+eyJoaXN0b3J5IjpbLTkzMDkxMjE4NCwtMTg2MTQxMzc5NywxMz
+I5MDI5MDk0LDk5OTgxODY4OSwzMTQyNTk3NzMsLTE0MDA5NDAz
+MDksNDgzODk0NzQ5LC0xMDA0NDY0MjYsNzIwMzc5NDk2LC0xMj
+M4MzEyOTQ5LC00MjY5ODA4NzEsOTkwNzk3ODY5LDE0MzI4NTYw
+NzMsLTE0Nzc4NzY0MTEsLTMyOTA2ODk4NCwtMTY1NDM5NTA2My
+wxNzQ4NjE3MDA5LC0xNDc2NDU4MjgxLDIxNDExOTQ0NzgsMTg0
+Mjg3NDQzOF19
 -->
