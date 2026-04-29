@@ -76,7 +76,7 @@ Operators | Description
 `or ` [double pipe] | boolean OR
 `x if y else z` | ternary if/else
 `x as Node` | Type casting
-`=` `+=` `-=` `*=` `/=` `**=` `%=` `&=` [pipe=] `^=` `<<=` `>>-` | Assignment
+`=` `+=` `-=` `*=` `/=` `**=` `%=` `&=` [pipe=] `^=` `<<=` `>>=` | Assignment
 
 Caveats
 1. If both operands of a division are ints, then integer division is performed
@@ -761,7 +761,8 @@ func _on_object_hit(object):
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NTAwNTAwMSwxOTUyMDQ4NjEwLC0xOT
-k2NjAxMDI4LDEwNTgwODQ0ODgsMTc0Njc3MTI3MCw2MzQzMTgw
-NzIsMTkxNDMwODg4Myw2MzEzMTEwODhdfQ==
+eyJoaXN0b3J5IjpbLTEwMDk5Njg2NzksMTU4NTAwNTAwMSwxOT
+UyMDQ4NjEwLC0xOTk2NjAxMDI4LDEwNTgwODQ0ODgsMTc0Njc3
+MTI3MCw2MzQzMTgwNzIsMTkxNDMwODg4Myw2MzEzMTEwODhdfQ
+==
 -->
