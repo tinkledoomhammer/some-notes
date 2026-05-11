@@ -10,13 +10,22 @@ Render targets / output formats
 * path 3d/3d
 * surface 2d/3d
 * mesh
+
+Fixed vs parameter values
+need to encode formulas
+
+Parameter formats
+* angle
+* scalar
+* transformation (?)
 * 
 
 Partial constructs: precalc what can be precalculated, track the effect of changes to unbound parameters?
 
-
+To research: animation of godot's ArrayMesh class
+`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNzM0NTA4Nl19
+eyJoaXN0b3J5IjpbLTcxMDQ3NzcwOV19
 -->
