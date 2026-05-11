@@ -3,12 +3,20 @@ Construct
 * has parameters
 * a dict or something
 * method; render
-* render target 
+* output format
 
-Render Tar
+Render targets / output formats
+* points 2d/3d
+* path 3d/3d
+* surface 2d/3d
+* mesh
+* 
+
+Partial constructs: precalc what can be precalculated, track the effect of changes to unbound parameters?
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2OTQ2MDA4NF19
+eyJoaXN0b3J5IjpbMTAwNzM0NTA4Nl19
 -->
