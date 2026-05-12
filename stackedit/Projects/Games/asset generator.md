@@ -25,7 +25,13 @@ Partial constructs: precalc what can be precalculated, track the effect of chang
 To research: animation of godot's ArrayMesh class
 `
 
+## Hierarchical csg
+* use anchors and parameters
+
+
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMDQ3NzcwOV19
+eyJoaXN0b3J5IjpbMTc4NDAxMDk4OSwtNzEwNDc3NzA5XX0=
 -->
