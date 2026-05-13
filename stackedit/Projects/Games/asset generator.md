@@ -29,13 +29,17 @@ To research: animation of godot's ArrayMesh class
 * use anchors and parameters
 * compute transforms based on anchors
 * Perhaps they are treated like parameters
-* i.e. baseEdge(lod, base, tip) -> path
-	* 
+* i.e. 
+	* baseEdge(lod, base, tip) -> path
+		* interpolates between base and tip with a # of steps depending on lod
+	* edges(lod, base, tip) -> surface
+		* creates a surface that 
+			* generates a baseEdge with lod
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDk2ODY3ODgsMTc4NDAxMDk4OSwtNz
-EwNDc3NzA5XX0=
+eyJoaXN0b3J5IjpbMTk1MTQ0NTgzNywxNzg0MDEwOTg5LC03MT
+A0Nzc3MDldfQ==
 -->
