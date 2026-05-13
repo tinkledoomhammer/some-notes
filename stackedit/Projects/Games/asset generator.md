@@ -27,11 +27,15 @@ To research: animation of godot's ArrayMesh class
 
 ## Hierarchical csg
 * use anchors and parameters
-
+* compute transforms based on anchors
+* Perhaps they are treated like parameters
+* i.e. baseEdge(lod, base, tip) -> path
+	* 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4NDAxMDk4OSwtNzEwNDc3NzA5XX0=
+eyJoaXN0b3J5IjpbLTE3MDk2ODY3ODgsMTc4NDAxMDk4OSwtNz
+EwNDc3NzA5XX0=
 -->
