@@ -38,11 +38,13 @@ To research: animation of godot's ArrayMesh class
 			* generates an number of other paths based on lod by duplicating and rotating the base edge
 			* joins the edges into a mesh
 	* 
+** how do skeletons work? **
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE3MDg3OTQ0LDE3ODQwMTA5ODksLTcxMD
-Q3NzcwOV19
+eyJoaXN0b3J5IjpbLTEwMTAzODcxMTcsNTE3MDg3OTQ0LDE3OD
+QwMTA5ODksLTcxMDQ3NzcwOV19
 -->
