@@ -34,12 +34,15 @@ To research: animation of godot's ArrayMesh class
 		* interpolates between base and tip with a # of steps depending on lod
 	* edges(lod, base, tip) -> surface
 		* creates a surface that 
-			* generates a baseEdge with lod
+			* generates a baseEdge with lod, and an offset base and tip
+			* generates an number of other paths based on lod by duplicating and rotating the base edge
+			* joins the edges into a mesh
+	* 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MTQ0NTgzNywxNzg0MDEwOTg5LC03MT
-A0Nzc3MDldfQ==
+eyJoaXN0b3J5IjpbNTE3MDg3OTQ0LDE3ODQwMTA5ODksLTcxMD
+Q3NzcwOV19
 -->
