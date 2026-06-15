@@ -1027,7 +1027,7 @@ Arrays
 let numbbers : [u32;3] = [1,2,3];
 // [<type>;<count>]
 let numbers : [u32;3] = [1;3];
-// [type;count] = [<init>,<number>]
+// [type;count] = [<init>;<number>]
 
 //access
 let first = numbers[0];
@@ -1916,11 +1916,11 @@ Cancellation is usually manually managed
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMDkxMjE4NCwtMTg2MTQxMzc5NywxMz
-I5MDI5MDk0LDk5OTgxODY4OSwzMTQyNTk3NzMsLTE0MDA5NDAz
-MDksNDgzODk0NzQ5LC0xMDA0NDY0MjYsNzIwMzc5NDk2LC0xMj
-M4MzEyOTQ5LC00MjY5ODA4NzEsOTkwNzk3ODY5LDE0MzI4NTYw
-NzMsLTE0Nzc4NzY0MTEsLTMyOTA2ODk4NCwtMTY1NDM5NTA2My
-wxNzQ4NjE3MDA5LC0xNDc2NDU4MjgxLDIxNDExOTQ0NzgsMTg0
-Mjg3NDQzOF19
+eyJoaXN0b3J5IjpbLTIwMTIwODg4NzEsLTkzMDkxMjE4NCwtMT
+g2MTQxMzc5NywxMzI5MDI5MDk0LDk5OTgxODY4OSwzMTQyNTk3
+NzMsLTE0MDA5NDAzMDksNDgzODk0NzQ5LC0xMDA0NDY0MjYsNz
+IwMzc5NDk2LC0xMjM4MzEyOTQ5LC00MjY5ODA4NzEsOTkwNzk3
+ODY5LDE0MzI4NTYwNzMsLTE0Nzc4NzY0MTEsLTMyOTA2ODk4NC
+wtMTY1NDM5NTA2MywxNzQ4NjE3MDA5LC0xNDc2NDU4MjgxLDIx
+NDExOTQ0NzhdfQ==
 -->
