@@ -1383,7 +1383,8 @@ pub trait Hash{
 struct ...
 ```
 #### `Eq`
-`pub trait Eq: PartialEq { /*no additional methods*/}
+`pub trait Eq: PartialEq { /*no additional methods*/}`
+
 : Indicates that the implemented `PartialEq` is **reflexive**
 
 **`Eq` and `Hash` are linked. If two keys are `==` then their hashes must be `==` also.
@@ -1916,11 +1917,11 @@ Cancellation is usually manually managed
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTIwODg4NzEsLTkzMDkxMjE4NCwtMT
-g2MTQxMzc5NywxMzI5MDI5MDk0LDk5OTgxODY4OSwzMTQyNTk3
-NzMsLTE0MDA5NDAzMDksNDgzODk0NzQ5LC0xMDA0NDY0MjYsNz
-IwMzc5NDk2LC0xMjM4MzEyOTQ5LC00MjY5ODA4NzEsOTkwNzk3
-ODY5LDE0MzI4NTYwNzMsLTE0Nzc4NzY0MTEsLTMyOTA2ODk4NC
-wtMTY1NDM5NTA2MywxNzQ4NjE3MDA5LC0xNDc2NDU4MjgxLDIx
-NDExOTQ0NzhdfQ==
+eyJoaXN0b3J5IjpbLTk1NzI4NTU0NywtMjAxMjA4ODg3MSwtOT
+MwOTEyMTg0LC0xODYxNDEzNzk3LDEzMjkwMjkwOTQsOTk5ODE4
+Njg5LDMxNDI1OTc3MywtMTQwMDk0MDMwOSw0ODM4OTQ3NDksLT
+EwMDQ0NjQyNiw3MjAzNzk0OTYsLTEyMzgzMTI5NDksLTQyNjk4
+MDg3MSw5OTA3OTc4NjksMTQzMjg1NjA3MywtMTQ3Nzg3NjQxMS
+wtMzI5MDY4OTg0LC0xNjU0Mzk1MDYzLDE3NDg2MTcwMDksLTE0
+NzY0NTgyODFdfQ==
 -->
