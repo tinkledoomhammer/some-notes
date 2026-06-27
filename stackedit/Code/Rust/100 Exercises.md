@@ -1383,9 +1383,10 @@ pub trait Hash{
 struct ...
 ```
 #### `Eq`
+
 `pub trait Eq: PartialEq { /*no additional methods*/}`
 
-: Indicates that the implemented `PartialEq` is **reflexive**
+ Indicates that the implemented `PartialEq` is **reflexive**
 
 **`Eq` and `Hash` are linked. If two keys are `==` then their hashes must be `==` also.
 
@@ -1917,7 +1918,7 @@ Cancellation is usually manually managed
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1NzI4NTU0NywtMjAxMjA4ODg3MSwtOT
+eyJoaXN0b3J5IjpbMTgxMzk1Njc0MywtMjAxMjA4ODg3MSwtOT
 MwOTEyMTg0LC0xODYxNDEzNzk3LDEzMjkwMjkwOTQsOTk5ODE4
 Njg5LDMxNDI1OTc3MywtMTQwMDk0MDMwOSw0ODM4OTQ3NDksLT
 EwMDQ0NjQyNiw3MjAzNzk0OTYsLTEyMzgzMTI5NDksLTQyNjk4
