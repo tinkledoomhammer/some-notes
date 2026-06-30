@@ -389,7 +389,7 @@ Tests
 : `.unwrap()` and `.expect()` 
 : because `panic!` is how tests are supposed to fail
 
-Cases in which you have more info that the compiler
+Cases in which you have more info than the compiler
 : for things that will never fail, use `.expect` to document why the code is expected to never fail
 
 #### Guidelines for error handling
@@ -705,11 +705,11 @@ mod tests {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ1NjYzNjEyLDE2NTAxMzQ3NTksMTM2NT
-I0NzE4MiwtMjA4MzI3MDUxNCw1MjU0NzI0MTIsMTQ4NjAyNjMx
-OCwxNjAxNDA3MzEzLDE0Nzk1NzcyNzIsLTE0MjAxNjg5NTUsMT
-A0NzcyNTgzLDE3MDUyNjAzMjEsLTEzMTkwNDk5MjYsMTU4MTI0
-ODUwOSwxMTM4MjUyMjUsMTQzMTc0MTIxMywxNjk3NDkzNzA3LC
-00Njk2NjUzNiwxNzUwNzA5MDMxLC02NTQxOTIwNjUsMTQyODk3
-MTYwMV19
+eyJoaXN0b3J5IjpbNjI3ODQ5NDYyLDM0NTY2MzYxMiwxNjUwMT
+M0NzU5LDEzNjUyNDcxODIsLTIwODMyNzA1MTQsNTI1NDcyNDEy
+LDE0ODYwMjYzMTgsMTYwMTQwNzMxMywxNDc5NTc3MjcyLC0xND
+IwMTY4OTU1LDEwNDc3MjU4MywxNzA1MjYwMzIxLC0xMzE5MDQ5
+OTI2LDE1ODEyNDg1MDksMTEzODI1MjI1LDE0MzE3NDEyMTMsMT
+Y5NzQ5MzcwNywtNDY5NjY1MzYsMTc1MDcwOTAzMSwtNjU0MTky
+MDY1XX0=
 -->
