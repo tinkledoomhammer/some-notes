@@ -447,8 +447,13 @@ fn main() {
 ### In method definitions
 ```rust
 impl<T> Point<T> {
-
+	fn x(&self) -> &T {
+		&self.x
+	}
+}
 ```
+
+* Generic params are placed immediately after `impl`
 
 ## 10.02 Traits
 
@@ -739,7 +744,7 @@ mod tests {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzOTg3OTczOCwtMTcxNTE1MzA0NCwxNz
+eyJoaXN0b3J5IjpbLTQ1MTM4NDA3MSwtMTcxNTE1MzA0NCwxNz
 k4MzM1ODA4LDQwOTE5NzEzMSwzNDU2NjM2MTIsMTY1MDEzNDc1
 OSwxMzY1MjQ3MTgyLC0yMDgzMjcwNTE0LDUyNTQ3MjQxMiwxND
 g2MDI2MzE4LDE2MDE0MDczMTMsMTQ3OTU3NzI3MiwtMTQyMDE2
