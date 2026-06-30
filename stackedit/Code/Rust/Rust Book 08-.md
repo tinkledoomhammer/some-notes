@@ -465,7 +465,32 @@ impl Point<f32> {
 }
 ```
 
-You cannot simultaneously implement specific _and_ generic methods of the same name this way. For example, if you implemented a general `distance_from_origin` for all types `T` and a specific `distance_from_origin` for `f32`, then the compiler will reject your program: Rust does not know which implementation to use when you call `Point<f32>::distance_from_origin`. More generally, Rust does not have inheritance-like mechanisms for specializing methods as you might find in an object-oriented language, with one exception (default trait methods)
+>You cannot simultaneously implement specific _and_ generic methods of the same name this way. For example, if you implemented a general `distance_from_origin` for all types `T` and a specific `distance_from_origin` for `f32`, then the compiler will reject your program: Rust does not know which implementation to use when you call `Point<f32>::distance_from_origin`. More generally, Rust does not have inheritance-like mechanisms for specializing methods as you might find in an object-oriented language, with one exception (default trait methods)
+
+```rust
+struct Point<X1, Y1> {
+    x: X1,
+    y: Y1,
+}
+
+impl<X1, Y1> Point<X1, Y1> {
+    fn mixup<X2, Y2>(self, other: Point<X2, Y2>) -> Point<X1, Y2> {
+        Point {
+            x: self.x,
+            y: other.y,
+        }
+    }
+}
+
+fn main() {
+    let p1 = Point { x: 5, y: 10.4 };
+    let p2 = Point { x: "Hello", y: 'c' };
+
+    let p3 = p1.mixup(p2);
+
+    println!("p3.x = {}, p3.y = {}", p3.x, p3.y);
+}
+```
 
 ## 10.02 Traits
 
@@ -756,7 +781,7 @@ mod tests {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNTYzMTI2NSwtMTcxNTE1MzA0NCwxNz
+eyJoaXN0b3J5IjpbMjAzODU4MTY3MSwtMTcxNTE1MzA0NCwxNz
 k4MzM1ODA4LDQwOTE5NzEzMSwzNDU2NjM2MTIsMTY1MDEzNDc1
 OSwxMzY1MjQ3MTgyLC0yMDgzMjcwNTE0LDUyNTQ3MjQxMiwxND
 g2MDI2MzE4LDE2MDE0MDczMTMsMTQ3OTU3NzI3MiwtMTQyMDE2
