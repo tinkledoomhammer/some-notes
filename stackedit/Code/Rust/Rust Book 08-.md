@@ -415,7 +415,7 @@ bad state
 * this means that the caller has to validate the input first to avoid the panic
 
 # 10 Generic Types, Traits, and Lifetimes
-### 10.01 Generic Data Types
+## 10.01 Generic Data Types
 ## 10.02 Traits
 
 Traits
@@ -705,11 +705,11 @@ mod tests {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA5MTk3MTMxLDM0NTY2MzYxMiwxNjUwMT
-M0NzU5LDEzNjUyNDcxODIsLTIwODMyNzA1MTQsNTI1NDcyNDEy
-LDE0ODYwMjYzMTgsMTYwMTQwNzMxMywxNDc5NTc3MjcyLC0xND
-IwMTY4OTU1LDEwNDc3MjU4MywxNzA1MjYwMzIxLC0xMzE5MDQ5
-OTI2LDE1ODEyNDg1MDksMTEzODI1MjI1LDE0MzE3NDEyMTMsMT
-Y5NzQ5MzcwNywtNDY5NjY1MzYsMTc1MDcwOTAzMSwtNjU0MTky
-MDY1XX0=
+eyJoaXN0b3J5IjpbMTc5ODMzNTgwOCw0MDkxOTcxMzEsMzQ1Nj
+YzNjEyLDE2NTAxMzQ3NTksMTM2NTI0NzE4MiwtMjA4MzI3MDUx
+NCw1MjU0NzI0MTIsMTQ4NjAyNjMxOCwxNjAxNDA3MzEzLDE0Nz
+k1NzcyNzIsLTE0MjAxNjg5NTUsMTA0NzcyNTgzLDE3MDUyNjAz
+MjEsLTEzMTkwNDk5MjYsMTU4MTI0ODUwOSwxMTM4MjUyMjUsMT
+QzMTc0MTIxMywxNjk3NDkzNzA3LC00Njk2NjUzNiwxNzUwNzA5
+MDMxXX0=
 -->
