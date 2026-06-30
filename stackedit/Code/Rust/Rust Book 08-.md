@@ -441,6 +441,15 @@ fn main() {
 ```
 * generic params go between the struct name and its members
 
+### In `enum` Definitions
+* Same as in `struct`s
+
+### In method definitions
+```rust
+impl<T> Point<T> {
+
+```
+
 ## 10.02 Traits
 
 Traits
@@ -730,11 +739,11 @@ mod tests {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0NzU5MjY0LC0xNzE1MTUzMDQ0LDE3OT
-gzMzU4MDgsNDA5MTk3MTMxLDM0NTY2MzYxMiwxNjUwMTM0NzU5
-LDEzNjUyNDcxODIsLTIwODMyNzA1MTQsNTI1NDcyNDEyLDE0OD
-YwMjYzMTgsMTYwMTQwNzMxMywxNDc5NTc3MjcyLC0xNDIwMTY4
-OTU1LDEwNDc3MjU4MywxNzA1MjYwMzIxLC0xMzE5MDQ5OTI2LD
-E1ODEyNDg1MDksMTEzODI1MjI1LDE0MzE3NDEyMTMsMTY5NzQ5
-MzcwN119
+eyJoaXN0b3J5IjpbLTUzOTg3OTczOCwtMTcxNTE1MzA0NCwxNz
+k4MzM1ODA4LDQwOTE5NzEzMSwzNDU2NjM2MTIsMTY1MDEzNDc1
+OSwxMzY1MjQ3MTgyLC0yMDgzMjcwNTE0LDUyNTQ3MjQxMiwxND
+g2MDI2MzE4LDE2MDE0MDczMTMsMTQ3OTU3NzI3MiwtMTQyMDE2
+ODk1NSwxMDQ3NzI1ODMsMTcwNTI2MDMyMSwtMTMxOTA0OTkyNi
+wxNTgxMjQ4NTA5LDExMzgyNTIyNSwxNDMxNzQxMjEzLDE2OTc0
+OTM3MDddfQ==
 -->
