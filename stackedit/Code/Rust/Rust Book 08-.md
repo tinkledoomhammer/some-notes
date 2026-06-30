@@ -417,7 +417,10 @@ bad state
 # 10 Generic Types, Traits, and Lifetimes
 ## 10.01 Generic Data Types
 ### In Function Definitions
-
+* Generic params go inside `<..>` between the function name and the param list
+```rust
+fn largest<T: std::cmp::partialord>(list: &[T]
+```
 ## 10.02 Traits
 
 Traits
@@ -707,11 +710,11 @@ mod tests {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTUxNTMwNDQsMTc5ODMzNTgwOCw0MD
-kxOTcxMzEsMzQ1NjYzNjEyLDE2NTAxMzQ3NTksMTM2NTI0NzE4
-MiwtMjA4MzI3MDUxNCw1MjU0NzI0MTIsMTQ4NjAyNjMxOCwxNj
-AxNDA3MzEzLDE0Nzk1NzcyNzIsLTE0MjAxNjg5NTUsMTA0Nzcy
-NTgzLDE3MDUyNjAzMjEsLTEzMTkwNDk5MjYsMTU4MTI0ODUwOS
-wxMTM4MjUyMjUsMTQzMTc0MTIxMywxNjk3NDkzNzA3LC00Njk2
-NjUzNl19
+eyJoaXN0b3J5IjpbLTE0ODU2Nzc5MjMsLTE3MTUxNTMwNDQsMT
+c5ODMzNTgwOCw0MDkxOTcxMzEsMzQ1NjYzNjEyLDE2NTAxMzQ3
+NTksMTM2NTI0NzE4MiwtMjA4MzI3MDUxNCw1MjU0NzI0MTIsMT
+Q4NjAyNjMxOCwxNjAxNDA3MzEzLDE0Nzk1NzcyNzIsLTE0MjAx
+Njg5NTUsMTA0NzcyNTgzLDE3MDUyNjAzMjEsLTEzMTkwNDk5Mj
+YsMTU4MTI0ODUwOSwxMTM4MjUyMjUsMTQzMTc0MTIxMywxNjk3
+NDkzNzA3XX0=
 -->
