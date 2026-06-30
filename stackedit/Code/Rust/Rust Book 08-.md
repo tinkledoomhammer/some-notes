@@ -419,7 +419,13 @@ bad state
 ### In Function Definitions
 * Generic params go inside `<..>` between the function name and the param list
 ```rust
-fn largest<T: std::cmp::partialord>(list: &[T]
+fn largest<T: std::cmp::PartialOrd>(list: &[T]) -> &T {
+	let mut largest = &list[0];
+	for item in list{ if item > largest {
+		lagest = item;
+	}}
+	largest
+}
 ```
 ## 10.02 Traits
 
@@ -710,11 +716,11 @@ mod tests {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODU2Nzc5MjMsLTE3MTUxNTMwNDQsMT
-c5ODMzNTgwOCw0MDkxOTcxMzEsMzQ1NjYzNjEyLDE2NTAxMzQ3
-NTksMTM2NTI0NzE4MiwtMjA4MzI3MDUxNCw1MjU0NzI0MTIsMT
-Q4NjAyNjMxOCwxNjAxNDA3MzEzLDE0Nzk1NzcyNzIsLTE0MjAx
-Njg5NTUsMTA0NzcyNTgzLDE3MDUyNjAzMjEsLTEzMTkwNDk5Mj
-YsMTU4MTI0ODUwOSwxMTM4MjUyMjUsMTQzMTc0MTIxMywxNjk3
-NDkzNzA3XX0=
+eyJoaXN0b3J5IjpbLTE2NjAyOTg3OCwtMTcxNTE1MzA0NCwxNz
+k4MzM1ODA4LDQwOTE5NzEzMSwzNDU2NjM2MTIsMTY1MDEzNDc1
+OSwxMzY1MjQ3MTgyLC0yMDgzMjcwNTE0LDUyNTQ3MjQxMiwxND
+g2MDI2MzE4LDE2MDE0MDczMTMsMTQ3OTU3NzI3MiwtMTQyMDE2
+ODk1NSwxMDQ3NzI1ODMsMTcwNTI2MDMyMSwtMTMxOTA0OTkyNi
+wxNTgxMjQ4NTA5LDExMzgyNTIyNSwxNDMxNzQxMjEzLDE2OTc0
+OTM3MDddfQ==
 -->
