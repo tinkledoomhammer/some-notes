@@ -456,13 +456,16 @@ impl<T> Point<T> {
 * Generic params are placed immediately after `impl`
 
 ```rust
-//
+//Only defines the function for a particular Point type
+// Doesn't take any generic params
 impl Point<f32> {
 	fn distance_from_origin(&self) -> f32 {
 		(self.x.powi(2) + self.y.powi(2)).sqrt()
 	}
 }
 ```
+
+You cannot simultaneously implement specific _and_ generic methods of the same name this way. For example, if you implemented a general `distance_from_origin` for all types `T` and a specific `distance_from_origin` for `f32`, then the compiler will reject your program: Rust does not know which implementation to use when you call `Point<f32>::distance_from_origin`. More generally, Rust does not have inheritance-like mechanisms for specializing methods as you might find in an object-oriented language, with one exception (default trait methods)
 
 ## 10.02 Traits
 
@@ -753,11 +756,11 @@ mod tests {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjgxMDY4NDQsLTE3MTUxNTMwNDQsMT
-c5ODMzNTgwOCw0MDkxOTcxMzEsMzQ1NjYzNjEyLDE2NTAxMzQ3
-NTksMTM2NTI0NzE4MiwtMjA4MzI3MDUxNCw1MjU0NzI0MTIsMT
-Q4NjAyNjMxOCwxNjAxNDA3MzEzLDE0Nzk1NzcyNzIsLTE0MjAx
-Njg5NTUsMTA0NzcyNTgzLDE3MDUyNjAzMjEsLTEzMTkwNDk5Mj
-YsMTU4MTI0ODUwOSwxMTM4MjUyMjUsMTQzMTc0MTIxMywxNjk3
-NDkzNzA3XX0=
+eyJoaXN0b3J5IjpbLTQyNTYzMTI2NSwtMTcxNTE1MzA0NCwxNz
+k4MzM1ODA4LDQwOTE5NzEzMSwzNDU2NjM2MTIsMTY1MDEzNDc1
+OSwxMzY1MjQ3MTgyLC0yMDgzMjcwNTE0LDUyNTQ3MjQxMiwxND
+g2MDI2MzE4LDE2MDE0MDczMTMsMTQ3OTU3NzI3MiwtMTQyMDE2
+ODk1NSwxMDQ3NzI1ODMsMTcwNTI2MDMyMSwtMTMxOTA0OTkyNi
+wxNTgxMjQ4NTA5LDExMzgyNTIyNSwxNDMxNzQxMjEzLDE2OTc0
+OTM3MDddfQ==
 -->
