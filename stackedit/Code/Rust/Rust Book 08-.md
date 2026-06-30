@@ -416,6 +416,7 @@ bad state
 
 # 10 Generic Types, Traits, and Lifetimes
 ## 10.01 Generic Data Types
+### In Function Definitions
 
 ## 10.02 Traits
 
@@ -706,7 +707,7 @@ mod tests {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Nzg4NzU2MzAsMTc5ODMzNTgwOCw0MD
+eyJoaXN0b3J5IjpbLTE3MTUxNTMwNDQsMTc5ODMzNTgwOCw0MD
 kxOTcxMzEsMzQ1NjYzNjEyLDE2NTAxMzQ3NTksMTM2NTI0NzE4
 MiwtMjA4MzI3MDUxNCw1MjU0NzI0MTIsMTQ4NjAyNjMxOCwxNj
 AxNDA3MzEzLDE0Nzk1NzcyNzIsLTE0MjAxNjg5NTUsMTA0Nzcy
