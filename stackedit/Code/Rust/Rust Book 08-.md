@@ -681,6 +681,7 @@ struct Excerpt<'a> {
 }
 ```
 * references held by structs require a lifetime annotation
+* the struct can't outlive the reference it holds
 
 ### Lifetime Elision
 : like type inferences, but for lifetimes
@@ -784,11 +785,11 @@ mod tests {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ3MTY0NzA2LC0xNDU4Njg5NDU1LDIwMz
-g1ODE2NzEsLTE3MTUxNTMwNDQsMTc5ODMzNTgwOCw0MDkxOTcx
-MzEsMzQ1NjYzNjEyLDE2NTAxMzQ3NTksMTM2NTI0NzE4MiwtMj
-A4MzI3MDUxNCw1MjU0NzI0MTIsMTQ4NjAyNjMxOCwxNjAxNDA3
-MzEzLDE0Nzk1NzcyNzIsLTE0MjAxNjg5NTUsMTA0NzcyNTgzLD
-E3MDUyNjAzMjEsLTEzMTkwNDk5MjYsMTU4MTI0ODUwOSwxMTM4
-MjUyMjVdfQ==
+eyJoaXN0b3J5IjpbLTExMTYzMjgwNzQsNjQ3MTY0NzA2LC0xND
+U4Njg5NDU1LDIwMzg1ODE2NzEsLTE3MTUxNTMwNDQsMTc5ODMz
+NTgwOCw0MDkxOTcxMzEsMzQ1NjYzNjEyLDE2NTAxMzQ3NTksMT
+M2NTI0NzE4MiwtMjA4MzI3MDUxNCw1MjU0NzI0MTIsMTQ4NjAy
+NjMxOCwxNjAxNDA3MzEzLDE0Nzk1NzcyNzIsLTE0MjAxNjg5NT
+UsMTA0NzcyNTgzLDE3MDUyNjAzMjEsLTEzMTkwNDk5MjYsMTU4
+MTI0ODUwOV19
 -->
