@@ -467,7 +467,7 @@ impl Point<f32> {
 
 >You cannot simultaneously implement specific _and_ generic methods of the same name this way. For example, if you implemented a general `distance_from_origin` for all types `T` and a specific `distance_from_origin` for `f32`, then the compiler will reject your program: Rust does not know which implementation to use when you call `Point<f32>::distance_from_origin`. More generally, Rust does not have inheritance-like mechanisms for specializing methods as you might find in an object-oriented language, with one exception (default trait methods)
 
-### Using different generics in an impl and a 
+### Using different generics in an `impl` and a `fn`
 ```rust
 struct Point<X1, Y1> {
     x: X1,
@@ -782,11 +782,11 @@ mod tests {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2ODI2NzE5MSwyMDM4NTgxNjcxLC0xNz
-E1MTUzMDQ0LDE3OTgzMzU4MDgsNDA5MTk3MTMxLDM0NTY2MzYx
-MiwxNjUwMTM0NzU5LDEzNjUyNDcxODIsLTIwODMyNzA1MTQsNT
-I1NDcyNDEyLDE0ODYwMjYzMTgsMTYwMTQwNzMxMywxNDc5NTc3
-MjcyLC0xNDIwMTY4OTU1LDEwNDc3MjU4MywxNzA1MjYwMzIxLC
-0xMzE5MDQ5OTI2LDE1ODEyNDg1MDksMTEzODI1MjI1LDE0MzE3
-NDEyMTNdfQ==
+eyJoaXN0b3J5IjpbLTE0NTg2ODk0NTUsMjAzODU4MTY3MSwtMT
+cxNTE1MzA0NCwxNzk4MzM1ODA4LDQwOTE5NzEzMSwzNDU2NjM2
+MTIsMTY1MDEzNDc1OSwxMzY1MjQ3MTgyLC0yMDgzMjcwNTE0LD
+UyNTQ3MjQxMiwxNDg2MDI2MzE4LDE2MDE0MDczMTMsMTQ3OTU3
+NzI3MiwtMTQyMDE2ODk1NSwxMDQ3NzI1ODMsMTcwNTI2MDMyMS
+wtMTMxOTA0OTkyNiwxNTgxMjQ4NTA5LDExMzgyNTIyNSwxNDMx
+NzQxMjEzXX0=
 -->
