@@ -503,7 +503,7 @@ Traits
 pub trait Summary {
 	fn sumarize(&self) -> String;
 	fn no_default(&self);
-	fn has_default_implementation
+	fn has_default_implementation(){/*implementation */ }
 }
 
 pub struct NewsArticle {
@@ -784,11 +784,11 @@ mod tests {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mjg2ODkxMTMsLTE0NTg2ODk0NTUsMj
-AzODU4MTY3MSwtMTcxNTE1MzA0NCwxNzk4MzM1ODA4LDQwOTE5
-NzEzMSwzNDU2NjM2MTIsMTY1MDEzNDc1OSwxMzY1MjQ3MTgyLC
-0yMDgzMjcwNTE0LDUyNTQ3MjQxMiwxNDg2MDI2MzE4LDE2MDE0
-MDczMTMsMTQ3OTU3NzI3MiwtMTQyMDE2ODk1NSwxMDQ3NzI1OD
-MsMTcwNTI2MDMyMSwtMTMxOTA0OTkyNiwxNTgxMjQ4NTA5LDEx
-MzgyNTIyNV19
+eyJoaXN0b3J5IjpbNjQ3MTY0NzA2LC0xNDU4Njg5NDU1LDIwMz
+g1ODE2NzEsLTE3MTUxNTMwNDQsMTc5ODMzNTgwOCw0MDkxOTcx
+MzEsMzQ1NjYzNjEyLDE2NTAxMzQ3NTksMTM2NTI0NzE4MiwtMj
+A4MzI3MDUxNCw1MjU0NzI0MTIsMTQ4NjAyNjMxOCwxNjAxNDA3
+MzEzLDE0Nzk1NzcyNzIsLTE0MjAxNjg5NTUsMTA0NzcyNTgzLD
+E3MDUyNjAzMjEsLTEzMTkwNDk5MjYsMTU4MTI0ODUwOSwxMTM4
+MjUyMjVdfQ==
 -->
