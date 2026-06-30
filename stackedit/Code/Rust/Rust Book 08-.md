@@ -427,6 +427,17 @@ fn largest<T: std::cmp::PartialOrd>(list: &[T]) -> &T {
 	largest
 }
 ```
+* The trait bounds are required to use methods on the generic types
+### In `struct` definitions
+```rust
+struct Point<T> {
+	x: T,
+	y: T,
+}
+fn main() {
+	let integer = Point
+```
+
 ## 10.02 Traits
 
 Traits
@@ -716,7 +727,7 @@ mod tests {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjAyOTg3OCwtMTcxNTE1MzA0NCwxNz
+eyJoaXN0b3J5IjpbMTUzMzE4NjkzMywtMTcxNTE1MzA0NCwxNz
 k4MzM1ODA4LDQwOTE5NzEzMSwzNDU2NjM2MTIsMTY1MDEzNDc1
 OSwxMzY1MjQ3MTgyLC0yMDgzMjcwNTE0LDUyNTQ3MjQxMiwxND
 g2MDI2MzE4LDE2MDE0MDczMTMsMTQ3OTU3NzI3MiwtMTQyMDE2
