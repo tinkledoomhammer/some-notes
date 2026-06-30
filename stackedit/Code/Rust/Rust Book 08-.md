@@ -416,6 +416,7 @@ bad state
 
 # 10 Generic Types, Traits, and Lifetimes
 ## 10.01 Generic Data Types
+
 ## 10.02 Traits
 
 Traits
@@ -705,11 +706,11 @@ mod tests {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5ODMzNTgwOCw0MDkxOTcxMzEsMzQ1Nj
-YzNjEyLDE2NTAxMzQ3NTksMTM2NTI0NzE4MiwtMjA4MzI3MDUx
-NCw1MjU0NzI0MTIsMTQ4NjAyNjMxOCwxNjAxNDA3MzEzLDE0Nz
-k1NzcyNzIsLTE0MjAxNjg5NTUsMTA0NzcyNTgzLDE3MDUyNjAz
-MjEsLTEzMTkwNDk5MjYsMTU4MTI0ODUwOSwxMTM4MjUyMjUsMT
-QzMTc0MTIxMywxNjk3NDkzNzA3LC00Njk2NjUzNiwxNzUwNzA5
-MDMxXX0=
+eyJoaXN0b3J5IjpbLTE3Nzg4NzU2MzAsMTc5ODMzNTgwOCw0MD
+kxOTcxMzEsMzQ1NjYzNjEyLDE2NTAxMzQ3NTksMTM2NTI0NzE4
+MiwtMjA4MzI3MDUxNCw1MjU0NzI0MTIsMTQ4NjAyNjMxOCwxNj
+AxNDA3MzEzLDE0Nzk1NzcyNzIsLTE0MjAxNjg5NTUsMTA0Nzcy
+NTgzLDE3MDUyNjAzMjEsLTEzMTkwNDk5MjYsMTU4MTI0ODUwOS
+wxMTM4MjUyMjUsMTQzMTc0MTIxMywxNjk3NDkzNzA3LC00Njk2
+NjUzNl19
 -->
