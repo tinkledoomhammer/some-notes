@@ -404,7 +404,7 @@ bad state
 **Some reasons to panic**
 * continuing could be insecure or harmful
 * when calling external code and there is no way to fix the problem
-* Invalid inputs from code. The user code should coder needs to fix the problem, not the code. i.e. the solution is to stop sending bad arguments
+* Invalid inputs from code. The user code needs to fix the problem, not the called code. i.e. the solution is to stop sending bad arguments
 
 
 **Some reasons not to panic**
@@ -705,7 +705,7 @@ mod tests {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI3ODQ5NDYyLDM0NTY2MzYxMiwxNjUwMT
+eyJoaXN0b3J5IjpbNDA5MTk3MTMxLDM0NTY2MzYxMiwxNjUwMT
 M0NzU5LDEzNjUyNDcxODIsLTIwODMyNzA1MTQsNTI1NDcyNDEy
 LDE0ODYwMjYzMTgsMTYwMTQwNzMxMywxNDc5NTc3MjcyLC0xND
 IwMTY4OTU1LDEwNDc3MjU4MywxNzA1MjYwMzIxLC0xMzE5MDQ5
