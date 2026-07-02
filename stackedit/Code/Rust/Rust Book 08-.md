@@ -874,15 +874,19 @@ Integration tests
 * should have the `#[cfg(test)]` attribute
 * The annotation tells rust to compile and run the code only when invoked with `cargo test`
 * The annotation is not needed for integration tests
+* Apparently testing private functions is controversial
+
+### Integration tests
+* located in the `tests` directory, which should be a sibling of `src`
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI1MDM4MTMsLTE3OTAwNDEzNTcsLTE1NT
-MyNTA1OTAsMTQ3NTExNTM1NiwtMTExNjMyODA3NCw2NDcxNjQ3
-MDYsLTE0NTg2ODk0NTUsMjAzODU4MTY3MSwtMTcxNTE1MzA0NC
-wxNzk4MzM1ODA4LDQwOTE5NzEzMSwzNDU2NjM2MTIsMTY1MDEz
-NDc1OSwxMzY1MjQ3MTgyLC0yMDgzMjcwNTE0LDUyNTQ3MjQxMi
-wxNDg2MDI2MzE4LDE2MDE0MDczMTMsMTQ3OTU3NzI3MiwtMTQy
-MDE2ODk1NV19
+eyJoaXN0b3J5IjpbLTc1NTQ0NTkxNSwtMTc5MDA0MTM1NywtMT
+U1MzI1MDU5MCwxNDc1MTE1MzU2LC0xMTE2MzI4MDc0LDY0NzE2
+NDcwNiwtMTQ1ODY4OTQ1NSwyMDM4NTgxNjcxLC0xNzE1MTUzMD
+Q0LDE3OTgzMzU4MDgsNDA5MTk3MTMxLDM0NTY2MzYxMiwxNjUw
+MTM0NzU5LDEzNjUyNDcxODIsLTIwODMyNzA1MTQsNTI1NDcyND
+EyLDE0ODYwMjYzMTgsMTYwMTQwNzMxMywxNDc5NTc3MjcyLC0x
+NDIwMTY4OTU1XX0=
 -->
