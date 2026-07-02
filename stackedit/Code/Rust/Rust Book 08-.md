@@ -779,8 +779,9 @@ mod tests {
 ### `assert!` macros
 * takes a boolean argument
 * calls `panic!` if the bool is `false`
-`assert_eq!` and `assert_ne!`
-* takes two arguments, compares with `==`
+* `assert_eq!` and `assert_ne!`
+	* takes two arguments, compares with `==` and `!=`
+* An extra argument c
 * 
 
 
@@ -790,11 +791,11 @@ mod tests {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjgxNDUyNTEsMTQ3NTExNTM1NiwtMT
-ExNjMyODA3NCw2NDcxNjQ3MDYsLTE0NTg2ODk0NTUsMjAzODU4
-MTY3MSwtMTcxNTE1MzA0NCwxNzk4MzM1ODA4LDQwOTE5NzEzMS
-wzNDU2NjM2MTIsMTY1MDEzNDc1OSwxMzY1MjQ3MTgyLC0yMDgz
-MjcwNTE0LDUyNTQ3MjQxMiwxNDg2MDI2MzE4LDE2MDE0MDczMT
-MsMTQ3OTU3NzI3MiwtMTQyMDE2ODk1NSwxMDQ3NzI1ODMsMTcw
-NTI2MDMyMV19
+eyJoaXN0b3J5IjpbNjIwMzIzMDUsMTQ3NTExNTM1NiwtMTExNj
+MyODA3NCw2NDcxNjQ3MDYsLTE0NTg2ODk0NTUsMjAzODU4MTY3
+MSwtMTcxNTE1MzA0NCwxNzk4MzM1ODA4LDQwOTE5NzEzMSwzND
+U2NjM2MTIsMTY1MDEzNDc1OSwxMzY1MjQ3MTgyLC0yMDgzMjcw
+NTE0LDUyNTQ3MjQxMiwxNDg2MDI2MzE4LDE2MDE0MDczMTMsMT
+Q3OTU3NzI3MiwtMTQyMDE2ODk1NSwxMDQ3NzI1ODMsMTcwNTI2
+MDMyMV19
 -->
