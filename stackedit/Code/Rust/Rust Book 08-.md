@@ -827,13 +827,14 @@ fn it_workd() -> Result<(), String> {
 
 ## 11.02 Controlling How Tests are Run
 `cargo test`
-: runs all tests
+: runs all tests, in parallel by default
 
 `cargo test -- --help`
 : displays the options you can use after the `--` separator
 
 ### Running Tests in Parallel or Consecutively
 `cargo test -- --test-threads=1`
+* tests are run in parallel by default, with multiple threads
 
 ### Showing function output
 * Output is hidden for tests that pass by default
@@ -858,13 +859,15 @@ fn expensive_test() { /* ... */ }
 * use `cargo test -- --ignored` to run **only** the ignored tests
 * use `cargo test -- --include--ignored` to run them in addition to the normal tests
 
+##
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjU2NTQ0NTIsLTE3OTAwNDEzNTcsLT
-E1NTMyNTA1OTAsMTQ3NTExNTM1NiwtMTExNjMyODA3NCw2NDcx
-NjQ3MDYsLTE0NTg2ODk0NTUsMjAzODU4MTY3MSwtMTcxNTE1Mz
-A0NCwxNzk4MzM1ODA4LDQwOTE5NzEzMSwzNDU2NjM2MTIsMTY1
-MDEzNDc1OSwxMzY1MjQ3MTgyLC0yMDgzMjcwNTE0LDUyNTQ3Mj
-QxMiwxNDg2MDI2MzE4LDE2MDE0MDczMTMsMTQ3OTU3NzI3Miwt
-MTQyMDE2ODk1NV19
+eyJoaXN0b3J5IjpbLTU4NjA2ODMyOSwtMTc5MDA0MTM1NywtMT
+U1MzI1MDU5MCwxNDc1MTE1MzU2LC0xMTE2MzI4MDc0LDY0NzE2
+NDcwNiwtMTQ1ODY4OTQ1NSwyMDM4NTgxNjcxLC0xNzE1MTUzMD
+Q0LDE3OTgzMzU4MDgsNDA5MTk3MTMxLDM0NTY2MzYxMiwxNjUw
+MTM0NzU5LDEzNjUyNDcxODIsLTIwODMyNzA1MTQsNTI1NDcyND
+EyLDE0ODYwMjYzMTgsMTYwMTQwNzMxMywxNDc5NTc3MjcyLC0x
+NDIwMTY4OTU1XX0=
 -->
