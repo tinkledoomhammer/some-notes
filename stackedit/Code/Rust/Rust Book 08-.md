@@ -835,11 +835,13 @@ fn it_workd() -> Result<(), String> {
 ### Running Tests in Parallel or Consecutively
 `cargo test -- --test-threads=1`
 
-### 
+### Showing function output
+* Output is captured for tests that pass by default
+* `cargo test -- --show-output`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1OTA4NDgyMSwtMTc5MDA0MTM1NywtMT
+eyJoaXN0b3J5IjpbMTkwOTQ4MTA3MSwtMTc5MDA0MTM1NywtMT
 U1MzI1MDU5MCwxNDc1MTE1MzU2LC0xMTE2MzI4MDc0LDY0NzE2
 NDcwNiwtMTQ1ODY4OTQ1NSwyMDM4NTgxNjcxLC0xNzE1MTUzMD
 Q0LDE3OTgzMzU4MDgsNDA5MTk3MTMxLDM0NTY2MzYxMiwxNjUw
