@@ -891,6 +891,11 @@ Integration tests
 	* `proj/tests/integration_test.rs`
 
 ### Submodules in integration tests
+* special care must be taken when using a module to share code between tests
+* because each `.rs` file is compiled as its own crate
+* so to make a shared module, give it a folder in `tests`
+* and create a `mod.rs` in that folder
+* 
 
 
 
@@ -899,11 +904,11 @@ Integration tests
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4NTQ2NjU3NSwtMTc5MDA0MTM1NywtMT
-U1MzI1MDU5MCwxNDc1MTE1MzU2LC0xMTE2MzI4MDc0LDY0NzE2
-NDcwNiwtMTQ1ODY4OTQ1NSwyMDM4NTgxNjcxLC0xNzE1MTUzMD
-Q0LDE3OTgzMzU4MDgsNDA5MTk3MTMxLDM0NTY2MzYxMiwxNjUw
-MTM0NzU5LDEzNjUyNDcxODIsLTIwODMyNzA1MTQsNTI1NDcyND
-EyLDE0ODYwMjYzMTgsMTYwMTQwNzMxMywxNDc5NTc3MjcyLC0x
-NDIwMTY4OTU1XX0=
+eyJoaXN0b3J5IjpbLTIwNzg5MTM0NTAsMTA4NTQ2NjU3NSwtMT
+c5MDA0MTM1NywtMTU1MzI1MDU5MCwxNDc1MTE1MzU2LC0xMTE2
+MzI4MDc0LDY0NzE2NDcwNiwtMTQ1ODY4OTQ1NSwyMDM4NTgxNj
+cxLC0xNzE1MTUzMDQ0LDE3OTgzMzU4MDgsNDA5MTk3MTMxLDM0
+NTY2MzYxMiwxNjUwMTM0NzU5LDEzNjUyNDcxODIsLTIwODMyNz
+A1MTQsNTI1NDcyNDEyLDE0ODYwMjYzMTgsMTYwMTQwNzMxMywx
+NDc5NTc3MjcyXX0=
 -->
