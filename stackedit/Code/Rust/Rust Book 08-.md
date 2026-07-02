@@ -898,6 +898,7 @@ Integration tests
 * i.e. `proj/tests/common/mod.rs`
 * then in the tests `use common::*` or whatever
 
+# 12 An I/O Project: Building a Command Line Program
 
 
 
@@ -906,7 +907,7 @@ Integration tests
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0ODAyODU3MCwxMDg1NDY2NTc1LC0xNz
+eyJoaXN0b3J5IjpbLTE4MTU4NjQyNSwxMDg1NDY2NTc1LC0xNz
 kwMDQxMzU3LC0xNTUzMjUwNTkwLDE0NzUxMTUzNTYsLTExMTYz
 MjgwNzQsNjQ3MTY0NzA2LC0xNDU4Njg5NDU1LDIwMzg1ODE2Nz
 EsLTE3MTUxNTMwNDQsMTc5ODMzNTgwOCw0MDkxOTcxMzEsMzQ1
