@@ -754,6 +754,8 @@ Tests typically
 : attribute that annotates test functions
 : will be run by `cargo test`
 
+`#[cfg(test)]`
+: marks a module to be compiled for tests only
 * Creating a new library project in Cargo creates a test module aotumatically
 ```bash
 $ cargo new adder --lib
@@ -785,11 +787,11 @@ mod tests {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTYzMjgwNzQsNjQ3MTY0NzA2LC0xND
-U4Njg5NDU1LDIwMzg1ODE2NzEsLTE3MTUxNTMwNDQsMTc5ODMz
-NTgwOCw0MDkxOTcxMzEsMzQ1NjYzNjEyLDE2NTAxMzQ3NTksMT
-M2NTI0NzE4MiwtMjA4MzI3MDUxNCw1MjU0NzI0MTIsMTQ4NjAy
-NjMxOCwxNjAxNDA3MzEzLDE0Nzk1NzcyNzIsLTE0MjAxNjg5NT
-UsMTA0NzcyNTgzLDE3MDUyNjAzMjEsLTEzMTkwNDk5MjYsMTU4
-MTI0ODUwOV19
+eyJoaXN0b3J5IjpbMTQ3NTExNTM1NiwtMTExNjMyODA3NCw2ND
+cxNjQ3MDYsLTE0NTg2ODk0NTUsMjAzODU4MTY3MSwtMTcxNTE1
+MzA0NCwxNzk4MzM1ODA4LDQwOTE5NzEzMSwzNDU2NjM2MTIsMT
+Y1MDEzNDc1OSwxMzY1MjQ3MTgyLC0yMDgzMjcwNTE0LDUyNTQ3
+MjQxMiwxNDg2MDI2MzE4LDE2MDE0MDczMTMsMTQ3OTU3NzI3Mi
+wtMTQyMDE2ODk1NSwxMDQ3NzI1ODMsMTcwNTI2MDMyMSwtMTMx
+OTA0OTkyNl19
 -->
