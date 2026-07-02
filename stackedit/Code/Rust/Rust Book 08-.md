@@ -825,15 +825,20 @@ fn it_workd() -> Result<(), String> {
 * allows the use of `!`
 * Note: to 
 
+## 11.02 Controlling How Tests are Run
+`cargo test`
+: runs all tests
+`cargo test -- --help`
+: displays the options you cna use after the `--` separator
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTAwNDEzNTcsLTE1NTMyNTA1OTAsMT
-Q3NTExNTM1NiwtMTExNjMyODA3NCw2NDcxNjQ3MDYsLTE0NTg2
-ODk0NTUsMjAzODU4MTY3MSwtMTcxNTE1MzA0NCwxNzk4MzM1OD
-A4LDQwOTE5NzEzMSwzNDU2NjM2MTIsMTY1MDEzNDc1OSwxMzY1
-MjQ3MTgyLC0yMDgzMjcwNTE0LDUyNTQ3MjQxMiwxNDg2MDI2Mz
-E4LDE2MDE0MDczMTMsMTQ3OTU3NzI3MiwtMTQyMDE2ODk1NSwx
-MDQ3NzI1ODNdfQ==
+eyJoaXN0b3J5IjpbLTE0MzIyMTc2MjEsLTE3OTAwNDEzNTcsLT
+E1NTMyNTA1OTAsMTQ3NTExNTM1NiwtMTExNjMyODA3NCw2NDcx
+NjQ3MDYsLTE0NTg2ODk0NTUsMjAzODU4MTY3MSwtMTcxNTE1Mz
+A0NCwxNzk4MzM1ODA4LDQwOTE5NzEzMSwzNDU2NjM2MTIsMTY1
+MDEzNDc1OSwxMzY1MjQ3MTgyLC0yMDgzMjcwNTE0LDUyNTQ3Mj
+QxMiwxNDg2MDI2MzE4LDE2MDE0MDczMTMsMTQ3OTU3NzI3Miwt
+MTQyMDE2ODk1NV19
 -->
