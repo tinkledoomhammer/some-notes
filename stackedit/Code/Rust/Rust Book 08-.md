@@ -853,12 +853,12 @@ fn it_workd() -> Result<(), String> {
 #[test]
 #[ignore]
 fn expensive_test() { /* ... */ }
-
 ```
-
+* ignored tests are listed after failed, before ignored, in the last line of output
+* use `cargo test -- --ignored` to run **only** the i
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0MjAwNTU2MywtMTc5MDA0MTM1NywtMT
+eyJoaXN0b3J5IjpbLTcwOTU3MzE2NiwtMTc5MDA0MTM1NywtMT
 U1MzI1MDU5MCwxNDc1MTE1MzU2LC0xMTE2MzI4MDc0LDY0NzE2
 NDcwNiwtMTQ1ODY4OTQ1NSwyMDM4NTgxNjcxLC0xNzE1MTUzMD
 Q0LDE3OTgzMzU4MDgsNDA5MTk3MTMxLDM0NTY2MzYxMiwxNjUw
