@@ -781,8 +781,14 @@ mod tests {
 * calls `panic!` if the bool is `false`
 * `assert_eq!` and `assert_ne!`
 	* takes two arguments, compares with `==` and `!=`
-* An extra argument c
-* 
+* Extra arguments can be provided to generate a custom error message
+	* the formatting is the same as for `println!`
+```rust
+#[test]
+fn greeting_contains_name() {
+``` let result = greeting("Carol");
+assert!(
+	result.contains("
 
 
 
@@ -791,11 +797,11 @@ mod tests {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIwMzIzMDUsMTQ3NTExNTM1NiwtMTExNj
-MyODA3NCw2NDcxNjQ3MDYsLTE0NTg2ODk0NTUsMjAzODU4MTY3
-MSwtMTcxNTE1MzA0NCwxNzk4MzM1ODA4LDQwOTE5NzEzMSwzND
-U2NjM2MTIsMTY1MDEzNDc1OSwxMzY1MjQ3MTgyLC0yMDgzMjcw
-NTE0LDUyNTQ3MjQxMiwxNDg2MDI2MzE4LDE2MDE0MDczMTMsMT
-Q3OTU3NzI3MiwtMTQyMDE2ODk1NSwxMDQ3NzI1ODMsMTcwNTI2
-MDMyMV19
+eyJoaXN0b3J5IjpbLTkxNTg0NzcwNywxNDc1MTE1MzU2LC0xMT
+E2MzI4MDc0LDY0NzE2NDcwNiwtMTQ1ODY4OTQ1NSwyMDM4NTgx
+NjcxLC0xNzE1MTUzMDQ0LDE3OTgzMzU4MDgsNDA5MTk3MTMxLD
+M0NTY2MzYxMiwxNjUwMTM0NzU5LDEzNjUyNDcxODIsLTIwODMy
+NzA1MTQsNTI1NDcyNDEyLDE0ODYwMjYzMTgsMTYwMTQwNzMxMy
+wxNDc5NTc3MjcyLC0xNDIwMTY4OTU1LDEwNDc3MjU4MywxNzA1
+MjYwMzIxXX0=
 -->
