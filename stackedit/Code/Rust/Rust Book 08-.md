@@ -842,15 +842,19 @@ fn it_workd() -> Result<(), String> {
 	* will display output for test s that pass
 ### Running a subset of tests by name
 * Single tests , pass the name of that test without a separator
-	* `cargo test one_test
+	* `cargo test this_one_test`
+* The last line of cargo's output will show how many tests were filtered out
+* Filtering to run multiple tests
+	* `cargo test part_of_the_function_name`
+	* will run all test with the specified text as pa
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMDAyMzgyNSwtMTc5MDA0MTM1NywtMT
-U1MzI1MDU5MCwxNDc1MTE1MzU2LC0xMTE2MzI4MDc0LDY0NzE2
-NDcwNiwtMTQ1ODY4OTQ1NSwyMDM4NTgxNjcxLC0xNzE1MTUzMD
-Q0LDE3OTgzMzU4MDgsNDA5MTk3MTMxLDM0NTY2MzYxMiwxNjUw
-MTM0NzU5LDEzNjUyNDcxODIsLTIwODMyNzA1MTQsNTI1NDcyND
-EyLDE0ODYwMjYzMTgsMTYwMTQwNzMxMywxNDc5NTc3MjcyLC0x
-NDIwMTY4OTU1XX0=
+eyJoaXN0b3J5IjpbNTUyODYwMjUyLC0xNzkwMDQxMzU3LC0xNT
+UzMjUwNTkwLDE0NzUxMTUzNTYsLTExMTYzMjgwNzQsNjQ3MTY0
+NzA2LC0xNDU4Njg5NDU1LDIwMzg1ODE2NzEsLTE3MTUxNTMwND
+QsMTc5ODMzNTgwOCw0MDkxOTcxMzEsMzQ1NjYzNjEyLDE2NTAx
+MzQ3NTksMTM2NTI0NzE4MiwtMjA4MzI3MDUxNCw1MjU0NzI0MT
+IsMTQ4NjAyNjMxOCwxNjAxNDA3MzEzLDE0Nzk1NzcyNzIsLTE0
+MjAxNjg5NTVdfQ==
 -->
