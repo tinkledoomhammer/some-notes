@@ -883,15 +883,18 @@ Integration tests
 * `cargo` test will evaluate in the order:
 	* unit tests first
 	* integration tests seconds
-	* do
+	* doc tests last
+* The process terminates when one test fails
+	* so if a unit tests fails then no integration or doc tests will run
+* 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxMTYzNTc5OSwtMTc5MDA0MTM1NywtMT
-U1MzI1MDU5MCwxNDc1MTE1MzU2LC0xMTE2MzI4MDc0LDY0NzE2
-NDcwNiwtMTQ1ODY4OTQ1NSwyMDM4NTgxNjcxLC0xNzE1MTUzMD
-Q0LDE3OTgzMzU4MDgsNDA5MTk3MTMxLDM0NTY2MzYxMiwxNjUw
-MTM0NzU5LDEzNjUyNDcxODIsLTIwODMyNzA1MTQsNTI1NDcyND
-EyLDE0ODYwMjYzMTgsMTYwMTQwNzMxMywxNDc5NTc3MjcyLC0x
-NDIwMTY4OTU1XX0=
+eyJoaXN0b3J5IjpbNjg3OTkyNjgzLC0xNzkwMDQxMzU3LC0xNT
+UzMjUwNTkwLDE0NzUxMTUzNTYsLTExMTYzMjgwNzQsNjQ3MTY0
+NzA2LC0xNDU4Njg5NDU1LDIwMzg1ODE2NzEsLTE3MTUxNTMwND
+QsMTc5ODMzNTgwOCw0MDkxOTcxMzEsMzQ1NjYzNjEyLDE2NTAx
+MzQ3NTksMTM2NTI0NzE4MiwtMjA4MzI3MDUxNCw1MjU0NzI0MT
+IsMTQ4NjAyNjMxOCwxNjAxNDA3MzEzLDE0Nzk1NzcyNzIsLTE0
+MjAxNjg5NTVdfQ==
 -->
