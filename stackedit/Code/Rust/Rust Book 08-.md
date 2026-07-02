@@ -801,18 +801,25 @@ fn greater_than_100(){
 	panic!("Oops");
 }
 ```
-it can ta
+* Can test for specific types  of panic by matching the error message with the `expected=` parameter
+```rust
+#[test]
+#[should_panic(expected="asdf")]
+fn will_panic(){
+	panic!("foo asdf bar");
+}
+```
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDI3MDI2MiwxNDc1MTE1MzU2LC0xMT
-E2MzI4MDc0LDY0NzE2NDcwNiwtMTQ1ODY4OTQ1NSwyMDM4NTgx
-NjcxLC0xNzE1MTUzMDQ0LDE3OTgzMzU4MDgsNDA5MTk3MTMxLD
-M0NTY2MzYxMiwxNjUwMTM0NzU5LDEzNjUyNDcxODIsLTIwODMy
-NzA1MTQsNTI1NDcyNDEyLDE0ODYwMjYzMTgsMTYwMTQwNzMxMy
-wxNDc5NTc3MjcyLC0xNDIwMTY4OTU1LDEwNDc3MjU4MywxNzA1
-MjYwMzIxXX0=
+eyJoaXN0b3J5IjpbLTE1NTMyNTA1OTAsMTQ3NTExNTM1NiwtMT
+ExNjMyODA3NCw2NDcxNjQ3MDYsLTE0NTg2ODk0NTUsMjAzODU4
+MTY3MSwtMTcxNTE1MzA0NCwxNzk4MzM1ODA4LDQwOTE5NzEzMS
+wzNDU2NjM2MTIsMTY1MDEzNDc1OSwxMzY1MjQ3MTgyLC0yMDgz
+MjcwNTE0LDUyNTQ3MjQxMiwxNDg2MDI2MzE4LDE2MDE0MDczMT
+MsMTQ3OTU3NzI3MiwtMTQyMDE2ODk1NSwxMDQ3NzI1ODMsMTcw
+NTI2MDMyMV19
 -->
