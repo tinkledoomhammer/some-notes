@@ -816,14 +816,20 @@ fn it_workd() -> Result<(), String> {
 	let result = add(2,2);
 	if result == 4 {
 		Ok(())
+	} else {
+		Err(String::from("2 + 2 != 4")
 	}
+}
 ```
+* Cannot be used with `#[should_panic]`
+* allows the use of `!`
+* Note: to 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODM0MjI3NjEsLTE1NTMyNTA1OTAsMT
+eyJoaXN0b3J5IjpbLTE3OTAwNDEzNTcsLTE1NTMyNTA1OTAsMT
 Q3NTExNTM1NiwtMTExNjMyODA3NCw2NDcxNjQ3MDYsLTE0NTg2
 ODk0NTUsMjAzODU4MTY3MSwtMTcxNTE1MzA0NCwxNzk4MzM1OD
 A4LDQwOTE5NzEzMSwzNDU2NjM2MTIsMTY1MDEzNDc1OSwxMzY1
