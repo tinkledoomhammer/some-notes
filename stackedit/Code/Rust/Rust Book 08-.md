@@ -874,15 +874,20 @@ Integration tests
 * should have the `#[cfg(test)]` attribute
 * The annotation tells rust to compile and run the code only when invoked with `cargo test`
 * The annotation is not needed for integration tests
+* can use `import super::*` to get access to the entire parent module
 * Apparently testing private functions is controversial
 
 ### Integration tests
 * located in the `tests` directory, which should be a sibling of `src`
-
+* must `import` the stuff they need as though it were in a separate crate
+* `cargo` test will evaluate in the order:
+	* unit tests first
+	* integration tests seconds
+	* do
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NTQ0NTkxNSwtMTc5MDA0MTM1NywtMT
+eyJoaXN0b3J5IjpbMTMxMTYzNTc5OSwtMTc5MDA0MTM1NywtMT
 U1MzI1MDU5MCwxNDc1MTE1MzU2LC0xMTE2MzI4MDc0LDY0NzE2
 NDcwNiwtMTQ1ODY4OTQ1NSwyMDM4NTgxNjcxLC0xNzE1MTUzMD
 Q0LDE3OTgzMzU4MDgsNDA5MTk3MTMxLDM0NTY2MzYxMiwxNjUw
