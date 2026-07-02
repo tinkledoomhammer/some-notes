@@ -895,7 +895,9 @@ Integration tests
 * because each `.rs` file is compiled as its own crate
 * so to make a shared module, give it a folder in `tests`
 * and create a `mod.rs` in that folder
-* 
+* i.e. `proj/tests/common/mod.rs`
+* then in the tests `use common::*` or whatever
+
 
 
 
@@ -904,11 +906,11 @@ Integration tests
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzg5MTM0NTAsMTA4NTQ2NjU3NSwtMT
-c5MDA0MTM1NywtMTU1MzI1MDU5MCwxNDc1MTE1MzU2LC0xMTE2
-MzI4MDc0LDY0NzE2NDcwNiwtMTQ1ODY4OTQ1NSwyMDM4NTgxNj
-cxLC0xNzE1MTUzMDQ0LDE3OTgzMzU4MDgsNDA5MTk3MTMxLDM0
-NTY2MzYxMiwxNjUwMTM0NzU5LDEzNjUyNDcxODIsLTIwODMyNz
-A1MTQsNTI1NDcyNDEyLDE0ODYwMjYzMTgsMTYwMTQwNzMxMywx
-NDc5NTc3MjcyXX0=
+eyJoaXN0b3J5IjpbMTY0ODAyODU3MCwxMDg1NDY2NTc1LC0xNz
+kwMDQxMzU3LC0xNTUzMjUwNTkwLDE0NzUxMTUzNTYsLTExMTYz
+MjgwNzQsNjQ3MTY0NzA2LC0xNDU4Njg5NDU1LDIwMzg1ODE2Nz
+EsLTE3MTUxNTMwNDQsMTc5ODMzNTgwOCw0MDkxOTcxMzEsMzQ1
+NjYzNjEyLDE2NTAxMzQ3NTksMTM2NTI0NzE4MiwtMjA4MzI3MD
+UxNCw1MjU0NzI0MTIsMTQ4NjAyNjMxOCwxNjAxNDA3MzEzLDE0
+Nzk1NzcyNzJdfQ==
 -->
