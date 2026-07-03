@@ -1026,6 +1026,7 @@ fn parse_config(args: &[String]) -> Config {
 }
 ```
 * now we clone out the args, and the `Config` struct owns them.
+#### Creating a constructor for `Config`
 
 
 
@@ -1038,11 +1039,11 @@ fn parse_config(args: &[String]) -> Config {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjA4ODA4NSwtMTk1OTM1Mzc4NSwyMD
-gwODczNzg2LDY4MTEyMDM4NSwtMTg3ODc0NjAwOSwtMTgxNTg2
-NDI1LDEwODU0NjY1NzUsLTE3OTAwNDEzNTcsLTE1NTMyNTA1OT
-AsMTQ3NTExNTM1NiwtMTExNjMyODA3NCw2NDcxNjQ3MDYsLTE0
-NTg2ODk0NTUsMjAzODU4MTY3MSwtMTcxNTE1MzA0NCwxNzk4Mz
-M1ODA4LDQwOTE5NzEzMSwzNDU2NjM2MTIsMTY1MDEzNDc1OSwx
-MzY1MjQ3MTgyXX0=
+eyJoaXN0b3J5IjpbMTEzNzQyOTY1NiwtMTAyMDg4MDg1LC0xOT
+U5MzUzNzg1LDIwODA4NzM3ODYsNjgxMTIwMzg1LC0xODc4NzQ2
+MDA5LC0xODE1ODY0MjUsMTA4NTQ2NjU3NSwtMTc5MDA0MTM1Ny
+wtMTU1MzI1MDU5MCwxNDc1MTE1MzU2LC0xMTE2MzI4MDc0LDY0
+NzE2NDcwNiwtMTQ1ODY4OTQ1NSwyMDM4NTgxNjcxLC0xNzE1MT
+UzMDQ0LDE3OTgzMzU4MDgsNDA5MTk3MTMxLDM0NTY2MzYxMiwx
+NjUwMTM0NzU5XX0=
 -->
