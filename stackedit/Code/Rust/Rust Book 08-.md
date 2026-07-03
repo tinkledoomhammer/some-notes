@@ -1066,18 +1066,21 @@ fn run(config: Config) -> Result<(), Box<dyn Error>> {
 * the book used an `if let Err(...` this time, prolly because we don't need the `Ok(())` for anything
 
 ### Splitting code into a library crate
-
+* the section ends by adding
+	* `lib.rs` with a `search` function:
+		* `pub fn<'a> search(query: &str, contents: &'a str) -> Vec<&'a str>...`
+		* in `
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzAyODg4ODY0LC0xOTUxNzg2ODYxLC05Nz
-EzNDQyOTUsLTEwMjA4ODA4NSwtMTk1OTM1Mzc4NSwyMDgwODcz
-Nzg2LDY4MTEyMDM4NSwtMTg3ODc0NjAwOSwtMTgxNTg2NDI1LD
-EwODU0NjY1NzUsLTE3OTAwNDEzNTcsLTE1NTMyNTA1OTAsMTQ3
-NTExNTM1NiwtMTExNjMyODA3NCw2NDcxNjQ3MDYsLTE0NTg2OD
-k0NTUsMjAzODU4MTY3MSwtMTcxNTE1MzA0NCwxNzk4MzM1ODA4
-LDQwOTE5NzEzMV19
+eyJoaXN0b3J5IjpbNzcwNDA5MjcyLDcwMjg4ODg2NCwtMTk1MT
+c4Njg2MSwtOTcxMzQ0Mjk1LC0xMDIwODgwODUsLTE5NTkzNTM3
+ODUsMjA4MDg3Mzc4Niw2ODExMjAzODUsLTE4Nzg3NDYwMDksLT
+E4MTU4NjQyNSwxMDg1NDY2NTc1LC0xNzkwMDQxMzU3LC0xNTUz
+MjUwNTkwLDE0NzUxMTUzNTYsLTExMTYzMjgwNzQsNjQ3MTY0Nz
+A2LC0xNDU4Njg5NDU1LDIwMzg1ODE2NzEsLTE3MTUxNTMwNDQs
+MTc5ODMzNTgwOF19
 -->
