@@ -928,7 +928,7 @@ It will be invoked like:
 the `--` tells cargo to pass the remaining arguments to the binary
 
 ### Reading the argument values
-the `std::env::args` function returns an iterator
+the `std::env::args` function returns an iterator of `String`s
 ```rust
 use std::env;
 fn main() {
@@ -936,19 +936,21 @@ fn main() {
 	dbg!(args);
 }
 ```
-Note: `std::env::args` will panic if the arguments contain invalid unicode. If you need to accept non-unicode characters, use `std::env::args_os` instead. That iterator produces
+Note: `std::env::args` will panic if the arguments contain invalid unicode. If you need to accept non-unicode characters, use `std::env::args_os` instead. That iterator produces `OsString`s instead of regular `String`s
 
+* the first item returned is the path of the executable. 
+	* `target\\debug\\minigrep.exe`
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjk5OTUwODAsLTE4Nzg3NDYwMDksLT
-E4MTU4NjQyNSwxMDg1NDY2NTc1LC0xNzkwMDQxMzU3LC0xNTUz
-MjUwNTkwLDE0NzUxMTUzNTYsLTExMTYzMjgwNzQsNjQ3MTY0Nz
-A2LC0xNDU4Njg5NDU1LDIwMzg1ODE2NzEsLTE3MTUxNTMwNDQs
-MTc5ODMzNTgwOCw0MDkxOTcxMzEsMzQ1NjYzNjEyLDE2NTAxMz
-Q3NTksMTM2NTI0NzE4MiwtMjA4MzI3MDUxNCw1MjU0NzI0MTIs
-MTQ4NjAyNjMxOF19
+eyJoaXN0b3J5IjpbNjc4NzA0MTcyLC0xODc4NzQ2MDA5LC0xOD
+E1ODY0MjUsMTA4NTQ2NjU3NSwtMTc5MDA0MTM1NywtMTU1MzI1
+MDU5MCwxNDc1MTE1MzU2LC0xMTE2MzI4MDc0LDY0NzE2NDcwNi
+wtMTQ1ODY4OTQ1NSwyMDM4NTgxNjcxLC0xNzE1MTUzMDQ0LDE3
+OTgzMzU4MDgsNDA5MTk3MTMxLDM0NTY2MzYxMiwxNjUwMTM0Nz
+U5LDEzNjUyNDcxODIsLTIwODMyNzA1MTQsNTI1NDcyNDEyLDE0
+ODYwMjYzMThdfQ==
 -->
