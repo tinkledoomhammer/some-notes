@@ -967,12 +967,26 @@ let contents = fs::read_to_string(file_path);
 println!("Contents:\n{contents}");
 ```
 ## 12.03 Refactoring to Improve Modularity and Error Handling
-Fixing 4 pro
+Fixing 4 problems:
+* `main` has two tasks (parsing arguments and reading files)
+* configuration variables are mixed in with other locals
+* use of `expect` with a vague error message. Should say why we couldn't read the file
+* 
+
+
+
+
+
+
+
+
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3OTc3MjY4NSw2ODExMjAzODUsLTE4Nz
+eyJoaXN0b3J5IjpbMTg5NDc4ODQxMSw2ODExMjAzODUsLTE4Nz
 g3NDYwMDksLTE4MTU4NjQyNSwxMDg1NDY2NTc1LC0xNzkwMDQx
 MzU3LC0xNTUzMjUwNTkwLDE0NzUxMTUzNTYsLTExMTYzMjgwNz
 QsNjQ3MTY0NzA2LC0xNDU4Njg5NDU1LDIwMzg1ODE2NzEsLTE3
