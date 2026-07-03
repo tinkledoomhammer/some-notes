@@ -913,7 +913,17 @@ The project will combine:
 * Writing test
 Will briefly introduce
 * closures, iterators, and trait objects (Ch. 13 and Ch.18)
-* 
+
+
+## 12.01 Accepting Command line arguments (and project setup)
+Creating the project
+```bash
+$ cargo new minigrep
+	Created binary (application) 'minigrep' project
+$ cd minigrep
+``` 
+It will be invoked like:
+`$ cargo run
 
 
 
@@ -921,7 +931,7 @@ Will briefly introduce
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3MzgyODM4MSwtMTgxNTg2NDI1LDEwOD
+eyJoaXN0b3J5IjpbMTczMDQ5ODIwNCwtMTgxNTg2NDI1LDEwOD
 U0NjY1NzUsLTE3OTAwNDEzNTcsLTE1NTMyNTA1OTAsMTQ3NTEx
 NTM1NiwtMTExNjMyODA3NCw2NDcxNjQ3MDYsLTE0NTg2ODk0NT
 UsMjAzODU4MTY3MSwtMTcxNTE1MzA0NCwxNzk4MzM1ODA4LDQw
