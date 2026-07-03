@@ -1009,7 +1009,11 @@ use std::{env, fs};
 fn main() {
 	let args: Vec<_> = env::args().collect();
 	let config = parse_config(&args);
-	 
+	println!("Searching for: {}", config.query);
+  println!("In file: {}", config.file_path);
+  let contents = fs::read_to_string(config.file_path)
+      .expect("Should have been able to read the file");
+  println!("Contents\n{contents}");
 }
 struct Config {
     query: String,
@@ -1034,11 +1038,11 @@ fn parse_config(args: &[String]) -> Config {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTkzNTM3ODUsMjA4MDg3Mzc4Niw2OD
-ExMjAzODUsLTE4Nzg3NDYwMDksLTE4MTU4NjQyNSwxMDg1NDY2
-NTc1LC0xNzkwMDQxMzU3LC0xNTUzMjUwNTkwLDE0NzUxMTUzNT
-YsLTExMTYzMjgwNzQsNjQ3MTY0NzA2LC0xNDU4Njg5NDU1LDIw
-Mzg1ODE2NzEsLTE3MTUxNTMwNDQsMTc5ODMzNTgwOCw0MDkxOT
-cxMzEsMzQ1NjYzNjEyLDE2NTAxMzQ3NTksMTM2NTI0NzE4Miwt
-MjA4MzI3MDUxNF19
+eyJoaXN0b3J5IjpbLTEwMjA4ODA4NSwtMTk1OTM1Mzc4NSwyMD
+gwODczNzg2LDY4MTEyMDM4NSwtMTg3ODc0NjAwOSwtMTgxNTg2
+NDI1LDEwODU0NjY1NzUsLTE3OTAwNDEzNTcsLTE1NTMyNTA1OT
+AsMTQ3NTExNTM1NiwtMTExNjMyODA3NCw2NDcxNjQ3MDYsLTE0
+NTg2ODk0NTUsMjAzODU4MTY3MSwtMTcxNTE1MzA0NCwxNzk4Mz
+M1ODA4LDQwOTE5NzEzMSwzNDU2NjM2MTIsMTY1MDEzNDc1OSwx
+MzY1MjQ3MTgyXX0=
 -->
