@@ -1062,6 +1062,7 @@ fn run(config: Config) -> Result<(), Box<dyn Error>> {
 }
 ```
 * uses `?` to unwrap, so a box'ed dyn of whatever error is thrown from `fs::read_to_string(...)`
+* I used a similar technique to handling the `Config::build` result
 * 
 
 
@@ -1069,7 +1070,7 @@ fn run(config: Config) -> Result<(), Box<dyn Error>> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTE3ODY4NjEsLTE5NTE3ODY4NjEsLT
+eyJoaXN0b3J5IjpbLTEzNjg0MDE0NjksLTE5NTE3ODY4NjEsLT
 k3MTM0NDI5NSwtMTAyMDg4MDg1LC0xOTU5MzUzNzg1LDIwODA4
 NzM3ODYsNjgxMTIwMzg1LC0xODc4NzQ2MDA5LC0xODE1ODY0Mj
 UsMTA4NTQ2NjU3NSwtMTc5MDA0MTM1NywtMTU1MzI1MDU5MCwx
