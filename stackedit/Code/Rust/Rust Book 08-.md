@@ -1002,11 +1002,30 @@ fn parse_config(args: &[String]) -> (&str, &str) {
     (query, file_path)
 }
 ```
+* note the signature of `parse_config`
 ### Grouping configuration values
 ```rust
-
-
+use std::{env, fs};
+fn main() {
+    let args: Vec<_> = env::args().collect();
+    let (query, file_path) = parse_config(&args);
+   
+    println!("Query: {query}\t File: {file_path}");
+    let contents = fs::read_to_string(file_path)
+        .expect("Should have been able to read the file");
+    println!("Contents:\n{contents}");
+}
+struct Config {
+    query: String,
+    file_path: String,
+}
+fn parse_config(args: &[String]) -> Config {
+    let query = args[1].clone();
+    let file_path = args[2].clone();
+    Config {query, file_path}
+}
 ```
+
 
 
 
@@ -1019,11 +1038,11 @@ fn parse_config(args: &[String]) -> (&str, &str) {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ4MTUxNzA3LDIwODA4NzM3ODYsNjgxMT
-IwMzg1LC0xODc4NzQ2MDA5LC0xODE1ODY0MjUsMTA4NTQ2NjU3
-NSwtMTc5MDA0MTM1NywtMTU1MzI1MDU5MCwxNDc1MTE1MzU2LC
-0xMTE2MzI4MDc0LDY0NzE2NDcwNiwtMTQ1ODY4OTQ1NSwyMDM4
-NTgxNjcxLC0xNzE1MTUzMDQ0LDE3OTgzMzU4MDgsNDA5MTk3MT
-MxLDM0NTY2MzYxMiwxNjUwMTM0NzU5LDEzNjUyNDcxODIsLTIw
-ODMyNzA1MTRdfQ==
+eyJoaXN0b3J5IjpbMTU5NTM2NDU2OSwyMDgwODczNzg2LDY4MT
+EyMDM4NSwtMTg3ODc0NjAwOSwtMTgxNTg2NDI1LDEwODU0NjY1
+NzUsLTE3OTAwNDEzNTcsLTE1NTMyNTA1OTAsMTQ3NTExNTM1Ni
+wtMTExNjMyODA3NCw2NDcxNjQ3MDYsLTE0NTg2ODk0NTUsMjAz
+ODU4MTY3MSwtMTcxNTE1MzA0NCwxNzk4MzM1ODA4LDQwOTE5Nz
+EzMSwzNDU2NjM2MTIsMTY1MDEzNDc1OSwxMzY1MjQ3MTgyLC0y
+MDgzMjcwNTE0XX0=
 -->
