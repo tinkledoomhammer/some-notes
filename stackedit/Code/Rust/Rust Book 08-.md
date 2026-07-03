@@ -1042,7 +1042,10 @@ let config = Config::build(&args).unwrap_or_else(
 
 // what I came up with
 let result = Config::build(&args);
-if let Err(err) = result
+if let Err(err) = result {
+	println!("Problem with arguments: {err}");
+	return;
+}
 ```
 
 
@@ -1053,7 +1056,7 @@ if let Err(err) = result
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk0NTI2MjY1LC05NzEzNDQyOTUsLTEwMj
+eyJoaXN0b3J5IjpbMjU2ODk3ODQ0LC05NzEzNDQyOTUsLTEwMj
 A4ODA4NSwtMTk1OTM1Mzc4NSwyMDgwODczNzg2LDY4MTEyMDM4
 NSwtMTg3ODc0NjAwOSwtMTgxNTg2NDI1LDEwODU0NjY1NzUsLT
 E3OTAwNDEzNTcsLTE1NTMyNTA1OTAsMTQ3NTExNTM1NiwtMTEx
