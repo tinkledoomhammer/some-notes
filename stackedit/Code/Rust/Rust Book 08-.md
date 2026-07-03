@@ -1002,7 +1002,11 @@ fn parse_config(args: &[String]) -> (&str, &str) {
     (query, file_path)
 }
 ```
+### Grouping configuration values
+```rust
 
+
+```
 
 
 
@@ -1015,7 +1019,7 @@ fn parse_config(args: &[String]) -> (&str, &str) {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MDk1NzgxLDIwODA4NzM3ODYsNjgxMT
+eyJoaXN0b3J5IjpbMzQ4MTUxNzA3LDIwODA4NzM3ODYsNjgxMT
 IwMzg1LC0xODc4NzQ2MDA5LC0xODE1ODY0MjUsMTA4NTQ2NjU3
 NSwtMTc5MDA0MTM1NywtMTU1MzI1MDU5MCwxNDc1MTE1MzU2LC
 0xMTE2MzI4MDc0LDY0NzE2NDcwNiwtMTQ1ODY4OTQ1NSwyMDM4
