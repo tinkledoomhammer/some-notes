@@ -963,17 +963,20 @@ To reaad the file:
 ```rust
 use std::{env, fs};
 // -- snip -- after setting file_path
-let contents = fs::read_to_string(file_path)
+let contents = fs::read_to_string(file_path);
+println!("Contents:\n{contents}");
 ```
+## 12.03 Refactoring to Improve Modularity and Error Handling
+Fixing 4 pro
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgxMTIwMzg1LC0xODc4NzQ2MDA5LC0xOD
-E1ODY0MjUsMTA4NTQ2NjU3NSwtMTc5MDA0MTM1NywtMTU1MzI1
-MDU5MCwxNDc1MTE1MzU2LC0xMTE2MzI4MDc0LDY0NzE2NDcwNi
-wtMTQ1ODY4OTQ1NSwyMDM4NTgxNjcxLC0xNzE1MTUzMDQ0LDE3
-OTgzMzU4MDgsNDA5MTk3MTMxLDM0NTY2MzYxMiwxNjUwMTM0Nz
-U5LDEzNjUyNDcxODIsLTIwODMyNzA1MTQsNTI1NDcyNDEyLDE0
-ODYwMjYzMThdfQ==
+eyJoaXN0b3J5IjpbLTg3OTc3MjY4NSw2ODExMjAzODUsLTE4Nz
+g3NDYwMDksLTE4MTU4NjQyNSwxMDg1NDY2NTc1LC0xNzkwMDQx
+MzU3LC0xNTUzMjUwNTkwLDE0NzUxMTUzNTYsLTExMTYzMjgwNz
+QsNjQ3MTY0NzA2LC0xNDU4Njg5NDU1LDIwMzg1ODE2NzEsLTE3
+MTUxNTMwNDQsMTc5ODMzNTgwOCw0MDkxOTcxMzEsMzQ1NjYzNj
+EyLDE2NTAxMzQ3NTksMTM2NTI0NzE4MiwtMjA4MzI3MDUxNCw1
+MjU0NzI0MTJdfQ==
 -->
