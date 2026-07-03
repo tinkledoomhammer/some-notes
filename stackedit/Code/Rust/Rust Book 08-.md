@@ -1064,14 +1064,16 @@ fn run(config: Config) -> Result<(), Box<dyn Error>> {
 * uses `?` to unwrap, so a box'ed dyn of whatever error is thrown from `fs::read_to_string(...)`
 * I used a similar technique to handling the `Config::build` result
 * the book used an `if let Err(...` this time, prolly because we don't need the `Ok(())` for anything
-* 
+
+### Splitting code into a library crate
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk3ODkyNDg5LC0xOTUxNzg2ODYxLC05Nz
+eyJoaXN0b3J5IjpbNzAyODg4ODY0LC0xOTUxNzg2ODYxLC05Nz
 EzNDQyOTUsLTEwMjA4ODA4NSwtMTk1OTM1Mzc4NSwyMDgwODcz
 Nzg2LDY4MTEyMDM4NSwtMTg3ODc0NjAwOSwtMTgxNTg2NDI1LD
 EwODU0NjY1NzUsLTE3OTAwNDEzNTcsLTE1NTMyNTA1OTAsMTQ3
