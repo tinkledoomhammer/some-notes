@@ -1029,7 +1029,11 @@ fn parse_config(args: &[String]) -> Config {
 
 * Basically renamed `parse_config` to `Config::new`
 ### Fixing the error handling
-* Start by renaming `Config::new
+* Start by renaming `Config::new` to `Config::build` and the return type to `Result<Config, &'static str>`
+```rust
+
+
+```
 
 
 
@@ -1039,7 +1043,7 @@ fn parse_config(args: &[String]) -> Config {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNjU4MjEyNiwtMTAyMDg4MDg1LC0xOT
+eyJoaXN0b3J5IjpbLTk3MTM0NDI5NSwtMTAyMDg4MDg1LC0xOT
 U5MzUzNzg1LDIwODA4NzM3ODYsNjgxMTIwMzg1LC0xODc4NzQ2
 MDA5LC0xODE1ODY0MjUsMTA4NTQ2NjU3NSwtMTc5MDA0MTM1Ny
 wtMTU1MzI1MDU5MCwxNDc1MTE1MzU2LC0xMTE2MzI4MDc0LDY0
