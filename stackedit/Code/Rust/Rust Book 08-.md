@@ -1055,7 +1055,11 @@ if let Err(err) = result {
 ```rust
 use std::error::Error;
 // -- snip --
-fn run(config: 
+fn run(config: Config) -> Result<(), Box<dyn Error>> {
+	let contents = fs::read_to_string(config.file_path)?;
+	println!("with text:\n{contents}");
+	Ok(())
+}
 ```
 
 
@@ -1064,11 +1068,11 @@ fn run(config:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMTg2MDgzMywtOTcxMzQ0Mjk1LC0xMD
-IwODgwODUsLTE5NTkzNTM3ODUsMjA4MDg3Mzc4Niw2ODExMjAz
-ODUsLTE4Nzg3NDYwMDksLTE4MTU4NjQyNSwxMDg1NDY2NTc1LC
-0xNzkwMDQxMzU3LC0xNTUzMjUwNTkwLDE0NzUxMTUzNTYsLTEx
-MTYzMjgwNzQsNjQ3MTY0NzA2LC0xNDU4Njg5NDU1LDIwMzg1OD
-E2NzEsLTE3MTUxNTMwNDQsMTc5ODMzNTgwOCw0MDkxOTcxMzEs
-MzQ1NjYzNjEyXX0=
+eyJoaXN0b3J5IjpbMzA5Mzk0LC05NzEzNDQyOTUsLTEwMjA4OD
+A4NSwtMTk1OTM1Mzc4NSwyMDgwODczNzg2LDY4MTEyMDM4NSwt
+MTg3ODc0NjAwOSwtMTgxNTg2NDI1LDEwODU0NjY1NzUsLTE3OT
+AwNDEzNTcsLTE1NTMyNTA1OTAsMTQ3NTExNTM1NiwtMTExNjMy
+ODA3NCw2NDcxNjQ3MDYsLTE0NTg2ODk0NTUsMjAzODU4MTY3MS
+wtMTcxNTE1MzA0NCwxNzk4MzM1ODA4LDQwOTE5NzEzMSwzNDU2
+NjM2MTJdfQ==
 -->
