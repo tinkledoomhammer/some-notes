@@ -1063,6 +1063,7 @@ fn run(config: Config) -> Result<(), Box<dyn Error>> {
 ```
 * uses `?` to unwrap, so a box'ed dyn of whatever error is thrown from `fs::read_to_string(...)`
 * I used a similar technique to handling the `Config::build` result
+* the book used an `if let` this time, prolly because we don't need the `Ok(())` for anything
 * 
 
 
@@ -1070,11 +1071,11 @@ fn run(config: Config) -> Result<(), Box<dyn Error>> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjg0MDE0NjksLTE5NTE3ODY4NjEsLT
-k3MTM0NDI5NSwtMTAyMDg4MDg1LC0xOTU5MzUzNzg1LDIwODA4
-NzM3ODYsNjgxMTIwMzg1LC0xODc4NzQ2MDA5LC0xODE1ODY0Mj
-UsMTA4NTQ2NjU3NSwtMTc5MDA0MTM1NywtMTU1MzI1MDU5MCwx
-NDc1MTE1MzU2LC0xMTE2MzI4MDc0LDY0NzE2NDcwNiwtMTQ1OD
-Y4OTQ1NSwyMDM4NTgxNjcxLC0xNzE1MTUzMDQ0LDE3OTgzMzU4
-MDgsNDA5MTk3MTMxXX0=
+eyJoaXN0b3J5IjpbMjA2NzkyNTE1MCwtMTk1MTc4Njg2MSwtOT
+cxMzQ0Mjk1LC0xMDIwODgwODUsLTE5NTkzNTM3ODUsMjA4MDg3
+Mzc4Niw2ODExMjAzODUsLTE4Nzg3NDYwMDksLTE4MTU4NjQyNS
+wxMDg1NDY2NTc1LC0xNzkwMDQxMzU3LC0xNTUzMjUwNTkwLDE0
+NzUxMTUzNTYsLTExMTYzMjgwNzQsNjQ3MTY0NzA2LC0xNDU4Nj
+g5NDU1LDIwMzg1ODE2NzEsLTE3MTUxNTMwNDQsMTc5ODMzNTgw
+OCw0MDkxOTcxMzFdfQ==
 -->
