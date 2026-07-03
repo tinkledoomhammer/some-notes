@@ -900,7 +900,11 @@ Integration tests
 
 # 12 An I/O Project: Building a Command Line Program
 * implementing grep (**G**lobally search and **R**egular **E**xpression **P**rint)
-* c
+* command line tool
+* reads an environment variable
+* print to `stderr` and `stdout`
+* Note that `ripgrep` by Andrew Gallant is a fast and fully featured grep written in rust
+* 
 
 
 
@@ -908,11 +912,11 @@ Integration tests
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MDcwODEyLC0xODE1ODY0MjUsMTA4NT
-Q2NjU3NSwtMTc5MDA0MTM1NywtMTU1MzI1MDU5MCwxNDc1MTE1
-MzU2LC0xMTE2MzI4MDc0LDY0NzE2NDcwNiwtMTQ1ODY4OTQ1NS
-wyMDM4NTgxNjcxLC0xNzE1MTUzMDQ0LDE3OTgzMzU4MDgsNDA5
-MTk3MTMxLDM0NTY2MzYxMiwxNjUwMTM0NzU5LDEzNjUyNDcxOD
-IsLTIwODMyNzA1MTQsNTI1NDcyNDEyLDE0ODYwMjYzMTgsMTYw
-MTQwNzMxM119
+eyJoaXN0b3J5IjpbLTIwOTMyOTkyMiwtMTgxNTg2NDI1LDEwOD
+U0NjY1NzUsLTE3OTAwNDEzNTcsLTE1NTMyNTA1OTAsMTQ3NTEx
+NTM1NiwtMTExNjMyODA3NCw2NDcxNjQ3MDYsLTE0NTg2ODk0NT
+UsMjAzODU4MTY3MSwtMTcxNTE1MzA0NCwxNzk4MzM1ODA4LDQw
+OTE5NzEzMSwzNDU2NjM2MTIsMTY1MDEzNDc1OSwxMzY1MjQ3MT
+gyLC0yMDgzMjcwNTE0LDUyNTQ3MjQxMiwxNDg2MDI2MzE4LDE2
+MDE0MDczMTNdfQ==
 -->
