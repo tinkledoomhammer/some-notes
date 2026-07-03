@@ -899,7 +899,8 @@ Integration tests
 * then in the tests `use common::*` or whatever
 
 # 12 An I/O Project: Building a Command Line Program
-
+* implementing grep (**G**lobally search and **R**egular **E**xpression **P**rint)
+* c
 
 
 
@@ -907,11 +908,11 @@ Integration tests
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTU4NjQyNSwxMDg1NDY2NTc1LC0xNz
-kwMDQxMzU3LC0xNTUzMjUwNTkwLDE0NzUxMTUzNTYsLTExMTYz
-MjgwNzQsNjQ3MTY0NzA2LC0xNDU4Njg5NDU1LDIwMzg1ODE2Nz
-EsLTE3MTUxNTMwNDQsMTc5ODMzNTgwOCw0MDkxOTcxMzEsMzQ1
-NjYzNjEyLDE2NTAxMzQ3NTksMTM2NTI0NzE4MiwtMjA4MzI3MD
-UxNCw1MjU0NzI0MTIsMTQ4NjAyNjMxOCwxNjAxNDA3MzEzLDE0
-Nzk1NzcyNzJdfQ==
+eyJoaXN0b3J5IjpbMTg5MDcwODEyLC0xODE1ODY0MjUsMTA4NT
+Q2NjU3NSwtMTc5MDA0MTM1NywtMTU1MzI1MDU5MCwxNDc1MTE1
+MzU2LC0xMTE2MzI4MDc0LDY0NzE2NDcwNiwtMTQ1ODY4OTQ1NS
+wyMDM4NTgxNjcxLC0xNzE1MTUzMDQ0LDE3OTgzMzU4MDgsNDA5
+MTk3MTMxLDM0NTY2MzYxMiwxNjUwMTM0NzU5LDEzNjUyNDcxOD
+IsLTIwODMyNzA1MTQsNTI1NDcyNDEyLDE0ODYwMjYzMTgsMTYw
+MTQwNzMxM119
 -->
