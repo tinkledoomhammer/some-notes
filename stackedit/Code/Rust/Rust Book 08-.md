@@ -936,6 +936,7 @@ fn main() {
 	dbg!(args);
 }
 ```
+Note: `std::env::args` will panic if the arguments contain invalid unicode. If you need to accept non-unicode characters, use `std::env::args_os` instead. That iterator produces
 
 
 
@@ -943,11 +944,11 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Nzg3NDYwMDksLTE4MTU4NjQyNSwxMD
-g1NDY2NTc1LC0xNzkwMDQxMzU3LC0xNTUzMjUwNTkwLDE0NzUx
-MTUzNTYsLTExMTYzMjgwNzQsNjQ3MTY0NzA2LC0xNDU4Njg5ND
-U1LDIwMzg1ODE2NzEsLTE3MTUxNTMwNDQsMTc5ODMzNTgwOCw0
-MDkxOTcxMzEsMzQ1NjYzNjEyLDE2NTAxMzQ3NTksMTM2NTI0Nz
-E4MiwtMjA4MzI3MDUxNCw1MjU0NzI0MTIsMTQ4NjAyNjMxOCwx
-NjAxNDA3MzEzXX0=
+eyJoaXN0b3J5IjpbLTIxMjk5OTUwODAsLTE4Nzg3NDYwMDksLT
+E4MTU4NjQyNSwxMDg1NDY2NTc1LC0xNzkwMDQxMzU3LC0xNTUz
+MjUwNTkwLDE0NzUxMTUzNTYsLTExMTYzMjgwNzQsNjQ3MTY0Nz
+A2LC0xNDU4Njg5NDU1LDIwMzg1ODE2NzEsLTE3MTUxNTMwNDQs
+MTc5ODMzNTgwOCw0MDkxOTcxMzEsMzQ1NjYzNjEyLDE2NTAxMz
+Q3NTksMTM2NTI0NzE4MiwtMjA4MzI3MDUxNCw1MjU0NzI0MTIs
+MTQ4NjAyNjMxOF19
 -->
