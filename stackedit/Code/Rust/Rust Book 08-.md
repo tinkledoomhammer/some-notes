@@ -932,7 +932,9 @@ the `std::env::args` function returns an iterator
 ```rust
 use std::env;
 fn main() {
-	let args: Vec<String> = env::args().
+	let args: Vec<String> = env::args().collect();
+	dbg!(args);
+}
 ```
 
 
@@ -941,11 +943,11 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1Mzk3NTQ1NSwtMTgxNTg2NDI1LDEwOD
-U0NjY1NzUsLTE3OTAwNDEzNTcsLTE1NTMyNTA1OTAsMTQ3NTEx
-NTM1NiwtMTExNjMyODA3NCw2NDcxNjQ3MDYsLTE0NTg2ODk0NT
-UsMjAzODU4MTY3MSwtMTcxNTE1MzA0NCwxNzk4MzM1ODA4LDQw
-OTE5NzEzMSwzNDU2NjM2MTIsMTY1MDEzNDc1OSwxMzY1MjQ3MT
-gyLC0yMDgzMjcwNTE0LDUyNTQ3MjQxMiwxNDg2MDI2MzE4LDE2
-MDE0MDczMTNdfQ==
+eyJoaXN0b3J5IjpbLTE4Nzg3NDYwMDksLTE4MTU4NjQyNSwxMD
+g1NDY2NTc1LC0xNzkwMDQxMzU3LC0xNTUzMjUwNTkwLDE0NzUx
+MTUzNTYsLTExMTYzMjgwNzQsNjQ3MTY0NzA2LC0xNDU4Njg5ND
+U1LDIwMzg1ODE2NzEsLTE3MTUxNTMwNDQsMTc5ODMzNTgwOCw0
+MDkxOTcxMzEsMzQ1NjYzNjEyLDE2NTAxMzQ3NTksMTM2NTI0Nz
+E4MiwtMjA4MzI3MDUxNCw1MjU0NzI0MTIsMTQ4NjAyNjMxOCwx
+NjAxNDA3MzEzXX0=
 -->
