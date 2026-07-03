@@ -923,7 +923,17 @@ $ cargo new minigrep
 $ cd minigrep
 ``` 
 It will be invoked like:
-`$ cargo run
+`$ cargo run -- searchstring example-filename.txt`
+
+the `--` tells cargo to pass the remaining arguments to the binary
+
+### Reading the argument values
+the `std::env::args` function returns an iterator
+```rust
+use std::env;
+fn main() {
+	let args: Vec<String> = env::args().
+```
 
 
 
@@ -931,7 +941,7 @@ It will be invoked like:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMDQ5ODIwNCwtMTgxNTg2NDI1LDEwOD
+eyJoaXN0b3J5IjpbLTM1Mzk3NTQ1NSwtMTgxNTg2NDI1LDEwOD
 U0NjY1NzUsLTE3OTAwNDEzNTcsLTE1NTMyNTA1OTAsMTQ3NTEx
 NTM1NiwtMTExNjMyODA3NCw2NDcxNjQ3MDYsLTE0NTg2ODk0NT
 UsMjAzODU4MTY3MSwtMTcxNTE1MzA0NCwxNzk4MzM1ODA4LDQw
