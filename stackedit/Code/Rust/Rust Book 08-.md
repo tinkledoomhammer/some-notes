@@ -1007,13 +1007,9 @@ fn parse_config(args: &[String]) -> (&str, &str) {
 ```rust
 use std::{env, fs};
 fn main() {
-    let args: Vec<_> = env::args().collect();
-    let (query, file_path) = parse_config(&args);
-   
-    println!("Query: {query}\t File: {file_path}");
-    let contents = fs::read_to_string(file_path)
-        .expect("Should have been able to read the file");
-    println!("Contents:\n{contents}");
+	let args: Vec<_> = env::args().collect();
+	let config = parse_config(&args);
+	 
 }
 struct Config {
     query: String,
@@ -1025,7 +1021,7 @@ fn parse_config(args: &[String]) -> Config {
     Config {query, file_path}
 }
 ```
-
+* now we clone out the args, and the `Config` struct owns them.
 
 
 
@@ -1038,11 +1034,11 @@ fn parse_config(args: &[String]) -> Config {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NTM2NDU2OSwyMDgwODczNzg2LDY4MT
-EyMDM4NSwtMTg3ODc0NjAwOSwtMTgxNTg2NDI1LDEwODU0NjY1
-NzUsLTE3OTAwNDEzNTcsLTE1NTMyNTA1OTAsMTQ3NTExNTM1Ni
-wtMTExNjMyODA3NCw2NDcxNjQ3MDYsLTE0NTg2ODk0NTUsMjAz
-ODU4MTY3MSwtMTcxNTE1MzA0NCwxNzk4MzM1ODA4LDQwOTE5Nz
-EzMSwzNDU2NjM2MTIsMTY1MDEzNDc1OSwxMzY1MjQ3MTgyLC0y
-MDgzMjcwNTE0XX0=
+eyJoaXN0b3J5IjpbLTE5NTkzNTM3ODUsMjA4MDg3Mzc4Niw2OD
+ExMjAzODUsLTE4Nzg3NDYwMDksLTE4MTU4NjQyNSwxMDg1NDY2
+NTc1LC0xNzkwMDQxMzU3LC0xNTUzMjUwNTkwLDE0NzUxMTUzNT
+YsLTExMTYzMjgwNzQsNjQ3MTY0NzA2LC0xNDU4Njg5NDU1LDIw
+Mzg1ODE2NzEsLTE3MTUxNTMwNDQsMTc5ODMzNTgwOCw0MDkxOT
+cxMzEsMzQ1NjYzNjEyLDE2NTAxMzQ3NTksMTM2NTI0NzE4Miwt
+MjA4MzI3MDUxNF19
 -->
