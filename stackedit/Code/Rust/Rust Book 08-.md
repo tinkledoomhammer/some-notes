@@ -974,8 +974,13 @@ Fixing 4 problems:
 * If the user runs the program without enough arguments, it crashes with `index  out of bounds`. We should provide a better message
 
 ### Separating concerns  in binary projects
-* Split the program into `main.rs` and `lib.rs`, with most of 
+* Split the program into `main.rs` and `lib.rs`, with most of the logic going in `lib.rs`
+* The command line parsing logic can stay in `main` as long as it is small
+* If it gets complicated, move it to `lib.rs`
 
+So  `main(){}` should now have the following responsibilities
+* call command line parsing logic with the argument values
+* set up any other co
 
 
 
@@ -989,7 +994,7 @@ Fixing 4 problems:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0NTk5NjUyMSw2ODExMjAzODUsLTE4Nz
+eyJoaXN0b3J5IjpbLTkxMjUzMzQ2NCw2ODExMjAzODUsLTE4Nz
 g3NDYwMDksLTE4MTU4NjQyNSwxMDg1NDY2NTc1LC0xNzkwMDQx
 MzU3LC0xNTUzMjUwNTkwLDE0NzUxMTUzNTYsLTExMTYzMjgwNz
 QsNjQ3MTY0NzA2LC0xNDU4Njg5NDU1LDIwMzg1ODE2NzEsLTE3
