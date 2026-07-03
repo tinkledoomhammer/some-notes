@@ -951,18 +951,29 @@ let file_path = &args[2];
 poem.txt, in the project root
 
 ```
+I'm nobody! Who are you?
+Are you nobody, too?
+Then there's a pair of us -- don't tell!
 
+How dreary to be somebody!
+How public, like a frog
+To tell you name the livelong drearyTo an admiring bog!
 ```
-
+To reaad the file:
+```rust
+use std::{env, fs};
+// -- snip -- after setting file_path
+let contents = fs::read_to_string(file_path)
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTA0OTAyODksLTE4Nzg3NDYwMDksLT
-E4MTU4NjQyNSwxMDg1NDY2NTc1LC0xNzkwMDQxMzU3LC0xNTUz
-MjUwNTkwLDE0NzUxMTUzNTYsLTExMTYzMjgwNzQsNjQ3MTY0Nz
-A2LC0xNDU4Njg5NDU1LDIwMzg1ODE2NzEsLTE3MTUxNTMwNDQs
-MTc5ODMzNTgwOCw0MDkxOTcxMzEsMzQ1NjYzNjEyLDE2NTAxMz
-Q3NTksMTM2NTI0NzE4MiwtMjA4MzI3MDUxNCw1MjU0NzI0MTIs
-MTQ4NjAyNjMxOF19
+eyJoaXN0b3J5IjpbNjgxMTIwMzg1LC0xODc4NzQ2MDA5LC0xOD
+E1ODY0MjUsMTA4NTQ2NjU3NSwtMTc5MDA0MTM1NywtMTU1MzI1
+MDU5MCwxNDc1MTE1MzU2LC0xMTE2MzI4MDc0LDY0NzE2NDcwNi
+wtMTQ1ODY4OTQ1NSwyMDM4NTgxNjcxLC0xNzE1MTUzMDQ0LDE3
+OTgzMzU4MDgsNDA5MTk3MTMxLDM0NTY2MzYxMiwxNjUwMTM0Nz
+U5LDEzNjUyNDcxODIsLTIwODMyNzA1MTQsNTI1NDcyNDEyLDE0
+ODYwMjYzMThdfQ==
 -->
