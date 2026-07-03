@@ -986,7 +986,21 @@ So  `main(){}` should now have the following responsibilities
 
 ### Extracting the argument parser
 ```rust
-
+use std::{env, fs};
+fn main() {
+    let args: Vec<_> = env::args().collect();
+    let (query, file_path) = parse_config(&args);
+   
+    println!("Query: {query}\t File: {file_path}");
+    let contents = fs::read_to_string(file_path)
+        .expect("Should have been able to read the file");
+    println!("Contents:\n{contents}");
+}
+fn parse_config(args: &[String]) -> (&str, &str) {
+    let query = &args[1];
+    let file_path = &args[2];
+    (query, file_path)
+}
 ```
 
 
@@ -1001,11 +1015,11 @@ So  `main(){}` should now have the following responsibilities
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4MDg3Mzc4Niw2ODExMjAzODUsLTE4Nz
-g3NDYwMDksLTE4MTU4NjQyNSwxMDg1NDY2NTc1LC0xNzkwMDQx
-MzU3LC0xNTUzMjUwNTkwLDE0NzUxMTUzNTYsLTExMTYzMjgwNz
-QsNjQ3MTY0NzA2LC0xNDU4Njg5NDU1LDIwMzg1ODE2NzEsLTE3
-MTUxNTMwNDQsMTc5ODMzNTgwOCw0MDkxOTcxMzEsMzQ1NjYzNj
-EyLDE2NTAxMzQ3NTksMTM2NTI0NzE4MiwtMjA4MzI3MDUxNCw1
-MjU0NzI0MTJdfQ==
+eyJoaXN0b3J5IjpbMTY0MDk1NzgxLDIwODA4NzM3ODYsNjgxMT
+IwMzg1LC0xODc4NzQ2MDA5LC0xODE1ODY0MjUsMTA4NTQ2NjU3
+NSwtMTc5MDA0MTM1NywtMTU1MzI1MDU5MCwxNDc1MTE1MzU2LC
+0xMTE2MzI4MDc0LDY0NzE2NDcwNiwtMTQ1ODY4OTQ1NSwyMDM4
+NTgxNjcxLC0xNzE1MTUzMDQ0LDE3OTgzMzU4MDgsNDA5MTk3MT
+MxLDM0NTY2MzYxMiwxNjUwMTM0NzU5LDEzNjUyNDcxODIsLTIw
+ODMyNzA1MTRdfQ==
 -->
