@@ -1050,7 +1050,13 @@ if let Err(err) = result {
 *`std::process` has `process::exit` 
 * `std::process::exit(1)` seems to indicate an error.
 ### Extracting logic from `main()` to `run(config: Config)`
-
+* The first version just coppies a few lines into a new function
+* Then the signature is changed to `fn run(config: Config) -> Result<(), Box<dyn Error>>`
+```rust
+use std::error::Error;
+// -- snip --
+fn run(config: 
+```
 
 
 
@@ -1058,7 +1064,7 @@ if let Err(err) = result {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MzM3MzU3MCwtOTcxMzQ0Mjk1LC0xMD
+eyJoaXN0b3J5IjpbLTkzMTg2MDgzMywtOTcxMzQ0Mjk1LC0xMD
 IwODgwODUsLTE5NTkzNTM3ODUsMjA4MDg3Mzc4Niw2ODExMjAz
 ODUsLTE4Nzg3NDYwMDksLTE4MTU4NjQyNSwxMDg1NDY2NTc1LC
 0xNzkwMDQxMzU3LC0xNTUzMjUwNTkwLDE0NzUxMTUzNTYsLTEx
