@@ -1030,9 +1030,19 @@ fn parse_config(args: &[String]) -> Config {
 * Basically renamed `parse_config` to `Config::new`
 ### Fixing the error handling
 * Start by renaming `Config::new` to `Config::build` and the return type to `Result<Config, &'static str>`
+* The call the book has to the new constructor is nicer than the one I came up with
 ```rust
+// in the book
+let config = Config::build(&args).unwrap_or_else(
+	|err| { 
+		println!("Problem parsing arguments: {err}");
+		process::exit(1);
+	}
+);
 
-
+// what I came up with
+let result = Config::build(&args);
+if let Err(err) = result
 ```
 
 
@@ -1043,11 +1053,11 @@ fn parse_config(args: &[String]) -> Config {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MTM0NDI5NSwtMTAyMDg4MDg1LC0xOT
-U5MzUzNzg1LDIwODA4NzM3ODYsNjgxMTIwMzg1LC0xODc4NzQ2
-MDA5LC0xODE1ODY0MjUsMTA4NTQ2NjU3NSwtMTc5MDA0MTM1Ny
-wtMTU1MzI1MDU5MCwxNDc1MTE1MzU2LC0xMTE2MzI4MDc0LDY0
-NzE2NDcwNiwtMTQ1ODY4OTQ1NSwyMDM4NTgxNjcxLC0xNzE1MT
-UzMDQ0LDE3OTgzMzU4MDgsNDA5MTk3MTMxLDM0NTY2MzYxMiwx
-NjUwMTM0NzU5XX0=
+eyJoaXN0b3J5IjpbNDk0NTI2MjY1LC05NzEzNDQyOTUsLTEwMj
+A4ODA4NSwtMTk1OTM1Mzc4NSwyMDgwODczNzg2LDY4MTEyMDM4
+NSwtMTg3ODc0NjAwOSwtMTgxNTg2NDI1LDEwODU0NjY1NzUsLT
+E3OTAwNDEzNTcsLTE1NTMyNTA1OTAsMTQ3NTExNTM1NiwtMTEx
+NjMyODA3NCw2NDcxNjQ3MDYsLTE0NTg2ODk0NTUsMjAzODU4MT
+Y3MSwtMTcxNTE1MzA0NCwxNzk4MzM1ODA4LDQwOTE5NzEzMSwz
+NDU2NjM2MTJdfQ==
 -->
