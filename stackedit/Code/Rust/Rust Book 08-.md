@@ -939,14 +939,21 @@ fn main() {
 Note: `std::env::args` will panic if the arguments contain invalid unicode. If you need to accept non-unicode characters, use `std::env::args_os` instead. That iterator produces `OsString`s instead of regular `String`s
 
 * the first item returned is the path of the executable. 
-	* `target\\debug\\minigrep.exe`
-
+	* `target\\debug\\minigrep.exe` for me
+	* the example has forward slashes
+so
+```rust
+let query = &args[1];
+let file_path = &args[2];
+```
+* to extract the search text and file path
+* 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc4NzA0MTcyLC0xODc4NzQ2MDA5LC0xOD
+eyJoaXN0b3J5IjpbNTQwNTY4NTA5LC0xODc4NzQ2MDA5LC0xOD
 E1ODY0MjUsMTA4NTQ2NjU3NSwtMTc5MDA0MTM1NywtMTU1MzI1
 MDU5MCwxNDc1MTE1MzU2LC0xMTE2MzI4MDc0LDY0NzE2NDcwNi
 wtMTQ1ODY4OTQ1NSwyMDM4NTgxNjcxLC0xNzE1MTUzMDQ0LDE3
