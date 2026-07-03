@@ -1047,7 +1047,8 @@ if let Err(err) = result {
 	return;
 }
 ```
-*`std::process` has `process::exit` and 
+*`std::process` has `process::exit` 
+* `std::process::exit(1)` seems to indicate an error.
 
 
 
@@ -1056,11 +1057,11 @@ if let Err(err) = result {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMjMzNDEzNCwtOTcxMzQ0Mjk1LC0xMD
-IwODgwODUsLTE5NTkzNTM3ODUsMjA4MDg3Mzc4Niw2ODExMjAz
-ODUsLTE4Nzg3NDYwMDksLTE4MTU4NjQyNSwxMDg1NDY2NTc1LC
-0xNzkwMDQxMzU3LC0xNTUzMjUwNTkwLDE0NzUxMTUzNTYsLTEx
-MTYzMjgwNzQsNjQ3MTY0NzA2LC0xNDU4Njg5NDU1LDIwMzg1OD
-E2NzEsLTE3MTUxNTMwNDQsMTc5ODMzNTgwOCw0MDkxOTcxMzEs
-MzQ1NjYzNjEyXX0=
+eyJoaXN0b3J5IjpbNDM1MTYwMDAzLC05NzEzNDQyOTUsLTEwMj
+A4ODA4NSwtMTk1OTM1Mzc4NSwyMDgwODczNzg2LDY4MTEyMDM4
+NSwtMTg3ODc0NjAwOSwtMTgxNTg2NDI1LDEwODU0NjY1NzUsLT
+E3OTAwNDEzNTcsLTE1NTMyNTA1OTAsMTQ3NTExNTM1NiwtMTEx
+NjMyODA3NCw2NDcxNjQ3MDYsLTE0NTg2ODk0NTUsMjAzODU4MT
+Y3MSwtMTcxNTE1MzA0NCwxNzk4MzM1ODA4LDQwOTE5NzEzMSwz
+NDU2NjM2MTJdfQ==
 -->
