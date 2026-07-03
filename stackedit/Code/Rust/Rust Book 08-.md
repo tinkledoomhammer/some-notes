@@ -1028,8 +1028,8 @@ fn parse_config(args: &[String]) -> Config {
 * now we clone out the args, and the `Config` struct owns them.
 
 * Basically renamed `parse_config` to `Config::new`
-
-
+### Fixing the error handling
+* Start by renaming `Config::new
 
 
 
@@ -1039,11 +1039,11 @@ fn parse_config(args: &[String]) -> Config {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNjkxNjAyLC0xMDIwODgwODUsLTE5NT
-kzNTM3ODUsMjA4MDg3Mzc4Niw2ODExMjAzODUsLTE4Nzg3NDYw
-MDksLTE4MTU4NjQyNSwxMDg1NDY2NTc1LC0xNzkwMDQxMzU3LC
-0xNTUzMjUwNTkwLDE0NzUxMTUzNTYsLTExMTYzMjgwNzQsNjQ3
-MTY0NzA2LC0xNDU4Njg5NDU1LDIwMzg1ODE2NzEsLTE3MTUxNT
-MwNDQsMTc5ODMzNTgwOCw0MDkxOTcxMzEsMzQ1NjYzNjEyLDE2
-NTAxMzQ3NTldfQ==
+eyJoaXN0b3J5IjpbMTcyNjU4MjEyNiwtMTAyMDg4MDg1LC0xOT
+U5MzUzNzg1LDIwODA4NzM3ODYsNjgxMTIwMzg1LC0xODc4NzQ2
+MDA5LC0xODE1ODY0MjUsMTA4NTQ2NjU3NSwtMTc5MDA0MTM1Ny
+wtMTU1MzI1MDU5MCwxNDc1MTE1MzU2LC0xMTE2MzI4MDc0LDY0
+NzE2NDcwNiwtMTQ1ODY4OTQ1NSwyMDM4NTgxNjcxLC0xNzE1MT
+UzMDQ0LDE3OTgzMzU4MDgsNDA5MTk3MTMxLDM0NTY2MzYxMiwx
+NjUwMTM0NzU5XX0=
 -->
