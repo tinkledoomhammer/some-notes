@@ -1185,9 +1185,18 @@ let results = if config.ignore_case {
 } else {
 	search(&config.query, &contents)
 };
-
-
+// then print from results
+// the previous version printed from contents
 ```
+
+### setting the environment variable
+In linux: `
+
+
+
+
+
+
 
 
 ## 12.06 Redirecting Errors to `stderr`
@@ -1202,7 +1211,7 @@ let results = if config.ignore_case {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNDI3MDE2NSwtMTcxNjI4MjkzMiw4MD
+eyJoaXN0b3J5IjpbLTQ0MzQ4MDkxMywtMTcxNjI4MjkzMiw4MD
 k0MjE2NjYsMTg0NTc0NzQ3MCwtMzQ1Nzk0Mjk5LDgyOTkwOTU4
 MSw5Nzg2ODAzNywtMTQwMzY2NzQxNywxMDg5NDQ1MTE1LDcwMj
 g4ODg2NCwtMTk1MTc4Njg2MSwtOTcxMzQ0Mjk1LC0xMDIwODgw
