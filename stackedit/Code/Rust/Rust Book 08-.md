@@ -1196,9 +1196,17 @@ In windows: `$Env:IGNORE_CASE=1; cargo run -- to poem.txt`
 * setting the var is a separate command
 * to clear it : `Remove-Item Env:IGNORE_CASE` 
 
+### 12.06 Redirecting Errors to `stderr`
+* just switch `println!` to `eprintln!`
+
+# 13 Functional: Iterators and Closures
+Covers:
+* 
 
 
-## 12.06 Redirecting Errors to `stderr`
+
+
+
 
 
 
@@ -1210,11 +1218,11 @@ In windows: `$Env:IGNORE_CASE=1; cargo run -- to poem.txt`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDEzOTczNTcsLTIxMDEzOTczNTcsLT
-E3MTYyODI5MzIsODA5NDIxNjY2LDE4NDU3NDc0NzAsLTM0NTc5
-NDI5OSw4Mjk5MDk1ODEsOTc4NjgwMzcsLTE0MDM2Njc0MTcsMT
-A4OTQ0NTExNSw3MDI4ODg4NjQsLTE5NTE3ODY4NjEsLTk3MTM0
-NDI5NSwtMTAyMDg4MDg1LC0xOTU5MzUzNzg1LDIwODA4NzM3OD
-YsNjgxMTIwMzg1LC0xODc4NzQ2MDA5LC0xODE1ODY0MjUsMTA4
-NTQ2NjU3NV19
+eyJoaXN0b3J5IjpbLTIwNDcxMTAxODgsLTIxMDEzOTczNTcsLT
+IxMDEzOTczNTcsLTE3MTYyODI5MzIsODA5NDIxNjY2LDE4NDU3
+NDc0NzAsLTM0NTc5NDI5OSw4Mjk5MDk1ODEsOTc4NjgwMzcsLT
+E0MDM2Njc0MTcsMTA4OTQ0NTExNSw3MDI4ODg4NjQsLTE5NTE3
+ODY4NjEsLTk3MTM0NDI5NSwtMTAyMDg4MDg1LC0xOTU5MzUzNz
+g1LDIwODA4NzM3ODYsNjgxMTIwMzg1LC0xODc4NzQ2MDA5LC0x
+ODE1ODY0MjVdfQ==
 -->
