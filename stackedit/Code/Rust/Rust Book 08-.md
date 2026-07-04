@@ -1072,7 +1072,9 @@ fn run(config: Config) -> Result<(), Box<dyn Error>> {
 		* in `main.rs` `use minigrep::search;`
 
 ## 12.04 Adding Functionality with Test-Driven Development
-
+Steps in TDD
+1. Write a test that fails, and run it to make sure it fails for the right reason
+1. 
 ## 12.05 Working with Environment Variables
 
 ## 12.06 Redirecting Errors to `stderr`
@@ -1087,11 +1089,11 @@ fn run(config: Config) -> Result<(), Box<dyn Error>> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MTcxMTQwOCwxMDg5NDQ1MTE1LDcwMj
-g4ODg2NCwtMTk1MTc4Njg2MSwtOTcxMzQ0Mjk1LC0xMDIwODgw
-ODUsLTE5NTkzNTM3ODUsMjA4MDg3Mzc4Niw2ODExMjAzODUsLT
-E4Nzg3NDYwMDksLTE4MTU4NjQyNSwxMDg1NDY2NTc1LC0xNzkw
-MDQxMzU3LC0xNTUzMjUwNTkwLDE0NzUxMTUzNTYsLTExMTYzMj
-gwNzQsNjQ3MTY0NzA2LC0xNDU4Njg5NDU1LDIwMzg1ODE2NzEs
-LTE3MTUxNTMwNDRdfQ==
+eyJoaXN0b3J5IjpbLTE0MDM2Njc0MTcsMTA4OTQ0NTExNSw3MD
+I4ODg4NjQsLTE5NTE3ODY4NjEsLTk3MTM0NDI5NSwtMTAyMDg4
+MDg1LC0xOTU5MzUzNzg1LDIwODA4NzM3ODYsNjgxMTIwMzg1LC
+0xODc4NzQ2MDA5LC0xODE1ODY0MjUsMTA4NTQ2NjU3NSwtMTc5
+MDA0MTM1NywtMTU1MzI1MDU5MCwxNDc1MTE1MzU2LC0xMTE2Mz
+I4MDc0LDY0NzE2NDcwNiwtMTQ1ODY4OTQ1NSwyMDM4NTgxNjcx
+LC0xNzE1MTUzMDQ0XX0=
 -->
