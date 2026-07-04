@@ -1192,7 +1192,10 @@ let results = if config.ignore_case {
 ### setting the environment variable
 In linux: `IGNORE_CASE=1 cargo run -- to poem.txt`
 * sets the variable temporarily, or just that invocation
-* In windows: `$Env:IGNORE_CASE=1; cargo run -- to poem.txt`
+In windows: `$Env:IGNORE_CASE=1; cargo run -- to poem.txt`
+* setting the var is a separate command
+* to clear it : `Remove-Item Env:IGNORE_CASE` 
+
 
 
 
@@ -1213,7 +1216,7 @@ In linux: `IGNORE_CASE=1 cargo run -- to poem.txt`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjEwMjg4MjcsLTE3MTYyODI5MzIsOD
+eyJoaXN0b3J5IjpbLTIxMDAyNTIyODksLTE3MTYyODI5MzIsOD
 A5NDIxNjY2LDE4NDU3NDc0NzAsLTM0NTc5NDI5OSw4Mjk5MDk1
 ODEsOTc4NjgwMzcsLTE0MDM2Njc0MTcsMTA4OTQ0NTExNSw3MD
 I4ODg4NjQsLTE5NTE3ODY4NjEsLTk3MTM0NDI5NSwtMTAyMDg4
