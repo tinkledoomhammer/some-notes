@@ -1190,7 +1190,9 @@ let results = if config.ignore_case {
 ```
 
 ### setting the environment variable
-In linux: `
+In linux: `IGNORE_CASE=1 cargo run -- to poem.txt`
+* sets the variable temporarily, or just that invocation
+* In windows: `$Env:IGNORE_CASE=1; cargo run -- to poem.txt`
 
 
 
@@ -1211,11 +1213,11 @@ In linux: `
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0MzQ4MDkxMywtMTcxNjI4MjkzMiw4MD
-k0MjE2NjYsMTg0NTc0NzQ3MCwtMzQ1Nzk0Mjk5LDgyOTkwOTU4
-MSw5Nzg2ODAzNywtMTQwMzY2NzQxNywxMDg5NDQ1MTE1LDcwMj
-g4ODg2NCwtMTk1MTc4Njg2MSwtOTcxMzQ0Mjk1LC0xMDIwODgw
-ODUsLTE5NTkzNTM3ODUsMjA4MDg3Mzc4Niw2ODExMjAzODUsLT
-E4Nzg3NDYwMDksLTE4MTU4NjQyNSwxMDg1NDY2NTc1LC0xNzkw
-MDQxMzU3XX0=
+eyJoaXN0b3J5IjpbLTE1MjEwMjg4MjcsLTE3MTYyODI5MzIsOD
+A5NDIxNjY2LDE4NDU3NDc0NzAsLTM0NTc5NDI5OSw4Mjk5MDk1
+ODEsOTc4NjgwMzcsLTE0MDM2Njc0MTcsMTA4OTQ0NTExNSw3MD
+I4ODg4NjQsLTE5NTE3ODY4NjEsLTk3MTM0NDI5NSwtMTAyMDg4
+MDg1LC0xOTU5MzUzNzg1LDIwODA4NzM3ODYsNjgxMTIwMzg1LC
+0xODc4NzQ2MDA5LC0xODE1ODY0MjUsMTA4NTQ2NjU3NSwtMTc5
+MDA0MTM1N119
 -->
