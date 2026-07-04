@@ -1077,7 +1077,18 @@ Steps in TDD
 1. Write or modify just enough code to pass the test
 1. Refactor the code and make sure the test continues to pass
 1. Repeat
-* Writing tests frequently helps maintain hi
+* Writing tests frequently helps maintain high test coverage
+
+### Writing a Failing test
+* add a test module to `src/lib.rs`
+```rust
+// -- snip --
+#[cfg(test)]g
+```
+
+
+
+
 ## 12.05 Working with Environment Variables
 
 ## 12.06 Redirecting Errors to `stderr`
@@ -1092,11 +1103,11 @@ Steps in TDD
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwNTk3Mjg2MywtMTQwMzY2NzQxNywxMD
-g5NDQ1MTE1LDcwMjg4ODg2NCwtMTk1MTc4Njg2MSwtOTcxMzQ0
-Mjk1LC0xMDIwODgwODUsLTE5NTkzNTM3ODUsMjA4MDg3Mzc4Ni
-w2ODExMjAzODUsLTE4Nzg3NDYwMDksLTE4MTU4NjQyNSwxMDg1
-NDY2NTc1LC0xNzkwMDQxMzU3LC0xNTUzMjUwNTkwLDE0NzUxMT
-UzNTYsLTExMTYzMjgwNzQsNjQ3MTY0NzA2LC0xNDU4Njg5NDU1
-LDIwMzg1ODE2NzFdfQ==
+eyJoaXN0b3J5IjpbOTc4NjgwMzcsLTE0MDM2Njc0MTcsMTA4OT
+Q0NTExNSw3MDI4ODg4NjQsLTE5NTE3ODY4NjEsLTk3MTM0NDI5
+NSwtMTAyMDg4MDg1LC0xOTU5MzUzNzg1LDIwODA4NzM3ODYsNj
+gxMTIwMzg1LC0xODc4NzQ2MDA5LC0xODE1ODY0MjUsMTA4NTQ2
+NjU3NSwtMTc5MDA0MTM1NywtMTU1MzI1MDU5MCwxNDc1MTE1Mz
+U2LC0xMTE2MzI4MDc0LDY0NzE2NDcwNiwtMTQ1ODY4OTQ1NSwy
+MDM4NTgxNjcxXX0=
 -->
