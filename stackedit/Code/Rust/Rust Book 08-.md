@@ -1176,7 +1176,9 @@ struct Config {
 }
 // -- snip --
 // in Config::build(args)
-	lt
+	let ignore_case = env::var("IGNORE_CASE").is_ok();
+// -- snip -- the return vlue is
+	Ok(Config{query, file_path, ignore_case})
 ```
 
 
@@ -1192,7 +1194,7 @@ struct Config {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDczNTE3NDUsODA5NDIxNjY2LDE4ND
+eyJoaXN0b3J5IjpbLTE3MTYyODI5MzIsODA5NDIxNjY2LDE4ND
 U3NDc0NzAsLTM0NTc5NDI5OSw4Mjk5MDk1ODEsOTc4NjgwMzcs
 LTE0MDM2Njc0MTcsMTA4OTQ0NTExNSw3MDI4ODg4NjQsLTE5NT
 E3ODY4NjEsLTk3MTM0NDI5NSwtMTAyMDg4MDg1LC0xOTU5MzUz
