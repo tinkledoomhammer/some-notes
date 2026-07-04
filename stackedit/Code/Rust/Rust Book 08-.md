@@ -1122,7 +1122,9 @@ pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
 * adding a case-insensitive search option controlled via an environment variable
 ### Writing a failing test
 I moved the example string to a `const SEARCH_TEXT`
+```rust
 
+```
 
 
 
@@ -1141,7 +1143,7 @@ I moved the example string to a `const SEARCH_TEXT`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4NDYxMDQxOSw4Mjk5MDk1ODEsOTc4Nj
+eyJoaXN0b3J5IjpbLTM0NTc5NDI5OSw4Mjk5MDk1ODEsOTc4Nj
 gwMzcsLTE0MDM2Njc0MTcsMTA4OTQ0NTExNSw3MDI4ODg4NjQs
 LTE5NTE3ODY4NjEsLTk3MTM0NDI5NSwtMTAyMDg4MDg1LC0xOT
 U5MzUzNzg1LDIwODA4NzM3ODYsNjgxMTIwMzg1LC0xODc4NzQ2
