@@ -1093,7 +1093,14 @@ mod test{
     }
 }
 ```
+### Writing code to pass the test
+1. Iterate through each line of contents
+1. Check whether the line contains the query string
+1. if it does, add it to the list of return values
+1. if not, do nothing
+1. return the list of results that match
 
+* Iterate through lines with the `.lines()` method
 
 
 
@@ -1111,11 +1118,11 @@ mod test{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNzc4ODAxNCw5Nzg2ODAzNywtMTQwMz
-Y2NzQxNywxMDg5NDQ1MTE1LDcwMjg4ODg2NCwtMTk1MTc4Njg2
-MSwtOTcxMzQ0Mjk1LC0xMDIwODgwODUsLTE5NTkzNTM3ODUsMj
-A4MDg3Mzc4Niw2ODExMjAzODUsLTE4Nzg3NDYwMDksLTE4MTU4
-NjQyNSwxMDg1NDY2NTc1LC0xNzkwMDQxMzU3LC0xNTUzMjUwNT
-kwLDE0NzUxMTUzNTYsLTExMTYzMjgwNzQsNjQ3MTY0NzA2LC0x
-NDU4Njg5NDU1XX0=
+eyJoaXN0b3J5IjpbNDg5NzQ0MjY4LDk3ODY4MDM3LC0xNDAzNj
+Y3NDE3LDEwODk0NDUxMTUsNzAyODg4ODY0LC0xOTUxNzg2ODYx
+LC05NzEzNDQyOTUsLTEwMjA4ODA4NSwtMTk1OTM1Mzc4NSwyMD
+gwODczNzg2LDY4MTEyMDM4NSwtMTg3ODc0NjAwOSwtMTgxNTg2
+NDI1LDEwODU0NjY1NzUsLTE3OTAwNDEzNTcsLTE1NTMyNTA1OT
+AsMTQ3NTExNTM1NiwtMTExNjMyODA3NCw2NDcxNjQ3MDYsLTE0
+NTg2ODk0NTVdfQ==
 -->
