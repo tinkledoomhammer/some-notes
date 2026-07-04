@@ -1200,7 +1200,9 @@ In windows: `$Env:IGNORE_CASE=1; cargo run -- to poem.txt`
 * just switch `println!` to `eprintln!`
 
 # 13 Functional: Iterators and Closures
-Covers:
+
+
+This chapter covers:
 
 Closures
 : function-like constructs that can be stored in a variable
@@ -1212,6 +1214,7 @@ Iterators
 * The performance of closures and iterators
 	* faster than you might think
 
+## 13.01 Closures
 
 
 
@@ -1228,7 +1231,7 @@ Iterators
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNDk3NTUzMSwtMjEwMTM5NzM1NywtMj
+eyJoaXN0b3J5IjpbMTY1NzAwOTQwOSwtMjEwMTM5NzM1NywtMj
 EwMTM5NzM1NywtMTcxNjI4MjkzMiw4MDk0MjE2NjYsMTg0NTc0
 NzQ3MCwtMzQ1Nzk0Mjk5LDgyOTkwOTU4MSw5Nzg2ODAzNywtMT
 QwMzY2NzQxNywxMDg5NDQ1MTE1LDcwMjg4ODg2NCwtMTk1MTc4
