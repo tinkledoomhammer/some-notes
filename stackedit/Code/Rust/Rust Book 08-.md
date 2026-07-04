@@ -1124,6 +1124,25 @@ pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
 I moved the example string to a `const SEARCH_TEXT`
 ```rust
 
+#[cfg(test)]
+mod test{
+    use super::*;
+    const SEARCH_TEXT: &str =
+        "Rust:\nsafe, fast, productive.\nPick three.";
+    const SEARCH_TEXT2: &str =
+        "Rust:\nsafe, fast, productive.\nPick three.\nTrust Me.";
+    #[test]
+    fn one_result() {
+        let query = "duct";
+        assert_eq!(vec!["safe, fast, productive."], search(query, SEARCH_TEXT));
+    }
+    fn case_insensitive() {
+        let query ="rUsT";
+        assert_eq!(vec!["Rust:", "Trust Me."],
+            search_case_insensitive(query, SEARCH_TEXT2)
+        );
+    }
+}
 ```
 
 
@@ -1143,11 +1162,11 @@ I moved the example string to a `const SEARCH_TEXT`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NTc5NDI5OSw4Mjk5MDk1ODEsOTc4Nj
-gwMzcsLTE0MDM2Njc0MTcsMTA4OTQ0NTExNSw3MDI4ODg4NjQs
-LTE5NTE3ODY4NjEsLTk3MTM0NDI5NSwtMTAyMDg4MDg1LC0xOT
-U5MzUzNzg1LDIwODA4NzM3ODYsNjgxMTIwMzg1LC0xODc4NzQ2
-MDA5LC0xODE1ODY0MjUsMTA4NTQ2NjU3NSwtMTc5MDA0MTM1Ny
-wtMTU1MzI1MDU5MCwxNDc1MTE1MzU2LC0xMTE2MzI4MDc0LDY0
-NzE2NDcwNl19
+eyJoaXN0b3J5IjpbMTg0NTc0NzQ3MCwtMzQ1Nzk0Mjk5LDgyOT
+kwOTU4MSw5Nzg2ODAzNywtMTQwMzY2NzQxNywxMDg5NDQ1MTE1
+LDcwMjg4ODg2NCwtMTk1MTc4Njg2MSwtOTcxMzQ0Mjk1LC0xMD
+IwODgwODUsLTE5NTkzNTM3ODUsMjA4MDg3Mzc4Niw2ODExMjAz
+ODUsLTE4Nzg3NDYwMDksLTE4MTU4NjQyNSwxMDg1NDY2NTc1LC
+0xNzkwMDQxMzU3LC0xNTUzMjUwNTkwLDE0NzUxMTUzNTYsLTEx
+MTYzMjgwNzRdfQ==
 -->
