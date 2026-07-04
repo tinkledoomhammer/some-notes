@@ -1119,6 +1119,13 @@ pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
 ```
 
 ## 12.05 Working with Environment Variables
+* adding a case-insensitive search option controlled via an environment variable
+### Writing a failing test
+
+
+
+
+
 
 ## 12.06 Redirecting Errors to `stderr`
 
@@ -1132,11 +1139,11 @@ pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI5OTA5NTgxLDk3ODY4MDM3LC0xNDAzNj
-Y3NDE3LDEwODk0NDUxMTUsNzAyODg4ODY0LC0xOTUxNzg2ODYx
-LC05NzEzNDQyOTUsLTEwMjA4ODA4NSwtMTk1OTM1Mzc4NSwyMD
-gwODczNzg2LDY4MTEyMDM4NSwtMTg3ODc0NjAwOSwtMTgxNTg2
-NDI1LDEwODU0NjY1NzUsLTE3OTAwNDEzNTcsLTE1NTMyNTA1OT
-AsMTQ3NTExNTM1NiwtMTExNjMyODA3NCw2NDcxNjQ3MDYsLTE0
-NTg2ODk0NTVdfQ==
+eyJoaXN0b3J5IjpbMTYxNzcyNTgzMiw4Mjk5MDk1ODEsOTc4Nj
+gwMzcsLTE0MDM2Njc0MTcsMTA4OTQ0NTExNSw3MDI4ODg4NjQs
+LTE5NTE3ODY4NjEsLTk3MTM0NDI5NSwtMTAyMDg4MDg1LC0xOT
+U5MzUzNzg1LDIwODA4NzM3ODYsNjgxMTIwMzg1LC0xODc4NzQ2
+MDA5LC0xODE1ODY0MjUsMTA4NTQ2NjU3NSwtMTc5MDA0MTM1Ny
+wtMTU1MzI1MDU5MCwxNDc1MTE1MzU2LC0xMTE2MzI4MDc0LDY0
+NzE2NDcwNl19
 -->
