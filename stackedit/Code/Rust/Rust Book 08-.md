@@ -1215,6 +1215,8 @@ Iterators
 	* faster than you might think
 
 ## 13.01 Closures
+Closures are anonymous functions that can be saved in variables or passed as arguments to other functions
+### Capturing the Environment
 
 
 
@@ -1231,7 +1233,7 @@ Iterators
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1NzAwOTQwOSwtMjEwMTM5NzM1NywtMj
+eyJoaXN0b3J5IjpbLTU1MzQ0NjEyMSwtMjEwMTM5NzM1NywtMj
 EwMTM5NzM1NywtMTcxNjI4MjkzMiw4MDk0MjE2NjYsMTg0NTc0
 NzQ3MCwtMzQ1Nzk0Mjk5LDgyOTkwOTU4MSw5Nzg2ODAzNywtMT
 QwMzY2NzQxNywxMDg5NDQ1MTE1LDcwMjg4ODg2NCwtMTk1MTc4
