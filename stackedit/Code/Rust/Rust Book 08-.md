@@ -1123,23 +1123,32 @@ pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
 ### Writing a failing test
 I moved the example string to a `const SEARCH_TEXT`
 ```rust
-
 #[cfg(test)]
 mod test{
     use super::*;
     const SEARCH_TEXT: &str =
         "Rust:\nsafe, fast, productive.\nPick three.";
     const SEARCH_TEXT2: &str =
+        "Rust:\nsafe, fast, productive.\nPick three.\nDuct tape.";
+    const SEARCH_TEXT3: &str =
         "Rust:\nsafe, fast, productive.\nPick three.\nTrust Me.";
     #[test]
     fn one_result() {
         let query = "duct";
         assert_eq!(vec!["safe, fast, productive."], search(query, SEARCH_TEXT));
     }
+    #[test]
+    fn case_sensitive() {
+        let query="duct";
+        assert_eq!(vec!["safe, fast, productive."],
+            search(query, SEARCH_TEXT2)
+        );
+    }
+    #[test]
     fn case_insensitive() {
         let query ="rUsT";
         assert_eq!(vec!["Rust:", "Trust Me."],
-            search_case_insensitive(query, SEARCH_TEXT2)
+            search_case_insensitive(query, SEARCH_TEXT3)
         );
     }
 }
@@ -1162,11 +1171,11 @@ mod test{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NTc0NzQ3MCwtMzQ1Nzk0Mjk5LDgyOT
-kwOTU4MSw5Nzg2ODAzNywtMTQwMzY2NzQxNywxMDg5NDQ1MTE1
-LDcwMjg4ODg2NCwtMTk1MTc4Njg2MSwtOTcxMzQ0Mjk1LC0xMD
-IwODgwODUsLTE5NTkzNTM3ODUsMjA4MDg3Mzc4Niw2ODExMjAz
-ODUsLTE4Nzg3NDYwMDksLTE4MTU4NjQyNSwxMDg1NDY2NTc1LC
-0xNzkwMDQxMzU3LC0xNTUzMjUwNTkwLDE0NzUxMTUzNTYsLTEx
-MTYzMjgwNzRdfQ==
+eyJoaXN0b3J5IjpbODA5NDIxNjY2LDE4NDU3NDc0NzAsLTM0NT
+c5NDI5OSw4Mjk5MDk1ODEsOTc4NjgwMzcsLTE0MDM2Njc0MTcs
+MTA4OTQ0NTExNSw3MDI4ODg4NjQsLTE5NTE3ODY4NjEsLTk3MT
+M0NDI5NSwtMTAyMDg4MDg1LC0xOTU5MzUzNzg1LDIwODA4NzM3
+ODYsNjgxMTIwMzg1LC0xODc4NzQ2MDA5LC0xODE1ODY0MjUsMT
+A4NTQ2NjU3NSwtMTc5MDA0MTM1NywtMTU1MzI1MDU5MCwxNDc1
+MTE1MzU2XX0=
 -->
