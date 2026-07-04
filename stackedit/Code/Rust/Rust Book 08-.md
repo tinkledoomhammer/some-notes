@@ -1083,7 +1083,15 @@ Steps in TDD
 * add a test module to `src/lib.rs`
 ```rust
 // -- snip --
-#[cfg(test)]g
+mod test{
+    use super::*;
+    #[test]
+    fn one_result() {
+        let query = "duct";
+        let contents = "Rust:\nsafe, fast, productive.\nPick three.";
+        assert_eq!(vec!["safe, fast, productive."], search(query, contents));
+    }
+}
 ```
 
 
@@ -1103,11 +1111,11 @@ Steps in TDD
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc4NjgwMzcsLTE0MDM2Njc0MTcsMTA4OT
-Q0NTExNSw3MDI4ODg4NjQsLTE5NTE3ODY4NjEsLTk3MTM0NDI5
-NSwtMTAyMDg4MDg1LC0xOTU5MzUzNzg1LDIwODA4NzM3ODYsNj
-gxMTIwMzg1LC0xODc4NzQ2MDA5LC0xODE1ODY0MjUsMTA4NTQ2
-NjU3NSwtMTc5MDA0MTM1NywtMTU1MzI1MDU5MCwxNDc1MTE1Mz
-U2LC0xMTE2MzI4MDc0LDY0NzE2NDcwNiwtMTQ1ODY4OTQ1NSwy
-MDM4NTgxNjcxXX0=
+eyJoaXN0b3J5IjpbLTIzNzc4ODAxNCw5Nzg2ODAzNywtMTQwMz
+Y2NzQxNywxMDg5NDQ1MTE1LDcwMjg4ODg2NCwtMTk1MTc4Njg2
+MSwtOTcxMzQ0Mjk1LC0xMDIwODgwODUsLTE5NTkzNTM3ODUsMj
+A4MDg3Mzc4Niw2ODExMjAzODUsLTE4Nzg3NDYwMDksLTE4MTU4
+NjQyNSwxMDg1NDY2NTc1LC0xNzkwMDQxMzU3LC0xNTUzMjUwNT
+kwLDE0NzUxMTUzNTYsLTExMTYzMjgwNzQsNjQ3MTY0NzA2LC0x
+NDU4Njg5NDU1XX0=
 -->
