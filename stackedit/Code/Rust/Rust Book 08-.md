@@ -1155,7 +1155,19 @@ mod test{
 ```
 
 ### Writing `pub fn search_case_insensitive...`
-
+```rust
+pub fn search_case_insensitive<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
+    let mut result = Vec::new();
+    let query2=query.to_lowercase();
+        for line in contents.lines(){
+            if line.to_lowercase().contains(&query2){
+                result.push(line);
+            }
+        }
+    result
+}
+```
+### Updating `main.rs`
 
 
 
@@ -1172,7 +1184,7 @@ mod test{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MTc5MjkzNyw4MDk0MjE2NjYsMTg0NT
+eyJoaXN0b3J5IjpbLTc2MzQ1MjIwMiw4MDk0MjE2NjYsMTg0NT
 c0NzQ3MCwtMzQ1Nzk0Mjk5LDgyOTkwOTU4MSw5Nzg2ODAzNywt
 MTQwMzY2NzQxNywxMDg5NDQ1MTE1LDcwMjg4ODg2NCwtMTk1MT
 c4Njg2MSwtOTcxMzQ0Mjk1LC0xMDIwODgwODUsLTE5NTkzNTM3
