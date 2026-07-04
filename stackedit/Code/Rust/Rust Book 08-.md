@@ -1071,16 +1071,27 @@ fn run(config: Config) -> Result<(), Box<dyn Error>> {
 		* `pub fn<'a> search(query: &str, contents: &'a str) -> Vec<&'a str>...`
 		* in `main.rs` `use minigrep::search;`
 
+## 12.04 Adding Functionality with Test-Driven Development
+
+## 12.05 Working with Environment Variables
+
+## 12.06 Redirecting Errors to `stderr`
+
+
+
+
+
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4OTQ0NTExNSw3MDI4ODg4NjQsLTE5NT
-E3ODY4NjEsLTk3MTM0NDI5NSwtMTAyMDg4MDg1LC0xOTU5MzUz
-Nzg1LDIwODA4NzM3ODYsNjgxMTIwMzg1LC0xODc4NzQ2MDA5LC
-0xODE1ODY0MjUsMTA4NTQ2NjU3NSwtMTc5MDA0MTM1NywtMTU1
-MzI1MDU5MCwxNDc1MTE1MzU2LC0xMTE2MzI4MDc0LDY0NzE2ND
-cwNiwtMTQ1ODY4OTQ1NSwyMDM4NTgxNjcxLC0xNzE1MTUzMDQ0
-LDE3OTgzMzU4MDhdfQ==
+eyJoaXN0b3J5IjpbLTc1MTcxMTQwOCwxMDg5NDQ1MTE1LDcwMj
+g4ODg2NCwtMTk1MTc4Njg2MSwtOTcxMzQ0Mjk1LC0xMDIwODgw
+ODUsLTE5NTkzNTM3ODUsMjA4MDg3Mzc4Niw2ODExMjAzODUsLT
+E4Nzg3NDYwMDksLTE4MTU4NjQyNSwxMDg1NDY2NTc1LC0xNzkw
+MDQxMzU3LC0xNTUzMjUwNTkwLDE0NzUxMTUzNTYsLTExMTYzMj
+gwNzQsNjQ3MTY0NzA2LC0xNDU4Njg5NDU1LDIwMzg1ODE2NzEs
+LTE3MTUxNTMwNDRdfQ==
 -->
