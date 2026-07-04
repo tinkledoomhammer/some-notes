@@ -1201,7 +1201,17 @@ In windows: `$Env:IGNORE_CASE=1; cargo run -- to poem.txt`
 
 # 13 Functional: Iterators and Closures
 Covers:
-* 
+
+Closures
+: function-like constructs that can be stored in a variable
+
+Iterators
+: A way of processing a series of elements
+
+* How to use closures and iterators to impove the I/O porject in Ch. 12
+* The performance of closures and iterators
+	* faster than you might think
+
 
 
 
@@ -1218,11 +1228,11 @@ Covers:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDcxMTAxODgsLTIxMDEzOTczNTcsLT
-IxMDEzOTczNTcsLTE3MTYyODI5MzIsODA5NDIxNjY2LDE4NDU3
-NDc0NzAsLTM0NTc5NDI5OSw4Mjk5MDk1ODEsOTc4NjgwMzcsLT
-E0MDM2Njc0MTcsMTA4OTQ0NTExNSw3MDI4ODg4NjQsLTE5NTE3
-ODY4NjEsLTk3MTM0NDI5NSwtMTAyMDg4MDg1LC0xOTU5MzUzNz
-g1LDIwODA4NzM3ODYsNjgxMTIwMzg1LC0xODc4NzQ2MDA5LC0x
-ODE1ODY0MjVdfQ==
+eyJoaXN0b3J5IjpbMTUwNDk3NTUzMSwtMjEwMTM5NzM1NywtMj
+EwMTM5NzM1NywtMTcxNjI4MjkzMiw4MDk0MjE2NjYsMTg0NTc0
+NzQ3MCwtMzQ1Nzk0Mjk5LDgyOTkwOTU4MSw5Nzg2ODAzNywtMT
+QwMzY2NzQxNywxMDg5NDQ1MTE1LDcwMjg4ODg2NCwtMTk1MTc4
+Njg2MSwtOTcxMzQ0Mjk1LC0xMDIwODgwODUsLTE5NTkzNTM3OD
+UsMjA4MDg3Mzc4Niw2ODExMjAzODUsLTE4Nzg3NDYwMDksLTE4
+MTU4NjQyNV19
 -->
