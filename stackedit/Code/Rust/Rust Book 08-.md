@@ -1168,8 +1168,16 @@ pub fn search_case_insensitive<'a>(query: &str, contents: &'a str) -> Vec<&'a st
 }
 ```
 ### Updating `main.rs`
-
-
+```rust
+struct Config {
+    query: String,
+    file_path: String,
+    ignore_case: bool,
+}
+// -- snip --
+// in Config::build(args)
+	lt
+```
 
 
 ## 12.06 Redirecting Errors to `stderr`
@@ -1184,11 +1192,11 @@ pub fn search_case_insensitive<'a>(query: &str, contents: &'a str) -> Vec<&'a st
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MzQ1MjIwMiw4MDk0MjE2NjYsMTg0NT
-c0NzQ3MCwtMzQ1Nzk0Mjk5LDgyOTkwOTU4MSw5Nzg2ODAzNywt
-MTQwMzY2NzQxNywxMDg5NDQ1MTE1LDcwMjg4ODg2NCwtMTk1MT
-c4Njg2MSwtOTcxMzQ0Mjk1LC0xMDIwODgwODUsLTE5NTkzNTM3
-ODUsMjA4MDg3Mzc4Niw2ODExMjAzODUsLTE4Nzg3NDYwMDksLT
-E4MTU4NjQyNSwxMDg1NDY2NTc1LC0xNzkwMDQxMzU3LC0xNTUz
-MjUwNTkwXX0=
+eyJoaXN0b3J5IjpbLTIxMDczNTE3NDUsODA5NDIxNjY2LDE4ND
+U3NDc0NzAsLTM0NTc5NDI5OSw4Mjk5MDk1ODEsOTc4NjgwMzcs
+LTE0MDM2Njc0MTcsMTA4OTQ0NTExNSw3MDI4ODg4NjQsLTE5NT
+E3ODY4NjEsLTk3MTM0NDI5NSwtMTAyMDg4MDg1LC0xOTU5MzUz
+Nzg1LDIwODA4NzM3ODYsNjgxMTIwMzg1LC0xODc4NzQ2MDA5LC
+0xODE1ODY0MjUsMTA4NTQ2NjU3NSwtMTc5MDA0MTM1NywtMTU1
+MzI1MDU5MF19
 -->
