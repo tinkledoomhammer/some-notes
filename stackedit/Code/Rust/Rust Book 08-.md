@@ -1074,7 +1074,10 @@ fn run(config: Config) -> Result<(), Box<dyn Error>> {
 ## 12.04 Adding Functionality with Test-Driven Development
 Steps in TDD
 1. Write a test that fails, and run it to make sure it fails for the right reason
-1. 
+1. Write or modify just enough code to pass the test
+1. Refactor the code and make sure the test continues to pass
+1. Repeat
+
 ## 12.05 Working with Environment Variables
 
 ## 12.06 Redirecting Errors to `stderr`
@@ -1089,11 +1092,11 @@ Steps in TDD
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDM2Njc0MTcsMTA4OTQ0NTExNSw3MD
-I4ODg4NjQsLTE5NTE3ODY4NjEsLTk3MTM0NDI5NSwtMTAyMDg4
-MDg1LC0xOTU5MzUzNzg1LDIwODA4NzM3ODYsNjgxMTIwMzg1LC
-0xODc4NzQ2MDA5LC0xODE1ODY0MjUsMTA4NTQ2NjU3NSwtMTc5
-MDA0MTM1NywtMTU1MzI1MDU5MCwxNDc1MTE1MzU2LC0xMTE2Mz
-I4MDc0LDY0NzE2NDcwNiwtMTQ1ODY4OTQ1NSwyMDM4NTgxNjcx
-LC0xNzE1MTUzMDQ0XX0=
+eyJoaXN0b3J5IjpbLTE1MzU3OTk2NTMsLTE0MDM2Njc0MTcsMT
+A4OTQ0NTExNSw3MDI4ODg4NjQsLTE5NTE3ODY4NjEsLTk3MTM0
+NDI5NSwtMTAyMDg4MDg1LC0xOTU5MzUzNzg1LDIwODA4NzM3OD
+YsNjgxMTIwMzg1LC0xODc4NzQ2MDA5LC0xODE1ODY0MjUsMTA4
+NTQ2NjU3NSwtMTc5MDA0MTM1NywtMTU1MzI1MDU5MCwxNDc1MT
+E1MzU2LC0xMTE2MzI4MDc0LDY0NzE2NDcwNiwtMTQ1ODY4OTQ1
+NSwyMDM4NTgxNjcxXX0=
 -->
