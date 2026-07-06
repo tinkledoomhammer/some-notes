@@ -1254,7 +1254,11 @@ let some_str = example_closure(String::from("hi"));
 let some_num = example_closure(5); // FAILS because of the types from the previous line
 ```
 ### Capturing References or Moving Ownership
-
+* closures can capture in the same ways as arguments can be passed:
+	* Shared ref (&)
+	* Mutable/exclusive ref (& mut)
+	* Taking ownership
+* The compiler will decide which to use based on the body of the closure
 
 
 ## 13.03 Improving Our I/O Project
@@ -1277,11 +1281,11 @@ let some_num = example_closure(5); // FAILS because of the types from the previo
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIzNTY4NDk5LC0xMTAwOTk1MDYzLC01NT
-M0NDYxMjEsLTIxMDEzOTczNTcsLTIxMDEzOTczNTcsLTE3MTYy
-ODI5MzIsODA5NDIxNjY2LDE4NDU3NDc0NzAsLTM0NTc5NDI5OS
-w4Mjk5MDk1ODEsOTc4NjgwMzcsLTE0MDM2Njc0MTcsMTA4OTQ0
-NTExNSw3MDI4ODg4NjQsLTE5NTE3ODY4NjEsLTk3MTM0NDI5NS
-wtMTAyMDg4MDg1LC0xOTU5MzUzNzg1LDIwODA4NzM3ODYsNjgx
-MTIwMzg1XX0=
+eyJoaXN0b3J5IjpbLTEyODc3MDc3ODAsLTExMDA5OTUwNjMsLT
+U1MzQ0NjEyMSwtMjEwMTM5NzM1NywtMjEwMTM5NzM1NywtMTcx
+NjI4MjkzMiw4MDk0MjE2NjYsMTg0NTc0NzQ3MCwtMzQ1Nzk0Mj
+k5LDgyOTkwOTU4MSw5Nzg2ODAzNywtMTQwMzY2NzQxNywxMDg5
+NDQ1MTE1LDcwMjg4ODg2NCwtMTk1MTc4Njg2MSwtOTcxMzQ0Mj
+k1LC0xMDIwODgwODUsLTE5NTkzNTM3ODUsMjA4MDg3Mzc4Niw2
+ODExMjAzODVdfQ==
 -->
