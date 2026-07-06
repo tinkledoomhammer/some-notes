@@ -1300,8 +1300,7 @@ impl<T> Option<T> {
 		F: FnOnce() -> T
 	// -- snip //
 // An unrelated example
-fn do_stuff( f: Fn(u8,&str)-> &str)
-do_stuff( |n,s| ->&s[n..];)
+fn do_stuff<'a, F: Fn(u8,
 ```
 
 * If the closure doesn't capture anything from the environment, then the name of a function can be used.
@@ -1327,11 +1326,11 @@ do_stuff( |n,s| ->&s[n..];)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2NzIyNzc3NiwtMTY2ODAwNTYwOCwtMT
-IyNTU4MTUwNiwtNzExNzUwOTksLTExMTY5NDEyOTUsLTEyODc3
-MDc3ODAsLTExMDA5OTUwNjMsLTU1MzQ0NjEyMSwtMjEwMTM5Nz
-M1NywtMjEwMTM5NzM1NywtMTcxNjI4MjkzMiw4MDk0MjE2NjYs
-MTg0NTc0NzQ3MCwtMzQ1Nzk0Mjk5LDgyOTkwOTU4MSw5Nzg2OD
-AzNywtMTQwMzY2NzQxNywxMDg5NDQ1MTE1LDcwMjg4ODg2NCwt
-MTk1MTc4Njg2MV19
+eyJoaXN0b3J5IjpbLTk5NjE0MTQ1OCwtNzY3MjI3Nzc2LC0xNj
+Y4MDA1NjA4LC0xMjI1NTgxNTA2LC03MTE3NTA5OSwtMTExNjk0
+MTI5NSwtMTI4NzcwNzc4MCwtMTEwMDk5NTA2MywtNTUzNDQ2MT
+IxLC0yMTAxMzk3MzU3LC0yMTAxMzk3MzU3LC0xNzE2MjgyOTMy
+LDgwOTQyMTY2NiwxODQ1NzQ3NDcwLC0zNDU3OTQyOTksODI5OT
+A5NTgxLDk3ODY4MDM3LC0xNDAzNjY3NDE3LDEwODk0NDUxMTUs
+NzAyODg4ODY0XX0=
 -->
