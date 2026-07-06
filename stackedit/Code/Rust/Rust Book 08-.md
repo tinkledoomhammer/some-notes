@@ -1241,6 +1241,14 @@ fn  add_one_v1   (x: u32) -> u32 { x + 1 }
 let add_one_v2 = |x: u32| -> u32 { x + 1 };
 let add_one_v3 = |x|             { x + 1 };
 let add_one_v4 = |x|               x + 1  ;
+
+// a closure that needs explicit type annotations
+let example_closure = |x| x;
+// there is note enough information to infer the type of 
+// 	the argument or the return
+
+//If we invoke the closure once, then the type can be inferred
+let some_str = example_closure("
 ```
 
 
@@ -1265,11 +1273,11 @@ let add_one_v4 = |x|               x + 1  ;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDA5OTUwNjMsLTU1MzQ0NjEyMSwtMj
-EwMTM5NzM1NywtMjEwMTM5NzM1NywtMTcxNjI4MjkzMiw4MDk0
-MjE2NjYsMTg0NTc0NzQ3MCwtMzQ1Nzk0Mjk5LDgyOTkwOTU4MS
-w5Nzg2ODAzNywtMTQwMzY2NzQxNywxMDg5NDQ1MTE1LDcwMjg4
-ODg2NCwtMTk1MTc4Njg2MSwtOTcxMzQ0Mjk1LC0xMDIwODgwOD
-UsLTE5NTkzNTM3ODUsMjA4MDg3Mzc4Niw2ODExMjAzODUsLTE4
-Nzg3NDYwMDldfQ==
+eyJoaXN0b3J5IjpbMTk4ODAxMzY0NSwtMTEwMDk5NTA2MywtNT
+UzNDQ2MTIxLC0yMTAxMzk3MzU3LC0yMTAxMzk3MzU3LC0xNzE2
+MjgyOTMyLDgwOTQyMTY2NiwxODQ1NzQ3NDcwLC0zNDU3OTQyOT
+ksODI5OTA5NTgxLDk3ODY4MDM3LC0xNDAzNjY3NDE3LDEwODk0
+NDUxMTUsNzAyODg4ODY0LC0xOTUxNzg2ODYxLC05NzEzNDQyOT
+UsLTEwMjA4ODA4NSwtMTk1OTM1Mzc4NSwyMDgwODczNzg2LDY4
+MTEyMDM4NV19
 -->
