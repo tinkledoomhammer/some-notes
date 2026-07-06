@@ -1217,7 +1217,7 @@ Iterators
 ## 13.01 Closures
 Closures are anonymous functions that can be saved in variables or passed as arguments to other functions
 ### Capturing the Environment
-
+`let closure = |args| expression` 
 
 
 
@@ -1233,11 +1233,11 @@ Closures are anonymous functions that can be saved in variables or passed as arg
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1MzQ0NjEyMSwtMjEwMTM5NzM1NywtMj
-EwMTM5NzM1NywtMTcxNjI4MjkzMiw4MDk0MjE2NjYsMTg0NTc0
-NzQ3MCwtMzQ1Nzk0Mjk5LDgyOTkwOTU4MSw5Nzg2ODAzNywtMT
-QwMzY2NzQxNywxMDg5NDQ1MTE1LDcwMjg4ODg2NCwtMTk1MTc4
-Njg2MSwtOTcxMzQ0Mjk1LC0xMDIwODgwODUsLTE5NTkzNTM3OD
-UsMjA4MDg3Mzc4Niw2ODExMjAzODUsLTE4Nzg3NDYwMDksLTE4
-MTU4NjQyNV19
+eyJoaXN0b3J5IjpbMTk0Nzk1MDE5MSwtNTUzNDQ2MTIxLC0yMT
+AxMzk3MzU3LC0yMTAxMzk3MzU3LC0xNzE2MjgyOTMyLDgwOTQy
+MTY2NiwxODQ1NzQ3NDcwLC0zNDU3OTQyOTksODI5OTA5NTgxLD
+k3ODY4MDM3LC0xNDAzNjY3NDE3LDEwODk0NDUxMTUsNzAyODg4
+ODY0LC0xOTUxNzg2ODYxLC05NzEzNDQyOTUsLTEwMjA4ODA4NS
+wtMTk1OTM1Mzc4NSwyMDgwODczNzg2LDY4MTEyMDM4NSwtMTg3
+ODc0NjAwOV19
 -->
