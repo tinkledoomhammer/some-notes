@@ -1223,7 +1223,14 @@ Closures are anonymous functions that can be saved in variables or passed as arg
 ### Inferring and Annotating Closure types
 
 
-## 13.2
+## 13.02 Processing a series of Items with Iterators
+* closures don't usually require manual annotation of argument and return types
+
+## 13.03 Improving Our I/O Project
+
+## 13.04 Performance in Loops vs Iterators
+
+
 
 
 
@@ -1239,11 +1246,11 @@ Closures are anonymous functions that can be saved in variables or passed as arg
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MDMxMDA5MCwtNTUzNDQ2MTIxLC0yMT
-AxMzk3MzU3LC0yMTAxMzk3MzU3LC0xNzE2MjgyOTMyLDgwOTQy
-MTY2NiwxODQ1NzQ3NDcwLC0zNDU3OTQyOTksODI5OTA5NTgxLD
-k3ODY4MDM3LC0xNDAzNjY3NDE3LDEwODk0NDUxMTUsNzAyODg4
-ODY0LC0xOTUxNzg2ODYxLC05NzEzNDQyOTUsLTEwMjA4ODA4NS
-wtMTk1OTM1Mzc4NSwyMDgwODczNzg2LDY4MTEyMDM4NSwtMTg3
-ODc0NjAwOV19
+eyJoaXN0b3J5IjpbLTE0NDAwODgxMzgsLTU1MzQ0NjEyMSwtMj
+EwMTM5NzM1NywtMjEwMTM5NzM1NywtMTcxNjI4MjkzMiw4MDk0
+MjE2NjYsMTg0NTc0NzQ3MCwtMzQ1Nzk0Mjk5LDgyOTkwOTU4MS
+w5Nzg2ODAzNywtMTQwMzY2NzQxNywxMDg5NDQ1MTE1LDcwMjg4
+ODg2NCwtMTk1MTc4Njg2MSwtOTcxMzQ0Mjk1LC0xMDIwODgwOD
+UsLTE5NTkzNTM3ODUsMjA4MDg3Mzc4Niw2ODExMjAzODUsLTE4
+Nzg3NDYwMDldfQ==
 -->
