@@ -1284,8 +1284,13 @@ fn main() {
 : closures that move their captured values out will only implement `FnOnce`
 
 `FnMut`
-: applies to closures that can be called more than once and might mutate their captures
-: 
+: applies to closures that might mutate their captures
+: can be called more than once 
+
+`Fn`
+: Applies to closures that neither mutate their captures nor move them out of the closure
+: can be called more than once
+: closures that implement `Fn` also implement `FnMut` and `FnOnce`
 
 ## 13.03 Improving Our I/O Project
 
@@ -1307,11 +1312,11 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxMjI2MjIxNywtMTIyNTU4MTUwNiwtNz
-ExNzUwOTksLTExMTY5NDEyOTUsLTEyODc3MDc3ODAsLTExMDA5
-OTUwNjMsLTU1MzQ0NjEyMSwtMjEwMTM5NzM1NywtMjEwMTM5Nz
-M1NywtMTcxNjI4MjkzMiw4MDk0MjE2NjYsMTg0NTc0NzQ3MCwt
-MzQ1Nzk0Mjk5LDgyOTkwOTU4MSw5Nzg2ODAzNywtMTQwMzY2Nz
-QxNywxMDg5NDQ1MTE1LDcwMjg4ODg2NCwtMTk1MTc4Njg2MSwt
-OTcxMzQ0Mjk1XX0=
+eyJoaXN0b3J5IjpbLTE0ODEwMjgzMzYsLTEyMjU1ODE1MDYsLT
+cxMTc1MDk5LC0xMTE2OTQxMjk1LC0xMjg3NzA3NzgwLC0xMTAw
+OTk1MDYzLC01NTM0NDYxMjEsLTIxMDEzOTczNTcsLTIxMDEzOT
+czNTcsLTE3MTYyODI5MzIsODA5NDIxNjY2LDE4NDU3NDc0NzAs
+LTM0NTc5NDI5OSw4Mjk5MDk1ODEsOTc4NjgwMzcsLTE0MDM2Nj
+c0MTcsMTA4OTQ0NTExNSw3MDI4ODg4NjQsLTE5NTE3ODY4NjEs
+LTk3MTM0NDI5NV19
 -->
