@@ -1228,7 +1228,22 @@ Closures are anonymous functions that can be saved in variables or passed as arg
 * This is because they closures are not part of an exposed interface in the way that functions are
 * Closures are typically short and relevant only within a narrow context
 * The limited scope of relevance makes type inferencing possible in many cases
-A closure with expli
+A closure with explicit annotations
+```rust
+let expensive_closure = |num: u32| -> u32 {
+	println!("Calculating slowly...");
+	thread::sleep(Duration::from_secs(2));
+	num
+};
+
+// a comparison with functions
+fn  add_one_v1   (x: u32) -> u32 { x + 1 }
+let add_one_v2 = |x: u32| -> u32 { x + 1 };
+let add_one_v3 = |x|             { x + 1 };
+let add_one_v4 = |x|               x + 1  ;
+```
+
+
 
 ## 13.03 Improving Our I/O Project
 
@@ -1250,11 +1265,11 @@ A closure with expli
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDMyMDgxNzYxLC01NTM0NDYxMjEsLTIxMD
-EzOTczNTcsLTIxMDEzOTczNTcsLTE3MTYyODI5MzIsODA5NDIx
-NjY2LDE4NDU3NDc0NzAsLTM0NTc5NDI5OSw4Mjk5MDk1ODEsOT
-c4NjgwMzcsLTE0MDM2Njc0MTcsMTA4OTQ0NTExNSw3MDI4ODg4
-NjQsLTE5NTE3ODY4NjEsLTk3MTM0NDI5NSwtMTAyMDg4MDg1LC
-0xOTU5MzUzNzg1LDIwODA4NzM3ODYsNjgxMTIwMzg1LC0xODc4
-NzQ2MDA5XX0=
+eyJoaXN0b3J5IjpbLTExMDA5OTUwNjMsLTU1MzQ0NjEyMSwtMj
+EwMTM5NzM1NywtMjEwMTM5NzM1NywtMTcxNjI4MjkzMiw4MDk0
+MjE2NjYsMTg0NTc0NzQ3MCwtMzQ1Nzk0Mjk5LDgyOTkwOTU4MS
+w5Nzg2ODAzNywtMTQwMzY2NzQxNywxMDg5NDQ1MTE1LDcwMjg4
+ODg2NCwtMTk1MTc4Njg2MSwtOTcxMzQ0Mjk1LC0xMDIwODgwOD
+UsLTE5NTkzNTM3ODUsMjA4MDg3Mzc4Niw2ODExMjAzODUsLTE4
+Nzg3NDYwMDldfQ==
 -->
