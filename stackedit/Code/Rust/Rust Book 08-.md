@@ -1301,7 +1301,8 @@ impl<T> Option<T> {
 	// -- snip //
 ```
 
-* If the closure doesn't 
+* If the closure doesn't capture anything from the environment, then the name of a function can be used.
+* i.e. `unwrap_or_else(Vec::new)` is the same as `unwrap_or_else(|| Vec::new())`
 
 ## 13.03 Improving Our I/O Project
 
@@ -1323,7 +1324,7 @@ impl<T> Option<T> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwMTIyNjg5LC0xMjI1NTgxNTA2LC03MT
+eyJoaXN0b3J5IjpbMjY5ODg3NTcyLC0xMjI1NTgxNTA2LC03MT
 E3NTA5OSwtMTExNjk0MTI5NSwtMTI4NzcwNzc4MCwtMTEwMDk5
 NTA2MywtNTUzNDQ2MTIxLC0yMTAxMzk3MzU3LC0yMTAxMzk3Mz
 U3LC0xNzE2MjgyOTMyLDgwOTQyMTY2NiwxODQ1NzQ3NDcwLC0z
