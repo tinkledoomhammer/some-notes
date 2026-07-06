@@ -1254,6 +1254,7 @@ let some_str = example_closure(String::from("hi"));
 let some_num = example_closure(5); // FAILS because of the types from the previous line
 ```
 ### Capturing References or Moving Ownership
+**Closure arguments can be patterns**
 * closures can capture in the same ways as arguments can be passed:
 	* Shared ref (&)
 	* Mutable/exclusive ref (& mut)
@@ -1296,11 +1297,11 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMTc1MDk5LC0xMTE2OTQxMjk1LC0xMj
-g3NzA3NzgwLC0xMTAwOTk1MDYzLC01NTM0NDYxMjEsLTIxMDEz
-OTczNTcsLTIxMDEzOTczNTcsLTE3MTYyODI5MzIsODA5NDIxNj
-Y2LDE4NDU3NDc0NzAsLTM0NTc5NDI5OSw4Mjk5MDk1ODEsOTc4
-NjgwMzcsLTE0MDM2Njc0MTcsMTA4OTQ0NTExNSw3MDI4ODg4Nj
-QsLTE5NTE3ODY4NjEsLTk3MTM0NDI5NSwtMTAyMDg4MDg1LC0x
-OTU5MzUzNzg1XX0=
+eyJoaXN0b3J5IjpbLTU1NDI4MTAxNiwtNzExNzUwOTksLTExMT
+Y5NDEyOTUsLTEyODc3MDc3ODAsLTExMDA5OTUwNjMsLTU1MzQ0
+NjEyMSwtMjEwMTM5NzM1NywtMjEwMTM5NzM1NywtMTcxNjI4Mj
+kzMiw4MDk0MjE2NjYsMTg0NTc0NzQ3MCwtMzQ1Nzk0Mjk5LDgy
+OTkwOTU4MSw5Nzg2ODAzNywtMTQwMzY2NzQxNywxMDg5NDQ1MT
+E1LDcwMjg4ODg2NCwtMTk1MTc4Njg2MSwtOTcxMzQ0Mjk1LC0x
+MDIwODgwODVdfQ==
 -->
