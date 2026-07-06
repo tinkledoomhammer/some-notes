@@ -1275,8 +1275,10 @@ fn main() {
 	let moves = || some_function_that_consumes(list3);
 }
 ```
-### Moving captured values out of closures
-
+### Closure Traits / Moving captured values out of closures
+> The way a closure captures and handles values from the environment affects which traits the closure implements
+`FnOnce()`
+applies to closures that can be called at least once
 
 
 ## 13.03 Improving Our I/O Project
@@ -1299,11 +1301,11 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjU1ODE1MDYsLTcxMTc1MDk5LC0xMT
-E2OTQxMjk1LC0xMjg3NzA3NzgwLC0xMTAwOTk1MDYzLC01NTM0
-NDYxMjEsLTIxMDEzOTczNTcsLTIxMDEzOTczNTcsLTE3MTYyOD
-I5MzIsODA5NDIxNjY2LDE4NDU3NDc0NzAsLTM0NTc5NDI5OSw4
-Mjk5MDk1ODEsOTc4NjgwMzcsLTE0MDM2Njc0MTcsMTA4OTQ0NT
-ExNSw3MDI4ODg4NjQsLTE5NTE3ODY4NjEsLTk3MTM0NDI5NSwt
-MTAyMDg4MDg1XX0=
+eyJoaXN0b3J5IjpbLTE0OTk0NDMzMTMsLTEyMjU1ODE1MDYsLT
+cxMTc1MDk5LC0xMTE2OTQxMjk1LC0xMjg3NzA3NzgwLC0xMTAw
+OTk1MDYzLC01NTM0NDYxMjEsLTIxMDEzOTczNTcsLTIxMDEzOT
+czNTcsLTE3MTYyODI5MzIsODA5NDIxNjY2LDE4NDU3NDc0NzAs
+LTM0NTc5NDI5OSw4Mjk5MDk1ODEsOTc4NjgwMzcsLTE0MDM2Nj
+c0MTcsMTA4OTQ0NTExNSw3MDI4ODg4NjQsLTE5NTE3ODY4NjEs
+LTk3MTM0NDI5NV19
 -->
