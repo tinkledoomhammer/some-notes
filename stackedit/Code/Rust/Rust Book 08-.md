@@ -1248,7 +1248,10 @@ let example_closure = |x| x;
 // 	the argument or the return
 
 //If we invoke the closure once, then the type can be inferred
-let some_str = example_closure("
+let some_str = example_closure(String::from("hi"));
+// will make the argument and return both String
+//so the following line will fail
+let some_num = example_closure(5); // FAILS because of the types from the previous line
 ```
 
 
@@ -1273,11 +1276,11 @@ let some_str = example_closure("
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4ODAxMzY0NSwtMTEwMDk5NTA2MywtNT
-UzNDQ2MTIxLC0yMTAxMzk3MzU3LC0yMTAxMzk3MzU3LC0xNzE2
-MjgyOTMyLDgwOTQyMTY2NiwxODQ1NzQ3NDcwLC0zNDU3OTQyOT
-ksODI5OTA5NTgxLDk3ODY4MDM3LC0xNDAzNjY3NDE3LDEwODk0
-NDUxMTUsNzAyODg4ODY0LC0xOTUxNzg2ODYxLC05NzEzNDQyOT
-UsLTEwMjA4ODA4NSwtMTk1OTM1Mzc4NSwyMDgwODczNzg2LDY4
-MTEyMDM4NV19
+eyJoaXN0b3J5IjpbNTUzMTg0NzM3LC0xMTAwOTk1MDYzLC01NT
+M0NDYxMjEsLTIxMDEzOTczNTcsLTIxMDEzOTczNTcsLTE3MTYy
+ODI5MzIsODA5NDIxNjY2LDE4NDU3NDc0NzAsLTM0NTc5NDI5OS
+w4Mjk5MDk1ODEsOTc4NjgwMzcsLTE0MDM2Njc0MTcsMTA4OTQ0
+NTExNSw3MDI4ODg4NjQsLTE5NTE3ODY4NjEsLTk3MTM0NDI5NS
+wtMTAyMDg4MDg1LC0xOTU5MzUzNzg1LDIwODA4NzM3ODYsNjgx
+MTIwMzg1XX0=
 -->
