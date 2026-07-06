@@ -1218,6 +1218,12 @@ Iterators
 Closures are anonymous functions that can be saved in variables or passed as arguments to other functions
 ### Capturing the Environment
 `let closure = |args| expression` 
+* `expression` can use variables defined in the enclosing scope, which functions cannot
+
+### Inferring and Annotating Closure types
+
+
+## 13.2
 
 
 
@@ -1233,7 +1239,7 @@ Closures are anonymous functions that can be saved in variables or passed as arg
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0Nzk1MDE5MSwtNTUzNDQ2MTIxLC0yMT
+eyJoaXN0b3J5IjpbLTc1MDMxMDA5MCwtNTUzNDQ2MTIxLC0yMT
 AxMzk3MzU3LC0yMTAxMzk3MzU3LC0xNzE2MjgyOTMyLDgwOTQy
 MTY2NiwxODQ1NzQ3NDcwLC0zNDU3OTQyOTksODI5OTA5NTgxLD
 k3ODY4MDM3LC0xNDAzNjY3NDE3LDEwODk0NDUxMTUsNzAyODg4
