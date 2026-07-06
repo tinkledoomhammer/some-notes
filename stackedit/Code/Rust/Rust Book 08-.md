@@ -1273,9 +1273,11 @@ fn main() {
 	thread::spawn(moves).join().unwrap();
 	//alternatively
 	let moves = || some_function_that_consumes(list3);
-	
 }
 ```
+### Moving captured values out of closures
+
+
 
 ## 13.03 Improving Our I/O Project
 
@@ -1297,11 +1299,11 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1NDI4MTAxNiwtNzExNzUwOTksLTExMT
-Y5NDEyOTUsLTEyODc3MDc3ODAsLTExMDA5OTUwNjMsLTU1MzQ0
-NjEyMSwtMjEwMTM5NzM1NywtMjEwMTM5NzM1NywtMTcxNjI4Mj
-kzMiw4MDk0MjE2NjYsMTg0NTc0NzQ3MCwtMzQ1Nzk0Mjk5LDgy
-OTkwOTU4MSw5Nzg2ODAzNywtMTQwMzY2NzQxNywxMDg5NDQ1MT
-E1LDcwMjg4ODg2NCwtMTk1MTc4Njg2MSwtOTcxMzQ0Mjk1LC0x
-MDIwODgwODVdfQ==
+eyJoaXN0b3J5IjpbLTEyMjU1ODE1MDYsLTcxMTc1MDk5LC0xMT
+E2OTQxMjk1LC0xMjg3NzA3NzgwLC0xMTAwOTk1MDYzLC01NTM0
+NDYxMjEsLTIxMDEzOTczNTcsLTIxMDEzOTczNTcsLTE3MTYyOD
+I5MzIsODA5NDIxNjY2LDE4NDU3NDc0NzAsLTM0NTc5NDI5OSw4
+Mjk5MDk1ODEsOTc4NjgwMzcsLTE0MDM2Njc0MTcsMTA4OTQ0NT
+ExNSw3MDI4ODg4NjQsLTE5NTE3ODY4NjEsLTk3MTM0NDI5NSwt
+MTAyMDg4MDg1XX0=
 -->
