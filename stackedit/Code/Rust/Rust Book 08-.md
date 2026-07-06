@@ -1260,6 +1260,15 @@ let some_num = example_closure(5); // FAILS because of the types from the previo
 	* Taking ownership
 * The compiler will decide which to use based on the body of the closure
 
+```rust
+fn main() {
+	let list = vec![1,2,3];
+	let list2 = list.clone();
+	let list3 = list.clone();
+	let only_borrows = || println!("From closure: {list:?}");
+	let mut_borrow = 
+}
+```
 
 ## 13.03 Improving Our I/O Project
 
@@ -1281,11 +1290,11 @@ let some_num = example_closure(5); // FAILS because of the types from the previo
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODc3MDc3ODAsLTExMDA5OTUwNjMsLT
-U1MzQ0NjEyMSwtMjEwMTM5NzM1NywtMjEwMTM5NzM1NywtMTcx
-NjI4MjkzMiw4MDk0MjE2NjYsMTg0NTc0NzQ3MCwtMzQ1Nzk0Mj
-k5LDgyOTkwOTU4MSw5Nzg2ODAzNywtMTQwMzY2NzQxNywxMDg5
-NDQ1MTE1LDcwMjg4ODg2NCwtMTk1MTc4Njg2MSwtOTcxMzQ0Mj
-k1LC0xMDIwODgwODUsLTE5NTkzNTM3ODUsMjA4MDg3Mzc4Niw2
-ODExMjAzODVdfQ==
+eyJoaXN0b3J5IjpbLTE3Njg3OTQ5NDQsLTEyODc3MDc3ODAsLT
+ExMDA5OTUwNjMsLTU1MzQ0NjEyMSwtMjEwMTM5NzM1NywtMjEw
+MTM5NzM1NywtMTcxNjI4MjkzMiw4MDk0MjE2NjYsMTg0NTc0Nz
+Q3MCwtMzQ1Nzk0Mjk5LDgyOTkwOTU4MSw5Nzg2ODAzNywtMTQw
+MzY2NzQxNywxMDg5NDQ1MTE1LDcwMjg4ODg2NCwtMTk1MTc4Nj
+g2MSwtOTcxMzQ0Mjk1LC0xMDIwODgwODUsLTE5NTkzNTM3ODUs
+MjA4MDg3Mzc4Nl19
 -->
