@@ -1253,6 +1253,7 @@ let some_str = example_closure(String::from("hi"));
 //so the following line will fail
 let some_num = example_closure(5); // FAILS because of the types from the previous line
 ```
+### Capturing References or Moving Ownership
 
 
 
@@ -1276,7 +1277,7 @@ let some_num = example_closure(5); // FAILS because of the types from the previo
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUzMTg0NzM3LC0xMTAwOTk1MDYzLC01NT
+eyJoaXN0b3J5IjpbNDIzNTY4NDk5LC0xMTAwOTk1MDYzLC01NT
 M0NDYxMjEsLTIxMDEzOTczNTcsLTIxMDEzOTczNTcsLTE3MTYy
 ODI5MzIsODA5NDIxNjY2LDE4NDU3NDc0NzAsLTM0NTc5NDI5OS
 w4Mjk5MDk1ODEsOTc4NjgwMzcsLTE0MDM2Njc0MTcsMTA4OTQ0
