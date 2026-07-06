@@ -1299,6 +1299,8 @@ impl<T> Option<T> {
 	where
 		F: FnOnce() -> T
 	// -- snip //
+// An unrelated example
+let f: Fn(u8,&str)-> &str = |n,s| ->&s[n..];
 ```
 
 * If the closure doesn't capture anything from the environment, then the name of a function can be used.
@@ -1324,11 +1326,11 @@ impl<T> Option<T> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY5ODg3NTcyLC0xMjI1NTgxNTA2LC03MT
-E3NTA5OSwtMTExNjk0MTI5NSwtMTI4NzcwNzc4MCwtMTEwMDk5
-NTA2MywtNTUzNDQ2MTIxLC0yMTAxMzk3MzU3LC0yMTAxMzk3Mz
-U3LC0xNzE2MjgyOTMyLDgwOTQyMTY2NiwxODQ1NzQ3NDcwLC0z
-NDU3OTQyOTksODI5OTA5NTgxLDk3ODY4MDM3LC0xNDAzNjY3ND
-E3LDEwODk0NDUxMTUsNzAyODg4ODY0LC0xOTUxNzg2ODYxLC05
-NzEzNDQyOTVdfQ==
+eyJoaXN0b3J5IjpbLTE2NjgwMDU2MDgsLTEyMjU1ODE1MDYsLT
+cxMTc1MDk5LC0xMTE2OTQxMjk1LC0xMjg3NzA3NzgwLC0xMTAw
+OTk1MDYzLC01NTM0NDYxMjEsLTIxMDEzOTczNTcsLTIxMDEzOT
+czNTcsLTE3MTYyODI5MzIsODA5NDIxNjY2LDE4NDU3NDc0NzAs
+LTM0NTc5NDI5OSw4Mjk5MDk1ODEsOTc4NjgwMzcsLTE0MDM2Nj
+c0MTcsMTA4OTQ0NTExNSw3MDI4ODg4NjQsLTE5NTE3ODY4NjEs
+LTk3MTM0NDI5NV19
 -->
