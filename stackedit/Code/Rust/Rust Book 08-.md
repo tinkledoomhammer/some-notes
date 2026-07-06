@@ -1299,8 +1299,11 @@ impl<T> Option<T> {
 	where
 		F: FnOnce() -> T
 	// -- snip //
+
 // An unrelated example
-fn do_stuff<'a, F: Fn(u8,
+fn do_stuff<'a, F: Fn(u8,&'a str) -> &'a str>{ f(1,"hello");}
+//...
+do_stuff(|n,s| &s[n.into()..]);
 ```
 
 * If the closure doesn't capture anything from the environment, then the name of a function can be used.
@@ -1326,7 +1329,7 @@ fn do_stuff<'a, F: Fn(u8,
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NjE0MTQ1OCwtNzY3MjI3Nzc2LC0xNj
+eyJoaXN0b3J5IjpbMTQ3NTkwMTE1OCwtNzY3MjI3Nzc2LC0xNj
 Y4MDA1NjA4LC0xMjI1NTgxNTA2LC03MTE3NTA5OSwtMTExNjk0
 MTI5NSwtMTI4NzcwNzc4MCwtMTEwMDk5NTA2MywtNTUzNDQ2MT
 IxLC0yMTAxMzk3MzU3LC0yMTAxMzk3MzU3LC0xNzE2MjgyOTMy
