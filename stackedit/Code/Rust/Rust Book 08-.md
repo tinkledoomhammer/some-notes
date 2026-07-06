@@ -1267,9 +1267,11 @@ fn main() {
 	let list3 = list.clone();
 	
 	let only_borrows = || println!("From closure: {list:?}");
-	let mut_borrow = || list1.push(4);
-	let moves = move || println!("From another thred: {list2:?}");
+	let mut_borrow = || list2.push(4);
+	let moves = move || println!("From another thred: {list3:?}");
 	thread::spawn(moves).join().unwrap();
+	//alternatively
+	let moves = || some_function_that_consumes(list3);
 	
 }
 ```
@@ -1294,11 +1296,11 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTY5NDEyOTUsLTEyODc3MDc3ODAsLT
-ExMDA5OTUwNjMsLTU1MzQ0NjEyMSwtMjEwMTM5NzM1NywtMjEw
-MTM5NzM1NywtMTcxNjI4MjkzMiw4MDk0MjE2NjYsMTg0NTc0Nz
-Q3MCwtMzQ1Nzk0Mjk5LDgyOTkwOTU4MSw5Nzg2ODAzNywtMTQw
-MzY2NzQxNywxMDg5NDQ1MTE1LDcwMjg4ODg2NCwtMTk1MTc4Nj
-g2MSwtOTcxMzQ0Mjk1LC0xMDIwODgwODUsLTE5NTkzNTM3ODUs
-MjA4MDg3Mzc4Nl19
+eyJoaXN0b3J5IjpbLTcxMTc1MDk5LC0xMTE2OTQxMjk1LC0xMj
+g3NzA3NzgwLC0xMTAwOTk1MDYzLC01NTM0NDYxMjEsLTIxMDEz
+OTczNTcsLTIxMDEzOTczNTcsLTE3MTYyODI5MzIsODA5NDIxNj
+Y2LDE4NDU3NDc0NzAsLTM0NTc5NDI5OSw4Mjk5MDk1ODEsOTc4
+NjgwMzcsLTE0MDM2Njc0MTcsMTA4OTQ0NTExNSw3MDI4ODg4Nj
+QsLTE5NTE3ODY4NjEsLTk3MTM0NDI5NSwtMTAyMDg4MDg1LC0x
+OTU5MzUzNzg1XX0=
 -->
