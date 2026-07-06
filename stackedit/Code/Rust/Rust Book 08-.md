@@ -1300,7 +1300,8 @@ impl<T> Option<T> {
 		F: FnOnce() -> T
 	// -- snip //
 // An unrelated example
-let f: Fn(u8,&str)-> &str = |n,s| ->&s[n..];
+fn do_stuff( f: Fn(u8,&str)-> &str)
+do_stuff( |n,s| ->&s[n..];)
 ```
 
 * If the closure doesn't capture anything from the environment, then the name of a function can be used.
@@ -1326,11 +1327,11 @@ let f: Fn(u8,&str)-> &str = |n,s| ->&s[n..];
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjgwMDU2MDgsLTEyMjU1ODE1MDYsLT
-cxMTc1MDk5LC0xMTE2OTQxMjk1LC0xMjg3NzA3NzgwLC0xMTAw
-OTk1MDYzLC01NTM0NDYxMjEsLTIxMDEzOTczNTcsLTIxMDEzOT
-czNTcsLTE3MTYyODI5MzIsODA5NDIxNjY2LDE4NDU3NDc0NzAs
-LTM0NTc5NDI5OSw4Mjk5MDk1ODEsOTc4NjgwMzcsLTE0MDM2Nj
-c0MTcsMTA4OTQ0NTExNSw3MDI4ODg4NjQsLTE5NTE3ODY4NjEs
-LTk3MTM0NDI5NV19
+eyJoaXN0b3J5IjpbLTc2NzIyNzc3NiwtMTY2ODAwNTYwOCwtMT
+IyNTU4MTUwNiwtNzExNzUwOTksLTExMTY5NDEyOTUsLTEyODc3
+MDc3ODAsLTExMDA5OTUwNjMsLTU1MzQ0NjEyMSwtMjEwMTM5Nz
+M1NywtMjEwMTM5NzM1NywtMTcxNjI4MjkzMiw4MDk0MjE2NjYs
+MTg0NTc0NzQ3MCwtMzQ1Nzk0Mjk5LDgyOTkwOTU4MSw5Nzg2OD
+AzNywtMTQwMzY2NzQxNywxMDg5NDQ1MTE1LDcwMjg4ODg2NCwt
+MTk1MTc4Njg2MV19
 -->
