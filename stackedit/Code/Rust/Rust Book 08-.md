@@ -1292,6 +1292,15 @@ fn main() {
 : can be called more than once
 : closures that implement `Fn` also implement `FnMut` and `FnOnce`
 
+* When specifying the trait bounds, types may be necessary
+```rust
+impl<T> Option<T> {
+	pub fn unwrap_or_els<F>(self, f: F) ->T
+	where
+		F: FnOnce() -> T
+		//sn
+```
+
 ## 13.03 Improving Our I/O Project
 
 ## 13.04 Performance in Loops vs Iterators
@@ -1312,11 +1321,11 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODEwMjgzMzYsLTEyMjU1ODE1MDYsLT
-cxMTc1MDk5LC0xMTE2OTQxMjk1LC0xMjg3NzA3NzgwLC0xMTAw
-OTk1MDYzLC01NTM0NDYxMjEsLTIxMDEzOTczNTcsLTIxMDEzOT
-czNTcsLTE3MTYyODI5MzIsODA5NDIxNjY2LDE4NDU3NDc0NzAs
-LTM0NTc5NDI5OSw4Mjk5MDk1ODEsOTc4NjgwMzcsLTE0MDM2Nj
-c0MTcsMTA4OTQ0NTExNSw3MDI4ODg4NjQsLTE5NTE3ODY4NjEs
-LTk3MTM0NDI5NV19
+eyJoaXN0b3J5IjpbLTIxNDcwODc1MywtMTIyNTU4MTUwNiwtNz
+ExNzUwOTksLTExMTY5NDEyOTUsLTEyODc3MDc3ODAsLTExMDA5
+OTUwNjMsLTU1MzQ0NjEyMSwtMjEwMTM5NzM1NywtMjEwMTM5Nz
+M1NywtMTcxNjI4MjkzMiw4MDk0MjE2NjYsMTg0NTc0NzQ3MCwt
+MzQ1Nzk0Mjk5LDgyOTkwOTU4MSw5Nzg2ODAzNywtMTQwMzY2Nz
+QxNywxMDg5NDQ1MTE1LDcwMjg4ODg2NCwtMTk1MTc4Njg2MSwt
+OTcxMzQ0Mjk1XX0=
 -->
