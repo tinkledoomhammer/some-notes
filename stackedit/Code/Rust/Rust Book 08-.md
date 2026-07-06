@@ -1298,8 +1298,10 @@ impl<T> Option<T> {
 	pub fn unwrap_or_els<F>(self, f: F) ->T
 	where
 		F: FnOnce() -> T
-		//sn
+	// -- snip //
 ```
+
+* If the closure doesn't 
 
 ## 13.03 Improving Our I/O Project
 
@@ -1321,11 +1323,11 @@ impl<T> Option<T> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDcwODc1MywtMTIyNTU4MTUwNiwtNz
-ExNzUwOTksLTExMTY5NDEyOTUsLTEyODc3MDc3ODAsLTExMDA5
-OTUwNjMsLTU1MzQ0NjEyMSwtMjEwMTM5NzM1NywtMjEwMTM5Nz
-M1NywtMTcxNjI4MjkzMiw4MDk0MjE2NjYsMTg0NTc0NzQ3MCwt
-MzQ1Nzk0Mjk5LDgyOTkwOTU4MSw5Nzg2ODAzNywtMTQwMzY2Nz
-QxNywxMDg5NDQ1MTE1LDcwMjg4ODg2NCwtMTk1MTc4Njg2MSwt
-OTcxMzQ0Mjk1XX0=
+eyJoaXN0b3J5IjpbLTQwMTIyNjg5LC0xMjI1NTgxNTA2LC03MT
+E3NTA5OSwtMTExNjk0MTI5NSwtMTI4NzcwNzc4MCwtMTEwMDk5
+NTA2MywtNTUzNDQ2MTIxLC0yMTAxMzk3MzU3LC0yMTAxMzk3Mz
+U3LC0xNzE2MjgyOTMyLDgwOTQyMTY2NiwxODQ1NzQ3NDcwLC0z
+NDU3OTQyOTksODI5OTA5NTgxLDk3ODY4MDM3LC0xNDAzNjY3ND
+E3LDEwODk0NDUxMTUsNzAyODg4ODY0LC0xOTUxNzg2ODYxLC05
+NzEzNDQyOTVdfQ==
 -->
