@@ -1293,6 +1293,7 @@ fn main() {
 : can be called more than once
 : closures that implement `Fn` also implement `FnMut` and `FnOnce`
 : Applies to the fewest closures, makes the most flexible return type
+: Not as flexible for argument types
 : useful for closures that can be called multiple times concurrently
 
 * When specifying the trait bounds, types may be necessary
@@ -1336,11 +1337,11 @@ do_stuff(|n,s| &s[n.into()..]);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NjM0MTY2MCwxNDc1OTAxMTU4LC03Nj
-cyMjc3NzYsLTE2NjgwMDU2MDgsLTEyMjU1ODE1MDYsLTcxMTc1
-MDk5LC0xMTE2OTQxMjk1LC0xMjg3NzA3NzgwLC0xMTAwOTk1MD
-YzLC01NTM0NDYxMjEsLTIxMDEzOTczNTcsLTIxMDEzOTczNTcs
-LTE3MTYyODI5MzIsODA5NDIxNjY2LDE4NDU3NDc0NzAsLTM0NT
-c5NDI5OSw4Mjk5MDk1ODEsOTc4NjgwMzcsLTE0MDM2Njc0MTcs
-MTA4OTQ0NTExNV19
+eyJoaXN0b3J5IjpbMjIwMTkxMzMxLDExNTYzNDE2NjAsMTQ3NT
+kwMTE1OCwtNzY3MjI3Nzc2LC0xNjY4MDA1NjA4LC0xMjI1NTgx
+NTA2LC03MTE3NTA5OSwtMTExNjk0MTI5NSwtMTI4NzcwNzc4MC
+wtMTEwMDk5NTA2MywtNTUzNDQ2MTIxLC0yMTAxMzk3MzU3LC0y
+MTAxMzk3MzU3LC0xNzE2MjgyOTMyLDgwOTQyMTY2NiwxODQ1Nz
+Q3NDcwLC0zNDU3OTQyOTksODI5OTA5NTgxLDk3ODY4MDM3LC0x
+NDAzNjY3NDE3XX0=
 -->
