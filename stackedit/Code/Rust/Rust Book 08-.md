@@ -1349,6 +1349,9 @@ impl<F: Fn(i32) -> i32> Analyzer<F> {
 	}
 }
 ```
+* If `F` was `FnMut` then `fn process(&self...` would have to be take `&mut self`
+* If `F` was `FnOnce` then `fn process...` could only be  called once
+
 ## 13.03 Improving Our I/O Project
 
 ## 13.04 Performance in Loops vs Iterators
@@ -1369,11 +1372,11 @@ impl<F: Fn(i32) -> i32> Analyzer<F> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzg0MTEzMDAsMjIwMTkxMzMxLDExNT
-YzNDE2NjAsMTQ3NTkwMTE1OCwtNzY3MjI3Nzc2LC0xNjY4MDA1
-NjA4LC0xMjI1NTgxNTA2LC03MTE3NTA5OSwtMTExNjk0MTI5NS
-wtMTI4NzcwNzc4MCwtMTEwMDk5NTA2MywtNTUzNDQ2MTIxLC0y
-MTAxMzk3MzU3LC0yMTAxMzk3MzU3LC0xNzE2MjgyOTMyLDgwOT
-QyMTY2NiwxODQ1NzQ3NDcwLC0zNDU3OTQyOTksODI5OTA5NTgx
-LDk3ODY4MDM3XX0=
+eyJoaXN0b3J5IjpbMTc0MzgyMTE1OSwyMjAxOTEzMzEsMTE1Nj
+M0MTY2MCwxNDc1OTAxMTU4LC03NjcyMjc3NzYsLTE2NjgwMDU2
+MDgsLTEyMjU1ODE1MDYsLTcxMTc1MDk5LC0xMTE2OTQxMjk1LC
+0xMjg3NzA3NzgwLC0xMTAwOTk1MDYzLC01NTM0NDYxMjEsLTIx
+MDEzOTczNTcsLTIxMDEzOTczNTcsLTE3MTYyODI5MzIsODA5ND
+IxNjY2LDE4NDU3NDc0NzAsLTM0NTc5NDI5OSw4Mjk5MDk1ODEs
+OTc4NjgwMzddfQ==
 -->
