@@ -1282,7 +1282,7 @@ fn main() {
 : applies to closures that can be called at least once
 : i.e. all closures
 : closures that move their captured values out will **only** implement `FnOnce`
-: Should be used as an argumen
+: Should be used as an argument type when the closure is only called once because
 
 `FnMut`
 : applies to closures that **might** mutate their captures
@@ -1334,7 +1334,7 @@ do_stuff(|n,s| &s[n.into()..]);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5NjQxOTA2MiwxNDc1OTAxMTU4LC03Nj
+eyJoaXN0b3J5IjpbMTcwNzA0MTExNCwxNDc1OTAxMTU4LC03Nj
 cyMjc3NzYsLTE2NjgwMDU2MDgsLTEyMjU1ODE1MDYsLTcxMTc1
 MDk5LC0xMTE2OTQxMjk1LC0xMjg3NzA3NzgwLC0xMTAwOTk1MD
 YzLC01NTM0NDYxMjEsLTIxMDEzOTczNTcsLTIxMDEzOTczNTcs
