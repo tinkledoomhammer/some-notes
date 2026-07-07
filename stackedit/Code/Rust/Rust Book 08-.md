@@ -1282,6 +1282,7 @@ fn main() {
 : applies to closures that can be called at least once
 : i.e. all closures
 : closures that move their captured values out will **only** implement `FnOnce`
+: Should be used as an argumen
 
 `FnMut`
 : applies to closures that **might** mutate their captures
@@ -1333,11 +1334,11 @@ do_stuff(|n,s| &s[n.into()..]);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzExNDIyMjEsMTQ3NTkwMTE1OCwtNz
-Y3MjI3Nzc2LC0xNjY4MDA1NjA4LC0xMjI1NTgxNTA2LC03MTE3
-NTA5OSwtMTExNjk0MTI5NSwtMTI4NzcwNzc4MCwtMTEwMDk5NT
-A2MywtNTUzNDQ2MTIxLC0yMTAxMzk3MzU3LC0yMTAxMzk3MzU3
-LC0xNzE2MjgyOTMyLDgwOTQyMTY2NiwxODQ1NzQ3NDcwLC0zND
-U3OTQyOTksODI5OTA5NTgxLDk3ODY4MDM3LC0xNDAzNjY3NDE3
-LDEwODk0NDUxMTVdfQ==
+eyJoaXN0b3J5IjpbLTI5NjQxOTA2MiwxNDc1OTAxMTU4LC03Nj
+cyMjc3NzYsLTE2NjgwMDU2MDgsLTEyMjU1ODE1MDYsLTcxMTc1
+MDk5LC0xMTE2OTQxMjk1LC0xMjg3NzA3NzgwLC0xMTAwOTk1MD
+YzLC01NTM0NDYxMjEsLTIxMDEzOTczNTcsLTIxMDEzOTczNTcs
+LTE3MTYyODI5MzIsODA5NDIxNjY2LDE4NDU3NDc0NzAsLTM0NT
+c5NDI5OSw4Mjk5MDk1ODEsOTc4NjgwMzcsLTE0MDM2Njc0MTcs
+MTA4OTQ0NTExNV19
 -->
