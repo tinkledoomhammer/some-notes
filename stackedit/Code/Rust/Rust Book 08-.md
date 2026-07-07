@@ -1322,10 +1322,18 @@ do_stuff(|n,s| &s[n.into()..]);
 // does NOT compile
 fn main() {
 	let mut s = String::from("Hello");
-	let mut add_suffix = || s.push_str(" world");
-	println!("{s}");
-	add_suffix(); // releases the imm
+	let mut add_suffix = || s.push_str(" world"); // mut borrow of s
+	println!("{s}"); // fails because s is mutably borrowed
+	add_suffix(); // releases the muttable borrow
 }
+```
+```rust
+//this one works
+fn main() {
+	let mut s = String::from("hello");
+	let add_suffix = |s: &mut String| s.push_str(" world");
+	println!("{s}");
+	add_suffix(&
 ```
 
 ## 13.03 Improving Our I/O Project
@@ -1348,7 +1356,7 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUwODkxMDk0LDIyMDE5MTMzMSwxMTU2Mz
+eyJoaXN0b3J5IjpbODk5MjI2ODMyLDIyMDE5MTMzMSwxMTU2Mz
 QxNjYwLDE0NzU5MDExNTgsLTc2NzIyNzc3NiwtMTY2ODAwNTYw
 OCwtMTIyNTU4MTUwNiwtNzExNzUwOTksLTExMTY5NDEyOTUsLT
 EyODc3MDc3ODAsLTExMDA5OTUwNjMsLTU1MzQ0NjEyMSwtMjEw
