@@ -1317,6 +1317,17 @@ do_stuff(|n,s| &s[n.into()..]);
 * The `move` keyword will force captures to move into the closure 
 	* i.e. `move |x| y.do_stuff(x)` will move `y`
 
+### Exercises
+```rust
+// does NOT compile
+fn main() {
+	let mut s = String::from("Hello");
+	let mut add_suffix = || s.push_str(" world");
+	println!("{s}");
+	add_suffix(); // releases the imm
+}
+```
+
 ## 13.03 Improving Our I/O Project
 
 ## 13.04 Performance in Loops vs Iterators
@@ -1337,11 +1348,11 @@ do_stuff(|n,s| &s[n.into()..]);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIwMTkxMzMxLDExNTYzNDE2NjAsMTQ3NT
-kwMTE1OCwtNzY3MjI3Nzc2LC0xNjY4MDA1NjA4LC0xMjI1NTgx
-NTA2LC03MTE3NTA5OSwtMTExNjk0MTI5NSwtMTI4NzcwNzc4MC
-wtMTEwMDk5NTA2MywtNTUzNDQ2MTIxLC0yMTAxMzk3MzU3LC0y
-MTAxMzk3MzU3LC0xNzE2MjgyOTMyLDgwOTQyMTY2NiwxODQ1Nz
-Q3NDcwLC0zNDU3OTQyOTksODI5OTA5NTgxLDk3ODY4MDM3LC0x
-NDAzNjY3NDE3XX0=
+eyJoaXN0b3J5IjpbOTUwODkxMDk0LDIyMDE5MTMzMSwxMTU2Mz
+QxNjYwLDE0NzU5MDExNTgsLTc2NzIyNzc3NiwtMTY2ODAwNTYw
+OCwtMTIyNTU4MTUwNiwtNzExNzUwOTksLTExMTY5NDEyOTUsLT
+EyODc3MDc3ODAsLTExMDA5OTUwNjMsLTU1MzQ0NjEyMSwtMjEw
+MTM5NzM1NywtMjEwMTM5NzM1NywtMTcxNjI4MjkzMiw4MDk0Mj
+E2NjYsMTg0NTc0NzQ3MCwtMzQ1Nzk0Mjk5LDgyOTkwOTU4MSw5
+Nzg2ODAzN119
 -->
