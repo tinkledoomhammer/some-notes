@@ -1339,7 +1339,15 @@ fn main() {
 
 
 ```rust
-pub struct Aana
+pub struct Analyzer<F> {
+	postprocess: F
+}
+//below, F must be Fn
+impl<F: Fn(i32) -> i32> Analyzer<F> {
+	pub fn process(&self, n: i32) -> i32 {
+		(self.postprocess)(n)
+	}
+}
 ```
 ## 13.03 Improving Our I/O Project
 
@@ -1361,11 +1369,11 @@ pub struct Aana
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkyMjM5MTQsMjIwMTkxMzMxLDExNTYzND
-E2NjAsMTQ3NTkwMTE1OCwtNzY3MjI3Nzc2LC0xNjY4MDA1NjA4
-LC0xMjI1NTgxNTA2LC03MTE3NTA5OSwtMTExNjk0MTI5NSwtMT
-I4NzcwNzc4MCwtMTEwMDk5NTA2MywtNTUzNDQ2MTIxLC0yMTAx
-Mzk3MzU3LC0yMTAxMzk3MzU3LC0xNzE2MjgyOTMyLDgwOTQyMT
-Y2NiwxODQ1NzQ3NDcwLC0zNDU3OTQyOTksODI5OTA5NTgxLDk3
-ODY4MDM3XX0=
+eyJoaXN0b3J5IjpbLTEwNzg0MTEzMDAsMjIwMTkxMzMxLDExNT
+YzNDE2NjAsMTQ3NTkwMTE1OCwtNzY3MjI3Nzc2LC0xNjY4MDA1
+NjA4LC0xMjI1NTgxNTA2LC03MTE3NTA5OSwtMTExNjk0MTI5NS
+wtMTI4NzcwNzc4MCwtMTEwMDk5NTA2MywtNTUzNDQ2MTIxLC0y
+MTAxMzk3MzU3LC0yMTAxMzk3MzU3LC0xNzE2MjgyOTMyLDgwOT
+QyMTY2NiwxODQ1NzQ3NDcwLC0zNDU3OTQyOTksODI5OTA5NTgx
+LDk3ODY4MDM3XX0=
 -->
