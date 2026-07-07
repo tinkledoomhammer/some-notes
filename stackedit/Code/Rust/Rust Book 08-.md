@@ -1292,7 +1292,8 @@ fn main() {
 : Applies to closures that neither mutate their captures nor move them out of the closure
 : can be called more than once
 : closures that implement `Fn` also implement `FnMut` and `FnOnce`
-: Applies to the fewest closures, 
+: Applies to the fewest closures, makes the most flexible return type
+: useful for closures that can be called multiple times concurrently
 
 * When specifying the trait bounds, types may be necessary
 ```rust
@@ -1335,7 +1336,7 @@ do_stuff(|n,s| &s[n.into()..]);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NzY2NTc5NiwxNDc1OTAxMTU4LC03Nj
+eyJoaXN0b3J5IjpbMTE1NjM0MTY2MCwxNDc1OTAxMTU4LC03Nj
 cyMjc3NzYsLTE2NjgwMDU2MDgsLTEyMjU1ODE1MDYsLTcxMTc1
 MDk5LC0xMTE2OTQxMjk1LC0xMjg3NzA3NzgwLC0xMTAwOTk1MD
 YzLC01NTM0NDYxMjEsLTIxMDEzOTczNTcsLTIxMDEzOTczNTcs
