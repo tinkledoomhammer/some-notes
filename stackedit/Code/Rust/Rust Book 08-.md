@@ -1287,6 +1287,7 @@ fn main() {
 `FnMut`
 : applies to closures that **might** mutate their captures
 : can be called more than once 
+: **Must** be declared as `mut` to be invoked
 
 `Fn`
 : Applies to closures that neither mutate their captures nor move them out of the closure
@@ -1333,9 +1334,13 @@ fn main() {
 	let mut s = String::from("hello");
 	let add_suffix = |s: &mut String| s.push_str(" world");
 	println!("{s}");
-	add_suffix(&
+	add_suffix(&mut s); // This is the only borrow
 ```
 
+
+```rust
+pub struct Aana
+```
 ## 13.03 Improving Our I/O Project
 
 ## 13.04 Performance in Loops vs Iterators
@@ -1356,11 +1361,11 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk5MjI2ODMyLDIyMDE5MTMzMSwxMTU2Mz
-QxNjYwLDE0NzU5MDExNTgsLTc2NzIyNzc3NiwtMTY2ODAwNTYw
-OCwtMTIyNTU4MTUwNiwtNzExNzUwOTksLTExMTY5NDEyOTUsLT
-EyODc3MDc3ODAsLTExMDA5OTUwNjMsLTU1MzQ0NjEyMSwtMjEw
-MTM5NzM1NywtMjEwMTM5NzM1NywtMTcxNjI4MjkzMiw4MDk0Mj
-E2NjYsMTg0NTc0NzQ3MCwtMzQ1Nzk0Mjk5LDgyOTkwOTU4MSw5
-Nzg2ODAzN119
+eyJoaXN0b3J5IjpbOTkyMjM5MTQsMjIwMTkxMzMxLDExNTYzND
+E2NjAsMTQ3NTkwMTE1OCwtNzY3MjI3Nzc2LC0xNjY4MDA1NjA4
+LC0xMjI1NTgxNTA2LC03MTE3NTA5OSwtMTExNjk0MTI5NSwtMT
+I4NzcwNzc4MCwtMTEwMDk5NTA2MywtNTUzNDQ2MTIxLC0yMTAx
+Mzk3MzU3LC0yMTAxMzk3MzU3LC0xNzE2MjgyOTMyLDgwOTQyMT
+Y2NiwxODQ1NzQ3NDcwLC0zNDU3OTQyOTksODI5OTA5NTgxLDk3
+ODY4MDM3XX0=
 -->
