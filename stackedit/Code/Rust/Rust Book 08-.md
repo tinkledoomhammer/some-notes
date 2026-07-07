@@ -1309,6 +1309,9 @@ do_stuff(|n,s| &s[n.into()..]);
 * If the closure doesn't capture anything from the environment, then the name of a function can be used.
 * i.e. `unwrap_or_else(Vec::new)` is the same as `unwrap_or_else(|| Vec::new())`
 
+* The `move` keyword will force captures to move into the closure 
+	* i.e. ```rust```
+
 ## 13.03 Improving Our I/O Project
 
 ## 13.04 Performance in Loops vs Iterators
@@ -1329,11 +1332,11 @@ do_stuff(|n,s| &s[n.into()..]);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3NTkwMTE1OCwtNzY3MjI3Nzc2LC0xNj
-Y4MDA1NjA4LC0xMjI1NTgxNTA2LC03MTE3NTA5OSwtMTExNjk0
-MTI5NSwtMTI4NzcwNzc4MCwtMTEwMDk5NTA2MywtNTUzNDQ2MT
-IxLC0yMTAxMzk3MzU3LC0yMTAxMzk3MzU3LC0xNzE2MjgyOTMy
-LDgwOTQyMTY2NiwxODQ1NzQ3NDcwLC0zNDU3OTQyOTksODI5OT
-A5NTgxLDk3ODY4MDM3LC0xNDAzNjY3NDE3LDEwODk0NDUxMTUs
-NzAyODg4ODY0XX0=
+eyJoaXN0b3J5IjpbLTExNTQ0NTcyNDEsMTQ3NTkwMTE1OCwtNz
+Y3MjI3Nzc2LC0xNjY4MDA1NjA4LC0xMjI1NTgxNTA2LC03MTE3
+NTA5OSwtMTExNjk0MTI5NSwtMTI4NzcwNzc4MCwtMTEwMDk5NT
+A2MywtNTUzNDQ2MTIxLC0yMTAxMzk3MzU3LC0yMTAxMzk3MzU3
+LC0xNzE2MjgyOTMyLDgwOTQyMTY2NiwxODQ1NzQ3NDcwLC0zND
+U3OTQyOTksODI5OTA5NTgxLDk3ODY4MDM3LC0xNDAzNjY3NDE3
+LDEwODk0NDUxMTVdfQ==
 -->
