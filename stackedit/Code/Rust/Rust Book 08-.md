@@ -1281,7 +1281,7 @@ fn main() {
 `FnOnce`
 : applies to closures that can be called at least once
 : i.e. all closures
-: closures that move their captured values out will only implement `FnOnce`
+: closures that move their captured values out will **only** implement `FnOnce`
 
 `FnMut`
 : applies to closures that **might** mutate their captures
@@ -1308,6 +1308,7 @@ do_stuff(|n,s| &s[n.into()..]);
 
 * If the closure doesn't capture anything from the environment, then the name of a function can be used.
 * i.e. `unwrap_or_else(Vec::new)` is the same as `unwrap_or_else(|| Vec::new())`
+* I guess this is like casting a function pointer to a `Fn` closure
 
 * The `move` keyword will force captures to move into the closure 
 	* i.e. `move |x| y.do_stuff(x)` will move `y`
@@ -1332,7 +1333,7 @@ do_stuff(|n,s| &s[n.into()..]);
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzQ2ODA1MjYsMTQ3NTkwMTE1OCwtNz
+eyJoaXN0b3J5IjpbLTEwMzExNDIyMjEsMTQ3NTkwMTE1OCwtNz
 Y3MjI3Nzc2LC0xNjY4MDA1NjA4LC0xMjI1NTgxNTA2LC03MTE3
 NTA5OSwtMTExNjk0MTI5NSwtMTI4NzcwNzc4MCwtMTEwMDk5NT
 A2MywtNTUzNDQ2MTIxLC0yMTAxMzk3MzU3LC0yMTAxMzk3MzU3
