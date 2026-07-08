@@ -1404,7 +1404,7 @@ fn iterator_sum() {
 
 Iterator Adapters
 : Methods defined on `Iterator` that don't consume the iterator but return a different iterator
-: i.e. `.map(Fn(Self::Item))`
+: i.e. `.map(Fn(Self::Item)->_)`
 ```rust
 #[test]
 fn test_map() {
@@ -1435,11 +1435,11 @@ fn test_map() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxODg2ODEzMSwtMTg4NzU0NzU5Nyw0MD
-MxMjQ1ODgsMTY4OTQ1MzU1MiwxMzYxOTE0NDg3LDE3NDM4MjEx
-NTksMjIwMTkxMzMxLDExNTYzNDE2NjAsMTQ3NTkwMTE1OCwtNz
-Y3MjI3Nzc2LC0xNjY4MDA1NjA4LC0xMjI1NTgxNTA2LC03MTE3
-NTA5OSwtMTExNjk0MTI5NSwtMTI4NzcwNzc4MCwtMTEwMDk5NT
-A2MywtNTUzNDQ2MTIxLC0yMTAxMzk3MzU3LC0yMTAxMzk3MzU3
-LC0xNzE2MjgyOTMyXX0=
+eyJoaXN0b3J5IjpbMjQ3ODk5ODQ1LC0xODg3NTQ3NTk3LDQwMz
+EyNDU4OCwxNjg5NDUzNTUyLDEzNjE5MTQ0ODcsMTc0MzgyMTE1
+OSwyMjAxOTEzMzEsMTE1NjM0MTY2MCwxNDc1OTAxMTU4LC03Nj
+cyMjc3NzYsLTE2NjgwMDU2MDgsLTEyMjU1ODE1MDYsLTcxMTc1
+MDk5LC0xMTE2OTQxMjk1LC0xMjg3NzA3NzgwLC0xMTAwOTk1MD
+YzLC01NTM0NDYxMjEsLTIxMDEzOTczNTcsLTIxMDEzOTczNTcs
+LTE3MTYyODI5MzJdfQ==
 -->
