@@ -1417,7 +1417,9 @@ fn test_map() {
 Go over iterator methods and pay attention to types. Some take `fn(&T)->T`, for example
 
 ## 13.03 Improving Our I/O Project
-
+### Removing `clone` using an iterator
+* In the original version, `main` pulled `env::args` as a `vec`
+* Then they were cloned into `config`
 ## 13.04 Performance in Loops vs Iterators
 
 
@@ -1436,11 +1438,11 @@ Go over iterator methods and pay attention to types. Some take `fn(&T)->T`, for 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5MzAxNTk3NCwyNDc4OTk4NDUsLTE4OD
-c1NDc1OTcsNDAzMTI0NTg4LDE2ODk0NTM1NTIsMTM2MTkxNDQ4
-NywxNzQzODIxMTU5LDIyMDE5MTMzMSwxMTU2MzQxNjYwLDE0Nz
-U5MDExNTgsLTc2NzIyNzc3NiwtMTY2ODAwNTYwOCwtMTIyNTU4
-MTUwNiwtNzExNzUwOTksLTExMTY5NDEyOTUsLTEyODc3MDc3OD
-AsLTExMDA5OTUwNjMsLTU1MzQ0NjEyMSwtMjEwMTM5NzM1Nywt
-MjEwMTM5NzM1N119
+eyJoaXN0b3J5IjpbLTMyMjgzMDYzMiwtOTkzMDE1OTc0LDI0Nz
+g5OTg0NSwtMTg4NzU0NzU5Nyw0MDMxMjQ1ODgsMTY4OTQ1MzU1
+MiwxMzYxOTE0NDg3LDE3NDM4MjExNTksMjIwMTkxMzMxLDExNT
+YzNDE2NjAsMTQ3NTkwMTE1OCwtNzY3MjI3Nzc2LC0xNjY4MDA1
+NjA4LC0xMjI1NTgxNTA2LC03MTE3NTA5OSwtMTExNjk0MTI5NS
+wtMTI4NzcwNzc4MCwtMTEwMDk5NTA2MywtNTUzNDQ2MTIxLC0y
+MTAxMzk3MzU3XX0=
 -->
