@@ -1423,7 +1423,14 @@ Go over iterator methods and pay attention to types. Some take `fn(&T)->T`, for 
 * But `env::args` returns an iterator
 * so the refactor hands the iterator to `Config::build`
 * Then the `.next()` is stepped through to pull individual params
-
+```rust
+impl Config {
+	fn build(mut args: impl Iterator<Item = String>) -> Result<Config, &'static str> {
+		args.next(); // discard the executable name
+		let query = match args.next() {
+			Some(args) => arg,
+			None => retur
+```
 ## 13.04 Performance in Loops vs Iterators
 
 
@@ -1442,11 +1449,11 @@ Go over iterator methods and pay attention to types. Some take `fn(&T)->T`, for 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzc3MjEyNDcsLTk5MzAxNTk3NCwyND
-c4OTk4NDUsLTE4ODc1NDc1OTcsNDAzMTI0NTg4LDE2ODk0NTM1
-NTIsMTM2MTkxNDQ4NywxNzQzODIxMTU5LDIyMDE5MTMzMSwxMT
-U2MzQxNjYwLDE0NzU5MDExNTgsLTc2NzIyNzc3NiwtMTY2ODAw
-NTYwOCwtMTIyNTU4MTUwNiwtNzExNzUwOTksLTExMTY5NDEyOT
-UsLTEyODc3MDc3ODAsLTExMDA5OTUwNjMsLTU1MzQ0NjEyMSwt
-MjEwMTM5NzM1N119
+eyJoaXN0b3J5IjpbNjU4ODI1NDI5LC05OTMwMTU5NzQsMjQ3OD
+k5ODQ1LC0xODg3NTQ3NTk3LDQwMzEyNDU4OCwxNjg5NDUzNTUy
+LDEzNjE5MTQ0ODcsMTc0MzgyMTE1OSwyMjAxOTEzMzEsMTE1Nj
+M0MTY2MCwxNDc1OTAxMTU4LC03NjcyMjc3NzYsLTE2NjgwMDU2
+MDgsLTEyMjU1ODE1MDYsLTcxMTc1MDk5LC0xMTE2OTQxMjk1LC
+0xMjg3NzA3NzgwLC0xMTAwOTk1MDYzLC01NTM0NDYxMjEsLTIx
+MDEzOTczNTddfQ==
 -->
