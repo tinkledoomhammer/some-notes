@@ -1386,7 +1386,9 @@ fn iterator_demonstration() {
 `iter_mut`
 : iterates over mutable references `&mut Item`
 
-
+### Methods that Consume the Iterator
+* The `Iterator` trait has a number of different methods with default implementations in the standard library.
+* Many
 
 ## 13.03 Improving Our I/O Project
 
@@ -1408,7 +1410,7 @@ fn iterator_demonstration() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwODg3Mzc2NSw0MDMxMjQ1ODgsMTY4OT
+eyJoaXN0b3J5IjpbMTE0NDMyNDE4Miw0MDMxMjQ1ODgsMTY4OT
 Q1MzU1MiwxMzYxOTE0NDg3LDE3NDM4MjExNTksMjIwMTkxMzMx
 LDExNTYzNDE2NjAsMTQ3NTkwMTE1OCwtNzY3MjI3Nzc2LC0xNj
 Y4MDA1NjA4LC0xMjI1NTgxNTA2LC03MTE3NTA5OSwtMTExNjk0
