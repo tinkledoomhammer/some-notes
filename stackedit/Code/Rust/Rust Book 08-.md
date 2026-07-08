@@ -1354,7 +1354,9 @@ impl<F: Fn(i32) -> i32> Analyzer<F> {
 
 Some Additional Experiments
 * a closure that is not declared as `mut` can be passed to a function requiring `FnMut`
-* 
+	* but if it mutates its environment, then it cannot be called directly (where it was declared)
+	* though it can be coerced into a `&mut` by passing it to a function that takes `mut FnMut`
+
 
 ## 13.03 Improving Our I/O Project
 
@@ -1376,11 +1378,11 @@ Some Additional Experiments
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MTkxNDQ4NywxNzQzODIxMTU5LDIyMD
-E5MTMzMSwxMTU2MzQxNjYwLDE0NzU5MDExNTgsLTc2NzIyNzc3
-NiwtMTY2ODAwNTYwOCwtMTIyNTU4MTUwNiwtNzExNzUwOTksLT
-ExMTY5NDEyOTUsLTEyODc3MDc3ODAsLTExMDA5OTUwNjMsLTU1
-MzQ0NjEyMSwtMjEwMTM5NzM1NywtMjEwMTM5NzM1NywtMTcxNj
-I4MjkzMiw4MDk0MjE2NjYsMTg0NTc0NzQ3MCwtMzQ1Nzk0Mjk5
-LDgyOTkwOTU4MV19
+eyJoaXN0b3J5IjpbMTY4OTQ1MzU1MiwxMzYxOTE0NDg3LDE3ND
+M4MjExNTksMjIwMTkxMzMxLDExNTYzNDE2NjAsMTQ3NTkwMTE1
+OCwtNzY3MjI3Nzc2LC0xNjY4MDA1NjA4LC0xMjI1NTgxNTA2LC
+03MTE3NTA5OSwtMTExNjk0MTI5NSwtMTI4NzcwNzc4MCwtMTEw
+MDk5NTA2MywtNTUzNDQ2MTIxLC0yMTAxMzk3MzU3LC0yMTAxMz
+k3MzU3LC0xNzE2MjgyOTMyLDgwOTQyMTY2NiwxODQ1NzQ3NDcw
+LC0zNDU3OTQyOTldfQ==
 -->
