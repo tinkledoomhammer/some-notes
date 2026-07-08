@@ -1381,7 +1381,12 @@ fn iterator_demonstration() {
 }
 ```
 `IntoIter` Trait
-: Consumes the object 
+: `.into_iter` method consumes the collection and returns owned values
+
+`iter_mut`
+: iterates over mutable references `&mut Item`
+
+
 
 ## 13.03 Improving Our I/O Project
 
@@ -1403,11 +1408,11 @@ fn iterator_demonstration() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNDYxOTQwLDQwMzEyNDU4OCwxNjg5ND
-UzNTUyLDEzNjE5MTQ0ODcsMTc0MzgyMTE1OSwyMjAxOTEzMzEs
-MTE1NjM0MTY2MCwxNDc1OTAxMTU4LC03NjcyMjc3NzYsLTE2Nj
-gwMDU2MDgsLTEyMjU1ODE1MDYsLTcxMTc1MDk5LC0xMTE2OTQx
-Mjk1LC0xMjg3NzA3NzgwLC0xMTAwOTk1MDYzLC01NTM0NDYxMj
-EsLTIxMDEzOTczNTcsLTIxMDEzOTczNTcsLTE3MTYyODI5MzIs
-ODA5NDIxNjY2XX0=
+eyJoaXN0b3J5IjpbMTIwODg3Mzc2NSw0MDMxMjQ1ODgsMTY4OT
+Q1MzU1MiwxMzYxOTE0NDg3LDE3NDM4MjExNTksMjIwMTkxMzMx
+LDExNTYzNDE2NjAsMTQ3NTkwMTE1OCwtNzY3MjI3Nzc2LC0xNj
+Y4MDA1NjA4LC0xMjI1NTgxNTA2LC03MTE3NTA5OSwtMTExNjk0
+MTI5NSwtMTI4NzcwNzc4MCwtMTEwMDk5NTA2MywtNTUzNDQ2MT
+IxLC0yMTAxMzk3MzU3LC0yMTAxMzk3MzU3LC0xNzE2MjgyOTMy
+LDgwOTQyMTY2Nl19
 -->
