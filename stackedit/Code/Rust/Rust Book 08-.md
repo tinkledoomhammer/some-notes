@@ -1370,8 +1370,18 @@ pub trait Iterator {
 }
 ```
 ```rust
-#[test]  fn iterator_demonstration() { let v1 = vec![1, 2, 3]; let  mut v1_iter = v1.iter(); assert_eq!(v1_iter.next(), Some(&1)); assert_eq!(v1_iter.next(), Some(&2)); assert_eq!(v1_iter.next(), Some(&3)); assert_eq!(v1_iter.next(), None); }
+#[test]
+fn iterator_demonstration() { 
+		let v1 = vec![1, 2, 3];
+		let  mut v1_iter = v1.iter();
+		assert_eq!(v1_iter.next(), Some(&1)); 
+		assert_eq!(v1_iter.next(), Some(&2)); 
+		assert_eq!(v1_iter.next(), Some(&3)); 
+		assert_eq!(v1_iter.next(), None); 
+}
 ```
+`IntoIter` Trait
+: Consumes the object 
 
 ## 13.03 Improving Our I/O Project
 
@@ -1393,7 +1403,7 @@ pub trait Iterator {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ2ODU4NTE1LDQwMzEyNDU4OCwxNjg5ND
+eyJoaXN0b3J5IjpbMjAxNDYxOTQwLDQwMzEyNDU4OCwxNjg5ND
 UzNTUyLDEzNjE5MTQ0ODcsMTc0MzgyMTE1OSwyMjAxOTEzMzEs
 MTE1NjM0MTY2MCwxNDc1OTAxMTU4LC03NjcyMjc3NzYsLTE2Nj
 gwMDU2MDgsLTEyMjU1ODE1MDYsLTcxMTc1MDk5LC0xMTE2OTQx
