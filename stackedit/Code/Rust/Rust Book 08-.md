@@ -1405,6 +1405,13 @@ fn iterator_sum() {
 Iterator Adapters
 : Methods defined on `Iterator` that don't consume the iterator but return a different iterator
 : i.e. `.map(Fn(Self::Item))`
+```rust
+#[test]
+fn test_map() {
+	let v1: Vec<i32> = vec![1,3,3];
+	let v2: Vec<_> = v1.iter().map(|x| x+1 ).collect();
+	assert_eq!(v2, vec![2,3,4]);
+}
 ```
 
 
@@ -1428,7 +1435,7 @@ Iterator Adapters
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1OTc3MjcyNiwtMTg4NzU0NzU5Nyw0MD
+eyJoaXN0b3J5IjpbLTgxODg2ODEzMSwtMTg4NzU0NzU5Nyw0MD
 MxMjQ1ODgsMTY4OTQ1MzU1MiwxMzYxOTE0NDg3LDE3NDM4MjEx
 NTksMjIwMTkxMzMxLDExNTYzNDE2NjAsMTQ3NTkwMTE1OCwtNz
 Y3MjI3Nzc2LC0xNjY4MDA1NjA4LC0xMjI1NTgxNTA2LC03MTE3
