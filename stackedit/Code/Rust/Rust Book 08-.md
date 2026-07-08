@@ -1467,7 +1467,15 @@ pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
 		.collect()
 }
 ```
+
 ## 13.04 Performance in Loops vs Iterators
+
+
+
+
+
+
+
 
 
 
@@ -1485,11 +1493,11 @@ pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwOTM1Mjc5OSwtOTkzMDE1OTc0LDI0Nz
-g5OTg0NSwtMTg4NzU0NzU5Nyw0MDMxMjQ1ODgsMTY4OTQ1MzU1
-MiwxMzYxOTE0NDg3LDE3NDM4MjExNTksMjIwMTkxMzMxLDExNT
-YzNDE2NjAsMTQ3NTkwMTE1OCwtNzY3MjI3Nzc2LC0xNjY4MDA1
-NjA4LC0xMjI1NTgxNTA2LC03MTE3NTA5OSwtMTExNjk0MTI5NS
-wtMTI4NzcwNzc4MCwtMTEwMDk5NTA2MywtNTUzNDQ2MTIxLC0y
-MTAxMzk3MzU3XX0=
+eyJoaXN0b3J5IjpbLTE3OTU2MjE0MjUsLTk5MzAxNTk3NCwyND
+c4OTk4NDUsLTE4ODc1NDc1OTcsNDAzMTI0NTg4LDE2ODk0NTM1
+NTIsMTM2MTkxNDQ4NywxNzQzODIxMTU5LDIyMDE5MTMzMSwxMT
+U2MzQxNjYwLDE0NzU5MDExNTgsLTc2NzIyNzc3NiwtMTY2ODAw
+NTYwOCwtMTIyNTU4MTUwNiwtNzExNzUwOTksLTExMTY5NDEyOT
+UsLTEyODc3MDc3ODAsLTExMDA5OTUwNjMsLTU1MzQ0NjEyMSwt
+MjEwMTM5NzM1N119
 -->
