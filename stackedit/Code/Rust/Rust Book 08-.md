@@ -1455,6 +1455,17 @@ pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
 	let mut results = Vec::new();
 	for line in contents.lines() {
 		if line.contains(query) {
+			results.push(line);
+		}
+	}
+	results
+}
+//new version
+pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
+	contents.lines()
+		.filter(|line| line.contains(query))
+		.collect()
+}
 ```
 ## 13.04 Performance in Loops vs Iterators
 
@@ -1474,7 +1485,7 @@ pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4Mjc2MzU3MiwtOTkzMDE1OTc0LDI0Nz
+eyJoaXN0b3J5IjpbMTEwOTM1Mjc5OSwtOTkzMDE1OTc0LDI0Nz
 g5OTg0NSwtMTg4NzU0NzU5Nyw0MDMxMjQ1ODgsMTY4OTQ1MzU1
 MiwxMzYxOTE0NDg3LDE3NDM4MjExNTksMjIwMTkxMzMxLDExNT
 YzNDE2NjAsMTQ3NTkwMTE1OCwtNzY3MjI3Nzc2LC0xNjY4MDA1
