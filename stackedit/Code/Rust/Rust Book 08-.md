@@ -1386,7 +1386,6 @@ fn iterator_demonstration() {
 `iter_mut`
 : iterates over mutable references `&mut Item`
 
-### Methods that Consume the Iterator
 * The `Iterator` trait has a number of different methods with default implementations in the standard library.
 	*	some of them call `.next()`
 
@@ -1402,6 +1401,12 @@ fn iterator_sum() {
 	assert_eq!(total, 6);
 }
 ```
+
+Iterator Adapters
+: Methods defined on `Iterator` that don't consume the iterator but return a different iterator
+: i.e. `.map(Fn(Self::Item))`
+```
+
 
 ## 13.03 Improving Our I/O Project
 
@@ -1423,11 +1428,11 @@ fn iterator_sum() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODc1NDc1OTcsNDAzMTI0NTg4LDE2OD
-k0NTM1NTIsMTM2MTkxNDQ4NywxNzQzODIxMTU5LDIyMDE5MTMz
-MSwxMTU2MzQxNjYwLDE0NzU5MDExNTgsLTc2NzIyNzc3NiwtMT
-Y2ODAwNTYwOCwtMTIyNTU4MTUwNiwtNzExNzUwOTksLTExMTY5
-NDEyOTUsLTEyODc3MDc3ODAsLTExMDA5OTUwNjMsLTU1MzQ0Nj
-EyMSwtMjEwMTM5NzM1NywtMjEwMTM5NzM1NywtMTcxNjI4Mjkz
-Miw4MDk0MjE2NjZdfQ==
+eyJoaXN0b3J5IjpbLTY1OTc3MjcyNiwtMTg4NzU0NzU5Nyw0MD
+MxMjQ1ODgsMTY4OTQ1MzU1MiwxMzYxOTE0NDg3LDE3NDM4MjEx
+NTksMjIwMTkxMzMxLDExNTYzNDE2NjAsMTQ3NTkwMTE1OCwtNz
+Y3MjI3Nzc2LC0xNjY4MDA1NjA4LC0xMjI1NTgxNTA2LC03MTE3
+NTA5OSwtMTExNjk0MTI5NSwtMTI4NzcwNzc4MCwtMTEwMDk5NT
+A2MywtNTUzNDQ2MTIxLC0yMTAxMzk3MzU3LC0yMTAxMzk3MzU3
+LC0xNzE2MjgyOTMyXX0=
 -->
