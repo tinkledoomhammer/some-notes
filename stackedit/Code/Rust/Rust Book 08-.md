@@ -1357,6 +1357,11 @@ Some Additional Experiments
 
 ## 13.02 Processing a series of Items with Iterators
 
+Rust Iterators are **lazy**
+: They have no effect until a method is called that consumes the iterator
+
+
+
 ## 13.03 Improving Our I/O Project
 
 ## 13.04 Performance in Loops vs Iterators
@@ -1377,11 +1382,11 @@ Some Additional Experiments
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAzMTI0NTg4LDE2ODk0NTM1NTIsMTM2MT
-kxNDQ4NywxNzQzODIxMTU5LDIyMDE5MTMzMSwxMTU2MzQxNjYw
-LDE0NzU5MDExNTgsLTc2NzIyNzc3NiwtMTY2ODAwNTYwOCwtMT
-IyNTU4MTUwNiwtNzExNzUwOTksLTExMTY5NDEyOTUsLTEyODc3
-MDc3ODAsLTExMDA5OTUwNjMsLTU1MzQ0NjEyMSwtMjEwMTM5Nz
-M1NywtMjEwMTM5NzM1NywtMTcxNjI4MjkzMiw4MDk0MjE2NjYs
-MTg0NTc0NzQ3MF19
+eyJoaXN0b3J5IjpbNDAzNDAwMzk1LDQwMzEyNDU4OCwxNjg5ND
+UzNTUyLDEzNjE5MTQ0ODcsMTc0MzgyMTE1OSwyMjAxOTEzMzEs
+MTE1NjM0MTY2MCwxNDc1OTAxMTU4LC03NjcyMjc3NzYsLTE2Nj
+gwMDU2MDgsLTEyMjU1ODE1MDYsLTcxMTc1MDk5LC0xMTE2OTQx
+Mjk1LC0xMjg3NzA3NzgwLC0xMTAwOTk1MDYzLC01NTM0NDYxMj
+EsLTIxMDEzOTczNTcsLTIxMDEzOTczNTcsLTE3MTYyODI5MzIs
+ODA5NDIxNjY2XX0=
 -->
