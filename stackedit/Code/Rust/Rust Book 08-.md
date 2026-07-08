@@ -1440,6 +1440,12 @@ impl Config {
 			query, file_path, ignore_case, })
 	}
 }
+// -- snip --//
+fn main() {
+	let config = Config::build(env::args()).unwrap_or_else(|err| {
+		eprintln!("Problem parsing arguments: {err}");
+		process::exit();
+	}) 
 ```
 ## 13.04 Performance in Loops vs Iterators
 
@@ -1459,11 +1465,11 @@ impl Config {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc2ODg2NTY0LC05OTMwMTU5NzQsMjQ3OD
-k5ODQ1LC0xODg3NTQ3NTk3LDQwMzEyNDU4OCwxNjg5NDUzNTUy
-LDEzNjE5MTQ0ODcsMTc0MzgyMTE1OSwyMjAxOTEzMzEsMTE1Nj
-M0MTY2MCwxNDc1OTAxMTU4LC03NjcyMjc3NzYsLTE2NjgwMDU2
-MDgsLTEyMjU1ODE1MDYsLTcxMTc1MDk5LC0xMTE2OTQxMjk1LC
-0xMjg3NzA3NzgwLC0xMTAwOTk1MDYzLC01NTM0NDYxMjEsLTIx
-MDEzOTczNTddfQ==
+eyJoaXN0b3J5IjpbMTMxNzA4MDA5OCwtOTkzMDE1OTc0LDI0Nz
+g5OTg0NSwtMTg4NzU0NzU5Nyw0MDMxMjQ1ODgsMTY4OTQ1MzU1
+MiwxMzYxOTE0NDg3LDE3NDM4MjExNTksMjIwMTkxMzMxLDExNT
+YzNDE2NjAsMTQ3NTkwMTE1OCwtNzY3MjI3Nzc2LC0xNjY4MDA1
+NjA4LC0xMjI1NTgxNTA2LC03MTE3NTA5OSwtMTExNjk0MTI5NS
+wtMTI4NzcwNzc4MCwtMTEwMDk5NTA2MywtNTUzNDQ2MTIxLC0y
+MTAxMzk3MzU3XX0=
 -->
