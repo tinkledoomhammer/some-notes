@@ -1392,7 +1392,16 @@ fn iterator_demonstration() {
 
 Consuming adapters
 : Methods that call `.next()` 
-
+: An example is `Iterator::sum`
+```rust
+#[test]
+fn iterator_sum() {
+	let v1 = vec![1,2,3];
+	let v1_iter = v1.iter();
+	let total: i32 = v1_iter.sum();
+	assert_eq!(total, 6);
+}
+```
 
 ## 13.03 Improving Our I/O Project
 
@@ -1414,11 +1423,11 @@ Consuming adapters
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc3MzUzNzI4LDQwMzEyNDU4OCwxNjg5ND
-UzNTUyLDEzNjE5MTQ0ODcsMTc0MzgyMTE1OSwyMjAxOTEzMzEs
-MTE1NjM0MTY2MCwxNDc1OTAxMTU4LC03NjcyMjc3NzYsLTE2Nj
-gwMDU2MDgsLTEyMjU1ODE1MDYsLTcxMTc1MDk5LC0xMTE2OTQx
-Mjk1LC0xMjg3NzA3NzgwLC0xMTAwOTk1MDYzLC01NTM0NDYxMj
-EsLTIxMDEzOTczNTcsLTIxMDEzOTczNTcsLTE3MTYyODI5MzIs
-ODA5NDIxNjY2XX0=
+eyJoaXN0b3J5IjpbLTE4ODc1NDc1OTcsNDAzMTI0NTg4LDE2OD
+k0NTM1NTIsMTM2MTkxNDQ4NywxNzQzODIxMTU5LDIyMDE5MTMz
+MSwxMTU2MzQxNjYwLDE0NzU5MDExNTgsLTc2NzIyNzc3NiwtMT
+Y2ODAwNTYwOCwtMTIyNTU4MTUwNiwtNzExNzUwOTksLTExMTY5
+NDEyOTUsLTEyODc3MDc3ODAsLTExMDA5OTUwNjMsLTU1MzQ0Nj
+EyMSwtMjEwMTM5NzM1NywtMjEwMTM5NzM1NywtMTcxNjI4Mjkz
+Miw4MDk0MjE2NjZdfQ==
 -->
