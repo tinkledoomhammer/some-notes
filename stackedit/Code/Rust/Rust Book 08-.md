@@ -1429,7 +1429,17 @@ impl Config {
 		args.next(); // discard the executable name
 		let query = match args.next() {
 			Some(args) => arg,
-			None => retur
+			None => return Err("Didn't get a query string"),
+		};
+		let file_path = match args.next() {
+			Some(args) => arg,
+			None => return Err("Didn't get a file path"),
+		};
+		let ignore_CASE = env::var("IGNORE_CASE").is_ok();
+		Ok(Config {
+			query, file_path, ignore_case, })
+	}
+}
 ```
 ## 13.04 Performance in Loops vs Iterators
 
@@ -1449,7 +1459,7 @@ impl Config {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU4ODI1NDI5LC05OTMwMTU5NzQsMjQ3OD
+eyJoaXN0b3J5IjpbNDc2ODg2NTY0LC05OTMwMTU5NzQsMjQ3OD
 k5ODQ1LC0xODg3NTQ3NTk3LDQwMzEyNDU4OCwxNjg5NDUzNTUy
 LDEzNjE5MTQ0ODcsMTc0MzgyMTE1OSwyMjAxOTEzMzEsMTE1Nj
 M0MTY2MCwxNDc1OTAxMTU4LC03NjcyMjc3NzYsLTE2NjgwMDU2
