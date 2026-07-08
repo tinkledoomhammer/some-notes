@@ -1413,7 +1413,8 @@ fn test_map() {
 	assert_eq!(v2, vec![2,3,4]);
 }
 ```
-
+** TODO:** 
+Go over iterator methods and pay attention to types. Some take `fn(&T)->T`, for example
 
 ## 13.03 Improving Our I/O Project
 
@@ -1435,11 +1436,11 @@ fn test_map() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ3ODk5ODQ1LC0xODg3NTQ3NTk3LDQwMz
-EyNDU4OCwxNjg5NDUzNTUyLDEzNjE5MTQ0ODcsMTc0MzgyMTE1
-OSwyMjAxOTEzMzEsMTE1NjM0MTY2MCwxNDc1OTAxMTU4LC03Nj
-cyMjc3NzYsLTE2NjgwMDU2MDgsLTEyMjU1ODE1MDYsLTcxMTc1
-MDk5LC0xMTE2OTQxMjk1LC0xMjg3NzA3NzgwLC0xMTAwOTk1MD
-YzLC01NTM0NDYxMjEsLTIxMDEzOTczNTcsLTIxMDEzOTczNTcs
-LTE3MTYyODI5MzJdfQ==
+eyJoaXN0b3J5IjpbLTk5MzAxNTk3NCwyNDc4OTk4NDUsLTE4OD
+c1NDc1OTcsNDAzMTI0NTg4LDE2ODk0NTM1NTIsMTM2MTkxNDQ4
+NywxNzQzODIxMTU5LDIyMDE5MTMzMSwxMTU2MzQxNjYwLDE0Nz
+U5MDExNTgsLTc2NzIyNzc3NiwtMTY2ODAwNTYwOCwtMTIyNTU4
+MTUwNiwtNzExNzUwOTksLTExMTY5NDEyOTUsLTEyODc3MDc3OD
+AsLTExMDA5OTUwNjMsLTU1MzQ0NjEyMSwtMjEwMTM5NzM1Nywt
+MjEwMTM5NzM1N119
 -->
