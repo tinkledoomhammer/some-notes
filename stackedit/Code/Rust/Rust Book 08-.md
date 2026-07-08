@@ -1221,9 +1221,6 @@ Closures are anonymous functions that can be saved in variables or passed as arg
 * `expression` can use variables defined in the enclosing scope, which functions cannot
 
 ### Inferring and Annotating Closure types
-
-
-## 13.02 Processing a series of Items with Iterators
 * closures don't usually require manual annotation of argument and return types
 * This is because they closures are not part of an exposed interface in the way that functions are
 * Closures are typically short and relevant only within a narrow context
@@ -1358,6 +1355,8 @@ Some Additional Experiments
 	* though it can be coerced into a `&mut` by passing it to a function that takes `mut FnMut`
 
 
+## 13.02 Processing a series of Items with Iterators
+
 ## 13.03 Improving Our I/O Project
 
 ## 13.04 Performance in Loops vs Iterators
@@ -1378,11 +1377,11 @@ Some Additional Experiments
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4OTQ1MzU1MiwxMzYxOTE0NDg3LDE3ND
-M4MjExNTksMjIwMTkxMzMxLDExNTYzNDE2NjAsMTQ3NTkwMTE1
-OCwtNzY3MjI3Nzc2LC0xNjY4MDA1NjA4LC0xMjI1NTgxNTA2LC
-03MTE3NTA5OSwtMTExNjk0MTI5NSwtMTI4NzcwNzc4MCwtMTEw
-MDk5NTA2MywtNTUzNDQ2MTIxLC0yMTAxMzk3MzU3LC0yMTAxMz
-k3MzU3LC0xNzE2MjgyOTMyLDgwOTQyMTY2NiwxODQ1NzQ3NDcw
-LC0zNDU3OTQyOTldfQ==
+eyJoaXN0b3J5IjpbNDAzMTI0NTg4LDE2ODk0NTM1NTIsMTM2MT
+kxNDQ4NywxNzQzODIxMTU5LDIyMDE5MTMzMSwxMTU2MzQxNjYw
+LDE0NzU5MDExNTgsLTc2NzIyNzc3NiwtMTY2ODAwNTYwOCwtMT
+IyNTU4MTUwNiwtNzExNzUwOTksLTExMTY5NDEyOTUsLTEyODc3
+MDc3ODAsLTExMDA5OTUwNjMsLTU1MzQ0NjEyMSwtMjEwMTM5Nz
+M1NywtMjEwMTM5NzM1NywtMTcxNjI4MjkzMiw4MDk0MjE2NjYs
+MTg0NTc0NzQ3MF19
 -->
