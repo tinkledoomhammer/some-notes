@@ -1529,7 +1529,12 @@ pub fn add_one(x: i32) -> i32 {
 }
 ```
 * Starts with a description
-* 
+* includes an example
+* uses triple backticks, like stackedit
+
+`cargo doc`
+: runs the `rustdoc` tool to generate html in `target/doc` directory
+: `cargo doc --open` will open the docs (and the docs for its depende
 
 
 ## 14.03 Cargo workspaces
@@ -1558,11 +1563,11 @@ pub fn add_one(x: i32) -> i32 {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2NTE0OTY1MCwtMTc5NTYyMTQyNSwtOT
-kzMDE1OTc0LDI0Nzg5OTg0NSwtMTg4NzU0NzU5Nyw0MDMxMjQ1
-ODgsMTY4OTQ1MzU1MiwxMzYxOTE0NDg3LDE3NDM4MjExNTksMj
-IwMTkxMzMxLDExNTYzNDE2NjAsMTQ3NTkwMTE1OCwtNzY3MjI3
-Nzc2LC0xNjY4MDA1NjA4LC0xMjI1NTgxNTA2LC03MTE3NTA5OS
-wtMTExNjk0MTI5NSwtMTI4NzcwNzc4MCwtMTEwMDk5NTA2Mywt
-NTUzNDQ2MTIxXX0=
+eyJoaXN0b3J5IjpbLTE3MDUxMjc2MjEsLTE3OTU2MjE0MjUsLT
+k5MzAxNTk3NCwyNDc4OTk4NDUsLTE4ODc1NDc1OTcsNDAzMTI0
+NTg4LDE2ODk0NTM1NTIsMTM2MTkxNDQ4NywxNzQzODIxMTU5LD
+IyMDE5MTMzMSwxMTU2MzQxNjYwLDE0NzU5MDExNTgsLTc2NzIy
+Nzc3NiwtMTY2ODAwNTYwOCwtMTIyNTU4MTUwNiwtNzExNzUwOT
+ksLTExMTY5NDEyOTUsLTEyODc3MDc3ODAsLTExMDA5OTUwNjMs
+LTU1MzQ0NjEyMV19
 -->
