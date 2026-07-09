@@ -1500,7 +1500,9 @@ opt-level = 3
 ```
 
 `opt-level`
-: 
+: the setting controls the number of optimizations that will be applied
+: The range is 0 to 3
+: higher levels will produce faster code with longer compile times
 
 ## 14.02 Publishing a crate to crates.io
 ## 14.03 Cargo workspaces
@@ -1529,11 +1531,11 @@ opt-level = 3
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTA2OTM5NjcsLTE3OTU2MjE0MjUsLT
-k5MzAxNTk3NCwyNDc4OTk4NDUsLTE4ODc1NDc1OTcsNDAzMTI0
-NTg4LDE2ODk0NTM1NTIsMTM2MTkxNDQ4NywxNzQzODIxMTU5LD
-IyMDE5MTMzMSwxMTU2MzQxNjYwLDE0NzU5MDExNTgsLTc2NzIy
-Nzc3NiwtMTY2ODAwNTYwOCwtMTIyNTU4MTUwNiwtNzExNzUwOT
-ksLTExMTY5NDEyOTUsLTEyODc3MDc3ODAsLTExMDA5OTUwNjMs
-LTU1MzQ0NjEyMV19
+eyJoaXN0b3J5IjpbMTcxNjc4NzEyLC0xNzk1NjIxNDI1LC05OT
+MwMTU5NzQsMjQ3ODk5ODQ1LC0xODg3NTQ3NTk3LDQwMzEyNDU4
+OCwxNjg5NDUzNTUyLDEzNjE5MTQ0ODcsMTc0MzgyMTE1OSwyMj
+AxOTEzMzEsMTE1NjM0MTY2MCwxNDc1OTAxMTU4LC03NjcyMjc3
+NzYsLTE2NjgwMDU2MDgsLTEyMjU1ODE1MDYsLTcxMTc1MDk5LC
+0xMTE2OTQxMjk1LC0xMjg3NzA3NzgwLC0xMTAwOTk1MDYzLC01
+NTM0NDYxMjFdfQ==
 -->
