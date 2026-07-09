@@ -1468,10 +1468,14 @@ pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
 }
 ```
 
-## 13.04 Performance in Loops vs Iterators
-
-
-
+# 14.00 More about Cargo and crates.io
+Overview:
+* Customize your build through release profiles
+* Publish libraries on crates.io
+* organize large projects with workspaces
+* install binaries from crates.io
+* extend cargo using custom commands
+[Cargo doc
 
 
 
@@ -1493,11 +1497,11 @@ pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTU2MjE0MjUsLTk5MzAxNTk3NCwyND
-c4OTk4NDUsLTE4ODc1NDc1OTcsNDAzMTI0NTg4LDE2ODk0NTM1
-NTIsMTM2MTkxNDQ4NywxNzQzODIxMTU5LDIyMDE5MTMzMSwxMT
-U2MzQxNjYwLDE0NzU5MDExNTgsLTc2NzIyNzc3NiwtMTY2ODAw
-NTYwOCwtMTIyNTU4MTUwNiwtNzExNzUwOTksLTExMTY5NDEyOT
-UsLTEyODc3MDc3ODAsLTExMDA5OTUwNjMsLTU1MzQ0NjEyMSwt
-MjEwMTM5NzM1N119
+eyJoaXN0b3J5IjpbLTEyMDU5MTE4MDYsLTE3OTU2MjE0MjUsLT
+k5MzAxNTk3NCwyNDc4OTk4NDUsLTE4ODc1NDc1OTcsNDAzMTI0
+NTg4LDE2ODk0NTM1NTIsMTM2MTkxNDQ4NywxNzQzODIxMTU5LD
+IyMDE5MTMzMSwxMTU2MzQxNjYwLDE0NzU5MDExNTgsLTc2NzIy
+Nzc3NiwtMTY2ODAwNTYwOCwtMTIyNTU4MTUwNiwtNzExNzUwOT
+ksLTExMTY5NDEyOTUsLTEyODc3MDc3ODAsLTExMDA5OTUwNjMs
+LTU1MzQ0NjEyMV19
 -->
