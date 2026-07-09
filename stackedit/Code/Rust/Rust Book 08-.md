@@ -1565,7 +1565,11 @@ Contained item comments
 : used for top-level documentation of modules and crates
 
 `pub use` 
-: can be used to selectively latten the module hierarchy, making it much easier to 
+: can be used to selectively latten the module hierarchy, making it much easier to find essential items
+: particularly because the mod structure that works best for design won't often be the best api structure
+
+### Crates.io Stuff
+
 
 ## 14.03 Cargo workspaces
 ## 14.04 Installing binaries with cargo install
@@ -1593,7 +1597,7 @@ Contained item comments
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNzg4NzU4OCwtMTQ1MzgxODAxOSwtMT
+eyJoaXN0b3J5IjpbMTE4NjQyMzU5MCwtMTQ1MzgxODAxOSwtMT
 c1MTE5NDQyMiwtMTMyNzAxODY3MywtMjc0NTQ2MjI2LC0xNzk1
 NjIxNDI1LC05OTMwMTU5NzQsMjQ3ODk5ODQ1LC0xODg3NTQ3NT
 k3LDQwMzEyNDU4OCwxNjg5NDUzNTUyLDEzNjE5MTQ0ODcsMTc0
