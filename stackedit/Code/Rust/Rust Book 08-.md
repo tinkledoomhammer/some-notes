@@ -1469,15 +1469,19 @@ pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
 ```
 
 # 14.00 More about Cargo and crates.io
-Overview:
-* Customize your build through release profiles
-* Publish libraries on crates.io
-* organize large projects with workspaces
-* install binaries from crates.io
-* extend cargo using custom commands
-* [Cargo documentation](https://doc.rust-lang.org/cargo/)
+ [Cargo documentation](https://doc.rust-lang.org/cargo/)
 
 ## 14.01 Customizing builds with release profiles
+
+Release profiles
+: predefined, customizable profiles with diffferent configurations that allow a programmer to have more control over various options for compiling code
+: Each profile is configured independently
+: Cargo has 2 main profiles
+
+`dev`
+
+
+
 
 ## 14.02 Publishing a crate to crates.io
 ## 14.03 Cargo workspaces
@@ -1506,11 +1510,11 @@ Overview:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1OTExMTg0LC0xNzk1NjIxNDI1LC05OT
-MwMTU5NzQsMjQ3ODk5ODQ1LC0xODg3NTQ3NTk3LDQwMzEyNDU4
-OCwxNjg5NDUzNTUyLDEzNjE5MTQ0ODcsMTc0MzgyMTE1OSwyMj
-AxOTEzMzEsMTE1NjM0MTY2MCwxNDc1OTAxMTU4LC03NjcyMjc3
-NzYsLTE2NjgwMDU2MDgsLTEyMjU1ODE1MDYsLTcxMTc1MDk5LC
-0xMTE2OTQxMjk1LC0xMjg3NzA3NzgwLC0xMTAwOTk1MDYzLC01
-NTM0NDYxMjFdfQ==
+eyJoaXN0b3J5IjpbMTk4MTQ5NDk5NiwtMTc5NTYyMTQyNSwtOT
+kzMDE1OTc0LDI0Nzg5OTg0NSwtMTg4NzU0NzU5Nyw0MDMxMjQ1
+ODgsMTY4OTQ1MzU1MiwxMzYxOTE0NDg3LDE3NDM4MjExNTksMj
+IwMTkxMzMxLDExNTYzNDE2NjAsMTQ3NTkwMTE1OCwtNzY3MjI3
+Nzc2LC0xNjY4MDA1NjA4LC0xMjI1NTgxNTA2LC03MTE3NTA5OS
+wtMTExNjk0MTI5NSwtMTI4NzcwNzc4MCwtMTEwMDk5NTA2Mywt
+NTUzNDQ2MTIxXX0=
 -->
