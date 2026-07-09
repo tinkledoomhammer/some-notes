@@ -1561,7 +1561,7 @@ Doc comments as tests
 Contained item comments
 : begin with `//!`
 : document the item that contains the comment rather than the nxt thing after the comment
-
+: used for top-level documentation of modules and crates
 
 
 ## 14.03 Cargo workspaces
@@ -1590,11 +1590,11 @@ Contained item comments
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTExOTQ0MjIsLTEzMjcwMTg2NzMsLT
-I3NDU0NjIyNiwtMTc5NTYyMTQyNSwtOTkzMDE1OTc0LDI0Nzg5
-OTg0NSwtMTg4NzU0NzU5Nyw0MDMxMjQ1ODgsMTY4OTQ1MzU1Mi
-wxMzYxOTE0NDg3LDE3NDM4MjExNTksMjIwMTkxMzMxLDExNTYz
-NDE2NjAsMTQ3NTkwMTE1OCwtNzY3MjI3Nzc2LC0xNjY4MDA1Nj
-A4LC0xMjI1NTgxNTA2LC03MTE3NTA5OSwtMTExNjk0MTI5NSwt
-MTI4NzcwNzc4MF19
+eyJoaXN0b3J5IjpbLTE0NTM4MTgwMTksLTE3NTExOTQ0MjIsLT
+EzMjcwMTg2NzMsLTI3NDU0NjIyNiwtMTc5NTYyMTQyNSwtOTkz
+MDE1OTc0LDI0Nzg5OTg0NSwtMTg4NzU0NzU5Nyw0MDMxMjQ1OD
+gsMTY4OTQ1MzU1MiwxMzYxOTE0NDg3LDE3NDM4MjExNTksMjIw
+MTkxMzMxLDExNTYzNDE2NjAsMTQ3NTkwMTE1OCwtNzY3MjI3Nz
+c2LC0xNjY4MDA1NjA4LC0xMjI1NTgxNTA2LC03MTE3NTA5OSwt
+MTExNjk0MTI5NV19
 -->
