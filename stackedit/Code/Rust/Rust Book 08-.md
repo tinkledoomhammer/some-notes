@@ -1542,7 +1542,10 @@ pub fn add_one(x: i32) -> i32 {
 : contains examples enclosed in triple backticks 
 
 `# Panics`
-:
+: scenarios in which the function could panic
+
+`# Errors`
+: When the function returns a `Result`, 
 
 
 ## 14.03 Cargo workspaces
@@ -1571,7 +1574,7 @@ pub fn add_one(x: i32) -> i32 {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3Mzg0MTIxNiwtMTc5NTYyMTQyNSwtOT
+eyJoaXN0b3J5IjpbLTU4OTU4NzQ1MCwtMTc5NTYyMTQyNSwtOT
 kzMDE1OTc0LDI0Nzg5OTg0NSwtMTg4NzU0NzU5Nyw0MDMxMjQ1
 ODgsMTY4OTQ1MzU1MiwxMzYxOTE0NDg3LDE3NDM4MjExNTksMj
 IwMTkxMzMxLDExNTYzNDE2NjAsMTQ3NTkwMTE1OCwtNzY3MjI3
