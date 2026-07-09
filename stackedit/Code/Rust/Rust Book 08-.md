@@ -1545,7 +1545,17 @@ pub fn add_one(x: i32) -> i32 {
 : scenarios in which the function could panic
 
 `# Errors`
-: When the function returns a `Result`, 
+: When the function returns a `Result`
+: Describes what kinds of errors might occur
+: what conditions could result in errors
+
+`# Safety`
+: For `unsafe` functions
+: Describes why the function is unsafe
+: and what invariants the caller is expected to maintain
+
+### Doc comments as tests
+
 
 
 ## 14.03 Cargo workspaces
@@ -1574,7 +1584,7 @@ pub fn add_one(x: i32) -> i32 {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4OTU4NzQ1MCwtMTc5NTYyMTQyNSwtOT
+eyJoaXN0b3J5IjpbLTI3NDU0NjIyNiwtMTc5NTYyMTQyNSwtOT
 kzMDE1OTc0LDI0Nzg5OTg0NSwtMTg4NzU0NzU5Nyw0MDMxMjQ1
 ODgsMTY4OTQ1MzU1MiwxMzYxOTE0NDg3LDE3NDM4MjExNTksMj
 IwMTkxMzMxLDExNTYzNDE2NjAsMTQ3NTkwMTE1OCwtNzY3MjI3
