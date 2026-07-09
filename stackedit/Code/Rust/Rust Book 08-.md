@@ -1537,7 +1537,7 @@ pub fn add_one(x: i32) -> i32 {
 : runs the `rustdoc` tool to generate html in `target/doc` directory
 : `cargo doc --open` will open the docs (and the docs for its dependencies) in a browser
 
-### Commonly used sections
+#### Commonly used sections
 
 `# Examples`
 : contains examples enclosed in triple backticks 
@@ -1555,6 +1555,7 @@ pub fn add_one(x: i32) -> i32 {
 : Describes why the function is unsafe
 : and what invariants the caller is expected to maintain
 
+#### Misc Documentation and api design
 Doc comments as tests
 : Any code examples will automatically generate tests that will be run by `cargo test`
 
@@ -1563,6 +1564,8 @@ Contained item comments
 : document the item that contains the comment rather than the nxt thing after the comment
 : used for top-level documentation of modules and crates
 
+`pub use` 
+: can be used to selectively latten the module hierarchy, making it much easier to 
 
 ## 14.03 Cargo workspaces
 ## 14.04 Installing binaries with cargo install
@@ -1590,11 +1593,11 @@ Contained item comments
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTM4MTgwMTksLTE3NTExOTQ0MjIsLT
-EzMjcwMTg2NzMsLTI3NDU0NjIyNiwtMTc5NTYyMTQyNSwtOTkz
-MDE1OTc0LDI0Nzg5OTg0NSwtMTg4NzU0NzU5Nyw0MDMxMjQ1OD
-gsMTY4OTQ1MzU1MiwxMzYxOTE0NDg3LDE3NDM4MjExNTksMjIw
-MTkxMzMxLDExNTYzNDE2NjAsMTQ3NTkwMTE1OCwtNzY3MjI3Nz
-c2LC0xNjY4MDA1NjA4LC0xMjI1NTgxNTA2LC03MTE3NTA5OSwt
-MTExNjk0MTI5NV19
+eyJoaXN0b3J5IjpbLTcxNzg4NzU4OCwtMTQ1MzgxODAxOSwtMT
+c1MTE5NDQyMiwtMTMyNzAxODY3MywtMjc0NTQ2MjI2LC0xNzk1
+NjIxNDI1LC05OTMwMTU5NzQsMjQ3ODk5ODQ1LC0xODg3NTQ3NT
+k3LDQwMzEyNDU4OCwxNjg5NDUzNTUyLDEzNjE5MTQ0ODcsMTc0
+MzgyMTE1OSwyMjAxOTEzMzEsMTE1NjM0MTY2MCwxNDc1OTAxMT
+U4LC03NjcyMjc3NzYsLTE2NjgwMDU2MDgsLTEyMjU1ODE1MDYs
+LTcxMTc1MDk5XX0=
 -->
