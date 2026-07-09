@@ -1479,7 +1479,17 @@ Release profiles
 : Cargo has 2 main profiles
 
 `dev`
+: profile cargo uses with `cargo build`
 
+`release`
+: profile cargo uses with `cargo build --release`
+
+```bash
+$ cargo build
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.00s
+$ cargo build --release
+    Finished `release` profile [optimized] target(s) in 0.32s
+```
 
 
 
@@ -1510,7 +1520,7 @@ Release profiles
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4MTQ5NDk5NiwtMTc5NTYyMTQyNSwtOT
+eyJoaXN0b3J5IjpbLTM3ODgwMjAwMywtMTc5NTYyMTQyNSwtOT
 kzMDE1OTc0LDI0Nzg5OTg0NSwtMTg4NzU0NzU5Nyw0MDMxMjQ1
 ODgsMTY4OTQ1MzU1MiwxMzYxOTE0NDg3LDE3NDM4MjExNTksMj
 IwMTkxMzMxLDExNTYzNDE2NjAsMTQ3NTkwMTE1OCwtNzY3MjI3
