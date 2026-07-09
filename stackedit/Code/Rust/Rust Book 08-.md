@@ -1555,6 +1555,7 @@ pub fn add_one(x: i32) -> i32 {
 : and what invariants the caller is expected to maintain
 
 ### Doc comments as tests
+Any code examples will automatically generate tests that will be run by `cargo test`
 
 
 
@@ -1584,11 +1585,11 @@ pub fn add_one(x: i32) -> i32 {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NDU0NjIyNiwtMTc5NTYyMTQyNSwtOT
-kzMDE1OTc0LDI0Nzg5OTg0NSwtMTg4NzU0NzU5Nyw0MDMxMjQ1
-ODgsMTY4OTQ1MzU1MiwxMzYxOTE0NDg3LDE3NDM4MjExNTksMj
-IwMTkxMzMxLDExNTYzNDE2NjAsMTQ3NTkwMTE1OCwtNzY3MjI3
-Nzc2LC0xNjY4MDA1NjA4LC0xMjI1NTgxNTA2LC03MTE3NTA5OS
-wtMTExNjk0MTI5NSwtMTI4NzcwNzc4MCwtMTEwMDk5NTA2Mywt
-NTUzNDQ2MTIxXX0=
+eyJoaXN0b3J5IjpbLTEzMjcwMTg2NzMsLTI3NDU0NjIyNiwtMT
+c5NTYyMTQyNSwtOTkzMDE1OTc0LDI0Nzg5OTg0NSwtMTg4NzU0
+NzU5Nyw0MDMxMjQ1ODgsMTY4OTQ1MzU1MiwxMzYxOTE0NDg3LD
+E3NDM4MjExNTksMjIwMTkxMzMxLDExNTYzNDE2NjAsMTQ3NTkw
+MTE1OCwtNzY3MjI3Nzc2LC0xNjY4MDA1NjA4LC0xMjI1NTgxNT
+A2LC03MTE3NTA5OSwtMTExNjk0MTI5NSwtMTI4NzcwNzc4MCwt
+MTEwMDk5NTA2M119
 -->
