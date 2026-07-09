@@ -1512,7 +1512,25 @@ Documentation Comments
 : The html displays doc comments for public API items
 : Should indicate how to *use* the crate rather than how it is implementsd
 : start with `///` tripple slashes
-: support markdown notation for form
+: support markdown notation for formatting text
+```rust
+/// Adds one to the number given.
+///
+/// # Examples
+///
+/// ```
+/// let arg = 5;
+/// let answer = my_crate::add_one(arg);
+///
+/// assert_eq!(6, answer);
+/// ```
+pub fn add_one(x: i32) -> i32 {
+    x + 1
+}
+```
+* Starts with a description
+* 
+
 
 ## 14.03 Cargo workspaces
 ## 14.04 Installing binaries with cargo install
@@ -1540,11 +1558,11 @@ Documentation Comments
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM3NDM2NTUzLC0xNzk1NjIxNDI1LC05OT
-MwMTU5NzQsMjQ3ODk5ODQ1LC0xODg3NTQ3NTk3LDQwMzEyNDU4
-OCwxNjg5NDUzNTUyLDEzNjE5MTQ0ODcsMTc0MzgyMTE1OSwyMj
-AxOTEzMzEsMTE1NjM0MTY2MCwxNDc1OTAxMTU4LC03NjcyMjc3
-NzYsLTE2NjgwMDU2MDgsLTEyMjU1ODE1MDYsLTcxMTc1MDk5LC
-0xMTE2OTQxMjk1LC0xMjg3NzA3NzgwLC0xMTAwOTk1MDYzLC01
-NTM0NDYxMjFdfQ==
+eyJoaXN0b3J5IjpbLTI2NTE0OTY1MCwtMTc5NTYyMTQyNSwtOT
+kzMDE1OTc0LDI0Nzg5OTg0NSwtMTg4NzU0NzU5Nyw0MDMxMjQ1
+ODgsMTY4OTQ1MzU1MiwxMzYxOTE0NDg3LDE3NDM4MjExNTksMj
+IwMTkxMzMxLDExNTYzNDE2NjAsMTQ3NTkwMTE1OCwtNzY3MjI3
+Nzc2LC0xNjY4MDA1NjA4LC0xMjI1NTgxNTA2LC03MTE3NTA5OS
+wtMTExNjk0MTI5NSwtMTI4NzcwNzc4MCwtMTEwMDk5NTA2Mywt
+NTUzNDQ2MTIxXX0=
 -->
