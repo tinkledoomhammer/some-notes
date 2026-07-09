@@ -1508,7 +1508,11 @@ opt-level = 3
 ### Making Useful Documentation Comments
 
 Documentation Comments
-: 
+: Will generate HTML docs
+: The html displays doc comments for public API items
+: Should indicate how to *use* the crate rather than how it is implementsd
+: start with `///` tripple slashes
+: support markdown notation for form
 
 ## 14.03 Cargo workspaces
 ## 14.04 Installing binaries with cargo install
@@ -1536,11 +1540,11 @@ Documentation Comments
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjgxNjEwMzgsLTE3OTU2MjE0MjUsLT
-k5MzAxNTk3NCwyNDc4OTk4NDUsLTE4ODc1NDc1OTcsNDAzMTI0
-NTg4LDE2ODk0NTM1NTIsMTM2MTkxNDQ4NywxNzQzODIxMTU5LD
-IyMDE5MTMzMSwxMTU2MzQxNjYwLDE0NzU5MDExNTgsLTc2NzIy
-Nzc3NiwtMTY2ODAwNTYwOCwtMTIyNTU4MTUwNiwtNzExNzUwOT
-ksLTExMTY5NDEyOTUsLTEyODc3MDc3ODAsLTExMDA5OTUwNjMs
-LTU1MzQ0NjEyMV19
+eyJoaXN0b3J5IjpbNDM3NDM2NTUzLC0xNzk1NjIxNDI1LC05OT
+MwMTU5NzQsMjQ3ODk5ODQ1LC0xODg3NTQ3NTk3LDQwMzEyNDU4
+OCwxNjg5NDUzNTUyLDEzNjE5MTQ0ODcsMTc0MzgyMTE1OSwyMj
+AxOTEzMzEsMTE1NjM0MTY2MCwxNDc1OTAxMTU4LC03NjcyMjc3
+NzYsLTE2NjgwMDU2MDgsLTEyMjU1ODE1MDYsLTcxMTc1MDk5LC
+0xMTE2OTQxMjk1LC0xMjg3NzA3NzgwLC0xMTAwOTk1MDYzLC01
+NTM0NDYxMjFdfQ==
 -->
