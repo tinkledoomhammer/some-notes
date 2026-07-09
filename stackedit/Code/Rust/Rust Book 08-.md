@@ -1475,7 +1475,7 @@ Overview:
 * organize large projects with workspaces
 * install binaries from crates.io
 * extend cargo using custom commands
-[Cargo doc
+[Cargo documentation](https://doc.rust-lang.org/cargo/)
 
 
 
@@ -1497,11 +1497,11 @@ Overview:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDU5MTE4MDYsLTE3OTU2MjE0MjUsLT
-k5MzAxNTk3NCwyNDc4OTk4NDUsLTE4ODc1NDc1OTcsNDAzMTI0
-NTg4LDE2ODk0NTM1NTIsMTM2MTkxNDQ4NywxNzQzODIxMTU5LD
-IyMDE5MTMzMSwxMTU2MzQxNjYwLDE0NzU5MDExNTgsLTc2NzIy
-Nzc3NiwtMTY2ODAwNTYwOCwtMTIyNTU4MTUwNiwtNzExNzUwOT
-ksLTExMTY5NDEyOTUsLTEyODc3MDc3ODAsLTExMDA5OTUwNjMs
-LTU1MzQ0NjEyMV19
+eyJoaXN0b3J5IjpbLTg4NDMwNDM1NiwtMTc5NTYyMTQyNSwtOT
+kzMDE1OTc0LDI0Nzg5OTg0NSwtMTg4NzU0NzU5Nyw0MDMxMjQ1
+ODgsMTY4OTQ1MzU1MiwxMzYxOTE0NDg3LDE3NDM4MjExNTksMj
+IwMTkxMzMxLDExNTYzNDE2NjAsMTQ3NTkwMTE1OCwtNzY3MjI3
+Nzc2LC0xNjY4MDA1NjA4LC0xMjI1NTgxNTA2LC03MTE3NTA5OS
+wtMTExNjk0MTI5NSwtMTI4NzcwNzc4MCwtMTEwMDk5NTA2Mywt
+NTUzNDQ2MTIxXX0=
 -->
