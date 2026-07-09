@@ -1570,6 +1570,12 @@ Contained item comments
 
 ### Crates.io Stuff
 
+Accounts
+: create an account from on crates.io
+: can use a github account
+: settings are at https://crates.io/me/
+: there is an api key there
+: to use the api key: `cargo login abalkjgo345;kjsadf`
 
 ## 14.03 Cargo workspaces
 ## 14.04 Installing binaries with cargo install
@@ -1597,11 +1603,11 @@ Contained item comments
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NjQyMzU5MCwtMTQ1MzgxODAxOSwtMT
-c1MTE5NDQyMiwtMTMyNzAxODY3MywtMjc0NTQ2MjI2LC0xNzk1
-NjIxNDI1LC05OTMwMTU5NzQsMjQ3ODk5ODQ1LC0xODg3NTQ3NT
-k3LDQwMzEyNDU4OCwxNjg5NDUzNTUyLDEzNjE5MTQ0ODcsMTc0
-MzgyMTE1OSwyMjAxOTEzMzEsMTE1NjM0MTY2MCwxNDc1OTAxMT
-U4LC03NjcyMjc3NzYsLTE2NjgwMDU2MDgsLTEyMjU1ODE1MDYs
-LTcxMTc1MDk5XX0=
+eyJoaXN0b3J5IjpbODM4MTU5MTQ0LC0xNDUzODE4MDE5LC0xNz
+UxMTk0NDIyLC0xMzI3MDE4NjczLC0yNzQ1NDYyMjYsLTE3OTU2
+MjE0MjUsLTk5MzAxNTk3NCwyNDc4OTk4NDUsLTE4ODc1NDc1OT
+csNDAzMTI0NTg4LDE2ODk0NTM1NTIsMTM2MTkxNDQ4NywxNzQz
+ODIxMTU5LDIyMDE5MTMzMSwxMTU2MzQxNjYwLDE0NzU5MDExNT
+gsLTc2NzIyNzc3NiwtMTY2ODAwNTYwOCwtMTIyNTU4MTUwNiwt
+NzExNzUwOTldfQ==
 -->
