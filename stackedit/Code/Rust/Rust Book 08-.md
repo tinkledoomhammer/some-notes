@@ -1669,7 +1669,11 @@ Pointer (in general)
 
 Smart pointers
 : like pointers but with additional metadata and capabilities
+: usually implemented with structs that implement `Deref` and `Drop` 
 
+## 15.01 `Box<T>`
+## 15.02 Treating smart pointers like regular references
+## 15.03 
 
 
 
@@ -1690,7 +1694,7 @@ Smart pointers
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODM4MzM4NzAsMTMxNTQ2NDEzNCwxMz
+eyJoaXN0b3J5IjpbLTEyNTA0OTA1NjYsMTMxNTQ2NDEzNCwxMz
 E1NDY0MTM0LC00MDYyNTA4MzAsNzA4NjU4NDc3LDIxMjIwNjY0
 OTYsOTQ2Mzk5Nzk5LC0xNTM0NzA5ODA2LDkxMjUyMjQxNywtND
 U3NjczMjAzLC0zNjE4Mjg3OTUsLTY0NDMxMDI0NSwtMTQ1Mzgx
