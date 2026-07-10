@@ -1629,6 +1629,10 @@ members = ["adder", "add_one"]
 add_one = {path = "../add_one" }
 ```
 
+### External dependencies 
+* each crate gets its own dependencies
+* 
+
 ## 14.04 Installing binaries with cargo install
 ## 14.05 Extending cargo with custom commands
 
@@ -1654,11 +1658,11 @@ add_one = {path = "../add_one" }
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTcxMzk0ODIsOTEyNTIyNDE3LC00NT
-c2NzMyMDMsLTM2MTgyODc5NSwtNjQ0MzEwMjQ1LC0xNDUzODE4
-MDE5LC0xNzUxMTk0NDIyLC0xMzI3MDE4NjczLC0yNzQ1NDYyMj
-YsLTE3OTU2MjE0MjUsLTk5MzAxNTk3NCwyNDc4OTk4NDUsLTE4
-ODc1NDc1OTcsNDAzMTI0NTg4LDE2ODk0NTM1NTIsMTM2MTkxND
-Q4NywxNzQzODIxMTU5LDIyMDE5MTMzMSwxMTU2MzQxNjYwLDE0
-NzU5MDExNThdfQ==
+eyJoaXN0b3J5IjpbLTk1ODk1NzU0MSw5MTI1MjI0MTcsLTQ1Nz
+Y3MzIwMywtMzYxODI4Nzk1LC02NDQzMTAyNDUsLTE0NTM4MTgw
+MTksLTE3NTExOTQ0MjIsLTEzMjcwMTg2NzMsLTI3NDU0NjIyNi
+wtMTc5NTYyMTQyNSwtOTkzMDE1OTc0LDI0Nzg5OTg0NSwtMTg4
+NzU0NzU5Nyw0MDMxMjQ1ODgsMTY4OTQ1MzU1MiwxMzYxOTE0ND
+g3LDE3NDM4MjExNTksMjIwMTkxMzMxLDExNTYzNDE2NjAsMTQ3
+NTkwMTE1OF19
 -->
