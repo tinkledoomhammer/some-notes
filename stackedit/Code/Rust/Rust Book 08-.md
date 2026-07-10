@@ -1640,8 +1640,10 @@ add_one = {path = "../add_one" }
 
 `cargo -p ...`
 : applies cargo commands to the specified crate
-: specifically `cargo test` and `cargo publish
-Tests are added to each crate as normal
+: specifically `cargo test` and `cargo publish` i.e. `cargo test -p addone`
+
+* Tests are added to each crate as normal
+* when publishing, each crate must be published separately
 
 
 
@@ -1672,7 +1674,7 @@ Tests are added to each crate as normal
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkzMTI0MzA2LC0xNTM0NzA5ODA2LDkxMj
+eyJoaXN0b3J5IjpbOTQ2Mzk5Nzk5LC0xNTM0NzA5ODA2LDkxMj
 UyMjQxNywtNDU3NjczMjAzLC0zNjE4Mjg3OTUsLTY0NDMxMDI0
 NSwtMTQ1MzgxODAxOSwtMTc1MTE5NDQyMiwtMTMyNzAxODY3My
 wtMjc0NTQ2MjI2LC0xNzk1NjIxNDI1LC05OTMwMTU5NzQsMjQ3
