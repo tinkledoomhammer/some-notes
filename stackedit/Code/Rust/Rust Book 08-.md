@@ -1647,7 +1647,7 @@ add_one = {path = "../add_one" }
 * when publishing, each crate must be published separately
 
 ## 14.04 Installing binaries with cargo install
-ssta
+
 
 
 
@@ -1675,11 +1675,11 @@ ssta
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMjA2NjQ5Niw3MDg2NTg0NzcsOTQ2Mz
-k5Nzk5LC0xNTM0NzA5ODA2LDkxMjUyMjQxNywtNDU3NjczMjAz
-LC0zNjE4Mjg3OTUsLTY0NDMxMDI0NSwtMTQ1MzgxODAxOSwtMT
-c1MTE5NDQyMiwtMTMyNzAxODY3MywtMjc0NTQ2MjI2LC0xNzk1
-NjIxNDI1LC05OTMwMTU5NzQsMjQ3ODk5ODQ1LC0xODg3NTQ3NT
-k3LDQwMzEyNDU4OCwxNjg5NDUzNTUyLDEzNjE5MTQ0ODcsMTc0
-MzgyMTE1OV19
+eyJoaXN0b3J5IjpbNzA4NjU4NDc3LDIxMjIwNjY0OTYsNzA4Nj
+U4NDc3LDk0NjM5OTc5OSwtMTUzNDcwOTgwNiw5MTI1MjI0MTcs
+LTQ1NzY3MzIwMywtMzYxODI4Nzk1LC02NDQzMTAyNDUsLTE0NT
+M4MTgwMTksLTE3NTExOTQ0MjIsLTEzMjcwMTg2NzMsLTI3NDU0
+NjIyNiwtMTc5NTYyMTQyNSwtOTkzMDE1OTc0LDI0Nzg5OTg0NS
+wtMTg4NzU0NzU5Nyw0MDMxMjQ1ODgsMTY4OTQ1MzU1MiwxMzYx
+OTE0NDg3XX0=
 -->
