@@ -1647,7 +1647,11 @@ add_one = {path = "../add_one" }
 * when publishing, each crate must be published separately
 
 ## 14.04 Installing binaries with cargo install
-
+`cargo install ripgrep`
+* installs the specified package locally
+* only works for binary crates
+* binaries are stored in the installation root's `bin` folder
+* the default is `
 
 
 
@@ -1675,11 +1679,11 @@ add_one = {path = "../add_one" }
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA4NjU4NDc3LDIxMjIwNjY0OTYsNzA4Nj
-U4NDc3LDk0NjM5OTc5OSwtMTUzNDcwOTgwNiw5MTI1MjI0MTcs
-LTQ1NzY3MzIwMywtMzYxODI4Nzk1LC02NDQzMTAyNDUsLTE0NT
-M4MTgwMTksLTE3NTExOTQ0MjIsLTEzMjcwMTg2NzMsLTI3NDU0
-NjIyNiwtMTc5NTYyMTQyNSwtOTkzMDE1OTc0LDI0Nzg5OTg0NS
-wtMTg4NzU0NzU5Nyw0MDMxMjQ1ODgsMTY4OTQ1MzU1MiwxMzYx
-OTE0NDg3XX0=
+eyJoaXN0b3J5IjpbMTA2ODkyNjk3Nyw3MDg2NTg0NzcsMjEyMj
+A2NjQ5Niw5NDYzOTk3OTksLTE1MzQ3MDk4MDYsOTEyNTIyNDE3
+LC00NTc2NzMyMDMsLTM2MTgyODc5NSwtNjQ0MzEwMjQ1LC0xND
+UzODE4MDE5LC0xNzUxMTk0NDIyLC0xMzI3MDE4NjczLC0yNzQ1
+NDYyMjYsLTE3OTU2MjE0MjUsLTk5MzAxNTk3NCwyNDc4OTk4ND
+UsLTE4ODc1NDc1OTcsNDAzMTI0NTg4LDE2ODk0NTM1NTIsMTM2
+MTkxNDQ4N119
 -->
