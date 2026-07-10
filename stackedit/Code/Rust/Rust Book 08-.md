@@ -1672,8 +1672,13 @@ Smart pointers
 : usually implemented with structs that implement `Deref` and `Drop` 
 
 ## 15.01 `Box<T>`
+
 ## 15.02 Treating smart pointers like regular references
-## 15.03 
+## 15.03 `Drop` trait
+## 15.04 `Rc<T>` ref counted
+## 15.05 `RefCell<T>` and Interior mutability
+## 15.06 Reference Cycles can leak memory
+
 
 
 
@@ -1694,7 +1699,7 @@ Smart pointers
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTA0OTA1NjYsMTMxNTQ2NDEzNCwxMz
+eyJoaXN0b3J5IjpbLTIwNjE3NDEzMjQsMTMxNTQ2NDEzNCwxMz
 E1NDY0MTM0LC00MDYyNTA4MzAsNzA4NjU4NDc3LDIxMjIwNjY0
 OTYsOTQ2Mzk5Nzk5LC0xNTM0NzA5ODA2LDkxMjUyMjQxNywtND
 U3NjczMjAzLC0zNjE4Mjg3OTUsLTY0NDMxMDI0NSwtMTQ1Mzgx
