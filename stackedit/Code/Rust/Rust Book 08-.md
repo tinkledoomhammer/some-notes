@@ -1664,6 +1664,12 @@ Cargo subcommands
 
 # 15 Smart pointers
 
+Pointer (in general)
+: a variable that contains a memory address.
+
+Smart pointers
+: like pointers but with additional metadata and capabilities
+
 
 
 
@@ -1684,11 +1690,11 @@ Cargo subcommands
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxNTQ2NDEzNCwxMzE1NDY0MTM0LC00MD
-YyNTA4MzAsNzA4NjU4NDc3LDIxMjIwNjY0OTYsOTQ2Mzk5Nzk5
-LC0xNTM0NzA5ODA2LDkxMjUyMjQxNywtNDU3NjczMjAzLC0zNj
-E4Mjg3OTUsLTY0NDMxMDI0NSwtMTQ1MzgxODAxOSwtMTc1MTE5
-NDQyMiwtMTMyNzAxODY3MywtMjc0NTQ2MjI2LC0xNzk1NjIxND
-I1LC05OTMwMTU5NzQsMjQ3ODk5ODQ1LC0xODg3NTQ3NTk3LDQw
-MzEyNDU4OF19
+eyJoaXN0b3J5IjpbLTE4ODM4MzM4NzAsMTMxNTQ2NDEzNCwxMz
+E1NDY0MTM0LC00MDYyNTA4MzAsNzA4NjU4NDc3LDIxMjIwNjY0
+OTYsOTQ2Mzk5Nzk5LC0xNTM0NzA5ODA2LDkxMjUyMjQxNywtND
+U3NjczMjAzLC0zNjE4Mjg3OTUsLTY0NDMxMDI0NSwtMTQ1Mzgx
+ODAxOSwtMTc1MTE5NDQyMiwtMTMyNzAxODY3MywtMjc0NTQ2Mj
+I2LC0xNzk1NjIxNDI1LC05OTMwMTU5NzQsMjQ3ODk5ODQ1LC0x
+ODg3NTQ3NTk3XX0=
 -->
