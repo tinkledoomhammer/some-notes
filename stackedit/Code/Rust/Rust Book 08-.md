@@ -1632,6 +1632,7 @@ add_one = {path = "../add_one" }
 ### External dependencies 
 * each crate gets its own dependencies
 * cargo will find a version that satisfies the needs of all crates
+* or use specific versions for specific crates if there is no single resolution
 * that way all the crates will be compatible
 * cargo will apply the rules of semver
 	* breaking changes occur with major version changes
@@ -1645,11 +1646,11 @@ add_one = {path = "../add_one" }
 * Tests are added to each crate as normal
 * when publishing, each crate must be published separately
 
-
-
-
-
 ## 14.04 Installing binaries with cargo install
+
+
+
+
 ## 14.05 Extending cargo with custom commands
 
 # 15 Smart pointers
@@ -1674,11 +1675,11 @@ add_one = {path = "../add_one" }
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ2Mzk5Nzk5LC0xNTM0NzA5ODA2LDkxMj
-UyMjQxNywtNDU3NjczMjAzLC0zNjE4Mjg3OTUsLTY0NDMxMDI0
-NSwtMTQ1MzgxODAxOSwtMTc1MTE5NDQyMiwtMTMyNzAxODY3My
-wtMjc0NTQ2MjI2LC0xNzk1NjIxNDI1LC05OTMwMTU5NzQsMjQ3
-ODk5ODQ1LC0xODg3NTQ3NTk3LDQwMzEyNDU4OCwxNjg5NDUzNT
-UyLDEzNjE5MTQ0ODcsMTc0MzgyMTE1OSwyMjAxOTEzMzEsMTE1
-NjM0MTY2MF19
+eyJoaXN0b3J5IjpbNzA4NjU4NDc3LDk0NjM5OTc5OSwtMTUzND
+cwOTgwNiw5MTI1MjI0MTcsLTQ1NzY3MzIwMywtMzYxODI4Nzk1
+LC02NDQzMTAyNDUsLTE0NTM4MTgwMTksLTE3NTExOTQ0MjIsLT
+EzMjcwMTg2NzMsLTI3NDU0NjIyNiwtMTc5NTYyMTQyNSwtOTkz
+MDE1OTc0LDI0Nzg5OTg0NSwtMTg4NzU0NzU5Nyw0MDMxMjQ1OD
+gsMTY4OTQ1MzU1MiwxMzYxOTE0NDg3LDE3NDM4MjExNTksMjIw
+MTkxMzMxXX0=
 -->
