@@ -1578,7 +1578,7 @@ Accounts
 : to use the api key: `cargo login abalkjgo345;kjsadf`
 
 Adding metadata to a new crate
-: 
+: `Cargo.toml`` has some fields that should be included in the `package[
 
 ## 14.03 Cargo workspaces
 ## 14.04 Installing binaries with cargo install
@@ -1606,11 +1606,11 @@ Adding metadata to a new crate
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NDMxMDI0NSwtMTQ1MzgxODAxOSwtMT
-c1MTE5NDQyMiwtMTMyNzAxODY3MywtMjc0NTQ2MjI2LC0xNzk1
-NjIxNDI1LC05OTMwMTU5NzQsMjQ3ODk5ODQ1LC0xODg3NTQ3NT
-k3LDQwMzEyNDU4OCwxNjg5NDUzNTUyLDEzNjE5MTQ0ODcsMTc0
-MzgyMTE1OSwyMjAxOTEzMzEsMTE1NjM0MTY2MCwxNDc1OTAxMT
-U4LC03NjcyMjc3NzYsLTE2NjgwMDU2MDgsLTEyMjU1ODE1MDYs
-LTcxMTc1MDk5XX0=
+eyJoaXN0b3J5IjpbMTAzNTYwNDUxMiwtNjQ0MzEwMjQ1LC0xND
+UzODE4MDE5LC0xNzUxMTk0NDIyLC0xMzI3MDE4NjczLC0yNzQ1
+NDYyMjYsLTE3OTU2MjE0MjUsLTk5MzAxNTk3NCwyNDc4OTk4ND
+UsLTE4ODc1NDc1OTcsNDAzMTI0NTg4LDE2ODk0NTM1NTIsMTM2
+MTkxNDQ4NywxNzQzODIxMTU5LDIyMDE5MTMzMSwxMTU2MzQxNj
+YwLDE0NzU5MDExNTgsLTc2NzIyNzc3NiwtMTY2ODAwNTYwOCwt
+MTIyNTU4MTUwNl19
 -->
