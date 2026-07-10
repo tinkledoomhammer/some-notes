@@ -1578,7 +1578,19 @@ Accounts
 : to use the api key: `cargo login abalkjgo345;kjsadf`
 
 Adding metadata to a new crate
-: `Cargo.toml`` has some fields that should be included in the `package[
+: `Cargo.toml` has some fields that should be included in the `[package]`
+
+```rust
+[package]
+name = "guessing_game"
+version = "0.1.0"
+edition = "2024"
+description = "A fun game where you guess what number the computer has chosen."
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+```
+If the license is not listed in [Linux Foundation’s Software Package Data Exchange (SPDX)](https://spdx.org/licenses/) then a license file will have to be provided.
 
 ## 14.03 Cargo workspaces
 ## 14.04 Installing binaries with cargo install
@@ -1606,7 +1618,7 @@ Adding metadata to a new crate
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNTYwNDUxMiwtNjQ0MzEwMjQ1LC0xND
+eyJoaXN0b3J5IjpbLTgwNzk2MDgzNCwtNjQ0MzEwMjQ1LC0xND
 UzODE4MDE5LC0xNzUxMTk0NDIyLC0xMzI3MDE4NjczLC0yNzQ1
 NDYyMjYsLTE3OTU2MjE0MjUsLTk5MzAxNTk3NCwyNDc4OTk4ND
 UsLTE4ODc1NDc1OTcsNDAzMTI0NTg4LDE2ODk0NTM1NTIsMTM2
