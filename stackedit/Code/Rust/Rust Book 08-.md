@@ -1636,6 +1636,16 @@ add_one = {path = "../add_one" }
 * cargo will apply the rules of semver
 	* breaking changes occur with major version changes
 	* and minor version changes when the major version is 0
+### Testing and publishing
+
+`cargo -p ...`
+: applies cargo commands to the specified crate
+: specifically `cargo test` and `cargo publish
+Tests are added to each crate as normal
+
+
+
+
 
 ## 14.04 Installing binaries with cargo install
 ## 14.05 Extending cargo with custom commands
@@ -1662,11 +1672,11 @@ add_one = {path = "../add_one" }
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzQ3MDk4MDYsOTEyNTIyNDE3LC00NT
-c2NzMyMDMsLTM2MTgyODc5NSwtNjQ0MzEwMjQ1LC0xNDUzODE4
-MDE5LC0xNzUxMTk0NDIyLC0xMzI3MDE4NjczLC0yNzQ1NDYyMj
-YsLTE3OTU2MjE0MjUsLTk5MzAxNTk3NCwyNDc4OTk4NDUsLTE4
-ODc1NDc1OTcsNDAzMTI0NTg4LDE2ODk0NTM1NTIsMTM2MTkxND
-Q4NywxNzQzODIxMTU5LDIyMDE5MTMzMSwxMTU2MzQxNjYwLDE0
-NzU5MDExNThdfQ==
+eyJoaXN0b3J5IjpbNzkzMTI0MzA2LC0xNTM0NzA5ODA2LDkxMj
+UyMjQxNywtNDU3NjczMjAzLC0zNjE4Mjg3OTUsLTY0NDMxMDI0
+NSwtMTQ1MzgxODAxOSwtMTc1MTE5NDQyMiwtMTMyNzAxODY3My
+wtMjc0NTQ2MjI2LC0xNzk1NjIxNDI1LC05OTMwMTU5NzQsMjQ3
+ODk5ODQ1LC0xODg3NTQ3NTk3LDQwMzEyNDU4OCwxNjg5NDUzNT
+UyLDEzNjE5MTQ0ODcsMTc0MzgyMTE1OSwyMjAxOTEzMzEsMTE1
+NjM0MTY2MF19
 -->
