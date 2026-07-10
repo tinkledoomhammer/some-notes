@@ -1592,6 +1592,10 @@ license = "MIT OR Apache-2.0"
 ```
 If the license is not listed in [Linux Foundation’s Software Package Data Exchange (SPDX)](https://spdx.org/licenses/) then a license file will have to be provided.
 
+`cargo publish`
+: to publish to `crates.io`
+: use [Semantic Versioning rules](https://semver.org/) for version numbers
+
 ## 14.03 Cargo workspaces
 ## 14.04 Installing binaries with cargo install
 ## 14.05 Extending cargo with custom commands
@@ -1618,11 +1622,11 @@ If the license is not listed in [Linux Foundation’s Software Package Data Exch
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNzk2MDgzNCwtNjQ0MzEwMjQ1LC0xND
-UzODE4MDE5LC0xNzUxMTk0NDIyLC0xMzI3MDE4NjczLC0yNzQ1
-NDYyMjYsLTE3OTU2MjE0MjUsLTk5MzAxNTk3NCwyNDc4OTk4ND
-UsLTE4ODc1NDc1OTcsNDAzMTI0NTg4LDE2ODk0NTM1NTIsMTM2
-MTkxNDQ4NywxNzQzODIxMTU5LDIyMDE5MTMzMSwxMTU2MzQxNj
-YwLDE0NzU5MDExNTgsLTc2NzIyNzc3NiwtMTY2ODAwNTYwOCwt
-MTIyNTU4MTUwNl19
+eyJoaXN0b3J5IjpbNjM1Mjg0NTI0LC02NDQzMTAyNDUsLTE0NT
+M4MTgwMTksLTE3NTExOTQ0MjIsLTEzMjcwMTg2NzMsLTI3NDU0
+NjIyNiwtMTc5NTYyMTQyNSwtOTkzMDE1OTc0LDI0Nzg5OTg0NS
+wtMTg4NzU0NzU5Nyw0MDMxMjQ1ODgsMTY4OTQ1MzU1MiwxMzYx
+OTE0NDg3LDE3NDM4MjExNTksMjIwMTkxMzMxLDExNTYzNDE2Nj
+AsMTQ3NTkwMTE1OCwtNzY3MjI3Nzc2LC0xNjY4MDA1NjA4LC0x
+MjI1NTgxNTA2XX0=
 -->
