@@ -1677,6 +1677,7 @@ Smart pointers
 : Light-weight and minimally featured
 : Used for 1. when a type's size can't be known at compile time
 : 2. To transfer ownership of a large amount of data without copying
+: 3. Dynamic types, owning a value knowing only that it implements a particular trait
 
 ## 15.02 Treating smart pointers like regular references
 ## 15.03 `Drop` trait
@@ -1704,11 +1705,11 @@ Smart pointers
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDk3ODA0MDIsMTMxNTQ2NDEzNCwxMz
-E1NDY0MTM0LC00MDYyNTA4MzAsNzA4NjU4NDc3LDIxMjIwNjY0
-OTYsOTQ2Mzk5Nzk5LC0xNTM0NzA5ODA2LDkxMjUyMjQxNywtND
-U3NjczMjAzLC0zNjE4Mjg3OTUsLTY0NDMxMDI0NSwtMTQ1Mzgx
-ODAxOSwtMTc1MTE5NDQyMiwtMTMyNzAxODY3MywtMjc0NTQ2Mj
-I2LC0xNzk1NjIxNDI1LC05OTMwMTU5NzQsMjQ3ODk5ODQ1LC0x
-ODg3NTQ3NTk3XX0=
+eyJoaXN0b3J5IjpbMTcxMTMxODEzNCwxMzE1NDY0MTM0LDEzMT
+U0NjQxMzQsLTQwNjI1MDgzMCw3MDg2NTg0NzcsMjEyMjA2NjQ5
+Niw5NDYzOTk3OTksLTE1MzQ3MDk4MDYsOTEyNTIyNDE3LC00NT
+c2NzMyMDMsLTM2MTgyODc5NSwtNjQ0MzEwMjQ1LC0xNDUzODE4
+MDE5LC0xNzUxMTk0NDIyLC0xMzI3MDE4NjczLC0yNzQ1NDYyMj
+YsLTE3OTU2MjE0MjUsLTk5MzAxNTk3NCwyNDc4OTk4NDUsLTE4
+ODc1NDc1OTddfQ==
 -->
