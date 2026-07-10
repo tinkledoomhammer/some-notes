@@ -1618,7 +1618,16 @@ Root folder
 * Running `cargo new` in the workspace root will
 	* Create a new subfolder and `cargo.toml` like normal
 	* add to the `members = [...]` entry in the root `cargo.toml`
-* To 
+* To setup dependencies between the crates, edit the dependant `cargo.toml` to refer to the dependency
+```toml
+//root cargo.toml
+[workspace]
+resolver = "3"
+members = ["adder", "add_one"]
+//adder's cargo.toml
+[dependencies]
+add_one = {path = "../add_one" }
+```
 
 ## 14.04 Installing binaries with cargo install
 ## 14.05 Extending cargo with custom commands
@@ -1645,11 +1654,11 @@ Root folder
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjkyNzQ5MDUxLDkxMjUyMjQxNywtNDU3Nj
-czMjAzLC0zNjE4Mjg3OTUsLTY0NDMxMDI0NSwtMTQ1MzgxODAx
-OSwtMTc1MTE5NDQyMiwtMTMyNzAxODY3MywtMjc0NTQ2MjI2LC
-0xNzk1NjIxNDI1LC05OTMwMTU5NzQsMjQ3ODk5ODQ1LC0xODg3
-NTQ3NTk3LDQwMzEyNDU4OCwxNjg5NDUzNTUyLDEzNjE5MTQ0OD
-csMTc0MzgyMTE1OSwyMjAxOTEzMzEsMTE1NjM0MTY2MCwxNDc1
-OTAxMTU4XX0=
+eyJoaXN0b3J5IjpbLTE1OTcxMzk0ODIsOTEyNTIyNDE3LC00NT
+c2NzMyMDMsLTM2MTgyODc5NSwtNjQ0MzEwMjQ1LC0xNDUzODE4
+MDE5LC0xNzUxMTk0NDIyLC0xMzI3MDE4NjczLC0yNzQ1NDYyMj
+YsLTE3OTU2MjE0MjUsLTk5MzAxNTk3NCwyNDc4OTk4NDUsLTE4
+ODc1NDc1OTcsNDAzMTI0NTg4LDE2ODk0NTM1NTIsMTM2MTkxND
+Q4NywxNzQzODIxMTU5LDIyMDE5MTMzMSwxMTU2MzQxNjYwLDE0
+NzU5MDExNThdfQ==
 -->
