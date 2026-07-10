@@ -1651,7 +1651,10 @@ add_one = {path = "../add_one" }
 * installs the specified package locally
 * only works for binary crates
 * binaries are stored in the installation root's `bin` folder
-* the default is `
+* the default is `$HOME/.cargo/bin
+* ensure that it is in the `$PATH`  environment variable
+* the second-to-last line in cargo's output will show where it is installed
+* `ripgrep` sinstalls to `~/.cargo/bin/rg`
 
 
 
@@ -1679,7 +1682,7 @@ add_one = {path = "../add_one" }
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2ODkyNjk3Nyw3MDg2NTg0NzcsMjEyMj
+eyJoaXN0b3J5IjpbLTQwNjI1MDgzMCw3MDg2NTg0NzcsMjEyMj
 A2NjQ5Niw5NDYzOTk3OTksLTE1MzQ3MDk4MDYsOTEyNTIyNDE3
 LC00NTc2NzMyMDMsLTM2MTgyODc5NSwtNjQ0MzEwMjQ1LC0xND
 UzODE4MDE5LC0xNzUxMTk0NDIyLC0xMzI3MDE4NjczLC0yNzQ1
