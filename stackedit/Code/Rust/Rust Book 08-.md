@@ -1606,11 +1606,16 @@ If the license is not listed in [Linux Foundation’s Software Package Data Exch
 : will prevent new projects from using that version
 
 ## 14.03 Cargo workspaces
-Projects that contain multiple projects in a nested structure
+Projects that contain multiple projects in a nested structure with a shared `cargo.lock`
 
 Root folder
 : contains a `Cargo.toml` and a folder for each crate
-* The root `Cargo.toml` has a `[workspace]` section instead of `
+* The root `Cargo.toml` has a `[workspace]` section instead of `[project]`
+
+`resolver = "3"`
+: specifies which version of the resolver algorithm cargo should use
+
+* Running `cargo new` in the woarksp
 
 ## 14.04 Installing binaries with cargo install
 ## 14.05 Extending cargo with custom commands
@@ -1637,7 +1642,7 @@ Root folder
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyNjMwNDMzNCw5MTI1MjI0MTcsLTQ1Nz
+eyJoaXN0b3J5IjpbLTEyNDU4OTA0Myw5MTI1MjI0MTcsLTQ1Nz
 Y3MzIwMywtMzYxODI4Nzk1LC02NDQzMTAyNDUsLTE0NTM4MTgw
 MTksLTE3NTExOTQ0MjIsLTEzMjcwMTg2NzMsLTI3NDU0NjIyNi
 wtMTc5NTYyMTQyNSwtOTkzMDE1OTc0LDI0Nzg5OTg0NSwtMTg4
