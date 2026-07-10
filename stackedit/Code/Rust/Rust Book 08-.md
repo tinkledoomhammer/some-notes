@@ -1631,7 +1631,8 @@ add_one = {path = "../add_one" }
 
 ### External dependencies 
 * each crate gets its own dependencies
-* 
+* cargo will find a version that satisfies the needs of all crates
+* that way all the crates will be compatible
 
 ## 14.04 Installing binaries with cargo install
 ## 14.05 Extending cargo with custom commands
@@ -1658,7 +1659,7 @@ add_one = {path = "../add_one" }
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1ODk1NzU0MSw5MTI1MjI0MTcsLTQ1Nz
+eyJoaXN0b3J5IjpbMTk5OTM1NTYzMiw5MTI1MjI0MTcsLTQ1Nz
 Y3MzIwMywtMzYxODI4Nzk1LC02NDQzMTAyNDUsLTE0NTM4MTgw
 MTksLTE3NTExOTQ0MjIsLTEzMjcwMTg2NzMsLTI3NDU0NjIyNi
 wtMTc5NTYyMTQyNSwtOTkzMDE1OTc0LDI0Nzg5OTg0NSwtMTg4
