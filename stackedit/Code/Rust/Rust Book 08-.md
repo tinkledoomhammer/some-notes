@@ -1658,9 +1658,9 @@ add_one = {path = "../add_one" }
 * `ripgrep` sinstalls to `~/.cargo/bin/rg`
 
 Cargo subcommands
-: anything in the command 
-
-## 14.05 Extending cargo with custom commands
+: anything in the command path named `cargo-something`
+: can be run as `cargo something`
+: `cargo --list` will list all subcommands
 
 # 15 Smart pointers
 
@@ -1684,7 +1684,7 @@ Cargo subcommands
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MTAxNzAwNywtNDA2MjUwODMwLDcwOD
+eyJoaXN0b3J5IjpbMTMxNTQ2NDEzNCwtNDA2MjUwODMwLDcwOD
 Y1ODQ3NywyMTIyMDY2NDk2LDk0NjM5OTc5OSwtMTUzNDcwOTgw
 Niw5MTI1MjI0MTcsLTQ1NzY3MzIwMywtMzYxODI4Nzk1LC02ND
 QzMTAyNDUsLTE0NTM4MTgwMTksLTE3NTExOTQ0MjIsLTEzMjcw
