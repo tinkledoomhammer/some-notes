@@ -1606,7 +1606,11 @@ If the license is not listed in [Linux Foundation’s Software Package Data Exch
 : will prevent new projects from using that version
 
 ## 14.03 Cargo workspaces
+Projects that contain multiple projects in a nested structure
 
+Root folder
+: contains a `Cargo.toml` and a folder for each crate
+* The root `Cargo.toml` has a `[workspace]` section instead of `
 
 ## 14.04 Installing binaries with cargo install
 ## 14.05 Extending cargo with custom commands
@@ -1633,11 +1637,11 @@ If the license is not listed in [Linux Foundation’s Software Package Data Exch
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEyNTIyNDE3LC00NTc2NzMyMDMsLTM2MT
-gyODc5NSwtNjQ0MzEwMjQ1LC0xNDUzODE4MDE5LC0xNzUxMTk0
-NDIyLC0xMzI3MDE4NjczLC0yNzQ1NDYyMjYsLTE3OTU2MjE0Mj
-UsLTk5MzAxNTk3NCwyNDc4OTk4NDUsLTE4ODc1NDc1OTcsNDAz
-MTI0NTg4LDE2ODk0NTM1NTIsMTM2MTkxNDQ4NywxNzQzODIxMT
-U5LDIyMDE5MTMzMSwxMTU2MzQxNjYwLDE0NzU5MDExNTgsLTc2
-NzIyNzc3Nl19
+eyJoaXN0b3J5IjpbMTYyNjMwNDMzNCw5MTI1MjI0MTcsLTQ1Nz
+Y3MzIwMywtMzYxODI4Nzk1LC02NDQzMTAyNDUsLTE0NTM4MTgw
+MTksLTE3NTExOTQ0MjIsLTEzMjcwMTg2NzMsLTI3NDU0NjIyNi
+wtMTc5NTYyMTQyNSwtOTkzMDE1OTc0LDI0Nzg5OTg0NSwtMTg4
+NzU0NzU5Nyw0MDMxMjQ1ODgsMTY4OTQ1MzU1MiwxMzYxOTE0ND
+g3LDE3NDM4MjExNTksMjIwMTkxMzMxLDExNTYzNDE2NjAsMTQ3
+NTkwMTE1OF19
 -->
