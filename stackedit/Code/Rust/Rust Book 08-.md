@@ -1568,6 +1568,9 @@ Contained item comments
 : can be used to selectively latten the module hierarchy, making it much easier to find essential items
 : particularly because the mod structure that works best for design won't often be the best api structure
 
+`#![deny(missing_docs)]`
+: will cause rust to treat undocumented functions as an error
+
 ### Crates.io Stuff
 
 Accounts
@@ -1628,11 +1631,11 @@ If the license is not listed in [Linux Foundation’s Software Package Data Exch
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MTgyODc5NSwtNjQ0MzEwMjQ1LC0xND
-UzODE4MDE5LC0xNzUxMTk0NDIyLC0xMzI3MDE4NjczLC0yNzQ1
-NDYyMjYsLTE3OTU2MjE0MjUsLTk5MzAxNTk3NCwyNDc4OTk4ND
-UsLTE4ODc1NDc1OTcsNDAzMTI0NTg4LDE2ODk0NTM1NTIsMTM2
-MTkxNDQ4NywxNzQzODIxMTU5LDIyMDE5MTMzMSwxMTU2MzQxNj
-YwLDE0NzU5MDExNTgsLTc2NzIyNzc3NiwtMTY2ODAwNTYwOCwt
-MTIyNTU4MTUwNl19
+eyJoaXN0b3J5IjpbLTQ1NzY3MzIwMywtMzYxODI4Nzk1LC02ND
+QzMTAyNDUsLTE0NTM4MTgwMTksLTE3NTExOTQ0MjIsLTEzMjcw
+MTg2NzMsLTI3NDU0NjIyNiwtMTc5NTYyMTQyNSwtOTkzMDE1OT
+c0LDI0Nzg5OTg0NSwtMTg4NzU0NzU5Nyw0MDMxMjQ1ODgsMTY4
+OTQ1MzU1MiwxMzYxOTE0NDg3LDE3NDM4MjExNTksMjIwMTkxMz
+MxLDExNTYzNDE2NjAsMTQ3NTkwMTE1OCwtNzY3MjI3Nzc2LC0x
+NjY4MDA1NjA4XX0=
 -->
