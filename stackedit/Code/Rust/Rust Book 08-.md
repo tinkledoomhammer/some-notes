@@ -1615,7 +1615,10 @@ Root folder
 `resolver = "3"`
 : specifies which version of the resolver algorithm cargo should use
 
-* Running `cargo new` in the woarksp
+* Running `cargo new` in the workspace root will
+	* Create a new subfolder and `cargo.toml` like normal
+	* add to the `members = [...]` entry in the root `cargo.toml`
+* To 
 
 ## 14.04 Installing binaries with cargo install
 ## 14.05 Extending cargo with custom commands
@@ -1642,11 +1645,11 @@ Root folder
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDU4OTA0Myw5MTI1MjI0MTcsLTQ1Nz
-Y3MzIwMywtMzYxODI4Nzk1LC02NDQzMTAyNDUsLTE0NTM4MTgw
-MTksLTE3NTExOTQ0MjIsLTEzMjcwMTg2NzMsLTI3NDU0NjIyNi
-wtMTc5NTYyMTQyNSwtOTkzMDE1OTc0LDI0Nzg5OTg0NSwtMTg4
-NzU0NzU5Nyw0MDMxMjQ1ODgsMTY4OTQ1MzU1MiwxMzYxOTE0ND
-g3LDE3NDM4MjExNTksMjIwMTkxMzMxLDExNTYzNDE2NjAsMTQ3
-NTkwMTE1OF19
+eyJoaXN0b3J5IjpbMjkyNzQ5MDUxLDkxMjUyMjQxNywtNDU3Nj
+czMjAzLC0zNjE4Mjg3OTUsLTY0NDMxMDI0NSwtMTQ1MzgxODAx
+OSwtMTc1MTE5NDQyMiwtMTMyNzAxODY3MywtMjc0NTQ2MjI2LC
+0xNzk1NjIxNDI1LC05OTMwMTU5NzQsMjQ3ODk5ODQ1LC0xODg3
+NTQ3NTk3LDQwMzEyNDU4OCwxNjg5NDUzNTUyLDEzNjE5MTQ0OD
+csMTc0MzgyMTE1OSwyMjAxOTEzMzEsMTE1NjM0MTY2MCwxNDc1
+OTAxMTU4XX0=
 -->
