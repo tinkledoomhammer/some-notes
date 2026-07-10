@@ -1646,9 +1646,10 @@ add_one = {path = "../add_one" }
 * Tests are added to each crate as normal
 * when publishing, each crate must be published separately
 
-## 14.04 Installing binaries with cargo install
+## 14.04 Cargo install and custom cargo commands
+
 `cargo install ripgrep`
-* installs the specified package locally
+: installs the specified package locally
 * only works for binary crates
 * binaries are stored in the installation root's `bin` folder
 * the default is `$HOME/.cargo/bin
@@ -1656,7 +1657,8 @@ add_one = {path = "../add_one" }
 * the second-to-last line in cargo's output will show where it is installed
 * `ripgrep` sinstalls to `~/.cargo/bin/rg`
 
-
+Cargo subcommands
+: anything in the command 
 
 ## 14.05 Extending cargo with custom commands
 
@@ -1682,11 +1684,11 @@ add_one = {path = "../add_one" }
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNjI1MDgzMCw3MDg2NTg0NzcsMjEyMj
-A2NjQ5Niw5NDYzOTk3OTksLTE1MzQ3MDk4MDYsOTEyNTIyNDE3
-LC00NTc2NzMyMDMsLTM2MTgyODc5NSwtNjQ0MzEwMjQ1LC0xND
-UzODE4MDE5LC0xNzUxMTk0NDIyLC0xMzI3MDE4NjczLC0yNzQ1
-NDYyMjYsLTE3OTU2MjE0MjUsLTk5MzAxNTk3NCwyNDc4OTk4ND
-UsLTE4ODc1NDc1OTcsNDAzMTI0NTg4LDE2ODk0NTM1NTIsMTM2
-MTkxNDQ4N119
+eyJoaXN0b3J5IjpbMTk5MTAxNzAwNywtNDA2MjUwODMwLDcwOD
+Y1ODQ3NywyMTIyMDY2NDk2LDk0NjM5OTc5OSwtMTUzNDcwOTgw
+Niw5MTI1MjI0MTcsLTQ1NzY3MzIwMywtMzYxODI4Nzk1LC02ND
+QzMTAyNDUsLTE0NTM4MTgwMTksLTE3NTExOTQ0MjIsLTEzMjcw
+MTg2NzMsLTI3NDU0NjIyNiwtMTc5NTYyMTQyNSwtOTkzMDE1OT
+c0LDI0Nzg5OTg0NSwtMTg4NzU0NzU5Nyw0MDMxMjQ1ODgsMTY4
+OTQ1MzU1Ml19
 -->
