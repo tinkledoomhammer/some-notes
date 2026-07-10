@@ -1674,7 +1674,9 @@ Smart pointers
 ## 15.01 `Box<T>`
 
 `Box<T>` points to data on the heap
-: Lack performance overhead and 
+: Light-weight and minimally featured
+: Used for 1. when a type's size can't be known at compile time
+: 2. To transfer ownership of a large amount of data without copying
 
 ## 15.02 Treating smart pointers like regular references
 ## 15.03 `Drop` trait
@@ -1702,7 +1704,7 @@ Smart pointers
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzY2OTQ3MDMsMTMxNTQ2NDEzNCwxMz
+eyJoaXN0b3J5IjpbLTE2NDk3ODA0MDIsMTMxNTQ2NDEzNCwxMz
 E1NDY0MTM0LC00MDYyNTA4MzAsNzA4NjU4NDc3LDIxMjIwNjY0
 OTYsOTQ2Mzk5Nzk5LC0xNTM0NzA5ODA2LDkxMjUyMjQxNywtND
 U3NjczMjAzLC0zNjE4Mjg3OTUsLTY0NDMxMDI0NSwtMTQ1Mzgx
