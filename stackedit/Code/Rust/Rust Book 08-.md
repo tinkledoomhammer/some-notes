@@ -1704,6 +1704,12 @@ Rust does deref coercion when it finds types and trait implementations in three 
 
 
 ## 15.03 `Drop` trait
+```rust
+trait Drop {
+	//called when the varible leaves scope
+	fn drop(Self);
+}
+```
 ## 15.04 `Rc<T>` ref counted
 ## 15.05 `RefCell<T>` and Interior mutability
 ## 15.06 Reference Cycles can leak memory
@@ -1728,11 +1734,11 @@ Rust does deref coercion when it finds types and trait implementations in three 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTY2NzM3MTEsMTM3MTQyNjA1OSwtMT
-k3NjkxMDU5MSwxMzU1NDk5MTgwLDE3MTEzMTgxMzQsMTMxNTQ2
-NDEzNCwxMzE1NDY0MTM0LC00MDYyNTA4MzAsNzA4NjU4NDc3LD
-IxMjIwNjY0OTYsOTQ2Mzk5Nzk5LC0xNTM0NzA5ODA2LDkxMjUy
-MjQxNywtNDU3NjczMjAzLC0zNjE4Mjg3OTUsLTY0NDMxMDI0NS
-wtMTQ1MzgxODAxOSwtMTc1MTE5NDQyMiwtMTMyNzAxODY3Mywt
-Mjc0NTQ2MjI2XX0=
+eyJoaXN0b3J5IjpbLTQ1MjAyNzE4LC0xODk2NjczNzExLDEzNz
+E0MjYwNTksLTE5NzY5MTA1OTEsMTM1NTQ5OTE4MCwxNzExMzE4
+MTM0LDEzMTU0NjQxMzQsMTMxNTQ2NDEzNCwtNDA2MjUwODMwLD
+cwODY1ODQ3NywyMTIyMDY2NDk2LDk0NjM5OTc5OSwtMTUzNDcw
+OTgwNiw5MTI1MjI0MTcsLTQ1NzY3MzIwMywtMzYxODI4Nzk1LC
+02NDQzMTAyNDUsLTE0NTM4MTgwMTksLTE3NTExOTQ0MjIsLTEz
+MjcwMTg2NzNdfQ==
 -->
