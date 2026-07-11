@@ -1688,6 +1688,8 @@ trait Deref {
 ```
 * allows the type to be used with the `*` deref operator
 * Returns a `&` of its target
+* Might get called recursively
+* the standard library implements `deref<Target=&str> for String Target=&str`
 * 
 
 
@@ -1716,11 +1718,11 @@ trait Deref {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzY5MTA1OTEsMTM1NTQ5OTE4MCwxNz
-ExMzE4MTM0LDEzMTU0NjQxMzQsMTMxNTQ2NDEzNCwtNDA2MjUw
-ODMwLDcwODY1ODQ3NywyMTIyMDY2NDk2LDk0NjM5OTc5OSwtMT
-UzNDcwOTgwNiw5MTI1MjI0MTcsLTQ1NzY3MzIwMywtMzYxODI4
-Nzk1LC02NDQzMTAyNDUsLTE0NTM4MTgwMTksLTE3NTExOTQ0Mj
-IsLTEzMjcwMTg2NzMsLTI3NDU0NjIyNiwtMTc5NTYyMTQyNSwt
-OTkzMDE1OTc0XX0=
+eyJoaXN0b3J5IjpbLTE4NjY1MzM3ODcsLTE5NzY5MTA1OTEsMT
+M1NTQ5OTE4MCwxNzExMzE4MTM0LDEzMTU0NjQxMzQsMTMxNTQ2
+NDEzNCwtNDA2MjUwODMwLDcwODY1ODQ3NywyMTIyMDY2NDk2LD
+k0NjM5OTc5OSwtMTUzNDcwOTgwNiw5MTI1MjI0MTcsLTQ1NzY3
+MzIwMywtMzYxODI4Nzk1LC02NDQzMTAyNDUsLTE0NTM4MTgwMT
+ksLTE3NTExOTQ0MjIsLTEzMjcwMTg2NzMsLTI3NDU0NjIyNiwt
+MTc5NTYyMTQyNV19
 -->
