@@ -1712,10 +1712,13 @@ trait Drop {
 // -- snip --//
 //to use
 drop(var);
-or var.drop();
+// which calls
+var.drop(); // error
+// though that cannot be called in that way
 ```
 * `.drop()` is automatically called when instances go out of scope.
 * Variables are dropped in reverse order of creation
+* to manually drop a value use `drop(val)`
 ## 15.04 `Rc<T>` ref counted
 ## 15.05 `RefCell<T>` and Interior mutability
 ## 15.06 Reference Cycles can leak memory
@@ -1740,11 +1743,11 @@ or var.drop();
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3ODQ4MjE5MCwtNDUyMDI3MTgsLTE4OT
-Y2NzM3MTEsMTM3MTQyNjA1OSwtMTk3NjkxMDU5MSwxMzU1NDk5
-MTgwLDE3MTEzMTgxMzQsMTMxNTQ2NDEzNCwxMzE1NDY0MTM0LC
-00MDYyNTA4MzAsNzA4NjU4NDc3LDIxMjIwNjY0OTYsOTQ2Mzk5
-Nzk5LC0xNTM0NzA5ODA2LDkxMjUyMjQxNywtNDU3NjczMjAzLC
-0zNjE4Mjg3OTUsLTY0NDMxMDI0NSwtMTQ1MzgxODAxOSwtMTc1
-MTE5NDQyMl19
+eyJoaXN0b3J5IjpbMzAwMTY4MCwtNDUyMDI3MTgsLTE4OTY2Nz
+M3MTEsMTM3MTQyNjA1OSwtMTk3NjkxMDU5MSwxMzU1NDk5MTgw
+LDE3MTEzMTgxMzQsMTMxNTQ2NDEzNCwxMzE1NDY0MTM0LC00MD
+YyNTA4MzAsNzA4NjU4NDc3LDIxMjIwNjY0OTYsOTQ2Mzk5Nzk5
+LC0xNTM0NzA5ODA2LDkxMjUyMjQxNywtNDU3NjczMjAzLC0zNj
+E4Mjg3OTUsLTY0NDMxMDI0NSwtMTQ1MzgxODAxOSwtMTc1MTE5
+NDQyMl19
 -->
