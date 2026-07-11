@@ -1680,7 +1680,14 @@ Smart pointers
 : 3. Dynamic types, owning a value knowing only that it implements a particular trait
 : allows recursive types to be `sized`
 ## 15.02 Treating smart pointers like regular references
-
+```rust
+trait Deref {
+	type Target;
+	fn deref(&self) -> &Self.Target;
+}
+```
+* allows the type to be used with the `*` deref operator
+* Returns a `&` 
 
 
 ## 15.03 `Drop` trait
@@ -1708,11 +1715,11 @@ Smart pointers
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1NTQ5OTE4MCwxNzExMzE4MTM0LDEzMT
-U0NjQxMzQsMTMxNTQ2NDEzNCwtNDA2MjUwODMwLDcwODY1ODQ3
-NywyMTIyMDY2NDk2LDk0NjM5OTc5OSwtMTUzNDcwOTgwNiw5MT
-I1MjI0MTcsLTQ1NzY3MzIwMywtMzYxODI4Nzk1LC02NDQzMTAy
-NDUsLTE0NTM4MTgwMTksLTE3NTExOTQ0MjIsLTEzMjcwMTg2Nz
-MsLTI3NDU0NjIyNiwtMTc5NTYyMTQyNSwtOTkzMDE1OTc0LDI0
-Nzg5OTg0NV19
+eyJoaXN0b3J5IjpbNzkwNzA3MjE5LDEzNTU0OTkxODAsMTcxMT
+MxODEzNCwxMzE1NDY0MTM0LDEzMTU0NjQxMzQsLTQwNjI1MDgz
+MCw3MDg2NTg0NzcsMjEyMjA2NjQ5Niw5NDYzOTk3OTksLTE1Mz
+Q3MDk4MDYsOTEyNTIyNDE3LC00NTc2NzMyMDMsLTM2MTgyODc5
+NSwtNjQ0MzEwMjQ1LC0xNDUzODE4MDE5LC0xNzUxMTk0NDIyLC
+0xMzI3MDE4NjczLC0yNzQ1NDYyMjYsLTE3OTU2MjE0MjUsLTk5
+MzAxNTk3NF19
 -->
