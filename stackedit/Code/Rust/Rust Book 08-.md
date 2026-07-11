@@ -1696,6 +1696,12 @@ trait Deref {
 `DerefMut` trait
 : like `Deref` but for mutable references
 
+Rust does deref coercion when it finds types and trait implementations in three cases:
+
+1.  From  `&T`  to  `&U`  when  `T: Deref<Target=U>`
+2.  From  `&mut T`  to  `&mut U`  when  `T: DerefMut<Target=U>`
+3.  From  `&mut T`  to  `&U`  when  `T: Deref<Target=U>`
+
 
 ## 15.03 `Drop` trait
 ## 15.04 `Rc<T>` ref counted
@@ -1722,11 +1728,11 @@ trait Deref {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MTQyNjA1OSwtMTk3NjkxMDU5MSwxMz
-U1NDk5MTgwLDE3MTEzMTgxMzQsMTMxNTQ2NDEzNCwxMzE1NDY0
-MTM0LC00MDYyNTA4MzAsNzA4NjU4NDc3LDIxMjIwNjY0OTYsOT
-Q2Mzk5Nzk5LC0xNTM0NzA5ODA2LDkxMjUyMjQxNywtNDU3Njcz
-MjAzLC0zNjE4Mjg3OTUsLTY0NDMxMDI0NSwtMTQ1MzgxODAxOS
-wtMTc1MTE5NDQyMiwtMTMyNzAxODY3MywtMjc0NTQ2MjI2LC0x
-Nzk1NjIxNDI1XX0=
+eyJoaXN0b3J5IjpbLTE4OTY2NzM3MTEsMTM3MTQyNjA1OSwtMT
+k3NjkxMDU5MSwxMzU1NDk5MTgwLDE3MTEzMTgxMzQsMTMxNTQ2
+NDEzNCwxMzE1NDY0MTM0LC00MDYyNTA4MzAsNzA4NjU4NDc3LD
+IxMjIwNjY0OTYsOTQ2Mzk5Nzk5LC0xNTM0NzA5ODA2LDkxMjUy
+MjQxNywtNDU3NjczMjAzLC0zNjE4Mjg3OTUsLTY0NDMxMDI0NS
+wtMTQ1MzgxODAxOSwtMTc1MTE5NDQyMiwtMTMyNzAxODY3Mywt
+Mjc0NTQ2MjI2XX0=
 -->
