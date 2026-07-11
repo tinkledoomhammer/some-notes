@@ -1681,6 +1681,7 @@ Smart pointers
 : allows recursive types to be `sized`
 ## 15.02 Treating smart pointers like regular references
 ```rust
+use std::ops::d
 trait Deref {
 	type Target;
 	fn deref(&self) -> &Self.Target;
@@ -1690,7 +1691,7 @@ trait Deref {
 : allows the type to be used with the `*` deref operator
 : Returns a `&` of its target
 : Might get called recursively
-: the standard library implements `Deref<Target=&str> for &String` ?? Not sure where the `&`s go
+: the standard library implements `Deref<Target=&str> for String` ?? Not sure where the `&`s go
 
 `DerefMut` trait
 : like `Deref` but for mutable references
@@ -1721,7 +1722,7 @@ trait Deref {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MjQzODUxNCwtMTk3NjkxMDU5MSwxMz
+eyJoaXN0b3J5IjpbMTUzOTA4NjcyOCwtMTk3NjkxMDU5MSwxMz
 U1NDk5MTgwLDE3MTEzMTgxMzQsMTMxNTQ2NDEzNCwxMzE1NDY0
 MTM0LC00MDYyNTA4MzAsNzA4NjU4NDc3LDIxMjIwNjY0OTYsOT
 Q2Mzk5Nzk5LC0xNTM0NzA5ODA2LDkxMjUyMjQxNywtNDU3Njcz
