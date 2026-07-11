@@ -1686,11 +1686,14 @@ trait Deref {
 	fn deref(&self) -> &Self.Target;
 }
 ```
-* allows the type to be used with the `*` deref operator
-* Returns a `&` of its target
-* Might get called recursively
-* the standard library implements `deref<Target=&str> for String Target=&str`
-* 
+`Deref` trait
+: allows the type to be used with the `*` deref operator
+: Returns a `&` of its target
+: Might get called recursively
+: the standard library implements `deref<Target=&str> for String`
+
+`DerefMut` trait
+: like `Deref`
 
 
 ## 15.03 `Drop` trait
@@ -1718,7 +1721,7 @@ trait Deref {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjY1MzM3ODcsLTE5NzY5MTA1OTEsMT
+eyJoaXN0b3J5IjpbLTE0MDA3ODAzODMsLTE5NzY5MTA1OTEsMT
 M1NTQ5OTE4MCwxNzExMzE4MTM0LDEzMTU0NjQxMzQsMTMxNTQ2
 NDEzNCwtNDA2MjUwODMwLDcwODY1ODQ3NywyMTIyMDY2NDk2LD
 k0NjM5OTc5OSwtMTUzNDcwOTgwNiw5MTI1MjI0MTcsLTQ1NzY3
