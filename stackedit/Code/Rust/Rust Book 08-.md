@@ -1715,12 +1715,17 @@ drop(var);
 // which calls
 var.drop(); // error
 // though that cannot be called in that way
+//other things that cause drop:
+(|_| ())(s);
+{ s };
 ```
 * `.drop()` is automatically called when instances go out of scope.
 * Variables are dropped in reverse order of creation
 * to manually drop a value use `drop(val)` which is `std::mem::drop`
-* 
+
 ## 15.04 `Rc<T>` ref counted
+
+
 ## 15.05 `RefCell<T>` and Interior mutability
 ## 15.06 Reference Cycles can leak memory
 
@@ -1744,11 +1749,11 @@ var.drop(); // error
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgxMjQxMTgsLTQ1MjAyNzE4LC0xODk2Nj
-czNzExLDEzNzE0MjYwNTksLTE5NzY5MTA1OTEsMTM1NTQ5OTE4
-MCwxNzExMzE4MTM0LDEzMTU0NjQxMzQsMTMxNTQ2NDEzNCwtND
-A2MjUwODMwLDcwODY1ODQ3NywyMTIyMDY2NDk2LDk0NjM5OTc5
-OSwtMTUzNDcwOTgwNiw5MTI1MjI0MTcsLTQ1NzY3MzIwMywtMz
-YxODI4Nzk1LC02NDQzMTAyNDUsLTE0NTM4MTgwMTksLTE3NTEx
-OTQ0MjJdfQ==
+eyJoaXN0b3J5IjpbLTE4NjU2OTE0ODgsLTQ1MjAyNzE4LC0xOD
+k2NjczNzExLDEzNzE0MjYwNTksLTE5NzY5MTA1OTEsMTM1NTQ5
+OTE4MCwxNzExMzE4MTM0LDEzMTU0NjQxMzQsMTMxNTQ2NDEzNC
+wtNDA2MjUwODMwLDcwODY1ODQ3NywyMTIyMDY2NDk2LDk0NjM5
+OTc5OSwtMTUzNDcwOTgwNiw5MTI1MjI0MTcsLTQ1NzY3MzIwMy
+wtMzYxODI4Nzk1LC02NDQzMTAyNDUsLTE0NTM4MTgwMTksLTE3
+NTExOTQ0MjJdfQ==
 -->
