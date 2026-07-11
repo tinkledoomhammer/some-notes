@@ -1690,10 +1690,10 @@ trait Deref {
 : allows the type to be used with the `*` deref operator
 : Returns a `&` of its target
 : Might get called recursively
-: the standard library implements `deref<Target=&str> for String`
+: the standard library implements `Deref<Target=&str> for String`
 
 `DerefMut` trait
-: like `Deref`
+: like `Deref` but for mutable references
 
 
 ## 15.03 `Drop` trait
@@ -1721,11 +1721,11 @@ trait Deref {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDA3ODAzODMsLTE5NzY5MTA1OTEsMT
-M1NTQ5OTE4MCwxNzExMzE4MTM0LDEzMTU0NjQxMzQsMTMxNTQ2
-NDEzNCwtNDA2MjUwODMwLDcwODY1ODQ3NywyMTIyMDY2NDk2LD
-k0NjM5OTc5OSwtMTUzNDcwOTgwNiw5MTI1MjI0MTcsLTQ1NzY3
-MzIwMywtMzYxODI4Nzk1LC02NDQzMTAyNDUsLTE0NTM4MTgwMT
-ksLTE3NTExOTQ0MjIsLTEzMjcwMTg2NzMsLTI3NDU0NjIyNiwt
-MTc5NTYyMTQyNV19
+eyJoaXN0b3J5IjpbLTgyNjEwODMwMywtMTk3NjkxMDU5MSwxMz
+U1NDk5MTgwLDE3MTEzMTgxMzQsMTMxNTQ2NDEzNCwxMzE1NDY0
+MTM0LC00MDYyNTA4MzAsNzA4NjU4NDc3LDIxMjIwNjY0OTYsOT
+Q2Mzk5Nzk5LC0xNTM0NzA5ODA2LDkxMjUyMjQxNywtNDU3Njcz
+MjAzLC0zNjE4Mjg3OTUsLTY0NDMxMDI0NSwtMTQ1MzgxODAxOS
+wtMTc1MTE5NDQyMiwtMTMyNzAxODY3MywtMjc0NTQ2MjI2LC0x
+Nzk1NjIxNDI1XX0=
 -->
