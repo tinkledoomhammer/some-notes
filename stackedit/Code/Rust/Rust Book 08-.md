@@ -1678,8 +1678,11 @@ Smart pointers
 : Used for 1. when a type's size can't be known at compile time
 : 2. To transfer ownership of a large amount of data without copying
 : 3. Dynamic types, owning a value knowing only that it implements a particular trait
-
+: allows recursive types to be `sized`
 ## 15.02 Treating smart pointers like regular references
+
+
+
 ## 15.03 `Drop` trait
 ## 15.04 `Rc<T>` ref counted
 ## 15.05 `RefCell<T>` and Interior mutability
@@ -1705,11 +1708,11 @@ Smart pointers
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMTMxODEzNCwxMzE1NDY0MTM0LDEzMT
-U0NjQxMzQsLTQwNjI1MDgzMCw3MDg2NTg0NzcsMjEyMjA2NjQ5
-Niw5NDYzOTk3OTksLTE1MzQ3MDk4MDYsOTEyNTIyNDE3LC00NT
-c2NzMyMDMsLTM2MTgyODc5NSwtNjQ0MzEwMjQ1LC0xNDUzODE4
-MDE5LC0xNzUxMTk0NDIyLC0xMzI3MDE4NjczLC0yNzQ1NDYyMj
-YsLTE3OTU2MjE0MjUsLTk5MzAxNTk3NCwyNDc4OTk4NDUsLTE4
-ODc1NDc1OTddfQ==
+eyJoaXN0b3J5IjpbMTM1NTQ5OTE4MCwxNzExMzE4MTM0LDEzMT
+U0NjQxMzQsMTMxNTQ2NDEzNCwtNDA2MjUwODMwLDcwODY1ODQ3
+NywyMTIyMDY2NDk2LDk0NjM5OTc5OSwtMTUzNDcwOTgwNiw5MT
+I1MjI0MTcsLTQ1NzY3MzIwMywtMzYxODI4Nzk1LC02NDQzMTAy
+NDUsLTE0NTM4MTgwMTksLTE3NTExOTQ0MjIsLTEzMjcwMTg2Nz
+MsLTI3NDU0NjIyNiwtMTc5NTYyMTQyNSwtOTkzMDE1OTc0LDI0
+Nzg5OTg0NV19
 -->
