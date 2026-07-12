@@ -1732,7 +1732,18 @@ fn main() {
 	println!("count after creating a = {}", Rc::strong_count(&a));
 	let b = Cons(3, Rc::clone(&a));
 	println!("count after creating b = {}", Rc::strong_count(&a));
-	{ let c = Cons(4, Rc::clone(&a)); println!("count after creating c = {}", Rc::strong_count(&a)); } println!("count after c goes out of scope = {}", Rc::strong_count(&a)); }
+	{
+		let c = Cons(4, Rc::clone(&a)); 
+		println!("count after creating c = {}", Rc::strong_count(&a));
+	}
+	println!("count after c goes out of scope = {}", Rc::strong_count(&a));
+}
+/*
+count after creating a = 1 
+count after creating b = 2 
+count after creating c = 3 
+count after c goes out of scope = 2
+*/
 ```
 
 
@@ -1761,7 +1772,7 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjc5NDExMzEsODk4ODg0MDc0LC0xOD
+eyJoaXN0b3J5IjpbLTEyODg0MzU3MjYsODk4ODg0MDc0LC0xOD
 Y1NjkxNDg4LC00NTIwMjcxOCwtMTg5NjY3MzcxMSwxMzcxNDI2
 MDU5LC0xOTc2OTEwNTkxLDEzNTU0OTkxODAsMTcxMTMxODEzNC
 wxMzE1NDY0MTM0LDEzMTU0NjQxMzQsLTQwNjI1MDgzMCw3MDg2
