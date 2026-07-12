@@ -1745,7 +1745,7 @@ count after creating c = 3
 count after c goes out of scope = 2
 */
 ```
-
+Note: `Rc<T>` implements `Deref` but not `DerefMut`
 ```rust
 use std::rc::Rc;
 struct Example
@@ -1771,10 +1771,10 @@ C
 */
 ```
 
-
-
-
 ## 15.05 `RefCell<T>` and Interior mutability
+
+
+
 ## 15.06 Reference Cycles can leak memory
 
 
@@ -1797,7 +1797,7 @@ C
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDQ3NDE1NjksLTEyODg0MzU3MjYsOD
+eyJoaXN0b3J5IjpbLTE3NTAxMTUyMDgsLTEyODg0MzU3MjYsOD
 k4ODg0MDc0LC0xODY1NjkxNDg4LC00NTIwMjcxOCwtMTg5NjY3
 MzcxMSwxMzcxNDI2MDU5LC0xOTc2OTEwNTkxLDEzNTU0OTkxOD
 AsMTcxMTMxODEzNCwxMzE1NDY0MTM0LDEzMTU0NjQxMzQsLTQw
