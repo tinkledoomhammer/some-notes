@@ -1774,6 +1774,7 @@ C
 ## 15.05 `RefCell<T>` and Interior mutability
 
 Because  `RefCell<T>`  allows mutable borrows checked at runtime, you can mutate the value inside the  `RefCell<T>`  even when the  `RefCell<T>`  is immutable.
+The borrow checker in the compiler allows this interior mutability, and the borrowing rules are checked at runtime instead. If you violate the rules, you’ll get a `panic!` instead of a compiler error.
 
 
 
@@ -1800,11 +1801,11 @@ Because  `RefCell<T>`  allows mutable borrows checked at runtime, you can mutate
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDM0MDU0ODIsLTE3NTAxMTUyMDgsLT
-EyODg0MzU3MjYsODk4ODg0MDc0LC0xODY1NjkxNDg4LC00NTIw
-MjcxOCwtMTg5NjY3MzcxMSwxMzcxNDI2MDU5LC0xOTc2OTEwNT
-kxLDEzNTU0OTkxODAsMTcxMTMxODEzNCwxMzE1NDY0MTM0LDEz
-MTU0NjQxMzQsLTQwNjI1MDgzMCw3MDg2NTg0NzcsMjEyMjA2Nj
-Q5Niw5NDYzOTk3OTksLTE1MzQ3MDk4MDYsOTEyNTIyNDE3LC00
-NTc2NzMyMDNdfQ==
+eyJoaXN0b3J5IjpbMTkxMDYzODYwMiwtMTc1MDExNTIwOCwtMT
+I4ODQzNTcyNiw4OTg4ODQwNzQsLTE4NjU2OTE0ODgsLTQ1MjAy
+NzE4LC0xODk2NjczNzExLDEzNzE0MjYwNTksLTE5NzY5MTA1OT
+EsMTM1NTQ5OTE4MCwxNzExMzE4MTM0LDEzMTU0NjQxMzQsMTMx
+NTQ2NDEzNCwtNDA2MjUwODMwLDcwODY1ODQ3NywyMTIyMDY2ND
+k2LDk0NjM5OTc5OSwtMTUzNDcwOTgwNiw5MTI1MjI0MTcsLTQ1
+NzY3MzIwM119
 -->
