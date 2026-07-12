@@ -1773,6 +1773,9 @@ C
 
 ## 15.05 `RefCell<T>` and Interior mutability
 
+Because  `RefCell<T>`  allows mutable borrows checked at runtime, you can mutate the value inside the  `RefCell<T>`  even when the  `RefCell<T>`  is immutable.
+
+
 
 
 ## 15.06 Reference Cycles can leak memory
@@ -1797,11 +1800,11 @@ C
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTAxMTUyMDgsLTEyODg0MzU3MjYsOD
-k4ODg0MDc0LC0xODY1NjkxNDg4LC00NTIwMjcxOCwtMTg5NjY3
-MzcxMSwxMzcxNDI2MDU5LC0xOTc2OTEwNTkxLDEzNTU0OTkxOD
-AsMTcxMTMxODEzNCwxMzE1NDY0MTM0LDEzMTU0NjQxMzQsLTQw
-NjI1MDgzMCw3MDg2NTg0NzcsMjEyMjA2NjQ5Niw5NDYzOTk3OT
-ksLTE1MzQ3MDk4MDYsOTEyNTIyNDE3LC00NTc2NzMyMDMsLTM2
-MTgyODc5NV19
+eyJoaXN0b3J5IjpbLTEzNDM0MDU0ODIsLTE3NTAxMTUyMDgsLT
+EyODg0MzU3MjYsODk4ODg0MDc0LC0xODY1NjkxNDg4LC00NTIw
+MjcxOCwtMTg5NjY3MzcxMSwxMzcxNDI2MDU5LC0xOTc2OTEwNT
+kxLDEzNTU0OTkxODAsMTcxMTMxODEzNCwxMzE1NDY0MTM0LDEz
+MTU0NjQxMzQsLTQwNjI1MDgzMCw3MDg2NTg0NzcsMjEyMjA2Nj
+Q5Niw5NDYzOTk3OTksLTE1MzQ3MDk4MDYsOTEyNTIyNDE3LC00
+NTc2NzMyMDNdfQ==
 -->
