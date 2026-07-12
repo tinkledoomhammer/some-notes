@@ -1726,7 +1726,13 @@ var.drop(); // error
 ## 15.04 `Rc<T>` ref counted
 
 ```rust
-u
+use std::rc::Rc;
+fn main() {
+	let a = Rc::new(Cons(5, Rc::new(Cons(10, Rc::new(Nil)))));
+	println!("count after creating a = {}", Rc::strong_count(&a));
+	let b = Cons(3, Rc::clone(&a));
+	println!("count after creating b = {}", Rc::strong_count(&a));
+	{ let c = Cons(4, Rc::clone(&a)); println!("count after creating c = {}", Rc::strong_count(&a)); } println!("count after c goes out of scope = {}", Rc::strong_count(&a)); }
 ```
 
 
@@ -1755,11 +1761,11 @@ u
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ2MzMzMTcxLDg5ODg4NDA3NCwtMTg2NT
-Y5MTQ4OCwtNDUyMDI3MTgsLTE4OTY2NzM3MTEsMTM3MTQyNjA1
-OSwtMTk3NjkxMDU5MSwxMzU1NDk5MTgwLDE3MTEzMTgxMzQsMT
-MxNTQ2NDEzNCwxMzE1NDY0MTM0LC00MDYyNTA4MzAsNzA4NjU4
-NDc3LDIxMjIwNjY0OTYsOTQ2Mzk5Nzk5LC0xNTM0NzA5ODA2LD
-kxMjUyMjQxNywtNDU3NjczMjAzLC0zNjE4Mjg3OTUsLTY0NDMx
-MDI0NV19
+eyJoaXN0b3J5IjpbLTEwMjc5NDExMzEsODk4ODg0MDc0LC0xOD
+Y1NjkxNDg4LC00NTIwMjcxOCwtMTg5NjY3MzcxMSwxMzcxNDI2
+MDU5LC0xOTc2OTEwNTkxLDEzNTU0OTkxODAsMTcxMTMxODEzNC
+wxMzE1NDY0MTM0LDEzMTU0NjQxMzQsLTQwNjI1MDgzMCw3MDg2
+NTg0NzcsMjEyMjA2NjQ5Niw5NDYzOTk3OTksLTE1MzQ3MDk4MD
+YsOTEyNTIyNDE3LC00NTc2NzMyMDMsLTM2MTgyODc5NSwtNjQ0
+MzEwMjQ1XX0=
 -->
