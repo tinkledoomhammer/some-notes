@@ -1745,6 +1745,18 @@ count after creating c = 3
 count after c goes out of scope = 2
 */
 ```
+```rust
+use std::rc::Rc;
+struct Example
+impl Drop for Example {
+	fn drop(&mut self) {
+		println!("drop");
+	}
+}
+fn main() {
+	let x = Rc::new(Example);
+	let y =
+```
 
 
 
@@ -1772,11 +1784,11 @@ count after c goes out of scope = 2
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODg0MzU3MjYsODk4ODg0MDc0LC0xOD
-Y1NjkxNDg4LC00NTIwMjcxOCwtMTg5NjY3MzcxMSwxMzcxNDI2
-MDU5LC0xOTc2OTEwNTkxLDEzNTU0OTkxODAsMTcxMTMxODEzNC
-wxMzE1NDY0MTM0LDEzMTU0NjQxMzQsLTQwNjI1MDgzMCw3MDg2
-NTg0NzcsMjEyMjA2NjQ5Niw5NDYzOTk3OTksLTE1MzQ3MDk4MD
-YsOTEyNTIyNDE3LC00NTc2NzMyMDMsLTM2MTgyODc5NSwtNjQ0
-MzEwMjQ1XX0=
+eyJoaXN0b3J5IjpbNzAxMTEyNTg2LC0xMjg4NDM1NzI2LDg5OD
+g4NDA3NCwtMTg2NTY5MTQ4OCwtNDUyMDI3MTgsLTE4OTY2NzM3
+MTEsMTM3MTQyNjA1OSwtMTk3NjkxMDU5MSwxMzU1NDk5MTgwLD
+E3MTEzMTgxMzQsMTMxNTQ2NDEzNCwxMzE1NDY0MTM0LC00MDYy
+NTA4MzAsNzA4NjU4NDc3LDIxMjIwNjY0OTYsOTQ2Mzk5Nzk5LC
+0xNTM0NzA5ODA2LDkxMjUyMjQxNywtNDU3NjczMjAzLC0zNjE4
+Mjg3OTVdfQ==
 -->
