@@ -1776,7 +1776,9 @@ C
 Because  `RefCell<T>`  allows mutable borrows checked at runtime, you can mutate the value inside the  `RefCell<T>`  even when the  `RefCell<T>`  is immutable.
 The borrow checker in the compiler allows this interior mutability, and the borrowing rules are checked at runtime instead. If you violate the rules, you’ll get a `panic!` instead of a compiler error.
 
-Has a `.borrow_mut()` method that gives access to the n
+Has a `.borrow_mut() ->RefMut<T>` method that gives access to the underlying object
+and `
+
 
 
 ## 15.06 Reference Cycles can leak memory
@@ -1801,11 +1803,11 @@ Has a `.borrow_mut()` method that gives access to the n
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3ODA3NDEwMiwxOTEwNjM4NjAyLC0xNz
-UwMTE1MjA4LC0xMjg4NDM1NzI2LDg5ODg4NDA3NCwtMTg2NTY5
-MTQ4OCwtNDUyMDI3MTgsLTE4OTY2NzM3MTEsMTM3MTQyNjA1OS
-wtMTk3NjkxMDU5MSwxMzU1NDk5MTgwLDE3MTEzMTgxMzQsMTMx
-NTQ2NDEzNCwxMzE1NDY0MTM0LC00MDYyNTA4MzAsNzA4NjU4ND
-c3LDIxMjIwNjY0OTYsOTQ2Mzk5Nzk5LC0xNTM0NzA5ODA2LDkx
-MjUyMjQxN119
+eyJoaXN0b3J5IjpbNTY0MjYzMzcsMTkxMDYzODYwMiwtMTc1MD
+ExNTIwOCwtMTI4ODQzNTcyNiw4OTg4ODQwNzQsLTE4NjU2OTE0
+ODgsLTQ1MjAyNzE4LC0xODk2NjczNzExLDEzNzE0MjYwNTksLT
+E5NzY5MTA1OTEsMTM1NTQ5OTE4MCwxNzExMzE4MTM0LDEzMTU0
+NjQxMzQsMTMxNTQ2NDEzNCwtNDA2MjUwODMwLDcwODY1ODQ3Ny
+wyMTIyMDY2NDk2LDk0NjM5OTc5OSwtMTUzNDcwOTgwNiw5MTI1
+MjI0MTddfQ==
 -->
