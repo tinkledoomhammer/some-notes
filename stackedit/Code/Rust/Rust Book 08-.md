@@ -1793,6 +1793,11 @@ impl<T> RefCell<T>{
 	pub fn as_ptr(&self) -> *mut T;
 	pub fn get_mut(&mut self) -> &mut T;
 }
+//other implementation
+Clone where T: Clone,
+Debug where T: Debug + ?Sized,
+Default where T: Default
+F
 ```
 
 
@@ -1818,11 +1823,11 @@ impl<T> RefCell<T>{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4NTg2ODEyNywxNDAyMzI0NDk0LDE5MT
-A2Mzg2MDIsLTE3NTAxMTUyMDgsLTEyODg0MzU3MjYsODk4ODg0
-MDc0LC0xODY1NjkxNDg4LC00NTIwMjcxOCwtMTg5NjY3MzcxMS
-wxMzcxNDI2MDU5LC0xOTc2OTEwNTkxLDEzNTU0OTkxODAsMTcx
-MTMxODEzNCwxMzE1NDY0MTM0LDEzMTU0NjQxMzQsLTQwNjI1MD
-gzMCw3MDg2NTg0NzcsMjEyMjA2NjQ5Niw5NDYzOTk3OTksLTE1
-MzQ3MDk4MDZdfQ==
+eyJoaXN0b3J5IjpbLTE3NDYwODY0NTcsMTQwMjMyNDQ5NCwxOT
+EwNjM4NjAyLC0xNzUwMTE1MjA4LC0xMjg4NDM1NzI2LDg5ODg4
+NDA3NCwtMTg2NTY5MTQ4OCwtNDUyMDI3MTgsLTE4OTY2NzM3MT
+EsMTM3MTQyNjA1OSwtMTk3NjkxMDU5MSwxMzU1NDk5MTgwLDE3
+MTEzMTgxMzQsMTMxNTQ2NDEzNCwxMzE1NDY0MTM0LC00MDYyNT
+A4MzAsNzA4NjU4NDc3LDIxMjIwNjY0OTYsOTQ2Mzk5Nzk5LC0x
+NTM0NzA5ODA2XX0=
 -->
