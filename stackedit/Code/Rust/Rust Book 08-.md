@@ -1782,7 +1782,9 @@ and `.borrow() -> Ref<T>` for immutable access
 pub struct RefCell<T: ?Sized> {/*private fields*/
 impl<T> RefCell<T>{
 	pub const fn new(value: T) -> RefCell<T>;
-	pub const fn into_inner(self) ->T
+	pub const fn into_inner(self) -> T;
+	pub fn replace(&self, t: T) -> T; // returns the old value
+	pub fn replace_with(&self, f: F) -> T where F: FnOnce(&mut T) -> T;
 }
 ```
 
@@ -1809,7 +1811,7 @@ impl<T> RefCell<T>{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI5ODAzMjQ1LDE0MDIzMjQ0OTQsMTkxMD
+eyJoaXN0b3J5IjpbOTU3Nzg5MTY1LDE0MDIzMjQ0OTQsMTkxMD
 YzODYwMiwtMTc1MDExNTIwOCwtMTI4ODQzNTcyNiw4OTg4ODQw
 NzQsLTE4NjU2OTE0ODgsLTQ1MjAyNzE4LC0xODk2NjczNzExLD
 EzNzE0MjYwNTksLTE5NzY5MTA1OTEsMTM1NTQ5OTE4MCwxNzEx
