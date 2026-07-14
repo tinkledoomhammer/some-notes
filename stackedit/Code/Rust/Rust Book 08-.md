@@ -1787,7 +1787,10 @@ impl<T> RefCell<T>{
 	pub fn<F: FnOnce(&mut T)->T> replace_with(&self, f: F) -> T ;
 	pub fn swap(&self, other: &RefCell<T>);
 	pub fn borrow(&self) -> Ref<'_, T>;
-	pub fn try_borrow(&self) -> Result<Ref<'_, T>, Borrow
+	pub fn try_borrow(&self) -> Result<Ref<'_, T>, BorrowError>;
+	pub fn borow_mut(&self) -> RefMut<'_, T>;
+	pub fn try_borrow_mut//...
+	pub fn as_ptr(&self) -> *mut 
 }
 ```
 
@@ -1814,7 +1817,7 @@ impl<T> RefCell<T>{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNTc2MTUzMiwxNDAyMzI0NDk0LDE5MT
+eyJoaXN0b3J5IjpbLTMxMjk4Mjk1MSwxNDAyMzI0NDk0LDE5MT
 A2Mzg2MDIsLTE3NTAxMTUyMDgsLTEyODg0MzU3MjYsODk4ODg0
 MDc0LC0xODY1NjkxNDg4LC00NTIwMjcxOCwtMTg5NjY3MzcxMS
 wxMzcxNDI2MDU5LC0xOTc2OTEwNTkxLDEzNTU0OTkxODAsMTcx
