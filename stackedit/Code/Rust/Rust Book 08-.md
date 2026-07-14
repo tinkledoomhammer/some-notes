@@ -1778,7 +1778,13 @@ The borrow checker in the compiler allows this interior mutability, and the borr
 
 Has a `.borrow_mut() ->RefMut<T>` method that gives access to the underlying object
 and `.borrow() -> Ref<T>` for immutable access
-
+```rust
+pub struct RefCell<T: ?Sized> {/*private fields*/
+impl<T> RefCell<T>{
+	pub const fn new(value: T) -> RefCell<T>;
+	pub const fn into_inner(self) ->T
+}
+```
 
 
 ## 15.06 Reference Cycles can leak memory
@@ -1803,11 +1809,11 @@ and `.borrow() -> Ref<T>` for immutable access
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMjMyNDQ5NCwxOTEwNjM4NjAyLC0xNz
-UwMTE1MjA4LC0xMjg4NDM1NzI2LDg5ODg4NDA3NCwtMTg2NTY5
-MTQ4OCwtNDUyMDI3MTgsLTE4OTY2NzM3MTEsMTM3MTQyNjA1OS
-wtMTk3NjkxMDU5MSwxMzU1NDk5MTgwLDE3MTEzMTgxMzQsMTMx
-NTQ2NDEzNCwxMzE1NDY0MTM0LC00MDYyNTA4MzAsNzA4NjU4ND
-c3LDIxMjIwNjY0OTYsOTQ2Mzk5Nzk5LC0xNTM0NzA5ODA2LDkx
-MjUyMjQxN119
+eyJoaXN0b3J5IjpbNzI5ODAzMjQ1LDE0MDIzMjQ0OTQsMTkxMD
+YzODYwMiwtMTc1MDExNTIwOCwtMTI4ODQzNTcyNiw4OTg4ODQw
+NzQsLTE4NjU2OTE0ODgsLTQ1MjAyNzE4LC0xODk2NjczNzExLD
+EzNzE0MjYwNTksLTE5NzY5MTA1OTEsMTM1NTQ5OTE4MCwxNzEx
+MzE4MTM0LDEzMTU0NjQxMzQsMTMxNTQ2NDEzNCwtNDA2MjUwOD
+MwLDcwODY1ODQ3NywyMTIyMDY2NDk2LDk0NjM5OTc5OSwtMTUz
+NDcwOTgwNl19
 -->
