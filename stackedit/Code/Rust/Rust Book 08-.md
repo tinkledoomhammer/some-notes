@@ -1784,7 +1784,8 @@ impl<T> RefCell<T>{
 	pub const fn new(value: T) -> RefCell<T>;
 	pub const fn into_inner(self) -> T;
 	pub fn replace(&self, t: T) -> T; // returns the old value
-	pub fn replace_with(&self, f: F) -> T where F: FnOnce(&mut T) -> T;
+	pub fn<F: FnOnce(&mut T)->T> replace_with(&self, f: F) -> T ;
+	
 }
 ```
 
@@ -1811,11 +1812,11 @@ impl<T> RefCell<T>{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU3Nzg5MTY1LDE0MDIzMjQ0OTQsMTkxMD
-YzODYwMiwtMTc1MDExNTIwOCwtMTI4ODQzNTcyNiw4OTg4ODQw
-NzQsLTE4NjU2OTE0ODgsLTQ1MjAyNzE4LC0xODk2NjczNzExLD
-EzNzE0MjYwNTksLTE5NzY5MTA1OTEsMTM1NTQ5OTE4MCwxNzEx
-MzE4MTM0LDEzMTU0NjQxMzQsMTMxNTQ2NDEzNCwtNDA2MjUwOD
-MwLDcwODY1ODQ3NywyMTIyMDY2NDk2LDk0NjM5OTc5OSwtMTUz
-NDcwOTgwNl19
+eyJoaXN0b3J5IjpbLTEwNjc4OTkyMDIsMTQwMjMyNDQ5NCwxOT
+EwNjM4NjAyLC0xNzUwMTE1MjA4LC0xMjg4NDM1NzI2LDg5ODg4
+NDA3NCwtMTg2NTY5MTQ4OCwtNDUyMDI3MTgsLTE4OTY2NzM3MT
+EsMTM3MTQyNjA1OSwtMTk3NjkxMDU5MSwxMzU1NDk5MTgwLDE3
+MTEzMTgxMzQsMTMxNTQ2NDEzNCwxMzE1NDY0MTM0LC00MDYyNT
+A4MzAsNzA4NjU4NDc3LDIxMjIwNjY0OTYsOTQ2Mzk5Nzk5LC0x
+NTM0NzA5ODA2XX0=
 -->
