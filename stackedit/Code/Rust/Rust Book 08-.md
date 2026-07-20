@@ -1813,7 +1813,11 @@ Send where t: Send + ?Sized,
 ### Preventinc cycles using `Weak<T>`
 
 `Rc::downgrade(Rc<T>) -> Weak<T>`
-: 
+: gets a weak ref to the object
+: increases the weak count rather than the strong count
+: these don't prevent cleanup
+
+`Weak::upgrade
 
 
 
@@ -1834,11 +1838,11 @@ Send where t: Send + ?Sized,
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NTY1MzkwNyw5OTQxNjQ2MjEsLTIyNT
-UwNzIwNSwtMTM3OTE0MjI2NSwxNDAyMzI0NDk0LDE5MTA2Mzg2
-MDIsLTE3NTAxMTUyMDgsLTEyODg0MzU3MjYsODk4ODg0MDc0LC
-0xODY1NjkxNDg4LC00NTIwMjcxOCwtMTg5NjY3MzcxMSwxMzcx
-NDI2MDU5LC0xOTc2OTEwNTkxLDEzNTU0OTkxODAsMTcxMTMxOD
-EzNCwxMzE1NDY0MTM0LDEzMTU0NjQxMzQsLTQwNjI1MDgzMCw3
-MDg2NTg0NzddfQ==
+eyJoaXN0b3J5IjpbLTEyMDkwMjE2NzEsOTk0MTY0NjIxLC0yMj
+U1MDcyMDUsLTEzNzkxNDIyNjUsMTQwMjMyNDQ5NCwxOTEwNjM4
+NjAyLC0xNzUwMTE1MjA4LC0xMjg4NDM1NzI2LDg5ODg4NDA3NC
+wtMTg2NTY5MTQ4OCwtNDUyMDI3MTgsLTE4OTY2NzM3MTEsMTM3
+MTQyNjA1OSwtMTk3NjkxMDU5MSwxMzU1NDk5MTgwLDE3MTEzMT
+gxMzQsMTMxNTQ2NDEzNCwxMzE1NDY0MTM0LC00MDYyNTA4MzAs
+NzA4NjU4NDc3XX0=
 -->
