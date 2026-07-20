@@ -1809,7 +1809,9 @@ Send where t: Send + ?Sized,
 
 
 ## 15.06 Reference Cycles can leak memory
-* can be avoided by 
+* Can be avoided by organizing data so that some refs own and others don't
+### Preventinc cycles using `Weak<T>`
+
 
 
 
@@ -1830,7 +1832,7 @@ Send where t: Send + ?Sized,
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDk0MzkyODksOTk0MTY0NjIxLC0yMj
+eyJoaXN0b3J5IjpbLTE2NjI1NjQ4NDYsOTk0MTY0NjIxLC0yMj
 U1MDcyMDUsLTEzNzkxNDIyNjUsMTQwMjMyNDQ5NCwxOTEwNjM4
 NjAyLC0xNzUwMTE1MjA4LC0xMjg4NDM1NzI2LDg5ODg4NDA3NC
 wtMTg2NTY5MTQ4OCwtNDUyMDI3MTgsLTE4OTY2NzM3MTEsMTM3
