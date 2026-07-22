@@ -1811,7 +1811,10 @@ Send where t: Send + ?Sized,
 ## 15.06 Reference Cycles can leak memory
 * Can be avoided by organizing data so that some refs own and others don't
 ### Preventinc cycles using `Weak<T>`
-
+```rust
+use std::cell::RefCell;
+use std::rc::{Rc, Weak};
+```
 `Rc::downgrade(&Rc<T>) -> Weak<T>`
 : gets a weak ref to the object
 : increases the weak count rather than the strong count
@@ -1840,11 +1843,11 @@ Send where t: Send + ?Sized,
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAzNDg5MDg0LDk5NDE2NDYyMSwtMjI1NT
-A3MjA1LC0xMzc5MTQyMjY1LDE0MDIzMjQ0OTQsMTkxMDYzODYw
-MiwtMTc1MDExNTIwOCwtMTI4ODQzNTcyNiw4OTg4ODQwNzQsLT
-E4NjU2OTE0ODgsLTQ1MjAyNzE4LC0xODk2NjczNzExLDEzNzE0
-MjYwNTksLTE5NzY5MTA1OTEsMTM1NTQ5OTE4MCwxNzExMzE4MT
-M0LDEzMTU0NjQxMzQsMTMxNTQ2NDEzNCwtNDA2MjUwODMwLDcw
-ODY1ODQ3N119
+eyJoaXN0b3J5IjpbLTE0MjgwMTAxNDMsOTAzNDg5MDg0LDk5ND
+E2NDYyMSwtMjI1NTA3MjA1LC0xMzc5MTQyMjY1LDE0MDIzMjQ0
+OTQsMTkxMDYzODYwMiwtMTc1MDExNTIwOCwtMTI4ODQzNTcyNi
+w4OTg4ODQwNzQsLTE4NjU2OTE0ODgsLTQ1MjAyNzE4LC0xODk2
+NjczNzExLDEzNzE0MjYwNTksLTE5NzY5MTA1OTEsMTM1NTQ5OT
+E4MCwxNzExMzE4MTM0LDEzMTU0NjQxMzQsMTMxNTQ2NDEzNCwt
+NDA2MjUwODMwXX0=
 -->
