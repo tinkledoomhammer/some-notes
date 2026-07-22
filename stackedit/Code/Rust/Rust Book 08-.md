@@ -1832,7 +1832,9 @@ use std::rc::{Rc, Weak};
 
 ## 16.02 Transfer data between threads with message passing
 
-#
+## 16.03 Shared-State Concurrency
+
+## 16.04 Extensible concurrency with `Send` and `Sync`
 
 
 
@@ -1852,7 +1854,7 @@ use std::rc::{Rc, Weak};
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTEyMjI3MSwyMDM2NTQ2Mzk1LC0xND
+eyJoaXN0b3J5IjpbLTU3MzUwODA3NSwyMDM2NTQ2Mzk1LC0xND
 I4MDEwMTQzLDkwMzQ4OTA4NCw5OTQxNjQ2MjEsLTIyNTUwNzIw
 NSwtMTM3OTE0MjI2NSwxNDAyMzI0NDk0LDE5MTA2Mzg2MDIsLT
 E3NTAxMTUyMDgsLTEyODg0MzU3MjYsODk4ODg0MDc0LC0xODY1
