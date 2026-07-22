@@ -1822,6 +1822,8 @@ use std::rc::{Rc, Weak};
 
 `Weak::upgrade() -> Option<Rc<T>>`
 : used to get a strong ref from a weak ref
+: This means that a weak ref can point to nothing 
+: and can be initialized as such 
 
 
 
@@ -1843,11 +1845,11 @@ use std::rc::{Rc, Weak};
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjgwMTAxNDMsOTAzNDg5MDg0LDk5ND
-E2NDYyMSwtMjI1NTA3MjA1LC0xMzc5MTQyMjY1LDE0MDIzMjQ0
-OTQsMTkxMDYzODYwMiwtMTc1MDExNTIwOCwtMTI4ODQzNTcyNi
-w4OTg4ODQwNzQsLTE4NjU2OTE0ODgsLTQ1MjAyNzE4LC0xODk2
-NjczNzExLDEzNzE0MjYwNTksLTE5NzY5MTA1OTEsMTM1NTQ5OT
-E4MCwxNzExMzE4MTM0LDEzMTU0NjQxMzQsMTMxNTQ2NDEzNCwt
-NDA2MjUwODMwXX0=
+eyJoaXN0b3J5IjpbMjAzNjU0NjM5NSwtMTQyODAxMDE0Myw5MD
+M0ODkwODQsOTk0MTY0NjIxLC0yMjU1MDcyMDUsLTEzNzkxNDIy
+NjUsMTQwMjMyNDQ5NCwxOTEwNjM4NjAyLC0xNzUwMTE1MjA4LC
+0xMjg4NDM1NzI2LDg5ODg4NDA3NCwtMTg2NTY5MTQ4OCwtNDUy
+MDI3MTgsLTE4OTY2NzM3MTEsMTM3MTQyNjA1OSwtMTk3NjkxMD
+U5MSwxMzU1NDk5MTgwLDE3MTEzMTgxMzQsMTMxNTQ2NDEzNCwx
+MzE1NDY0MTM0XX0=
 -->
