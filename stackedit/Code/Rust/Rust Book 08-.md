@@ -1825,7 +1825,14 @@ use std::rc::{Rc, Weak};
 : This means that a weak ref can point to nothing 
 : and can be initialized as such 
 
+# 16 Fearless Concurrency
 
+
+## 16.01 Using threads to run code simultaneously
+
+## 16.02 Transfer data between threads with message passing
+
+#
 
 
 
@@ -1845,11 +1852,11 @@ use std::rc::{Rc, Weak};
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNjU0NjM5NSwtMTQyODAxMDE0Myw5MD
-M0ODkwODQsOTk0MTY0NjIxLC0yMjU1MDcyMDUsLTEzNzkxNDIy
-NjUsMTQwMjMyNDQ5NCwxOTEwNjM4NjAyLC0xNzUwMTE1MjA4LC
-0xMjg4NDM1NzI2LDg5ODg4NDA3NCwtMTg2NTY5MTQ4OCwtNDUy
-MDI3MTgsLTE4OTY2NzM3MTEsMTM3MTQyNjA1OSwtMTk3NjkxMD
-U5MSwxMzU1NDk5MTgwLDE3MTEzMTgxMzQsMTMxNTQ2NDEzNCwx
+eyJoaXN0b3J5IjpbLTE2NTEyMjI3MSwyMDM2NTQ2Mzk1LC0xND
+I4MDEwMTQzLDkwMzQ4OTA4NCw5OTQxNjQ2MjEsLTIyNTUwNzIw
+NSwtMTM3OTE0MjI2NSwxNDAyMzI0NDk0LDE5MTA2Mzg2MDIsLT
+E3NTAxMTUyMDgsLTEyODg0MzU3MjYsODk4ODg0MDc0LC0xODY1
+NjkxNDg4LC00NTIwMjcxOCwtMTg5NjY3MzcxMSwxMzcxNDI2MD
+U5LC0xOTc2OTEwNTkxLDEzNTU0OTkxODAsMTcxMTMxODEzNCwx
 MzE1NDY0MTM0XX0=
 -->
