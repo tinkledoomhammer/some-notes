@@ -1837,6 +1837,11 @@ Process
 Thread
 : the feature that runs an independent part of a process simultaneously
 
+Race Conditions
+: when threads access data in an inconsistent order
+
+Deadlocks
+: when t
 ## 16.02 Transfer data between threads with message passing
 
 ## 16.03 Shared-State Concurrency
@@ -1861,11 +1866,11 @@ Thread
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU4OTEyODkwLC05NjA4MDU0MTUsLTU3Mz
-UwODA3NSwyMDM2NTQ2Mzk1LC0xNDI4MDEwMTQzLDkwMzQ4OTA4
-NCw5OTQxNjQ2MjEsLTIyNTUwNzIwNSwtMTM3OTE0MjI2NSwxND
-AyMzI0NDk0LDE5MTA2Mzg2MDIsLTE3NTAxMTUyMDgsLTEyODg0
-MzU3MjYsODk4ODg0MDc0LC0xODY1NjkxNDg4LC00NTIwMjcxOC
-wtMTg5NjY3MzcxMSwxMzcxNDI2MDU5LC0xOTc2OTEwNTkxLDEz
-NTU0OTkxODBdfQ==
+eyJoaXN0b3J5IjpbMTgxMDUyMzcwNywtOTYwODA1NDE1LC01Nz
+M1MDgwNzUsMjAzNjU0NjM5NSwtMTQyODAxMDE0Myw5MDM0ODkw
+ODQsOTk0MTY0NjIxLC0yMjU1MDcyMDUsLTEzNzkxNDIyNjUsMT
+QwMjMyNDQ5NCwxOTEwNjM4NjAyLC0xNzUwMTE1MjA4LC0xMjg4
+NDM1NzI2LDg5ODg4NDA3NCwtMTg2NTY5MTQ4OCwtNDUyMDI3MT
+gsLTE4OTY2NzM3MTEsMTM3MTQyNjA1OSwtMTk3NjkxMDU5MSwx
+MzU1NDk5MTgwXX0=
 -->
