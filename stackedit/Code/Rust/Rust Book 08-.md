@@ -1926,7 +1926,8 @@ fn main() {
 
 `MutexGuard<T>`
 : imlements `Deref target = T` 
-: implements `D
+: implements `Drop` to release the lock automatically at end of scope
+
 ## 16.04 Extensible concurrency with `Send` and `Sync`
 
 
@@ -1947,7 +1948,7 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTg4ODQzNTUsLTc0MDkyMDU1OSwxOT
+eyJoaXN0b3J5IjpbLTE0Njc3ODg2MzQsLTc0MDkyMDU1OSwxOT
 k5MDAwNTA1LC0xMTcwNTE4MTI3LC05NjA4MDU0MTUsLTU3MzUw
 ODA3NSwyMDM2NTQ2Mzk1LC0xNDI4MDEwMTQzLDkwMzQ4OTA4NC
 w5OTQxNjQ2MjEsLTIyNTUwNzIwNSwtMTM3OTE0MjI2NSwxNDAy
