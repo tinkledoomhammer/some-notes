@@ -1954,7 +1954,8 @@ fn main() {
 }
 ```
 
-
+[`std::sync::atomic`  module of the standard library](https://doc.rust-lang.org/std/sync/atomic/index.html)
+: provides thread-safe access to several primitive types
 
 ## 16.04 Extensible concurrency with `Send` and `Sync`
 
@@ -1976,7 +1977,7 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMjM2MTMyOCwtMTQ2Nzc4ODYzNCwtNz
+eyJoaXN0b3J5IjpbLTE3MTgzNjMwMywtMTQ2Nzc4ODYzNCwtNz
 QwOTIwNTU5LDE5OTkwMDA1MDUsLTExNzA1MTgxMjcsLTk2MDgw
 NTQxNSwtNTczNTA4MDc1LDIwMzY1NDYzOTUsLTE0MjgwMTAxND
 MsOTAzNDg5MDg0LDk5NDE2NDYyMSwtMjI1NTA3MjA1LC0xMzc5
