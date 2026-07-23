@@ -1882,6 +1882,9 @@ fn main() {
 `std::thread::spawn(FnOnce) -> JoinHandle`
 : `.join().unwrap()` to wait until the thread ends
 
+### Using `move` closures with threads
+* Closures default to refs where possible
+* This means that wh
 
 
 
@@ -1918,7 +1921,7 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MjQyNTYxMSwtOTYwODA1NDE1LC01Nz
+eyJoaXN0b3J5IjpbLTkxNjMwNzcwNCwtOTYwODA1NDE1LC01Nz
 M1MDgwNzUsMjAzNjU0NjM5NSwtMTQyODAxMDE0Myw5MDM0ODkw
 ODQsOTk0MTY0NjIxLC0yMjU1MDcyMDUsLTEzNzkxNDIyNjUsMT
 QwMjMyNDQ5NCwxOTEwNjM4NjAyLC0xNzUwMTE1MjA4LC0xMjg4
