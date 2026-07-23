@@ -1851,6 +1851,38 @@ Rust supports other threading models, such as the async system in the next chapt
 
 ### Creating a new thread with `std::thread::spawn`
 
+```rust
+use std::thread;
+use std::time::Duration;
+
+fn main() {
+    thread::spawn(|| {
+        for i in 1..10 {
+            println!("hi number {i} from the spawned thread!");
+            thread::sleep(Duration::from_millis(1));
+        }
+    });
+
+    for i in 1..5 {
+        println!("hi number {i} from the main thread!");
+        thread::sleep(Duration::from_millis(1));
+    }
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## 16.02 Transfer data between threads with message passing
 
@@ -1876,11 +1908,11 @@ Rust supports other threading models, such as the async system in the next chapt
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMTUzNTE4LC05NjA4MDU0MTUsLTU3Mz
-UwODA3NSwyMDM2NTQ2Mzk1LC0xNDI4MDEwMTQzLDkwMzQ4OTA4
-NCw5OTQxNjQ2MjEsLTIyNTUwNzIwNSwtMTM3OTE0MjI2NSwxND
-AyMzI0NDk0LDE5MTA2Mzg2MDIsLTE3NTAxMTUyMDgsLTEyODg0
-MzU3MjYsODk4ODg0MDc0LC0xODY1NjkxNDg4LC00NTIwMjcxOC
-wtMTg5NjY3MzcxMSwxMzcxNDI2MDU5LC0xOTc2OTEwNTkxLDEz
-NTU0OTkxODBdfQ==
+eyJoaXN0b3J5IjpbMjEzNTU5MzY2MSwtOTYwODA1NDE1LC01Nz
+M1MDgwNzUsMjAzNjU0NjM5NSwtMTQyODAxMDE0Myw5MDM0ODkw
+ODQsOTk0MTY0NjIxLC0yMjU1MDcyMDUsLTEzNzkxNDIyNjUsMT
+QwMjMyNDQ5NCwxOTEwNjM4NjAyLC0xNzUwMTE1MjA4LC0xMjg4
+NDM1NzI2LDg5ODg4NDA3NCwtMTg2NTY5MTQ4OCwtNDUyMDI3MT
+gsLTE4OTY2NzM3MTEsMTM3MTQyNjA1OSwtMTk3NjkxMDU5MSwx
+MzU1NDk5MTgwXX0=
 -->
