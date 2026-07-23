@@ -1907,8 +1907,9 @@ fn main() {
 }
 ```
 
-`try_recv` method returns immediately 
+`try_recv()` method returns immediately 
 
+`send()` transfers ownership of its arguments
 
 
 ## 16.03 Shared-State Concurrency
@@ -1933,11 +1934,11 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0MDE4NDMsLTExNzA1MTgxMjcsLTk2MD
-gwNTQxNSwtNTczNTA4MDc1LDIwMzY1NDYzOTUsLTE0MjgwMTAx
-NDMsOTAzNDg5MDg0LDk5NDE2NDYyMSwtMjI1NTA3MjA1LC0xMz
-c5MTQyMjY1LDE0MDIzMjQ0OTQsMTkxMDYzODYwMiwtMTc1MDEx
-NTIwOCwtMTI4ODQzNTcyNiw4OTg4ODQwNzQsLTE4NjU2OTE0OD
-gsLTQ1MjAyNzE4LC0xODk2NjczNzExLDEzNzE0MjYwNTksLTE5
-NzY5MTA1OTFdfQ==
+eyJoaXN0b3J5IjpbMTk5OTAwMDUwNSwtMTE3MDUxODEyNywtOT
+YwODA1NDE1LC01NzM1MDgwNzUsMjAzNjU0NjM5NSwtMTQyODAx
+MDE0Myw5MDM0ODkwODQsOTk0MTY0NjIxLC0yMjU1MDcyMDUsLT
+EzNzkxNDIyNjUsMTQwMjMyNDQ5NCwxOTEwNjM4NjAyLC0xNzUw
+MTE1MjA4LC0xMjg4NDM1NzI2LDg5ODg4NDA3NCwtMTg2NTY5MT
+Q4OCwtNDUyMDI3MTgsLTE4OTY2NzM3MTEsMTM3MTQyNjA1OSwt
+MTk3NjkxMDU5MV19
 -->
