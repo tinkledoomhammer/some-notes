@@ -1831,6 +1831,8 @@ use std::rc::{Rc, Weak};
 
 ## 16.01 Using threads to run code simultaneously
 
+Process
+: An OS obe
 ## 16.02 Transfer data between threads with message passing
 
 ## 16.03 Shared-State Concurrency
@@ -1855,11 +1857,11 @@ use std::rc::{Rc, Weak};
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MDgwNTQxNSwtNTczNTA4MDc1LDIwMz
-Y1NDYzOTUsLTE0MjgwMTAxNDMsOTAzNDg5MDg0LDk5NDE2NDYy
-MSwtMjI1NTA3MjA1LC0xMzc5MTQyMjY1LDE0MDIzMjQ0OTQsMT
-kxMDYzODYwMiwtMTc1MDExNTIwOCwtMTI4ODQzNTcyNiw4OTg4
-ODQwNzQsLTE4NjU2OTE0ODgsLTQ1MjAyNzE4LC0xODk2NjczNz
-ExLDEzNzE0MjYwNTksLTE5NzY5MTA1OTEsMTM1NTQ5OTE4MCwx
-NzExMzE4MTM0XX0=
+eyJoaXN0b3J5IjpbLTQ1NDY0NjU4NywtOTYwODA1NDE1LC01Nz
+M1MDgwNzUsMjAzNjU0NjM5NSwtMTQyODAxMDE0Myw5MDM0ODkw
+ODQsOTk0MTY0NjIxLC0yMjU1MDcyMDUsLTEzNzkxNDIyNjUsMT
+QwMjMyNDQ5NCwxOTEwNjM4NjAyLC0xNzUwMTE1MjA4LC0xMjg4
+NDM1NzI2LDg5ODg4NDA3NCwtMTg2NTY5MTQ4OCwtNDUyMDI3MT
+gsLTE4OTY2NzM3MTEsMTM3MTQyNjA1OSwtMTk3NjkxMDU5MSwx
+MzU1NDk5MTgwXX0=
 -->
