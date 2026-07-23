@@ -1888,17 +1888,11 @@ fn main() {
 * Closure captures are the only way to pass data to `thread::spawn`
 
 
-
-
-
-
-
-
-
-
-
-
 ## 16.02 Transfer data between threads with message passing
+> Don't communicate by sharing memory; instead, share memory by communicating
+
+
+
 
 ## 16.03 Shared-State Concurrency
 
@@ -1922,11 +1916,11 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzA1MTgxMjcsLTk2MDgwNTQxNSwtNT
-czNTA4MDc1LDIwMzY1NDYzOTUsLTE0MjgwMTAxNDMsOTAzNDg5
-MDg0LDk5NDE2NDYyMSwtMjI1NTA3MjA1LC0xMzc5MTQyMjY1LD
-E0MDIzMjQ0OTQsMTkxMDYzODYwMiwtMTc1MDExNTIwOCwtMTI4
-ODQzNTcyNiw4OTg4ODQwNzQsLTE4NjU2OTE0ODgsLTQ1MjAyNz
-E4LC0xODk2NjczNzExLDEzNzE0MjYwNTksLTE5NzY5MTA1OTEs
-MTM1NTQ5OTE4MF19
+eyJoaXN0b3J5IjpbMTIxMTE3MDQ4NCwtMTE3MDUxODEyNywtOT
+YwODA1NDE1LC01NzM1MDgwNzUsMjAzNjU0NjM5NSwtMTQyODAx
+MDE0Myw5MDM0ODkwODQsOTk0MTY0NjIxLC0yMjU1MDcyMDUsLT
+EzNzkxNDIyNjUsMTQwMjMyNDQ5NCwxOTEwNjM4NjAyLC0xNzUw
+MTE1MjA4LC0xMjg4NDM1NzI2LDg5ODg4NDA3NCwtMTg2NTY5MT
+Q4OCwtNDUyMDI3MTgsLTE4OTY2NzM3MTEsMTM3MTQyNjA1OSwt
+MTk3NjkxMDU5MV19
 -->
