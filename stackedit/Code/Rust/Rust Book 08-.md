@@ -1913,6 +1913,8 @@ fn main() {
 
 **Channels can only transmit one type**
 
+**Transmitters can be cloned**
+
 ## 16.03 Shared-State Concurrency
 
 ## 16.04 Extensible concurrency with `Send` and `Sync`
@@ -1935,11 +1937,11 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwMzAzMDk1LDE5OTkwMDA1MDUsLTExNz
-A1MTgxMjcsLTk2MDgwNTQxNSwtNTczNTA4MDc1LDIwMzY1NDYz
-OTUsLTE0MjgwMTAxNDMsOTAzNDg5MDg0LDk5NDE2NDYyMSwtMj
-I1NTA3MjA1LC0xMzc5MTQyMjY1LDE0MDIzMjQ0OTQsMTkxMDYz
-ODYwMiwtMTc1MDExNTIwOCwtMTI4ODQzNTcyNiw4OTg4ODQwNz
-QsLTE4NjU2OTE0ODgsLTQ1MjAyNzE4LC0xODk2NjczNzExLDEz
-NzE0MjYwNTldfQ==
+eyJoaXN0b3J5IjpbLTc0MDkyMDU1OSwxOTk5MDAwNTA1LC0xMT
+cwNTE4MTI3LC05NjA4MDU0MTUsLTU3MzUwODA3NSwyMDM2NTQ2
+Mzk1LC0xNDI4MDEwMTQzLDkwMzQ4OTA4NCw5OTQxNjQ2MjEsLT
+IyNTUwNzIwNSwtMTM3OTE0MjI2NSwxNDAyMzI0NDk0LDE5MTA2
+Mzg2MDIsLTE3NTAxMTUyMDgsLTEyODg0MzU3MjYsODk4ODg0MD
+c0LC0xODY1NjkxNDg4LC00NTIwMjcxOCwtMTg5NjY3MzcxMSwx
+MzcxNDI2MDU5XX0=
 -->
