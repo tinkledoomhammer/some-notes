@@ -1922,7 +1922,7 @@ Mutex
 : allows one thread to access some data at a given time
 : 1. Must attempt to acquire the lock before opening
 : 2. must unlock the data after use so that other threads can acquire the lock
-
+: `.lock()` returns `LockResult<
 
 ## 16.04 Extensible concurrency with `Send` and `Sync`
 
@@ -1944,11 +1944,11 @@ Mutex
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNjgzNTk0MywtNzQwOTIwNTU5LDE5OT
-kwMDA1MDUsLTExNzA1MTgxMjcsLTk2MDgwNTQxNSwtNTczNTA4
-MDc1LDIwMzY1NDYzOTUsLTE0MjgwMTAxNDMsOTAzNDg5MDg0LD
-k5NDE2NDYyMSwtMjI1NTA3MjA1LC0xMzc5MTQyMjY1LDE0MDIz
-MjQ0OTQsMTkxMDYzODYwMiwtMTc1MDExNTIwOCwtMTI4ODQzNT
-cyNiw4OTg4ODQwNzQsLTE4NjU2OTE0ODgsLTQ1MjAyNzE4LC0x
-ODk2NjczNzExXX0=
+eyJoaXN0b3J5IjpbNTk5ODM4OTQsLTc0MDkyMDU1OSwxOTk5MD
+AwNTA1LC0xMTcwNTE4MTI3LC05NjA4MDU0MTUsLTU3MzUwODA3
+NSwyMDM2NTQ2Mzk1LC0xNDI4MDEwMTQzLDkwMzQ4OTA4NCw5OT
+QxNjQ2MjEsLTIyNTUwNzIwNSwtMTM3OTE0MjI2NSwxNDAyMzI0
+NDk0LDE5MTA2Mzg2MDIsLTE3NTAxMTUyMDgsLTEyODg0MzU3Mj
+YsODk4ODg0MDc0LC0xODY1NjkxNDg4LC00NTIwMjcxOCwtMTg5
+NjY3MzcxMV19
 -->
