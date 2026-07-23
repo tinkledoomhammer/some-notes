@@ -1841,7 +1841,15 @@ Race Conditions
 : when threads access data in an inconsistent order
 
 Deadlocks
-: when t
+: when two threads wait for eachother, preventing either from continuing
+
+Rust standard threads
+: use the OS api in a *1:1* model.
+: each rust thread is one OS thread
+
+Rust supports other threading models, such as the async system in the next chapter
+
+### Creating a new thread with 
 ## 16.02 Transfer data between threads with message passing
 
 ## 16.03 Shared-State Concurrency
@@ -1866,7 +1874,7 @@ Deadlocks
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxMDUyMzcwNywtOTYwODA1NDE1LC01Nz
+eyJoaXN0b3J5IjpbMTMzODc5NDA1NiwtOTYwODA1NDE1LC01Nz
 M1MDgwNzUsMjAzNjU0NjM5NSwtMTQyODAxMDE0Myw5MDM0ODkw
 ODQsOTk0MTY0NjIxLC0yMjU1MDcyMDUsLTEzNzkxNDIyNjUsMT
 QwMjMyNDQ5NCwxOTEwNjM4NjAyLC0xNzUwMTE1MjA4LC0xMjg4
