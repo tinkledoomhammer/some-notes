@@ -1826,7 +1826,8 @@ use std::rc::{Rc, Weak};
 : and can be initialized as such 
 
 # 16 Fearless Concurrency
-**The book often uses *concurrent* to mean *concurrent and/or parallel* **
+**The book often uses *concurrent* to mean *concurrent and/or parallel***
+
 
 ## 16.01 Using threads to run code simultaneously
 
@@ -1854,7 +1855,7 @@ use std::rc::{Rc, Weak};
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwOTQ4OTE0OSwtNTczNTA4MDc1LDIwMz
+eyJoaXN0b3J5IjpbLTk2MDgwNTQxNSwtNTczNTA4MDc1LDIwMz
 Y1NDYzOTUsLTE0MjgwMTAxNDMsOTAzNDg5MDg0LDk5NDE2NDYy
 MSwtMjI1NTA3MjA1LC0xMzc5MTQyMjY1LDE0MDIzMjQ0OTQsMT
 kxMDYzODYwMiwtMTc1MDExNTIwOCwtMTI4ODQzNTcyNiw4OTg4
