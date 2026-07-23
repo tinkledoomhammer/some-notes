@@ -1890,7 +1890,22 @@ fn main() {
 
 ## 16.02 Transfer data between threads with message passing
 > Don't communicate by sharing memory; instead, share memory by communicating
+```rust
+use std::sync::mpsc;
+use std::thread;
 
+fn main() {
+    let (tx, rx) = mpsc::channel();
+
+    thread::spawn(move || {
+        let val = String::from("hi");
+        tx.send(val).unwrap();
+    });
+
+    let received = rx.recv().unwrap();
+    println!("Got: {received}");
+}
+```
 
 
 
@@ -1916,7 +1931,7 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMTE3MDQ4NCwtMTE3MDUxODEyNywtOT
+eyJoaXN0b3J5IjpbMTExNjY1Njk4NywtMTE3MDUxODEyNywtOT
 YwODA1NDE1LC01NzM1MDgwNzUsMjAzNjU0NjM5NSwtMTQyODAx
 MDE0Myw5MDM0ODkwODQsOTk0MTY0NjIxLC0yMjU1MDcyMDUsLT
 EzNzkxNDIyNjUsMTQwMjMyNDQ5NCwxOTEwNjM4NjAyLC0xNzUw
