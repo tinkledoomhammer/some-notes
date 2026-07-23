@@ -1928,6 +1928,34 @@ fn main() {
 : imlements `Deref target = T` 
 : implements `Drop` to release the lock automatically at end of scope
 
+```rust
+use std::sync::{Arc, Mutex};
+use std::thread;
+
+fn main() {
+    let counter = Arc::new(Mutex::new(0));
+    let mut handles = vec![];
+
+    for _ in 0..10 {
+        let counter = Arc::clone(&counter);
+        let handle = thread::spawn(move || {
+            let mut num = counter.lock().unwrap();
+
+            *num += 1;
+        });
+        handles.push(handle);
+    }
+
+    for handle in handles {
+        handle.join().unwrap();
+    }
+
+    println!("Result: {}", *counter.lock().unwrap());
+}
+```
+
+
+
 ## 16.04 Extensible concurrency with `Send` and `Sync`
 
 
@@ -1948,11 +1976,11 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Njc3ODg2MzQsLTc0MDkyMDU1OSwxOT
-k5MDAwNTA1LC0xMTcwNTE4MTI3LC05NjA4MDU0MTUsLTU3MzUw
-ODA3NSwyMDM2NTQ2Mzk1LC0xNDI4MDEwMTQzLDkwMzQ4OTA4NC
-w5OTQxNjQ2MjEsLTIyNTUwNzIwNSwtMTM3OTE0MjI2NSwxNDAy
-MzI0NDk0LDE5MTA2Mzg2MDIsLTE3NTAxMTUyMDgsLTEyODg0Mz
-U3MjYsODk4ODg0MDc0LC0xODY1NjkxNDg4LC00NTIwMjcxOCwt
-MTg5NjY3MzcxMV19
+eyJoaXN0b3J5IjpbMTQzMjM2MTMyOCwtMTQ2Nzc4ODYzNCwtNz
+QwOTIwNTU5LDE5OTkwMDA1MDUsLTExNzA1MTgxMjcsLTk2MDgw
+NTQxNSwtNTczNTA4MDc1LDIwMzY1NDYzOTUsLTE0MjgwMTAxND
+MsOTAzNDg5MDg0LDk5NDE2NDYyMSwtMjI1NTA3MjA1LC0xMzc5
+MTQyMjY1LDE0MDIzMjQ0OTQsMTkxMDYzODYwMiwtMTc1MDExNT
+IwOCwtMTI4ODQzNTcyNiw4OTg4ODQwNzQsLTE4NjU2OTE0ODgs
+LTQ1MjAyNzE4XX0=
 -->
