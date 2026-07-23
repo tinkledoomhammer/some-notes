@@ -1919,7 +1919,10 @@ fn main() {
 
 Mutex
 : mutual exclusion
-: allows one thr
+: allows one thread to access some data at a given time
+: 1. Must attempt to acquire the lock before opening
+: 2. must unlock the data after use so that other threads can acquire the lock
+
 
 ## 16.04 Extensible concurrency with `Send` and `Sync`
 
@@ -1941,11 +1944,11 @@ Mutex
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI1MDg5MzEwLC03NDA5MjA1NTksMTk5OT
-AwMDUwNSwtMTE3MDUxODEyNywtOTYwODA1NDE1LC01NzM1MDgw
-NzUsMjAzNjU0NjM5NSwtMTQyODAxMDE0Myw5MDM0ODkwODQsOT
-k0MTY0NjIxLC0yMjU1MDcyMDUsLTEzNzkxNDIyNjUsMTQwMjMy
-NDQ5NCwxOTEwNjM4NjAyLC0xNzUwMTE1MjA4LC0xMjg4NDM1Nz
-I2LDg5ODg4NDA3NCwtMTg2NTY5MTQ4OCwtNDUyMDI3MTgsLTE4
-OTY2NzM3MTFdfQ==
+eyJoaXN0b3J5IjpbMjAzNjgzNTk0MywtNzQwOTIwNTU5LDE5OT
+kwMDA1MDUsLTExNzA1MTgxMjcsLTk2MDgwNTQxNSwtNTczNTA4
+MDc1LDIwMzY1NDYzOTUsLTE0MjgwMTAxNDMsOTAzNDg5MDg0LD
+k5NDE2NDYyMSwtMjI1NTA3MjA1LC0xMzc5MTQyMjY1LDE0MDIz
+MjQ0OTQsMTkxMDYzODYwMiwtMTc1MDExNTIwOCwtMTI4ODQzNT
+cyNiw4OTg4ODQwNzQsLTE4NjU2OTE0ODgsLTQ1MjAyNzE4LC0x
+ODk2NjczNzExXX0=
 -->
