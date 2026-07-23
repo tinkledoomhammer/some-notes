@@ -1884,7 +1884,8 @@ fn main() {
 
 ### Using `move` closures with threads
 * Closures default to refs where possible
-* This means that wh
+* This means that when a closure that captures by ref is passed to `thead::spawn()`, the compiler does not know how long the ref will live
+* Closure captures are the only way to pass data to `thread::spawn`
 
 
 
@@ -1921,11 +1922,11 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNjMwNzcwNCwtOTYwODA1NDE1LC01Nz
-M1MDgwNzUsMjAzNjU0NjM5NSwtMTQyODAxMDE0Myw5MDM0ODkw
-ODQsOTk0MTY0NjIxLC0yMjU1MDcyMDUsLTEzNzkxNDIyNjUsMT
-QwMjMyNDQ5NCwxOTEwNjM4NjAyLC0xNzUwMTE1MjA4LC0xMjg4
-NDM1NzI2LDg5ODg4NDA3NCwtMTg2NTY5MTQ4OCwtNDUyMDI3MT
-gsLTE4OTY2NzM3MTEsMTM3MTQyNjA1OSwtMTk3NjkxMDU5MSwx
-MzU1NDk5MTgwXX0=
+eyJoaXN0b3J5IjpbLTExNzA1MTgxMjcsLTk2MDgwNTQxNSwtNT
+czNTA4MDc1LDIwMzY1NDYzOTUsLTE0MjgwMTAxNDMsOTAzNDg5
+MDg0LDk5NDE2NDYyMSwtMjI1NTA3MjA1LC0xMzc5MTQyMjY1LD
+E0MDIzMjQ0OTQsMTkxMDYzODYwMiwtMTc1MDExNTIwOCwtMTI4
+ODQzNTcyNiw4OTg4ODQwNzQsLTE4NjU2OTE0ODgsLTQ1MjAyNz
+E4LC0xODk2NjczNzExLDEzNzE0MjYwNTksLTE5NzY5MTA1OTEs
+MTM1NTQ5OTE4MF19
 -->
