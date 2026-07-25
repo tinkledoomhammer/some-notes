@@ -1977,10 +1977,15 @@ fn main() {
 : any type composed entirely of `Sync` items is also `Sync`
 
 Some examples
-`Rc<T>` neither `Send` nor `Sync`
-`RefCell<T>` is never `Sync` but is `Send` if `T` is `Send`
-`Mutex<T>` is `Send` and `Sync`
-`MutexGuard<'a,T>` that
+* `Rc<T>` neither `Send` nor `Sync`
+* `RefCell<T>` is never `Sync` but is `Send` if `T` is `Send`
+* `Mutex<T>` is `Send` and `Sync`
+* `MutexGuard<'a,T>` (returned by `Mutex::lock`) 
+	* Is never `Send`
+	* Is `Sync` if `T: Sync`
+
+### Implementing `Send` and `Sync` manually is unsafe
+
 
 
 
@@ -1999,7 +2004,7 @@ Some examples
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDA3MDAyNywtNDI4NTU3NTI3LC0xOD
+eyJoaXN0b3J5IjpbLTcwODk5MTQzNywtNDI4NTU3NTI3LC0xOD
 k5Njc4MzA3LC0xNzE4MzYzMDMsLTE0Njc3ODg2MzQsLTc0MDky
 MDU1OSwxOTk5MDAwNTA1LC0xMTcwNTE4MTI3LC05NjA4MDU0MT
 UsLTU3MzUwODA3NSwyMDM2NTQ2Mzk1LC0xNDI4MDEwMTQzLDkw
