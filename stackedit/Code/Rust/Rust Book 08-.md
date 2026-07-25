@@ -1962,7 +1962,12 @@ fn main() {
 
 ## 16.04 Extensible concurrency with `Send` and `Sync`
 
+`Send` and `Sync` traits in `std::marker`
 
+`std::marker::Send`
+: A marker trait that indicates the type can be transferred between threads
+: Automatically applied to most types
+: * A notable exception is `R
 
 
 
@@ -1980,11 +1985,11 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTk2NzgzMDcsLTE3MTgzNjMwMywtMT
-Q2Nzc4ODYzNCwtNzQwOTIwNTU5LDE5OTkwMDA1MDUsLTExNzA1
-MTgxMjcsLTk2MDgwNTQxNSwtNTczNTA4MDc1LDIwMzY1NDYzOT
-UsLTE0MjgwMTAxNDMsOTAzNDg5MDg0LDk5NDE2NDYyMSwtMjI1
-NTA3MjA1LC0xMzc5MTQyMjY1LDE0MDIzMjQ0OTQsMTkxMDYzOD
-YwMiwtMTc1MDExNTIwOCwtMTI4ODQzNTcyNiw4OTg4ODQwNzQs
-LTE4NjU2OTE0ODhdfQ==
+eyJoaXN0b3J5IjpbLTIwNzY3OTI2NDAsLTE4OTk2NzgzMDcsLT
+E3MTgzNjMwMywtMTQ2Nzc4ODYzNCwtNzQwOTIwNTU5LDE5OTkw
+MDA1MDUsLTExNzA1MTgxMjcsLTk2MDgwNTQxNSwtNTczNTA4MD
+c1LDIwMzY1NDYzOTUsLTE0MjgwMTAxNDMsOTAzNDg5MDg0LDk5
+NDE2NDYyMSwtMjI1NTA3MjA1LC0xMzc5MTQyMjY1LDE0MDIzMj
+Q0OTQsMTkxMDYzODYwMiwtMTc1MDExNTIwOCwtMTI4ODQzNTcy
+Niw4OTg4ODQwNzRdfQ==
 -->
