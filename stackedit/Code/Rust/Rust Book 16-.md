@@ -1,0 +1,174 @@
+
+
+# 16 Fearless Concurrency
+**The book often uses *concurrent* to mean *concurrent and/or parallel***
+
+
+## 16.01 Using threads to run code simultaneously
+
+Process
+: An OS object that has at least one thread and is managed by the os
+
+Thread
+: the feature that runs an independent part of a process simultaneously
+
+Race Conditions
+: when threads access data in an inconsistent order
+
+Deadlocks
+: when two threads wait for eachother, preventing either from continuing
+
+Rust standard threads
+: use the OS api in a *1:1* model.
+: each rust thread is one OS thread
+
+Rust supports other threading models, such as the async system in the next chapter
+
+### Creating a new thread with `std::thread::spawn`
+
+```rust
+use std::thread;
+use std::time::Duration;
+
+fn main() {
+    thread::spawn(|| {
+        for i in 1..10 {
+            println!("hi number {i} from the spawned thread!");
+            thread::sleep(Duration::from_millis(1));
+        }
+    });
+
+    for i in 1..5 {
+        println!("hi number {i} from the main thread!");
+        thread::sleep(Duration::from_millis(1));
+    }
+}
+```
+> hi number 1 from the main thread!
+> hi number 1 from the spawned thread!
+> hi number 2 from the main thread!
+> hi number 2 from the spawned thread!
+> hi number 3 from the main thread!
+> hi number 3 from the spawned thread!
+> hi number 4 from the main thread!
+> hi number 4 from the spawned thread!
+> hi number 5 from the spawned thread!
+
+`std::thread::spawn(FnOnce) -> JoinHandle`
+: `.join().unwrap()` to wait until the thread ends
+
+### Using `move` closures with threads
+* Closures default to refs where possible
+* This means that when a closure that captures by ref is passed to `thead::spawn()`, the compiler does not know how long the ref will live
+* Closure captures are the only way to pass data to `thread::spawn`
+
+
+## 16.02 Transfer data between threads with message passing
+> Don't communicate by sharing memory; instead, share memory by communicating
+```rust
+use std::sync::mpsc;
+use std::thread;
+
+fn main() {
+    let (tx, rx) = mpsc::channel();
+
+    thread::spawn(move || {
+        let val = String::from("hi");
+        tx.send(val).unwrap();
+    });
+
+    let received = rx.recv().unwrap();
+    println!("Got: {received}");
+}
+```
+
+`try_recv()` method returns immediately 
+
+`send()` transfers ownership of its arguments
+
+**Channels can only transmit one type**
+
+**Transmitters can be cloned**
+
+## 16.03 Shared-State Concurrency
+
+`std::sync::Mutex`
+: mutual exclusion
+: allows one thread to access some data at a given time
+: 1. Must attempt to acquire the lock before opening
+: 2. must unlock the data after use so that other threads can acquire the lock
+: `.lock()` returns `LockResult<MutexGuard, E>`
+
+`MutexGuard<T>`
+: imlements `Deref target = T` 
+: implements `Drop` to release the lock automatically at end of scope
+
+```rust
+use std::sync::{Arc, Mutex};
+use std::thread;
+
+fn main() {
+    let counter = Arc::new(Mutex::new(0));
+    let mut handles = vec![];
+
+    for _ in 0..10 {
+        let counter = Arc::clone(&counter);
+        let handle = thread::spawn(move || {
+            let mut num = counter.lock().unwrap();
+
+            *num += 1;
+        });
+        handles.push(handle);
+    }
+
+    for handle in handles {
+        handle.join().unwrap();
+    }
+
+    println!("Result: {}", *counter.lock().unwrap());
+}
+```
+
+[`std::sync::atomic`  module of the standard library](https://doc.rust-lang.org/std/sync/atomic/index.html)
+: provides thread-safe access to several primitive types
+
+**`Arc<&T>`** is not allowed. `T` must be owned
+
+
+## 16.04 Extensible concurrency with `Send` and `Sync`
+
+`Send` and `Sync` traits in `std::marker`
+
+`std::marker::Send`
+: A marker trait that indicates the type can be transferred between threads
+: Automatically applied to most types
+: * A notable exception is `Rc<T>`
+: Any type composed entirely of `Send` types is also `Send`
+
+`std::marker::Sync`
+: an auto marker trait that indicates that a type is safe to be referenced from multiple threads.
+: `T` is `Sync` if `&T` is `Send`
+: all primitive types are `Sync` 
+: any type composed entirely of `Sync` items is also `Sync`
+
+Some examples
+* `Rc<T>` neither `Send` nor `Sync`
+* `RefCell<T>` is never `Sync` but is `Send` if `T` is `Send`
+* `Mutex<T>` is `Send` and `Sync`
+* `MutexGuard<'a,T>` (returned by `Mutex::lock`) 
+	* Is never `Send`
+	* Is `Sync` if `T: Sync`
+
+### Implementing `Send` and `Sync` manually is unsafe
+Manually implementing these Traits is possible but requires `unsafe` code.
+> the important information is that building new concurrent types not made up of `Send` and `Sync` parts requires careful thought to uphold the safety guarantees. [“The Rustonomicon”](https://doc.rust-lang.org/nomicon/index.html) has more information about these guarantees and how to uphold them.
+
+
+
+
+
+
+> Written with [StackEdit](https://stackedit.io/).
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTc1ODE3NTQwXX0=
+-->
