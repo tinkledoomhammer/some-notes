@@ -1976,6 +1976,10 @@ fn main() {
 : all primitive types are `Sync` 
 : any type composed entirely of `Sync` items is also `Sync`
 
+Some examples
+`Rc<T>` neither `Send` nor `Sync`
+`RefCell<T>` is never `Sync` but is `Send` if `T` is `Send`
+
 
 
 
@@ -1994,11 +1998,11 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTE2MjMyMzQsLTE4OTk2NzgzMDcsLT
-E3MTgzNjMwMywtMTQ2Nzc4ODYzNCwtNzQwOTIwNTU5LDE5OTkw
-MDA1MDUsLTExNzA1MTgxMjcsLTk2MDgwNTQxNSwtNTczNTA4MD
-c1LDIwMzY1NDYzOTUsLTE0MjgwMTAxNDMsOTAzNDg5MDg0LDk5
-NDE2NDYyMSwtMjI1NTA3MjA1LC0xMzc5MTQyMjY1LDE0MDIzMj
-Q0OTQsMTkxMDYzODYwMiwtMTc1MDExNTIwOCwtMTI4ODQzNTcy
-Niw4OTg4ODQwNzRdfQ==
+eyJoaXN0b3J5IjpbLTQyODU1NzUyNywtMTg5OTY3ODMwNywtMT
+cxODM2MzAzLC0xNDY3Nzg4NjM0LC03NDA5MjA1NTksMTk5OTAw
+MDUwNSwtMTE3MDUxODEyNywtOTYwODA1NDE1LC01NzM1MDgwNz
+UsMjAzNjU0NjM5NSwtMTQyODAxMDE0Myw5MDM0ODkwODQsOTk0
+MTY0NjIxLC0yMjU1MDcyMDUsLTEzNzkxNDIyNjUsMTQwMjMyND
+Q5NCwxOTEwNjM4NjAyLC0xNzUwMTE1MjA4LC0xMjg4NDM1NzI2
+LDg5ODg4NDA3NF19
 -->
