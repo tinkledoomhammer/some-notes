@@ -164,11 +164,13 @@ Manually implementing these Traits is possible but requires `unsafe` code.
 > the important information is that building new concurrent types not made up of `Send` and `Sync` parts requires careful thought to uphold the safety guarantees. [“The Rustonomicon”](https://doc.rust-lang.org/nomicon/index.html) has more information about these guarantees and how to uphold them.
 
 
+# 17 Fundamentals of Async: `Async`, `Await`, `Future`s and `Stream`s
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1ODE3NTQwXX0=
+eyJoaXN0b3J5IjpbLTEwMTg3NTE3NjRdfQ==
 -->
