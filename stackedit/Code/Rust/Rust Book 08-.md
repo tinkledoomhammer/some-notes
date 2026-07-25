@@ -1985,8 +1985,8 @@ Some examples
 	* Is `Sync` if `T: Sync`
 
 ### Implementing `Send` and `Sync` manually is unsafe
-
-
+Manually implementing these Traits is possible but requires `unsafe` code.
+> the important information is that building new concurrent types not made up of `Send` and `Sync` parts requires careful thought to uphold the safety guarantees. [“The Rustonomicon”](https://doc.rust-lang.org/nomicon/index.html) has more information about these guarantees and how to uphold them.
 
 
 
@@ -2004,11 +2004,11 @@ Some examples
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwODk5MTQzNywtNDI4NTU3NTI3LC0xOD
-k5Njc4MzA3LC0xNzE4MzYzMDMsLTE0Njc3ODg2MzQsLTc0MDky
-MDU1OSwxOTk5MDAwNTA1LC0xMTcwNTE4MTI3LC05NjA4MDU0MT
-UsLTU3MzUwODA3NSwyMDM2NTQ2Mzk1LC0xNDI4MDEwMTQzLDkw
-MzQ4OTA4NCw5OTQxNjQ2MjEsLTIyNTUwNzIwNSwtMTM3OTE0Mj
-I2NSwxNDAyMzI0NDk0LDE5MTA2Mzg2MDIsLTE3NTAxMTUyMDgs
-LTEyODg0MzU3MjZdfQ==
+eyJoaXN0b3J5IjpbLTEzNjU3ODI2OTUsLTQyODU1NzUyNywtMT
+g5OTY3ODMwNywtMTcxODM2MzAzLC0xNDY3Nzg4NjM0LC03NDA5
+MjA1NTksMTk5OTAwMDUwNSwtMTE3MDUxODEyNywtOTYwODA1ND
+E1LC01NzM1MDgwNzUsMjAzNjU0NjM5NSwtMTQyODAxMDE0Myw5
+MDM0ODkwODQsOTk0MTY0NjIxLC0yMjU1MDcyMDUsLTEzNzkxND
+IyNjUsMTQwMjMyNDQ5NCwxOTEwNjM4NjAyLC0xNzUwMTE1MjA4
+LC0xMjg4NDM1NzI2XX0=
 -->
