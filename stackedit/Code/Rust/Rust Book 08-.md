@@ -1957,6 +1957,9 @@ fn main() {
 [`std::sync::atomic`  module of the standard library](https://doc.rust-lang.org/std/sync/atomic/index.html)
 : provides thread-safe access to several primitive types
 
+**`Arc<&T>`** is not allowed. `T` must be owned
+
+
 ## 16.04 Extensible concurrency with `Send` and `Sync`
 
 
@@ -1977,11 +1980,11 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTgzNjMwMywtMTQ2Nzc4ODYzNCwtNz
-QwOTIwNTU5LDE5OTkwMDA1MDUsLTExNzA1MTgxMjcsLTk2MDgw
-NTQxNSwtNTczNTA4MDc1LDIwMzY1NDYzOTUsLTE0MjgwMTAxND
-MsOTAzNDg5MDg0LDk5NDE2NDYyMSwtMjI1NTA3MjA1LC0xMzc5
-MTQyMjY1LDE0MDIzMjQ0OTQsMTkxMDYzODYwMiwtMTc1MDExNT
-IwOCwtMTI4ODQzNTcyNiw4OTg4ODQwNzQsLTE4NjU2OTE0ODgs
-LTQ1MjAyNzE4XX0=
+eyJoaXN0b3J5IjpbLTE4OTk2NzgzMDcsLTE3MTgzNjMwMywtMT
+Q2Nzc4ODYzNCwtNzQwOTIwNTU5LDE5OTkwMDA1MDUsLTExNzA1
+MTgxMjcsLTk2MDgwNTQxNSwtNTczNTA4MDc1LDIwMzY1NDYzOT
+UsLTE0MjgwMTAxNDMsOTAzNDg5MDg0LDk5NDE2NDYyMSwtMjI1
+NTA3MjA1LC0xMzc5MTQyMjY1LDE0MDIzMjQ0OTQsMTkxMDYzOD
+YwMiwtMTc1MDExNTIwOCwtMTI4ODQzNTcyNiw4OTg4ODQwNzQs
+LTE4NjU2OTE0ODhdfQ==
 -->
