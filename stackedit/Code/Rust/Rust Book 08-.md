@@ -1972,6 +1972,11 @@ fn main() {
 
 `std::marker::Sync`
 : an auto marker trait that indicates that a type is safe to be referenced from multiple threads.
+: `T` is `Sync` if `&T` is `Send`
+: all primitive types are `Sync` 
+: any type composed entirely of `Sync` items is also `Sync`
+
+
 
 
 
@@ -1989,11 +1994,11 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzIxNTA5OTAwLC0xODk5Njc4MzA3LC0xNz
-E4MzYzMDMsLTE0Njc3ODg2MzQsLTc0MDkyMDU1OSwxOTk5MDAw
-NTA1LC0xMTcwNTE4MTI3LC05NjA4MDU0MTUsLTU3MzUwODA3NS
-wyMDM2NTQ2Mzk1LC0xNDI4MDEwMTQzLDkwMzQ4OTA4NCw5OTQx
-NjQ2MjEsLTIyNTUwNzIwNSwtMTM3OTE0MjI2NSwxNDAyMzI0ND
-k0LDE5MTA2Mzg2MDIsLTE3NTAxMTUyMDgsLTEyODg0MzU3MjYs
-ODk4ODg0MDc0XX0=
+eyJoaXN0b3J5IjpbLTE4NTE2MjMyMzQsLTE4OTk2NzgzMDcsLT
+E3MTgzNjMwMywtMTQ2Nzc4ODYzNCwtNzQwOTIwNTU5LDE5OTkw
+MDA1MDUsLTExNzA1MTgxMjcsLTk2MDgwNTQxNSwtNTczNTA4MD
+c1LDIwMzY1NDYzOTUsLTE0MjgwMTAxNDMsOTAzNDg5MDg0LDk5
+NDE2NDYyMSwtMjI1NTA3MjA1LC0xMzc5MTQyMjY1LDE0MDIzMj
+Q0OTQsMTkxMDYzODYwMiwtMTc1MDExNTIwOCwtMTI4ODQzNTcy
+Niw4OTg4ODQwNzRdfQ==
 -->
