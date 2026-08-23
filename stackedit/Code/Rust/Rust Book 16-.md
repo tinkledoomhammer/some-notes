@@ -215,8 +215,12 @@ async fn page_title(url: &str) -> Option<String> {
 Rust will give a compiler warning if a future is not used
 * this is different than `thread::spawn` which begins execution immediately
 
+`.await`
+: is a *postfix* keyword to make it easier to chain
+: i.e. `let response_text = trpl::get(url).await.text().await;`
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0MTc2NDc4NywtMTAxODc1MTc2NF19
+eyJoaXN0b3J5IjpbMTAxOTQ3NjQxOSwtMTAxODc1MTc2NF19
 -->
