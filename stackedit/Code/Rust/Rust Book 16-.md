@@ -166,11 +166,16 @@ Manually implementing these Traits is possible but requires `unsafe` code.
 
 # 17 Fundamentals of Async: `Async`, `Await`, `Future`s and `Stream`s
 
+future
+: a value that may not be ready now but will become ready at some point in the future
+: similar to a *task* or *promise*
+: in rust, they are  types that implement `Future`
 
-
+`async` keyword
+: applied to 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTg3NTE3NjRdfQ==
+eyJoaXN0b3J5IjpbLTM4MDIyMjAyMSwtMTAxODc1MTc2NF19
 -->
