@@ -199,10 +199,21 @@ $ cargo add trpl
 : the official home for experimental async code
 : where the `Future` trait was originally designed 
 
-### Defining the page_title` function
+### Defining the `page_title` function
+
+```rust
+use trpl::Html;
+async fn page_title(url: &str) -> Option<String> {
+	let response = trpl::get(url).await;
+	let response_text = response.text().await;
+	Html::parse(&response_text)
+		.select_first("title")
+		.map(|title| title.inner_html())
+	
+}
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDc2NDkxODcsLTEwMTg3NTE3NjRdfQ
-==
+eyJoaXN0b3J5IjpbLTE4NzIxMTIzLC0xMDE4NzUxNzY0XX0=
 -->
