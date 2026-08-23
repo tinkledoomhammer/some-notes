@@ -193,12 +193,16 @@ $ cargo add trpl
 : (short for "the rust programming language")
 : re-exports all the types, traits, and functions that will be needed
 : particularly from `futures` and `tokio` crates
+: renames some items to better suit this chapter of this book
 
 `futures` crate
-:  
+: the official home for experimental async code
+: where the `Future` trait was originally designed 
 
+### Defining the page_title` function
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIwOTk0ODk1LC0xMDE4NzUxNzY0XX0=
+eyJoaXN0b3J5IjpbLTE3NDc2NDkxODcsLTEwMTg3NTE3NjRdfQ
+==
 -->
