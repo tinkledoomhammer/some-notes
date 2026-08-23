@@ -221,6 +221,22 @@ Rust will give a compiler warning if a future is not used
 
 > When rust sees a **block** marked with the `async` keyword, it compiles it into a unique, anonymous data type that implements the `Future` trait. When rust sees a **function** marked with `async`, it compiles it into a non-async function whose body is an async block. An async function's return type is the type of the anonymous data type the compiler creates for that async block.
 
+```rust
+//Roughly equivalent to the above code
+use std::future::Future;
+use trpl::Html;
+fn page_title(url: &str) -> impl Future<Output = Option<String>> {
+	async move {
+		let text = trpl:get
+		//... same as above
+	}
+}
+```
+
+
+
+
+
 
 
 
@@ -228,6 +244,5 @@ Rust will give a compiler warning if a future is not used
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTg3MjAxNDQsLTEwMTg3NTE3NjRdfQ
-==
+eyJoaXN0b3J5IjpbOTA2Mjg4NzA0LC0xMDE4NzUxNzY0XX0=
 -->
