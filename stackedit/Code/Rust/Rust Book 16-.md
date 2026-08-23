@@ -186,11 +186,19 @@ polling
 ```bash
 $ cargo new hello-async
 $ cd hello-async
-$ ca
+$ cargo add trpl
+```
+
+`trpl` crate
+: (short for "the rust programming language")
+: re-exports all the types, traits, and functions that will be needed
+: particularly from `futures` and `tokio` crates
+
+`futures` crate
+:  
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODI4NDcyMDEsLTEwMTg3NTE3NjRdfQ
-==
+eyJoaXN0b3J5IjpbNTIwOTk0ODk1LC0xMDE4NzUxNzY0XX0=
 -->
