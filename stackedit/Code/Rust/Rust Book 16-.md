@@ -219,8 +219,9 @@ Rust will give a compiler warning if a future is not used
 : is a *postfix* keyword to make it easier to chain
 : i.e. `let response_text = trpl::get(url).await.text().await;`
 
+> When rust sees a *block* marked with the `async` keyword, it compiles it into a unique, anonymous data type that implements the `Future` trait. When rust sees a *function* marked with `async`, it compiles it into a non-async function who
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxOTQ3NjQxOSwtMTAxODc1MTc2NF19
+eyJoaXN0b3J5IjpbLTY4MTE2OTYxNSwtMTAxODc1MTc2NF19
 -->
