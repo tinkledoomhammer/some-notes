@@ -211,9 +211,12 @@ async fn page_title(url: &str) -> Option<String> {
 		.map(|title| title.inner_html())
 }
 ```
-**Rust futures are *lazy* **, so we must `.await` to get a usable value
+**Rust futures are *lazy* **, so we must `.await` for them to do anything.
+Rust will give a compiler warning if a future is not used
+* this is different than `thread::spawn` which begins execution immediately
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwMzY4MDk4OSwtMTAxODc1MTc2NF19
+eyJoaXN0b3J5IjpbLTQ0MTc2NDc4NywtMTAxODc1MTc2NF19
 -->
