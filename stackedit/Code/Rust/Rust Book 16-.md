@@ -209,11 +209,11 @@ async fn page_title(url: &str) -> Option<String> {
 	Html::parse(&response_text)
 		.select_first("title")
 		.map(|title| title.inner_html())
-	
 }
-
+```
+**Rust futures are *lazy* **, so we must `.await` to get a usable value
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzIxMTIzLC0xMDE4NzUxNzY0XX0=
+eyJoaXN0b3J5IjpbMTcwMzY4MDk4OSwtMTAxODc1MTc2NF19
 -->
