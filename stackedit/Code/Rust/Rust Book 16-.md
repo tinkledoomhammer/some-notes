@@ -232,6 +232,7 @@ fn page_title(url: &str) -> impl Future<Output = Option<String>> {
 	}
 }
 ```
+## Executing an Async function with a runtime
 
 
 
@@ -244,5 +245,6 @@ fn page_title(url: &str) -> impl Future<Output = Option<String>> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA2Mjg4NzA0LC0xMDE4NzUxNzY0XX0=
+eyJoaXN0b3J5IjpbLTEzMDc2MTE3NTIsLTEwMTg3NTE3NjRdfQ
+==
 -->
