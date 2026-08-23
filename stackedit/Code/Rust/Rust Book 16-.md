@@ -172,10 +172,18 @@ future
 : in rust, they are  types that implement `Future`
 
 `async` keyword
-: applied to 
+: applied to blocks and functions that specify that they can be interrupted and resumed
+
+`await` keyword
+: used within an `async` block to wait for a future to become ready
+
+polling
+: the process of checking to see if a future to see if its value is available
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MDIyMjAyMSwtMTAxODc1MTc2NF19
+eyJoaXN0b3J5IjpbNTkzNTA2ODI2LC0xMDE4NzUxNzY0XX0=
 -->
