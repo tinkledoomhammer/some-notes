@@ -303,7 +303,9 @@ async fn page_title(url: &str) -> (&str, Option<String>) {
 : built on a more general `futures::select()`
 : returns a value to indicate which future finishes first
 : its return type is an `enum`
-
+### exercises
+* to wait on a future in non-async code, pass it to a runtime
+* de
 
 
 
@@ -315,6 +317,6 @@ async fn page_title(url: &str) -> (&str, Option<String>) {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDcyMTQ2NjUwLC0yMDc5MDMxOTkyLC0yMD
-c5MDMxOTkyLC0xMzA3NjExNzUyLC0xMDE4NzUxNzY0XX0=
+eyJoaXN0b3J5IjpbMTg4NTYzNDgxNiwtMjA3OTAzMTk5MiwtMj
+A3OTAzMTk5MiwtMTMwNzYxMTc1MiwtMTAxODc1MTc2NF19
 -->
