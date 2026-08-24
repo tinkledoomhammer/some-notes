@@ -181,8 +181,8 @@ polling
 : the process of checking to see if a future to see if its value is available
 
 **Async/await code in rust** is compiled into equivalent code that uses the `Future` trait
-
-## 17.1 Our first Async program
+## Futures and Async Syntax
+###  Our first Async program
 ```bash
 $ cargo new hello-async
 $ cd hello-async
@@ -326,6 +326,6 @@ fn calculate<'a>(nums: &'a [i32]) -> impl Future <Output = i32> + 'a;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxODcwNzk3NywtMjA3OTAzMTk5MiwtMj
+eyJoaXN0b3J5IjpbMTUxMzM1MDExMywtMjA3OTAzMTk5MiwtMj
 A3OTAzMTk5MiwtMTMwNzYxMTc1MiwtMTAxODc1MTc2NF19
 -->
