@@ -256,6 +256,15 @@ fn main() {
 
 await point
 : every place where code uses the `await` keyword
+: represents a place where control is handed back to the runtime
+: rust keeps track of the state for each async block
+
+If the state machine was visible it would look like
+```rust
+enum PageTitleFuture<'a> {
+	Initial {url: &'a str },
+	GetAwaitPoint {url: &'a str},
+	TextAwaitPoint {
 
 
 
@@ -267,6 +276,6 @@ await point
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI5ODMyMzQ4LC0xMzA3NjExNzUyLC0xMD
-E4NzUxNzY0XX0=
+eyJoaXN0b3J5IjpbLTIwNjk3MzU2OCwtMTMwNzYxMTc1MiwtMT
+AxODc1MTc2NF19
 -->
