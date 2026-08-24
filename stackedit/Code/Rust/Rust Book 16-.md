@@ -264,7 +264,11 @@ If the state machine was visible it would look like
 enum PageTitleFuture<'a> {
 	Initial {url: &'a str },
 	GetAwaitPoint {url: &'a str},
-	TextAwaitPoint {
+	TextAwaitPoint {response: trpl::Response },
+}
+```
+* some runtimes provide macros to allow `async fn main() {...}` by rewriting
+
 
 
 
@@ -276,6 +280,6 @@ enum PageTitleFuture<'a> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjk3MzU2OCwtMTMwNzYxMTc1MiwtMT
-AxODc1MTc2NF19
+eyJoaXN0b3J5IjpbMTU4NjQ5OTMxLC0xMzA3NjExNzUyLC0xMD
+E4NzUxNzY0XX0=
 -->
