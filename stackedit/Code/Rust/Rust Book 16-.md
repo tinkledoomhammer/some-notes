@@ -277,7 +277,17 @@ fn main() {
 	trpl::block_on(async {
 		let title_fut_1 = page_title(&args[1]);
 		let title_fut_2 = page_title(&args[2]);
-		let (
+		let (url, maybe_title) = 
+			match trpl::select(title_fut_1, title_fut_2).await {
+				Either::Left(left) => left,
+				Either::Right(right) => right,
+			};
+		println!("{url} returned first");
+		match maybe_title {
+			Some(title) => println!("Its page title was: '{title}'"),
+			None => println!("It had no title."),
+		}
+	
 ```
 
 
@@ -291,6 +301,6 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjM0NjYzNTUsLTEzMDc2MTE3NTIsLT
-EwMTg3NTE3NjRdfQ==
+eyJoaXN0b3J5IjpbMTkyOTg4NDkzNiwtMTMwNzYxMTc1MiwtMT
+AxODc1MTc2NF19
 -->
