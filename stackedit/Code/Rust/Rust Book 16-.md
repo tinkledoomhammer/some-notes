@@ -275,7 +275,7 @@ use trpl::{Either, Html};
 fn main() {
 	let args: Vec<String> = std::env::args().collect();
 	trpl::block_on(async {
-		let title_fut_1 = page_title(&args[1]);
+		let title_fut_1 = page_title(&args[1]); //lazy
 		let title_fut_2 = page_title(&args[2]);
 		let (url, maybe_title) = 
 			match trpl::select(title_fut_1, title_fut_2).await {
@@ -299,6 +299,8 @@ async fn page_title(url: &str) -> (&str, Option<String>) {
 }
 ```
 
+`trpl::select()`
+: built on a more general `futures::select()`
 
 
 
@@ -310,6 +312,7 @@ async fn page_title(url: &str) -> (&str, Option<String>) {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzkwMzE5OTIsLTIwNzkwMzE5OTIsLT
-EzMDc2MTE3NTIsLTEwMTg3NTE3NjRdfQ==
+eyJoaXN0b3J5IjpbLTEwNDA4ODMxMTEsLTIwNzkwMzE5OTIsLT
+IwNzkwMzE5OTIsLTEzMDc2MTE3NTIsLTEwMTg3NTE3NjRdfQ==
+
 -->
