@@ -246,8 +246,16 @@ fn main() {
 	let args: Vec<String> = std::env::args().collect();
 	trpl::block_on(async {
 		let url = &args[1];
-		match page_title(url).awa
+		match page_title(url).await {
+			Some(title) => println!("The title ffor {url} was {title}"),
+			None => println!("{url} had no title"),
+		}
+	})
+}
 ```
+
+await point
+: every place where code uses the `await` keyword
 
 
 
@@ -259,6 +267,6 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMTAxOTUxNiwtMTMwNzYxMTc1MiwtMT
-AxODc1MTc2NF19
+eyJoaXN0b3J5IjpbODI5ODMyMzQ4LC0xMzA3NjExNzUyLC0xMD
+E4NzUxNzY0XX0=
 -->
