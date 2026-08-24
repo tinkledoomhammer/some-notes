@@ -267,7 +267,18 @@ enum PageTitleFuture<'a> {
 	TextAwaitPoint {response: trpl::Response },
 }
 ```
-* some runtimes provide macros to allow `async fn main() {...}` by rewriting
+* some runtimes provide macros to allow `async fn main() {...}` by rewriting it to a normal main that launches the runtime
+
+### Racing two URLs cconcurrently
+```rust
+use trpl::{Either, Html};
+fn main() {
+	let args: Vec<String> = std::env::args().collect();
+	trpl::block_on(async {
+		let title_fut_1 = page_title(&args[1]);
+		let title_fut_2 = page_title(&args[2]);
+		let (
+```
 
 
 
@@ -280,6 +291,6 @@ enum PageTitleFuture<'a> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NjQ5OTMxLC0xMzA3NjExNzUyLC0xMD
-E4NzUxNzY0XX0=
+eyJoaXN0b3J5IjpbLTE1NjM0NjYzNTUsLTEzMDc2MTE3NTIsLT
+EwMTg3NTE3NjRdfQ==
 -->
