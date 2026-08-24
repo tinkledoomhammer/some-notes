@@ -287,7 +287,15 @@ fn main() {
 			Some(title) => println!("Its page title was: '{title}'"),
 			None => println!("It had no title."),
 		}
-	
+	})
+}
+
+async fn page_title(url: &str) -> (&str, Option<String>) {
+	let response_text = trpl::get(url).await.text().await;
+	let title = Html::parse(&response_text)
+		.select_first("title")
+		.map(|title| title.inner_html());
+	(url, title)
 ```
 
 
@@ -301,6 +309,6 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyOTg4NDkzNiwtMTMwNzYxMTc1MiwtMT
-AxODc1MTc2NF19
+eyJoaXN0b3J5IjpbLTIwMTYxODA2NjEsLTEzMDc2MTE3NTIsLT
+EwMTg3NTE3NjRdfQ==
 -->
