@@ -166,6 +166,8 @@ Manually implementing these Traits is possible but requires `unsafe` code.
 
 # 17 Fundamentals of Async: `Async`, `Await`, `Future`s and `Stream`s
 
+## 17.1 Futures and Async Syntax
+
 future
 : a value that may not be ready now but will become ready at some point in the future
 : similar to a *task* or *promise*
@@ -181,7 +183,7 @@ polling
 : the process of checking to see if a future to see if its value is available
 
 **Async/await code in rust** is compiled into equivalent code that uses the `Future` trait
-## Futures and Async Syntax
+
 ###  Our first Async program
 ```bash
 $ cargo new hello-async
@@ -232,7 +234,7 @@ fn page_title(url: &str) -> impl Future<Output = Option<String>> {
 	}
 }
 ```
-## Executing an Async function with a runtime
+### Executing an Async function with a runtime
 
 ** Main cannot be async **
 
@@ -315,6 +317,8 @@ fn calculate<'a>(nums: &'a [i32]) -> impl Future <Output = i32> + 'a;
 * the future captures any lifetimes in the function's arguments
 * The above specifies that the slice must live as long as the future that captures it.
 
+## 17.2 Applying Concurrency with Async
+
 
 
 
@@ -326,6 +330,7 @@ fn calculate<'a>(nums: &'a [i32]) -> impl Future <Output = i32> + 'a;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMzM1MDExMywtMjA3OTAzMTk5MiwtMj
-A3OTAzMTk5MiwtMTMwNzYxMTc1MiwtMTAxODc1MTc2NF19
+eyJoaXN0b3J5IjpbLTE5Mjg0OTAzODYsLTIwNzkwMzE5OTIsLT
+IwNzkwMzE5OTIsLTEzMDc2MTE3NTIsLTEwMTg3NTE3NjRdfQ==
+
 -->
