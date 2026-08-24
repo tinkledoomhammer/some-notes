@@ -296,7 +296,8 @@ async fn page_title(url: &str) -> (&str, Option<String>) {
 		.select_first("title")
 		.map(|title| title.inner_html());
 	(url, title)
-}
+}sta
+
 ```
 
 
@@ -310,6 +311,6 @@ async fn page_title(url: &str) -> (&str, Option<String>) {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzkwMzE5OTIsLTEzMDc2MTE3NTIsLT
-EwMTg3NTE3NjRdfQ==
+eyJoaXN0b3J5IjpbLTY1NDA1ODc2NiwtMjA3OTAzMTk5MiwtMT
+MwNzYxMTc1MiwtMTAxODc1MTc2NF19
 -->
