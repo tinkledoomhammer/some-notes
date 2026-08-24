@@ -301,6 +301,9 @@ async fn page_title(url: &str) -> (&str, Option<String>) {
 
 `trpl::select()`
 : built on a more general `futures::select()`
+: returns a value to indicate which future finishes first
+: its return type is an `enum`
+
 
 
 
@@ -312,7 +315,6 @@ async fn page_title(url: &str) -> (&str, Option<String>) {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDA4ODMxMTEsLTIwNzkwMzE5OTIsLT
-IwNzkwMzE5OTIsLTEzMDc2MTE3NTIsLTEwMTg3NTE3NjRdfQ==
-
+eyJoaXN0b3J5IjpbMTIzNDg1MDU0OSwtMjA3OTAzMTk5MiwtMj
+A3OTAzMTk5MiwtMTMwNzYxMTc1MiwtMTAxODc1MTc2NF19
 -->
