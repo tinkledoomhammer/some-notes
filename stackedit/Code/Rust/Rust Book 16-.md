@@ -269,7 +269,7 @@ enum PageTitleFuture<'a> {
 ```
 * some runtimes provide macros to allow `async fn main() {...}` by rewriting it to a normal main that launches the runtime
 
-### Racing two URLs cconcurrently
+### Racing two URLs concurrently
 ```rust
 use trpl::{Either, Html};
 fn main() {
@@ -315,6 +315,6 @@ async fn page_title(url: &str) -> (&str, Option<String>) {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzNDg1MDU0OSwtMjA3OTAzMTk5MiwtMj
-A3OTAzMTk5MiwtMTMwNzYxMTc1MiwtMTAxODc1MTc2NF19
+eyJoaXN0b3J5IjpbNDcyMTQ2NjUwLC0yMDc5MDMxOTkyLC0yMD
+c5MDMxOTkyLC0xMzA3NjExNzUyLC0xMDE4NzUxNzY0XX0=
 -->
