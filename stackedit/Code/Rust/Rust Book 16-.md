@@ -182,7 +182,7 @@ polling
 
 **Async/await code in rust** is compiled into equivalent code that uses the `Future` trait
 
-## Our first Async program
+## 17.1 Our first Async program
 ```bash
 $ cargo new hello-async
 $ cd hello-async
@@ -312,6 +312,9 @@ async fn calculate(nums: &[i32]) -> i32;
 //desugars to
 fn calculate<'a>(nums: &'a [i32]) -> impl Future <Output = i32> + 'a;
 ```
+* the future captures any lifetimes in the function's arguments
+* The above specifies that the slice must live as long as the future that captures it.
+
 
 
 
@@ -323,6 +326,6 @@ fn calculate<'a>(nums: &'a [i32]) -> impl Future <Output = i32> + 'a;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg1OTY1MzYyLC0yMDc5MDMxOTkyLC0yMD
-c5MDMxOTkyLC0xMzA3NjExNzUyLC0xMDE4NzUxNzY0XX0=
+eyJoaXN0b3J5IjpbMTAxODcwNzk3NywtMjA3OTAzMTk5MiwtMj
+A3OTAzMTk5MiwtMTMwNzYxMTc1MiwtMTAxODc1MTc2NF19
 -->
