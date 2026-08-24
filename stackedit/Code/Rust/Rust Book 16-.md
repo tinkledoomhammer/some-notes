@@ -234,6 +234,12 @@ fn page_title(url: &str) -> impl Future<Output = Option<String>> {
 ```
 ## Executing an Async function with a runtime
 
+** Main cannot be async **
+
+runtime
+: a rust crate that manages the details of executing asynchronous code
+: can be *initialized* by `main`
+
 
 
 
@@ -245,6 +251,6 @@ fn page_title(url: &str) -> impl Future<Output = Option<String>> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDc2MTE3NTIsLTEwMTg3NTE3NjRdfQ
-==
+eyJoaXN0b3J5IjpbLTIxMDI5NDczODQsLTEzMDc2MTE3NTIsLT
+EwMTg3NTE3NjRdfQ==
 -->
