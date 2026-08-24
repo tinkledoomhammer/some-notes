@@ -305,7 +305,13 @@ async fn page_title(url: &str) -> (&str, Option<String>) {
 : its return type is an `enum`
 ### exercises
 * to wait on a future in non-async code, pass it to a runtime
-* de
+
+```rust
+//async version
+async fn calculate(nums: &[i32]) -> i32;
+//desugars to
+fn calculate<'a>(nums: &'a [i32]) -> impl Future <Output = i32> + 'a;
+```
 
 
 
@@ -317,6 +323,6 @@ async fn page_title(url: &str) -> (&str, Option<String>) {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4NTYzNDgxNiwtMjA3OTAzMTk5MiwtMj
-A3OTAzMTk5MiwtMTMwNzYxMTc1MiwtMTAxODc1MTc2NF19
+eyJoaXN0b3J5IjpbNzg1OTY1MzYyLC0yMDc5MDMxOTkyLC0yMD
+c5MDMxOTkyLC0xMzA3NjExNzUyLC0xMDE4NzUxNzY0XX0=
 -->
