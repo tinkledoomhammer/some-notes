@@ -240,6 +240,14 @@ runtime
 : a rust crate that manages the details of executing asynchronous code
 : can be *initialized* by `main`
 
+In this example, `trpl::block_on` is used
+```rust
+fn main() {
+	let args: Vec<String> = std::env::args().collect();
+	trpl::block_on(async {
+		let url = &args[1];
+		match page_title(url).awa
+```
 
 
 
@@ -251,6 +259,6 @@ runtime
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDI5NDczODQsLTEzMDc2MTE3NTIsLT
-EwMTg3NTE3NjRdfQ==
+eyJoaXN0b3J5IjpbLTYwMTAxOTUxNiwtMTMwNzYxMTc1MiwtMT
+AxODc1MTc2NF19
 -->
