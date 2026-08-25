@@ -318,7 +318,18 @@ fn calculate<'a>(nums: &'a [i32]) -> impl Future <Output = i32> + 'a;
 * The above specifies that the slice must live as long as the future that captures it.
 
 ## 17.2 Applying Concurrency with Async
-
+### Creating a new task
+```rust
+use std::time::Duration;
+fn main() {
+	trpl::block_on(async {
+		trpl::spawn_task(async {
+			for i in 1..10 {
+				println!("hi number {i} from the first task!");
+				trpl::sleep(Duration::from_millis(500)).await;
+			}
+		}
+```
 
 
 
@@ -330,7 +341,7 @@ fn calculate<'a>(nums: &'a [i32]) -> impl Future <Output = i32> + 'a;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mjg0OTAzODYsLTIwNzkwMzE5OTIsLT
-IwNzkwMzE5OTIsLTEzMDc2MTE3NTIsLTEwMTg3NTE3NjRdfQ==
-
+eyJoaXN0b3J5IjpbLTEzNjY3OTU2NjcsLTE5Mjg0OTAzODYsLT
+IwNzkwMzE5OTIsLTIwNzkwMzE5OTIsLTEzMDc2MTE3NTIsLTEw
+MTg3NTE3NjRdfQ==
 -->
