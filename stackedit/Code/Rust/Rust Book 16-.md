@@ -328,7 +328,13 @@ fn main() {
 				println!("hi number {i} from the first task!");
 				trpl::sleep(Duration::from_millis(500)).await;
 			}
+		});
+		for i in 1..5 {
+			println!("hi number {i} from the second task!");
+			trpl::sleep(Duration::from_millis(500)).await;
 		}
+	});
+}
 ```
 
 
@@ -341,7 +347,7 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjY3OTU2NjcsLTE5Mjg0OTAzODYsLT
-IwNzkwMzE5OTIsLTIwNzkwMzE5OTIsLTEzMDc2MTE3NTIsLTEw
-MTg3NTE3NjRdfQ==
+eyJoaXN0b3J5IjpbNjQ4Mjg1NTUyLC0xOTI4NDkwMzg2LC0yMD
+c5MDMxOTkyLC0yMDc5MDMxOTkyLC0xMzA3NjExNzUyLC0xMDE4
+NzUxNzY0XX0=
 -->
