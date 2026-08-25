@@ -336,6 +336,8 @@ fn main() {
 	});
 }
 ```
+The wrapper will be used (but omitted) throughout the rest of the chapter.
+
 
 
 
@@ -347,7 +349,7 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ4Mjg1NTUyLC0xOTI4NDkwMzg2LC0yMD
-c5MDMxOTkyLC0yMDc5MDMxOTkyLC0xMzA3NjExNzUyLC0xMDE4
-NzUxNzY0XX0=
+eyJoaXN0b3J5IjpbMTY2NDQ3OTg1MSwtMTkyODQ5MDM4NiwtMj
+A3OTAzMTk5MiwtMjA3OTAzMTk5MiwtMTMwNzYxMTc1MiwtMTAx
+ODc1MTc2NF19
 -->
