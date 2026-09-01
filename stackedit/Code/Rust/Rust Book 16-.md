@@ -337,6 +337,13 @@ fn main() {
 }
 ```
 The wrapper will be used (but omitted) throughout the rest of the chapter.
+```rust
+fn main() {
+	trpl::block_on(async {
+		// ...
+	}
+}
+```
 
 
 
@@ -349,7 +356,7 @@ The wrapper will be used (but omitted) throughout the rest of the chapter.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2NDQ3OTg1MSwtMTkyODQ5MDM4NiwtMj
-A3OTAzMTk5MiwtMjA3OTAzMTk5MiwtMTMwNzYxMTc1MiwtMTAx
-ODc1MTc2NF19
+eyJoaXN0b3J5IjpbMTg3ODE2MTM0NCwxNjY0NDc5ODUxLC0xOT
+I4NDkwMzg2LC0yMDc5MDMxOTkyLC0yMDc5MDMxOTkyLC0xMzA3
+NjExNzUyLC0xMDE4NzUxNzY0XX0=
 -->
