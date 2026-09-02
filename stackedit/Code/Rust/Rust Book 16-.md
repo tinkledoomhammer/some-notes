@@ -349,8 +349,9 @@ The above example terminates early. To keep it alive
 ```rust
 let handle = trpl::spawn_task(async {
 	for i in 1 .. 10 //...
-});for i in 1..5 //...
-	handle.await.unwrap(); // wait until the spawned task ends
+});
+for i in 1..5 //...
+handle.await.unwrap(); // wait until the spawned task ends
 ```
 
 
@@ -362,7 +363,7 @@ let handle = trpl::spawn_task(async {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgyMTI5Njk2LDE4NzgxNjEzNDQsMTY2ND
+eyJoaXN0b3J5IjpbMzI4Njk2OTUwLDE4NzgxNjEzNDQsMTY2ND
 Q3OTg1MSwtMTkyODQ5MDM4NiwtMjA3OTAzMTk5MiwtMjA3OTAz
 MTk5MiwtMTMwNzYxMTc1MiwtMTAxODc1MTc2NF19
 -->
