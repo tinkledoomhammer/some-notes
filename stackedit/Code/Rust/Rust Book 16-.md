@@ -345,8 +345,13 @@ fn main() {
 }
 ```
 
-The above example terminates early. The 
-
+The above example terminates early. To keep it alive 
+```rust
+let handle = trpl::spawn_task(async {
+	for i in 1 .. 10 //...
+});for i in 1..5 //...
+	handle.await.unwrap(); // wait until the spawned task ends
+```
 
 
 
@@ -357,7 +362,7 @@ The above example terminates early. The
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0OTc2MjMzMCwxODc4MTYxMzQ0LDE2Nj
-Q0Nzk4NTEsLTE5Mjg0OTAzODYsLTIwNzkwMzE5OTIsLTIwNzkw
-MzE5OTIsLTEzMDc2MTE3NTIsLTEwMTg3NTE3NjRdfQ==
+eyJoaXN0b3J5IjpbMzgyMTI5Njk2LDE4NzgxNjEzNDQsMTY2ND
+Q3OTg1MSwtMTkyODQ5MDM4NiwtMjA3OTAzMTk5MiwtMjA3OTAz
+MTk5MiwtMTMwNzYxMTc1MiwtMTAxODc1MTc2NF19
 -->
