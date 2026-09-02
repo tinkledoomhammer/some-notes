@@ -328,12 +328,12 @@ fn main() {
 				println!("hi number {i} from the first task!");
 				trpl::sleep(Duration::from_millis(500)).await;
 			}
-		});
+		}); //spawn_task returns a join handle
 		for i in 1..5 {
 			println!("hi number {i} from the second task!");
 			trpl::sleep(Duration::from_millis(500)).await;
-		}
-	});
+		}		
+	});//exits when main ends, regardless of spawned tasks
 }
 ```
 The wrapper will be used (but omitted) throughout the rest of the chapter.
@@ -345,6 +345,7 @@ fn main() {
 }
 ```
 
+The above example terminates early. The 
 
 
 
@@ -356,7 +357,7 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3ODE2MTM0NCwxNjY0NDc5ODUxLC0xOT
-I4NDkwMzg2LC0yMDc5MDMxOTkyLC0yMDc5MDMxOTkyLC0xMzA3
-NjExNzUyLC0xMDE4NzUxNzY0XX0=
+eyJoaXN0b3J5IjpbLTk0OTc2MjMzMCwxODc4MTYxMzQ0LDE2Nj
+Q0Nzk4NTEsLTE5Mjg0OTAzODYsLTIwNzkwMzE5OTIsLTIwNzkw
+MzE5OTIsLTEzMDc2MTE3NTIsLTEwMTg3NTE3NjRdfQ==
 -->
