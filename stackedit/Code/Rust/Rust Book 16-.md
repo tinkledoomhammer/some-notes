@@ -354,6 +354,8 @@ for i in 1..5 //...
 handle.await.unwrap(); // wait until the spawned task ends
 ```
 
+`trpl::join()`
+: takes futures 
 
 
 
@@ -363,7 +365,8 @@ handle.await.unwrap(); // wait until the spawned task ends
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI4Njk2OTUwLDE4NzgxNjEzNDQsMTY2ND
-Q3OTg1MSwtMTkyODQ5MDM4NiwtMjA3OTAzMTk5MiwtMjA3OTAz
-MTk5MiwtMTMwNzYxMTc1MiwtMTAxODc1MTc2NF19
+eyJoaXN0b3J5IjpbLTEyNDQ3MDk1ODcsMzI4Njk2OTUwLDE4Nz
+gxNjEzNDQsMTY2NDQ3OTg1MSwtMTkyODQ5MDM4NiwtMjA3OTAz
+MTk5MiwtMjA3OTAzMTk5MiwtMTMwNzYxMTc1MiwtMTAxODc1MT
+c2NF19
 -->
