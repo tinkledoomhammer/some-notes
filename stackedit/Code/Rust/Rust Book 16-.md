@@ -372,8 +372,9 @@ let fut2 = async {
 trpl::join(fut1, fut2).await;
 ```
 : the result alternates between the first and second task, printing everything in order
-* `trpl::join` is *
+* `trpl::join` is **fair** meaning that checks each future equally often, alternating between them
 
+### Sending data between tasks using message passing
 
 
 
@@ -381,8 +382,8 @@ trpl::join(fut1, fut2).await;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4NDczNDQyLC0xMjQ0NzA5NTg3LDMyOD
-Y5Njk1MCwxODc4MTYxMzQ0LDE2NjQ0Nzk4NTEsLTE5Mjg0OTAz
-ODYsLTIwNzkwMzE5OTIsLTIwNzkwMzE5OTIsLTEzMDc2MTE3NT
-IsLTEwMTg3NTE3NjRdfQ==
+eyJoaXN0b3J5IjpbLTEzMjE2NzE0MzIsLTEyNDQ3MDk1ODcsMz
+I4Njk2OTUwLDE4NzgxNjEzNDQsMTY2NDQ3OTg1MSwtMTkyODQ5
+MDM4NiwtMjA3OTAzMTk5MiwtMjA3OTAzMTk5MiwtMTMwNzYxMT
+c1MiwtMTAxODc1MTc2NF19
 -->
