@@ -355,7 +355,19 @@ handle.await.unwrap(); // wait until the spawned task ends
 ```
 
 `trpl::join()`
-: takes futures 
+: takes futures, returns a future
+```rust
+let fut1 = async {
+	for i in 1..10 {
+		println!("hi number {i} from the first task");
+		trpl::sleep(Duration::from_millis(500)).await;
+	}
+};
+let fut2 = async {
+	for i in 1..5 {
+		println!("hi number {i} from the second task!");
+		trpl::sleep(Duration::from_millis(
+```
 
 
 
@@ -365,8 +377,8 @@ handle.await.unwrap(); // wait until the spawned task ends
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDQ3MDk1ODcsMzI4Njk2OTUwLDE4Nz
-gxNjEzNDQsMTY2NDQ3OTg1MSwtMTkyODQ5MDM4NiwtMjA3OTAz
-MTk5MiwtMjA3OTAzMTk5MiwtMTMwNzYxMTc1MiwtMTAxODc1MT
-c2NF19
+eyJoaXN0b3J5IjpbLTE1NjcwOTIxMTUsLTEyNDQ3MDk1ODcsMz
+I4Njk2OTUwLDE4NzgxNjEzNDQsMTY2NDQ3OTg1MSwtMTkyODQ5
+MDM4NiwtMjA3OTAzMTk5MiwtMjA3OTAzMTk5MiwtMTMwNzYxMT
+c1MiwtMTAxODc1MTc2NF19
 -->
