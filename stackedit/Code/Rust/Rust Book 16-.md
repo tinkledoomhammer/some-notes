@@ -391,10 +391,14 @@ rx
 : will resolve when a message is received or the tx closes the channel
 
 
+### Code within one Async bloc executes linearly
+```rus
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0Nzc0ODU5LDUwNTc4Njk3Niw3NTE4OD
-IzMjQsLTEyNDQ3MDk1ODcsMzI4Njk2OTUwLDE4NzgxNjEzNDQs
-MTY2NDQ3OTg1MSwtMTkyODQ5MDM4NiwtMjA3OTAzMTk5MiwtMj
-A3OTAzMTk5MiwtMTMwNzYxMTc1MiwtMTAxODc1MTc2NF19
+eyJoaXN0b3J5IjpbMTM0NDY0Mzk2OCwtMzQ3NzQ4NTksNTA1Nz
+g2OTc2LDc1MTg4MjMyNCwtMTI0NDcwOTU4NywzMjg2OTY5NTAs
+MTg3ODE2MTM0NCwxNjY0NDc5ODUxLC0xOTI4NDkwMzg2LC0yMD
+c5MDMxOTkyLC0yMDc5MDMxOTkyLC0xMzA3NjExNzUyLC0xMDE4
+NzUxNzY0XX0=
 -->
