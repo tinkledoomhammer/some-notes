@@ -386,6 +386,7 @@ println!("received: '{received}'");
 tx
 : non-blocking, returns immediately
 
+
 rx
 : `.recv()` returns a `Future<Option>`
 : will resolve when a message is received or the tx closes the channel
@@ -415,9 +416,9 @@ trpl::join(tx_fut, rx_fut).await;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1OTI0NTY4LC0zNDc3NDg1OSw1MDU3OD
-Y5NzYsNzUxODgyMzI0LC0xMjQ0NzA5NTg3LDMyODY5Njk1MCwx
-ODc4MTYxMzQ0LDE2NjQ0Nzk4NTEsLTE5Mjg0OTAzODYsLTIwNz
-kwMzE5OTIsLTIwNzkwMzE5OTIsLTEzMDc2MTE3NTIsLTEwMTg3
-NTE3NjRdfQ==
+eyJoaXN0b3J5IjpbLTE1OTg0NDI5MDIsMTg1OTI0NTY4LC0zND
+c3NDg1OSw1MDU3ODY5NzYsNzUxODgyMzI0LC0xMjQ0NzA5NTg3
+LDMyODY5Njk1MCwxODc4MTYxMzQ0LDE2NjQ0Nzk4NTEsLTE5Mj
+g0OTAzODYsLTIwNzkwMzE5OTIsLTIwNzkwMzE5OTIsLTEzMDc2
+MTE3NTIsLTEwMTg3NTE3NjRdfQ==
 -->
