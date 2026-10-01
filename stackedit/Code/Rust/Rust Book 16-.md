@@ -392,11 +392,27 @@ rx
 
 
 ### Code within one Async bloc executes linearly
-```rus
+```rust
+let tx_fut = async {
+	let vals = vec![
+		//...
+	];
+	for val in vals {
+		tx.send(val).unwrap();
+		trpl::sleep(Duration::from_milis(100).await;
+	}
+};
+let rx_fut = async {
+	while let Some(value) = rx.recv().await {
+		println!("recieved '{value}'");
+	}
+};
+trpl::join(t
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0NDY0Mzk2OCwtMzQ3NzQ4NTksNTA1Nz
+eyJoaXN0b3J5IjpbLTU3NTI5Nzk0OSwtMzQ3NzQ4NTksNTA1Nz
 g2OTc2LDc1MTg4MjMyNCwtMTI0NDcwOTU4NywzMjg2OTY5NTAs
 MTg3ODE2MTM0NCwxNjY0NDc5ODUxLC0xOTI4NDkwMzg2LC0yMD
 c5MDMxOTkyLC0yMDc5MDMxOTkyLC0xMzA3NjExNzUyLC0xMDE4
