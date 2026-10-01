@@ -395,7 +395,8 @@ rx
 ```rust
 let tx_fut = async move{
 	//without the `move` keyword, the program will never exit
-	//with the move keywor
+	//with the move keyword, `tx` gets dropped at the end of the
+	//  async block
 	let vals = vec![
 		//...
 	];
@@ -414,9 +415,9 @@ trpl::join(tx_fut, rx_fut).await;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0NzQ1MDEzNywtMzQ3NzQ4NTksNTA1Nz
-g2OTc2LDc1MTg4MjMyNCwtMTI0NDcwOTU4NywzMjg2OTY5NTAs
-MTg3ODE2MTM0NCwxNjY0NDc5ODUxLC0xOTI4NDkwMzg2LC0yMD
-c5MDMxOTkyLC0yMDc5MDMxOTkyLC0xMzA3NjExNzUyLC0xMDE4
-NzUxNzY0XX0=
+eyJoaXN0b3J5IjpbMTg1OTI0NTY4LC0zNDc3NDg1OSw1MDU3OD
+Y5NzYsNzUxODgyMzI0LC0xMjQ0NzA5NTg3LDMyODY5Njk1MCwx
+ODc4MTYxMzQ0LDE2NjQ0Nzk4NTEsLTE5Mjg0OTAzODYsLTIwNz
+kwMzE5OTIsLTIwNzkwMzE5OTIsLTEzMDc2MTE3NTIsLTEwMTg3
+NTE3NjRdfQ==
 -->
