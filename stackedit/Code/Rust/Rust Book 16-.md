@@ -393,7 +393,9 @@ rx
 
 ### Code within one Async bloc executes linearly
 ```rust
-let tx_fut = async {
+let tx_fut = async move{
+	//without the `move` keyword, the program will never exit
+	//with the move keywor
 	let vals = vec![
 		//...
 	];
@@ -401,7 +403,6 @@ let tx_fut = async {
 		tx.send(val).unwrap();
 		trpl::sleep(Duration::from_milis(100).await;
 	}
-	// the next line is needed to allow 
 };
 let rx_fut = async {
 	while let Some(value) = rx.recv().await {
@@ -413,7 +414,7 @@ trpl::join(tx_fut, rx_fut).await;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMzUyMTU4OCwtMzQ3NzQ4NTksNTA1Nz
+eyJoaXN0b3J5IjpbLTk0NzQ1MDEzNywtMzQ3NzQ4NTksNTA1Nz
 g2OTc2LDc1MTg4MjMyNCwtMTI0NDcwOTU4NywzMjg2OTY5NTAs
 MTg3ODE2MTM0NCwxNjY0NDc5ODUxLC0xOTI4NDkwMzg2LC0yMD
 c5MDMxOTkyLC0yMDc5MDMxOTkyLC0xMzA3NjExNzUyLC0xMDE4
