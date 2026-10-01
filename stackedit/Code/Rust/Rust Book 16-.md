@@ -384,16 +384,17 @@ println!("received: '{received}'");
 ```
 
 tx
-: non-blocking
+: non-blocking, returns immediately
+
 rx
 : `.recv()` returns a `Future<Option>`
-
+: will resol
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA1Nzg2OTc2LDc1MTg4MjMyNCwtMTI0ND
-cwOTU4NywzMjg2OTY5NTAsMTg3ODE2MTM0NCwxNjY0NDc5ODUx
-LC0xOTI4NDkwMzg2LC0yMDc5MDMxOTkyLC0yMDc5MDMxOTkyLC
-0xMzA3NjExNzUyLC0xMDE4NzUxNzY0XX0=
+eyJoaXN0b3J5IjpbNjY0NDkzMDM0LDUwNTc4Njk3Niw3NTE4OD
+IzMjQsLTEyNDQ3MDk1ODcsMzI4Njk2OTUwLDE4NzgxNjEzNDQs
+MTY2NDQ3OTg1MSwtMTkyODQ5MDM4NiwtMjA3OTAzMTk5MiwtMj
+A3OTAzMTk5MiwtMTMwNzYxMTc1MiwtMTAxODc1MTc2NF19
 -->
