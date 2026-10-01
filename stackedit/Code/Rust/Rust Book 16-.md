@@ -388,12 +388,12 @@ tx
 
 rx
 : `.recv()` returns a `Future<Option>`
-: will resol
+: will resolve when a message is received or the tx closes the channel
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY0NDkzMDM0LDUwNTc4Njk3Niw3NTE4OD
+eyJoaXN0b3J5IjpbLTM0Nzc0ODU5LDUwNTc4Njk3Niw3NTE4OD
 IzMjQsLTEyNDQ3MDk1ODcsMzI4Njk2OTUwLDE4NzgxNjEzNDQs
 MTY2NDQ3OTg1MSwtMTkyODQ5MDM4NiwtMjA3OTAzMTk5MiwtMj
 A3OTAzMTk5MiwtMTMwNzYxMTc1MiwtMTAxODc1MTc2NF19
