@@ -383,13 +383,17 @@ let recieved = rx.recv().await.unwrap();
 println!("received: '{received}'");
 ```
 
+tx
+: non-blocking
+rx
+: `.recv()` returns a `Future<Option>`
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUxODgyMzI0LC0xMjQ0NzA5NTg3LDMyOD
-Y5Njk1MCwxODc4MTYxMzQ0LDE2NjQ0Nzk4NTEsLTE5Mjg0OTAz
-ODYsLTIwNzkwMzE5OTIsLTIwNzkwMzE5OTIsLTEzMDc2MTE3NT
-IsLTEwMTg3NTE3NjRdfQ==
+eyJoaXN0b3J5IjpbNTA1Nzg2OTc2LDc1MTg4MjMyNCwtMTI0ND
+cwOTU4NywzMjg2OTY5NTAsMTg3ODE2MTM0NCwxNjY0NDc5ODUx
+LC0xOTI4NDkwMzg2LC0yMDc5MDMxOTkyLC0yMDc5MDMxOTkyLC
+0xMzA3NjExNzUyLC0xMDE4NzUxNzY0XX0=
 -->
