@@ -526,11 +526,13 @@ Type annotations for `self` must be
 
 `Pin` can wrap types that implement `Deref` or `DerefMut`
 : It doesn't have its own behavior (like `Rc` and `Arc`)
+: only tells the compiler to enforce additional constraints on pointer usage
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDQwNzE3NTYsLTExMjY4ODI3NDIsLT
+eyJoaXN0b3J5IjpbLTE2MjIxMTc5NzEsLTExMjY4ODI3NDIsLT
 ExMjY4ODI3NDIsMTU5MTM1MzA3OSw4NjM1MDI3OTMsMTUxNzE2
 MTE2MCwxMjE2NzQ1MjMzLDE0ODY1OTM0MzYsLTExMTEyNjg5OT
 csMTYwNzUzMDE2NSwxNjQ2Nzk1OTM1LDExNjIyODcxMSwxNTM4
