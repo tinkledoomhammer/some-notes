@@ -425,17 +425,25 @@ trpl::join(tx_fut, rx_fut).await;
 ### Yielding Control to the Runtime
 
 Rust **only** pauses async blocks at `await` points
-When one task prevents others from running for a 
+When one task prevents others from running for a long time it is called **starving** other futures.
+
+```rust
+fn slow(name: &str, ms: u64){
+	thread::sleep(Duration::from_millis(ms));
+	//thread::sleep instead of trpl::sleep to prevent awaiting
+	println!("'{name}' ran for {ms} ms");
+}
+```
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2OTg1NTQ4NSwxNTM4MDM1Mjc5LDE2OT
-Y1OTMwNDUsLTE1OTIyNDA4ODMsMTg1OTI0NTY4LC0zNDc3NDg1
-OSw1MDU3ODY5NzYsNzUxODgyMzI0LC0xMjQ0NzA5NTg3LDMyOD
-Y5Njk1MCwxODc4MTYxMzQ0LDE2NjQ0Nzk4NTEsLTE5Mjg0OTAz
-ODYsLTIwNzkwMzE5OTIsLTIwNzkwMzE5OTIsLTEzMDc2MTE3NT
-IsLTEwMTg3NTE3NjRdfQ==
+eyJoaXN0b3J5IjpbMTE2MjI4NzExLDE1MzgwMzUyNzksMTY5Nj
+U5MzA0NSwtMTU5MjI0MDg4MywxODU5MjQ1NjgsLTM0Nzc0ODU5
+LDUwNTc4Njk3Niw3NTE4ODIzMjQsLTEyNDQ3MDk1ODcsMzI4Nj
+k2OTUwLDE4NzgxNjEzNDQsMTY2NDQ3OTg1MSwtMTkyODQ5MDM4
+NiwtMjA3OTAzMTk5MiwtMjA3OTAzMTk5MiwtMTMwNzYxMTc1Mi
+wtMTAxODc1MTc2NF19
 -->
