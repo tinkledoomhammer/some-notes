@@ -514,12 +514,17 @@ pub enum Poll<T> {
 
 ### The `Pin` type and the `Unpin` trait
 
+`Pin` type
+: guarantees that values won't be moved in memory
+
+`Box<T>` implements `Future` only if the `T` it wraps is a future that implements `Unpin` 
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODc0MjI2NzksMTU5MTM1MzA3OSw4Nj
+eyJoaXN0b3J5IjpbLTExMjY4ODI3NDIsMTU5MTM1MzA3OSw4Nj
 M1MDI3OTMsMTUxNzE2MTE2MCwxMjE2NzQ1MjMzLDE0ODY1OTM0
 MzYsLTExMTEyNjg5OTcsMTYwNzUzMDE2NSwxNjQ2Nzk1OTM1LD
 ExNjIyODcxMSwxNTM4MDM1Mjc5LDE2OTY1OTMwNDUsLTE1OTIy
