@@ -519,16 +519,18 @@ pub enum Poll<T> {
 
 `Box<T>` implements `Future` only if the `T` it wraps is a future that implements `Unpin` 
 
-
+Type annotations for `self` must be
+: the type on which the method is implemented
+: a refere
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjY4ODI3NDIsLTExMjY4ODI3NDIsMT
-U5MTM1MzA3OSw4NjM1MDI3OTMsMTUxNzE2MTE2MCwxMjE2NzQ1
-MjMzLDE0ODY1OTM0MzYsLTExMTEyNjg5OTcsMTYwNzUzMDE2NS
-wxNjQ2Nzk1OTM1LDExNjIyODcxMSwxNTM4MDM1Mjc5LDE2OTY1
-OTMwNDUsLTE1OTIyNDA4ODMsMTg1OTI0NTY4LC0zNDc3NDg1OS
-w1MDU3ODY5NzYsNzUxODgyMzI0LC0xMjQ0NzA5NTg3LDMyODY5
-Njk1MF19
+eyJoaXN0b3J5IjpbNjA2OTA5NDM4LC0xMTI2ODgyNzQyLC0xMT
+I2ODgyNzQyLDE1OTEzNTMwNzksODYzNTAyNzkzLDE1MTcxNjEx
+NjAsMTIxNjc0NTIzMywxNDg2NTkzNDM2LC0xMTExMjY4OTk3LD
+E2MDc1MzAxNjUsMTY0Njc5NTkzNSwxMTYyMjg3MTEsMTUzODAz
+NTI3OSwxNjk2NTkzMDQ1LC0xNTkyMjQwODgzLDE4NTkyNDU2OC
+wtMzQ3NzQ4NTksNTA1Nzg2OTc2LDc1MTg4MjMyNCwtMTI0NDcw
+OTU4N119
 -->
