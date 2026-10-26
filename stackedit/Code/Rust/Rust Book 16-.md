@@ -483,14 +483,21 @@ async fn timeout<F: Future>(fut: F, time: Duration)->Result<F::Output, Duration>
 
 ## 17.04 Streams: Futures in Sequence
 
+`trpl::stream`
+: an async iterator
+: `let mut stream = trpl::stream_from_iter(an_iterator);`
+
+`trpl::StreamExt`
+: an extension trait for stream objects
+: must `use trpl::StreamExt` to 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4NjU5MzQzNiwtMTExMTI2ODk5NywxNj
-A3NTMwMTY1LDE2NDY3OTU5MzUsMTE2MjI4NzExLDE1MzgwMzUy
-NzksMTY5NjU5MzA0NSwtMTU5MjI0MDg4MywxODU5MjQ1NjgsLT
-M0Nzc0ODU5LDUwNTc4Njk3Niw3NTE4ODIzMjQsLTEyNDQ3MDk1
-ODcsMzI4Njk2OTUwLDE4NzgxNjEzNDQsMTY2NDQ3OTg1MSwtMT
-kyODQ5MDM4NiwtMjA3OTAzMTk5MiwtMjA3OTAzMTk5MiwtMTMw
-NzYxMTc1Ml19
+eyJoaXN0b3J5IjpbLTE2ODE3MTk4OTUsMTQ4NjU5MzQzNiwtMT
+ExMTI2ODk5NywxNjA3NTMwMTY1LDE2NDY3OTU5MzUsMTE2MjI4
+NzExLDE1MzgwMzUyNzksMTY5NjU5MzA0NSwtMTU5MjI0MDg4My
+wxODU5MjQ1NjgsLTM0Nzc0ODU5LDUwNTc4Njk3Niw3NTE4ODIz
+MjQsLTEyNDQ3MDk1ODcsMzI4Njk2OTUwLDE4NzgxNjEzNDQsMT
+Y2NDQ3OTg1MSwtMTkyODQ5MDM4NiwtMjA3OTAzMTk5MiwtMjA3
+OTAzMTk5Ml19
 -->
