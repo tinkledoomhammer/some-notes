@@ -443,18 +443,23 @@ or
 
 ### Building your own Async abstractions
 
-```rust
+``rust
 match timeout(slow, Duration::from_secs(2)).await {
-	Ok(message) => p
+	Ok(message) => println!("Succeeded with '{message}'")
+	Err(duration) => {
+		println!("Failed after {} seconds", duration.as_secs())
+	}
+}
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0OTY0Nzc4OSwxNjA3NTMwMTY1LDE2ND
-Y3OTU5MzUsMTE2MjI4NzExLDE1MzgwMzUyNzksMTY5NjU5MzA0
-NSwtMTU5MjI0MDg4MywxODU5MjQ1NjgsLTM0Nzc0ODU5LDUwNT
-c4Njk3Niw3NTE4ODIzMjQsLTEyNDQ3MDk1ODcsMzI4Njk2OTUw
-LDE4NzgxNjEzNDQsMTY2NDQ3OTg1MSwtMTkyODQ5MDM4NiwtMj
-A3OTAzMTk5MiwtMjA3OTAzMTk5MiwtMTMwNzYxMTc1MiwtMTAx
-ODc1MTc2NF19
+eyJoaXN0b3J5IjpbLTEwNzE1ODY2OTUsMTYwNzUzMDE2NSwxNj
+Q2Nzk1OTM1LDExNjIyODcxMSwxNTM4MDM1Mjc5LDE2OTY1OTMw
+NDUsLTE1OTIyNDA4ODMsMTg1OTI0NTY4LC0zNDc3NDg1OSw1MD
+U3ODY5NzYsNzUxODgyMzI0LC0xMjQ0NzA5NTg3LDMyODY5Njk1
+MCwxODc4MTYxMzQ0LDE2NjQ0Nzk4NTEsLTE5Mjg0OTAzODYsLT
+IwNzkwMzE5OTIsLTIwNzkwMzE5OTIsLTEzMDc2MTE3NTIsLTEw
+MTg3NTE3NjRdfQ==
 -->
