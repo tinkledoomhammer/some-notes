@@ -497,12 +497,10 @@ async fn timeout<F: Future>(fut: F, time: Duration)->Result<F::Output, Duration>
 ### Future
 ```rust
 use std::pin::Pin;
-
 pub trait future {
 	type Output;
 	fn poll(self: Pin<&mut Self>, cx: &mut Context<'_>) -> Poll<Self::Output>;
 }
-
 pub enum Poll<T> {
 	Ready(T),
 	Pending,
@@ -511,7 +509,7 @@ pub enum Poll<T> {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0MjQ1MDY3MSwxNDg2NTkzNDM2LC0xMT
+eyJoaXN0b3J5IjpbMTIxNjc0NTIzMywxNDg2NTkzNDM2LC0xMT
 ExMjY4OTk3LDE2MDc1MzAxNjUsMTY0Njc5NTkzNSwxMTYyMjg3
 MTEsMTUzODAzNTI3OSwxNjk2NTkzMDQ1LC0xNTkyMjQwODgzLD
 E4NTkyNDU2OCwtMzQ3NzQ4NTksNTA1Nzg2OTc2LDc1MTg4MjMy
