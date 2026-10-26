@@ -468,15 +468,22 @@ The signature
 async fn timeout<F: Future>(f_to_tr: F, time: Duration)-> Result<F::Output, Duration>
 ```
 * use `trpl::sleep` to create the timer
-* use `trpl::selec
+* use `trpl::select` to set up the race
 
+```rust
+use trpl::Either
+// --snip--
+async fn timeout<F: Future>(fut: F, time: Duration)->Result<F::Output, Duration>{
+	match trpl::select(fut, trpl::sleep(time)).aw
+}
+```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MTQ5NzIxNiwxNjA3NTMwMTY1LDE2ND
-Y3OTU5MzUsMTE2MjI4NzExLDE1MzgwMzUyNzksMTY5NjU5MzA0
-NSwtMTU5MjI0MDg4MywxODU5MjQ1NjgsLTM0Nzc0ODU5LDUwNT
-c4Njk3Niw3NTE4ODIzMjQsLTEyNDQ3MDk1ODcsMzI4Njk2OTUw
-LDE4NzgxNjEzNDQsMTY2NDQ3OTg1MSwtMTkyODQ5MDM4NiwtMj
-A3OTAzMTk5MiwtMjA3OTAzMTk5MiwtMTMwNzYxMTc1MiwtMTAx
-ODc1MTc2NF19
+eyJoaXN0b3J5IjpbOTY4NjU3NjgwLDE2MDc1MzAxNjUsMTY0Nj
+c5NTkzNSwxMTYyMjg3MTEsMTUzODAzNTI3OSwxNjk2NTkzMDQ1
+LC0xNTkyMjQwODgzLDE4NTkyNDU2OCwtMzQ3NzQ4NTksNTA1Nz
+g2OTc2LDc1MTg4MjMyNCwtMTI0NDcwOTU4NywzMjg2OTY5NTAs
+MTg3ODE2MTM0NCwxNjY0NDc5ODUxLC0xOTI4NDkwMzg2LC0yMD
+c5MDMxOTkyLC0yMDc5MDMxOTkyLC0xMzA3NjExNzUyLC0xMDE4
+NzUxNzY0XX0=
 -->
