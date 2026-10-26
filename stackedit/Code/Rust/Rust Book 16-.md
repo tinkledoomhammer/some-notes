@@ -489,15 +489,17 @@ async fn timeout<F: Future>(fut: F, time: Duration)->Result<F::Output, Duration>
 
 `trpl::StreamExt`
 : an extension trait for stream objects
-: must `use trpl::StreamExt` to 
+: must `use trpl::StreamExt` to iterate over streams
+: defines the `next` method among others
 
+## 17.05 A closer look at the traits of async 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODE3MTk4OTUsMTQ4NjU5MzQzNiwtMT
-ExMTI2ODk5NywxNjA3NTMwMTY1LDE2NDY3OTU5MzUsMTE2MjI4
-NzExLDE1MzgwMzUyNzksMTY5NjU5MzA0NSwtMTU5MjI0MDg4My
-wxODU5MjQ1NjgsLTM0Nzc0ODU5LDUwNTc4Njk3Niw3NTE4ODIz
-MjQsLTEyNDQ3MDk1ODcsMzI4Njk2OTUwLDE4NzgxNjEzNDQsMT
-Y2NDQ3OTg1MSwtMTkyODQ5MDM4NiwtMjA3OTAzMTk5MiwtMjA3
-OTAzMTk5Ml19
+eyJoaXN0b3J5IjpbMTgwNzkxOTY1NSwxNDg2NTkzNDM2LC0xMT
+ExMjY4OTk3LDE2MDc1MzAxNjUsMTY0Njc5NTkzNSwxMTYyMjg3
+MTEsMTUzODAzNTI3OSwxNjk2NTkzMDQ1LC0xNTkyMjQwODgzLD
+E4NTkyNDU2OCwtMzQ3NzQ4NTksNTA1Nzg2OTc2LDc1MTg4MjMy
+NCwtMTI0NDcwOTU4NywzMjg2OTY5NTAsMTg3ODE2MTM0NCwxNj
+Y0NDc5ODUxLC0xOTI4NDkwMzg2LC0yMDc5MDMxOTkyLC0yMDc5
+MDMxOTkyXX0=
 -->
