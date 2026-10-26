@@ -461,16 +461,19 @@ match timeout(slow, Duration::from_secs(2)).await {
 * Param 2 is the duration to wait
 * Should return a `Result`
 	* `Ok` with the value produced by the first param if it finishes first
-	* `Err`
+	* `Err` with the duration of the timeout if the task does not finish first
+
+The signature
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5OTYwMzU3MywxNjA3NTMwMTY1LDE2ND
-Y3OTU5MzUsMTE2MjI4NzExLDE1MzgwMzUyNzksMTY5NjU5MzA0
-NSwtMTU5MjI0MDg4MywxODU5MjQ1NjgsLTM0Nzc0ODU5LDUwNT
-c4Njk3Niw3NTE4ODIzMjQsLTEyNDQ3MDk1ODcsMzI4Njk2OTUw
-LDE4NzgxNjEzNDQsMTY2NDQ3OTg1MSwtMTkyODQ5MDM4NiwtMj
-A3OTAzMTk5MiwtMjA3OTAzMTk5MiwtMTMwNzYxMTc1MiwtMTAx
-ODc1MTc2NF19
+eyJoaXN0b3J5IjpbOTY5ODA4NDMwLDE2MDc1MzAxNjUsMTY0Nj
+c5NTkzNSwxMTYyMjg3MTEsMTUzODAzNTI3OSwxNjk2NTkzMDQ1
+LC0xNTkyMjQwODgzLDE4NTkyNDU2OCwtMzQ3NzQ4NTksNTA1Nz
+g2OTc2LDc1MTg4MjMyNCwtMTI0NDcwOTU4NywzMjg2OTY5NTAs
+MTg3ODE2MTM0NCwxNjY0NDc5ODUxLC0xOTI4NDkwMzg2LC0yMD
+c5MDMxOTkyLC0yMDc5MDMxOTkyLC0xMzA3NjExNzUyLC0xMDE4
+NzUxNzY0XX0=
 -->
