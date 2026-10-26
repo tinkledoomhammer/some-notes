@@ -394,6 +394,7 @@ rx
 
 ### Code within one Async bloc executes linearly
 ```rust
+let (tx, mut rx) = trpl::channel();
 let tx_fut = async move{
 	//without the `move` keyword, the program will never exit
 	//with the move keyword, `tx` gets dropped at the end of the
@@ -416,9 +417,9 @@ trpl::join(tx_fut, rx_fut).await;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTIyNDA4ODMsMTg1OTI0NTY4LC0zND
-c3NDg1OSw1MDU3ODY5NzYsNzUxODgyMzI0LC0xMjQ0NzA5NTg3
-LDMyODY5Njk1MCwxODc4MTYxMzQ0LDE2NjQ0Nzk4NTEsLTE5Mj
-g0OTAzODYsLTIwNzkwMzE5OTIsLTIwNzkwMzE5OTIsLTEzMDc2
-MTE3NTIsLTEwMTg3NTE3NjRdfQ==
+eyJoaXN0b3J5IjpbMTY5NjU5MzA0NSwtMTU5MjI0MDg4MywxOD
+U5MjQ1NjgsLTM0Nzc0ODU5LDUwNTc4Njk3Niw3NTE4ODIzMjQs
+LTEyNDQ3MDk1ODcsMzI4Njk2OTUwLDE4NzgxNjEzNDQsMTY2ND
+Q3OTg1MSwtMTkyODQ5MDM4NiwtMjA3OTAzMTk5MiwtMjA3OTAz
+MTk5MiwtMTMwNzYxMTc1MiwtMTAxODc1MTc2NF19
 -->
