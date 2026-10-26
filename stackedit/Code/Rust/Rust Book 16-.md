@@ -509,7 +509,7 @@ pub enum Poll<T> {
 
 Internally, futures are enums with a variant for each (await delimited) block
 `Pin` type
-: guarantees that values won't b
+: guarantees that values won't 
 
 ### The `Pin` type and the `Unpin` trait
 
@@ -518,7 +518,7 @@ Internally, futures are enums with a variant for each (await delimited) block
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5NTM5MTg2MSwxNTkxMzUzMDc5LDg2Mz
+eyJoaXN0b3J5IjpbMTE0NzAzMTc5NSwxNTkxMzUzMDc5LDg2Mz
 UwMjc5MywxNTE3MTYxMTYwLDEyMTY3NDUyMzMsMTQ4NjU5MzQz
 NiwtMTExMTI2ODk5NywxNjA3NTMwMTY1LDE2NDY3OTU5MzUsMT
 E2MjI4NzExLDE1MzgwMzUyNzksMTY5NjU5MzA0NSwtMTU5MjI0
