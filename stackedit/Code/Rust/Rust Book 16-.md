@@ -465,13 +465,14 @@ match timeout(slow, Duration::from_secs(2)).await {
 
 The signature
 ```rust
-async fn timeout<F: Future>( f_to_tr: F, time: Duration ) -> Result<F::Output, Duration>
+async fn timeout<F: Future>(f_to_tr: F, time: Duration)-> Result<F::Output, Duration>
 ```
-
+* use `trpl::sleep` to create the timer
+* use `trpl::selec
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNzUyMDE5NiwxNjA3NTMwMTY1LDE2ND
+eyJoaXN0b3J5IjpbMTc5MTQ5NzIxNiwxNjA3NTMwMTY1LDE2ND
 Y3OTU5MzUsMTE2MjI4NzExLDE1MzgwMzUyNzksMTY5NjU5MzA0
 NSwtMTU5MjI0MDg4MywxODU5MjQ1NjgsLTM0Nzc0ODU5LDUwNT
 c4Njk3Niw3NTE4ODIzMjQsLTEyNDQ3MDk1ODcsMzI4Njk2OTUw
