@@ -424,16 +424,18 @@ trpl::join(tx_fut, rx_fut).await;
 
 ### Yielding Control to the Runtime
 
+Rust **only** pauses async blocks at `await` points
+When one task prevents others from running for a 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDczNTU5MDgsMTUzODAzNTI3OSwxNj
-k2NTkzMDQ1LC0xNTkyMjQwODgzLDE4NTkyNDU2OCwtMzQ3NzQ4
-NTksNTA1Nzg2OTc2LDc1MTg4MjMyNCwtMTI0NDcwOTU4NywzMj
-g2OTY5NTAsMTg3ODE2MTM0NCwxNjY0NDc5ODUxLC0xOTI4NDkw
-Mzg2LC0yMDc5MDMxOTkyLC0yMDc5MDMxOTkyLC0xMzA3NjExNz
-UyLC0xMDE4NzUxNzY0XX0=
+eyJoaXN0b3J5IjpbMTU2OTg1NTQ4NSwxNTM4MDM1Mjc5LDE2OT
+Y1OTMwNDUsLTE1OTIyNDA4ODMsMTg1OTI0NTY4LC0zNDc3NDg1
+OSw1MDU3ODY5NzYsNzUxODgyMzI0LC0xMjQ0NzA5NTg3LDMyOD
+Y5Njk1MCwxODc4MTYxMzQ0LDE2NjQ0Nzk4NTEsLTE5Mjg0OTAz
+ODYsLTIwNzkwMzE5OTIsLTIwNzkwMzE5OTIsLTEzMDc2MTE3NT
+IsLTEwMTg3NTE3NjRdfQ==
 -->
