@@ -474,16 +474,20 @@ async fn timeout<F: Future>(f_to_tr: F, time: Duration)-> Result<F::Output, Dura
 use trpl::Either
 // --snip--
 async fn timeout<F: Future>(fut: F, time: Duration)->Result<F::Output, Duration>{
-	match trpl::select(fut, trpl::sleep(time)).aw
+	match trpl::select(fut, trpl::sleep(time)).await {
+		Either::Left(output) => Ok(output),
+		EIther::Right(_) => Err(max_time),
+	}
 }
+
 ```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY4NjU3NjgwLDE2MDc1MzAxNjUsMTY0Nj
-c5NTkzNSwxMTYyMjg3MTEsMTUzODAzNTI3OSwxNjk2NTkzMDQ1
-LC0xNTkyMjQwODgzLDE4NTkyNDU2OCwtMzQ3NzQ4NTksNTA1Nz
-g2OTc2LDc1MTg4MjMyNCwtMTI0NDcwOTU4NywzMjg2OTY5NTAs
-MTg3ODE2MTM0NCwxNjY0NDc5ODUxLC0xOTI4NDkwMzg2LC0yMD
-c5MDMxOTkyLC0yMDc5MDMxOTkyLC0xMzA3NjExNzUyLC0xMDE4
-NzUxNzY0XX0=
+eyJoaXN0b3J5IjpbLTExMTEyNjg5OTcsMTYwNzUzMDE2NSwxNj
+Q2Nzk1OTM1LDExNjIyODcxMSwxNTM4MDM1Mjc5LDE2OTY1OTMw
+NDUsLTE1OTIyNDA4ODMsMTg1OTI0NTY4LC0zNDc3NDg1OSw1MD
+U3ODY5NzYsNzUxODgyMzI0LC0xMjQ0NzA5NTg3LDMyODY5Njk1
+MCwxODc4MTYxMzQ0LDE2NjQ0Nzk4NTEsLTE5Mjg0OTAzODYsLT
+IwNzkwMzE5OTIsLTIwNzkwMzE5OTIsLTEzMDc2MTE3NTIsLTEw
+MTg3NTE3NjRdfQ==
 -->
