@@ -437,15 +437,15 @@ fn slow(name: &str, ms: u64){
 ```
 
 To cause a thread to yield:
-`trpl::sleep(Duration::from_millis(1));`
+`trpl::sleep(Duration::from_millis(1)).await;`
 or
-`trpl::yield
+`trpl::yield_now().await`
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1NTM0MzIwOSwxMTYyMjg3MTEsMTUzOD
+eyJoaXN0b3J5IjpbMTY0Njc5NTkzNSwxMTYyMjg3MTEsMTUzOD
 AzNTI3OSwxNjk2NTkzMDQ1LC0xNTkyMjQwODgzLDE4NTkyNDU2
 OCwtMzQ3NzQ4NTksNTA1Nzg2OTc2LDc1MTg4MjMyNCwtMTI0ND
 cwOTU4NywzMjg2OTY5NTAsMTg3ODE2MTM0NCwxNjY0NDc5ODUx
