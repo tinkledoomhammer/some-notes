@@ -497,6 +497,7 @@ async fn timeout<F: Future>(fut: F, time: Duration)->Result<F::Output, Duration>
 ### Future
 ```rust
 use std::pin::Pin;
+use std::task::{Context, Poll};
 pub trait future {
 	type Output;
 	fn poll(self: Pin<&mut Self>, cx: &mut Context<'_>) -> Poll<Self::Output>;
@@ -506,12 +507,9 @@ pub enum Poll<T> {
 	Pending,
 }
 ```
+* Internally, futures are enums with a variant for each (await delimited) block
 
-Internally, futures are enums with a variant for each (await delimited) block
-`Pin` type
-: guarantees that values won't be moved in memory
 
-`Box<T>` implements `Future` only if the `T` it wraps is a future that implements the `Unpin` trait
 
 
 ### The `Pin` type and the `Unpin` trait
@@ -521,11 +519,11 @@ Internally, futures are enums with a variant for each (await delimited) block
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMDQwNTY5OSwxNTkxMzUzMDc5LDg2Mz
-UwMjc5MywxNTE3MTYxMTYwLDEyMTY3NDUyMzMsMTQ4NjU5MzQz
-NiwtMTExMTI2ODk5NywxNjA3NTMwMTY1LDE2NDY3OTU5MzUsMT
-E2MjI4NzExLDE1MzgwMzUyNzksMTY5NjU5MzA0NSwtMTU5MjI0
-MDg4MywxODU5MjQ1NjgsLTM0Nzc0ODU5LDUwNTc4Njk3Niw3NT
-E4ODIzMjQsLTEyNDQ3MDk1ODcsMzI4Njk2OTUwLDE4NzgxNjEz
-NDRdfQ==
+eyJoaXN0b3J5IjpbLTE0ODc0MjI2NzksMTU5MTM1MzA3OSw4Nj
+M1MDI3OTMsMTUxNzE2MTE2MCwxMjE2NzQ1MjMzLDE0ODY1OTM0
+MzYsLTExMTEyNjg5OTcsMTYwNzUzMDE2NSwxNjQ2Nzk1OTM1LD
+ExNjIyODcxMSwxNTM4MDM1Mjc5LDE2OTY1OTMwNDUsLTE1OTIy
+NDA4ODMsMTg1OTI0NTY4LC0zNDc3NDg1OSw1MDU3ODY5NzYsNz
+UxODgyMzI0LC0xMjQ0NzA5NTg3LDMyODY5Njk1MCwxODc4MTYx
+MzQ0XX0=
 -->
