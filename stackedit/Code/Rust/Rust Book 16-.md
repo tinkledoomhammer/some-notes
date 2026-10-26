@@ -356,6 +356,7 @@ handle.await.unwrap(); // wait until the spawned task ends
 
 `trpl::join()`
 : takes futures, returns a future
+
 ```rust
 let fut1 = async {
 	for i in 1..10 {
@@ -417,9 +418,10 @@ trpl::join(tx_fut, rx_fut).await;
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NjU5MzA0NSwtMTU5MjI0MDg4MywxOD
-U5MjQ1NjgsLTM0Nzc0ODU5LDUwNTc4Njk3Niw3NTE4ODIzMjQs
-LTEyNDQ3MDk1ODcsMzI4Njk2OTUwLDE4NzgxNjEzNDQsMTY2ND
-Q3OTg1MSwtMTkyODQ5MDM4NiwtMjA3OTAzMTk5MiwtMjA3OTAz
-MTk5MiwtMTMwNzYxMTc1MiwtMTAxODc1MTc2NF19
+eyJoaXN0b3J5IjpbLTMyMzY5OTAzMywxNjk2NTkzMDQ1LC0xNT
+kyMjQwODgzLDE4NTkyNDU2OCwtMzQ3NzQ4NTksNTA1Nzg2OTc2
+LDc1MTg4MjMyNCwtMTI0NDcwOTU4NywzMjg2OTY5NTAsMTg3OD
+E2MTM0NCwxNjY0NDc5ODUxLC0xOTI4NDkwMzg2LC0yMDc5MDMx
+OTkyLC0yMDc5MDMxOTkyLC0xMzA3NjExNzUyLC0xMDE4NzUxNz
+Y0XX0=
 -->
