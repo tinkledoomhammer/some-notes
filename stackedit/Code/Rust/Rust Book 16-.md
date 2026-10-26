@@ -456,12 +456,17 @@ match timeout(slow, Duration::from_secs(2)).await {
 	}
 }
 ```
-* needs to be an async function (so that it can be awaited
+* needs to be an async function (so that it can be `await`ed
+* First param is a future to run, will be generic
+* Param 2 is the duration to wait
+* Should return a `Result`
+	* `Ok` with the value produced by the first param if it finishes first
+	* `Err`
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NzYzNDkyNCwxNjA3NTMwMTY1LDE2ND
+eyJoaXN0b3J5IjpbLTY5OTYwMzU3MywxNjA3NTMwMTY1LDE2ND
 Y3OTU5MzUsMTE2MjI4NzExLDE1MzgwMzUyNzksMTY5NjU5MzA0
 NSwtMTU5MjI0MDg4MywxODU5MjQ1NjgsLTM0Nzc0ODU5LDUwNT
 c4Njk3Niw3NTE4ODIzMjQsLTEyNDQ3MDk1ODcsMzI4Njk2OTUw
