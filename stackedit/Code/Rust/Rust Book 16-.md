@@ -437,7 +437,7 @@ fn slow(name: &str, ms: u64){
 ```
 
 To cause a thread to yield:
-`trpl::sleep(Duration::from_millis(1)).await;`
+`trpl::sleep(Duration::from_millis(1)).awaitgq ;`
 or
 `trpl::yield_now().await`
 
@@ -445,10 +445,11 @@ or
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0Njc5NTkzNSwxMTYyMjg3MTEsMTUzOD
-AzNTI3OSwxNjk2NTkzMDQ1LC0xNTkyMjQwODgzLDE4NTkyNDU2
-OCwtMzQ3NzQ4NTksNTA1Nzg2OTc2LDc1MTg4MjMyNCwtMTI0ND
-cwOTU4NywzMjg2OTY5NTAsMTg3ODE2MTM0NCwxNjY0NDc5ODUx
-LC0xOTI4NDkwMzg2LC0yMDc5MDMxOTkyLC0yMDc5MDMxOTkyLC
-0xMzA3NjExNzUyLC0xMDE4NzUxNzY0XX0=
+eyJoaXN0b3J5IjpbMTYwNzUzMDE2NSwxNjQ2Nzk1OTM1LDExNj
+IyODcxMSwxNTM4MDM1Mjc5LDE2OTY1OTMwNDUsLTE1OTIyNDA4
+ODMsMTg1OTI0NTY4LC0zNDc3NDg1OSw1MDU3ODY5NzYsNzUxOD
+gyMzI0LC0xMjQ0NzA5NTg3LDMyODY5Njk1MCwxODc4MTYxMzQ0
+LDE2NjQ0Nzk4NTEsLTE5Mjg0OTAzODYsLTIwNzkwMzE5OTIsLT
+IwNzkwMzE5OTIsLTEzMDc2MTE3NTIsLTEwMTg3NTE3NjRdfQ==
+
 -->
