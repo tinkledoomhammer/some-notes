@@ -492,14 +492,25 @@ async fn timeout<F: Future>(fut: F, time: Duration)->Result<F::Output, Duration>
 : must `use trpl::StreamExt` to iterate over streams
 : defines the `next` method among others
 
-## 17.05 A closer look at the traits of async 
+## 17.05 A closer look at the traits of async
+
+### Future
+```rust
+use std::pin::Pin;
+
+pub trait future {
+	type Output;
+	fn poll(self: Pin<&mut Self>, cx: &mut Context<'_>) -> Poll<Self::Output>;
+}
+```
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNzkxOTY1NSwxNDg2NTkzNDM2LC0xMT
-ExMjY4OTk3LDE2MDc1MzAxNjUsMTY0Njc5NTkzNSwxMTYyMjg3
-MTEsMTUzODAzNTI3OSwxNjk2NTkzMDQ1LC0xNTkyMjQwODgzLD
-E4NTkyNDU2OCwtMzQ3NzQ4NTksNTA1Nzg2OTc2LDc1MTg4MjMy
-NCwtMTI0NDcwOTU4NywzMjg2OTY5NTAsMTg3ODE2MTM0NCwxNj
-Y0NDc5ODUxLC0xOTI4NDkwMzg2LC0yMDc5MDMxOTkyLC0yMDc5
-MDMxOTkyXX0=
+eyJoaXN0b3J5IjpbNzYzMzQ4MTk1LDE0ODY1OTM0MzYsLTExMT
+EyNjg5OTcsMTYwNzUzMDE2NSwxNjQ2Nzk1OTM1LDExNjIyODcx
+MSwxNTM4MDM1Mjc5LDE2OTY1OTMwNDUsLTE1OTIyNDA4ODMsMT
+g1OTI0NTY4LC0zNDc3NDg1OSw1MDU3ODY5NzYsNzUxODgyMzI0
+LC0xMjQ0NzA5NTg3LDMyODY5Njk1MCwxODc4MTYxMzQ0LDE2Nj
+Q0Nzk4NTEsLTE5Mjg0OTAzODYsLTIwNzkwMzE5OTIsLTIwNzkw
+MzE5OTJdfQ==
 -->
