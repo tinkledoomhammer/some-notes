@@ -418,12 +418,22 @@ let rx_fut = async {
 trpl::join(tx_fut, rx_fut).await;
 ```
 
+
+
+## 17.3 Working with any number of futures
+
+### Yielding Control to the Runtime
+
+
+
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzODAzNTI3OSwxNjk2NTkzMDQ1LC0xNT
-kyMjQwODgzLDE4NTkyNDU2OCwtMzQ3NzQ4NTksNTA1Nzg2OTc2
-LDc1MTg4MjMyNCwtMTI0NDcwOTU4NywzMjg2OTY5NTAsMTg3OD
-E2MTM0NCwxNjY0NDc5ODUxLC0xOTI4NDkwMzg2LC0yMDc5MDMx
-OTkyLC0yMDc5MDMxOTkyLC0xMzA3NjExNzUyLC0xMDE4NzUxNz
-Y0XX0=
+eyJoaXN0b3J5IjpbLTIxNDczNTU5MDgsMTUzODAzNTI3OSwxNj
+k2NTkzMDQ1LC0xNTkyMjQwODgzLDE4NTkyNDU2OCwtMzQ3NzQ4
+NTksNTA1Nzg2OTc2LDc1MTg4MjMyNCwtMTI0NDcwOTU4NywzMj
+g2OTY5NTAsMTg3ODE2MTM0NCwxNjY0NDc5ODUxLC0xOTI4NDkw
+Mzg2LC0yMDc5MDMxOTkyLC0yMDc5MDMxOTkyLC0xMzA3NjExNz
+UyLC0xMDE4NzUxNzY0XX0=
 -->
