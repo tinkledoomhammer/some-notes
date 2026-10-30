@@ -529,6 +529,7 @@ Type annotations for `self` must be
 : It doesn't have its own behavior (like `Rc` and `Arc`)
 : only tells the compiler to enforce additional constraints on pointer usage
 
+
 > Directly awaiting a future with `await` pins the future implicitly. That's why we don't need to use `pin!` everywhere we want to await futures.**
 
 
@@ -536,11 +537,11 @@ Type annotations for `self` must be
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1MDIyMjYyMywxMTM0NjQwNzg5LDExMz
-Q2NDA3ODksLTE0MzIxNjk0OTEsLTE2MjIxMTc5NzEsLTExMjY4
-ODI3NDIsLTExMjY4ODI3NDIsMTU5MTM1MzA3OSw4NjM1MDI3OT
-MsMTUxNzE2MTE2MCwxMjE2NzQ1MjMzLDE0ODY1OTM0MzYsLTEx
-MTEyNjg5OTcsMTYwNzUzMDE2NSwxNjQ2Nzk1OTM1LDExNjIyOD
-cxMSwxNTM4MDM1Mjc5LDE2OTY1OTMwNDUsLTE1OTIyNDA4ODMs
-MTg1OTI0NTY4XX0=
+eyJoaXN0b3J5IjpbLTE3OTc1NTc5MDMsMTEzNDY0MDc4OSwxMT
+M0NjQwNzg5LC0xNDMyMTY5NDkxLC0xNjIyMTE3OTcxLC0xMTI2
+ODgyNzQyLC0xMTI2ODgyNzQyLDE1OTEzNTMwNzksODYzNTAyNz
+kzLDE1MTcxNjExNjAsMTIxNjc0NTIzMywxNDg2NTkzNDM2LC0x
+MTExMjY4OTk3LDE2MDc1MzAxNjUsMTY0Njc5NTkzNSwxMTYyMj
+g3MTEsMTUzODAzNTI3OSwxNjk2NTkzMDQ1LC0xNTkyMjQwODgz
+LDE4NTkyNDU2OF19
 -->
