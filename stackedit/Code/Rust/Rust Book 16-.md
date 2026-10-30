@@ -528,15 +528,24 @@ Type annotations for `self` must be
 : It doesn't have its own behavior (like `Rc` and `Arc`)
 : only tells the compiler to enforce additional constraints on pointer usage
 
+```rust
+use std::pin::Pin;
+use std::task::{Context, Poll};
+pub trait Future {
+	type Output;
+	fn poll(self: Pin<&mut Self>, cx: &mut Context<'_> ->Poll<Self::Output>;
+}
+```
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjIxMTc5NzEsLTExMjY4ODI3NDIsLT
-ExMjY4ODI3NDIsMTU5MTM1MzA3OSw4NjM1MDI3OTMsMTUxNzE2
-MTE2MCwxMjE2NzQ1MjMzLDE0ODY1OTM0MzYsLTExMTEyNjg5OT
-csMTYwNzUzMDE2NSwxNjQ2Nzk1OTM1LDExNjIyODcxMSwxNTM4
-MDM1Mjc5LDE2OTY1OTMwNDUsLTE1OTIyNDA4ODMsMTg1OTI0NT
-Y4LC0zNDc3NDg1OSw1MDU3ODY5NzYsNzUxODgyMzI0LC0xMjQ0
-NzA5NTg3XX0=
+eyJoaXN0b3J5IjpbMTI5OTcyMTU2MCwtMTYyMjExNzk3MSwtMT
+EyNjg4Mjc0MiwtMTEyNjg4Mjc0MiwxNTkxMzUzMDc5LDg2MzUw
+Mjc5MywxNTE3MTYxMTYwLDEyMTY3NDUyMzMsMTQ4NjU5MzQzNi
+wtMTExMTI2ODk5NywxNjA3NTMwMTY1LDE2NDY3OTU5MzUsMTE2
+MjI4NzExLDE1MzgwMzUyNzksMTY5NjU5MzA0NSwtMTU5MjI0MD
+g4MywxODU5MjQ1NjgsLTM0Nzc0ODU5LDUwNTc4Njk3Niw3NTE4
+ODIzMjRdfQ==
 -->
