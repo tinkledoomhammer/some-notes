@@ -508,7 +508,7 @@ pub enum Poll<T> {
 }
 ```
 * Internally, futures are enums with a variant for each (await delimited) block0
-* note the type specifier for `self` in `poll`s
+* note the type specifier for `self` in `poll`
 
 
 
@@ -534,11 +534,11 @@ Type annotations for `self` must be
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwNjg5NDcyLDExMzQ2NDA3ODksLTE0Mz
-IxNjk0OTEsLTE2MjIxMTc5NzEsLTExMjY4ODI3NDIsLTExMjY4
-ODI3NDIsMTU5MTM1MzA3OSw4NjM1MDI3OTMsMTUxNzE2MTE2MC
-wxMjE2NzQ1MjMzLDE0ODY1OTM0MzYsLTExMTEyNjg5OTcsMTYw
-NzUzMDE2NSwxNjQ2Nzk1OTM1LDExNjIyODcxMSwxNTM4MDM1Mj
-c5LDE2OTY1OTMwNDUsLTE1OTIyNDA4ODMsMTg1OTI0NTY4LC0z
-NDc3NDg1OV19
+eyJoaXN0b3J5IjpbMTEzNDY0MDc4OSwxMTM0NjQwNzg5LC0xND
+MyMTY5NDkxLC0xNjIyMTE3OTcxLC0xMTI2ODgyNzQyLC0xMTI2
+ODgyNzQyLDE1OTEzNTMwNzksODYzNTAyNzkzLDE1MTcxNjExNj
+AsMTIxNjc0NTIzMywxNDg2NTkzNDM2LC0xMTExMjY4OTk3LDE2
+MDc1MzAxNjUsMTY0Njc5NTkzNSwxMTYyMjg3MTEsMTUzODAzNT
+I3OSwxNjk2NTkzMDQ1LC0xNTkyMjQwODgzLDE4NTkyNDU2OCwt
+MzQ3NzQ4NTldfQ==
 -->
