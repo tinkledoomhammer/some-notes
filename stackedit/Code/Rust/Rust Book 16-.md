@@ -514,6 +514,7 @@ pub enum Poll<T> {
 
 ### The `Pin` type and the `Unpin` trait
 
+
 `Pin` type
 : guarantees that values won't be moved in memory
 
@@ -528,14 +529,14 @@ Type annotations for `self` must be
 : It doesn't have its own behavior (like `Rc` and `Arc`)
 : only tells the compiler to enforce additional constraints on pointer usage
 
-**Directly awaiting a future with `await` pins the future implicitely. That's why we don't need to use `pin!` everywhere we want to await futures.**
+> Directly awaiting a future with `await` pins the future implicitly. That's why we don't need to use `pin!` everywhere we want to await futures.**
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNDgzMzk0OCwxMTM0NjQwNzg5LDExMz
+eyJoaXN0b3J5IjpbMTU1MDIyMjYyMywxMTM0NjQwNzg5LDExMz
 Q2NDA3ODksLTE0MzIxNjk0OTEsLTE2MjIxMTc5NzEsLTExMjY4
 ODI3NDIsLTExMjY4ODI3NDIsMTU5MTM1MzA3OSw4NjM1MDI3OT
 MsMTUxNzE2MTE2MCwxMjE2NzQ1MjMzLDE0ODY1OTM0MzYsLTEx
