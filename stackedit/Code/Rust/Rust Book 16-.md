@@ -556,13 +556,15 @@ use std::pin::Pin;
 use std::task::{Context, Poll};
 trait Stream {
 	type Item;
-	fn poll_next(slef: Pin<&mut Self>, cx: &mut C
+	fn poll_next(slef: Pin<&mut Self>, cx: &mut Context<'_>)
+		-> Poll<Option<Self::Item>>;
+}
 ```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDczMjY0ODg0LC0xNzk3NTU3OTAzLC0xNz
+eyJoaXN0b3J5IjpbMzg2NzM1MzY3LC0xNzk3NTU3OTAzLC0xNz
 k3NTU3OTAzLDExMzQ2NDA3ODksMTEzNDY0MDc4OSwtMTQzMjE2
 OTQ5MSwtMTYyMjExNzk3MSwtMTEyNjg4Mjc0MiwtMTEyNjg4Mj
 c0MiwxNTkxMzUzMDc5LDg2MzUwMjc5MywxNTE3MTYxMTYwLDEy
