@@ -591,18 +591,20 @@ fn main() {
 }
 ```
 The apis for tasks and threads are similar.
-
+Threads are best for
+* Cpu-bound workloads (parallelizable)
+Tasks 
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDA2MjY2NTksLTE2MzM3MzAwNjYsMT
-kzMzkyNzU3LC0xNzk3NTU3OTAzLC0xNzk3NTU3OTAzLDExMzQ2
-NDA3ODksMTEzNDY0MDc4OSwtMTQzMjE2OTQ5MSwtMTYyMjExNz
-k3MSwtMTEyNjg4Mjc0MiwtMTEyNjg4Mjc0MiwxNTkxMzUzMDc5
-LDg2MzUwMjc5MywxNTE3MTYxMTYwLDEyMTY3NDUyMzMsMTQ4Nj
-U5MzQzNiwtMTExMTI2ODk5NywxNjA3NTMwMTY1LDE2NDY3OTU5
-MzUsMTE2MjI4NzExXX0=
+eyJoaXN0b3J5IjpbLTc3MTg5OTk2MSwtMTYzMzczMDA2NiwxOT
+MzOTI3NTcsLTE3OTc1NTc5MDMsLTE3OTc1NTc5MDMsMTEzNDY0
+MDc4OSwxMTM0NjQwNzg5LC0xNDMyMTY5NDkxLC0xNjIyMTE3OT
+cxLC0xMTI2ODgyNzQyLC0xMTI2ODgyNzQyLDE1OTEzNTMwNzks
+ODYzNTAyNzkzLDE1MTcxNjExNjAsMTIxNjc0NTIzMywxNDg2NT
+kzNDM2LC0xMTExMjY4OTk3LDE2MDc1MzAxNjUsMTY0Njc5NTkz
+NSwxMTYyMjg3MTFdfQ==
 -->
