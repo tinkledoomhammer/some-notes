@@ -614,16 +614,22 @@ Rust does not support inheritance
 * for code reuse, default implementations on traits
  
 ## 18.02 Using Trait Objects to Abstract over Shared Behavior
-Unlike enums, t
+
+Unlike enums, new types can be added to a trait.
+i.e. a `Vec<SomeEnum>` must have all of its variants in the same crate, while `Vec<dyn SomeTrait>` can include types defined by the user
+
+
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTA0OTU4NzYsLTcyNTYxODU1MCwyMD
-k0OTM1NzI0LC0xMTUxNDA1MDU4LDIxMTM3OTc4NTcsLTE2MzM3
-MzAwNjYsMTkzMzkyNzU3LC0xNzk3NTU3OTAzLC0xNzk3NTU3OT
-AzLDExMzQ2NDA3ODksMTEzNDY0MDc4OSwtMTQzMjE2OTQ5MSwt
-MTYyMjExNzk3MSwtMTEyNjg4Mjc0MiwtMTEyNjg4Mjc0MiwxNT
-kxMzUzMDc5LDg2MzUwMjc5MywxNTE3MTYxMTYwLDEyMTY3NDUy
-MzMsMTQ4NjU5MzQzNl19
+eyJoaXN0b3J5IjpbMjU0NTc4ODkzLC03MjU2MTg1NTAsMjA5ND
+kzNTcyNCwtMTE1MTQwNTA1OCwyMTEzNzk3ODU3LC0xNjMzNzMw
+MDY2LDE5MzM5Mjc1NywtMTc5NzU1NzkwMywtMTc5NzU1NzkwMy
+wxMTM0NjQwNzg5LDExMzQ2NDA3ODksLTE0MzIxNjk0OTEsLTE2
+MjIxMTc5NzEsLTExMjY4ODI3NDIsLTExMjY4ODI3NDIsMTU5MT
+M1MzA3OSw4NjM1MDI3OTMsMTUxNzE2MTE2MCwxMjE2NzQ1MjMz
+LDE0ODY1OTM0MzZdfQ==
 -->
