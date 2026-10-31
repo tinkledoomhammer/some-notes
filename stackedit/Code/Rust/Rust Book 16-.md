@@ -529,6 +529,12 @@ Type annotations for `self` must be
 : It doesn't have its own behavior (like `Rc` and `Arc`)
 : only tells the compiler to enforce additional constraints on pointer usage
 
+`Unpin`
+: auto marker trait applied to most types
+: will be implemented automatically for types that can be moved safely while pinned
+: basically means that they provably cannot reference themselves
+
+`!Unpin`
 
 > Directly awaiting a future with `await` pins the future implicitly. That's why we don't need to use `pin!` everywhere we want to await futures.**
 
@@ -537,11 +543,11 @@ Type annotations for `self` must be
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTc1NTc5MDMsLTE3OTc1NTc5MDMsMT
-EzNDY0MDc4OSwxMTM0NjQwNzg5LC0xNDMyMTY5NDkxLC0xNjIy
-MTE3OTcxLC0xMTI2ODgyNzQyLC0xMTI2ODgyNzQyLDE1OTEzNT
-MwNzksODYzNTAyNzkzLDE1MTcxNjExNjAsMTIxNjc0NTIzMywx
-NDg2NTkzNDM2LC0xMTExMjY4OTk3LDE2MDc1MzAxNjUsMTY0Nj
-c5NTkzNSwxMTYyMjg3MTEsMTUzODAzNTI3OSwxNjk2NTkzMDQ1
-LC0xNTkyMjQwODgzXX0=
+eyJoaXN0b3J5IjpbLTE5ODc5NDc0OTEsLTE3OTc1NTc5MDMsLT
+E3OTc1NTc5MDMsMTEzNDY0MDc4OSwxMTM0NjQwNzg5LC0xNDMy
+MTY5NDkxLC0xNjIyMTE3OTcxLC0xMTI2ODgyNzQyLC0xMTI2OD
+gyNzQyLDE1OTEzNTMwNzksODYzNTAyNzkzLDE1MTcxNjExNjAs
+MTIxNjc0NTIzMywxNDg2NTkzNDM2LC0xMTExMjY4OTk3LDE2MD
+c1MzAxNjUsMTY0Njc5NTkzNSwxMTYyMjg3MTEsMTUzODAzNTI3
+OSwxNjk2NTkzMDQ1XX0=
 -->
