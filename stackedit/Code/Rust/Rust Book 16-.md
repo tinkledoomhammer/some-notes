@@ -642,18 +642,21 @@ let components: Vec<Box<dyn Draw>> = vec![ /* ... */
 ```
 
 ### Performing Dynamic Dispatch
-* Trait objec
+* Trait object methods cannot be statically dispatched
+* this will prevent some compiler optimizations
+* there are limits on which methods can be called dynamically that are described [in the reference](https://doc.rust-lang.org/reference/items/traits.html#dyn-compatibility)
 
+## 18.0
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg2NjQxNTYwLC0zOTk4MjYwNzgsLTM5OT
-gyNjA3OCwtNzI1NjE4NTUwLDIwOTQ5MzU3MjQsLTExNTE0MDUw
-NTgsMjExMzc5Nzg1NywtMTYzMzczMDA2NiwxOTMzOTI3NTcsLT
-E3OTc1NTc5MDMsLTE3OTc1NTc5MDMsMTEzNDY0MDc4OSwxMTM0
-NjQwNzg5LC0xNDMyMTY5NDkxLC0xNjIyMTE3OTcxLC0xMTI2OD
-gyNzQyLC0xMTI2ODgyNzQyLDE1OTEzNTMwNzksODYzNTAyNzkz
-LDE1MTcxNjExNjBdfQ==
+eyJoaXN0b3J5IjpbLTE0MDg1MDI0NzMsLTM5OTgyNjA3OCwtMz
+k5ODI2MDc4LC03MjU2MTg1NTAsMjA5NDkzNTcyNCwtMTE1MTQw
+NTA1OCwyMTEzNzk3ODU3LC0xNjMzNzMwMDY2LDE5MzM5Mjc1Ny
+wtMTc5NzU1NzkwMywtMTc5NzU1NzkwMywxMTM0NjQwNzg5LDEx
+MzQ2NDA3ODksLTE0MzIxNjk0OTEsLTE2MjIxMTc5NzEsLTExMj
+Y4ODI3NDIsLTExMjY4ODI3NDIsMTU5MTM1MzA3OSw4NjM1MDI3
+OTMsMTUxNzE2MTE2MF19
 -->
