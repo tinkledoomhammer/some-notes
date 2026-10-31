@@ -630,26 +630,30 @@ i.e. a `Vec<SomeEnum>` must have all of its variants in the same crate, while `V
 ### Using the Trait
 
 ### Trait Objects and Type Inference
+
+The compiler will need additional info to establish types
 ```rust
 //falis
 let components = vec![Box::new(SelectBox{/*..*/}),Box::new(Button{/*..*/}),];
 //works using as
 let components = vec![Box::new(SeslectBox{}) as Box<dyn Draw>, /* ... */];
 //works using type annotation in the let-binding
-let components: Vec
+let components: Vec<Box<dyn Draw>> = vec![ /* ... */
 ```
-The compiler will need additional info to establish types
+
+### Performing Dynamic Dispatch
+* Trait objec
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMzY3NTI0MywtMzk5ODI2MDc4LC0zOT
-k4MjYwNzgsLTcyNTYxODU1MCwyMDk0OTM1NzI0LC0xMTUxNDA1
-MDU4LDIxMTM3OTc4NTcsLTE2MzM3MzAwNjYsMTkzMzkyNzU3LC
-0xNzk3NTU3OTAzLC0xNzk3NTU3OTAzLDExMzQ2NDA3ODksMTEz
-NDY0MDc4OSwtMTQzMjE2OTQ5MSwtMTYyMjExNzk3MSwtMTEyNj
-g4Mjc0MiwtMTEyNjg4Mjc0MiwxNTkxMzUzMDc5LDg2MzUwMjc5
-MywxNTE3MTYxMTYwXX0=
+eyJoaXN0b3J5IjpbNzg2NjQxNTYwLC0zOTk4MjYwNzgsLTM5OT
+gyNjA3OCwtNzI1NjE4NTUwLDIwOTQ5MzU3MjQsLTExNTE0MDUw
+NTgsMjExMzc5Nzg1NywtMTYzMzczMDA2NiwxOTMzOTI3NTcsLT
+E3OTc1NTc5MDMsLTE3OTc1NTc5MDMsMTEzNDY0MDc4OSwxMTM0
+NjQwNzg5LC0xNDMyMTY5NDkxLC0xNjIyMTE3OTcxLC0xMTI2OD
+gyNzQyLC0xMTI2ODgyNzQyLDE1OTEzNTMwNzksODYzNTAyNzkz
+LDE1MTcxNjExNjBdfQ==
 -->
