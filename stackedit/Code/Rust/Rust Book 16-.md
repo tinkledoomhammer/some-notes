@@ -614,16 +614,16 @@ Rust does not support inheritance
 * for code reuse, default implementations on traits
  
 ## 18.02 Using Trait Objects to Abstract over Shared Behavior
-
+Unlike enums, t
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyNTYxODU1MCwyMDk0OTM1NzI0LC0xMT
-UxNDA1MDU4LDIxMTM3OTc4NTcsLTE2MzM3MzAwNjYsMTkzMzky
-NzU3LC0xNzk3NTU3OTAzLC0xNzk3NTU3OTAzLDExMzQ2NDA3OD
-ksMTEzNDY0MDc4OSwtMTQzMjE2OTQ5MSwtMTYyMjExNzk3MSwt
-MTEyNjg4Mjc0MiwtMTEyNjg4Mjc0MiwxNTkxMzUzMDc5LDg2Mz
-UwMjc5MywxNTE3MTYxMTYwLDEyMTY3NDUyMzMsMTQ4NjU5MzQz
-NiwtMTExMTI2ODk5N119
+eyJoaXN0b3J5IjpbLTEzNTA0OTU4NzYsLTcyNTYxODU1MCwyMD
+k0OTM1NzI0LC0xMTUxNDA1MDU4LDIxMTM3OTc4NTcsLTE2MzM3
+MzAwNjYsMTkzMzkyNzU3LC0xNzk3NTU3OTAzLC0xNzk3NTU3OT
+AzLDExMzQ2NDA3ODksMTEzNDY0MDc4OSwtMTQzMjE2OTQ5MSwt
+MTYyMjExNzk3MSwtMTEyNjg4Mjc0MiwtMTEyNjg4Mjc0MiwxNT
+kxMzUzMDc5LDg2MzUwMjc5MywxNTE3MTYxMTYwLDEyMTY3NDUy
+MzMsMTQ4NjU5MzQzNl19
 -->
