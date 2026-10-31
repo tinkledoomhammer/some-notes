@@ -546,15 +546,15 @@ let tx1_fut = pin!(async move {
 });
 let futures: Vec<Pin<&mut dyn Future<Output = () >>> = vec![tx1_fut, ]
 ```
-
 > Directly awaiting a future with `await` pins the future implicitly. That's why we don't need to use `pin!` everywhere we want to await futures.**
 
-
+### The `Stream` trait
+recall `Iterator` has `next() ->
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NDkwMzA1NSwtMTc5NzU1NzkwMywtMT
+eyJoaXN0b3J5IjpbMTIwNzM3OTMxMywtMTc5NzU1NzkwMywtMT
 c5NzU1NzkwMywxMTM0NjQwNzg5LDExMzQ2NDA3ODksLTE0MzIx
 Njk0OTEsLTE2MjIxMTc5NzEsLTExMjY4ODI3NDIsLTExMjY4OD
 I3NDIsMTU5MTM1MzA3OSw4NjM1MDI3OTMsMTUxNzE2MTE2MCwx
