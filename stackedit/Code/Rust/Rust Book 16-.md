@@ -535,6 +535,14 @@ Type annotations for `self` must be
 : basically means that they provably cannot reference themselves
 
 `!Unpin`
+: marker trait applied to types that can reference themselves
+
+`pin!({async block})`
+: macro that pins a future
+: required to, for example, put futures into a Vec or whatever
+```rust
+let t
+```
 
 > Directly awaiting a future with `await` pins the future implicitly. That's why we don't need to use `pin!` everywhere we want to await futures.**
 
@@ -543,7 +551,7 @@ Type annotations for `self` must be
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODc5NDc0OTEsLTE3OTc1NTc5MDMsLT
+eyJoaXN0b3J5IjpbLTEzNDExNTU1OTYsLTE3OTc1NTc5MDMsLT
 E3OTc1NTc5MDMsMTEzNDY0MDc4OSwxMTM0NjQwNzg5LC0xNDMy
 MTY5NDkxLC0xNjIyMTE3OTcxLC0xMTI2ODgyNzQyLC0xMTI2OD
 gyNzQyLDE1OTEzNTMwNzksODYzNTAyNzkzLDE1MTcxNjExNjAs
