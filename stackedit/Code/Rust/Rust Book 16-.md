@@ -541,7 +541,10 @@ Type annotations for `self` must be
 : macro that pins a future
 : required to, for example, put futures into a Vec or whatever
 ```rust
-let t
+let tx1_fut = pin!(async move { 
+	//... -- snip00
+});
+let futures: Vec<Pin<&mut dyn Future<Output = () >>> = vec![tx1_fut, ]
 ```
 
 > Directly awaiting a future with `await` pins the future implicitly. That's why we don't need to use `pin!` everywhere we want to await futures.**
@@ -551,11 +554,11 @@ let t
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDExNTU1OTYsLTE3OTc1NTc5MDMsLT
-E3OTc1NTc5MDMsMTEzNDY0MDc4OSwxMTM0NjQwNzg5LC0xNDMy
-MTY5NDkxLC0xNjIyMTE3OTcxLC0xMTI2ODgyNzQyLC0xMTI2OD
-gyNzQyLDE1OTEzNTMwNzksODYzNTAyNzkzLDE1MTcxNjExNjAs
-MTIxNjc0NTIzMywxNDg2NTkzNDM2LC0xMTExMjY4OTk3LDE2MD
-c1MzAxNjUsMTY0Njc5NTkzNSwxMTYyMjg3MTEsMTUzODAzNTI3
-OSwxNjk2NTkzMDQ1XX0=
+eyJoaXN0b3J5IjpbLTk5NDkwMzA1NSwtMTc5NzU1NzkwMywtMT
+c5NzU1NzkwMywxMTM0NjQwNzg5LDExMzQ2NDA3ODksLTE0MzIx
+Njk0OTEsLTE2MjIxMTc5NzEsLTExMjY4ODI3NDIsLTExMjY4OD
+I3NDIsMTU5MTM1MzA3OSw4NjM1MDI3OTMsMTUxNzE2MTE2MCwx
+MjE2NzQ1MjMzLDE0ODY1OTM0MzYsLTExMTEyNjg5OTcsMTYwNz
+UzMDE2NSwxNjQ2Nzk1OTM1LDExNjIyODcxMSwxNTM4MDM1Mjc5
+LDE2OTY1OTMwNDVdfQ==
 -->
