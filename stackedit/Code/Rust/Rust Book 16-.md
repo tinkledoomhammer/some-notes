@@ -599,17 +599,20 @@ Async is best for
 * i.e. data that is sporadic, from different sources, etc
 
 # 18 Object-Oriented Programming features
-
+## 18.01 Characteristics of OO Languages
+### Objects contain data and behavior
+### Encapsulation hides implementation Details
+### Inheritance for Polymorphism and Code Reuse
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExMzc5Nzg1NywtMTYzMzczMDA2NiwxOT
-MzOTI3NTcsLTE3OTc1NTc5MDMsLTE3OTc1NTc5MDMsMTEzNDY0
-MDc4OSwxMTM0NjQwNzg5LC0xNDMyMTY5NDkxLC0xNjIyMTE3OT
-cxLC0xMTI2ODgyNzQyLC0xMTI2ODgyNzQyLDE1OTEzNTMwNzks
-ODYzNTAyNzkzLDE1MTcxNjExNjAsMTIxNjc0NTIzMywxNDg2NT
-kzNDM2LC0xMTExMjY4OTk3LDE2MDc1MzAxNjUsMTY0Njc5NTkz
-NSwxMTYyMjg3MTFdfQ==
+eyJoaXN0b3J5IjpbLTExNTE0MDUwNTgsMjExMzc5Nzg1NywtMT
+YzMzczMDA2NiwxOTMzOTI3NTcsLTE3OTc1NTc5MDMsLTE3OTc1
+NTc5MDMsMTEzNDY0MDc4OSwxMTM0NjQwNzg5LC0xNDMyMTY5ND
+kxLC0xNjIyMTE3OTcxLC0xMTI2ODgyNzQyLC0xMTI2ODgyNzQy
+LDE1OTEzNTMwNzksODYzNTAyNzkzLDE1MTcxNjExNjAsMTIxNj
+c0NTIzMywxNDg2NTkzNDM2LC0xMTExMjY4OTk3LDE2MDc1MzAx
+NjUsMTY0Njc5NTkzNV19
 -->
