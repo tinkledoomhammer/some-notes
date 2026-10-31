@@ -578,8 +578,19 @@ use std::{thread, time::Duration};
 fn main() {
 	let (tx, mut rx) = trpl::channel();
 	thread::spawn(move || {
-		for i in 1..
+		for i in 1..11 {
+			tx.send(i).unwrap();
+			thread::sleep(Duration::from_secs(1));
+		}
+	});
+	trpl::block_on(async {
+		while let Some(Message) = rx.recv().await {
+			println!("{message}");
+		}
+	});
+}
 ```
+The apis for tasks and threads are similar.
 
 
 
@@ -587,11 +598,11 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjcyMTQ4MzMyLC0xNjMzNzMwMDY2LDE5Mz
-M5Mjc1NywtMTc5NzU1NzkwMywtMTc5NzU1NzkwMywxMTM0NjQw
-Nzg5LDExMzQ2NDA3ODksLTE0MzIxNjk0OTEsLTE2MjIxMTc5Nz
-EsLTExMjY4ODI3NDIsLTExMjY4ODI3NDIsMTU5MTM1MzA3OSw4
-NjM1MDI3OTMsMTUxNzE2MTE2MCwxMjE2NzQ1MjMzLDE0ODY1OT
-M0MzYsLTExMTEyNjg5OTcsMTYwNzUzMDE2NSwxNjQ2Nzk1OTM1
-LDExNjIyODcxMV19
+eyJoaXN0b3J5IjpbLTExNDA2MjY2NTksLTE2MzM3MzAwNjYsMT
+kzMzkyNzU3LC0xNzk3NTU3OTAzLC0xNzk3NTU3OTAzLDExMzQ2
+NDA3ODksMTEzNDY0MDc4OSwtMTQzMjE2OTQ5MSwtMTYyMjExNz
+k3MSwtMTEyNjg4Mjc0MiwtMTEyNjg4Mjc0MiwxNTkxMzUzMDc5
+LDg2MzUwMjc5MywxNTE3MTYxMTYwLDEyMTY3NDUyMzMsMTQ4Nj
+U5MzQzNiwtMTExMTI2ODk5NywxNjA3NTMwMTY1LDE2NDY3OTU5
+MzUsMTE2MjI4NzExXX0=
 -->
