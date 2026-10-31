@@ -516,7 +516,7 @@ pub enum Poll<T> {
 
 Futures are often self-referential
 The different blocks (separated by `.await`) take ownership of the block's local variables
-So, for example, a ref created before an `.await` that is dereferenced after that `.await` must point to the same address
+So, for example, a ref created before an `.await` that is dereferenced after that `.await` must point to the same address, even if the runtime moves the future to a different memory address.
 
 `Pin` type
 : guarantees that values won't be moved in memory
@@ -572,14 +572,20 @@ trait StreamExt: Stream {
 }
 ```
 
+## 17.06 Putting it all together: Futures, Tasks, and Threads
+
+
+
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyNzYxNDgzNywxOTMzOTI3NTcsLTE3OT
-c1NTc5MDMsLTE3OTc1NTc5MDMsMTEzNDY0MDc4OSwxMTM0NjQw
-Nzg5LC0xNDMyMTY5NDkxLC0xNjIyMTE3OTcxLC0xMTI2ODgyNz
-QyLC0xMTI2ODgyNzQyLDE1OTEzNTMwNzksODYzNTAyNzkzLDE1
-MTcxNjExNjAsMTIxNjc0NTIzMywxNDg2NTkzNDM2LC0xMTExMj
-Y4OTk3LDE2MDc1MzAxNjUsMTY0Njc5NTkzNSwxMTYyMjg3MTEs
-MTUzODAzNTI3OV19
+eyJoaXN0b3J5IjpbLTE2MzM3MzAwNjYsMTkzMzkyNzU3LC0xNz
+k3NTU3OTAzLC0xNzk3NTU3OTAzLDExMzQ2NDA3ODksMTEzNDY0
+MDc4OSwtMTQzMjE2OTQ5MSwtMTYyMjExNzk3MSwtMTEyNjg4Mj
+c0MiwtMTEyNjg4Mjc0MiwxNTkxMzUzMDc5LDg2MzUwMjc5Mywx
+NTE3MTYxMTYwLDEyMTY3NDUyMzMsMTQ4NjU5MzQzNiwtMTExMT
+I2ODk5NywxNjA3NTMwMTY1LDE2NDY3OTU5MzUsMTE2MjI4NzEx
+LDE1MzgwMzUyNzldfQ==
 -->
