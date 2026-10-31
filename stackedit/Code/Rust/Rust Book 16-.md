@@ -514,6 +514,9 @@ pub enum Poll<T> {
 
 ### The `Pin` type and the `Unpin` trait
 
+Futures are often self-referential
+The different blocks (separated by `.await`) take ownership of the block's local variables
+So, for example, a ref created before an `.await` that is dereferenced after that `.await` must point to the same address
 
 `Pin` type
 : guarantees that values won't be moved in memory
@@ -572,11 +575,11 @@ trait StreamExt: Stream {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMzkyNzU3LC0xNzk3NTU3OTAzLC0xNz
-k3NTU3OTAzLDExMzQ2NDA3ODksMTEzNDY0MDc4OSwtMTQzMjE2
-OTQ5MSwtMTYyMjExNzk3MSwtMTEyNjg4Mjc0MiwtMTEyNjg4Mj
-c0MiwxNTkxMzUzMDc5LDg2MzUwMjc5MywxNTE3MTYxMTYwLDEy
-MTY3NDUyMzMsMTQ4NjU5MzQzNiwtMTExMTI2ODk5NywxNjA3NT
-MwMTY1LDE2NDY3OTU5MzUsMTE2MjI4NzExLDE1MzgwMzUyNzks
-MTY5NjU5MzA0NV19
+eyJoaXN0b3J5IjpbLTcyNzYxNDgzNywxOTMzOTI3NTcsLTE3OT
+c1NTc5MDMsLTE3OTc1NTc5MDMsMTEzNDY0MDc4OSwxMTM0NjQw
+Nzg5LC0xNDMyMTY5NDkxLC0xNjIyMTE3OTcxLC0xMTI2ODgyNz
+QyLC0xMTI2ODgyNzQyLDE1OTEzNTMwNzksODYzNTAyNzkzLDE1
+MTcxNjExNjAsMTIxNjc0NTIzMywxNDg2NTkzNDM2LC0xMTExMj
+Y4OTk3LDE2MDc1MzAxNjUsMTY0Njc5NTkzNSwxMTYyMjg3MTEs
+MTUzODAzNTI3OV19
 -->
