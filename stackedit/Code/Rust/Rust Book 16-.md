@@ -609,16 +609,17 @@ Async is best for
 * use `pub` methods to selectively expose the desired behavior
 
 ### Inheritance for Polymorphism and Code Reuse
-Rust does not 
+Rust does not support inheritance
 * for polymorphism, generics and trait bounds
 * for code reuse, default implementations on traits
-* 
+ 
+## 18.02 Using Trait Objects to Abstract over Shared Behavior
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwMjIyNTMzNCwyMDk0OTM1NzI0LC0xMT
+eyJoaXN0b3J5IjpbLTcyNTYxODU1MCwyMDk0OTM1NzI0LC0xMT
 UxNDA1MDU4LDIxMTM3OTc4NTcsLTE2MzM3MzAwNjYsMTkzMzky
 NzU3LC0xNzk3NTU3OTAzLC0xNzk3NTU3OTAzLDExMzQ2NDA3OD
 ksMTEzNDY0MDc4OSwtMTQzMjE2OTQ5MSwtMTYyMjExNzk3MSwt
