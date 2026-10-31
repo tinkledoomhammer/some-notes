@@ -560,16 +560,23 @@ trait Stream {
 		-> Poll<Option<Self::Item>>;
 }
 ```
-* Basically wrap
+* Note that it's `Poll<Option>`
+```rust
+trait StreamExt: Stream {
+	async fn next(&mut self) -> Option<Self::Item>
+	where Self: Unpin;
+	//other methods...
+}
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTE5MTQ3MDksLTE3OTc1NTc5MDMsLT
-E3OTc1NTc5MDMsMTEzNDY0MDc4OSwxMTM0NjQwNzg5LC0xNDMy
-MTY5NDkxLC0xNjIyMTE3OTcxLC0xMTI2ODgyNzQyLC0xMTI2OD
-gyNzQyLDE1OTEzNTMwNzksODYzNTAyNzkzLDE1MTcxNjExNjAs
-MTIxNjc0NTIzMywxNDg2NTkzNDM2LC0xMTExMjY4OTk3LDE2MD
-c1MzAxNjUsMTY0Njc5NTkzNSwxMTYyMjg3MTEsMTUzODAzNTI3
-OSwxNjk2NTkzMDQ1XX0=
+eyJoaXN0b3J5IjpbMTkzMzkyNzU3LC0xNzk3NTU3OTAzLC0xNz
+k3NTU3OTAzLDExMzQ2NDA3ODksMTEzNDY0MDc4OSwtMTQzMjE2
+OTQ5MSwtMTYyMjExNzk3MSwtMTEyNjg4Mjc0MiwtMTEyNjg4Mj
+c0MiwxNTkxMzUzMDc5LDg2MzUwMjc5MywxNTE3MTYxMTYwLDEy
+MTY3NDUyMzMsMTQ4NjU5MzQzNiwtMTExMTI2ODk5NywxNjA3NT
+MwMTY1LDE2NDY3OTU5MzUsMTE2MjI4NzExLDE1MzgwMzUyNzks
+MTY5NjU5MzA0NV19
 -->
