@@ -598,13 +598,14 @@ Async is best for
 * I/O-bound workloads (concurrent)
 * i.e. data that is sporadic, from different sources, etc
 
-# 18 Object-O
+# 18 Object-Oriented Programming features
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NjI3MzUwOCwtMTYzMzczMDA2NiwxOT
+eyJoaXN0b3J5IjpbMjExMzc5Nzg1NywtMTYzMzczMDA2NiwxOT
 MzOTI3NTcsLTE3OTc1NTc5MDMsLTE3OTc1NTc5MDMsMTEzNDY0
 MDc4OSwxMTM0NjQwNzg5LC0xNDMyMTY5NDkxLC0xNjIyMTE3OT
 cxLC0xMTI2ODgyNzQyLC0xMTI2ODgyNzQyLDE1OTEzNTMwNzks
