@@ -593,14 +593,18 @@ fn main() {
 The apis for tasks and threads are similar.
 Threads are best for
 * Cpu-bound workloads (parallelizable)
-Tasks 
+* i.e. processing a lot of data
+Async is best for 
+* I/O-bound workloads (concurrent)
+* i.e. data that is sporadic, from different sources, etc
 
+# 18 Object-O
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3MTg5OTk2MSwtMTYzMzczMDA2NiwxOT
+eyJoaXN0b3J5IjpbMTg5NjI3MzUwOCwtMTYzMzczMDA2NiwxOT
 MzOTI3NTcsLTE3OTc1NTc5MDMsLTE3OTc1NTc5MDMsMTEzNDY0
 MDc4OSwxMTM0NjQwNzg5LC0xNDMyMTY5NDkxLC0xNjIyMTE3OT
 cxLC0xMTI2ODgyNzQyLC0xMTI2ODgyNzQyLDE1OTEzNTMwNzks
