@@ -619,7 +619,7 @@ Unlike enums, new types can be added to a trait.
 i.e. a `Vec<SomeEnum>` must have all of its variants in the same crate, while `Vec<Box<dyn SomeTrait>>` can include types defined by the user
 
 ### Defining a Trait for Common Behavior
-
+* trait objects i.e. `&dyn SomeType`, `Box<dyn SomeType>`, `Vec<dyn SomeType>` have c
 
 
 
@@ -627,11 +627,11 @@ i.e. a `Vec<SomeEnum>` must have all of its variants in the same crate, while `V
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5OTgyNjA3OCwtMzk5ODI2MDc4LC03Mj
-U2MTg1NTAsMjA5NDkzNTcyNCwtMTE1MTQwNTA1OCwyMTEzNzk3
-ODU3LC0xNjMzNzMwMDY2LDE5MzM5Mjc1NywtMTc5NzU1NzkwMy
-wtMTc5NzU1NzkwMywxMTM0NjQwNzg5LDExMzQ2NDA3ODksLTE0
-MzIxNjk0OTEsLTE2MjIxMTc5NzEsLTExMjY4ODI3NDIsLTExMj
-Y4ODI3NDIsMTU5MTM1MzA3OSw4NjM1MDI3OTMsMTUxNzE2MTE2
-MCwxMjE2NzQ1MjMzXX0=
+eyJoaXN0b3J5IjpbLTc3MzY1MTY3MSwtMzk5ODI2MDc4LC0zOT
+k4MjYwNzgsLTcyNTYxODU1MCwyMDk0OTM1NzI0LC0xMTUxNDA1
+MDU4LDIxMTM3OTc4NTcsLTE2MzM3MzAwNjYsMTkzMzkyNzU3LC
+0xNzk3NTU3OTAzLC0xNzk3NTU3OTAzLDExMzQ2NDA3ODksMTEz
+NDY0MDc4OSwtMTQzMjE2OTQ5MSwtMTYyMjExNzk3MSwtMTEyNj
+g4Mjc0MiwtMTEyNjg4Mjc0MiwxNTkxMzUzMDc5LDg2MzUwMjc5
+MywxNTE3MTYxMTYwXX0=
 -->
