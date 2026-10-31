@@ -602,6 +602,10 @@ Async is best for
 ## 18.01 Characteristics of OO Languages
 ### Objects contain data and behavior
 ### Encapsulation hides implementation Details
+
+* keep struct members private if they need to be maintained
+* use `pub` methods to selectively expose the desired behavior
+
 ### Inheritance for Polymorphism and Code Reuse
 
 
@@ -609,11 +613,11 @@ Async is best for
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NDkzNTcyNCwtMTE1MTQwNTA1OCwyMT
-EzNzk3ODU3LC0xNjMzNzMwMDY2LDE5MzM5Mjc1NywtMTc5NzU1
-NzkwMywtMTc5NzU1NzkwMywxMTM0NjQwNzg5LDExMzQ2NDA3OD
-ksLTE0MzIxNjk0OTEsLTE2MjIxMTc5NzEsLTExMjY4ODI3NDIs
-LTExMjY4ODI3NDIsMTU5MTM1MzA3OSw4NjM1MDI3OTMsMTUxNz
-E2MTE2MCwxMjE2NzQ1MjMzLDE0ODY1OTM0MzYsLTExMTEyNjg5
-OTcsMTYwNzUzMDE2NV19
+eyJoaXN0b3J5IjpbMjExNjkwNjY0MCwyMDk0OTM1NzI0LC0xMT
+UxNDA1MDU4LDIxMTM3OTc4NTcsLTE2MzM3MzAwNjYsMTkzMzky
+NzU3LC0xNzk3NTU3OTAzLC0xNzk3NTU3OTAzLDExMzQ2NDA3OD
+ksMTEzNDY0MDc4OSwtMTQzMjE2OTQ5MSwtMTYyMjExNzk3MSwt
+MTEyNjg4Mjc0MiwtMTEyNjg4Mjc0MiwxNTkxMzUzMDc5LDg2Mz
+UwMjc5MywxNTE3MTYxMTYwLDEyMTY3NDUyMzMsMTQ4NjU5MzQz
+NiwtMTExMTI2ODk5N119
 -->
