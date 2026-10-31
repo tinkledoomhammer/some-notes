@@ -548,7 +548,7 @@ let futures: Vec<Pin<&mut dyn Future<Output = () >>> = vec![tx1_fut, ]
 ```
 > Directly awaiting a future with `await` pins the future implicitly. That's why we don't need to use `pin!` everywhere we want to await futures.**
 
-### The `Stream` trait
+### The `Stream` trait (crate trpl)
 recall `Iterator` has `next() -> Option<Self::Item>`
 recall `Future` has `poll() -> Poll<Self::Output>`
 ```rust
@@ -560,15 +560,16 @@ trait Stream {
 		-> Poll<Option<Self::Item>>;
 }
 ```
+* Basically wrap
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg2NzM1MzY3LC0xNzk3NTU3OTAzLC0xNz
-k3NTU3OTAzLDExMzQ2NDA3ODksMTEzNDY0MDc4OSwtMTQzMjE2
-OTQ5MSwtMTYyMjExNzk3MSwtMTEyNjg4Mjc0MiwtMTEyNjg4Mj
-c0MiwxNTkxMzUzMDc5LDg2MzUwMjc5MywxNTE3MTYxMTYwLDEy
-MTY3NDUyMzMsMTQ4NjU5MzQzNiwtMTExMTI2ODk5NywxNjA3NT
-MwMTY1LDE2NDY3OTU5MzUsMTE2MjI4NzExLDE1MzgwMzUyNzks
-MTY5NjU5MzA0NV19
+eyJoaXN0b3J5IjpbLTE5OTE5MTQ3MDksLTE3OTc1NTc5MDMsLT
+E3OTc1NTc5MDMsMTEzNDY0MDc4OSwxMTM0NjQwNzg5LC0xNDMy
+MTY5NDkxLC0xNjIyMTE3OTcxLC0xMTI2ODgyNzQyLC0xMTI2OD
+gyNzQyLDE1OTEzNTMwNzksODYzNTAyNzkzLDE1MTcxNjExNjAs
+MTIxNjc0NTIzMywxNDg2NTkzNDM2LC0xMTExMjY4OTk3LDE2MD
+c1MzAxNjUsMTY0Njc5NTkzNSwxMTYyMjg3MTEsMTUzODAzNTI3
+OSwxNjk2NTkzMDQ1XX0=
 -->
