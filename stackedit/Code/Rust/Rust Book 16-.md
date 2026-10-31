@@ -629,13 +629,19 @@ i.e. a `Vec<SomeEnum>` must have all of its variants in the same crate, while `V
 
 ### Using the Trait
 
-### T
+### Trait Objects and Type Inference
+```rust
+//falis
+let components = vec![Box::new(SelectBox{/*..*/}
+```
+The compiler will need additional info to establish types
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwMjM3NjMzMCwtMzk5ODI2MDc4LC0zOT
+eyJoaXN0b3J5IjpbMTYxNzQ3MTIyMSwtMzk5ODI2MDc4LC0zOT
 k4MjYwNzgsLTcyNTYxODU1MCwyMDk0OTM1NzI0LC0xMTUxNDA1
 MDU4LDIxMTM3OTc4NTcsLTE2MzM3MzAwNjYsMTkzMzkyNzU3LC
 0xNzk3NTU3OTAzLC0xNzk3NTU3OTAzLDExMzQ2NDA3ODksMTEz
