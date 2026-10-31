@@ -620,22 +620,26 @@ i.e. a `Vec<SomeEnum>` must have all of its variants in the same crate, while `V
 
 ### Defining a Trait for Common Behavior
 * trait objects i.e. `&dyn SomeType`, `Box<dyn SomeType>`, `Vec<dyn SomeType>` have 
-	* can be stored in a collection
+	* can be stored in a heterogenous collection
 	* can only be used through the specified trait(s?)
 	* can **not** be cast to the original type
 	* Except for the `Any` trait
 
+### Implementing the Trait
 
+### Using the Trait
+
+### T
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTY1OTk1OTAsLTM5OTgyNjA3OCwtMz
-k5ODI2MDc4LC03MjU2MTg1NTAsMjA5NDkzNTcyNCwtMTE1MTQw
-NTA1OCwyMTEzNzk3ODU3LC0xNjMzNzMwMDY2LDE5MzM5Mjc1Ny
-wtMTc5NzU1NzkwMywtMTc5NzU1NzkwMywxMTM0NjQwNzg5LDEx
-MzQ2NDA3ODksLTE0MzIxNjk0OTEsLTE2MjIxMTc5NzEsLTExMj
-Y4ODI3NDIsLTExMjY4ODI3NDIsMTU5MTM1MzA3OSw4NjM1MDI3
-OTMsMTUxNzE2MTE2MF19
+eyJoaXN0b3J5IjpbMTUwMjM3NjMzMCwtMzk5ODI2MDc4LC0zOT
+k4MjYwNzgsLTcyNTYxODU1MCwyMDk0OTM1NzI0LC0xMTUxNDA1
+MDU4LDIxMTM3OTc4NTcsLTE2MzM3MzAwNjYsMTkzMzkyNzU3LC
+0xNzk3NTU3OTAzLC0xNzk3NTU3OTAzLDExMzQ2NDA3ODksMTEz
+NDY0MDc4OSwtMTQzMjE2OTQ5MSwtMTYyMjExNzk3MSwtMTEyNj
+g4Mjc0MiwtMTEyNjg4Mjc0MiwxNTkxMzUzMDc5LDg2MzUwMjc5
+MywxNTE3MTYxMTYwXX0=
 -->
