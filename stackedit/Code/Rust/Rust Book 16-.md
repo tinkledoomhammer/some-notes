@@ -573,7 +573,13 @@ trait StreamExt: Stream {
 ```
 
 ## 17.06 Putting it all together: Futures, Tasks, and Threads
-
+```rust
+use std::{thread, time::Duration};
+fn main() {
+	let (tx, mut rx) = trpl::channel();
+	thread::spawn(move || {
+		for i in 1..
+```
 
 
 
@@ -581,11 +587,11 @@ trait StreamExt: Stream {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzM3MzAwNjYsMTkzMzkyNzU3LC0xNz
-k3NTU3OTAzLC0xNzk3NTU3OTAzLDExMzQ2NDA3ODksMTEzNDY0
-MDc4OSwtMTQzMjE2OTQ5MSwtMTYyMjExNzk3MSwtMTEyNjg4Mj
-c0MiwtMTEyNjg4Mjc0MiwxNTkxMzUzMDc5LDg2MzUwMjc5Mywx
-NTE3MTYxMTYwLDEyMTY3NDUyMzMsMTQ4NjU5MzQzNiwtMTExMT
-I2ODk5NywxNjA3NTMwMTY1LDE2NDY3OTU5MzUsMTE2MjI4NzEx
-LDE1MzgwMzUyNzldfQ==
+eyJoaXN0b3J5IjpbMjcyMTQ4MzMyLC0xNjMzNzMwMDY2LDE5Mz
+M5Mjc1NywtMTc5NzU1NzkwMywtMTc5NzU1NzkwMywxMTM0NjQw
+Nzg5LDExMzQ2NDA3ODksLTE0MzIxNjk0OTEsLTE2MjIxMTc5Nz
+EsLTExMjY4ODI3NDIsLTExMjY4ODI3NDIsMTU5MTM1MzA3OSw4
+NjM1MDI3OTMsMTUxNzE2MTE2MCwxMjE2NzQ1MjMzLDE0ODY1OT
+M0MzYsLTExMTEyNjg5OTcsMTYwNzUzMDE2NSwxNjQ2Nzk1OTM1
+LDExNjIyODcxMV19
 -->
