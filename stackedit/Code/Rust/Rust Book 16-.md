@@ -602,13 +602,14 @@ Async is best for
 ## 18.01 Characteristics of OO Languages
 ### Objects contain data and behavior
 ### Encapsulation hides implementation Details
-### Inheritance for Polymorphism and Code Reuses
+### Inheritance for Polymorphism and Code Reuse
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0NTYzMzY0OSwtMTE1MTQwNTA1OCwyMT
+eyJoaXN0b3J5IjpbMjA5NDkzNTcyNCwtMTE1MTQwNTA1OCwyMT
 EzNzk3ODU3LC0xNjMzNzMwMDY2LDE5MzM5Mjc1NywtMTc5NzU1
 NzkwMywtMTc5NzU1NzkwMywxMTM0NjQwNzg5LDExMzQ2NDA3OD
 ksLTE0MzIxNjk0OTEsLTE2MjIxMTc5NzEsLTExMjY4ODI3NDIs
