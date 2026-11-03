@@ -646,17 +646,21 @@ let components: Vec<Box<dyn Draw>> = vec![ /* ... */
 * this will prevent some compiler optimizations
 * there are limits on which methods can be called dynamically that are described [in the reference](https://doc.rust-lang.org/reference/items/traits.html#dyn-compatibility)
 
-## 18.03 
+## 18.03 **Incomplete**
+TODO: Review this and the next section
+
+## 19 Patterns and Matching
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1NjIyMzExNCwtMzk5ODI2MDc4LC0zOT
-k4MjYwNzgsLTcyNTYxODU1MCwyMDk0OTM1NzI0LC0xMTUxNDA1
-MDU4LDIxMTM3OTc4NTcsLTE2MzM3MzAwNjYsMTkzMzkyNzU3LC
-0xNzk3NTU3OTAzLC0xNzk3NTU3OTAzLDExMzQ2NDA3ODksMTEz
-NDY0MDc4OSwtMTQzMjE2OTQ5MSwtMTYyMjExNzk3MSwtMTEyNj
-g4Mjc0MiwtMTEyNjg4Mjc0MiwxNTkxMzUzMDc5LDg2MzUwMjc5
-MywxNTE3MTYxMTYwXX0=
+eyJoaXN0b3J5IjpbMTk3MzAyNzEzOSwxNjU2MjIzMTE0LC0zOT
+k4MjYwNzgsLTM5OTgyNjA3OCwtNzI1NjE4NTUwLDIwOTQ5MzU3
+MjQsLTExNTE0MDUwNTgsMjExMzc5Nzg1NywtMTYzMzczMDA2Ni
+wxOTMzOTI3NTcsLTE3OTc1NTc5MDMsLTE3OTc1NTc5MDMsMTEz
+NDY0MDc4OSwxMTM0NjQwNzg5LC0xNDMyMTY5NDkxLC0xNjIyMT
+E3OTcxLC0xMTI2ODgyNzQyLC0xMTI2ODgyNzQyLDE1OTEzNTMw
+NzksODYzNTAyNzkzXX0=
 -->
