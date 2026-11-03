@@ -650,13 +650,13 @@ let components: Vec<Box<dyn Draw>> = vec![ /* ... */
 TODO: Review this and the next section
 
 ## 19 Patterns and Matching
-s
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMjQ4Mzk0NiwxOTczMDI3MTM5LDE2NT
+eyJoaXN0b3J5IjpbMTk3MzAyNzEzOSwxOTczMDI3MTM5LDE2NT
 YyMjMxMTQsLTM5OTgyNjA3OCwtMzk5ODI2MDc4LC03MjU2MTg1
 NTAsMjA5NDkzNTcyNCwtMTE1MTQwNTA1OCwyMTEzNzk3ODU3LC
 0xNjMzNzMwMDY2LDE5MzM5Mjc1NywtMTc5NzU1NzkwMywtMTc5
