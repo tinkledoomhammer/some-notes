@@ -666,13 +666,20 @@ match VALUE	 {
 }
 ```
 * They need to be exhaustive (all possible values in the `match` expression must be accounted for
-* 
+* the `_` pattern will match anything, but never bind a variable. Using it as  the last pattern will function as a  catchall
+
+### `let` statements
+```rust
+let PATTERN = EXPRESSION
+```
+
+* While the pattern is usually just a variable name, itcould 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMzcwNzkzOCwyMDkxNjk2MDI5LDE5Nz
+eyJoaXN0b3J5IjpbMTkzMjM0ODU5MCwyMDkxNjk2MDI5LDE5Nz
 MwMjcxMzksMTk3MzAyNzEzOSwxNjU2MjIzMTE0LC0zOTk4MjYw
 NzgsLTM5OTgyNjA3OCwtNzI1NjE4NTUwLDIwOTQ5MzU3MjQsLT
 ExNTE0MDUwNTgsMjExMzc5Nzg1NywtMTYzMzczMDA2NiwxOTMz
