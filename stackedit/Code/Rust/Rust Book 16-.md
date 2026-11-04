@@ -658,13 +658,21 @@ TODO: Review this and the next section
  * Placeholders
 
 ## All the Places Patterns can be used
-
+### `match` arms
+```rust
+match VALUE	 {
+	PATTERN => EXPRESSION,
+	PATTERN => EXPRESSION,
+}
+```
+* They need to be exhaustive (all possible values in the `match` expression must be accounted for
+* 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0NTc5NjE3MSwyMDkxNjk2MDI5LDE5Nz
+eyJoaXN0b3J5IjpbMTIxMzcwNzkzOCwyMDkxNjk2MDI5LDE5Nz
 MwMjcxMzksMTk3MzAyNzEzOSwxNjU2MjIzMTE0LC0zOTk4MjYw
 NzgsLTM5OTgyNjA3OCwtNzI1NjE4NTUwLDIwOTQ5MzU3MjQsLT
 ExNTE0MDUwNTgsMjExMzc5Nzg1NywtMTYzMzczMDA2NiwxOTMz
