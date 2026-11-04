@@ -673,17 +673,20 @@ match VALUE	 {
 let PATTERN = EXPRESSION
 ```
 
-* While the pattern is usually just a variable name, itcould 
+* While the pattern is usually just a variable name, it could also be a destructured tuple
+* ` let (x,y,z) = (1,2,3);`
+* if the entire expression does not match the pattern, a compiler error will occur
+* 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMjM0ODU5MCwyMDkxNjk2MDI5LDE5Nz
-MwMjcxMzksMTk3MzAyNzEzOSwxNjU2MjIzMTE0LC0zOTk4MjYw
-NzgsLTM5OTgyNjA3OCwtNzI1NjE4NTUwLDIwOTQ5MzU3MjQsLT
-ExNTE0MDUwNTgsMjExMzc5Nzg1NywtMTYzMzczMDA2NiwxOTMz
-OTI3NTcsLTE3OTc1NTc5MDMsLTE3OTc1NTc5MDMsMTEzNDY0MD
-c4OSwxMTM0NjQwNzg5LC0xNDMyMTY5NDkxLC0xNjIyMTE3OTcx
-LC0xMTI2ODgyNzQyXX0=
+eyJoaXN0b3J5IjpbOTcwMzkzMDM2LDIwOTE2OTYwMjksMTk3Mz
+AyNzEzOSwxOTczMDI3MTM5LDE2NTYyMjMxMTQsLTM5OTgyNjA3
+OCwtMzk5ODI2MDc4LC03MjU2MTg1NTAsMjA5NDkzNTcyNCwtMT
+E1MTQwNTA1OCwyMTEzNzk3ODU3LC0xNjMzNzMwMDY2LDE5MzM5
+Mjc1NywtMTc5NzU1NzkwMywtMTc5NzU1NzkwMywxMTM0NjQwNz
+g5LDExMzQ2NDA3ODksLTE0MzIxNjk0OTEsLTE2MjIxMTc5NzEs
+LTExMjY4ODI3NDJdfQ==
 -->
