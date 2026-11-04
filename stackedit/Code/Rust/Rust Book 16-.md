@@ -649,18 +649,26 @@ let components: Vec<Box<dyn Draw>> = vec![ /* ... */
 ## 18.03 **Incomplete**
 TODO: Review this and the next section
 
-## 19 Patterns and Matching
- 
+# 19 Patterns and Matching
+ A pattern consists of some combination of:
+ * Literals
+ * Destructured arrays, enums, structs, or tuples
+ * Variables
+ * Wildcards
+ * Placeholders
+
+## All the Places Patterns can be used
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MTY5NjAyOSwxOTczMDI3MTM5LDE5Nz
-MwMjcxMzksMTY1NjIyMzExNCwtMzk5ODI2MDc4LC0zOTk4MjYw
-NzgsLTcyNTYxODU1MCwyMDk0OTM1NzI0LC0xMTUxNDA1MDU4LD
-IxMTM3OTc4NTcsLTE2MzM3MzAwNjYsMTkzMzkyNzU3LC0xNzk3
-NTU3OTAzLC0xNzk3NTU3OTAzLDExMzQ2NDA3ODksMTEzNDY0MD
-c4OSwtMTQzMjE2OTQ5MSwtMTYyMjExNzk3MSwtMTEyNjg4Mjc0
-MiwtMTEyNjg4Mjc0Ml19
+eyJoaXN0b3J5IjpbLTg0NTc5NjE3MSwyMDkxNjk2MDI5LDE5Nz
+MwMjcxMzksMTk3MzAyNzEzOSwxNjU2MjIzMTE0LC0zOTk4MjYw
+NzgsLTM5OTgyNjA3OCwtNzI1NjE4NTUwLDIwOTQ5MzU3MjQsLT
+ExNTE0MDUwNTgsMjExMzc5Nzg1NywtMTYzMzczMDA2NiwxOTMz
+OTI3NTcsLTE3OTc1NTc5MDMsLTE3OTc1NTc5MDMsMTEzNDY0MD
+c4OSwxMTM0NjQwNzg5LC0xNDMyMTY5NDkxLC0xNjIyMTE3OTcx
+LC0xMTI2ODgyNzQyXX0=
 -->
