@@ -728,6 +728,9 @@ fn main(){
 
 A pattern if **refutable** if
 : it can fail to match
+: is required for function parameters, `let` statements, and `for` loops
+
+`if let` and `let while` can accept refutable patterns
 
 
 
@@ -739,11 +742,11 @@ A pattern if **refutable** if
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4MzIxMDk0OCwtNjMyMDE4MSwtMTk5NT
-kzMTkzOCwyMDkxNjk2MDI5LDE5NzMwMjcxMzksMTk3MzAyNzEz
-OSwxNjU2MjIzMTE0LC0zOTk4MjYwNzgsLTM5OTgyNjA3OCwtNz
-I1NjE4NTUwLDIwOTQ5MzU3MjQsLTExNTE0MDUwNTgsMjExMzc5
-Nzg1NywtMTYzMzczMDA2NiwxOTMzOTI3NTcsLTE3OTc1NTc5MD
-MsLTE3OTc1NTc5MDMsMTEzNDY0MDc4OSwxMTM0NjQwNzg5LC0x
-NDMyMTY5NDkxXX0=
+eyJoaXN0b3J5IjpbLTE2MTI4NTA2NDgsLTYzMjAxODEsLTE5OT
+U5MzE5MzgsMjA5MTY5NjAyOSwxOTczMDI3MTM5LDE5NzMwMjcx
+MzksMTY1NjIyMzExNCwtMzk5ODI2MDc4LC0zOTk4MjYwNzgsLT
+cyNTYxODU1MCwyMDk0OTM1NzI0LC0xMTUxNDA1MDU4LDIxMTM3
+OTc4NTcsLTE2MzM3MzAwNjYsMTkzMzkyNzU3LC0xNzk3NTU3OT
+AzLC0xNzk3NTU3OTAzLDExMzQ2NDA3ODksMTEzNDY0MDc4OSwt
+MTQzMjE2OTQ5MV19
 -->
