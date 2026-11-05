@@ -825,9 +825,15 @@ fn main(){
 	assert_eq!(7,b);
 	//more concise, uses the field nams as var names
 	let Point{x,y} = p;
-	assert_eq!(,a);
-	assert_eq!(7,b);
+	assert_eq!(0,x);
+	assert_eq!(7,y);
+	//can mix varname with literal values
+	match p {
+			Point {x, y:0} => "On x axis",
+			Point {x:0, y} 
+	}
 }
+
 ```
 
 
@@ -839,11 +845,11 @@ fn main(){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDI4MTU0NzksODAzMjQzODMxLDgwMz
-I0MzgzMSwtNzg4MjAxNzk0LC00OTQwODQyMzEsLTU2MTM3NjY2
-MiwtNjMyMDE4MSwtMTk5NTkzMTkzOCwyMDkxNjk2MDI5LDE5Nz
-MwMjcxMzksMTk3MzAyNzEzOSwxNjU2MjIzMTE0LC0zOTk4MjYw
-NzgsLTM5OTgyNjA3OCwtNzI1NjE4NTUwLDIwOTQ5MzU3MjQsLT
-ExNTE0MDUwNTgsMjExMzc5Nzg1NywtMTYzMzczMDA2NiwxOTMz
-OTI3NTddfQ==
+eyJoaXN0b3J5IjpbNTgyNDM0ODY2LDgwMzI0MzgzMSw4MDMyND
+M4MzEsLTc4ODIwMTc5NCwtNDk0MDg0MjMxLC01NjEzNzY2NjIs
+LTYzMjAxODEsLTE5OTU5MzE5MzgsMjA5MTY5NjAyOSwxOTczMD
+I3MTM5LDE5NzMwMjcxMzksMTY1NjIyMzExNCwtMzk5ODI2MDc4
+LC0zOTk4MjYwNzgsLTcyNTYxODU1MCwyMDk0OTM1NzI0LC0xMT
+UxNDA1MDU4LDIxMTM3OTc4NTcsLTE2MzM3MzAwNjYsMTkzMzky
+NzU3XX0=
 -->
