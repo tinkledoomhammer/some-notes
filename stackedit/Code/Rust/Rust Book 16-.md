@@ -873,7 +873,13 @@ match m {
 let ((feet, inches), Point {x,y}) = ((3,10), Point{x:3, y:10});
 ```
 ### Ignoring Values in a pattern
+
 `_` matches and discards an entire value
+: can be used in any pattern
+: can be nested
+: prefix var names to suppress unused variable warnings
+** can be used in nested patterns to ignore part of a value
+
 
 
 
@@ -881,11 +887,11 @@ let ((feet, inches), Point {x,y}) = ((3,10), Point{x:3, y:10});
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MDM1MzA1LDE4Mzk5MjE5NjMsMjgyND
-Q2MTIsODAzMjQzODMxLDgwMzI0MzgzMSwtNzg4MjAxNzk0LC00
-OTQwODQyMzEsLTU2MTM3NjY2MiwtNjMyMDE4MSwtMTk5NTkzMT
-kzOCwyMDkxNjk2MDI5LDE5NzMwMjcxMzksMTk3MzAyNzEzOSwx
-NjU2MjIzMTE0LC0zOTk4MjYwNzgsLTM5OTgyNjA3OCwtNzI1Nj
-E4NTUwLDIwOTQ5MzU3MjQsLTExNTE0MDUwNTgsMjExMzc5Nzg1
-N119
+eyJoaXN0b3J5IjpbLTYyMjA0NzY2NiwxODM5OTIxOTYzLDI4Mj
+Q0NjEyLDgwMzI0MzgzMSw4MDMyNDM4MzEsLTc4ODIwMTc5NCwt
+NDk0MDg0MjMxLC01NjEzNzY2NjIsLTYzMjAxODEsLTE5OTU5Mz
+E5MzgsMjA5MTY5NjAyOSwxOTczMDI3MTM5LDE5NzMwMjcxMzks
+MTY1NjIyMzExNCwtMzk5ODI2MDc4LC0zOTk4MjYwNzgsLTcyNT
+YxODU1MCwyMDk0OTM1NzI0LC0xMTUxNDA1MDU4LDIxMTM3OTc4
+NTddfQ==
 -->
