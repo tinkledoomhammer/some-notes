@@ -682,13 +682,20 @@ Also `else if` and `else if let`
 ```rust
 let fav_color: Option<&str> =None;
 let is_tuesday = false;
-let age: Result<u8, _> =
-
+let age: Result<u8, _> = "34".parse();
+if let Some(color)=fav_color  {
+	println!("Using {color}");
+} else if is_tuesday {
+	println!("Tuesday is green day");
+}else if let Ok(age) = age {
+	if age > 30 {
+		println!("Using purple");
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNzMyMTQzLC0xOTk1OTMxOTM4LDIwOT
+eyJoaXN0b3J5IjpbMzM5ODM4ODQ4LC0xOTk1OTMxOTM4LDIwOT
 E2OTYwMjksMTk3MzAyNzEzOSwxOTczMDI3MTM5LDE2NTYyMjMx
 MTQsLTM5OTgyNjA3OCwtMzk5ODI2MDc4LC03MjU2MTg1NTAsMj
 A5NDkzNTcyNCwtMTE1MTQwNTA1OCwyMTEzNzk3ODU3LC0xNjMz
