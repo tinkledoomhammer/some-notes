@@ -724,17 +724,26 @@ fn main(){
 	print_coordinates(&point);
 }
 ```
+## 19.02 Refutability: Whether a Pattern Might Fail to Match
+
+A pattern if **refutable** if
+: it can fail to match
+
+
+
+
+
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMjAxODEsLTE5OTU5MzE5MzgsMjA5MT
-Y5NjAyOSwxOTczMDI3MTM5LDE5NzMwMjcxMzksMTY1NjIyMzEx
-NCwtMzk5ODI2MDc4LC0zOTk4MjYwNzgsLTcyNTYxODU1MCwyMD
-k0OTM1NzI0LC0xMTUxNDA1MDU4LDIxMTM3OTc4NTcsLTE2MzM3
-MzAwNjYsMTkzMzkyNzU3LC0xNzk3NTU3OTAzLC0xNzk3NTU3OT
-AzLDExMzQ2NDA3ODksMTEzNDY0MDc4OSwtMTQzMjE2OTQ5MSwt
-MTYyMjExNzk3MV19
+eyJoaXN0b3J5IjpbLTk4MzIxMDk0OCwtNjMyMDE4MSwtMTk5NT
+kzMTkzOCwyMDkxNjk2MDI5LDE5NzMwMjcxMzksMTk3MzAyNzEz
+OSwxNjU2MjIzMTE0LC0zOTk4MjYwNzgsLTM5OTgyNjA3OCwtNz
+I1NjE4NTUwLDIwOTQ5MzU3MjQsLTExNTE0MDUwNTgsMjExMzc5
+Nzg1NywtMTYzMzczMDA2NiwxOTMzOTI3NTcsLTE3OTc1NTc5MD
+MsLTE3OTc1NTc5MDMsMTEzNDY0MDc4OSwxMTM0NjQwNzg5LC0x
+NDMyMTY5NDkxXX0=
 -->
