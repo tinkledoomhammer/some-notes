@@ -687,19 +687,27 @@ if let Some(color)=fav_color  {
 	println!("Using {color}");
 } else if is_tuesday {
 	println!("Tuesday is green day");
-}else if let Ok(age) = age {
+} else if let Ok(age) = age {
 	if age > 30 {
 		println!("Using purple");
+	} else {
+		println!("Using orange");
+	}
+} else {
+	println("blue");
+}
 ```
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM5ODM4ODQ4LC0xOTk1OTMxOTM4LDIwOT
-E2OTYwMjksMTk3MzAyNzEzOSwxOTczMDI3MTM5LDE2NTYyMjMx
-MTQsLTM5OTgyNjA3OCwtMzk5ODI2MDc4LC03MjU2MTg1NTAsMj
-A5NDkzNTcyNCwtMTE1MTQwNTA1OCwyMTEzNzk3ODU3LC0xNjMz
-NzMwMDY2LDE5MzM5Mjc1NywtMTc5NzU1NzkwMywtMTc5NzU1Nz
-kwMywxMTM0NjQwNzg5LDExMzQ2NDA3ODksLTE0MzIxNjk0OTEs
-LTE2MjIxMTc5NzFdfQ==
+eyJoaXN0b3J5IjpbLTUxODU4MTYyNSwtMTk5NTkzMTkzOCwyMD
+kxNjk2MDI5LDE5NzMwMjcxMzksMTk3MzAyNzEzOSwxNjU2MjIz
+MTE0LC0zOTk4MjYwNzgsLTM5OTgyNjA3OCwtNzI1NjE4NTUwLD
+IwOTQ5MzU3MjQsLTExNTE0MDUwNTgsMjExMzc5Nzg1NywtMTYz
+MzczMDA2NiwxOTMzOTI3NTcsLTE3OTc1NTc5MDMsLTE3OTc1NT
+c5MDMsMTEzNDY0MDc4OSwxMTM0NjQwNzg5LC0xNDMyMTY5NDkx
+LC0xNjIyMTE3OTcxXX0=
 -->
