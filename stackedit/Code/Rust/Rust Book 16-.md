@@ -790,7 +790,10 @@ match x {
 ```
 ### Matching named variables
 **Named variables are irrefutable patterns that match any value**
-* When the pattern structure creates a new scope, then variable names will be a named-variable pattern rather which will shadow any 
+* When the pattern structure creates a new scope, then variable names will be a named-variable pattern rather which will shadow any variables with the same name in the outer scope
+* The section "Adding Conditionals with Match Guards" allows the use of variables in match arms
+
+### Matching multiple patterns
 
 
 
@@ -798,11 +801,11 @@ match x {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4ODIwMTc5NCwtNDk0MDg0MjMxLC01Nj
-EzNzY2NjIsLTYzMjAxODEsLTE5OTU5MzE5MzgsMjA5MTY5NjAy
-OSwxOTczMDI3MTM5LDE5NzMwMjcxMzksMTY1NjIyMzExNCwtMz
-k5ODI2MDc4LC0zOTk4MjYwNzgsLTcyNTYxODU1MCwyMDk0OTM1
-NzI0LC0xMTUxNDA1MDU4LDIxMTM3OTc4NTcsLTE2MzM3MzAwNj
-YsMTkzMzkyNzU3LC0xNzk3NTU3OTAzLC0xNzk3NTU3OTAzLDEx
-MzQ2NDA3ODldfQ==
+eyJoaXN0b3J5IjpbODAzMjQzODMxLC03ODgyMDE3OTQsLTQ5ND
+A4NDIzMSwtNTYxMzc2NjYyLC02MzIwMTgxLC0xOTk1OTMxOTM4
+LDIwOTE2OTYwMjksMTk3MzAyNzEzOSwxOTczMDI3MTM5LDE2NT
+YyMjMxMTQsLTM5OTgyNjA3OCwtMzk5ODI2MDc4LC03MjU2MTg1
+NTAsMjA5NDkzNTcyNCwtMTE1MTQwNTA1OCwyMTEzNzk3ODU3LC
+0xNjMzNzMwMDY2LDE5MzM5Mjc1NywtMTc5NzU1NzkwMywtMTc5
+NzU1NzkwM119
 -->
