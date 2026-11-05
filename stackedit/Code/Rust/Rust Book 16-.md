@@ -858,7 +858,13 @@ enum Inner{
 	ver2{a: i32, b: ie2),
 }
 enum Outer{
-	Var1: 
+	Var1(Inner),
+	Ver2,
+}
+let m = Outer::Var1(ver1(1,2));
+match m {
+	Outer::Ver2 => /* no vars assigned*/ ,
+	Outer::Ver1
 ```
 
 
@@ -869,11 +875,11 @@ enum Outer{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4MzA4MjkwMSwyODI0NDYxMiw4MDMyND
-M4MzEsODAzMjQzODMxLC03ODgyMDE3OTQsLTQ5NDA4NDIzMSwt
-NTYxMzc2NjYyLC02MzIwMTgxLC0xOTk1OTMxOTM4LDIwOTE2OT
-YwMjksMTk3MzAyNzEzOSwxOTczMDI3MTM5LDE2NTYyMjMxMTQs
-LTM5OTgyNjA3OCwtMzk5ODI2MDc4LC03MjU2MTg1NTAsMjA5ND
-kzNTcyNCwtMTE1MTQwNTA1OCwyMTEzNzk3ODU3LC0xNjMzNzMw
-MDY2XX0=
+eyJoaXN0b3J5IjpbNDg2MDgxNDM4LDI4MjQ0NjEyLDgwMzI0Mz
+gzMSw4MDMyNDM4MzEsLTc4ODIwMTc5NCwtNDk0MDg0MjMxLC01
+NjEzNzY2NjIsLTYzMjAxODEsLTE5OTU5MzE5MzgsMjA5MTY5Nj
+AyOSwxOTczMDI3MTM5LDE5NzMwMjcxMzksMTY1NjIyMzExNCwt
+Mzk5ODI2MDc4LC0zOTk4MjYwNzgsLTcyNTYxODU1MCwyMDk0OT
+M1NzI0LC0xMTUxNDA1MDU4LDIxMTM3OTc4NTcsLTE2MzM3MzAw
+NjZdfQ==
 -->
