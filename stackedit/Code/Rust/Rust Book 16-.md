@@ -754,7 +754,28 @@ For more information about this error, try `rustc --explain E0005`.
 error: could not compile `patterns` (bin "patterns") due to 1 previous error
 ```
 
-What the compiler says when an iff
+What the compiler says when an irrefutable pattern is used inappropriately
+
+```
+$ cargo run
+   Compiling patterns v0.1.0 (file:///projects/patterns)
+warning: irrefutable `let...else` pattern
+ --> src/main.rs:2:5
+  |
+2 |     let x = 5 else {
+  |     ^^^^^^^^^
+  |
+  = note: this pattern will always match, so the `else` clause is useless
+  = help: consider removing the `else` clause
+  = note: `#[warn(irrefutable_let_patterns)]` on by default
+
+warning: `patterns` (bin "patterns") generated 1 warning
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.39s
+     Running `target/debug/patterns`
+```
+
+* Match arms must use refutable patterns except for the last arm
+
 
 
 
@@ -764,7 +785,7 @@ What the compiler says when an iff
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MzA3MTU0NCwtNjMyMDE4MSwtMTk5NT
+eyJoaXN0b3J5IjpbLTU2MTM3NjY2MiwtNjMyMDE4MSwtMTk5NT
 kzMTkzOCwyMDkxNjk2MDI5LDE5NzMwMjcxMzksMTk3MzAyNzEz
 OSwxNjU2MjIzMTE0LC0zOTk4MjYwNzgsLTM5OTgyNjA3OCwtNz
 I1NjE4NTUwLDIwOTQ5MzU3MjQsLTExNTE0MDUwNTgsMjExMzc5
