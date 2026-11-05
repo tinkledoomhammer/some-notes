@@ -819,7 +819,15 @@ match x {
 struct Point { x: i32, y: i32 }
 fn main(){
 	let p=Point{x:0, y:7};
-	let Point{x:a, y:
+	// verbose destructuring with common names
+	let Point{x:a, y:b} = p;
+	assert_eq!(0,a);
+	assert_eq!(7,b);
+	//more concise, uses the field nams as var names
+	let Point{x,y} = p;
+	assert_eq!(,a);
+	assert_eq!(7,b);
+}
 ```
 
 
@@ -831,7 +839,7 @@ fn main(){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODk2OTE3NDMsODAzMjQzODMxLDgwMz
+eyJoaXN0b3J5IjpbLTEyMDI4MTU0NzksODAzMjQzODMxLDgwMz
 I0MzgzMSwtNzg4MjAxNzk0LC00OTQwODQyMzEsLTU2MTM3NjY2
 MiwtNjMyMDE4MSwtMTk5NTkzMTkzOCwyMDkxNjk2MDI5LDE5Nz
 MwMjcxMzksMTk3MzAyNzEzOSwxNjU2MjIzMTE0LC0zOTk4MjYw
