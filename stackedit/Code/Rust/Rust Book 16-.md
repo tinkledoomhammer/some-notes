@@ -829,8 +829,9 @@ fn main(){
 	assert_eq!(7,y);
 	//can mix varname with literal values
 	match p {
-			Point {x, y:0} => "On x axis",
-			Point {x:0, y} 
+			Point {x, y:0} => println!("On y axis at x={x}"),
+			Point {x:0, y} => println!("On x axis at {y}"),
+			Point {x,y} => println!("On neither axis
 	}
 }
 
@@ -845,7 +846,7 @@ fn main(){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgyNDM0ODY2LDgwMzI0MzgzMSw4MDMyND
+eyJoaXN0b3J5IjpbNDI3NDI2ODA1LDgwMzI0MzgzMSw4MDMyND
 M4MzEsLTc4ODIwMTc5NCwtNDk0MDg0MjMxLC01NjEzNzY2NjIs
 LTYzMjAxODEsLTE5OTU5MzE5MzgsMjA5MTY5NjAyOSwxOTczMD
 I3MTM5LDE5NzMwMjcxMzksMTY1NjIyMzExNCwtMzk5ODI2MDc4
