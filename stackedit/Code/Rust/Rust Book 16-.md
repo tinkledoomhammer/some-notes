@@ -852,6 +852,13 @@ match msg {
 	Message::Write(text) => /* captures text */,
 	Message::ChangeColor(r,g,b) => /* ... */,
 }
+// also structs and enums can be nested
+enum Inner{
+	ver1(i32,i32),
+	ver2{a: i32, b: ie2),
+}
+enum Outer{
+	Var1: 
 ```
 
 
@@ -862,11 +869,11 @@ match msg {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgyNDQ2MTIsODAzMjQzODMxLDgwMzI0Mz
-gzMSwtNzg4MjAxNzk0LC00OTQwODQyMzEsLTU2MTM3NjY2Miwt
-NjMyMDE4MSwtMTk5NTkzMTkzOCwyMDkxNjk2MDI5LDE5NzMwMj
-cxMzksMTk3MzAyNzEzOSwxNjU2MjIzMTE0LC0zOTk4MjYwNzgs
-LTM5OTgyNjA3OCwtNzI1NjE4NTUwLDIwOTQ5MzU3MjQsLTExNT
-E0MDUwNTgsMjExMzc5Nzg1NywtMTYzMzczMDA2NiwxOTMzOTI3
-NTddfQ==
+eyJoaXN0b3J5IjpbLTQ4MzA4MjkwMSwyODI0NDYxMiw4MDMyND
+M4MzEsODAzMjQzODMxLC03ODgyMDE3OTQsLTQ5NDA4NDIzMSwt
+NTYxMzc2NjYyLC02MzIwMTgxLC0xOTk1OTMxOTM4LDIwOTE2OT
+YwMjksMTk3MzAyNzEzOSwxOTczMDI3MTM5LDE2NTYyMjMxMTQs
+LTM5OTgyNjA3OCwtMzk5ODI2MDc4LC03MjU2MTg1NTAsMjA5ND
+kzNTcyNCwtMTE1MTQwNTA1OCwyMTEzNzk3ODU3LC0xNjMzNzMw
+MDY2XX0=
 -->
