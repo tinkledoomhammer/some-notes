@@ -794,18 +794,27 @@ match x {
 * The section "Adding Conditionals with Match Guards" allows the use of variables in match arms
 
 ### Matching multiple patterns
+the `|` pipe char is used to separate patterns to match disjunctively
+```rust
+match x {
+	1 | 2 => println!("one or two"),
+	3 => println!("three"),
+}
+```
+### Matching Ranges of values with `..=`
+```rust
 
-
+```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAzMjQzODMxLDgwMzI0MzgzMSwtNzg4Mj
-AxNzk0LC00OTQwODQyMzEsLTU2MTM3NjY2MiwtNjMyMDE4MSwt
-MTk5NTkzMTkzOCwyMDkxNjk2MDI5LDE5NzMwMjcxMzksMTk3Mz
-AyNzEzOSwxNjU2MjIzMTE0LC0zOTk4MjYwNzgsLTM5OTgyNjA3
-OCwtNzI1NjE4NTUwLDIwOTQ5MzU3MjQsLTExNTE0MDUwNTgsMj
-ExMzc5Nzg1NywtMTYzMzczMDA2NiwxOTMzOTI3NTcsLTE3OTc1
-NTc5MDNdfQ==
+eyJoaXN0b3J5IjpbMTcwMDYzNDkzNSw4MDMyNDM4MzEsODAzMj
+QzODMxLC03ODgyMDE3OTQsLTQ5NDA4NDIzMSwtNTYxMzc2NjYy
+LC02MzIwMTgxLC0xOTk1OTMxOTM4LDIwOTE2OTYwMjksMTk3Mz
+AyNzEzOSwxOTczMDI3MTM5LDE2NTYyMjMxMTQsLTM5OTgyNjA3
+OCwtMzk5ODI2MDc4LC03MjU2MTg1NTAsMjA5NDkzNTcyNCwtMT
+E1MTQwNTA1OCwyMTEzNzk3ODU3LC0xNjMzNzMwMDY2LDE5MzM5
+Mjc1N119
 -->
