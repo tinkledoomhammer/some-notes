@@ -790,7 +790,7 @@ match x {
 ```
 ### Matching named variables
 **Named variables are irrefutable patterns that match any value**
-
+* When the pattern structure creates a new scope, then variable names will be a named-variable pattern rather than 
 
 
 
@@ -798,11 +798,11 @@ match x {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk5MzA3NjgyLC00OTQwODQyMzEsLTU2MT
-M3NjY2MiwtNjMyMDE4MSwtMTk5NTkzMTkzOCwyMDkxNjk2MDI5
-LDE5NzMwMjcxMzksMTk3MzAyNzEzOSwxNjU2MjIzMTE0LC0zOT
-k4MjYwNzgsLTM5OTgyNjA3OCwtNzI1NjE4NTUwLDIwOTQ5MzU3
-MjQsLTExNTE0MDUwNTgsMjExMzc5Nzg1NywtMTYzMzczMDA2Ni
-wxOTMzOTI3NTcsLTE3OTc1NTc5MDMsLTE3OTc1NTc5MDMsMTEz
-NDY0MDc4OV19
+eyJoaXN0b3J5IjpbLTEwNDA2NjExMDIsLTQ5NDA4NDIzMSwtNT
+YxMzc2NjYyLC02MzIwMTgxLC0xOTk1OTMxOTM4LDIwOTE2OTYw
+MjksMTk3MzAyNzEzOSwxOTczMDI3MTM5LDE2NTYyMjMxMTQsLT
+M5OTgyNjA3OCwtMzk5ODI2MDc4LC03MjU2MTg1NTAsMjA5NDkz
+NTcyNCwtMTE1MTQwNTA1OCwyMTEzNzk3ODU3LC0xNjMzNzMwMD
+Y2LDE5MzM5Mjc1NywtMTc5NzU1NzkwMywtMTc5NzU1NzkwMywx
+MTM0NjQwNzg5XX0=
 -->
