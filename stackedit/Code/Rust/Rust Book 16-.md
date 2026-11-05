@@ -676,6 +676,7 @@ let PATTERN = EXPRESSION
 * While the pattern is usually just a variable name, it could also be a destructured tuple
 * ` let (x,y,z) = (1,2,3);`
 * if the entire expression does not match the pattern, a compiler error will occur
+* creates a new scope
 
 ### `if let` Expressions
 Also `else if` and `else if let`
@@ -707,6 +708,8 @@ while let Ok(value) = rx.recv() {
 }
 // ^^-will loop until an Err is recv'ed-^^
 ```
+* Creates a new scope
+
 ### `for` loops
 ```rust
 let v = vec!['a','b','c'];
@@ -795,11 +798,11 @@ match x {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNDQ4MzA0MCwtNDk0MDg0MjMxLC01Nj
-EzNzY2NjIsLTYzMjAxODEsLTE5OTU5MzE5MzgsMjA5MTY5NjAy
-OSwxOTczMDI3MTM5LDE5NzMwMjcxMzksMTY1NjIyMzExNCwtMz
-k5ODI2MDc4LC0zOTk4MjYwNzgsLTcyNTYxODU1MCwyMDk0OTM1
-NzI0LC0xMTUxNDA1MDU4LDIxMTM3OTc4NTcsLTE2MzM3MzAwNj
-YsMTkzMzkyNzU3LC0xNzk3NTU3OTAzLC0xNzk3NTU3OTAzLDEx
-MzQ2NDA3ODldfQ==
+eyJoaXN0b3J5IjpbMjk5MzA3NjgyLC00OTQwODQyMzEsLTU2MT
+M3NjY2MiwtNjMyMDE4MSwtMTk5NTkzMTkzOCwyMDkxNjk2MDI5
+LDE5NzMwMjcxMzksMTk3MzAyNzEzOSwxNjU2MjIzMTE0LC0zOT
+k4MjYwNzgsLTM5OTgyNjA3OCwtNzI1NjE4NTUwLDIwOTQ5MzU3
+MjQsLTExNTE0MDUwNTgsMjExMzc5Nzg1NywtMTYzMzczMDA2Ni
+wxOTMzOTI3NTcsLTE3OTc1NTc5MDMsLTE3OTc1NTc5MDMsMTEz
+NDY0MDc4OV19
 -->
