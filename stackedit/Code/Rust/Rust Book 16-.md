@@ -716,7 +716,13 @@ for (index,value) in v.iter().enumerate() {
 ```
 ### Function Parameters
 ```rust
-fn print_coordinates
+fn print_coordinates(&(x,y): &(i32,i32)) {
+	println!("Location: ({x}, {y})");
+}
+fn main(){
+	let point = (3,5);
+	print_coordinates(&point);
+}
 ```
 
 
@@ -724,11 +730,11 @@ fn print_coordinates
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNTgwOTA4OSwtMTk5NTkzMTkzOCwyMD
-kxNjk2MDI5LDE5NzMwMjcxMzksMTk3MzAyNzEzOSwxNjU2MjIz
-MTE0LC0zOTk4MjYwNzgsLTM5OTgyNjA3OCwtNzI1NjE4NTUwLD
-IwOTQ5MzU3MjQsLTExNTE0MDUwNTgsMjExMzc5Nzg1NywtMTYz
-MzczMDA2NiwxOTMzOTI3NTcsLTE3OTc1NTc5MDMsLTE3OTc1NT
-c5MDMsMTEzNDY0MDc4OSwxMTM0NjQwNzg5LC0xNDMyMTY5NDkx
-LC0xNjIyMTE3OTcxXX0=
+eyJoaXN0b3J5IjpbLTYzMjAxODEsLTE5OTU5MzE5MzgsMjA5MT
+Y5NjAyOSwxOTczMDI3MTM5LDE5NzMwMjcxMzksMTY1NjIyMzEx
+NCwtMzk5ODI2MDc4LC0zOTk4MjYwNzgsLTcyNTYxODU1MCwyMD
+k0OTM1NzI0LC0xMTUxNDA1MDU4LDIxMTM3OTc4NTcsLTE2MzM3
+MzAwNjYsMTkzMzkyNzU3LC0xNzk3NTU3OTAzLC0xNzk3NTU3OT
+AzLDExMzQ2NDA3ODksMTEzNDY0MDc4OSwtMTQzMjE2OTQ5MSwt
+MTYyMjExNzk3MV19
 -->
