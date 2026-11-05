@@ -688,7 +688,8 @@ if let Some(color)=fav_color  {
 } else if is_tuesday {
 	println!("Tuesday is green day");
 } else if let Ok(age) = age {
-	if age > 30 {
+	if age > 30 { // <- can't be part of the above conditional
+			// because the scope of the inner age starts here
 		println!("Using purple");
 	} else {
 		println!("Using orange");
@@ -697,17 +698,17 @@ if let Some(color)=fav_color  {
 	println("blue");
 }
 ```
-
+* The compiler does **not** check for ex
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxODU4MTYyNSwtMTk5NTkzMTkzOCwyMD
-kxNjk2MDI5LDE5NzMwMjcxMzksMTk3MzAyNzEzOSwxNjU2MjIz
-MTE0LC0zOTk4MjYwNzgsLTM5OTgyNjA3OCwtNzI1NjE4NTUwLD
-IwOTQ5MzU3MjQsLTExNTE0MDUwNTgsMjExMzc5Nzg1NywtMTYz
-MzczMDA2NiwxOTMzOTI3NTcsLTE3OTc1NTc5MDMsLTE3OTc1NT
-c5MDMsMTEzNDY0MDc4OSwxMTM0NjQwNzg5LC0xNDMyMTY5NDkx
-LC0xNjIyMTE3OTcxXX0=
+eyJoaXN0b3J5IjpbLTE2NDY4MTEwODEsLTE5OTU5MzE5MzgsMj
+A5MTY5NjAyOSwxOTczMDI3MTM5LDE5NzMwMjcxMzksMTY1NjIy
+MzExNCwtMzk5ODI2MDc4LC0zOTk4MjYwNzgsLTcyNTYxODU1MC
+wyMDk0OTM1NzI0LC0xMTUxNDA1MDU4LDIxMTM3OTc4NTcsLTE2
+MzM3MzAwNjYsMTkzMzkyNzU3LC0xNzk3NTU3OTAzLC0xNzk3NT
+U3OTAzLDExMzQ2NDA3ODksMTEzNDY0MDc4OSwtMTQzMjE2OTQ5
+MSwtMTYyMjExNzk3MV19
 -->
