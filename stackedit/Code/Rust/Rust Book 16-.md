@@ -878,13 +878,16 @@ let ((feet, inches), Point {x,y}) = ((3,10), Point{x:3, y:10});
 : can be used in any pattern
 : can be nested
 : prefix var names to suppress unused variable warnings
-** can be used in nested patterns to ignore part of a value
+** can be used in nested patterns to ignore part of a value **
 ```rust
 let mut val1 = Some(5);
 let val2 = Some(10);
 match (val1,val2){
-	(Some(_), Some(_)) =>/* both vals are 'Some' */
-	(Some(_),
+	(Some(_), Some(_)) =>/* both vals are 'Some' */,
+	(Some(_),None) => val1=None,
+	(None,Some(v)) => val1=Some(v),
+}
+
 ```
 
 
@@ -893,7 +896,7 @@ match (val1,val2){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2NDMyMDkxNCwxODM5OTIxOTYzLDI4Mj
+eyJoaXN0b3J5IjpbMjEwODUzMzE1OSwxODM5OTIxOTYzLDI4Mj
 Q0NjEyLDgwMzI0MzgzMSw4MDMyNDM4MzEsLTc4ODIwMTc5NCwt
 NDk0MDg0MjMxLC01NjEzNzY2NjIsLTYzMjAxODEsLTE5OTU5Mz
 E5MzgsMjA5MTY5NjAyOSwxOTczMDI3MTM5LDE5NzMwMjcxMzks
