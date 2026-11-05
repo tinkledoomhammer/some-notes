@@ -782,9 +782,10 @@ warning: `patterns` (bin "patterns") generated 1 warning
 match x {
 	1 => println!("one"),
 	2 => //.. snip
-	_ => println!(anything else"),
-	
+	_ => println!("anything else"),
+}
 ```
+### Matching named variables
 
 
 
@@ -793,11 +794,11 @@ match x {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzQ2Mzk3MTQsLTU2MTM3NjY2MiwtNj
-MyMDE4MSwtMTk5NTkzMTkzOCwyMDkxNjk2MDI5LDE5NzMwMjcx
-MzksMTk3MzAyNzEzOSwxNjU2MjIzMTE0LC0zOTk4MjYwNzgsLT
-M5OTgyNjA3OCwtNzI1NjE4NTUwLDIwOTQ5MzU3MjQsLTExNTE0
-MDUwNTgsMjExMzc5Nzg1NywtMTYzMzczMDA2NiwxOTMzOTI3NT
-csLTE3OTc1NTc5MDMsLTE3OTc1NTc5MDMsMTEzNDY0MDc4OSwx
-MTM0NjQwNzg5XX0=
+eyJoaXN0b3J5IjpbLTQ5NDA4NDIzMSwtNTYxMzc2NjYyLC02Mz
+IwMTgxLC0xOTk1OTMxOTM4LDIwOTE2OTYwMjksMTk3MzAyNzEz
+OSwxOTczMDI3MTM5LDE2NTYyMjMxMTQsLTM5OTgyNjA3OCwtMz
+k5ODI2MDc4LC03MjU2MTg1NTAsMjA5NDkzNTcyNCwtMTE1MTQw
+NTA1OCwyMTEzNzk3ODU3LC0xNjMzNzMwMDY2LDE5MzM5Mjc1Ny
+wtMTc5NzU1NzkwMywtMTc5NzU1NzkwMywxMTM0NjQwNzg5LDEx
+MzQ2NDA3ODldfQ==
 -->
