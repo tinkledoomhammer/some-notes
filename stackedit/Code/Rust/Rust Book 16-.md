@@ -794,18 +794,18 @@ match x {
 * The section "Adding Conditionals with Match Guards" allows the use of variables in match arms
 
 ### Matching multiple patterns
-
+sta
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAzMjQzODMxLC03ODgyMDE3OTQsLTQ5ND
-A4NDIzMSwtNTYxMzc2NjYyLC02MzIwMTgxLC0xOTk1OTMxOTM4
-LDIwOTE2OTYwMjksMTk3MzAyNzEzOSwxOTczMDI3MTM5LDE2NT
-YyMjMxMTQsLTM5OTgyNjA3OCwtMzk5ODI2MDc4LC03MjU2MTg1
-NTAsMjA5NDkzNTcyNCwtMTE1MTQwNTA1OCwyMTEzNzk3ODU3LC
-0xNjMzNzMwMDY2LDE5MzM5Mjc1NywtMTc5NzU1NzkwMywtMTc5
-NzU1NzkwM119
+eyJoaXN0b3J5IjpbMTk5MDg3NTkwOSw4MDMyNDM4MzEsLTc4OD
+IwMTc5NCwtNDk0MDg0MjMxLC01NjEzNzY2NjIsLTYzMjAxODEs
+LTE5OTU5MzE5MzgsMjA5MTY5NjAyOSwxOTczMDI3MTM5LDE5Nz
+MwMjcxMzksMTY1NjIyMzExNCwtMzk5ODI2MDc4LC0zOTk4MjYw
+NzgsLTcyNTYxODU1MCwyMDk0OTM1NzI0LC0xMTUxNDA1MDU4LD
+IxMTM3OTc4NTcsLTE2MzM3MzAwNjYsMTkzMzkyNzU3LC0xNzk3
+NTU3OTAzXX0=
 -->
