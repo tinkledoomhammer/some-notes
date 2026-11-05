@@ -838,7 +838,17 @@ fn main(){
 }
 ```
 ** Enums**
-
+```rust
+enum Message { 
+	Quit,
+	Move{x:i32,y:i32},
+	Write(String),
+	Color(i32,i32,i32),
+}
+let msg = Message::ChangeColor(0,155,255);
+match msg {
+	Messagge::Quit => 
+```
 
 
 
@@ -848,11 +858,11 @@ fn main(){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNzEwNzc4MSw4MDMyNDM4MzEsODAzMj
-QzODMxLC03ODgyMDE3OTQsLTQ5NDA4NDIzMSwtNTYxMzc2NjYy
-LC02MzIwMTgxLC0xOTk1OTMxOTM4LDIwOTE2OTYwMjksMTk3Mz
-AyNzEzOSwxOTczMDI3MTM5LDE2NTYyMjMxMTQsLTM5OTgyNjA3
-OCwtMzk5ODI2MDc4LC03MjU2MTg1NTAsMjA5NDkzNTcyNCwtMT
-E1MTQwNTA1OCwyMTEzNzk3ODU3LC0xNjMzNzMwMDY2LDE5MzM5
-Mjc1N119
+eyJoaXN0b3J5IjpbNDk4MDA4OTY2LDgwMzI0MzgzMSw4MDMyND
+M4MzEsLTc4ODIwMTc5NCwtNDk0MDg0MjMxLC01NjEzNzY2NjIs
+LTYzMjAxODEsLTE5OTU5MzE5MzgsMjA5MTY5NjAyOSwxOTczMD
+I3MTM5LDE5NzMwMjcxMzksMTY1NjIyMzExNCwtMzk5ODI2MDc4
+LC0zOTk4MjYwNzgsLTcyNTYxODU1MCwyMDk0OTM1NzI0LC0xMT
+UxNDA1MDU4LDIxMTM3OTc4NTcsLTE2MzM3MzAwNjYsMTkzMzky
+NzU3XX0=
 -->
