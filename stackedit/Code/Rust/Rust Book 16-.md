@@ -678,17 +678,21 @@ let PATTERN = EXPRESSION
 * if the entire expression does not match the pattern, a compiler error will occur
 
 ### `if let` Expressions
-
+Also `else if` and `else if let`
+```rust
+let fav_color: Option<&str> =None;
+let is_tuesday = false;
+let age: Result<u8, _> =
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTU5MzE5MzgsMjA5MTY5NjAyOSwxOT
-czMDI3MTM5LDE5NzMwMjcxMzksMTY1NjIyMzExNCwtMzk5ODI2
-MDc4LC0zOTk4MjYwNzgsLTcyNTYxODU1MCwyMDk0OTM1NzI0LC
-0xMTUxNDA1MDU4LDIxMTM3OTc4NTcsLTE2MzM3MzAwNjYsMTkz
-MzkyNzU3LC0xNzk3NTU3OTAzLC0xNzk3NTU3OTAzLDExMzQ2ND
-A3ODksMTEzNDY0MDc4OSwtMTQzMjE2OTQ5MSwtMTYyMjExNzk3
-MSwtMTEyNjg4Mjc0Ml19
+eyJoaXN0b3J5IjpbLTQyNzMyMTQzLC0xOTk1OTMxOTM4LDIwOT
+E2OTYwMjksMTk3MzAyNzEzOSwxOTczMDI3MTM5LDE2NTYyMjMx
+MTQsLTM5OTgyNjA3OCwtMzk5ODI2MDc4LC03MjU2MTg1NTAsMj
+A5NDkzNTcyNCwtMTE1MTQwNTA1OCwyMTEzNzk3ODU3LC0xNjMz
+NzMwMDY2LDE5MzM5Mjc1NywtMTc5NzU1NzkwMywtMTc5NzU1Nz
+kwMywxMTM0NjQwNzg5LDExMzQ2NDA3ODksLTE0MzIxNjk0OTEs
+LTE2MjIxMTc5NzFdfQ==
 -->
