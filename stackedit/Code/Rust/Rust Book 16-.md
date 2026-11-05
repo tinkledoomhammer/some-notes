@@ -732,7 +732,7 @@ A pattern if **refutable** if
 
 `if let` and `let while` can accept refutable patterns
 
-What the compiler says when a refutable
+What the compiler says when a refutable pattern is used where not allowed
 ```
 $ cargo run
    Compiling patterns v0.1.0 (file:///projects/patterns)
@@ -754,6 +754,7 @@ For more information about this error, try `rustc --explain E0005`.
 error: could not compile `patterns` (bin "patterns") due to 1 previous error
 ```
 
+What the compiler says when an iff
 
 
 
@@ -763,7 +764,7 @@ error: could not compile `patterns` (bin "patterns") due to 1 previous error
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MDA2NjUzNSwtNjMyMDE4MSwtMTk5NT
+eyJoaXN0b3J5IjpbLTQ3MzA3MTU0NCwtNjMyMDE4MSwtMTk5NT
 kzMTkzOCwyMDkxNjk2MDI5LDE5NzMwMjcxMzksMTk3MzAyNzEz
 OSwxNjU2MjIzMTE0LC0zOTk4MjYwNzgsLTM5OTgyNjA3OCwtNz
 I1NjE4NTUwLDIwOTQ5MzU3MjQsLTExNTE0MDUwNTgsMjExMzc5
