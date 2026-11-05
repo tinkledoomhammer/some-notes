@@ -815,6 +815,8 @@ match x {
 }
 ```
 ### Destructuring to Break Apart Values
+
+**Structs**
 ```rust
 struct Point { x: i32, y: i32 }
 fn main(){
@@ -831,11 +833,11 @@ fn main(){
 	match p {
 			Point {x, y:0} => println!("On y axis at x={x}"),
 			Point {x:0, y} => println!("On x axis at {y}"),
-			Point {x,y} => println!("On neither axis
+			Point {x,y} => println!("On neither axis {x},{y}"),
 	}
 }
-
 ```
+** Enums**
 
 
 
@@ -846,11 +848,11 @@ fn main(){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI3NDI2ODA1LDgwMzI0MzgzMSw4MDMyND
-M4MzEsLTc4ODIwMTc5NCwtNDk0MDg0MjMxLC01NjEzNzY2NjIs
-LTYzMjAxODEsLTE5OTU5MzE5MzgsMjA5MTY5NjAyOSwxOTczMD
-I3MTM5LDE5NzMwMjcxMzksMTY1NjIyMzExNCwtMzk5ODI2MDc4
-LC0zOTk4MjYwNzgsLTcyNTYxODU1MCwyMDk0OTM1NzI0LC0xMT
-UxNDA1MDU4LDIxMTM3OTc4NTcsLTE2MzM3MzAwNjYsMTkzMzky
-NzU3XX0=
+eyJoaXN0b3J5IjpbLTYzNzEwNzc4MSw4MDMyNDM4MzEsODAzMj
+QzODMxLC03ODgyMDE3OTQsLTQ5NDA4NDIzMSwtNTYxMzc2NjYy
+LC02MzIwMTgxLC0xOTk1OTMxOTM4LDIwOTE2OTYwMjksMTk3Mz
+AyNzEzOSwxOTczMDI3MTM5LDE2NTYyMjMxMTQsLTM5OTgyNjA3
+OCwtMzk5ODI2MDc4LC03MjU2MTg1NTAsMjA5NDkzNTcyNCwtMT
+E1MTQwNTA1OCwyMTEzNzk3ODU3LC0xNjMzNzMwMDY2LDE5MzM5
+Mjc1N119
 -->
