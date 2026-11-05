@@ -803,14 +803,23 @@ match x {
 ```
 ### Matching Ranges of values with `..=`
 ```rust
-
+match x {
+	1..=5 => println!("one through 5"),
+	_ => println!("something else"),
+}
+let x = 'c';
+match x {
+    'a'..='j' => println!("early ASCII letter"),
+    'k'..='z' => println!("late ASCII letter"),
+    _ => println!("something else"),
+}
 ```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwMDYzNDkzNSw4MDMyNDM4MzEsODAzMj
+eyJoaXN0b3J5IjpbLTI1MzM1OTEyNyw4MDMyNDM4MzEsODAzMj
 QzODMxLC03ODgyMDE3OTQsLTQ5NDA4NDIzMSwtNTYxMzc2NjYy
 LC02MzIwMTgxLC0xOTk1OTMxOTM4LDIwOTE2OTYwMjksMTk3Mz
 AyNzEzOSwxOTczMDI3MTM5LDE2NTYyMjMxMTQsLTM5OTgyNjA3
