@@ -868,7 +868,10 @@ match m {
 	Outer::Ver1{a,b} => /* also grabbs a and b*/,
 }
 ```
-** Structs and tupes can be  mixed and m
+** Structs and tuples can be mixed and matched **
+```rust
+let ((feet, inches), Point {x,y}) = ((3,10), Point{x:3, y:10});
+```
 
 
 
@@ -877,7 +880,7 @@ match m {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1MjA1MzkxMSwyODI0NDYxMiw4MDMyND
+eyJoaXN0b3J5IjpbMTgzOTkyMTk2MywyODI0NDYxMiw4MDMyND
 M4MzEsODAzMjQzODMxLC03ODgyMDE3OTQsLTQ5NDA4NDIzMSwt
 NTYxMzc2NjYyLC02MzIwMTgxLC0xOTk1OTMxOTM4LDIwOTE2OT
 YwMjksMTk3MzAyNzEzOSwxOTczMDI3MTM5LDE2NTYyMjMxMTQs
