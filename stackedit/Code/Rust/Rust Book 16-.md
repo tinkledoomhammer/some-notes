@@ -848,9 +848,9 @@ enum Message {
 let msg = Message::ChangeColor(0,155,255);
 match msg {
 	Messagge::Quit => /*...*/,
-	Message::Move {x,y} => /* captures x and y ... */,
-	Message::Write(text) => /* captures text */,
-	Message::ChangeColor(r,g,b) => /* ... */,
+	Message::Move {x,y} => /* binds x and y ... */,
+	Message::Write(text) => /* binds text */,
+	Message::ChangeColor(r,g,b) => /* binds r,g, and b */,
 }
 // also structs and enums can be nested
 enum Inner{
@@ -863,16 +863,17 @@ enum Outer{
 }
 let m = Outer::Var1(Ver1(1,2));
 match m {
-	Outer::Ver2 => /* no vars assigned*/ ,
-	Outer::Ver1(a,b) => /* a and b assigned */,
-	Outer::Ver1{a,b} => /* also grabbs a and b*/,
+	Outer::Ver2 => /* no varsbound*/ ,
+	Outer::Ver1(a,b) => /* a and b bound */,
+	Outer::Ver1{a,b} => /* also binds a and b*/,
 }
 ```
 ** Structs and tuples can be mixed and matched **
 ```rust
 let ((feet, inches), Point {x,y}) = ((3,10), Point{x:3, y:10});
 ```
-
+### Ignoring Values in a pattern
+`_` matches and discards an entire value
 
 
 
@@ -880,11 +881,11 @@ let ((feet, inches), Point {x,y}) = ((3,10), Point{x:3, y:10});
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzOTkyMTk2MywyODI0NDYxMiw4MDMyND
-M4MzEsODAzMjQzODMxLC03ODgyMDE3OTQsLTQ5NDA4NDIzMSwt
-NTYxMzc2NjYyLC02MzIwMTgxLC0xOTk1OTMxOTM4LDIwOTE2OT
-YwMjksMTk3MzAyNzEzOSwxOTczMDI3MTM5LDE2NTYyMjMxMTQs
-LTM5OTgyNjA3OCwtMzk5ODI2MDc4LC03MjU2MTg1NTAsMjA5ND
-kzNTcyNCwtMTE1MTQwNTA1OCwyMTEzNzk3ODU3LC0xNjMzNzMw
-MDY2XX0=
+eyJoaXN0b3J5IjpbMTQ2MDM1MzA1LDE4Mzk5MjE5NjMsMjgyND
+Q2MTIsODAzMjQzODMxLDgwMzI0MzgzMSwtNzg4MjAxNzk0LC00
+OTQwODQyMzEsLTU2MTM3NjY2MiwtNjMyMDE4MSwtMTk5NTkzMT
+kzOCwyMDkxNjk2MDI5LDE5NzMwMjcxMzksMTk3MzAyNzEzOSwx
+NjU2MjIzMTE0LC0zOTk4MjYwNzgsLTM5OTgyNjA3OCwtNzI1Nj
+E4NTUwLDIwOTQ5MzU3MjQsLTExNTE0MDUwNTgsMjExMzc5Nzg1
+N119
 -->
