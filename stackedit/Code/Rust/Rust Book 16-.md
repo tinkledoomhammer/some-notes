@@ -776,7 +776,15 @@ warning: `patterns` (bin "patterns") generated 1 warning
 
 * Match arms must use refutable patterns except for the last arm
 
-
+## 19.03 Pattern Synntax
+### Matching Literals
+```rust
+match x {
+	1 => println!("one"),
+	2 => //.. snip
+	_ => println!(anything else"),
+	
+```
 
 
 
@@ -785,11 +793,11 @@ warning: `patterns` (bin "patterns") generated 1 warning
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MTM3NjY2MiwtNjMyMDE4MSwtMTk5NT
-kzMTkzOCwyMDkxNjk2MDI5LDE5NzMwMjcxMzksMTk3MzAyNzEz
-OSwxNjU2MjIzMTE0LC0zOTk4MjYwNzgsLTM5OTgyNjA3OCwtNz
-I1NjE4NTUwLDIwOTQ5MzU3MjQsLTExNTE0MDUwNTgsMjExMzc5
-Nzg1NywtMTYzMzczMDA2NiwxOTMzOTI3NTcsLTE3OTc1NTc5MD
-MsLTE3OTc1NTc5MDMsMTEzNDY0MDc4OSwxMTM0NjQwNzg5LC0x
-NDMyMTY5NDkxXX0=
+eyJoaXN0b3J5IjpbLTExNzQ2Mzk3MTQsLTU2MTM3NjY2MiwtNj
+MyMDE4MSwtMTk5NTkzMTkzOCwyMDkxNjk2MDI5LDE5NzMwMjcx
+MzksMTk3MzAyNzEzOSwxNjU2MjIzMTE0LC0zOTk4MjYwNzgsLT
+M5OTgyNjA3OCwtNzI1NjE4NTUwLDIwOTQ5MzU3MjQsLTExNTE0
+MDUwNTgsMjExMzc5Nzg1NywtMTYzMzczMDA2NiwxOTMzOTI3NT
+csLTE3OTc1NTc5MDMsLTE3OTc1NTc5MDMsMTEzNDY0MDc4OSwx
+MTM0NjQwNzg5XX0=
 -->
