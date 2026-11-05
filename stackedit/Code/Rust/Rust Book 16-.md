@@ -847,7 +847,11 @@ enum Message {
 }
 let msg = Message::ChangeColor(0,155,255);
 match msg {
-	Messagge::Quit => 
+	Messagge::Quit => /*...*/,
+	Message::Move {x,y} => /* captures x and y ... */,
+	Message::Write(text) => /* captures text */,
+	Message::ChangeColor(r,g,b) => /* ... */,
+}
 ```
 
 
@@ -858,11 +862,11 @@ match msg {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk4MDA4OTY2LDgwMzI0MzgzMSw4MDMyND
-M4MzEsLTc4ODIwMTc5NCwtNDk0MDg0MjMxLC01NjEzNzY2NjIs
-LTYzMjAxODEsLTE5OTU5MzE5MzgsMjA5MTY5NjAyOSwxOTczMD
-I3MTM5LDE5NzMwMjcxMzksMTY1NjIyMzExNCwtMzk5ODI2MDc4
-LC0zOTk4MjYwNzgsLTcyNTYxODU1MCwyMDk0OTM1NzI0LC0xMT
-UxNDA1MDU4LDIxMTM3OTc4NTcsLTE2MzM3MzAwNjYsMTkzMzky
-NzU3XX0=
+eyJoaXN0b3J5IjpbMjgyNDQ2MTIsODAzMjQzODMxLDgwMzI0Mz
+gzMSwtNzg4MjAxNzk0LC00OTQwODQyMzEsLTU2MTM3NjY2Miwt
+NjMyMDE4MSwtMTk5NTkzMTkzOCwyMDkxNjk2MDI5LDE5NzMwMj
+cxMzksMTk3MzAyNzEzOSwxNjU2MjIzMTE0LC0zOTk4MjYwNzgs
+LTM5OTgyNjA3OCwtNzI1NjE4NTUwLDIwOTQ5MzU3MjQsLTExNT
+E0MDUwNTgsMjExMzc5Nzg1NywtMTYzMzczMDA2NiwxOTMzOTI3
+NTddfQ==
 -->
