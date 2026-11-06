@@ -893,20 +893,17 @@ match vals {
 	_ => (1,2),/* didn't have 3 in position 2 */
 }
 ```
-
-### Returning Parts of a Value with `..`
-
-`..`
+`..` matches and discards remaining parts
 : binds nothing
 : ignores as many as needed to make a match
 : i.e. `(first, ..  ,last)=>` or `(first, ... )`
-: must be used unambi
+: must be used unambiguously `(.. , second, ..)` will generate an error
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjA2NzY4ODQsMjEwODUzMzE1OSwxOD
+eyJoaXN0b3J5IjpbLTE4Njg0MDAxMTQsMjEwODUzMzE1OSwxOD
 M5OTIxOTYzLDI4MjQ0NjEyLDgwMzI0MzgzMSw4MDMyNDM4MzEs
 LTc4ODIwMTc5NCwtNDk0MDg0MjMxLC01NjEzNzY2NjIsLTYzMj
 AxODEsLTE5OTU5MzE5MzgsMjA5MTY5NjAyOSwxOTczMDI3MTM5
