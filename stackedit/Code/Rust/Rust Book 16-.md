@@ -968,17 +968,18 @@ unsafe { // required to deref the pointers
 ```
 #### Calling an Unsafe Function or Method
 * A function can be safe and contain an *unsafe* block
-* an unsafe function indicates
+* an unsafe function indicates that it has requirements
+	* that the compiler can't guarantee
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTkzNjIwNDQsLTEzMTg4ODAzOTIsMj
-AxOTkwMjc5LC0xMDQ3OTAzMjUwLDIxMDg1MzMxNTksMTgzOTky
-MTk2MywyODI0NDYxMiw4MDMyNDM4MzEsODAzMjQzODMxLC03OD
-gyMDE3OTQsLTQ5NDA4NDIzMSwtNTYxMzc2NjYyLC02MzIwMTgx
-LC0xOTk1OTMxOTM4LDIwOTE2OTYwMjksMTk3MzAyNzEzOSwxOT
-czMDI3MTM5LDE2NTYyMjMxMTQsLTM5OTgyNjA3OCwtMzk5ODI2
-MDc4XX0=
+eyJoaXN0b3J5IjpbMTc3MDI2MzUzMCwtMTMxODg4MDM5MiwyMD
+E5OTAyNzksLTEwNDc5MDMyNTAsMjEwODUzMzE1OSwxODM5OTIx
+OTYzLDI4MjQ0NjEyLDgwMzI0MzgzMSw4MDMyNDM4MzEsLTc4OD
+IwMTc5NCwtNDk0MDg0MjMxLC01NjEzNzY2NjIsLTYzMjAxODEs
+LTE5OTU5MzE5MzgsMjA5MTY5NjAyOSwxOTczMDI3MTM5LDE5Nz
+MwMjcxMzksMTY1NjIyMzExNCwtMzk5ODI2MDc4LC0zOTk4MjYw
+NzhdfQ==
 -->
