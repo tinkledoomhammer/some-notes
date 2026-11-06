@@ -887,6 +887,11 @@ match (val1,val2){
 	(Some(_),None) => val1=None,
 	(None,Some(v)) => val1=Some(v),
 }
+let vals = vec![1,2,3,4];
+match vals {
+	
+	_ => /* anything else */
+}
 ```
 
 
@@ -895,7 +900,7 @@ match (val1,val2){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTc0NDA2MjYsMjEwODUzMzE1OSwxOD
+eyJoaXN0b3J5IjpbLTIxMDY1NTQ5MzgsMjEwODUzMzE1OSwxOD
 M5OTIxOTYzLDI4MjQ0NjEyLDgwMzI0MzgzMSw4MDMyNDM4MzEs
 LTc4ODIwMTc5NCwtNDk0MDg0MjMxLC01NjEzNzY2NjIsLTYzMj
 AxODEsLTE5OTU5MzE5MzgsMjA5MTY5NjAyOSwxOTczMDI3MTM5
