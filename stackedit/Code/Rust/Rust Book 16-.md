@@ -926,6 +926,13 @@ match m{
 ## 20 Advanced Features
 ### 20.01 Unsafe Rust
 * Exists because static analysis is conservative
+* And because underlying hardware is inherently unsafe
+`unsafe` keyword starts an unnsafe block
+* unsafe blocks can
+1. Dereference a raw pointer
+1. call an unsafe function or method
+1. access or modify a mutable static variable
+1. 
 
 
 
@@ -933,7 +940,7 @@ match m{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwODgwMTY4MywtMTMxODg4MDM5MiwyMD
+eyJoaXN0b3J5IjpbMjA4NTIyMDg0MCwtMTMxODg4MDM5MiwyMD
 E5OTAyNzksLTEwNDc5MDMyNTAsMjEwODUzMzE1OSwxODM5OTIx
 OTYzLDI4MjQ0NjEyLDgwMzI0MzgzMSw4MDMyNDM4MzEsLTc4OD
 IwMTc5NCwtNDk0MDg0MjMxLC01NjEzNzY2NjIsLTYzMjAxODEs
