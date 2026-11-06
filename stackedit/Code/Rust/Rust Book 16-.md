@@ -924,7 +924,8 @@ match m{
 ```
 
 ## 20 Advanced Features
-
+### 20.01 Unsafe Rust
+* Exists because static analysis is conservative
 
 
 
@@ -932,11 +933,11 @@ match m{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTg4ODAzOTIsMjAxOTkwMjc5LC0xMD
-Q3OTAzMjUwLDIxMDg1MzMxNTksMTgzOTkyMTk2MywyODI0NDYx
-Miw4MDMyNDM4MzEsODAzMjQzODMxLC03ODgyMDE3OTQsLTQ5ND
-A4NDIzMSwtNTYxMzc2NjYyLC02MzIwMTgxLC0xOTk1OTMxOTM4
-LDIwOTE2OTYwMjksMTk3MzAyNzEzOSwxOTczMDI3MTM5LDE2NT
-YyMjMxMTQsLTM5OTgyNjA3OCwtMzk5ODI2MDc4LC03MjU2MTg1
-NTBdfQ==
+eyJoaXN0b3J5IjpbMTgwODgwMTY4MywtMTMxODg4MDM5MiwyMD
+E5OTAyNzksLTEwNDc5MDMyNTAsMjEwODUzMzE1OSwxODM5OTIx
+OTYzLDI4MjQ0NjEyLDgwMzI0MzgzMSw4MDMyNDM4MzEsLTc4OD
+IwMTc5NCwtNDk0MDg0MjMxLC01NjEzNzY2NjIsLTYzMjAxODEs
+LTE5OTU5MzE5MzgsMjA5MTY5NjAyOSwxOTczMDI3MTM5LDE5Nz
+MwMjcxMzksMTY1NjIyMzExNCwtMzk5ODI2MDc4LC0zOTk4MjYw
+NzhdfQ==
 -->
