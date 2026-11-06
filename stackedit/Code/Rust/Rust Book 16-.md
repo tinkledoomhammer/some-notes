@@ -956,7 +956,11 @@ Raw pointers are different from smart pointers
 * don't implement automatic cleanup
 * BUT they can be created in safe code (just not dereferenced)
 ```rust
-let mut num 
+let mut num = 5;
+let r1 = &raw const num; // borrow operators
+let r2 = &raw mut num;
+let address = 0x012345usize;
+let r = address as *const i32; //cast with `as`
 ```
 
 
@@ -964,11 +968,11 @@ let mut num
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3MzE4NzkwMSwtMTMxODg4MDM5MiwyMD
-E5OTAyNzksLTEwNDc5MDMyNTAsMjEwODUzMzE1OSwxODM5OTIx
-OTYzLDI4MjQ0NjEyLDgwMzI0MzgzMSw4MDMyNDM4MzEsLTc4OD
-IwMTc5NCwtNDk0MDg0MjMxLC01NjEzNzY2NjIsLTYzMjAxODEs
-LTE5OTU5MzE5MzgsMjA5MTY5NjAyOSwxOTczMDI3MTM5LDE5Nz
-MwMjcxMzksMTY1NjIyMzExNCwtMzk5ODI2MDc4LC0zOTk4MjYw
-NzhdfQ==
+eyJoaXN0b3J5IjpbNTk1MjIyOTUzLC0xMzE4ODgwMzkyLDIwMT
+k5MDI3OSwtMTA0NzkwMzI1MCwyMTA4NTMzMTU5LDE4Mzk5MjE5
+NjMsMjgyNDQ2MTIsODAzMjQzODMxLDgwMzI0MzgzMSwtNzg4Mj
+AxNzk0LC00OTQwODQyMzEsLTU2MTM3NjY2MiwtNjMyMDE4MSwt
+MTk5NTkzMTkzOCwyMDkxNjk2MDI5LDE5NzMwMjcxMzksMTk3Mz
+AyNzEzOSwxNjU2MjIzMTE0LC0zOTk4MjYwNzgsLTM5OTgyNjA3
+OF19
 -->
