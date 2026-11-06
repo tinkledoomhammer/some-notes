@@ -952,15 +952,19 @@ Raw pointers are different from smart pointers
 	* or multiple mut pointers
 	* to the same location
 * aren't guaranteed to point to valid memory
-* are allowed
-
+* are allowed to be null
+* don't implement automatic cleanup
+* BUT they can be created in safe code (just not dereferenced)
+```rust
+let mut num 
+```
 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxNDY0NTE2NCwtMTMxODg4MDM5MiwyMD
+eyJoaXN0b3J5IjpbMTk3MzE4NzkwMSwtMTMxODg4MDM5MiwyMD
 E5OTAyNzksLTEwNDc5MDMyNTAsMjEwODUzMzE1OSwxODM5OTIx
 OTYzLDI4MjQ0NjEyLDgwMzI0MzgzMSw4MDMyNDM4MzEsLTc4OD
 IwMTc5NCwtNDk0MDg0MjMxLC01NjEzNzY2NjIsLTYzMjAxODEs
