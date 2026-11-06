@@ -898,16 +898,18 @@ match vals {
 : ignores as many as needed to make a match
 : i.e. `(first, ..  ,last)=>` or `(first, ... )`
 : must be used unambiguously `(.. , second, ..)` will generate an error
+: can only be used once per tuple
 
+### Adding conditionals with Match Guards
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Njg0MDAxMTQsMjEwODUzMzE1OSwxOD
-M5OTIxOTYzLDI4MjQ0NjEyLDgwMzI0MzgzMSw4MDMyNDM4MzEs
-LTc4ODIwMTc5NCwtNDk0MDg0MjMxLC01NjEzNzY2NjIsLTYzMj
-AxODEsLTE5OTU5MzE5MzgsMjA5MTY5NjAyOSwxOTczMDI3MTM5
-LDE5NzMwMjcxMzksMTY1NjIyMzExNCwtMzk5ODI2MDc4LC0zOT
-k4MjYwNzgsLTcyNTYxODU1MCwyMDk0OTM1NzI0LC0xMTUxNDA1
-MDU4XX0=
+eyJoaXN0b3J5IjpbMzQ1NTM0MTgsMjEwODUzMzE1OSwxODM5OT
+IxOTYzLDI4MjQ0NjEyLDgwMzI0MzgzMSw4MDMyNDM4MzEsLTc4
+ODIwMTc5NCwtNDk0MDg0MjMxLC01NjEzNzY2NjIsLTYzMjAxOD
+EsLTE5OTU5MzE5MzgsMjA5MTY5NjAyOSwxOTczMDI3MTM5LDE5
+NzMwMjcxMzksMTY1NjIyMzExNCwtMzk5ODI2MDc4LC0zOTk4Mj
+YwNzgsLTcyNTYxODU1MCwyMDk0OTM1NzI0LC0xMTUxNDA1MDU4
+XX0=
 -->
