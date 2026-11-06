@@ -905,14 +905,20 @@ Match Guard
 : an additional `if` condition after a pattern in a `match` arm
 : can only be used with `match` not with `if let` or `while let` expressions
 : used to express more complex ideas than patterns alone
-
+: is lower precidence than the pattern itself
+```rust
+match x {
+	4 | 5 | 6 if y => "y is true and it was 4,5,or 6",
+	_ => "y was false or it was some other number",
+}
+```
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDc5MDMyNTAsMjEwODUzMzE1OSwxOD
-M5OTIxOTYzLDI4MjQ0NjEyLDgwMzI0MzgzMSw4MDMyNDM4MzEs
-LTc4ODIwMTc5NCwtNDk0MDg0MjMxLC01NjEzNzY2NjIsLTYzMj
-AxODEsLTE5OTU5MzE5MzgsMjA5MTY5NjAyOSwxOTczMDI3MTM5
-LDE5NzMwMjcxMzksMTY1NjIyMzExNCwtMzk5ODI2MDc4LC0zOT
-k4MjYwNzgsLTcyNTYxODU1MCwyMDk0OTM1NzI0LC0xMTUxNDA1
-MDU4XX0=
+eyJoaXN0b3J5IjpbLTEzMjMxNjYwOTYsLTEwNDc5MDMyNTAsMj
+EwODUzMzE1OSwxODM5OTIxOTYzLDI4MjQ0NjEyLDgwMzI0Mzgz
+MSw4MDMyNDM4MzEsLTc4ODIwMTc5NCwtNDk0MDg0MjMxLC01Nj
+EzNzY2NjIsLTYzMjAxODEsLTE5OTU5MzE5MzgsMjA5MTY5NjAy
+OSwxOTczMDI3MTM5LDE5NzMwMjcxMzksMTY1NjIyMzExNCwtMz
+k5ODI2MDc4LC0zOTk4MjYwNzgsLTcyNTYxODU1MCwyMDk0OTM1
+NzI0XX0=
 -->
