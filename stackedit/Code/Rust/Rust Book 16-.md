@@ -863,7 +863,7 @@ enum Outer{
 }
 let m = Outer::Var1(Ver1(1,2));
 match m {
-	Outer::Ver2 => /* no varsbound*/ ,
+	Outer::Ver2 => /* no vars bound*/ ,
 	Outer::Ver1(a,b) => /* a and b bound */,
 	Outer::Ver1{a,b} => /* also binds a and b*/,
 }
@@ -874,7 +874,7 @@ let ((feet, inches), Point {x,y}) = ((3,10), Point{x:3, y:10});
 ```
 ### Ignoring Values in a pattern
 
-`_` matches and discards an entire value
+`_` matches and discards a value
 : can be used in any pattern
 : can be nested
 : prefix var names to suppress unused variable warnings
@@ -887,7 +887,6 @@ match (val1,val2){
 	(Some(_),None) => val1=None,
 	(None,Some(v)) => val1=Some(v),
 }
-
 ```
 
 
@@ -896,11 +895,11 @@ match (val1,val2){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwODUzMzE1OSwxODM5OTIxOTYzLDI4Mj
-Q0NjEyLDgwMzI0MzgzMSw4MDMyNDM4MzEsLTc4ODIwMTc5NCwt
-NDk0MDg0MjMxLC01NjEzNzY2NjIsLTYzMjAxODEsLTE5OTU5Mz
-E5MzgsMjA5MTY5NjAyOSwxOTczMDI3MTM5LDE5NzMwMjcxMzks
-MTY1NjIyMzExNCwtMzk5ODI2MDc4LC0zOTk4MjYwNzgsLTcyNT
-YxODU1MCwyMDk0OTM1NzI0LC0xMTUxNDA1MDU4LDIxMTM3OTc4
-NTddfQ==
+eyJoaXN0b3J5IjpbLTEzNTc0NDA2MjYsMjEwODUzMzE1OSwxOD
+M5OTIxOTYzLDI4MjQ0NjEyLDgwMzI0MzgzMSw4MDMyNDM4MzEs
+LTc4ODIwMTc5NCwtNDk0MDg0MjMxLC01NjEzNzY2NjIsLTYzMj
+AxODEsLTE5OTU5MzE5MzgsMjA5MTY5NjAyOSwxOTczMDI3MTM5
+LDE5NzMwMjcxMzksMTY1NjIyMzExNCwtMzk5ODI2MDc4LC0zOT
+k4MjYwNzgsLTcyNTYxODU1MCwyMDk0OTM1NzI0LC0xMTUxNDA1
+MDU4XX0=
 -->
