@@ -904,14 +904,15 @@ match vals {
 Match Guard
 : an additional `if` condition after a pattern in a `match` arm
 : can only be used with `match` not with `if let` or `while let` expressions
+: used to express more complex ideas than patterns alone
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ2NTk1ODMwLDIxMDg1MzMxNTksMTgzOT
-kyMTk2MywyODI0NDYxMiw4MDMyNDM4MzEsODAzMjQzODMxLC03
-ODgyMDE3OTQsLTQ5NDA4NDIzMSwtNTYxMzc2NjYyLC02MzIwMT
-gxLC0xOTk1OTMxOTM4LDIwOTE2OTYwMjksMTk3MzAyNzEzOSwx
-OTczMDI3MTM5LDE2NTYyMjMxMTQsLTM5OTgyNjA3OCwtMzk5OD
-I2MDc4LC03MjU2MTg1NTAsMjA5NDkzNTcyNCwtMTE1MTQwNTA1
-OF19
+eyJoaXN0b3J5IjpbLTEwNDc5MDMyNTAsMjEwODUzMzE1OSwxOD
+M5OTIxOTYzLDI4MjQ0NjEyLDgwMzI0MzgzMSw4MDMyNDM4MzEs
+LTc4ODIwMTc5NCwtNDk0MDg0MjMxLC01NjEzNzY2NjIsLTYzMj
+AxODEsLTE5OTU5MzE5MzgsMjA5MTY5NjAyOSwxOTczMDI3MTM5
+LDE5NzMwMjcxMzksMTY1NjIyMzExNCwtMzk5ODI2MDc4LC0zOT
+k4MjYwNzgsLTcyNTYxODU1MCwyMDk0OTM1NzI0LC0xMTUxNDA1
+MDU4XX0=
 -->
