@@ -887,10 +887,10 @@ match (val1,val2){
 	(Some(_),None) => val1=None,
 	(None,Some(v)) => val1=Some(v),
 }
-let vals = vec![1,2,3,4];
+let vals = (1,2,3,4);
 match vals {
-	
-	_ => /* anything else */
+	(first, _, 3, _, fifth) => (first,fifth),
+	_ => (1,2)/* anything else */
 }
 ```
 
@@ -900,11 +900,11 @@ match vals {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDY1NTQ5MzgsMjEwODUzMzE1OSwxOD
-M5OTIxOTYzLDI4MjQ0NjEyLDgwMzI0MzgzMSw4MDMyNDM4MzEs
-LTc4ODIwMTc5NCwtNDk0MDg0MjMxLC01NjEzNzY2NjIsLTYzMj
-AxODEsLTE5OTU5MzE5MzgsMjA5MTY5NjAyOSwxOTczMDI3MTM5
-LDE5NzMwMjcxMzksMTY1NjIyMzExNCwtMzk5ODI2MDc4LC0zOT
-k4MjYwNzgsLTcyNTYxODU1MCwyMDk0OTM1NzI0LC0xMTUxNDA1
-MDU4XX0=
+eyJoaXN0b3J5IjpbODczNDYwNjgwLDIxMDg1MzMxNTksMTgzOT
+kyMTk2MywyODI0NDYxMiw4MDMyNDM4MzEsODAzMjQzODMxLC03
+ODgyMDE3OTQsLTQ5NDA4NDIzMSwtNTYxMzc2NjYyLC02MzIwMT
+gxLC0xOTk1OTMxOTM4LDIwOTE2OTYwMjksMTk3MzAyNzEzOSwx
+OTczMDI3MTM5LDE2NTYyMjMxMTQsLTM5OTgyNjA3OCwtMzk5OD
+I2MDc4LC03MjU2MTg1NTAsMjA5NDkzNTcyNCwtMTE1MTQwNTA1
+OF19
 -->
