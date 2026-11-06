@@ -912,7 +912,15 @@ match x {
 	_ => "y was false or it was some other number",
 }
 ```
+### Using `@` Bindings
 
+`@`
+: tests and binds in the same pattern
+```rust
+match mst{
+	M:Hello{id: id@3..=7} => Some(id)
+}
+```
 
 
 
@@ -921,7 +929,7 @@ match x {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5ODQ0MTI2NiwtMTA0NzkwMzI1MCwyMT
+eyJoaXN0b3J5IjpbMTgxNTQwNTEzMywtMTA0NzkwMzI1MCwyMT
 A4NTMzMTU5LDE4Mzk5MjE5NjMsMjgyNDQ2MTIsODAzMjQzODMx
 LDgwMzI0MzgzMSwtNzg4MjAxNzk0LC00OTQwODQyMzEsLTU2MT
 M3NjY2MiwtNjMyMDE4MSwtMTk5NTkzMTkzOCwyMDkxNjk2MDI5
