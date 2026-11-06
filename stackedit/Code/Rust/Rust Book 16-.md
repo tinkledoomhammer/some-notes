@@ -890,21 +890,25 @@ match (val1,val2){
 let vals = (1,2,3,4);
 match vals {
 	(first, _, 3, _, fifth) => (first,fifth),
-	_ => (1,2)/* anything else */
+	_ => (1,2),/* didn't have 3 in position 2 */
 }
 ```
 
+### Returning Parts of a Value with `..`
 
+`..`
+: binds nothing
+: ignores as m
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODczNDYwNjgwLDIxMDg1MzMxNTksMTgzOT
-kyMTk2MywyODI0NDYxMiw4MDMyNDM4MzEsODAzMjQzODMxLC03
-ODgyMDE3OTQsLTQ5NDA4NDIzMSwtNTYxMzc2NjYyLC02MzIwMT
-gxLC0xOTk1OTMxOTM4LDIwOTE2OTYwMjksMTk3MzAyNzEzOSwx
-OTczMDI3MTM5LDE2NTYyMjMxMTQsLTM5OTgyNjA3OCwtMzk5OD
-I2MDc4LC03MjU2MTg1NTAsMjA5NDkzNTcyNCwtMTE1MTQwNTA1
-OF19
+eyJoaXN0b3J5IjpbLTEwMzg3NjA2MDUsMjEwODUzMzE1OSwxOD
+M5OTIxOTYzLDI4MjQ0NjEyLDgwMzI0MzgzMSw4MDMyNDM4MzEs
+LTc4ODIwMTc5NCwtNDk0MDg0MjMxLC01NjEzNzY2NjIsLTYzMj
+AxODEsLTE5OTU5MzE5MzgsMjA5MTY5NjAyOSwxOTczMDI3MTM5
+LDE5NzMwMjcxMzksMTY1NjIyMzExNCwtMzk5ODI2MDc4LC0zOT
+k4MjYwNzgsLTcyNTYxODU1MCwyMDk0OTM1NzI0LC0xMTUxNDA1
+MDU4XX0=
 -->
