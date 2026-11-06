@@ -943,7 +943,16 @@ Tips
 `* const T`
 : an immutable raw pointer to `T`
 
-`* mut 
+`* mut T`
+: a mutable raw pointer to `T`
+
+Raw pointers are different from smart pointers
+* are allowed to ignore borrowing rules by
+	* having both mut and immut pointers 
+	* or multiple mut pointers
+	* to the same location
+* aren't guaranteed to point to valid memory
+* are allowed
 
 
 
@@ -951,11 +960,11 @@ Tips
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzcwMDY0NTA0LC0xMzE4ODgwMzkyLDIwMT
-k5MDI3OSwtMTA0NzkwMzI1MCwyMTA4NTMzMTU5LDE4Mzk5MjE5
-NjMsMjgyNDQ2MTIsODAzMjQzODMxLDgwMzI0MzgzMSwtNzg4Mj
-AxNzk0LC00OTQwODQyMzEsLTU2MTM3NjY2MiwtNjMyMDE4MSwt
-MTk5NTkzMTkzOCwyMDkxNjk2MDI5LDE5NzMwMjcxMzksMTk3Mz
-AyNzEzOSwxNjU2MjIzMTE0LC0zOTk4MjYwNzgsLTM5OTgyNjA3
-OF19
+eyJoaXN0b3J5IjpbMTIxNDY0NTE2NCwtMTMxODg4MDM5MiwyMD
+E5OTAyNzksLTEwNDc5MDMyNTAsMjEwODUzMzE1OSwxODM5OTIx
+OTYzLDI4MjQ0NjEyLDgwMzI0MzgzMSw4MDMyNDM4MzEsLTc4OD
+IwMTc5NCwtNDk0MDg0MjMxLC01NjEzNzY2NjIsLTYzMjAxODEs
+LTE5OTU5MzE5MzgsMjA5MTY5NjAyOSwxOTczMDI3MTM5LDE5Nz
+MwMjcxMzksMTY1NjIyMzExNCwtMzk5ODI2MDc4LC0zOTk4MjYw
+NzhdfQ==
 -->
