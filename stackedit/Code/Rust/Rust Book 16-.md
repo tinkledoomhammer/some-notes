@@ -967,13 +967,14 @@ unsafe { // required to deref the pointers
 }
 ```
 #### Calling an Unsafe Function or Method
-* A 
+* A function can be safe and contain an *unsafe* block
+* an unsafe function indicates
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTM4ODM1ODgsLTEzMTg4ODAzOTIsMj
+eyJoaXN0b3J5IjpbLTEwMTkzNjIwNDQsLTEzMTg4ODAzOTIsMj
 AxOTkwMjc5LC0xMDQ3OTAzMjUwLDIxMDg1MzMxNTksMTgzOTky
 MTk2MywyODI0NDYxMiw4MDMyNDM4MzEsODAzMjQzODMxLC03OD
 gyMDE3OTQsLTQ5NDA4NDIzMSwtNTYxMzc2NjYyLC02MzIwMTgx
