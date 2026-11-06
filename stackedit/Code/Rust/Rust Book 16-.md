@@ -930,9 +930,14 @@ match m{
 `unsafe` keyword starts an unnsafe block
 * unsafe blocks can
 1. Dereference a raw pointer
-1. call an unsafe function or method
-1. access or modify a mutable static variable
-1. 
+1. Call an unsafe function or method
+1. Access or modify a mutable static variable
+1. Implement an unsafe trait
+1. Access fields of `union`s
+
+Tips
+: keep `unsafe` blocks small
+: 
 
 
 
@@ -940,11 +945,11 @@ match m{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4NTIyMDg0MCwtMTMxODg4MDM5MiwyMD
-E5OTAyNzksLTEwNDc5MDMyNTAsMjEwODUzMzE1OSwxODM5OTIx
-OTYzLDI4MjQ0NjEyLDgwMzI0MzgzMSw4MDMyNDM4MzEsLTc4OD
-IwMTc5NCwtNDk0MDg0MjMxLC01NjEzNzY2NjIsLTYzMjAxODEs
-LTE5OTU5MzE5MzgsMjA5MTY5NjAyOSwxOTczMDI3MTM5LDE5Nz
-MwMjcxMzksMTY1NjIyMzExNCwtMzk5ODI2MDc4LC0zOTk4MjYw
-NzhdfQ==
+eyJoaXN0b3J5IjpbLTE1MTg0NjE1NDksLTEzMTg4ODAzOTIsMj
+AxOTkwMjc5LC0xMDQ3OTAzMjUwLDIxMDg1MzMxNTksMTgzOTky
+MTk2MywyODI0NDYxMiw4MDMyNDM4MzEsODAzMjQzODMxLC03OD
+gyMDE3OTQsLTQ5NDA4NDIzMSwtNTYxMzc2NjYyLC02MzIwMTgx
+LC0xOTk1OTMxOTM4LDIwOTE2OTYwMjksMTk3MzAyNzEzOSwxOT
+czMDI3MTM5LDE2NTYyMjMxMTQsLTM5OTgyNjA3OCwtMzk5ODI2
+MDc4XX0=
 -->
