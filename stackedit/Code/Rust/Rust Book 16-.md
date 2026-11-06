@@ -901,15 +901,17 @@ match vals {
 : can only be used once per tuple
 
 ### Adding conditionals with Match Guards
-
+Match Guard
+: an additional `if` condition after a pattern in a `match` arm
+: can only be used with `match` not with `if let` or `while let` expressions
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ1NTM0MTgsMjEwODUzMzE1OSwxODM5OT
-IxOTYzLDI4MjQ0NjEyLDgwMzI0MzgzMSw4MDMyNDM4MzEsLTc4
-ODIwMTc5NCwtNDk0MDg0MjMxLC01NjEzNzY2NjIsLTYzMjAxOD
-EsLTE5OTU5MzE5MzgsMjA5MTY5NjAyOSwxOTczMDI3MTM5LDE5
-NzMwMjcxMzksMTY1NjIyMzExNCwtMzk5ODI2MDc4LC0zOTk4Mj
-YwNzgsLTcyNTYxODU1MCwyMDk0OTM1NzI0LC0xMTUxNDA1MDU4
-XX0=
+eyJoaXN0b3J5IjpbMjQ2NTk1ODMwLDIxMDg1MzMxNTksMTgzOT
+kyMTk2MywyODI0NDYxMiw4MDMyNDM4MzEsODAzMjQzODMxLC03
+ODgyMDE3OTQsLTQ5NDA4NDIzMSwtNTYxMzc2NjYyLC02MzIwMT
+gxLC0xOTk1OTMxOTM4LDIwOTE2OTYwMjksMTk3MzAyNzEzOSwx
+OTczMDI3MTM5LDE2NTYyMjMxMTQsLTM5OTgyNjA3OCwtMzk5OD
+I2MDc4LC03MjU2MTg1NTAsMjA5NDkzNTcyNCwtMTE1MTQwNTA1
+OF19
 -->
