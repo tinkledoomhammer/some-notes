@@ -937,7 +937,13 @@ match m{
 
 Tips
 : keep `unsafe` blocks small
-: 
+: enclose it within a safe abstraction and a safe API
+
+#### Dereferencing a Raw Pointer
+`* const T`
+: an immutable raw pointer to `T`
+
+`* mut 
 
 
 
@@ -945,11 +951,11 @@ Tips
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTg0NjE1NDksLTEzMTg4ODAzOTIsMj
-AxOTkwMjc5LC0xMDQ3OTAzMjUwLDIxMDg1MzMxNTksMTgzOTky
-MTk2MywyODI0NDYxMiw4MDMyNDM4MzEsODAzMjQzODMxLC03OD
-gyMDE3OTQsLTQ5NDA4NDIzMSwtNTYxMzc2NjYyLC02MzIwMTgx
-LC0xOTk1OTMxOTM4LDIwOTE2OTYwMjksMTk3MzAyNzEzOSwxOT
-czMDI3MTM5LDE2NTYyMjMxMTQsLTM5OTgyNjA3OCwtMzk5ODI2
-MDc4XX0=
+eyJoaXN0b3J5IjpbMzcwMDY0NTA0LC0xMzE4ODgwMzkyLDIwMT
+k5MDI3OSwtMTA0NzkwMzI1MCwyMTA4NTMzMTU5LDE4Mzk5MjE5
+NjMsMjgyNDQ2MTIsODAzMjQzODMxLDgwMzI0MzgzMSwtNzg4Mj
+AxNzk0LC00OTQwODQyMzEsLTU2MTM3NjY2MiwtNjMyMDE4MSwt
+MTk5NTkzMTkzOCwyMDkxNjk2MDI5LDE5NzMwMjcxMzksMTk3Mz
+AyNzEzOSwxNjU2MjIzMTE0LC0zOTk4MjYwNzgsLTM5OTgyNjA3
+OF19
 -->
