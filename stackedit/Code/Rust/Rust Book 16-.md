@@ -917,8 +917,9 @@ match x {
 `@`
 : tests and binds in the same pattern
 ```rust
-match mst{
-	M:Hello{id: id@3..=7} => Some(id)
+match m{
+	M:Hello{id: id@3..=7} => prinln!("{id} in range"),
+	M:Hello{id} => println("{id} not in range"),
 }
 ```
 
@@ -929,11 +930,11 @@ match mst{
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNTQwNTEzMywtMTA0NzkwMzI1MCwyMT
-A4NTMzMTU5LDE4Mzk5MjE5NjMsMjgyNDQ2MTIsODAzMjQzODMx
-LDgwMzI0MzgzMSwtNzg4MjAxNzk0LC00OTQwODQyMzEsLTU2MT
-M3NjY2MiwtNjMyMDE4MSwtMTk5NTkzMTkzOCwyMDkxNjk2MDI5
-LDE5NzMwMjcxMzksMTk3MzAyNzEzOSwxNjU2MjIzMTE0LC0zOT
-k4MjYwNzgsLTM5OTgyNjA3OCwtNzI1NjE4NTUwLDIwOTQ5MzU3
-MjRdfQ==
+eyJoaXN0b3J5IjpbMjAxOTkwMjc5LC0xMDQ3OTAzMjUwLDIxMD
+g1MzMxNTksMTgzOTkyMTk2MywyODI0NDYxMiw4MDMyNDM4MzEs
+ODAzMjQzODMxLC03ODgyMDE3OTQsLTQ5NDA4NDIzMSwtNTYxMz
+c2NjYyLC02MzIwMTgxLC0xOTk1OTMxOTM4LDIwOTE2OTYwMjks
+MTk3MzAyNzEzOSwxOTczMDI3MTM5LDE2NTYyMjMxMTQsLTM5OT
+gyNjA3OCwtMzk5ODI2MDc4LC03MjU2MTg1NTAsMjA5NDkzNTcy
+NF19
 -->
