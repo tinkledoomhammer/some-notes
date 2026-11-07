@@ -1030,6 +1030,32 @@ The `unsafe` is used only in the attribute, not the `extern`
 
 ### Acessing or modifying a static mut var
 
+
+
+
+```rust
+static mut COUNTER: u32 = 0;
+
+/// SAFETY: Calling this from more than a single thread at a time is undefined
+/// behavior, so you *must* guarantee you only call it from a single thread at
+/// a time.
+unsafe fn add_to_count(inc: u32) {
+    unsafe {
+        COUNTER += inc;
+    }
+}
+
+fn main() {
+    unsafe {
+        // SAFETY: This is only called from a single thread in `main`.
+        add_to_count(3);
+        println!("COUNTER: {}", *(&raw const COUNTER));
+    }
+}
+```
+
+
+
 ### Implementing an unsafe trait
 
 ### Accessing fields of a union
@@ -1042,11 +1068,11 @@ The `unsafe` is used only in the attribute, not the `extern`
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU3OTU5NjcxLDEzMTIxMjg1NTUsNTMxMj
-Y4MDUzLDUzMTI2ODA1MywxOTA4ODM4MjgxLDE5ODE3MDY0Njks
-ODg3OTMzNTQwLC02MDAwMjk2NDUsMTc3MDI2MzUzMCwtMTMxOD
-g4MDM5MiwyMDE5OTAyNzksLTEwNDc5MDMyNTAsMjEwODUzMzE1
-OSwxODM5OTIxOTYzLDI4MjQ0NjEyLDgwMzI0MzgzMSw4MDMyND
-M4MzEsLTc4ODIwMTc5NCwtNDk0MDg0MjMxLC01NjEzNzY2NjJd
-fQ==
+eyJoaXN0b3J5IjpbLTIxMzY2MDQ3OTMsMjU3OTU5NjcxLDEzMT
+IxMjg1NTUsNTMxMjY4MDUzLDUzMTI2ODA1MywxOTA4ODM4Mjgx
+LDE5ODE3MDY0NjksODg3OTMzNTQwLC02MDAwMjk2NDUsMTc3MD
+I2MzUzMCwtMTMxODg4MDM5MiwyMDE5OTAyNzksLTEwNDc5MDMy
+NTAsMjEwODUzMzE1OSwxODM5OTIxOTYzLDI4MjQ0NjEyLDgwMz
+I0MzgzMSw4MDMyNDM4MzEsLTc4ODIwMTc5NCwtNDk0MDg0MjMx
+XX0=
 -->
