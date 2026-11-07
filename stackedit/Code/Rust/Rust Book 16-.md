@@ -1005,7 +1005,7 @@ fn split_at_mut(values: &mut[i32], mid: usize)
 
 Foreign Function Interface (FFI)
 : a way for programming languages to define functions and enable a different programming language to call those functions
-
+s
 ### Calling Rust functions from other languages
 
 ### Acessing or modifying a static mut var
@@ -1022,11 +1022,11 @@ Foreign Function Interface (FFI)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTMxMjY4MDUzLDE5MDg4MzgyODEsMTk4MT
-cwNjQ2OSw4ODc5MzM1NDAsLTYwMDAyOTY0NSwxNzcwMjYzNTMw
-LC0xMzE4ODgwMzkyLDIwMTk5MDI3OSwtMTA0NzkwMzI1MCwyMT
-A4NTMzMTU5LDE4Mzk5MjE5NjMsMjgyNDQ2MTIsODAzMjQzODMx
-LDgwMzI0MzgzMSwtNzg4MjAxNzk0LC00OTQwODQyMzEsLTU2MT
-M3NjY2MiwtNjMyMDE4MSwtMTk5NTkzMTkzOCwyMDkxNjk2MDI5
+eyJoaXN0b3J5IjpbMTkyNjM5ODEwNCw1MzEyNjgwNTMsMTkwOD
+gzODI4MSwxOTgxNzA2NDY5LDg4NzkzMzU0MCwtNjAwMDI5NjQ1
+LDE3NzAyNjM1MzAsLTEzMTg4ODAzOTIsMjAxOTkwMjc5LC0xMD
+Q3OTAzMjUwLDIxMDg1MzMxNTksMTgzOTkyMTk2MywyODI0NDYx
+Miw4MDMyNDM4MzEsODAzMjQzODMxLC03ODgyMDE3OTQsLTQ5ND
+A4NDIzMSwtNTYxMzc2NjYyLC02MzIwMTgxLC0xOTk1OTMxOTM4
 XX0=
 -->
