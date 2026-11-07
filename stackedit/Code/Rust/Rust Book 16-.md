@@ -982,6 +982,12 @@ unsafe { // required to deref the pointers
 
 ```rust
 use std::slice;
+//usage 
+let mut v = vec![1,2,3,4,5,6];
+let r = &mut v[..];
+let (a,b) = r.split_at_mut(3);
+assert_eq!(a, *mut[1,2,3]);
+assert_eq!(b, &mut[4,5,6
 fn split_at_mut(values: &mut[i32], mid: usize) 
 	-> (&mut[i32],&mut[i32]) {
 	let len = values.len();
@@ -999,11 +1005,11 @@ fn split_at_mut(values: &mut[i32], mid: usize)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDAwMjkwNzgsMTk4MTcwNjQ2OSw4OD
-c5MzM1NDAsLTYwMDAyOTY0NSwxNzcwMjYzNTMwLC0xMzE4ODgw
-MzkyLDIwMTk5MDI3OSwtMTA0NzkwMzI1MCwyMTA4NTMzMTU5LD
-E4Mzk5MjE5NjMsMjgyNDQ2MTIsODAzMjQzODMxLDgwMzI0Mzgz
-MSwtNzg4MjAxNzk0LC00OTQwODQyMzEsLTU2MTM3NjY2MiwtNj
-MyMDE4MSwtMTk5NTkzMTkzOCwyMDkxNjk2MDI5LDE5NzMwMjcx
-MzldfQ==
+eyJoaXN0b3J5IjpbMjExNjIyNTg5NCwxOTgxNzA2NDY5LDg4Nz
+kzMzU0MCwtNjAwMDI5NjQ1LDE3NzAyNjM1MzAsLTEzMTg4ODAz
+OTIsMjAxOTkwMjc5LC0xMDQ3OTAzMjUwLDIxMDg1MzMxNTksMT
+gzOTkyMTk2MywyODI0NDYxMiw4MDMyNDM4MzEsODAzMjQzODMx
+LC03ODgyMDE3OTQsLTQ5NDA4NDIzMSwtNTYxMzc2NjYyLC02Mz
+IwMTgxLC0xOTk1OTMxOTM4LDIwOTE2OTYwMjksMTk3MzAyNzEz
+OV19
 -->
