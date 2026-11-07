@@ -978,7 +978,16 @@ unsafe { // required to deref the pointers
 #### Example: `split_at_mut` function
 ```rust
 use std::slice;
-fn split_at_mut(values: &mut[i32], mid: usize) -> (&mut[i32],&mut[i32])
+fn split_at_mut(values: &mut[i32], mid: usize) 
+	-> (&mut[i32],&mut[i32]) {
+	let len = values.len();
+	let ptr = values.as_mut_ptr();
+	assert!(mid<=len);
+	unsafe{ (
+		slice::from_raw_parts_mut(ptr, mid),
+		slice::from_raw_parts_mut(ptr.add(mid), len - mid),
+	) }
+}
 ```
 
 
@@ -986,11 +995,11 @@ fn split_at_mut(values: &mut[i32], mid: usize) -> (&mut[i32],&mut[i32])
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzk1MTY2NDYsLTYwMDAyOTY0NSwxNz
-cwMjYzNTMwLC0xMzE4ODgwMzkyLDIwMTk5MDI3OSwtMTA0Nzkw
-MzI1MCwyMTA4NTMzMTU5LDE4Mzk5MjE5NjMsMjgyNDQ2MTIsOD
-AzMjQzODMxLDgwMzI0MzgzMSwtNzg4MjAxNzk0LC00OTQwODQy
-MzEsLTU2MTM3NjY2MiwtNjMyMDE4MSwtMTk5NTkzMTkzOCwyMD
-kxNjk2MDI5LDE5NzMwMjcxMzksMTk3MzAyNzEzOSwxNjU2MjIz
-MTE0XX0=
+eyJoaXN0b3J5IjpbODg3OTMzNTQwLC02MDAwMjk2NDUsMTc3MD
+I2MzUzMCwtMTMxODg4MDM5MiwyMDE5OTAyNzksLTEwNDc5MDMy
+NTAsMjEwODUzMzE1OSwxODM5OTIxOTYzLDI4MjQ0NjEyLDgwMz
+I0MzgzMSw4MDMyNDM4MzEsLTc4ODIwMTc5NCwtNDk0MDg0MjMx
+LC01NjEzNzY2NjIsLTYzMjAxODEsLTE5OTU5MzE5MzgsMjA5MT
+Y5NjAyOSwxOTczMDI3MTM5LDE5NzMwMjcxMzksMTY1NjIyMzEx
+NF19
 -->
