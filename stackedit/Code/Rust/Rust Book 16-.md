@@ -1029,13 +1029,11 @@ The `unsafe` is used only in the attribute, not the `extern`
 
 
 ### Acessing or modifying a static mut var
-
-
-
+* tatic variables have a fixed memory address
+* they can only store `'static` references
 
 ```rust
 static mut COUNTER: u32 = 0;
-
 /// SAFETY: Calling this from more than a single thread at a time is undefined
 /// behavior, so you *must* guarantee you only call it from a single thread at
 /// a time.
@@ -1044,7 +1042,6 @@ unsafe fn add_to_count(inc: u32) {
         COUNTER += inc;
     }
 }
-
 fn main() {
     unsafe {
         // SAFETY: This is only called from a single thread in `main`.
@@ -1053,7 +1050,6 @@ fn main() {
     }
 }
 ```
-
 
 
 ### Implementing an unsafe trait
@@ -1068,11 +1064,11 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzY2MDQ3OTMsMjU3OTU5NjcxLDEzMT
-IxMjg1NTUsNTMxMjY4MDUzLDUzMTI2ODA1MywxOTA4ODM4Mjgx
-LDE5ODE3MDY0NjksODg3OTMzNTQwLC02MDAwMjk2NDUsMTc3MD
-I2MzUzMCwtMTMxODg4MDM5MiwyMDE5OTAyNzksLTEwNDc5MDMy
-NTAsMjEwODUzMzE1OSwxODM5OTIxOTYzLDI4MjQ0NjEyLDgwMz
-I0MzgzMSw4MDMyNDM4MzEsLTc4ODIwMTc5NCwtNDk0MDg0MjMx
-XX0=
+eyJoaXN0b3J5IjpbLTc1MjYzODA2NywyNTc5NTk2NzEsMTMxMj
+EyODU1NSw1MzEyNjgwNTMsNTMxMjY4MDUzLDE5MDg4MzgyODEs
+MTk4MTcwNjQ2OSw4ODc5MzM1NDAsLTYwMDAyOTY0NSwxNzcwMj
+YzNTMwLC0xMzE4ODgwMzkyLDIwMTk5MDI3OSwtMTA0NzkwMzI1
+MCwyMTA4NTMzMTU5LDE4Mzk5MjE5NjMsMjgyNDQ2MTIsODAzMj
+QzODMxLDgwMzI0MzgzMSwtNzg4MjAxNzk0LC00OTQwODQyMzFd
+fQ==
 -->
