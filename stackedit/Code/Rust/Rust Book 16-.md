@@ -974,13 +974,15 @@ unsafe { // required to deref the pointers
 * can only be called from an unsafe block
 * the body of an `unsafe` function is not assumed to be an `unsafe` block
 	* because the entire body might not need to be unsafe
-*Cre
+
+Creating a safe abstraction over Unsafe code
+
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4ODU1NDg3OCwxNzcwMjYzNTMwLC0xMz
+eyJoaXN0b3J5IjpbLTczMDY4Mjc0NCwxNzcwMjYzNTMwLC0xMz
 E4ODgwMzkyLDIwMTk5MDI3OSwtMTA0NzkwMzI1MCwyMTA4NTMz
 MTU5LDE4Mzk5MjE5NjMsMjgyNDQ2MTIsODAzMjQzODMxLDgwMz
 I0MzgzMSwtNzg4MjAxNzk0LC00OTQwODQyMzEsLTU2MTM3NjY2
