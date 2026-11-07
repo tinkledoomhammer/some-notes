@@ -1006,6 +1006,14 @@ fn split_at_mut(values: &mut[i32], mid: usize)
 Foreign Function Interface (FFI)
 : a way for programming languages to define functions and enable a different programming language to call those functions
 
+```rust
+//wraps the `abs` function from the c standard library
+unsafe extern "C" {
+	fn abs(input: i32) -> i32;
+}
+//can only be called in an unsafe block
+let n= unsafe[abs(-3)}
+```
 
 
 ### Calling Rust functions from other languages
@@ -1024,11 +1032,11 @@ Foreign Function Interface (FFI)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTY5NTIwMTUsNTMxMjY4MDUzLDUzMT
-I2ODA1MywxOTA4ODM4MjgxLDE5ODE3MDY0NjksODg3OTMzNTQw
-LC02MDAwMjk2NDUsMTc3MDI2MzUzMCwtMTMxODg4MDM5MiwyMD
-E5OTAyNzksLTEwNDc5MDMyNTAsMjEwODUzMzE1OSwxODM5OTIx
-OTYzLDI4MjQ0NjEyLDgwMzI0MzgzMSw4MDMyNDM4MzEsLTc4OD
-IwMTc5NCwtNDk0MDg0MjMxLC01NjEzNzY2NjIsLTYzMjAxODFd
-fQ==
+eyJoaXN0b3J5IjpbMTA1NDk2OTUwNyw1MzEyNjgwNTMsNTMxMj
+Y4MDUzLDE5MDg4MzgyODEsMTk4MTcwNjQ2OSw4ODc5MzM1NDAs
+LTYwMDAyOTY0NSwxNzcwMjYzNTMwLC0xMzE4ODgwMzkyLDIwMT
+k5MDI3OSwtMTA0NzkwMzI1MCwyMTA4NTMzMTU5LDE4Mzk5MjE5
+NjMsMjgyNDQ2MTIsODAzMjQzODMxLDgwMzI0MzgzMSwtNzg4Mj
+AxNzk0LC00OTQwODQyMzEsLTU2MTM3NjY2MiwtNjMyMDE4MV19
+
 -->
