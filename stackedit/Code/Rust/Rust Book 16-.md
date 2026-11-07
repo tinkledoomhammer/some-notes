@@ -976,6 +976,7 @@ unsafe { // required to deref the pointers
 	* because the entire body might not need to be unsafe
 
 #### Example: `split_at_mut` function
+* takes a mut slice and ret
 * The borrow checker doesn't check different parts of a slice independently
 * So to generate two `&mut`s from the same source, unsafe is required
 
@@ -998,11 +999,11 @@ fn split_at_mut(values: &mut[i32], mid: usize)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4MTcwNjQ2OSw4ODc5MzM1NDAsLTYwMD
-AyOTY0NSwxNzcwMjYzNTMwLC0xMzE4ODgwMzkyLDIwMTk5MDI3
-OSwtMTA0NzkwMzI1MCwyMTA4NTMzMTU5LDE4Mzk5MjE5NjMsMj
-gyNDQ2MTIsODAzMjQzODMxLDgwMzI0MzgzMSwtNzg4MjAxNzk0
-LC00OTQwODQyMzEsLTU2MTM3NjY2MiwtNjMyMDE4MSwtMTk5NT
-kzMTkzOCwyMDkxNjk2MDI5LDE5NzMwMjcxMzksMTk3MzAyNzEz
+eyJoaXN0b3J5IjpbLTc2MDE1Njk0NiwxOTgxNzA2NDY5LDg4Nz
+kzMzU0MCwtNjAwMDI5NjQ1LDE3NzAyNjM1MzAsLTEzMTg4ODAz
+OTIsMjAxOTkwMjc5LC0xMDQ3OTAzMjUwLDIxMDg1MzMxNTksMT
+gzOTkyMTk2MywyODI0NDYxMiw4MDMyNDM4MzEsODAzMjQzODMx
+LC03ODgyMDE3OTQsLTQ5NDA4NDIzMSwtNTYxMzc2NjYyLC02Mz
+IwMTgxLC0xOTk1OTMxOTM4LDIwOTE2OTYwMjksMTk3MzAyNzEz
 OV19
 -->
