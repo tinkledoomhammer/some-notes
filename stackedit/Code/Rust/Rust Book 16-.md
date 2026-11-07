@@ -1004,25 +1004,25 @@ fn split_at_mut(values: &mut[i32], mid: usize)
 
 ### Calling Rust functions from other languages
 
-## Acessing or modifying a static mut var
+### Acessing or modifying a static mut var
 
-## Implementing an unsafe trait
+### Implementing an unsafe trait
 
-## Accessing fields of a union
+### Accessing fields of a union
 
-## Using Miri to check unsafe code
+### Using Miri to check unsafe code
 
-## Using unsafe code correctly
+### Using unsafe code correctly
 
-
+## 20.02 Advanced Traits
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ4NDQyMzY4LDE5MDg4MzgyODEsMTk4MT
-cwNjQ2OSw4ODc5MzM1NDAsLTYwMDAyOTY0NSwxNzcwMjYzNTMw
-LC0xMzE4ODgwMzkyLDIwMTk5MDI3OSwtMTA0NzkwMzI1MCwyMT
-A4NTMzMTU5LDE4Mzk5MjE5NjMsMjgyNDQ2MTIsODAzMjQzODMx
-LDgwMzI0MzgzMSwtNzg4MjAxNzk0LC00OTQwODQyMzEsLTU2MT
-M3NjY2MiwtNjMyMDE4MSwtMTk5NTkzMTkzOCwyMDkxNjk2MDI5
-XX0=
+eyJoaXN0b3J5IjpbLTExNzYyMTI3NTQsMTkwODgzODI4MSwxOT
+gxNzA2NDY5LDg4NzkzMzU0MCwtNjAwMDI5NjQ1LDE3NzAyNjM1
+MzAsLTEzMTg4ODAzOTIsMjAxOTkwMjc5LC0xMDQ3OTAzMjUwLD
+IxMDg1MzMxNTksMTgzOTkyMTk2MywyODI0NDYxMiw4MDMyNDM4
+MzEsODAzMjQzODMxLC03ODgyMDE3OTQsLTQ5NDA4NDIzMSwtNT
+YxMzc2NjYyLC02MzIwMTgxLC0xOTk1OTMxOTM4LDIwOTE2OTYw
+MjldfQ==
 -->
