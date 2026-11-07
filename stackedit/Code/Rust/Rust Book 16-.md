@@ -986,8 +986,9 @@ use std::slice;
 let mut v = vec![1,2,3,4,5,6];
 let r = &mut v[..];
 let (a,b) = r.split_at_mut(3);
-assert_eq!(a, *mut[1,2,3]);
-assert_eq!(b, &mut[4,5,6
+assert_eq!(a, &mut[1,2,3]);
+assert_eq!(b, &mut[4,5,6]);
+//implementation
 fn split_at_mut(values: &mut[i32], mid: usize) 
 	-> (&mut[i32],&mut[i32]) {
 	let len = values.len();
@@ -1005,7 +1006,7 @@ fn split_at_mut(values: &mut[i32], mid: usize)
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNjIyNTg5NCwxOTgxNzA2NDY5LDg4Nz
+eyJoaXN0b3J5IjpbMTkwODgzODI4MSwxOTgxNzA2NDY5LDg4Nz
 kzMzU0MCwtNjAwMDI5NjQ1LDE3NzAyNjM1MzAsLTEzMTg4ODAz
 OTIsMjAxOTkwMjc5LC0xMDQ3OTAzMjUwLDIxMDg1MzMxNTksMT
 gzOTkyMTk2MywyODI0NDYxMiw4MDMyNDM4MzEsODAzMjQzODMx
