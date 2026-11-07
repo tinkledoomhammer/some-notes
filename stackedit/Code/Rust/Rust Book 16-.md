@@ -1029,8 +1029,12 @@ The `unsafe` is used only in the attribute, not the `extern`
 
 
 ### Acessing or modifying a static mut var
-* tatic variables have a fixed memory address
-* they can only store `'static` references
+Static variables 
+: have a fixed memory address
+: they can only store `'static` references
+: can be accessed saffely if they are immutable
+: `static mut` can only be safely accessed from one thread
+: mut access statics requires `unsafe`
 
 ```rust
 static mut COUNTER: u32 = 0;
@@ -1064,7 +1068,7 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MjYzODA2NywyNTc5NTk2NzEsMTMxMj
+eyJoaXN0b3J5IjpbMTUzMTEyMDM4OCwyNTc5NTk2NzEsMTMxMj
 EyODU1NSw1MzEyNjgwNTMsNTMxMjY4MDUzLDE5MDg4MzgyODEs
 MTk4MTcwNjQ2OSw4ODc5MzM1NDAsLTYwMDAyOTY0NSwxNzcwMj
 YzNTMwLC0xMzE4ODgwMzkyLDIwMTk5MDI3OSwtMTA0NzkwMzI1
