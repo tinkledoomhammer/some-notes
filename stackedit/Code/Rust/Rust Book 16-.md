@@ -923,8 +923,8 @@ match m{
 }
 ```
 
-## 20 Advanced Features
-### 20.01 Unsafe Rust
+# 20 Advanced Features
+## 20.01 Unsafe Rust
 * Exists because static analysis is conservative
 * And because underlying hardware is inherently unsafe
 `unsafe` keyword starts an unnsafe block
@@ -939,7 +939,7 @@ Tips
 : keep `unsafe` blocks small
 : enclose it within a safe abstraction and a safe API
 
-#### Dereferencing a Raw Pointer
+### Dereferencing a Raw Pointer
 `* const T`
 : an immutable raw pointer to `T`
 
@@ -966,7 +966,7 @@ unsafe { // required to deref the pointers
 	println!("r2 is : {}", *r1);
 }
 ```
-#### Calling an Unsafe Function or Method
+### Calling an Unsafe Function or Method
 * A function can be safe and contain an *unsafe* block
 * an unsafe function indicates that it has requirements
 	* that the compiler can't guarantee
@@ -1000,17 +1000,17 @@ fn split_at_mut(values: &mut[i32], mid: usize)
 	) }
 }
 ```
-
+### 
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwODgzODI4MSwxOTgxNzA2NDY5LDg4Nz
-kzMzU0MCwtNjAwMDI5NjQ1LDE3NzAyNjM1MzAsLTEzMTg4ODAz
-OTIsMjAxOTkwMjc5LC0xMDQ3OTAzMjUwLDIxMDg1MzMxNTksMT
-gzOTkyMTk2MywyODI0NDYxMiw4MDMyNDM4MzEsODAzMjQzODMx
-LC03ODgyMDE3OTQsLTQ5NDA4NDIzMSwtNTYxMzc2NjYyLC02Mz
-IwMTgxLC0xOTk1OTMxOTM4LDIwOTE2OTYwMjksMTk3MzAyNzEz
+eyJoaXN0b3J5IjpbMTM0NDk5MTAwNCwxOTA4ODM4MjgxLDE5OD
+E3MDY0NjksODg3OTMzNTQwLC02MDAwMjk2NDUsMTc3MDI2MzUz
+MCwtMTMxODg4MDM5MiwyMDE5OTAyNzksLTEwNDc5MDMyNTAsMj
+EwODUzMzE1OSwxODM5OTIxOTYzLDI4MjQ0NjEyLDgwMzI0Mzgz
+MSw4MDMyNDM4MzEsLTc4ODIwMTc5NCwtNDk0MDg0MjMxLC01Nj
+EzNzY2NjIsLTYzMjAxODEsLTE5OTU5MzE5MzgsMjA5MTY5NjAy
 OV19
 -->
