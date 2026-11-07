@@ -970,17 +970,21 @@ unsafe { // required to deref the pointers
 * A function can be safe and contain an *unsafe* block
 * an unsafe function indicates that it has requirements
 	* that the compiler can't guarantee
-	* 
+	* so it is on the caller to check the documentation
+* can only be called from an unsafe block
+* the body of an `unsafe` function is not assumed to be an `unsafe` block
+	* because the entire body might not need to be unsafe
+*Cre
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUyODgzMzAsMTc3MDI2MzUzMCwtMTMxOD
-g4MDM5MiwyMDE5OTAyNzksLTEwNDc5MDMyNTAsMjEwODUzMzE1
-OSwxODM5OTIxOTYzLDI4MjQ0NjEyLDgwMzI0MzgzMSw4MDMyND
-M4MzEsLTc4ODIwMTc5NCwtNDk0MDg0MjMxLC01NjEzNzY2NjIs
-LTYzMjAxODEsLTE5OTU5MzE5MzgsMjA5MTY5NjAyOSwxOTczMD
-I3MTM5LDE5NzMwMjcxMzksMTY1NjIyMzExNCwtMzk5ODI2MDc4
-XX0=
+eyJoaXN0b3J5IjpbLTU4ODU1NDg3OCwxNzcwMjYzNTMwLC0xMz
+E4ODgwMzkyLDIwMTk5MDI3OSwtMTA0NzkwMzI1MCwyMTA4NTMz
+MTU5LDE4Mzk5MjE5NjMsMjgyNDQ2MTIsODAzMjQzODMxLDgwMz
+I0MzgzMSwtNzg4MjAxNzk0LC00OTQwODQyMzEsLTU2MTM3NjY2
+MiwtNjMyMDE4MSwtMTk5NTkzMTkzOCwyMDkxNjk2MDI5LDE5Nz
+MwMjcxMzksMTk3MzAyNzEzOSwxNjU2MjIzMTE0LC0zOTk4MjYw
+NzhdfQ==
 -->
