@@ -1018,6 +1018,15 @@ let n= unsafe{abs(-3)};
 
 
 ### Calling Rust functions from other languages
+```rust
+#[unsafe(no_mangle)]
+pub extern "C" fn call_from_c() {
+		println!("Just called a rust function from C!");
+}
+```
+The `unsafe` is used only in the attribute, not the `extern`
+
+
 
 ### Acessing or modifying a static mut var
 
@@ -1033,11 +1042,11 @@ let n= unsafe{abs(-3)};
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxMjEyODU1NSw1MzEyNjgwNTMsNTMxMj
-Y4MDUzLDE5MDg4MzgyODEsMTk4MTcwNjQ2OSw4ODc5MzM1NDAs
-LTYwMDAyOTY0NSwxNzcwMjYzNTMwLC0xMzE4ODgwMzkyLDIwMT
-k5MDI3OSwtMTA0NzkwMzI1MCwyMTA4NTMzMTU5LDE4Mzk5MjE5
-NjMsMjgyNDQ2MTIsODAzMjQzODMxLDgwMzI0MzgzMSwtNzg4Mj
-AxNzk0LC00OTQwODQyMzEsLTU2MTM3NjY2MiwtNjMyMDE4MV19
-
+eyJoaXN0b3J5IjpbMjU3OTU5NjcxLDEzMTIxMjg1NTUsNTMxMj
+Y4MDUzLDUzMTI2ODA1MywxOTA4ODM4MjgxLDE5ODE3MDY0Njks
+ODg3OTMzNTQwLC02MDAwMjk2NDUsMTc3MDI2MzUzMCwtMTMxOD
+g4MDM5MiwyMDE5OTAyNzksLTEwNDc5MDMyNTAsMjEwODUzMzE1
+OSwxODM5OTIxOTYzLDI4MjQ0NjEyLDgwMzI0MzgzMSw4MDMyND
+M4MzEsLTc4ODIwMTc5NCwtNDk0MDg0MjMxLC01NjEzNzY2NjJd
+fQ==
 -->
