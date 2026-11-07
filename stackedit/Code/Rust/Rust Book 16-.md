@@ -1012,7 +1012,8 @@ unsafe extern "C" {
 	fn abs(input: i32) -> i32;
 }
 //can only be called in an unsafe block
-let n= unsafe[abs(-3)}
+let n= unsafe{abs(-3)};
+//n==3
 ```
 
 
@@ -1032,7 +1033,7 @@ let n= unsafe[abs(-3)}
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NDk2OTUwNyw1MzEyNjgwNTMsNTMxMj
+eyJoaXN0b3J5IjpbMTMxMjEyODU1NSw1MzEyNjgwNTMsNTMxMj
 Y4MDUzLDE5MDg4MzgyODEsMTk4MTcwNjQ2OSw4ODc5MzM1NDAs
 LTYwMDAyOTY0NSwxNzcwMjYzNTMwLC0xMzE4ODgwMzkyLDIwMT
 k5MDI3OSwtMTA0NzkwMzI1MCwyMTA4NTMzMTU5LDE4Mzk5MjE5
