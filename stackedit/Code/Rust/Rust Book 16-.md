@@ -1079,8 +1079,11 @@ Described in [the Rust Reference](https://doc.rust-lang.org/reference/items/unio
 
 ### Using Miri to check unsafe code
 
->Miri is a _dynamic_ tool that works at runtime. It checks your code by running your program, or its test suite, and detecting when you violate the rules it understands about how Rust should work.
+>Miri [is] an official Rust tool for detecting undefined behavior. Whereas the borrow checker is a _static_ tool that works at compile time, Miri is a _dynamic_ tool that works at runtime. It checks your code by running your program, or its test suite, and detecting when you violate the rules it understands about how Rust should work.
 
+Miri requires a nightly build of rust
+Installed with `rustup +nnightly component add miri`
+run with `
 
 
 ### Using unsafe code correctly
@@ -1097,7 +1100,7 @@ Described in [the Rust Reference](https://doc.rust-lang.org/reference/items/unio
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNDM0OTY3NywxNTMxMTIwMzg4LDI1Nz
+eyJoaXN0b3J5IjpbLTYyMTYxMTQ0OCwxNTMxMTIwMzg4LDI1Nz
 k1OTY3MSwxMzEyMTI4NTU1LDUzMTI2ODA1Myw1MzEyNjgwNTMs
 MTkwODgzODI4MSwxOTgxNzA2NDY5LDg4NzkzMzU0MCwtNjAwMD
 I5NjQ1LDE3NzAyNjM1MzAsLTEzMTg4ODAzOTIsMjAxOTkwMjc5
