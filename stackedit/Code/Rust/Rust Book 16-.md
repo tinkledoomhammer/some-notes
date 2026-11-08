@@ -1062,6 +1062,11 @@ fn main() {
 : has at least one method that has some  invariant that the compiler can't verify
 : declared by placing the `unsafe` keyword before the `trait` keyword
 
+```rust
+unsafe trait Foo { /* methods */ }
+unsafe impl Foo { /* method implementations */ }
+```
+* Manually implementing `Send` and `Sync` 
 
 ### Accessing fields of a union
 
@@ -1081,11 +1086,11 @@ fn main() {
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNzI1ODE2LDE1MzExMjAzODgsMjU3OT
-U5NjcxLDEzMTIxMjg1NTUsNTMxMjY4MDUzLDUzMTI2ODA1Mywx
-OTA4ODM4MjgxLDE5ODE3MDY0NjksODg3OTMzNTQwLC02MDAwMj
-k2NDUsMTc3MDI2MzUzMCwtMTMxODg4MDM5MiwyMDE5OTAyNzks
-LTEwNDc5MDMyNTAsMjEwODUzMzE1OSwxODM5OTIxOTYzLDI4Mj
-Q0NjEyLDgwMzI0MzgzMSw4MDMyNDM4MzEsLTc4ODIwMTc5NF19
-
+eyJoaXN0b3J5IjpbLTc3MDA4MjE3MiwxNTMxMTIwMzg4LDI1Nz
+k1OTY3MSwxMzEyMTI4NTU1LDUzMTI2ODA1Myw1MzEyNjgwNTMs
+MTkwODgzODI4MSwxOTgxNzA2NDY5LDg4NzkzMzU0MCwtNjAwMD
+I5NjQ1LDE3NzAyNjM1MzAsLTEzMTg4ODAzOTIsMjAxOTkwMjc5
+LC0xMDQ3OTAzMjUwLDIxMDg1MzMxNTksMTgzOTkyMTk2MywyOD
+I0NDYxMiw4MDMyNDM4MzEsODAzMjQzODMxLC03ODgyMDE3OTRd
+fQ==
 -->
