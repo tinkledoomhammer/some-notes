@@ -1083,7 +1083,10 @@ Described in [the Rust Reference](https://doc.rust-lang.org/reference/items/unio
 
 Miri requires a nightly build of rust
 Installed with `rustup +nnightly component add miri`
-run with `
+run with `cargo +nightly miri run` or `cargo +nightly miri test`
+
+An example of its output:
+`error: Undefined Behavior: pointer not dereferenceable: pointer must be dereferenceable for 40000 bytes, but got 0x1234[noalloc] which is a dangling pointer (it has no provenance)`
 
 
 ### Using unsafe code correctly
@@ -1100,7 +1103,7 @@ run with `
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMTYxMTQ0OCwxNTMxMTIwMzg4LDI1Nz
+eyJoaXN0b3J5IjpbLTY3MDMyMDk4OCwxNTMxMTIwMzg4LDI1Nz
 k1OTY3MSwxMzEyMTI4NTU1LDUzMTI2ODA1Myw1MzEyNjgwNTMs
 MTkwODgzODI4MSwxOTgxNzA2NDY5LDg4NzkzMzU0MCwtNjAwMD
 I5NjQ1LDE3NzAyNjM1MzAsLTEzMTg4ODAzOTIsMjAxOTkwMjc5
