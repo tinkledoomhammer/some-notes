@@ -1001,11 +1001,12 @@ fn split_at_mut(values: &mut[i32], mid: usize)
 }
 ```
 
-### Using `extern` functions to call external code
+### Using `extern` functions 
 
 Foreign Function Interface (FFI)
 : a way for programming languages to define functions and enable a different programming language to call those functions
 
+**Calling extern functions**
 ```rust
 //wraps the `abs` function from the c standard library
 unsafe extern "C" {
@@ -1057,6 +1058,9 @@ fn main() {
 
 
 ### Implementing an unsafe trait
+`unsafe` trait
+: has at least one metho
+
 
 ### Accessing fields of a union
 
@@ -1066,9 +1070,17 @@ fn main() {
 
 ## 20.02 Advanced Traits
 
+
+
+
+
+
+
+
+.
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDQ2NDY4ODcsMTUzMTEyMDM4OCwyNT
+eyJoaXN0b3J5IjpbLTE3NTg0MzA5OTQsMTUzMTEyMDM4OCwyNT
 c5NTk2NzEsMTMxMjEyODU1NSw1MzEyNjgwNTMsNTMxMjY4MDUz
 LDE5MDg4MzgyODEsMTk4MTcwNjQ2OSw4ODc5MzM1NDAsLTYwMD
 AyOTY0NSwxNzcwMjYzNTMwLC0xMzE4ODgwMzkyLDIwMTk5MDI3
