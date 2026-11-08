@@ -1017,7 +1017,7 @@ let n= unsafe{abs(-3)};
 ```
 
 
-### Calling Rust functions from other languages
+#### Calling Rust functions from other languages
 ```rust
 #[unsafe(no_mangle)]
 pub extern "C" fn call_from_c() {
@@ -1068,11 +1068,11 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMTEyMDM4OCwyNTc5NTk2NzEsMTMxMj
-EyODU1NSw1MzEyNjgwNTMsNTMxMjY4MDUzLDE5MDg4MzgyODEs
-MTk4MTcwNjQ2OSw4ODc5MzM1NDAsLTYwMDAyOTY0NSwxNzcwMj
-YzNTMwLC0xMzE4ODgwMzkyLDIwMTk5MDI3OSwtMTA0NzkwMzI1
-MCwyMTA4NTMzMTU5LDE4Mzk5MjE5NjMsMjgyNDQ2MTIsODAzMj
-QzODMxLDgwMzI0MzgzMSwtNzg4MjAxNzk0LC00OTQwODQyMzFd
-fQ==
+eyJoaXN0b3J5IjpbLTEwNDQ2NDY4ODcsMTUzMTEyMDM4OCwyNT
+c5NTk2NzEsMTMxMjEyODU1NSw1MzEyNjgwNTMsNTMxMjY4MDUz
+LDE5MDg4MzgyODEsMTk4MTcwNjQ2OSw4ODc5MzM1NDAsLTYwMD
+AyOTY0NSwxNzcwMjYzNTMwLC0xMzE4ODgwMzkyLDIwMTk5MDI3
+OSwtMTA0NzkwMzI1MCwyMTA4NTMzMTU5LDE4Mzk5MjE5NjMsMj
+gyNDQ2MTIsODAzMjQzODMxLDgwMzI0MzgzMSwtNzg4MjAxNzk0
+XX0=
 -->
