@@ -1088,6 +1088,8 @@ run with `cargo +nightly miri run` or `cargo +nightly miri test`
 An example of its output:
 `error: Undefined Behavior: pointer not dereferenceable: pointer must be dereferenceable for 40000 bytes, but got 0x1234[noalloc] which is a dangling pointer (it has no provenance)`
 
+* Miri can only catch problems with code that actually gets run
+* It does not cover every way
 
 ### Using unsafe code correctly
 
@@ -1103,7 +1105,7 @@ An example of its output:
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MDMyMDk4OCwxNTMxMTIwMzg4LDI1Nz
+eyJoaXN0b3J5IjpbLTI3MzMyMjc1MywxNTMxMTIwMzg4LDI1Nz
 k1OTY3MSwxMzEyMTI4NTU1LDUzMTI2ODA1Myw1MzEyNjgwNTMs
 MTkwODgzODI4MSwxOTgxNzA2NDY5LDg4NzkzMzU0MCwtNjAwMD
 I5NjQ1LDE3NzAyNjM1MzAsLTEzMTg4ODAzOTIsMjAxOTkwMjc5
