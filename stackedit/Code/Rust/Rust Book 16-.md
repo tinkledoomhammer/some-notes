@@ -1059,7 +1059,8 @@ fn main() {
 
 ### Implementing an unsafe trait
 `unsafe` trait
-: has at least one metho
+: has at least one method that has some  invariant that the compiler can't verify
+: declared by placing the `unsafe` keyword before the `trait` keyword
 
 
 ### Accessing fields of a union
@@ -1080,11 +1081,11 @@ fn main() {
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTg0MzA5OTQsMTUzMTEyMDM4OCwyNT
-c5NTk2NzEsMTMxMjEyODU1NSw1MzEyNjgwNTMsNTMxMjY4MDUz
-LDE5MDg4MzgyODEsMTk4MTcwNjQ2OSw4ODc5MzM1NDAsLTYwMD
-AyOTY0NSwxNzcwMjYzNTMwLC0xMzE4ODgwMzkyLDIwMTk5MDI3
-OSwtMTA0NzkwMzI1MCwyMTA4NTMzMTU5LDE4Mzk5MjE5NjMsMj
-gyNDQ2MTIsODAzMjQzODMxLDgwMzI0MzgzMSwtNzg4MjAxNzk0
-XX0=
+eyJoaXN0b3J5IjpbMTkwNzI1ODE2LDE1MzExMjAzODgsMjU3OT
+U5NjcxLDEzMTIxMjg1NTUsNTMxMjY4MDUzLDUzMTI2ODA1Mywx
+OTA4ODM4MjgxLDE5ODE3MDY0NjksODg3OTMzNTQwLC02MDAwMj
+k2NDUsMTc3MDI2MzUzMCwtMTMxODg4MDM5MiwyMDE5OTAyNzks
+LTEwNDc5MDMyNTAsMjEwODUzMzE1OSwxODM5OTIxOTYzLDI4Mj
+Q0NjEyLDgwMzI0MzgzMSw4MDMyNDM4MzEsLTc4ODIwMTc5NF19
+
 -->
