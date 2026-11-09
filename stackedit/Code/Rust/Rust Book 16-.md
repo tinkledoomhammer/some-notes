@@ -1107,7 +1107,9 @@ An example of its output:
 
 ## 20.03 Advanced Types
 
-## 20.04 Advanced 
+## 20.04 Advanced Functions and Closures
+
+## 20.05 Macros
 
 
 
@@ -1117,7 +1119,7 @@ An example of its output:
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5MTMzOTIxNyw5MzIxMjk1MjQsMTUzMT
+eyJoaXN0b3J5IjpbLTU2NTQyODQ0Myw5MzIxMjk1MjQsMTUzMT
 EyMDM4OCwyNTc5NTk2NzEsMTMxMjEyODU1NSw1MzEyNjgwNTMs
 NTMxMjY4MDUzLDE5MDg4MzgyODEsMTk4MTcwNjQ2OSw4ODc5Mz
 M1NDAsLTYwMDAyOTY0NSwxNzcwMjYzNTMwLC0xMzE4ODgwMzky
