@@ -1145,6 +1145,7 @@ trait Add<Rhs=Self>{
 ### Disambiguating Between Identically Named Methods
 
 **When a type impl's more than one trait with the same method**
+use 
 ```rust
 trait Pilot{ fn fly(&self); }
 trait Wizard{ fn fly(&self);}
@@ -1169,7 +1170,7 @@ let person = Human;
 
 when `trait::method` is ambiguous
 : because more than one type implements the trait, and it doesn't take a `self`
-
+: `<Type as Trait>::fn_name()`
 
 
 
@@ -1192,7 +1193,7 @@ when `trait::method` is ambiguous
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNzQ4MDA4OSwyMTIzODcyMjkyLC01Nj
+eyJoaXN0b3J5IjpbMTQ5NzU3NTQ3OSwyMTIzODcyMjkyLC01Nj
 U0Mjg0NDMsOTMyMTI5NTI0LDE1MzExMjAzODgsMjU3OTU5Njcx
 LDEzMTIxMjg1NTUsNTMxMjY4MDUzLDUzMTI2ODA1MywxOTA4OD
 M4MjgxLDE5ODE3MDY0NjksODg3OTMzNTQwLC02MDAwMjk2NDUs
