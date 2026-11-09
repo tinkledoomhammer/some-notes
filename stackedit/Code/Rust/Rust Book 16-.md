@@ -1094,7 +1094,20 @@ An example of its output:
 
 ## 20.02 Advanced Traits
 
+### Defining Traits with Associated Types
 
+### Using Default Generic Parameters and Operator Overloading
+
+### Disambiguating Between Identically Named Methods
+
+### Using Supertraits
+
+### Implementing External Traits with NewTypes Pattern
+
+
+## 20.03 Advanced Types
+
+## 20.04 Advanced 
 
 
 
@@ -1104,11 +1117,11 @@ An example of its output:
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMyMTI5NTI0LDE1MzExMjAzODgsMjU3OT
-U5NjcxLDEzMTIxMjg1NTUsNTMxMjY4MDUzLDUzMTI2ODA1Mywx
-OTA4ODM4MjgxLDE5ODE3MDY0NjksODg3OTMzNTQwLC02MDAwMj
-k2NDUsMTc3MDI2MzUzMCwtMTMxODg4MDM5MiwyMDE5OTAyNzks
-LTEwNDc5MDMyNTAsMjEwODUzMzE1OSwxODM5OTIxOTYzLDI4Mj
-Q0NjEyLDgwMzI0MzgzMSw4MDMyNDM4MzEsLTc4ODIwMTc5NF19
+eyJoaXN0b3J5IjpbLTM5MTMzOTIxNyw5MzIxMjk1MjQsMTUzMT
+EyMDM4OCwyNTc5NTk2NzEsMTMxMjEyODU1NSw1MzEyNjgwNTMs
+NTMxMjY4MDUzLDE5MDg4MzgyODEsMTk4MTcwNjQ2OSw4ODc5Mz
+M1NDAsLTYwMDAyOTY0NSwxNzcwMjYzNTMwLC0xMzE4ODgwMzky
+LDIwMTk5MDI3OSwtMTA0NzkwMzI1MCwyMTA4NTMzMTU5LDE4Mz
+k5MjE5NjMsMjgyNDQ2MTIsODAzMjQzODMxLDgwMzI0MzgzMV19
 
 -->
