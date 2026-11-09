@@ -1128,8 +1128,17 @@ struct Point{
 impl Add for Point {
 	type Output = Point;
 	fn add(self, other: Point) -> Point {
-		P
+		Point{x: self.x+ other.x, y: self.y + other.y}
+	}
+}
+//The std::ops::Add trait:
+trait Add<Rhs=Self>{
+	type Output;
+	fn add(self, rhs: Rhs) -> Self::Output;
+}
 ```
+
+
 
 
 ### Disambiguating Between Identically Named Methods
@@ -1153,11 +1162,11 @@ impl Add for Point {
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5NjgxODE3NSwyMTIzODcyMjkyLC01Nj
-U0Mjg0NDMsOTMyMTI5NTI0LDE1MzExMjAzODgsMjU3OTU5Njcx
-LDEzMTIxMjg1NTUsNTMxMjY4MDUzLDUzMTI2ODA1MywxOTA4OD
-M4MjgxLDE5ODE3MDY0NjksODg3OTMzNTQwLC02MDAwMjk2NDUs
-MTc3MDI2MzUzMCwtMTMxODg4MDM5MiwyMDE5OTAyNzksLTEwND
-c5MDMyNTAsMjEwODUzMzE1OSwxODM5OTIxOTYzLDI4MjQ0NjEy
-XX0=
+eyJoaXN0b3J5IjpbOTgyNzc4NzQ3LDIxMjM4NzIyOTIsLTU2NT
+QyODQ0Myw5MzIxMjk1MjQsMTUzMTEyMDM4OCwyNTc5NTk2NzEs
+MTMxMjEyODU1NSw1MzEyNjgwNTMsNTMxMjY4MDUzLDE5MDg4Mz
+gyODEsMTk4MTcwNjQ2OSw4ODc5MzM1NDAsLTYwMDAyOTY0NSwx
+NzcwMjYzNTMwLC0xMzE4ODgwMzkyLDIwMTk5MDI3OSwtMTA0Nz
+kwMzI1MCwyMTA4NTMzMTU5LDE4Mzk5MjE5NjMsMjgyNDQ2MTJd
+fQ==
 -->
