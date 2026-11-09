@@ -1175,7 +1175,8 @@ when `trait::method` is ambiguous
 
 
 ### Using Supertraits
-
+Supertrait
+: A trait upponwhich another trait d
 ### Implementing External Traits with NewTypes Pattern
 
 
@@ -1193,11 +1194,11 @@ when `trait::method` is ambiguous
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0ODk3NDkyOCwtMTU1MjUzNTc2NywyMT
-IzODcyMjkyLC01NjU0Mjg0NDMsOTMyMTI5NTI0LDE1MzExMjAz
-ODgsMjU3OTU5NjcxLDEzMTIxMjg1NTUsNTMxMjY4MDUzLDUzMT
-I2ODA1MywxOTA4ODM4MjgxLDE5ODE3MDY0NjksODg3OTMzNTQw
-LC02MDAwMjk2NDUsMTc3MDI2MzUzMCwtMTMxODg4MDM5MiwyMD
-E5OTAyNzksLTEwNDc5MDMyNTAsMjEwODUzMzE1OSwxODM5OTIx
-OTYzXX0=
+eyJoaXN0b3J5IjpbMTExNDg1MTQ2NiwxMzQ4OTc0OTI4LC0xNT
+UyNTM1NzY3LDIxMjM4NzIyOTIsLTU2NTQyODQ0Myw5MzIxMjk1
+MjQsMTUzMTEyMDM4OCwyNTc5NTk2NzEsMTMxMjEyODU1NSw1Mz
+EyNjgwNTMsNTMxMjY4MDUzLDE5MDg4MzgyODEsMTk4MTcwNjQ2
+OSw4ODc5MzM1NDAsLTYwMDAyOTY0NSwxNzcwMjYzNTMwLC0xMz
+E4ODgwMzkyLDIwMTk5MDI3OSwtMTA0NzkwMzI1MCwyMTA4NTMz
+MTU5XX0=
 -->
