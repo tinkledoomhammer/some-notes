@@ -1151,7 +1151,17 @@ impl Pilot for Human{
 	fn fly(&self) { println("This is your captain.");}
 }
 impl Wizard for Human{
-	fn fly(&self) { prinln!("Up!")
+	fn fly(&self) { prinln!("Up!");}
+}
+impl Human{
+	fn fly(&self) { println!("*waving arms furiously*");}
+}
+fn main(){
+let person = Human;
+Pilot::fly(&person);
+Wizard::fly(&person);//up
+person.fly(); // waving arms
+}
 ```
 ### Using Supertraits
 
@@ -1172,11 +1182,11 @@ impl Wizard for Human{
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkxOTMxMjcsMjEyMzg3MjI5MiwtNTY1ND
-I4NDQzLDkzMjEyOTUyNCwxNTMxMTIwMzg4LDI1Nzk1OTY3MSwx
-MzEyMTI4NTU1LDUzMTI2ODA1Myw1MzEyNjgwNTMsMTkwODgzOD
-I4MSwxOTgxNzA2NDY5LDg4NzkzMzU0MCwtNjAwMDI5NjQ1LDE3
-NzAyNjM1MzAsLTEzMTg4ODAzOTIsMjAxOTkwMjc5LC0xMDQ3OT
-AzMjUwLDIxMDg1MzMxNTksMTgzOTkyMTk2MywyODI0NDYxMl19
-
+eyJoaXN0b3J5IjpbLTE4NTcyOTg2MjAsMjEyMzg3MjI5MiwtNT
+Y1NDI4NDQzLDkzMjEyOTUyNCwxNTMxMTIwMzg4LDI1Nzk1OTY3
+MSwxMzEyMTI4NTU1LDUzMTI2ODA1Myw1MzEyNjgwNTMsMTkwOD
+gzODI4MSwxOTgxNzA2NDY5LDg4NzkzMzU0MCwtNjAwMDI5NjQ1
+LDE3NzAyNjM1MzAsLTEzMTg4ODAzOTIsMjAxOTkwMjc5LC0xMD
+Q3OTAzMjUwLDIxMDg1MzMxNTksMTgzOTkyMTk2MywyODI0NDYx
+Ml19
 -->
