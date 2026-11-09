@@ -1095,7 +1095,16 @@ An example of its output:
 ## 20.02 Advanced Traits
 
 ### Defining Traits with Associated Types
-
+```rust
+pub trait Iterator {
+	type Item;
+	fn next(&mut self) -> Option<Self::Item>;
+}
+impl Iterator for Counter {
+	type Item = u32;
+	fn next(&mut self) -> Option<Self::Item> {/*...*/}
+}
+```
 ### Using Default Generic Parameters and Operator Overloading
 
 ### Disambiguating Between Identically Named Methods
@@ -1119,11 +1128,11 @@ An example of its output:
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2NTQyODQ0Myw5MzIxMjk1MjQsMTUzMT
-EyMDM4OCwyNTc5NTk2NzEsMTMxMjEyODU1NSw1MzEyNjgwNTMs
-NTMxMjY4MDUzLDE5MDg4MzgyODEsMTk4MTcwNjQ2OSw4ODc5Mz
-M1NDAsLTYwMDAyOTY0NSwxNzcwMjYzNTMwLC0xMzE4ODgwMzky
-LDIwMTk5MDI3OSwtMTA0NzkwMzI1MCwyMTA4NTMzMTU5LDE4Mz
-k5MjE5NjMsMjgyNDQ2MTIsODAzMjQzODMxLDgwMzI0MzgzMV19
-
+eyJoaXN0b3J5IjpbLTE1NjM1NzUwODksLTU2NTQyODQ0Myw5Mz
+IxMjk1MjQsMTUzMTEyMDM4OCwyNTc5NTk2NzEsMTMxMjEyODU1
+NSw1MzEyNjgwNTMsNTMxMjY4MDUzLDE5MDg4MzgyODEsMTk4MT
+cwNjQ2OSw4ODc5MzM1NDAsLTYwMDAyOTY0NSwxNzcwMjYzNTMw
+LC0xMzE4ODgwMzkyLDIwMTk5MDI3OSwtMTA0NzkwMzI1MCwyMT
+A4NTMzMTU5LDE4Mzk5MjE5NjMsMjgyNDQ2MTIsODAzMjQzODMx
+XX0=
 -->
