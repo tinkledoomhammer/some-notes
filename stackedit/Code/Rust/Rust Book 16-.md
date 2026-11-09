@@ -1158,11 +1158,12 @@ impl Human{
 }
 fn main(){
 let person = Human;
-Pilot::fly(&person);
-Wizard::fly(&person);//up
-person.fly(); // waving arms
+	Pilot::fly(&person);//captain
+	Wizard::fly(&person);//up
+	person.fly(); // waving arms
 }
 ```
+** The fn on the concrete 
 ### Using Supertraits
 
 ### Implementing External Traits with NewTypes Pattern
@@ -1182,7 +1183,7 @@ person.fly(); // waving arms
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTcyOTg2MjAsMjEyMzg3MjI5MiwtNT
+eyJoaXN0b3J5IjpbLTE1NjkyMTg5ODIsMjEyMzg3MjI5MiwtNT
 Y1NDI4NDQzLDkzMjEyOTUyNCwxNTMxMTIwMzg4LDI1Nzk1OTY3
 MSwxMzEyMTI4NTU1LDUzMTI2ODA1Myw1MzEyNjgwNTMsMTkwOD
 gzODI4MSwxOTgxNzA2NDY5LDg4NzkzMzU0MCwtNjAwMDI5NjQ1
