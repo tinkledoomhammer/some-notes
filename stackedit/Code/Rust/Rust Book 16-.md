@@ -1117,7 +1117,19 @@ Implementations **must** specify the associated type
 : syntax allows omitting type specifiers in the implementation when the default is desired
 
 **Operator Overloading**
-Operators 
+Operators with corresponding traits in `std::ops` can be overloaded by implementing the trait
+```rust
+use std::ops::Add;
+#[derive(Debug, Copy, Clone, PartialEq)]
+struct Point{
+	x: i32,
+	y: i32,
+}
+impl Add for Point {
+	type Output = Point;
+	fn add(self, other: Point) -> Point {
+		P
+```
 
 
 ### Disambiguating Between Identically Named Methods
@@ -1141,7 +1153,7 @@ Operators
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDEyMjIwNywyMTIzODcyMjkyLC01Nj
+eyJoaXN0b3J5IjpbLTg5NjgxODE3NSwyMTIzODcyMjkyLC01Nj
 U0Mjg0NDMsOTMyMTI5NTI0LDE1MzExMjAzODgsMjU3OTU5Njcx
 LDEzMTIxMjg1NTUsNTMxMjY4MDUzLDUzMTI2ODA1MywxOTA4OD
 M4MjgxLDE5ODE3MDY0NjksODg3OTMzNTQwLC02MDAwMjk2NDUs
