@@ -1151,16 +1151,16 @@ trait Pilot{ fn fly(&self); }
 trait Wizard{ fn fly(&self);}
 struct Human;
 impl Pilot for Human{
-	fn fly(&self) { println("This is your captain.");}
+	fn fly(&self) { println!("This is your captain.");}
 }
 impl Wizard for Human{
-	fn fly(&self) { prinln!("Up!");}
+	fn fly(&self) { println!("Up!");}
 }
 impl Human{
 	fn fly(&self) { println!("*waving arms furiously*");}
 }
 fn main(){
-let person = Human;
+	let person = Human;
 	Pilot::fly(&person);//captain
 	Wizard::fly(&person);//up
 	person.fly(); // waving arms
@@ -1193,11 +1193,11 @@ when `trait::method` is ambiguous
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTI1MzU3NjcsMjEyMzg3MjI5MiwtNT
-Y1NDI4NDQzLDkzMjEyOTUyNCwxNTMxMTIwMzg4LDI1Nzk1OTY3
-MSwxMzEyMTI4NTU1LDUzMTI2ODA1Myw1MzEyNjgwNTMsMTkwOD
-gzODI4MSwxOTgxNzA2NDY5LDg4NzkzMzU0MCwtNjAwMDI5NjQ1
-LDE3NzAyNjM1MzAsLTEzMTg4ODAzOTIsMjAxOTkwMjc5LC0xMD
-Q3OTAzMjUwLDIxMDg1MzMxNTksMTgzOTkyMTk2MywyODI0NDYx
-Ml19
+eyJoaXN0b3J5IjpbMTM0ODk3NDkyOCwtMTU1MjUzNTc2NywyMT
+IzODcyMjkyLC01NjU0Mjg0NDMsOTMyMTI5NTI0LDE1MzExMjAz
+ODgsMjU3OTU5NjcxLDEzMTIxMjg1NTUsNTMxMjY4MDUzLDUzMT
+I2ODA1MywxOTA4ODM4MjgxLDE5ODE3MDY0NjksODg3OTMzNTQw
+LC02MDAwMjk2NDUsMTc3MDI2MzUzMCwtMTMxODg4MDM5MiwyMD
+E5OTAyNzksLTEwNDc5MDMyNTAsMjEwODUzMzE1OSwxODM5OTIx
+OTYzXX0=
 -->
