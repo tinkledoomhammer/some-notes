@@ -1115,7 +1115,9 @@ Implementations **must** specify the associated type
 
 `<PlaceholderType=ConcreteType>`
 : syntax allows omitting type specifiers in the implementation when the default is desired
-
+Uses:
+1. To extend a type without breaking existing code
+1. To allow customization in specific cases most users won't need
 **Operator Overloading**
 Operators with corresponding traits in `std::ops` can be overloaded by implementing the trait
 ```rust
@@ -1133,6 +1135,7 @@ impl Add for Point {
 }
 //The std::ops::Add trait:
 trait Add<Rhs=Self>{
+	// Rhs = "right hand side"
 	type Output;
 	fn add(self, rhs: Rhs) -> Self::Output;
 }
@@ -1162,11 +1165,11 @@ trait Add<Rhs=Self>{
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgyNzc4NzQ3LDIxMjM4NzIyOTIsLTU2NT
-QyODQ0Myw5MzIxMjk1MjQsMTUzMTEyMDM4OCwyNTc5NTk2NzEs
-MTMxMjEyODU1NSw1MzEyNjgwNTMsNTMxMjY4MDUzLDE5MDg4Mz
-gyODEsMTk4MTcwNjQ2OSw4ODc5MzM1NDAsLTYwMDAyOTY0NSwx
-NzcwMjYzNTMwLC0xMzE4ODgwMzkyLDIwMTk5MDI3OSwtMTA0Nz
-kwMzI1MCwyMTA4NTMzMTU5LDE4Mzk5MjE5NjMsMjgyNDQ2MTJd
-fQ==
+eyJoaXN0b3J5IjpbLTUwODU3OTMyNSwyMTIzODcyMjkyLC01Nj
+U0Mjg0NDMsOTMyMTI5NTI0LDE1MzExMjAzODgsMjU3OTU5Njcx
+LDEzMTIxMjg1NTUsNTMxMjY4MDUzLDUzMTI2ODA1MywxOTA4OD
+M4MjgxLDE5ODE3MDY0NjksODg3OTMzNTQwLC02MDAwMjk2NDUs
+MTc3MDI2MzUzMCwtMTMxODg4MDM5MiwyMDE5OTAyNzksLTEwND
+c5MDMyNTAsMjEwODUzMzE1OSwxODM5OTIxOTYzLDI4MjQ0NjEy
+XX0=
 -->
