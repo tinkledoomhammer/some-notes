@@ -1143,7 +1143,16 @@ trait Add<Rhs=Self>{
 ```
 
 ### Disambiguating Between Identically Named Methods
-
+```rust
+trait Pilot{ fn fly(&self); }
+trait Wizard{ fn fly(&self);}
+struct Human;
+impl Pilot for Human{
+	fn fly(&self) { println("This is your captain.");}
+}
+impl Wizard for Human{
+	fn fly(&self) { prinln!("Up!")
+```
 ### Using Supertraits
 
 ### Implementing External Traits with NewTypes Pattern
@@ -1163,11 +1172,11 @@ trait Add<Rhs=Self>{
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyNjEwMzYxLDIxMjM4NzIyOTIsLTU2NT
-QyODQ0Myw5MzIxMjk1MjQsMTUzMTEyMDM4OCwyNTc5NTk2NzEs
-MTMxMjEyODU1NSw1MzEyNjgwNTMsNTMxMjY4MDUzLDE5MDg4Mz
-gyODEsMTk4MTcwNjQ2OSw4ODc5MzM1NDAsLTYwMDAyOTY0NSwx
-NzcwMjYzNTMwLC0xMzE4ODgwMzkyLDIwMTk5MDI3OSwtMTA0Nz
-kwMzI1MCwyMTA4NTMzMTU5LDE4Mzk5MjE5NjMsMjgyNDQ2MTJd
-fQ==
+eyJoaXN0b3J5IjpbOTkxOTMxMjcsMjEyMzg3MjI5MiwtNTY1ND
+I4NDQzLDkzMjEyOTUyNCwxNTMxMTIwMzg4LDI1Nzk1OTY3MSwx
+MzEyMTI4NTU1LDUzMTI2ODA1Myw1MzEyNjgwNTMsMTkwODgzOD
+I4MSwxOTgxNzA2NDY5LDg4NzkzMzU0MCwtNjAwMDI5NjQ1LDE3
+NzAyNjM1MzAsLTEzMTg4ODAzOTIsMjAxOTkwMjc5LC0xMDQ3OT
+AzMjUwLDIxMDg1MzMxNTksMTgzOTkyMTk2MywyODI0NDYxMl19
+
 -->
