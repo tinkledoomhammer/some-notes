@@ -1112,11 +1112,12 @@ With Associated types, type annotations are not needed
 Implementations **must** specify the associated type
 
 ### Using Default Generic Parameters and Operator Overloading
+
 `<PlaceholderType=ConcreteType>`
 : syntax allows omitting type specifiers in the implementation when the default is desired
 
-Operator Overloading
-
+**Operator Overloading**
+Operators 
 
 
 ### Disambiguating Between Identically Named Methods
@@ -1140,11 +1141,11 @@ Operator Overloading
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMzg3MjI5MiwtNTY1NDI4NDQzLDkzMj
-EyOTUyNCwxNTMxMTIwMzg4LDI1Nzk1OTY3MSwxMzEyMTI4NTU1
-LDUzMTI2ODA1Myw1MzEyNjgwNTMsMTkwODgzODI4MSwxOTgxNz
-A2NDY5LDg4NzkzMzU0MCwtNjAwMDI5NjQ1LDE3NzAyNjM1MzAs
-LTEzMTg4ODAzOTIsMjAxOTkwMjc5LC0xMDQ3OTAzMjUwLDIxMD
-g1MzMxNTksMTgzOTkyMTk2MywyODI0NDYxMiw4MDMyNDM4MzFd
-fQ==
+eyJoaXN0b3J5IjpbLTE3MDEyMjIwNywyMTIzODcyMjkyLC01Nj
+U0Mjg0NDMsOTMyMTI5NTI0LDE1MzExMjAzODgsMjU3OTU5Njcx
+LDEzMTIxMjg1NTUsNTMxMjY4MDUzLDUzMTI2ODA1MywxOTA4OD
+M4MjgxLDE5ODE3MDY0NjksODg3OTMzNTQwLC02MDAwMjk2NDUs
+MTc3MDI2MzUzMCwtMTMxODg4MDM5MiwyMDE5OTAyNzksLTEwND
+c5MDMyNTAsMjEwODUzMzE1OSwxODM5OTIxOTYzLDI4MjQ0NjEy
+XX0=
 -->
