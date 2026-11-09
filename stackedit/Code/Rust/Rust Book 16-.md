@@ -1176,7 +1176,10 @@ when `trait::method` is ambiguous
 
 ### Using Supertraits
 Supertrait
-: A trait upponwhich another trait d
+: A trait upponwhich another trait depends
+: declared `trait UsbTrait: SuperTrait { /* ... */ }`
+
+
 ### Implementing External Traits with NewTypes Pattern
 
 
@@ -1194,7 +1197,7 @@ Supertrait
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExNDg1MTQ2NiwxMzQ4OTc0OTI4LC0xNT
+eyJoaXN0b3J5IjpbLTgyOTQ5NDg4MiwxMzQ4OTc0OTI4LC0xNT
 UyNTM1NzY3LDIxMjM4NzIyOTIsLTU2NTQyODQ0Myw5MzIxMjk1
 MjQsMTUzMTEyMDM4OCwyNTc5NTk2NzEsMTMxMjEyODU1NSw1Mz
 EyNjgwNTMsNTMxMjY4MDUzLDE5MDg4MzgyODEsMTk4MTcwNjQ2
