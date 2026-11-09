@@ -1143,6 +1143,8 @@ trait Add<Rhs=Self>{
 ```
 
 ### Disambiguating Between Identically Named Methods
+
+**When a type impl's more than one trait with the same method**
 ```rust
 trait Pilot{ fn fly(&self); }
 trait Wizard{ fn fly(&self);}
@@ -1163,7 +1165,14 @@ let person = Human;
 	person.fly(); // waving arms
 }
 ```
-** The fn on the concrete 
+** The fn on the concrete type impl takes priority **
+
+when `trait::method` is ambiguous
+: because more than one type implements the trait, and it doesn't take a `self`
+
+
+
+
 ### Using Supertraits
 
 ### Implementing External Traits with NewTypes Pattern
@@ -1183,11 +1192,11 @@ let person = Human;
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjkyMTg5ODIsMjEyMzg3MjI5MiwtNT
-Y1NDI4NDQzLDkzMjEyOTUyNCwxNTMxMTIwMzg4LDI1Nzk1OTY3
-MSwxMzEyMTI4NTU1LDUzMTI2ODA1Myw1MzEyNjgwNTMsMTkwOD
-gzODI4MSwxOTgxNzA2NDY5LDg4NzkzMzU0MCwtNjAwMDI5NjQ1
-LDE3NzAyNjM1MzAsLTEzMTg4ODAzOTIsMjAxOTkwMjc5LC0xMD
-Q3OTAzMjUwLDIxMDg1MzMxNTksMTgzOTkyMTk2MywyODI0NDYx
-Ml19
+eyJoaXN0b3J5IjpbMjAzNzQ4MDA4OSwyMTIzODcyMjkyLC01Nj
+U0Mjg0NDMsOTMyMTI5NTI0LDE1MzExMjAzODgsMjU3OTU5Njcx
+LDEzMTIxMjg1NTUsNTMxMjY4MDUzLDUzMTI2ODA1MywxOTA4OD
+M4MjgxLDE5ODE3MDY0NjksODg3OTMzNTQwLC02MDAwMjk2NDUs
+MTc3MDI2MzUzMCwtMTMxODg4MDM5MiwyMDE5OTAyNzksLTEwND
+c5MDMyNTAsMjEwODUzMzE1OSwxODM5OTIxOTYzLDI4MjQ0NjEy
+XX0=
 -->
