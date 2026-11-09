@@ -1109,8 +1109,12 @@ Differs from generics in that
 * a generic trait can be implemented for the same type multiple times
 * with differen generic params for each impl
 With Associated types, type annotations are not needed
+Implementations **must** specify the associated type
 
 ### Using Default Generic Parameters and Operator Overloading
+`<PlaceholderType=ConcreteType>`
+: syntax allows omitting type specifiers in the implem
+
 
 ### Disambiguating Between Identically Named Methods
 
@@ -1133,7 +1137,7 @@ With Associated types, type annotations are not needed
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzYxNDg0MDIsLTU2NTQyODQ0Myw5Mz
+eyJoaXN0b3J5IjpbLTIwNzMxMjAzNDQsLTU2NTQyODQ0Myw5Mz
 IxMjk1MjQsMTUzMTEyMDM4OCwyNTc5NTk2NzEsMTMxMjEyODU1
 NSw1MzEyNjgwNTMsNTMxMjY4MDUzLDE5MDg4MzgyODEsMTk4MT
 cwNjQ2OSw4ODc5MzM1NDAsLTYwMDAyOTY0NSwxNzcwMjYzNTMw
