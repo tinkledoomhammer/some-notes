@@ -1113,7 +1113,10 @@ Implementations **must** specify the associated type
 
 ### Using Default Generic Parameters and Operator Overloading
 `<PlaceholderType=ConcreteType>`
-: syntax allows omitting type specifiers in the implem
+: syntax allows omitting type specifiers in the implementation when the default is desired
+
+Operator Overloading
+
 
 
 ### Disambiguating Between Identically Named Methods
@@ -1137,11 +1140,11 @@ Implementations **must** specify the associated type
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzMxMjAzNDQsLTU2NTQyODQ0Myw5Mz
-IxMjk1MjQsMTUzMTEyMDM4OCwyNTc5NTk2NzEsMTMxMjEyODU1
-NSw1MzEyNjgwNTMsNTMxMjY4MDUzLDE5MDg4MzgyODEsMTk4MT
-cwNjQ2OSw4ODc5MzM1NDAsLTYwMDAyOTY0NSwxNzcwMjYzNTMw
-LC0xMzE4ODgwMzkyLDIwMTk5MDI3OSwtMTA0NzkwMzI1MCwyMT
-A4NTMzMTU5LDE4Mzk5MjE5NjMsMjgyNDQ2MTIsODAzMjQzODMx
-XX0=
+eyJoaXN0b3J5IjpbMjEyMzg3MjI5MiwtNTY1NDI4NDQzLDkzMj
+EyOTUyNCwxNTMxMTIwMzg4LDI1Nzk1OTY3MSwxMzEyMTI4NTU1
+LDUzMTI2ODA1Myw1MzEyNjgwNTMsMTkwODgzODI4MSwxOTgxNz
+A2NDY5LDg4NzkzMzU0MCwtNjAwMDI5NjQ1LDE3NzAyNjM1MzAs
+LTEzMTg4ODAzOTIsMjAxOTkwMjc5LC0xMDQ3OTAzMjUwLDIxMD
+g1MzMxNTksMTgzOTkyMTk2MywyODI0NDYxMiw4MDMyNDM4MzFd
+fQ==
 -->
