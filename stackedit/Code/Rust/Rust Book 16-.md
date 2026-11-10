@@ -1183,6 +1183,10 @@ Supertrait
 
 ### Implementing External Traits with NewTypes Pattern
 
+Newtype pattern
+: Thin wrappers that allow bypassing the orphan rule
+: i.e. `struct Wrapper(WrappedType);`
+: allows implementin
 
 ## 20.03 Advanced Types
 
@@ -1198,11 +1202,11 @@ Supertrait
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNDk5OTAyOCwtODI5NDk0ODgyLDEzND
-g5NzQ5MjgsLTE1NTI1MzU3NjcsMjEyMzg3MjI5MiwtNTY1NDI4
-NDQzLDkzMjEyOTUyNCwxNTMxMTIwMzg4LDI1Nzk1OTY3MSwxMz
-EyMTI4NTU1LDUzMTI2ODA1Myw1MzEyNjgwNTMsMTkwODgzODI4
-MSwxOTgxNzA2NDY5LDg4NzkzMzU0MCwtNjAwMDI5NjQ1LDE3Nz
-AyNjM1MzAsLTEzMTg4ODAzOTIsMjAxOTkwMjc5LC0xMDQ3OTAz
-MjUwXX0=
+eyJoaXN0b3J5IjpbLTE0MzU1OTIyMDksLTgyOTQ5NDg4MiwxMz
+Q4OTc0OTI4LC0xNTUyNTM1NzY3LDIxMjM4NzIyOTIsLTU2NTQy
+ODQ0Myw5MzIxMjk1MjQsMTUzMTEyMDM4OCwyNTc5NTk2NzEsMT
+MxMjEyODU1NSw1MzEyNjgwNTMsNTMxMjY4MDUzLDE5MDg4Mzgy
+ODEsMTk4MTcwNjQ2OSw4ODc5MzM1NDAsLTYwMDAyOTY0NSwxNz
+cwMjYzNTMwLC0xMzE4ODgwMzkyLDIwMTk5MDI3OSwtMTA0Nzkw
+MzI1MF19
 -->
