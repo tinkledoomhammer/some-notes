@@ -1177,7 +1177,8 @@ when `trait::method` is ambiguous
 ### Using Supertraits
 Supertrait
 : A trait upponwhich another trait depends
-: declared `trait UsbTrait: SuperTrait { /* ... */ }`
+: declared `trait SubbTrait: SuperTrait { /* ... */ }`
+: Types implementing the supertrait must also implement the subtrait
 
 
 ### Implementing External Traits with NewTypes Pattern
@@ -1197,11 +1198,11 @@ Supertrait
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyOTQ5NDg4MiwxMzQ4OTc0OTI4LC0xNT
-UyNTM1NzY3LDIxMjM4NzIyOTIsLTU2NTQyODQ0Myw5MzIxMjk1
-MjQsMTUzMTEyMDM4OCwyNTc5NTk2NzEsMTMxMjEyODU1NSw1Mz
-EyNjgwNTMsNTMxMjY4MDUzLDE5MDg4MzgyODEsMTk4MTcwNjQ2
-OSw4ODc5MzM1NDAsLTYwMDAyOTY0NSwxNzcwMjYzNTMwLC0xMz
-E4ODgwMzkyLDIwMTk5MDI3OSwtMTA0NzkwMzI1MCwyMTA4NTMz
-MTU5XX0=
+eyJoaXN0b3J5IjpbMTMzNDk5OTAyOCwtODI5NDk0ODgyLDEzND
+g5NzQ5MjgsLTE1NTI1MzU3NjcsMjEyMzg3MjI5MiwtNTY1NDI4
+NDQzLDkzMjEyOTUyNCwxNTMxMTIwMzg4LDI1Nzk1OTY3MSwxMz
+EyMTI4NTU1LDUzMTI2ODA1Myw1MzEyNjgwNTMsMTkwODgzODI4
+MSwxOTgxNzA2NDY5LDg4NzkzMzU0MCwtNjAwMDI5NjQ1LDE3Nz
+AyNjM1MzAsLTEzMTg4ODAzOTIsMjAxOTkwMjc5LC0xMDQ3OTAz
+MjUwXX0=
 -->
