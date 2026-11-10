@@ -1189,6 +1189,29 @@ Newtype pattern
 : Traits from other crates can be implemented for the wrapper
 : To also support all of the methods etc for the wrapped type, implement `Deref`
 
+
+
+>#### Question 2
+
+>Recall the definition of the `Add` trait:
+
+````trait Add<Rhs=Self> {` `type Output;` `fn add(self, rhs: Rhs) -> Self::Output;``}`
+
+>Which of the following best describes why `Rhs` is a type parameter to the trait `Add` rather than the function `add`? That is, why is `Add` not designed like this:
+
+```rust
+trait Add {
+	type Output;
+	fn add<Rhs>(self, rhs: Rhs) -> Self::Output;
+}
+```
+You answered:
+
+If `Rhs` were a function-level type parameter, then the definition of `add` could not assume any structure to `Rhs`
+
+**Context**: Such a design would not make much sense because `add<Rhs>` would not have any information about the structure of `Rhs`, so it would be impossible to implement any sensible addition function this way.
+
+
 ## 20.03 Advanced Types
 
 ## 20.04 Advanced Functions and Closures
@@ -1203,11 +1226,11 @@ Newtype pattern
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY1NjQ4MzgyLC04Mjk0OTQ4ODIsMTM0OD
-k3NDkyOCwtMTU1MjUzNTc2NywyMTIzODcyMjkyLC01NjU0Mjg0
-NDMsOTMyMTI5NTI0LDE1MzExMjAzODgsMjU3OTU5NjcxLDEzMT
-IxMjg1NTUsNTMxMjY4MDUzLDUzMTI2ODA1MywxOTA4ODM4Mjgx
-LDE5ODE3MDY0NjksODg3OTMzNTQwLC02MDAwMjk2NDUsMTc3MD
-I2MzUzMCwtMTMxODg4MDM5MiwyMDE5OTAyNzksLTEwNDc5MDMy
-NTBdfQ==
+eyJoaXN0b3J5IjpbLTc1MzQ4NDIyMSwtODI5NDk0ODgyLDEzND
+g5NzQ5MjgsLTE1NTI1MzU3NjcsMjEyMzg3MjI5MiwtNTY1NDI4
+NDQzLDkzMjEyOTUyNCwxNTMxMTIwMzg4LDI1Nzk1OTY3MSwxMz
+EyMTI4NTU1LDUzMTI2ODA1Myw1MzEyNjgwNTMsMTkwODgzODI4
+MSwxOTgxNzA2NDY5LDg4NzkzMzU0MCwtNjAwMDI5NjQ1LDE3Nz
+AyNjM1MzAsLTEzMTg4ODAzOTIsMjAxOTkwMjc5LC0xMDQ3OTAz
+MjUwXX0=
 -->
