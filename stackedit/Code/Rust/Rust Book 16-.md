@@ -1186,7 +1186,8 @@ Supertrait
 Newtype pattern
 : Thin wrappers that allow bypassing the orphan rule
 : i.e. `struct Wrapper(WrappedType);`
-: allows implementin
+: Traits from other crates can be implemented for the wrapper
+: To also support all of the methods etc for the wrapped type, implement `Deref`
 
 ## 20.03 Advanced Types
 
@@ -1202,11 +1203,11 @@ Newtype pattern
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzU1OTIyMDksLTgyOTQ5NDg4MiwxMz
-Q4OTc0OTI4LC0xNTUyNTM1NzY3LDIxMjM4NzIyOTIsLTU2NTQy
-ODQ0Myw5MzIxMjk1MjQsMTUzMTEyMDM4OCwyNTc5NTk2NzEsMT
-MxMjEyODU1NSw1MzEyNjgwNTMsNTMxMjY4MDUzLDE5MDg4Mzgy
-ODEsMTk4MTcwNjQ2OSw4ODc5MzM1NDAsLTYwMDAyOTY0NSwxNz
-cwMjYzNTMwLC0xMzE4ODgwMzkyLDIwMTk5MDI3OSwtMTA0Nzkw
-MzI1MF19
+eyJoaXN0b3J5IjpbOTY1NjQ4MzgyLC04Mjk0OTQ4ODIsMTM0OD
+k3NDkyOCwtMTU1MjUzNTc2NywyMTIzODcyMjkyLC01NjU0Mjg0
+NDMsOTMyMTI5NTI0LDE1MzExMjAzODgsMjU3OTU5NjcxLDEzMT
+IxMjg1NTUsNTMxMjY4MDUzLDUzMTI2ODA1MywxOTA4ODM4Mjgx
+LDE5ODE3MDY0NjksODg3OTMzNTQwLC02MDAwMjk2NDUsMTc3MD
+I2MzUzMCwtMTMxODg4MDM5MiwyMDE5OTAyNzksLTEwNDc5MDMy
+NTBdfQ==
 -->
