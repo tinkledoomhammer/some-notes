@@ -1218,7 +1218,10 @@ trait Add {
 ### Type aliases
 `type Thunk = Box<dyn Fn() +Send + 'static>;`
 * is not a distinct type, as opposed to the newtype pattern
-* 
+* an example from `std::io` 
+	* `type Result<T> = std::result::Result<T, std::io::Error>;`
+* is used to improve readability and reduce repetition
+
 ## 20.04 Advanced Functions and Closures
 
 ## 20.05 Macros
@@ -1231,11 +1234,11 @@ trait Add {
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDE5MjE4OTQsNTUzNTE1MzkxLC04Mj
-k0OTQ4ODIsMTM0ODk3NDkyOCwtMTU1MjUzNTc2NywyMTIzODcy
-MjkyLC01NjU0Mjg0NDMsOTMyMTI5NTI0LDE1MzExMjAzODgsMj
-U3OTU5NjcxLDEzMTIxMjg1NTUsNTMxMjY4MDUzLDUzMTI2ODA1
-MywxOTA4ODM4MjgxLDE5ODE3MDY0NjksODg3OTMzNTQwLC02MD
-AwMjk2NDUsMTc3MDI2MzUzMCwtMTMxODg4MDM5MiwyMDE5OTAy
-NzldfQ==
+eyJoaXN0b3J5IjpbNzc5NzQ1OTEzLDU1MzUxNTM5MSwtODI5ND
+k0ODgyLDEzNDg5NzQ5MjgsLTE1NTI1MzU3NjcsMjEyMzg3MjI5
+MiwtNTY1NDI4NDQzLDkzMjEyOTUyNCwxNTMxMTIwMzg4LDI1Nz
+k1OTY3MSwxMzEyMTI4NTU1LDUzMTI2ODA1Myw1MzEyNjgwNTMs
+MTkwODgzODI4MSwxOTgxNzA2NDY5LDg4NzkzMzU0MCwtNjAwMD
+I5NjQ1LDE3NzAyNjM1MzAsLTEzMTg4ODAzOTIsMjAxOTkwMjc5
+XX0=
 -->
