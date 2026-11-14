@@ -1230,9 +1230,13 @@ diverging functions
 * This allows match statemtns to have arms that return `!` while other arms return a value
 ```rust
 impl <T> Option<T> {
-		pub fn unwrap(self) -> T {
-				match self {
-						Some(val) => val
+	pub fn unwrap(self) -> T { // Type T
+			match self { // type T because ! is coerced
+				Some(val) => val, // type T
+				None=> panic!("called ..."), // type !
+			}
+	}
+}
 ```
 
 
@@ -1251,7 +1255,7 @@ impl <T> Option<T> {
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMjUxNjI1Miw1NTM1MTUzOTEsLTgyOT
+eyJoaXN0b3J5IjpbMTQ0MDA2MDUyMyw1NTM1MTUzOTEsLTgyOT
 Q5NDg4MiwxMzQ4OTc0OTI4LC0xNTUyNTM1NzY3LDIxMjM4NzIy
 OTIsLTU2NTQyODQ0Myw5MzIxMjk1MjQsMTUzMTEyMDM4OCwyNT
 c5NTk2NzEsMTMxMjEyODU1NSw1MzEyNjgwNTMsNTMxMjY4MDUz
