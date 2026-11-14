@@ -1226,6 +1226,8 @@ diverging functions
 : functions that never return
 : `fn bar() -> ! {/* ... */}`
 
+**Expressions of type `!` can be coerced into any other type**
+
 
 
 
@@ -1243,7 +1245,7 @@ diverging functions
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4NDc0NzA0LDU1MzUxNTM5MSwtODI5ND
+eyJoaXN0b3J5IjpbMTk1MTY1ODA3LDU1MzUxNTM5MSwtODI5ND
 k0ODgyLDEzNDg5NzQ5MjgsLTE1NTI1MzU3NjcsMjEyMzg3MjI5
 MiwtNTY1NDI4NDQzLDkzMjEyOTUyNCwxNTMxMTIwMzg4LDI1Nz
 k1OTY3MSwxMzEyMTI4NTU1LDUzMTI2ODA1Myw1MzEyNjgwNTMs
