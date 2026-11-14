@@ -1225,20 +1225,20 @@ trait Add {
 diverging functions
 : functions that never return
 : `fn bar() -> ! {/* ... */}`
-
+: `continue` has type `!`
 ** Expressions of type `!` can be coerced into any other type **
 * This allows match statemtns to have arms that return `!` while other arms return a value
 ```rust
 impl <T> Option<T> {
 	pub fn unwrap(self) -> T { // Type T
-			match self { // type T because ! is coerced
-				Some(val) => val, // type T
-				None=> panic!("called ..."), // type !
-			}
+		match self { // type T because ! is coerced
+			Some(val) => val, // type T
+			None=> panic!("called ..."), // type !
+		}
 	}
 }
 ```
-
+###
 
 
 
@@ -1255,11 +1255,11 @@ impl <T> Option<T> {
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MDA2MDUyMyw1NTM1MTUzOTEsLTgyOT
-Q5NDg4MiwxMzQ4OTc0OTI4LC0xNTUyNTM1NzY3LDIxMjM4NzIy
-OTIsLTU2NTQyODQ0Myw5MzIxMjk1MjQsMTUzMTEyMDM4OCwyNT
-c5NTk2NzEsMTMxMjEyODU1NSw1MzEyNjgwNTMsNTMxMjY4MDUz
-LDE5MDg4MzgyODEsMTk4MTcwNjQ2OSw4ODc5MzM1NDAsLTYwMD
-AyOTY0NSwxNzcwMjYzNTMwLC0xMzE4ODgwMzkyLDIwMTk5MDI3
-OV19
+eyJoaXN0b3J5IjpbLTIxMDA3MzAxMzgsNTUzNTE1MzkxLC04Mj
+k0OTQ4ODIsMTM0ODk3NDkyOCwtMTU1MjUzNTc2NywyMTIzODcy
+MjkyLC01NjU0Mjg0NDMsOTMyMTI5NTI0LDE1MzExMjAzODgsMj
+U3OTU5NjcxLDEzMTIxMjg1NTUsNTMxMjY4MDUzLDUzMTI2ODA1
+MywxOTA4ODM4MjgxLDE5ODE3MDY0NjksODg3OTMzNTQwLC02MD
+AwMjk2NDUsMTc3MDI2MzUzMCwtMTMxODg4MDM5MiwyMDE5OTAy
+NzldfQ==
 -->
