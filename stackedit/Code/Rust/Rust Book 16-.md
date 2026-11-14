@@ -1226,8 +1226,14 @@ diverging functions
 : functions that never return
 : `fn bar() -> ! {/* ... */}`
 
-**Expressions of type `!` can be coerced into any other type**
-
+** Expressions of type `!` can be coerced into any other type **
+* This allows match statemtns to have arms that return `!` while other arms return a value
+```rust
+impl <T> Option<T> {
+		pub fn unwrap(self) -> T {
+				match self {
+						Some(val) => val
+```
 
 
 
@@ -1245,11 +1251,11 @@ diverging functions
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MTY1ODA3LDU1MzUxNTM5MSwtODI5ND
-k0ODgyLDEzNDg5NzQ5MjgsLTE1NTI1MzU3NjcsMjEyMzg3MjI5
-MiwtNTY1NDI4NDQzLDkzMjEyOTUyNCwxNTMxMTIwMzg4LDI1Nz
-k1OTY3MSwxMzEyMTI4NTU1LDUzMTI2ODA1Myw1MzEyNjgwNTMs
-MTkwODgzODI4MSwxOTgxNzA2NDY5LDg4NzkzMzU0MCwtNjAwMD
-I5NjQ1LDE3NzAyNjM1MzAsLTEzMTg4ODAzOTIsMjAxOTkwMjc5
-XX0=
+eyJoaXN0b3J5IjpbMTMzMjUxNjI1Miw1NTM1MTUzOTEsLTgyOT
+Q5NDg4MiwxMzQ4OTc0OTI4LC0xNTUyNTM1NzY3LDIxMjM4NzIy
+OTIsLTU2NTQyODQ0Myw5MzIxMjk1MjQsMTUzMTEyMDM4OCwyNT
+c5NTk2NzEsMTMxMjEyODU1NSw1MzEyNjgwNTMsNTMxMjY4MDUz
+LDE5MDg4MzgyODEsMTk4MTcwNjQ2OSw4ODc5MzM1NDAsLTYwMD
+AyOTY0NSwxNzcwMjYzNTMwLC0xMzE4ODgwMzkyLDIwMTk5MDI3
+OV19
 -->
