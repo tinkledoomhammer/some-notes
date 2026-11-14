@@ -1215,7 +1215,10 @@ trait Add {
 
 
 ## 20.03 Advanced Types
-
+### Type aliases
+`type Thunk = Box<dyn Fn() +Send + 'static>;`
+* is not a distinct type, as opposed to the newtype pattern
+* 
 ## 20.04 Advanced Functions and Closures
 
 ## 20.05 Macros
@@ -1228,11 +1231,11 @@ trait Add {
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUzNTE1MzkxLC04Mjk0OTQ4ODIsMTM0OD
-k3NDkyOCwtMTU1MjUzNTc2NywyMTIzODcyMjkyLC01NjU0Mjg0
-NDMsOTMyMTI5NTI0LDE1MzExMjAzODgsMjU3OTU5NjcxLDEzMT
-IxMjg1NTUsNTMxMjY4MDUzLDUzMTI2ODA1MywxOTA4ODM4Mjgx
-LDE5ODE3MDY0NjksODg3OTMzNTQwLC02MDAwMjk2NDUsMTc3MD
-I2MzUzMCwtMTMxODg4MDM5MiwyMDE5OTAyNzksLTEwNDc5MDMy
-NTBdfQ==
+eyJoaXN0b3J5IjpbLTEwNDE5MjE4OTQsNTUzNTE1MzkxLC04Mj
+k0OTQ4ODIsMTM0ODk3NDkyOCwtMTU1MjUzNTc2NywyMTIzODcy
+MjkyLC01NjU0Mjg0NDMsOTMyMTI5NTI0LDE1MzExMjAzODgsMj
+U3OTU5NjcxLDEzMTIxMjg1NTUsNTMxMjY4MDUzLDUzMTI2ODA1
+MywxOTA4ODM4MjgxLDE5ODE3MDY0NjksODg3OTMzNTQwLC02MD
+AwMjk2NDUsMTc3MDI2MzUzMCwtMTMxODg4MDM5MiwyMDE5OTAy
+NzldfQ==
 -->
