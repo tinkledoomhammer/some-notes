@@ -1221,6 +1221,15 @@ trait Add {
 * an example from `std::io` 
 	* `type Result<T> = std::result::Result<T, std::io::Error>;`
 * is used to improve readability and reduce repetition
+### The never type `!`
+diverging functions
+: functions that never return
+: `fn bar() -> ! {/* ... */}`
+
+
+
+
+
 
 ## 20.04 Advanced Functions and Closures
 
@@ -1234,7 +1243,7 @@ trait Add {
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc5NzQ1OTEzLDU1MzUxNTM5MSwtODI5ND
+eyJoaXN0b3J5IjpbLTk4NDc0NzA0LDU1MzUxNTM5MSwtODI5ND
 k0ODgyLDEzNDg5NzQ5MjgsLTE1NTI1MzU3NjcsMjEyMzg3MjI5
 MiwtNTY1NDI4NDQzLDkzMjEyOTUyNCwxNTMxMTIwMzg4LDI1Nz
 k1OTY3MSwxMzEyMTI4NTU1LDUzMTI2ODA1Myw1MzEyNjgwNTMs
