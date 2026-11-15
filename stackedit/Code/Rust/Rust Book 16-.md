@@ -1216,7 +1216,7 @@ trait Add {
 
 ## 20.03 Advanced Types
 ### Type aliases
-`type Thunk = Box<dyn Fn() + staSend + 'static>;`
+`type Thunk = Box<dyn Fn() + Send + 'static>;`
 * is not a distinct type, as opposed to the newtype pattern
 * an example from `std::io` 
 	* `type Result<T> = std::result::Result<T, std::io::Error>;`
@@ -1256,11 +1256,11 @@ impl <T> Option<T> {
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIzMzM3OTk4LDE4ODk2NzQ4ODAsMTQwOD
-U3OTQ3MCw1NTM1MTUzOTEsLTgyOTQ5NDg4MiwxMzQ4OTc0OTI4
-LC0xNTUyNTM1NzY3LDIxMjM4NzIyOTIsLTU2NTQyODQ0Myw5Mz
-IxMjk1MjQsMTUzMTEyMDM4OCwyNTc5NTk2NzEsMTMxMjEyODU1
-NSw1MzEyNjgwNTMsNTMxMjY4MDUzLDE5MDg4MzgyODEsMTk4MT
-cwNjQ2OSw4ODc5MzM1NDAsLTYwMDAyOTY0NSwxNzcwMjYzNTMw
-XX0=
+eyJoaXN0b3J5IjpbMTg4OTY3NDg4MCwxODg5Njc0ODgwLDE0MD
+g1Nzk0NzAsNTUzNTE1MzkxLC04Mjk0OTQ4ODIsMTM0ODk3NDky
+OCwtMTU1MjUzNTc2NywyMTIzODcyMjkyLC01NjU0Mjg0NDMsOT
+MyMTI5NTI0LDE1MzExMjAzODgsMjU3OTU5NjcxLDEzMTIxMjg1
+NTUsNTMxMjY4MDUzLDUzMTI2ODA1MywxOTA4ODM4MjgxLDE5OD
+E3MDY0NjksODg3OTMzNTQwLC02MDAwMjk2NDUsMTc3MDI2MzUz
+MF19
 -->
