@@ -1239,7 +1239,15 @@ impl <T> Option<T> {
 }
 ```
 ### Dynamically Sized Types and the `Sized` trait
-
+`Sized` is assumed as a trait bound 
+```rust
+fn is_equal<T: Eq>(t1: &T, t2: &T) -> bool {
+	t1==t2
+}
+// the following line will not compile
+is_equal("Hello", "world"));
+//because <T> is str
+```
 
 
 
@@ -1256,11 +1264,11 @@ impl <T> Option<T> {
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4OTY3NDg4MCwxODg5Njc0ODgwLDE0MD
-g1Nzk0NzAsNTUzNTE1MzkxLC04Mjk0OTQ4ODIsMTM0ODk3NDky
-OCwtMTU1MjUzNTc2NywyMTIzODcyMjkyLC01NjU0Mjg0NDMsOT
-MyMTI5NTI0LDE1MzExMjAzODgsMjU3OTU5NjcxLDEzMTIxMjg1
-NTUsNTMxMjY4MDUzLDUzMTI2ODA1MywxOTA4ODM4MjgxLDE5OD
-E3MDY0NjksODg3OTMzNTQwLC02MDAwMjk2NDUsMTc3MDI2MzUz
-MF19
+eyJoaXN0b3J5IjpbMTY2NjA0MzczMiwxODg5Njc0ODgwLDE4OD
+k2NzQ4ODAsMTQwODU3OTQ3MCw1NTM1MTUzOTEsLTgyOTQ5NDg4
+MiwxMzQ4OTc0OTI4LC0xNTUyNTM1NzY3LDIxMjM4NzIyOTIsLT
+U2NTQyODQ0Myw5MzIxMjk1MjQsMTUzMTEyMDM4OCwyNTc5NTk2
+NzEsMTMxMjEyODU1NSw1MzEyNjgwNTMsNTMxMjY4MDUzLDE5MD
+g4MzgyODEsMTk4MTcwNjQ2OSw4ODc5MzM1NDAsLTYwMDAyOTY0
+NV19
 -->
