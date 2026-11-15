@@ -1252,10 +1252,11 @@ fn is_equal<T:Eq+?Sized>(t1:&T, t2:&T)->bool {/*...*/}
 // so the ^^ works fine
 ```
 
-
-
-
 ## 20.04 Advanced Functions and Closures
+
+
+
+
 
 ## 20.05 Macros
 
@@ -1267,11 +1268,11 @@ fn is_equal<T:Eq+?Sized>(t1:&T, t2:&T)->bool {/*...*/}
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NTI0NjgxMiwxODg5Njc0ODgwLDE4OD
-k2NzQ4ODAsMTQwODU3OTQ3MCw1NTM1MTUzOTEsLTgyOTQ5NDg4
-MiwxMzQ4OTc0OTI4LC0xNTUyNTM1NzY3LDIxMjM4NzIyOTIsLT
-U2NTQyODQ0Myw5MzIxMjk1MjQsMTUzMTEyMDM4OCwyNTc5NTk2
-NzEsMTMxMjEyODU1NSw1MzEyNjgwNTMsNTMxMjY4MDUzLDE5MD
-g4MzgyODEsMTk4MTcwNjQ2OSw4ODc5MzM1NDAsLTYwMDAyOTY0
-NV19
+eyJoaXN0b3J5IjpbNzgwMDAyNTcwLDE2OTUyNDY4MTIsMTg4OT
+Y3NDg4MCwxODg5Njc0ODgwLDE0MDg1Nzk0NzAsNTUzNTE1Mzkx
+LC04Mjk0OTQ4ODIsMTM0ODk3NDkyOCwtMTU1MjUzNTc2NywyMT
+IzODcyMjkyLC01NjU0Mjg0NDMsOTMyMTI5NTI0LDE1MzExMjAz
+ODgsMjU3OTU5NjcxLDEzMTIxMjg1NTUsNTMxMjY4MDUzLDUzMT
+I2ODA1MywxOTA4ODM4MjgxLDE5ODE3MDY0NjksODg3OTMzNTQw
+XX0=
 -->
