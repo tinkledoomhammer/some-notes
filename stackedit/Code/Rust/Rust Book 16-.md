@@ -1246,7 +1246,9 @@ fn is_equal<T: Eq>(t1: &T, t2: &T) -> bool {
 }
 // the following line will not compile
 is_equal("Hello", "world"));
-//because <T> is str
+//because <T> is `str` which is not sized
+//but &str is sized
+fn is_equal<T:Eq+?Sized>(t1:&T, tw
 ```
 
 
@@ -1264,7 +1266,7 @@ is_equal("Hello", "world"));
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2NjA0MzczMiwxODg5Njc0ODgwLDE4OD
+eyJoaXN0b3J5IjpbMTkzOTA0NjA5OCwxODg5Njc0ODgwLDE4OD
 k2NzQ4ODAsMTQwODU3OTQ3MCw1NTM1MTUzOTEsLTgyOTQ5NDg4
 MiwxMzQ4OTc0OTI4LC0xNTUyNTM1NzY3LDIxMjM4NzIyOTIsLT
 U2NTQyODQ0Myw5MzIxMjk1MjQsMTUzMTEyMDM4OCwyNTc5NTk2
