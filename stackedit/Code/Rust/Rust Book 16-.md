@@ -1258,6 +1258,7 @@ fn is_equal<T:Eq+?Sized>(t1:&T, t2:&T)->bool {/*...*/}
 : concrete type
 : funnction objects can be coreced to fn
 : `fn (argType1, argType2) -> retType`
+: implement all three closure traits
 
 
 
@@ -1272,7 +1273,7 @@ fn is_equal<T:Eq+?Sized>(t1:&T, t2:&T)->bool {/*...*/}
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMDI2MjgxMSw3ODAwMDI1NzAsMTY5NT
+eyJoaXN0b3J5IjpbLTMxMDc0NjgyMSw3ODAwMDI1NzAsMTY5NT
 I0NjgxMiwxODg5Njc0ODgwLDE4ODk2NzQ4ODAsMTQwODU3OTQ3
 MCw1NTM1MTUzOTEsLTgyOTQ5NDg4MiwxMzQ4OTc0OTI4LC0xNT
 UyNTM1NzY3LDIxMjM4NzIyOTIsLTU2NTQyODQ0Myw5MzIxMjk1
