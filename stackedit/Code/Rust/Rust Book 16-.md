@@ -1253,8 +1253,8 @@ fn is_equal<T:Eq+?Sized>(t1:&T, t2:&T)->bool {/*...*/}
 ```
 
 ## 20.04 Advanced Functions and Closures
-`fn`
-: function pointer 
+### `fn`
+:function pointer 
 : concrete type
 : funnction objects can be coreced to fn
 : `fn (argType1, argType2) -> retType`
@@ -1265,9 +1265,9 @@ enum Status {
 	Value(u32),
 	Stop,
 }
-let list_of_s
+let list_of_statuses: Vec<Status> = (0u32..20).map(Status::Value).collect();
 ```
-
+### Returning Closures
 
 
 ## 20.05 Macros
@@ -1280,11 +1280,11 @@ let list_of_s
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxMTAwNjc1MCw3ODAwMDI1NzAsMTY5NT
-I0NjgxMiwxODg5Njc0ODgwLDE4ODk2NzQ4ODAsMTQwODU3OTQ3
-MCw1NTM1MTUzOTEsLTgyOTQ5NDg4MiwxMzQ4OTc0OTI4LC0xNT
-UyNTM1NzY3LDIxMjM4NzIyOTIsLTU2NTQyODQ0Myw5MzIxMjk1
-MjQsMTUzMTEyMDM4OCwyNTc5NTk2NzEsMTMxMjEyODU1NSw1Mz
-EyNjgwNTMsNTMxMjY4MDUzLDE5MDg4MzgyODEsMTk4MTcwNjQ2
-OV19
+eyJoaXN0b3J5IjpbLTE3NzgyMzIwMDcsNzgwMDAyNTcwLDE2OT
+UyNDY4MTIsMTg4OTY3NDg4MCwxODg5Njc0ODgwLDE0MDg1Nzk0
+NzAsNTUzNTE1MzkxLC04Mjk0OTQ4ODIsMTM0ODk3NDkyOCwtMT
+U1MjUzNTc2NywyMTIzODcyMjkyLC01NjU0Mjg0NDMsOTMyMTI5
+NTI0LDE1MzExMjAzODgsMjU3OTU5NjcxLDEzMTIxMjg1NTUsNT
+MxMjY4MDUzLDUzMTI2ODA1MywxOTA4ODM4MjgxLDE5ODE3MDY0
+NjldfQ==
 -->
