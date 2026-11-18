@@ -1259,7 +1259,14 @@ fn is_equal<T:Eq+?Sized>(t1:&T, t2:&T)->bool {/*...*/}
 : funnction objects can be coreced to fn
 : `fn (argType1, argType2) -> retType`
 : implement all three closure traits
-
+>Recall from the [“Enum Values”](https://rust-book.cs.brown.edu/ch06-01-defining-an-enum.html#enum-values) section in Chapter 6 that the name of each enum variant that we define also becomes an initializer function. We can use these initializer functions as function pointers that implement the closure traits, which means we can specify the initializer functions as arguments for methods that take closures, as seen in Listing 20-31.
+```rust
+enum Status {
+	Value(u32),
+	Stop,
+}
+let list_of_s
+```
 
 
 
@@ -1273,7 +1280,7 @@ fn is_equal<T:Eq+?Sized>(t1:&T, t2:&T)->bool {/*...*/}
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxMDc0NjgyMSw3ODAwMDI1NzAsMTY5NT
+eyJoaXN0b3J5IjpbMTQxMTAwNjc1MCw3ODAwMDI1NzAsMTY5NT
 I0NjgxMiwxODg5Njc0ODgwLDE4ODk2NzQ4ODAsMTQwODU3OTQ3
 MCw1NTM1MTUzOTEsLTgyOTQ5NDg4MiwxMzQ4OTc0OTI4LC0xNT
 UyNTM1NzY3LDIxMjM4NzIyOTIsLTU2NTQyODQ0Myw5MzIxMjk1
