@@ -1259,6 +1259,7 @@ fn is_equal<T:Eq+?Sized>(t1:&T, t2:&T)->bool {/*...*/}
 : funnction objects can be coreced to fn
 : `fn (argType1, argType2) -> retType`
 : implement all three closure traits
+: cannot capture any values
 >Recall from the [“Enum Values”](https://rust-book.cs.brown.edu/ch06-01-defining-an-enum.html#enum-values) section in Chapter 6 that the name of each enum variant that we define also becomes an initializer function. We can use these initializer functions as function pointers that implement the closure traits, which means we can specify the initializer functions as arguments for methods that take closures, as seen in Listing 20-31.
 ```rust
 enum Status {
@@ -1280,11 +1281,11 @@ let list_of_statuses: Vec<Status> = (0u32..20).map(Status::Value).collect();
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzgyMzIwMDcsNzgwMDAyNTcwLDE2OT
-UyNDY4MTIsMTg4OTY3NDg4MCwxODg5Njc0ODgwLDE0MDg1Nzk0
-NzAsNTUzNTE1MzkxLC04Mjk0OTQ4ODIsMTM0ODk3NDkyOCwtMT
-U1MjUzNTc2NywyMTIzODcyMjkyLC01NjU0Mjg0NDMsOTMyMTI5
-NTI0LDE1MzExMjAzODgsMjU3OTU5NjcxLDEzMTIxMjg1NTUsNT
-MxMjY4MDUzLDUzMTI2ODA1MywxOTA4ODM4MjgxLDE5ODE3MDY0
-NjldfQ==
+eyJoaXN0b3J5IjpbNjA3NzUwOTEyLDc4MDAwMjU3MCwxNjk1Mj
+Q2ODEyLDE4ODk2NzQ4ODAsMTg4OTY3NDg4MCwxNDA4NTc5NDcw
+LDU1MzUxNTM5MSwtODI5NDk0ODgyLDEzNDg5NzQ5MjgsLTE1NT
+I1MzU3NjcsMjEyMzg3MjI5MiwtNTY1NDI4NDQzLDkzMjEyOTUy
+NCwxNTMxMTIwMzg4LDI1Nzk1OTY3MSwxMzEyMTI4NTU1LDUzMT
+I2ODA1Myw1MzEyNjgwNTMsMTkwODgzODI4MSwxOTgxNzA2NDY5
+XX0=
 -->
