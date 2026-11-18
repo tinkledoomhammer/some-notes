@@ -1253,7 +1253,11 @@ fn is_equal<T:Eq+?Sized>(t1:&T, t2:&T)->bool {/*...*/}
 ```
 
 ## 20.04 Advanced Functions and Closures
-`
+`fn`
+: function pointer 
+: concrete type
+: funnction objects can be coreced to fn
+: `fn (argType1, argType2) -> retType`
 
 
 
@@ -1268,11 +1272,11 @@ fn is_equal<T:Eq+?Sized>(t1:&T, t2:&T)->bool {/*...*/}
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk3MzM4OTMwLDc4MDAwMjU3MCwxNjk1Mj
-Q2ODEyLDE4ODk2NzQ4ODAsMTg4OTY3NDg4MCwxNDA4NTc5NDcw
-LDU1MzUxNTM5MSwtODI5NDk0ODgyLDEzNDg5NzQ5MjgsLTE1NT
-I1MzU3NjcsMjEyMzg3MjI5MiwtNTY1NDI4NDQzLDkzMjEyOTUy
-NCwxNTMxMTIwMzg4LDI1Nzk1OTY3MSwxMzEyMTI4NTU1LDUzMT
-I2ODA1Myw1MzEyNjgwNTMsMTkwODgzODI4MSwxOTgxNzA2NDY5
-XX0=
+eyJoaXN0b3J5IjpbMTUzMDI2MjgxMSw3ODAwMDI1NzAsMTY5NT
+I0NjgxMiwxODg5Njc0ODgwLDE4ODk2NzQ4ODAsMTQwODU3OTQ3
+MCw1NTM1MTUzOTEsLTgyOTQ5NDg4MiwxMzQ4OTc0OTI4LC0xNT
+UyNTM1NzY3LDIxMjM4NzIyOTIsLTU2NTQyODQ0Myw5MzIxMjk1
+MjQsMTUzMTEyMDM4OCwyNTc5NTk2NzEsMTMxMjEyODU1NSw1Mz
+EyNjgwNTMsNTMxMjY4MDUzLDE5MDg4MzgyODEsMTk4MTcwNjQ2
+OV19
 -->
