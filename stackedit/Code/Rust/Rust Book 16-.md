@@ -1314,7 +1314,7 @@ In patterns
 * enclosed in `(` ...` )`
 * `$` declares a variable
 * `$x:expr` matches any expression and names it `$x`
-* the `,` is a literal `,` which must be matched **between** each 
+* the `,` is a literal `,` which must be matched **between** each  repetition
 * `*` means to match 0 or more times the previous item
 
 
@@ -1322,7 +1322,7 @@ In patterns
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTA1NTQyMDIsLTE5MzA5MTQ4OTAsNj
+eyJoaXN0b3J5IjpbLTEwMjYxNDE0NDMsLTE5MzA5MTQ4OTAsNj
 A3NzUwOTEyLDc4MDAwMjU3MCwxNjk1MjQ2ODEyLDE4ODk2NzQ4
 ODAsMTg4OTY3NDg4MCwxNDA4NTc5NDcwLDU1MzUxNTM5MSwtOD
 I5NDk0ODgyLDEzNDg5NzQ5MjgsLTE1NTI1MzU3NjcsMjEyMzg3
