@@ -1279,7 +1279,10 @@ Types
 * attribute-like macros that define custom attributes usable on any item
 * function-like macros that look like function calls
 ### Difference between macros and functions
-
+* macros can take a variable number of arguments
+* macros **expand** to produce more code
+* macros expand before the compiler interprest the meaning of the code
+* macros are more complex to define than
 
 
 
@@ -1288,11 +1291,11 @@ Types
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyODM2MjE1Niw2MDc3NTA5MTIsNzgwMD
-AyNTcwLDE2OTUyNDY4MTIsMTg4OTY3NDg4MCwxODg5Njc0ODgw
-LDE0MDg1Nzk0NzAsNTUzNTE1MzkxLC04Mjk0OTQ4ODIsMTM0OD
-k3NDkyOCwtMTU1MjUzNTc2NywyMTIzODcyMjkyLC01NjU0Mjg0
-NDMsOTMyMTI5NTI0LDE1MzExMjAzODgsMjU3OTU5NjcxLDEzMT
-IxMjg1NTUsNTMxMjY4MDUzLDUzMTI2ODA1MywxOTA4ODM4Mjgx
-XX0=
+eyJoaXN0b3J5IjpbNTcxMjU3MjQ5LDYwNzc1MDkxMiw3ODAwMD
+I1NzAsMTY5NTI0NjgxMiwxODg5Njc0ODgwLDE4ODk2NzQ4ODAs
+MTQwODU3OTQ3MCw1NTM1MTUzOTEsLTgyOTQ5NDg4MiwxMzQ4OT
+c0OTI4LC0xNTUyNTM1NzY3LDIxMjM4NzIyOTIsLTU2NTQyODQ0
+Myw5MzIxMjk1MjQsMTUzMTEyMDM4OCwyNTc5NTk2NzEsMTMxMj
+EyODU1NSw1MzEyNjgwNTMsNTMxMjY4MDUzLDE5MDg4MzgyODFd
+fQ==
 -->
