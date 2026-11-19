@@ -1305,17 +1305,20 @@ macrro_rules! vec {
 ```
 > The `#[macro_export]` annotation indicates that this macro should be made available whenever the crate in which the macro is defined is brought into scope. Without this annotation, the macro can’t be brought into scope.
 
+1. `#[macro_export]` iff the macro is public
+1. `macro_rules! macro_name {` begins the macro
+1. `(pattern) => { substitution };` for each pa
 
 
 
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzA5MTQ4OTAsNjA3NzUwOTEyLDc4MD
-AwMjU3MCwxNjk1MjQ2ODEyLDE4ODk2NzQ4ODAsMTg4OTY3NDg4
-MCwxNDA4NTc5NDcwLDU1MzUxNTM5MSwtODI5NDk0ODgyLDEzND
-g5NzQ5MjgsLTE1NTI1MzU3NjcsMjEyMzg3MjI5MiwtNTY1NDI4
-NDQzLDkzMjEyOTUyNCwxNTMxMTIwMzg4LDI1Nzk1OTY3MSwxMz
-EyMTI4NTU1LDUzMTI2ODA1Myw1MzEyNjgwNTMsMTkwODgzODI4
-MV19
+eyJoaXN0b3J5IjpbLTQ3OTA4NjY1MCwtMTkzMDkxNDg5MCw2MD
+c3NTA5MTIsNzgwMDAyNTcwLDE2OTUyNDY4MTIsMTg4OTY3NDg4
+MCwxODg5Njc0ODgwLDE0MDg1Nzk0NzAsNTUzNTE1MzkxLC04Mj
+k0OTQ4ODIsMTM0ODk3NDkyOCwtMTU1MjUzNTc2NywyMTIzODcy
+MjkyLC01NjU0Mjg0NDMsOTMyMTI5NTI0LDE1MzExMjAzODgsMj
+U3OTU5NjcxLDEzMTIxMjg1NTUsNTMxMjY4MDUzLDUzMTI2ODA1
+M119
 -->
