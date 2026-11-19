@@ -1292,7 +1292,7 @@ aka `macro_rules!` macros or macros by example
 //simplified version of the `vec` macro
 #[macro_export] // required to make the macro visible
 macrro_rules! vec {
-	( ${ $x:expr ),*) => {
+	( $( $x:expr ),*) => {
 			{
 					let mut temp_vec=vec::new();
 					$(
@@ -1315,18 +1315,18 @@ In patterns
 * `$` declares a variable
 * `$x:expr` matches any expression and names it `$x`
 * the `,` is a literal `,` which must be matched verbatim
-* `*`
+* `*` means to match 0 or more times the previous item
 
 
 
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMzg3ODczMSwtMTkzMDkxNDg5MCw2MD
-c3NTA5MTIsNzgwMDAyNTcwLDE2OTUyNDY4MTIsMTg4OTY3NDg4
-MCwxODg5Njc0ODgwLDE0MDg1Nzk0NzAsNTUzNTE1MzkxLC04Mj
-k0OTQ4ODIsMTM0ODk3NDkyOCwtMTU1MjUzNTc2NywyMTIzODcy
-MjkyLC01NjU0Mjg0NDMsOTMyMTI5NTI0LDE1MzExMjAzODgsMj
-U3OTU5NjcxLDEzMTIxMjg1NTUsNTMxMjY4MDUzLDUzMTI2ODA1
-M119
+eyJoaXN0b3J5IjpbNzA5Mzk0MzMsLTE5MzA5MTQ4OTAsNjA3Nz
+UwOTEyLDc4MDAwMjU3MCwxNjk1MjQ2ODEyLDE4ODk2NzQ4ODAs
+MTg4OTY3NDg4MCwxNDA4NTc5NDcwLDU1MzUxNTM5MSwtODI5ND
+k0ODgyLDEzNDg5NzQ5MjgsLTE1NTI1MzU3NjcsMjEyMzg3MjI5
+MiwtNTY1NDI4NDQzLDkzMjEyOTUyNCwxNTMxMTIwMzg4LDI1Nz
+k1OTY3MSwxMzEyMTI4NTU1LDUzMTI2ODA1Myw1MzEyNjgwNTNd
+fQ==
 -->
