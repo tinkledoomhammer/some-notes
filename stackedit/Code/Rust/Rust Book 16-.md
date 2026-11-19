@@ -1269,6 +1269,8 @@ enum Status {
 let list_of_statuses: Vec<Status> = (0u32..20).map(Status::Value).collect();
 ```
 ### Returning Closures
+* each closure is its own concrete type
+* so storing them in containers requires the use of trait objects
 
 
 ## 20.05 Macros
@@ -1281,11 +1283,11 @@ let list_of_statuses: Vec<Status> = (0u32..20).map(Status::Value).collect();
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA3NzUwOTEyLDc4MDAwMjU3MCwxNjk1Mj
-Q2ODEyLDE4ODk2NzQ4ODAsMTg4OTY3NDg4MCwxNDA4NTc5NDcw
-LDU1MzUxNTM5MSwtODI5NDk0ODgyLDEzNDg5NzQ5MjgsLTE1NT
-I1MzU3NjcsMjEyMzg3MjI5MiwtNTY1NDI4NDQzLDkzMjEyOTUy
-NCwxNTMxMTIwMzg4LDI1Nzk1OTY3MSwxMzEyMTI4NTU1LDUzMT
-I2ODA1Myw1MzEyNjgwNTMsMTkwODgzODI4MSwxOTgxNzA2NDY5
-XX0=
+eyJoaXN0b3J5IjpbLTE3MzI4NDE0ODksNjA3NzUwOTEyLDc4MD
+AwMjU3MCwxNjk1MjQ2ODEyLDE4ODk2NzQ4ODAsMTg4OTY3NDg4
+MCwxNDA4NTc5NDcwLDU1MzUxNTM5MSwtODI5NDk0ODgyLDEzND
+g5NzQ5MjgsLTE1NTI1MzU3NjcsMjEyMzg3MjI5MiwtNTY1NDI4
+NDQzLDkzMjEyOTUyNCwxNTMxMTIwMzg4LDI1Nzk1OTY3MSwxMz
+EyMTI4NTU1LDUzMTI2ODA1Myw1MzEyNjgwNTMsMTkwODgzODI4
+MV19
 -->
