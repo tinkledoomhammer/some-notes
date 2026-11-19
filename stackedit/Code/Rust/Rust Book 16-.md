@@ -1282,7 +1282,11 @@ Types
 * macros can take a variable number of arguments
 * macros **expand** to produce more code
 * macros expand before the compiler interprest the meaning of the code
-* macros are more complex to define than
+* macros are more complex to define than functions
+* must be deffined and in scope before they can be called
+
+### Declarative macros for general programming
+
 
 
 
@@ -1291,11 +1295,11 @@ Types
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcxMjU3MjQ5LDYwNzc1MDkxMiw3ODAwMD
-I1NzAsMTY5NTI0NjgxMiwxODg5Njc0ODgwLDE4ODk2NzQ4ODAs
-MTQwODU3OTQ3MCw1NTM1MTUzOTEsLTgyOTQ5NDg4MiwxMzQ4OT
-c0OTI4LC0xNTUyNTM1NzY3LDIxMjM4NzIyOTIsLTU2NTQyODQ0
-Myw5MzIxMjk1MjQsMTUzMTEyMDM4OCwyNTc5NTk2NzEsMTMxMj
-EyODU1NSw1MzEyNjgwNTMsNTMxMjY4MDUzLDE5MDg4MzgyODFd
-fQ==
+eyJoaXN0b3J5IjpbLTEyNTQ1NjQ2MDAsNjA3NzUwOTEyLDc4MD
+AwMjU3MCwxNjk1MjQ2ODEyLDE4ODk2NzQ4ODAsMTg4OTY3NDg4
+MCwxNDA4NTc5NDcwLDU1MzUxNTM5MSwtODI5NDk0ODgyLDEzND
+g5NzQ5MjgsLTE1NTI1MzU3NjcsMjEyMzg3MjI5MiwtNTY1NDI4
+NDQzLDkzMjEyOTUyNCwxNTMxMTIwMzg4LDI1Nzk1OTY3MSwxMz
+EyMTI4NTU1LDUzMTI2ODA1Myw1MzEyNjgwNTMsMTkwODgzODI4
+MV19
 -->
