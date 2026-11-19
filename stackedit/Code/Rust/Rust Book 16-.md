@@ -1290,20 +1290,20 @@ aka `macro_rules!` macros or macros by example
 * resemble `match` expressions
 ```rust
 //simplified version of the `vec` macro
-#[macro_export]
+#[macro_export] // required to make the macro visible
 macrro_rules! vec {
-	( ${ $x:expr ),*) =>{
+	( ${ $x:expr ),*) => {
 			{
-				let mut temp_vec=vec::new();
-				$(
-				temp_vec.push($x);
-			)*
-			temp_vec
-		}
+					let mut temp_vec=vec::new();
+					$(
+							temp_vec.push($x);
+					)*
+				temp_vec
+			}
 	};
 }
 ```
-
+> The `#[macro_export]` annotation indicates that this macro should be made available whenever the crate in which the macro is defined is brought into scope. Without this annotation, the macro can’t be brought into scope.
 
 
 
@@ -1311,7 +1311,7 @@ macrro_rules! vec {
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjI0ODQwMDYsNjA3NzUwOTEyLDc4MD
+eyJoaXN0b3J5IjpbLTE5MzA5MTQ4OTAsNjA3NzUwOTEyLDc4MD
 AwMjU3MCwxNjk1MjQ2ODEyLDE4ODk2NzQ4ODAsMTg4OTY3NDg4
 MCwxNDA4NTc5NDcwLDU1MzUxNTM5MSwtODI5NDk0ODgyLDEzND
 g5NzQ5MjgsLTE1NTI1MzU3NjcsMjEyMzg3MjI5MiwtNTY1NDI4
