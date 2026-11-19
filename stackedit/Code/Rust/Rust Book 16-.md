@@ -1286,7 +1286,9 @@ Types
 * must be deffined and in scope before they can be called
 
 ### Declarative macros for general programming
-
+aka `macro_rules!` macros or macros by example
+* resemble `match` expressions
+```
 
 
 
@@ -1295,11 +1297,11 @@ Types
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTQ1NjQ2MDAsNjA3NzUwOTEyLDc4MD
-AwMjU3MCwxNjk1MjQ2ODEyLDE4ODk2NzQ4ODAsMTg4OTY3NDg4
-MCwxNDA4NTc5NDcwLDU1MzUxNTM5MSwtODI5NDk0ODgyLDEzND
-g5NzQ5MjgsLTE1NTI1MzU3NjcsMjEyMzg3MjI5MiwtNTY1NDI4
-NDQzLDkzMjEyOTUyNCwxNTMxMTIwMzg4LDI1Nzk1OTY3MSwxMz
-EyMTI4NTU1LDUzMTI2ODA1Myw1MzEyNjgwNTMsMTkwODgzODI4
-MV19
+eyJoaXN0b3J5IjpbMTMzMTEzOTQ4Myw2MDc3NTA5MTIsNzgwMD
+AyNTcwLDE2OTUyNDY4MTIsMTg4OTY3NDg4MCwxODg5Njc0ODgw
+LDE0MDg1Nzk0NzAsNTUzNTE1MzkxLC04Mjk0OTQ4ODIsMTM0OD
+k3NDkyOCwtMTU1MjUzNTc2NywyMTIzODcyMjkyLC01NjU0Mjg0
+NDMsOTMyMTI5NTI0LDE1MzExMjAzODgsMjU3OTU5NjcxLDEzMT
+IxMjg1NTUsNTMxMjY4MDUzLDUzMTI2ODA1MywxOTA4ODM4Mjgx
+XX0=
 -->
