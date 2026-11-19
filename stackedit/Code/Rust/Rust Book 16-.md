@@ -1314,7 +1314,7 @@ In patterns
 * enclosed in `(` ...` )`
 * `$` declares a variable
 * `$x:expr` matches any expression and names it `$x`
-* the `,` is a literal `,` which must be matched verbatim
+* the `,` is a literal `,` which must be matched **between** each 
 * `*` means to match 0 or more times the previous item
 
 
@@ -1322,11 +1322,11 @@ In patterns
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA5Mzk0MzMsLTE5MzA5MTQ4OTAsNjA3Nz
-UwOTEyLDc4MDAwMjU3MCwxNjk1MjQ2ODEyLDE4ODk2NzQ4ODAs
-MTg4OTY3NDg4MCwxNDA4NTc5NDcwLDU1MzUxNTM5MSwtODI5ND
-k0ODgyLDEzNDg5NzQ5MjgsLTE1NTI1MzU3NjcsMjEyMzg3MjI5
-MiwtNTY1NDI4NDQzLDkzMjEyOTUyNCwxNTMxMTIwMzg4LDI1Nz
-k1OTY3MSwxMzEyMTI4NTU1LDUzMTI2ODA1Myw1MzEyNjgwNTNd
-fQ==
+eyJoaXN0b3J5IjpbLTE1OTA1NTQyMDIsLTE5MzA5MTQ4OTAsNj
+A3NzUwOTEyLDc4MDAwMjU3MCwxNjk1MjQ2ODEyLDE4ODk2NzQ4
+ODAsMTg4OTY3NDg4MCwxNDA4NTc5NDcwLDU1MzUxNTM5MSwtOD
+I5NDk0ODgyLDEzNDg5NzQ5MjgsLTE1NTI1MzU3NjcsMjEyMzg3
+MjI5MiwtNTY1NDI4NDQzLDkzMjEyOTUyNCwxNTMxMTIwMzg4LD
+I1Nzk1OTY3MSwxMzEyMTI4NTU1LDUzMTI2ODA1Myw1MzEyNjgw
+NTNdfQ==
 -->
