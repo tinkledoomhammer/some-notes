@@ -1310,21 +1310,23 @@ macrro_rules! vec {
 1. `(pattern) => { substitution };` for each arm
 1. `}` to end the macro definition
 In patterns
-* match against syntax structures as
+* match against syntax structures as opposed to `match` which tests values
 * enclosed in `(` ...` )`
 * `$` declares a variable
-* 
+* `$x:expr` matches any expression and names it `$x`
+* the `,` is a literal `,` which must be matched verbatim
+* `*`
 
 
 
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzA0MjE1NDksLTE5MzA5MTQ4OTAsNj
-A3NzUwOTEyLDc4MDAwMjU3MCwxNjk1MjQ2ODEyLDE4ODk2NzQ4
-ODAsMTg4OTY3NDg4MCwxNDA4NTc5NDcwLDU1MzUxNTM5MSwtOD
-I5NDk0ODgyLDEzNDg5NzQ5MjgsLTE1NTI1MzU3NjcsMjEyMzg3
-MjI5MiwtNTY1NDI4NDQzLDkzMjEyOTUyNCwxNTMxMTIwMzg4LD
-I1Nzk1OTY3MSwxMzEyMTI4NTU1LDUzMTI2ODA1Myw1MzEyNjgw
-NTNdfQ==
+eyJoaXN0b3J5IjpbMTIwMzg3ODczMSwtMTkzMDkxNDg5MCw2MD
+c3NTA5MTIsNzgwMDAyNTcwLDE2OTUyNDY4MTIsMTg4OTY3NDg4
+MCwxODg5Njc0ODgwLDE0MDg1Nzk0NzAsNTUzNTE1MzkxLC04Mj
+k0OTQ4ODIsMTM0ODk3NDkyOCwtMTU1MjUzNTc2NywyMTIzODcy
+MjkyLC01NjU0Mjg0NDMsOTMyMTI5NTI0LDE1MzExMjAzODgsMj
+U3OTU5NjcxLDEzMTIxMjg1NTUsNTMxMjY4MDUzLDUzMTI2ODA1
+M119
 -->
