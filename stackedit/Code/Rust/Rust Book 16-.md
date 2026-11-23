@@ -1318,20 +1318,20 @@ In patterns
 * `*` means to match 0 or more times the previous item
 
 ### Procedural macros for generating code from attributes
-Proc macros must be in a special crate
-`Cargo.toml` must contain `proc_macro = true` in the `[lib]` section
+* Proc macros must be in a special crate
+* `Cargo.toml` must contain `proc_macro = true` in the `[lib]` section
+* can only be applied to `struct`s and `enum`s
+
 
 ```rust
 use proc_macro::TokenStream;
 use quote::quote;
-
 #[proc_macro_derive(HelloMacro)]
 pub fn hello_macro_derive(input: TokenStream) -> TokenStream {
     let ast = syn::parse(input).unwrap();
 
     impl_hello_macro(&ast)
 }
-
 fn impl_hello_macro(ast: &syn::DeriveInput) -> TokenStream {
     let name = &ast.ident;
     quote!{
@@ -1370,16 +1370,20 @@ quote = "1.0"
 
 ### Attribute-Like Macros
 * create new attributes
-* 
+* can be applied to other types of items, such as functions
 
+```rust
+#[route(GET, "/")]
+fn index() {
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUzNjQwMDYsLTIxNDQ1MDkwNTksLTE5Mz
-A5MTQ4OTAsNjA3NzUwOTEyLDc4MDAwMjU3MCwxNjk1MjQ2ODEy
-LDE4ODk2NzQ4ODAsMTg4OTY3NDg4MCwxNDA4NTc5NDcwLDU1Mz
-UxNTM5MSwtODI5NDk0ODgyLDEzNDg5NzQ5MjgsLTE1NTI1MzU3
-NjcsMjEyMzg3MjI5MiwtNTY1NDI4NDQzLDkzMjEyOTUyNCwxNT
-MxMTIwMzg4LDI1Nzk1OTY3MSwxMzEyMTI4NTU1LDUzMTI2ODA1
-M119
+eyJoaXN0b3J5IjpbOTUwMDAyOTkzLC0yMTQ0NTA5MDU5LC0xOT
+MwOTE0ODkwLDYwNzc1MDkxMiw3ODAwMDI1NzAsMTY5NTI0Njgx
+MiwxODg5Njc0ODgwLDE4ODk2NzQ4ODAsMTQwODU3OTQ3MCw1NT
+M1MTUzOTEsLTgyOTQ5NDg4MiwxMzQ4OTc0OTI4LC0xNTUyNTM1
+NzY3LDIxMjM4NzIyOTIsLTU2NTQyODQ0Myw5MzIxMjk1MjQsMT
+UzMTEyMDM4OCwyNTc5NTk2NzEsMTMxMjEyODU1NSw1MzEyNjgw
+NTNdfQ==
 -->
