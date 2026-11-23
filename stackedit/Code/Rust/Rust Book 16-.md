@@ -1430,7 +1430,10 @@ fn handle_connection(mut stream::TcpStream){
 	let buf_reader = BufReader::new(&stream);
 	let http_request: Vec<_> = buf_reader
 		.lines()
-		.map(|
+		.map(|result| result.unwrap())
+		.take_while(|line|!line.is_empty())
+		.collect();
+	println!("Request: {http_request:#?}");
 }
 ```
 
@@ -1438,7 +1441,7 @@ fn handle_connection(mut stream::TcpStream){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTk4MTYxLDEyOTE3MDgxMDcsNzIwOT
+eyJoaXN0b3J5IjpbNjU0NDU3OTU3LDEyOTE3MDgxMDcsNzIwOT
 UxNzc0LDQwMjkzNzYxNywtMjE0NDUwOTA1OSwtMTkzMDkxNDg5
 MCw2MDc3NTA5MTIsNzgwMDAyNTcwLDE2OTUyNDY4MTIsMTg4OT
 Y3NDg4MCwxODg5Njc0ODgwLDE0MDg1Nzk0NzAsNTUzNTE1Mzkx
