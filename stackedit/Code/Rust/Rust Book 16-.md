@@ -1373,13 +1373,17 @@ quote = "1.0"
 * can be applied to other types of items, such as functions
 
 ```rust
+// to use
 #[route(GET, "/")]
 fn index() {
+//to create
+#[proc_macro_attribute]
+pub fn route(attr: TokenStream, item: TokenStream) -> TokenStream {
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUwMDAyOTkzLC0yMTQ0NTA5MDU5LC0xOT
+eyJoaXN0b3J5IjpbNDAyOTM3NjE3LC0yMTQ0NTA5MDU5LC0xOT
 MwOTE0ODkwLDYwNzc1MDkxMiw3ODAwMDI1NzAsMTY5NTI0Njgx
 MiwxODg5Njc0ODgwLDE4ODk2NzQ4ODAsMTQwODU3OTQ3MCw1NT
 M1MTUzOTEsLTgyOTQ5NDg4MiwxMzQ4OTc0OTI4LC0xNTUyNTM1
