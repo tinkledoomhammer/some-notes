@@ -1350,10 +1350,17 @@ proc-macro = true
 syn = "2.0"
 quote = "1.0"
 ```
-.
+`syn` crate
+: tools for parsing `TokenStream`s.
+
+`quote`
+: tool for creating `TokenStream`s
+: has a `quote!` macro
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3ODg5Mzc0NiwtMjE0NDUwOTA1OSwtMT
+eyJoaXN0b3J5IjpbLTY0NTk1NDU0NSwtMjE0NDUwOTA1OSwtMT
 kzMDkxNDg5MCw2MDc3NTA5MTIsNzgwMDAyNTcwLDE2OTUyNDY4
 MTIsMTg4OTY3NDg4MCwxODg5Njc0ODgwLDE0MDg1Nzk0NzAsNT
 UzNTE1MzkxLC04Mjk0OTQ4ODIsMTM0ODk3NDkyOCwtMTU1MjUz
