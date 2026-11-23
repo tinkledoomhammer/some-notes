@@ -1433,7 +1433,7 @@ fn handle_connection(mut stream::TcpStream){
 		.map(|result| result.unwrap())
 		.take_while(|line|!line.is_empty())
 		.collect();
-	println!("Request: {http_request:#?}");
+	println!("Request: {http_request:#?}");s
 }
 ```
 
@@ -1441,11 +1441,11 @@ fn handle_connection(mut stream::TcpStream){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU0NDU3OTU3LDEyOTE3MDgxMDcsNzIwOT
-UxNzc0LDQwMjkzNzYxNywtMjE0NDUwOTA1OSwtMTkzMDkxNDg5
-MCw2MDc3NTA5MTIsNzgwMDAyNTcwLDE2OTUyNDY4MTIsMTg4OT
-Y3NDg4MCwxODg5Njc0ODgwLDE0MDg1Nzk0NzAsNTUzNTE1Mzkx
-LC04Mjk0OTQ4ODIsMTM0ODk3NDkyOCwtMTU1MjUzNTc2NywyMT
-IzODcyMjkyLC01NjU0Mjg0NDMsOTMyMTI5NTI0LDE1MzExMjAz
-ODhdfQ==
+eyJoaXN0b3J5IjpbMTA2ODM0ODQ1MCw2NTQ0NTc5NTcsMTI5MT
+cwODEwNyw3MjA5NTE3NzQsNDAyOTM3NjE3LC0yMTQ0NTA5MDU5
+LC0xOTMwOTE0ODkwLDYwNzc1MDkxMiw3ODAwMDI1NzAsMTY5NT
+I0NjgxMiwxODg5Njc0ODgwLDE4ODk2NzQ4ODAsMTQwODU3OTQ3
+MCw1NTM1MTUzOTEsLTgyOTQ5NDg4MiwxMzQ4OTc0OTI4LC0xNT
+UyNTM1NzY3LDIxMjM4NzIyOTIsLTU2NTQyODQ0Myw5MzIxMjk1
+MjRdfQ==
 -->
