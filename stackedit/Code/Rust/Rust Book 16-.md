@@ -1355,12 +1355,13 @@ quote = "1.0"
 
 `quote`
 : tool for creating `TokenStream`s
-: has a `quote!` macro
+: has a `quote!` macro that generates tokens from rust syntax
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NTk1NDU0NSwtMjE0NDUwOTA1OSwtMT
+eyJoaXN0b3J5IjpbMjE0MTg0NTQyMywtMjE0NDUwOTA1OSwtMT
 kzMDkxNDg5MCw2MDc3NTA5MTIsNzgwMDAyNTcwLDE2OTUyNDY4
 MTIsMTg4OTY3NDg4MCwxODg5Njc0ODgwLDE0MDg1Nzk0NzAsNT
 UzNTE1MzkxLC04Mjk0OTQ4ODIsMTM0ODk3NDkyOCwtMTU1MjUz
