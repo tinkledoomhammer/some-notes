@@ -1397,16 +1397,23 @@ Plan
 
 ## 20.01 Building a Single-Threaded Web Server
 
-
+### Listening to the TCP Connection
+`cargo new hello`
+`cd hello`
+```rust
+use std::net::TcpListener;
+fn main() {
+	let listener = TcpListener::
+```
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzIwOTUxNzc0LDQwMjkzNzYxNywtMjE0ND
-UwOTA1OSwtMTkzMDkxNDg5MCw2MDc3NTA5MTIsNzgwMDAyNTcw
-LDE2OTUyNDY4MTIsMTg4OTY3NDg4MCwxODg5Njc0ODgwLDE0MD
-g1Nzk0NzAsNTUzNTE1MzkxLC04Mjk0OTQ4ODIsMTM0ODk3NDky
-OCwtMTU1MjUzNTc2NywyMTIzODcyMjkyLC01NjU0Mjg0NDMsOT
-MyMTI5NTI0LDE1MzExMjAzODgsMjU3OTU5NjcxLDEzMTIxMjg1
-NTVdfQ==
+eyJoaXN0b3J5IjpbLTIxMTUxODc0MjksNzIwOTUxNzc0LDQwMj
+kzNzYxNywtMjE0NDUwOTA1OSwtMTkzMDkxNDg5MCw2MDc3NTA5
+MTIsNzgwMDAyNTcwLDE2OTUyNDY4MTIsMTg4OTY3NDg4MCwxOD
+g5Njc0ODgwLDE0MDg1Nzk0NzAsNTUzNTE1MzkxLC04Mjk0OTQ4
+ODIsMTM0ODk3NDkyOCwtMTU1MjUzNTc2NywyMTIzODcyMjkyLC
+01NjU0Mjg0NDMsOTMyMTI5NTI0LDE1MzExMjAzODgsMjU3OTU5
+NjcxXX0=
 -->
