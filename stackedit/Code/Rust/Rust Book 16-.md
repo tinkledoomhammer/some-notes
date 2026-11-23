@@ -1318,17 +1318,45 @@ In patterns
 * `*` means to match 0 or more times the previous item
 
 ### Procedural macros for generating code from attributes
+```rust
+use proc_macro::TokenStream;
+use quote::quote;
 
+#[proc_macro_derive(HelloMacro)]
+pub fn hello_macro_derive(input: TokenStream) -> TokenStream {
+    let ast = syn::parse(input).unwrap();
 
+    impl_hello_macro(&ast)
+}
 
+fn impl_hello_macro(ast: &syn::DeriveInput) -> TokenStream {
+    let name = &ast.ident;
+    quote!{
+        impl HelloMacro for #name {
+            fn hello_macro() {
+                println!("Hello, My name is {}!", stringify!(#name));
+            }
+        }
+    }.into()
+}
+```
+the cargo.toml
+```toml
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = "2.0"
+quote = "1.0"
+```
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDQ1MDkwNTksLTE5MzA5MTQ4OTAsNj
-A3NzUwOTEyLDc4MDAwMjU3MCwxNjk1MjQ2ODEyLDE4ODk2NzQ4
-ODAsMTg4OTY3NDg4MCwxNDA4NTc5NDcwLDU1MzUxNTM5MSwtOD
-I5NDk0ODgyLDEzNDg5NzQ5MjgsLTE1NTI1MzU3NjcsMjEyMzg3
-MjI5MiwtNTY1NDI4NDQzLDkzMjEyOTUyNCwxNTMxMTIwMzg4LD
-I1Nzk1OTY3MSwxMzEyMTI4NTU1LDUzMTI2ODA1Myw1MzEyNjgw
+eyJoaXN0b3J5IjpbMTA3NTkzNTc2LC0yMTQ0NTA5MDU5LC0xOT
+MwOTE0ODkwLDYwNzc1MDkxMiw3ODAwMDI1NzAsMTY5NTI0Njgx
+MiwxODg5Njc0ODgwLDE4ODk2NzQ4ODAsMTQwODU3OTQ3MCw1NT
+M1MTUzOTEsLTgyOTQ5NDg4MiwxMzQ4OTc0OTI4LC0xNTUyNTM1
+NzY3LDIxMjM4NzIyOTIsLTU2NTQyODQ0Myw5MzIxMjk1MjQsMT
+UzMTEyMDM4OCwyNTc5NTk2NzEsMTMxMjEyODU1NSw1MzEyNjgw
 NTNdfQ==
 -->
