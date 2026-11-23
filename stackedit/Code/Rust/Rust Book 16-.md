@@ -1391,15 +1391,22 @@ pub fn sql(input: TokenStream) -> Token Stream {/* .. *}
 Plan
 1. Learn a bit about TCP and HTTP
 1. Listen for TCP connections on a socket
-1. Parse a small # of HTTP
+1. Parse a small # of HTTP requests
+1. Create a proper http response
+1. Improve throughput with a thread pool
+
+## 20.01 Building a Single-Threaded Web Server
+
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0MTEyOTMxNCw0MDI5Mzc2MTcsLTIxND
-Q1MDkwNTksLTE5MzA5MTQ4OTAsNjA3NzUwOTEyLDc4MDAwMjU3
-MCwxNjk1MjQ2ODEyLDE4ODk2NzQ4ODAsMTg4OTY3NDg4MCwxND
-A4NTc5NDcwLDU1MzUxNTM5MSwtODI5NDk0ODgyLDEzNDg5NzQ5
-MjgsLTE1NTI1MzU3NjcsMjEyMzg3MjI5MiwtNTY1NDI4NDQzLD
-kzMjEyOTUyNCwxNTMxMTIwMzg4LDI1Nzk1OTY3MSwxMzEyMTI4
-NTU1XX0=
+eyJoaXN0b3J5IjpbNzIwOTUxNzc0LDQwMjkzNzYxNywtMjE0ND
+UwOTA1OSwtMTkzMDkxNDg5MCw2MDc3NTA5MTIsNzgwMDAyNTcw
+LDE2OTUyNDY4MTIsMTg4OTY3NDg4MCwxODg5Njc0ODgwLDE0MD
+g1Nzk0NzAsNTUzNTE1MzkxLC04Mjk0OTQ4ODIsMTM0ODk3NDky
+OCwtMTU1MjUzNTc2NywyMTIzODcyMjkyLC01NjU0Mjg0NDMsOT
+MyMTI5NTI0LDE1MzExMjAzODgsMjU3OTU5NjcxLDEzMTIxMjg1
+NTVdfQ==
 -->
