@@ -1403,17 +1403,25 @@ Plan
 ```rust
 use std::net::TcpListener;
 fn main() {
-	let listener = TcpListener::
+	let listener = TcpListener::bind("127.0.0.1:7878").unwrap();
+	for stream in listener.incoming(){
+		let stream = stream.unwrap();
+		println!("Connection established!");
+	}
+}
 ```
+
+
+
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTUxODc0MjksNzIwOTUxNzc0LDQwMj
-kzNzYxNywtMjE0NDUwOTA1OSwtMTkzMDkxNDg5MCw2MDc3NTA5
-MTIsNzgwMDAyNTcwLDE2OTUyNDY4MTIsMTg4OTY3NDg4MCwxOD
-g5Njc0ODgwLDE0MDg1Nzk0NzAsNTUzNTE1MzkxLC04Mjk0OTQ4
-ODIsMTM0ODk3NDkyOCwtMTU1MjUzNTc2NywyMTIzODcyMjkyLC
-01NjU0Mjg0NDMsOTMyMTI5NTI0LDE1MzExMjAzODgsMjU3OTU5
-NjcxXX0=
+eyJoaXN0b3J5IjpbMTI5MTcwODEwNyw3MjA5NTE3NzQsNDAyOT
+M3NjE3LC0yMTQ0NTA5MDU5LC0xOTMwOTE0ODkwLDYwNzc1MDkx
+Miw3ODAwMDI1NzAsMTY5NTI0NjgxMiwxODg5Njc0ODgwLDE4OD
+k2NzQ4ODAsMTQwODU3OTQ3MCw1NTM1MTUzOTEsLTgyOTQ5NDg4
+MiwxMzQ4OTc0OTI4LC0xNTUyNTM1NzY3LDIxMjM4NzIyOTIsLT
+U2NTQyODQ0Myw5MzIxMjk1MjQsMTUzMTEyMDM4OCwyNTc5NTk2
+NzFdfQ==
 -->
