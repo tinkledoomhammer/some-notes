@@ -1319,6 +1319,8 @@ In patterns
 
 ### Procedural macros for generating code from attributes
 Proc macros must be in a special crate
+`Cargo.toml` must contain `proc_macro = true` in the `[lib]` section
+
 ```rust
 use proc_macro::TokenStream;
 use quote::quote;
@@ -1364,7 +1366,7 @@ quote = "1.0"
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTEwNjQ0NzMsLTIxNDQ1MDkwNTksLT
+eyJoaXN0b3J5IjpbLTE2Mjk5ODkzMjIsLTIxNDQ1MDkwNTksLT
 E5MzA5MTQ4OTAsNjA3NzUwOTEyLDc4MDAwMjU3MCwxNjk1MjQ2
 ODEyLDE4ODk2NzQ4ODAsMTg4OTY3NDg4MCwxNDA4NTc5NDcwLD
 U1MzUxNTM5MSwtODI5NDk0ODgyLDEzNDg5NzQ5MjgsLTE1NTI1
