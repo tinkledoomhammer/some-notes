@@ -1357,15 +1357,18 @@ quote = "1.0"
 : tool for creating `TokenStream`s
 : has a `quote!` macro that generates tokens from rust syntax
 
+`tokenstream2`
+: a dep of `quote` that mirrors `proc_macro::TokenStream`
+: use `.into()` to convert to a regular `TokenStream`
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0MTg0NTQyMywtMjE0NDUwOTA1OSwtMT
-kzMDkxNDg5MCw2MDc3NTA5MTIsNzgwMDAyNTcwLDE2OTUyNDY4
-MTIsMTg4OTY3NDg4MCwxODg5Njc0ODgwLDE0MDg1Nzk0NzAsNT
-UzNTE1MzkxLC04Mjk0OTQ4ODIsMTM0ODk3NDkyOCwtMTU1MjUz
-NTc2NywyMTIzODcyMjkyLC01NjU0Mjg0NDMsOTMyMTI5NTI0LD
-E1MzExMjAzODgsMjU3OTU5NjcxLDEzMTIxMjg1NTUsNTMxMjY4
-MDUzXX0=
+eyJoaXN0b3J5IjpbLTIwMTEwNjQ0NzMsLTIxNDQ1MDkwNTksLT
+E5MzA5MTQ4OTAsNjA3NzUwOTEyLDc4MDAwMjU3MCwxNjk1MjQ2
+ODEyLDE4ODk2NzQ4ODAsMTg4OTY3NDg4MCwxNDA4NTc5NDcwLD
+U1MzUxNTM5MSwtODI5NDk0ODgyLDEzNDg5NzQ5MjgsLTE1NTI1
+MzU3NjcsMjEyMzg3MjI5MiwtNTY1NDI4NDQzLDkzMjEyOTUyNC
+wxNTMxMTIwMzg4LDI1Nzk1OTY3MSwxMzEyMTI4NTU1LDUzMTI2
+ODA1M119
 -->
