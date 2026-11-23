@@ -1358,17 +1358,20 @@ quote = "1.0"
 `quote`
 : tool for creating `TokenStream`s
 : has a `quote!` macro that generates tokens from rust syntax
+: variables can be used with `#varname` which inserts the contents of the variable
 
 `tokenstream2`
 : a dep of `quote` that mirrors `proc_macro::TokenStream`
 : use `.into()` to convert to a regular `TokenStream`
 
 `stringify!` macro
-: come
+: comes with rust
+: converts an expression into a string literal
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ3NjU2NjI2LC0yMTQ0NTA5MDU5LC0xOT
+eyJoaXN0b3J5IjpbNzY2NjE1ODc1LC0yMTQ0NTA5MDU5LC0xOT
 MwOTE0ODkwLDYwNzc1MDkxMiw3ODAwMDI1NzAsMTY5NTI0Njgx
 MiwxODg5Njc0ODgwLDE4ODk2NzQ4ODAsMTQwODU3OTQ3MCw1NT
 M1MTUzOTEsLTgyOTQ5NDg4MiwxMzQ4OTc0OTI4LC0xNTUyNTM1
