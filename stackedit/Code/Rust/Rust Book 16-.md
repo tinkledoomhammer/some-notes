@@ -1381,13 +1381,20 @@ fn index() {
 pub fn route(attr: TokenStream, item: TokenStream) -> TokenStream {
 ```
 
+### Function-Like Macros
+```rust
+#[proc_macro]
+pub fn sql(input: TokenStream) -> Token Stream {/* .. *}
+```
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAyOTM3NjE3LC0yMTQ0NTA5MDU5LC0xOT
-MwOTE0ODkwLDYwNzc1MDkxMiw3ODAwMDI1NzAsMTY5NTI0Njgx
-MiwxODg5Njc0ODgwLDE4ODk2NzQ4ODAsMTQwODU3OTQ3MCw1NT
-M1MTUzOTEsLTgyOTQ5NDg4MiwxMzQ4OTc0OTI4LC0xNTUyNTM1
-NzY3LDIxMjM4NzIyOTIsLTU2NTQyODQ0Myw5MzIxMjk1MjQsMT
-UzMTEyMDM4OCwyNTc5NTk2NzEsMTMxMjEyODU1NSw1MzEyNjgw
-NTNdfQ==
+eyJoaXN0b3J5IjpbLTgxMzY3MDgyOSw0MDI5Mzc2MTcsLTIxND
+Q1MDkwNTksLTE5MzA5MTQ4OTAsNjA3NzUwOTEyLDc4MDAwMjU3
+MCwxNjk1MjQ2ODEyLDE4ODk2NzQ4ODAsMTg4OTY3NDg4MCwxND
+A4NTc5NDcwLDU1MzUxNTM5MSwtODI5NDk0ODgyLDEzNDg5NzQ5
+MjgsLTE1NTI1MzU3NjcsMjEyMzg3MjI5MiwtNTY1NDI4NDQzLD
+kzMjEyOTUyNCwxNTMxMTIwMzg4LDI1Nzk1OTY3MSwxMzEyMTI4
+NTU1XX0=
 -->
