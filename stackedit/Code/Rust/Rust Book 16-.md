@@ -1421,7 +1421,13 @@ use std::{
 };
 fn main() {
 	let listener = TcpListener::bind("127.0.0.1:7878").unwrap();
-	for stream in listener.incoming()
+	for stream in listener.incoming() {
+		let stream = stream.unwrap();
+		handle_connection(stream);
+	}
+}
+fn handle_connection(mut stream::TcpStream){
+	
 }
 ```
 
@@ -1429,11 +1435,11 @@ fn main() {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NTU1NDAxMSwxMjkxNzA4MTA3LDcyMD
-k1MTc3NCw0MDI5Mzc2MTcsLTIxNDQ1MDkwNTksLTE5MzA5MTQ4
-OTAsNjA3NzUwOTEyLDc4MDAwMjU3MCwxNjk1MjQ2ODEyLDE4OD
-k2NzQ4ODAsMTg4OTY3NDg4MCwxNDA4NTc5NDcwLDU1MzUxNTM5
-MSwtODI5NDk0ODgyLDEzNDg5NzQ5MjgsLTE1NTI1MzU3NjcsMj
-EyMzg3MjI5MiwtNTY1NDI4NDQzLDkzMjEyOTUyNCwxNTMxMTIw
-Mzg4XX0=
+eyJoaXN0b3J5IjpbNzMxNzQ3NzQwLDEyOTE3MDgxMDcsNzIwOT
+UxNzc0LDQwMjkzNzYxNywtMjE0NDUwOTA1OSwtMTkzMDkxNDg5
+MCw2MDc3NTA5MTIsNzgwMDAyNTcwLDE2OTUyNDY4MTIsMTg4OT
+Y3NDg4MCwxODg5Njc0ODgwLDE0MDg1Nzk0NzAsNTUzNTE1Mzkx
+LC04Mjk0OTQ4ODIsMTM0ODk3NDkyOCwtMTU1MjUzNTc2NywyMT
+IzODcyMjkyLC01NjU0Mjg0NDMsOTMyMTI5NTI0LDE1MzExMjAz
+ODhdfQ==
 -->
