@@ -1413,17 +1413,27 @@ fn main() {
 `std::net::Stream`
 : represents a single connection
 
-### Rea
+### Reading the Request
+```rust
+use std::{
+	io::{BufReader, prelude::*},
+	net::{TcpListener, TcpStream},
+};
+fn main() {
+	let listener = TcpListener::bind("127.0.0.1:7878").unwrap();
+	for stream in listener.incoming()
+}
+```
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDMzMjk5NTQsMTI5MTcwODEwNyw3Mj
-A5NTE3NzQsNDAyOTM3NjE3LC0yMTQ0NTA5MDU5LC0xOTMwOTE0
-ODkwLDYwNzc1MDkxMiw3ODAwMDI1NzAsMTY5NTI0NjgxMiwxOD
-g5Njc0ODgwLDE4ODk2NzQ4ODAsMTQwODU3OTQ3MCw1NTM1MTUz
-OTEsLTgyOTQ5NDg4MiwxMzQ4OTc0OTI4LC0xNTUyNTM1NzY3LD
-IxMjM4NzIyOTIsLTU2NTQyODQ0Myw5MzIxMjk1MjQsMTUzMTEy
-MDM4OF19
+eyJoaXN0b3J5IjpbLTY4NTU1NDAxMSwxMjkxNzA4MTA3LDcyMD
+k1MTc3NCw0MDI5Mzc2MTcsLTIxNDQ1MDkwNTksLTE5MzA5MTQ4
+OTAsNjA3NzUwOTEyLDc4MDAwMjU3MCwxNjk1MjQ2ODEyLDE4OD
+k2NzQ4ODAsMTg4OTY3NDg4MCwxNDA4NTc5NDcwLDU1MzUxNTM5
+MSwtODI5NDk0ODgyLDEzNDg5NzQ5MjgsLTE1NTI1MzU3NjcsMj
+EyMzg3MjI5MiwtNTY1NDI4NDQzLDkzMjEyOTUyNCwxNTMxMTIw
+Mzg4XX0=
 -->
