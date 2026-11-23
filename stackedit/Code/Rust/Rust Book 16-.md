@@ -1318,6 +1318,7 @@ In patterns
 * `*` means to match 0 or more times the previous item
 
 ### Procedural macros for generating code from attributes
+Proc macros must be in a special crate
 ```rust
 use proc_macro::TokenStream;
 use quote::quote;
@@ -1340,7 +1341,7 @@ fn impl_hello_macro(ast: &syn::DeriveInput) -> TokenStream {
     }.into()
 }
 ```
-the cargo.toml
+the `Cargo.toml` for the proc macro crate
 ```toml
 [lib]
 proc-macro = true
@@ -1352,11 +1353,11 @@ quote = "1.0"
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NTkzNTc2LC0yMTQ0NTA5MDU5LC0xOT
-MwOTE0ODkwLDYwNzc1MDkxMiw3ODAwMDI1NzAsMTY5NTI0Njgx
-MiwxODg5Njc0ODgwLDE4ODk2NzQ4ODAsMTQwODU3OTQ3MCw1NT
-M1MTUzOTEsLTgyOTQ5NDg4MiwxMzQ4OTc0OTI4LC0xNTUyNTM1
-NzY3LDIxMjM4NzIyOTIsLTU2NTQyODQ0Myw5MzIxMjk1MjQsMT
-UzMTEyMDM4OCwyNTc5NTk2NzEsMTMxMjEyODU1NSw1MzEyNjgw
-NTNdfQ==
+eyJoaXN0b3J5IjpbMTk3ODg5Mzc0NiwtMjE0NDUwOTA1OSwtMT
+kzMDkxNDg5MCw2MDc3NTA5MTIsNzgwMDAyNTcwLDE2OTUyNDY4
+MTIsMTg4OTY3NDg4MCwxODg5Njc0ODgwLDE0MDg1Nzk0NzAsNT
+UzNTE1MzkxLC04Mjk0OTQ4ODIsMTM0ODk3NDkyOCwtMTU1MjUz
+NTc2NywyMTIzODcyMjkyLC01NjU0Mjg0NDMsOTMyMTI5NTI0LD
+E1MzExMjAzODgsMjU3OTU5NjcxLDEzMTIxMjg1NTUsNTMxMjY4
+MDUzXX0=
 -->
