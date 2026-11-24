@@ -1455,17 +1455,63 @@ fn handle_connection(mut stream:TcpStream) {
 ## 20.02 From Single-Threaded to multithreaded
 ### Simulating a slow request
 ```rust
-use std::{
+use  std::{
+    fs,
+    io::{BufReader, prelude::*},
+    net::{TcpListener, TcpStream},
+    thread,
+    time::Duration,
+};
+
+fn main() {
+    let listener = TcpListener::bind("127.0.0.1:7878")
+        .unwrap();
+    for stream in listener.incoming(){
+        let stream = stream.unwrap();
+        handle_connection(stream);
+    }
+}
+
+fn handle_connection(mut stream:TcpStream) {
+    let buf_reader = BufReader::new(&stream);
+    let http_request: Vec<_>=buf_reader
+        .lines()
+        .map(|result| result.unwrap())
+        .take_while(|line|!line.is_empty())
+        .collect();
+    if http_request.len() == 0 {
+        println!("empty request");
+        return
+    }
+    let request_line = http_request[0].as_str();
+    println!("{request_line}");
+    /*
+    switched to match because there are now 3 cases
+    */
+    let (status_line, file_name) = match request_line{
+        "GET / HTTP/1.1" => ("HTTP/1.1 200 OK", "hello.html"),
+        "GET /sleep HTTP/1.1" => {
+            thread::sleep(Duration::from_secs(2));
+            ("HTTP/1.1 200 OK", "hello.html")
+        },
+        _ => ("HTTP/1.1 404 NOT FOUND", "notfound.html"),
+    };
+    let contents = fs::read_to_string(file_name).unwrap();
+    let length = contents.len();
+    let response = 
+        format!("{status_line}\r\nContent-length: {length}\r\n\r\n{contents}");
+    stream.write_all(response.as_bytes()).unwrap();
+}
 
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDkyODI5MjI1LDIxMzE1NjkxNDMsLTEwOT
-gyMTYwNjIsLTE1NjEzMDg1MSw2NTQ0NTc5NTcsMTA2ODM0ODQ1
-MCw2NTQ0NTc5NTcsMTI5MTcwODEwNyw3MjA5NTE3NzQsNDAyOT
-M3NjE3LC0yMTQ0NTA5MDU5LC0xOTMwOTE0ODkwLDYwNzc1MDkx
-Miw3ODAwMDI1NzAsMTY5NTI0NjgxMiwxODg5Njc0ODgwLDE4OD
-k2NzQ4ODAsMTQwODU3OTQ3MCw1NTM1MTUzOTEsLTgyOTQ5NDg4
-Ml19
+eyJoaXN0b3J5IjpbNDgyNDY1NzAyLDQ5MjgyOTIyNSwyMTMxNT
+Y5MTQzLC0xMDk4MjE2MDYyLC0xNTYxMzA4NTEsNjU0NDU3OTU3
+LDEwNjgzNDg0NTAsNjU0NDU3OTU3LDEyOTE3MDgxMDcsNzIwOT
+UxNzc0LDQwMjkzNzYxNywtMjE0NDUwOTA1OSwtMTkzMDkxNDg5
+MCw2MDc3NTA5MTIsNzgwMDAyNTcwLDE2OTUyNDY4MTIsMTg4OT
+Y3NDg4MCwxODg5Njc0ODgwLDE0MDg1Nzk0NzAsNTUzNTE1Mzkx
+XX0=
 -->
