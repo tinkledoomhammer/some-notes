@@ -1459,30 +1459,14 @@ use  std::{
     fs,
     io::{BufReader, prelude::*},
     net::{TcpListener, TcpStream},
+    // new uses
     thread,
     time::Duration,
 };
-
-fn main() {
-    let listener = TcpListener::bind("127.0.0.1:7878")
-        .unwrap();
-    for stream in listener.incoming(){
-        let stream = stream.unwrap();
-        handle_connection(stream);
-    }
-}
-
 fn handle_connection(mut stream:TcpStream) {
-    let buf_reader = BufReader::new(&stream);
-    let http_request: Vec<_>=buf_reader
-        .lines()
-        .map(|result| result.unwrap())
-        .take_while(|line|!line.is_empty())
-        .collect();
-    if http_request.len() == 0 {
-        println!("empty request");
-        return
-    }
+	  /* 
+		  ...
+		*/
     let request_line = http_request[0].as_str();
     println!("{request_line}");
     /*
@@ -1507,7 +1491,7 @@ fn handle_connection(mut stream:TcpStream) {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgyNDY1NzAyLDQ5MjgyOTIyNSwyMTMxNT
+eyJoaXN0b3J5IjpbNTE2OTE5MjExLDQ5MjgyOTIyNSwyMTMxNT
 Y5MTQzLC0xMDk4MjE2MDYyLC0xNTYxMzA4NTEsNjU0NDU3OTU3
 LDEwNjgzNDg0NTAsNjU0NDU3OTU3LDEyOTE3MDgxMDcsNzIwOT
 UxNzc0LDQwMjkzNzYxNywtMjE0NDUwOTA1OSwtMTkzMDkxNDg5
