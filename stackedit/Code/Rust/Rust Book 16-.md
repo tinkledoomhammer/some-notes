@@ -1486,10 +1486,11 @@ fn handle_connection(mut stream:TcpStream) {
 * each thread pops tasks off of the queue
 ```rust
 //from main
-let listener = TcpListener::bi
+let listener = TcpListener::bind("127.0.0.1:7878").unwrap();
+let pool = ThreadPool::new(4);
 for stream in listener.incoming(){
 	let stream = stream.unwrap();
-	thread::spawn(|| handle_connection(stream));
+	pool.execute(|| handle_connection(stream));
 }
 ```
 
@@ -1506,11 +1507,11 @@ for stream in listener.incoming(){
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTY1NDU0MzcsMTg1NzE0MzYwOCwxOT
-Q2NDQ1MTk4LDQ5MjgyOTIyNSwyMTMxNTY5MTQzLC0xMDk4MjE2
-MDYyLC0xNTYxMzA4NTEsNjU0NDU3OTU3LDEwNjgzNDg0NTAsNj
-U0NDU3OTU3LDEyOTE3MDgxMDcsNzIwOTUxNzc0LDQwMjkzNzYx
-NywtMjE0NDUwOTA1OSwtMTkzMDkxNDg5MCw2MDc3NTA5MTIsNz
-gwMDAyNTcwLDE2OTUyNDY4MTIsMTg4OTY3NDg4MCwxODg5Njc0
-ODgwXX0=
+eyJoaXN0b3J5IjpbNzU3MzI4NzYsMTg1NzE0MzYwOCwxOTQ2ND
+Q1MTk4LDQ5MjgyOTIyNSwyMTMxNTY5MTQzLC0xMDk4MjE2MDYy
+LC0xNTYxMzA4NTEsNjU0NDU3OTU3LDEwNjgzNDg0NTAsNjU0ND
+U3OTU3LDEyOTE3MDgxMDcsNzIwOTUxNzc0LDQwMjkzNzYxNywt
+MjE0NDUwOTA1OSwtMTkzMDkxNDg5MCw2MDc3NTA5MTIsNzgwMD
+AyNTcwLDE2OTUyNDY4MTIsMTg4OTY3NDg4MCwxODg5Njc0ODgw
+XX0=
 -->
