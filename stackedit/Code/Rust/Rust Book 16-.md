@@ -1485,8 +1485,14 @@ fn handle_connection(mut stream:TcpStream) {
 * create a queue of incoming requests
 * each thread pops tasks off of the queue
 ```rust
-//spawning 
-``
+//from main
+let listener = TcpListener::bi
+for stream in listener.incoming(){
+	let stream = stream.unwrap();
+	thread::spawn(|| handle_connection(stream));
+}
+```
+
 
 
 
@@ -1500,11 +1506,11 @@ fn handle_connection(mut stream:TcpStream) {
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NzUxMzkzNCwxODU3MTQzNjA4LDE5ND
-Y0NDUxOTgsNDkyODI5MjI1LDIxMzE1NjkxNDMsLTEwOTgyMTYw
-NjIsLTE1NjEzMDg1MSw2NTQ0NTc5NTcsMTA2ODM0ODQ1MCw2NT
-Q0NTc5NTcsMTI5MTcwODEwNyw3MjA5NTE3NzQsNDAyOTM3NjE3
-LC0yMTQ0NTA5MDU5LC0xOTMwOTE0ODkwLDYwNzc1MDkxMiw3OD
-AwMDI1NzAsMTY5NTI0NjgxMiwxODg5Njc0ODgwLDE4ODk2NzQ4
-ODBdfQ==
+eyJoaXN0b3J5IjpbLTE4OTY1NDU0MzcsMTg1NzE0MzYwOCwxOT
+Q2NDQ1MTk4LDQ5MjgyOTIyNSwyMTMxNTY5MTQzLC0xMDk4MjE2
+MDYyLC0xNTYxMzA4NTEsNjU0NDU3OTU3LDEwNjgzNDg0NTAsNj
+U0NDU3OTU3LDEyOTE3MDgxMDcsNzIwOTUxNzc0LDQwMjkzNzYx
+NywtMjE0NDUwOTA1OSwtMTkzMDkxNDg5MCw2MDc3NTA5MTIsNz
+gwMDAyNTcwLDE2OTUyNDY4MTIsMTg4OTY3NDg4MCwxODg5Njc0
+ODgwXX0=
 -->
