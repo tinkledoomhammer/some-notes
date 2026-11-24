@@ -1413,7 +1413,7 @@ fn main() {
 `std::net::Stream`
 : represents a single connection
 
-### Reading the Request
+### Handling the request
 ```rust
 use std::{
 	fs,
@@ -1427,32 +1427,41 @@ fn main() {
 		handle_connection(stream);
 	}
 }
-fn handle_connection(mut stream::TcpStream){
-	let buf_reader = BufReader::new(&stream);
-	let http_request: Vec<_> = buf_reader
-		.lines()
-		.map(|result| result.unwrap())
-		.take_while(|line|!line.is_empty())
-		.collect();
-	let status_line = "HTTP/1.1 200 OK";
-	let contents = fs::read_to_string("hello.html").unwrap();
-	let length = contents.len();
-	let response = 
-		format!("{status_line}\r\nContent-Length: {length}\r\n\r\n{contents}");
-	stream.write_all(response.as_bytes()).unwrap();
-	println!("Request: {http_request:#?}");
+fn handle_connection(mut stream:TcpStream) {
+    let buf_reader = BufReader::new(&stream);
+    let http_request: Vec<_>=buf_reader
+        .lines()
+        .map(|result| result.unwrap())
+        .take_while(|line|!line.is_empty())
+        .collect();
+    if http_request.len() == 0 {
+        println!("empty request");
+        return
+    }
+    let request_line = &http_request[0];
+    println!("{request_line}");
+    let (status_line, file_name) = if request_line=="GET / HTTP/1.1" {
+        ("HTTP/1.1 200 OK", "hello.html")
+    }else{
+        ("HTTP/1.1 404 NOT FOUND", "notfound.html")
+    };
+    let contents = fs::read_to_string(file_name).unwrap();
+    let length = contents.len();
+    let response = 
+        format!("{status_line}\r\nContent-length: {length}\r\n\r\n{contents}");
+    stream.write_all(response.as_bytes()).unwrap();
 }
 ```
-
+## 20.02 Fron 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMTU2OTE0MywtMTA5ODIxNjA2MiwtMT
-U2MTMwODUxLDY1NDQ1Nzk1NywxMDY4MzQ4NDUwLDY1NDQ1Nzk1
-NywxMjkxNzA4MTA3LDcyMDk1MTc3NCw0MDI5Mzc2MTcsLTIxND
-Q1MDkwNTksLTE5MzA5MTQ4OTAsNjA3NzUwOTEyLDc4MDAwMjU3
-MCwxNjk1MjQ2ODEyLDE4ODk2NzQ4ODAsMTg4OTY3NDg4MCwxND
-A4NTc5NDcwLDU1MzUxNTM5MSwtODI5NDk0ODgyLDEzNDg5NzQ5
-MjhdfQ==
+eyJoaXN0b3J5IjpbNDUwOTE3NjIzLDIxMzE1NjkxNDMsLTEwOT
+gyMTYwNjIsLTE1NjEzMDg1MSw2NTQ0NTc5NTcsMTA2ODM0ODQ1
+MCw2NTQ0NTc5NTcsMTI5MTcwODEwNyw3MjA5NTE3NzQsNDAyOT
+M3NjE3LC0yMTQ0NTA5MDU5LC0xOTMwOTE0ODkwLDYwNzc1MDkx
+Miw3ODAwMDI1NzAsMTY5NTI0NjgxMiwxODg5Njc0ODgwLDE4OD
+k2NzQ4ODAsMTQwODU3OTQ3MCw1NTM1MTUzOTEsLTgyOTQ5NDg4
+Ml19
 -->
