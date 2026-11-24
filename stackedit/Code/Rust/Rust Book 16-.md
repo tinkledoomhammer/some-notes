@@ -1473,22 +1473,21 @@ fn handle_connection(mut stream:TcpStream) {
         "GET / HTTP/1.1" => ("HTTP/1.1 200 OK", "hello.html"),
         "GET /sleep HTTP/1.1" => {
             thread::sleep(Duration::from_secs(2));
-            ("HTTP/1.1 200 OK", "hello.html")
+            ("HTTP/1.1 200 OK", "sleepy.html")
         },
         _ => ("HTTP/1.1 404 NOT FOUND", "notfound.html"),
     };
     // ... snip ...
 }
-
 ```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzczMzQsNDkyODI5MjI1LDIxMzE1Nj
-kxNDMsLTEwOTgyMTYwNjIsLTE1NjEzMDg1MSw2NTQ0NTc5NTcs
-MTA2ODM0ODQ1MCw2NTQ0NTc5NTcsMTI5MTcwODEwNyw3MjA5NT
-E3NzQsNDAyOTM3NjE3LC0yMTQ0NTA5MDU5LC0xOTMwOTE0ODkw
-LDYwNzc1MDkxMiw3ODAwMDI1NzAsMTY5NTI0NjgxMiwxODg5Nj
-c0ODgwLDE4ODk2NzQ4ODAsMTQwODU3OTQ3MCw1NTM1MTUzOTFd
-fQ==
+eyJoaXN0b3J5IjpbMTk0NjQ0NTE5OCw0OTI4MjkyMjUsMjEzMT
+U2OTE0MywtMTA5ODIxNjA2MiwtMTU2MTMwODUxLDY1NDQ1Nzk1
+NywxMDY4MzQ4NDUwLDY1NDQ1Nzk1NywxMjkxNzA4MTA3LDcyMD
+k1MTc3NCw0MDI5Mzc2MTcsLTIxNDQ1MDkwNTksLTE5MzA5MTQ4
+OTAsNjA3NzUwOTEyLDc4MDAwMjU3MCwxNjk1MjQ2ODEyLDE4OD
+k2NzQ4ODAsMTg4OTY3NDg4MCwxNDA4NTc5NDcwLDU1MzUxNTM5
+MV19
 -->
