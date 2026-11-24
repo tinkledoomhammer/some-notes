@@ -1452,12 +1452,12 @@ fn handle_connection(mut stream:TcpStream) {
     stream.write_all(response.as_bytes()).unwrap();
 }
 ```
-## 20.02 Fron 
+## 20.02 Fron Single-Threaded to multithreaded
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUwOTE3NjIzLDIxMzE1NjkxNDMsLTEwOT
+eyJoaXN0b3J5IjpbMTQ2MDU2MjAwLDIxMzE1NjkxNDMsLTEwOT
 gyMTYwNjIsLTE1NjEzMDg1MSw2NTQ0NTc5NTcsMTA2ODM0ODQ1
 MCw2NTQ0NTc5NTcsMTI5MTcwODEwNyw3MjA5NTE3NzQsNDAyOT
 M3NjE3LC0yMTQ0NTA5MDU5LC0xOTMwOTE0ODkwLDYwNzc1MDkx
