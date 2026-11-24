@@ -1433,8 +1433,8 @@ fn handle_connection(mut stream::TcpStream){
 		.map(|result| result.unwrap())
 		.take_while(|line|!line.is_empty())
 		.collect();
-	let status_line = "HTTP/1.1 200 OK"; let contents = 
-		fs::read_to_string("hello.html").unwrap();
+	let status_line = "HTTP/1.1 200 OK";
+	let contents = fs::read_to_string("hello.html").unwrap();
 	let length = contents.len();
 	let response = 
 		format!("{status_line}\r\nContent-Length: {length}\r\n\r\n{contents}");
@@ -1447,11 +1447,11 @@ fn handle_connection(mut stream::TcpStream){
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MTM3MDUwNiwtMTU2MTMwODUxLDY1ND
-Q1Nzk1NywxMDY4MzQ4NDUwLDY1NDQ1Nzk1NywxMjkxNzA4MTA3
-LDcyMDk1MTc3NCw0MDI5Mzc2MTcsLTIxNDQ1MDkwNTksLTE5Mz
-A5MTQ4OTAsNjA3NzUwOTEyLDc4MDAwMjU3MCwxNjk1MjQ2ODEy
-LDE4ODk2NzQ4ODAsMTg4OTY3NDg4MCwxNDA4NTc5NDcwLDU1Mz
-UxNTM5MSwtODI5NDk0ODgyLDEzNDg5NzQ5MjgsLTE1NTI1MzU3
-NjddfQ==
+eyJoaXN0b3J5IjpbLTEwOTgyMTYwNjIsLTE1NjEzMDg1MSw2NT
+Q0NTc5NTcsMTA2ODM0ODQ1MCw2NTQ0NTc5NTcsMTI5MTcwODEw
+Nyw3MjA5NTE3NzQsNDAyOTM3NjE3LC0yMTQ0NTA5MDU5LC0xOT
+MwOTE0ODkwLDYwNzc1MDkxMiw3ODAwMDI1NzAsMTY5NTI0Njgx
+MiwxODg5Njc0ODgwLDE4ODk2NzQ4ODAsMTQwODU3OTQ3MCw1NT
+M1MTUzOTEsLTgyOTQ5NDg4MiwxMzQ4OTc0OTI4LC0xNTUyNTM1
+NzY3XX0=
 -->
