@@ -1470,12 +1470,12 @@ fn handle_connection(mut stream:TcpStream) {
     println!("{request_line}");
     // switched to match because there are now 3 cases
     let (status_line, file_name) = match request_line{
-        "GET / HTTP/1.1" => ("HTTP/1.1 200 OK", "hello.html"),
-        "GET /sleep HTTP/1.1" => {
+       "GET / HTTP/1.1" => ("HTTP/1.1 200 OK", "hello.html"),
+       "GET /sleep HTTP/1.1" => {
             thread::sleep(Duration::from_secs(2));
             ("HTTP/1.1 200 OK", "sleepy.html")
-        },
-        _ => ("HTTP/1.1 404 NOT FOUND", "notfound.html"),
+       },
+       _ => ("HTTP/1.1 404 NOT FOUND", "notfound.html"),
     };
     // ... snip ...
 }
@@ -1483,11 +1483,11 @@ fn handle_connection(mut stream:TcpStream) {
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NjQ0NTE5OCw0OTI4MjkyMjUsMjEzMT
-U2OTE0MywtMTA5ODIxNjA2MiwtMTU2MTMwODUxLDY1NDQ1Nzk1
-NywxMDY4MzQ4NDUwLDY1NDQ1Nzk1NywxMjkxNzA4MTA3LDcyMD
-k1MTc3NCw0MDI5Mzc2MTcsLTIxNDQ1MDkwNTksLTE5MzA5MTQ4
-OTAsNjA3NzUwOTEyLDc4MDAwMjU3MCwxNjk1MjQ2ODEyLDE4OD
-k2NzQ4ODAsMTg4OTY3NDg4MCwxNDA4NTc5NDcwLDU1MzUxNTM5
-MV19
+eyJoaXN0b3J5IjpbMTg1NzE0MzYwOCwxOTQ2NDQ1MTk4LDQ5Mj
+gyOTIyNSwyMTMxNTY5MTQzLC0xMDk4MjE2MDYyLC0xNTYxMzA4
+NTEsNjU0NDU3OTU3LDEwNjgzNDg0NTAsNjU0NDU3OTU3LDEyOT
+E3MDgxMDcsNzIwOTUxNzc0LDQwMjkzNzYxNywtMjE0NDUwOTA1
+OSwtMTkzMDkxNDg5MCw2MDc3NTA5MTIsNzgwMDAyNTcwLDE2OT
+UyNDY4MTIsMTg4OTY3NDg4MCwxODg5Njc0ODgwLDE0MDg1Nzk0
+NzBdfQ==
 -->
