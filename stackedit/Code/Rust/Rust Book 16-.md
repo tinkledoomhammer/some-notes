@@ -1452,12 +1452,16 @@ fn handle_connection(mut stream:TcpStream) {
     stream.write_all(response.as_bytes()).unwrap();
 }
 ```
-## 20.02 Fron Single-Threaded to multithreaded
+## 20.02 From Single-Threaded to multithreaded
+### Simulating a slow request
+```rust
+use std::{
 
+```
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MDU2MjAwLDIxMzE1NjkxNDMsLTEwOT
+eyJoaXN0b3J5IjpbNDkyODI5MjI1LDIxMzE1NjkxNDMsLTEwOT
 gyMTYwNjIsLTE1NjEzMDg1MSw2NTQ0NTc5NTcsMTA2ODM0ODQ1
 MCw2NTQ0NTc5NTcsMTI5MTcwODEwNyw3MjA5NTE3NzQsNDAyOT
 M3NjE3LC0yMTQ0NTA5MDU5LC0xOTMwOTE0ODkwLDYwNzc1MDkx
