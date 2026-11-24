@@ -1480,14 +1480,31 @@ fn handle_connection(mut stream:TcpStream) {
     // ... snip ...
 }
 ```
+### Thread pooling
+* maintain a small number of threads
+* create a queue of incoming requests
+* each thread pops tasks off of the queue
+```rust
+//spawning 
+``
 
+
+
+
+
+
+
+
+
+
+.
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1NzE0MzYwOCwxOTQ2NDQ1MTk4LDQ5Mj
-gyOTIyNSwyMTMxNTY5MTQzLC0xMDk4MjE2MDYyLC0xNTYxMzA4
-NTEsNjU0NDU3OTU3LDEwNjgzNDg0NTAsNjU0NDU3OTU3LDEyOT
-E3MDgxMDcsNzIwOTUxNzc0LDQwMjkzNzYxNywtMjE0NDUwOTA1
-OSwtMTkzMDkxNDg5MCw2MDc3NTA5MTIsNzgwMDAyNTcwLDE2OT
-UyNDY4MTIsMTg4OTY3NDg4MCwxODg5Njc0ODgwLDE0MDg1Nzk0
-NzBdfQ==
+eyJoaXN0b3J5IjpbMjA1NzUxMzkzNCwxODU3MTQzNjA4LDE5ND
+Y0NDUxOTgsNDkyODI5MjI1LDIxMzE1NjkxNDMsLTEwOTgyMTYw
+NjIsLTE1NjEzMDg1MSw2NTQ0NTc5NTcsMTA2ODM0ODQ1MCw2NT
+Q0NTc5NTcsMTI5MTcwODEwNyw3MjA5NTE3NzQsNDAyOTM3NjE3
+LC0yMTQ0NTA5MDU5LC0xOTMwOTE0ODkwLDYwNzc1MDkxMiw3OD
+AwMDI1NzAsMTY5NTI0NjgxMiwxODg5Njc0ODgwLDE4ODk2NzQ4
+ODBdfQ==
 -->
