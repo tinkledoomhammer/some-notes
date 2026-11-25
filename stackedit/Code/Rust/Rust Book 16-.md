@@ -1493,7 +1493,60 @@ for stream in listener.incoming(){
 	pool.execute(|| handle_connection(stream));
 }
 ```
-
+The thread pool
+```rust
+use std::{
+    thread,
+    sync::{Arc, Mutex, mpsc},
+};
+type Job = Box<dyn FnOnce() + Send + 'static>;
+pub struct ThreadPool{
+    workers: Vec<Worker>,
+    sender: mpsc::Sender<Job>,
+}
+impl ThreadPool{
+    pub fn new(size: usize) -> ThreadPool{
+        assert!(size>0);
+        let mut workers = Vec::with_capacity(size);
+        let(sender, receiver) = mpsc::channel();
+        let receiver = Arc::new(Mutex::new(receiver));
+        for id in 0..size{
+            workers.push(Worker::new(id, Arc::clone(&receiver)));
+        }
+        ThreadPool{workers, sender}
+    }
+    pub fn spawn<F,T>(f: F) -> thread::JoinHandle<T>
+        where 
+            F: FnOnce() -> T,
+            F: Send + 'static,
+            T: Send + 'static,
+    {
+        thread::spawn(|| f())
+    }
+    pub fn execute<F>(&self, f: F)
+        where F: FnOnce() + Send + 'static,
+    {
+        let job = Box::new(f);
+        self.sender.send(job).unwrap();
+    }
+}
+struct Worker{
+    id: usize,
+    thread: thread::JoinHandle<()>,
+}
+impl Worker{
+    fn new(id: usize, receiver: Arc<Mutex<mpsc::Receiver<Job>>>) -> Worker {
+        let thread = thread::spawn(move || {
+            loop{
+                let job = receiver.lock().unwrap().recv().unwrap();
+                println!("Worker {id} got a job.");
+                job();
+            }
+        });
+        Worker{id, thread, }
+    }
+}
+```
 
 
 
@@ -1507,11 +1560,11 @@ for stream in listener.incoming(){
 .
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU3MzI4NzYsMTg1NzE0MzYwOCwxOTQ2ND
-Q1MTk4LDQ5MjgyOTIyNSwyMTMxNTY5MTQzLC0xMDk4MjE2MDYy
-LC0xNTYxMzA4NTEsNjU0NDU3OTU3LDEwNjgzNDg0NTAsNjU0ND
-U3OTU3LDEyOTE3MDgxMDcsNzIwOTUxNzc0LDQwMjkzNzYxNywt
-MjE0NDUwOTA1OSwtMTkzMDkxNDg5MCw2MDc3NTA5MTIsNzgwMD
-AyNTcwLDE2OTUyNDY4MTIsMTg4OTY3NDg4MCwxODg5Njc0ODgw
-XX0=
+eyJoaXN0b3J5IjpbLTE0MjU2ODA1NDIsNzU3MzI4NzYsMTg1Nz
+E0MzYwOCwxOTQ2NDQ1MTk4LDQ5MjgyOTIyNSwyMTMxNTY5MTQz
+LC0xMDk4MjE2MDYyLC0xNTYxMzA4NTEsNjU0NDU3OTU3LDEwNj
+gzNDg0NTAsNjU0NDU3OTU3LDEyOTE3MDgxMDcsNzIwOTUxNzc0
+LDQwMjkzNzYxNywtMjE0NDUwOTA1OSwtMTkzMDkxNDg5MCw2MD
+c3NTA5MTIsNzgwMDAyNTcwLDE2OTUyNDY4MTIsMTg4OTY3NDg4
+MF19
 -->
