@@ -10,10 +10,12 @@
 1. each non-key attribute depends on the entire primary key
 
 ## 3nf
-
+1. 2nf
+1. no dependencies between non-key attributes
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTk1NDA4NDcsOTI0NzI4ODBdfQ==
+eyJoaXN0b3J5IjpbNzU4ODk0MjczLC0xNzE5NTQwODQ3LDkyND
+cyODgwXX0=
 -->
