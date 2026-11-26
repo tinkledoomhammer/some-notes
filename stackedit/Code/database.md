@@ -14,11 +14,13 @@
 1. no dependencies between non-key attributes
 ** every non-key attributes depends on the key, the whole key, and nothing but the key **
 
-## Boyce-Codd (b
+## Boyce-Codd (bcnf)
+* every attribute depends on the key, the whole key, and nothing butt the key*
+* including the key attributes 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5MDgzMjkwMSwtMTcxOTU0MDg0Nyw5Mj
-Q3Mjg4MF19
+eyJoaXN0b3J5IjpbOTg5NTI5MDU0LC0xNzE5NTQwODQ3LDkyND
+cyODgwXX0=
 -->
