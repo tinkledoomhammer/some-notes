@@ -18,9 +18,12 @@
 * every attribute depends on the key, the whole key, and nothing butt the key*
 * including the key attributes 
 
+## 4nf
+* stricter than is usually needed
+* 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg5NTI5MDU0LC0xNzE5NTQwODQ3LDkyND
-cyODgwXX0=
+eyJoaXN0b3J5IjpbMTA0MzM4Mzk2OSwtMTcxOTU0MDg0Nyw5Mj
+Q3Mjg4MF19
 -->
